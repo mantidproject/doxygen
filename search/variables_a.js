@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['j_0',['J',['../db/df5/structMantid_1_1CurveFitting_1_1GSL__FitData.html#a7a9304cd2ba851062c04369a610dc064',1,'Mantid::CurveFitting::GSL_FitData::J()'],['../d9/dcf/structMantid_1_1CurveFitting_1_1NLLS_1_1NLLS__workspace.html#a247b04d62fab86d09b558242b41dbf3d',1,'Mantid::CurveFitting::NLLS::NLLS_workspace::J()'],['../d2/dd5/structMantid_1_1CurveFitting_1_1Algorithms_1_1FitData.html#a0c0182c5ac222f97ad0a45e9eb371970',1,'Mantid::CurveFitting::Algorithms::FitData::J()']]],
+  ['j_0',['j',['../db/df5/structMantid_1_1CurveFitting_1_1GSL__FitData.html#a7a9304cd2ba851062c04369a610dc064',1,'Mantid::CurveFitting::GSL_FitData::J'],['../d9/dcf/structMantid_1_1CurveFitting_1_1NLLS_1_1NLLS__workspace.html#a247b04d62fab86d09b558242b41dbf3d',1,'Mantid::CurveFitting::NLLS::NLLS_workspace::J'],['../d2/dd5/structMantid_1_1CurveFitting_1_1Algorithms_1_1FitData.html#a0c0182c5ac222f97ad0a45e9eb371970',1,'Mantid::CurveFitting::Algorithms::FitData::J']]],
   ['j0_1',['j0',['../dc/dac/structMantid_1_1PhysicalConstants_1_1MagneticIon.html#a9691d03ba8f8938b980d5a2f65c5b9cd',1,'Mantid::PhysicalConstants::MagneticIon']]],
   ['j2_2',['j2',['../dc/dac/structMantid_1_1PhysicalConstants_1_1MagneticIon.html#a74812a3e7378ad7f9ba78a3d3e1cb4e1',1,'Mantid::PhysicalConstants::MagneticIon']]],
   ['j4_3',['j4',['../dc/dac/structMantid_1_1PhysicalConstants_1_1MagneticIon.html#a5ca00750742e54b2f6235c085e477e0a',1,'Mantid::PhysicalConstants::MagneticIon']]],

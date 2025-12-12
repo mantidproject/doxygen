@@ -13,6 +13,6 @@ var searchData=
   ['eventdataversion_10',['EventDataVersion',['../dd/df9/classMantid_1_1DataObjects_1_1BoxControllerNeXusIO.html#a088c2948972ed8c4c5d9b072742d18cf',1,'Mantid::DataObjects::BoxControllerNeXusIO']]],
   ['eventfilterskip_11',['EVENTFILTERSKIP',['../d2/dfb/classMantid_1_1Algorithms_1_1FilterEvents.html#aa6c1960eeb6f37cdb1ed8a987b4c3323',1,'Mantid::Algorithms::FilterEvents']]],
   ['eventsorttype_12',['EventSortType',['../db/d22/namespaceMantid_1_1DataObjects.html#a5ce7b2f35e0fe0f6ffab2b899cc36653',1,'Mantid::DataObjects']]],
-  ['eventtype_13',['EventType',['../dd/df9/classMantid_1_1DataObjects_1_1BoxControllerNeXusIO.html#aaf48d9834bc5b709d46a6b158534f53b',1,'Mantid::DataObjects::BoxControllerNeXusIO::EventType()'],['../d9/da0/namespaceMantid_1_1API.html#ae9f200e7b2faa4af0f90f099246b084f',1,'Mantid::API::EventType()']]],
+  ['eventtype_13',['eventtype',['../dd/df9/classMantid_1_1DataObjects_1_1BoxControllerNeXusIO.html#aaf48d9834bc5b709d46a6b158534f53b',1,'Mantid::DataObjects::BoxControllerNeXusIO::EventType'],['../d9/da0/namespaceMantid_1_1API.html#ae9f200e7b2faa4af0f90f099246b084f',1,'Mantid::API::EventType']]],
   ['executionstate_14',['ExecutionState',['../d9/da0/namespaceMantid_1_1API.html#ab59ce448f00de05a5c763ac1f1b67f8c',1,'Mantid::API']]]
 ];

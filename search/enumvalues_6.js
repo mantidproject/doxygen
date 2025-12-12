@@ -13,5 +13,6 @@ var searchData=
   ['gone_10',['GONE',['../d8/d77/classMantid_1_1Kernel_1_1InternetHelper.html#aad263cc54689786ffec924aec281b740a9c745ef7d5f5c7618ce90dbec9a62b74',1,'Mantid::Kernel::InternetHelper']]],
   ['good_11',['GOOD',['../dc/dc3/namespaceMantid_1_1Algorithms_1_1PeakParameterHelper.html#a1de38c4567a8f01bd64e0df38d1433ddae1d456f7fd7d4a414581b788304e316d',1,'Mantid::Algorithms::PeakParameterHelper']]],
   ['grayscale_12',['GrayScale',['../d8/d3d/namespaceGraphOptions.html#a0b34d909fd29839548f120b3f35d7ae1a1b4f5f2f4a4f1b07210be1934ce576e8',1,'GraphOptions']]],
-  ['groupworkspaces_13',['GroupWorkspaces',['../d3/dfb/classMantidQt_1_1MantidWidgets_1_1ViewNotifiable.html#ab72224001cbb2e1b952e9ff663abff3da5739fd75d1d1803e4f58251734705f6a',1,'MantidQt::MantidWidgets::ViewNotifiable']]]
+  ['group_13',['group',['../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45',1,'NexusFile_fwd.h']]],
+  ['groupworkspaces_14',['GroupWorkspaces',['../d3/dfb/classMantidQt_1_1MantidWidgets_1_1ViewNotifiable.html#ab72224001cbb2e1b952e9ff663abff3da5739fd75d1d1803e4f58251734705f6a',1,'MantidQt::MantidWidgets::ViewNotifiable']]]
 ];

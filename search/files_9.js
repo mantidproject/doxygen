@@ -1,7 +1,7 @@
 var searchData=
 [
   ['jacobian_2ecpp_0',['Jacobian.cpp',['../dd/df8/Jacobian_8cpp.html',1,'']]],
-  ['jacobian_2eh_1',['Jacobian.h',['../da/dce/API_2inc_2MantidAPI_2Jacobian_8h.html',1,'(Global Namespace)'],['../d2/d50/CurveFitting_2inc_2MantidCurveFitting_2Jacobian_8h.html',1,'(Global Namespace)']]],
+  ['jacobian_2eh_1',['jacobian.h',['../da/dce/API_2inc_2MantidAPI_2Jacobian_8h.html',1,'(Global Namespace)'],['../d2/d50/CurveFitting_2inc_2MantidCurveFitting_2Jacobian_8h.html',1,'(Global Namespace)']]],
   ['jobtreeview_2ecpp_2',['JobTreeView.cpp',['../d8/d44/JobTreeView_8cpp.html',1,'']]],
   ['jobtreeview_2eh_3',['JobTreeView.h',['../d9/d91/JobTreeView_8h.html',1,'']]],
   ['jobtreeviewsignaladapter_2ecpp_4',['JobTreeViewSignalAdapter.cpp',['../d2/d89/JobTreeViewSignalAdapter_8cpp.html',1,'']]],

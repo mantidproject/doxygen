@@ -1,7 +1,7 @@
 var searchData=
 [
   ['_5f_5fsave_5fflags_0',['__save_flags',['../d6/d19/classMantid_1_1Kernel_1_1____save__flags.html#aeec23f7d8251a7aa89d2b4e42d56616e',1,'Mantid::Kernel::__save_flags::__save_flags(__stream_type &amp;__stream)'],['../d6/d19/classMantid_1_1Kernel_1_1____save__flags.html#a43741934112b346b8a522d1702d45e9d',1,'Mantid::Kernel::__save_flags::__save_flags(const __save_flags &amp;)']]],
-  ['_5faddhandle_1',['_addHandle',['../d4/de6/classMantid_1_1API_1_1AnalysisDataServiceObserver.html#af89ed3e8a7a35c72e3512daa085e3a03',1,'Mantid::API::AnalysisDataServiceObserver::_addHandle()'],['../db/d44/classMantidQt_1_1API_1_1WorkspaceObserver.html#a3611bd02459c60e5da7070285387c9d4',1,'MantidQt::API::WorkspaceObserver::_addHandle(Mantid::API::WorkspaceAddNotification_ptr pNf)']]],
+  ['_5faddhandle_1',['_addhandle',['../d4/de6/classMantid_1_1API_1_1AnalysisDataServiceObserver.html#af89ed3e8a7a35c72e3512daa085e3a03',1,'Mantid::API::AnalysisDataServiceObserver::_addHandle()'],['../db/d44/classMantidQt_1_1API_1_1WorkspaceObserver.html#a3611bd02459c60e5da7070285387c9d4',1,'MantidQt::API::WorkspaceObserver::_addHandle(Mantid::API::WorkspaceAddNotification_ptr pNf)']]],
   ['_5fafterreplacehandle_2',['_afterReplaceHandle',['../db/d44/classMantidQt_1_1API_1_1WorkspaceObserver.html#a89734b859d7af9617b264bea023cc509',1,'MantidQt::API::WorkspaceObserver']]],
   ['_5fclearadshandle_3',['_clearADSHandle',['../db/d44/classMantidQt_1_1API_1_1WorkspaceObserver.html#a0fb3c514ab7818951ed7953220b6db4b',1,'MantidQt::API::WorkspaceObserver']]],
   ['_5fclearhandle_4',['_clearHandle',['../d4/de6/classMantid_1_1API_1_1AnalysisDataServiceObserver.html#aa3db3a4efa602af403d87255eec04071',1,'Mantid::API::AnalysisDataServiceObserver']]],
@@ -16,7 +16,7 @@ var searchData=
   ['_5fpostdeletehandle_13',['_postDeleteHandle',['../db/d44/classMantidQt_1_1API_1_1WorkspaceObserver.html#a463c5803bd0758447224742a16f66840',1,'MantidQt::API::WorkspaceObserver']]],
   ['_5fpredeletehandle_14',['_preDeleteHandle',['../db/d44/classMantidQt_1_1API_1_1WorkspaceObserver.html#ae72a5d5c89a5e7cffd49d7f7dcbae3d2',1,'MantidQt::API::WorkspaceObserver']]],
   ['_5fprogresshandle_15',['_progressHandle',['../df/d5c/classMantid_1_1API_1_1AlgorithmObserver.html#acf3d68de42987bbf3e7f9f56f5f08603',1,'Mantid::API::AlgorithmObserver']]],
-  ['_5frenamehandle_16',['_renameHandle',['../d4/de6/classMantid_1_1API_1_1AnalysisDataServiceObserver.html#a1e0ae61c4536df92731f197c96929f31',1,'Mantid::API::AnalysisDataServiceObserver::_renameHandle()'],['../db/d44/classMantidQt_1_1API_1_1WorkspaceObserver.html#a03a641dd12f4e120f4847d409f1f69f1',1,'MantidQt::API::WorkspaceObserver::_renameHandle()']]],
+  ['_5frenamehandle_16',['_renamehandle',['../d4/de6/classMantid_1_1API_1_1AnalysisDataServiceObserver.html#a1e0ae61c4536df92731f197c96929f31',1,'Mantid::API::AnalysisDataServiceObserver::_renameHandle()'],['../db/d44/classMantidQt_1_1API_1_1WorkspaceObserver.html#a03a641dd12f4e120f4847d409f1f69f1',1,'MantidQt::API::WorkspaceObserver::_renameHandle()']]],
   ['_5freplacehandle_17',['_replaceHandle',['../d4/de6/classMantid_1_1API_1_1AnalysisDataServiceObserver.html#a9578a3fea6fcd5f7c3965f67aa20a766',1,'Mantid::API::AnalysisDataServiceObserver']]],
   ['_5fstarthandle_18',['_startHandle',['../df/d5c/classMantid_1_1API_1_1AlgorithmObserver.html#ac1cf755dda8441d8492124cf6230c1dc',1,'Mantid::API::AlgorithmObserver']]],
   ['_5fstartinghandle_19',['_startingHandle',['../df/d5c/classMantid_1_1API_1_1AlgorithmObserver.html#abc6bb05076b32c522dae56c5bb5505ba',1,'Mantid::API::AlgorithmObserver']]],

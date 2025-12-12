@@ -9,9 +9,9 @@ var searchData=
   ['offsetsworkspace_5fconst_5fsptr_6',['OffsetsWorkspace_const_sptr',['../db/d22/namespaceMantid_1_1DataObjects.html#a122e041a5487a2084cfa11c60020cac8',1,'Mantid::DataObjects']]],
   ['offsetsworkspace_5fsptr_7',['OffsetsWorkspace_sptr',['../db/d22/namespaceMantid_1_1DataObjects.html#ab969aec76e6d1951c5987ad1457d688d',1,'Mantid::DataObjects']]],
   ['onevarfun_8',['oneVarFun',['../db/d1c/namespaceMantid_1_1API_1_1MuParserUtils.html#af7e0e53b1f399969b69f46455a8dd591',1,'Mantid::API::MuParserUtils']]],
-  ['optional_5fsize_5ft_9',['optional_size_t',['../db/dc6/classMantid_1_1NeXus_1_1NexusFileIO.html#a1050d3c218de312a1f839300a0f173ba',1,'Mantid::NeXus::NexusFileIO::optional_size_t()'],['../d8/d23/namespaceMantid_1_1DataHandling.html#a1d06e1f0a0f4448e861ecaa63e74bdde',1,'Mantid::DataHandling::optional_size_t()']]],
-  ['optionalimdhistoworkspace_5fconst_5fsptr_10',['OptionalIMDHistoWorkspace_const_sptr',['../db/d5c/SmoothMD_8cpp.html#a1f1f059a8423d8dc6d1e0753cad02bbb',1,'SmoothMD.cpp']]],
-  ['optionalpath_11',['OptionalPath',['../d9/dec/namespaceMantid_1_1Kernel.html#aa1e8daf0931376d16207b00fd18eadc7',1,'Mantid::Kernel']]],
+  ['optional_5fsize_5ft_9',['optional_size_t',['../d2/de0/classMantid_1_1Nexus_1_1NexusFileIO.html#ad563ee0c5a71fd9ace351ea2af06ea61',1,'Mantid::Nexus::NexusFileIO::optional_size_t'],['../d8/d23/namespaceMantid_1_1DataHandling.html#a779e01c587ab11faec4c18ee79399f93',1,'Mantid::DataHandling::optional_size_t']]],
+  ['optionalimdhistoworkspace_5fconst_5fsptr_10',['OptionalIMDHistoWorkspace_const_sptr',['../db/d5c/SmoothMD_8cpp.html#a19bad4509006ad2dba969d92cd5e7eea',1,'SmoothMD.cpp']]],
+  ['optionalpath_11',['OptionalPath',['../d9/dec/namespaceMantid_1_1Kernel.html#a2b3bd385347286cd6ff345e151d44093',1,'Mantid::Kernel']]],
   ['ordered_5fitem_5flist_12',['ordered_item_list',['../dc/db4/classMantid_1_1Kernel_1_1MRUList.html#aec35a36bf1be48fbee3ea24254e61e63',1,'Mantid::Kernel::MRUList']]],
   ['outputbufferentry_13',['OutputBufferEntry',['../d8/de8/classMantid_1_1DataHandling_1_1SaveOpenGenieAscii.html#a1f6bc39b73db2dd82432b2512912c9b1',1,'Mantid::DataHandling::SaveOpenGenieAscii']]]
 ];

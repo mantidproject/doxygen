@@ -8,5 +8,5 @@ var searchData=
   ['gnu_5fdiag_5foff_5fsuggest_5foverride_5',['GNU_DIAG_OFF_SUGGEST_OVERRIDE',['../db/d9d/WarningSuppressions_8h.html#ac9c06f03423436c32d60a1337487a128',1,'WarningSuppressions.h']]],
   ['gnu_5fdiag_5fon_6',['GNU_DIAG_ON',['../db/d9d/WarningSuppressions_8h.html#aed13d99328252269e63ed3e5eab1bfde',1,'WarningSuppressions.h']]],
   ['gnu_5fdiag_5fon_5fsuggest_5foverride_7',['GNU_DIAG_ON_SUGGEST_OVERRIDE',['../db/d9d/WarningSuppressions_8h.html#abc3033fc01d90018adc6e83e977967c0',1,'WarningSuppressions.h']]],
-  ['gnu_5funused_5ffunction_8',['GNU_UNUSED_FUNCTION',['../db/d9d/WarningSuppressions_8h.html#a5a2bdc3823ef536a7292ae8f2a1caaa1',1,'WarningSuppressions.h']]]
+  ['gnu_5funused_8',['GNU_UNUSED',['../db/d9d/WarningSuppressions_8h.html#aa058096070cfee19e16c5f4f19aad491',1,'WarningSuppressions.h']]]
 ];

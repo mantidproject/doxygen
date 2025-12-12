@@ -828,9 +828,9 @@ var searchData=
   ['soap_5fwrite_5fxsd_5f_5fstring_825',['soap_write_xsd__string',['../da/d4c/ICat4H_8h.html#acbde309d4afcca74bf8e7aae6884b641',1,'ICat4H.h']]],
   ['spgf_5fconcat_826',['SPGF_CONCAT',['../d0/d0b/SpaceGroupFactory_8h.html#a48e0227a79e5184da1adab62426201d1',1,'SpaceGroupFactory.h']]],
   ['spgf_5fconcat_5fimpl_827',['SPGF_CONCAT_IMPL',['../d0/d0b/SpaceGroupFactory_8h.html#ae6e05c3a795d8fef1938b7183df27732',1,'SpaceGroupFactory.h']]],
-  ['str_5fcheck_828',['STR_CHECK',['../db/db6/VersionCompat_8h.html#af4f81a684ec8b50e0d89957b3b3a1420',1,'STR_CHECK():&#160;VersionCompat.h'],['../d5/da7/PythonInterface_2mantid_2api_2src_2Exports_2ITableWorkspace_8cpp.html#af4f81a684ec8b50e0d89957b3b3a1420',1,'STR_CHECK():&#160;ITableWorkspace.cpp']]],
+  ['str_5fcheck_828',['str_check',['../db/db6/VersionCompat_8h.html#af4f81a684ec8b50e0d89957b3b3a1420',1,'STR_CHECK:&#160;VersionCompat.h'],['../d5/da7/PythonInterface_2mantid_2api_2src_2Exports_2ITableWorkspace_8cpp.html#af4f81a684ec8b50e0d89957b3b3a1420',1,'STR_CHECK:&#160;ITableWorkspace.cpp']]],
   ['subscribe_5fhandler_829',['SUBSCRIBE_HANDLER',['../d5/d8d/TypeRegistry_8cpp.html#aa0cc3c7b0991a79ff35908bc94624cb7',1,'TypeRegistry.cpp']]],
-  ['success_830',['SUCCESS',['../d3/d0f/byte__rel__comp_8cpp.html#aa90cac659d18e8ef6294c7ae337f6b58',1,'SUCCESS():&#160;byte_rel_comp.cpp'],['../d0/d29/isisraw_8cpp.html#aa90cac659d18e8ef6294c7ae337f6b58',1,'SUCCESS():&#160;isisraw.cpp'],['../d5/d59/item__struct_8cpp.html#aa90cac659d18e8ef6294c7ae337f6b58',1,'SUCCESS():&#160;item_struct.cpp']]],
+  ['success_830',['success',['../d3/d0f/byte__rel__comp_8cpp.html#aa90cac659d18e8ef6294c7ae337f6b58',1,'SUCCESS:&#160;byte_rel_comp.cpp'],['../d0/d29/isisraw_8cpp.html#aa90cac659d18e8ef6294c7ae337f6b58',1,'SUCCESS:&#160;isisraw.cpp'],['../d5/d59/item__struct_8cpp.html#aa90cac659d18e8ef6294c7ae337f6b58',1,'SUCCESS:&#160;item_struct.cpp']]],
   ['swap_5fint_831',['swap_int',['../d7/dc0/vms__convert_8cpp.html#ab04b8b39362db731657214251ac36d4f',1,'vms_convert.cpp']]],
   ['swap_5fshort_832',['swap_short',['../d7/dc0/vms__convert_8cpp.html#aab846b8416614ddce85333f05b6e7b75',1,'vms_convert.cpp']]]
 ];

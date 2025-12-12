@@ -28,13 +28,12 @@ var searchData=
   ['vesuviocalculatems_25',['VesuvioCalculateMS',['../d1/d69/classMantid_1_1CurveFitting_1_1Algorithms_1_1VesuvioCalculateMS.html',1,'Mantid::CurveFitting::Algorithms']]],
   ['vesuviol1thetaresolution_26',['VesuvioL1ThetaResolution',['../d4/db3/classMantid_1_1Algorithms_1_1VesuvioL1ThetaResolution.html',1,'Mantid::Algorithms']]],
   ['vesuvioresolution_27',['VesuvioResolution',['../da/df6/classMantid_1_1CurveFitting_1_1Functions_1_1VesuvioResolution.html',1,'Mantid::CurveFitting::Functions']]],
-  ['viewnotifiable_28',['ViewNotifiable',['../d3/dfb/classMantidQt_1_1MantidWidgets_1_1ViewNotifiable.html',1,'MantidQt::MantidWidgets::ViewNotifiable'],['../d8/d55/classViewNotifiable.html',1,'ViewNotifiable']]],
+  ['viewnotifiable_28',['viewnotifiable',['../d3/dfb/classMantidQt_1_1MantidWidgets_1_1ViewNotifiable.html',1,'MantidQt::MantidWidgets::ViewNotifiable'],['../d8/d55/classViewNotifiable.html',1,'ViewNotifiable']]],
   ['visiblewhenproperty_29',['VisibleWhenProperty',['../d5/dc6/classMantid_1_1Kernel_1_1VisibleWhenProperty.html',1,'Mantid::Kernel']]],
   ['vmdbase_30',['VMDBase',['../d9/d01/classMantid_1_1Kernel_1_1VMDBase.html',1,'Mantid::Kernel']]],
   ['vmdbase_3c_20vmd_5ft_20_3e_31',['VMDBase&lt; VMD_t &gt;',['../d9/d01/classMantid_1_1Kernel_1_1VMDBase.html',1,'Mantid::Kernel']]],
   ['voidobserver_32',['VoidObserver',['../dc/d56/classVoidObserver.html',1,'']]],
   ['voigt_33',['Voigt',['../d2/d26/classMantid_1_1CurveFitting_1_1Functions_1_1Voigt.html',1,'Mantid::CurveFitting::Functions']]],
   ['vtkgeometrycachereader_34',['vtkGeometryCacheReader',['../dc/d5f/classMantid_1_1Geometry_1_1vtkGeometryCacheReader.html',1,'Mantid::Geometry']]],
-  ['vtkgeometrycachewriter_35',['vtkGeometryCacheWriter',['../d2/d51/classMantid_1_1Geometry_1_1vtkGeometryCacheWriter.html',1,'Mantid::Geometry']]],
-  ['vulcancorrectionfactor_36',['VulcanCorrectionFactor',['../d2/d89/structMantid_1_1DataHandling_1_1VulcanCorrectionFactor.html',1,'Mantid::DataHandling']]]
+  ['vtkgeometrycachewriter_35',['vtkGeometryCacheWriter',['../d2/d51/classMantid_1_1Geometry_1_1vtkGeometryCacheWriter.html',1,'Mantid::Geometry']]]
 ];
