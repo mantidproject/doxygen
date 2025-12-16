@@ -363,18 +363,21 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>          });</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    }</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="comment">// copy the data out into the correct spectrum</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="comment">// copy the data out into the correct spectrum and calculate errors</span></div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    tbb::parallel_for(<span class="keywordtype">size_t</span>(0), <a class="code hl_variable" href="../../df/d56/classMantid_1_1DataHandling_1_1AlignAndFocusPowderSlim_1_1ProcessBankSplitFullTimeTask.html#afdb55ace7e0e23669a8b0ae8b89fdf0c">m_wksps</a>.size(), [&amp;](<span class="keywordtype">size_t</span> i) {</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>      auto &amp;y_values = spectra[i]-&gt;dataY();</div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>      std::copy(y_temps[i].cbegin(), y_temps[i].cend(), y_values.begin());</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    });</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; bankName &lt;&lt; <span class="stringliteral">&quot; stop&quot;</span> &lt;&lt; timer &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    <a class="code hl_variable" href="../../df/d56/classMantid_1_1DataHandling_1_1AlignAndFocusPowderSlim_1_1ProcessBankSplitFullTimeTask.html#acdbdaf43f0bbe8d12b1ea3fa060448d8">m_progress</a>-&gt;report();</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>  }</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>}</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>      auto &amp;e_values = spectra[i]-&gt;dataE();</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>      std::transform(y_temps[i].cbegin(), y_temps[i].cend(), e_values.begin(),</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>                     [](uint32_t y) { return std::sqrt(static_cast&lt;double&gt;(y)); });</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    });</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; bankName &lt;&lt; <span class="stringliteral">&quot; stop&quot;</span> &lt;&lt; timer &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    m_progress-&gt;report();</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>  }</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>}</div>
 </div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>}; <span class="comment">// namespace Mantid::DataHandling::AlignAndFocusPowderSlim</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>}; <span class="comment">// namespace Mantid::DataHandling::AlignAndFocusPowderSlim</span></div>
 <div class="ttc" id="aH5Util_8h_html"><div class="ttname"><a href="../../d1/ddd/H5Util_8h.html">H5Util.h</a></div></div>
 <div class="ttc" id="aLogger_8h_html"><div class="ttname"><a href="../../dd/da4/Logger_8h.html">Logger.h</a></div></div>
 <div class="ttc" id="aParallelMinMax_8cpp_html_a2744a77822bccf573933c0f88835853f"><div class="ttname"><a href="../../d8/d4a/ParallelMinMax_8cpp.html#a2744a77822bccf573933c0f88835853f">maxval</a></div><div class="ttdeci">T maxval</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d4a/ParallelMinMax_8cpp_source.html#l00018">ParallelMinMax.cpp:18</a></div></div>
