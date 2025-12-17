@@ -115,7 +115,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="../../da/d42/FacilityInfo_8h.html">MantidKernel/FacilityInfo.h</a>&quot;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="../../df/d5e/PropertyManager_8h.html">MantidKernel/PropertyManager.h</a>&quot;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="../../dd/d36/PropertyManagerDataService_8h.html">MantidKernel/PropertyManagerDataService.h</a>&quot;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;Poco/Path.h&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;filesystem&gt;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
@@ -295,8 +295,8 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    }</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <span class="keywordflow">if</span> (!foundFile.empty()) {</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>      Poco::Path p(foundFile);</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>      <span class="keyword">const</span> std::string outputWSName = p.getBaseName();</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>      std::filesystem::path p(foundFile);</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>      <span class="keyword">const</span> std::string outputWSName = p.stem().string();</div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>      <span class="keyword">auto</span> loadAlg = createChildAlgorithm(m_loadAlg);</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>      loadAlg-&gt;setProperty(m_loadAlgFileProp, foundFile);</div>

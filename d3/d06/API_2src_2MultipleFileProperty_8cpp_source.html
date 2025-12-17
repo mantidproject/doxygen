@@ -113,9 +113,9 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="../../df/deb/PropertyHelper_8h.html">MantidKernel/PropertyHelper.h</a>&quot;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="../../dd/d72/VectorHelper_8h.html">MantidKernel/VectorHelper.h</a>&quot;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;Poco/Path.h&gt;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;boost/algorithm/string.hpp&gt;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;boost/regex.hpp&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;boost/algorithm/string.hpp&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;boost/regex.hpp&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;filesystem&gt;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;cctype&gt;</span></div>
@@ -370,13 +370,13 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;unresolvedFileName : flattenedAllUnresolvedFileNames) {</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    <span class="keywordflow">try</span> {</div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>      <span class="comment">// Check for an extension.</span></div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>      Poco::Path path(unresolvedFileName);</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>      <span class="keywordflow">if</span> (!path.getExtension().empty()) {</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>        defaultExt = <span class="stringliteral">&quot;.&quot;</span> + path.getExtension();</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>      std::filesystem::path path(unresolvedFileName);</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>      <span class="keywordflow">if</span> (path.has_extension()) {</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>        defaultExt = path.extension().string();</div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>      }</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    } <span class="keywordflow">catch</span> (Poco::Exception &amp;) {</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;) {</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>      <span class="comment">// Safe to ignore?  Need a better understanding of the circumstances under</span></div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>      <span class="comment">// which this throws.</span></div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    }</div>
@@ -397,10 +397,10 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>      <span class="keywordflow">try</span> {</div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>        <span class="comment">// Check for an extension.</span></div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        Poco::Path path(unresolvedFileName);</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        std::filesystem::path path(unresolvedFileName);</div>
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>        useDefaultExt = path.getExtension().empty();</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>      } <span class="keywordflow">catch</span> (Poco::Exception &amp;) {</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>        useDefaultExt = !path.has_extension();</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>      } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;) {</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>        <span class="comment">// Just shove the problematic filename straight into FileProperty and</span></div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>        <span class="comment">// see if we have any luck.</span></div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>        useDefaultExt = <span class="keyword">false</span>;</div>
@@ -495,7 +495,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="ttc" id="aVectorHelper_8h_html"><div class="ttname"><a href="../../dd/d72/VectorHelper_8h.html">VectorHelper.h</a></div></div>
 <div class="ttc" id="abyte__rel__comp_8cpp_html_aa90cac659d18e8ef6294c7ae337f6b58"><div class="ttname"><a href="../../d3/d0f/byte__rel__comp_8cpp.html#aa90cac659d18e8ef6294c7ae337f6b58">SUCCESS</a></div><div class="ttdeci">#define SUCCESS</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d0f/byte__rel__comp_8cpp_source.html#l00027">byte_rel_comp.cpp:27</a></div></div>
 <div class="ttc" id="aclassMantid_1_1API_1_1FileProperty_html"><div class="ttname"><a href="../../d8/d3b/classMantid_1_1API_1_1FileProperty.html">Mantid::API::FileProperty</a></div><div class="ttdoc">A specialized class for dealing with file properties.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d17/FileProperty_8h_source.html#l00042">FileProperty.h:42</a></div></div>
-<div class="ttc" id="aclassMantid_1_1API_1_1FileProperty_html_a3f1ddff0812018ff37ab7cd1b076bf36"><div class="ttname"><a href="../../d8/d3b/classMantid_1_1API_1_1FileProperty.html#a3f1ddff0812018ff37ab7cd1b076bf36">Mantid::API::FileProperty::setValue</a></div><div class="ttdeci">std::string setValue(const std::string &amp;propValue) override</div><div class="ttdoc">Overridden setValue method.</div><div class="ttdef"><b>Definition</b> <a href="../../df/dbe/API_2src_2FileProperty_8cpp_source.html#l00217">FileProperty.cpp:217</a></div></div>
+<div class="ttc" id="aclassMantid_1_1API_1_1FileProperty_html_a3f1ddff0812018ff37ab7cd1b076bf36"><div class="ttname"><a href="../../d8/d3b/classMantid_1_1API_1_1FileProperty.html#a3f1ddff0812018ff37ab7cd1b076bf36">Mantid::API::FileProperty::setValue</a></div><div class="ttdeci">std::string setValue(const std::string &amp;propValue) override</div><div class="ttdoc">Overridden setValue method.</div><div class="ttdef"><b>Definition</b> <a href="../../df/dbe/API_2src_2FileProperty_8cpp_source.html#l00243">FileProperty.cpp:243</a></div></div>
 <div class="ttc" id="aclassMantid_1_1API_1_1FileProperty_html_afea15d5ce8f5a4d64f12e0e3b85f5d12a5e5e3fd1d6f8494b3c42dfc989c24881"><div class="ttname"><a href="../../d8/d3b/classMantid_1_1API_1_1FileProperty.html#afea15d5ce8f5a4d64f12e0e3b85f5d12a5e5e3fd1d6f8494b3c42dfc989c24881">Mantid::API::FileProperty::OptionalLoad</a></div><div class="ttdeci">@ OptionalLoad</div><div class="ttdoc">to specify a file to read but the file doesn't have to exist</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d17/FileProperty_8h_source.html#l00053">FileProperty.h:53</a></div></div>
 <div class="ttc" id="aclassMantid_1_1API_1_1FileProperty_html_afea15d5ce8f5a4d64f12e0e3b85f5d12af9c6d2eacae5eeb024312555b31e6c37"><div class="ttname"><a href="../../d8/d3b/classMantid_1_1API_1_1FileProperty.html#afea15d5ce8f5a4d64f12e0e3b85f5d12af9c6d2eacae5eeb024312555b31e6c37">Mantid::API::FileProperty::Load</a></div><div class="ttdeci">@ Load</div><div class="ttdoc">allowed here which will be passed to the algorithm</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d17/FileProperty_8h_source.html#l00052">FileProperty.h:52</a></div></div>
 <div class="ttc" id="aclassMantid_1_1API_1_1MultipleFileProperty_html"><div class="ttname"><a href="../../d8/d84/classMantid_1_1API_1_1MultipleFileProperty.html">Mantid::API::MultipleFileProperty</a></div><div class="ttdoc">A property to allow a user to specify multiple files to load.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d8f/MultipleFileProperty_8h_source.html#l00103">MultipleFileProperty.h:103</a></div></div>

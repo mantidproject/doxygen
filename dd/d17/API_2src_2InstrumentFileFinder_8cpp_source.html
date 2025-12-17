@@ -104,286 +104,281 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="../../d5/d0d/InstrumentInfo_8h.html">MantidKernel/InstrumentInfo.h</a>&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="../../dd/da4/Logger_8h.html">MantidKernel/Logger.h</a>&quot;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;Poco/DirectoryIterator.h&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;Poco/File.h&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;Poco/Path.h&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;Poco/SAX/Attributes.h&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;Poco/SAX/ContentHandler.h&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;Poco/SAX/SAXParser.h&gt;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;boost/algorithm/string/find.hpp&gt;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;boost/regex.hpp&gt;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="../../d9/dec/namespaceMantid_1_1Kernel.html">Mantid::Kernel</a>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="../../dc/d3e/namespaceMantid_1_1Types_1_1Core.html">Mantid::Types::Core</a>;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="../../db/db7/namespacePoco_1_1XML.html">Poco::XML</a>;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><a class="code hl_class" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html">Mantid::Kernel::Logger</a> <a class="code hl_variable" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">g_log</a>(<span class="stringliteral">&quot;InstrumentFileFinder&quot;</span>);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// used to terminate SAX process</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">class </span>DummyException {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  std::string m_validFrom;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  std::string m_validTo;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  DummyException(std::string validFrom, std::string validTo)</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      : m_validFrom(<a class="code hl_namespace" href="../../d8/dcc/namespacestd.html">std</a>::move(validFrom)), m_validTo(<a class="code hl_namespace" href="../../d8/dcc/namespacestd.html">std</a>::move(validTo)) {}</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>};</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">// SAX content handler for grapping stuff quickly from IDF</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">class </span>myContentHandler : <span class="keyword">public</span> Poco::XML::ContentHandler {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">void</span> startElement(<span class="keyword">const</span> XMLString &amp; <span class="comment">/*uri*/</span>, <span class="keyword">const</span> XMLString &amp;localName, <span class="keyword">const</span> XMLString &amp; <span class="comment">/*qname*/</span>,</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                    <span class="keyword">const</span> Attributes &amp;attrList)<span class="keyword"> override </span>{</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordflow">if</span> (localName == <span class="stringliteral">&quot;instrument&quot;</span> || localName == <span class="stringliteral">&quot;parameter-file&quot;</span>) {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>      <span class="keywordflow">throw</span> DummyException(<span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(attrList.getValue(<span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;valid-from&quot;</span>)),</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                           <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(attrList.getValue(<span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;valid-to&quot;</span>)));</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  }</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordtype">void</span> endElement(<span class="keyword">const</span> XMLString &amp; <span class="comment">/*uri*/</span>, <span class="keyword">const</span> XMLString &amp; <span class="comment">/*localName*/</span>, <span class="keyword">const</span> XMLString &amp; <span class="comment">/*qname*/</span>)<span class="keyword"> override </span>{}</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keywordtype">void</span> startDocument()<span class="keyword"> override </span>{}</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordtype">void</span> endDocument()<span class="keyword"> override </span>{}</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordtype">void</span> characters(<span class="keyword">const</span> XMLChar <span class="comment">/*ch*/</span>[], <span class="keywordtype">int</span> <span class="comment">/*start*/</span>, <span class="keywordtype">int</span> <span class="comment">/*length*/</span>)<span class="keyword"> override </span>{}</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordtype">void</span> endPrefixMapping(<span class="keyword">const</span> XMLString &amp; <span class="comment">/*prefix*/</span>)<span class="keyword"> override </span>{}</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">void</span> ignorableWhitespace(<span class="keyword">const</span> XMLChar <span class="comment">/*ch*/</span>[], <span class="keywordtype">int</span> <span class="comment">/*start*/</span>, <span class="keywordtype">int</span> <span class="comment">/*length*/</span>)<span class="keyword"> override </span>{}</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordtype">void</span> processingInstruction(<span class="keyword">const</span> XMLString &amp; <span class="comment">/*target*/</span>, <span class="keyword">const</span> XMLString &amp; <span class="comment">/*data*/</span>)<span class="keyword"> override </span>{}</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keywordtype">void</span> setDocumentLocator(<span class="keyword">const</span> Locator * <span class="comment">/*loc*/</span>)<span class="keyword"> override </span>{}</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordtype">void</span> skippedEntity(<span class="keyword">const</span> XMLString &amp; <span class="comment">/*name*/</span>)<span class="keyword"> override </span>{}</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordtype">void</span> startPrefixMapping(<span class="keyword">const</span> XMLString &amp; <span class="comment">/*prefix*/</span>, <span class="keyword">const</span> XMLString &amp; <span class="comment">/*uri*/</span>)<span class="keyword"> override </span>{}</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>} <span class="comment">// namespace</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;Poco/SAX/Attributes.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;Poco/SAX/ContentHandler.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;Poco/SAX/SAXParser.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;boost/algorithm/string/find.hpp&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;boost/regex.hpp&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;filesystem&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="../../d9/dec/namespaceMantid_1_1Kernel.html">Mantid::Kernel</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="../../dc/d3e/namespaceMantid_1_1Types_1_1Core.html">Mantid::Types::Core</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="../../db/db7/namespacePoco_1_1XML.html">Poco::XML</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">namespace </span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><a class="code hl_class" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html">Mantid::Kernel::Logger</a> <a class="code hl_variable" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">g_log</a>(<span class="stringliteral">&quot;InstrumentFileFinder&quot;</span>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// used to terminate SAX process</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">class </span>DummyException {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  std::string m_validFrom;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  std::string m_validTo;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  DummyException(std::string validFrom, std::string validTo)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      : m_validFrom(<a class="code hl_namespace" href="../../d8/dcc/namespacestd.html">std</a>::move(validFrom)), m_validTo(<a class="code hl_namespace" href="../../d8/dcc/namespacestd.html">std</a>::move(validTo)) {}</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">// SAX content handler for grapping stuff quickly from IDF</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">class </span>myContentHandler : <span class="keyword">public</span> Poco::XML::ContentHandler {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordtype">void</span> startElement(<span class="keyword">const</span> XMLString &amp; <span class="comment">/*uri*/</span>, <span class="keyword">const</span> XMLString &amp;localName, <span class="keyword">const</span> XMLString &amp; <span class="comment">/*qname*/</span>,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                    <span class="keyword">const</span> Attributes &amp;attrList)<span class="keyword"> override </span>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">if</span> (localName == <span class="stringliteral">&quot;instrument&quot;</span> || localName == <span class="stringliteral">&quot;parameter-file&quot;</span>) {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      <span class="keywordflow">throw</span> DummyException(<span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(attrList.getValue(<span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;valid-from&quot;</span>)),</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                           <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(attrList.getValue(<span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;valid-to&quot;</span>)));</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordtype">void</span> endElement(<span class="keyword">const</span> XMLString &amp; <span class="comment">/*uri*/</span>, <span class="keyword">const</span> XMLString &amp; <span class="comment">/*localName*/</span>, <span class="keyword">const</span> XMLString &amp; <span class="comment">/*qname*/</span>)<span class="keyword"> override </span>{}</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordtype">void</span> startDocument()<span class="keyword"> override </span>{}</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordtype">void</span> endDocument()<span class="keyword"> override </span>{}</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keywordtype">void</span> characters(<span class="keyword">const</span> XMLChar <span class="comment">/*ch*/</span>[], <span class="keywordtype">int</span> <span class="comment">/*start*/</span>, <span class="keywordtype">int</span> <span class="comment">/*length*/</span>)<span class="keyword"> override </span>{}</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordtype">void</span> endPrefixMapping(<span class="keyword">const</span> XMLString &amp; <span class="comment">/*prefix*/</span>)<span class="keyword"> override </span>{}</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordtype">void</span> ignorableWhitespace(<span class="keyword">const</span> XMLChar <span class="comment">/*ch*/</span>[], <span class="keywordtype">int</span> <span class="comment">/*start*/</span>, <span class="keywordtype">int</span> <span class="comment">/*length*/</span>)<span class="keyword"> override </span>{}</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordtype">void</span> processingInstruction(<span class="keyword">const</span> XMLString &amp; <span class="comment">/*target*/</span>, <span class="keyword">const</span> XMLString &amp; <span class="comment">/*data*/</span>)<span class="keyword"> override </span>{}</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">void</span> setDocumentLocator(<span class="keyword">const</span> Locator * <span class="comment">/*loc*/</span>)<span class="keyword"> override </span>{}</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordtype">void</span> skippedEntity(<span class="keyword">const</span> XMLString &amp; <span class="comment">/*name*/</span>)<span class="keyword"> override </span>{}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keywordtype">void</span> startPrefixMapping(<span class="keyword">const</span> XMLString &amp; <span class="comment">/*prefix*/</span>, <span class="keyword">const</span> XMLString &amp; <span class="comment">/*uri*/</span>)<span class="keyword"> override </span>{}</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>} <span class="comment">// namespace</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d9/da0/namespaceMantid_1_1API.html">Mantid::API</a> {</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d9/da0/namespaceMantid_1_1API.html">Mantid::API</a> {</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#afc6a8d43078be2e2adce661cfec18422">   83</a></span>std::string <a class="code hl_function" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#afc6a8d43078be2e2adce661cfec18422">InstrumentFileFinder::getInstrumentFilename</a>(<span class="keyword">const</span> std::string &amp;instrumentName, <span class="keyword">const</span> std::string &amp;date) {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="keyword">const</span> std::vector&lt;std::string&gt; validFormats = {<span class="stringliteral">&quot;xml&quot;</span>, <span class="stringliteral">&quot;nxs&quot;</span>, <span class="stringliteral">&quot;hdf5&quot;</span>};</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;Looking for instrument file for &quot;</span> &lt;&lt; instrumentName &lt;&lt; <span class="stringliteral">&quot; that is valid on &#39;&quot;</span> &lt;&lt; date &lt;&lt; <span class="stringliteral">&quot;&#39;\n&quot;</span>;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="comment">// Lookup the instrument (long) name</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="keyword">const</span> std::string instrument(Kernel::ConfigService::Instance().getInstrument(instrumentName).<a class="code hl_variable" href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>());</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="comment">// Get the instrument directories for instrument file search</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;directoryNames = Kernel::ConfigService::Instance().getInstrumentDirectories();</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="comment">// matching files sorted with newest files coming first</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keyword">const</span> std::vector&lt;std::string&gt; matchingFiles =</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      <a class="code hl_function" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a4a081749886c446ce67955fef3785253">getResourceFilenames</a>(instrument + <span class="stringliteral">&quot;_Definition&quot;</span>, validFormats, directoryNames, date);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  std::string instFile;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="keywordflow">if</span> (!matchingFiles.empty()) {</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    instFile = matchingFiles[0];</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;Instrument file selected is &quot;</span> &lt;&lt; instFile &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;No instrument file found\n&quot;</span>;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  }</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keywordflow">return</span> instFile;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}</div>
+<div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#afc6a8d43078be2e2adce661cfec18422">   81</a></span>std::string <a class="code hl_function" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#afc6a8d43078be2e2adce661cfec18422">InstrumentFileFinder::getInstrumentFilename</a>(<span class="keyword">const</span> std::string &amp;instrumentName, <span class="keyword">const</span> std::string &amp;date) {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keyword">const</span> std::vector&lt;std::string&gt; validFormats = {<span class="stringliteral">&quot;xml&quot;</span>, <span class="stringliteral">&quot;nxs&quot;</span>, <span class="stringliteral">&quot;hdf5&quot;</span>};</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;Looking for instrument file for &quot;</span> &lt;&lt; instrumentName &lt;&lt; <span class="stringliteral">&quot; that is valid on &#39;&quot;</span> &lt;&lt; date &lt;&lt; <span class="stringliteral">&quot;&#39;\n&quot;</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="comment">// Lookup the instrument (long) name</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="keyword">const</span> std::string instrument(Kernel::ConfigService::Instance().getInstrument(instrumentName).<a class="code hl_variable" href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>());</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="comment">// Get the instrument directories for instrument file search</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;directoryNames = Kernel::ConfigService::Instance().getInstrumentDirectories();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="comment">// matching files sorted with newest files coming first</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keyword">const</span> std::vector&lt;std::string&gt; matchingFiles =</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      <a class="code hl_function" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a4a081749886c446ce67955fef3785253">getResourceFilenames</a>(instrument + <span class="stringliteral">&quot;_Definition&quot;</span>, validFormats, directoryNames, date);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  std::string instFile;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keywordflow">if</span> (!matchingFiles.empty()) {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    instFile = matchingFiles[0];</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;Instrument file selected is &quot;</span> &lt;&lt; instFile &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;No instrument file found\n&quot;</span>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keywordflow">return</span> instFile;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
 </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">//  directoryName must include a final &#39;/&#39;.</span></div>
-<div class="foldopen" id="foldopen00108" data-start="{" data-end="}">
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a88298e0ebe03bb9b66c5f719c817dcbe">  108</a></span>std::string <a class="code hl_function" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a88298e0ebe03bb9b66c5f719c817dcbe">InstrumentFileFinder::getParameterPath</a>(<span class="keyword">const</span> std::string &amp;instName, <span class="keyword">const</span> std::string &amp;dirHint) {</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <span class="comment">// Remove the path from the filename, some legacy callers will pass in</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="comment">// a full path rather than a filename</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  Poco::Path filePath(instName);</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <span class="keyword">const</span> std::string filename = filePath.getFileName();</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <span class="comment">// Try the hinted dir first</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keywordflow">if</span> (!dirHint.empty()) {</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keyword">const</span> std::string result = <a class="code hl_function" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#ac32dbc5ca014a86373988313362de344">lookupIPF</a>(dirHint, filename);</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordflow">if</span> (!result.empty()) {</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>      <span class="keywordflow">return</span> result;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    }</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  }</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../df/dbb/classMantid_1_1Kernel_1_1ConfigServiceImpl.html">Kernel::ConfigServiceImpl</a> &amp;configService = Kernel::ConfigService::Instance();</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  <span class="keyword">const</span> std::vector&lt;std::string&gt; directoryNames = configService.<a class="code hl_function" href="../../df/dbb/classMantid_1_1Kernel_1_1ConfigServiceImpl.html#a02e82ba2d8d707b9fec30fe8e442a424">getInstrumentDirectories</a>();</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;dirName : directoryNames) {</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="comment">// This will iterate around the directories from user -&gt;etc -&gt;install, and</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="comment">// find the first beat file</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keyword">const</span> std::string result = <a class="code hl_function" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#ac32dbc5ca014a86373988313362de344">lookupIPF</a>(dirName, filename);</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordflow">if</span> (!result.empty()) {</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>      <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;Found: &quot;</span> &lt;&lt; result &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>      <span class="keywordflow">return</span> result;</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    }</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  }</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;Found Nothing \n&quot;</span>;</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>}</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">//  directoryName must include a final &#39;/&#39;.</span></div>
+<div class="foldopen" id="foldopen00106" data-start="{" data-end="}">
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a88298e0ebe03bb9b66c5f719c817dcbe">  106</a></span>std::string <a class="code hl_function" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a88298e0ebe03bb9b66c5f719c817dcbe">InstrumentFileFinder::getParameterPath</a>(<span class="keyword">const</span> std::string &amp;instName, <span class="keyword">const</span> std::string &amp;dirHint) {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="comment">// Remove the path from the filename, some legacy callers will pass in</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  <span class="comment">// a full path rather than a filename</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  std::filesystem::path filePath(instName);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keyword">const</span> std::string filename = filePath.filename().string();</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <span class="comment">// Try the hinted dir first</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <span class="keywordflow">if</span> (!dirHint.empty()) {</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keyword">const</span> std::string result = <a class="code hl_function" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#ac32dbc5ca014a86373988313362de344">lookupIPF</a>(dirHint, filename);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordflow">if</span> (!result.empty()) {</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>      <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  }</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../df/dbb/classMantid_1_1Kernel_1_1ConfigServiceImpl.html">Kernel::ConfigServiceImpl</a> &amp;configService = Kernel::ConfigService::Instance();</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <span class="keyword">const</span> std::vector&lt;std::string&gt; directoryNames = configService.<a class="code hl_function" href="../../df/dbb/classMantid_1_1Kernel_1_1ConfigServiceImpl.html#a02e82ba2d8d707b9fec30fe8e442a424">getInstrumentDirectories</a>();</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;dirName : directoryNames) {</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="comment">// This will iterate around the directories from user -&gt;etc -&gt;install, and</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="comment">// find the first beat file</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keyword">const</span> std::string result = <a class="code hl_function" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#ac32dbc5ca014a86373988313362de344">lookupIPF</a>(dirName, filename);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keywordflow">if</span> (!result.empty()) {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>      <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;Found: &quot;</span> &lt;&lt; result &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>      <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  }</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;Found Nothing \n&quot;</span>;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>  <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>}</div>
 </div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
-<div class="foldopen" id="foldopen00139" data-start="{" data-end="}">
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#ac32dbc5ca014a86373988313362de344">  139</a></span>std::string <a class="code hl_function" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#ac32dbc5ca014a86373988313362de344">InstrumentFileFinder::lookupIPF</a>(<span class="keyword">const</span> std::string &amp;dir, std::string filename) {</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  <span class="keyword">const</span> std::string ext = <span class="stringliteral">&quot;.xml&quot;</span>;</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>  <span class="comment">// Remove .xml for example if abc.xml was passed</span></div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  boost::algorithm::ierase_all(filename, ext);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="foldopen" id="foldopen00137" data-start="{" data-end="}">
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#ac32dbc5ca014a86373988313362de344">  137</a></span>std::string <a class="code hl_function" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#ac32dbc5ca014a86373988313362de344">InstrumentFileFinder::lookupIPF</a>(<span class="keyword">const</span> std::string &amp;dir, std::string filename) {</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  <span class="keyword">const</span> std::string ext = <span class="stringliteral">&quot;.xml&quot;</span>;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  <span class="comment">// Remove .xml for example if abc.xml was passed</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  boost::algorithm::ierase_all(filename, ext);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  <span class="keyword">const</span> std::string suffixSeperator(<span class="stringliteral">&quot;_Definition&quot;</span>);</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  <span class="keyword">const</span> std::string suffixSeperator(<span class="stringliteral">&quot;_Definition&quot;</span>);</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  std::string prefix;</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  std::string suffix;</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  <span class="keywordflow">if</span> (<span class="keyword">auto</span> sepPos = boost::algorithm::ifind_first(filename, suffixSeperator)) {</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    prefix = std::string(filename.begin(), sepPos.begin());</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    suffix = std::string(sepPos.end(), filename.end());</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    prefix = filename;</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  }</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  std::string prefix;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  std::string suffix;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  <span class="keywordflow">if</span> (<span class="keyword">auto</span> sepPos = boost::algorithm::ifind_first(filename, suffixSeperator)) {</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    prefix = std::string(filename.begin(), sepPos.begin());</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    suffix = std::string(sepPos.end(), filename.end());</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    prefix = filename;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  }</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  std::filesystem::path directoryPath(dir);</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  Poco::Path directoryPath(dir);</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  directoryPath.makeDirectory();</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <span class="comment">// Assemble parameter file name</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  std::string fullPathParamIDF = (directoryPath / (prefix + <span class="stringliteral">&quot;_Parameters&quot;</span> + suffix + ext)).string();</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  <span class="comment">// Assemble parameter file name</span></div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  std::string fullPathParamIDF = directoryPath.setFileName(prefix + <span class="stringliteral">&quot;_Parameters&quot;</span> + suffix + ext).toString();</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  <span class="keywordflow">if</span> (Poco::File(fullPathParamIDF).<a class="code hl_function" href="../../d8/d23/namespaceMantid_1_1DataHandling.html#a6abf1ced1988cf157cb778482a5be4a0">exists</a>()) {</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keywordflow">return</span> fullPathParamIDF;</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  }</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  fullPathParamIDF = directoryPath.setFileName(prefix + <span class="stringliteral">&quot;_Parameters&quot;</span> + ext).toString();</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  <span class="keywordflow">if</span> (Poco::File(fullPathParamIDF).<a class="code hl_function" href="../../d8/d23/namespaceMantid_1_1DataHandling.html#a6abf1ced1988cf157cb778482a5be4a0">exists</a>()) {</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keywordflow">return</span> fullPathParamIDF;</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  }</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  <span class="keywordflow">if</span> (std::filesystem::exists(fullPathParamIDF)) {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="keywordflow">return</span> fullPathParamIDF;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  }</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  fullPathParamIDF = (directoryPath / (prefix + <span class="stringliteral">&quot;_Parameters&quot;</span> + ext)).string();</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  <span class="keywordflow">if</span> (std::filesystem::exists(fullPathParamIDF)) {</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keywordflow">return</span> fullPathParamIDF;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  }</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>}</div>
+</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>  <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>}</div>
-</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
-<div class="foldopen" id="foldopen00189" data-start="{" data-end="}">
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a4a081749886c446ce67955fef3785253">  189</a></span>std::vector&lt;std::string&gt; <a class="code hl_function" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a4a081749886c446ce67955fef3785253">InstrumentFileFinder::getResourceFilenames</a>(<span class="keyword">const</span> std::string &amp;prefix,</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                                                                    <span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;fileFormats,</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                                                                    <span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;directoryNames,</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                                                                    <span class="keyword">const</span> std::string &amp;date) {</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  <span class="keywordflow">if</span> (date.empty()) {</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="comment">// Just use the current date</span></div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;No date specified, using current date and time.\n&quot;</span>;</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="keyword">const</span> std::string now = Types::Core::DateAndTime::getCurrentTime().toISO8601String();</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="comment">// Recursively call this method, but with all parameters.</span></div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a4a081749886c446ce67955fef3785253">InstrumentFileFinder::getResourceFilenames</a>(prefix, fileFormats, directoryNames, now);</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  }</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  <span class="comment">// Join all the file formats into a single string</span></div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  std::stringstream ss;</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  ss &lt;&lt; <span class="stringliteral">&quot;(&quot;</span>;</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; fileFormats.size(); ++i) {</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="keywordflow">if</span> (i != 0)</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>      ss &lt;&lt; <span class="stringliteral">&quot;|&quot;</span>;</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    ss &lt;&lt; fileFormats[i];</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>  }</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>  ss &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  <span class="keyword">const</span> std::string allFileFormats = ss.str();</div>
+<div class="foldopen" id="foldopen00186" data-start="{" data-end="}">
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a4a081749886c446ce67955fef3785253">  186</a></span>std::vector&lt;std::string&gt; <a class="code hl_function" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a4a081749886c446ce67955fef3785253">InstrumentFileFinder::getResourceFilenames</a>(<span class="keyword">const</span> std::string &amp;prefix,</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                                                                    <span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;fileFormats,</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                                                                    <span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;directoryNames,</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                                                                    <span class="keyword">const</span> std::string &amp;date) {</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  <span class="keywordflow">if</span> (date.empty()) {</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="comment">// Just use the current date</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;No date specified, using current date and time.\n&quot;</span>;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="keyword">const</span> std::string now = Types::Core::DateAndTime::getCurrentTime().toISO8601String();</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="comment">// Recursively call this method, but with all parameters.</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a4a081749886c446ce67955fef3785253">InstrumentFileFinder::getResourceFilenames</a>(prefix, fileFormats, directoryNames, now);</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  }</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  <span class="comment">// Join all the file formats into a single string</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  std::stringstream ss;</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  ss &lt;&lt; <span class="stringliteral">&quot;(&quot;</span>;</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; fileFormats.size(); ++i) {</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keywordflow">if</span> (i != 0)</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>      ss &lt;&lt; <span class="stringliteral">&quot;|&quot;</span>;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    ss &lt;&lt; fileFormats[i];</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>  }</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  ss &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  <span class="keyword">const</span> std::string allFileFormats = ss.str();</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>  <span class="keyword">const</span> boost::regex regex(prefix + <span class="stringliteral">&quot;.*\\.&quot;</span> + allFileFormats, boost::regex_constants::icase);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  DateAndTime <a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#add740ce10e8799ef307d6d1b9d5c72b9">d</a>(date);</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>  <span class="keyword">const</span> boost::regex regex(prefix + <span class="stringliteral">&quot;.*\\.&quot;</span> + allFileFormats, boost::regex_constants::icase);</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  Poco::DirectoryIterator end_iter;</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  DateAndTime <a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#add740ce10e8799ef307d6d1b9d5c72b9">d</a>(date);</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>  DateAndTime refDate(<span class="stringliteral">&quot;1900-01-31 23:59:00&quot;</span>); <span class="comment">// used to help determine the most</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  <span class="comment">// recently starting file, if none match</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  DateAndTime refDateGoodFile(<span class="stringliteral">&quot;1900-01-31 23:59:00&quot;</span>); <span class="comment">// used to help determine the most recently</span></div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  DateAndTime refDate(<span class="stringliteral">&quot;1900-01-31 23:59:00&quot;</span>); <span class="comment">// used to help determine the most</span></div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  <span class="comment">// recently starting file, if none match</span></div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  DateAndTime refDateGoodFile(<span class="stringliteral">&quot;1900-01-31 23:59:00&quot;</span>); <span class="comment">// used to help determine the most recently</span></div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  <span class="comment">// Two files could have the same `from` date so multimap is required.</span></div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  <span class="comment">// Sort with newer dates placed at the beginning</span></div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  std::multimap&lt;DateAndTime, std::string, std::greater&lt;DateAndTime&gt;&gt; matchingFiles;</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  <span class="keywordtype">bool</span> foundFile = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  std::string mostRecentFile; <span class="comment">// path to the file with most recent &quot;valid-from&quot;</span></div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;directoryName : directoryNames) {</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <span class="comment">// Iterate over the directories from user -&gt;etc -&gt;install, and find the</span></div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <span class="comment">// first beat file</span></div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <span class="keywordflow">for</span> (Poco::DirectoryIterator dir_itr(directoryName); dir_itr != end_iter; ++dir_itr) {</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  <span class="comment">// Two files could have the same `from` date so multimap is required.</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  <span class="comment">// Sort with newer dates placed at the beginning</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  std::multimap&lt;DateAndTime, std::string, std::greater&lt;DateAndTime&gt;&gt; matchingFiles;</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>  <span class="keywordtype">bool</span> foundFile = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  std::string mostRecentFile; <span class="comment">// path to the file with most recent &quot;valid-from&quot;</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;directoryName : directoryNames) {</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    <span class="comment">// Iterate over the directories from user -&gt;etc -&gt;install, and find the</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    <span class="comment">// first beat file</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;dir_entry : std::filesystem::directory_iterator(directoryName)) {</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>      <span class="keyword">const</span> <span class="keyword">auto</span> &amp;filePath = dir_entry.path();</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>      <span class="keywordflow">if</span> (!std::filesystem::is_regular_file(filePath))</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>      <span class="keyword">const</span> <span class="keyword">auto</span> &amp;filePath = dir_itr.path();</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>      <span class="keywordflow">if</span> (!filePath.isFile())</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>      <span class="keyword">const</span> std::string &amp;l_filenamePart = filePath.getFileName();</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>      <span class="keywordflow">if</span> (regex_match(l_filenamePart, regex)) {</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        <span class="keyword">const</span> <span class="keyword">auto</span> &amp;pathName = filePath.toString();</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;Found file: &#39;&quot;</span> &lt;&lt; pathName &lt;&lt; <span class="stringliteral">&quot;&#39;\n&quot;</span>;</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        std::string validFrom, validTo;</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        <a class="code hl_function" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a2f183189fb3f59f325e70fbee38bec40">getValidFromTo</a>(pathName, validFrom, validTo);</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;File &#39;&quot;</span> &lt;&lt; pathName &lt;&lt; <span class="stringliteral">&quot; valid dates: from &#39;&quot;</span> &lt;&lt; validFrom &lt;&lt; <span class="stringliteral">&quot;&#39; to &#39;&quot;</span> &lt;&lt; validTo &lt;&lt; <span class="stringliteral">&quot;&#39;\n&quot;</span>;</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        <span class="comment">// Use default valid &quot;from&quot; and &quot;to&quot; dates if none were found.</span></div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        DateAndTime to, from;</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        <span class="keywordflow">if</span> (validFrom.length() &gt; 0)</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>          from.setFromISO8601(validFrom);</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>      <span class="keyword">const</span> std::string l_filenamePart = filePath.filename().string();</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>      <span class="keywordflow">if</span> (regex_match(l_filenamePart, regex)) {</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        <span class="keyword">const</span> std::string pathName = filePath.string();</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;Found file: &#39;&quot;</span> &lt;&lt; pathName &lt;&lt; <span class="stringliteral">&quot;&#39;\n&quot;</span>;</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        std::string validFrom, validTo;</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        <a class="code hl_function" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a2f183189fb3f59f325e70fbee38bec40">getValidFromTo</a>(pathName, validFrom, validTo);</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;File &#39;&quot;</span> &lt;&lt; pathName &lt;&lt; <span class="stringliteral">&quot; valid dates: from &#39;&quot;</span> &lt;&lt; validFrom &lt;&lt; <span class="stringliteral">&quot;&#39; to &#39;&quot;</span> &lt;&lt; validTo &lt;&lt; <span class="stringliteral">&quot;&#39;\n&quot;</span>;</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        <span class="comment">// Use default valid &quot;from&quot; and &quot;to&quot; dates if none were found.</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        DateAndTime to, from;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        <span class="keywordflow">if</span> (validFrom.length() &gt; 0)</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>          from.setFromISO8601(validFrom);</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>          from = refDate;</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        <span class="keywordflow">if</span> (validTo.length() &gt; 0)</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>          to.setFromISO8601(validTo);</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>          from = refDate;</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        <span class="keywordflow">if</span> (validTo.length() &gt; 0)</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>          to.setFromISO8601(validTo);</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>          to.setFromISO8601(<span class="stringliteral">&quot;2100-01-01T00:00:00&quot;</span>);</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        <span class="keywordflow">if</span> (from &lt;= <a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#add740ce10e8799ef307d6d1b9d5c72b9">d</a> &amp;&amp; <a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#add740ce10e8799ef307d6d1b9d5c72b9">d</a> &lt;= to) {</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>          foundFile = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>          matchingFiles.insert(std::pair&lt;DateAndTime, std::string&gt;(from, pathName));</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        }</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        <span class="comment">// Consider the most recent file in the absence of matching files</span></div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        <span class="keywordflow">if</span> (!foundFile &amp;&amp; (from &gt;= refDate)) {</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>          refDate = from;</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>          mostRecentFile = pathName;</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        }</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>      }</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    }</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  }</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>  <span class="comment">// Retrieve the file names only</span></div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  std::vector&lt;std::string&gt; pathNames;</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  <span class="keywordflow">if</span> (!matchingFiles.empty()) {</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    pathNames.reserve(matchingFiles.size());</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    std::transform(matchingFiles.begin(), matchingFiles.end(), std::back_inserter(pathNames),</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>                   [](<span class="keyword">const</span> <span class="keyword">auto</span> &amp;elem) { return elem.second; });</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    pathNames.emplace_back(std::move(mostRecentFile));</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>  }</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>  <span class="keywordflow">return</span> pathNames;</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>}</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>          to.setFromISO8601(<span class="stringliteral">&quot;2100-01-01T00:00:00&quot;</span>);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        <span class="keywordflow">if</span> (from &lt;= <a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#add740ce10e8799ef307d6d1b9d5c72b9">d</a> &amp;&amp; <a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#add740ce10e8799ef307d6d1b9d5c72b9">d</a> &lt;= to) {</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>          foundFile = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>          matchingFiles.insert(std::pair&lt;DateAndTime, std::string&gt;(from, pathName));</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        }</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        <span class="comment">// Consider the most recent file in the absence of matching files</span></div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        <span class="keywordflow">if</span> (!foundFile &amp;&amp; (from &gt;= refDate)) {</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>          refDate = from;</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>          mostRecentFile = pathName;</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        }</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>      }</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    }</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>  }</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>  <span class="comment">// Retrieve the file names only</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>  std::vector&lt;std::string&gt; pathNames;</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  <span class="keywordflow">if</span> (!matchingFiles.empty()) {</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    pathNames.reserve(matchingFiles.size());</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    std::transform(matchingFiles.begin(), matchingFiles.end(), std::back_inserter(pathNames),</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>                   [](<span class="keyword">const</span> <span class="keyword">auto</span> &amp;elem) { return elem.second; });</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    pathNames.emplace_back(std::move(mostRecentFile));</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>  }</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>  <span class="keywordflow">return</span> pathNames;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>}</div>
 </div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
-<div class="foldopen" id="foldopen00287" data-start="{" data-end="}">
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno"><a class="line" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a2f183189fb3f59f325e70fbee38bec40">  287</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a2f183189fb3f59f325e70fbee38bec40">InstrumentFileFinder::getValidFromTo</a>(<span class="keyword">const</span> std::string &amp;IDFfilename, std::string &amp;outValidFrom,</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>                                          std::string &amp;outValidTo) {</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>  SAXParser pParser;</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  <span class="comment">// Create on stack to ensure deletion. Relies on pParser also being local</span></div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>  <span class="comment">// variable.</span></div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>  myContentHandler conHand;</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>  pParser.setContentHandler(&amp;conHand);</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>  <span class="keywordflow">try</span> {</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    pParser.parse(IDFfilename);</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> DummyException &amp;e) {</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    outValidFrom = e.m_validFrom;</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    outValidTo = e.m_validTo;</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  } <span class="keywordflow">catch</span> (...) {</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    <span class="comment">// should throw some sensible here</span></div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>  }</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>}</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
+<div class="foldopen" id="foldopen00283" data-start="{" data-end="}">
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno"><a class="line" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a2f183189fb3f59f325e70fbee38bec40">  283</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a2f183189fb3f59f325e70fbee38bec40">InstrumentFileFinder::getValidFromTo</a>(<span class="keyword">const</span> std::string &amp;IDFfilename, std::string &amp;outValidFrom,</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>                                          std::string &amp;outValidTo) {</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>  SAXParser pParser;</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  <span class="comment">// Create on stack to ensure deletion. Relies on pParser also being local</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>  <span class="comment">// variable.</span></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>  myContentHandler conHand;</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>  pParser.setContentHandler(&amp;conHand);</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>  <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    pParser.parse(IDFfilename);</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> DummyException &amp;e) {</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    outValidFrom = e.m_validFrom;</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    outValidTo = e.m_validTo;</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  } <span class="keywordflow">catch</span> (...) {</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    <span class="comment">// should throw some sensible here</span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>  }</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>}</div>
 </div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>} <span class="comment">// Namespace Mantid::API</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>} <span class="comment">// Namespace Mantid::API</span></div>
 <div class="ttc" id="aAPI_2src_2Run_8cpp_html_a9b45b3e13bd9167aab02e17e08916231"><div class="ttname"><a href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">Run.cpp:60</a></div></div>
 <div class="ttc" id="aConfigService_8h_html"><div class="ttname"><a href="../../d1/dbc/ConfigService_8h.html">ConfigService.h</a></div></div>
 <div class="ttc" id="aInstrumentFileFinder_8h_html"><div class="ttname"><a href="../../da/dd3/InstrumentFileFinder_8h.html">InstrumentFileFinder.h</a></div></div>
 <div class="ttc" id="aInstrumentInfo_8h_html"><div class="ttname"><a href="../../d5/d0d/InstrumentInfo_8h.html">InstrumentInfo.h</a></div></div>
 <div class="ttc" id="aKernel_2inc_2MantidKernel_2DateAndTime_8h_html"><div class="ttname"><a href="../../d6/dd1/Kernel_2inc_2MantidKernel_2DateAndTime_8h.html">DateAndTime.h</a></div></div>
 <div class="ttc" id="aLogger_8h_html"><div class="ttname"><a href="../../dd/da4/Logger_8h.html">Logger.h</a></div></div>
-<div class="ttc" id="aclassMantid_1_1API_1_1InstrumentFileFinder_html_a2f183189fb3f59f325e70fbee38bec40"><div class="ttname"><a href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a2f183189fb3f59f325e70fbee38bec40">Mantid::API::InstrumentFileFinder::getValidFromTo</a></div><div class="ttdeci">static void getValidFromTo(const std::string &amp;IDFfilename, std::string &amp;outValidFrom, std::string &amp;outValidTo)</div><div class="ttdoc">Utility to retrieve the validity dates for the given IDF.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00287">InstrumentFileFinder.cpp:287</a></div></div>
-<div class="ttc" id="aclassMantid_1_1API_1_1InstrumentFileFinder_html_a4a081749886c446ce67955fef3785253"><div class="ttname"><a href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a4a081749886c446ce67955fef3785253">Mantid::API::InstrumentFileFinder::getResourceFilenames</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; getResourceFilenames(const std::string &amp;prefix, const std::vector&lt; std::string &gt; &amp;fileFormats, const std::vector&lt; std::string &gt; &amp;directoryNames, const std::string &amp;date)</div><div class="ttdoc">Utility to retrieve a resource file (IDF, Parameters, ..)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00189">InstrumentFileFinder.cpp:189</a></div></div>
-<div class="ttc" id="aclassMantid_1_1API_1_1InstrumentFileFinder_html_a88298e0ebe03bb9b66c5f719c817dcbe"><div class="ttname"><a href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a88298e0ebe03bb9b66c5f719c817dcbe">Mantid::API::InstrumentFileFinder::getParameterPath</a></div><div class="ttdeci">static std::string getParameterPath(const std::string &amp;instName, const std::string &amp;dirHint=&quot;&quot;)</div><div class="ttdoc">Search instrument directories for Parameter file, return full path name if found, else &quot;&quot;.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00108">InstrumentFileFinder.cpp:108</a></div></div>
-<div class="ttc" id="aclassMantid_1_1API_1_1InstrumentFileFinder_html_ac32dbc5ca014a86373988313362de344"><div class="ttname"><a href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#ac32dbc5ca014a86373988313362de344">Mantid::API::InstrumentFileFinder::lookupIPF</a></div><div class="ttdeci">static std::string lookupIPF(const std::string &amp;dir, std::string filename)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00139">InstrumentFileFinder.cpp:139</a></div></div>
-<div class="ttc" id="aclassMantid_1_1API_1_1InstrumentFileFinder_html_afc6a8d43078be2e2adce661cfec18422"><div class="ttname"><a href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#afc6a8d43078be2e2adce661cfec18422">Mantid::API::InstrumentFileFinder::getInstrumentFilename</a></div><div class="ttdeci">static std::string getInstrumentFilename(const std::string &amp;instrumentName, const std::string &amp;date=&quot;&quot;)</div><div class="ttdoc">Get the IDF using the instrument name and date.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00083">InstrumentFileFinder.cpp:83</a></div></div>
+<div class="ttc" id="aclassMantid_1_1API_1_1InstrumentFileFinder_html_a2f183189fb3f59f325e70fbee38bec40"><div class="ttname"><a href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a2f183189fb3f59f325e70fbee38bec40">Mantid::API::InstrumentFileFinder::getValidFromTo</a></div><div class="ttdeci">static void getValidFromTo(const std::string &amp;IDFfilename, std::string &amp;outValidFrom, std::string &amp;outValidTo)</div><div class="ttdoc">Utility to retrieve the validity dates for the given IDF.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00283">InstrumentFileFinder.cpp:283</a></div></div>
+<div class="ttc" id="aclassMantid_1_1API_1_1InstrumentFileFinder_html_a4a081749886c446ce67955fef3785253"><div class="ttname"><a href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a4a081749886c446ce67955fef3785253">Mantid::API::InstrumentFileFinder::getResourceFilenames</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; getResourceFilenames(const std::string &amp;prefix, const std::vector&lt; std::string &gt; &amp;fileFormats, const std::vector&lt; std::string &gt; &amp;directoryNames, const std::string &amp;date)</div><div class="ttdoc">Utility to retrieve a resource file (IDF, Parameters, ..)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00186">InstrumentFileFinder.cpp:186</a></div></div>
+<div class="ttc" id="aclassMantid_1_1API_1_1InstrumentFileFinder_html_a88298e0ebe03bb9b66c5f719c817dcbe"><div class="ttname"><a href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a88298e0ebe03bb9b66c5f719c817dcbe">Mantid::API::InstrumentFileFinder::getParameterPath</a></div><div class="ttdeci">static std::string getParameterPath(const std::string &amp;instName, const std::string &amp;dirHint=&quot;&quot;)</div><div class="ttdoc">Search instrument directories for Parameter file, return full path name if found, else &quot;&quot;.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00106">InstrumentFileFinder.cpp:106</a></div></div>
+<div class="ttc" id="aclassMantid_1_1API_1_1InstrumentFileFinder_html_ac32dbc5ca014a86373988313362de344"><div class="ttname"><a href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#ac32dbc5ca014a86373988313362de344">Mantid::API::InstrumentFileFinder::lookupIPF</a></div><div class="ttdeci">static std::string lookupIPF(const std::string &amp;dir, std::string filename)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00137">InstrumentFileFinder.cpp:137</a></div></div>
+<div class="ttc" id="aclassMantid_1_1API_1_1InstrumentFileFinder_html_afc6a8d43078be2e2adce661cfec18422"><div class="ttname"><a href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#afc6a8d43078be2e2adce661cfec18422">Mantid::API::InstrumentFileFinder::getInstrumentFilename</a></div><div class="ttdeci">static std::string getInstrumentFilename(const std::string &amp;instrumentName, const std::string &amp;date=&quot;&quot;)</div><div class="ttdoc">Get the IDF using the instrument name and date.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00081">InstrumentFileFinder.cpp:81</a></div></div>
 <div class="ttc" id="aclassMantid_1_1Kernel_1_1ConfigServiceImpl_html"><div class="ttname"><a href="../../df/dbb/classMantid_1_1Kernel_1_1ConfigServiceImpl.html">Mantid::Kernel::ConfigServiceImpl</a></div><div class="ttdoc">The ConfigService class provides a simple facade to access the Configuration functionality of the Man...</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dbc/ConfigService_8h_source.html#l00063">ConfigService.h:63</a></div></div>
 <div class="ttc" id="aclassMantid_1_1Kernel_1_1ConfigServiceImpl_html_a02e82ba2d8d707b9fec30fe8e442a424"><div class="ttname"><a href="../../df/dbb/classMantid_1_1Kernel_1_1ConfigServiceImpl.html#a02e82ba2d8d707b9fec30fe8e442a424">Mantid::Kernel::ConfigServiceImpl::getInstrumentDirectories</a></div><div class="ttdeci">const std::vector&lt; std::string &gt; &amp; getInstrumentDirectories() const</div><div class="ttdoc">Get instrument search directories.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01528">ConfigService.cpp:1528</a></div></div>
 <div class="ttc" id="aclassMantid_1_1Kernel_1_1Logger_html"><div class="ttname"><a href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html">Mantid::Kernel::Logger</a></div><div class="ttdoc">The Logger class is in charge of the publishing messages from the framework through various channels.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/da4/Logger_8h_source.html#l00051">Logger.h:51</a></div></div>
 <div class="ttc" id="aclassMantid_1_1Kernel_1_1Logger_html_a20b305765f9c40ef2d3004c0d09feb4a"><div class="ttname"><a href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">Mantid::Kernel::Logger::debug</a></div><div class="ttdeci">void debug(const std::string &amp;msg)</div><div class="ttdoc">Logs at debug level.</div><div class="ttdef"><b>Definition</b> <a href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Logger.cpp:145</a></div></div>
 <div class="ttc" id="anamespaceMantid_1_1API_html"><div class="ttname"><a href="../../d9/da0/namespaceMantid_1_1API.html">Mantid::API</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/dc6/AbsorptionCorrection_8h_source.html#l00020">AbsorptionCorrection.h:20</a></div></div>
 <div class="ttc" id="anamespaceMantid_1_1API_html_a6f6a3554a6e8ce252c08527a12021fba"><div class="ttname"><a href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a></div><div class="ttdeci">Kernel::Logger g_log(&quot;ExperimentInfo&quot;)</div><div class="ttdoc">static logger object</div></div>
-<div class="ttc" id="anamespaceMantid_1_1DataHandling_html_a6abf1ced1988cf157cb778482a5be4a0"><div class="ttname"><a href="../../d8/d23/namespaceMantid_1_1DataHandling.html#a6abf1ced1988cf157cb778482a5be4a0">Mantid::DataHandling::exists</a></div><div class="ttdeci">bool exists(Nexus::File &amp;file, const std::string &amp;name)</div></div>
 <div class="ttc" id="anamespaceMantid_1_1Geometry_html_add740ce10e8799ef307d6d1b9d5c72b9"><div class="ttname"><a href="../../dc/d67/namespaceMantid_1_1Geometry.html#add740ce10e8799ef307d6d1b9d5c72b9">Mantid::Geometry::d</a></div><div class="ttdeci">I a m d</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00673">SpaceGroupFactory.cpp:673</a></div></div>
 <div class="ttc" id="anamespaceMantid_1_1Kernel_1_1DateAndTimeHelpers_html_a84782d8d4900fd49dd71cf0f506f6be2"><div class="ttname"><a href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a></div><div class="ttdeci">Logger g_log(&quot;DateAndTime&quot;)</div></div>
 <div class="ttc" id="anamespaceMantid_1_1Kernel_html"><div class="ttname"><a href="../../d9/dec/namespaceMantid_1_1Kernel.html">Mantid::Kernel</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/d94/AnnularRingAbsorption_8h_source.html#l00015">AnnularRingAbsorption.h:15</a></div></div>
