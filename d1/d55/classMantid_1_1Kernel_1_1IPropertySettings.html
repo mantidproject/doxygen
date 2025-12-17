@@ -121,9 +121,9 @@ Inheritance diagram for Mantid::Kernel::IPropertySettings:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a98ca492391d18cea14425488696c0500" id="r_a98ca492391d18cea14425488696c0500"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d55/classMantid_1_1Kernel_1_1IPropertySettings.html#a98ca492391d18cea14425488696c0500">applyChanges</a> (const <a class="el" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html">IPropertyManager</a> *algo, const std::string &amp;currentPropName)</td></tr>
-<tr class="memdesc:a98ca492391d18cea14425488696c0500"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload this virtual function in order to modify the current property based on changes to other properties.  <br /></td></tr>
-<tr class="separator:a98ca492391d18cea14425488696c0500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac23b9d923c445b7b7bf3b8c96140028" id="r_aac23b9d923c445b7b7bf3b8c96140028"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d55/classMantid_1_1Kernel_1_1IPropertySettings.html#aac23b9d923c445b7b7bf3b8c96140028">applyChanges</a> (const <a class="el" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html">IPropertyManager</a> *algo, const std::string &amp;currentPropName) const</td></tr>
+<tr class="memdesc:aac23b9d923c445b7b7bf3b8c96140028"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload this virtual function in order to modify the current property based on changes to other properties.  <br /></td></tr>
+<tr class="separator:aac23b9d923c445b7b7bf3b8c96140028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeeda8cd8f5094bffe0e8c0374c3ef1c9" id="r_aeeda8cd8f5094bffe0e8c0374c3ef1c9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d1/d55/classMantid_1_1Kernel_1_1IPropertySettings.html">IPropertySettings</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d55/classMantid_1_1Kernel_1_1IPropertySettings.html#aeeda8cd8f5094bffe0e8c0374c3ef1c9">clone</a> () const =0</td></tr>
 <tr class="memdesc:aeeda8cd8f5094bffe0e8c0374c3ef1c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a copy of the present type of <a class="el" href="../../d1/d55/classMantid_1_1Kernel_1_1IPropertySettings.html" title="Interface for modifiers to Property&#39;s that specify if they should be enabled or visible in a GUI.">IPropertySettings</a>.  <br /></td></tr>
 <tr class="separator:aeeda8cd8f5094bffe0e8c0374c3ef1c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,8 +240,8 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a98ca492391d18cea14425488696c0500" name="a98ca492391d18cea14425488696c0500"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98ca492391d18cea14425488696c0500">&#9670;&#160;</a></span>applyChanges()</h2>
+<a id="aac23b9d923c445b7b7bf3b8c96140028" name="aac23b9d923c445b7b7bf3b8c96140028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac23b9d923c445b7b7bf3b8c96140028">&#9670;&#160;</a></span>applyChanges()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -264,7 +264,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -277,13 +277,13 @@ Protected Member Functions</h2></td></tr>
 <p>Overload this virtual function in order to modify the current property based on changes to other properties. </p>
 <dl class="section return"><dt>Returns</dt><dd>: whether or not the current property was changed. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="../../d7/d43/classMantid_1_1Kernel_1_1SetDefaultWhenProperty.html#a1939915c486a99e6311fe95479acc900">Mantid::Kernel::SetDefaultWhenProperty</a>, <a class="el" href="../../dc/d81/classMantid_1_1Kernel_1_1SetValueWhenProperty.html#a7d4f3c5d7bfe59c170f708c5e07eff98">Mantid::Kernel::SetValueWhenProperty</a>, and <a class="el" href="../../d7/d95/classMantid_1_1Algorithms_1_1MonIDPropChanger.html#a1aef6b94c76eb5fcb1933433007448f4">Mantid::Algorithms::MonIDPropChanger</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d7/d43/classMantid_1_1Kernel_1_1SetDefaultWhenProperty.html#aca6c5e37a071ace18f6bf25c84ece8a8">Mantid::Kernel::SetDefaultWhenProperty</a>, <a class="el" href="../../dc/d81/classMantid_1_1Kernel_1_1SetValueWhenProperty.html#a2d9a3e647fa51b94e5c1752564c3d392">Mantid::Kernel::SetValueWhenProperty</a>, and <a class="el" href="../../d7/d95/classMantid_1_1Algorithms_1_1MonIDPropChanger.html#a5032946666490f9c46fddc5ce067cf47">Mantid::Algorithms::MonIDPropChanger</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d36/IPropertySettings_8h_source.html#l00061">61</a> of file <a class="el" href="../../db/d36/IPropertySettings_8h_source.html">IPropertySettings.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../db/d39/System_8h_source.html#l00048">UNUSED_ARG</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/dc1/IPropertySettings_8cpp_source.html#l00018">export_IPropertySettings()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00379">MantidQt::API::AlgorithmPropertiesWidget::hideOrDisableProperties()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/dc1/IPropertySettings_8cpp_source.html#l00018">export_IPropertySettings()</a>.</p>
 
 </div>
 </div>
@@ -392,7 +392,7 @@ Protected Member Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../db/d39/System_8h_source.html#l00048">UNUSED_ARG</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/dc1/IPropertySettings_8cpp_source.html#l00018">export_IPropertySettings()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00379">MantidQt::API::AlgorithmPropertiesWidget::hideOrDisableProperties()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/dc1/IPropertySettings_8cpp_source.html#l00018">export_IPropertySettings()</a>.</p>
 
 </div>
 </div>
@@ -429,7 +429,7 @@ Protected Member Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../db/d39/System_8h_source.html#l00048">UNUSED_ARG</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d87/Kernel_2src_2PropertyManager_8cpp_source.html#l00564">Mantid::Kernel::PropertyManager::asJson()</a>, and <a class="el" href="../../de/dc1/IPropertySettings_8cpp_source.html#l00018">export_IPropertySettings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/dc1/IPropertySettings_8cpp_source.html#l00018">export_IPropertySettings()</a>.</p>
 
 </div>
 </div>
@@ -465,7 +465,7 @@ Protected Member Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../db/d39/System_8h_source.html#l00048">UNUSED_ARG</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/dc1/IPropertySettings_8cpp_source.html#l00018">export_IPropertySettings()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00379">MantidQt::API::AlgorithmPropertiesWidget::hideOrDisableProperties()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/dc1/IPropertySettings_8cpp_source.html#l00018">export_IPropertySettings()</a>.</p>
 
 </div>
 </div>

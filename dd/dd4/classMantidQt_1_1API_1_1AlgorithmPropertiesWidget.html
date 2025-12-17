@@ -93,6 +93,7 @@ $(function() {
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -134,7 +135,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3fed7c9c586288aa1041e627cb9157d4" id="r_a3fed7c9c586288aa1041e627cb9157d4"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd4/classMantidQt_1_1API_1_1AlgorithmPropertiesWidget.html#a3fed7c9c586288aa1041e627cb9157d4">getAlgorithmName</a> () const</td></tr>
 <tr class="separator:a3fed7c9c586288aa1041e627cb9157d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b6f942af52287c20e9f8a75229ceb3c" id="r_a8b6f942af52287c20e9f8a75229ceb3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd4/classMantidQt_1_1API_1_1AlgorithmPropertiesWidget.html#a8b6f942af52287c20e9f8a75229ceb3c">hideOrDisableProperties</a> (const QString &amp;changedPropName=&quot;&quot;)</td></tr>
-<tr class="memdesc:a8b6f942af52287c20e9f8a75229ceb3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Go through all the properties, and check their validators to determine whether they should be made disabled/invisible.  <br /></td></tr>
+<tr class="memdesc:a8b6f942af52287c20e9f8a75229ceb3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Go through all the properties, and check their settings in order to implement any changes dependent on upstream properties.  <br /></td></tr>
 <tr class="separator:a8b6f942af52287c20e9f8a75229ceb3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1af75858deee48ddab7789400edaa2e2" id="r_a1af75858deee48ddab7789400edaa2e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd4/classMantidQt_1_1API_1_1AlgorithmPropertiesWidget.html#a1af75858deee48ddab7789400edaa2e2">initLayout</a> ()</td></tr>
 <tr class="memdesc:a1af75858deee48ddab7789400edaa2e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the layout for this dialog.  <br /></td></tr>
@@ -151,6 +152,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af0a11358593daa9480c2f50e8039b4ff" id="r_af0a11358593daa9480c2f50e8039b4ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd4/classMantidQt_1_1API_1_1AlgorithmPropertiesWidget.html#af0a11358593daa9480c2f50e8039b4ff">setInputHistory</a> (<a class="el" href="../../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html">MantidQt::API::AbstractAlgorithmInputHistory</a> *inputHistory)</td></tr>
 <tr class="memdesc:af0a11358593daa9480c2f50e8039b4ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="../../d2/d44/classMantidQt_1_1API_1_1AlgorithmInputHistoryImpl.html">AlgorithmInputHistoryImpl</a> object holding all histories.  <br /></td></tr>
 <tr class="separator:af0a11358593daa9480c2f50e8039b4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fd0961144ee747c17b43b55b6f377f2" id="r_a6fd0961144ee747c17b43b55b6f377f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd4/classMantidQt_1_1API_1_1AlgorithmPropertiesWidget.html#a6fd0961144ee747c17b43b55b6f377f2">shareErrorsMap</a> (const <a class="el" href="../../da/da1/classQHash.html">QHash</a>&lt; QString, QString &gt; &amp;errors)</td></tr>
+<tr class="memdesc:a6fd0961144ee747c17b43b55b6f377f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Share the errors map with the parent dialog.  <br /></td></tr>
+<tr class="separator:a6fd0961144ee747c17b43b55b6f377f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec09c9cb9535b9b035acc560cce10220" id="r_aec09c9cb9535b9b035acc560cce10220"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd4/classMantidQt_1_1API_1_1AlgorithmPropertiesWidget.html#aec09c9cb9535b9b035acc560cce10220">~AlgorithmPropertiesWidget</a> () override</td></tr>
 <tr class="memdesc:aec09c9cb9535b9b035acc560cce10220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
 <tr class="separator:aec09c9cb9535b9b035acc560cce10220"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,6 +174,15 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a6df50fed2cdd14304f5e6e006d642935"><td class="mdescLeft">&#160;</td><td class="mdescRight">Viewport containing the grid of property widgets.  <br /></td></tr>
 <tr class="separator:a6df50fed2cdd14304f5e6e006d642935"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a6068e50372c67faecb1bab5f8d75c2ab" id="r_a6068e50372c67faecb1bab5f8d75c2ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd4/classMantidQt_1_1API_1_1AlgorithmPropertiesWidget.html#a6068e50372c67faecb1bab5f8d75c2ab">isWidgetEnabled</a> (const <a class="el" href="../../d1/d32/classMantid_1_1Kernel_1_1Property.html">Mantid::Kernel::Property</a> *prop) const</td></tr>
+<tr class="memdesc:a6068e50372c67faecb1bab5f8d75c2ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the control should be enabled for this property.  <br /></td></tr>
+<tr class="separator:a6068e50372c67faecb1bab5f8d75c2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88519eb50f2afe1bee0dcca2ab8ca1b0" id="r_a88519eb50f2afe1bee0dcca2ab8ca1b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd4/classMantidQt_1_1API_1_1AlgorithmPropertiesWidget.html#a88519eb50f2afe1bee0dcca2ab8ca1b0">isWidgetVisible</a> (const <a class="el" href="../../d1/d32/classMantid_1_1Kernel_1_1Property.html">Mantid::Kernel::Property</a> *prop) const</td></tr>
+<tr class="memdesc:a88519eb50f2afe1bee0dcca2ab8ca1b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute if the control should be visible for this property based on settings and error state.  <br /></td></tr>
+<tr class="separator:a88519eb50f2afe1bee0dcca2ab8ca1b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a508573f5509e6438c7c21faf8d6400f1" id="r_a508573f5509e6438c7c21faf8d6400f1"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd4/classMantidQt_1_1API_1_1AlgorithmPropertiesWidget.html#a508573f5509e6438c7c21faf8d6400f1">algorithmName</a></td></tr>
@@ -177,9 +190,9 @@ Properties</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a7d1008e3b3023907d7cb8577eb1aa508" id="r_a7d1008e3b3023907d7cb8577eb1aa508"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd4/classMantidQt_1_1API_1_1AlgorithmPropertiesWidget.html#a7d1008e3b3023907d7cb8577eb1aa508">isWidgetEnabled</a> (const <a class="el" href="../../d1/d32/classMantid_1_1Kernel_1_1Property.html">Mantid::Kernel::Property</a> *property, const QString &amp;propName) const</td></tr>
-<tr class="memdesc:a7d1008e3b3023907d7cb8577eb1aa508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the control should be enabled for this property.  <br /></td></tr>
-<tr class="separator:a7d1008e3b3023907d7cb8577eb1aa508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15f9785f17342c59ff60a571bc2d58a4" id="r_a15f9785f17342c59ff60a571bc2d58a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd4/classMantidQt_1_1API_1_1AlgorithmPropertiesWidget.html#a15f9785f17342c59ff60a571bc2d58a4">hasInputWS</a> (const std::vector&lt; <a class="el" href="../../d1/d32/classMantid_1_1Kernel_1_1Property.html">Mantid::Kernel::Property</a> * &gt; &amp;prop_list) const</td></tr>
+<tr class="memdesc:a15f9785f17342c59ff60a571bc2d58a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there is any input workspace in the properties list.  <br /></td></tr>
+<tr class="separator:a15f9785f17342c59ff60a571bc2d58a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -198,9 +211,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a36f725cceffaa551c081438da406cb56" id="r_a36f725cceffaa551c081438da406cb56"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd4/classMantidQt_1_1API_1_1AlgorithmPropertiesWidget.html#a36f725cceffaa551c081438da406cb56">m_enabled</a></td></tr>
 <tr class="memdesc:a36f725cceffaa551c081438da406cb56"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of property names that are FORCED to stay enabled.  <br /></td></tr>
 <tr class="separator:a36f725cceffaa551c081438da406cb56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a619d3851239f5d5bc307e795c7d58f46" id="r_a619d3851239f5d5bc307e795c7d58f46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/da1/classQHash.html">QHash</a>&lt; QString, QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd4/classMantidQt_1_1API_1_1AlgorithmPropertiesWidget.html#a619d3851239f5d5bc307e795c7d58f46">m_errors</a></td></tr>
-<tr class="memdesc:a619d3851239f5d5bc307e795c7d58f46"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map where key = property name; value = the error for this property (i.e.  <br /></td></tr>
-<tr class="separator:a619d3851239f5d5bc307e795c7d58f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f1677b1bf622e7629f8579fcf1d630" id="r_ab6f1677b1bf622e7629f8579fcf1d630"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/da1/classQHash.html">QHash</a>&lt; QString, QString &gt; const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd4/classMantidQt_1_1API_1_1AlgorithmPropertiesWidget.html#ab6f1677b1bf622e7629f8579fcf1d630">m_errors</a></td></tr>
+<tr class="memdesc:ab6f1677b1bf622e7629f8579fcf1d630"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map where key = property name; value = any error for this property (i.e.  <br /></td></tr>
+<tr class="separator:ab6f1677b1bf622e7629f8579fcf1d630"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3951b0dee1733908cd54a1c06919af54" id="r_a3951b0dee1733908cd54a1c06919af54"><td class="memItemLeft" align="right" valign="top">QGridLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd4/classMantidQt_1_1API_1_1AlgorithmPropertiesWidget.html#a3951b0dee1733908cd54a1c06919af54">m_inputGrid</a></td></tr>
 <tr class="memdesc:a3951b0dee1733908cd54a1c06919af54"><td class="mdescLeft">&#160;</td><td class="mdescRight">The grid widget containing the input boxes.  <br /></td></tr>
 <tr class="separator:a3951b0dee1733908cd54a1c06919af54"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,7 +247,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html">AlgorithmPropertiesWidget.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00159">initLayout()</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00088">m_inputGrid</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00069">m_scroll</a>, and <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00066">m_viewport</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00161">initLayout()</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00100">m_inputGrid</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00071">m_scroll</a>, and <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00068">m_viewport</a>.</p>
 
 </div>
 </div>
@@ -296,7 +309,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00132">132</a> of file <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html">AlgorithmPropertiesWidget.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00102">m_disabled</a>, and <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00098">m_enabled</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00116">m_disabled</a>, and <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00112">m_enabled</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d4/d0d/GenericDialog_8cpp_source.html#l00065">MantidQt::API::GenericDialog::initLayout()</a>, and <a class="el" href="../../d8/d1c/SmoothNeighboursDialog_8cpp_source.html#l00030">SmoothNeighboursDialog::initLayout()</a>.</p>
 
@@ -320,9 +333,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00095">95</a> of file <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html">AlgorithmPropertiesWidget.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00085">m_algo</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00097">m_algo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00159">initLayout()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00161">initLayout()</a>.</p>
 
 </div>
 </div>
@@ -344,7 +357,42 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00112">112</a> of file <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html">AlgorithmPropertiesWidget.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00082">m_algoName</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00094">m_algoName</a>.</p>
+
+</div>
+</div>
+<a id="a15f9785f17342c59ff60a571bc2d58a4" name="a15f9785f17342c59ff60a571bc2d58a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15f9785f17342c59ff60a571bc2d58a4">&#9670;&#160;</a></span>hasInputWS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MantidQt::API::AlgorithmPropertiesWidget::hasInputWS </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../d1/d32/classMantid_1_1Kernel_1_1Property.html">Mantid::Kernel::Property</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>prop_list</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if there is any input workspace in the properties list. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if there is any input workspace in the properties list </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00143">143</a> of file <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html">AlgorithmPropertiesWidget.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d3/d68/Property_8h_source.html#l00176">Mantid::Kernel::Property::direction()</a>, and <a class="el" href="../../d3/d68/Property_8h_source.html#l00053">Mantid::Kernel::Direction::Input</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00161">initLayout()</a>.</p>
 
 </div>
 </div>
@@ -364,19 +412,19 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Go through all the properties, and check their validators to determine whether they should be made disabled/invisible. </p>
-<p>It also shows/hides the validators. All properties' values should be set already, otherwise the validators will be running on old data. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Go through all the properties, and check their settings in order to implement any changes dependent on upstream properties. </p>
+<p>Then, once any changes have been applied, go through settings and validators again to determine whether properties will be hidden or disabled. At entry to this method: all properties' values must be current. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">changedPropName</td><td>:: name of the property that was changed </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00379">379</a> of file <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html">AlgorithmPropertiesWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00391">391</a> of file <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html">AlgorithmPropertiesWidget.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/d36/IPropertySettings_8h_source.html#l00061">Mantid::Kernel::IPropertySettings::applyChanges()</a>, <a class="el" href="../../d2/d81/PropertyWidgetFactory_8cpp_source.html#l00041">MantidQt::API::PropertyWidgetFactory::createWidget()</a>, <a class="el" href="../../dc/dd8/IndexPeaks_8cpp_source.html#l00136">error</a>, <a class="el" href="../../df/de0/Kernel_2src_2Property_8cpp_source.html#l00109">Mantid::Kernel::Property::getSettings()</a>, <a class="el" href="../../db/d36/IPropertySettings_8h_source.html#l00050">Mantid::Kernel::IPropertySettings::isConditionChanged()</a>, <a class="el" href="../../db/d36/IPropertySettings_8h_source.html#l00043">Mantid::Kernel::IPropertySettings::isVisible()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00344">isWidgetEnabled()</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00085">m_algo</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00095">m_errors</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00060">m_propWidgets</a>, <a class="el" href="../../df/de0/Kernel_2src_2Property_8cpp_source.html#l00061">Mantid::Kernel::Property::name()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00280">propertyChanged()</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/d81/PropertyWidgetFactory_8cpp_source.html#l00041">MantidQt::API::PropertyWidgetFactory::createWidget()</a>, <a class="el" href="../../df/de0/Kernel_2src_2Property_8cpp_source.html#l00113">Mantid::Kernel::Property::getSettings()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00345">isWidgetEnabled()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00369">isWidgetVisible()</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00097">m_algo</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00062">m_propWidgets</a>, <a class="el" href="../../df/de0/Kernel_2src_2Property_8cpp_source.html#l00063">Mantid::Kernel::Property::name()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00282">propertyChanged()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d0d/GenericDialog_8cpp_source.html#l00065">MantidQt::API::GenericDialog::initLayout()</a>, <a class="el" href="../../d8/d1c/SmoothNeighboursDialog_8cpp_source.html#l00030">SmoothNeighboursDialog::initLayout()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00280">propertyChanged()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d0d/GenericDialog_8cpp_source.html#l00065">MantidQt::API::GenericDialog::initLayout()</a>, <a class="el" href="../../d8/d1c/SmoothNeighboursDialog_8cpp_source.html#l00030">SmoothNeighboursDialog::initLayout()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00282">propertyChanged()</a>.</p>
 
 </div>
 </div>
@@ -397,16 +445,16 @@ Private Attributes</h2></td></tr>
 
 <p>Create the layout for this dialog. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00159">159</a> of file <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html">AlgorithmPropertiesWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00161">161</a> of file <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html">AlgorithmPropertiesWidget.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dd9/PropertyWidget_8cpp_source.html#l00478">MantidQt::API::PropertyWidget::addReplaceWSButton()</a>, <a class="el" href="../../d2/d81/PropertyWidgetFactory_8cpp_source.html#l00041">MantidQt::API::PropertyWidgetFactory::createWidget()</a>, <a class="el" href="../../dc/dd8/IndexPeaks_8cpp_source.html#l00136">error</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00095">getAlgorithm()</a>, <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00139">MantidQt::API::haveInputWS()</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00082">m_algoName</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00091">m_currentGrid</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00063">m_groupWidgets</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00088">m_inputGrid</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00105">m_inputHistory</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00060">m_propWidgets</a>, <a class="el" href="../../d3/d68/Property_8h_source.html#l00054">Mantid::Kernel::Direction::Output</a>, <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00065">MantidQt::API::AbstractAlgorithmInputHistory::previousInput()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00280">propertyChanged()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00295">replaceWSClicked()</a>, <a class="el" href="../../d1/dd9/PropertyWidget_8cpp_source.html#l00505">MantidQt::API::PropertyWidget::setError()</a>, <a class="el" href="../../d1/dd9/PropertyWidget_8cpp_source.html#l00316">MantidQt::API::PropertyWidget::setPrevious_isDynamicDefault()</a>, and <a class="el" href="../../d1/dd9/PropertyWidget_8cpp_source.html#l00291">MantidQt::API::PropertyWidget::setPreviousValue()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dd9/PropertyWidget_8cpp_source.html#l00478">MantidQt::API::PropertyWidget::addReplaceWSButton()</a>, <a class="el" href="../../d2/d81/PropertyWidgetFactory_8cpp_source.html#l00041">MantidQt::API::PropertyWidgetFactory::createWidget()</a>, <a class="el" href="../../dc/dd8/IndexPeaks_8cpp_source.html#l00136">error</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00095">getAlgorithm()</a>, <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00143">hasInputWS()</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00094">m_algoName</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00103">m_currentGrid</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00065">m_groupWidgets</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00100">m_inputGrid</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00119">m_inputHistory</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00062">m_propWidgets</a>, <a class="el" href="../../d3/d68/Property_8h_source.html#l00054">Mantid::Kernel::Direction::Output</a>, <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00065">MantidQt::API::AbstractAlgorithmInputHistory::previousInput()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00282">propertyChanged()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00297">replaceWSClicked()</a>, <a class="el" href="../../d1/dd9/PropertyWidget_8cpp_source.html#l00505">MantidQt::API::PropertyWidget::setError()</a>, <a class="el" href="../../d1/dd9/PropertyWidget_8cpp_source.html#l00316">MantidQt::API::PropertyWidget::setPrevious_isDynamicDefault()</a>, and <a class="el" href="../../d1/dd9/PropertyWidget_8cpp_source.html#l00291">MantidQt::API::PropertyWidget::setPreviousValue()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00040">AlgorithmPropertiesWidget()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00101">setAlgorithm()</a>.</p>
 
 </div>
 </div>
-<a id="a7d1008e3b3023907d7cb8577eb1aa508" name="a7d1008e3b3023907d7cb8577eb1aa508"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d1008e3b3023907d7cb8577eb1aa508">&#9670;&#160;</a></span>isWidgetEnabled()</h2>
+<a id="a6068e50372c67faecb1bab5f8d75c2ab" name="a6068e50372c67faecb1bab5f8d75c2ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6068e50372c67faecb1bab5f8d75c2ab">&#9670;&#160;</a></span>isWidgetEnabled()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -418,23 +466,13 @@ Private Attributes</h2></td></tr>
           <td class="memname">bool MantidQt::API::AlgorithmPropertiesWidget::isWidgetEnabled </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d1/d32/classMantid_1_1Kernel_1_1Property.html">Mantid::Kernel::Property</a> *&#160;</td>
-          <td class="paramname"><em>property</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>propName</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramname"><em>prop</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -442,18 +480,57 @@ Private Attributes</h2></td></tr>
 <p>Check if the control should be enabled for this property. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">property</td><td>:: the property that allows to check for the settings. </td></tr>
-    <tr><td class="paramname">propName</td><td>:: The name of the property </td></tr>
+    <tr><td class="paramname">prop</td><td>:: the property to check </td></tr>
   </table>
   </dd>
 </dl>
-<p>The control is disabled if (1) It is contained in the disabled list or (2) A user passed a value into the dialog</p>
+<p>The control is disabled if (1) It is contained in the disabled list or (2) the property's settings chain indicates it should be disabled.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00344">344</a> of file <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html">AlgorithmPropertiesWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00345">345</a> of file <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html">AlgorithmPropertiesWidget.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/de0/Kernel_2src_2Property_8cpp_source.html#l00109">Mantid::Kernel::Property::getSettings()</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00085">m_algo</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00102">m_disabled</a>, and <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00098">m_enabled</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00097">m_algo</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00116">m_disabled</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00112">m_enabled</a>, and <a class="el" href="../../df/de0/Kernel_2src_2Property_8cpp_source.html#l00063">Mantid::Kernel::Property::name()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00379">hideOrDisableProperties()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00391">hideOrDisableProperties()</a>.</p>
+
+</div>
+</div>
+<a id="a88519eb50f2afe1bee0dcca2ab8ca1b0" name="a88519eb50f2afe1bee0dcca2ab8ca1b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88519eb50f2afe1bee0dcca2ab8ca1b0">&#9670;&#160;</a></span>isWidgetVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MantidQt::API::AlgorithmPropertiesWidget::isWidgetVisible </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d32/classMantid_1_1Kernel_1_1Property.html">Mantid::Kernel::Property</a> *&#160;</td>
+          <td class="paramname"><em>prop</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compute if the control should be visible for this property based on settings and error state. </p>
+<p>WARNING: the GUI itself may override this visibility setting (e.g. if a parent widget is hidden). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prop</td><td>:: the property that allows to check for the settings. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00369">369</a> of file <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html">AlgorithmPropertiesWidget.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00097">m_algo</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00109">m_errors</a>, and <a class="el" href="../../df/de0/Kernel_2src_2Property_8cpp_source.html#l00063">Mantid::Kernel::Property::name()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00391">hideOrDisableProperties()</a>.</p>
 
 </div>
 </div>
@@ -490,11 +567,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00280">280</a> of file <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html">AlgorithmPropertiesWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00282">282</a> of file <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html">AlgorithmPropertiesWidget.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00379">hideOrDisableProperties()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00391">hideOrDisableProperties()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00379">hideOrDisableProperties()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00159">initLayout()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00391">hideOrDisableProperties()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00161">initLayout()</a>.</p>
 
 </div>
 </div>
@@ -531,11 +608,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00295">295</a> of file <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html">AlgorithmPropertiesWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00297">297</a> of file <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html">AlgorithmPropertiesWidget.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/d68/Property_8h_source.html#l00177">Mantid::Kernel::Property::direction()</a>, <a class="el" href="../../da/d49/classMantidQt_1_1API_1_1PropertyWidget.html#a26b0472ab9b2a149f648eaa6a4954c71">MantidQt::API::PropertyWidget::getValue()</a>, <a class="el" href="../../d3/d68/Property_8h_source.html#l00053">Mantid::Kernel::Direction::Input</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00284">MantidQt::API::isCalledInputWorkspaceOrLHSWorkspace()</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00060">m_propWidgets</a>, <a class="el" href="../../d1/dd9/PropertyWidget_8cpp_source.html#l00270">MantidQt::API::PropertyWidget::setValue()</a>, <a class="el" href="../../d1/dd9/PropertyWidget_8cpp_source.html#l00405">MantidQt::API::PropertyWidget::userEditedProperty()</a>, and <a class="el" href="../../d1/d32/classMantid_1_1Kernel_1_1Property.html#ae89a523a4082248ef6119d751d385c08">Mantid::Kernel::Property::value()</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d68/Property_8h_source.html#l00176">Mantid::Kernel::Property::direction()</a>, <a class="el" href="../../da/d49/classMantidQt_1_1API_1_1PropertyWidget.html#a26b0472ab9b2a149f648eaa6a4954c71">MantidQt::API::PropertyWidget::getValue()</a>, <a class="el" href="../../d3/d68/Property_8h_source.html#l00053">Mantid::Kernel::Direction::Input</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00286">MantidQt::API::isCalledInputWorkspaceOrLHSWorkspace()</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00062">m_propWidgets</a>, <a class="el" href="../../d1/dd9/PropertyWidget_8cpp_source.html#l00270">MantidQt::API::PropertyWidget::setValue()</a>, <a class="el" href="../../d1/dd9/PropertyWidget_8cpp_source.html#l00405">MantidQt::API::PropertyWidget::userEditedProperty()</a>, and <a class="el" href="../../d1/d32/classMantid_1_1Kernel_1_1Property.html#ae89a523a4082248ef6119d751d385c08">Mantid::Kernel::Property::value()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00159">initLayout()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00161">initLayout()</a>.</p>
 
 </div>
 </div>
@@ -556,9 +633,9 @@ Private Attributes</h2></td></tr>
 
 <p>When closing or changing algorithm, this saves the input history to QSettings. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00456">456</a> of file <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html">AlgorithmPropertiesWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00451">451</a> of file <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html">AlgorithmPropertiesWidget.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d6f/PropertyWidget_8h_source.html#l00096">MantidQt::API::PropertyWidget::getProperty()</a>, <a class="el" href="../../da/d49/classMantidQt_1_1API_1_1PropertyWidget.html#a26b0472ab9b2a149f648eaa6a4954c71">MantidQt::API::PropertyWidget::getValue()</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00082">m_algoName</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00105">m_inputHistory</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00060">m_propWidgets</a>, <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00048">MantidQt::API::AbstractAlgorithmInputHistory::storeNewValue()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d6f/PropertyWidget_8h_source.html#l00096">MantidQt::API::PropertyWidget::getProperty()</a>, <a class="el" href="../../da/d49/classMantidQt_1_1API_1_1PropertyWidget.html#a26b0472ab9b2a149f648eaa6a4954c71">MantidQt::API::PropertyWidget::getValue()</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00094">m_algoName</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00119">m_inputHistory</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00062">m_propWidgets</a>, <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00048">MantidQt::API::AbstractAlgorithmInputHistory::storeNewValue()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00101">setAlgorithm()</a>.</p>
 
@@ -591,7 +668,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00101">101</a> of file <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html">AlgorithmPropertiesWidget.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00159">initLayout()</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00085">m_algo</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00082">m_algoName</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00456">saveInput()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00161">initLayout()</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00097">m_algo</a>, <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00094">m_algoName</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00451">saveInput()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d4/d0d/GenericDialog_8cpp_source.html#l00065">MantidQt::API::GenericDialog::initLayout()</a>, <a class="el" href="../../d8/d1c/SmoothNeighboursDialog_8cpp_source.html#l00030">SmoothNeighboursDialog::initLayout()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00117">setAlgorithmName()</a>.</p>
 
@@ -623,7 +700,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00117">117</a> of file <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html">AlgorithmPropertiesWidget.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00082">m_algoName</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00101">setAlgorithm()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00094">m_algoName</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00101">setAlgorithm()</a>.</p>
 
 </div>
 </div>
@@ -654,7 +731,33 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00089">89</a> of file <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html">AlgorithmPropertiesWidget.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00105">m_inputHistory</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00119">m_inputHistory</a>.</p>
+
+</div>
+</div>
+<a id="a6fd0961144ee747c17b43b55b6f377f2" name="a6fd0961144ee747c17b43b55b6f377f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fd0961144ee747c17b43b55b6f377f2">&#9670;&#160;</a></span>shareErrorsMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MantidQt::API::AlgorithmPropertiesWidget::shareErrorsMap </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/da1/classQHash.html">QHash</a>&lt; QString, QString &gt; &amp;&#160;</td>
+          <td class="paramname"><em>errors</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Share the errors map with the parent dialog. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00139">139</a> of file <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html">AlgorithmPropertiesWidget.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00109">m_errors</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d0d/GenericDialog_8cpp_source.html#l00065">MantidQt::API::GenericDialog::initLayout()</a>.</p>
 
 </div>
 </div>
@@ -681,9 +784,9 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer to the algorithm to view. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00085">85</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00097">97</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00095">getAlgorithm()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00379">hideOrDisableProperties()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00344">isWidgetEnabled()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00101">setAlgorithm()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00095">getAlgorithm()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00391">hideOrDisableProperties()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00345">isWidgetEnabled()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00369">isWidgetVisible()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00101">setAlgorithm()</a>.</p>
 
 </div>
 </div>
@@ -709,9 +812,9 @@ Private Attributes</h2></td></tr>
 
 <p>Chosen algorithm name. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00082">82</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00094">94</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00112">getAlgorithmName()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00159">initLayout()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00456">saveInput()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00101">setAlgorithm()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00117">setAlgorithmName()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00112">getAlgorithmName()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00161">initLayout()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00451">saveInput()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00101">setAlgorithm()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00117">setAlgorithmName()</a>.</p>
 
 </div>
 </div>
@@ -737,9 +840,9 @@ Private Attributes</h2></td></tr>
 
 <p>The current grid widget for sub-boxes. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00091">91</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00103">103</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00159">initLayout()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00161">initLayout()</a>.</p>
 
 </div>
 </div>
@@ -766,9 +869,9 @@ Private Attributes</h2></td></tr>
 <p>A list of property names that are FORCED to stay disabled. </p>
 <p>e.g. when callid AlgorithmNameDialog() </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00102">102</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00116">116</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00132">addEnabledAndDisableLists()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00344">isWidgetEnabled()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00132">addEnabledAndDisableLists()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00345">isWidgetEnabled()</a>.</p>
 
 </div>
 </div>
@@ -794,14 +897,14 @@ Private Attributes</h2></td></tr>
 
 <p>A list of property names that are FORCED to stay enabled. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00098">98</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00112">112</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00132">addEnabledAndDisableLists()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00344">isWidgetEnabled()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00132">addEnabledAndDisableLists()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00345">isWidgetEnabled()</a>.</p>
 
 </div>
 </div>
-<a id="a619d3851239f5d5bc307e795c7d58f46" name="a619d3851239f5d5bc307e795c7d58f46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a619d3851239f5d5bc307e795c7d58f46">&#9670;&#160;</a></span>m_errors</h2>
+<a id="ab6f1677b1bf622e7629f8579fcf1d630" name="ab6f1677b1bf622e7629f8579fcf1d630"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6f1677b1bf622e7629f8579fcf1d630">&#9670;&#160;</a></span>m_errors</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -810,7 +913,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../da/da1/classQHash.html">QHash</a>&lt;QString, QString&gt; MantidQt::API::AlgorithmPropertiesWidget::m_errors</td>
+          <td class="memname"><a class="el" href="../../da/da1/classQHash.html">QHash</a>&lt;QString, QString&gt; const* MantidQt::API::AlgorithmPropertiesWidget::m_errors</td>
         </tr>
       </table>
   </td>
@@ -820,12 +923,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>A map where key = property name; value = the error for this property (i.e. </p>
+<p>A map where key = property name; value = any error for this property (i.e. </p>
 <p>it is not valid). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00095">95</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00109">109</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00379">hideOrDisableProperties()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00369">isWidgetVisible()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00139">shareErrorsMap()</a>.</p>
 
 </div>
 </div>
@@ -843,9 +946,9 @@ Private Attributes</h2></td></tr>
 
 <p>Mapping between group and it's dynamically created widget. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00063">63</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00065">65</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00159">initLayout()</a>, and <a class="el" href="../../d8/d1c/SmoothNeighboursDialog_8cpp_source.html#l00069">SmoothNeighboursDialog::inputWorkspaceChanged()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00161">initLayout()</a>, and <a class="el" href="../../d8/d1c/SmoothNeighboursDialog_8cpp_source.html#l00069">SmoothNeighboursDialog::inputWorkspaceChanged()</a>.</p>
 
 </div>
 </div>
@@ -871,9 +974,9 @@ Private Attributes</h2></td></tr>
 
 <p>The grid widget containing the input boxes. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00088">88</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00100">100</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00040">AlgorithmPropertiesWidget()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00159">initLayout()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00040">AlgorithmPropertiesWidget()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00161">initLayout()</a>.</p>
 
 </div>
 </div>
@@ -899,9 +1002,9 @@ Private Attributes</h2></td></tr>
 
 <p>History of inputs to the algorithm. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00105">105</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00119">119</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00159">initLayout()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00456">saveInput()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00089">setInputHistory()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00161">initLayout()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00451">saveInput()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00089">setInputHistory()</a>.</p>
 
 </div>
 </div>
@@ -919,9 +1022,9 @@ Private Attributes</h2></td></tr>
 
 <p>Each dynamically created <a class="el" href="../../da/d49/classMantidQt_1_1API_1_1PropertyWidget.html" title="Base class for widgets that will set Mantid::Kernel::Property* types.">PropertyWidget</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00060">60</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00062">62</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d0d/GenericDialog_8cpp_source.html#l00148">MantidQt::API::GenericDialog::accept()</a>, <a class="el" href="../../d8/d1c/SmoothNeighboursDialog_8cpp_source.html#l00110">SmoothNeighboursDialog::accept()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00379">hideOrDisableProperties()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00159">initLayout()</a>, <a class="el" href="../../d4/d0d/GenericDialog_8cpp_source.html#l00065">MantidQt::API::GenericDialog::initLayout()</a>, <a class="el" href="../../d8/d1c/SmoothNeighboursDialog_8cpp_source.html#l00030">SmoothNeighboursDialog::initLayout()</a>, <a class="el" href="../../d4/d0d/GenericDialog_8cpp_source.html#l00135">MantidQt::API::GenericDialog::parseInput()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00295">replaceWSClicked()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00456">saveInput()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d0d/GenericDialog_8cpp_source.html#l00151">MantidQt::API::GenericDialog::accept()</a>, <a class="el" href="../../d8/d1c/SmoothNeighboursDialog_8cpp_source.html#l00110">SmoothNeighboursDialog::accept()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00391">hideOrDisableProperties()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00161">initLayout()</a>, <a class="el" href="../../d4/d0d/GenericDialog_8cpp_source.html#l00065">MantidQt::API::GenericDialog::initLayout()</a>, <a class="el" href="../../d8/d1c/SmoothNeighboursDialog_8cpp_source.html#l00030">SmoothNeighboursDialog::initLayout()</a>, <a class="el" href="../../d4/d0d/GenericDialog_8cpp_source.html#l00138">MantidQt::API::GenericDialog::parseInput()</a>, <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00297">replaceWSClicked()</a>, and <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00451">saveInput()</a>.</p>
 
 </div>
 </div>
@@ -939,7 +1042,7 @@ Private Attributes</h2></td></tr>
 
 <p>Scroll area containing the viewport. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00069">69</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00071">71</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00040">AlgorithmPropertiesWidget()</a>, and <a class="el" href="../../d4/d0d/GenericDialog_8cpp_source.html#l00065">MantidQt::API::GenericDialog::initLayout()</a>.</p>
 
@@ -959,7 +1062,7 @@ Private Attributes</h2></td></tr>
 
 <p>Viewport containing the grid of property widgets. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00066">66</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html#l00068">68</a> of file <a class="el" href="../../d5/d5d/AlgorithmPropertiesWidget_8h_source.html">AlgorithmPropertiesWidget.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00040">AlgorithmPropertiesWidget()</a>, and <a class="el" href="../../d4/d0d/GenericDialog_8cpp_source.html#l00065">MantidQt::API::GenericDialog::initLayout()</a>.</p>
 

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['s_0',['s',['../dc/d3b/structMantid_1_1CurveFitting_1_1NLLS_1_1get__svd__J__work.html#acb33544a1d762bd5d89fc9b3ff1b09bb',1,'Mantid::CurveFitting::NLLS::get_svd_J_work::S'],['../da/d0d/structsgl__limits__struct.html#af8ac3f80664698905167b3713880540d',1,'sgl_limits_struct::s']]],
+  ['s_0',['s',['../da/d0d/structsgl__limits__struct.html#af8ac3f80664698905167b3713880540d',1,'sgl_limits_struct::s'],['../dc/d3b/structMantid_1_1CurveFitting_1_1NLLS_1_1get__svd__J__work.html#acb33544a1d762bd5d89fc9b3ff1b09bb',1,'Mantid::CurveFitting::NLLS::get_svd_J_work::S']]],
   ['s1_1',['s1',['../d2/d38/structQuadraticCoefficients.html#a5a41b8d00349c7e98324e81f96ed36b3',1,'QuadraticCoefficients']]],
   ['s2_2',['s2',['../d2/d38/structQuadraticCoefficients.html#a4dd61050ccc173958ee21ac228df8b94',1,'QuadraticCoefficients']]],
   ['s_5fconversionfactors_3',['s_conversionFactors',['../da/d13/classMantid_1_1Kernel_1_1Unit.html#ad43e3df728318712b2b106e7b03e85e8',1,'Mantid::Kernel::Unit']]],
@@ -163,7 +163,7 @@ var searchData=
   ['scheduler_160',['scheduler',['../d4/d5f/classMantid_1_1DataHandling_1_1LoadBankFromDiskTask.html#a52003846efc2e857c380cf8299a89648',1,'Mantid::DataHandling::LoadBankFromDiskTask']]],
   ['sclength_161',['sclength',['../d4/df6/structMantid_1_1CurveFitting_1_1Algorithms_1_1VesuvioCalculateMS_1_1ComptonNeutronAtom.html#aea79336d3abd81deb668fde5b09732c9',1,'Mantid::CurveFitting::Algorithms::VesuvioCalculateMS::ComptonNeutronAtom']]],
   ['searchtext_162',['searchText',['../d3/d53/structMantidQt_1_1API_1_1FindFilesSearchParameters.html#aee6ce0ab6287f9d7a727d32897372cd9',1,'MantidQt::API::FindFilesSearchParameters']]],
-  ['second_163',['second',['../d0/d18/classMantid_1_1Kernel_1_1Units_1_1Symbol.html#a3a13784babc51b4c5893f5878c55146f',1,'Mantid::Kernel::Units::Symbol::Second'],['../d5/de8/classMantid_1_1Triple.html#a7a82cb142e3fddb03e5fe058cacef9bc',1,'Mantid::Triple::second'],['../dc/d10/classMantid_1_1DTriple.html#ab3c3cd3027e17b22530115b034079332',1,'Mantid::DTriple::second']]],
+  ['second_163',['second',['../d5/de8/classMantid_1_1Triple.html#a7a82cb142e3fddb03e5fe058cacef9bc',1,'Mantid::Triple::second'],['../dc/d10/classMantid_1_1DTriple.html#ab3c3cd3027e17b22530115b034079332',1,'Mantid::DTriple::second'],['../d0/d18/classMantid_1_1Kernel_1_1Units_1_1Symbol.html#a3a13784babc51b4c5893f5878c55146f',1,'Mantid::Kernel::Units::Symbol::Second']]],
   ['second_5fargument_5ftype_164',['second_argument_type',['../da/d18/MaskDetectorsIf_8cpp.html#ac83a645241ab963c46cf52d880f7036e',1,'MaskDetectorsIf.cpp']]],
   ['secondaryflightpath_165',['secondaryflightpath',['../d3/deb/classMantid_1_1DataHandling_1_1DetParameters.html#ad8c5d95d46bf112e8d0dba1d6f762fcf',1,'Mantid::DataHandling::DetParameters::secondaryFlightPath'],['../dc/da8/classMantid_1_1DataHandling_1_1FindDetectorsPar.html#a1a29323041d5a4c1b26c4020bbf7f5e8',1,'Mantid::DataHandling::FindDetectorsPar::secondaryFlightpath']]],
   ['seconds_166',['seconds',['../d4/d8a/structMantid_1_1DataHandling_1_1Pulse.html#aef4695a9dddfca20c7c5fff6f73b05b1',1,'Mantid::DataHandling::Pulse']]],

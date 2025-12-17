@@ -747,6 +747,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa8b0f8c1b9417f9d8e2ae6700ef92bfb" id="r_aa8b0f8c1b9417f9d8e2ae6700ef92bfb"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html#aa8b0f8c1b9417f9d8e2ae6700ef92bfb">getPropertyValue</a> (const std::string &amp;<a class="el" href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>) const =0</td></tr>
 <tr class="memdesc:aa8b0f8c1b9417f9d8e2ae6700ef92bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of a property as a string.  <br /></td></tr>
 <tr class="separator:aa8b0f8c1b9417f9d8e2ae6700ef92bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea12d695ad321c5f12ce19aea4d741f5" id="r_aea12d695ad321c5f12ce19aea4d741f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html#aea12d695ad321c5f12ce19aea4d741f5">isPropertyEnabled</a> (const std::string &amp;<a class="el" href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>) const</td></tr>
+<tr class="memdesc:aea12d695ad321c5f12ce19aea4d741f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if a given property should be enabled.  <br /></td></tr>
+<tr class="separator:aea12d695ad321c5f12ce19aea4d741f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ef05fb9a3d4c13af7e082f9723a45a4" id="r_a2ef05fb9a3d4c13af7e082f9723a45a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html#a2ef05fb9a3d4c13af7e082f9723a45a4">isPropertyVisible</a> (const std::string &amp;<a class="el" href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>) const</td></tr>
+<tr class="memdesc:a2ef05fb9a3d4c13af7e082f9723a45a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if a given property should be visible.  <br /></td></tr>
+<tr class="separator:a2ef05fb9a3d4c13af7e082f9723a45a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab23ce57230194905951649620d5539c1" id="r_ab23ce57230194905951649620d5539c1"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html#ab23ce57230194905951649620d5539c1">propertyCount</a> () const =0</td></tr>
 <tr class="memdesc:ab23ce57230194905951649620d5539c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of properties under management.  <br /></td></tr>
 <tr class="separator:ab23ce57230194905951649620d5539c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -784,8 +790,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4c204bf670ccb346ad40de4cf00afd4e" id="r_a4c204bf670ccb346ad40de4cf00afd4e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html#a4c204bf670ccb346ad40de4cf00afd4e">setPropertyOrdinal</a> (const int &amp;<a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, const std::string &amp;<a class="el" href="../../d5/d0b/FitMW_8cpp.html#aee90379adb0307effb138f4871edbc5c">value</a>)=0</td></tr>
 <tr class="memdesc:a4c204bf670ccb346ad40de4cf00afd4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value of a property by an index.  <br /></td></tr>
 <tr class="separator:a4c204bf670ccb346ad40de4cf00afd4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49288002ca70819f3d42034e50ac3d39" id="r_a49288002ca70819f3d42034e50ac3d39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html#a49288002ca70819f3d42034e50ac3d39">setPropertySettings</a> (const std::string &amp;<a class="el" href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>, std::unique_ptr&lt; <a class="el" href="../../d1/d55/classMantid_1_1Kernel_1_1IPropertySettings.html">IPropertySettings</a> &gt; settings)</td></tr>
-<tr class="separator:a49288002ca70819f3d42034e50ac3d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3e5fd27eba90232b61cb6b467217446" id="r_ad3e5fd27eba90232b61cb6b467217446"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html#ad3e5fd27eba90232b61cb6b467217446">setPropertySettings</a> (const std::string &amp;<a class="el" href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>, std::unique_ptr&lt; <a class="el" href="../../d1/d55/classMantid_1_1Kernel_1_1IPropertySettings.html">IPropertySettings</a> const &gt; settings)</td></tr>
+<tr class="memdesc:ad3e5fd27eba90232b61cb6b467217446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a PropertySettings instance to the chain of settings for a given property.  <br /></td></tr>
+<tr class="separator:ad3e5fd27eba90232b61cb6b467217446"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a209c34c779d2bfb2b2db333a1af6632d" id="r_a209c34c779d2bfb2b2db333a1af6632d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html#a209c34c779d2bfb2b2db333a1af6632d">setPropertyValue</a> (const std::string &amp;<a class="el" href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>, const std::string &amp;<a class="el" href="../../d5/d0b/FitMW_8cpp.html#aee90379adb0307effb138f4871edbc5c">value</a>)=0</td></tr>
 <tr class="memdesc:a209c34c779d2bfb2b2db333a1af6632d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets property value from a string.  <br /></td></tr>
 <tr class="separator:a209c34c779d2bfb2b2db333a1af6632d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -915,7 +922,7 @@ Based on the Gaudi class PropertyMgr (see <a href="http://proj-gaudi.web.cern.ch
 
 <p>Reimplemented in <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a3d156cdd74de2f7d97a2b425f34edad8">Mantid::API::Algorithm</a>, <a class="el" href="../../d4/deb/classMantid_1_1Kernel_1_1PropertyManagerOwner.html#a0d98d6a4be61f15e4b2e68a06ae218e0">Mantid::Kernel::PropertyManagerOwner</a>, <a class="el" href="../../d6/d3a/classMantid_1_1Geometry_1_1BraggScattererInCrystalStructure.html#a0270535593f008a6534adb3dc0094ccd">Mantid::Geometry::BraggScattererInCrystalStructure</a>, <a class="el" href="../../d8/d62/classMantid_1_1Geometry_1_1CompositeBraggScatterer.html#a50bec3e9bd3ccd2425641e19b1226051">Mantid::Geometry::CompositeBraggScatterer</a>, and <a class="el" href="../../dc/dd2/classMantid_1_1CurveFitting_1_1IFittingAlgorithm.html#a914bdd2a81a1afc64c57983b78cee923">Mantid::CurveFitting::IFittingAlgorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00363">363</a> of file <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html">IPropertyManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00370">370</a> of file <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html">IPropertyManager.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/d87/Kernel_2src_2PropertyManager_8cpp_source.html#l00484">Mantid::Kernel::PropertyManager::setPropertyOrdinal()</a>, <a class="el" href="../../d6/d87/Kernel_2src_2PropertyManager_8cpp_source.html#l00446">Mantid::Kernel::PropertyManager::setPropertyValue()</a>, and <a class="el" href="../../d6/d87/Kernel_2src_2PropertyManager_8cpp_source.html#l00464">Mantid::Kernel::PropertyManager::setPropertyValueFromJson()</a>.</p>
 
@@ -1581,7 +1588,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00448">448</a> of file <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html">IPropertyManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00455">455</a> of file <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html">IPropertyManager.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
@@ -1639,7 +1646,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00433">433</a> of file <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html">IPropertyManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00440">440</a> of file <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html">IPropertyManager.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
@@ -1713,7 +1720,7 @@ template&lt;typename T &gt; </div>
 
 <p>Reimplemented in <a class="el" href="../../d5/d64/classMantid_1_1Kernel_1_1PropertyManager.html#aa1176ba701b0887c251cc07cce72d483">Mantid::Kernel::PropertyManager</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00337">337</a> of file <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html">IPropertyManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00344">344</a> of file <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html">IPropertyManager.h</a>.</p>
 
 </div>
 </div>
@@ -1967,7 +1974,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00416">Mantid::Kernel::IPropertyManager::TypedValue::operator Matrix&lt; T &gt;()</a>, <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00414">Mantid::Kernel::IPropertyManager::TypedValue::operator std::shared_ptr&lt; const T &gt;()</a>, <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00412">Mantid::Kernel::IPropertyManager::TypedValue::operator std::shared_ptr&lt; T &gt;()</a>, <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00408">Mantid::Kernel::IPropertyManager::TypedValue::operator std::vector&lt; std::vector&lt; T &gt; &gt;()</a>, and <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00406">Mantid::Kernel::IPropertyManager::TypedValue::operator std::vector&lt; T &gt;()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00423">Mantid::Kernel::IPropertyManager::TypedValue::operator Matrix&lt; T &gt;()</a>, <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00421">Mantid::Kernel::IPropertyManager::TypedValue::operator std::shared_ptr&lt; const T &gt;()</a>, <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00419">Mantid::Kernel::IPropertyManager::TypedValue::operator std::shared_ptr&lt; T &gt;()</a>, <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00415">Mantid::Kernel::IPropertyManager::TypedValue::operator std::vector&lt; std::vector&lt; T &gt; &gt;()</a>, and <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00413">Mantid::Kernel::IPropertyManager::TypedValue::operator std::vector&lt; T &gt;()</a>.</p>
 
 </div>
 </div>
@@ -2032,6 +2039,50 @@ template&lt;&gt; </div>
 <p class="definition">Definition at line <a class="el" href="../../d8/d96/Kernel_2src_2PropertyManagerProperty_8cpp_source.html#l00147">147</a> of file <a class="el" href="../../d8/d96/Kernel_2src_2PropertyManagerProperty_8cpp_source.html">PropertyManagerProperty.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html#a8662c28c6cf608ed4a3731bd3831f9ef">getPointerToProperty()</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
+
+</div>
+</div>
+<a id="aea12d695ad321c5f12ce19aea4d741f5" name="aea12d695ad321c5f12ce19aea4d741f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea12d695ad321c5f12ce19aea4d741f5">&#9670;&#160;</a></span>isPropertyEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mantid::Kernel::IPropertyManager::isPropertyEnabled </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test if a given property should be enabled. </p>
+
+<p class="reference">Referenced by <a class="el" href="../../d6/d87/Kernel_2src_2PropertyManager_8cpp_source.html#l00564">Mantid::Kernel::PropertyManager::asJson()</a>, and <a class="el" href="../../dd/dcb/PythonInterface_2mantid_2kernel_2src_2Exports_2IPropertyManager_8cpp_source.html#l00165">export_IPropertyManager()</a>.</p>
+
+</div>
+</div>
+<a id="a2ef05fb9a3d4c13af7e082f9723a45a4" name="a2ef05fb9a3d4c13af7e082f9723a45a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ef05fb9a3d4c13af7e082f9723a45a4">&#9670;&#160;</a></span>isPropertyVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mantid::Kernel::IPropertyManager::isPropertyVisible </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test if a given property should be visible. </p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/dcb/PythonInterface_2mantid_2kernel_2src_2Exports_2IPropertyManager_8cpp_source.html#l00165">export_IPropertyManager()</a>.</p>
 
 </div>
 </div>
@@ -2563,9 +2614,9 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00328">328</a> of file <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html">IPropertyManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00335">335</a> of file <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html">IPropertyManager.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../d3/d68/Property_8h_source.html#l00196">Mantid::Kernel::Property::setGroup()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../d3/d68/Property_8h_source.html#l00195">Mantid::Kernel::Property::setGroup()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/dcb/PythonInterface_2mantid_2kernel_2src_2Exports_2IPropertyManager_8cpp_source.html#l00165">export_IPropertyManager()</a>, <a class="el" href="../../d0/da6/BraggScatterer_8cpp_source.html#l00062">Mantid::Geometry::BraggScatterer::exposePropertyToComposite()</a>, <a class="el" href="../../dd/d08/LoadIsawSpectrum_8cpp_source.html#l00227">Mantid::Crystal::LoadIsawSpectrum::getInstrument3WaysInit()</a>, <a class="el" href="../../da/d1c/CalculateCountRate_8cpp_source.html#l00057">Mantid::Algorithms::CalculateCountRate::init()</a>, <a class="el" href="../../db/d2b/CreateGroupingWorkspace_8cpp_source.html#l00260">Mantid::Algorithms::CreateGroupingWorkspace::init()</a>, <a class="el" href="../../db/d10/CreateSampleWorkspace_8cpp_source.html#l00066">Mantid::Algorithms::CreateSampleWorkspace::init()</a>, <a class="el" href="../../d6/dd3/DetectorDiagnostic_8cpp_source.html#l00045">Mantid::Algorithms::DetectorDiagnostic::init()</a>, <a class="el" href="../../d1/d77/FilterEvents_8cpp_source.html#l00064">Mantid::Algorithms::FilterEvents::init()</a>, <a class="el" href="../../d3/d01/FitPeaks_8cpp_source.html#l00269">Mantid::Algorithms::FitPeaks::init()</a>, <a class="el" href="../../db/d01/PDCalibration_8cpp_source.html#l00194">Mantid::Algorithms::PDCalibration::init()</a>, <a class="el" href="../../d2/d0d/PDFFourierTransform_8cpp_source.html#l00064">Mantid::Algorithms::PDFFourierTransform::init()</a>, <a class="el" href="../../de/d7a/PDFFourierTransform2_8cpp_source.html#l00071">Mantid::Algorithms::PDFFourierTransform2::init()</a>, <a class="el" href="../../db/dec/DepolarizedAnalyserTransmission_8cpp_source.html#l00079">Mantid::Algorithms::DepolarizedAnalyserTransmission::init()</a>, <a class="el" href="../../db/d4f/HeliumAnalyserEfficiency_8cpp_source.html#l00194">Mantid::Algorithms::HeliumAnalyserEfficiency::init()</a>, <a class="el" href="../../d1/d43/PolarizationEfficienciesWildes_8cpp_source.html#l00071">Mantid::Algorithms::PolarizationEfficienciesWildes::init()</a>, <a class="el" href="../../da/deb/RadiusSum_8cpp_source.html#l00048">Mantid::Algorithms::RadiusSum::init()</a>, <a class="el" href="../../d9/dd8/SmoothNeighbours_8cpp_source.html#l00063">Mantid::Algorithms::SmoothNeighbours::init()</a>, <a class="el" href="../../d7/dee/FilterPeaks_8cpp_source.html#l00069">Mantid::Crystal::FilterPeaks::init()</a>, <a class="el" href="../../d4/dee/FindSXPeaks_8cpp_source.html#l00049">Mantid::Crystal::FindSXPeaks::init()</a>, <a class="el" href="../../d9/d85/OptimizeCrystalPlacement_8cpp_source.html#l00073">Mantid::Crystal::OptimizeCrystalPlacement::init()</a>, <a class="el" href="../../dd/d62/PeakIntensityVsRadius_8cpp_source.html#l00043">Mantid::Crystal::PeakIntensityVsRadius::init()</a>, <a class="el" href="../../dc/d95/SCDCalibratePanels_8cpp_source.html#l00440">Mantid::Crystal::SCDCalibratePanels::init()</a>, <a class="el" href="../../d8/d18/VesuvioCalculateMS_8cpp_source.html#l00061">Mantid::CurveFitting::Algorithms::VesuvioCalculateMS::init()</a>, <a class="el" href="../../dc/d30/AlignAndFocusPowderSlim_8cpp_source.html#l00139">Mantid::DataHandling::AlignAndFocusPowderSlim::AlignAndFocusPowderSlim::init()</a>, <a class="el" href="../../d7/d59/CreateChunkingFromInstrument_8cpp_source.html#l00075">Mantid::DataHandling::CreateChunkingFromInstrument::init()</a>, <a class="el" href="../../dd/d0e/LoadBBY_8cpp_source.html#l00111">Mantid::DataHandling::LoadBBY::init()</a>, <a class="el" href="../../d3/d1c/LoadBBY2_8cpp_source.html#l00171">Mantid::DataHandling::LoadBBY2::init()</a>, <a class="el" href="../../d8/dd3/LoadCSNSNexus_8cpp_source.html#l00046">Mantid::DataHandling::LoadCSNSNexus::init()</a>, <a class="el" href="../../d5/d68/LoadDiffCal_8cpp_source.html#l00086">Mantid::DataHandling::LoadDiffCal::init()</a>, <a class="el" href="../../de/dfb/LoadEventNexus_8cpp_source.html#l00108">Mantid::DataHandling::LoadEventNexus::init()</a>, <a class="el" href="../../dc/d3d/LoadEventPreNexus2_8cpp_source.html#l00241">Mantid::DataHandling::LoadEventPreNexus2::init()</a>, <a class="el" href="../../df/d03/LoadPLN_8cpp_source.html#l00448">Mantid::DataHandling::LoadPLN::init()</a>, <a class="el" href="../../dc/db9/LoadSampleEnvironment_8cpp_source.html#l00048">Mantid::DataHandling::LoadSampleEnvironment::init()</a>, <a class="el" href="../../d9/d17/PatchBBY_8cpp_source.html#l00089">Mantid::DataHandling::PatchBBY::init()</a>, <a class="el" href="../../d0/d35/SetSampleMaterial_8cpp_source.html#l00040">Mantid::DataHandling::SetSampleMaterial::init()</a>, <a class="el" href="../../d0/dde/BaseConvertToDiffractionMDWorkspace_8cpp_source.html#l00043">Mantid::MDAlgorithms::BaseConvertToDiffractionMDWorkspace::init()</a>, <a class="el" href="../../dc/d6b/BinMD_8cpp_source.html#l00045">Mantid::MDAlgorithms::BinMD::init()</a>, <a class="el" href="../../d2/df1/ConvertToDiffractionMDWorkspace_8cpp_source.html#l00061">Mantid::MDAlgorithms::ConvertToDiffractionMDWorkspace::init()</a>, <a class="el" href="../../d8/d64/IntegratePeaksMD2_8cpp_source.html#l00062">Mantid::MDAlgorithms::IntegratePeaksMD2::init()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00086">Mantid::MDAlgorithms::MDNorm::init()</a>, <a class="el" href="../../d5/d10/SetupEQSANSReduction_8cpp_source.html#l00034">Mantid::WorkflowAlgorithms::SetupEQSANSReduction::init()</a>, <a class="el" href="../../d6/d35/SetupHFIRReduction_8cpp_source.html#l00031">Mantid::WorkflowAlgorithms::SetupHFIRReduction::init()</a>, <a class="el" href="../../d6/d32/BoxControllerSettingsAlgorithm_8cpp_source.html#l00029">Mantid::API::BoxControllerSettingsAlgorithm::initBoxControllerProps()</a>, <a class="el" href="../../d0/dc1/SlicingAlgorithm_8cpp_source.html#l00039">Mantid::MDAlgorithms::SlicingAlgorithm::initSlicingProps()</a>, and <a class="el" href="../../d0/da6/BraggScatterer_8cpp_source.html#l00067">Mantid::Geometry::BraggScatterer::unexposePropertyFromComposite()</a>.</p>
 
@@ -2611,8 +2662,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a49288002ca70819f3d42034e50ac3d39" name="a49288002ca70819f3d42034e50ac3d39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49288002ca70819f3d42034e50ac3d39">&#9670;&#160;</a></span>setPropertySettings()</h2>
+<a id="ad3e5fd27eba90232b61cb6b467217446" name="ad3e5fd27eba90232b61cb6b467217446"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3e5fd27eba90232b61cb6b467217446">&#9670;&#160;</a></span>setPropertySettings()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2626,7 +2677,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="../../d1/d55/classMantid_1_1Kernel_1_1IPropertySettings.html">IPropertySettings</a> &gt;&#160;</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="../../d1/d55/classMantid_1_1Kernel_1_1IPropertySettings.html">IPropertySettings</a> const &gt;&#160;</td>
           <td class="paramname"><em>settings</em>&#160;</td>
         </tr>
         <tr>
@@ -2636,6 +2687,8 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Add a PropertySettings instance to the chain of settings for a given property. </p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d6c/AddAbsorptionWeightedPathLengths_8cpp_source.html#l00048">Mantid::Algorithms::AddAbsorptionWeightedPathLengths::init()</a>, <a class="el" href="../../d0/dbb/CalculateFlatBackground_8cpp_source.html#l00039">Mantid::Algorithms::CalculateFlatBackground::init()</a>, <a class="el" href="../../d3/dcf/CopySample_8cpp_source.html#l00033">Mantid::Algorithms::CopySample::init()</a>, <a class="el" href="../../d6/dd3/DetectorDiagnostic_8cpp_source.html#l00045">Mantid::Algorithms::DetectorDiagnostic::init()</a>, <a class="el" href="../../d4/d17/FFT_8cpp_source.html#l00042">Mantid::Algorithms::FFT::init()</a>, <a class="el" href="../../d1/d77/FilterEvents_8cpp_source.html#l00064">Mantid::Algorithms::FilterEvents::init()</a>, <a class="el" href="../../d9/ddb/GenerateEventsFilter_8cpp_source.html#l00046">Mantid::Algorithms::GenerateEventsFilter::init()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00046">Mantid::Algorithms::GetAllEi::init()</a>, <a class="el" href="../../d7/d66/GetEiMonDet3_8cpp_source.html#l00092">Mantid::Algorithms::GetEiMonDet3::init()</a>, <a class="el" href="../../d7/dd0/NormaliseToMonitor_8cpp_source.html#l00162">Mantid::Algorithms::NormaliseToMonitor::init()</a>, <a class="el" href="../../de/d7a/PDFFourierTransform2_8cpp_source.html#l00071">Mantid::Algorithms::PDFFourierTransform2::init()</a>, <a class="el" href="../../d1/d43/PolarizationEfficienciesWildes_8cpp_source.html#l00071">Mantid::Algorithms::PolarizationEfficienciesWildes::init()</a>, <a class="el" href="../../d9/d43/PolarizationEfficiencyCor_8cpp_source.html#l00077">Mantid::Algorithms::PolarizationEfficiencyCor::init()</a>, <a class="el" href="../../da/deb/RadiusSum_8cpp_source.html#l00048">Mantid::Algorithms::RadiusSum::init()</a>, <a class="el" href="../../d9/d44/RemoveLowResTOF_8cpp_source.html#l00049">Mantid::Algorithms::RemoveLowResTOF::init()</a>, <a class="el" href="../../d8/d44/ResetNegatives_8cpp_source.html#l00033">Mantid::Algorithms::ResetNegatives::init()</a>, <a class="el" href="../../d5/d67/SassenaFFT_8cpp_source.html#l00041">Mantid::Algorithms::SassenaFFT::init()</a>, <a class="el" href="../../d0/d66/SetUncertainties_8cpp_source.html#l00079">Mantid::Algorithms::SetUncertainties::init()</a>, <a class="el" href="../../d9/dd8/SmoothNeighbours_8cpp_source.html#l00063">Mantid::Algorithms::SmoothNeighbours::init()</a>, <a class="el" href="../../d9/dec/Stitch_8cpp_source.html#l00233">Mantid::Algorithms::Stitch::init()</a>, <a class="el" href="../../d4/dd2/SumOverlappingTubes_8cpp_source.html#l00044">Mantid::Algorithms::SumOverlappingTubes::init()</a>, <a class="el" href="../../de/d81/SumSpectra_8cpp_source.html#l00103">Mantid::Algorithms::SumSpectra::init()</a>, <a class="el" href="../../d1/df2/CombinePeaksWorkspaces_8cpp_source.html#l00034">Mantid::Crystal::CombinePeaksWorkspaces::init()</a>, <a class="el" href="../../d5/dae/FindClusterFaces_8cpp_source.html#l00257">Mantid::Crystal::FindClusterFaces::init()</a>, <a class="el" href="../../d4/dee/FindSXPeaks_8cpp_source.html#l00049">Mantid::Crystal::FindSXPeaks::init()</a>, <a class="el" href="../../d9/d85/OptimizeCrystalPlacement_8cpp_source.html#l00073">Mantid::Crystal::OptimizeCrystalPlacement::init()</a>, <a class="el" href="../../dd/d24/PeaksInRegion_8cpp_source.html#l00035">Mantid::Crystal::PeaksInRegion::init()</a>, <a class="el" href="../../d3/d08/PredictPeaks_8cpp_source.html#l00052">Mantid::Crystal::PredictPeaks::init()</a>, <a class="el" href="../../dc/de8/PredictSatellitePeaks_8cpp_source.html#l00046">Mantid::Crystal::PredictSatellitePeaks::init()</a>, <a class="el" href="../../d6/d4e/SetGoniometer_8cpp_source.html#l00038">Mantid::Crystal::SetGoniometer::init()</a>, <a class="el" href="../../dd/d22/LeBailFit_8cpp_source.html#l00074">Mantid::CurveFitting::Algorithms::LeBailFit::init()</a>, <a class="el" href="../../db/d69/ProcessBackground_8cpp_source.html#l00057">Mantid::CurveFitting::Functions::ProcessBackground::init()</a>, <a class="el" href="../../d6/d1a/ApplyDiffCal_8cpp_source.html#l00047">Mantid::DataHandling::ApplyDiffCal::init()</a>, <a class="el" href="../../dd/dc1/LoadAscii2_8cpp_source.html#l00775">Mantid::DataHandling::LoadAscii2::init()</a>, <a class="el" href="../../de/dfb/LoadEventNexus_8cpp_source.html#l00108">Mantid::DataHandling::LoadEventNexus::init()</a>, <a class="el" href="../../dc/d3d/LoadEventPreNexus2_8cpp_source.html#l00241">Mantid::DataHandling::LoadEventPreNexus2::init()</a>, <a class="el" href="../../d4/d19/LoadILLPolarizedDiffraction_8cpp_source.html#l00086">Mantid::DataHandling::LoadILLPolarizedDiffraction::init()</a>, <a class="el" href="../../d4/dab/LoadPreNexus_8cpp_source.html#l00071">Mantid::DataHandling::LoadPreNexus::init()</a>, <a class="el" href="../../dc/db9/LoadSampleEnvironment_8cpp_source.html#l00048">Mantid::DataHandling::LoadSampleEnvironment::init()</a>, <a class="el" href="../../d5/d01/MaskDetectors_8cpp_source.html#l00054">Mantid::DataHandling::MaskDetectors::init()</a>, <a class="el" href="../../d0/d89/SaveAscii_8cpp_source.html#l00034">Mantid::DataHandling::SaveAscii::init()</a>, <a class="el" href="../../d0/db4/SaveAscii2_8cpp_source.html#l00044">Mantid::DataHandling::SaveAscii2::init()</a>, <a class="el" href="../../d9/d22/SaveGSS_8cpp_source.html#l00111">Mantid::DataHandling::SaveGSS::init()</a>, <a class="el" href="../../d2/dc4/SaveNexusProcessed_8cpp_source.html#l00110">Mantid::DataHandling::SaveNexusProcessed::init()</a>, <a class="el" href="../../d0/d35/SetSampleMaterial_8cpp_source.html#l00040">Mantid::DataHandling::SetSampleMaterial::init()</a>, <a class="el" href="../../d0/dde/BaseConvertToDiffractionMDWorkspace_8cpp_source.html#l00043">Mantid::MDAlgorithms::BaseConvertToDiffractionMDWorkspace::init()</a>, <a class="el" href="../../d9/dd3/ConvertToMDMinMaxGlobal_8cpp_source.html#l00046">Mantid::MDAlgorithms::ConvertToMDMinMaxGlobal::init()</a>, <a class="el" href="../../d2/dc3/ConvertToMDParent_8cpp_source.html#l00034">Mantid::MDAlgorithms::ConvertToMDParent::init()</a>, <a class="el" href="../../dc/d3a/FindPeaksMD_8cpp_source.html#l00115">Mantid::MDAlgorithms::FindPeaksMD::init()</a>, <a class="el" href="../../d8/d64/IntegratePeaksMD2_8cpp_source.html#l00062">Mantid::MDAlgorithms::IntegratePeaksMD2::init()</a>, <a class="el" href="../../dc/d8b/LoadMD_8cpp_source.html#l00080">Mantid::MDAlgorithms::LoadMD::init()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00086">Mantid::MDAlgorithms::MDNorm::init()</a>, <a class="el" href="../../d9/de7/QueryMDWorkspace_8cpp_source.html#l00066">Mantid::MDAlgorithms::QueryMDWorkspace::init()</a>, <a class="el" href="../../d1/d7a/ThresholdMD_8cpp_source.html#l00044">Mantid::MDAlgorithms::ThresholdMD::init()</a>, <a class="el" href="../../d5/d10/SetupEQSANSReduction_8cpp_source.html#l00034">Mantid::WorkflowAlgorithms::SetupEQSANSReduction::init()</a>, <a class="el" href="../../d6/d35/SetupHFIRReduction_8cpp_source.html#l00031">Mantid::WorkflowAlgorithms::SetupHFIRReduction::init()</a>, and <a class="el" href="../../d0/dc1/SlicingAlgorithm_8cpp_source.html#l00039">Mantid::MDAlgorithms::SlicingAlgorithm::initSlicingProps()</a>.</p>
 
@@ -2797,7 +2850,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00470">470</a> of file <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html">IPropertyManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00477">477</a> of file <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html">IPropertyManager.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
@@ -2861,7 +2914,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00488">488</a> of file <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html">IPropertyManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00495">495</a> of file <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html">IPropertyManager.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../dc/dd8/IndexPeaks_8cpp_source.html#l00136">error</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
@@ -2925,7 +2978,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00508">508</a> of file <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html">IPropertyManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00515">515</a> of file <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html">IPropertyManager.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../dc/dd8/IndexPeaks_8cpp_source.html#l00136">error</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
