@@ -152,7 +152,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keyword">const</span> <span class="keyword">auto</span> &amp;detInfo = inputWS-&gt;detectorInfo();</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keyword">const</span> <span class="keyword">auto</span> &amp;detIds = detInfo.detectorIDs();</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; detInfo.size(); ++i) {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">if</span> ((inputWSIsSpecial &amp;&amp; inputMaskWS-&gt;isMasked(detIds[i])) || detInfo.isMasked(i)) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">if</span> (detInfo.isMasked(i) || (inputWSIsSpecial &amp;&amp; inputMaskWS-&gt;isMasked(detIds[i]))) {</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      <a class="code hl_variable" href="../../dd/d65/LoadNexusProcessed_8cpp.html#abb468043d6d6ebda2d1d6d7deabdfc89">detectorList</a>.emplace_back(detIds[i]);</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  }</div>
@@ -186,7 +186,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="ttc" id="aArrayProperty_8h_html"><div class="ttname"><a href="../../df/da4/ArrayProperty_8h.html">ArrayProperty.h</a></div></div>
 <div class="ttc" id="aDetectorInfo_8h_html"><div class="ttname"><a href="../../d7/d30/DetectorInfo_8h.html">DetectorInfo.h</a></div></div>
 <div class="ttc" id="aExtractMask_8h_html"><div class="ttname"><a href="../../d2/d36/ExtractMask_8h.html">ExtractMask.h</a></div></div>
-<div class="ttc" id="aLoadNexusProcessed_8cpp_html_abb468043d6d6ebda2d1d6d7deabdfc89"><div class="ttname"><a href="../../dd/d65/LoadNexusProcessed_8cpp.html#abb468043d6d6ebda2d1d6d7deabdfc89">detectorList</a></div><div class="ttdeci">IntArray detectorList</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d65/LoadNexusProcessed_8cpp_source.html#l00081">LoadNexusProcessed.cpp:81</a></div></div>
+<div class="ttc" id="aLoadNexusProcessed_8cpp_html_abb468043d6d6ebda2d1d6d7deabdfc89"><div class="ttname"><a href="../../dd/d65/LoadNexusProcessed_8cpp.html#abb468043d6d6ebda2d1d6d7deabdfc89">detectorList</a></div><div class="ttdeci">IntArray detectorList</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d65/LoadNexusProcessed_8cpp_source.html#l00083">LoadNexusProcessed.cpp:83</a></div></div>
 <div class="ttc" id="aMaskWorkspace_8h_html"><div class="ttname"><a href="../../dd/dfa/MaskWorkspace_8h.html">MaskWorkspace.h</a></div></div>
 <div class="ttc" id="aMultiThreaded_8h_html"><div class="ttname"><a href="../../da/d1c/MultiThreaded_8h.html">MultiThreaded.h</a></div></div>
 <div class="ttc" id="aNullValidator_8h_html"><div class="ttname"><a href="../../da/d84/NullValidator_8h.html">NullValidator.h</a></div></div>

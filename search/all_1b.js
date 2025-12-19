@@ -40,7 +40,7 @@ var searchData=
   ['xormd_37',['XorMD',['../db/dee/classMantid_1_1MDAlgorithms_1_1XorMD.html',1,'Mantid::MDAlgorithms']]],
   ['xormd_2ecpp_38',['XorMD.cpp',['../d6/d8e/XorMD_8cpp.html',1,'']]],
   ['xormd_2eh_39',['XorMD.h',['../dd/df1/XorMD_8h.html',1,'']]],
-  ['xpixels_40',['xpixels',['../db/d95/classMantid_1_1Geometry_1_1GridDetector.html#a67b9171a7fc7d30b1de836cce9c848cf',1,'Mantid::Geometry::GridDetector::xpixels()'],['../dc/db7/classMantid_1_1Geometry_1_1StructuredDetector.html#a89b613171ccfbefdcc1f6fa50a8e38a4',1,'Mantid::Geometry::StructuredDetector::xPixels()']]],
+  ['xpixels_40',['xpixels',['../dc/db7/classMantid_1_1Geometry_1_1StructuredDetector.html#a89b613171ccfbefdcc1f6fa50a8e38a4',1,'Mantid::Geometry::StructuredDetector::xPixels()'],['../db/d95/classMantid_1_1Geometry_1_1GridDetector.html#a67b9171a7fc7d30b1de836cce9c848cf',1,'Mantid::Geometry::GridDetector::xpixels()']]],
   ['xpoints_41',['xpoints',['../d0/de0/classMantid_1_1CurveFitting_1_1Functions_1_1ChebfunBase.html#ab6e3cc2971cde99e32a5724ba7747add',1,'Mantid::CurveFitting::Functions::ChebfunBase::xPoints()'],['../d2/de3/classMantid_1_1CurveFitting_1_1Functions_1_1SimpleChebfun.html#aac76e420c9ba045138f8aa0d075409f6',1,'Mantid::CurveFitting::Functions::SimpleChebfun::xPoints()']]],
   ['xrangechanged_42',['xRangeChanged',['../d0/d9e/classMantidQt_1_1MantidWidgets_1_1FitPropertyBrowser.html#a442f617977df3d6f5cace1c9ddaaf708',1,'MantidQt::MantidWidgets::FitPropertyBrowser']]],
   ['xrayabsorptioncorrection_43',['XrayAbsorptionCorrection',['../db/dd5/classMantid_1_1Algorithms_1_1XrayAbsorptionCorrection.html',1,'Mantid::Algorithms']]],

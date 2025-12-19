@@ -28,7 +28,7 @@ var searchData=
   ['bignumber_25',['BIGNUMBER',['../d8/de0/namespaceMantid_1_1MDAlgorithms.html#a6d28387f749187fa0097ff0d54118c60',1,'Mantid::MDAlgorithms']]],
   ['bin_5flog_26',['bin_log',['../d5/d36/classMantid_1_1MDAlgorithms_1_1IDynamicRebinning.html#ace1485b0383a6c10a8c46aa0cad52f3a',1,'Mantid::MDAlgorithms::IDynamicRebinning']]],
   ['bin_5fsize_27',['bin_size',['../df/d65/classMantid_1_1Algorithms_1_1RingProfile.html#a8c43989cef7c50746fee44c171ff2f40',1,'Mantid::Algorithms::RingProfile']]],
-  ['binary_28',['binary',['../d1/d66/structMantid_1_1API_1_1Expression_1_1Operators.html#a498fc29ea705b6382b82adf370576d00',1,'Mantid::API::Expression::Operators::binary'],['../de/d25/classNXnumtype.html#abec8ce6f97a08c11018a778ac000c73d',1,'NXnumtype::BINARY']]],
+  ['binary_28',['binary',['../de/d25/classNXnumtype.html#abec8ce6f97a08c11018a778ac000c73d',1,'NXnumtype::BINARY'],['../d1/d66/structMantid_1_1API_1_1Expression_1_1Operators.html#a498fc29ea705b6382b82adf370576d00',1,'Mantid::API::Expression::Operators::binary']]],
   ['binaryop_29',['binaryop',['../d3/db8/structMantidQt_1_1CustomDialogs_1_1Operation.html#a903219141fe72c7f415c6b996967dbea',1,'MantidQt::CustomDialogs::Operation']]],
   ['binindspace_30',['binInDspace',['../d2/db0/classMantid_1_1WorkflowAlgorithms_1_1AlignAndFocusPowder.html#ac9bb0697428994f66a4eb97b8114e434',1,'Mantid::WorkflowAlgorithms::AlignAndFocusPowder']]],
   ['binparameters_31',['binParameters',['../d8/d8a/classMantid_1_1Algorithms_1_1GeneratePeaks.html#a9c08e84f4be8151c0abe7387d7768f39',1,'Mantid::Algorithms::GeneratePeaks']]],

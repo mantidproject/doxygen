@@ -116,6 +116,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af2e291d471ccec236ebb3c18bdcbcee3" id="r_af2e291d471ccec236ebb3c18bdcbcee3"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d2/dd0/classMantid_1_1API_1_1IMaskWorkspace.html">IMaskWorkspace</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classMantid_1_1API_1_1IMaskWorkspace.html#af2e291d471ccec236ebb3c18bdcbcee3">clone</a> () const</td></tr>
 <tr class="memdesc:af2e291d471ccec236ebb3c18bdcbcee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a clone of the workspace.  <br /></td></tr>
 <tr class="separator:af2e291d471ccec236ebb3c18bdcbcee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab96b2de0afd0256e30a28a819eb72410" id="r_ab96b2de0afd0256e30a28a819eb72410"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classMantid_1_1API_1_1IMaskWorkspace.html#ab96b2de0afd0256e30a28a819eb72410">containsDetID</a> (const detid_t detectorID) const =0</td></tr>
+<tr class="memdesc:ab96b2de0afd0256e30a28a819eb72410"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if detector id exists in mask.  <br /></td></tr>
+<tr class="separator:ab96b2de0afd0256e30a28a819eb72410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f1b2a58e9ca82039bb5cb84c8a47580" id="r_a4f1b2a58e9ca82039bb5cb84c8a47580"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classMantid_1_1API_1_1IMaskWorkspace.html#a4f1b2a58e9ca82039bb5cb84c8a47580">containsDetIDs</a> (const std::set&lt; detid_t &gt; &amp;detectorIDs) const =0</td></tr>
+<tr class="separator:a4f1b2a58e9ca82039bb5cb84c8a47580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3372fbd212049607e9d902cac4ffa0f" id="r_ae3372fbd212049607e9d902cac4ffa0f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classMantid_1_1API_1_1IMaskWorkspace.html#ae3372fbd212049607e9d902cac4ffa0f">containsDetIDs</a> (const std::vector&lt; detid_t &gt; &amp;detectorIDs) const =0</td></tr>
+<tr class="separator:ae3372fbd212049607e9d902cac4ffa0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f84d8cebceffbefa51f941b7332ca99" id="r_a4f84d8cebceffbefa51f941b7332ca99"><td class="memItemLeft" align="right" valign="top">virtual std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classMantid_1_1API_1_1IMaskWorkspace.html#a4f84d8cebceffbefa51f941b7332ca99">getNumberMasked</a> () const =0</td></tr>
 <tr class="memdesc:a4f84d8cebceffbefa51f941b7332ca99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of masked pixels.  <br /></td></tr>
 <tr class="separator:a4f84d8cebceffbefa51f941b7332ca99"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,7 +160,7 @@ Protected Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class provides an interface to a MaskWorkspace. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d4a/IMaskWorkspace_8h_source.html#l00021">21</a> of file <a class="el" href="../../d1/d4a/IMaskWorkspace_8h_source.html">IMaskWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d4a/IMaskWorkspace_8h_source.html#l00027">27</a> of file <a class="el" href="../../d1/d4a/IMaskWorkspace_8h_source.html">IMaskWorkspace.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a41fb2625641592285715e02b18c19035" name="a41fb2625641592285715e02b18c19035"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a41fb2625641592285715e02b18c19035">&#9670;&#160;</a></span>IMaskWorkspace() <span class="overload">[1/2]</span></h2>
@@ -231,7 +238,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Protected copy constructor. May be used by childs for cloning. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d4a/IMaskWorkspace_8h_source.html#l00043">43</a> of file <a class="el" href="../../d1/d4a/IMaskWorkspace_8h_source.html">IMaskWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d4a/IMaskWorkspace_8h_source.html#l00053">53</a> of file <a class="el" href="../../d1/d4a/IMaskWorkspace_8h_source.html">IMaskWorkspace.h</a>.</p>
 
 </div>
 </div>
@@ -261,7 +268,87 @@ Protected Member Functions</h2></td></tr>
 
 <p>Returns a clone of the workspace. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d4a/IMaskWorkspace_8h_source.html#l00039">39</a> of file <a class="el" href="../../d1/d4a/IMaskWorkspace_8h_source.html">IMaskWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d4a/IMaskWorkspace_8h_source.html#l00049">49</a> of file <a class="el" href="../../d1/d4a/IMaskWorkspace_8h_source.html">IMaskWorkspace.h</a>.</p>
+
+</div>
+</div>
+<a id="ab96b2de0afd0256e30a28a819eb72410" name="ab96b2de0afd0256e30a28a819eb72410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab96b2de0afd0256e30a28a819eb72410">&#9670;&#160;</a></span>containsDetID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Mantid::API::IMaskWorkspace::containsDetID </td>
+          <td>(</td>
+          <td class="paramtype">const detid_t&#160;</td>
+          <td class="paramname"><em>detectorID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if detector id exists in mask. </p>
+
+</div>
+</div>
+<a id="a4f1b2a58e9ca82039bb5cb84c8a47580" name="a4f1b2a58e9ca82039bb5cb84c8a47580"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f1b2a58e9ca82039bb5cb84c8a47580">&#9670;&#160;</a></span>containsDetIDs() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Mantid::API::IMaskWorkspace::containsDetIDs </td>
+          <td>(</td>
+          <td class="paramtype">const std::set&lt; detid_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>detectorIDs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae3372fbd212049607e9d902cac4ffa0f" name="ae3372fbd212049607e9d902cac4ffa0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3372fbd212049607e9d902cac4ffa0f">&#9670;&#160;</a></span>containsDetIDs() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Mantid::API::IMaskWorkspace::containsDetIDs </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; detid_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>detectorIDs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -352,7 +439,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../de/dd3/classMantid_1_1DataObjects_1_1MaskWorkspace.html#a1ee948bd8f2c64d81832303c9f88cd35">Mantid::DataObjects::MaskWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d4a/IMaskWorkspace_8h_source.html#l00027">27</a> of file <a class="el" href="../../d1/d4a/IMaskWorkspace_8h_source.html">IMaskWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d4a/IMaskWorkspace_8h_source.html#l00033">33</a> of file <a class="el" href="../../d1/d4a/IMaskWorkspace_8h_source.html">IMaskWorkspace.h</a>.</p>
 
 </div>
 </div>

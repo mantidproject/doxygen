@@ -138,6 +138,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab8fa730369ed60162d5745f5c96d00cc" id="r_ab8fa730369ed60162d5745f5c96d00cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd3/classMantid_1_1DataObjects_1_1MaskWorkspace.html#ab8fa730369ed60162d5745f5c96d00cc">combineToDetectorMasks</a> (<a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html">Mantid::Geometry::DetectorInfo</a> &amp;detectors) const</td></tr>
 <tr class="memdesc:ab8fa730369ed60162d5745f5c96d00cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure that these detectors' mask flags include the values from this mask workspace.  <br /></td></tr>
 <tr class="separator:ab8fa730369ed60162d5745f5c96d00cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08548a68dbff2a004f324af392262bbb" id="r_a08548a68dbff2a004f324af392262bbb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd3/classMantid_1_1DataObjects_1_1MaskWorkspace.html#a08548a68dbff2a004f324af392262bbb">containsDetID</a> (const detid_t detectorID) const override</td></tr>
+<tr class="separator:a08548a68dbff2a004f324af392262bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815d2019dd4140b086d176d8a918aaac" id="r_a815d2019dd4140b086d176d8a918aaac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd3/classMantid_1_1DataObjects_1_1MaskWorkspace.html#a815d2019dd4140b086d176d8a918aaac">containsDetIDs</a> (const std::set&lt; detid_t &gt; &amp;detectorIDs) const override</td></tr>
+<tr class="separator:a815d2019dd4140b086d176d8a918aaac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab06137b201680aaba9dd92c08ff159fe" id="r_ab06137b201680aaba9dd92c08ff159fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd3/classMantid_1_1DataObjects_1_1MaskWorkspace.html#ab06137b201680aaba9dd92c08ff159fe">containsDetIDs</a> (const std::vector&lt; detid_t &gt; &amp;detectorIDs) const override</td></tr>
+<tr class="separator:ab06137b201680aaba9dd92c08ff159fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a313ead5894b7b5538d8c3df9bddf7007" id="r_a313ead5894b7b5538d8c3df9bddf7007"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd3/classMantid_1_1DataObjects_1_1MaskWorkspace.html#a313ead5894b7b5538d8c3df9bddf7007">copyFrom</a> (std::shared_ptr&lt; const <a class="el" href="../../d2/dc5/classMantid_1_1DataObjects_1_1SpecialWorkspace2D.html">SpecialWorkspace2D</a> &gt; sourcews) override</td></tr>
 <tr class="memdesc:a313ead5894b7b5538d8c3df9bddf7007"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the set up from another workspace.  <br /></td></tr>
 <tr class="separator:a313ead5894b7b5538d8c3df9bddf7007"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,6 +207,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ace0793c9396f01cc67ae44674654abd7 inherit pub_methods_classMantid_1_1DataObjects_1_1SpecialWorkspace2D" id="r_ace0793c9396f01cc67ae44674654abd7"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d2/dc5/classMantid_1_1DataObjects_1_1SpecialWorkspace2D.html">SpecialWorkspace2D</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc5/classMantid_1_1DataObjects_1_1SpecialWorkspace2D.html#ace0793c9396f01cc67ae44674654abd7">cloneEmpty</a> () const</td></tr>
 <tr class="memdesc:ace0793c9396f01cc67ae44674654abd7 inherit pub_methods_classMantid_1_1DataObjects_1_1SpecialWorkspace2D"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a default-initialized clone of the workspace.  <br /></td></tr>
 <tr class="separator:ace0793c9396f01cc67ae44674654abd7 inherit pub_methods_classMantid_1_1DataObjects_1_1SpecialWorkspace2D"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30e913c907fc57ae6c9c0dee0c6803e8 inherit pub_methods_classMantid_1_1DataObjects_1_1SpecialWorkspace2D" id="r_a30e913c907fc57ae6c9c0dee0c6803e8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc5/classMantid_1_1DataObjects_1_1SpecialWorkspace2D.html#a30e913c907fc57ae6c9c0dee0c6803e8">contains</a> (const detid_t detectorID) const</td></tr>
+<tr class="separator:a30e913c907fc57ae6c9c0dee0c6803e8 inherit pub_methods_classMantid_1_1DataObjects_1_1SpecialWorkspace2D"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dd5888b585307acf5590a82a9e0b3cc inherit pub_methods_classMantid_1_1DataObjects_1_1SpecialWorkspace2D" id="r_a7dd5888b585307acf5590a82a9e0b3cc"><td class="memItemLeft" align="right" valign="top">std::set&lt; detid_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc5/classMantid_1_1DataObjects_1_1SpecialWorkspace2D.html#a7dd5888b585307acf5590a82a9e0b3cc">getDetectorIDs</a> (const std::size_t workspaceIndex) const</td></tr>
 <tr class="memdesc:a7dd5888b585307acf5590a82a9e0b3cc inherit pub_methods_classMantid_1_1DataObjects_1_1SpecialWorkspace2D"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the detector ID at the given workspace index (i.e., spectrum/histogram index)  <br /></td></tr>
 <tr class="separator:a7dd5888b585307acf5590a82a9e0b3cc inherit pub_methods_classMantid_1_1DataObjects_1_1SpecialWorkspace2D"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1042,6 +1050,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af2e291d471ccec236ebb3c18bdcbcee3 inherit pub_methods_classMantid_1_1API_1_1IMaskWorkspace" id="r_af2e291d471ccec236ebb3c18bdcbcee3"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d2/dd0/classMantid_1_1API_1_1IMaskWorkspace.html">IMaskWorkspace</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classMantid_1_1API_1_1IMaskWorkspace.html#af2e291d471ccec236ebb3c18bdcbcee3">clone</a> () const</td></tr>
 <tr class="memdesc:af2e291d471ccec236ebb3c18bdcbcee3 inherit pub_methods_classMantid_1_1API_1_1IMaskWorkspace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a clone of the workspace.  <br /></td></tr>
 <tr class="separator:af2e291d471ccec236ebb3c18bdcbcee3 inherit pub_methods_classMantid_1_1API_1_1IMaskWorkspace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab96b2de0afd0256e30a28a819eb72410 inherit pub_methods_classMantid_1_1API_1_1IMaskWorkspace" id="r_ab96b2de0afd0256e30a28a819eb72410"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classMantid_1_1API_1_1IMaskWorkspace.html#ab96b2de0afd0256e30a28a819eb72410">containsDetID</a> (const detid_t detectorID) const =0</td></tr>
+<tr class="memdesc:ab96b2de0afd0256e30a28a819eb72410 inherit pub_methods_classMantid_1_1API_1_1IMaskWorkspace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if detector id exists in mask.  <br /></td></tr>
+<tr class="separator:ab96b2de0afd0256e30a28a819eb72410 inherit pub_methods_classMantid_1_1API_1_1IMaskWorkspace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f1b2a58e9ca82039bb5cb84c8a47580 inherit pub_methods_classMantid_1_1API_1_1IMaskWorkspace" id="r_a4f1b2a58e9ca82039bb5cb84c8a47580"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classMantid_1_1API_1_1IMaskWorkspace.html#a4f1b2a58e9ca82039bb5cb84c8a47580">containsDetIDs</a> (const std::set&lt; detid_t &gt; &amp;detectorIDs) const =0</td></tr>
+<tr class="separator:a4f1b2a58e9ca82039bb5cb84c8a47580 inherit pub_methods_classMantid_1_1API_1_1IMaskWorkspace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3372fbd212049607e9d902cac4ffa0f inherit pub_methods_classMantid_1_1API_1_1IMaskWorkspace" id="r_ae3372fbd212049607e9d902cac4ffa0f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classMantid_1_1API_1_1IMaskWorkspace.html#ae3372fbd212049607e9d902cac4ffa0f">containsDetIDs</a> (const std::vector&lt; detid_t &gt; &amp;detectorIDs) const =0</td></tr>
+<tr class="separator:ae3372fbd212049607e9d902cac4ffa0f inherit pub_methods_classMantid_1_1API_1_1IMaskWorkspace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41fb2625641592285715e02b18c19035 inherit pub_methods_classMantid_1_1API_1_1IMaskWorkspace" id="r_a41fb2625641592285715e02b18c19035"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classMantid_1_1API_1_1IMaskWorkspace.html#a41fb2625641592285715e02b18c19035">IMaskWorkspace</a> ()=default</td></tr>
 <tr class="separator:a41fb2625641592285715e02b18c19035 inherit pub_methods_classMantid_1_1API_1_1IMaskWorkspace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a340d6168bbd58e9ff68f70d5fd82564f inherit pub_methods_classMantid_1_1API_1_1IMaskWorkspace" id="r_a340d6168bbd58e9ff68f70d5fd82564f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classMantid_1_1API_1_1IMaskWorkspace.html#a340d6168bbd58e9ff68f70d5fd82564f">isMasked</a> (const detid_t detectorID) const =0</td></tr>
@@ -1233,7 +1248,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00018">18</a> of file <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html">MaskWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00022">22</a> of file <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html">MaskWorkspace.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a34ae44c9a509e2f2322c5dd693f1c49b" name="a34ae44c9a509e2f2322c5dd693f1c49b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a34ae44c9a509e2f2322c5dd693f1c49b">&#9670;&#160;</a></span>MaskWorkspace() <span class="overload">[1/5]</span></h2>
@@ -1450,7 +1465,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns a clone of the workspace. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00026">26</a> of file <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html">MaskWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00030">30</a> of file <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html">MaskWorkspace.h</a>.</p>
 
 </div>
 </div>
@@ -1479,7 +1494,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns a default-initialized clone of the workspace. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00028">28</a> of file <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html">MaskWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00032">32</a> of file <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html">MaskWorkspace.h</a>.</p>
 
 </div>
 </div>
@@ -1508,11 +1523,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Ensure that this workspace's values include the values from its own detectors' mask flags. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00055">55</a> of file <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html">MaskWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00062">62</a> of file <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html">MaskWorkspace.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00055">combineFromDetectorMasks()</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00062">combineFromDetectorMasks()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00055">combineFromDetectorMasks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00062">combineFromDetectorMasks()</a>.</p>
 
 </div>
 </div>
@@ -1535,9 +1550,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Ensure that this workspace includes the values from these detectors' mask flags. </p>
 <p>Ensure that this workspace includes the values from the detector mask flags. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00298">298</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00325">325</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00774">Mantid::API::ExperimentInfo::detectorInfo()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00206">Mantid::API::ExperimentInfo::getInstrument()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00115">Mantid::DataObjects::Workspace2D::getNumberHistograms()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00376">hasInstrument()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00406">Mantid::Geometry::DetectorInfo::indexOf()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00095">Mantid::Geometry::DetectorInfo::isMasked()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00207">setMasked()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00225">setMaskedIndex()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00083">Mantid::Geometry::DetectorInfo::size()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00118">Mantid::DataObjects::Workspace2D::size()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00043">Mantid::API::SpectrumInfo::spectrumDefinition()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00790">Mantid::API::ExperimentInfo::spectrumInfo()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00774">Mantid::API::ExperimentInfo::detectorInfo()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00206">Mantid::API::ExperimentInfo::getInstrument()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00115">Mantid::DataObjects::Workspace2D::getNumberHistograms()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00402">hasInstrument()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00406">Mantid::Geometry::DetectorInfo::indexOf()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00095">Mantid::Geometry::DetectorInfo::isMasked()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00231">setMasked()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00252">setMaskedIndex()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00083">Mantid::Geometry::DetectorInfo::size()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00118">Mantid::DataObjects::Workspace2D::size()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00043">Mantid::API::SpectrumInfo::spectrumDefinition()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00790">Mantid::API::ExperimentInfo::spectrumInfo()</a>.</p>
 
 </div>
 </div>
@@ -1566,11 +1581,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Ensure that this mask workspace's detectors mask flags include the workspace values. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00049">49</a> of file <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html">MaskWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00056">56</a> of file <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html">MaskWorkspace.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00049">combineToDetectorMasks()</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00056">combineToDetectorMasks()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00049">combineToDetectorMasks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00056">combineToDetectorMasks()</a>.</p>
 
 </div>
 </div>
@@ -1593,9 +1608,95 @@ Additional Inherited Members</h2></td></tr>
 <p>Ensure that these detectors' mask flags include the values from this mask workspace. </p>
 <p>Ensure that the detector mask flags include the values from this workspace. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00247">247</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00274">274</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00774">Mantid::API::ExperimentInfo::detectorInfo()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00206">Mantid::API::ExperimentInfo::getInstrument()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00115">Mantid::DataObjects::Workspace2D::getNumberHistograms()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00376">hasInstrument()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00406">Mantid::Geometry::DetectorInfo::indexOf()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00152">isMasked()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00197">isMaskedIndex()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00342">Mantid::Geometry::DetectorInfo::setMasked()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00083">Mantid::Geometry::DetectorInfo::size()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00118">Mantid::DataObjects::Workspace2D::size()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00043">Mantid::API::SpectrumInfo::spectrumDefinition()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00790">Mantid::API::ExperimentInfo::spectrumInfo()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00774">Mantid::API::ExperimentInfo::detectorInfo()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00206">Mantid::API::ExperimentInfo::getInstrument()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00115">Mantid::DataObjects::Workspace2D::getNumberHistograms()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00402">hasInstrument()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00406">Mantid::Geometry::DetectorInfo::indexOf()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00174">isMasked()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00221">isMaskedIndex()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00342">Mantid::Geometry::DetectorInfo::setMasked()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00083">Mantid::Geometry::DetectorInfo::size()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00118">Mantid::DataObjects::Workspace2D::size()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00043">Mantid::API::SpectrumInfo::spectrumDefinition()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00790">Mantid::API::ExperimentInfo::spectrumInfo()</a>.</p>
+
+</div>
+</div>
+<a id="a08548a68dbff2a004f324af392262bbb" name="a08548a68dbff2a004f324af392262bbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08548a68dbff2a004f324af392262bbb">&#9670;&#160;</a></span>containsDetID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mantid::DataObjects::MaskWorkspace::containsDetID </td>
+          <td>(</td>
+          <td class="paramtype">const detid_t&#160;</td>
+          <td class="paramname"><em>detectorID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00147">147</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00101">Mantid::DataObjects::SpecialWorkspace2D::contains()</a>.</p>
+
+</div>
+</div>
+<a id="a815d2019dd4140b086d176d8a918aaac" name="a815d2019dd4140b086d176d8a918aaac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a815d2019dd4140b086d176d8a918aaac">&#9670;&#160;</a></span>containsDetIDs() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mantid::DataObjects::MaskWorkspace::containsDetIDs </td>
+          <td>(</td>
+          <td class="paramtype">const std::set&lt; detid_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>detectorIDs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00149">149</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab06137b201680aaba9dd92c08ff159fe" name="ab06137b201680aaba9dd92c08ff159fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab06137b201680aaba9dd92c08ff159fe">&#9670;&#160;</a></span>containsDetIDs() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mantid::DataObjects::MaskWorkspace::containsDetIDs </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; detid_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>detectorIDs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00159">159</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
 
 </div>
 </div>
@@ -1628,9 +1729,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d2/dc5/classMantid_1_1DataObjects_1_1SpecialWorkspace2D.html#acac56a2d566fd8c194298f7f2667f762">Mantid::DataObjects::SpecialWorkspace2D</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00242">242</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00269">269</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00356">Mantid::DataObjects::SpecialWorkspace2D::copyFrom()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00361">Mantid::DataObjects::SpecialWorkspace2D::copyFrom()</a>.</p>
 
 </div>
 </div>
@@ -1661,7 +1762,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/dc3/classMantid_1_1API_1_1HistoWorkspace.html#a4969368870d736bb1344313673094f91">Mantid::API::HistoWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00071">71</a> of file <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html">MaskWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00078">78</a> of file <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html">MaskWorkspace.h</a>.</p>
 
 </div>
 </div>
@@ -1693,7 +1794,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/dc3/classMantid_1_1API_1_1HistoWorkspace.html#a1a9d9ac4134503d8c5aab6961361b074">Mantid::API::HistoWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00072">72</a> of file <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html">MaskWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00079">79</a> of file <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html">MaskWorkspace.h</a>.</p>
 
 </div>
 </div>
@@ -1724,7 +1825,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d2/dd0/classMantid_1_1API_1_1IMaskWorkspace.html#a13f081ef34afed1e23029cb9806c8128">Mantid::API::IMaskWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00074">74</a> of file <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html">MaskWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00081">81</a> of file <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html">MaskWorkspace.h</a>.</p>
 
 </div>
 </div>
@@ -1748,7 +1849,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00110">110</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00188">Mantid::DataObjects::SpecialWorkspace2D::getDetectorIDs()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00115">Mantid::DataObjects::Workspace2D::getNumberHistograms()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00376">hasInstrument()</a>, and <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00197">isMaskedIndex()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00193">Mantid::DataObjects::SpecialWorkspace2D::getDetectorIDs()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00115">Mantid::DataObjects::Workspace2D::getNumberHistograms()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00402">hasInstrument()</a>, and <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00221">isMaskedIndex()</a>.</p>
 
 </div>
 </div>
@@ -1772,7 +1873,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00134">134</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00115">Mantid::DataObjects::Workspace2D::getNumberHistograms()</a>, and <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00197">isMaskedIndex()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00115">Mantid::DataObjects::Workspace2D::getNumberHistograms()</a>, and <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00221">isMaskedIndex()</a>.</p>
 
 </div>
 </div>
@@ -1804,9 +1905,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00188">Mantid::DataObjects::SpecialWorkspace2D::getDetectorIDs()</a>, <a class="el" href="../../d3/df1/API_2src_2Workspace_8cpp_source.html#l00059">Mantid::API::Workspace::getName()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00115">Mantid::DataObjects::Workspace2D::getNumberHistograms()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00376">hasInstrument()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00152">isMasked()</a>, and <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00197">isMaskedIndex()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00193">Mantid::DataObjects::SpecialWorkspace2D::getDetectorIDs()</a>, <a class="el" href="../../d3/df1/API_2src_2Workspace_8cpp_source.html#l00059">Mantid::API::Workspace::getName()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00115">Mantid::DataObjects::Workspace2D::getNumberHistograms()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00402">hasInstrument()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00174">isMasked()</a>, and <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00221">isMaskedIndex()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00364">toString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00390">toString()</a>.</p>
 
 </div>
 </div>
@@ -1836,11 +1937,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Check whether any instrument associated. </p>
 <p>Check whether workspace has a non-trivial instrument (1) There is an instrument associated with (2) Number of detectors is larger than 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00376">376</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00402">402</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00206">Mantid::API::ExperimentInfo::getInstrument()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00298">combineFromDetectorMasks()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00247">combineToDetectorMasks()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00110">getMaskedDetectors()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00086">getNumberMasked()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00330">isConsistentWithDetectorMasks()</a>, and <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00152">isMasked()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00325">combineFromDetectorMasks()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00274">combineToDetectorMasks()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00110">getMaskedDetectors()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00086">getNumberMasked()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00357">isConsistentWithDetectorMasks()</a>, and <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00174">isMasked()</a>.</p>
 
 </div>
 </div>
@@ -1872,7 +1973,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d5/dad/classMantid_1_1Kernel_1_1DataItem.html#aac17a303ba29eb33dff9bc07a48c3a09">Mantid::Kernel::DataItem</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00237">237</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00264">264</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
 
 </div>
 </div>
@@ -1901,11 +2002,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Test consistency between the values from this workspace and its own detectors' mask flags. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00061">61</a> of file <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html">MaskWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00068">68</a> of file <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html">MaskWorkspace.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00061">isConsistentWithDetectorMasks()</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00068">isConsistentWithDetectorMasks()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00061">isConsistentWithDetectorMasks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/dfa/MaskWorkspace_8h_source.html#l00068">isConsistentWithDetectorMasks()</a>.</p>
 
 </div>
 </div>
@@ -1928,9 +2029,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Test consistency between the values from this workspace and the specified detectors' mask flags. </p>
 <p>Test consistency between the values from this workspace and the detector mask flags. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00330">330</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00357">357</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00774">Mantid::API::ExperimentInfo::detectorInfo()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00206">Mantid::API::ExperimentInfo::getInstrument()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00115">Mantid::DataObjects::Workspace2D::getNumberHistograms()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00376">hasInstrument()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00406">Mantid::Geometry::DetectorInfo::indexOf()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00152">isMasked()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00095">Mantid::Geometry::DetectorInfo::isMasked()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00197">isMaskedIndex()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00083">Mantid::Geometry::DetectorInfo::size()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00118">Mantid::DataObjects::Workspace2D::size()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00043">Mantid::API::SpectrumInfo::spectrumDefinition()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00790">Mantid::API::ExperimentInfo::spectrumInfo()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00774">Mantid::API::ExperimentInfo::detectorInfo()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00206">Mantid::API::ExperimentInfo::getInstrument()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00115">Mantid::DataObjects::Workspace2D::getNumberHistograms()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00402">hasInstrument()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00406">Mantid::Geometry::DetectorInfo::indexOf()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00174">isMasked()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00095">Mantid::Geometry::DetectorInfo::isMasked()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00221">isMaskedIndex()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00083">Mantid::Geometry::DetectorInfo::size()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00118">Mantid::DataObjects::Workspace2D::size()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00043">Mantid::API::SpectrumInfo::spectrumDefinition()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00790">Mantid::API::ExperimentInfo::spectrumInfo()</a>.</p>
 
 </div>
 </div>
@@ -1965,11 +2066,11 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the data should be deleted. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00152">152</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00174">174</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00774">Mantid::API::ExperimentInfo::detectorInfo()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00206">Mantid::API::ExperimentInfo::getInstrument()</a>, <a class="el" href="../../d3/df1/API_2src_2Workspace_8cpp_source.html#l00059">Mantid::API::Workspace::getName()</a>, <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00108">Mantid::DataObjects::SpecialWorkspace2D::getValue()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00376">hasInstrument()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00406">Mantid::Geometry::DetectorInfo::indexOf()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00095">Mantid::Geometry::DetectorInfo::isMasked()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00101">Mantid::DataObjects::SpecialWorkspace2D::contains()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00774">Mantid::API::ExperimentInfo::detectorInfo()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00206">Mantid::API::ExperimentInfo::getInstrument()</a>, <a class="el" href="../../d3/df1/API_2src_2Workspace_8cpp_source.html#l00059">Mantid::API::Workspace::getName()</a>, <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00113">Mantid::DataObjects::SpecialWorkspace2D::getValue()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00402">hasInstrument()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00406">Mantid::Geometry::DetectorInfo::indexOf()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00095">Mantid::Geometry::DetectorInfo::isMasked()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00247">combineToDetectorMasks()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00086">getNumberMasked()</a>, and <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00330">isConsistentWithDetectorMasks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00274">combineToDetectorMasks()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00086">getNumberMasked()</a>, and <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00357">isConsistentWithDetectorMasks()</a>.</p>
 
 </div>
 </div>
@@ -1998,7 +2099,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if the data should be deleted. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00184">184</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00208">208</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
 
 </div>
 </div>
@@ -2020,11 +2121,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Use this method with <a class="el" href="../../de/dd3/classMantid_1_1DataObjects_1_1MaskWorkspace.html">MaskWorkspace</a> that doesn't have an instrument. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00197">197</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00221">221</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00315">Mantid::API::MatrixWorkspace::dataY()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00247">combineToDetectorMasks()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00110">getMaskedDetectors()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00134">getMaskedWkspIndices()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00086">getNumberMasked()</a>, and <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00330">isConsistentWithDetectorMasks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00274">combineToDetectorMasks()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00110">getMaskedDetectors()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00134">getMaskedWkspIndices()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00086">getNumberMasked()</a>, and <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00357">isConsistentWithDetectorMasks()</a>.</p>
 
 </div>
 </div>
@@ -2097,11 +2198,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00207">207</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00231">231</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00153">Mantid::DataObjects::SpecialWorkspace2D::setValue()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00158">Mantid::DataObjects::SpecialWorkspace2D::setValue()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00298">combineFromDetectorMasks()</a>, and <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00219">setMasked()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00325">combineFromDetectorMasks()</a>, and <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00246">setMasked()</a>.</p>
 
 </div>
 </div>
@@ -2142,9 +2243,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Mask a set of pixels. </p>
 <p>This is a convenience function to call <a class="el" href="../../de/dd3/classMantid_1_1DataObjects_1_1MaskWorkspace.html#a5cc50da1ab33140a3d22e0f74a6777c2" title="Mask an individual pixel.">MaskWorkspace::setMasked(const detid_t, const bool)</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00219">219</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00246">246</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00207">setMasked()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00231">setMasked()</a>.</p>
 
 </div>
 </div>
@@ -2174,11 +2275,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00225">225</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00252">252</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00315">Mantid::API::MatrixWorkspace::dataY()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00298">combineFromDetectorMasks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00325">combineFromDetectorMasks()</a>.</p>
 
 </div>
 </div>
@@ -2210,7 +2311,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#ae188ce8bb6edb18f05ae226fca611b69">Mantid::API::MatrixWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00364">364</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00390">390</a> of file <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html">MaskWorkspace.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00086">getNumberMasked()</a>, and <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00084">Mantid::DataObjects::SpecialWorkspace2D::toString()</a>.</p>
 
