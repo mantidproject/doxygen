@@ -235,7 +235,7 @@ var searchData=
   ['bothchanged_232',['BOTHCHANGED',['../d2/d36/namespaceMantidQt_1_1API.html#ac52694a2af2be3d493905e1432f4f168',1,'MantidQt::API']]],
   ['bothchangedst_233',['bothChangedSt',['../dc/dec/classMantidQt_1_1API_1_1RepoModel.html#a6861700f15e6ee5c928155397f4f42ef',1,'MantidQt::API::RepoModel']]],
   ['bothunchanged_234',['BOTHUNCHANGED',['../d2/d36/namespaceMantidQt_1_1API.html#a5de40ea6c966008017a7e49310b1bec2',1,'MantidQt::API']]],
-  ['bottom_235',['bottom',['../d8/d3d/namespaceGraphOptions.html#ae49bbff78bfeb4817f673dc3665279dea7e6e640e950ca5b84ae9d64998562822',1,'GraphOptions::Bottom'],['../d8/d6b/LineProfile_8cpp.html#a24c109489bdfad4b0937c2d19d9c0e20',1,'bottom:&#160;LineProfile.cpp']]],
+  ['bottom_235',['bottom',['../d8/d6b/LineProfile_8cpp.html#a24c109489bdfad4b0937c2d19d9c0e20',1,'bottom:&#160;LineProfile.cpp'],['../d8/d3d/namespaceGraphOptions.html#ae49bbff78bfeb4817f673dc3665279dea7e6e640e950ca5b84ae9d64998562822',1,'GraphOptions::Bottom']]],
   ['bottomleft_236',['bottomLeft',['../d8/dad/structMantid_1_1Geometry_1_1ComponentInfo_1_1QuadrilateralComponent.html#a7e678e6d3563b90902e42c9a97c0abe7',1,'Mantid::Geometry::ComponentInfo::QuadrilateralComponent']]],
   ['bottomright_237',['bottomRight',['../d8/dad/structMantid_1_1Geometry_1_1ComponentInfo_1_1QuadrilateralComponent.html#a7e835cea036378c3d6cfbe6bb4fec43f',1,'Mantid::Geometry::ComponentInfo::QuadrilateralComponent']]],
   ['bound_238',['Bound',['../da/d94/namespaceMantid_1_1Crystal_1_1FindSXPeaksHelper.html#aa9d7f37da85118017b158df00238179b',1,'Mantid::Crystal::FindSXPeaksHelper']]],

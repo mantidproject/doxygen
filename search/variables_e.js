@@ -38,7 +38,7 @@ var searchData=
   ['new_5fnote_5fxpm_35',['new_note_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#afcf4eadff6b5624291eb4c8e5d5a10c2',1,'MantidQt::API']]],
   ['new_5fxpm_36',['new_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#abe9ce02d33b2eed889ddf8c395250dad',1,'MantidQt::API']]],
   ['newf_5fxpm_37',['newF_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#aeaa9f476feb9f6333d1dc523ec6a8a50',1,'MantidQt::API']]],
-  ['newfolder_5fxpm_38',['newfolder_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#a722dbbafc5c2f6dc99ba7b537e1d9502',1,'MantidQt::API::newfolder_xpm'],['../d2/d36/namespaceMantidQt_1_1API.html#aef8286ac56dc49bcf41f1b48d8e1368a',1,'MantidQt::API::newFolder_xpm']]],
+  ['newfolder_5fxpm_38',['newfolder_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#aef8286ac56dc49bcf41f1b48d8e1368a',1,'MantidQt::API::newFolder_xpm'],['../d2/d36/namespaceMantidQt_1_1API.html#a722dbbafc5c2f6dc99ba7b537e1d9502',1,'MantidQt::API::newfolder_xpm']]],
   ['newfxy_5fxpm_39',['newFxy_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#a14188e8a2a4485d535a1b0637239ca82',1,'MantidQt::API']]],
   ['newlayer_5fxpm_40',['newLayer_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#a85f9bf8667e46d9d42d49dde21baddfe',1,'MantidQt::API']]],
   ['next_5fxpm_41',['next_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#a04fe2fbea747d5b75cdeb201f448d517',1,'MantidQt::API']]],
