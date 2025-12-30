@@ -112,7 +112,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="../../d9/d51/EnabledWhenProperty_8h.html">MantidKernel/EnabledWhenProperty.h</a>&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="../../dc/d96/ListValidator_8h.html">MantidKernel/ListValidator.h</a>&quot;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="../../da/d1c/MandatoryValidator_8h.html">MantidKernel/MandatoryValidator.h</a>&quot;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;Poco/Path.h&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;filesystem&gt;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
@@ -304,7 +304,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keywordflow">if</span> (!AnalysisDataService::Instance().doesExist(data_sources[entry_number])) {</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>      <span class="comment">// Strip off any file extension or path to leave just the stem (base)</span></div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>      <span class="comment">// filename</span></div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>      std::string filename_noext = Poco::Path(data_sources[entry_number]).getBaseName();</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>      std::string filename_noext = std::filesystem::path(data_sources[entry_number]).stem().string();</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>      <span class="comment">// Create workspace name of form {filename}_md_{n}</span></div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>      ws_name &lt;&lt; filename_noext &lt;&lt; <span class="stringliteral">&quot;_md_&quot;</span> &lt;&lt; counter;</div>

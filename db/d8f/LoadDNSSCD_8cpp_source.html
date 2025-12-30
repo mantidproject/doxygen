@@ -135,14 +135,14 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;Poco/DateTimeFormatter.h&gt;</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;Poco/DateTimeParser.h&gt;</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;Poco/DirectoryIterator.h&gt;</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &lt;Poco/File.h&gt;</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &lt;Poco/Path.h&gt;</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &lt;boost/date_time/posix_time/posix_time.hpp&gt;</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &lt;boost/exception/diagnostic_information.hpp&gt;</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &lt;boost/exception_ptr.hpp&gt;</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#include &lt;boost/regex.hpp&gt;</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &lt;boost/date_time/posix_time/posix_time.hpp&gt;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &lt;boost/exception/diagnostic_information.hpp&gt;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &lt;boost/exception_ptr.hpp&gt;</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &lt;boost/regex.hpp&gt;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#include &lt;filesystem&gt;</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#include &lt;iomanip&gt;</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#include &lt;iterator&gt;</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#include &lt;map&gt;</span></div>
@@ -817,99 +817,103 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>    <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Not a DNS file&quot;</span>);</div>
 <div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>  }</div>
 <div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>  <span class="comment">// get file save time</span></div>
-<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>  Poco::File pfile(fname);</div>
-<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>  Poco::DateTime lastModified = pfile.getLastModified();</div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>  std::string wtime(Poco::DateTimeFormatter::format(lastModified, <span class="stringliteral">&quot;%Y-%m-%dT%H:%M:%S&quot;</span>));</div>
-<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>  str_metadata.insert(std::make_pair(<span class="stringliteral">&quot;file_save_time&quot;</span>, wtime));</div>
-<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span> </div>
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>  <span class="comment">// get file basename</span></div>
-<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>  Poco::Path p(fname);</div>
-<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>  str_metadata.insert(std::make_pair(<span class="stringliteral">&quot;run_number&quot;</span>, p.getBaseName()));</div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span> </div>
-<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>  <span class="comment">// parse metadata</span></div>
-<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>  <span class="keywordflow">while</span> (getline(file, line)) {</div>
-<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>    <a class="code hl_variable" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#a3d05cf6aa68b03e254d70afbe869e305">n</a> = line.find(<span class="stringliteral">&quot;Lambda&quot;</span>);</div>
-<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#a3d05cf6aa68b03e254d70afbe869e305">n</a> != std::string::npos) {</div>
-<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>      boost::regex re(<span class="stringliteral">&quot;[\\s]+&quot;</span>);</div>
-<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>      s = line.substr(5);</div>
-<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>      boost::sregex_token_iterator it(s.begin(), s.end(), re, -1);</div>
-<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>      boost::sregex_token_iterator reg_end;</div>
-<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>      getline(file, line);</div>
-<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>      std::string s2 = line.substr(2);</div>
-<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>      boost::sregex_token_iterator it2(s2.begin(), s2.end(), re, -1);</div>
-<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>      <span class="keywordflow">for</span> (; (it != reg_end) &amp;&amp; (it2 != reg_end); ++it) {</div>
-<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>        std::string token(it-&gt;str());</div>
-<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>        <span class="keywordflow">if</span> (token.find_first_not_of(<span class="charliteral">&#39; &#39;</span>) == std::string::npos) {</div>
-<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>          ++it2;</div>
-<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>          <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>        }</div>
-<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>        <span class="keywordflow">if</span> (token == <span class="stringliteral">&quot;Mono&quot;</span>) {</div>
-<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>          str_metadata.insert(std::make_pair(token, it2-&gt;str()));</div>
-<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>          num_metadata.insert(std::make_pair(token, std::stod(it2-&gt;str())));</div>
-<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>        }</div>
-<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>        ++it2;</div>
-<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>      }</div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>    }</div>
-<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>    <span class="comment">// parse start and stop time</span></div>
-<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>    <a class="code hl_variable" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#a3d05cf6aa68b03e254d70afbe869e305">n</a> = line.find(<span class="stringliteral">&quot;start&quot;</span>);</div>
-<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#a3d05cf6aa68b03e254d70afbe869e305">n</a> != std::string::npos) {</div>
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>      str_metadata.insert(std::make_pair(<span class="stringliteral">&quot;start_time&quot;</span>, parseTime(line)));</div>
-<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>      getline(file, line);</div>
-<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>      str_metadata.insert(std::make_pair(<span class="stringliteral">&quot;stop_time&quot;</span>, parseTime(line)));</div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>      getline(file, line);</div>
-<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>    }</div>
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>    <span class="keywordflow">if</span> (boost::regex_search(line, match, reg1) &amp;&amp; match.size() &gt; 2) {</div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>      str_metadata.insert(std::make_pair(match.str(1), match.str(2)));</div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>    }</div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>    <span class="keywordflow">if</span> (boost::regex_search(line, match, reg2) &amp;&amp; match.size() &gt; 2) {</div>
-<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>      s = match.str(1);</div>
-<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>      s.erase(std::find_if_not(s.rbegin(), s.rend(), ::isspace).base(), s.end());</div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>      num_metadata.insert(std::make_pair(s, std::stod(match.str(3))));</div>
-<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>    }</div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>    <a class="code hl_variable" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#a3d05cf6aa68b03e254d70afbe869e305">n</a> = line.find(<span class="stringliteral">&quot;DATA&quot;</span>);</div>
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#a3d05cf6aa68b03e254d70afbe869e305">n</a> != std::string::npos) {</div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>  <span class="keyword">auto</span> ftime = std::filesystem::last_write_time(fname);</div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>  <span class="keyword">auto</span> sctp = std::chrono::time_point_cast&lt;std::chrono::system_clock::duration&gt;(</div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>      ftime - std::filesystem::file_time_type::clock::now() + std::chrono::system_clock::now());</div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>  std::time_t cftime = std::chrono::system_clock::to_time_t(sctp);</div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>  std::tm *gmt = std::gmtime(&amp;cftime);</div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>  std::ostringstream wtime_stream;</div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>  wtime_stream &lt;&lt; std::put_time(gmt, <span class="stringliteral">&quot;%Y-%m-%dT%H:%M:%S&quot;</span>);</div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>  std::string wtime = wtime_stream.str();</div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>  str_metadata.insert(std::make_pair(<span class="stringliteral">&quot;file_save_time&quot;</span>, wtime));</div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span> </div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>  <span class="comment">// get file basename</span></div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>  str_metadata.insert(std::make_pair(<span class="stringliteral">&quot;run_number&quot;</span>, std::filesystem::path(fname).stem().<span class="keywordtype">string</span>()));</div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span> </div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>  <span class="comment">// parse metadata</span></div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>  <span class="keywordflow">while</span> (getline(file, line)) {</div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>    <a class="code hl_variable" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#a3d05cf6aa68b03e254d70afbe869e305">n</a> = line.find(<span class="stringliteral">&quot;Lambda&quot;</span>);</div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#a3d05cf6aa68b03e254d70afbe869e305">n</a> != std::string::npos) {</div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>      boost::regex re(<span class="stringliteral">&quot;[\\s]+&quot;</span>);</div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>      s = line.substr(5);</div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>      boost::sregex_token_iterator it(s.begin(), s.end(), re, -1);</div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>      boost::sregex_token_iterator reg_end;</div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>      getline(file, line);</div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>      std::string s2 = line.substr(2);</div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>      boost::sregex_token_iterator it2(s2.begin(), s2.end(), re, -1);</div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>      <span class="keywordflow">for</span> (; (it != reg_end) &amp;&amp; (it2 != reg_end); ++it) {</div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>        std::string token(it-&gt;str());</div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>        <span class="keywordflow">if</span> (token.find_first_not_of(<span class="charliteral">&#39; &#39;</span>) == std::string::npos) {</div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>          ++it2;</div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>          <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>        }</div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>        <span class="keywordflow">if</span> (token == <span class="stringliteral">&quot;Mono&quot;</span>) {</div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>          str_metadata.insert(std::make_pair(token, it2-&gt;str()));</div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>          num_metadata.insert(std::make_pair(token, std::stod(it2-&gt;str())));</div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>        }</div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>        ++it2;</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>      }</div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>    }</div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>    <span class="comment">// parse start and stop time</span></div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>    <a class="code hl_variable" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#a3d05cf6aa68b03e254d70afbe869e305">n</a> = line.find(<span class="stringliteral">&quot;start&quot;</span>);</div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#a3d05cf6aa68b03e254d70afbe869e305">n</a> != std::string::npos) {</div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>      str_metadata.insert(std::make_pair(<span class="stringliteral">&quot;start_time&quot;</span>, parseTime(line)));</div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>      getline(file, line);</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>      str_metadata.insert(std::make_pair(<span class="stringliteral">&quot;stop_time&quot;</span>, parseTime(line)));</div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>      getline(file, line);</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>    }</div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>    <span class="keywordflow">if</span> (boost::regex_search(line, match, reg1) &amp;&amp; match.size() &gt; 2) {</div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>      str_metadata.insert(std::make_pair(match.str(1), match.str(2)));</div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>    }</div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>    <span class="keywordflow">if</span> (boost::regex_search(line, match, reg2) &amp;&amp; match.size() &gt; 2) {</div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>      s = match.str(1);</div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>      s.erase(std::find_if_not(s.rbegin(), s.rend(), ::isspace).base(), s.end());</div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>      num_metadata.insert(std::make_pair(s, std::stod(match.str(3))));</div>
 <div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>    }</div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>  }</div>
-<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span> </div>
-<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>  std::map&lt;std::string, double&gt;::const_iterator <a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a28924e94d69215dd4bbb247a96ce08f3">m</a> = num_metadata.lower_bound(<span class="stringliteral">&quot;TOF&quot;</span>);</div>
-<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>  <a class="code hl_variable" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a706ab5e821c27b1f2e221f89d766b809">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;TOF Channels number: &quot;</span> &lt;&lt; <a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a28924e94d69215dd4bbb247a96ce08f3">m</a>-&gt;second &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>  std::map&lt;std::string, double&gt;::const_iterator w = num_metadata.lower_bound(<span class="stringliteral">&quot;Time&quot;</span>);</div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>  <a class="code hl_variable" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a706ab5e821c27b1f2e221f89d766b809">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;Channel width: &quot;</span> &lt;&lt; w-&gt;second &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span> </div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>  <a class="code hl_struct" href="../../dc/ddc/structMantid_1_1MDAlgorithms_1_1LoadDNSSCD_1_1ExpData.html">ExpData</a> ds;</div>
-<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>  ds.<a class="code hl_variable" href="../../dc/ddc/structMantid_1_1MDAlgorithms_1_1LoadDNSSCD_1_1ExpData.html#ac33e96058a487eea803e0aa4ee34722b">deterota</a> = num_metadata[<span class="stringliteral">&quot;DeteRota&quot;</span>];</div>
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>  ds.<a class="code hl_variable" href="../../dc/ddc/structMantid_1_1MDAlgorithms_1_1LoadDNSSCD_1_1ExpData.html#a83ebc05fead660d471bfa2761361528b">huber</a> = num_metadata[<span class="stringliteral">&quot;Huber&quot;</span>];</div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>  ds.<a class="code hl_variable" href="../../dc/ddc/structMantid_1_1MDAlgorithms_1_1LoadDNSSCD_1_1ExpData.html#a8c27ee0f532d380fadff633126a1bea8">wavelength</a> = 10.0 * num_metadata[<span class="stringliteral">&quot;Lambda[nm]&quot;</span>];</div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>  ds.<a class="code hl_variable" href="../../dc/ddc/structMantid_1_1MDAlgorithms_1_1LoadDNSSCD_1_1ExpData.html#ac8ae2659592902237d2c710a900ee258">norm</a> = num_metadata[<a class="code hl_variable" href="../../da/d32/classMantid_1_1MDAlgorithms_1_1LoadDNSSCD.html#a3e7a8d1703c446e7943aba93c4eef587">m_normtype</a>];</div>
-<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>  ds.<a class="code hl_variable" href="../../dc/ddc/structMantid_1_1MDAlgorithms_1_1LoadDNSSCD_1_1ExpData.html#aedc0811d1a56fa7d575bb7a1aae12e29">chwidth</a> = w-&gt;second;</div>
-<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>  ds.<a class="code hl_variable" href="../../dc/ddc/structMantid_1_1MDAlgorithms_1_1LoadDNSSCD_1_1ExpData.html#a98b642cd7bd8d2861f58da7cb3bd812f">nchannels</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(std::ceil(<a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a28924e94d69215dd4bbb247a96ce08f3">m</a>-&gt;second));</div>
-<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span> </div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>  <span class="comment">// read data array</span></div>
-<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>  getline(file, line);</div>
-<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span> </div>
-<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>  std::list&lt;std::string&gt; columns;</div>
-<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>  <span class="keywordflow">while</span> (getline(file, line)) {</div>
-<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>    boost::trim(line);</div>
-<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> cols = <a class="code hl_function" href="../../da/d32/classMantid_1_1MDAlgorithms_1_1LoadDNSSCD.html#aa394c1a44ec1ce5eae02001a5abd3f10">splitIntoColumns</a>(columns, line);</div>
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>    <span class="keywordflow">if</span> (cols &gt; 0) {</div>
-<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>      ds.<a class="code hl_variable" href="../../dc/ddc/structMantid_1_1MDAlgorithms_1_1LoadDNSSCD_1_1ExpData.html#ad4cfc215b183acfa01be336f62721efb">detID</a>.emplace_back(std::stoi(columns.front()));</div>
-<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>      columns.pop_front();</div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>      std::vector&lt;double&gt; signal;</div>
-<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>      std::transform(columns.begin(), columns.end(), std::back_inserter(signal),</div>
-<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>                     [](<span class="keyword">const</span> std::string &amp;s) { return std::stod(s); });</div>
-<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>      ds.<a class="code hl_variable" href="../../dc/ddc/structMantid_1_1MDAlgorithms_1_1LoadDNSSCD_1_1ExpData.html#a9ebe3af019d0a062d2cd9f9c7871763f">signal</a>.emplace_back(signal);</div>
-<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>    }</div>
-<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>  }</div>
-<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>  <span class="comment">// DNS PA detector bank has only 24 detectors</span></div>
-<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>  ds.<a class="code hl_variable" href="../../dc/ddc/structMantid_1_1MDAlgorithms_1_1LoadDNSSCD_1_1ExpData.html#ad4cfc215b183acfa01be336f62721efb">detID</a>.resize(24);</div>
-<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>  ds.<a class="code hl_variable" href="../../dc/ddc/structMantid_1_1MDAlgorithms_1_1LoadDNSSCD_1_1ExpData.html#a9ebe3af019d0a062d2cd9f9c7871763f">signal</a>.resize(24);</div>
-<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>  <a class="code hl_variable" href="../../da/d32/classMantid_1_1MDAlgorithms_1_1LoadDNSSCD.html#ac5776750105752d33fb34d21e46d2146">m_data</a>.emplace_back(ds);</div>
-<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>}</div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>    <a class="code hl_variable" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#a3d05cf6aa68b03e254d70afbe869e305">n</a> = line.find(<span class="stringliteral">&quot;DATA&quot;</span>);</div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#a3d05cf6aa68b03e254d70afbe869e305">n</a> != std::string::npos) {</div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>    }</div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>  }</div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span> </div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>  std::map&lt;std::string, double&gt;::const_iterator <a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a28924e94d69215dd4bbb247a96ce08f3">m</a> = num_metadata.lower_bound(<span class="stringliteral">&quot;TOF&quot;</span>);</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>  <a class="code hl_variable" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a706ab5e821c27b1f2e221f89d766b809">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;TOF Channels number: &quot;</span> &lt;&lt; <a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a28924e94d69215dd4bbb247a96ce08f3">m</a>-&gt;second &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>  std::map&lt;std::string, double&gt;::const_iterator w = num_metadata.lower_bound(<span class="stringliteral">&quot;Time&quot;</span>);</div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>  <a class="code hl_variable" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a706ab5e821c27b1f2e221f89d766b809">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;Channel width: &quot;</span> &lt;&lt; w-&gt;second &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span> </div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>  <a class="code hl_struct" href="../../dc/ddc/structMantid_1_1MDAlgorithms_1_1LoadDNSSCD_1_1ExpData.html">ExpData</a> ds;</div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>  ds.<a class="code hl_variable" href="../../dc/ddc/structMantid_1_1MDAlgorithms_1_1LoadDNSSCD_1_1ExpData.html#ac33e96058a487eea803e0aa4ee34722b">deterota</a> = num_metadata[<span class="stringliteral">&quot;DeteRota&quot;</span>];</div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>  ds.<a class="code hl_variable" href="../../dc/ddc/structMantid_1_1MDAlgorithms_1_1LoadDNSSCD_1_1ExpData.html#a83ebc05fead660d471bfa2761361528b">huber</a> = num_metadata[<span class="stringliteral">&quot;Huber&quot;</span>];</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>  ds.<a class="code hl_variable" href="../../dc/ddc/structMantid_1_1MDAlgorithms_1_1LoadDNSSCD_1_1ExpData.html#a8c27ee0f532d380fadff633126a1bea8">wavelength</a> = 10.0 * num_metadata[<span class="stringliteral">&quot;Lambda[nm]&quot;</span>];</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>  ds.<a class="code hl_variable" href="../../dc/ddc/structMantid_1_1MDAlgorithms_1_1LoadDNSSCD_1_1ExpData.html#ac8ae2659592902237d2c710a900ee258">norm</a> = num_metadata[<a class="code hl_variable" href="../../da/d32/classMantid_1_1MDAlgorithms_1_1LoadDNSSCD.html#a3e7a8d1703c446e7943aba93c4eef587">m_normtype</a>];</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>  ds.<a class="code hl_variable" href="../../dc/ddc/structMantid_1_1MDAlgorithms_1_1LoadDNSSCD_1_1ExpData.html#aedc0811d1a56fa7d575bb7a1aae12e29">chwidth</a> = w-&gt;second;</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>  ds.<a class="code hl_variable" href="../../dc/ddc/structMantid_1_1MDAlgorithms_1_1LoadDNSSCD_1_1ExpData.html#a98b642cd7bd8d2861f58da7cb3bd812f">nchannels</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(std::ceil(<a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a28924e94d69215dd4bbb247a96ce08f3">m</a>-&gt;second));</div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span> </div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>  <span class="comment">// read data array</span></div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>  getline(file, line);</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span> </div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>  std::list&lt;std::string&gt; columns;</div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>  <span class="keywordflow">while</span> (getline(file, line)) {</div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>    boost::trim(line);</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> cols = <a class="code hl_function" href="../../da/d32/classMantid_1_1MDAlgorithms_1_1LoadDNSSCD.html#aa394c1a44ec1ce5eae02001a5abd3f10">splitIntoColumns</a>(columns, line);</div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>    <span class="keywordflow">if</span> (cols &gt; 0) {</div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>      ds.<a class="code hl_variable" href="../../dc/ddc/structMantid_1_1MDAlgorithms_1_1LoadDNSSCD_1_1ExpData.html#ad4cfc215b183acfa01be336f62721efb">detID</a>.emplace_back(std::stoi(columns.front()));</div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>      columns.pop_front();</div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>      std::vector&lt;double&gt; signal;</div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>      std::transform(columns.begin(), columns.end(), std::back_inserter(signal),</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>                     [](<span class="keyword">const</span> std::string &amp;s) { return std::stod(s); });</div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>      ds.<a class="code hl_variable" href="../../dc/ddc/structMantid_1_1MDAlgorithms_1_1LoadDNSSCD_1_1ExpData.html#a9ebe3af019d0a062d2cd9f9c7871763f">signal</a>.emplace_back(signal);</div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>    }</div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>  }</div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>  <span class="comment">// DNS PA detector bank has only 24 detectors</span></div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>  ds.<a class="code hl_variable" href="../../dc/ddc/structMantid_1_1MDAlgorithms_1_1LoadDNSSCD_1_1ExpData.html#ad4cfc215b183acfa01be336f62721efb">detID</a>.resize(24);</div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>  ds.<a class="code hl_variable" href="../../dc/ddc/structMantid_1_1MDAlgorithms_1_1LoadDNSSCD_1_1ExpData.html#a9ebe3af019d0a062d2cd9f9c7871763f">signal</a>.resize(24);</div>
+<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>  <a class="code hl_variable" href="../../da/d32/classMantid_1_1MDAlgorithms_1_1LoadDNSSCD.html#ac5776750105752d33fb34d21e46d2146">m_data</a>.emplace_back(ds);</div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>}</div>
 </div>
-<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span> </div>
-<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>} <span class="comment">// namespace Mantid::MDAlgorithms</span></div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span> </div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>} <span class="comment">// namespace Mantid::MDAlgorithms</span></div>
 <div class="ttc" id="aArrayLengthValidator_8h_html"><div class="ttname"><a href="../../d8/d41/ArrayLengthValidator_8h.html">ArrayLengthValidator.h</a></div></div>
 <div class="ttc" id="aArrayProperty_8h_html"><div class="ttname"><a href="../../df/da4/ArrayProperty_8h.html">ArrayProperty.h</a></div></div>
 <div class="ttc" id="aAugmentedLagrangianOptimizer_8cpp_html_a3d05cf6aa68b03e254d70afbe869e305"><div class="ttname"><a href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#a3d05cf6aa68b03e254d70afbe869e305">n</a></div><div class="ttdeci">size_t n</div><div class="ttdef"><b>Definition</b> <a href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">AugmentedLagrangianOptimizer.cpp:42</a></div></div>

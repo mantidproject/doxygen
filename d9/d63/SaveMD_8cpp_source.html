@@ -119,7 +119,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="../../d9/d51/EnabledWhenProperty_8h.html">MantidKernel/EnabledWhenProperty.h</a>&quot;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="../../d3/db1/Matrix_8h.html">MantidKernel/Matrix.h</a>&quot;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="../../de/d53/Strings_8h.html">MantidKernel/Strings.h</a>&quot;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;Poco/File.h&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;filesystem&gt;</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../d9/d63/SaveMD_8cpp.html#a68108ed8248bab940bfd4c47cb64c5e0">   25</a></span><span class="keyword">using </span><a class="code hl_typedef" href="../../d6/df9/MDBoxFlatTree_8cpp.html#a68108ed8248bab940bfd4c47cb64c5e0">file_holder_type</a> = std::unique_ptr&lt;Mantid::Nexus::File&gt;;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
@@ -192,218 +192,216 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  }</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keywordflow">if</span> (!wsIsFileBacked) {</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    Poco::File oldFile(filename);</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordflow">if</span> (oldFile.exists())</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>      oldFile.remove();</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  }</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="keyword">auto</span> prog = std::make_unique&lt;Progress&gt;(<span class="keyword">this</span>, 0.0, 0.05, 1);</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="keywordflow">if</span> (updateFileBackend) <span class="comment">// workspace has its own file and ignores any changes to the algorithm parameters</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  {</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordflow">if</span> (!ws-&gt;<a class="code hl_function" href="../../d2/d6e/classMantid_1_1DataObjects_1_1MDEventWorkspace.html#a792d401a89c0a0b94f4312607a7c6b4d">isFileBacked</a>())</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>      <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot; attempt to update non-file backed workspace&quot;</span>);</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    filename = bc-&gt;getFileIO()-&gt;getFileName();</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  }</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <span class="comment">//-----------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <span class="comment">// create or open WS group and put there additional information about WS and its dimensions</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keyword">auto</span> nDims = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(nd);</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <span class="keywordtype">bool</span> data_exist;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  <span class="keyword">auto</span> file =</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>      <a class="code hl_typedef" href="../../d6/df9/MDBoxFlatTree_8cpp.html#a68108ed8248bab940bfd4c47cb64c5e0">file_holder_type</a>(<a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#aeb3e288a79908405d41d6fa79380a3ca">MDBoxFlatTree::createOrOpenMDWSgroup</a>(filename, nDims, <a class="code hl_function" href="../../db/d46/classMantid_1_1DataObjects_1_1MDLeanEvent.html#abd2f1d99524864951e2fd8af4aec75be">MDE::getTypeName</a>(), <span class="keyword">false</span>, data_exist));</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <span class="comment">// Save each NEW ExperimentInfo to a spot in the file</span></div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#aff718065cd284e8be55502018a47feb7">MDBoxFlatTree::saveExperimentInfos</a>(file.get(), ws);</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  <span class="keywordflow">if</span> (!updateFileBackend || !data_exist) {</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#abcee5e0501e17990092ee11496f86bb6">MDBoxFlatTree::saveWSGenericInfo</a>(file.get(), ws);</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  }</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  file-&gt;closeGroup();</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  file-&gt;close();</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <a class="code hl_class" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html">MDBoxFlatTree</a> BoxFlatStruct;</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  <span class="comment">//-----------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <span class="keywordflow">if</span> (updateFileBackend) <span class="comment">// the workspace is already file backed;</span></div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  {</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    prepareUpdate&lt;MDE, nd&gt;(BoxFlatStruct, bc.get(), ws, filename);</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (copyFile) {</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="comment">// Update the original file</span></div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordflow">if</span> (ws-&gt;<a class="code hl_function" href="../../dc/d21/classMantid_1_1API_1_1IMDEventWorkspace.html#a80531fef91f52f095d9569eb21a16f38">fileNeedsUpdating</a>()) {</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>      prepareUpdate&lt;MDE, nd&gt;(BoxFlatStruct, bc.get(), ws, filename);</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>      BoxFlatStruct.<a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#ae5eb9bba8a5ae8e9bb969c569b790a11">saveBoxStructure</a>(filename);</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    }</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    bc-&gt;getFileIO()-&gt;copyFileTo(filename);</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  } <span class="keywordflow">else</span> <span class="comment">// not file backed;</span></div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>  {</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="comment">// the boxes file positions are unknown and we need to calculate it.</span></div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    BoxFlatStruct.<a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#a7256e24a74633688aa3c6e7aa0b890e3">initFlatStructure</a>(ws, filename);</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="comment">// create saver class</span></div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keyword">auto</span> Saver = std::shared_ptr&lt;API::IBoxControllerIO&gt;(<span class="keyword">new</span> <a class="code hl_class" href="../../dd/df9/classMantid_1_1DataObjects_1_1BoxControllerNeXusIO.html">DataObjects::BoxControllerNeXusIO</a>(bc.get()));</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    Saver-&gt;setDataType(<span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../d8/d8e/namespaceMantid.html#a48a3f1c344c2d96fe85a4d92fb84f165">coord_t</a>), <a class="code hl_function" href="../../db/d46/classMantid_1_1DataObjects_1_1MDLeanEvent.html#abd2f1d99524864951e2fd8af4aec75be">MDE::getTypeName</a>());</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keywordflow">if</span> (makeFileBackend) {</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>      <span class="comment">// store saver with box controller</span></div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>      bc-&gt;setFileBacked(Saver, filename);</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>      <span class="comment">// get access to boxes array</span></div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>      std::vector&lt;API::IMDNode *&gt; &amp;boxes = BoxFlatStruct.<a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#a184f0f7c0a78480a3a79a74f0408c3e6">getBoxes</a>();</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>      <span class="comment">// calculate the position of the boxes on file, indicating to make them</span></div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>      <span class="comment">// saveable and that the boxes were not saved.</span></div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>      BoxFlatStruct.<a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#ae9978b62f7f1858624126b56d263e91c">setBoxesFilePositions</a>(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>      prog-&gt;resetNumSteps(boxes.size(), 0.06, 0.90);</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;boxe : boxes) {</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="keyword">auto</span> saveableTag = boxe-&gt;getISaveable();</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordflow">if</span> (saveableTag) <span class="comment">// only boxes can be saveable</span></div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        {</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>          <span class="comment">// do not spend time on empty or masked boxes</span></div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>          <span class="keywordflow">if</span> (boxe-&gt;getDataInMemorySize() == 0 || boxe-&gt;getIsMasked())</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>          <span class="comment">// save boxes directly using the boxes file postion, precalculated in boxFlatStructure.</span></div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>          saveableTag-&gt;save();</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>          <span class="comment">// remove boxes data from memory. This will actually correctly set the</span></div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>          <span class="comment">// tag indicatin that data were not loaded.</span></div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>          saveableTag-&gt;clearDataFromMemory();</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>          <span class="comment">// put boxes into write buffer wich will save them when necessary</span></div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>          <span class="comment">// Saver-&gt;toWrite(saveTag);</span></div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>          prog-&gt;report(<span class="stringliteral">&quot;Saving Box&quot;</span>);</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        }</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>      }</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>      <span class="comment">// remove everything from diskBuffer;  (not sure if it really necessary</span></div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>      <span class="comment">// but just in case , should not make any harm)</span></div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>      Saver-&gt;flushCache();</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>      <span class="comment">// drop NeXus on HDD (not sure if it really necessary but just in case )</span></div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>      Saver-&gt;flushData();</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    } <span class="keywordflow">else</span> <span class="comment">// just save data, and finish with it</span></div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    {</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>      Saver-&gt;openFile(filename, <span class="stringliteral">&quot;w&quot;</span>);</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>      BoxFlatStruct.<a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#ae9978b62f7f1858624126b56d263e91c">setBoxesFilePositions</a>(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>      std::vector&lt;API::IMDNode *&gt; &amp;boxes = BoxFlatStruct.<a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#a184f0f7c0a78480a3a79a74f0408c3e6">getBoxes</a>();</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>      std::vector&lt;uint64_t&gt; &amp;eventIndex = BoxFlatStruct.<a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#a9359f2c95ba694f502f3ed893320d1a7">getEventIndex</a>();</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>      prog-&gt;resetNumSteps(boxes.size(), 0.06, 0.90);</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; boxes.size(); i++) {</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        <span class="keywordflow">if</span> (eventIndex[2 * i + 1] == 0 || boxes[i]-&gt;getIsMasked())</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>          <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        boxes[i]-&gt;saveAt(Saver.get(), eventIndex[2 * i]);</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        prog-&gt;report(<span class="stringliteral">&quot;Saving Box&quot;</span>);</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>      }</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>      Saver-&gt;closeFile();</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    }</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>  }</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  <span class="comment">// -------------- Save Box Structure  -------------------------------------</span></div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  <span class="comment">// OK, we&#39;ve filled these big arrays of data representing flat box structrre.</span></div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  <span class="comment">// Save them.</span></div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a7ac471ebfae5ff09e8423fba191f09fd">progress</a>(0.91, <span class="stringliteral">&quot;Writing Box Data&quot;</span>);</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  prog-&gt;resetNumSteps(8, 0.92, 1.00);</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  <span class="comment">// Save box structure;</span></div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  <span class="keywordflow">if</span> (!copyFile) {</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    BoxFlatStruct.<a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#ae5eb9bba8a5ae8e9bb969c569b790a11">saveBoxStructure</a>(filename);</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  }</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>  ws-&gt;<a class="code hl_function" href="../../dc/d21/classMantid_1_1API_1_1IMDEventWorkspace.html#a8f6b19599aa3df4d87cedc24c72aa125">setFileNeedsUpdating</a>(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>}</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordflow">if</span> (std::filesystem::exists(filename))</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>      std::filesystem::remove(filename);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="keyword">auto</span> prog = std::make_unique&lt;Progress&gt;(<span class="keyword">this</span>, 0.0, 0.05, 1);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="keywordflow">if</span> (updateFileBackend) <span class="comment">// workspace has its own file and ignores any changes to the algorithm parameters</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordflow">if</span> (!ws-&gt;<a class="code hl_function" href="../../d2/d6e/classMantid_1_1DataObjects_1_1MDEventWorkspace.html#a792d401a89c0a0b94f4312607a7c6b4d">isFileBacked</a>())</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>      <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot; attempt to update non-file backed workspace&quot;</span>);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    filename = bc-&gt;getFileIO()-&gt;getFileName();</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  }</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <span class="comment">//-----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <span class="comment">// create or open WS group and put there additional information about WS and its dimensions</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <span class="keyword">auto</span> nDims = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(nd);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keywordtype">bool</span> data_exist;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <span class="keyword">auto</span> file =</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>      <a class="code hl_typedef" href="../../d6/df9/MDBoxFlatTree_8cpp.html#a68108ed8248bab940bfd4c47cb64c5e0">file_holder_type</a>(<a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#aeb3e288a79908405d41d6fa79380a3ca">MDBoxFlatTree::createOrOpenMDWSgroup</a>(filename, nDims, <a class="code hl_function" href="../../db/d46/classMantid_1_1DataObjects_1_1MDLeanEvent.html#abd2f1d99524864951e2fd8af4aec75be">MDE::getTypeName</a>(), <span class="keyword">false</span>, data_exist));</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <span class="comment">// Save each NEW ExperimentInfo to a spot in the file</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#aff718065cd284e8be55502018a47feb7">MDBoxFlatTree::saveExperimentInfos</a>(file.get(), ws);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <span class="keywordflow">if</span> (!updateFileBackend || !data_exist) {</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#abcee5e0501e17990092ee11496f86bb6">MDBoxFlatTree::saveWSGenericInfo</a>(file.get(), ws);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  file-&gt;closeGroup();</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  file-&gt;close();</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  <a class="code hl_class" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html">MDBoxFlatTree</a> BoxFlatStruct;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="comment">//-----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  <span class="keywordflow">if</span> (updateFileBackend) <span class="comment">// the workspace is already file backed;</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  {</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    prepareUpdate&lt;MDE, nd&gt;(BoxFlatStruct, bc.get(), ws, filename);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (copyFile) {</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="comment">// Update the original file</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordflow">if</span> (ws-&gt;<a class="code hl_function" href="../../dc/d21/classMantid_1_1API_1_1IMDEventWorkspace.html#a80531fef91f52f095d9569eb21a16f38">fileNeedsUpdating</a>()) {</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>      prepareUpdate&lt;MDE, nd&gt;(BoxFlatStruct, bc.get(), ws, filename);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>      BoxFlatStruct.<a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#ae5eb9bba8a5ae8e9bb969c569b790a11">saveBoxStructure</a>(filename);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    }</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    bc-&gt;getFileIO()-&gt;copyFileTo(filename);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  } <span class="keywordflow">else</span> <span class="comment">// not file backed;</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  {</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="comment">// the boxes file positions are unknown and we need to calculate it.</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    BoxFlatStruct.<a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#a7256e24a74633688aa3c6e7aa0b890e3">initFlatStructure</a>(ws, filename);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="comment">// create saver class</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keyword">auto</span> Saver = std::shared_ptr&lt;API::IBoxControllerIO&gt;(<span class="keyword">new</span> <a class="code hl_class" href="../../dd/df9/classMantid_1_1DataObjects_1_1BoxControllerNeXusIO.html">DataObjects::BoxControllerNeXusIO</a>(bc.get()));</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    Saver-&gt;setDataType(<span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../d8/d8e/namespaceMantid.html#a48a3f1c344c2d96fe85a4d92fb84f165">coord_t</a>), <a class="code hl_function" href="../../db/d46/classMantid_1_1DataObjects_1_1MDLeanEvent.html#abd2f1d99524864951e2fd8af4aec75be">MDE::getTypeName</a>());</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keywordflow">if</span> (makeFileBackend) {</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>      <span class="comment">// store saver with box controller</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>      bc-&gt;setFileBacked(Saver, filename);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>      <span class="comment">// get access to boxes array</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>      std::vector&lt;API::IMDNode *&gt; &amp;boxes = BoxFlatStruct.<a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#a184f0f7c0a78480a3a79a74f0408c3e6">getBoxes</a>();</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>      <span class="comment">// calculate the position of the boxes on file, indicating to make them</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>      <span class="comment">// saveable and that the boxes were not saved.</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>      BoxFlatStruct.<a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#ae9978b62f7f1858624126b56d263e91c">setBoxesFilePositions</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>      prog-&gt;resetNumSteps(boxes.size(), 0.06, 0.90);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;boxe : boxes) {</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="keyword">auto</span> saveableTag = boxe-&gt;getISaveable();</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="keywordflow">if</span> (saveableTag) <span class="comment">// only boxes can be saveable</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        {</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>          <span class="comment">// do not spend time on empty or masked boxes</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>          <span class="keywordflow">if</span> (boxe-&gt;getDataInMemorySize() == 0 || boxe-&gt;getIsMasked())</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>          <span class="comment">// save boxes directly using the boxes file postion, precalculated in boxFlatStructure.</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>          saveableTag-&gt;save();</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>          <span class="comment">// remove boxes data from memory. This will actually correctly set the</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>          <span class="comment">// tag indicatin that data were not loaded.</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>          saveableTag-&gt;clearDataFromMemory();</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>          <span class="comment">// put boxes into write buffer wich will save them when necessary</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>          <span class="comment">// Saver-&gt;toWrite(saveTag);</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>          prog-&gt;report(<span class="stringliteral">&quot;Saving Box&quot;</span>);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        }</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>      }</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>      <span class="comment">// remove everything from diskBuffer;  (not sure if it really necessary</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>      <span class="comment">// but just in case , should not make any harm)</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>      Saver-&gt;flushCache();</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>      <span class="comment">// drop NeXus on HDD (not sure if it really necessary but just in case )</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>      Saver-&gt;flushData();</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    } <span class="keywordflow">else</span> <span class="comment">// just save data, and finish with it</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    {</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>      Saver-&gt;openFile(filename, <span class="stringliteral">&quot;w&quot;</span>);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>      BoxFlatStruct.<a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#ae9978b62f7f1858624126b56d263e91c">setBoxesFilePositions</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>      std::vector&lt;API::IMDNode *&gt; &amp;boxes = BoxFlatStruct.<a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#a184f0f7c0a78480a3a79a74f0408c3e6">getBoxes</a>();</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>      std::vector&lt;uint64_t&gt; &amp;eventIndex = BoxFlatStruct.<a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#a9359f2c95ba694f502f3ed893320d1a7">getEventIndex</a>();</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>      prog-&gt;resetNumSteps(boxes.size(), 0.06, 0.90);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; boxes.size(); i++) {</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        <span class="keywordflow">if</span> (eventIndex[2 * i + 1] == 0 || boxes[i]-&gt;getIsMasked())</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>          <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        boxes[i]-&gt;saveAt(Saver.get(), eventIndex[2 * i]);</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        prog-&gt;report(<span class="stringliteral">&quot;Saving Box&quot;</span>);</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>      }</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>      Saver-&gt;closeFile();</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    }</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  }</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  <span class="comment">// -------------- Save Box Structure  -------------------------------------</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  <span class="comment">// OK, we&#39;ve filled these big arrays of data representing flat box structrre.</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  <span class="comment">// Save them.</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a7ac471ebfae5ff09e8423fba191f09fd">progress</a>(0.91, <span class="stringliteral">&quot;Writing Box Data&quot;</span>);</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  prog-&gt;resetNumSteps(8, 0.92, 1.00);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  <span class="comment">// Save box structure;</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  <span class="keywordflow">if</span> (!copyFile) {</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    BoxFlatStruct.<a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#ae5eb9bba8a5ae8e9bb969c569b790a11">saveBoxStructure</a>(filename);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  }</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  ws-&gt;<a class="code hl_function" href="../../dc/d21/classMantid_1_1API_1_1IMDEventWorkspace.html#a8f6b19599aa3df4d87cedc24c72aa125">setFileNeedsUpdating</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>}</div>
 </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00214" data-start="{" data-end="}">
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="../../d0/d99/classMantid_1_1MDAlgorithms_1_1SaveMD.html#af1f407bd4162e4d4f939266918209392">  214</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d0/d99/classMantid_1_1MDAlgorithms_1_1SaveMD.html#af1f407bd4162e4d4f939266918209392">SaveMD::doSaveHisto</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="../../db/d22/namespaceMantid_1_1DataObjects.html#aa76ecd067298767b02fa3a587a0812e0">Mantid::DataObjects::MDHistoWorkspace_sptr</a> &amp;ws) {</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  std::string filename = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a3f42e205cfdb677cc2b4033e4f2ef3da">getPropertyValue</a>(<span class="stringliteral">&quot;Filename&quot;</span>);</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  <span class="comment">// Erase the file if it exists</span></div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  Poco::File oldFile(filename);</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  <span class="keywordflow">if</span> (oldFile.exists())</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    oldFile.remove();</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  <span class="comment">// Create a new file in HDF5 mode.</span></div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  <span class="keyword">auto</span> file = std::make_unique&lt;Nexus::File&gt;(filename, <a class="code hl_enumvalue" href="../../d7/d7c/NexusFile__fwd_8h.html#a260981dbef85f168417c8ae1e656fd1ea1c063418cc7abb7ebb0ca7c08ff48b1f">NXaccess::CREATE5</a>);</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  <span class="comment">// The base entry. Named so as to distinguish from other workspace types.</span></div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  file-&gt;makeGroup(<span class="stringliteral">&quot;MDHistoWorkspace&quot;</span>, <span class="stringliteral">&quot;NXentry&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  <span class="comment">// Write out the coordinate system</span></div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  file-&gt;writeData(<span class="stringliteral">&quot;coordinate_system&quot;</span>, <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(ws-&gt;getSpecialCoordinateSystem()));</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  <span class="comment">// Write out the set display normalization</span></div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  file-&gt;writeData(<span class="stringliteral">&quot;visual_normalization&quot;</span>, <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(ws-&gt;displayNormalization()));</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  <span class="comment">// Save the algorithm history under &quot;process&quot;</span></div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  ws-&gt;getHistory().saveNexus(file.get());</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  <span class="comment">// Save all the ExperimentInfos</span></div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  <span class="keywordflow">for</span> (uint16_t i = 0; i &lt; ws-&gt;getNumExperimentInfo(); i++) {</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a85560d1bbf811496bbbea6c741022ab2">ExperimentInfo_sptr</a> ei = ws-&gt;getExperimentInfo(i);</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    std::string groupName = <span class="stringliteral">&quot;experiment&quot;</span> + <a class="code hl_function" href="../../de/d72/namespaceMantid_1_1Kernel_1_1Strings.html#aeaa711054041ab6be490792bb08d39fc">Strings::toString</a>(i);</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <span class="keywordflow">if</span> (ei) {</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>      <span class="comment">// Can&#39;t overwrite entries. Just add the new ones</span></div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>      file-&gt;makeGroup(groupName, <span class="stringliteral">&quot;NXgroup&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>      file-&gt;putAttr(<span class="stringliteral">&quot;version&quot;</span>, 1);</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>      ei-&gt;saveExperimentInfoNexus(file.get());</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>      file-&gt;closeGroup();</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    }</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>  }</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>  <span class="comment">// Write out some general information like # of dimensions</span></div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>  file-&gt;writeData(<span class="stringliteral">&quot;dimensions&quot;</span>, int32_t(ws-&gt;getNumDims()));</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>  <span class="comment">// Save each dimension, as their XML representation</span></div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> <a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#add740ce10e8799ef307d6d1b9d5c72b9">d</a> = 0; <a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#add740ce10e8799ef307d6d1b9d5c72b9">d</a> &lt; ws-&gt;getNumDims(); <a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#add740ce10e8799ef307d6d1b9d5c72b9">d</a>++) {</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    std::ostringstream mess;</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    mess &lt;&lt; <span class="stringliteral">&quot;dimension&quot;</span> &lt;&lt; <a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#add740ce10e8799ef307d6d1b9d5c72b9">d</a>;</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    file-&gt;putAttr(mess.str(), ws-&gt;getDimension(<a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#add740ce10e8799ef307d6d1b9d5c72b9">d</a>)-&gt;toXMLString());</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  }</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>  <span class="comment">// Write out the affine matrices</span></div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>  <a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#a9440081e5c792b17431e535db0b65ee2">MDBoxFlatTree::saveAffineTransformMatricies</a>(file.get(), std::dynamic_pointer_cast&lt;const IMDWorkspace&gt;(ws));</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>  <span class="comment">// Check that the typedef has not been changed. The NeXus types would need</span></div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>  <span class="comment">// changing if it does!</span></div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  <span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../d8/d8e/namespaceMantid.html#aa317d86074a6132ceea787aa720eaa91">signal_t</a>) == <span class="keyword">sizeof</span>(<span class="keywordtype">double</span>), <span class="stringliteral">&quot;signal_t using has been changed!&quot;</span>);</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>  <span class="comment">// Number of data points</span></div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  <span class="keyword">auto</span> nPoints = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(ws-&gt;getNPoints());</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>  file-&gt;makeData(<span class="stringliteral">&quot;signal&quot;</span>, <a class="code hl_variable" href="../../de/d25/classNXnumtype.html#afa09b971b949ceccf9942601058bef63">NXnumtype::FLOAT64</a>, nPoints, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>  file-&gt;putData(ws-&gt;getSignalArray());</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>  file-&gt;closeData();</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>  file-&gt;makeData(<span class="stringliteral">&quot;errors_squared&quot;</span>, <a class="code hl_variable" href="../../de/d25/classNXnumtype.html#afa09b971b949ceccf9942601058bef63">NXnumtype::FLOAT64</a>, nPoints, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>  file-&gt;putData(ws-&gt;getErrorSquaredArray());</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>  file-&gt;closeData();</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>  file-&gt;makeData(<span class="stringliteral">&quot;num_events&quot;</span>, <a class="code hl_variable" href="../../de/d25/classNXnumtype.html#afa09b971b949ceccf9942601058bef63">NXnumtype::FLOAT64</a>, nPoints, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>  file-&gt;putData(ws-&gt;getNumEventsArray());</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>  file-&gt;closeData();</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>  file-&gt;makeData(<span class="stringliteral">&quot;mask&quot;</span>, <a class="code hl_variable" href="../../de/d25/classNXnumtype.html#a4e986e714a9e7f08e59e533396256aac">NXnumtype::INT8</a>, nPoints, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>  file-&gt;putData(ws-&gt;getMaskArray());</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>  file-&gt;closeData();</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00213" data-start="{" data-end="}">
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="../../d0/d99/classMantid_1_1MDAlgorithms_1_1SaveMD.html#af1f407bd4162e4d4f939266918209392">  213</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d0/d99/classMantid_1_1MDAlgorithms_1_1SaveMD.html#af1f407bd4162e4d4f939266918209392">SaveMD::doSaveHisto</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="../../db/d22/namespaceMantid_1_1DataObjects.html#aa76ecd067298767b02fa3a587a0812e0">Mantid::DataObjects::MDHistoWorkspace_sptr</a> &amp;ws) {</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  std::string filename = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a3f42e205cfdb677cc2b4033e4f2ef3da">getPropertyValue</a>(<span class="stringliteral">&quot;Filename&quot;</span>);</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>  <span class="comment">// Erase the file if it exists</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  <span class="keywordflow">if</span> (std::filesystem::exists(filename))</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    std::filesystem::remove(filename);</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>  <span class="comment">// Create a new file in HDF5 mode.</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  <span class="keyword">auto</span> file = std::make_unique&lt;Nexus::File&gt;(filename, <a class="code hl_enumvalue" href="../../d7/d7c/NexusFile__fwd_8h.html#a260981dbef85f168417c8ae1e656fd1ea1c063418cc7abb7ebb0ca7c08ff48b1f">NXaccess::CREATE5</a>);</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  <span class="comment">// The base entry. Named so as to distinguish from other workspace types.</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  file-&gt;makeGroup(<span class="stringliteral">&quot;MDHistoWorkspace&quot;</span>, <span class="stringliteral">&quot;NXentry&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  <span class="comment">// Write out the coordinate system</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  file-&gt;writeData(<span class="stringliteral">&quot;coordinate_system&quot;</span>, <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(ws-&gt;getSpecialCoordinateSystem()));</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  <span class="comment">// Write out the set display normalization</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  file-&gt;writeData(<span class="stringliteral">&quot;visual_normalization&quot;</span>, <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(ws-&gt;displayNormalization()));</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  <span class="comment">// Save the algorithm history under &quot;process&quot;</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  ws-&gt;getHistory().saveNexus(file.get());</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  <span class="comment">// Save all the ExperimentInfos</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  <span class="keywordflow">for</span> (uint16_t i = 0; i &lt; ws-&gt;getNumExperimentInfo(); i++) {</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a85560d1bbf811496bbbea6c741022ab2">ExperimentInfo_sptr</a> ei = ws-&gt;getExperimentInfo(i);</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    std::string groupName = <span class="stringliteral">&quot;experiment&quot;</span> + <a class="code hl_function" href="../../de/d72/namespaceMantid_1_1Kernel_1_1Strings.html#aeaa711054041ab6be490792bb08d39fc">Strings::toString</a>(i);</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="keywordflow">if</span> (ei) {</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>      <span class="comment">// Can&#39;t overwrite entries. Just add the new ones</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>      file-&gt;makeGroup(groupName, <span class="stringliteral">&quot;NXgroup&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>      file-&gt;putAttr(<span class="stringliteral">&quot;version&quot;</span>, 1);</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>      ei-&gt;saveExperimentInfoNexus(file.get());</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>      file-&gt;closeGroup();</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    }</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  }</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>  <span class="comment">// Write out some general information like # of dimensions</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>  file-&gt;writeData(<span class="stringliteral">&quot;dimensions&quot;</span>, int32_t(ws-&gt;getNumDims()));</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>  <span class="comment">// Save each dimension, as their XML representation</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> <a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#add740ce10e8799ef307d6d1b9d5c72b9">d</a> = 0; <a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#add740ce10e8799ef307d6d1b9d5c72b9">d</a> &lt; ws-&gt;getNumDims(); <a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#add740ce10e8799ef307d6d1b9d5c72b9">d</a>++) {</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    std::ostringstream mess;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    mess &lt;&lt; <span class="stringliteral">&quot;dimension&quot;</span> &lt;&lt; <a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#add740ce10e8799ef307d6d1b9d5c72b9">d</a>;</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    file-&gt;putAttr(mess.str(), ws-&gt;getDimension(<a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#add740ce10e8799ef307d6d1b9d5c72b9">d</a>)-&gt;toXMLString());</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>  }</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  <span class="comment">// Write out the affine matrices</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>  <a class="code hl_function" href="../../de/db5/classMantid_1_1DataObjects_1_1MDBoxFlatTree.html#a9440081e5c792b17431e535db0b65ee2">MDBoxFlatTree::saveAffineTransformMatricies</a>(file.get(), std::dynamic_pointer_cast&lt;const IMDWorkspace&gt;(ws));</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>  <span class="comment">// Check that the typedef has not been changed. The NeXus types would need</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>  <span class="comment">// changing if it does!</span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>  <span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../d8/d8e/namespaceMantid.html#aa317d86074a6132ceea787aa720eaa91">signal_t</a>) == <span class="keyword">sizeof</span>(<span class="keywordtype">double</span>), <span class="stringliteral">&quot;signal_t using has been changed!&quot;</span>);</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  <span class="comment">// Number of data points</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  <span class="keyword">auto</span> nPoints = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(ws-&gt;getNPoints());</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  file-&gt;makeData(<span class="stringliteral">&quot;signal&quot;</span>, <a class="code hl_variable" href="../../de/d25/classNXnumtype.html#afa09b971b949ceccf9942601058bef63">NXnumtype::FLOAT64</a>, nPoints, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  file-&gt;putData(ws-&gt;getSignalArray());</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>  file-&gt;closeData();</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>  file-&gt;makeData(<span class="stringliteral">&quot;errors_squared&quot;</span>, <a class="code hl_variable" href="../../de/d25/classNXnumtype.html#afa09b971b949ceccf9942601058bef63">NXnumtype::FLOAT64</a>, nPoints, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>  file-&gt;putData(ws-&gt;getErrorSquaredArray());</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>  file-&gt;closeData();</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>  file-&gt;makeData(<span class="stringliteral">&quot;num_events&quot;</span>, <a class="code hl_variable" href="../../de/d25/classNXnumtype.html#afa09b971b949ceccf9942601058bef63">NXnumtype::FLOAT64</a>, nPoints, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>  file-&gt;putData(ws-&gt;getNumEventsArray());</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>  file-&gt;closeData();</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>  file-&gt;makeData(<span class="stringliteral">&quot;mask&quot;</span>, <a class="code hl_variable" href="../../de/d25/classNXnumtype.html#a4e986e714a9e7f08e59e533396256aac">NXnumtype::INT8</a>, nPoints, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>  file-&gt;putData(ws-&gt;getMaskArray());</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>  file-&gt;closeData();</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>  <span class="comment">// TODO: Links to original workspace???</span></div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  <span class="comment">// TODO: Links to original workspace???</span></div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>  file-&gt;closeGroup();</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>  file-&gt;close();</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>}</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  file-&gt;closeGroup();</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>  file-&gt;close();</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>}</div>
 </div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00295" data-start="{" data-end="}">
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno"><a class="line" href="../../d0/d99/classMantid_1_1MDAlgorithms_1_1SaveMD.html#a9309b24c9a79ec186c0336ddac17b1a5">  295</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d0/d99/classMantid_1_1MDAlgorithms_1_1SaveMD.html#a9309b24c9a79ec186c0336ddac17b1a5">SaveMD::exec</a>() {</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#aa43b00057ef0a76573ea9f51b2792387">IMDWorkspace_sptr</a> ws = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a5356ea547c4381e4144caa2b37599ead">getProperty</a>(<span class="stringliteral">&quot;InputWorkspace&quot;</span>);</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>  <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a035dd273afe7040e65d84c147a5f3c84">IMDEventWorkspace_sptr</a> eventWS = std::dynamic_pointer_cast&lt;IMDEventWorkspace&gt;(ws);</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>  <a class="code hl_typedef" href="../../db/d22/namespaceMantid_1_1DataObjects.html#aa76ecd067298767b02fa3a587a0812e0">MDHistoWorkspace_sptr</a> histoWS = std::dynamic_pointer_cast&lt;MDHistoWorkspace&gt;(ws);</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  <span class="keywordflow">if</span> (eventWS) {</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    <span class="comment">// Wrapper to cast to MDEventWorkspace then call the function</span></div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    <a class="code hl_define" href="../../dd/dea/MDEventFactory_8h.html#a59964591f2adfa8465b4dd9642450b0f">CALL_MDEVENT_FUNCTION</a>(this-&gt;<a class="code hl_function" href="../../d0/d99/classMantid_1_1MDAlgorithms_1_1SaveMD.html#a1c3b2c5139382d0a8e3205a104e0ae2d">doSaveEvents</a>, eventWS);</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (histoWS) {</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    this-&gt;<a class="code hl_function" href="../../d0/d99/classMantid_1_1MDAlgorithms_1_1SaveMD.html#af1f407bd4162e4d4f939266918209392">doSaveHisto</a>(histoWS);</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>  } <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;SaveMD can only save MDEventWorkspaces and &quot;</span></div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>                             <span class="stringliteral">&quot;MDHistoWorkspaces.\nPlease use SaveNexus or &quot;</span></div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>                             <span class="stringliteral">&quot;another algorithm appropriate for this workspace &quot;</span></div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>                             <span class="stringliteral">&quot;type.&quot;</span>);</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>}</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00293" data-start="{" data-end="}">
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno"><a class="line" href="../../d0/d99/classMantid_1_1MDAlgorithms_1_1SaveMD.html#a9309b24c9a79ec186c0336ddac17b1a5">  293</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d0/d99/classMantid_1_1MDAlgorithms_1_1SaveMD.html#a9309b24c9a79ec186c0336ddac17b1a5">SaveMD::exec</a>() {</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>  <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#aa43b00057ef0a76573ea9f51b2792387">IMDWorkspace_sptr</a> ws = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a5356ea547c4381e4144caa2b37599ead">getProperty</a>(<span class="stringliteral">&quot;InputWorkspace&quot;</span>);</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>  <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a035dd273afe7040e65d84c147a5f3c84">IMDEventWorkspace_sptr</a> eventWS = std::dynamic_pointer_cast&lt;IMDEventWorkspace&gt;(ws);</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  <a class="code hl_typedef" href="../../db/d22/namespaceMantid_1_1DataObjects.html#aa76ecd067298767b02fa3a587a0812e0">MDHistoWorkspace_sptr</a> histoWS = std::dynamic_pointer_cast&lt;MDHistoWorkspace&gt;(ws);</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>  <span class="keywordflow">if</span> (eventWS) {</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    <span class="comment">// Wrapper to cast to MDEventWorkspace then call the function</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    <a class="code hl_define" href="../../dd/dea/MDEventFactory_8h.html#a59964591f2adfa8465b4dd9642450b0f">CALL_MDEVENT_FUNCTION</a>(this-&gt;<a class="code hl_function" href="../../d0/d99/classMantid_1_1MDAlgorithms_1_1SaveMD.html#a1c3b2c5139382d0a8e3205a104e0ae2d">doSaveEvents</a>, eventWS);</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (histoWS) {</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    this-&gt;<a class="code hl_function" href="../../d0/d99/classMantid_1_1MDAlgorithms_1_1SaveMD.html#af1f407bd4162e4d4f939266918209392">doSaveHisto</a>(histoWS);</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  } <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;SaveMD can only save MDEventWorkspaces and &quot;</span></div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>                             <span class="stringliteral">&quot;MDHistoWorkspaces.\nPlease use SaveNexus or &quot;</span></div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>                             <span class="stringliteral">&quot;another algorithm appropriate for this workspace &quot;</span></div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>                             <span class="stringliteral">&quot;type.&quot;</span>);</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>}</div>
 </div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> </div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>} <span class="comment">// namespace Mantid::MDAlgorithms</span></div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>} <span class="comment">// namespace Mantid::MDAlgorithms</span></div>
 <div class="ttc" id="aAlgorithm_8h_html_afdb48240ab340a0026eeadc6de8b72e1"><div class="ttname"><a href="../../d7/d36/Algorithm_8h.html#afdb48240ab340a0026eeadc6de8b72e1">DECLARE_ALGORITHM</a></div><div class="ttdeci">#define DECLARE_ALGORITHM(classname)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d36/Algorithm_8h_source.html#l00538">Algorithm.h:538</a></div></div>
 <div class="ttc" id="aBoxControllerNeXusIO_8h_html"><div class="ttname"><a href="../../d6/d0f/BoxControllerNeXusIO_8h.html">BoxControllerNeXusIO.h</a></div></div>
 <div class="ttc" id="aCoordTransform_8h_html"><div class="ttname"><a href="../../d9/d52/CoordTransform_8h.html">CoordTransform.h</a></div></div>
@@ -451,8 +449,8 @@ $(document).ready(function() { init_codefold(1); });
 <div class="ttc" id="aclassMantid_1_1Kernel_1_1DiskBuffer_html_a6a22f40253529f729a18549edc020b8c"><div class="ttname"><a href="../../d0/d27/classMantid_1_1Kernel_1_1DiskBuffer.html#a6a22f40253529f729a18549edc020b8c">Mantid::Kernel::DiskBuffer::flushCache</a></div><div class="ttdeci">void flushCache()</div><div class="ttdoc">Flush out all the data in the memory; and writes out everything in the to-write cache.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/de5/DiskBuffer_8cpp_source.html#l00191">DiskBuffer.cpp:191</a></div></div>
 <div class="ttc" id="aclassMantid_1_1MDAlgorithms_1_1SaveMD_html"><div class="ttname"><a href="../../d0/d99/classMantid_1_1MDAlgorithms_1_1SaveMD.html">Mantid::MDAlgorithms::SaveMD</a></div><div class="ttdoc">Save a MDEventWorkspace to a .nxs file.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d1c/SaveMD_8h_source.html#l00022">SaveMD.h:22</a></div></div>
 <div class="ttc" id="aclassMantid_1_1MDAlgorithms_1_1SaveMD_html_a1c3b2c5139382d0a8e3205a104e0ae2d"><div class="ttname"><a href="../../d0/d99/classMantid_1_1MDAlgorithms_1_1SaveMD.html#a1c3b2c5139382d0a8e3205a104e0ae2d">Mantid::MDAlgorithms::SaveMD::doSaveEvents</a></div><div class="ttdeci">void doSaveEvents(typename DataObjects::MDEventWorkspace&lt; MDE, nd &gt;::sptr ws)</div><div class="ttdoc">Helper method.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d63/SaveMD_8cpp_source.html#l00079">SaveMD.cpp:79</a></div></div>
-<div class="ttc" id="aclassMantid_1_1MDAlgorithms_1_1SaveMD_html_a9309b24c9a79ec186c0336ddac17b1a5"><div class="ttname"><a href="../../d0/d99/classMantid_1_1MDAlgorithms_1_1SaveMD.html#a9309b24c9a79ec186c0336ddac17b1a5">Mantid::MDAlgorithms::SaveMD::exec</a></div><div class="ttdeci">void exec() override</div><div class="ttdoc">Run the algorithm.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d63/SaveMD_8cpp_source.html#l00295">SaveMD.cpp:295</a></div></div>
-<div class="ttc" id="aclassMantid_1_1MDAlgorithms_1_1SaveMD_html_af1f407bd4162e4d4f939266918209392"><div class="ttname"><a href="../../d0/d99/classMantid_1_1MDAlgorithms_1_1SaveMD.html#af1f407bd4162e4d4f939266918209392">Mantid::MDAlgorithms::SaveMD::doSaveHisto</a></div><div class="ttdeci">void doSaveHisto(const Mantid::DataObjects::MDHistoWorkspace_sptr &amp;ws)</div><div class="ttdoc">Save the MDHistoWorkspace.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d63/SaveMD_8cpp_source.html#l00214">SaveMD.cpp:214</a></div></div>
+<div class="ttc" id="aclassMantid_1_1MDAlgorithms_1_1SaveMD_html_a9309b24c9a79ec186c0336ddac17b1a5"><div class="ttname"><a href="../../d0/d99/classMantid_1_1MDAlgorithms_1_1SaveMD.html#a9309b24c9a79ec186c0336ddac17b1a5">Mantid::MDAlgorithms::SaveMD::exec</a></div><div class="ttdeci">void exec() override</div><div class="ttdoc">Run the algorithm.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d63/SaveMD_8cpp_source.html#l00293">SaveMD.cpp:293</a></div></div>
+<div class="ttc" id="aclassMantid_1_1MDAlgorithms_1_1SaveMD_html_af1f407bd4162e4d4f939266918209392"><div class="ttname"><a href="../../d0/d99/classMantid_1_1MDAlgorithms_1_1SaveMD.html#af1f407bd4162e4d4f939266918209392">Mantid::MDAlgorithms::SaveMD::doSaveHisto</a></div><div class="ttdeci">void doSaveHisto(const Mantid::DataObjects::MDHistoWorkspace_sptr &amp;ws)</div><div class="ttdoc">Save the MDHistoWorkspace.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d63/SaveMD_8cpp_source.html#l00213">SaveMD.cpp:213</a></div></div>
 <div class="ttc" id="aclassNXnumtype_html_a4e986e714a9e7f08e59e533396256aac"><div class="ttname"><a href="../../de/d25/classNXnumtype.html#a4e986e714a9e7f08e59e533396256aac">NXnumtype::INT8</a></div><div class="ttdeci">static unsigned short constexpr INT8</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7c/NexusFile__fwd_8h_source.html#l00071">NexusFile_fwd.h:71</a></div></div>
 <div class="ttc" id="aclassNXnumtype_html_afa09b971b949ceccf9942601058bef63"><div class="ttname"><a href="../../de/d25/classNXnumtype.html#afa09b971b949ceccf9942601058bef63">NXnumtype::FLOAT64</a></div><div class="ttdeci">static unsigned short constexpr FLOAT64</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7c/NexusFile__fwd_8h_source.html#l00070">NexusFile_fwd.h:70</a></div></div>
 <div class="ttc" id="anamespaceMantid_1_1API_html"><div class="ttname"><a href="../../d9/da0/namespaceMantid_1_1API.html">Mantid::API</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/dc6/AbsorptionCorrection_8h_source.html#l00020">AbsorptionCorrection.h:20</a></div></div>
