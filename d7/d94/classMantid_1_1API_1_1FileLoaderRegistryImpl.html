@@ -114,9 +114,14 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a688347b8d8002e2fec412f845c9dbb5c" id="r_a688347b8d8002e2fec412f845c9dbb5c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a688347b8d8002e2fec412f845c9dbb5c">LoaderFormat</a> { <a class="el" href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a688347b8d8002e2fec412f845c9dbb5ca7759aa05f7e90d1b7a4aade147c45cea">LegacyNexus</a>
+<tr class="memitem:a688347b8d8002e2fec412f845c9dbb5c" id="r_a688347b8d8002e2fec412f845c9dbb5c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a688347b8d8002e2fec412f845c9dbb5c">LoaderFormat</a> { <br />
+&#160;&#160;<a class="el" href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a688347b8d8002e2fec412f845c9dbb5ca7759aa05f7e90d1b7a4aade147c45cea">LegacyNexus</a> = 0
 , <a class="el" href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a688347b8d8002e2fec412f845c9dbb5ca239b3d5b909b867c2872880996172a08">Generic</a>
 , <a class="el" href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a688347b8d8002e2fec412f845c9dbb5ca2642979a40fe962809e8cfe0d708b48b">Nexus</a>
+, <a class="el" href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a688347b8d8002e2fec412f845c9dbb5ca2d5f22d6ee0bcb91bbeba9e9c6f635f6">NexusLazy</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a688347b8d8002e2fec412f845c9dbb5ca661b44903a06045a2399b0c4b3692166">enum_count</a>
+<br />
  }</td></tr>
 <tr class="memdesc:a688347b8d8002e2fec412f845c9dbb5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines types of possible file.  <a href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a688347b8d8002e2fec412f845c9dbb5c">More...</a><br /></td></tr>
 <tr class="separator:a688347b8d8002e2fec412f845c9dbb5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,9 +161,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aa9c30daab5d51ea08c62dc77b72a7d23" id="r_aa9c30daab5d51ea08c62dc77b72a7d23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html">Kernel::Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#aa9c30daab5d51ea08c62dc77b72a7d23">m_log</a></td></tr>
 <tr class="memdesc:aa9c30daab5d51ea08c62dc77b72a7d23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to a logger.  <br /></td></tr>
 <tr class="separator:aa9c30daab5d51ea08c62dc77b72a7d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13ad915b289d552d456bf9d67213243f" id="r_a13ad915b289d552d456bf9d67213243f"><td class="memItemLeft" align="right" valign="top">std::array&lt; std::multimap&lt; std::string, int &gt;, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a13ad915b289d552d456bf9d67213243f">m_names</a></td></tr>
-<tr class="memdesc:a13ad915b289d552d456bf9d67213243f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The list of names.  <br /></td></tr>
-<tr class="separator:a13ad915b289d552d456bf9d67213243f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f44167d98e2d7533324c789b5921f38" id="r_a1f44167d98e2d7533324c789b5921f38"><td class="memItemLeft" align="right" valign="top">std::array&lt; std::multimap&lt; std::string, int &gt;, <a class="el" href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a688347b8d8002e2fec412f845c9dbb5ca661b44903a06045a2399b0c4b3692166">enum_count</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a1f44167d98e2d7533324c789b5921f38">m_names</a></td></tr>
+<tr class="memdesc:a1f44167d98e2d7533324c789b5921f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">The list of names.  <br /></td></tr>
+<tr class="separator:a1f44167d98e2d7533324c789b5921f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa461bbd60cc980a8acf5f4a3074a58fa" id="r_aa461bbd60cc980a8acf5f4a3074a58fa"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#aa461bbd60cc980a8acf5f4a3074a58fa">m_totalSize</a></td></tr>
 <tr class="memdesc:aa461bbd60cc980a8acf5f4a3074a58fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of names registered.  <br /></td></tr>
 <tr class="separator:aa461bbd60cc980a8acf5f4a3074a58fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,7 +178,7 @@ Friends</h2></td></tr>
 <div class="textblock"><p>Keeps a registry of algorithm's that are file loading algorithms to allow them to be searched to find the correct one to load a particular file. </p>
 <p>A macro, DECLARE_FILELOADER_ALGORITHM is defined in <a class="el" href="../../d5/db4/RegisterFileLoader_8h.html">RegisterFileLoader.h</a>. Use this in place of the standard DECLARE_ALGORITHM macro </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00042">42</a> of file <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html">FileLoaderRegistry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00041">41</a> of file <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html">FileLoaderRegistry.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a688347b8d8002e2fec412f845c9dbb5c" name="a688347b8d8002e2fec412f845c9dbb5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a688347b8d8002e2fec412f845c9dbb5c">&#9670;&#160;</a></span>LoaderFormat</h2>
@@ -192,9 +197,11 @@ Friends</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a688347b8d8002e2fec412f845c9dbb5ca7759aa05f7e90d1b7a4aade147c45cea" name="a688347b8d8002e2fec412f845c9dbb5ca7759aa05f7e90d1b7a4aade147c45cea"></a>LegacyNexus&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a688347b8d8002e2fec412f845c9dbb5ca239b3d5b909b867c2872880996172a08" name="a688347b8d8002e2fec412f845c9dbb5ca239b3d5b909b867c2872880996172a08"></a>Generic&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a688347b8d8002e2fec412f845c9dbb5ca2642979a40fe962809e8cfe0d708b48b" name="a688347b8d8002e2fec412f845c9dbb5ca2642979a40fe962809e8cfe0d708b48b"></a>Nexus&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a688347b8d8002e2fec412f845c9dbb5ca2d5f22d6ee0bcb91bbeba9e9c6f635f6" name="a688347b8d8002e2fec412f845c9dbb5ca2d5f22d6ee0bcb91bbeba9e9c6f635f6"></a>NexusLazy&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a688347b8d8002e2fec412f845c9dbb5ca661b44903a06045a2399b0c4b3692166" name="a688347b8d8002e2fec412f845c9dbb5ca661b44903a06045a2399b0c4b3692166"></a>enum_count&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00045">45</a> of file <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html">FileLoaderRegistry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00044">44</a> of file <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html">FileLoaderRegistry.h</a>.</p>
 
 </div>
 </div>
@@ -226,7 +233,7 @@ Friends</h2></td></tr>
 <p>Creates an empty registry.</p>
 <p>m_names is initialized in the header </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00211">211</a> of file <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html">FileLoaderRegistry.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00236">236</a> of file <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html">FileLoaderRegistry.cpp</a>.</p>
 
 </div>
 </div>
@@ -301,9 +308,9 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00167">167</a> of file <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html">FileLoaderRegistry.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00181">181</a> of file <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html">FileLoaderRegistry.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00045">Generic</a>, <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00045">LegacyNexus</a>, <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00129">m_log</a>, <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00124">m_names</a>, and <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00045">Nexus</a>.</p>
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00044">Generic</a>, <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00044">LegacyNexus</a>, <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00135">m_log</a>, <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00130">m_names</a>, <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00044">Nexus</a>, and <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00044">NexusLazy</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/dc0/PythonInterface_2mantid_2api_2src_2Exports_2FileLoaderRegistry_8cpp_source.html#l00015">export_FileLoaderRegistry()</a>.</p>
 
@@ -341,9 +348,9 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00114">114</a> of file <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html">FileLoaderRegistry.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00115">115</a> of file <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html">FileLoaderRegistry.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00045">Generic</a>, <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00045">LegacyNexus</a>, <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00129">m_log</a>, <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00124">m_names</a>, and <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00045">Nexus</a>.</p>
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00044">Generic</a>, <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00044">LegacyNexus</a>, <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00135">m_log</a>, <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00130">m_names</a>, <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00044">Nexus</a>, and <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00044">NexusLazy</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/dc0/PythonInterface_2mantid_2api_2src_2Exports_2FileLoaderRegistry_8cpp_source.html#l00015">export_FileLoaderRegistry()</a>.</p>
 
@@ -399,11 +406,11 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00220">220</a> of file <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html">FileLoaderRegistry.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00245">245</a> of file <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html">FileLoaderRegistry.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00099">unsubscribe()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00100">unsubscribe()</a>.</p>
 
 </div>
 </div>
@@ -431,7 +438,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the number of entries in the registry </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00049">49</a> of file <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html">FileLoaderRegistry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00048">48</a> of file <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html">FileLoaderRegistry.h</a>.</p>
 
 </div>
 </div>
@@ -475,7 +482,7 @@ template&lt;typename Type &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00062">62</a> of file <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html">FileLoaderRegistry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00061">61</a> of file <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html">FileLoaderRegistry.h</a>.</p>
 
 </div>
 </div>
@@ -515,9 +522,9 @@ template&lt;typename Type &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00099">99</a> of file <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html">FileLoaderRegistry.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00100">100</a> of file <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html">FileLoaderRegistry.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00124">m_names</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00220">removeAlgorithm()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00130">m_names</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00245">removeAlgorithm()</a>.</p>
 
 </div>
 </div>
@@ -544,7 +551,7 @@ template&lt;typename Type &gt; </div>
 
 <p>Friend so that CreateUsingNew. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00077">77</a> of file <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html">FileLoaderRegistry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00076">76</a> of file <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html">FileLoaderRegistry.h</a>.</p>
 
 </div>
 </div>
@@ -571,14 +578,14 @@ template&lt;typename Type &gt; </div>
 
 <p>Reference to a logger. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00129">129</a> of file <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html">FileLoaderRegistry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00135">135</a> of file <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html">FileLoaderRegistry.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00167">canLoad()</a>, and <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00114">chooseLoader()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00181">canLoad()</a>, and <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00115">chooseLoader()</a>.</p>
 
 </div>
 </div>
-<a id="a13ad915b289d552d456bf9d67213243f" name="a13ad915b289d552d456bf9d67213243f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13ad915b289d552d456bf9d67213243f">&#9670;&#160;</a></span>m_names</h2>
+<a id="a1f44167d98e2d7533324c789b5921f38" name="a1f44167d98e2d7533324c789b5921f38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f44167d98e2d7533324c789b5921f38">&#9670;&#160;</a></span>m_names</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -587,7 +594,7 @@ template&lt;typename Type &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;std::multimap&lt;std::string, int&gt;, 3&gt; Mantid::API::FileLoaderRegistryImpl::m_names</td>
+          <td class="memname">std::array&lt;std::multimap&lt;std::string, int&gt;, <a class="el" href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a688347b8d8002e2fec412f845c9dbb5ca661b44903a06045a2399b0c4b3692166">enum_count</a>&gt; Mantid::API::FileLoaderRegistryImpl::m_names</td>
         </tr>
       </table>
   </td>
@@ -600,9 +607,9 @@ template&lt;typename Type &gt; </div>
 <p>The list of names. </p>
 <p>The index pointed to by LoaderFormat defines a set for that format. The length is equal to the length of the LoaderFormat enum </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00124">124</a> of file <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html">FileLoaderRegistry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00130">130</a> of file <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html">FileLoaderRegistry.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00167">canLoad()</a>, <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00114">chooseLoader()</a>, and <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00099">unsubscribe()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00181">canLoad()</a>, <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00115">chooseLoader()</a>, and <a class="el" href="../../dd/dd8/API_2src_2FileLoaderRegistry_8cpp_source.html#l00100">unsubscribe()</a>.</p>
 
 </div>
 </div>
@@ -628,7 +635,7 @@ template&lt;typename Type &gt; </div>
 
 <p>Total number of names registered. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00126">126</a> of file <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html">FileLoaderRegistry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00132">132</a> of file <a class="el" href="../../d0/d8e/FileLoaderRegistry_8h_source.html">FileLoaderRegistry.h</a>.</p>
 
 </div>
 </div>

@@ -109,6 +109,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a158d869347050051314884830cd89471" id="r_a158d869347050051314884830cd89471"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db4/RegisterFileLoader_8h.html#a158d869347050051314884830cd89471">DECLARE_NEXUS_FILELOADER_ALGORITHM</a>(classname)</td></tr>
 <tr class="memdesc:a158d869347050051314884830cd89471"><td class="mdescLeft">&#160;</td><td class="mdescRight">DECLARE_NEXUS_FILELOADER_ALGORITHM should be used in place of the standard DECLARE_ALGORITHM macro when writing a file loading algorithm that loads data using the Nexus <a class="el" href="../../d1/d0e/namespaceAPI.html">API</a> It both registers the algorithm as usual and subscribes it to the registry.  <br /></td></tr>
 <tr class="separator:a158d869347050051314884830cd89471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b398b2e96343b1414c7c820c9d9ac2" id="r_a90b398b2e96343b1414c7c820c9d9ac2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db4/RegisterFileLoader_8h.html#a90b398b2e96343b1414c7c820c9d9ac2">DECLARE_NEXUS_LAZY_FILELOADER_ALGORITHM</a>(classname)</td></tr>
+<tr class="memdesc:a90b398b2e96343b1414c7c820c9d9ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">DECLARE_NEXUS_LAZY_FILELOADER_ALGORITHM should be used in place of the standard DECLARE_ALGORITHM macro when writing a file loading algorithm that loads data using the Nexus <a class="el" href="../../d1/d0e/namespaceAPI.html">API</a> with a lazy descriptor It both registers the algorithm as usual and subscribes it to the registry.  <br /></td></tr>
+<tr class="separator:a90b398b2e96343b1414c7c820c9d9ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a2f226eb8da0d4adb411ba1400602ff86" name="a2f226eb8da0d4adb411ba1400602ff86"></a>
@@ -131,7 +134,7 @@ Macros</h2></td></tr>
 <div class="line">      (Mantid::API::FileLoaderRegistry::Instance().subscribe&lt;classname&gt;(<a class="code hl_enumvalue" href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a688347b8d8002e2fec412f845c9dbb5ca239b3d5b909b867c2872880996172a08">Mantid::API::FileLoaderRegistryImpl::Generic</a>), \</div>
 <div class="line">       0));                                                                                                            \</div>
 <div class="line">  }</div>
-<div class="ttc" id="aclassMantid_1_1API_1_1FileLoaderRegistryImpl_html_a688347b8d8002e2fec412f845c9dbb5ca239b3d5b909b867c2872880996172a08"><div class="ttname"><a href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a688347b8d8002e2fec412f845c9dbb5ca239b3d5b909b867c2872880996172a08">Mantid::API::FileLoaderRegistryImpl::Generic</a></div><div class="ttdeci">@ Generic</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00045">FileLoaderRegistry.h:45</a></div></div>
+<div class="ttc" id="aclassMantid_1_1API_1_1FileLoaderRegistryImpl_html_a688347b8d8002e2fec412f845c9dbb5ca239b3d5b909b867c2872880996172a08"><div class="ttname"><a href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a688347b8d8002e2fec412f845c9dbb5ca239b3d5b909b867c2872880996172a08">Mantid::API::FileLoaderRegistryImpl::Generic</a></div><div class="ttdeci">@ Generic</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00044">FileLoaderRegistry.h:44</a></div></div>
 <div class="ttc" id="aclassMantid_1_1Kernel_1_1RegistrationHelper_html"><div class="ttname"><a href="../../d3/d93/classMantid_1_1Kernel_1_1RegistrationHelper.html">Mantid::Kernel::RegistrationHelper</a></div><div class="ttdoc">This class is simply used in the subscription of classes into the various factories in Mantid.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d65/RegistrationHelper_8h_source.html#l00022">RegistrationHelper.h:22</a></div></div>
 </div><!-- fragment -->
 <p>DECLARE_FILELOADER_ALGORITHM should be used in place of the standard DECLARE_ALGORITHM macro when writing a file loading algorithm that loads data from a type that is not one of the specialized types. </p>
@@ -162,7 +165,7 @@ Macros</h2></td></tr>
 <div class="line">                                      <a class="code hl_enumvalue" href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a688347b8d8002e2fec412f845c9dbb5ca7759aa05f7e90d1b7a4aade147c45cea">Mantid::API::FileLoaderRegistryImpl::LegacyNexus</a>),                               \</div>
 <div class="line">                                  0));                                                                                 \</div>
 <div class="line">  }</div>
-<div class="ttc" id="aclassMantid_1_1API_1_1FileLoaderRegistryImpl_html_a688347b8d8002e2fec412f845c9dbb5ca7759aa05f7e90d1b7a4aade147c45cea"><div class="ttname"><a href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a688347b8d8002e2fec412f845c9dbb5ca7759aa05f7e90d1b7a4aade147c45cea">Mantid::API::FileLoaderRegistryImpl::LegacyNexus</a></div><div class="ttdeci">@ LegacyNexus</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00045">FileLoaderRegistry.h:45</a></div></div>
+<div class="ttc" id="aclassMantid_1_1API_1_1FileLoaderRegistryImpl_html_a688347b8d8002e2fec412f845c9dbb5ca7759aa05f7e90d1b7a4aade147c45cea"><div class="ttname"><a href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a688347b8d8002e2fec412f845c9dbb5ca7759aa05f7e90d1b7a4aade147c45cea">Mantid::API::FileLoaderRegistryImpl::LegacyNexus</a></div><div class="ttdeci">@ LegacyNexus</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00044">FileLoaderRegistry.h:44</a></div></div>
 </div><!-- fragment -->
 <p>DECLARE_LEGACY_NEXUS_FILELOADER_ALGORITHM should be used in place of the standard DECLARE_ALGORITHM macro when writing a file loading algorithm that loads data using the Nexus <a class="el" href="../../d1/d0e/namespaceAPI.html">API</a> It both registers the algorithm as usual and subscribes it to the registry. </p>
 
@@ -190,11 +193,40 @@ Macros</h2></td></tr>
 <div class="line">      (Mantid::API::FileLoaderRegistry::Instance().subscribe&lt;classname&gt;(<a class="code hl_enumvalue" href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a688347b8d8002e2fec412f845c9dbb5ca2642979a40fe962809e8cfe0d708b48b">Mantid::API::FileLoaderRegistryImpl::Nexus</a>),   \</div>
 <div class="line">       0));                                                                                                            \</div>
 <div class="line">  }</div>
-<div class="ttc" id="aclassMantid_1_1API_1_1FileLoaderRegistryImpl_html_a688347b8d8002e2fec412f845c9dbb5ca2642979a40fe962809e8cfe0d708b48b"><div class="ttname"><a href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a688347b8d8002e2fec412f845c9dbb5ca2642979a40fe962809e8cfe0d708b48b">Mantid::API::FileLoaderRegistryImpl::Nexus</a></div><div class="ttdeci">@ Nexus</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00045">FileLoaderRegistry.h:45</a></div></div>
+<div class="ttc" id="aclassMantid_1_1API_1_1FileLoaderRegistryImpl_html_a688347b8d8002e2fec412f845c9dbb5ca2642979a40fe962809e8cfe0d708b48b"><div class="ttname"><a href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a688347b8d8002e2fec412f845c9dbb5ca2642979a40fe962809e8cfe0d708b48b">Mantid::API::FileLoaderRegistryImpl::Nexus</a></div><div class="ttdeci">@ Nexus</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00044">FileLoaderRegistry.h:44</a></div></div>
 </div><!-- fragment -->
 <p>DECLARE_NEXUS_FILELOADER_ALGORITHM should be used in place of the standard DECLARE_ALGORITHM macro when writing a file loading algorithm that loads data using the Nexus <a class="el" href="../../d1/d0e/namespaceAPI.html">API</a> It both registers the algorithm as usual and subscribes it to the registry. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/db4/RegisterFileLoader_8h_source.html#l00048">48</a> of file <a class="el" href="../../d5/db4/RegisterFileLoader_8h_source.html">RegisterFileLoader.h</a>.</p>
+
+</div>
+</div>
+<a id="a90b398b2e96343b1414c7c820c9d9ac2" name="a90b398b2e96343b1414c7c820c9d9ac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90b398b2e96343b1414c7c820c9d9ac2">&#9670;&#160;</a></span>DECLARE_NEXUS_LAZY_FILELOADER_ALGORITHM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECLARE_NEXUS_LAZY_FILELOADER_ALGORITHM</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">classname</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">namespace </span>{                                                                                                          \</div>
+<div class="line">  Mantid::Kernel::RegistrationHelper                                                                                   \</div>
+<div class="line">      reg_hdf_loader_##classname((Mantid::API::FileLoaderRegistry::Instance().subscribe&lt;classname&gt;(                    \</div>
+<div class="line">                                      <a class="code hl_enumvalue" href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a688347b8d8002e2fec412f845c9dbb5ca2d5f22d6ee0bcb91bbeba9e9c6f635f6">Mantid::API::FileLoaderRegistryImpl::NexusLazy</a>),                                 \</div>
+<div class="line">                                  0));                                                                                 \</div>
+<div class="line">  }</div>
+<div class="ttc" id="aclassMantid_1_1API_1_1FileLoaderRegistryImpl_html_a688347b8d8002e2fec412f845c9dbb5ca2d5f22d6ee0bcb91bbeba9e9c6f635f6"><div class="ttname"><a href="../../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html#a688347b8d8002e2fec412f845c9dbb5ca2d5f22d6ee0bcb91bbeba9e9c6f635f6">Mantid::API::FileLoaderRegistryImpl::NexusLazy</a></div><div class="ttdeci">@ NexusLazy</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d8e/FileLoaderRegistry_8h_source.html#l00044">FileLoaderRegistry.h:44</a></div></div>
+</div><!-- fragment -->
+<p>DECLARE_NEXUS_LAZY_FILELOADER_ALGORITHM should be used in place of the standard DECLARE_ALGORITHM macro when writing a file loading algorithm that loads data using the Nexus <a class="el" href="../../d1/d0e/namespaceAPI.html">API</a> with a lazy descriptor It both registers the algorithm as usual and subscribes it to the registry. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/db4/RegisterFileLoader_8h_source.html#l00062">62</a> of file <a class="el" href="../../d5/db4/RegisterFileLoader_8h_source.html">RegisterFileLoader.h</a>.</p>
 
 </div>
 </div>
