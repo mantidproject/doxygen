@@ -183,10 +183,27 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
 </div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>} <span class="comment">// namespace MantidQt::API</span></div>
+<div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="../../d2/d36/namespaceMantidQt_1_1API.html#a62f7aa9684f29b69dcf13fc4c91fb5c9">   81</a></span>std::string <a class="code hl_function" href="../../d2/d36/namespaceMantidQt_1_1API.html#a62f7aa9684f29b69dcf13fc4c91fb5c9">outputJsonToString</a>(QVariant &amp;v) {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  QJsonDocument doc;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordflow">if</span> (v.type() == 8 &amp;&amp; v.canConvert(8)) { <span class="comment">// 8 = map - is there an enum?</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    QVariantMap map = v.toMap();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    doc = QJsonDocument{QJsonObject::fromVariantMap(map)};</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (v.canConvert&lt;QString&gt;()) {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordflow">return</span> v.toString().toStdString();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    doc = QJsonDocument::fromVariant(v);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  QString jsonString(doc.toJson(QJsonDocument::Compact));</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="keywordflow">return</span> jsonString.toStdString();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>}</div>
+</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>} <span class="comment">// namespace MantidQt::API</span></div>
 <div class="ttc" id="aQtJSONUtils_8h_html"><div class="ttname"><a href="../../d0/d18/QtJSONUtils_8h.html">QtJSONUtils.h</a></div></div>
 <div class="ttc" id="anamespaceMantidQt_1_1API_html"><div class="ttname"><a href="../../d2/d36/namespaceMantidQt_1_1API.html">MantidQt::API</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/df0/AlgorithmDialog_8h_source.html#l00062">AlgorithmDialog.h:62</a></div></div>
 <div class="ttc" id="anamespaceMantidQt_1_1API_html_a0fb63ee32f2c76a8b81f951075ee0e2d"><div class="ttname"><a href="../../d2/d36/namespaceMantidQt_1_1API.html#a0fb63ee32f2c76a8b81f951075ee0e2d">MantidQt::API::saveJSONToFile</a></div><div class="ttdeci">void EXPORT_OPT_MANTIDQT_COMMON saveJSONToFile(QString &amp;filename, const QMap&lt; QString, QVariant &gt; &amp;map)</div><div class="ttdef"><b>Definition</b> <a href="../../de/d46/QtJSONUtils_8cpp_source.html#l00032">QtJSONUtils.cpp:32</a></div></div>
+<div class="ttc" id="anamespaceMantidQt_1_1API_html_a62f7aa9684f29b69dcf13fc4c91fb5c9"><div class="ttname"><a href="../../d2/d36/namespaceMantidQt_1_1API.html#a62f7aa9684f29b69dcf13fc4c91fb5c9">MantidQt::API::outputJsonToString</a></div><div class="ttdeci">std::string EXPORT_OPT_MANTIDQT_COMMON outputJsonToString(QVariant &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="../../de/d46/QtJSONUtils_8cpp_source.html#l00081">QtJSONUtils.cpp:81</a></div></div>
 <div class="ttc" id="anamespaceMantidQt_1_1API_html_a9b2e7e8914e22bbb64ce30ff6d3a99a3"><div class="ttname"><a href="../../d2/d36/namespaceMantidQt_1_1API.html#a9b2e7e8914e22bbb64ce30ff6d3a99a3">MantidQt::API::loadJSONFromString</a></div><div class="ttdeci">QMap&lt; QString, QVariant &gt; EXPORT_OPT_MANTIDQT_COMMON loadJSONFromString(const QString &amp;jsonString)</div><div class="ttdef"><b>Definition</b> <a href="../../de/d46/QtJSONUtils_8cpp_source.html#l00062">QtJSONUtils.cpp:62</a></div></div>
 <div class="ttc" id="anamespaceMantidQt_1_1API_html_acb3a7d4a9f2bf3e14ad5383d45ac950b"><div class="ttname"><a href="../../d2/d36/namespaceMantidQt_1_1API.html#acb3a7d4a9f2bf3e14ad5383d45ac950b">MantidQt::API::loadJSONFromFile</a></div><div class="ttdeci">QMap&lt; QString, QVariant &gt; EXPORT_OPT_MANTIDQT_COMMON loadJSONFromFile(const QString &amp;filename)</div><div class="ttdef"><b>Definition</b> <a href="../../de/d46/QtJSONUtils_8cpp_source.html#l00043">QtJSONUtils.cpp:43</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
