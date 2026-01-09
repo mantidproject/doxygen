@@ -347,7 +347,7 @@ var searchData=
   ['loademu_2ecpp_344',['LoadEMU.cpp',['../dd/d89/LoadEMU_8cpp.html',1,'']]],
   ['loademu_2eh_345',['LoadEMU.h',['../d3/d63/LoadEMU_8h.html',1,'']]],
   ['loademu_3c_20kernel_3a_3afiledescriptor_20_3e_346',['LoadEMU&lt; Kernel::FileDescriptor &gt;',['../d7/de9/classMantid_1_1DataHandling_1_1LoadEMU.html',1,'Mantid::DataHandling']]],
-  ['loademu_3c_20nexus_3a_3anexusdescriptor_20_3e_347',['LoadEMU&lt; Nexus::NexusDescriptor &gt;',['../d7/de9/classMantid_1_1DataHandling_1_1LoadEMU.html',1,'Mantid::DataHandling']]],
+  ['loademu_3c_20nexus_3a_3anexusdescriptorlazy_20_3e_347',['LoadEMU&lt; Nexus::NexusDescriptorLazy &gt;',['../d7/de9/classMantid_1_1DataHandling_1_1LoadEMU.html',1,'Mantid::DataHandling']]],
   ['loademuhdf_348',['LoadEMUHdf',['../de/dba/classMantid_1_1DataHandling_1_1LoadEMUHdf.html',1,'Mantid::DataHandling']]],
   ['loademutar_349',['LoadEMUTar',['../d9/d1b/classMantid_1_1DataHandling_1_1LoadEMUTar.html',1,'Mantid::DataHandling']]],
   ['loadentry_350',['loadentry',['../dd/d77/classMantid_1_1DataHandling_1_1LoadCanSAS1D.html#ac518e2efff32c9aa9364bb75e1be9c0f',1,'Mantid::DataHandling::LoadCanSAS1D::loadEntry()'],['../d2/d8f/classMantid_1_1DataHandling_1_1LoadCanSAS1D2.html#ad2b08d0a404bac92763d7327bfe69369',1,'Mantid::DataHandling::LoadCanSAS1D2::loadEntry()'],['../d3/df4/classMantid_1_1DataHandling_1_1LoadNexusProcessed.html#a32330e8c822162574fea2c7df5c06b02',1,'Mantid::DataHandling::LoadNexusProcessed::loadEntry()']]],

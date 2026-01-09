@@ -65,7 +65,7 @@ var searchData=
   ['loademptyinstrument_62',['LoadEmptyInstrument',['../d4/de7/classMantid_1_1DataHandling_1_1LoadEmptyInstrument.html',1,'Mantid::DataHandling']]],
   ['loademu_63',['LoadEMU',['../d7/de9/classMantid_1_1DataHandling_1_1LoadEMU.html',1,'Mantid::DataHandling']]],
   ['loademu_3c_20kernel_3a_3afiledescriptor_20_3e_64',['LoadEMU&lt; Kernel::FileDescriptor &gt;',['../d7/de9/classMantid_1_1DataHandling_1_1LoadEMU.html',1,'Mantid::DataHandling']]],
-  ['loademu_3c_20nexus_3a_3anexusdescriptor_20_3e_65',['LoadEMU&lt; Nexus::NexusDescriptor &gt;',['../d7/de9/classMantid_1_1DataHandling_1_1LoadEMU.html',1,'Mantid::DataHandling']]],
+  ['loademu_3c_20nexus_3a_3anexusdescriptorlazy_20_3e_65',['LoadEMU&lt; Nexus::NexusDescriptorLazy &gt;',['../d7/de9/classMantid_1_1DataHandling_1_1LoadEMU.html',1,'Mantid::DataHandling']]],
   ['loademuhdf_66',['LoadEMUHdf',['../de/dba/classMantid_1_1DataHandling_1_1LoadEMUHdf.html',1,'Mantid::DataHandling']]],
   ['loademutar_67',['LoadEMUTar',['../d9/d1b/classMantid_1_1DataHandling_1_1LoadEMUTar.html',1,'Mantid::DataHandling']]],
   ['loaderroreventsnexus_68',['LoadErrorEventsNexus',['../df/d78/classMantid_1_1DataHandling_1_1LoadErrorEventsNexus.html',1,'Mantid::DataHandling']]],
