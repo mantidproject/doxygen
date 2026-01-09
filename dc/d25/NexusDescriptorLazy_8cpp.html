@@ -99,6 +99,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="../../d1/ddd/H5Util_8h_source.html">MantidNexus/H5Util.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dc/d37/NexusException_8h_source.html">MantidNexus/NexusException.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../db/d34/UniqueID_8h_source.html">MantidNexus/UniqueID.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/d7c/NexusFile__fwd_8h_source.html">MantidNexus/NexusFile_fwd.h</a>&quot;</code><br />
 <code>#include &lt;H5Cpp.h&gt;</code><br />
 <code>#include &lt;hdf5.h&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
@@ -130,8 +131,6 @@ Variables</h2></td></tr>
 <tr class="separator:a3d41c51e5639c3899ff4d47e98f76d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3533ff9455ca6d67e52f3e3388e121af" id="r_a3533ff9455ca6d67e52f3e3388e121af"><td class="memItemLeft" align="right" valign="top">static std::string const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp.html#a3533ff9455ca6d67e52f3e3388e121af">NONEXISTENT</a> = &quot;NONEXISTENT&quot;</td></tr>
 <tr class="separator:a3533ff9455ca6d67e52f3e3388e121af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f9a83c7fc39a52c337f58c939b38d53" id="r_a1f9a83c7fc39a52c337f58c939b38d53"><td class="memItemLeft" align="right" valign="top">static std::string const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp.html#a1f9a83c7fc39a52c337f58c939b38d53">SCIENTIFIC_DATA_SET</a> = &quot;SDS&quot;</td></tr>
-<tr class="separator:a1f9a83c7fc39a52c337f58c939b38d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4e3eabbcde828e256cf363137ce7b98" id="r_ac4e3eabbcde828e256cf363137ce7b98"><td class="memItemLeft" align="right" valign="top">static std::unordered_set&lt; std::string &gt; const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp.html#ac4e3eabbcde828e256cf363137ce7b98">SPECIAL_ADDRESS</a> {&quot;/entry&quot;, &quot;/entry0&quot;, &quot;/entry1&quot;}</td></tr>
 <tr class="separator:ac4e3eabbcde828e256cf363137ce7b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af39aa2db82219acd51807b697726cd73" id="r_af39aa2db82219acd51807b697726cd73"><td class="memItemLeft" align="right" valign="top">static std::string const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp.html#af39aa2db82219acd51807b697726cd73">UNKNOWN_CLASS</a> = &quot;UNKNOWN_CLASS&quot;</td></tr>
@@ -158,9 +157,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00025">25</a> of file <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html">NexusDescriptorLazy.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html">NexusDescriptorLazy.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00144">Mantid::Nexus::NexusDescriptorLazy::initAllEntries()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00160">Mantid::Nexus::NexusDescriptorLazy::initAllEntries()</a>.</p>
 
 </div>
 </div>
@@ -184,9 +183,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html">NexusDescriptorLazy.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00025">25</a> of file <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html">NexusDescriptorLazy.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00144">Mantid::Nexus::NexusDescriptorLazy::initAllEntries()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00160">Mantid::Nexus::NexusDescriptorLazy::initAllEntries()</a>.</p>
 
 </div>
 </div>
@@ -210,9 +209,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html">NexusDescriptorLazy.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html">NexusDescriptorLazy.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00144">Mantid::Nexus::NexusDescriptorLazy::initAllEntries()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00160">Mantid::Nexus::NexusDescriptorLazy::initAllEntries()</a>.</p>
 
 </div>
 </div>
@@ -236,35 +235,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html">NexusDescriptorLazy.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html">NexusDescriptorLazy.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00060">Mantid::Nexus::NexusDescriptorLazy::isEntry()</a>.</p>
-
-</div>
-</div>
-<a id="a1f9a83c7fc39a52c337f58c939b38d53" name="a1f9a83c7fc39a52c337f58c939b38d53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f9a83c7fc39a52c337f58c939b38d53">&#9670;&#160;</a></span>SCIENTIFIC_DATA_SET</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string const SCIENTIFIC_DATA_SET = &quot;SDS&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html">NexusDescriptorLazy.cpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00060">Mantid::Nexus::NexusDescriptorLazy::isEntry()</a>, and <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00108">Mantid::Nexus::NexusDescriptorLazy::loadGroups()</a>.</p>
 
 </div>
 </div>
@@ -288,9 +261,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html">NexusDescriptorLazy.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html">NexusDescriptorLazy.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00144">Mantid::Nexus::NexusDescriptorLazy::initAllEntries()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00160">Mantid::Nexus::NexusDescriptorLazy::initAllEntries()</a>.</p>
 
 </div>
 </div>
@@ -314,9 +287,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html">NexusDescriptorLazy.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html">NexusDescriptorLazy.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00144">Mantid::Nexus::NexusDescriptorLazy::initAllEntries()</a>, and <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00060">Mantid::Nexus::NexusDescriptorLazy::isEntry()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00160">Mantid::Nexus::NexusDescriptorLazy::initAllEntries()</a>, and <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00060">Mantid::Nexus::NexusDescriptorLazy::isEntry()</a>.</p>
 
 </div>
 </div>

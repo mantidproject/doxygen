@@ -99,7 +99,7 @@ var searchData=
   ['itableworkspace_5fuptr_96',['ITableWorkspace_uptr',['../d9/da0/namespaceMantid_1_1API.html#a731e67e262119d6d832c4620fc0f2e39',1,'Mantid::API']]],
   ['item_5flist_97',['item_list',['../dc/db4/classMantid_1_1Kernel_1_1MRUList.html#afec0cf5c8562c5370a3785cdb53be521',1,'Mantid::Kernel::MRUList']]],
   ['items_5fmap_5ft_98',['items_map_t',['../db/d7f/classitem__struct.html#a70ef61e83be22b97f31a70b934140268',1,'item_struct']]],
-  ['iterator_99',['iterator',['../d6/dc8/classMantid_1_1Kernel_1_1StringTokenizer.html#a71adc5deaf3531b486037a331cd2e21d',1,'Mantid::Kernel::StringTokenizer::Iterator'],['../d1/d0c/classMantid_1_1API_1_1Expression.html#a8f2aeeb068d9dfbd39f2aa5480aa7684',1,'Mantid::API::Expression::iterator']]],
+  ['iterator_99',['iterator',['../d1/d0c/classMantid_1_1API_1_1Expression.html#a8f2aeeb068d9dfbd39f2aa5480aa7684',1,'Mantid::API::Expression::iterator'],['../d6/dc8/classMantid_1_1Kernel_1_1StringTokenizer.html#a71adc5deaf3531b486037a331cd2e21d',1,'Mantid::Kernel::StringTokenizer::Iterator']]],
   ['iterator_5fcategory_100',['iterator_category',['../d2/de5/structMantid_1_1DataHandling_1_1PulseIndexer_1_1Iterator.html#ab4475ae0d1e7d76c7cd0ef204ae356ec',1,'Mantid::DataHandling::PulseIndexer::Iterator']]],
   ['itransformscale_5fsptr_101',['ITransformScale_sptr',['../d9/da0/namespaceMantid_1_1API.html#a06e2738dff0120ea6bb72f246a1fb941',1,'Mantid::API']]],
   ['itype_5fsptr_102',['IType_sptr',['../d7/d2c/structMantid_1_1PythonInterface_1_1Registry_1_1RegisterWorkspacePtrToPython.html#ae71821761d5f4dd502fa1ba1fdca8588',1,'Mantid::PythonInterface::Registry::RegisterWorkspacePtrToPython']]],
