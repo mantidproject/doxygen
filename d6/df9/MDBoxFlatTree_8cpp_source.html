@@ -111,9 +111,9 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="../../d5/d0a/Instrument_8h.html">MantidGeometry/Instrument.h</a>&quot;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="../../dd/da4/Logger_8h.html">MantidKernel/Logger.h</a>&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="../../de/d53/Strings_8h.html">MantidKernel/Strings.h</a>&quot;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;Poco/File.h&gt;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;filesystem&gt;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="../../d6/df9/MDBoxFlatTree_8cpp.html#a68108ed8248bab940bfd4c47cb64c5e0">   20</a></span><span class="keyword">using </span><a class="code hl_typedef" href="../../d6/df9/MDBoxFlatTree_8cpp.html#a68108ed8248bab940bfd4c47cb64c5e0">file_holder_type</a> = std::unique_ptr&lt;Mantid::Nexus::File&gt;;</div>
@@ -716,8 +716,8 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>                                                          <span class="keyword">const</span> std::string &amp;WSEventType, <span class="keywordtype">bool</span> readOnly,</div>
 <div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>                                                          <span class="keywordtype">bool</span> &amp;alreadyExists) {</div>
 <div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>  alreadyExists = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>  Poco::File oldFile(fileName);</div>
-<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>  <span class="keywordtype">bool</span> fileExists = oldFile.exists();</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>  std::filesystem::path oldFile(fileName);</div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>  <span class="keywordtype">bool</span> fileExists = std::filesystem::exists(oldFile);</div>
 <div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>  <span class="keywordflow">if</span> (!fileExists &amp;&amp; readOnly)</div>
 <div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>    <span class="keywordflow">throw</span> <a class="code hl_class" href="../../d0/d1c/classMantid_1_1Kernel_1_1Exception_1_1FileError.html">Kernel::Exception::FileError</a>(<span class="stringliteral">&quot;Attempt to open non-existing file in read-only mode&quot;</span>, fileName);</div>
 <div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span> </div>
