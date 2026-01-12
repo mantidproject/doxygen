@@ -492,7 +492,7 @@ var searchData=
   ['_7eworkspaceprovidernotifiable_489',['~WorkspaceProviderNotifiable',['../df/df1/classMantidQt_1_1MantidWidgets_1_1WorkspaceProviderNotifiable.html#a25a19d95e7ad2892cdd99a18c15aca1e',1,'MantidQt::MantidWidgets::WorkspaceProviderNotifiable']]],
   ['_7eworkspaceselector_490',['~WorkspaceSelector',['../dd/daa/classMantidQt_1_1MantidWidgets_1_1WorkspaceSelector.html#a4ea71cbbe72a17ad2ae088f02ba3dc18',1,'MantidQt::MantidWidgets::WorkspaceSelector']]],
   ['_7eworkspacetreewidget_491',['~WorkspaceTreeWidget',['../d8/d24/classMantidQt_1_1MantidWidgets_1_1WorkspaceTreeWidget.html#abdd0e4feece76061a053ba860fd83c9a',1,'MantidQt::MantidWidgets::WorkspaceTreeWidget']]],
-  ['_7eworkspacetreewidgetsimple_492',['~WorkspaceTreeWidgetSimple',['../d8/d11/classMantidQt_1_1MantidWidgets_1_1WorkspaceTreeWidgetSimple.html#a74368676f3987fee10c4622e8391615c',1,'MantidQt::MantidWidgets::WorkspaceTreeWidgetSimple']]],
+  ['_7eworkspacetreewidgetsimple_492',['~WorkspaceTreeWidgetSimple',['../d8/d11/classMantidQt_1_1MantidWidgets_1_1WorkspaceTreeWidgetSimple.html#ada5554a37e3a42e94bde0218aa8a43c8',1,'MantidQt::MantidWidgets::WorkspaceTreeWidgetSimple']]],
   ['_7ewritelock_493',['~WriteLock',['../d9/d5e/classMantid_1_1Kernel_1_1WriteLock.html#a89cb439979af297b79840aa5ecc2d5c3',1,'Mantid::Kernel::WriteLock']]],
   ['_7exrayabsorptioncorrection_494',['~XrayAbsorptionCorrection',['../db/dd5/classMantid_1_1Algorithms_1_1XrayAbsorptionCorrection.html#aba900dc12a1b413fd3485f9d1bd851b8',1,'Mantid::Algorithms::XrayAbsorptionCorrection']]],
   ['_7exsd_5f_5fanytype_495',['~xsd__anyType',['../df/d83/classICat4_1_1xsd____anyType.html#a1c4fd06e9c77f500c8648b96dad71bb4',1,'ICat4::xsd__anyType']]]
