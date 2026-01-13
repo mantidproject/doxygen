@@ -128,10 +128,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3ef0a21f23e2f164d3fe0e39729acf1c" id="r_a3ef0a21f23e2f164d3fe0e39729acf1c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d5/d89/classMantid_1_1DataObjects_1_1GroupingWorkspace.html">GroupingWorkspace</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d89/classMantid_1_1DataObjects_1_1GroupingWorkspace.html#a3ef0a21f23e2f164d3fe0e39729acf1c">cloneEmpty</a> () const</td></tr>
 <tr class="memdesc:a3ef0a21f23e2f164d3fe0e39729acf1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a default-initialized clone of the workspace.  <br /></td></tr>
 <tr class="separator:a3ef0a21f23e2f164d3fe0e39729acf1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addc205dfc39918dc9b9a00f7661e2418" id="r_addc205dfc39918dc9b9a00f7661e2418"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d89/classMantid_1_1DataObjects_1_1GroupingWorkspace.html#addc205dfc39918dc9b9a00f7661e2418">getDetectorIDsOfGroup</a> (const int groupID) const</td></tr>
-<tr class="separator:addc205dfc39918dc9b9a00f7661e2418"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5758f36b9601dd550c4dc08260b7b9ed" id="r_a5758f36b9601dd550c4dc08260b7b9ed"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d89/classMantid_1_1DataObjects_1_1GroupingWorkspace.html#a5758f36b9601dd550c4dc08260b7b9ed">getGroupIDs</a> () const</td></tr>
-<tr class="separator:a5758f36b9601dd550c4dc08260b7b9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a324edbdac8f4557bb924a6bbf2baa3" id="r_a9a324edbdac8f4557bb924a6bbf2baa3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; detid_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d89/classMantid_1_1DataObjects_1_1GroupingWorkspace.html#a9a324edbdac8f4557bb924a6bbf2baa3">getDetectorIDsOfGroup</a> (const int groupID) const</td></tr>
+<tr class="separator:a9a324edbdac8f4557bb924a6bbf2baa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae24ebb108353e9c422fdf2e1e5fbd4" id="r_afae24ebb108353e9c422fdf2e1e5fbd4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d89/classMantid_1_1DataObjects_1_1GroupingWorkspace.html#afae24ebb108353e9c422fdf2e1e5fbd4">getGroupIDs</a> (const bool includeUnsetGroup=true) const</td></tr>
+<tr class="separator:afae24ebb108353e9c422fdf2e1e5fbd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27f5074f5fda6d3024418cc2bb24b42a" id="r_a27f5074f5fda6d3024418cc2bb24b42a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d89/classMantid_1_1DataObjects_1_1GroupingWorkspace.html#a27f5074f5fda6d3024418cc2bb24b42a">getTotalGroups</a> () const</td></tr>
 <tr class="separator:a27f5074f5fda6d3024418cc2bb24b42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3327a5b53bfe8579d915738e2f7784a" id="r_ad3327a5b53bfe8579d915738e2f7784a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d89/classMantid_1_1DataObjects_1_1GroupingWorkspace.html#ad3327a5b53bfe8579d915738e2f7784a">GroupingWorkspace</a> ()=default</td></tr>
@@ -1406,14 +1406,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="addc205dfc39918dc9b9a00f7661e2418" name="addc205dfc39918dc9b9a00f7661e2418"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addc205dfc39918dc9b9a00f7661e2418">&#9670;&#160;</a></span>getDetectorIDsOfGroup()</h2>
+<a id="a9a324edbdac8f4557bb924a6bbf2baa3" name="a9a324edbdac8f4557bb924a6bbf2baa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a324edbdac8f4557bb924a6bbf2baa3">&#9670;&#160;</a></span>getDetectorIDsOfGroup()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; int &gt; Mantid::DataObjects::GroupingWorkspace::getDetectorIDsOfGroup </td>
+          <td class="memname">std::vector&lt; detid_t &gt; Mantid::DataObjects::GroupingWorkspace::getDetectorIDsOfGroup </td>
           <td>(</td>
           <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>groupID</em></td><td>)</td>
@@ -1422,14 +1422,14 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/df9/GroupingWorkspace_8cpp_source.html#l00115">115</a> of file <a class="el" href="../../d6/df9/GroupingWorkspace_8cpp_source.html">GroupingWorkspace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/df9/GroupingWorkspace_8cpp_source.html#l00117">117</a> of file <a class="el" href="../../d6/df9/GroupingWorkspace_8cpp_source.html">GroupingWorkspace.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00193">Mantid::DataObjects::SpecialWorkspace2D::getDetectorIDs()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00116">Mantid::DataObjects::Workspace2D::getNumberHistograms()</a>, <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, <a class="el" href="../../d6/df9/GroupingWorkspace_8cpp_source.html#l00040">translateToGroupID()</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>.</p>
 
 </div>
 </div>
-<a id="a5758f36b9601dd550c4dc08260b7b9ed" name="a5758f36b9601dd550c4dc08260b7b9ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5758f36b9601dd550c4dc08260b7b9ed">&#9670;&#160;</a></span>getGroupIDs()</h2>
+<a id="afae24ebb108353e9c422fdf2e1e5fbd4" name="afae24ebb108353e9c422fdf2e1e5fbd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afae24ebb108353e9c422fdf2e1e5fbd4">&#9670;&#160;</a></span>getGroupIDs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1437,7 +1437,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">std::vector&lt; int &gt; Mantid::DataObjects::GroupingWorkspace::getGroupIDs </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>includeUnsetGroup</em> = <code>true</code></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -1447,7 +1448,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00116">Mantid::DataObjects::Workspace2D::getNumberHistograms()</a>, <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, <a class="el" href="../../d6/df9/GroupingWorkspace_8cpp_source.html#l00040">translateToGroupID()</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/df9/GroupingWorkspace_8cpp_source.html#l00109">getTotalGroups()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/df9/GroupingWorkspace_8cpp_source.html#l00111">getTotalGroups()</a>.</p>
 
 </div>
 </div>
@@ -1466,7 +1467,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/df9/GroupingWorkspace_8cpp_source.html#l00109">109</a> of file <a class="el" href="../../d6/df9/GroupingWorkspace_8cpp_source.html">GroupingWorkspace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/df9/GroupingWorkspace_8cpp_source.html#l00111">111</a> of file <a class="el" href="../../d6/df9/GroupingWorkspace_8cpp_source.html">GroupingWorkspace.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d6/df9/GroupingWorkspace_8cpp_source.html#l00097">getGroupIDs()</a>.</p>
 
@@ -1643,7 +1644,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/df9/GroupingWorkspace_8cpp_source.html#l00115">getDetectorIDsOfGroup()</a>, <a class="el" href="../../d6/df9/GroupingWorkspace_8cpp_source.html#l00097">getGroupIDs()</a>, <a class="el" href="../../d6/df9/GroupingWorkspace_8cpp_source.html#l00055">makeDetectorIDToGroupMap()</a>, and <a class="el" href="../../d6/df9/GroupingWorkspace_8cpp_source.html#l00078">makeDetectorIDToGroupVector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/df9/GroupingWorkspace_8cpp_source.html#l00117">getDetectorIDsOfGroup()</a>, <a class="el" href="../../d6/df9/GroupingWorkspace_8cpp_source.html#l00097">getGroupIDs()</a>, <a class="el" href="../../d6/df9/GroupingWorkspace_8cpp_source.html#l00055">makeDetectorIDToGroupMap()</a>, and <a class="el" href="../../d6/df9/GroupingWorkspace_8cpp_source.html#l00078">makeDetectorIDToGroupVector()</a>.</p>
 
 </div>
 </div>

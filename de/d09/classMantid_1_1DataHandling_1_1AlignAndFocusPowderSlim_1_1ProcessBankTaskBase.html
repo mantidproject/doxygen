@@ -116,6 +116,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4423f5a185aafd1b01f0c0b7e53a313d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59a2e54e18714b19597790fc86b933aa" id="r_a59a2e54e18714b19597790fc86b933aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d00/classMantid_1_1DataHandling_1_1AlignAndFocusPowderSlim_1_1BankCalibration.html">BankCalibration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d09/classMantid_1_1DataHandling_1_1AlignAndFocusPowderSlim_1_1ProcessBankTaskBase.html#a59a2e54e18714b19597790fc86b933aa">getCalibration</a> (const std::string &amp;tof_unit, const size_t wksp_index) const</td></tr>
 <tr class="separator:a59a2e54e18714b19597790fc86b933aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b3591b234875c5e5b6265a04bcea981" id="r_a5b3591b234875c5e5b6265a04bcea981"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d1/d00/classMantid_1_1DataHandling_1_1AlignAndFocusPowderSlim_1_1BankCalibration.html">BankCalibration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d09/classMantid_1_1DataHandling_1_1AlignAndFocusPowderSlim_1_1ProcessBankTaskBase.html#a5b3591b234875c5e5b6265a04bcea981">getCalibrations</a> (const std::string &amp;tof_unit, const size_t bank_index) const</td></tr>
+<tr class="separator:a5b3591b234875c5e5b6265a04bcea981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a589ca5d30a1fca6932a298624b46aad3" id="r_a589ca5d30a1fca6932a298624b46aad3"><td class="memItemLeft" align="right" valign="top">std::stack&lt; <a class="el" href="../../d6/d09/namespaceMantid_1_1DataHandling_1_1AlignAndFocusPowderSlim.html#a37264c11d4c8e594c5a95f58a02fee94">EventROI</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d09/classMantid_1_1DataHandling_1_1AlignAndFocusPowderSlim_1_1ProcessBankTaskBase.html#a589ca5d30a1fca6932a298624b46aad3">getEventIndexRanges</a> (H5::Group &amp;event_group, const uint64_t number_events, std::unique_ptr&lt; std::vector&lt; uint64_t &gt; &gt; *event_index=nullptr) const</td></tr>
 <tr class="separator:a589ca5d30a1fca6932a298624b46aad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5664e26743be1dd6209943ef158deb97" id="r_a5664e26743be1dd6209943ef158deb97"><td class="memItemLeft" align="right" valign="top">std::stack&lt; std::pair&lt; int, <a class="el" href="../../d6/d09/namespaceMantid_1_1DataHandling_1_1AlignAndFocusPowderSlim.html#a37264c11d4c8e594c5a95f58a02fee94">EventROI</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d09/classMantid_1_1DataHandling_1_1AlignAndFocusPowderSlim_1_1ProcessBankTaskBase.html#a5664e26743be1dd6209943ef158deb97">getEventIndexSplitRanges</a> (H5::Group &amp;event_group, const uint64_t number_events) const</td></tr>
@@ -195,7 +197,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html#l00022">22</a> of file <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html">ProcessBankTaskBase.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d44/ProcessBankTaskBase_8h_source.html#l00044">m_bankEntries</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d44/ProcessBankTaskBase_8h_source.html#l00045">m_bankEntries</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d8/d1a/ProcessBankSplitFullTimeTask_8cpp_source.html#l00039">Mantid::DataHandling::AlignAndFocusPowderSlim::ProcessBankSplitFullTimeTask::operator()()</a>, <a class="el" href="../../d1/dca/ProcessBankSplitTask_8cpp_source.html#l00035">Mantid::DataHandling::AlignAndFocusPowderSlim::ProcessBankSplitTask::operator()()</a>, and <a class="el" href="../../de/d4c/ProcessBankTask_8cpp_source.html#l00032">Mantid::DataHandling::AlignAndFocusPowderSlim::ProcessBankTask::operator()()</a>.</p>
 
@@ -229,9 +231,43 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html#l00023">23</a> of file <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html">ProcessBankTaskBase.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../da/dfd/BankCalibration_8cpp_source.html#l00151">Mantid::DataHandling::AlignAndFocusPowderSlim::BankCalibrationFactory::getCalibration()</a>, <a class="el" href="../../d5/d44/ProcessBankTaskBase_8h_source.html#l00047">m_calibFactory</a>, and <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l01430">Mantid::Kernel::Units::timeConversionValue()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/dfd/BankCalibration_8cpp_source.html#l00124">Mantid::DataHandling::AlignAndFocusPowderSlim::BankCalibrationFactory::getCalibration()</a>, <a class="el" href="../../d5/d44/ProcessBankTaskBase_8h_source.html#l00048">m_calibFactory</a>, and <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l01430">Mantid::Kernel::Units::timeConversionValue()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d1a/ProcessBankSplitFullTimeTask_8cpp_source.html#l00039">Mantid::DataHandling::AlignAndFocusPowderSlim::ProcessBankSplitFullTimeTask::operator()()</a>, <a class="el" href="../../d1/dca/ProcessBankSplitTask_8cpp_source.html#l00035">Mantid::DataHandling::AlignAndFocusPowderSlim::ProcessBankSplitTask::operator()()</a>, and <a class="el" href="../../de/d4c/ProcessBankTask_8cpp_source.html#l00032">Mantid::DataHandling::AlignAndFocusPowderSlim::ProcessBankTask::operator()()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d1a/ProcessBankSplitFullTimeTask_8cpp_source.html#l00039">Mantid::DataHandling::AlignAndFocusPowderSlim::ProcessBankSplitFullTimeTask::operator()()</a>, and <a class="el" href="../../d1/dca/ProcessBankSplitTask_8cpp_source.html#l00035">Mantid::DataHandling::AlignAndFocusPowderSlim::ProcessBankSplitTask::operator()()</a>.</p>
+
+</div>
+</div>
+<a id="a5b3591b234875c5e5b6265a04bcea981" name="a5b3591b234875c5e5b6265a04bcea981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b3591b234875c5e5b6265a04bcea981">&#9670;&#160;</a></span>getCalibrations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="../../d1/d00/classMantid_1_1DataHandling_1_1AlignAndFocusPowderSlim_1_1BankCalibration.html">BankCalibration</a> &gt; Mantid::DataHandling::AlignAndFocusPowderSlim::ProcessBankTaskBase::getCalibrations </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>tof_unit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>bank_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html">ProcessBankTaskBase.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../da/dfd/BankCalibration_8cpp_source.html#l00128">Mantid::DataHandling::AlignAndFocusPowderSlim::BankCalibrationFactory::getCalibrations()</a>, <a class="el" href="../../d5/d44/ProcessBankTaskBase_8h_source.html#l00048">m_calibFactory</a>, and <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l01430">Mantid::Kernel::Units::timeConversionValue()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../de/d4c/ProcessBankTask_8cpp_source.html#l00032">Mantid::DataHandling::AlignAndFocusPowderSlim::ProcessBankTask::operator()()</a>.</p>
 
 </div>
 </div>
@@ -267,9 +303,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html#l00046">46</a> of file <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html">ProcessBankTaskBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html#l00053">53</a> of file <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html">ProcessBankTaskBase.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d44/ProcessBankTaskBase_8h_source.html#l00045">m_loader</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d44/ProcessBankTaskBase_8h_source.html#l00046">m_loader</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d8/d1a/ProcessBankSplitFullTimeTask_8cpp_source.html#l00039">Mantid::DataHandling::AlignAndFocusPowderSlim::ProcessBankSplitFullTimeTask::operator()()</a>, and <a class="el" href="../../de/d4c/ProcessBankTask_8cpp_source.html#l00032">Mantid::DataHandling::AlignAndFocusPowderSlim::ProcessBankTask::operator()()</a>.</p>
 
@@ -301,9 +337,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html">ProcessBankTaskBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html">ProcessBankTaskBase.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d44/ProcessBankTaskBase_8h_source.html#l00045">m_loader</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d44/ProcessBankTaskBase_8h_source.html#l00046">m_loader</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d1/dca/ProcessBankSplitTask_8cpp_source.html#l00035">Mantid::DataHandling::AlignAndFocusPowderSlim::ProcessBankSplitTask::operator()()</a>.</p>
 
@@ -372,9 +408,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html">ProcessBankTaskBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html#l00039">39</a> of file <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html">ProcessBankTaskBase.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d44/ProcessBankTaskBase_8h_source.html#l00045">m_loader</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d44/ProcessBankTaskBase_8h_source.html#l00046">m_loader</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d8/d1a/ProcessBankSplitFullTimeTask_8cpp_source.html#l00039">Mantid::DataHandling::AlignAndFocusPowderSlim::ProcessBankSplitFullTimeTask::operator()()</a>, <a class="el" href="../../d1/dca/ProcessBankSplitTask_8cpp_source.html#l00035">Mantid::DataHandling::AlignAndFocusPowderSlim::ProcessBankSplitTask::operator()()</a>, and <a class="el" href="../../de/d4c/ProcessBankTask_8cpp_source.html#l00032">Mantid::DataHandling::AlignAndFocusPowderSlim::ProcessBankTask::operator()()</a>.</p>
 
@@ -401,7 +437,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d44/ProcessBankTaskBase_8h_source.html#l00044">44</a> of file <a class="el" href="../../d5/d44/ProcessBankTaskBase_8h_source.html">ProcessBankTaskBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d44/ProcessBankTaskBase_8h_source.html#l00045">45</a> of file <a class="el" href="../../d5/d44/ProcessBankTaskBase_8h_source.html">ProcessBankTaskBase.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html#l00022">bankName()</a>.</p>
 
@@ -429,9 +465,9 @@ Private Attributes</h2></td></tr>
 
 <p>used to generate actual calibration </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d44/ProcessBankTaskBase_8h_source.html#l00047">47</a> of file <a class="el" href="../../d5/d44/ProcessBankTaskBase_8h_source.html">ProcessBankTaskBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d44/ProcessBankTaskBase_8h_source.html#l00048">48</a> of file <a class="el" href="../../d5/d44/ProcessBankTaskBase_8h_source.html">ProcessBankTaskBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html#l00023">getCalibration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html#l00023">getCalibration()</a>, and <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html#l00032">getCalibrations()</a>.</p>
 
 </div>
 </div>
@@ -455,9 +491,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d44/ProcessBankTaskBase_8h_source.html#l00045">45</a> of file <a class="el" href="../../d5/d44/ProcessBankTaskBase_8h_source.html">ProcessBankTaskBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d44/ProcessBankTaskBase_8h_source.html#l00046">46</a> of file <a class="el" href="../../d5/d44/ProcessBankTaskBase_8h_source.html">ProcessBankTaskBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html#l00046">getEventIndexRanges()</a>, <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html#l00051">getEventIndexSplitRanges()</a>, and <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html#l00032">loadEvents()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html#l00053">getEventIndexRanges()</a>, <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html#l00058">getEventIndexSplitRanges()</a>, and <a class="el" href="../../dd/d86/ProcessBankTaskBase_8cpp_source.html#l00039">loadEvents()</a>.</p>
 
 </div>
 </div>

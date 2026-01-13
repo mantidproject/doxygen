@@ -177,6 +177,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab9dd8949fb2f1097afdf3a9655369efc" id="r_ab9dd8949fb2f1097afdf3a9655369efc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d8/d8e/namespaceMantid.html#a48bf366d08fb1b20ebb535f1b1b5c99e">detid_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d03/classMantid_1_1Geometry_1_1Instrument.html#ab9dd8949fb2f1097afdf3a9655369efc">getDetectorIDs</a> (bool skipMonitors=false) const</td></tr>
 <tr class="memdesc:ab9dd8949fb2f1097afdf3a9655369efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a vector of detector IDs in this instrument.  <br /></td></tr>
 <tr class="separator:ab9dd8949fb2f1097afdf3a9655369efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a638eae7a7c43a6fb7f1f231b2d2595dc" id="r_a638eae7a7c43a6fb7f1f231b2d2595dc"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="../../d8/d8e/namespaceMantid.html#a48bf366d08fb1b20ebb535f1b1b5c99e">detid_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d03/classMantid_1_1Geometry_1_1Instrument.html#a638eae7a7c43a6fb7f1f231b2d2595dc">getDetectorIDsInBank</a> (const std::string &amp;bankName) const</td></tr>
+<tr class="separator:a638eae7a7c43a6fb7f1f231b2d2595dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39ace94074eaad5f35d69900ffa785b5" id="r_a39ace94074eaad5f35d69900ffa785b5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a86004ac29a407e6aa298b4935d851672">IDetector_const_sptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d03/classMantid_1_1Geometry_1_1Instrument.html#a39ace94074eaad5f35d69900ffa785b5">getDetectors</a> (const std::set&lt; <a class="el" href="../../d8/d8e/namespaceMantid.html#a48bf366d08fb1b20ebb535f1b1b5c99e">detid_t</a> &gt; &amp;det_ids) const</td></tr>
 <tr class="memdesc:a39ace94074eaad5f35d69900ffa785b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of Detectors for the given detectors ids.  <br /></td></tr>
 <tr class="separator:a39ace94074eaad5f35d69900ffa785b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -729,7 +731,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="a516343d32397192ed497a1634205ff48a6b2e9ae5516f7a0c613e0c871a0b10d1" name="a516343d32397192ed497a1634205ff48a6b2e9ae5516f7a0c613e0c871a0b10d1"></a>None&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00202">202</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00203">203</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
 </div>
 </div>
@@ -838,7 +840,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00076">76</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00229">Mantid::Geometry::CompAssembly::getChildren()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#afbed8261ade45e5adb24a7519c47c986">Mantid::Geometry::IComponent::getName()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00488">isMonitor()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00275">m_sampleCache</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00271">m_sourceCache</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00617">markAsDetector()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00674">markAsMonitor()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00561">markAsSamplePos()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00594">markAsSource()</a>, and <a class="el" href="../../dc/d98/TrustRegionMinimizer_8cpp_source.html#l00495">obj</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00229">Mantid::Geometry::CompAssembly::getChildren()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#afbed8261ade45e5adb24a7519c47c986">Mantid::Geometry::IComponent::getName()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00499">isMonitor()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00276">m_sampleCache</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00272">m_sourceCache</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00628">markAsDetector()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00685">markAsMonitor()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00572">markAsSamplePos()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00605">markAsSource()</a>, and <a class="el" href="../../dc/d98/TrustRegionMinimizer_8cpp_source.html#l00495">obj</a>.</p>
 
 </div>
 </div>
@@ -880,9 +882,9 @@ Additional Inherited Members</h2></td></tr>
 <p>If component is a ComponentAssembly, we add its children to the queue to check if they're Rectangular Detectors and returns true. </p>
 <p>Otherwise, it returns false. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01116">1116</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01127">1127</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01050">containsRectDetectors()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01061">containsRectDetectors()</a>.</p>
 
 </div>
 </div>
@@ -910,11 +912,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01108">1108</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01119">1119</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00197">getChild()</a>, and <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00176">Mantid::Geometry::CompAssembly::nelements()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01050">containsRectDetectors()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01061">containsRectDetectors()</a>.</p>
 
 </div>
 </div>
@@ -954,11 +956,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Add a plottable component. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00793">793</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00804">804</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00793">appendPlottable()</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00673">Mantid::Geometry::d</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a6e2c3bb366023464404e005e59c22edb">Mantid::Geometry::g_log</a>, and <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00176">Mantid::Geometry::CompAssembly::nelements()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00804">appendPlottable()</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00673">Mantid::Geometry::d</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a6e2c3bb366023464404e005e59c22edb">Mantid::Geometry::g_log</a>, and <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00176">Mantid::Geometry::CompAssembly::nelements()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00793">appendPlottable()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00769">getPlottable()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00804">appendPlottable()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00780">getPlottable()</a>.</p>
 
 </div>
 </div>
@@ -981,7 +983,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00124">124</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00301">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00302">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/dd7/PythonInterface_2mantid_2geometry_2src_2Exports_2Instrument_8cpp_source.html#l00037">export_Instrument()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01171">Mantid::API::ExperimentInfo::readParameterMap()</a>.</p>
 
@@ -1038,9 +1040,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Check whether instrument contains rectangular detectors. </p>
 <dl class="section return"><dt>Returns</dt><dd>Full if all detectors are rect., Partial if some, None if none </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01050">1050</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01061">1061</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01116">addAssemblyChildrenToQueue()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01108">addInstrumentChildrenToQueue()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00202">Full</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00202">None</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00202">Partial</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01085">validateComponentProperties()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01127">addAssemblyChildrenToQueue()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01119">addInstrumentChildrenToQueue()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00203">Full</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00203">None</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00203">Partial</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01096">validateComponentProperties()</a>.</p>
 
 </div>
 </div>
@@ -1062,9 +1064,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns the index for a detector ID. Used for accessing <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html" title="Geometry::DetectorInfo is an intermediate step towards a DetectorInfo that is part of Instrument-2....">DetectorInfo</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01137">1137</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01148">1148</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00301">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00302">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01101">Mantid::Geometry::ParameterMap::detectorIndex()</a>.</p>
 
@@ -1095,7 +1097,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00231">231</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00232">232</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
 </div>
 </div>
@@ -1122,7 +1124,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00211">211</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00212">212</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/dd7/PythonInterface_2mantid_2geometry_2src_2Exports_2Instrument_8cpp_source.html#l00037">export_Instrument()</a>.</p>
 
@@ -1151,7 +1153,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00208">208</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00209">209</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/dd7/PythonInterface_2mantid_2geometry_2src_2Exports_2Instrument_8cpp_source.html#l00037">export_Instrument()</a>.</p>
 
@@ -1183,7 +1185,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointers to components </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00396">396</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00407">407</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00175">Mantid::Geometry::Component::getName()</a>.</p>
 
@@ -1214,9 +1216,9 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A const pointer to the detector object </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00480">480</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00491">491</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00301">m_instr</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00302">m_instr</a>.</p>
 
 </div>
 </div>
@@ -1238,9 +1240,9 @@ template&lt;typename T &gt; </div>
 <p>Gets the beam direction (i.e. </p>
 <p>source-&gt;sample direction). Not virtual because it relies the <a class="el" href="../../da/d03/classMantid_1_1Geometry_1_1Instrument.html#af4650dd49f6c6abeedee2f1f45ccc86c" title="Gets a pointer to the Sample Position.">getSample()</a> &amp; <a class="el" href="../../d6/dfb/classMantid_1_1Geometry_1_1CompAssembly.html#aa2fe44eae0eee41364fa5afc632ac993" title="Gets the absolute position of the Parametrized CompAssembly This attempts to read the cached position...">getPos()</a> virtual functions </p><dl class="section return"><dt>Returns</dt><dd>A unit vector denoting the direction of the beam </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00372">372</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00383">383</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00452">Mantid::Geometry::CompAssembly::getPos()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00345">getSample()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00319">getSource()</a>, and <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00352">Mantid::Kernel::normalize()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00452">Mantid::Geometry::CompAssembly::getPos()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00356">getSample()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00330">getSource()</a>, and <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00352">Mantid::Kernel::normalize()</a>.</p>
 
 </div>
 </div>
@@ -1279,9 +1281,9 @@ template&lt;typename T &gt; </div>
 
 <p>Reimplemented from <a class="el" href="../../d6/dfb/classMantid_1_1Geometry_1_1CompAssembly.html#a3e92695aa915fda2a083865071ee2223">Mantid::Geometry::CompAssembly</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00730">730</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00741">741</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00396">Mantid::Geometry::ComponentInfo::boundingBox()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01085">Mantid::Geometry::ParameterMap::componentInfo()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00197">getChild()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00319">getSource()</a>, <a class="el" href="../../d0/d7e/Geometry_2src_2Objects_2BoundingBox_8cpp_source.html#l00231">Mantid::Geometry::BoundingBox::grow()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01064">Mantid::Geometry::ParameterMap::hasComponentInfo()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00301">Mantid::Geometry::Component::index()</a>, <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00101">Mantid::Geometry::CompAssembly::m_cachedBoundingBox</a>, <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00098">Mantid::Geometry::CompAssembly::m_children</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, and <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00176">Mantid::Geometry::CompAssembly::nelements()</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00396">Mantid::Geometry::ComponentInfo::boundingBox()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01085">Mantid::Geometry::ParameterMap::componentInfo()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00197">getChild()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00330">getSource()</a>, <a class="el" href="../../d0/d7e/Geometry_2src_2Objects_2BoundingBox_8cpp_source.html#l00231">Mantid::Geometry::BoundingBox::grow()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01064">Mantid::Geometry::ParameterMap::hasComponentInfo()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00301">Mantid::Geometry::Component::index()</a>, <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00101">Mantid::Geometry::CompAssembly::m_cachedBoundingBox</a>, <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00098">Mantid::Geometry::CompAssembly::m_children</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, and <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00176">Mantid::Geometry::CompAssembly::nelements()</a>.</p>
 
 </div>
 </div>
@@ -1330,7 +1332,7 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00066">66</a> of file <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html">CompAssembly.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01108">addInstrumentChildrenToQueue()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00730">getBoundingBox()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01119">addInstrumentChildrenToQueue()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00741">getBoundingBox()</a>.</p>
 
 </div>
 </div>
@@ -1360,7 +1362,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the component. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00379">379</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00390">390</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d0/da1/Component_8h_source.html#l00289">Mantid::Geometry::Component::base()</a>, <a class="el" href="../../d1/da6/ParComponentFactory_8cpp_source.html#l00056">Mantid::Geometry::ParComponentFactory::create()</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
 
@@ -1391,7 +1393,7 @@ template&lt;typename T &gt; </div>
 
 <p>Retrieves from which side the instrument to be viewed from when the instrument viewer first starts, possibilities are "Z+, Z-, X+, ...". </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00154">154</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00155">155</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
 </div>
 </div>
@@ -1421,7 +1423,7 @@ template&lt;typename T &gt; </div>
 <p>Get the default type of the instrument view. </p>
 <p>The possible values are: 3D, CYLINDRICAL_X, CYLINDRICAL_Y, CYLINDRICAL_Z, SPHERICAL_X, SPHERICAL_Y, SPHERICAL_Z </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00147">147</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00148">148</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/dd7/PythonInterface_2mantid_2geometry_2src_2Exports_2Instrument_8cpp_source.html#l00037">export_Instrument()</a>.</p>
 
@@ -1458,11 +1460,11 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00458">458</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00469">469</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/da6/ParComponentFactory_8cpp_source.html#l00029">Mantid::Geometry::ParComponentFactory::createDetector()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00301">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/da6/ParComponentFactory_8cpp_source.html#l00029">Mantid::Geometry::ParComponentFactory::createDetector()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00302">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/dd7/PythonInterface_2mantid_2geometry_2src_2Exports_2Instrument_8cpp_source.html#l00037">export_Instrument()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00510">getDetectorG()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00541">getDetectors()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00527">getDetectors()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00185">getDetectors()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01171">Mantid::API::ExperimentInfo::readParameterMap()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/dd7/PythonInterface_2mantid_2geometry_2src_2Exports_2Instrument_8cpp_source.html#l00037">export_Instrument()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00521">getDetectorG()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00552">getDetectors()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00538">getDetectors()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00185">getDetectors()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01171">Mantid::API::ExperimentInfo::readParameterMap()</a>.</p>
 
 </div>
 </div>
@@ -1497,9 +1499,9 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00510">510</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00521">521</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00458">getDetector()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00469">getDetector()</a>.</p>
 
 </div>
 </div>
@@ -1523,9 +1525,31 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00204">204</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00267">m_detectorCache</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00301">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00268">m_detectorCache</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00302">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00886">saveNexus()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00897">saveNexus()</a>.</p>
+
+</div>
+</div>
+<a id="a638eae7a7c43a6fb7f1f231b2d2595dc" name="a638eae7a7c43a6fb7f1f231b2d2595dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a638eae7a7c43a6fb7f1f231b2d2595dc">&#9670;&#160;</a></span>getDetectorIDsInBank()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt; <a class="el" href="../../d8/d8e/namespaceMantid.html#a48bf366d08fb1b20ebb535f1b1b5c99e">detid_t</a> &gt; Mantid::Geometry::Instrument::getDetectorIDsInBank </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>bankName</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00306">306</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00272">getDetectorsInBank()</a>.</p>
 
 </div>
 </div>
@@ -1547,9 +1571,9 @@ template&lt;typename T &gt; </div>
 
 <p>Returns a list of Detectors for the given detectors ids. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00541">541</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00552">552</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00458">getDetector()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00469">getDetector()</a>.</p>
 
 </div>
 </div>
@@ -1571,11 +1595,11 @@ template&lt;typename T &gt; </div>
 
 <p>Returns a list of Detectors for the given detectors ids. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00527">527</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00538">538</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00458">getDetector()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00469">getDetector()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00946">saveDetectorSetInfoToNexus()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00957">saveDetectorSetInfoToNexus()</a>.</p>
 
 </div>
 </div>
@@ -1600,7 +1624,7 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00185">185</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00458">getDetector()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00267">m_detectorCache</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00301">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00469">getDetector()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00268">m_detectorCache</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00302">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
 
 </div>
 </div>
@@ -1644,7 +1668,7 @@ template&lt;typename T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../d7/d36/classMantid_1_1Geometry_1_1ICompAssembly.html#a4cb97da413b406f97b4a19baa11d4fef">Mantid::Geometry::ICompAssembly::getChildren()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00298">getDetectorsInBank()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00306">getDetectorIDsInBank()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00298">getDetectorsInBank()</a>.</p>
 
 </div>
 </div>
@@ -1712,9 +1736,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the path to the original IDF .xml file that was loaded for this instrument </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00854">854</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00865">865</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00312">m_filename</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00301">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00313">m_filename</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00302">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/dd7/PythonInterface_2mantid_2geometry_2src_2Exports_2Instrument_8cpp_source.html#l00037">export_Instrument()</a>.</p>
 
@@ -1769,9 +1793,9 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00821">821</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00832">832</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00175">Mantid::Geometry::Component::getName()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00345">getSample()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00319">getSource()</a>, and <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00269">Mantid::Kernel::V3D::norm()</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00175">Mantid::Geometry::Component::getName()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00356">getSample()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00330">getSource()</a>, and <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00269">Mantid::Kernel::V3D::norm()</a>.</p>
 
 </div>
 </div>
@@ -1800,7 +1824,7 @@ template&lt;typename T &gt; </div>
 
 <p>Get information about the parameters described in the instrument definition file and associated parameter files. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00137">137</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00138">138</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
 </div>
 </div>
@@ -1827,7 +1851,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00138">138</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00139">139</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
 </div>
 </div>
@@ -1856,7 +1880,7 @@ template&lt;typename T &gt; </div>
 
 <p>Get information about the units used for parameters described in the IDF and associated parameter files. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00142">142</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00143">143</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
 </div>
 </div>
@@ -1897,7 +1921,7 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00253">253</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00267">m_detectorCache</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00301">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00268">m_detectorCache</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00302">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
 
 </div>
 </div>
@@ -1920,9 +1944,9 @@ template&lt;typename T &gt; </div>
 <p>This method returns monitor detector ids.</p>
 <dl class="section return"><dt>Returns</dt><dd>a vector holding detector ids of monitors </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00713">713</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00724">724</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00267">m_detectorCache</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00301">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00268">m_detectorCache</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00302">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
 
 </div>
 </div>
@@ -1945,7 +1969,7 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00221">221</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00267">m_detectorCache</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00301">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00268">m_detectorCache</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00302">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/dd7/PythonInterface_2mantid_2geometry_2src_2Exports_2Instrument_8cpp_source.html#l00037">export_Instrument()</a>.</p>
 
@@ -1972,9 +1996,9 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00137">137</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, and <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00304">m_map_nonconst</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, and <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00305">m_map_nonconst</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/dd8/CalibrationHelpers_8cpp_source.html#l00063">Mantid::Crystal::CalibrationHelpers::adjustBankPositionsAndSizes()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01145">makeLegacyParameterMap()</a>, and <a class="el" href="../../dc/d95/SCDCalibratePanels_8cpp_source.html#l00512">Mantid::Crystal::SCDCalibratePanels::saveXmlFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/dd8/CalibrationHelpers_8cpp_source.html#l00063">Mantid::Crystal::CalibrationHelpers::adjustBankPositionsAndSizes()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01156">makeLegacyParameterMap()</a>, and <a class="el" href="../../dc/d95/SCDCalibratePanels_8cpp_source.html#l00512">Mantid::Crystal::SCDCalibratePanels::saveXmlFile()</a>.</p>
 
 </div>
 </div>
@@ -1998,7 +2022,7 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00151">151</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00301">m_instr</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00304">m_map_nonconst</a>, and <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00319">m_physicalInstrument</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00302">m_instr</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00305">m_map_nonconst</a>, and <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00320">m_physicalInstrument</a>.</p>
 
 </div>
 </div>
@@ -2019,9 +2043,9 @@ template&lt;typename T &gt; </div>
 
 <p>Get pointers to plottable components. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00769">769</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00780">780</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00793">appendPlottable()</a>, <a class="el" href="../../d1/da6/ParComponentFactory_8cpp_source.html#l00056">Mantid::Geometry::ParComponentFactory::create()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00267">m_detectorCache</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00301">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00804">appendPlottable()</a>, <a class="el" href="../../d1/da6/ParComponentFactory_8cpp_source.html#l00056">Mantid::Geometry::ParComponentFactory::create()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00268">m_detectorCache</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00302">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
 
 </div>
 </div>
@@ -2044,9 +2068,9 @@ template&lt;typename T &gt; </div>
 <p>Getter for the reference frame.</p>
 <dl class="section return"><dt>Returns</dt><dd>: reference frame. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01007">1007</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01018">1018</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00301">m_instr</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, and <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00322">m_referenceFrame</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00302">m_instr</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, and <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00323">m_referenceFrame</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/d8c/BeamProfileFactory_8cpp_source.html#l00017">Mantid::Algorithms::BeamProfileFactory::createBeamProfile()</a>, and <a class="el" href="../../dd/dd7/PythonInterface_2mantid_2geometry_2src_2Exports_2Instrument_8cpp_source.html#l00037">export_Instrument()</a>.</p>
 
@@ -2070,11 +2094,11 @@ template&lt;typename T &gt; </div>
 <p>Gets a pointer to the Sample Position. </p>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the Sample Position </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00345">345</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00356">356</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00026">Mantid::Geometry::CompAssembly::CompAssembly()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a6e2c3bb366023464404e005e59c22edb">Mantid::Geometry::g_log</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00314">Mantid::Geometry::Component::m_base</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00275">m_sampleCache</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00026">Mantid::Geometry::CompAssembly::CompAssembly()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a6e2c3bb366023464404e005e59c22edb">Mantid::Geometry::g_log</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00314">Mantid::Geometry::Component::m_base</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00276">m_sampleCache</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/dd7/PythonInterface_2mantid_2geometry_2src_2Exports_2Instrument_8cpp_source.html#l00037">export_Instrument()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00372">getBeamDirection()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00821">getInstrumentParameters()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00946">saveDetectorSetInfoToNexus()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/dd7/PythonInterface_2mantid_2geometry_2src_2Exports_2Instrument_8cpp_source.html#l00037">export_Instrument()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00383">getBeamDirection()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00832">getInstrumentParameters()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00957">saveDetectorSetInfoToNexus()</a>.</p>
 
 </div>
 </div>
@@ -2096,11 +2120,11 @@ template&lt;typename T &gt; </div>
 <p>Gets a pointer to the source. </p>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the source </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00319">319</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00330">330</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00026">Mantid::Geometry::CompAssembly::CompAssembly()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a6e2c3bb366023464404e005e59c22edb">Mantid::Geometry::g_log</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00314">Mantid::Geometry::Component::m_base</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00271">m_sourceCache</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00026">Mantid::Geometry::CompAssembly::CompAssembly()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a6e2c3bb366023464404e005e59c22edb">Mantid::Geometry::g_log</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00314">Mantid::Geometry::Component::m_base</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00272">m_sourceCache</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d8c/BeamProfileFactory_8cpp_source.html#l00017">Mantid::Algorithms::BeamProfileFactory::createBeamProfile()</a>, <a class="el" href="../../dd/dd7/PythonInterface_2mantid_2geometry_2src_2Exports_2Instrument_8cpp_source.html#l00037">export_Instrument()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00372">getBeamDirection()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00730">getBoundingBox()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00821">getInstrumentParameters()</a>, and <a class="el" href="../../dc/d95/SCDCalibratePanels_8cpp_source.html#l00512">Mantid::Crystal::SCDCalibratePanels::saveXmlFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d8c/BeamProfileFactory_8cpp_source.html#l00017">Mantid::Algorithms::BeamProfileFactory::createBeamProfile()</a>, <a class="el" href="../../dd/dd7/PythonInterface_2mantid_2geometry_2src_2Exports_2Instrument_8cpp_source.html#l00037">export_Instrument()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00383">getBeamDirection()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00741">getBoundingBox()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00832">getInstrumentParameters()</a>, and <a class="el" href="../../dc/d95/SCDCalibratePanels_8cpp_source.html#l00512">Mantid::Crystal::SCDCalibratePanels::saveXmlFile()</a>.</p>
 
 </div>
 </div>
@@ -2128,7 +2152,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the date from which the instrument definition begins to be valid. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00169">169</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00170">170</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/dd7/PythonInterface_2mantid_2geometry_2src_2Exports_2Instrument_8cpp_source.html#l00037">export_Instrument()</a>, and <a class="el" href="../../dc/d95/SCDCalibratePanels_8cpp_source.html#l00512">Mantid::Crystal::SCDCalibratePanels::saveXmlFile()</a>.</p>
 
@@ -2158,7 +2182,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the date at which the instrument definition is no longer valid. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00172">172</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00173">173</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/dd7/PythonInterface_2mantid_2geometry_2src_2Exports_2Instrument_8cpp_source.html#l00037">export_Instrument()</a>.</p>
 
@@ -2180,11 +2204,11 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Contents of the IDF .xml file that was loaded for this instrument </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00870">870</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00881">881</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00301">m_instr</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, and <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00315">m_xmlText</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00302">m_instr</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, and <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00316">m_xmlText</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00886">saveNexus()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00897">saveNexus()</a>.</p>
 
 </div>
 </div>
@@ -2206,9 +2230,9 @@ template&lt;typename T &gt; </div>
 <p>Checks to see if the <a class="el" href="../../da/d03/classMantid_1_1Geometry_1_1Instrument.html" title="Base Instrument Class.">Instrument</a> has a sample. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the instrument has a sample cache. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00314">314</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00325">325</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00275">m_sampleCache</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00276">m_sampleCache</a>.</p>
 
 </div>
 </div>
@@ -2230,9 +2254,9 @@ template&lt;typename T &gt; </div>
 <p>Checks to see if the <a class="el" href="../../da/d03/classMantid_1_1Geometry_1_1Instrument.html" title="Base Instrument Class.">Instrument</a> has a source. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the instrument has a source cache. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00309">309</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00320">320</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00271">m_sourceCache</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00272">m_sourceCache</a>.</p>
 
 </div>
 </div>
@@ -2251,7 +2275,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01134">1134</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01145">1145</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00176">Mantid::Geometry::CompAssembly::nelements()</a>.</p>
 
@@ -2273,11 +2297,11 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00488">488</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00499">499</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00301">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00302">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00076">Instrument()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01085">validateComponentProperties()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00076">Instrument()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01096">validateComponentProperties()</a>.</p>
 
 </div>
 </div>
@@ -2297,7 +2321,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00496">496</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00507">507</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
 </div>
 </div>
@@ -2319,11 +2343,11 @@ template&lt;typename T &gt; </div>
 
 <p>Temporary helper for refactoring. Argument is index, <em>not</em> ID! </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01127">1127</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01138">1138</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00301">Mantid::Geometry::Component::index()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00267">m_detectorCache</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00301">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00301">Mantid::Geometry::Component::index()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00268">m_detectorCache</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00302">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00886">saveNexus()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00897">saveNexus()</a>.</p>
 
 </div>
 </div>
@@ -2362,7 +2386,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00992">992</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01003">1003</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>.</p>
 
@@ -2397,9 +2421,9 @@ template&lt;typename T &gt; </div>
 <p>Return <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html" title="ComponentInfo : Provides a component centric view on to the instrument.">ComponentInfo</a> and <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html" title="Geometry::DetectorInfo is an intermediate step towards a DetectorInfo that is part of Instrument-2....">DetectorInfo</a> for instrument given by pmap. </p>
 <p>If suitable <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html" title="ComponentInfo : Provides a component centric view on to the instrument.">ComponentInfo</a> and <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html" title="Geometry::DetectorInfo is an intermediate step towards a DetectorInfo that is part of Instrument-2....">DetectorInfo</a> are found in this or the (optional) <code>source</code> pmap they are simply copied, otherwise the instrument tree is parsed. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01259">1259</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01270">1270</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01085">Mantid::Geometry::ParameterMap::componentInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01071">Mantid::Geometry::ParameterMap::detectorInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01064">Mantid::Geometry::ParameterMap::hasComponentInfo()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00328">m_componentInfo</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00325">m_detectorInfo</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00383">Mantid::Geometry::InstrumentVisitor::makeWrappers()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01272">makeWrappers()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01085">Mantid::Geometry::ParameterMap::componentInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01071">Mantid::Geometry::ParameterMap::detectorInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01064">Mantid::Geometry::ParameterMap::hasComponentInfo()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00329">m_componentInfo</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00326">m_detectorInfo</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00383">Mantid::Geometry::InstrumentVisitor::makeWrappers()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01283">makeWrappers()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00068">Mantid::Geometry::ParameterMap::ParameterMap()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01108">Mantid::Geometry::ParameterMap::setInstrument()</a>.</p>
 
@@ -2422,11 +2446,11 @@ template&lt;typename T &gt; </div>
 
 <p>Returns a legacy <a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html" title="ParameterMap class.">ParameterMap</a>, containing information that is now stored in <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html" title="Geometry::DetectorInfo is an intermediate step towards a DetectorInfo that is part of Instrument-2....">DetectorInfo</a> (masking, positions, rotations, scale factors). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01145">1145</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01156">1156</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a25419bd006159f99b70690f744868f9c">Mantid::Geometry::IComponent::getBaseComponent()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00137">getParameterMap()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aee7138ede40d7d9f808a122766915211">Mantid::Geometry::IComponent::getRelativePos()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aeb44331fd48a6179a3a9543f2ffff944">Mantid::Geometry::IComponent::getRelativeRot()</a>, <a class="el" href="../../df/d56/IComponent_8h_source.html#l00124">Mantid::Geometry::IComponent::getScaleFactor()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00303">Mantid::Geometry::Component::hasComponentInfo()</a>, <a class="el" href="../../d5/d28/ComponentInfoBankHelpers_8cpp_source.html#l00025">Mantid::Geometry::ComponentInfoBankHelpers::isDetectorFixedInBank()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00301">m_instr</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00084">Mantid::Geometry::ParameterMap::pos()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00093">Mantid::Geometry::ParameterMap::rot()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00115">Mantid::Geometry::ParameterMap::scale()</a>, <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00029">Mantid::Kernel::toQuat()</a>, <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00037">Mantid::Kernel::toQuaterniond()</a>, <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00026">Mantid::Kernel::toV3D()</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00034">Mantid::Kernel::toVector3d()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a25419bd006159f99b70690f744868f9c">Mantid::Geometry::IComponent::getBaseComponent()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00137">getParameterMap()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aee7138ede40d7d9f808a122766915211">Mantid::Geometry::IComponent::getRelativePos()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aeb44331fd48a6179a3a9543f2ffff944">Mantid::Geometry::IComponent::getRelativeRot()</a>, <a class="el" href="../../df/d56/IComponent_8h_source.html#l00124">Mantid::Geometry::IComponent::getScaleFactor()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00303">Mantid::Geometry::Component::hasComponentInfo()</a>, <a class="el" href="../../d5/d28/ComponentInfoBankHelpers_8cpp_source.html#l00025">Mantid::Geometry::ComponentInfoBankHelpers::isDetectorFixedInBank()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00302">m_instr</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00084">Mantid::Geometry::ParameterMap::pos()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00093">Mantid::Geometry::ParameterMap::rot()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00115">Mantid::Geometry::ParameterMap::scale()</a>, <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00029">Mantid::Kernel::toQuat()</a>, <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00037">Mantid::Kernel::toQuaterniond()</a>, <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00026">Mantid::Kernel::toV3D()</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00034">Mantid::Kernel::toVector3d()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00886">saveNexus()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00897">saveNexus()</a>.</p>
 
 </div>
 </div>
@@ -2472,11 +2496,11 @@ template&lt;typename T &gt; </div>
 
 <p>Sets up links between m_detectorInfo, m_componentInfo, and m_instrument. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01272">1272</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01283">1283</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00077">Mantid::Geometry::ComponentInfo::cloneWithoutDetectorInfo()</a>, and <a class="el" href="../../d1/da6/ParComponentFactory_8cpp_source.html#l00043">Mantid::Geometry::ParComponentFactory::createInstrument()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01259">makeBeamline()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01270">makeBeamline()</a>.</p>
 
 </div>
 </div>
@@ -2505,11 +2529,11 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00617">617</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00628">628</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html#a98c14db658ac2d5cc163147124199814">Mantid::Geometry::IDetector::getID()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00267">m_detectorCache</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html#a98c14db658ac2d5cc163147124199814">Mantid::Geometry::IDetector::getID()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00268">m_detectorCache</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dd7/ComponentCreationHelper_8cpp_source.html#l00496">ComponentCreationHelper::addRectangularBank()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00076">Instrument()</a>, <a class="el" href="../../d0/dd7/ComponentCreationHelper_8cpp_source.html#l00935">ComponentCreationHelper::makeBank()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00674">markAsMonitor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dd7/ComponentCreationHelper_8cpp_source.html#l00496">ComponentCreationHelper::addRectangularBank()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00076">Instrument()</a>, <a class="el" href="../../d0/dd7/ComponentCreationHelper_8cpp_source.html#l00935">ComponentCreationHelper::makeBank()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00685">markAsMonitor()</a>.</p>
 
 </div>
 </div>
@@ -2531,9 +2555,9 @@ template&lt;typename T &gt; </div>
 <p>Sorts the detector cache. </p>
 <p>Called after all detectors have been marked via markAsDetectorIncomplete. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00648">648</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00659">659</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00267">m_detectorCache</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00268">m_detectorCache</a>.</p>
 
 </div>
 </div>
@@ -2556,9 +2580,9 @@ template&lt;typename T &gt; </div>
 <p>As markAsDetector but without the required sorting. </p>
 <p>Must call markAsDetectorFinalize before accessing detectors. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00635">635</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00646">646</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html#a98c14db658ac2d5cc163147124199814">Mantid::Geometry::IDetector::getID()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00267">m_detectorCache</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html#a98c14db658ac2d5cc163147124199814">Mantid::Geometry::IDetector::getID()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00268">m_detectorCache</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
 
 </div>
 </div>
@@ -2593,9 +2617,9 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00674">674</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00685">685</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html#a98c14db658ac2d5cc163147124199814">Mantid::Geometry::IDetector::getID()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00267">m_detectorCache</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00617">markAsDetector()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html#a98c14db658ac2d5cc163147124199814">Mantid::Geometry::IDetector::getID()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00268">m_detectorCache</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00628">markAsDetector()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00076">Instrument()</a>.</p>
 
@@ -2628,9 +2652,9 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00561">561</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00572">572</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a6e2c3bb366023464404e005e59c22edb">Mantid::Geometry::g_log</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#afbed8261ade45e5adb24a7519c47c986">Mantid::Geometry::IComponent::getName()</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00275">m_sampleCache</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a6e2c3bb366023464404e005e59c22edb">Mantid::Geometry::g_log</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#afbed8261ade45e5adb24a7519c47c986">Mantid::Geometry::IComponent::getName()</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00276">m_sampleCache</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00076">Instrument()</a>.</p>
 
@@ -2663,9 +2687,9 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00594">594</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00605">605</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a6e2c3bb366023464404e005e59c22edb">Mantid::Geometry::g_log</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#afbed8261ade45e5adb24a7519c47c986">Mantid::Geometry::IComponent::getName()</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00271">m_sourceCache</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a6e2c3bb366023464404e005e59c22edb">Mantid::Geometry::g_log</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#afbed8261ade45e5adb24a7519c47c986">Mantid::Geometry::IComponent::getName()</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00272">m_sourceCache</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00076">Instrument()</a>.</p>
 
@@ -2717,9 +2741,9 @@ template&lt;typename T &gt; </div>
 <p>Parse the instrument tree and create <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html" title="ComponentInfo : Provides a component centric view on to the instrument.">ComponentInfo</a> and <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html" title="Geometry::DetectorInfo is an intermediate step towards a DetectorInfo that is part of Instrument-2....">DetectorInfo</a>. </p>
 <p>This can be called for the base instrument once it is completely created, in particular when it is stored in the InstrumentDataService for reusing it later and avoiding repeated tree walks if several workspaces with the same instrument are loaded. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01245">1245</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01256">1256</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00075">Mantid::Geometry::Component::isParametrized()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00328">m_componentInfo</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00325">m_detectorInfo</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00383">Mantid::Geometry::InstrumentVisitor::makeWrappers()</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00075">Mantid::Geometry::Component::isParametrized()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00329">m_componentInfo</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00326">m_detectorInfo</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00383">Mantid::Geometry::InstrumentVisitor::makeWrappers()</a>.</p>
 
 </div>
 </div>
@@ -2748,9 +2772,9 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00691">691</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00702">702</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#afa6446ded6d7b60217aed4f1f74e1e70">Mantid::Geometry::IComponent::getBareParent()</a>, <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html#a98c14db658ac2d5cc163147124199814">Mantid::Geometry::IDetector::getID()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00267">m_detectorCache</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, and <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00156">Mantid::Geometry::CompAssembly::remove()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#afa6446ded6d7b60217aed4f1f74e1e70">Mantid::Geometry::IComponent::getBareParent()</a>, <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html#a98c14db658ac2d5cc163147124199814">Mantid::Geometry::IDetector::getID()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00268">m_detectorCache</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, and <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00156">Mantid::Geometry::CompAssembly::remove()</a>.</p>
 
 </div>
 </div>
@@ -2790,11 +2814,11 @@ template&lt;typename T &gt; </div>
 
 <p>Save information about a set of detectors to <a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html" title="Header for a base Nexus::Exception.">Nexus</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00946">946</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00957">957</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00527">getDetectors()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00345">getSample()</a>, and <a class="el" href="../../d4/d3f/Kernel_2src_2V3D_8cpp_source.html#l00116">Mantid::Kernel::V3D::getSpherical()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00538">getDetectors()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00356">getSample()</a>, and <a class="el" href="../../d4/d3f/Kernel_2src_2V3D_8cpp_source.html#l00116">Mantid::Kernel::V3D::getSpherical()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00886">saveNexus()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00897">saveNexus()</a>.</p>
 
 </div>
 </div>
@@ -2834,9 +2858,9 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00886">886</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00897">897</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a6e2c3bb366023464404e005e59c22edb">Mantid::Geometry::g_log</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00204">getDetectorIDs()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00175">Mantid::Geometry::Component::getName()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00870">getXmlText()</a>, <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01127">isMonitorViaIndex()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00075">Mantid::Geometry::Component::isParametrized()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01145">makeLegacyParameterMap()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00946">saveDetectorSetInfoToNexus()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a6e2c3bb366023464404e005e59c22edb">Mantid::Geometry::g_log</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00204">getDetectorIDs()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00175">Mantid::Geometry::Component::getName()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00881">getXmlText()</a>, <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01138">isMonitorViaIndex()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00075">Mantid::Geometry::Component::isParametrized()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01156">makeLegacyParameterMap()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00957">saveDetectorSetInfoToNexus()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
 </div>
 </div>
@@ -2865,9 +2889,9 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01023">1023</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01034">1034</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a6e2c3bb366023464404e005e59c22edb">Mantid::Geometry::g_log</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00295">m_defaultView</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00050">type()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a6e2c3bb366023464404e005e59c22edb">Mantid::Geometry::g_log</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00296">m_defaultView</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00050">type()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
 </div>
 </div>
@@ -2897,7 +2921,7 @@ template&lt;typename T &gt; </div>
 
 <p>Retrieves from which side the instrument to be viewed from when the instrument viewer first starts, possibilities are "Z+, Z-, X+, ...". </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00157">157</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00158">158</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
 </div>
 </div>
@@ -2919,9 +2943,9 @@ template&lt;typename T &gt; </div>
 
 <p>Set the path to the original IDF .xml file that was loaded for this instrument. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00845">845</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00856">856</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00312">m_filename</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00301">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00313">m_filename</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00302">m_instr</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/dd7/PythonInterface_2mantid_2geometry_2src_2Exports_2Instrument_8cpp_source.html#l00037">export_Instrument()</a>.</p>
 
@@ -2953,7 +2977,7 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00173">173</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, and <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00319">m_physicalInstrument</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, and <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00320">m_physicalInstrument</a>.</p>
 
 </div>
 </div>
@@ -2982,9 +3006,9 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01001">1001</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01012">1012</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00322">m_referenceFrame</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00323">m_referenceFrame</a>.</p>
 
 </div>
 </div>
@@ -3018,9 +3042,9 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01039">1039</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01050">1050</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00312">m_filename</a>, and <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00307">m_ValidFrom</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00313">m_filename</a>, and <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00308">m_ValidFrom</a>.</p>
 
 </div>
 </div>
@@ -3056,7 +3080,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00179">179</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00180">180</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
 </div>
 </div>
@@ -3078,9 +3102,9 @@ template&lt;typename T &gt; </div>
 
 <p>Set the Contents of the IDF .xml file that was loaded for this instrument. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00862">862</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00873">873</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00301">m_instr</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, and <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00315">m_xmlText</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00302">m_instr</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>, and <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00316">m_xmlText</a>.</p>
 
 </div>
 </div>
@@ -3113,7 +3137,7 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00050">50</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01023">setDefaultView()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01034">setDefaultView()</a>.</p>
 
 </div>
 </div>
@@ -3141,11 +3165,11 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01085">1085</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01096">1096</a> of file <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html">Instrument.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00488">isMonitor()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00275">m_sampleCache</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00271">m_sourceCache</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00499">isMonitor()</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00276">m_sampleCache</a>, <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00272">m_sourceCache</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01050">containsRectDetectors()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01061">containsRectDetectors()</a>.</p>
 
 </div>
 </div>
@@ -3172,9 +3196,9 @@ template&lt;typename T &gt; </div>
 
 <p>Pointer to the <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html" title="ComponentInfo : Provides a component centric view on to the instrument.">ComponentInfo</a> object. May be NULL. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00328">328</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00329">329</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01259">makeBeamline()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01245">parseTreeAndCacheBeamline()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01270">makeBeamline()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01256">parseTreeAndCacheBeamline()</a>.</p>
 
 </div>
 </div>
@@ -3200,9 +3224,9 @@ template&lt;typename T &gt; </div>
 
 <p>Stores the default type of the instrument view: 3D or one of the "unwrapped". </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00295">295</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00296">296</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01023">setDefaultView()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01034">setDefaultView()</a>.</p>
 
 </div>
 </div>
@@ -3228,7 +3252,7 @@ template&lt;typename T &gt; </div>
 
 <p>Stores from which side the instrument will be viewed from, initially in the instrument viewer, possibilities are "Z+, Z-, X+, ...". </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00298">298</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00299">299</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
 </div>
 </div>
@@ -3254,9 +3278,9 @@ template&lt;typename T &gt; </div>
 
 <p>Map which holds detector-IDs and pointers to detector components, and monitor flags. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00267">267</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00268">268</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00204">getDetectorIDs()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00185">getDetectors()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00253">getMinMaxDetectorIDs()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00713">getMonitors()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00221">getNumberDetectors()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00769">getPlottable()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01127">isMonitorViaIndex()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00617">markAsDetector()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00648">markAsDetectorFinalize()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00635">markAsDetectorIncomplete()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00674">markAsMonitor()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00691">removeDetector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00204">getDetectorIDs()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00185">getDetectors()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00253">getMinMaxDetectorIDs()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00724">getMonitors()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00221">getNumberDetectors()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00780">getPlottable()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01138">isMonitorViaIndex()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00628">markAsDetector()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00659">markAsDetectorFinalize()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00646">markAsDetectorIncomplete()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00685">markAsMonitor()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00702">removeDetector()</a>.</p>
 
 </div>
 </div>
@@ -3282,9 +3306,9 @@ template&lt;typename T &gt; </div>
 
 <p>Pointer to the <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html" title="Geometry::DetectorInfo is an intermediate step towards a DetectorInfo that is part of Instrument-2....">DetectorInfo</a> object. May be NULL. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00325">325</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00326">326</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01259">makeBeamline()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01245">parseTreeAndCacheBeamline()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01270">makeBeamline()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01256">parseTreeAndCacheBeamline()</a>.</p>
 
 </div>
 </div>
@@ -3310,9 +3334,9 @@ template&lt;typename T &gt; </div>
 
 <p>Path to the original IDF .xml file that was loaded for this instrument. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00312">312</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00313">313</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00854">getFilename()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00845">setFilename()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01039">setValidFromDate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00865">getFilename()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00856">setFilename()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01050">setValidFromDate()</a>.</p>
 
 </div>
 </div>
@@ -3338,9 +3362,9 @@ template&lt;typename T &gt; </div>
 
 <p>Pointer to the "real" instrument, for parametrized <a class="el" href="../../da/d03/classMantid_1_1Geometry_1_1Instrument.html" title="Base Instrument Class.">Instrument</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00301">301</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00302">302</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00124">baseInstrument()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01137">detectorIndex()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00480">getBaseDetector()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00458">getDetector()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00204">getDetectorIDs()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00185">getDetectors()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00854">getFilename()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00253">getMinMaxDetectorIDs()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00713">getMonitors()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00221">getNumberDetectors()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00151">getPhysicalInstrument()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00769">getPlottable()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01007">getReferenceFrame()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00870">getXmlText()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00488">isMonitor()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01127">isMonitorViaIndex()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01145">makeLegacyParameterMap()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00845">setFilename()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00862">setXmlText()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00124">baseInstrument()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01148">detectorIndex()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00491">getBaseDetector()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00469">getDetector()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00204">getDetectorIDs()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00185">getDetectors()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00865">getFilename()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00253">getMinMaxDetectorIDs()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00724">getMonitors()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00221">getNumberDetectors()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00151">getPhysicalInstrument()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00780">getPlottable()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01018">getReferenceFrame()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00881">getXmlText()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00499">isMonitor()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01138">isMonitorViaIndex()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01156">makeLegacyParameterMap()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00856">setFilename()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00873">setXmlText()</a>.</p>
 
 </div>
 </div>
@@ -3366,7 +3390,7 @@ template&lt;typename T &gt; </div>
 
 <p>Flag - is this the physical rather than neutronic instrument. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00331">331</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00332">332</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
 </div>
 </div>
@@ -3393,7 +3417,7 @@ template&lt;typename T &gt; </div>
 <p>To store info about the parameters defined in IDF. </p>
 <p>Indexed according to logfile-IDs, which equals logfile filename minus the run number and file extension </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00280">280</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00281">281</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
 </div>
 </div>
@@ -3420,7 +3444,7 @@ template&lt;typename T &gt; </div>
 <p>Store units used by users to specify angles in IDFs and associated parameter files. </p>
 <p>By default this one is empty meaning that the default of angle=degree etc are used see docs/source/concepts/InstrumentDefinitionFile.rst However if map below contains e.g. &lt;"angle", "radian"&gt; it means that all "angle"-parameters in the _logfileCache are assumed to have been specified by the user in radian (not degrees) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00291">291</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00292">292</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
 </div>
 </div>
@@ -3446,7 +3470,7 @@ template&lt;typename T &gt; </div>
 
 <p>Non-const pointer to the parameter map. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00304">304</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00305">305</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00137">getParameterMap()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00151">getPhysicalInstrument()</a>.</p>
 
@@ -3474,7 +3498,7 @@ template&lt;typename T &gt; </div>
 
 <p>Pointer to the physical instrument, where this differs from the 'neutronic' one (indirect geometry) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00319">319</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00320">320</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00151">getPhysicalInstrument()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00173">setPhysicalInstrument()</a>.</p>
 
@@ -3502,9 +3526,9 @@ template&lt;typename T &gt; </div>
 
 <p>Pointer to the reference frame object. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00322">322</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00323">323</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01007">getReferenceFrame()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01001">setReferenceFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01018">getReferenceFrame()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01012">setReferenceFrame()</a>.</p>
 
 </div>
 </div>
@@ -3531,9 +3555,9 @@ template&lt;typename T &gt; </div>
 <p>Purpose to hold copy of samplePos component. </p>
 <p>For now assumed to be just one component </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00275">275</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00276">276</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00345">getSample()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00314">hasSample()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00076">Instrument()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00561">markAsSamplePos()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01085">validateComponentProperties()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00356">getSample()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00325">hasSample()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00076">Instrument()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00572">markAsSamplePos()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01096">validateComponentProperties()</a>.</p>
 
 </div>
 </div>
@@ -3560,9 +3584,9 @@ template&lt;typename T &gt; </div>
 <p>Purpose to hold copy of source component. </p>
 <p>For now assumed to be just one component </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00271">271</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00272">272</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00319">getSource()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00309">hasSource()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00076">Instrument()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00594">markAsSource()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01085">validateComponentProperties()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00330">getSource()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00320">hasSource()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00076">Instrument()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00605">markAsSource()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01096">validateComponentProperties()</a>.</p>
 
 </div>
 </div>
@@ -3588,9 +3612,9 @@ template&lt;typename T &gt; </div>
 
 <p>the date from which the instrument definition begins to be valid. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00307">307</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00308">308</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01039">setValidFromDate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01050">setValidFromDate()</a>.</p>
 
 </div>
 </div>
@@ -3616,7 +3640,7 @@ template&lt;typename T &gt; </div>
 
 <p>the date at which the instrument definition is no longer valid. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00309">309</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00310">310</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
 </div>
 </div>
@@ -3642,9 +3666,9 @@ template&lt;typename T &gt; </div>
 
 <p>Contents of the IDF .xml file that was loaded for this instrument. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00315">315</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/Instrument_8h_source.html#l00316">316</a> of file <a class="el" href="../../d5/d0a/Instrument_8h_source.html">Instrument.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00870">getXmlText()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00862">setXmlText()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00881">getXmlText()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00873">setXmlText()</a>.</p>
 
 </div>
 </div>
