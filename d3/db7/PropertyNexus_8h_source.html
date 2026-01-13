@@ -106,39 +106,36 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="../../db/d39/System_8h.html">MantidKernel/System.h</a>&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="../../d7/d5a/NexusDescriptor_8h.html">MantidNexus/NexusDescriptor.h</a>&quot;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// Forward declare</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../db/d55/namespaceMantid_1_1Nexus.html">Mantid::Nexus</a> {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">class </span>File;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d8/d8e/namespaceMantid.html">Mantid</a> {</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span>Kernel {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// Forward declare</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">class </span>Property;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../d3/d63/namespaceMantid_1_1Kernel_1_1PropertyNexus.html">   30</a></span><span class="keyword">namespace </span>PropertyNexus {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><a class="code hl_define" href="../../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247">DLLExport</a> std::unique_ptr&lt;Property&gt; <a class="code hl_function" href="../../d3/d63/namespaceMantid_1_1Kernel_1_1PropertyNexus.html#a9912609a39299c788820160f8e4c97e8">loadProperty</a>(Nexus::File *file, <span class="keyword">const</span> std::string &amp;<a class="code hl_enumvalue" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>,</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                                                 <span class="keyword">const</span> <a class="code hl_class" href="../../d2/d31/classMantid_1_1Nexus_1_1NexusDescriptor.html">Nexus::NexusDescriptor</a> &amp;fileInfo, <span class="keyword">const</span> std::string &amp;prefix);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><a class="code hl_define" href="../../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247">DLLExport</a> std::unique_ptr&lt;Property&gt; <a class="code hl_function" href="../../d3/d63/namespaceMantid_1_1Kernel_1_1PropertyNexus.html#a9912609a39299c788820160f8e4c97e8">loadProperty</a>(Nexus::File *file, <span class="keyword">const</span> std::string &amp;<a class="code hl_enumvalue" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>} <span class="comment">// namespace PropertyNexus</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// Forward declare</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../db/d55/namespaceMantid_1_1Nexus.html">Mantid::Nexus</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">class </span>File;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>}</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d8/d8e/namespaceMantid.html">Mantid</a> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span>Kernel {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// Forward declare</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">class </span>Property;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d3/d63/namespaceMantid_1_1Kernel_1_1PropertyNexus.html">   29</a></span><span class="keyword">namespace </span>PropertyNexus {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><a class="code hl_define" href="../../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247">DLLExport</a> std::unique_ptr&lt;Property&gt; <a class="code hl_function" href="../../d3/d63/namespaceMantid_1_1Kernel_1_1PropertyNexus.html#a01621197cd4a0df39b92474dc83113d4">loadProperty</a>(Nexus::File *file, <span class="keyword">const</span> std::string &amp;<a class="code hl_enumvalue" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                                                 <span class="keyword">const</span> std::string &amp;prefix);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><a class="code hl_define" href="../../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247">DLLExport</a> std::unique_ptr&lt;Property&gt; <a class="code hl_function" href="../../d3/d63/namespaceMantid_1_1Kernel_1_1PropertyNexus.html#a01621197cd4a0df39b92474dc83113d4">loadProperty</a>(Nexus::File *file, <span class="keyword">const</span> std::string &amp;<a class="code hl_enumvalue" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>} <span class="comment">// namespace PropertyNexus</span></div>
 </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>} <span class="comment">// namespace Kernel</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>} <span class="comment">// namespace Mantid</span></div>
-<div class="ttc" id="aNexusDescriptor_8h_html"><div class="ttname"><a href="../../d7/d5a/NexusDescriptor_8h.html">NexusDescriptor.h</a></div></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>} <span class="comment">// namespace Kernel</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>} <span class="comment">// namespace Mantid</span></div>
 <div class="ttc" id="aNexusFile__fwd_8h_html_a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45"><div class="ttname"><a href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">NXentrytype::group</a></div><div class="ttdeci">@ group</div></div>
 <div class="ttc" id="aSystem_8h_html"><div class="ttname"><a href="../../db/d39/System_8h.html">System.h</a></div></div>
 <div class="ttc" id="aSystem_8h_html_a76a25d39b515cd13499e0d9047485247"><div class="ttname"><a href="../../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247">DLLExport</a></div><div class="ttdeci">#define DLLExport</div><div class="ttdoc">Definitions of the DLLImport compiler directives for MSVC.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d39/System_8h_source.html#l00037">System.h:37</a></div></div>
-<div class="ttc" id="aclassMantid_1_1Nexus_1_1NexusDescriptor_html"><div class="ttname"><a href="../../d2/d31/classMantid_1_1Nexus_1_1NexusDescriptor.html">Mantid::Nexus::NexusDescriptor</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/d5a/NexusDescriptor_8h_source.html#l00023">NexusDescriptor.h:23</a></div></div>
-<div class="ttc" id="anamespaceMantid_1_1Kernel_1_1PropertyNexus_html_a9912609a39299c788820160f8e4c97e8"><div class="ttname"><a href="../../d3/d63/namespaceMantid_1_1Kernel_1_1PropertyNexus.html#a9912609a39299c788820160f8e4c97e8">Mantid::Kernel::PropertyNexus::loadProperty</a></div><div class="ttdeci">DLLExport std::unique_ptr&lt; Property &gt; loadProperty(Nexus::File *file, const std::string &amp;group, const Nexus::NexusDescriptor &amp;fileInfo, const std::string &amp;prefix)</div><div class="ttdoc">Opens a NXlog group in a nexus file and creates the correct Property object from it.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/dda/PropertyNexus_8cpp_source.html#l00204">PropertyNexus.cpp:204</a></div></div>
+<div class="ttc" id="anamespaceMantid_1_1Kernel_1_1PropertyNexus_html_a01621197cd4a0df39b92474dc83113d4"><div class="ttname"><a href="../../d3/d63/namespaceMantid_1_1Kernel_1_1PropertyNexus.html#a01621197cd4a0df39b92474dc83113d4">Mantid::Kernel::PropertyNexus::loadProperty</a></div><div class="ttdeci">DLLExport std::unique_ptr&lt; Property &gt; loadProperty(Nexus::File *file, const std::string &amp;group, const std::string &amp;prefix)</div><div class="ttdoc">Opens a NXlog group in a nexus file and creates the correct Property object from it.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/dda/PropertyNexus_8cpp_source.html#l00204">PropertyNexus.cpp:204</a></div></div>
 <div class="ttc" id="anamespaceMantid_1_1Nexus_html"><div class="ttname"><a href="../../db/d55/namespaceMantid_1_1Nexus.html">Mantid::Nexus</a></div><div class="ttdoc">Header for a base Nexus::Exception.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d33/LoadBankFromDiskTask_8h_source.html#l00017">LoadBankFromDiskTask.h:17</a></div></div>
 <div class="ttc" id="anamespaceMantid_html"><div class="ttname"><a href="../../d8/d8e/namespaceMantid.html">Mantid</a></div><div class="ttdoc">Helper class which provides the Collimation Length for SANS instruments.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dc6/AbsorptionCorrection_8h_source.html#l00018">AbsorptionCorrection.h:18</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

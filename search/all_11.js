@@ -99,7 +99,7 @@ var searchData=
   ['new_5fxpm_96',['new_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#abe9ce02d33b2eed889ddf8c395250dad',1,'MantidQt::API']]],
   ['newaxis_97',['newAxis',['../df/d3e/classMantid_1_1Algorithms_1_1Regroup.html#af14b697fcbfd0a5163d1bc5577178658',1,'Mantid::Algorithms::Regroup']]],
   ['newf_5fxpm_98',['newF_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#aeaa9f476feb9f6333d1dc523ec6a8a50',1,'MantidQt::API']]],
-  ['newfolder_5fxpm_99',['newfolder_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#aef8286ac56dc49bcf41f1b48d8e1368a',1,'MantidQt::API::newFolder_xpm'],['../d2/d36/namespaceMantidQt_1_1API.html#a722dbbafc5c2f6dc99ba7b537e1d9502',1,'MantidQt::API::newfolder_xpm']]],
+  ['newfolder_5fxpm_99',['newfolder_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#a722dbbafc5c2f6dc99ba7b537e1d9502',1,'MantidQt::API::newfolder_xpm'],['../d2/d36/namespaceMantidQt_1_1API.html#aef8286ac56dc49bcf41f1b48d8e1368a',1,'MantidQt::API::newFolder_xpm']]],
   ['newframe_100',['newframe',['../db/d01/classMantid_1_1DataHandling_1_1PLN_1_1EventProcessor.html#a54a6868077469a30b5302ad599d022f7',1,'Mantid::DataHandling::PLN::EventProcessor::newFrame()'],['../d2/d8c/classMantid_1_1DataHandling_1_1EMU_1_1EventProcessor.html#af4f1791b3007cf0c3851615011f70fb8',1,'Mantid::DataHandling::EMU::EventProcessor::newFrame()'],['../d1/d93/classMantid_1_1DataHandling_1_1ANSTO_1_1EventProcessor.html#af54b6b85f37fd262744b99d54ad71139',1,'Mantid::DataHandling::ANSTO::EventProcessor::newFrame()']]],
   ['newfxy_5fxpm_101',['newFxy_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#a14188e8a2a4485d535a1b0637239ca82',1,'MantidQt::API']]],
   ['newlayer_5fxpm_102',['newLayer_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#a85f9bf8667e46d9d42d49dde21baddfe',1,'MantidQt::API']]],
