@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['f_0',['f',['../d9/dcf/structMantid_1_1CurveFitting_1_1NLLS_1_1NLLS__workspace.html#a6c1cf0508607ee44d06fc23d9f15b969',1,'Mantid::CurveFitting::NLLS::NLLS_workspace::f'],['../dd/dc5/classMantid_1_1Geometry_1_1Algebra.html#a4bea6a04d4544b90c6f4967bf90a9e48',1,'Mantid::Geometry::Algebra::F']]],
+  ['f_0',['f',['../dd/dc5/classMantid_1_1Geometry_1_1Algebra.html#a4bea6a04d4544b90c6f4967bf90a9e48',1,'Mantid::Geometry::Algebra::F'],['../d9/dcf/structMantid_1_1CurveFitting_1_1NLLS_1_1NLLS__workspace.html#a6c1cf0508607ee44d06fc23d9f15b969',1,'Mantid::CurveFitting::NLLS::NLLS_workspace::f']]],
   ['f1_1',['f1',['../d9/d33/classMantid_1_1DataHandling_1_1CreatePolarizationEfficienciesBase.html#a68da3625d76c63e699311acd568a43e3',1,'Mantid::DataHandling::CreatePolarizationEfficienciesBase::F1'],['../d9/dcf/structMantid_1_1Algorithms_1_1PolarizationCorrectionWildes_1_1EfficiencyMap.html#aca0471e5c8564a470762a66dff84bd01',1,'Mantid::Algorithms::PolarizationCorrectionWildes::EfficiencyMap::F1']]],
   ['f2_2',['f2',['../d9/dcf/structMantid_1_1Algorithms_1_1PolarizationCorrectionWildes_1_1EfficiencyMap.html#ab4b49919844a56c8ae2a3b253a61a520',1,'Mantid::Algorithms::PolarizationCorrectionWildes::EfficiencyMap::F2'],['../d9/d33/classMantid_1_1DataHandling_1_1CreatePolarizationEfficienciesBase.html#aab81edd0b3a2d3f39c9bb1084eb84f88',1,'Mantid::DataHandling::CreatePolarizationEfficienciesBase::F2']]],
   ['f_5feval_3',['f_eval',['../d3/d02/structMantid_1_1CurveFitting_1_1NLLS_1_1nlls__inform.html#a68a898127062d8def4c4994cb2537d2a',1,'Mantid::CurveFitting::NLLS::nlls_inform']]],
@@ -35,7 +35,7 @@ var searchData=
   ['fileprint_5fxpm_32',['fileprint_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#a8b314bc789c57b4702e1cb177203116f',1,'MantidQt::API']]],
   ['filesave_5fnexus_5fxpm_33',['filesave_nexus_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#aed01cc384614a55ac3da8730d298ec8b',1,'MantidQt::API']]],
   ['filesave_5fxpm_34',['filesave_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#a6cd9bcc659db7015db398dd8cf8e531a',1,'MantidQt::API']]],
-  ['filesize_35',['filesize',['../de/d5d/classICat4_1_1ns1____datafile.html#aec71a500dec4390d0c8ba2769ad27e73',1,'ICat4::ns1__datafile::fileSize'],['../de/d4e/structMantid_1_1DataHandling_1_1ANSTO_1_1Tar_1_1EntryHeader.html#aca5cee9021dc997d93dd7cf42fd5a63c',1,'Mantid::DataHandling::ANSTO::Tar::EntryHeader::FileSize']]],
+  ['filesize_35',['filesize',['../de/d4e/structMantid_1_1DataHandling_1_1ANSTO_1_1Tar_1_1EntryHeader.html#aca5cee9021dc997d93dd7cf42fd5a63c',1,'Mantid::DataHandling::ANSTO::Tar::EntryHeader::FileSize'],['../de/d5d/classICat4_1_1ns1____datafile.html#aec71a500dec4390d0c8ba2769ad27e73',1,'ICat4::ns1__datafile::fileSize']]],
   ['filesize_5f_36',['fileSize_',['../de/dd7/classFileByteStream.html#adef5319cc24a2508b00268fe6c9a8536',1,'FileByteStream']]],
   ['filter_5fbad_5fpulses_37',['filter_bad_pulses',['../d8/d67/classMantid_1_1DataHandling_1_1LoadEventNexus.html#a2f7659ec6aaec314639d6a008551052c',1,'Mantid::DataHandling::LoadEventNexus']]],
   ['filter_5ftime_5fstart_38',['filter_time_start',['../d8/d67/classMantid_1_1DataHandling_1_1LoadEventNexus.html#a242ddf0029cb674ffd54c0a9058ad210',1,'Mantid::DataHandling::LoadEventNexus']]],
