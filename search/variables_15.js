@@ -26,7 +26,7 @@ var searchData=
   ['unit_23',['unit',['../d5/d9c/structMantid_1_1DataHandling_1_1LoadILLDiffraction_1_1ScannedVariables.html#ad99fcd9b2d45b10abfe9da5c02f65996',1,'Mantid::DataHandling::LoadILLDiffraction::ScannedVariables']]],
   ['unitcellvolume_24',['unitCellVolume',['../d0/d62/structMantid_1_1DataHandling_1_1ReadMaterial_1_1MaterialParameters.html#adaffa4608673bd1152d0545b03e0c52c',1,'Mantid::DataHandling::ReadMaterial::MaterialParameters']]],
   ['unitdir_25',['unitDir',['../dd/da1/structMantid_1_1Algorithms_1_1IBeamProfile_1_1Ray.html#ab3860fc0d102ce800945ae409051dc21',1,'Mantid::Algorithms::IBeamProfile::Ray']]],
-  ['units_26',['units',['../d1/d8c/classICat4_1_1ns1____parameterType.html#a7940d702c75d20eeaad88c635292ea54',1,'ICat4::ns1__parameterType::units'],['../d8/d45/classMantid_1_1Geometry_1_1Acomp.html#a19347047ff0b656ee67a0fe13a3f3028',1,'Mantid::Geometry::Acomp::Units']]],
+  ['units_26',['units',['../d8/d45/classMantid_1_1Geometry_1_1Acomp.html#a19347047ff0b656ee67a0fe13a3f3028',1,'Mantid::Geometry::Acomp::Units'],['../d1/d8c/classICat4_1_1ns1____parameterType.html#a7940d702c75d20eeaad88c635292ea54',1,'ICat4::ns1__parameterType::units']]],
   ['unitscaling_27',['unitScaling',['../d3/d26/classMantid_1_1Kernel_1_1Units_1_1DeltaE.html#ae19c3d25945f6f2d126611f71d5a50e4',1,'Mantid::Kernel::Units::DeltaE']]],
   ['unitsfullname_28',['unitsFullName',['../d1/d8c/classICat4_1_1ns1____parameterType.html#aeb54082ce4f328f4bca26c994e7d2b72',1,'ICat4::ns1__parameterType']]],
   ['unitstring_29',['unitString',['../db/de9/classMantid_1_1Geometry_1_1MDFrameArgument.html#ad6e97e474a9399f35bce4b264c5a623a',1,'Mantid::Geometry::MDFrameArgument']]],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['s_0',['s',['../da/d0d/structsgl__limits__struct.html#af8ac3f80664698905167b3713880540d',1,'sgl_limits_struct::s'],['../dc/d3b/structMantid_1_1CurveFitting_1_1NLLS_1_1get__svd__J__work.html#acb33544a1d762bd5d89fc9b3ff1b09bb',1,'Mantid::CurveFitting::NLLS::get_svd_J_work::S']]],
+  ['s_0',['s',['../dc/d3b/structMantid_1_1CurveFitting_1_1NLLS_1_1get__svd__J__work.html#acb33544a1d762bd5d89fc9b3ff1b09bb',1,'Mantid::CurveFitting::NLLS::get_svd_J_work::S'],['../da/d0d/structsgl__limits__struct.html#af8ac3f80664698905167b3713880540d',1,'sgl_limits_struct::s']]],
   ['s1_1',['s1',['../d2/d38/structQuadraticCoefficients.html#a5a41b8d00349c7e98324e81f96ed36b3',1,'QuadraticCoefficients']]],
   ['s2_2',['s2',['../d2/d38/structQuadraticCoefficients.html#a4dd61050ccc173958ee21ac228df8b94',1,'QuadraticCoefficients']]],
   ['s_5fconversionfactors_3',['s_conversionFactors',['../da/d13/classMantid_1_1Kernel_1_1Unit.html#ad43e3df728318712b2b106e7b03e85e8',1,'Mantid::Kernel::Unit']]],
@@ -228,7 +228,7 @@ var searchData=
   ['sixx_225',['SIxx',['../de/ddb/classMantid_1_1CurveFitting_1_1Functions_1_1BivariateNormal.html#ae1a5b6a35f46813f871f7e232dc4ba6d',1,'Mantid::CurveFitting::Functions::BivariateNormal']]],
   ['sixy_226',['SIxy',['../de/ddb/classMantid_1_1CurveFitting_1_1Functions_1_1BivariateNormal.html#a9dd3be1ec19d846971a8dff3040264f5',1,'Mantid::CurveFitting::Functions::BivariateNormal']]],
   ['siyy_227',['SIyy',['../de/ddb/classMantid_1_1CurveFitting_1_1Functions_1_1BivariateNormal.html#a547bb631a83659afc04e78f05a1311f3',1,'Mantid::CurveFitting::Functions::BivariateNormal']]],
-  ['size_228',['size',['../d9/dde/structMantid_1_1DataHandling_1_1ANSTO_1_1Tar_1_1File_1_1FileInfo.html#ab69b3beeae384e4007f0e9b71beaa2ee',1,'Mantid::DataHandling::ANSTO::Tar::File::FileInfo::Size'],['../d1/d01/classMantid_1_1Geometry_1_1BnId.html#a1c78593be65cb60a0948b7b0fc6acdcb',1,'Mantid::Geometry::BnId::size'],['../dd/d09/structMantidQt_1_1MantidWidgets_1_1WorkspaceInfo.html#aa9b747733eae5f5d44c68850aa1520f6',1,'MantidQt::MantidWidgets::WorkspaceInfo::size']]],
+  ['size_228',['size',['../d1/d01/classMantid_1_1Geometry_1_1BnId.html#a1c78593be65cb60a0948b7b0fc6acdcb',1,'Mantid::Geometry::BnId::size'],['../dd/d09/structMantidQt_1_1MantidWidgets_1_1WorkspaceInfo.html#aa9b747733eae5f5d44c68850aa1520f6',1,'MantidQt::MantidWidgets::WorkspaceInfo::size'],['../d9/dde/structMantid_1_1DataHandling_1_1ANSTO_1_1Tar_1_1File_1_1FileInfo.html#ab69b3beeae384e4007f0e9b71beaa2ee',1,'Mantid::DataHandling::ANSTO::Tar::File::FileInfo::Size']]],
   ['skip_5fbehaviour_229',['SKIP_BEHAVIOUR',['../d9/de1/namespaceMantid_1_1Algorithms_1_1RunCombinationOptions.html#add78ce874b53d56537c261acb740c7a8',1,'Mantid::Algorithms::RunCombinationOptions']]],
   ['sks_230',['Sks',['../d9/dcf/structMantid_1_1CurveFitting_1_1NLLS_1_1NLLS__workspace.html#a11eaddcaa6cf355df74bf2e44add8f81',1,'Mantid::CurveFitting::NLLS::NLLS_workspace']]],
   ['slope_231',['slope',['../db/d0d/structMantid_1_1CurveFitting_1_1Functions_1_1linearJ.html#a1c787e95cc0aa0d3540208ee0d9e3f6e',1,'Mantid::CurveFitting::Functions::linearJ']]],
