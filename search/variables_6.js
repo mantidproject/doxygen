@@ -35,7 +35,7 @@ var searchData=
   ['fileprint_5fxpm_32',['fileprint_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#a8b314bc789c57b4702e1cb177203116f',1,'MantidQt::API']]],
   ['filesave_5fnexus_5fxpm_33',['filesave_nexus_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#aed01cc384614a55ac3da8730d298ec8b',1,'MantidQt::API']]],
   ['filesave_5fxpm_34',['filesave_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#a6cd9bcc659db7015db398dd8cf8e531a',1,'MantidQt::API']]],
-  ['filesize_35',['filesize',['../de/d4e/structMantid_1_1DataHandling_1_1ANSTO_1_1Tar_1_1EntryHeader.html#aca5cee9021dc997d93dd7cf42fd5a63c',1,'Mantid::DataHandling::ANSTO::Tar::EntryHeader::FileSize'],['../de/d5d/classICat4_1_1ns1____datafile.html#aec71a500dec4390d0c8ba2769ad27e73',1,'ICat4::ns1__datafile::fileSize']]],
+  ['filesize_35',['filesize',['../de/d5d/classICat4_1_1ns1____datafile.html#aec71a500dec4390d0c8ba2769ad27e73',1,'ICat4::ns1__datafile::fileSize'],['../de/d4e/structMantid_1_1DataHandling_1_1ANSTO_1_1Tar_1_1EntryHeader.html#aca5cee9021dc997d93dd7cf42fd5a63c',1,'Mantid::DataHandling::ANSTO::Tar::EntryHeader::FileSize']]],
   ['filesize_5f_36',['fileSize_',['../de/dd7/classFileByteStream.html#adef5319cc24a2508b00268fe6c9a8536',1,'FileByteStream']]],
   ['filter_5fbad_5fpulses_37',['filter_bad_pulses',['../d8/d67/classMantid_1_1DataHandling_1_1LoadEventNexus.html#a2f7659ec6aaec314639d6a008551052c',1,'Mantid::DataHandling::LoadEventNexus']]],
   ['filter_5ftime_5fstart_38',['filter_time_start',['../d8/d67/classMantid_1_1DataHandling_1_1LoadEventNexus.html#a242ddf0029cb674ffd54c0a9058ad210',1,'Mantid::DataHandling::LoadEventNexus']]],
