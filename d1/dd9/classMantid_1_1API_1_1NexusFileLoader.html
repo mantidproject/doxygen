@@ -91,6 +91,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../d0/dab/classMantid_1_1API_1_1NexusFileLoader-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Mantid::API::NexusFileLoader Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
@@ -104,12 +105,11 @@ Inheritance diagram for Mantid::API::NexusFileLoader:</div>
  <div class="center">
   <img src="../../d1/dd9/classMantid_1_1API_1_1NexusFileLoader.png" usemap="#Mantid::API::NexusFileLoader_map" alt=""/>
   <map id="Mantid::API::NexusFileLoader_map" name="Mantid::API::NexusFileLoader_map">
-<area href="../../d8/d28/classMantid_1_1API_1_1IFileLoader.html" alt="Mantid::API::IFileLoader&lt; Mantid::Nexus::NexusDescriptor &gt;" shape="rect" coords="179,168,528,192"/>
-<area href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html" title="Base class from which all concrete algorithm classes should be derived." alt="Mantid::API::Algorithm" shape="rect" coords="179,112,528,136"/>
-<area href="../../d4/d2d/classMantid_1_1API_1_1IAlgorithm.html" title="IAlgorithm is the interface implemented by the Algorithm base class." alt="Mantid::API::IAlgorithm" shape="rect" coords="179,56,528,80"/>
-<area href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html" title="Interface to PropertyManager." alt="Mantid::Kernel::IPropertyManager" shape="rect" coords="179,0,528,24"/>
+<area href="../../d8/d28/classMantid_1_1API_1_1IFileLoader.html" alt="Mantid::API::IFileLoader&lt; Mantid::Nexus::NexusDescriptor &gt;" shape="rect" coords="0,168,349,192"/>
+<area href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html" title="Base class from which all concrete algorithm classes should be derived." alt="Mantid::API::Algorithm" shape="rect" coords="0,112,349,136"/>
+<area href="../../d4/d2d/classMantid_1_1API_1_1IAlgorithm.html" title="IAlgorithm is the interface implemented by the Algorithm base class." alt="Mantid::API::IAlgorithm" shape="rect" coords="0,56,349,80"/>
+<area href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html" title="Interface to PropertyManager." alt="Mantid::Kernel::IPropertyManager" shape="rect" coords="0,0,349,24"/>
 <area href="../../dc/d2d/classMantid_1_1DataHandling_1_1LoadMuonNexusV2.html" title="Loads a file in the Nexus Muon format V2 and stores it in a 2D workspace (Workspace2D class)." alt="Mantid::DataHandling::LoadMuonNexusV2" shape="rect" coords="0,280,349,304"/>
-<area href="../../d9/dfb/classMantid_1_1DataHandling_1_1LoadNexusLogs.html" title="Loads the run logs from a NeXus file." alt="Mantid::DataHandling::LoadNexusLogs" shape="rect" coords="359,280,708,304"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -126,9 +126,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0342693ea4a52320565b4f6278d64365"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7a0210938d40a100389bffd315346bd" id="r_ac7a0210938d40a100389bffd315346bd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/classMantid_1_1API_1_1NexusFileLoader.html#ac7a0210938d40a100389bffd315346bd">execLoader</a> ()=0</td></tr>
 <tr class="separator:ac7a0210938d40a100389bffd315346bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9e3baee44a205e8ae38e0bf0b605256" id="r_ae9e3baee44a205e8ae38e0bf0b605256"><td class="memItemLeft" align="right" valign="top">virtual const std::shared_ptr&lt; <a class="el" href="../../d2/d31/classMantid_1_1Nexus_1_1NexusDescriptor.html">Mantid::Nexus::NexusDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/classMantid_1_1API_1_1NexusFileLoader.html#ae9e3baee44a205e8ae38e0bf0b605256">getFileInfo</a> () const noexcept</td></tr>
-<tr class="memdesc:ae9e3baee44a205e8ae38e0bf0b605256"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required to pass m_fileInfo to static functions Keeping it shared_ptr to match setFileInfo signature (although passing ownership is not the main goal).  <br /></td></tr>
-<tr class="separator:ae9e3baee44a205e8ae38e0bf0b605256"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a235553575cd9603dc4250a84ec30f280" id="r_a235553575cd9603dc4250a84ec30f280"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/classMantid_1_1API_1_1NexusFileLoader.html#a235553575cd9603dc4250a84ec30f280">getFilenamePropertyName</a> () const</td></tr>
 <tr class="separator:a235553575cd9603dc4250a84ec30f280"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e16b76a233b5eaf25b8939379b239a1" id="r_a7e16b76a233b5eaf25b8939379b239a1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/classMantid_1_1API_1_1NexusFileLoader.html#a7e16b76a233b5eaf25b8939379b239a1">setFileInfo</a> (std::shared_ptr&lt; <a class="el" href="../../d2/d31/classMantid_1_1Nexus_1_1NexusDescriptor.html">Mantid::Nexus::NexusDescriptor</a> &gt; fileInfo)</td></tr>
@@ -478,6 +475,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5565f50d5d4b9f6893575d8831318d66 inherit pub_methods_classMantid_1_1Kernel_1_1IPropertyManager" id="r_a5565f50d5d4b9f6893575d8831318d66"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html#a5565f50d5d4b9f6893575d8831318d66">~IPropertyManager</a> ()=default</td></tr>
 <tr class="separator:a5565f50d5d4b9f6893575d8831318d66 inherit pub_methods_classMantid_1_1Kernel_1_1IPropertyManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ab53bbb0ca56b97ec5d4c34cbfd9c0b94" id="r_ab53bbb0ca56b97ec5d4c34cbfd9c0b94"><td class="memItemLeft" align="right" valign="top">virtual const std::shared_ptr&lt; <a class="el" href="../../d2/d31/classMantid_1_1Nexus_1_1NexusDescriptor.html">Mantid::Nexus::NexusDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/classMantid_1_1API_1_1NexusFileLoader.html#ab53bbb0ca56b97ec5d4c34cbfd9c0b94">getFileInfo</a> () const noexcept</td></tr>
+<tr class="memdesc:ab53bbb0ca56b97ec5d4c34cbfd9c0b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required to pass m_fileInfo to static functions Keeping it shared_ptr to match setFileInfo signature (although passing ownership is not the main goal).  <br /></td></tr>
+<tr class="separator:ab53bbb0ca56b97ec5d4c34cbfd9c0b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ad9faf6df577d265cd07a3eda3795201e" id="r_ad9faf6df577d265cd07a3eda3795201e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../d2/d31/classMantid_1_1Nexus_1_1NexusDescriptor.html">Mantid::Nexus::NexusDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/classMantid_1_1API_1_1NexusFileLoader.html#ad9faf6df577d265cd07a3eda3795201e">m_fileInfo</a></td></tr>
@@ -641,7 +644,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d8/d28/classMantid_1_1API_1_1IFileLoader.html#ac4cb48e1e02bb437f605b89e26c2e189">Mantid::API::IFileLoader&lt; Mantid::Nexus::NexusDescriptor &gt;</a>.</p>
 
-<p>Implemented in <a class="el" href="../../d9/dfb/classMantid_1_1DataHandling_1_1LoadNexusLogs.html#a95be7bdf66c3ed00eb3c7122d2fd7086">Mantid::DataHandling::LoadNexusLogs</a>, and <a class="el" href="../../dc/d2d/classMantid_1_1DataHandling_1_1LoadMuonNexusV2.html#a927ce088fb7c0c02ff3bb660b749178a">Mantid::DataHandling::LoadMuonNexusV2</a>.</p>
+<p>Implemented in <a class="el" href="../../dc/d2d/classMantid_1_1DataHandling_1_1LoadMuonNexusV2.html#a927ce088fb7c0c02ff3bb660b749178a">Mantid::DataHandling::LoadMuonNexusV2</a>.</p>
 
 </div>
 </div>
@@ -715,7 +718,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d8f/NexusFileLoader_8cpp_source.html#l00021">21</a> of file <a class="el" href="../../d3/d8f/NexusFileLoader_8cpp_source.html">NexusFileLoader.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00860">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../da/d86/NexusFileLoader_8h_source.html#l00036">m_fileInfo</a>, <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#af7d20753d77a5d2875edf5a37eaef39f">Mantid::API::Algorithm::name()</a>, and <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#ac1fab4b33f78654eccab880db81f14c0">Mantid::API::Algorithm::version()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00860">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../da/d86/NexusFileLoader_8h_source.html#l00037">m_fileInfo</a>, <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#af7d20753d77a5d2875edf5a37eaef39f">Mantid::API::Algorithm::name()</a>, and <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#ac1fab4b33f78654eccab880db81f14c0">Mantid::API::Algorithm::version()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d25/LoadMuonNexusV2_8cpp_source.html#l00196">Mantid::DataHandling::LoadMuonNexusV2::runLoadISISNexus()</a>.</p>
 
@@ -750,7 +753,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d8f/NexusFileLoader_8cpp_source.html#l00010">10</a> of file <a class="el" href="../../d3/d8f/NexusFileLoader_8cpp_source.html">NexusFileLoader.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dd9/classMantid_1_1API_1_1NexusFileLoader.html#ac7a0210938d40a100389bffd315346bd">execLoader()</a>, <a class="el" href="../../d3/d8f/NexusFileLoader_8cpp_source.html#l00038">getFilenamePropertyName()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01916">Mantid::API::Algorithm::getPropertyValue()</a>, and <a class="el" href="../../da/d86/NexusFileLoader_8h_source.html#l00036">m_fileInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dd9/classMantid_1_1API_1_1NexusFileLoader.html#ac7a0210938d40a100389bffd315346bd">execLoader()</a>, <a class="el" href="../../d3/d8f/NexusFileLoader_8cpp_source.html#l00036">getFilenamePropertyName()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01916">Mantid::API::Algorithm::getPropertyValue()</a>, and <a class="el" href="../../da/d86/NexusFileLoader_8h_source.html#l00037">m_fileInfo</a>.</p>
 
 </div>
 </div>
@@ -777,14 +780,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="../../dc/d2d/classMantid_1_1DataHandling_1_1LoadMuonNexusV2.html#ac3b3ee53d92bea4247ed172f9b2e76d2">Mantid::DataHandling::LoadMuonNexusV2</a>, and <a class="el" href="../../d9/dfb/classMantid_1_1DataHandling_1_1LoadNexusLogs.html#a4062800f7cad2b80e5262d0bb5fda4bd">Mantid::DataHandling::LoadNexusLogs</a>.</p>
+<p>Implemented in <a class="el" href="../../dc/d2d/classMantid_1_1DataHandling_1_1LoadMuonNexusV2.html#ac3b3ee53d92bea4247ed172f9b2e76d2">Mantid::DataHandling::LoadMuonNexusV2</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d8f/NexusFileLoader_8cpp_source.html#l00010">exec()</a>.</p>
 
 </div>
 </div>
-<a id="ae9e3baee44a205e8ae38e0bf0b605256" name="ae9e3baee44a205e8ae38e0bf0b605256"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9e3baee44a205e8ae38e0bf0b605256">&#9670;&#160;</a></span>getFileInfo()</h2>
+<a id="ab53bbb0ca56b97ec5d4c34cbfd9c0b94" name="ab53bbb0ca56b97ec5d4c34cbfd9c0b94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab53bbb0ca56b97ec5d4c34cbfd9c0b94">&#9670;&#160;</a></span>getFileInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -793,7 +796,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::shared_ptr&lt; <a class="el" href="../../d2/d31/classMantid_1_1Nexus_1_1NexusDescriptor.html">Nexus::NexusDescriptor</a> &gt; Mantid::API::NexusFileLoader::getFileInfo </td>
+          <td class="memname">virtual const std::shared_ptr&lt; <a class="el" href="../../d2/d31/classMantid_1_1Nexus_1_1NexusDescriptor.html">Mantid::Nexus::NexusDescriptor</a> &gt; Mantid::API::NexusFileLoader::getFileInfo </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -801,18 +804,15 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Required to pass m_fileInfo to static functions Keeping it shared_ptr to match setFileInfo signature (although passing ownership is not the main goal). </p>
+<p>AVOID USING THIS. Use methods in Nexus::File instead </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d8f/NexusFileLoader_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../d3/d8f/NexusFileLoader_8cpp_source.html">NexusFileLoader.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../da/d86/NexusFileLoader_8h_source.html#l00036">m_fileInfo</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../de/dd0/LoadNexusLogs_8cpp_source.html#l00431">Mantid::DataHandling::LoadNexusLogs::execLoader()</a>, <a class="el" href="../../de/dd0/LoadNexusLogs_8cpp_source.html#l00768">Mantid::DataHandling::LoadNexusLogs::loadLogs()</a>, <a class="el" href="../../de/dd0/LoadNexusLogs_8cpp_source.html#l00855">Mantid::DataHandling::LoadNexusLogs::loadNXLog()</a>, and <a class="el" href="../../de/dd0/LoadNexusLogs_8cpp_source.html#l00920">Mantid::DataHandling::LoadNexusLogs::loadSELog()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d86/NexusFileLoader_8h_source.html#l00035">35</a> of file <a class="el" href="../../da/d86/NexusFileLoader_8h_source.html">NexusFileLoader.h</a>.</p>
 
 </div>
 </div>
@@ -839,7 +839,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d8f/NexusFileLoader_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../d3/d8f/NexusFileLoader_8cpp_source.html">NexusFileLoader.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d8f/NexusFileLoader_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../d3/d8f/NexusFileLoader_8cpp_source.html">NexusFileLoader.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d8f/NexusFileLoader_8cpp_source.html#l00010">exec()</a>.</p>
 
@@ -871,7 +871,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d8f/NexusFileLoader_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../d3/d8f/NexusFileLoader_8cpp_source.html">NexusFileLoader.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../da/d86/NexusFileLoader_8h_source.html#l00036">m_fileInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../da/d86/NexusFileLoader_8h_source.html#l00037">m_fileInfo</a>.</p>
 
 </div>
 </div>
@@ -896,9 +896,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d86/NexusFileLoader_8h_source.html#l00036">36</a> of file <a class="el" href="../../da/d86/NexusFileLoader_8h_source.html">NexusFileLoader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d86/NexusFileLoader_8h_source.html#l00037">37</a> of file <a class="el" href="../../da/d86/NexusFileLoader_8h_source.html">NexusFileLoader.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d8f/NexusFileLoader_8cpp_source.html#l00021">createChildAlgorithm()</a>, <a class="el" href="../../d3/d8f/NexusFileLoader_8cpp_source.html#l00010">exec()</a>, <a class="el" href="../../d3/d8f/NexusFileLoader_8cpp_source.html#l00036">getFileInfo()</a>, and <a class="el" href="../../d3/d8f/NexusFileLoader_8cpp_source.html#l00032">setFileInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d8f/NexusFileLoader_8cpp_source.html#l00021">createChildAlgorithm()</a>, <a class="el" href="../../d3/d8f/NexusFileLoader_8cpp_source.html#l00010">exec()</a>, and <a class="el" href="../../d3/d8f/NexusFileLoader_8cpp_source.html#l00032">setFileInfo()</a>.</p>
 
 </div>
 </div>
