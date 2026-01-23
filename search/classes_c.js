@@ -125,7 +125,7 @@ var searchData=
   ['loadpdfgetnfile_122',['LoadPDFgetNFile',['../d0/d41/classMantid_1_1DataHandling_1_1LoadPDFgetNFile.html',1,'Mantid::DataHandling']]],
   ['loadpln_123',['LoadPLN',['../de/de1/classMantid_1_1DataHandling_1_1LoadPLN.html',1,'Mantid::DataHandling']]],
   ['loadprenexus_124',['LoadPreNexus',['../df/d81/classMantid_1_1DataHandling_1_1LoadPreNexus.html',1,'Mantid::DataHandling']]],
-  ['loadprenexusmonitors_125',['loadprenexusmonitors',['../d0/db5/classMantid_1_1DataHandling_1_1LoadPreNexusMonitors.html',1,'Mantid::DataHandling::LoadPreNexusMonitors'],['../dd/d51/classMantid_1_1DataHandling_1_1LoadPreNeXusMonitors.html',1,'LoadPreNeXusMonitors']]],
+  ['loadprenexusmonitors_125',['loadprenexusmonitors',['../dd/d51/classMantid_1_1DataHandling_1_1LoadPreNeXusMonitors.html',1,'LoadPreNeXusMonitors'],['../d0/db5/classMantid_1_1DataHandling_1_1LoadPreNexusMonitors.html',1,'Mantid::DataHandling::LoadPreNexusMonitors']]],
   ['loadpsimuonbin_126',['LoadPSIMuonBin',['../dc/d36/classMantid_1_1DataHandling_1_1LoadPSIMuonBin.html',1,'Mantid::DataHandling']]],
   ['loadqkk_127',['LoadQKK',['../df/d18/classMantid_1_1DataHandling_1_1LoadQKK.html',1,'Mantid::DataHandling']]],
   ['loadraw3_128',['LoadRaw3',['../db/d07/classMantid_1_1DataHandling_1_1LoadRaw3.html',1,'Mantid::DataHandling']]],
@@ -174,7 +174,8 @@ var searchData=
   ['loop_171',['loop',['../d6/d19/classMantid_1_1MDAlgorithms_1_1LOOP.html',1,'Mantid::MDAlgorithms::LOOP&lt; i &gt;'],['../d0/d68/classMantid_1_1DataObjects_1_1LOOP.html',1,'Mantid::DataObjects::LOOP&lt; nd &gt;']]],
   ['loop_3c_200_20_3e_172',['loop&lt; 0 &gt;',['../d4/d39/classMantid_1_1MDAlgorithms_1_1LOOP_3_010_01_4.html',1,'Mantid::MDAlgorithms::LOOP&lt; 0 &gt;'],['../d0/db6/classMantid_1_1DataObjects_1_1LOOP_3_010_01_4.html',1,'Mantid::DataObjects::LOOP&lt; 0 &gt;']]],
   ['loop_3c_20max_5fmd_5fdimensions_5fnum_20_3e_173',['LOOP&lt; MAX_MD_DIMENSIONS_NUM &gt;',['../d0/d68/classMantid_1_1DataObjects_1_1LOOP.html',1,'Mantid::DataObjects']]],
-  ['loqscriptinputdialog_174',['LOQScriptInputDialog',['../d7/d3e/classMantidQt_1_1CustomDialogs_1_1LOQScriptInputDialog.html',1,'MantidQt::CustomDialogs']]],
-  ['lorentzcorrection_175',['LorentzCorrection',['../dc/dde/classMantid_1_1Algorithms_1_1LorentzCorrection.html',1,'Mantid::Algorithms']]],
-  ['lorentzian_176',['Lorentzian',['../d8/d15/classMantid_1_1CurveFitting_1_1Functions_1_1Lorentzian.html',1,'Mantid::CurveFitting::Functions']]]
+  ['loqmeta_174',['LoqMeta',['../db/dbb/structMantid_1_1Algorithms_1_1LoqMeta.html',1,'Mantid::Algorithms']]],
+  ['loqscriptinputdialog_175',['LOQScriptInputDialog',['../d7/d3e/classMantidQt_1_1CustomDialogs_1_1LOQScriptInputDialog.html',1,'MantidQt::CustomDialogs']]],
+  ['lorentzcorrection_176',['LorentzCorrection',['../dc/dde/classMantid_1_1Algorithms_1_1LorentzCorrection.html',1,'Mantid::Algorithms']]],
+  ['lorentzian_177',['Lorentzian',['../d8/d15/classMantid_1_1CurveFitting_1_1Functions_1_1Lorentzian.html',1,'Mantid::CurveFitting::Functions']]]
 ];

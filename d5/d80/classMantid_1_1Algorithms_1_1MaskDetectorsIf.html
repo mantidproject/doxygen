@@ -490,6 +490,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a6cccaa374acbef7e4a65259aec478a41" id="r_a6cccaa374acbef7e4a65259aec478a41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d80/classMantid_1_1Algorithms_1_1MaskDetectorsIf.html#a6cccaa374acbef7e4a65259aec478a41">retrieveProperties</a> ()</td></tr>
 <tr class="memdesc:a6cccaa374acbef7e4a65259aec478a41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the input properties and store them in the object variables.  <br /></td></tr>
 <tr class="separator:a6cccaa374acbef7e4a65259aec478a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81106b0d2f58e615d8d5e02690c3cc5f" id="r_a81106b0d2f58e615d8d5e02690c3cc5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d80/classMantid_1_1Algorithms_1_1MaskDetectorsIf.html#a81106b0d2f58e615d8d5e02690c3cc5f">validateAndSetIxProperties</a> ()</td></tr>
+<tr class="memdesc:a81106b0d2f58e615d8d5e02690c3cc5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execution code.  <br /></td></tr>
+<tr class="separator:a81106b0d2f58e615d8d5e02690c3cc5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07e99b69c628e2bfbd335d8a91c8d4a5" id="r_a07e99b69c628e2bfbd335d8a91c8d4a5"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d80/classMantid_1_1Algorithms_1_1MaskDetectorsIf.html#a07e99b69c628e2bfbd335d8a91c8d4a5">validateInputs</a> () override</td></tr>
 <tr class="memdesc:a07e99b69c628e2bfbd335d8a91c8d4a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the algorithm's input properties.  <br /></td></tr>
 <tr class="separator:a07e99b69c628e2bfbd335d8a91c8d4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -499,12 +502,18 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a1c24394b658203722745aae59e92240e" id="r_a1c24394b658203722745aae59e92240e"><td class="memItemLeft" align="right" valign="top">boost::function&lt; bool(double, double)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d80/classMantid_1_1Algorithms_1_1MaskDetectorsIf.html#a1c24394b658203722745aae59e92240e">m_compar_f</a></td></tr>
 <tr class="memdesc:a1c24394b658203722745aae59e92240e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A comparator function.  <br /></td></tr>
 <tr class="separator:a1c24394b658203722745aae59e92240e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a668c57a31b77722937efd740fb2e5f3a" id="r_a668c57a31b77722937efd740fb2e5f3a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d80/classMantid_1_1Algorithms_1_1MaskDetectorsIf.html#a668c57a31b77722937efd740fb2e5f3a">m_end_ix</a> = -1</td></tr>
+<tr class="memdesc:a668c57a31b77722937efd740fb2e5f3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The end index parameter.  <br /></td></tr>
+<tr class="separator:a668c57a31b77722937efd740fb2e5f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ba6c3ff7a04e86d3a658259333d2829" id="r_a3ba6c3ff7a04e86d3a658259333d2829"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a97ac0dc7f26bb26c417c74e8b29d1181">API::MatrixWorkspace_const_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d80/classMantid_1_1Algorithms_1_1MaskDetectorsIf.html#a3ba6c3ff7a04e86d3a658259333d2829">m_inputW</a></td></tr>
 <tr class="memdesc:a3ba6c3ff7a04e86d3a658259333d2829"><td class="mdescLeft">&#160;</td><td class="mdescRight">The input workspace.  <br /></td></tr>
 <tr class="separator:a3ba6c3ff7a04e86d3a658259333d2829"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1640aa05a412c9c1eb11b11fdc98a39" id="r_aa1640aa05a412c9c1eb11b11fdc98a39"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d80/classMantid_1_1Algorithms_1_1MaskDetectorsIf.html#aa1640aa05a412c9c1eb11b11fdc98a39">m_select_on</a> = false</td></tr>
 <tr class="memdesc:aa1640aa05a412c9c1eb11b11fdc98a39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether select is on or off.  <br /></td></tr>
 <tr class="separator:aa1640aa05a412c9c1eb11b11fdc98a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa01e6a2bc3dd3e404b87d65ab58ea79f" id="r_aa01e6a2bc3dd3e404b87d65ab58ea79f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d80/classMantid_1_1Algorithms_1_1MaskDetectorsIf.html#aa01e6a2bc3dd3e404b87d65ab58ea79f">m_start_ix</a> = 0</td></tr>
+<tr class="memdesc:aa01e6a2bc3dd3e404b87d65ab58ea79f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The start index parameter.  <br /></td></tr>
+<tr class="separator:aa01e6a2bc3dd3e404b87d65ab58ea79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad190264be34ef4fa590b498738fe5db2" id="r_ad190264be34ef4fa590b498738fe5db2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d80/classMantid_1_1Algorithms_1_1MaskDetectorsIf.html#a6a3db98821e3325541ea7cde4f5d760f">udet2valuem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d80/classMantid_1_1Algorithms_1_1MaskDetectorsIf.html#ad190264be34ef4fa590b498738fe5db2">m_umap</a></td></tr>
 <tr class="memdesc:ad190264be34ef4fa590b498738fe5db2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map from detid to selection.  <br /></td></tr>
 <tr class="separator:ad190264be34ef4fa590b498738fe5db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -731,11 +740,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00183">183</a> of file <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html">MaskDetectorsIf.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00226">226</a> of file <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html">MaskDetectorsIf.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00422">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01966">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00051">m_umap</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>, and <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00240">Mantid::API::Algorithm::progress()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00083">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00101">exec()</a>.</p>
 
 </div>
 </div>
@@ -766,9 +775,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#aace3ff902f31d5cfa309fff3d6b069aa">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html">MaskDetectorsIf.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00101">101</a> of file <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html">MaskDetectorsIf.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00183">createNewCalFile()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00422">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01974">Mantid::API::Algorithm::isDefault()</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00059">m_compar_f</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00057">m_inputW</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00053">m_select_on</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00051">m_umap</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00055">m_value</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00035">name()</a>, <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00125">outputToWorkspace()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00240">Mantid::API::Algorithm::progress()</a>, and <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00148">retrieveProperties()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00226">createNewCalFile()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00422">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01974">Mantid::API::Algorithm::isDefault()</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00063">m_compar_f</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00057">m_end_ix</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00061">m_inputW</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00053">m_select_on</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00055">m_start_ix</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00051">m_umap</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00059">m_value</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00035">name()</a>, <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00142">outputToWorkspace()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00240">Mantid::API::Algorithm::progress()</a>, and <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00165">retrieveProperties()</a>.</p>
 
 </div>
 </div>
@@ -800,9 +809,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a6dd0fd7bdcd432ca32c33f4a4c26583c">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00044">44</a> of file <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html">MaskDetectorsIf.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html">MaskDetectorsIf.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01803">Mantid::API::Algorithm::declareProperty()</a>, <a class="el" href="../../d3/d68/Property_8h_source.html#l00053">Mantid::Kernel::Direction::Input</a>, <a class="el" href="../../dd/da9/IWorkspaceProperty_8h_source.html#l00019">Mantid::API::PropertyMode::Optional</a>, <a class="el" href="../../d1/d17/FileProperty_8h_source.html#l00053">Mantid::API::FileProperty::OptionalLoad</a>, <a class="el" href="../../d1/d17/FileProperty_8h_source.html#l00050">Mantid::API::FileProperty::OptionalSave</a>, and <a class="el" href="../../d3/d68/Property_8h_source.html#l00054">Mantid::Kernel::Direction::Output</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01803">Mantid::API::Algorithm::declareProperty()</a>, <a class="el" href="../../db/d1c/EmptyValues_8h_source.html#l00024">Mantid::EMPTY_INT()</a>, <a class="el" href="../../d3/d68/Property_8h_source.html#l00053">Mantid::Kernel::Direction::Input</a>, <a class="el" href="../../dd/da9/IWorkspaceProperty_8h_source.html#l00019">Mantid::API::PropertyMode::Optional</a>, <a class="el" href="../../d1/d17/FileProperty_8h_source.html#l00053">Mantid::API::FileProperty::OptionalLoad</a>, <a class="el" href="../../d1/d17/FileProperty_8h_source.html#l00050">Mantid::API::FileProperty::OptionalSave</a>, and <a class="el" href="../../d3/d68/Property_8h_source.html#l00054">Mantid::Kernel::Direction::Output</a>.</p>
 
 </div>
 </div>
@@ -835,7 +844,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00035">35</a> of file <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html">MaskDetectorsIf.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00083">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00101">exec()</a>.</p>
 
 </div>
 </div>
@@ -864,11 +873,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Create an output workspace masking/unmasking the selected/deselected spectra. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00125">125</a> of file <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html">MaskDetectorsIf.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00142">142</a> of file <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html">MaskDetectorsIf.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01966">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00057">m_inputW</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00051">m_umap</a>, and <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00270">Mantid::Kernel::IPropertyManager::setProperty()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01966">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00061">m_inputW</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00051">m_umap</a>, and <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00270">Mantid::Kernel::IPropertyManager::setProperty()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00083">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00101">exec()</a>.</p>
 
 </div>
 </div>
@@ -897,11 +906,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Get the input properties and store them in the object variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00148">148</a> of file <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html">MaskDetectorsIf.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00165">165</a> of file <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html">MaskDetectorsIf.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01966">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00059">m_compar_f</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00057">m_inputW</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00053">m_select_on</a>, and <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00055">m_value</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01966">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00063">m_compar_f</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00061">m_inputW</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00053">m_select_on</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00059">m_value</a>, and <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00201">validateAndSetIxProperties()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00083">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00101">exec()</a>.</p>
 
 </div>
 </div>
@@ -967,6 +976,46 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a81106b0d2f58e615d8d5e02690c3cc5f" name="a81106b0d2f58e615d8d5e02690c3cc5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81106b0d2f58e615d8d5e02690c3cc5f">&#9670;&#160;</a></span>validateAndSetIxProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mantid::Algorithms::MaskDetectorsIf::validateAndSetIxProperties </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Execution code. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>If StartWorkspaceIndex is greater than or equal to number of histograms. </td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>If EndWorkspaceIndex is greater than or equal to number of histograms. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00201">201</a> of file <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html">MaskDetectorsIf.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01966">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01974">Mantid::API::Algorithm::isDefault()</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00057">m_end_ix</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00061">m_inputW</a>, <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00055">m_start_ix</a>, and <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00165">retrieveProperties()</a>.</p>
+
+</div>
+</div>
 <a id="a07e99b69c628e2bfbd335d8a91c8d4a5" name="a07e99b69c628e2bfbd335d8a91c8d4a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a07e99b69c628e2bfbd335d8a91c8d4a5">&#9670;&#160;</a></span>validateInputs()</h2>
 
@@ -996,9 +1045,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d2d/classMantid_1_1API_1_1IAlgorithm.html#ade9fd99ad205148bccc8a46e3c3c8b18">Mantid::API::IAlgorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00069">69</a> of file <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html">MaskDetectorsIf.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00078">78</a> of file <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html">MaskDetectorsIf.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01974">Mantid::API::Algorithm::isDefault()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01966">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01974">Mantid::API::Algorithm::isDefault()</a>, and <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>.</p>
 
 </div>
 </div>
@@ -1056,9 +1105,37 @@ Additional Inherited Members</h2></td></tr>
 
 <p>A comparator function. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00059">59</a> of file <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html">MaskDetectorsIf.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00063">63</a> of file <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html">MaskDetectorsIf.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00083">exec()</a>, and <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00148">retrieveProperties()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00101">exec()</a>, and <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00165">retrieveProperties()</a>.</p>
+
+</div>
+</div>
+<a id="a668c57a31b77722937efd740fb2e5f3a" name="a668c57a31b77722937efd740fb2e5f3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a668c57a31b77722937efd740fb2e5f3a">&#9670;&#160;</a></span>m_end_ix</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Mantid::Algorithms::MaskDetectorsIf::m_end_ix = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The end index parameter. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00057">57</a> of file <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html">MaskDetectorsIf.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00101">exec()</a>, and <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00201">validateAndSetIxProperties()</a>.</p>
 
 </div>
 </div>
@@ -1084,9 +1161,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The input workspace. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00057">57</a> of file <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html">MaskDetectorsIf.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00061">61</a> of file <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html">MaskDetectorsIf.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00083">exec()</a>, <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00125">outputToWorkspace()</a>, and <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00148">retrieveProperties()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00101">exec()</a>, <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00142">outputToWorkspace()</a>, <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00165">retrieveProperties()</a>, and <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00201">validateAndSetIxProperties()</a>.</p>
 
 </div>
 </div>
@@ -1114,7 +1191,35 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00053">53</a> of file <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html">MaskDetectorsIf.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00083">exec()</a>, and <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00148">retrieveProperties()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00101">exec()</a>, and <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00165">retrieveProperties()</a>.</p>
+
+</div>
+</div>
+<a id="aa01e6a2bc3dd3e404b87d65ab58ea79f" name="aa01e6a2bc3dd3e404b87d65ab58ea79f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa01e6a2bc3dd3e404b87d65ab58ea79f">&#9670;&#160;</a></span>m_start_ix</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Mantid::Algorithms::MaskDetectorsIf::m_start_ix = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The start index parameter. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00055">55</a> of file <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html">MaskDetectorsIf.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00101">exec()</a>, and <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00201">validateAndSetIxProperties()</a>.</p>
 
 </div>
 </div>
@@ -1142,7 +1247,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00051">51</a> of file <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html">MaskDetectorsIf.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00183">createNewCalFile()</a>, <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00083">exec()</a>, and <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00125">outputToWorkspace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00226">createNewCalFile()</a>, <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00101">exec()</a>, and <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00142">outputToWorkspace()</a>.</p>
 
 </div>
 </div>
@@ -1168,9 +1273,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The Value parameter. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00055">55</a> of file <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html">MaskDetectorsIf.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html#l00059">59</a> of file <a class="el" href="../../d4/dca/MaskDetectorsIf_8h_source.html">MaskDetectorsIf.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00083">exec()</a>, and <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00148">retrieveProperties()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00101">exec()</a>, and <a class="el" href="../../da/d18/MaskDetectorsIf_8cpp_source.html#l00165">retrieveProperties()</a>.</p>
 
 </div>
 </div>
