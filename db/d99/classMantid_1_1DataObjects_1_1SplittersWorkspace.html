@@ -130,6 +130,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0e32c5afa7ca85679bb56fd5eeede21b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3c508be293adf9577e1cfbd88e3eafc" id="r_af3c508be293adf9577e1cfbd88e3eafc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/df9/classMantid_1_1Kernel_1_1SplittingInterval.html">Kernel::SplittingInterval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d99/classMantid_1_1DataObjects_1_1SplittersWorkspace.html#af3c508be293adf9577e1cfbd88e3eafc">getSplitter</a> (size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>) override</td></tr>
 <tr class="separator:af3c508be293adf9577e1cfbd88e3eafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca7257ef0b5bd656f5d8c5c7879cfebe" id="r_aca7257ef0b5bd656f5d8c5c7879cfebe"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d99/classMantid_1_1DataObjects_1_1SplittersWorkspace.html#aca7257ef0b5bd656f5d8c5c7879cfebe">id</a> () const override</td></tr>
+<tr class="memdesc:aca7257ef0b5bd656f5d8c5c7879cfebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the workspace typeID.  <br /></td></tr>
+<tr class="separator:aca7257ef0b5bd656f5d8c5c7879cfebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7fb723301d075e24716b7f765e2ae60" id="r_ae7fb723301d075e24716b7f765e2ae60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d99/classMantid_1_1DataObjects_1_1SplittersWorkspace.html">SplittersWorkspace</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d99/classMantid_1_1DataObjects_1_1SplittersWorkspace.html#ae7fb723301d075e24716b7f765e2ae60">operator=</a> (const <a class="el" href="../../db/d99/classMantid_1_1DataObjects_1_1SplittersWorkspace.html">SplittersWorkspace</a> &amp;other)=delete</td></tr>
 <tr class="separator:ae7fb723301d075e24716b7f765e2ae60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7f1824062d9aad0ab96d8144c4cd832" id="r_ac7f1824062d9aad0ab96d8144c4cd832"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d99/classMantid_1_1DataObjects_1_1SplittersWorkspace.html#ac7f1824062d9aad0ab96d8144c4cd832">removeSplitter</a> (size_t) override</td></tr>
@@ -456,9 +459,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d01/SplittersWorkspace_8cpp_source.html#l00023">23</a> of file <a class="el" href="../../de/d01/SplittersWorkspace_8cpp_source.html">SplittersWorkspace.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../da/dff/TableWorkspace_8cpp_source.html#l00059">Mantid::DataObjects::TableWorkspace::addColumn()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d01/SplittersWorkspace_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../de/d01/SplittersWorkspace_8cpp_source.html">SplittersWorkspace.cpp</a>.</p>
 
 </div>
 </div>
@@ -517,7 +518,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d2/d88/classMantid_1_1API_1_1ISplittersWorkspace.html#abc903b65bfd036643e4ea3741ddc26a8">Mantid::API::ISplittersWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d01/SplittersWorkspace_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../de/d01/SplittersWorkspace_8cpp_source.html">SplittersWorkspace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d01/SplittersWorkspace_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../de/d01/SplittersWorkspace_8cpp_source.html">SplittersWorkspace.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../dd/d89/API_2src_2ITableWorkspace_8cpp_source.html#l00046">Mantid::API::ITableWorkspace::appendRow()</a>, <a class="el" href="../../d9/d2c/SplittingInterval_8cpp_source.html#l00024">Mantid::Kernel::SplittingInterval::index()</a>, <a class="el" href="../../d6/dd1/Kernel_2inc_2MantidKernel_2DateAndTime_8h_source.html#l00034">Mantid::Kernel::TimeInterval::start()</a>, and <a class="el" href="../../d6/dd1/Kernel_2inc_2MantidKernel_2DateAndTime_8h_source.html#l00036">Mantid::Kernel::TimeInterval::stop()</a>.</p>
 
@@ -548,7 +549,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Returns a clone of the workspace. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/de3/SplittersWorkspace_8h_source.html#l00035">35</a> of file <a class="el" href="../../d0/de3/SplittersWorkspace_8h_source.html">SplittersWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/de3/SplittersWorkspace_8h_source.html#l00037">37</a> of file <a class="el" href="../../d0/de3/SplittersWorkspace_8h_source.html">SplittersWorkspace.h</a>.</p>
 
 </div>
 </div>
@@ -577,7 +578,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Returns a default-initialized clone of the workspace. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/de3/SplittersWorkspace_8h_source.html#l00038">38</a> of file <a class="el" href="../../d0/de3/SplittersWorkspace_8h_source.html">SplittersWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/de3/SplittersWorkspace_8h_source.html#l00040">40</a> of file <a class="el" href="../../d0/de3/SplittersWorkspace_8h_source.html">SplittersWorkspace.h</a>.</p>
 
 </div>
 </div>
@@ -608,7 +609,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d6/da5/classMantid_1_1API_1_1ITableWorkspace.html#afc233782812745b9ba96e172af680947">Mantid::API::ITableWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/de3/SplittersWorkspace_8h_source.html#l00054">54</a> of file <a class="el" href="../../d0/de3/SplittersWorkspace_8h_source.html">SplittersWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/de3/SplittersWorkspace_8h_source.html#l00056">56</a> of file <a class="el" href="../../d0/de3/SplittersWorkspace_8h_source.html">SplittersWorkspace.h</a>.</p>
 
 </div>
 </div>
@@ -640,7 +641,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d6/da5/classMantid_1_1API_1_1ITableWorkspace.html#a445949afbc0870fff3a28d90dc20485e">Mantid::API::ITableWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/de3/SplittersWorkspace_8h_source.html#l00055">55</a> of file <a class="el" href="../../d0/de3/SplittersWorkspace_8h_source.html">SplittersWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/de3/SplittersWorkspace_8h_source.html#l00057">57</a> of file <a class="el" href="../../d0/de3/SplittersWorkspace_8h_source.html">SplittersWorkspace.h</a>.</p>
 
 </div>
 </div>
@@ -669,7 +670,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d2/d88/classMantid_1_1API_1_1ISplittersWorkspace.html#ab0a6c73494c4c56b996e73c112ba73e2">Mantid::API::ISplittersWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d01/SplittersWorkspace_8cpp_source.html#l00052">52</a> of file <a class="el" href="../../de/d01/SplittersWorkspace_8cpp_source.html">SplittersWorkspace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d01/SplittersWorkspace_8cpp_source.html#l00056">56</a> of file <a class="el" href="../../de/d01/SplittersWorkspace_8cpp_source.html">SplittersWorkspace.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d8/d85/TableWorkspace_8h_source.html#l00100">Mantid::DataObjects::TableWorkspace::rowCount()</a>.</p>
 
@@ -701,9 +702,40 @@ Private Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d2/d88/classMantid_1_1API_1_1ISplittersWorkspace.html#ae96ec301530faf2e6630f0dc829c1001">Mantid::API::ISplittersWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d01/SplittersWorkspace_8cpp_source.html#l00039">39</a> of file <a class="el" href="../../de/d01/SplittersWorkspace_8cpp_source.html">SplittersWorkspace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d01/SplittersWorkspace_8cpp_source.html#l00043">43</a> of file <a class="el" href="../../de/d01/SplittersWorkspace_8cpp_source.html">SplittersWorkspace.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d6/d43/ITableWorkspace_8h_source.html#l00263">Mantid::API::ITableWorkspace::getRow()</a>.</p>
+
+</div>
+</div>
+<a id="aca7257ef0b5bd656f5d8c5c7879cfebe" name="aca7257ef0b5bd656f5d8c5c7879cfebe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca7257ef0b5bd656f5d8c5c7879cfebe">&#9670;&#160;</a></span>id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string Mantid::DataObjects::SplittersWorkspace::id </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the workspace typeID. </p>
+
+<p>Reimplemented from <a class="el" href="../../d6/da5/classMantid_1_1API_1_1ITableWorkspace.html#a0af6db5759e34586c1ede100ed6e19ab">Mantid::API::ITableWorkspace</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/de3/SplittersWorkspace_8h_source.html#l00034">34</a> of file <a class="el" href="../../d0/de3/SplittersWorkspace_8h_source.html">SplittersWorkspace.h</a>.</p>
 
 </div>
 </div>
@@ -759,7 +791,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d2/d88/classMantid_1_1API_1_1ISplittersWorkspace.html#a54e6d6606193c4a4c4ea6c2cf9bf8d86">Mantid::API::ISplittersWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d01/SplittersWorkspace_8cpp_source.html#l00054">54</a> of file <a class="el" href="../../de/d01/SplittersWorkspace_8cpp_source.html">SplittersWorkspace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d01/SplittersWorkspace_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../de/d01/SplittersWorkspace_8cpp_source.html">SplittersWorkspace.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../da/dff/TableWorkspace_8cpp_source.html#l00167">Mantid::DataObjects::TableWorkspace::removeRow()</a>, and <a class="el" href="../../d8/d85/TableWorkspace_8h_source.html#l00100">Mantid::DataObjects::TableWorkspace::rowCount()</a>.</p>
 
