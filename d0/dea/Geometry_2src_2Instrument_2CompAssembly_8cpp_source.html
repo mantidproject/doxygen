@@ -179,7 +179,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keywordflow">if</span> (comp) {</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    comp-&gt;<a class="code hl_function" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#ad7a44f9d48715482d794558c0f6961b3">setParent</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <a class="code hl_variable" href="../../d6/dfb/classMantid_1_1Geometry_1_1CompAssembly.html#a26a10a6514554ba9ca0a6d6b78f90022">m_children</a>.emplace_back(comp);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <a class="code hl_variable" href="../../d6/dfb/classMantid_1_1Geometry_1_1CompAssembly.html#a26a10a6514554ba9ca0a6d6b78f90022">m_children</a>.emplace_back(std::move(comp));</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  }</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="../../d6/dfb/classMantid_1_1Geometry_1_1CompAssembly.html#a26a10a6514554ba9ca0a6d6b78f90022">m_children</a>.size());</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
