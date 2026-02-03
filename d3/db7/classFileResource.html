@@ -103,8 +103,8 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7016887a146818f8dfd1da5c8b58b89c" id="r_a7016887a146818f8dfd1da5c8b58b89c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db7/classFileResource.html#a7016887a146818f8dfd1da5c8b58b89c">exists</a> ()</td></tr>
 <tr class="separator:a7016887a146818f8dfd1da5c8b58b89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a394a8f60c350c3cf96b9de2da604f941" id="r_a394a8f60c350c3cf96b9de2da604f941"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db7/classFileResource.html#a394a8f60c350c3cf96b9de2da604f941">FileResource</a> (const std::string &amp;fileName, bool debugMode=false)</td></tr>
-<tr class="separator:a394a8f60c350c3cf96b9de2da604f941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e15be3f301d2f22fea485d6aa412b77" id="r_a7e15be3f301d2f22fea485d6aa412b77"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db7/classFileResource.html#a7e15be3f301d2f22fea485d6aa412b77">FileResource</a> (const std::string &amp;fileName, const bool debugMode=false, const bool randomize=false)</td></tr>
+<tr class="separator:a7e15be3f301d2f22fea485d6aa412b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24f7555f434c4f5244e68d455f775983" id="r_a24f7555f434c4f5244e68d455f775983"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db7/classFileResource.html#a24f7555f434c4f5244e68d455f775983">fullPath</a> () const</td></tr>
 <tr class="separator:a24f7555f434c4f5244e68d455f775983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11354b8ec1e0bb59636c5f8e881df261" id="r_a11354b8ec1e0bb59636c5f8e881df261"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db7/classFileResource.html#a11354b8ec1e0bb59636c5f8e881df261">setDebugMode</a> (bool mode)</td></tr>
@@ -134,8 +134,8 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../da/d57/FileResource_8h_source.html#l00020">20</a> of file <a class="el" href="../../da/d57/FileResource_8h_source.html">FileResource.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a394a8f60c350c3cf96b9de2da604f941" name="a394a8f60c350c3cf96b9de2da604f941"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a394a8f60c350c3cf96b9de2da604f941">&#9670;&#160;</a></span>FileResource()</h2>
+<a id="a7e15be3f301d2f22fea485d6aa412b77" name="a7e15be3f301d2f22fea485d6aa412b77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e15be3f301d2f22fea485d6aa412b77">&#9670;&#160;</a></span>FileResource()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,8 +149,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>debugMode</em> = <code>false</code>&#160;</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>debugMode</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>randomize</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -160,9 +166,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d28/FileResource_8cpp_source.html#l00011">11</a> of file <a class="el" href="../../d2/d28/FileResource_8cpp_source.html">FileResource.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d28/FileResource_8cpp_source.html#l00012">12</a> of file <a class="el" href="../../d2/d28/FileResource_8cpp_source.html">FileResource.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../da/d57/FileResource_8h_source.html#l00031">m_full_path</a>.</p>
+<p class="reference">References <a class="el" href="../../da/d57/FileResource_8h_source.html#l00031">m_full_path</a>, and <a class="el" href="../../de/d6d/Strings_8cpp_source.html#l01190">Mantid::Kernel::Strings::randomString()</a>.</p>
 
 </div>
 </div>
@@ -181,7 +187,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d28/FileResource_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../d2/d28/FileResource_8cpp_source.html">FileResource.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d28/FileResource_8cpp_source.html#l00049">49</a> of file <a class="el" href="../../d2/d28/FileResource_8cpp_source.html">FileResource.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../da/d57/FileResource_8h_source.html#l00030">m_debugMode</a>, and <a class="el" href="../../da/d57/FileResource_8h_source.html#l00031">m_full_path</a>.</p>
 
@@ -203,7 +209,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d28/FileResource_8cpp_source.html#l00034">34</a> of file <a class="el" href="../../d2/d28/FileResource_8cpp_source.html">FileResource.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d28/FileResource_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../d2/d28/FileResource_8cpp_source.html">FileResource.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../da/d57/FileResource_8h_source.html#l00031">m_full_path</a>.</p>
 
@@ -224,7 +230,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d28/FileResource_8cpp_source.html#l00043">43</a> of file <a class="el" href="../../d2/d28/FileResource_8cpp_source.html">FileResource.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d28/FileResource_8cpp_source.html#l00047">47</a> of file <a class="el" href="../../d2/d28/FileResource_8cpp_source.html">FileResource.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../da/d57/FileResource_8h_source.html#l00031">m_full_path</a>.</p>
 
@@ -298,7 +304,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d28/FileResource_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../d2/d28/FileResource_8cpp_source.html">FileResource.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d28/FileResource_8cpp_source.html#l00046">46</a> of file <a class="el" href="../../d2/d28/FileResource_8cpp_source.html">FileResource.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../da/d57/FileResource_8h_source.html#l00030">m_debugMode</a>.</p>
 
@@ -327,7 +333,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../da/d57/FileResource_8h_source.html#l00030">30</a> of file <a class="el" href="../../da/d57/FileResource_8h_source.html">FileResource.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d28/FileResource_8cpp_source.html#l00042">setDebugMode()</a>, and <a class="el" href="../../d2/d28/FileResource_8cpp_source.html#l00045">~FileResource()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d28/FileResource_8cpp_source.html#l00046">setDebugMode()</a>, and <a class="el" href="../../d2/d28/FileResource_8cpp_source.html#l00049">~FileResource()</a>.</p>
 
 </div>
 </div>
@@ -353,7 +359,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../da/d57/FileResource_8h_source.html#l00031">31</a> of file <a class="el" href="../../da/d57/FileResource_8h_source.html">FileResource.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d28/FileResource_8cpp_source.html#l00034">exists()</a>, <a class="el" href="../../d2/d28/FileResource_8cpp_source.html#l00011">FileResource()</a>, <a class="el" href="../../d2/d28/FileResource_8cpp_source.html#l00043">fullPath()</a>, and <a class="el" href="../../d2/d28/FileResource_8cpp_source.html#l00045">~FileResource()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d28/FileResource_8cpp_source.html#l00038">exists()</a>, <a class="el" href="../../d2/d28/FileResource_8cpp_source.html#l00012">FileResource()</a>, <a class="el" href="../../d2/d28/FileResource_8cpp_source.html#l00047">fullPath()</a>, and <a class="el" href="../../d2/d28/FileResource_8cpp_source.html#l00049">~FileResource()</a>.</p>
 
 </div>
 </div>
