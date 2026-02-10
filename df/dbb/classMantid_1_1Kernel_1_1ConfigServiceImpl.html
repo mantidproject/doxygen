@@ -255,9 +255,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ace0955c801e0dbdb14aa6470ef44eb62" id="r_ace0955c801e0dbdb14aa6470ef44eb62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d98/classMantid_1_1Kernel_1_1ProxyInfo.html">Kernel::ProxyInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dbb/classMantid_1_1Kernel_1_1ConfigServiceImpl.html#ace0955c801e0dbdb14aa6470ef44eb62">m_proxyInfo</a></td></tr>
 <tr class="memdesc:ace0955c801e0dbdb14aa6470ef44eb62"><td class="mdescLeft">&#160;</td><td class="mdescRight">local cache of proxy details  <br /></td></tr>
 <tr class="separator:ace0955c801e0dbdb14aa6470ef44eb62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba19a11b44b149f06c9df0db2a230c54" id="r_aba19a11b44b149f06c9df0db2a230c54"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dbb/classMantid_1_1Kernel_1_1ConfigServiceImpl.html#aba19a11b44b149f06c9df0db2a230c54">m_isProxySet</a></td></tr>
+<tr class="memitem:aba19a11b44b149f06c9df0db2a230c54" id="r_aba19a11b44b149f06c9df0db2a230c54"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dbb/classMantid_1_1Kernel_1_1ConfigServiceImpl.html#aba19a11b44b149f06c9df0db2a230c54">m_isProxySet</a> = false</td></tr>
 <tr class="memdesc:aba19a11b44b149f06c9df0db2a230c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">whether the proxy has been populated yet  <br /></td></tr>
 <tr class="separator:aba19a11b44b149f06c9df0db2a230c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab373429d7cbc841e6077bcb4602c601b" id="r_ab373429d7cbc841e6077bcb4602c601b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dbb/classMantid_1_1Kernel_1_1ConfigServiceImpl.html#ab373429d7cbc841e6077bcb4602c601b">m_instrumentPrefixesCache</a></td></tr>
+<tr class="separator:ab373429d7cbc841e6077bcb4602c601b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c903bce00d28bc760a31c7cbb2c9d76" id="r_a2c903bce00d28bc760a31c7cbb2c9d76"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dbb/classMantid_1_1Kernel_1_1ConfigServiceImpl.html#a2c903bce00d28bc760a31c7cbb2c9d76">m_isInstrumentPrefixesCached</a> = false</td></tr>
+<tr class="separator:a2c903bce00d28bc760a31c7cbb2c9d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67d3a2f8b27760f2bb616e9f080bb669" id="r_a67d3a2f8b27760f2bb616e9f080bb669"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dbb/classMantid_1_1Kernel_1_1ConfigServiceImpl.html#a67d3a2f8b27760f2bb616e9f080bb669">getDataSearchDirs</a> () const</td></tr>
 <tr class="memdesc:a67d3a2f8b27760f2bb616e9f080bb669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of search paths.  <br /></td></tr>
 <tr class="separator:a67d3a2f8b27760f2bb616e9f080bb669"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -314,6 +318,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7afd1ab2ddea48156d03f7b0886ae4e1" id="r_a7afd1ab2ddea48156d03f7b0886ae4e1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d7/d07/classMantid_1_1Kernel_1_1InstrumentInfo.html">InstrumentInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dbb/classMantid_1_1Kernel_1_1ConfigServiceImpl.html#a7afd1ab2ddea48156d03f7b0886ae4e1">getInstrument</a> (const std::string &amp;instrumentName=&quot;&quot;) const</td></tr>
 <tr class="memdesc:a7afd1ab2ddea48156d03f7b0886ae4e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look for an instrument.  <br /></td></tr>
 <tr class="separator:a7afd1ab2ddea48156d03f7b0886ae4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eefff2f7f34b4c9819383e69ec18b38" id="r_a0eefff2f7f34b4c9819383e69ec18b38"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dbb/classMantid_1_1Kernel_1_1ConfigServiceImpl.html#a0eefff2f7f34b4c9819383e69ec18b38">findLongestInstrumentPrefix</a> (const std::string &amp;hint) const</td></tr>
+<tr class="separator:a0eefff2f7f34b4c9819383e69ec18b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5b9dc94061100777cb8e7a845a5c5d3" id="r_aa5b9dc94061100777cb8e7a845a5c5d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dbb/classMantid_1_1Kernel_1_1ConfigServiceImpl.html#aa5b9dc94061100777cb8e7a845a5c5d3">addObserver</a> (const Poco::AbstractObserver &amp;observer) const</td></tr>
 <tr class="memdesc:aa5b9dc94061100777cb8e7a845a5c5d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an observer for a notification.  <br /></td></tr>
 <tr class="separator:aa5b9dc94061100777cb8e7a845a5c5d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -406,7 +412,7 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00125">125</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01626">cacheInstrumentPaths()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01322">getAppDataDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01131">getComputerName()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01070">getLocalFilename()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01472">getPropertiesDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01082">getUserFilename()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01604">getVTPFileDirectory()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00293">m_configPaths</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00281">m_properties_file_name</a>, <a class="el" href="../../d9/da7/Kernel_2src_2MantidVersion_8cpp_source.html#l00156">Mantid::Kernel::MantidVersion::revision()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00238">setBaseDirectory()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00640">updateConfig()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01732">updateFacilities()</a>, and <a class="el" href="../../d9/da7/Kernel_2src_2MantidVersion_8cpp_source.html#l00117">Mantid::Kernel::MantidVersion::version()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01625">cacheInstrumentPaths()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01321">getAppDataDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01130">getComputerName()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01069">getLocalFilename()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01471">getPropertiesDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01081">getUserFilename()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01603">getVTPFileDirectory()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00296">m_configPaths</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00284">m_properties_file_name</a>, <a class="el" href="../../d9/da7/Kernel_2src_2MantidVersion_8cpp_source.html#l00156">Mantid::Kernel::MantidVersion::revision()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00237">setBaseDirectory()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00639">updateConfig()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01731">updateFacilities()</a>, and <a class="el" href="../../d9/da7/Kernel_2src_2MantidVersion_8cpp_source.html#l00117">Mantid::Kernel::MantidVersion::version()</a>.</p>
 
 </div>
 </div>
@@ -463,9 +469,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Private Destructor Prevents client from calling 'delete' on the pointer handed out by Instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00221">221</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00220">220</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01796">clearFacilities()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00322">Mantid::Kernel::Logger::shutdown()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01795">clearFacilities()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00322">Mantid::Kernel::Logger::shutdown()</a>.</p>
 
 </div>
 </div>
@@ -514,11 +520,11 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the directory was valid and added to the list </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01657">1657</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01656">1656</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01626">cacheInstrumentPaths()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01625">cacheInstrumentPaths()</a>.</p>
 
 </div>
 </div>
@@ -547,9 +553,9 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01918">1918</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01962">1962</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00233">m_notificationCenter</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00236">m_notificationCenter</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d1/d8c/InstrumentSelector_8cpp_source.html#l00029">MantidQt::MantidWidgets::InstrumentSelector::InstrumentSelector()</a>.</p>
 
@@ -580,11 +586,11 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01559">1559</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01558">1558</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00517">isInDataSearchList()</a>, <a class="el" href="../../de/d53/Strings_8h_source.html#l00084">Mantid::Kernel::Strings::join()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00285">m_dataSearchDirs</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00992">setString()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00516">isInDataSearchList()</a>, <a class="el" href="../../de/d53/Strings_8h_source.html#l00084">Mantid::Kernel::Strings::join()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00288">m_dataSearchDirs</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00991">setString()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00992">setString()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00640">updateConfig()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00991">setString()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00639">updateConfig()</a>.</p>
 
 </div>
 </div>
@@ -613,9 +619,9 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01522">1522</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01521">1521</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00285">m_dataSearchDirs</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01503">setDataSearchDirs()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00288">m_dataSearchDirs</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01502">setDataSearchDirs()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>.</p>
 
@@ -648,11 +654,11 @@ Public Member Functions</h2></td></tr>
 <p>Create the store of data search paths from the 'datasearch.directories' key within the Mantid.properties file.</p>
 <p>The value of the key should be a semi-colon separated list of directories </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00502">502</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00501">501</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00777">getString()</a>, and <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00285">m_dataSearchDirs</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00776">getString()</a>, and <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00288">m_dataSearchDirs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00992">setString()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00640">updateConfig()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00991">setString()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00639">updateConfig()</a>.</p>
 
 </div>
 </div>
@@ -687,11 +693,11 @@ Public Member Functions</h2></td></tr>
 <li>The install directory/instrument </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01626">1626</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01625">1625</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01657">addDirectoryifExists()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01322">getAppDataDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01472">getPropertiesDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00777">getString()</a>, and <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00287">m_instrumentDirs</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01656">addDirectoryifExists()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01321">getAppDataDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01471">getPropertiesDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00776">getString()</a>, and <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00290">m_instrumentDirs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00125">ConfigServiceImpl()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00992">setString()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00640">updateConfig()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00125">ConfigServiceImpl()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00991">setString()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00639">updateConfig()</a>.</p>
 
 </div>
 </div>
@@ -720,11 +726,11 @@ Public Member Functions</h2></td></tr>
 
 <p>Empty the list of facilities, deleting the <a class="el" href="../../d7/d40/classMantid_1_1Kernel_1_1FacilityInfo.html" title="A class that holds information about a facility.">FacilityInfo</a> objects in the process. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01796">1796</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01795">1795</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00290">m_facilities</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00293">m_facilities</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00304">m_instrumentPrefixesCache</a>, and <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00305">m_isInstrumentPrefixesCached</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01732">updateFacilities()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00221">~ConfigServiceImpl()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01731">updateFacilities()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00220">~ConfigServiceImpl()</a>.</p>
 
 </div>
 </div>
@@ -745,11 +751,11 @@ Public Member Functions</h2></td></tr>
 
 <p>Configures the <a class="el" href="../../db/d3d/namespacePoco.html">Poco</a> logging and starts it up. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00401">401</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00400">400</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00269">m_pConf</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00272">m_pConf</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00992">setString()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00640">updateConfig()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00991">setString()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00639">updateConfig()</a>.</p>
 
 </div>
 </div>
@@ -779,11 +785,33 @@ Public Member Functions</h2></td></tr>
 <p>Writes out a fresh user properties file. </p>
 <p>writes a basic placeholder user.properties file to disk any errors are caught and logged, but not propagated </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00533">533</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00532">532</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01481">getUserPropertiesDir()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00283">m_user_properties_file_name</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01480">getUserPropertiesDir()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00286">m_user_properties_file_name</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00331">loadConfig()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00617">reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00330">loadConfig()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00616">reset()</a>.</p>
+
+</div>
+</div>
+<a id="a0eefff2f7f34b4c9819383e69ec18b38" name="a0eefff2f7f34b4c9819383e69ec18b38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eefff2f7f34b4c9819383e69ec18b38">&#9670;&#160;</a></span>findLongestInstrumentPrefix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string Mantid::Kernel::ConfigServiceImpl::findLongestInstrumentPrefix </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>hint</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01841">1841</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00293">m_facilities</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00304">m_instrumentPrefixesCache</a>, and <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00305">m_isInstrumentPrefixesCached</a>.</p>
 
 </div>
 </div>
@@ -806,9 +834,9 @@ Public Member Functions</h2></td></tr>
 <p>Gets the absolute path of the appdata directory.</p>
 <dl class="section return"><dt>Returns</dt><dd>The absolute path of the appdata directory </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01322">1322</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01321">1321</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01626">cacheInstrumentPaths()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00125">ConfigServiceImpl()</a>, <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01604">getVTPFileDirectory()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01625">cacheInstrumentPaths()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00125">ConfigServiceImpl()</a>, <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01603">getVTPFileDirectory()</a>.</p>
 
 </div>
 </div>
@@ -831,9 +859,9 @@ Public Member Functions</h2></td></tr>
 <p>Gets the name of the operating system Architecture.</p>
 <dl class="section return"><dt>Returns</dt><dd>The operating system architecture </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01131">1131</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01130">1130</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00271">m_pSysConfig</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00274">m_pSysConfig</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00125">ConfigServiceImpl()</a>.</p>
 
@@ -858,9 +886,9 @@ Public Member Functions</h2></td></tr>
 <p>Gets the absolute path of the current directory containing the dll.</p>
 <dl class="section return"><dt>Returns</dt><dd>The absolute path of the current directory containing the dll </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01303">1303</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01302">1302</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00271">m_pSysConfig</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00274">m_pSysConfig</a>.</p>
 
 </div>
 </div>
@@ -884,9 +912,9 @@ Public Member Functions</h2></td></tr>
 <p>Const version.</p>
 <dl class="section return"><dt>Returns</dt><dd>The absolute path of the current directory containing the dll </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01310">1310</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01309">1309</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00271">m_pSysConfig</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00274">m_pSysConfig</a>.</p>
 
 </div>
 </div>
@@ -909,11 +937,11 @@ Public Member Functions</h2></td></tr>
 <p>Return the list of search paths.</p>
 <dl class="section return"><dt>Returns</dt><dd>A vector of strings containing the defined search directories </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01497">1497</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01496">1496</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00285">m_dataSearchDirs</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00288">m_dataSearchDirs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01955">getFullPath()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01999">getFullPath()</a>.</p>
 
 </div>
 </div>
@@ -935,11 +963,11 @@ Public Member Functions</h2></td></tr>
 <p>Get the directory containing the program executable. </p>
 <dl class="section return"><dt>Returns</dt><dd>A string containing the path of the directory containing the executable, including a trailing slash </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01349">1349</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01348">1348</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01359">getPathToExecutable()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01358">getPathToExecutable()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00238">setBaseDirectory()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00237">setBaseDirectory()</a>.</p>
 
 </div>
 </div>
@@ -969,9 +997,9 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The string value of the property </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01091">1091</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01090">1090</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00271">m_pSysConfig</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00274">m_pSysConfig</a>.</p>
 
 </div>
 </div>
@@ -994,9 +1022,9 @@ Public Member Functions</h2></td></tr>
 <p>Gets a vector of the facility Information objects.</p>
 <dl class="section return"><dt>Returns</dt><dd>A vector of <a class="el" href="../../d7/d40/classMantid_1_1Kernel_1_1FacilityInfo.html" title="A class that holds information about a facility.">FacilityInfo</a> objects </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01843">1843</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01887">1887</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00290">m_facilities</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00293">m_facilities</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, and <a class="el" href="../../d4/d3f/MultiFileNameParser_8cpp_source.html#l00138">Mantid::Kernel::MultiFileNameParsing::Parser::Parser()</a>.</p>
 
@@ -1020,11 +1048,11 @@ Public Member Functions</h2></td></tr>
 <p>Get the default facility. </p>
 <dl class="section return"><dt>Returns</dt><dd>the facility information object </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01859">1859</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01903">1903</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01859">getFacility()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00777">getString()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01903">getFacility()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00776">getString()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, <a class="el" href="../../d1/d8c/InstrumentSelector_8cpp_source.html#l00126">MantidQt::MantidWidgets::InstrumentSelector::fillWithInstrumentsFromFacility()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01859">getFacility()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01873">getFacility()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01809">getInstrument()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01892">setFacility()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, <a class="el" href="../../d1/d8c/InstrumentSelector_8cpp_source.html#l00126">MantidQt::MantidWidgets::InstrumentSelector::fillWithInstrumentsFromFacility()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01903">getFacility()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01917">getFacility()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01810">getInstrument()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01936">setFacility()</a>.</p>
 
 </div>
 </div>
@@ -1059,9 +1087,9 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01873">1873</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01917">1917</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01859">getFacility()</a>, and <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00290">m_facilities</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01903">getFacility()</a>, and <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00293">m_facilities</a>.</p>
 
 </div>
 </div>
@@ -1091,11 +1119,11 @@ Public Member Functions</h2></td></tr>
 
 <p>Determine the name of the facilities file to use. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01676">1676</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01675">1675</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01593">getInstrumentDirectories()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00777">getString()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01592">getInstrumentDirectories()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00776">getString()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01732">updateFacilities()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01731">updateFacilities()</a>.</p>
 
 </div>
 </div>
@@ -1118,9 +1146,9 @@ Public Member Functions</h2></td></tr>
 <p>Gets a vector of the facility names.</p>
 <dl class="section return"><dt>Returns</dt><dd>A vector of the facility Names </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01848">1848</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01892">1892</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00290">m_facilities</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00293">m_facilities</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, and <a class="el" href="../../d1/d8c/InstrumentSelector_8cpp_source.html#l00126">MantidQt::MantidWidgets::InstrumentSelector::fillWithInstrumentsFromFacility()</a>.</p>
 
@@ -1158,9 +1186,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01955">1955</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01999">1999</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01497">getDataSearchDirs()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01593">getInstrumentDirectories()</a>, <a class="el" href="../../d6/d81/Glob_8cpp_source.html#l00035">Mantid::Kernel::Glob::glob()</a>, and <a class="el" href="../../de/d6d/Strings_8cpp_source.html#l00419">Mantid::Kernel::Strings::strip()</a>.</p>
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01496">getDataSearchDirs()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01592">getInstrumentDirectories()</a>, <a class="el" href="../../d6/d81/Glob_8cpp_source.html#l00035">Mantid::Kernel::Glob::glob()</a>, and <a class="el" href="../../de/d6d/Strings_8cpp_source.html#l00419">Mantid::Kernel::Strings::strip()</a>.</p>
 
 </div>
 </div>
@@ -1196,9 +1224,9 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01809">1809</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01810">1810</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01859">getFacility()</a>, <a class="el" href="../../da/ddf/Kernel_2src_2FacilityInfo_8cpp_source.html#l00172">Mantid::Kernel::FacilityInfo::instrument()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00290">m_facilities</a>, and <a class="el" href="../../da/d42/FacilityInfo_8h_source.html#l00041">Mantid::Kernel::FacilityInfo::name()</a>.</p>
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01903">getFacility()</a>, <a class="el" href="../../da/ddf/Kernel_2src_2FacilityInfo_8cpp_source.html#l00172">Mantid::Kernel::FacilityInfo::instrument()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00293">m_facilities</a>, and <a class="el" href="../../da/d42/FacilityInfo_8h_source.html#l00041">Mantid::Kernel::FacilityInfo::name()</a>.</p>
 
 </div>
 </div>
@@ -1221,11 +1249,11 @@ Public Member Functions</h2></td></tr>
 <p>Return the search directories for XML instrument definition files (IDFs)</p>
 <dl class="section return"><dt>Returns</dt><dd>An ordered list of paths for instrument searching </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01593">1593</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01592">1592</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00287">m_instrumentDirs</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00290">m_instrumentDirs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01676">getFacilityFilenames()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01955">getFullPath()</a>, and <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00106">Mantid::API::InstrumentFileFinder::getParameterPath()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01675">getFacilityFilenames()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01999">getFullPath()</a>, and <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00106">Mantid::API::InstrumentFileFinder::getParameterPath()</a>.</p>
 
 </div>
 </div>
@@ -1248,9 +1276,9 @@ Public Member Functions</h2></td></tr>
 <p>Return the base search directories for XML instrument definition files (IDFs)</p>
 <dl class="section return"><dt>Returns</dt><dd>a last entry of getInstrumentDirectories </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01599">1599</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01598">1598</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00287">m_instrumentDirs</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00290">m_instrumentDirs</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>.</p>
 
@@ -1282,11 +1310,11 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The string value of each key within a vector, or an empty vector if there isn't a key or it couldn't be found. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00800">800</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00799">799</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00269">m_pConf</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00272">m_pConf</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00809">getKeysRecursive()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00808">getKeysRecursive()</a>.</p>
 
 </div>
 </div>
@@ -1327,11 +1355,11 @@ Public Member Functions</h2></td></tr>
 <p>Returns a list of all keys under a given root key. </p>
 <p>Recursively gets a list of all config options from a given root node. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00809">809</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00808">808</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00800">getKeys()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00809">getKeysRecursive()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00799">getKeys()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00808">getKeysRecursive()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00809">getKeysRecursive()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00835">keys()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00808">getKeysRecursive()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00834">keys()</a>.</p>
 
 </div>
 </div>
@@ -1354,7 +1382,7 @@ Public Member Functions</h2></td></tr>
 <p>Return the full filename of the local properties file.</p>
 <dl class="section return"><dt>Returns</dt><dd>A string containing the full path to the local file. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01070">1070</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01069">1069</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00125">ConfigServiceImpl()</a>, and <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>.</p>
 
@@ -1375,7 +1403,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l02032">2032</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l02076">2076</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00219">Mantid::Kernel::Logger::getLevelName()</a>.</p>
 
@@ -1402,9 +1430,9 @@ Public Member Functions</h2></td></tr>
 <p>Gets the name of the computer running <a class="el" href="../../d8/d8e/namespaceMantid.html" title="Helper class which provides the Collimation Length for SANS instruments.">Mantid</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd>The name of the computer </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01105">1105</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01104">1104</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00271">m_pSysConfig</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00274">m_pSysConfig</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
 </div>
 </div>
@@ -1427,9 +1455,9 @@ Public Member Functions</h2></td></tr>
 <p>Gets the name of the host operating system.</p>
 <dl class="section return"><dt>Returns</dt><dd>The name pf the OS version </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01099">1099</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01098">1098</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00271">m_pSysConfig</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00274">m_pSysConfig</a>.</p>
 
 </div>
 </div>
@@ -1452,9 +1480,9 @@ Public Member Functions</h2></td></tr>
 <p>Gets the name of the operating system version.</p>
 <dl class="section return"><dt>Returns</dt><dd>The operating system version </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01137">1137</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01136">1136</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00271">m_pSysConfig</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00274">m_pSysConfig</a>.</p>
 
 </div>
 </div>
@@ -1477,9 +1505,9 @@ Public Member Functions</h2></td></tr>
 <p>Gets the name of the operating system version in a human readable form.</p>
 <dl class="section return"><dt>Returns</dt><dd>The operating system desciption </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01172">1172</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01171">1171</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01140">Mantid::Kernel::canRead()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01152">Mantid::Kernel::getValueFromStdOut()</a>, and <a class="el" href="../../db/d39/System_8h_source.html#l00048">UNUSED_ARG</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01139">Mantid::Kernel::canRead()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01151">Mantid::Kernel::getValueFromStdOut()</a>, and <a class="el" href="../../db/d39/System_8h_source.html#l00048">UNUSED_ARG</a>.</p>
 
 </div>
 </div>
@@ -1501,9 +1529,9 @@ Public Member Functions</h2></td></tr>
 <p>Get the full path to the executing program (i.e. </p>
 <p>whatever <a class="el" href="../../d8/d8e/namespaceMantid.html" title="Helper class which provides the Collimation Length for SANS instruments.">Mantid</a> is embedded in) </p><dl class="section return"><dt>Returns</dt><dd>A string containing the full path the executable </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01359">1359</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01358">1358</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01349">getDirectoryOfExecutable()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01348">getDirectoryOfExecutable()</a>.</p>
 
 </div>
 </div>
@@ -1526,11 +1554,11 @@ Public Member Functions</h2></td></tr>
 <p>Gets the directory that we consider to be the directory containing the Mantid.properties file.</p>
 <p>Basically, this is the either the directory pointed to by MANTIDPATH or the directory of the current executable if this is not set. </p><dl class="section return"><dt>Returns</dt><dd>The directory to consider as the base directory, including a trailing slash </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01472">1472</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01471">1471</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00277">m_strBaseDir</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00280">m_strBaseDir</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01626">cacheInstrumentPaths()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00125">ConfigServiceImpl()</a>, <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00422">makeAbsolute()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00617">reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01625">cacheInstrumentPaths()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00125">ConfigServiceImpl()</a>, <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00421">makeAbsolute()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00616">reset()</a>.</p>
 
 </div>
 </div>
@@ -1552,9 +1580,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Gets the proxy for the system. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01934">1934</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01978">1978</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d3b/NetworkProxyLinux_8cpp_source.html#l00017">Mantid::Kernel::NetworkProxy::getHttpProxy()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00298">m_isProxySet</a>, and <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00296">m_proxyInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d3b/NetworkProxyLinux_8cpp_source.html#l00017">Mantid::Kernel::NetworkProxy::getHttpProxy()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00301">m_isProxySet</a>, and <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00299">m_proxyInfo</a>.</p>
 
 </div>
 </div>
@@ -1596,11 +1624,11 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The string value of the property, or an empty string if the key cannot be found </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00777">777</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00776">776</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00293">m_configPaths</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00269">m_pConf</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00422">makeAbsolute()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00296">m_configPaths</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00272">m_pConf</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00421">makeAbsolute()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00502">cacheDataSearchPaths()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01626">cacheInstrumentPaths()</a>, <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01859">getFacility()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01676">getFacilityFilenames()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01027">getValue()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01604">getVTPFileDirectory()</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00154">MantidQt::API::RepoModel::RepoModel()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00659">saveConfig()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00992">setString()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00640">updateConfig()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00501">cacheDataSearchPaths()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01625">cacheInstrumentPaths()</a>, <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01903">getFacility()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01675">getFacilityFilenames()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01026">getValue()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01603">getVTPFileDirectory()</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00154">MantidQt::API::RepoModel::RepoModel()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00658">saveConfig()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00991">setString()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00639">updateConfig()</a>.</p>
 
 </div>
 </div>
@@ -1623,9 +1651,9 @@ Public Member Functions</h2></td></tr>
 <p>Gets the absolute path of the temp directory.</p>
 <dl class="section return"><dt>Returns</dt><dd>The absolute path of the temp directory </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01316">1316</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01315">1315</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00271">m_pSysConfig</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00274">m_pSysConfig</a>.</p>
 
 </div>
 </div>
@@ -1648,11 +1676,11 @@ Public Member Functions</h2></td></tr>
 <p>Return the full filename of the user properties file.</p>
 <dl class="section return"><dt>Returns</dt><dd>A string containing the full path to the user file </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01082">1082</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01081">1081</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01481">getUserPropertiesDir()</a>, and <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00283">m_user_properties_file_name</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01480">getUserPropertiesDir()</a>, and <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00286">m_user_properties_file_name</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00125">ConfigServiceImpl()</a>, <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00617">reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00125">ConfigServiceImpl()</a>, <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00616">reset()</a>.</p>
 
 </div>
 </div>
@@ -1674,9 +1702,9 @@ Public Member Functions</h2></td></tr>
 <p>Returns the username. </p>
 <dl class="section return"><dt>Returns</dt><dd>The name of the current user as reported by the environment. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01272">1272</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01271">1271</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00271">m_pSysConfig</a>, and <a class="el" href="../../db/d39/System_8h_source.html#l00048">UNUSED_ARG</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00274">m_pSysConfig</a>, and <a class="el" href="../../db/d39/System_8h_source.html#l00048">UNUSED_ARG</a>.</p>
 
 </div>
 </div>
@@ -1700,11 +1728,11 @@ Public Member Functions</h2></td></tr>
 <p>Needs to be writable</p>
 <p>A trailing slash is appended so that filenames can more easily be concatenated with this </p><dl class="section return"><dt>Returns</dt><dd>the directory that <a class="el" href="../../d8/d8e/namespaceMantid.html" title="Helper class which provides the Collimation Length for SANS instruments.">Mantid</a> should use for writing files </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01481">1481</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01480">1480</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00271">m_pSysConfig</a>, and <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00277">m_strBaseDir</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00274">m_pSysConfig</a>, and <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00280">m_strBaseDir</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00533">createUserPropertiesFile()</a>, <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01082">getUserFilename()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00331">loadConfig()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00532">createUserPropertiesFile()</a>, <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01081">getUserFilename()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00330">loadConfig()</a>.</p>
 
 </div>
 </div>
@@ -1735,9 +1763,9 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An optional container with the value if found </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01027">1027</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01026">1026</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d6d/Strings_8cpp_source.html#l00696">Mantid::Kernel::Strings::convert()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00777">getString()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d6d/Strings_8cpp_source.html#l00696">Mantid::Kernel::Strings::convert()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00776">getString()</a>.</p>
 
 </div>
 </div>
@@ -1768,7 +1796,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An optional container with the value if found </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01046">1046</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01045">1045</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
 </div>
 </div>
@@ -1791,9 +1819,9 @@ template&lt;&gt; </div>
 <p>Return the search directory for vtp files.</p>
 <dl class="section return"><dt>Returns</dt><dd>a path </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01604">1604</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01603">1603</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01322">getAppDataDir()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00777">getString()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01321">getAppDataDir()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00776">getString()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00125">ConfigServiceImpl()</a>.</p>
 
@@ -1825,11 +1853,11 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Boolean value denoting whether the exists or not. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00860">860</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00859">859</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00269">m_pConf</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00272">m_pConf</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00659">saveConfig()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00658">saveConfig()</a>.</p>
 
 </div>
 </div>
@@ -1860,7 +1888,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Boolean value denoting whether the file is an executable or not. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00938">938</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00937">937</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
 </div>
 </div>
@@ -1898,11 +1926,11 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the path was found </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00517">517</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00516">516</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00285">m_dataSearchDirs</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00288">m_dataSearchDirs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01559">appendDataSearchDir()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01558">appendDataSearchDir()</a>.</p>
 
 </div>
 </div>
@@ -1931,7 +1959,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the path is on a network drive. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01391">1391</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01390">1390</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
 </div>
 </div>
@@ -1955,9 +1983,9 @@ template&lt;&gt; </div>
 <p>This function is needed as Boost Python does not like calling function with default arguments.</p>
 <dl class="section return"><dt>Returns</dt><dd>Vector containing all config options </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00835">835</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00834">834</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00809">getKeysRecursive()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00808">getKeysRecursive()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>.</p>
 
@@ -2001,7 +2029,7 @@ template&lt;&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00977">977</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00976">976</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
 </div>
 </div>
@@ -2050,11 +2078,11 @@ template&lt;&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00331">331</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00330">330</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00533">createUserPropertiesFile()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01481">getUserPropertiesDir()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00274">m_changed_keys</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00269">m_pConf</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00279">m_propertyString</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00283">m_user_properties_file_name</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00381">readFile()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00532">createUserPropertiesFile()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01480">getUserPropertiesDir()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00277">m_changed_keys</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00272">m_pConf</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00282">m_propertyString</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00286">m_user_properties_file_name</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00380">readFile()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00640">updateConfig()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00639">updateConfig()</a>.</p>
 
 </div>
 </div>
@@ -2102,11 +2130,11 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A string containing an absolute path by resolving the relative directory with the executable directory </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00422">422</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00421">421</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01472">getPropertiesDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00422">makeAbsolute()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01471">getPropertiesDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00421">makeAbsolute()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00777">getString()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00422">makeAbsolute()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00776">getString()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00421">makeAbsolute()</a>.</p>
 
 </div>
 </div>
@@ -2154,9 +2182,9 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A boolean indicating whether opening the file was successful </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00381">381</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00380">380</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00331">loadConfig()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00330">loadConfig()</a>.</p>
 
 </div>
 </div>
@@ -2185,9 +2213,9 @@ template&lt;&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00849">849</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00848">848</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00274">m_changed_keys</a>, and <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00269">m_pConf</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00277">m_changed_keys</a>, and <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00272">m_pConf</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>.</p>
 
@@ -2217,9 +2245,9 @@ template&lt;&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01925">1925</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01969">1969</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00233">m_notificationCenter</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00236">m_notificationCenter</a>.</p>
 
 </div>
 </div>
@@ -2241,9 +2269,9 @@ template&lt;&gt; </div>
 <p>Reset to "factory" settings. Removes current user properties. </p>
 <p>Removes the user properties file &amp; loads a fresh configuration. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00617">617</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00616">616</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00533">createUserPropertiesFile()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01472">getPropertiesDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01082">getUserFilename()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00281">m_properties_file_name</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00640">updateConfig()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00532">createUserPropertiesFile()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01471">getPropertiesDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01081">getUserFilename()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00284">m_properties_file_name</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00639">updateConfig()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>.</p>
 
@@ -2279,9 +2307,9 @@ template&lt;&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00659">659</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00658">658</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00777">getString()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00860">hasProperty()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00274">m_changed_keys</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00776">getString()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00859">hasProperty()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00277">m_changed_keys</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>.</p>
 
@@ -2311,9 +2339,9 @@ template&lt;&gt; </div>
 <li>OSX only: the directory two directories up from the executable (which is the base on the OSX package. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00238">238</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00237">237</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01349">getDirectoryOfExecutable()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00281">m_properties_file_name</a>, and <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00277">m_strBaseDir</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01348">getDirectoryOfExecutable()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00284">m_properties_file_name</a>, and <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00280">m_strBaseDir</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00125">ConfigServiceImpl()</a>.</p>
 
@@ -2343,9 +2371,9 @@ template&lt;&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01513">1513</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01512">1512</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00992">setString()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00991">setString()</a>.</p>
 
 </div>
 </div>
@@ -2373,11 +2401,11 @@ template&lt;&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01503">1503</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01502">1502</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01503">setDataSearchDirs()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01502">setDataSearchDirs()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01522">appendDataSearchSubDir()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01503">setDataSearchDirs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01521">appendDataSearchSubDir()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01502">setDataSearchDirs()</a>.</p>
 
 </div>
 </div>
@@ -2411,9 +2439,9 @@ template&lt;&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01892">1892</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01936">1936</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01859">getFacility()</a>, <a class="el" href="../../da/d42/FacilityInfo_8h_source.html#l00058">Mantid::Kernel::FacilityInfo::instruments()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00992">setString()</a>.</p>
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01903">getFacility()</a>, <a class="el" href="../../da/d42/FacilityInfo_8h_source.html#l00058">Mantid::Kernel::FacilityInfo::instruments()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00991">setString()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>.</p>
 
@@ -2444,9 +2472,9 @@ template&lt;&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01585">1585</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01584">1584</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00287">m_instrumentDirs</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00290">m_instrumentDirs</a>.</p>
 
 </div>
 </div>
@@ -2486,11 +2514,11 @@ template&lt;&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l02011">2011</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l02055">2055</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00219">Mantid::Kernel::Logger::getLevelName()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00359">Mantid::Kernel::Logger::log()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00269">m_pConf</a>, <a class="el" href="../../dd/da4/Logger_8h_source.html#l00056">Mantid::Kernel::Logger::PriorityNames</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00337">Mantid::Kernel::Logger::setLevelForAll()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00219">Mantid::Kernel::Logger::getLevelName()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00359">Mantid::Kernel::Logger::log()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00272">m_pConf</a>, <a class="el" href="../../dd/da4/Logger_8h_source.html#l00056">Mantid::Kernel::Logger::PriorityNames</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00337">Mantid::Kernel::Logger::setLevelForAll()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00992">setString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00991">setString()</a>.</p>
 
 </div>
 </div>
@@ -2522,9 +2550,9 @@ template&lt;&gt; </div>
 
 <p>Sets the log level priority for all log channels. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l02022">2022</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l02066">2066</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00217">Mantid::Kernel::Logger::getLevel()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00219">Mantid::Kernel::Logger::getLevelName()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00359">Mantid::Kernel::Logger::log()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00269">m_pConf</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00337">Mantid::Kernel::Logger::setLevelForAll()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00217">Mantid::Kernel::Logger::getLevel()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00219">Mantid::Kernel::Logger::getLevelName()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00359">Mantid::Kernel::Logger::log()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00272">m_pConf</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00337">Mantid::Kernel::Logger::setLevelForAll()</a>.</p>
 
 </div>
 </div>
@@ -2564,11 +2592,11 @@ template&lt;&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00992">992</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00991">991</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01559">appendDataSearchDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00502">cacheDataSearchPaths()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01626">cacheInstrumentPaths()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00401">configureLogging()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00777">getString()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00274">m_changed_keys</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00233">m_notificationCenter</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00269">m_pConf</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l02011">setLogLevel()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01558">appendDataSearchDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00501">cacheDataSearchPaths()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01625">cacheInstrumentPaths()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00400">configureLogging()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00776">getString()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00277">m_changed_keys</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00236">m_notificationCenter</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00272">m_pConf</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l02055">setLogLevel()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01559">appendDataSearchDir()</a>, <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01513">setDataSearchDirs()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01892">setFacility()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01558">appendDataSearchDir()</a>, <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01512">setDataSearchDirs()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01936">setFacility()</a>.</p>
 
 </div>
 </div>
@@ -2615,11 +2643,11 @@ template&lt;&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00640">640</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00639">639</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01559">appendDataSearchDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00502">cacheDataSearchPaths()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01626">cacheInstrumentPaths()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00401">configureLogging()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00777">getString()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00331">loadConfig()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01558">appendDataSearchDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00501">cacheDataSearchPaths()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01625">cacheInstrumentPaths()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00400">configureLogging()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00776">getString()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00330">loadConfig()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00125">ConfigServiceImpl()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00617">reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00125">ConfigServiceImpl()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00616">reset()</a>.</p>
 
 </div>
 </div>
@@ -2655,9 +2683,9 @@ template&lt;&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01732">1732</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01731">1731</a> of file <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html">ConfigService.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01796">clearFacilities()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01676">getFacilityFilenames()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00290">m_facilities</a>, and <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01795">clearFacilities()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html#a84782d8d4900fd49dd71cf0f506f6be2">Mantid::Kernel::DateAndTimeHelpers::g_log</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01675">getFacilityFilenames()</a>, <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00293">m_facilities</a>, and <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00125">ConfigServiceImpl()</a>, and <a class="el" href="../../d5/de0/PythonInterface_2mantid_2kernel_2src_2Exports_2ConfigService_8cpp_source.html#l00082">export_ConfigService()</a>.</p>
 
@@ -2684,7 +2712,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00228">228</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00231">231</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
 
 </div>
 </div>
@@ -2711,9 +2739,9 @@ template&lt;&gt; </div>
 
 <p>A set of property keys that have been changed. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00274">274</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00277">277</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00331">loadConfig()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00849">remove()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00659">saveConfig()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00992">setString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00330">loadConfig()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00848">remove()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00658">saveConfig()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00991">setString()</a>.</p>
 
 </div>
 </div>
@@ -2739,9 +2767,9 @@ template&lt;&gt; </div>
 
 <p>List of config paths that may be relative. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00293">293</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00296">296</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00125">ConfigServiceImpl()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00777">getString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00125">ConfigServiceImpl()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00776">getString()</a>.</p>
 
 </div>
 </div>
@@ -2767,9 +2795,9 @@ template&lt;&gt; </div>
 
 <p>Store a list of data search paths. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00285">285</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00288">288</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01559">appendDataSearchDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01522">appendDataSearchSubDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00502">cacheDataSearchPaths()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01497">getDataSearchDirs()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00517">isInDataSearchList()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01558">appendDataSearchDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01521">appendDataSearchSubDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00501">cacheDataSearchPaths()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01496">getDataSearchDirs()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00516">isInDataSearchList()</a>.</p>
 
 </div>
 </div>
@@ -2795,9 +2823,9 @@ template&lt;&gt; </div>
 
 <p>The list of available facilities. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00290">290</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00293">293</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01796">clearFacilities()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01843">getFacilities()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01873">getFacility()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01848">getFacilityNames()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01809">getInstrument()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01732">updateFacilities()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01795">clearFacilities()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01841">findLongestInstrumentPrefix()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01887">getFacilities()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01917">getFacility()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01892">getFacilityNames()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01810">getInstrument()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01731">updateFacilities()</a>.</p>
 
 </div>
 </div>
@@ -2823,9 +2851,61 @@ template&lt;&gt; </div>
 
 <p>Store a list of instrument directory paths. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00287">287</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00290">290</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01626">cacheInstrumentPaths()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01593">getInstrumentDirectories()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01599">getInstrumentDirectory()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01585">setInstrumentDirectories()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01625">cacheInstrumentPaths()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01592">getInstrumentDirectories()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01598">getInstrumentDirectory()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01584">setInstrumentDirectories()</a>.</p>
+
+</div>
+</div>
+<a id="ab373429d7cbc841e6077bcb4602c601b" name="ab373429d7cbc841e6077bcb4602c601b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab373429d7cbc841e6077bcb4602c601b">&#9670;&#160;</a></span>m_instrumentPrefixesCache</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; Mantid::Kernel::ConfigServiceImpl::m_instrumentPrefixesCache</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00304">304</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01795">clearFacilities()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01841">findLongestInstrumentPrefix()</a>.</p>
+
+</div>
+</div>
+<a id="a2c903bce00d28bc760a31c7cbb2c9d76" name="a2c903bce00d28bc760a31c7cbb2c9d76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c903bce00d28bc760a31c7cbb2c9d76">&#9670;&#160;</a></span>m_isInstrumentPrefixesCached</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mantid::Kernel::ConfigServiceImpl::m_isInstrumentPrefixesCached = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00305">305</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01795">clearFacilities()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01841">findLongestInstrumentPrefix()</a>.</p>
 
 </div>
 </div>
@@ -2839,7 +2919,7 @@ template&lt;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Mantid::Kernel::ConfigServiceImpl::m_isProxySet</td>
+          <td class="memname">bool Mantid::Kernel::ConfigServiceImpl::m_isProxySet = false</td>
         </tr>
       </table>
   </td>
@@ -2851,9 +2931,9 @@ template&lt;&gt; </div>
 
 <p>whether the proxy has been populated yet </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00298">298</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00301">301</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01934">getProxy()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01978">getProxy()</a>.</p>
 
 </div>
 </div>
@@ -2879,9 +2959,9 @@ template&lt;&gt; </div>
 
 <p>Handles distribution of <a class="el" href="../../db/d3d/namespacePoco.html">Poco</a> signals. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00233">233</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00236">236</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01918">addObserver()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01925">removeObserver()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00992">setString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01962">addObserver()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01969">removeObserver()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00991">setString()</a>.</p>
 
 </div>
 </div>
@@ -2907,9 +2987,9 @@ template&lt;&gt; </div>
 
 <p>the POCO file config object </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00269">269</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00272">272</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00401">configureLogging()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00800">getKeys()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00777">getString()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00860">hasProperty()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00331">loadConfig()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00849">remove()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l02011">setLogLevel()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l02022">setLogLevel()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00992">setString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00400">configureLogging()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00799">getKeys()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00776">getString()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00859">hasProperty()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00330">loadConfig()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00848">remove()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l02055">setLogLevel()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l02066">setLogLevel()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00991">setString()</a>.</p>
 
 </div>
 </div>
@@ -2935,9 +3015,9 @@ template&lt;&gt; </div>
 
 <p>The filename of the <a class="el" href="../../d8/d8e/namespaceMantid.html" title="Helper class which provides the Collimation Length for SANS instruments.">Mantid</a> properties file. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00281">281</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00284">284</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00125">ConfigServiceImpl()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00617">reset()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00238">setBaseDirectory()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00125">ConfigServiceImpl()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00616">reset()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00237">setBaseDirectory()</a>.</p>
 
 </div>
 </div>
@@ -2963,9 +3043,9 @@ template&lt;&gt; </div>
 
 <p>The configuration properties in string format. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00279">279</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00282">282</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00331">loadConfig()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00330">loadConfig()</a>.</p>
 
 </div>
 </div>
@@ -2991,9 +3071,9 @@ template&lt;&gt; </div>
 
 <p>local cache of proxy details </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00296">296</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00299">299</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01934">getProxy()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01978">getProxy()</a>.</p>
 
 </div>
 </div>
@@ -3019,9 +3099,9 @@ template&lt;&gt; </div>
 
 <p>the POCO system Config Object </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00271">271</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00274">274</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01131">getComputerName()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01303">getCurrentDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01310">getCurrentDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01091">getEnvironment()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01105">getOSArchitecture()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01099">getOSName()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01137">getOSVersion()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01316">getTempDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01272">getUsername()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01481">getUserPropertiesDir()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01130">getComputerName()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01302">getCurrentDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01309">getCurrentDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01090">getEnvironment()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01104">getOSArchitecture()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01098">getOSName()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01136">getOSVersion()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01315">getTempDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01271">getUsername()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01480">getUserPropertiesDir()</a>.</p>
 
 </div>
 </div>
@@ -3047,9 +3127,9 @@ template&lt;&gt; </div>
 
 <p>The directory that is considered to be the base directory. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00277">277</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00280">280</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01472">getPropertiesDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01481">getUserPropertiesDir()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00238">setBaseDirectory()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01471">getPropertiesDir()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01480">getUserPropertiesDir()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00237">setBaseDirectory()</a>.</p>
 
 </div>
 </div>
@@ -3075,9 +3155,9 @@ template&lt;&gt; </div>
 
 <p>The filename of the <a class="el" href="../../d8/d8e/namespaceMantid.html" title="Helper class which provides the Collimation Length for SANS instruments.">Mantid</a> user properties file. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00283">283</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dbc/ConfigService_8h_source.html#l00286">286</a> of file <a class="el" href="../../d1/dbc/ConfigService_8h_source.html">ConfigService.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00533">createUserPropertiesFile()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01082">getUserFilename()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00331">loadConfig()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00532">createUserPropertiesFile()</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01081">getUserFilename()</a>, and <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l00330">loadConfig()</a>.</p>
 
 </div>
 </div>
