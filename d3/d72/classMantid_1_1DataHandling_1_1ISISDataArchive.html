@@ -113,9 +113,9 @@ Inheritance diagram for Mantid::DataHandling::ISISDataArchive:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad33641671c197224b15dd47be3e04616" id="r_ad33641671c197224b15dd47be3e04616"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d5/dee/classMantid_1_1API_1_1Result.html">API::Result</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d72/classMantid_1_1DataHandling_1_1ISISDataArchive.html#ad33641671c197224b15dd47be3e04616">getArchivePath</a> (const std::set&lt; std::string &gt; &amp;filenames, const std::vector&lt; std::string &gt; &amp;exts) const override</td></tr>
-<tr class="memdesc:ad33641671c197224b15dd47be3e04616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the path to a filename given the list of extensions to try.  <br /></td></tr>
-<tr class="separator:ad33641671c197224b15dd47be3e04616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e057a334777f25550bf8812c903a9b0" id="r_a1e057a334777f25550bf8812c903a9b0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d5/dee/classMantid_1_1API_1_1Result.html">API::Result</a>&lt; std::filesystem::path &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d72/classMantid_1_1DataHandling_1_1ISISDataArchive.html#a1e057a334777f25550bf8812c903a9b0">getArchivePath</a> (const std::set&lt; std::string &gt; &amp;hintstrs, const std::vector&lt; std::string &gt; &amp;exts) const override</td></tr>
+<tr class="memdesc:a1e057a334777f25550bf8812c903a9b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the path to a filename given the list of extensions to try.  <br /></td></tr>
+<tr class="separator:a1e057a334777f25550bf8812c903a9b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97d0bf0903c78ecdd651017994e282be" id="r_a97d0bf0903c78ecdd651017994e282be"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d72/classMantid_1_1DataHandling_1_1ISISDataArchive.html#a97d0bf0903c78ecdd651017994e282be">getCorrectExtension</a> (const std::string &amp;path, const std::vector&lt; std::string &gt; &amp;exts) const</td></tr>
 <tr class="memdesc:a97d0bf0903c78ecdd651017994e282be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public and virtual for testing purposes.  <br /></td></tr>
 <tr class="separator:a97d0bf0903c78ecdd651017994e282be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,8 +182,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad33641671c197224b15dd47be3e04616" name="ad33641671c197224b15dd47be3e04616"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad33641671c197224b15dd47be3e04616">&#9670;&#160;</a></span>getArchivePath()</h2>
+<a id="a1e057a334777f25550bf8812c903a9b0" name="a1e057a334777f25550bf8812c903a9b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e057a334777f25550bf8812c903a9b0">&#9670;&#160;</a></span>getArchivePath()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -192,7 +192,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../d5/dee/classMantid_1_1API_1_1Result.html">API::Result</a>&lt; std::string &gt; Mantid::DataHandling::ISISDataArchive::getArchivePath </td>
+          <td class="memname">const <a class="el" href="../../d5/dee/classMantid_1_1API_1_1Result.html">API::Result</a>&lt; std::filesystem::path &gt; Mantid::DataHandling::ISISDataArchive::getArchivePath </td>
           <td>(</td>
           <td class="paramtype">const std::set&lt; std::string &gt; &amp;&#160;</td>
           <td class="paramname"><em>filenames</em>, </td>
@@ -227,7 +227,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The full path to the first found </dd></dl>
 
-<p>Implements <a class="el" href="../../dc/df9/classMantid_1_1API_1_1IArchiveSearch.html#a04e6e250b3d4510e78222f6c6ebe8a3a">Mantid::API::IArchiveSearch</a>.</p>
+<p>Implements <a class="el" href="../../dc/df9/classMantid_1_1API_1_1IArchiveSearch.html#a1d3a4bea9ea9f0a6df243aaf42b406f6">Mantid::API::IArchiveSearch</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d5a/ISISDataArchive_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../d2/d5a/ISISDataArchive_8cpp_source.html">ISISDataArchive.cpp</a>.</p>
 

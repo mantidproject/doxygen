@@ -95,11 +95,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../da/d63/FileFinder_8h_source.html">MantidAPI/FileFinder.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../db/d9d/WarningSuppressions_8h_source.html">MantidKernel/WarningSuppressions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../df/d95/ReleaseGlobalInterpreterLock_8h_source.html">MantidPythonInterface/core/ReleaseGlobalInterpreterLock.h</a>&quot;</code><br />
 <code>#include &lt;boost/python/class.hpp&gt;</code><br />
 <code>#include &lt;boost/python/list.hpp&gt;</code><br />
-<code>#include &lt;boost/python/overloads.hpp&gt;</code><br />
 <code>#include &lt;boost/python/reference_existing_object.hpp&gt;</code><br />
 </div>
 <p><a href="../../d1/d47/PythonInterface_2mantid_2api_2src_2Exports_2FileFinder_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -108,6 +106,8 @@ $(function() {
 Functions</h2></td></tr>
 <tr class="memitem:a1b4f039a85fab1def2b2bf0aad060228" id="r_a1b4f039a85fab1def2b2bf0aad060228"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d47/PythonInterface_2mantid_2api_2src_2Exports_2FileFinder_8cpp.html#a1b4f039a85fab1def2b2bf0aad060228">export_FileFinder</a> ()</td></tr>
 <tr class="separator:a1b4f039a85fab1def2b2bf0aad060228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d05786f35d18f5d049627235e2ce6b5" id="r_a3d05786f35d18f5d049627235e2ce6b5"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d47/PythonInterface_2mantid_2api_2src_2Exports_2FileFinder_8cpp.html#a3d05786f35d18f5d049627235e2ce6b5">getFullPathProxy</a> (const <a class="el" href="../../df/d28/classMantid_1_1API_1_1FileFinderImpl.html">FileFinderImpl</a> &amp;self, const std::string &amp;path, const bool ignoreDirs=false)</td></tr>
+<tr class="separator:a3d05786f35d18f5d049627235e2ce6b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a361f92a93261b0113f2a69e57d744681" id="r_a361f92a93261b0113f2a69e57d744681"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d47/PythonInterface_2mantid_2api_2src_2Exports_2FileFinder_8cpp.html#a361f92a93261b0113f2a69e57d744681">runFinderProxy</a> (const <a class="el" href="../../df/d28/classMantid_1_1API_1_1FileFinderImpl.html">FileFinderImpl</a> &amp;self, const std::string &amp;hintstr, list exts_list, const bool useExtsOnly)</td></tr>
 <tr class="memdesc:a361f92a93261b0113f2a69e57d744681"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs FileFinder.findRuns after releasing the python GIL.  <br /></td></tr>
 <tr class="separator:a361f92a93261b0113f2a69e57d744681"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,9 +128,57 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d47/PythonInterface_2mantid_2api_2src_2Exports_2FileFinder_8cpp_source.html#l00056">56</a> of file <a class="el" href="../../d1/d47/PythonInterface_2mantid_2api_2src_2Exports_2FileFinder_8cpp_source.html">FileFinder.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d47/PythonInterface_2mantid_2api_2src_2Exports_2FileFinder_8cpp_source.html#l00052">52</a> of file <a class="el" href="../../d1/d47/PythonInterface_2mantid_2api_2src_2Exports_2FileFinder_8cpp_source.html">FileFinder.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/dbd/API_2src_2FileFinder_8cpp_source.html#l00094">Mantid::API::FileFinderImpl::getCaseSensitive()</a>, <a class="el" href="../../d8/dbd/API_2src_2FileFinder_8cpp_source.html#l00106">Mantid::API::FileFinderImpl::getFullPath()</a>, <a class="el" href="../../d1/d47/PythonInterface_2mantid_2api_2src_2Exports_2FileFinder_8cpp_source.html#l00041">runFinderProxy()</a>, and <a class="el" href="../../d8/dbd/API_2src_2FileFinder_8cpp_source.html#l00082">Mantid::API::FileFinderImpl::setCaseSensitive()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/dbd/API_2src_2FileFinder_8cpp_source.html#l00094">Mantid::API::FileFinderImpl::getCaseSensitive()</a>, <a class="el" href="../../d1/d47/PythonInterface_2mantid_2api_2src_2Exports_2FileFinder_8cpp_source.html#l00047">getFullPathProxy()</a>, <a class="el" href="../../d1/d47/PythonInterface_2mantid_2api_2src_2Exports_2FileFinder_8cpp_source.html#l00027">runFinderProxy()</a>, and <a class="el" href="../../d8/dbd/API_2src_2FileFinder_8cpp_source.html#l00082">Mantid::API::FileFinderImpl::setCaseSensitive()</a>.</p>
+
+</div>
+</div>
+<a id="a3d05786f35d18f5d049627235e2ce6b5" name="a3d05786f35d18f5d049627235e2ce6b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d05786f35d18f5d049627235e2ce6b5">&#9670;&#160;</a></span>getFullPathProxy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string getFullPathProxy </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/d28/classMantid_1_1API_1_1FileFinderImpl.html">FileFinderImpl</a> &amp;&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>ignoreDirs</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d47/PythonInterface_2mantid_2api_2src_2Exports_2FileFinder_8cpp_source.html#l00047">47</a> of file <a class="el" href="../../d1/d47/PythonInterface_2mantid_2api_2src_2Exports_2FileFinder_8cpp_source.html">FileFinder.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/dbd/API_2src_2FileFinder_8cpp_source.html#l00106">Mantid::API::FileFinderImpl::getFullPath()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d47/PythonInterface_2mantid_2api_2src_2Exports_2FileFinder_8cpp_source.html#l00052">export_FileFinder()</a>.</p>
 
 </div>
 </div>
@@ -183,9 +231,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d47/PythonInterface_2mantid_2api_2src_2Exports_2FileFinder_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../d1/d47/PythonInterface_2mantid_2api_2src_2Exports_2FileFinder_8cpp_source.html">FileFinder.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d47/PythonInterface_2mantid_2api_2src_2Exports_2FileFinder_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../d1/d47/PythonInterface_2mantid_2api_2src_2Exports_2FileFinder_8cpp_source.html">FileFinder.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/d47/PythonInterface_2mantid_2api_2src_2Exports_2FileFinder_8cpp_source.html#l00056">export_FileFinder()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/dbd/API_2src_2FileFinder_8cpp_source.html#l00575">Mantid::API::FileFinderImpl::findRuns()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d47/PythonInterface_2mantid_2api_2src_2Exports_2FileFinder_8cpp_source.html#l00052">export_FileFinder()</a>.</p>
 
 </div>
 </div>

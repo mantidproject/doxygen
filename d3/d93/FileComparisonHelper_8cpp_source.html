@@ -242,7 +242,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
 <div class="foldopen" id="foldopen00189" data-start="{" data-end="}">
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="../../d8/d31/namespaceFileComparisonHelper.html#a5b281506c4b2a0a44024a5dff6a56ab4">  189</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../d8/d31/namespaceFileComparisonHelper.html#a5b281506c4b2a0a44024a5dff6a56ab4">isEqualToReferenceFile</a>(<span class="keyword">const</span> std::string &amp;referenceFileName, <span class="keyword">const</span> std::string &amp;outFileFullPath) {</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  <span class="keyword">const</span> std::string referenceFilePath = Mantid::API::FileFinder::Instance().getFullPath(referenceFileName);</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  <span class="keyword">const</span> std::string referenceFilePath = Mantid::API::FileFinder::Instance().getFullPath(referenceFileName).string();</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  <span class="keywordflow">if</span> (referenceFilePath.empty()) {</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;No reference file with the name: &quot;</span> + referenceFileName +</div>

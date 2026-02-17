@@ -113,9 +113,9 @@ Inheritance diagram for Mantid::API::IArchiveSearch:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a04e6e250b3d4510e78222f6c6ebe8a3a" id="r_a04e6e250b3d4510e78222f6c6ebe8a3a"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../d5/dee/classMantid_1_1API_1_1Result.html">Result</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df9/classMantid_1_1API_1_1IArchiveSearch.html#a04e6e250b3d4510e78222f6c6ebe8a3a">getArchivePath</a> (const std::set&lt; std::string &gt; &amp;filenames, const std::vector&lt; std::string &gt; &amp;exts) const =0</td></tr>
-<tr class="memdesc:a04e6e250b3d4510e78222f6c6ebe8a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the full path to a data file in an archive.  <br /></td></tr>
-<tr class="separator:a04e6e250b3d4510e78222f6c6ebe8a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d3a4bea9ea9f0a6df243aaf42b406f6" id="r_a1d3a4bea9ea9f0a6df243aaf42b406f6"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../d5/dee/classMantid_1_1API_1_1Result.html">Result</a>&lt; std::filesystem::path &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df9/classMantid_1_1API_1_1IArchiveSearch.html#a1d3a4bea9ea9f0a6df243aaf42b406f6">getArchivePath</a> (const std::set&lt; std::string &gt; &amp;hintstrs, const std::vector&lt; std::string &gt; &amp;exts) const =0</td></tr>
+<tr class="memdesc:a1d3a4bea9ea9f0a6df243aaf42b406f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the full path to a data file in an archive.  <br /></td></tr>
+<tr class="separator:a1d3a4bea9ea9f0a6df243aaf42b406f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcb4e159c362778da2b44e2c3978ac8a" id="r_abcb4e159c362778da2b44e2c3978ac8a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df9/classMantid_1_1API_1_1IArchiveSearch.html#abcb4e159c362778da2b44e2c3978ac8a">~IArchiveSearch</a> ()=default</td></tr>
 <tr class="memdesc:abcb4e159c362778da2b44e2c3978ac8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <br /></td></tr>
 <tr class="separator:abcb4e159c362778da2b44e2c3978ac8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,7 +125,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Roman Tolchenov, Tessella plc </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>27/07/2010 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dbd/IArchiveSearch_8h_source.html#l00037">37</a> of file <a class="el" href="../../d0/dbd/IArchiveSearch_8h_source.html">IArchiveSearch.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/IArchiveSearch_8h_source.html#l00038">38</a> of file <a class="el" href="../../d0/dbd/IArchiveSearch_8h_source.html">IArchiveSearch.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abcb4e159c362778da2b44e2c3978ac8a" name="abcb4e159c362778da2b44e2c3978ac8a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abcb4e159c362778da2b44e2c3978ac8a">&#9670;&#160;</a></span>~IArchiveSearch()</h2>
@@ -155,8 +155,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a04e6e250b3d4510e78222f6c6ebe8a3a" name="a04e6e250b3d4510e78222f6c6ebe8a3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04e6e250b3d4510e78222f6c6ebe8a3a">&#9670;&#160;</a></span>getArchivePath()</h2>
+<a id="a1d3a4bea9ea9f0a6df243aaf42b406f6" name="a1d3a4bea9ea9f0a6df243aaf42b406f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d3a4bea9ea9f0a6df243aaf42b406f6">&#9670;&#160;</a></span>getArchivePath()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,10 +165,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const <a class="el" href="../../d5/dee/classMantid_1_1API_1_1Result.html">Result</a>&lt; std::string &gt; Mantid::API::IArchiveSearch::getArchivePath </td>
+          <td class="memname">virtual const <a class="el" href="../../d5/dee/classMantid_1_1API_1_1Result.html">Result</a>&lt; std::filesystem::path &gt; Mantid::API::IArchiveSearch::getArchivePath </td>
           <td>(</td>
           <td class="paramtype">const std::set&lt; std::string &gt; &amp;&#160;</td>
-          <td class="paramname"><em>filenames</em>, </td>
+          <td class="paramname"><em>hintstrs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -192,13 +192,13 @@ Public Member Functions</h2></td></tr>
 <p>Return the full path to a data file in an archive. </p>
 <p>The first match is returned </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filenames</td><td>:: A list of filenames (without extensions) to pass to the archive </td></tr>
+    <tr><td class="paramname">hintstrs</td><td>:: A list of filenames (without extensions) to pass to the archive </td></tr>
     <tr><td class="paramname">exts</td><td>:: A list of extensions to check for in turn against each file </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="../../d1/d75/classMantid_1_1DataHandling_1_1ORNLDataArchive.html#ac3dba2cc5825ac8c9309d64172b21288">Mantid::DataHandling::ORNLDataArchive</a>, and <a class="el" href="../../d3/d72/classMantid_1_1DataHandling_1_1ISISDataArchive.html#ad33641671c197224b15dd47be3e04616">Mantid::DataHandling::ISISDataArchive</a>.</p>
+<p>Implemented in <a class="el" href="../../d3/d72/classMantid_1_1DataHandling_1_1ISISDataArchive.html#a1e057a334777f25550bf8812c903a9b0">Mantid::DataHandling::ISISDataArchive</a>, and <a class="el" href="../../d1/d75/classMantid_1_1DataHandling_1_1ORNLDataArchive.html#a84458a97513c2eebce3adb8439f2ef10">Mantid::DataHandling::ORNLDataArchive</a>.</p>
 
 </div>
 </div>

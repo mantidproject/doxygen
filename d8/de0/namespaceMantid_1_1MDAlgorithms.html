@@ -600,9 +600,9 @@ Functions</h2></td></tr>
 <tr class="separator:afece48c3d550f528e06b3675b6c560d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a090c422c3a43a0d5be66ba90ada656bb" id="r_a090c422c3a43a0d5be66ba90ada656bb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de0/namespaceMantid_1_1MDAlgorithms.html#a090c422c3a43a0d5be66ba90ada656bb">f_eval2</a> (double <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#af9966bf83559a0e8759072837e5ab80f">x</a>, void *params)</td></tr>
 <tr class="separator:a090c422c3a43a0d5be66ba90ada656bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f68ef4a1b5eea8d40474a8afde477a4" id="r_a3f68ef4a1b5eea8d40474a8afde477a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de0/namespaceMantid_1_1MDAlgorithms.html#a3f68ef4a1b5eea8d40474a8afde477a4">fileExists</a> (const std::string &amp;filename)</td></tr>
-<tr class="memdesc:a3f68ef4a1b5eea8d40474a8afde477a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if a file with the given full path name exists.  <br /></td></tr>
-<tr class="separator:a3f68ef4a1b5eea8d40474a8afde477a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a29a46a38bf711b1f3018d23f0ac603" id="r_a3a29a46a38bf711b1f3018d23f0ac603"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de0/namespaceMantid_1_1MDAlgorithms.html#a3a29a46a38bf711b1f3018d23f0ac603">fileExists</a> (const std::filesystem::path &amp;filename)</td></tr>
+<tr class="memdesc:a3a29a46a38bf711b1f3018d23f0ac603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if a file with the given full path name exists.  <br /></td></tr>
+<tr class="separator:a3a29a46a38bf711b1f3018d23f0ac603"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab872afdd7d3338d711b929910bbbcd0e" id="r_ab872afdd7d3338d711b929910bbbcd0e"><td class="memItemLeft" align="right" valign="top">std::string MANTID_MDALGORITHMS_DLL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de0/namespaceMantid_1_1MDAlgorithms.html#ab872afdd7d3338d711b929910bbbcd0e">filterToExistingSources</a> (std::vector&lt; std::string &gt; &amp;input_data, std::vector&lt; double &gt; &amp;psi, std::vector&lt; double &gt; &amp;gl, std::vector&lt; double &gt; &amp;gs, std::vector&lt; double &gt; &amp;efix)</td></tr>
 <tr class="memdesc:ab872afdd7d3338d711b929910bbbcd0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reduce the vector of input data to only data files and workspaces which can be found.  <br /></td></tr>
 <tr class="separator:ab872afdd7d3338d711b929910bbbcd0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1701,8 +1701,8 @@ template&lt;size_t nd, size_t ond&gt; </div>
 
 </div>
 </div>
-<a id="a3f68ef4a1b5eea8d40474a8afde477a4" name="a3f68ef4a1b5eea8d40474a8afde477a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f68ef4a1b5eea8d40474a8afde477a4">&#9670;&#160;</a></span>fileExists()</h2>
+<a id="a3a29a46a38bf711b1f3018d23f0ac603" name="a3a29a46a38bf711b1f3018d23f0ac603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a29a46a38bf711b1f3018d23f0ac603">&#9670;&#160;</a></span>fileExists()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1710,7 +1710,7 @@ template&lt;size_t nd, size_t ond&gt; </div>
         <tr>
           <td class="memname">bool Mantid::MDAlgorithms::fileExists </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const std::filesystem::path &amp;&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
         </tr>

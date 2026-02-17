@@ -424,14 +424,14 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>        <span class="keywordflow">if</span> (!defaultExt.empty()) {</div>
 <div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>          <span class="keyword">auto</span> run = FileFinder::Instance().findRun(unresolvedFileName, std::vector&lt;std::string&gt;(1, defaultExt));</div>
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>          <span class="keywordflow">if</span> (run)</div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>            fullyResolvedFile = run.result();</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>            fullyResolvedFile = run.result().string();</div>
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>          <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>            errors += run.errors();</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span> </div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>          <span class="keyword">auto</span> run = FileFinder::Instance().findRun(unresolvedFileName, <a class="code hl_variable" href="../../d8/d84/classMantid_1_1API_1_1MultipleFileProperty.html#a762955114300914b3d329e598331d0af">m_exts</a>);</div>
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>          <span class="keywordflow">if</span> (run)</div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>            fullyResolvedFile = run.result();</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>            fullyResolvedFile = run.result().string();</div>
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>          <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>            errors += run.errors();</div>
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>        }</div>
