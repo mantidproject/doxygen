@@ -22,7 +22,7 @@ var searchData=
   ['peakshapefactory_5fconst_5fsptr_19',['PeakShapeFactory_const_sptr',['../db/d22/namespaceMantid_1_1DataObjects.html#a1151d477ee039e226757f14bdbc67e9c',1,'Mantid::DataObjects']]],
   ['peakshapefactory_5fsptr_20',['PeakShapeFactory_sptr',['../db/d22/namespaceMantid_1_1DataObjects.html#a881610bff79af24cbabfd43b33a36f04',1,'Mantid::DataObjects']]],
   ['peaksworkspace_5fconst_5fsptr_21',['PeaksWorkspace_const_sptr',['../db/d22/namespaceMantid_1_1DataObjects.html#a00d1db58b7521667c708a5899167f312',1,'Mantid::DataObjects']]],
-  ['peaksworkspace_5fsptr_22',['PeaksWorkspace_sptr',['../db/d22/namespaceMantid_1_1DataObjects.html#aac47790ca5fe37edcc9f59c63f25d988',1,'Mantid::DataObjects']]],
+  ['peaksworkspace_5fsptr_22',['PeaksWorkspace_sptr',['../db/d22/namespaceMantid_1_1DataObjects.html#a053aa6bc9a4d3d3987eaa02279f1154e',1,'Mantid::DataObjects']]],
   ['peaktransform_5fconst_5fsptr_23',['PeakTransform_const_sptr',['../dc/d67/namespaceMantid_1_1Geometry.html#a9c77a37d324663e7a1a1e1439a9792cb',1,'Mantid::Geometry']]],
   ['peaktransform_5fsptr_24',['PeakTransform_sptr',['../dc/d67/namespaceMantid_1_1Geometry.html#a7e46d8ccb20fdfb173d4dfda893c06c6',1,'Mantid::Geometry']]],
   ['peaktransformfactory_5fsptr_25',['PeakTransformFactory_sptr',['../dc/d67/namespaceMantid_1_1Geometry.html#a3447ebd4433ab1052e479369966dd26f',1,'Mantid::Geometry']]],

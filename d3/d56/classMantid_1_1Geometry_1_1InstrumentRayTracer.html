@@ -177,7 +177,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html">InstrumentRayTracer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00034">34</a> of file <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html">InstrumentRayTracer.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00058">m_instrument</a>.</p>
 
@@ -244,11 +244,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00124">124</a> of file <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html">InstrumentRayTracer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00123">123</a> of file <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html">InstrumentRayTracer.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d0/d7e/Geometry_2src_2Objects_2BoundingBox_8cpp_source.html#l00044">Mantid::Geometry::BoundingBox::doesLineIntersect()</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00063">m_boxCache</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00058">m_instrument</a>, and <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00065">m_mutex</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00058">trace()</a>, and <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00075">traceFromSample()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00057">trace()</a>, and <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00074">traceFromSample()</a>.</p>
 
 </div>
 </div>
@@ -270,9 +270,9 @@ Private Attributes</h2></td></tr>
 <p>Gets the results of the trace, then returns the first detector (that is NOT a monitor) found in the results. </p>
 <dl class="section return"><dt>Returns</dt><dd>sptr to <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html" title="Interface class for detector objects.">IDetector</a>, or an invalid sptr if not found </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00097">97</a> of file <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html">InstrumentRayTracer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00096">96</a> of file <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html">InstrumentRayTracer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00086">getResults()</a>, and <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00058">m_instrument</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00085">getResults()</a>, and <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00058">m_instrument</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d4/dce/RayTracerTester_8cpp_source.html#l00043">Mantid::Algorithms::RayTracerTester::exec()</a>, and <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00650">Mantid::DataObjects::Peak::findDetector()</a>.</p>
 
@@ -297,11 +297,11 @@ Private Attributes</h2></td></tr>
 <p>Return the results of any <a class="el" href="../../d3/d56/classMantid_1_1Geometry_1_1InstrumentRayTracer.html#ae5b1592929a2778d0252f8fea9ac5445" title="Trace a given track from the instrument source in the given direction and compile a list of results t...">trace()</a> calls since the last call the getResults.</p>
 <dl class="section return"><dt>Returns</dt><dd>A collection of links defining intersection information </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html">InstrumentRayTracer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00085">85</a> of file <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html">InstrumentRayTracer.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d3/de0/Track_8h_source.html#l00206">Mantid::Geometry::Track::cbegin()</a>, <a class="el" href="../../d3/de0/Track_8h_source.html#l00209">Mantid::Geometry::Track::cend()</a>, <a class="el" href="../../db/de0/Track_8cpp_source.html#l00055">Mantid::Geometry::Track::clearIntersectionResults()</a>, and <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00061">m_resultsTrack</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00097">getDetectorResult()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00096">getDetectorResult()</a>.</p>
 
 </div>
 </div>
@@ -330,9 +330,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html">InstrumentRayTracer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html">InstrumentRayTracer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00124">fireRay()</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00058">m_instrument</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00061">m_resultsTrack</a>, and <a class="el" href="../../db/de0/Track_8cpp_source.html#l00045">Mantid::Geometry::Track::reset()</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00123">fireRay()</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00058">m_instrument</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00061">m_resultsTrack</a>, and <a class="el" href="../../db/de0/Track_8cpp_source.html#l00045">Mantid::Geometry::Track::reset()</a>.</p>
 
 </div>
 </div>
@@ -360,9 +360,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00075">75</a> of file <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html">InstrumentRayTracer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00074">74</a> of file <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html">InstrumentRayTracer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00124">fireRay()</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00058">m_instrument</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00061">m_resultsTrack</a>, and <a class="el" href="../../db/de0/Track_8cpp_source.html#l00045">Mantid::Geometry::Track::reset()</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00123">fireRay()</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00058">m_instrument</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00061">m_resultsTrack</a>, and <a class="el" href="../../db/de0/Track_8cpp_source.html#l00045">Mantid::Geometry::Track::reset()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d4/dce/RayTracerTester_8cpp_source.html#l00043">Mantid::Algorithms::RayTracerTester::exec()</a>, and <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00650">Mantid::DataObjects::Peak::findDetector()</a>.</p>
 
@@ -393,7 +393,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00063">63</a> of file <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html">InstrumentRayTracer.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00124">fireRay()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00123">fireRay()</a>.</p>
 
 </div>
 </div>
@@ -421,7 +421,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00058">58</a> of file <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html">InstrumentRayTracer.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00124">fireRay()</a>, <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00097">getDetectorResult()</a>, <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00035">InstrumentRayTracer()</a>, <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00058">trace()</a>, and <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00075">traceFromSample()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00123">fireRay()</a>, <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00096">getDetectorResult()</a>, <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00034">InstrumentRayTracer()</a>, <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00057">trace()</a>, and <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00074">traceFromSample()</a>.</p>
 
 </div>
 </div>
@@ -449,7 +449,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00065">65</a> of file <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html">InstrumentRayTracer.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00124">fireRay()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00123">fireRay()</a>.</p>
 
 </div>
 </div>
@@ -478,7 +478,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00061">61</a> of file <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html">InstrumentRayTracer.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00086">getResults()</a>, <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00058">trace()</a>, and <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00075">traceFromSample()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00085">getResults()</a>, <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00057">trace()</a>, and <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00074">traceFromSample()</a>.</p>
 
 </div>
 </div>

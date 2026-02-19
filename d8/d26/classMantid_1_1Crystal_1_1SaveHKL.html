@@ -483,7 +483,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a1ea25139d8cc8fb934784533a10bab21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42cf1a24fd3e22e7837432ebfc8ef22c" id="r_a42cf1a24fd3e22e7837432ebfc8ef22c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d26/classMantid_1_1Crystal_1_1SaveHKL.html#a42cf1a24fd3e22e7837432ebfc8ef22c">m_smu</a> = 0.0</td></tr>
 <tr class="separator:a42cf1a24fd3e22e7837432ebfc8ef22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab62691fe17f479b0db2364aa990bcf1f" id="r_ab62691fe17f479b0db2364aa990bcf1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d22/namespaceMantid_1_1DataObjects.html#aac47790ca5fe37edcc9f59c63f25d988">DataObjects::PeaksWorkspace_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d26/classMantid_1_1Crystal_1_1SaveHKL.html#ab62691fe17f479b0db2364aa990bcf1f">m_ws</a></td></tr>
+<tr class="memitem:ab62691fe17f479b0db2364aa990bcf1f" id="r_ab62691fe17f479b0db2364aa990bcf1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d22/namespaceMantid_1_1DataObjects.html#a053aa6bc9a4d3d3987eaa02279f1154e">DataObjects::PeaksWorkspace_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d26/classMantid_1_1Crystal_1_1SaveHKL.html#ab62691fe17f479b0db2364aa990bcf1f">m_ws</a></td></tr>
 <tr class="separator:ab62691fe17f479b0db2364aa990bcf1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
@@ -671,11 +671,11 @@ Additional Inherited Members</h2></td></tr>
 </pre><p> p * input are the smu (scattering) and amu (absorption at 1.8 ang.) linear absorption coefficients, the radius r of the sample the theta angle and wavelength. the absorption (absn) and tbar are returned.</p>
 <p>a. j. schultz, june, 2008 </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00548">548</a> of file <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html">SaveHKL.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00550">550</a> of file <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html">SaveHKL.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/db2/AnvredCorrection_8cpp_source.html#l00493">Mantid::Crystal::AnvredCorrection::calc_Astar()</a>, <a class="el" href="../../db/dbc/SaveHKL_8h_source.html#l00048">m_amu</a>, <a class="el" href="../../db/dbc/SaveHKL_8h_source.html#l00047">m_smu</a>, and <a class="el" href="../../dc/db2/AnvredCorrection_8h_source.html#l00054">Mantid::Crystal::radtodeg</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/db2/AnvredCorrection_8cpp_source.html#l00496">Mantid::Crystal::AnvredCorrection::calc_Astar()</a>, <a class="el" href="../../db/dbc/SaveHKL_8h_source.html#l00048">m_amu</a>, <a class="el" href="../../db/dbc/SaveHKL_8h_source.html#l00047">m_smu</a>, and <a class="el" href="../../dc/db2/AnvredCorrection_8h_source.html#l00058">Mantid::Crystal::radtodeg</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00093">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00094">exec()</a>.</p>
 
 </div>
 </div>
@@ -738,9 +738,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#aace3ff902f31d5cfa309fff3d6b069aa">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00093">93</a> of file <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html">SaveHKL.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00094">94</a> of file <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html">SaveHKL.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00548">absorbSphere()</a>, <a class="el" href="../../d3/da9/Kernel_2src_2Material_8cpp_source.html#l00260">Mantid::Kernel::Material::absorbXSection()</a>, <a class="el" href="../../d7/dc7/LogManager_8h_source.html#l00090">Mantid::API::LogManager::addProperty()</a>, <a class="el" href="../../de/d6d/Strings_8cpp_source.html#l00696">Mantid::Kernel::Strings::convert()</a>, <a class="el" href="../../db/d31/Geometry_2src_2Crystal_2OrientedLattice_8cpp_source.html#l00156">Mantid::Geometry::OrientedLattice::cosFromDir()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00860">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01468">Mantid::Geometry::ShapeFactory::createSphere()</a>, <a class="el" href="../../db/d1c/EmptyValues_8h_source.html#l00042">Mantid::EMPTY_DBL()</a>, <a class="el" href="../../db/d1c/EmptyValues_8h_source.html#l00024">Mantid::EMPTY_INT()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00422">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00347">Mantid::DataObjects::BasePeak::getAbsorptionWeightedPathLength()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00347">Mantid::DataObjects::Peak::getBankName()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00335">Mantid::DataObjects::Peak::getCol()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00410">Mantid::DataObjects::Peak::getDetectorDirectionSampleFrame()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00265">Mantid::DataObjects::Peak::getDetectorID()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00426">Mantid::DataObjects::Peak::getDSpacing()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00093">Mantid::DataObjects::BasePeak::getH()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00102">Mantid::DataObjects::BasePeak::getHKL()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00184">Mantid::DataObjects::BasePeak::getIntensity()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00112">Mantid::DataObjects::BasePeak::getIntHKL()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00115">Mantid::DataObjects::BasePeak::getIntMNP()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00096">Mantid::DataObjects::BasePeak::getK()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00099">Mantid::DataObjects::BasePeak::getL()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00724">Mantid::DataObjects::Peak::getL1()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00728">Mantid::DataObjects::Peak::getL2()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00085">Mantid::DataObjects::BasePeak::getMonitorCount()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00233">Mantid::DataObjects::BasePeak::getPeakNumber()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01966">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01916">Mantid::API::Algorithm::getPropertyValue()</a>, <a class="el" href="../../da/d50/LogManager_8cpp_source.html#l00468">Mantid::API::LogManager::getPropertyValueAsType()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00326">Mantid::DataObjects::Peak::getRow()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00077">Mantid::DataObjects::BasePeak::getRunNumber()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00391">Mantid::DataObjects::Peak::getScattering()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00187">Mantid::DataObjects::BasePeak::getSigmaIntensity()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00418">Mantid::DataObjects::Peak::getSourceDirectionSampleFrame()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00373">Mantid::DataObjects::Peak::getTOF()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00358">Mantid::DataObjects::Peak::getWavelength()</a>, <a class="el" href="../../da/d50/LogManager_8cpp_source.html#l00365">Mantid::API::LogManager::hasProperty()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838abec25675775e9e0a0d783a5018b463e3">Mantid::Kernel::l2</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00045">lambda</a>, <a class="el" href="../../db/dbc/SaveHKL_8h_source.html#l00048">m_amu</a>, <a class="el" href="../../db/dbc/SaveHKL_8h_source.html#l00049">m_power_th</a>, <a class="el" href="../../db/dbc/SaveHKL_8h_source.html#l00047">m_smu</a>, <a class="el" href="../../db/dbc/SaveHKL_8h_source.html#l00046">m_ws</a>, <a class="el" href="../../dc/dd8/IndexPeaks_8cpp_source.html#l00056">maxOrder</a>, <a class="el" href="../../d3/da9/Kernel_2src_2Material_8cpp_source.html#l00189">Mantid::Kernel::Material::numberDensity()</a>, <a class="el" href="../../d0/df6/NeutronAtom_8h_source.html#l00025">Mantid::PhysicalConstants::NeutronAtom::ReferenceLambda</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00048">rho</a>, <a class="el" href="../../d9/ded/Utils_8h_source.html#l00037">Mantid::Kernel::Utils::round()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00197">Mantid::DataObjects::BasePeak::setIntensity()</a>, <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00270">Mantid::Kernel::IPropertyManager::setProperty()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00205">Mantid::DataObjects::BasePeak::setSigmaIntensity()</a>, <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00611">sizeBanks()</a>, <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00578">spectrumCalc()</a>, <a class="el" href="../../d3/da9/Kernel_2src_2Material_8cpp_source.html#l00252">Mantid::Kernel::Material::totalScatterXSection()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00550">absorbSphere()</a>, <a class="el" href="../../d3/da9/Kernel_2src_2Material_8cpp_source.html#l00260">Mantid::Kernel::Material::absorbXSection()</a>, <a class="el" href="../../d7/dc7/LogManager_8h_source.html#l00090">Mantid::API::LogManager::addProperty()</a>, <a class="el" href="../../de/d6d/Strings_8cpp_source.html#l00696">Mantid::Kernel::Strings::convert()</a>, <a class="el" href="../../db/d31/Geometry_2src_2Crystal_2OrientedLattice_8cpp_source.html#l00156">Mantid::Geometry::OrientedLattice::cosFromDir()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00860">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01468">Mantid::Geometry::ShapeFactory::createSphere()</a>, <a class="el" href="../../db/d1c/EmptyValues_8h_source.html#l00042">Mantid::EMPTY_DBL()</a>, <a class="el" href="../../db/d1c/EmptyValues_8h_source.html#l00024">Mantid::EMPTY_INT()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00422">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00347">Mantid::DataObjects::BasePeak::getAbsorptionWeightedPathLength()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00347">Mantid::DataObjects::Peak::getBankName()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00335">Mantid::DataObjects::Peak::getCol()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00410">Mantid::DataObjects::Peak::getDetectorDirectionSampleFrame()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00265">Mantid::DataObjects::Peak::getDetectorID()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a62504e89c25196a2d36a878940b48b25">Mantid::Geometry::IComponent::getDistance()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00426">Mantid::DataObjects::Peak::getDSpacing()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00093">Mantid::DataObjects::BasePeak::getH()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00102">Mantid::DataObjects::BasePeak::getHKL()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00184">Mantid::DataObjects::BasePeak::getIntensity()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00112">Mantid::DataObjects::BasePeak::getIntHKL()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00115">Mantid::DataObjects::BasePeak::getIntMNP()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00096">Mantid::DataObjects::BasePeak::getK()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00099">Mantid::DataObjects::BasePeak::getL()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00724">Mantid::DataObjects::Peak::getL1()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00728">Mantid::DataObjects::Peak::getL2()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00085">Mantid::DataObjects::BasePeak::getMonitorCount()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00233">Mantid::DataObjects::BasePeak::getPeakNumber()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01966">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01916">Mantid::API::Algorithm::getPropertyValue()</a>, <a class="el" href="../../da/d50/LogManager_8cpp_source.html#l00468">Mantid::API::LogManager::getPropertyValueAsType()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00326">Mantid::DataObjects::Peak::getRow()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00077">Mantid::DataObjects::BasePeak::getRunNumber()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00391">Mantid::DataObjects::Peak::getScattering()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00187">Mantid::DataObjects::BasePeak::getSigmaIntensity()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00418">Mantid::DataObjects::Peak::getSourceDirectionSampleFrame()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00373">Mantid::DataObjects::Peak::getTOF()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00358">Mantid::DataObjects::Peak::getWavelength()</a>, <a class="el" href="../../da/d50/LogManager_8cpp_source.html#l00365">Mantid::API::LogManager::hasProperty()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838abec25675775e9e0a0d783a5018b463e3">Mantid::Kernel::l2</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00045">lambda</a>, <a class="el" href="../../db/dbc/SaveHKL_8h_source.html#l00048">m_amu</a>, <a class="el" href="../../db/dbc/SaveHKL_8h_source.html#l00049">m_power_th</a>, <a class="el" href="../../db/dbc/SaveHKL_8h_source.html#l00047">m_smu</a>, <a class="el" href="../../db/dbc/SaveHKL_8h_source.html#l00046">m_ws</a>, <a class="el" href="../../dc/dd8/IndexPeaks_8cpp_source.html#l00056">maxOrder</a>, <a class="el" href="../../d3/da9/Kernel_2src_2Material_8cpp_source.html#l00189">Mantid::Kernel::Material::numberDensity()</a>, <a class="el" href="../../d0/df6/NeutronAtom_8h_source.html#l00025">Mantid::PhysicalConstants::NeutronAtom::ReferenceLambda</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00048">rho</a>, <a class="el" href="../../d9/ded/Utils_8h_source.html#l00037">Mantid::Kernel::Utils::round()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00197">Mantid::DataObjects::BasePeak::setIntensity()</a>, <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00270">Mantid::Kernel::IPropertyManager::setProperty()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00205">Mantid::DataObjects::BasePeak::setSigmaIntensity()</a>, <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00613">sizeBanks()</a>, <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00580">spectrumCalc()</a>, <a class="el" href="../../d3/da9/Kernel_2src_2Material_8cpp_source.html#l00252">Mantid::Kernel::Material::totalScatterXSection()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
 </div>
 </div>
@@ -772,7 +772,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a6dd0fd7bdcd432ca32c33f4a4c26583c">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html">SaveHKL.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html">SaveHKL.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../db/d1c/EmptyValues_8h_source.html#l00042">Mantid::EMPTY_DBL()</a>, <a class="el" href="../../db/d1c/EmptyValues_8h_source.html#l00024">Mantid::EMPTY_INT()</a>, <a class="el" href="../../d3/d68/Property_8h_source.html#l00053">Mantid::Kernel::Direction::Input</a>, <a class="el" href="../../d1/d17/FileProperty_8h_source.html#l00053">Mantid::API::FileProperty::OptionalLoad</a>, <a class="el" href="../../d3/d68/Property_8h_source.html#l00054">Mantid::Kernel::Direction::Output</a>, and <a class="el" href="../../d1/d17/FileProperty_8h_source.html#l00049">Mantid::API::FileProperty::Save</a>.</p>
 
@@ -880,11 +880,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00611">611</a> of file <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html">SaveHKL.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00613">613</a> of file <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html">SaveHKL.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../db/dbc/SaveHKL_8h_source.html#l00046">m_ws</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00093">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00094">exec()</a>.</p>
 
 </div>
 </div>
@@ -940,11 +940,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00578">578</a> of file <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html">SaveHKL.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00580">580</a> of file <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html">SaveHKL.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d4/da0/IEventList_8h_source.html#l00018">Mantid::API::TOF</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00093">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00094">exec()</a>.</p>
 
 </div>
 </div>
@@ -1033,7 +1033,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/dbc/SaveHKL_8h_source.html#l00048">48</a> of file <a class="el" href="../../db/dbc/SaveHKL_8h_source.html">SaveHKL.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00548">absorbSphere()</a>, and <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00093">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00550">absorbSphere()</a>, and <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00094">exec()</a>.</p>
 
 </div>
 </div>
@@ -1059,7 +1059,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/dbc/SaveHKL_8h_source.html#l00049">49</a> of file <a class="el" href="../../db/dbc/SaveHKL_8h_source.html">SaveHKL.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00093">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00094">exec()</a>.</p>
 
 </div>
 </div>
@@ -1085,7 +1085,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/dbc/SaveHKL_8h_source.html#l00047">47</a> of file <a class="el" href="../../db/dbc/SaveHKL_8h_source.html">SaveHKL.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00548">absorbSphere()</a>, and <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00093">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00550">absorbSphere()</a>, and <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00094">exec()</a>.</p>
 
 </div>
 </div>
@@ -1099,7 +1099,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../db/d22/namespaceMantid_1_1DataObjects.html#aac47790ca5fe37edcc9f59c63f25d988">DataObjects::PeaksWorkspace_sptr</a> Mantid::Crystal::SaveHKL::m_ws</td>
+          <td class="memname"><a class="el" href="../../db/d22/namespaceMantid_1_1DataObjects.html#a053aa6bc9a4d3d3987eaa02279f1154e">DataObjects::PeaksWorkspace_sptr</a> Mantid::Crystal::SaveHKL::m_ws</td>
         </tr>
       </table>
   </td>
@@ -1111,7 +1111,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/dbc/SaveHKL_8h_source.html#l00046">46</a> of file <a class="el" href="../../db/dbc/SaveHKL_8h_source.html">SaveHKL.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00093">exec()</a>, and <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00611">sizeBanks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00094">exec()</a>, and <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00613">sizeBanks()</a>.</p>
 
 </div>
 </div>
