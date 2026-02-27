@@ -19,7 +19,7 @@ var searchData=
   ['detectorsearchresult_16',['DetectorSearchResult',['../d5/db2/classMantid_1_1API_1_1DetectorSearcher.html#a3ba77649cda7e7cbef56227e4c3fea3c',1,'Mantid::API::DetectorSearcher']]],
   ['detid2det_5fmap_17',['detid2det_map',['../d8/d8e/namespaceMantid.html#a5a2298c14553c7ba91e31f787b084f2c',1,'Mantid']]],
   ['detid2index_5fmap_18',['detid2index_map',['../d8/d8e/namespaceMantid.html#a63d7c0719b457eaeb18288cf882a37c8',1,'Mantid']]],
-  ['detid_5ft_19',['detid_t',['../d8/d8e/namespaceMantid.html#a48bf366d08fb1b20ebb535f1b1b5c99e',1,'Mantid::detid_t'],['../d0/d24/namespaceMantid_1_1DataHandling_1_1LoadHelper.html#a63c4738c9a289b283704f2d502b19a73',1,'Mantid::DataHandling::LoadHelper::detid_t']]],
+  ['detid_5ft_19',['detid_t',['../d0/d24/namespaceMantid_1_1DataHandling_1_1LoadHelper.html#a63c4738c9a289b283704f2d502b19a73',1,'Mantid::DataHandling::LoadHelper::detid_t'],['../d8/d8e/namespaceMantid.html#a48bf366d08fb1b20ebb535f1b1b5c99e',1,'Mantid::detid_t']]],
   ['dict_20',['Dict',['../d0/d2e/namespaceMantidQt_1_1Widgets_1_1Common_1_1Python.html#a11bdcb4aedaa6788c4e87dc6b0416c03',1,'MantidQt::Widgets::Common::Python']]],
   ['difference_5ftype_21',['difference_type',['../d2/de5/structMantid_1_1DataHandling_1_1PulseIndexer_1_1Iterator.html#a21a84b21c3637faaf63063c2ec86df1d',1,'Mantid::DataHandling::PulseIndexer::Iterator']]],
   ['dimensioncontainertype_22',['DimensionContainerType',['../d8/dc3/classMantid_1_1Geometry_1_1MDGeometryBuilderXML.html#a6a4dc012d8d97b634ff4bbbcb32cf9be',1,'Mantid::Geometry::MDGeometryBuilderXML']]],
@@ -30,5 +30,6 @@ var searchData=
   ['domaincreatorfactory_27',['DomainCreatorFactory',['../d9/da0/namespaceMantid_1_1API.html#a0297ae958fa5db3fb5f3aa4a5096c6e9',1,'Mantid::API']]],
   ['doublefortranmatrix_28',['DoubleFortranMatrix',['../df/d3c/namespaceMantid_1_1CurveFitting.html#a01a17c2db70ee773fcd897c265e1f678',1,'Mantid::CurveFitting']]],
   ['doublefortranvector_29',['DoubleFortranVector',['../df/d3c/namespaceMantid_1_1CurveFitting.html#ad369debed7a73524cf4d82727e5eec47',1,'Mantid::CurveFitting']]],
-  ['dynamic_5fstride_30',['dynamic_stride',['../df/d3c/namespaceMantid_1_1CurveFitting.html#ac76b111580a6006fb7c665a08c17a556',1,'Mantid::CurveFitting']]]
+  ['dynamic_5fstride_30',['dynamic_stride',['../df/d3c/namespaceMantid_1_1CurveFitting.html#ac76b111580a6006fb7c665a08c17a556',1,'Mantid::CurveFitting']]],
+  ['dynamicfactorynotification_31',['DynamicFactoryNotification',['../dc/db6/classMantid_1_1Kernel_1_1DynamicFactory.html#a9750678e62e8e2789353e4cbdf3101de',1,'Mantid::Kernel::DynamicFactory']]]
 ];

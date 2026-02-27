@@ -124,7 +124,8 @@ var searchData=
   ['dynamicfactory_3c_20unit_20_3e_121',['DynamicFactory&lt; Unit &gt;',['../dc/db6/classMantid_1_1Kernel_1_1DynamicFactory.html',1,'Mantid::Kernel']]],
   ['dynamicfactory_3c_20usersubwindow_20_3e_122',['DynamicFactory&lt; UserSubWindow &gt;',['../dc/db6/classMantid_1_1Kernel_1_1DynamicFactory.html',1,'Mantid::Kernel']]],
   ['dynamicfactory_3c_20workspace_20_3e_123',['DynamicFactory&lt; Workspace &gt;',['../dc/db6/classMantid_1_1Kernel_1_1DynamicFactory.html',1,'Mantid::Kernel']]],
-  ['dynamicfactorynotification_124',['DynamicFactoryNotification',['../da/dfb/classMantid_1_1Kernel_1_1DynamicFactory_1_1DynamicFactoryNotification.html',1,'Mantid::Kernel::DynamicFactory']]],
-  ['dynamickubotoyabe_125',['DynamicKuboToyabe',['../de/d9f/classMantid_1_1CurveFitting_1_1Functions_1_1DynamicKuboToyabe.html',1,'Mantid::CurveFitting::Functions']]],
-  ['dynamicpropertieswidget_126',['DynamicPropertiesWidget',['../d2/d98/classMantidQt_1_1CustomDialogs_1_1DynamicPropertiesWidget.html',1,'MantidQt::CustomDialogs']]]
+  ['dynamicfactorynotification_124',['DynamicFactoryNotification',['../dd/dfc/classMantid_1_1Kernel_1_1DynamicFactoryNotification.html',1,'Mantid::Kernel']]],
+  ['dynamicfactoryupdatenotification_125',['DynamicFactoryUpdateNotification',['../d1/dc1/classMantid_1_1Kernel_1_1DynamicFactoryUpdateNotification.html',1,'Mantid::Kernel']]],
+  ['dynamickubotoyabe_126',['DynamicKuboToyabe',['../de/d9f/classMantid_1_1CurveFitting_1_1Functions_1_1DynamicKuboToyabe.html',1,'Mantid::CurveFitting::Functions']]],
+  ['dynamicpropertieswidget_127',['DynamicPropertiesWidget',['../d2/d98/classMantidQt_1_1CustomDialogs_1_1DynamicPropertiesWidget.html',1,'MantidQt::CustomDialogs']]]
 ];

@@ -90,7 +90,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -108,20 +107,13 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="../../da/df1/DynamicFactory_8h_source.html">Kernel/DynamicFactory.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dfb/classMantid_1_1Kernel_1_1DynamicFactory_1_1DynamicFactoryNotification.html">DynamicFactoryNotification</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for dynamic factory notifications.  <a href="../../da/dfb/classMantid_1_1Kernel_1_1DynamicFactory_1_1DynamicFactoryNotification.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d4e/classMantid_1_1Kernel_1_1DynamicFactory_1_1UpdateNotification.html">UpdateNotification</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A notification that the factory has been updated.  <a href="../../df/d4e/classMantid_1_1Kernel_1_1DynamicFactory_1_1UpdateNotification.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:af209225e6ff061a6af229a29bf135894" id="r_af209225e6ff061a6af229a29bf135894"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db6/classMantid_1_1Kernel_1_1DynamicFactory.html#af209225e6ff061a6af229a29bf135894">AbstractFactory</a> = <a class="el" href="../../d1/d87/classMantid_1_1Kernel_1_1AbstractInstantiator.html">AbstractInstantiator</a>&lt; Base &gt;</td></tr>
 <tr class="memdesc:af209225e6ff061a6af229a29bf135894"><td class="mdescLeft">&#160;</td><td class="mdescRight">A typedef for the instantiator.  <br /></td></tr>
 <tr class="separator:af209225e6ff061a6af229a29bf135894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9750678e62e8e2789353e4cbdf3101de" id="r_a9750678e62e8e2789353e4cbdf3101de"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db6/classMantid_1_1Kernel_1_1DynamicFactory.html#a9750678e62e8e2789353e4cbdf3101de">DynamicFactoryNotification</a> = <a class="el" href="../../dd/dfc/classMantid_1_1Kernel_1_1DynamicFactoryNotification.html">Mantid::Kernel::DynamicFactoryNotification</a></td></tr>
+<tr class="separator:a9750678e62e8e2789353e4cbdf3101de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f8e5eed06a62cd8f89114c45558f081" id="r_a8f8e5eed06a62cd8f89114c45558f081"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db6/classMantid_1_1Kernel_1_1DynamicFactory.html#a8f8e5eed06a62cd8f89114c45558f081">NotificationStatus</a> { <a class="el" href="../../dc/db6/classMantid_1_1Kernel_1_1DynamicFactory.html#a8f8e5eed06a62cd8f89114c45558f081a6680ccf30fbdd152a461acfd3d495cd7">Enabled</a>
 , <a class="el" href="../../dc/db6/classMantid_1_1Kernel_1_1DynamicFactory.html#a8f8e5eed06a62cd8f89114c45558f081afa17646f585a58e7400dcfce257c2d23">Disabled</a>
  }</td></tr>
@@ -132,6 +124,8 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:aa59cc1b236ae24fe27ab1b5ccf713b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines replacement behaviour.  <a href="../../dc/db6/classMantid_1_1Kernel_1_1DynamicFactory.html#aa59cc1b236ae24fe27ab1b5ccf713b26">More...</a><br /></td></tr>
 <tr class="separator:aa59cc1b236ae24fe27ab1b5ccf713b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82d28cf7ff1e0e795727d0fb06c12767" id="r_a82d28cf7ff1e0e795727d0fb06c12767"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db6/classMantid_1_1Kernel_1_1DynamicFactory.html#a82d28cf7ff1e0e795727d0fb06c12767">UpdateNotification</a> = <a class="el" href="../../d1/dc1/classMantid_1_1Kernel_1_1DynamicFactoryUpdateNotification.html">Mantid::Kernel::DynamicFactoryUpdateNotification</a></td></tr>
+<tr class="separator:a82d28cf7ff1e0e795727d0fb06c12767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -213,7 +207,7 @@ class Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;</div><p>The dynam
 <dl class="section author"><dt>Author</dt><dd>Nick Draper, Tessella Support Services plc </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>10/10/2007 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00047">47</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00064">64</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="af209225e6ff061a6af229a29bf135894" name="af209225e6ff061a6af229a29bf135894"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af209225e6ff061a6af229a29bf135894">&#9670;&#160;</a></span>AbstractFactory</h2>
@@ -231,7 +225,25 @@ template&lt;class Base , class Comparator  = CaseInsensitiveStringComparator&gt;
 
 <p>A typedef for the instantiator. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00078">78</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00088">88</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
+
+</div>
+</div>
+<a id="a9750678e62e8e2789353e4cbdf3101de" name="a9750678e62e8e2789353e4cbdf3101de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9750678e62e8e2789353e4cbdf3101de">&#9670;&#160;</a></span>DynamicFactoryNotification</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Base , class Comparator  = CaseInsensitiveStringComparator&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../dc/db6/classMantid_1_1Kernel_1_1DynamicFactory.html">Mantid::Kernel::DynamicFactory</a>&lt; Base, Comparator &gt;::DynamicFactoryNotification =  <a class="el" href="../../dd/dfc/classMantid_1_1Kernel_1_1DynamicFactoryNotification.html">Mantid::Kernel::DynamicFactoryNotification</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00074">74</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
 
 </div>
 </div>
@@ -259,7 +271,25 @@ template&lt;class Base , class Comparator  = CaseInsensitiveStringComparator&gt;
 
 <p>A typedef for the map of registered classes. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00200">200</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00210">210</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
+
+</div>
+</div>
+<a id="a82d28cf7ff1e0e795727d0fb06c12767" name="a82d28cf7ff1e0e795727d0fb06c12767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82d28cf7ff1e0e795727d0fb06c12767">&#9670;&#160;</a></span>UpdateNotification</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Base , class Comparator  = CaseInsensitiveStringComparator&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../dc/db6/classMantid_1_1Kernel_1_1DynamicFactory.html">Mantid::Kernel::DynamicFactory</a>&lt; Base, Comparator &gt;::UpdateNotification =  <a class="el" href="../../d1/dc1/classMantid_1_1Kernel_1_1DynamicFactoryUpdateNotification.html">Mantid::Kernel::DynamicFactoryUpdateNotification</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00075">75</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
 
 </div>
 </div>
@@ -284,7 +314,7 @@ template&lt;class Base , class Comparator  = CaseInsensitiveStringComparator&gt;
 <tr><td class="fieldname"><a id="a8f8e5eed06a62cd8f89114c45558f081afa17646f585a58e7400dcfce257c2d23" name="a8f8e5eed06a62cd8f89114c45558f081afa17646f585a58e7400dcfce257c2d23"></a>Disabled&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00051">51</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00068">68</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
 
 </div>
 </div>
@@ -308,7 +338,7 @@ template&lt;class Base , class Comparator  = CaseInsensitiveStringComparator&gt;
 <tr><td class="fieldname"><a id="aa59cc1b236ae24fe27ab1b5ccf713b26a08e23b3f31b73a90d04ba4ded6c2ea9b" name="aa59cc1b236ae24fe27ab1b5ccf713b26a08e23b3f31b73a90d04ba4ded6c2ea9b"></a>OverwriteCurrent&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00053">53</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00070">70</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
 
 </div>
 </div>
@@ -397,7 +427,7 @@ template&lt;class Base , class Comparator  = CaseInsensitiveStringComparator&gt;
 
 <p>Protected constructor for base class. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00188">188</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00198">198</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
 
 </div>
 </div>
@@ -439,9 +469,9 @@ template&lt;class Base , class Comparator  = CaseInsensitiveStringComparator&gt;
 
 <p>Reimplemented in <a class="el" href="../../dd/d38/classMantid_1_1API_1_1ImplicitFunctionFactoryImpl.html#a37aa2312f1734c57c14122d56848a9a5">Mantid::API::ImplicitFunctionFactoryImpl</a>, <a class="el" href="../../d3/d42/classMantid_1_1MDAlgorithms_1_1MDTransfFactoryImpl.html#adc3ba1d37acdd6cdd0e383e12ed85ee0">Mantid::MDAlgorithms::MDTransfFactoryImpl</a>, <a class="el" href="../../d2/d5e/classMantid_1_1API_1_1ColumnFactoryImpl.html#a7badb3177124144f3b1495dfa6a3fffc">Mantid::API::ColumnFactoryImpl</a>, <a class="el" href="../../d4/d03/classMantid_1_1API_1_1TransformScaleFactoryImpl.html#a5494dbb884fed06aacb3f57913ac3976">Mantid::API::TransformScaleFactoryImpl</a>, <a class="el" href="../../d4/ddb/classMantid_1_1API_1_1ImplicitFunctionParameterParserFactoryImpl.html#aeb74bf5394382cc213a8c7b436147f68">Mantid::API::ImplicitFunctionParameterParserFactoryImpl</a>, and <a class="el" href="../../d9/df9/classMantid_1_1API_1_1ImplicitFunctionParserFactoryImpl.html#aceb2186fce146d3cc29538034b7abece">Mantid::API::ImplicitFunctionParserFactoryImpl</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00089">89</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00099">99</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00202">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::_map</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00212">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::_map</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/dfb/LiveListenerFactory_8cpp_source.html#l00070">Mantid::API::LiveListenerFactoryImpl::create()</a>, <a class="el" href="../../d1/d61/MDTransfFactory_8cpp_source.html#l00018">Mantid::MDAlgorithms::MDTransfFactoryImpl::create()</a>, <a class="el" href="../../d5/dc8/ColumnFactory_8cpp_source.html#l00013">Mantid::API::ColumnFactoryImpl::create()</a>, <a class="el" href="../../d9/d65/TransformScaleFactory_8cpp_source.html#l00023">Mantid::API::TransformScaleFactoryImpl::create()</a>, and <a class="el" href="../../d5/d28/API_2src_2AlgorithmFactory_8cpp_source.html#l00439">Mantid::API::AlgorithmFactoryImpl::createAlgorithm()</a>.</p>
 
@@ -484,9 +514,9 @@ template&lt;class Base , class Comparator  = CaseInsensitiveStringComparator&gt;
 
 <p>Reimplemented in <a class="el" href="../../d8/dfa/classMantid_1_1API_1_1LiveListenerFactoryImpl.html#af0d5d23dbaccf5ccf11ee9d690188d98">Mantid::API::LiveListenerFactoryImpl</a>, <a class="el" href="../../d4/d03/classMantid_1_1API_1_1TransformScaleFactoryImpl.html#abef639a2a5d5a82bc0535864878a7fee">Mantid::API::TransformScaleFactoryImpl</a>, <a class="el" href="../../d5/d76/classMantidQt_1_1API_1_1UserSubWindowFactoryImpl.html#acd9140209f25a1a67d847f25ce2eab60">MantidQt::API::UserSubWindowFactoryImpl</a>, and <a class="el" href="../../dd/d38/classMantid_1_1API_1_1ImplicitFunctionFactoryImpl.html#a73cfea28b553b268aabac6a0b371c91b">Mantid::API::ImplicitFunctionFactoryImpl</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00106">106</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00116">116</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00202">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::_map</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00212">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::_map</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d9/d06/UserSubWindowFactory_8cpp_source.html#l00035">MantidQt::API::UserSubWindowFactoryImpl::createUnwrapped()</a>.</p>
 
@@ -519,9 +549,9 @@ template&lt;class Base , class Comparator  = CaseInsensitiveStringComparator&gt;
 
 <p>Disable notifications. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00075">75</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00085">85</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00051">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::Disabled</a>, and <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00204">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::m_notifyStatus</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00068">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::Disabled</a>, and <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00214">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::m_notifyStatus</a>.</p>
 
 </div>
 </div>
@@ -552,9 +582,9 @@ template&lt;class Base , class Comparator  = CaseInsensitiveStringComparator&gt;
 
 <p>Enable notifications. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00070">70</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00080">80</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00051">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::Enabled</a>, and <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00204">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::m_notifyStatus</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00068">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::Enabled</a>, and <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00214">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::m_notifyStatus</a>.</p>
 
 </div>
 </div>
@@ -593,9 +623,9 @@ template&lt;class Base , class Comparator  = CaseInsensitiveStringComparator&gt;
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true is the class is subscribed </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00167">167</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00177">177</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00202">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::_map</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00212">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::_map</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/d28/API_2src_2AlgorithmFactory_8cpp_source.html#l00109">Mantid::API::AlgorithmFactoryImpl::exists()</a>.</p>
 
@@ -631,9 +661,9 @@ template&lt;class Base , class Comparator  = CaseInsensitiveStringComparator&gt;
 
 <p>Reimplemented in <a class="el" href="../../d3/dc4/classMantid_1_1API_1_1AlgorithmFactoryImpl.html#ac82d7f485bc4df82c05e84e03de23528">Mantid::API::AlgorithmFactoryImpl</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00171">171</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00181">181</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00202">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::_map</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00212">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::_map</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/d28/API_2src_2AlgorithmFactory_8cpp_source.html#l00169">Mantid::API::AlgorithmFactoryImpl::getKeys()</a>.</p>
 
@@ -694,11 +724,11 @@ template&lt;class Base , class Comparator  = CaseInsensitiveStringComparator&gt;
 
 <p>Send an update notification. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00197">197</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00207">207</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00184">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::notificationCenter</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00194">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::notificationCenter</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00192">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::sendUpdateNotificationIfEnabled()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00202">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::sendUpdateNotificationIfEnabled()</a>.</p>
 
 </div>
 </div>
@@ -729,11 +759,11 @@ template&lt;class Base , class Comparator  = CaseInsensitiveStringComparator&gt;
 
 <p>Send an update notification if they are enabled. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00192">192</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00202">202</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00051">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::Enabled</a>, <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00204">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::m_notifyStatus</a>, and <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00197">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::sendUpdateNotification()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00068">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::Enabled</a>, <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00214">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::m_notifyStatus</a>, and <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00207">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::sendUpdateNotification()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00135">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::subscribe()</a>, and <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00154">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::unsubscribe()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00145">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::subscribe()</a>, and <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00164">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::unsubscribe()</a>.</p>
 
 </div>
 </div>
@@ -773,11 +803,11 @@ template&lt;class C &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00120">120</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00130">130</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00120">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::subscribe()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00130">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::subscribe()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00120">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::subscribe()</a>, and <a class="el" href="../../da/d04/API_2src_2FunctionFactory_8cpp_source.html#l00389">Mantid::API::FunctionFactoryImpl::subscribe()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00130">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::subscribe()</a>, and <a class="el" href="../../da/d04/API_2src_2FunctionFactory_8cpp_source.html#l00389">Mantid::API::FunctionFactoryImpl::subscribe()</a>.</p>
 
 </div>
 </div>
@@ -833,9 +863,9 @@ template&lt;class Base , class Comparator  = CaseInsensitiveStringComparator&gt;
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00135">135</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00145">145</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00202">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::_map</a>, <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00053">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::OverwriteCurrent</a>, and <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00192">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::sendUpdateNotificationIfEnabled()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00212">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::_map</a>, <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00070">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::OverwriteCurrent</a>, and <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00202">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::sendUpdateNotificationIfEnabled()</a>.</p>
 
 </div>
 </div>
@@ -873,9 +903,9 @@ template&lt;class Base , class Comparator  = CaseInsensitiveStringComparator&gt;
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00154">154</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00164">164</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00202">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::_map</a>, and <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00192">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::sendUpdateNotificationIfEnabled()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00212">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::_map</a>, and <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00202">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::sendUpdateNotificationIfEnabled()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/d28/API_2src_2AlgorithmFactory_8cpp_source.html#l00083">Mantid::API::AlgorithmFactoryImpl::unsubscribe()</a>, and <a class="el" href="../../da/d04/API_2src_2FunctionFactory_8cpp_source.html#l00396">Mantid::API::FunctionFactoryImpl::unsubscribe()</a>.</p>
 
@@ -906,9 +936,9 @@ template&lt;class Base , class Comparator  = CaseInsensitiveStringComparator&gt;
 
 <p>The map holding the registered class names and their instantiators. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00202">202</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00212">212</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00089">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::create()</a>, <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00106">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::createUnwrapped()</a>, <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00167">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::exists()</a>, <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00171">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::getKeys()</a>, <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00135">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::subscribe()</a>, and <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00154">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::unsubscribe()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00099">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::create()</a>, <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00116">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::createUnwrapped()</a>, <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00177">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::exists()</a>, <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00181">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::getKeys()</a>, <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00145">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::subscribe()</a>, and <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00164">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::unsubscribe()</a>.</p>
 
 </div>
 </div>
@@ -936,9 +966,9 @@ template&lt;class Base , class Comparator  = CaseInsensitiveStringComparator&gt;
 
 <p>Flag marking whether we should dispatch notifications. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00204">204</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00214">214</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00075">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::disableNotifications()</a>, <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00070">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::enableNotifications()</a>, and <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00192">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::sendUpdateNotificationIfEnabled()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00085">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::disableNotifications()</a>, <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00080">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::enableNotifications()</a>, and <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00202">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::sendUpdateNotificationIfEnabled()</a>.</p>
 
 </div>
 </div>
@@ -959,9 +989,9 @@ template&lt;class Base , class Comparator  = CaseInsensitiveStringComparator&gt;
 <p>Sends notifications to observers. </p>
 <p>Observers can subscribe to notificationCenter using Poco::NotificationCenter::addObserver(...) </p><dl class="section return"><dt>Returns</dt><dd>nothing </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00184">184</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00194">194</a> of file <a class="el" href="../../da/df1/DynamicFactory_8h_source.html">DynamicFactory.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00197">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::sendUpdateNotification()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/df1/DynamicFactory_8h_source.html#l00207">Mantid::Kernel::DynamicFactory&lt; Base, Comparator &gt;::sendUpdateNotification()</a>.</p>
 
 </div>
 </div>

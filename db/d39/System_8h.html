@@ -104,12 +104,12 @@ Macros</h2></td></tr>
 <tr class="memitem:aaf225a2b96038de3a42d61a1fa63654b" id="r_aaf225a2b96038de3a42d61a1fa63654b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/System_8h.html#aaf225a2b96038de3a42d61a1fa63654b">DEPRECATED</a>(func)&#160;&#160;&#160;func</td></tr>
 <tr class="memdesc:aaf225a2b96038de3a42d61a1fa63654b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Macro to mark a function as deprecated.  <br /></td></tr>
 <tr class="separator:aaf225a2b96038de3a42d61a1fa63654b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76a25d39b515cd13499e0d9047485247" id="r_a76a25d39b515cd13499e0d9047485247"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247">DLLExport</a></td></tr>
+<tr class="memitem:a76a25d39b515cd13499e0d9047485247" id="r_a76a25d39b515cd13499e0d9047485247"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247">DLLExport</a>&#160;&#160;&#160;__attribute__((visibility(&quot;default&quot;)))</td></tr>
 <tr class="memdesc:a76a25d39b515cd13499e0d9047485247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definitions of the DLLImport compiler directives for MSVC.  <br /></td></tr>
 <tr class="separator:a76a25d39b515cd13499e0d9047485247"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af126f360d5bf54003b9645966c167af9" id="r_af126f360d5bf54003b9645966c167af9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/System_8h.html#af126f360d5bf54003b9645966c167af9">DLLImport</a></td></tr>
 <tr class="separator:af126f360d5bf54003b9645966c167af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e587fd2393b420085d662b95fc887fd" id="r_a4e587fd2393b420085d662b95fc887fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/System_8h.html#a4e587fd2393b420085d662b95fc887fd">EXTERN_IMPORT</a></td></tr>
+<tr class="memitem:a4e587fd2393b420085d662b95fc887fd" id="r_a4e587fd2393b420085d662b95fc887fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/System_8h.html#a4e587fd2393b420085d662b95fc887fd">EXTERN_IMPORT</a>&#160;&#160;&#160;extern</td></tr>
 <tr class="separator:a4e587fd2393b420085d662b95fc887fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8440e0d0d5694191d05dc392a7a7f760" id="r_a8440e0d0d5694191d05dc392a7a7f760"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d39/System_8h.html#a8440e0d0d5694191d05dc392a7a7f760">UNUSED_ARG</a>(x)&#160;&#160;&#160;(void)x;</td></tr>
 <tr class="memdesc:a8440e0d0d5694191d05dc392a7a7f760"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function arguments are sometimes unused in certain implmentations but are required for documentation purposes.  <br /></td></tr>
@@ -134,7 +134,7 @@ Macros</h2></td></tr>
 
 <p>A Macro to mark a function as deprecated. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d39/System_8h_source.html#l00060">60</a> of file <a class="el" href="../../db/d39/System_8h_source.html">System.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d39/System_8h_source.html#l00056">56</a> of file <a class="el" href="../../db/d39/System_8h_source.html">System.h</a>.</p>
 
 </div>
 </div>
@@ -145,14 +145,14 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DLLExport</td>
+          <td class="memname">#define DLLExport&#160;&#160;&#160;__attribute__((visibility(&quot;default&quot;)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definitions of the DLLImport compiler directives for MSVC. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d39/System_8h_source.html#l00037">37</a> of file <a class="el" href="../../db/d39/System_8h_source.html">System.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d39/System_8h_source.html#l00033">33</a> of file <a class="el" href="../../db/d39/System_8h_source.html">System.h</a>.</p>
 
 </div>
 </div>
@@ -168,7 +168,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d39/System_8h_source.html#l00038">38</a> of file <a class="el" href="../../db/d39/System_8h_source.html">System.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d39/System_8h_source.html#l00034">34</a> of file <a class="el" href="../../db/d39/System_8h_source.html">System.h</a>.</p>
 
 </div>
 </div>
@@ -179,12 +179,12 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define EXTERN_IMPORT</td>
+          <td class="memname">#define EXTERN_IMPORT&#160;&#160;&#160;extern</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d39/System_8h_source.html#l00039">39</a> of file <a class="el" href="../../db/d39/System_8h_source.html">System.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d39/System_8h_source.html#l00035">35</a> of file <a class="el" href="../../db/d39/System_8h_source.html">System.h</a>.</p>
 
 </div>
 </div>
@@ -207,7 +207,7 @@ Macros</h2></td></tr>
 <p>Function arguments are sometimes unused in certain implmentations but are required for documentation purposes. </p>
 <p>This is a macro to silence compiler warnings about the subject </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d39/System_8h_source.html#l00048">48</a> of file <a class="el" href="../../db/d39/System_8h_source.html">System.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d39/System_8h_source.html#l00044">44</a> of file <a class="el" href="../../db/d39/System_8h_source.html">System.h</a>.</p>
 
 </div>
 </div>

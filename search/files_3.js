@@ -72,7 +72,7 @@ var searchData=
   ['detectorefficiencyvariation_2eh_69',['DetectorEfficiencyVariation.h',['../de/de1/DetectorEfficiencyVariation_8h.html',1,'']]],
   ['detectorgriddefinition_2ecpp_70',['DetectorGridDefinition.cpp',['../d6/dc2/DetectorGridDefinition_8cpp.html',1,'']]],
   ['detectorgriddefinition_2eh_71',['DetectorGridDefinition.h',['../d9/de6/DetectorGridDefinition_8h.html',1,'']]],
-  ['detectorgroup_2ecpp_72',['detectorgroup.cpp',['../d8/df0/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorGroup_8cpp.html',1,'(Global Namespace)'],['../d2/d4c/Geometry_2src_2Instrument_2DetectorGroup_8cpp.html',1,'(Global Namespace)']]],
+  ['detectorgroup_2ecpp_72',['detectorgroup.cpp',['../d2/d4c/Geometry_2src_2Instrument_2DetectorGroup_8cpp.html',1,'(Global Namespace)'],['../d8/df0/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorGroup_8cpp.html',1,'(Global Namespace)']]],
   ['detectorgroup_2eh_73',['DetectorGroup.h',['../da/d6f/DetectorGroup_8h.html',1,'']]],
   ['detectorinfo_2ecpp_74',['detectorinfo.cpp',['../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp.html',1,'(Global Namespace)'],['../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp.html',1,'(Global Namespace)']]],
   ['detectorinfo_2eh_75',['DetectorInfo.h',['../d7/d30/DetectorInfo_8h.html',1,'']]],
@@ -133,7 +133,7 @@ var searchData=
   ['divide_2eh_130',['Divide.h',['../d3/d44/Divide_8h.html',1,'']]],
   ['dividemd_2ecpp_131',['DivideMD.cpp',['../d4/d32/DivideMD_8cpp.html',1,'']]],
   ['dividemd_2eh_132',['DivideMD.h',['../dd/d03/DivideMD_8h.html',1,'']]],
-  ['dllconfig_2eh_133',['dllconfig.h',['../d0/d31/mantid_2kernel_2inc_2MantidPythonInterface_2kernel_2DllConfig_8h.html',1,'(Global Namespace)'],['../d7/dff/core_2inc_2MantidPythonInterface_2core_2DllConfig_8h.html',1,'(Global Namespace)']]],
+  ['dllconfig_2eh_133',['dllconfig.h',['../d7/dff/core_2inc_2MantidPythonInterface_2core_2DllConfig_8h.html',1,'(Global Namespace)'],['../d0/d31/mantid_2kernel_2inc_2MantidPythonInterface_2kernel_2DllConfig_8h.html',1,'(Global Namespace)']]],
   ['dllopen_2ecpp_134',['DllOpen.cpp',['../d8/db9/DllOpen_8cpp.html',1,'']]],
   ['dllopen_2eh_135',['DllOpen.h',['../dd/da8/DllOpen_8h.html',1,'']]],
   ['dlloption_2eh_136',['DllOption.h',['../dc/d51/DllOption_8h.html',1,'']]],
@@ -150,8 +150,9 @@ var searchData=
   ['downloadinstrument_2eh_147',['DownloadInstrument.h',['../d0/d21/DownloadInstrument_8h.html',1,'']]],
   ['dropeventhelper_2ecpp_148',['DropEventHelper.cpp',['../df/d44/DropEventHelper_8cpp.html',1,'']]],
   ['dropeventhelper_2eh_149',['DropEventHelper.h',['../df/d5c/DropEventHelper_8h.html',1,'']]],
-  ['dynamicfactory_2eh_150',['DynamicFactory.h',['../da/df1/DynamicFactory_8h.html',1,'']]],
-  ['dynamickubotoyabe_2ecpp_151',['DynamicKuboToyabe.cpp',['../dc/d8d/DynamicKuboToyabe_8cpp.html',1,'']]],
-  ['dynamickubotoyabe_2eh_152',['DynamicKuboToyabe.h',['../d6/dce/DynamicKuboToyabe_8h.html',1,'']]],
-  ['dynamicpointercasthelper_2eh_153',['DynamicPointerCastHelper.h',['../d1/d0e/DynamicPointerCastHelper_8h.html',1,'']]]
+  ['dynamicfactory_2ecpp_150',['DynamicFactory.cpp',['../d2/d0e/DynamicFactory_8cpp.html',1,'']]],
+  ['dynamicfactory_2eh_151',['DynamicFactory.h',['../da/df1/DynamicFactory_8h.html',1,'']]],
+  ['dynamickubotoyabe_2ecpp_152',['DynamicKuboToyabe.cpp',['../dc/d8d/DynamicKuboToyabe_8cpp.html',1,'']]],
+  ['dynamickubotoyabe_2eh_153',['DynamicKuboToyabe.h',['../d6/dce/DynamicKuboToyabe_8h.html',1,'']]],
+  ['dynamicpointercasthelper_2eh_154',['DynamicPointerCastHelper.h',['../d1/d0e/DynamicPointerCastHelper_8h.html',1,'']]]
 ];
