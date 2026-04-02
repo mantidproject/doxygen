@@ -203,7 +203,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="comment">// Get the number of monitors. We assume that all monitors are stored in the</span></div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="comment">// first spectra</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="keywordtype">int</span> n_monitors = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(inputWS-&gt;getInstrument()-&gt;getMonitors().size());</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="keywordtype">int</span> n_monitors = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(inputWS-&gt;getInstrument()-&gt;getMonitorIDs().size());</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="keyword">const</span> <span class="keyword">auto</span> numSpec = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(inputWS-&gt;getNumberHistograms());</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="comment">// Find center of mass and iterate until we converge</span></div>

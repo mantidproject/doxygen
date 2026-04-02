@@ -418,7 +418,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
 <div class="foldopen" id="foldopen00335" data-start="{" data-end="}">
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno"><a class="line" href="../../d4/db7/classMantid_1_1DataHandling_1_1LoadCalFile.html#a3a94b535ef0e75d493a78e88c7b19d0c">  335</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../d4/db7/classMantid_1_1DataHandling_1_1LoadCalFile.html#a3a94b535ef0e75d493a78e88c7b19d0c">LoadCalFile::idIsMonitor</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="../../dc/d67/namespaceMantid_1_1Geometry.html#ab5ea8cc526f9b217659fa38f568f86ef">Instrument_const_sptr</a> &amp;inst, <span class="keywordtype">int</span> detID) {</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  <span class="keyword">auto</span> monitorList = inst-&gt;getMonitors();</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  <span class="keyword">auto</span> monitorList = inst-&gt;getMonitorIDs();</div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>  <span class="keyword">auto</span> it = std::find(monitorList.begin(), monitorList.end(), detID);</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>  <span class="keywordflow">return</span> (it != monitorList.end());</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>}</div>

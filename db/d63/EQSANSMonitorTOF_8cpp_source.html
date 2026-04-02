@@ -152,7 +152,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="comment">// const double MD = MONITORPOS/1000.0;</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="comment">// Get the monitor</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keyword">const</span> std::vector&lt;detid_t&gt; monitor_list = inputWS-&gt;getInstrument()-&gt;getMonitors();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keyword">const</span> std::vector&lt;detid_t&gt; monitor_list = inputWS-&gt;getInstrument()-&gt;getMonitorIDs();</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordflow">if</span> (monitor_list.size() != 1)</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_variable" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a706ab5e821c27b1f2e221f89d766b809">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a56bbdfffa5a708ee5b613a82f1f0ab1a">error</a>() &lt;&lt; <span class="stringliteral">&quot;EQSANS workspace does not have exactly ones monitor! &quot;</span></div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                     <span class="stringliteral">&quot;This should not happen\n&quot;</span>;</div>
