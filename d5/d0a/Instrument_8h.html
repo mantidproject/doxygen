@@ -106,6 +106,7 @@ $(function() {
 <code>#include &quot;MantidTypes/Core/DateAndTime.h&quot;</code><br />
 <code>#include &lt;map&gt;</code><br />
 <code>#include &lt;queue&gt;</code><br />
+<code>#include &lt;stdexcept&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;tuple&gt;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
@@ -117,6 +118,12 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d03/classMantid_1_1Geometry_1_1Instrument.html">Mantid::Geometry::Instrument</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base <a class="el" href="../../da/d03/classMantid_1_1Geometry_1_1Instrument.html" title="Base Instrument Class.">Instrument</a> Class.  <a href="../../da/d03/classMantid_1_1Geometry_1_1Instrument.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d45/structMantid_1_1Geometry_1_1Instrument_1_1DetectorCache.html">Mantid::Geometry::Instrument::DetectorCache</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector of <a class="el" href="../../db/da5/structMantid_1_1Geometry_1_1Instrument_1_1DetectorCacheEntry.html" title="Tuple which holds detector-IDs and pointers to detector components, and monitor flags.">DetectorCacheEntry</a>, which holds the detector cache This is implemented as a vector rather than an ordered map to facilitate faster (unsorted) insertion some hotpaths requiring access by index.  <a href="../../d3/d45/structMantid_1_1Geometry_1_1Instrument_1_1DetectorCache.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/da5/structMantid_1_1Geometry_1_1Instrument_1_1DetectorCacheEntry.html">Mantid::Geometry::Instrument::DetectorCacheEntry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tuple which holds detector-IDs and pointers to detector components, and monitor flags.  <a href="../../db/da5/structMantid_1_1Geometry_1_1Instrument_1_1DetectorCacheEntry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
