@@ -166,7 +166,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  }</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  singleValued-&gt;mutableX(0)[0] = 0.0;</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  singleValued-&gt;mutableY(0)[0] = averageValue / weightSum;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  singleValued-&gt;mutableE(0)[0] = std::sqrt(weightSum);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  singleValued-&gt;mutableE(0)[0] = 1.0 / std::sqrt(weightSum);</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  this-&gt;<a class="code hl_function" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html#a3819af9d65d799ec151ab97c15f147e4">setProperty</a>(<span class="stringliteral">&quot;OutputWorkspace&quot;</span>, singleValued);</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}</div>
 </div>
