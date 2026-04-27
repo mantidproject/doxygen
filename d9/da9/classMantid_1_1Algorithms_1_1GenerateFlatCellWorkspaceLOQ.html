@@ -475,6 +475,10 @@ Public Member Functions</h2></td></tr>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:aeb8c134117e1b6a24b1c21779aa8871c" id="r_aeb8c134117e1b6a24b1c21779aa8871c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da9/classMantid_1_1Algorithms_1_1GenerateFlatCellWorkspaceLOQ.html#aeb8c134117e1b6a24b1c21779aa8871c">createAndSaveMaskWorkspace</a> (const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">API::MatrixWorkspace_sptr</a> &amp;ws, double normStdLAB, double normStdHAB)</td></tr>
 <tr class="separator:aeb8c134117e1b6a24b1c21779aa8871c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a751ac66c897e408456b5c6b9c625ca2d" id="r_a751ac66c897e408456b5c6b9c625ca2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da9/classMantid_1_1Algorithms_1_1GenerateFlatCellWorkspaceLOQ.html#a751ac66c897e408456b5c6b9c625ca2d">createDetectorMaskWorkspace</a> (const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">API::MatrixWorkspace_sptr</a> &amp;ws)</td></tr>
+<tr class="separator:a751ac66c897e408456b5c6b9c625ca2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b43feace37a5db028f0bf450e26e2c9" id="r_a8b43feace37a5db028f0bf450e26e2c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da9/classMantid_1_1Algorithms_1_1GenerateFlatCellWorkspaceLOQ.html#a8b43feace37a5db028f0bf450e26e2c9">createFlatcellWorkspace</a> (const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">API::MatrixWorkspace_sptr</a> &amp;ws)</td></tr>
+<tr class="separator:a8b43feace37a5db028f0bf450e26e2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c45b001dd570140985868609fe2474a" id="r_a7c45b001dd570140985868609fe2474a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da9/classMantid_1_1Algorithms_1_1GenerateFlatCellWorkspaceLOQ.html#a7c45b001dd570140985868609fe2474a">exec</a> () override</td></tr>
 <tr class="memdesc:a7c45b001dd570140985868609fe2474a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execution code.  <br /></td></tr>
 <tr class="separator:a7c45b001dd570140985868609fe2474a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -493,6 +497,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:ab0763cca6f0006b5b83c93c12d5e6859"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad26a3cc72f3a2523511d73afb001e6df" id="r_ad26a3cc72f3a2523511d73afb001e6df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d55/structMantid_1_1Algorithms_1_1GenerateFlatCellWorkspaceLOQ_1_1FlatCellStats.html">FlatCellStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da9/classMantid_1_1Algorithms_1_1GenerateFlatCellWorkspaceLOQ.html#ad26a3cc72f3a2523511d73afb001e6df">normalizeBanks</a> (std::span&lt; double &gt; values) const</td></tr>
 <tr class="separator:ad26a3cc72f3a2523511d73afb001e6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e52f87920b3e8660449bd17665137cd" id="r_a5e52f87920b3e8660449bd17665137cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da9/classMantid_1_1Algorithms_1_1GenerateFlatCellWorkspaceLOQ.html#a5e52f87920b3e8660449bd17665137cd">saveRKH</a> ()</td></tr>
+<tr class="separator:a5e52f87920b3e8660449bd17665137cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad528ebb8c9508672ff340f58b98b7e4a" id="r_ad528ebb8c9508672ff340f58b98b7e4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da9/classMantid_1_1Algorithms_1_1GenerateFlatCellWorkspaceLOQ.html#ad528ebb8c9508672ff340f58b98b7e4a">scale</a> (std::span&lt; double &gt; values, double factor) const</td></tr>
 <tr class="memdesc:ad528ebb8c9508672ff340f58b98b7e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scales each of the elements of the input vector.  <br /></td></tr>
 <tr class="separator:ad528ebb8c9508672ff340f58b98b7e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -699,11 +705,75 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00175">175</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00179">179</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00860">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01966">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01916">Mantid::API::Algorithm::getPropertyValue()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00035">Mantid::Algorithms::LoqMeta::HABIndexStart()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01974">Mantid::API::Algorithm::isDefault()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00031">Mantid::Algorithms::LoqMeta::LABIndexStart()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00032">Mantid::Algorithms::LoqMeta::LABTotalBanks()</a>, and <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00270">Mantid::Kernel::IPropertyManager::setProperty()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00860">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00239">createDetectorMaskWorkspace()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00257">createFlatcellWorkspace()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01966">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01916">Mantid::API::Algorithm::getPropertyValue()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00036">Mantid::Algorithms::LoqMeta::HABIndexStart()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01974">Mantid::API::Algorithm::isDefault()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00032">Mantid::Algorithms::LoqMeta::LABIndexStart()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00033">Mantid::Algorithms::LoqMeta::LABTotalBanks()</a>, and <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00282">saveRKH()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00095">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00100">exec()</a>.</p>
+
+</div>
+</div>
+<a id="a751ac66c897e408456b5c6b9c625ca2d" name="a751ac66c897e408456b5c6b9c625ca2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a751ac66c897e408456b5c6b9c625ca2d">&#9670;&#160;</a></span>createDetectorMaskWorkspace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mantid::Algorithms::GenerateFlatCellWorkspaceLOQ::createDetectorMaskWorkspace </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">API::MatrixWorkspace_sptr</a> &amp;&#160;</td>
+          <td class="paramname"><em>ws</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00239">239</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00860">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01916">Mantid::API::Algorithm::getPropertyValue()</a>, <a class="el" href="../../de/d06/SingletonHolder_8h_source.html#l00091">Mantid::Kernel::SingletonHolder&lt; T &gt;::Instance()</a>, and <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00031">Mantid::Algorithms::LoqMeta::monitors()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00179">createAndSaveMaskWorkspace()</a>.</p>
+
+</div>
+</div>
+<a id="a8b43feace37a5db028f0bf450e26e2c9" name="a8b43feace37a5db028f0bf450e26e2c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b43feace37a5db028f0bf450e26e2c9">&#9670;&#160;</a></span>createFlatcellWorkspace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mantid::Algorithms::GenerateFlatCellWorkspaceLOQ::createFlatcellWorkspace </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">API::MatrixWorkspace_sptr</a> &amp;&#160;</td>
+          <td class="paramname"><em>ws</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00257">257</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00860">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01966">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../de/d06/SingletonHolder_8h_source.html#l00091">Mantid::Kernel::SingletonHolder&lt; T &gt;::Instance()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00031">Mantid::Algorithms::LoqMeta::monitors()</a>, and <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00270">Mantid::Kernel::IPropertyManager::setProperty()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00179">createAndSaveMaskWorkspace()</a>.</p>
 
 </div>
 </div>
@@ -734,11 +804,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#aace3ff902f31d5cfa309fff3d6b069aa">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00095">95</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00100">100</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00175">createAndSaveMaskWorkspace()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00153">extractIntegratedValues()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01966">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00030">Mantid::Algorithms::LoqMeta::histograms()</a>, <a class="el" href="../../de/d06/SingletonHolder_8h_source.html#l00091">Mantid::Kernel::SingletonHolder&lt; T &gt;::Instance()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00164">integrateInput()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00125">normalizeBanks()</a>, <a class="el" href="../../d8/d7c/GenerateFlatCellWorkspaceLOQ_8h_source.html#l00038">Mantid::Algorithms::GenerateFlatCellWorkspaceLOQ::FlatCellStats::normStdHAB</a>, <a class="el" href="../../d8/d7c/GenerateFlatCellWorkspaceLOQ_8h_source.html#l00037">Mantid::Algorithms::GenerateFlatCellWorkspaceLOQ::FlatCellStats::normStdLAB</a>, <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00270">Mantid::Kernel::IPropertyManager::setProperty()</a>, and <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::Y</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00179">createAndSaveMaskWorkspace()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00157">extractIntegratedValues()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01966">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00030">Mantid::Algorithms::LoqMeta::histograms()</a>, <a class="el" href="../../de/d06/SingletonHolder_8h_source.html#l00091">Mantid::Kernel::SingletonHolder&lt; T &gt;::Instance()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00168">integrateInput()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00129">normalizeBanks()</a>, <a class="el" href="../../d8/d7c/GenerateFlatCellWorkspaceLOQ_8h_source.html#l00038">Mantid::Algorithms::GenerateFlatCellWorkspaceLOQ::FlatCellStats::normStdHAB</a>, <a class="el" href="../../d8/d7c/GenerateFlatCellWorkspaceLOQ_8h_source.html#l00037">Mantid::Algorithms::GenerateFlatCellWorkspaceLOQ::FlatCellStats::normStdLAB</a>, <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00270">Mantid::Kernel::IPropertyManager::setProperty()</a>, and <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::Y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00237">execEvent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00298">execEvent()</a>.</p>
 
 </div>
 </div>
@@ -767,9 +837,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Execution code for EventWorkspaces. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00237">237</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00298">298</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00095">exec()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00100">exec()</a>.</p>
 
 </div>
 </div>
@@ -797,11 +867,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00153">153</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00157">157</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::Y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00095">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00100">exec()</a>.</p>
 
 </div>
 </div>
@@ -832,7 +902,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a6dd0fd7bdcd432ca32c33f4a4c26583c">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01803">Mantid::API::Algorithm::declareProperty()</a>, <a class="el" href="../../d3/d68/Property_8h_source.html#l00053">Mantid::Kernel::Direction::Input</a>, and <a class="el" href="../../d3/d68/Property_8h_source.html#l00054">Mantid::Kernel::Direction::Output</a>.</p>
 
@@ -862,11 +932,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00164">164</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00168">168</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00860">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00030">Mantid::Algorithms::LoqMeta::histograms()</a>, and <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00031">Mantid::Algorithms::LoqMeta::LABIndexStart()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00860">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00030">Mantid::Algorithms::LoqMeta::histograms()</a>, and <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00032">Mantid::Algorithms::LoqMeta::LABIndexStart()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00095">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00100">exec()</a>.</p>
 
 </div>
 </div>
@@ -896,9 +966,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Computes the mean of the input span. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00060">60</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00065">65</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00125">normalizeBanks()</a>, and <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00066">stddev()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00129">normalizeBanks()</a>, and <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00071">stddev()</a>.</p>
 
 </div>
 </div>
@@ -957,11 +1027,42 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00125">125</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00129">129</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00036">Mantid::Algorithms::LoqMeta::HAB1IndexStop()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00037">Mantid::Algorithms::LoqMeta::HAB2IndexStop()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00038">Mantid::Algorithms::LoqMeta::HAB3IndexStop()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00035">Mantid::Algorithms::LoqMeta::HABIndexStart()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00034">Mantid::Algorithms::LoqMeta::HABIndividualBanks()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00033">Mantid::Algorithms::LoqMeta::HABTotalBanks()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00031">Mantid::Algorithms::LoqMeta::LABIndexStart()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00032">Mantid::Algorithms::LoqMeta::LABTotalBanks()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00060">mean()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00077">scale()</a>, and <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00066">stddev()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00037">Mantid::Algorithms::LoqMeta::HAB1IndexStop()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00038">Mantid::Algorithms::LoqMeta::HAB2IndexStop()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00039">Mantid::Algorithms::LoqMeta::HAB3IndexStop()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00036">Mantid::Algorithms::LoqMeta::HABIndexStart()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00035">Mantid::Algorithms::LoqMeta::HABIndividualBanks()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00034">Mantid::Algorithms::LoqMeta::HABTotalBanks()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00032">Mantid::Algorithms::LoqMeta::LABIndexStart()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00033">Mantid::Algorithms::LoqMeta::LABTotalBanks()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00065">mean()</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00082">scale()</a>, and <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00071">stddev()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00095">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00100">exec()</a>.</p>
+
+</div>
+</div>
+<a id="a5e52f87920b3e8660449bd17665137cd" name="a5e52f87920b3e8660449bd17665137cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e52f87920b3e8660449bd17665137cd">&#9670;&#160;</a></span>saveRKH()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mantid::Algorithms::GenerateFlatCellWorkspaceLOQ::saveRKH </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00282">282</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00860">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01966">Mantid::API::Algorithm::getProperty()</a>, and <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00282">saveRKH()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00179">createAndSaveMaskWorkspace()</a>, and <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00282">saveRKH()</a>.</p>
 
 </div>
 </div>
@@ -1001,11 +1102,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Scales each of the elements of the input vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00125">normalizeBanks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00129">normalizeBanks()</a>.</p>
 
 </div>
 </div>
@@ -1035,11 +1136,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Computes the standard deviation of the input span. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00066">66</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00071">71</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00802">Mantid::Geometry::m</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00060">mean()</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00802">Mantid::Geometry::m</a>, <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00065">mean()</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00125">normalizeBanks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00129">normalizeBanks()</a>.</p>
 
 </div>
 </div>
@@ -1102,7 +1203,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d2d/classMantid_1_1API_1_1IAlgorithm.html#ade9fd99ad205148bccc8a46e3c3c8b18">Mantid::API::IAlgorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00081">81</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html">GenerateFlatCellWorkspaceLOQ.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01966">Mantid::API::Algorithm::getProperty()</a>, and <a class="el" href="../../dc/d56/GenerateFlatCellWorkspaceLOQ_8cpp_source.html#l00030">Mantid::Algorithms::LoqMeta::histograms()</a>.</p>
 

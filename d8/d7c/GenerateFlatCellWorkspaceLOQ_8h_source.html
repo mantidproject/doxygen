@@ -146,12 +146,15 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordtype">void</span> createAndSaveMaskWorkspace(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">API::MatrixWorkspace_sptr</a> &amp;ws, <span class="keywordtype">double</span> normStdLAB, <span class="keywordtype">double</span> normStdHAB);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">API::MatrixWorkspace_sptr</a> integrateInput(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a67efae9d0a0899c159be4b1705bc3d76">API::Workspace_sptr</a> &amp;ws);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  std::vector&lt;double&gt; extractIntegratedValues(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">API::MatrixWorkspace_sptr</a> &amp;ws) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  FlatCellStats normalizeBanks(std::span&lt;double&gt; values) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordtype">void</span> createDetectorMaskWorkspace(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">API::MatrixWorkspace_sptr</a> &amp;ws);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keywordtype">void</span> createFlatcellWorkspace(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">API::MatrixWorkspace_sptr</a> &amp;ws);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordtype">void</span> saveRKH();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  FlatCellStats normalizeBanks(std::span&lt;double&gt; values) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
 </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>} <span class="comment">// namespace Algorithms</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>} <span class="comment">// namespace Mantid</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>} <span class="comment">// namespace Algorithms</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>} <span class="comment">// namespace Mantid</span></div>
 <div class="ttc" id="aAlgorithm_8h_html"><div class="ttname"><a href="../../d7/d36/Algorithm_8h.html">Algorithm.h</a></div></div>
 <div class="ttc" id="aWorkspaceFactory_8h_html"><div class="ttname"><a href="../../db/d7b/WorkspaceFactory_8h.html">WorkspaceFactory.h</a></div></div>
 <div class="ttc" id="aclassMantid_1_1API_1_1Algorithm_html"><div class="ttname"><a href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html">Mantid::API::Algorithm</a></div><div class="ttdoc">Base class from which all concrete algorithm classes should be derived.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d36/Algorithm_8h_source.html#l00076">Algorithm.h:76</a></div></div>
