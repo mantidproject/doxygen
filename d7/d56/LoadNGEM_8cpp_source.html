@@ -573,7 +573,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>  strategy-&gt;addFrame(rawFrames, goodFrames, eventCountInFrame, minEventsReq, maxEventsReq, frameEventCounts);</div>
 <div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>  <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a7ac471ebfae5ff09e8423fba191f09fd">progress</a>(0.90);</div>
 <div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>  dataWorkspace = createHistogramWorkspace(std::move(strategy-&gt;getBinEdges()), std::move(strategy-&gt;getCounts()));</div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>  <span class="keywordflow">return</span> {rawFrames, goodFrames, frameEventCounts, dataWorkspace};</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>  <span class="keywordflow">return</span> {rawFrames, goodFrames, std::move(frameEventCounts), std::move(dataWorkspace)};</div>
 <div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>}</div>
 </div>
 <div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span> </div>
