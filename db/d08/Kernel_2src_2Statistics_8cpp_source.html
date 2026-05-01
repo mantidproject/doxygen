@@ -153,8 +153,8 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(data[0]);</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keyword">const</span> <span class="keywordtype">bool</span> isSorted = std::is_sorted(data.cbegin(), data.cend());</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  std::vector&lt;TYPE&gt; tmpSortedData;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keyword">auto</span> sortedDataRef = std::ref(data);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keyword">auto</span> sortedDataRef = std::ref(data);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  std::vector&lt;TYPE&gt; tmpSortedData;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordflow">if</span> (!isSorted) {</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    tmpSortedData = data;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    std::sort(tmpSortedData.begin(), tmpSortedData.end());</div>

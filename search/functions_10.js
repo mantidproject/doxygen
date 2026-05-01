@@ -319,7 +319,7 @@ var searchData=
   ['polarization_316',['polarization',['../d2/d16/classMantid_1_1CurveFitting_1_1Functions_1_1Keren.html#aed1dbebed2532f03ee23cac2750b1916',1,'Mantid::CurveFitting::Functions::Keren']]],
   ['polarizationanglecorrectionmd_317',['PolarizationAngleCorrectionMD',['../d9/d5a/classMantid_1_1MDAlgorithms_1_1PolarizationAngleCorrectionMD.html#a89c2fc820f23dc4e143f1a65b3928b9a',1,'Mantid::MDAlgorithms::PolarizationAngleCorrectionMD']]],
   ['polars_318',['POLARS',['../de/de1/namespaceMantid_1_1DataHandling_1_1AlignAndFocusPowderSlim_1_1PropertyNames.html#ad274ea6375712dcf7817cb9e587c5ad5',1,'Mantid::DataHandling::AlignAndFocusPowderSlim::PropertyNames']]],
-  ['polint_319',['polint',['../dd/daf/namespaceMantid_1_1CurveFitting_1_1Functions.html#adb7d3a2a60dd38ed2f45d6b42a517677',1,'Mantid::CurveFitting::Functions']]],
+  ['polint_319',['polint',['../dd/daf/namespaceMantid_1_1CurveFitting_1_1Functions.html#a9a24f3407051c5dbd164a5f998d366df',1,'Mantid::CurveFitting::Functions']]],
   ['polsansvalidatorconstructor_320',['polSANSValidatorConstructor',['../d6/dfc/WorkspaceValidators_8cpp.html#a23690c75e7b168334d95d8fe2f63f104',1,'WorkspaceValidators.cpp']]],
   ['polsansworkspacevalidator_321',['PolSANSWorkspaceValidator',['../db/d39/classMantid_1_1API_1_1PolSANSWorkspaceValidator.html#a2abcfde1b658c8cdd50eecbac567e5bf',1,'Mantid::API::PolSANSWorkspaceValidator']]],
   ['polybase_322',['polybase',['../db/da9/classMantid_1_1mathLevel_1_1PolyBase.html#a98e999925516b81fe3883687207e82ed',1,'Mantid::mathLevel::PolyBase::PolyBase(int const)'],['../db/da9/classMantid_1_1mathLevel_1_1PolyBase.html#a304df01d1f2e58daf80dff280262e21d',1,'Mantid::mathLevel::PolyBase::PolyBase(int const, double const)']]],

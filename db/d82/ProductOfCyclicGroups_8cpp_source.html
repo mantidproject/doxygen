@@ -144,15 +144,13 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../d9/dc1/classMantid_1_1Geometry_1_1ProductOfCyclicGroups.html#af6443f5bd88b656dfbf84ae6cd7e7751">   45</a></span><a class="code hl_function" href="../../d9/dc1/classMantid_1_1Geometry_1_1ProductOfCyclicGroups.html#af6443f5bd88b656dfbf84ae6cd7e7751">ProductOfCyclicGroups::getProductOfCyclicGroups</a>(<span class="keyword">const</span> std::vector&lt;Group_const_sptr&gt; &amp;factorGroups)<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <a class="code hl_typedef" href="../../dc/d67/namespaceMantid_1_1Geometry.html#ae7cbc767003001f969bcaa3bbcb509c4">Group_const_sptr</a> productGroup = std::make_shared&lt;const Group&gt;(*(factorGroups.front()));</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; factorGroups.size(); ++i) {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    productGroup = productGroup * factorGroups[i];</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordflow">return</span> productGroup;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordflow">return</span> std::accumulate(</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      std::next(factorGroups.cbegin()), factorGroups.cend(), productGroup,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      [](<span class="keyword">const</span> <span class="keyword">auto</span> &amp;currentProductGroup, <span class="keyword">const</span> <span class="keyword">auto</span> &amp;factorGroup) { return currentProductGroup * factorGroup; });</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
 </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>} <span class="comment">// namespace Mantid::Geometry</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>} <span class="comment">// namespace Mantid::Geometry</span></div>
 <div class="ttc" id="aCyclicGroup_8h_html"><div class="ttname"><a href="../../d8/d75/CyclicGroup_8h.html">CyclicGroup.h</a></div></div>
 <div class="ttc" id="aProductOfCyclicGroups_8h_html"><div class="ttname"><a href="../../d5/dd1/ProductOfCyclicGroups_8h.html">ProductOfCyclicGroups.h</a></div></div>
 <div class="ttc" id="aSymmetryOperationFactory_8h_html"><div class="ttname"><a href="../../d4/d03/SymmetryOperationFactory_8h.html">SymmetryOperationFactory.h</a></div></div>
