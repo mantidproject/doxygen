@@ -113,6 +113,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2c4497138c791de6a5158d580d7de366" id="r_a2c4497138c791de6a5158d580d7de366"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc8/classMantid_1_1Kernel_1_1MemoryStats.html#a2c4497138c791de6a5158d580d7de366">availMemStr</a> () const</td></tr>
 <tr class="memdesc:a2c4497138c791de6a5158d580d7de366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the available memory of the system as a string.  <br /></td></tr>
 <tr class="separator:a2c4497138c791de6a5158d580d7de366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22090c32f118b883b9e8a9586b0232b6" id="r_a22090c32f118b883b9e8a9586b0232b6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc8/classMantid_1_1Kernel_1_1MemoryStats.html#a22090c32f118b883b9e8a9586b0232b6">checkAvailableMemory</a> (std::size_t const requestedMemoryBytes) const</td></tr>
+<tr class="memdesc:a22090c32f118b883b9e8a9586b0232b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there is enough space in memory to hold the requested amount of memory.  <br /></td></tr>
+<tr class="separator:a22090c32f118b883b9e8a9586b0232b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97c4814c653b35dbfb476186f21d82d8" id="r_a97c4814c653b35dbfb476186f21d82d8"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc8/classMantid_1_1Kernel_1_1MemoryStats.html#a97c4814c653b35dbfb476186f21d82d8">getCurrentRSS</a> () const</td></tr>
 <tr class="separator:a97c4814c653b35dbfb476186f21d82d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31e2f67748a1be21494e3095e6c2242c" id="r_a31e2f67748a1be21494e3095e6c2242c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc8/classMantid_1_1Kernel_1_1MemoryStats.html#a31e2f67748a1be21494e3095e6c2242c">getFreeRatio</a> () const</td></tr>
@@ -243,9 +246,9 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00402">402</a> of file <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html">Memory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d5c/Memory_8h_source.html#l00052">avail_memory</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d5c/Memory_8h_source.html#l00053">avail_memory</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/d42/Kernel_2src_2RebinParamsValidator_8cpp_source.html#l00021">Mantid::Kernel::RebinParamsValidator::checkValidity()</a>, <a class="el" href="../../dd/dac/LoadSQW_8cpp_source.html#l00101">Mantid::MDAlgorithms::LoadSQW::exec()</a>, <a class="el" href="../../de/dc1/PythonInterface_2mantid_2kernel_2src_2Exports_2Memory_8cpp_source.html#l00013">export_MemoryStats()</a>, <a class="el" href="../../dc/d52/MDEventWorkspace_8hxx_source.html#l00165">Mantid::DataObjects::MDEventWorkspace&lt; MDE, nd &gt;::setMinRecursionDepth()</a>, and <a class="el" href="../../d9/d93/LoadSQW2_8cpp_source.html#l00654">Mantid::MDAlgorithms::LoadSQW2::warnIfMemoryInsufficient()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00571">checkAvailableMemory()</a>, <a class="el" href="../../d7/d42/Kernel_2src_2RebinParamsValidator_8cpp_source.html#l00021">Mantid::Kernel::RebinParamsValidator::checkValidity()</a>, <a class="el" href="../../dd/dac/LoadSQW_8cpp_source.html#l00101">Mantid::MDAlgorithms::LoadSQW::exec()</a>, <a class="el" href="../../de/dc1/PythonInterface_2mantid_2kernel_2src_2Exports_2Memory_8cpp_source.html#l00013">export_MemoryStats()</a>, <a class="el" href="../../dc/d52/MDEventWorkspace_8hxx_source.html#l00165">Mantid::DataObjects::MDEventWorkspace&lt; MDE, nd &gt;::setMinRecursionDepth()</a>, and <a class="el" href="../../d9/d93/LoadSQW2_8cpp_source.html#l00654">Mantid::MDAlgorithms::LoadSQW2::warnIfMemoryInsufficient()</a>.</p>
 
 </div>
 </div>
@@ -269,7 +272,38 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00388">388</a> of file <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html">Memory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d5c/Memory_8h_source.html#l00052">avail_memory</a>, and <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00041">Mantid::Kernel::memToString()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d5c/Memory_8h_source.html#l00053">avail_memory</a>, and <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00041">Mantid::Kernel::memToString()</a>.</p>
+
+</div>
+</div>
+<a id="a22090c32f118b883b9e8a9586b0232b6" name="a22090c32f118b883b9e8a9586b0232b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22090c32f118b883b9e8a9586b0232b6">&#9670;&#160;</a></span>checkAvailableMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Mantid::Kernel::MemoryStats::checkAvailableMemory </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t const&#160;</td>
+          <td class="paramname"><em>requestedMemoryBytes</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if there is enough space in memory to hold the requested amount of memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">requestedMemoryBytes</td><td>:: The amount of memory that is being requested, in bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>error string if the requested memory would exceed the available memory; else empty string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00571">571</a> of file <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html">Memory.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00402">availMem()</a>, and <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>.</p>
 
 </div>
 </div>
@@ -316,7 +350,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00463">463</a> of file <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html">Memory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d5c/Memory_8h_source.html#l00052">avail_memory</a>, and <a class="el" href="../../de/d5c/Memory_8h_source.html#l00051">total_memory</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d5c/Memory_8h_source.html#l00053">avail_memory</a>, and <a class="el" href="../../de/d5c/Memory_8h_source.html#l00052">total_memory</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../de/dc1/PythonInterface_2mantid_2kernel_2src_2Exports_2Memory_8cpp_source.html#l00013">export_MemoryStats()</a>.</p>
 
@@ -371,7 +405,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00364">364</a> of file <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html">Memory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d5c/Memory_8h_source.html#l00048">ignore</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d5c/Memory_8h_source.html#l00049">ignore</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00332">MemoryStats()</a>.</p>
 
@@ -472,7 +506,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00408">408</a> of file <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html">Memory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d5c/Memory_8h_source.html#l00050">res_usage</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d5c/Memory_8h_source.html#l00051">res_usage</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../de/dc1/PythonInterface_2mantid_2kernel_2src_2Exports_2Memory_8cpp_source.html#l00013">export_MemoryStats()</a>.</p>
 
@@ -498,7 +532,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00376">376</a> of file <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html">Memory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00041">Mantid::Kernel::memToString()</a>, and <a class="el" href="../../de/d5c/Memory_8h_source.html#l00050">res_usage</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00041">Mantid::Kernel::memToString()</a>, and <a class="el" href="../../de/d5c/Memory_8h_source.html#l00051">res_usage</a>.</p>
 
 </div>
 </div>
@@ -522,7 +556,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00395">395</a> of file <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html">Memory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d5c/Memory_8h_source.html#l00051">total_memory</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d5c/Memory_8h_source.html#l00052">total_memory</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../de/dc1/PythonInterface_2mantid_2kernel_2src_2Exports_2Memory_8cpp_source.html#l00013">export_MemoryStats()</a>.</p>
 
@@ -548,7 +582,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00382">382</a> of file <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html">Memory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00041">Mantid::Kernel::memToString()</a>, and <a class="el" href="../../de/d5c/Memory_8h_source.html#l00051">total_memory</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00041">Mantid::Kernel::memToString()</a>, and <a class="el" href="../../de/d5c/Memory_8h_source.html#l00052">total_memory</a>.</p>
 
 </div>
 </div>
@@ -572,7 +606,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00347">347</a> of file <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html">Memory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d5c/Memory_8h_source.html#l00052">avail_memory</a>, <a class="el" href="../../de/d5c/Memory_8h_source.html#l00048">ignore</a>, <a class="el" href="../../de/d5c/Memory_8h_source.html#l00019">Mantid::Kernel::MEMORY_STATS_IGNORE_PROCESS</a>, <a class="el" href="../../de/d5c/Memory_8h_source.html#l00019">Mantid::Kernel::MEMORY_STATS_IGNORE_SYSTEM</a>, <a class="el" href="../../de/d5c/Memory_8h_source.html#l00055">mutexMemory</a>, <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00185">process_mem_system()</a>, <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00060">Mantid::Kernel::process_mem_usage()</a>, <a class="el" href="../../de/d5c/Memory_8h_source.html#l00050">res_usage</a>, <a class="el" href="../../de/d5c/Memory_8h_source.html#l00051">total_memory</a>, and <a class="el" href="../../de/d5c/Memory_8h_source.html#l00049">vm_usage</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d5c/Memory_8h_source.html#l00053">avail_memory</a>, <a class="el" href="../../de/d5c/Memory_8h_source.html#l00049">ignore</a>, <a class="el" href="../../de/d5c/Memory_8h_source.html#l00019">Mantid::Kernel::MEMORY_STATS_IGNORE_PROCESS</a>, <a class="el" href="../../de/d5c/Memory_8h_source.html#l00019">Mantid::Kernel::MEMORY_STATS_IGNORE_SYSTEM</a>, <a class="el" href="../../de/d5c/Memory_8h_source.html#l00056">mutexMemory</a>, <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00185">process_mem_system()</a>, <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00060">Mantid::Kernel::process_mem_usage()</a>, <a class="el" href="../../de/d5c/Memory_8h_source.html#l00051">res_usage</a>, <a class="el" href="../../de/d5c/Memory_8h_source.html#l00052">total_memory</a>, and <a class="el" href="../../de/d5c/Memory_8h_source.html#l00050">vm_usage</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../de/dc1/PythonInterface_2mantid_2kernel_2src_2Exports_2Memory_8cpp_source.html#l00013">export_MemoryStats()</a>, and <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00332">MemoryStats()</a>.</p>
 
@@ -598,7 +632,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00416">416</a> of file <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html">Memory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d5c/Memory_8h_source.html#l00049">vm_usage</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d5c/Memory_8h_source.html#l00050">vm_usage</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../de/dc1/PythonInterface_2mantid_2kernel_2src_2Exports_2Memory_8cpp_source.html#l00013">export_MemoryStats()</a>.</p>
 
@@ -624,7 +658,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00370">370</a> of file <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html">Memory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00041">Mantid::Kernel::memToString()</a>, and <a class="el" href="../../de/d5c/Memory_8h_source.html#l00049">vm_usage</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00041">Mantid::Kernel::memToString()</a>, and <a class="el" href="../../de/d5c/Memory_8h_source.html#l00050">vm_usage</a>.</p>
 
 </div>
 </div>
@@ -692,7 +726,7 @@ Friends</h2></td></tr>
 
 <p>Available memory of system in kiB. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d5c/Memory_8h_source.html#l00052">52</a> of file <a class="el" href="../../de/d5c/Memory_8h_source.html">Memory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d5c/Memory_8h_source.html#l00053">53</a> of file <a class="el" href="../../de/d5c/Memory_8h_source.html">Memory.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00402">availMem()</a>, <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00388">availMemStr()</a>, <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00463">getFreeRatio()</a>, and <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00347">update()</a>.</p>
 
@@ -720,7 +754,7 @@ Friends</h2></td></tr>
 
 <p>What fields to ignore. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d5c/Memory_8h_source.html#l00048">48</a> of file <a class="el" href="../../de/d5c/Memory_8h_source.html">Memory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d5c/Memory_8h_source.html#l00049">49</a> of file <a class="el" href="../../de/d5c/Memory_8h_source.html">Memory.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00364">ignoreFields()</a>, and <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00347">update()</a>.</p>
 
@@ -748,7 +782,7 @@ Friends</h2></td></tr>
 
 <p>Mutex to avoid simultaneous access to memory resources. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d5c/Memory_8h_source.html#l00055">55</a> of file <a class="el" href="../../de/d5c/Memory_8h_source.html">Memory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d5c/Memory_8h_source.html#l00056">56</a> of file <a class="el" href="../../de/d5c/Memory_8h_source.html">Memory.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00347">update()</a>.</p>
 
@@ -776,7 +810,7 @@ Friends</h2></td></tr>
 
 <p>Resident memory usage by process in kiB. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d5c/Memory_8h_source.html#l00050">50</a> of file <a class="el" href="../../de/d5c/Memory_8h_source.html">Memory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d5c/Memory_8h_source.html#l00051">51</a> of file <a class="el" href="../../de/d5c/Memory_8h_source.html">Memory.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00408">residentMem()</a>, <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00376">resUsageStr()</a>, and <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00347">update()</a>.</p>
 
@@ -804,7 +838,7 @@ Friends</h2></td></tr>
 
 <p>Total physical memory of system in kiB. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d5c/Memory_8h_source.html#l00051">51</a> of file <a class="el" href="../../de/d5c/Memory_8h_source.html">Memory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d5c/Memory_8h_source.html#l00052">52</a> of file <a class="el" href="../../de/d5c/Memory_8h_source.html">Memory.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00463">getFreeRatio()</a>, <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00395">totalMem()</a>, <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00382">totalMemStr()</a>, and <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00347">update()</a>.</p>
 
@@ -832,7 +866,7 @@ Friends</h2></td></tr>
 
 <p>Virtual memory usage by process in kiB. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d5c/Memory_8h_source.html#l00049">49</a> of file <a class="el" href="../../de/d5c/Memory_8h_source.html">Memory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d5c/Memory_8h_source.html#l00050">50</a> of file <a class="el" href="../../de/d5c/Memory_8h_source.html">Memory.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00347">update()</a>, <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00416">virtualMem()</a>, and <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00370">vmUsageStr()</a>.</p>
 

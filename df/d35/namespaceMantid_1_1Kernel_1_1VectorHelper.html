@@ -133,9 +133,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a211630c2e3d8a9ab2c825b373f92585a" id="r_a211630c2e3d8a9ab2c825b373f92585a"><td class="memItemLeft" align="right" valign="top">void MANTID_KERNEL_DLL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/namespaceMantid_1_1Kernel_1_1VectorHelper.html#a211630c2e3d8a9ab2c825b373f92585a">convertToBinCentre</a> (const std::vector&lt; double &gt; &amp;bin_edges, std::vector&lt; double &gt; &amp;bin_centres)</td></tr>
 <tr class="memdesc:a211630c2e3d8a9ab2c825b373f92585a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an array of bin boundaries to bin center values.  <br /></td></tr>
 <tr class="separator:a211630c2e3d8a9ab2c825b373f92585a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3ebd6f3e4c5c39385200849b482336a" id="r_aa3ebd6f3e4c5c39385200849b482336a"><td class="memItemLeft" align="right" valign="top">std::size_t MANTID_KERNEL_DLL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/namespaceMantid_1_1Kernel_1_1VectorHelper.html#aa3ebd6f3e4c5c39385200849b482336a">createAxisFromRebinParams</a> (const std::vector&lt; double &gt; &amp;params, std::vector&lt; double &gt; &amp;xnew, const bool resize_xnew, const bool full_bins_only, const double xMinHint, const double xMaxHint, const bool useReverseLogarithmic, const double power)</td></tr>
-<tr class="memdesc:aa3ebd6f3e4c5c39385200849b482336a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new output X array given a 'standard' set of rebinning parameters.  <br /></td></tr>
-<tr class="separator:aa3ebd6f3e4c5c39385200849b482336a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afacffbd216a18060fb7636c20edfc47e" id="r_afacffbd216a18060fb7636c20edfc47e"><td class="memItemLeft" align="right" valign="top">std::size_t MANTID_KERNEL_DLL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/namespaceMantid_1_1Kernel_1_1VectorHelper.html#afacffbd216a18060fb7636c20edfc47e">createAxisFromRebinParams</a> (const std::vector&lt; double &gt; &amp;params, std::vector&lt; double &gt; &amp;xnew, const bool resize_xnew, const bool full_bins_only, const double xMinHint, const double xMaxHint, const bool useReverseLogarithmic, const double power)</td></tr>
+<tr class="memdesc:afacffbd216a18060fb7636c20edfc47e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new output X array given a 'standard' set of rebinning parameters.  <br /></td></tr>
+<tr class="separator:afacffbd216a18060fb7636c20edfc47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a503cd4c2838f2b0d1de76df66d6b0d0d" id="r_a503cd4c2838f2b0d1de76df66d6b0d0d"><td class="memItemLeft" align="right" valign="top">std::size_t MANTID_KERNEL_DLL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/namespaceMantid_1_1Kernel_1_1VectorHelper.html#a503cd4c2838f2b0d1de76df66d6b0d0d">estimateNumberOfBins</a> (std::vector&lt; double &gt; const &amp;params, double const power)</td></tr>
+<tr class="memdesc:a503cd4c2838f2b0d1de76df66d6b0d0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a size_t with the estimated number of bins that would be needed for a rebinning operation.  <br /></td></tr>
+<tr class="separator:a503cd4c2838f2b0d1de76df66d6b0d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13b0e481b6e50d9da547fd3f541c6ddb" id="r_a13b0e481b6e50d9da547fd3f541c6ddb"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a13b0e481b6e50d9da547fd3f541c6ddb"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d35/namespaceMantid_1_1Kernel_1_1VectorHelper.html#a13b0e481b6e50d9da547fd3f541c6ddb">flattenVector</a> (const std::vector&lt; std::vector&lt; T &gt; &gt; &amp;v)</td></tr>
 <tr class="memdesc:a13b0e481b6e50d9da547fd3f541c6ddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience function to "flatten" the given vector of vectors into a single vector.  <br /></td></tr>
@@ -199,6 +202,9 @@ Functions</h2></td></tr>
 <tr class="separator:a35e52559bedac89c1442c7dce353d784"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a264bc104243ca484f8a732e7a5536dab" id="r_a264bc104243ca484f8a732e7a5536dab"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="../../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247">DLLExport</a> std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/namespaceMantid_1_1Kernel_1_1VectorHelper.html#a264bc104243ca484f8a732e7a5536dab">splitStringIntoVector&lt; std::string &gt;</a> (std::string listString, const std::string &amp;separator)</td></tr>
 <tr class="separator:a264bc104243ca484f8a732e7a5536dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3b0d9ca5862efd0f15ecdab4f5d12e5" id="r_ae3b0d9ca5862efd0f15ecdab4f5d12e5"><td class="memItemLeft" align="right" valign="top">void MANTID_KERNEL_DLL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/namespaceMantid_1_1Kernel_1_1VectorHelper.html#ae3b0d9ca5862efd0f15ecdab4f5d12e5">validateRebinParameters</a> (std::vector&lt; double &gt; const &amp;params, bool const isPower)</td></tr>
+<tr class="memdesc:ae3b0d9ca5862efd0f15ecdab4f5d12e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate rebinning parameters, throwing an error if any assumptions are invalidated.  <br /></td></tr>
+<tr class="separator:ae3b0d9ca5862efd0f15ecdab4f5d12e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="abb147794e5ffa36d63d7c7c3b6701150" name="abb147794e5ffa36d63d7c7c3b6701150"></a>
@@ -238,7 +244,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00415">415</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00546">546</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>.</p>
 
@@ -282,20 +288,20 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00383">383</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00514">514</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d0c/LoadRKH_8cpp_source.html#l00551">Mantid::DataHandling::LoadRKH::binCenter()</a>, <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l00462">Mantid::Algorithms::DiscusMultipleScatteringCorrection::convertWsBothAxesToPoints()</a>, and <a class="el" href="../../da/d7e/InterpolatingRebin_8cpp_source.html#l00208">Mantid::Algorithms::InterpolatingRebin::cubicInterpolation()</a>.</p>
 
 </div>
 </div>
-<a id="aa3ebd6f3e4c5c39385200849b482336a" name="aa3ebd6f3e4c5c39385200849b482336a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3ebd6f3e4c5c39385200849b482336a">&#9670;&#160;</a></span>createAxisFromRebinParams()</h2>
+<a id="afacffbd216a18060fb7636c20edfc47e" name="afacffbd216a18060fb7636c20edfc47e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afacffbd216a18060fb7636c20edfc47e">&#9670;&#160;</a></span>createAxisFromRebinParams()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::size_t <a class="el" href="../../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247">DLLExport</a> Mantid::Kernel::VectorHelper::createAxisFromRebinParams </td>
+          <td class="memname">std::size_t Mantid::Kernel::VectorHelper::createAxisFromRebinParams </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>params</em>, </td>
@@ -366,11 +372,54 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of bin boundaries in the new axis </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00034">34</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00168">168</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00022">fabs</a>, and <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00049">tmp</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00120">estimateNumberOfBins()</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00049">tmp</a>, and <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00087">validateRebinParameters()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d27/Q1DWeighted_8cpp_source.html#l00121">Mantid::Algorithms::Q1DWeighted::bootstrap()</a>, <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00435">Mantid::Algorithms::MergeRuns::checkRebinning()</a>, <a class="el" href="../../df/df7/CreateSimulationWorkspace_8cpp_source.html#l00313">Mantid::DataHandling::CreateSimulationWorkspace::createBinBoundaries()</a>, <a class="el" href="../../d1/de3/SumEventsByLogValue_8cpp_source.html#l00366">Mantid::Algorithms::SumEventsByLogValue::createBinnedOutput()</a>, <a class="el" href="../../d2/d2f/Bin2DPowderDiffraction_8cpp_source.html#l00142">Mantid::Algorithms::Bin2DPowderDiffraction::createOutputWorkspace()</a>, <a class="el" href="../../df/d57/Rebin2D_8cpp_source.html#l00170">Mantid::Algorithms::Rebin2D::createOutputWorkspace()</a>, <a class="el" href="../../d7/d0a/WorkspaceCreationHelper_8cpp_source.html#l01182">WorkspaceCreationHelper::createRebinnedOutputWorkspace()</a>, <a class="el" href="../../da/d42/ResampleX_8cpp_source.html#l00191">Mantid::Algorithms::ResampleX::determineBinning()</a>, <a class="el" href="../../da/dfb/DiffractionFocussing2_8cpp_source.html#l00739">Mantid::Algorithms::DiffractionFocussing2::determineRebinParametersFromParameters()</a>, <a class="el" href="../../da/d7e/InterpolatingRebin_8cpp_source.html#l00080">Mantid::Algorithms::InterpolatingRebin::exec()</a>, <a class="el" href="../../d8/ded/Rebin_8cpp_source.html#l00279">Mantid::Algorithms::Rebin::exec()</a>, <a class="el" href="../../da/d74/RebinByTimeBase_8cpp_source.html#l00061">Mantid::Algorithms::RebinByTimeBase::exec()</a>, <a class="el" href="../../d7/db4/RebinRagged2_8cpp_source.html#l00106">Mantid::Algorithms::RebinRagged::exec()</a>, <a class="el" href="../../db/d00/CompressEvents_8cpp_source.html#l00079">Mantid::DataHandling::CompressEvents::exec()</a>, <a class="el" href="../../df/d0f/ReflectometryTransform_8cpp_source.html#l00399">Mantid::DataObjects::ReflectometryTransform::executeNormPoly()</a>, <a class="el" href="../../dc/d30/AlignAndFocusPowderSlim_8cpp_source.html#l00661">Mantid::DataHandling::AlignAndFocusPowderSlim::AlignAndFocusPowderSlim::initializeOutputWorkspace()</a>, <a class="el" href="../../d5/d99/LoadBankFromDiskTask_8cpp_source.html#l00305">Mantid::DataHandling::LoadBankFromDiskTask::run()</a>, <a class="el" href="../../d7/df9/SofQW_8h_source.html#l00087">Mantid::Algorithms::SofQW::setUpOutputWorkspace()</a>, and <a class="el" href="../../d0/dd4/Q1D2_8cpp_source.html#l00309">Mantid::Algorithms::Q1D2::setUpOutputWorkspace()</a>.</p>
+
+</div>
+</div>
+<a id="a503cd4c2838f2b0d1de76df66d6b0d0d" name="a503cd4c2838f2b0d1de76df66d6b0d0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a503cd4c2838f2b0d1de76df66d6b0d0d">&#9670;&#160;</a></span>estimateNumberOfBins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t Mantid::Kernel::VectorHelper::estimateNumberOfBins </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; double &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double const&#160;</td>
+          <td class="paramname"><em>power</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a size_t with the estimated number of bins that would be needed for a rebinning operation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>Rebin parameters in form [x_1, delta_1,x_2, ... ,x_n-1,delta_n-1,x_n] </td></tr>
+    <tr><td class="paramname">power</td><td>the power in case of inverse power sum. Must be between 0 and 1 or is ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00120">120</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00087">validateRebinParameters()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00168">createAxisFromRebinParams()</a>.</p>
 
 </div>
 </div>
@@ -403,7 +452,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a single vector containing all elements in v. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d72/VectorHelper_8h_source.html#l00070">70</a> of file <a class="el" href="../../dd/d72/VectorHelper_8h_source.html">VectorHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d72/VectorHelper_8h_source.html#l00074">74</a> of file <a class="el" href="../../dd/d72/VectorHelper_8h_source.html">VectorHelper.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d8f/LoadDNSSCD_8cpp_source.html#l00258">Mantid::MDAlgorithms::LoadDNSSCD::exec()</a>, <a class="el" href="../../d1/d3d/MergeMDFiles_8cpp_source.html#l00335">Mantid::MDAlgorithms::MergeMDFiles::exec()</a>, <a class="el" href="../../d6/d2a/FindFilesWorker_8cpp_source.html#l00126">MantidQt::API::FindFilesWorker::getFilesFromAlgorithm()</a>, and <a class="el" href="../../d3/d06/API_2src_2MultipleFileProperty_8cpp_source.html#l00234">Mantid::API::MultipleFileProperty::setValueAsMultipleFiles()</a>.</p>
 
@@ -444,7 +493,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00595">595</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00726">726</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
@@ -495,9 +544,9 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00453">453</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00584">584</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00461">indexOfValueFromCentersNoThrow()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00592">indexOfValueFromCentersNoThrow()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01733">Mantid::API::MatrixWorkspace::getSignalAtCoord()</a>, <a class="el" href="../../d4/d16/NumericAxis_8cpp_source.html#l00054">Mantid::API::NumericAxis::indexOfValue()</a>, <a class="el" href="../../d4/d39/TextAxis_8cpp_source.html#l00068">Mantid::API::TextAxis::indexOfValue()</a>, and <a class="el" href="../../d4/dd2/SumOverlappingTubes_8cpp_source.html#l00258">Mantid::Algorithms::SumOverlappingTubes::performBinning()</a>.</p>
 
@@ -531,11 +580,11 @@ template&lt;typename T &gt; </div>
 
 <p>Gets the bin of a value from a vector of bin centers and returns -1 if out of range. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00461">461</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00592">592</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00453">indexOfValueFromCenters()</a>, <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l01315">Mantid::Algorithms::DiscusMultipleScatteringCorrection::Interpolate2D()</a>, and <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l01759">Mantid::Algorithms::DiscusMultipleScatteringCorrection::sampleQWUniform()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00584">indexOfValueFromCenters()</a>, <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l01315">Mantid::Algorithms::DiscusMultipleScatteringCorrection::Interpolate2D()</a>, and <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l01759">Mantid::Algorithms::DiscusMultipleScatteringCorrection::sampleQWUniform()</a>.</p>
 
 </div>
 </div>
@@ -582,7 +631,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00501">501</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00632">632</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
@@ -614,7 +663,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00529">529</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00660">660</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../da/d7e/InterpolatingRebin_8cpp_source.html#l00208">Mantid::Algorithms::InterpolatingRebin::cubicInterpolation()</a>.</p>
 
@@ -647,11 +696,11 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>length of the vector </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d72/VectorHelper_8h_source.html#l00102">102</a> of file <a class="el" href="../../dd/d72/VectorHelper_8h_source.html">VectorHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d72/VectorHelper_8h_source.html#l00106">106</a> of file <a class="el" href="../../dd/d72/VectorHelper_8h_source.html">VectorHelper.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d72/VectorHelper_8h_source.html#l00139">normalizeVector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d72/VectorHelper_8h_source.html#l00143">normalizeVector()</a>.</p>
 
 </div>
 </div>
@@ -682,9 +731,9 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the vector, normalized to 1. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d72/VectorHelper_8h_source.html#l00139">139</a> of file <a class="el" href="../../dd/d72/VectorHelper_8h_source.html">VectorHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d72/VectorHelper_8h_source.html#l00143">143</a> of file <a class="el" href="../../dd/d72/VectorHelper_8h_source.html">VectorHelper.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d72/VectorHelper_8h_source.html#l00102">lengthVector()</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d72/VectorHelper_8h_source.html#l00106">lengthVector()</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
 
 </div>
 </div>
@@ -772,7 +821,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00174">174</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00305">305</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838a63bcabf86a9a991864777c631c5b7617">Mantid::Kernel::delta</a>.</p>
 
@@ -857,7 +906,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00291">291</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00422">422</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../da/dfb/DiffractionFocussing2_8cpp_source.html#l00205">Mantid::Algorithms::DiffractionFocussing2::exec()</a>, and <a class="el" href="../../d7/dd0/NormaliseToMonitor_8cpp_source.html#l00621">Mantid::Algorithms::NormaliseToMonitor::normaliseBinByBin()</a>.</p>
 
@@ -891,7 +940,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d72/VectorHelper_8h_source.html#l00109">109</a> of file <a class="el" href="../../dd/d72/VectorHelper_8h_source.html">VectorHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d72/VectorHelper_8h_source.html#l00113">113</a> of file <a class="el" href="../../dd/d72/VectorHelper_8h_source.html">VectorHelper.h</a>.</p>
 
 </div>
 </div>
@@ -923,7 +972,7 @@ template&lt;typename T , typename U &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d72/VectorHelper_8h_source.html#l00121">121</a> of file <a class="el" href="../../dd/d72/VectorHelper_8h_source.html">VectorHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d72/VectorHelper_8h_source.html#l00125">125</a> of file <a class="el" href="../../dd/d72/VectorHelper_8h_source.html">VectorHelper.h</a>.</p>
 
 </div>
 </div>
@@ -998,7 +1047,7 @@ template&lt;typename T , typename U &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00728">728</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00859">859</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00436">Mantid::Algorithms::GetAllEi::peakGuess()</a>.</p>
 
@@ -1011,6 +1060,9 @@ template&lt;typename T , typename U &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename NumT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::vector&lt; NumT &gt; Mantid::Kernel::VectorHelper::splitStringIntoVector </td>
@@ -1030,6 +1082,11 @@ template&lt;typename NumT &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Take a string of comma or space-separated values, and splits it into a vector of doubles. </p>
@@ -1048,11 +1105,11 @@ template&lt;typename NumT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00568">568</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00699">699</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00568">splitStringIntoVector()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00699">splitStringIntoVector()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00568">splitStringIntoVector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00699">splitStringIntoVector()</a>.</p>
 
 </div>
 </div>
@@ -1100,11 +1157,11 @@ template&lt;typename NumT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00568">568</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00699">699</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00568">splitStringIntoVector()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00699">splitStringIntoVector()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00568">splitStringIntoVector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00699">splitStringIntoVector()</a>.</p>
 
 </div>
 </div>
@@ -1113,6 +1170,9 @@ template&lt;typename NumT &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">template <a class="el" href="../../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247">DLLExport</a> std::vector&lt; double &gt; <a class="el" href="../../df/d35/namespaceMantid_1_1Kernel_1_1VectorHelper.html#ac3645b6e5dfe7828bcf0f11a235d7f74">Mantid::Kernel::VectorHelper::splitStringIntoVector</a>&lt; double &gt; </td>
@@ -1132,6 +1192,11 @@ template&lt;typename NumT &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p class="reference">Referenced by <a class="el" href="../../d1/da3/SaveNXcanSASHelper_8cpp_source.html#l00532">Mantid::DataHandling::NXcanSAS::addEMFieldDirection()</a>, <a class="el" href="../../dd/d68/StripVanadiumPeaks_8cpp_source.html#l00060">Mantid::Algorithms::StripVanadiumPeaks::exec()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00813">Mantid::MDAlgorithms::MDNorm::validateBinningForTemporaryDataWorkspace()</a>.</p>
@@ -1143,6 +1208,9 @@ template&lt;typename NumT &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">template <a class="el" href="../../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247">DLLExport</a> std::vector&lt; float &gt; <a class="el" href="../../df/d35/namespaceMantid_1_1Kernel_1_1VectorHelper.html#ac3645b6e5dfe7828bcf0f11a235d7f74">Mantid::Kernel::VectorHelper::splitStringIntoVector</a>&lt; float &gt; </td>
@@ -1162,6 +1230,11 @@ template&lt;typename NumT &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -1171,6 +1244,9 @@ template&lt;typename NumT &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">template <a class="el" href="../../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247">DLLExport</a> std::vector&lt; int32_t &gt; <a class="el" href="../../df/d35/namespaceMantid_1_1Kernel_1_1VectorHelper.html#ac3645b6e5dfe7828bcf0f11a235d7f74">Mantid::Kernel::VectorHelper::splitStringIntoVector</a>&lt; int32_t &gt; </td>
@@ -1190,6 +1266,11 @@ template&lt;typename NumT &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Declare all version of this. </p>
@@ -1201,6 +1282,9 @@ template&lt;typename NumT &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">template <a class="el" href="../../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247">DLLExport</a> std::vector&lt; int64_t &gt; <a class="el" href="../../df/d35/namespaceMantid_1_1Kernel_1_1VectorHelper.html#ac3645b6e5dfe7828bcf0f11a235d7f74">Mantid::Kernel::VectorHelper::splitStringIntoVector</a>&lt; int64_t &gt; </td>
@@ -1220,6 +1304,11 @@ template&lt;typename NumT &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -1229,6 +1318,9 @@ template&lt;typename NumT &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">template <a class="el" href="../../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247">DLLExport</a> std::vector&lt; size_t &gt; <a class="el" href="../../df/d35/namespaceMantid_1_1Kernel_1_1VectorHelper.html#ac3645b6e5dfe7828bcf0f11a235d7f74">Mantid::Kernel::VectorHelper::splitStringIntoVector</a>&lt; size_t &gt; </td>
@@ -1248,6 +1340,11 @@ template&lt;typename NumT &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00813">Mantid::MDAlgorithms::MDNorm::validateBinningForTemporaryDataWorkspace()</a>.</p>
@@ -1259,6 +1356,9 @@ template&lt;typename NumT &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">template <a class="el" href="../../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247">DLLExport</a> std::vector&lt; std::string &gt; <a class="el" href="../../df/d35/namespaceMantid_1_1Kernel_1_1VectorHelper.html#ac3645b6e5dfe7828bcf0f11a235d7f74">Mantid::Kernel::VectorHelper::splitStringIntoVector</a>&lt; std::string &gt; </td>
@@ -1278,9 +1378,50 @@ template&lt;typename NumT &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d9b/SaveNXcanSASBase_8cpp_source.html#l00306">Mantid::DataHandling::SaveNXcanSASBase::addStandardMetadata()</a>, <a class="el" href="../../dc/d9b/SaveNXcanSASBase_8cpp_source.html#l00391">Mantid::DataHandling::SaveNXcanSASBase::createPolarizedComponentMap()</a>, <a class="el" href="../../d0/db4/SaveAscii2_8cpp_source.html#l00415">Mantid::DataHandling::SaveAscii2::stringListToVector()</a>, <a class="el" href="../../d1/dc6/SavePolarizedNXcanSAS_8cpp_source.html#l00030">Mantid::DataHandling::SavePolarizedNXcanSAS::validateInputs()</a>, and <a class="el" href="../../dc/d9b/SaveNXcanSASBase_8cpp_source.html#l00276">Mantid::DataHandling::SaveNXcanSASBase::validatePolarizedMetadata()</a>.</p>
+
+</div>
+</div>
+<a id="ae3b0d9ca5862efd0f15ecdab4f5d12e5" name="ae3b0d9ca5862efd0f15ecdab4f5d12e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3b0d9ca5862efd0f15ecdab4f5d12e5">&#9670;&#160;</a></span>validateRebinParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mantid::Kernel::VectorHelper::validateRebinParameters </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; double &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool const&#160;</td>
+          <td class="paramname"><em>isPower</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Validate rebinning parameters, throwing an error if any assumptions are invalidated. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00087">87</a> of file <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html">VectorHelper.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00168">createAxisFromRebinParams()</a>, and <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00120">estimateNumberOfBins()</a>.</p>
 
 </div>
 </div>
