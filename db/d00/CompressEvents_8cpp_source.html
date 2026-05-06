@@ -226,8 +226,8 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordtype">double</span> tof_min_fixed;</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keywordtype">double</span> tof_max_fixed;</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    inputWS-&gt;getEventXMinMax(tof_min_fixed, tof_max_fixed);</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <a class="code hl_function" href="../../df/d35/namespaceMantid_1_1Kernel_1_1VectorHelper.html#afacffbd216a18060fb7636c20edfc47e">Mantid::Kernel::VectorHelper::createAxisFromRebinParams</a>(</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        {tof_min_fixed, toleranceTof, (tof_max_fixed + std::abs(toleranceTof))}, *histogram_bin_edges, <span class="keyword">true</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    std::vector&lt;double&gt; <span class="keyword">const</span> params{tof_min_fixed, toleranceTof, tof_max_fixed + std::abs(toleranceTof)};</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <a class="code hl_function" href="../../df/d35/namespaceMantid_1_1Kernel_1_1VectorHelper.html#afacffbd216a18060fb7636c20edfc47e">Mantid::Kernel::VectorHelper::createAxisFromRebinParams</a>(params, *histogram_bin_edges, <span class="keyword">true</span>, <span class="keyword">true</span>);</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    num_edges = histogram_bin_edges-&gt;size();</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  }</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>

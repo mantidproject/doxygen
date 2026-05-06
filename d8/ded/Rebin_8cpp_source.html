@@ -390,10 +390,10 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  <span class="keywordtype">double</span> xmax = 0.;</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>  inputWS-&gt;getXMinMax(xmin, xmax);</div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  HistogramData::BinEdges XValues_new(0);</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>  <span class="comment">// create new output X axis</span></div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  <span class="keyword">static_cast&lt;</span><span class="keywordtype">void</span><span class="keyword">&gt;</span>(<a class="code hl_function" href="../../df/d35/namespaceMantid_1_1Kernel_1_1VectorHelper.html#afacffbd216a18060fb7636c20edfc47e">VectorHelper::createAxisFromRebinParams</a>(rbParams, XValues_new.mutableRawData(), <span class="keyword">true</span>, fullBinsOnly,</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>                                                            xmin, xmax, useReverseLog, power));</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  <span class="comment">// create new output X axis</span></div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>  std::vector&lt;double&gt; xAxisTmp;</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  <a class="code hl_function" href="../../df/d35/namespaceMantid_1_1Kernel_1_1VectorHelper.html#afacffbd216a18060fb7636c20edfc47e">VectorHelper::createAxisFromRebinParams</a>(rbParams, xAxisTmp, <span class="keyword">true</span>, fullBinsOnly, xmin, xmax, useReverseLog, power);</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>  HistogramData::BinEdges XValues_new(std::move(xAxisTmp));</div>
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>  <span class="comment">// Now, determine if the input workspace is actually an EventWorkspace</span></div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>  <a class="code hl_typedef" href="../../db/d22/namespaceMantid_1_1DataObjects.html#a2e1665de9c14a47c23291cc66bb7544b">EventWorkspace_const_sptr</a> eventInputWS = std::dynamic_pointer_cast&lt;const EventWorkspace&gt;(inputWS);</div>
