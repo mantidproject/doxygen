@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['h_0',['h',['../d2/d36/namespaceMantidQt_1_1API.html#a2fad1dfb17a0c770525bd2d9ae44200dac1d9f50f86825a1a2302ec2449c17196',1,'MantidQt::API::H'],['../dd/d38/namespaceMantid_1_1PhysicalConstants.html#a689f0cf1c88fede7369659ed5a4de411',1,'Mantid::PhysicalConstants::h']]],
+  ['h_0',['h',['../dd/d38/namespaceMantid_1_1PhysicalConstants.html#a689f0cf1c88fede7369659ed5a4de411',1,'Mantid::PhysicalConstants::h'],['../d2/d36/namespaceMantidQt_1_1API.html#a2fad1dfb17a0c770525bd2d9ae44200dac1d9f50f86825a1a2302ec2449c17196',1,'MantidQt::API::H']]],
   ['h3_5fpolarization_5finitial_1',['h3_polarization_initial',['../df/d49/namespaceMantid_1_1Algorithms_1_1PropertyNames.html#a3fff4aa3ebef1b52d6ba460373bd03cb',1,'Mantid::Algorithms::PropertyNames::H3_POLARIZATION_INITIAL'],['../d2/da6/namespaceMantid_1_1Algorithms_1_1Fitting.html#a89991707a17e345b5231af937b77ce5d',1,'Mantid::Algorithms::Fitting::H3_POLARIZATION_INITIAL']]],
   ['h5_2',['H5',['../df/ded/namespaceH5.html',1,'']]],
   ['h5fclose_3',['H5Fclose',['../db/d34/UniqueID_8h.html#a3c0888b4ba3192667745545d0b14c793',1,'UniqueID.h']]],

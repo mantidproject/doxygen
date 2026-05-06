@@ -114,6 +114,9 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:ae780f5c6433fa845d361a57ea380c100" id="r_ae780f5c6433fa845d361a57ea380c100"><td class="memItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc5/namespaceMantid_1_1TestMemory.html#ae780f5c6433fa845d361a57ea380c100">g_default_value</a> {12}</td></tr>
 <tr class="separator:ae780f5c6433fa845d361a57ea380c100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c75b91855d7223f0f59c55f9d114422" id="r_a9c75b91855d7223f0f59c55f9d114422"><td class="memItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc5/namespaceMantid_1_1TestMemory.html#a9c75b91855d7223f0f59c55f9d114422">g_fallback_bin_count</a> {static_cast&lt;std::size_t&gt;(1e12)}</td></tr>
+<tr class="memdesc:a9c75b91855d7223f0f59c55f9d114422"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fallback bin count on non-Linux platforms where the memory mock is unavailable; large enough to reliably exhaust any real system's available memory.  <br /></td></tr>
+<tr class="separator:a9c75b91855d7223f0f59c55f9d114422"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a6ee20dcfa546d97ab8650bd8eaaef4db" name="a6ee20dcfa546d97ab8650bd8eaaef4db"></a>
@@ -131,11 +134,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d87/MockMemory_8cpp_source.html#l00073">73</a> of file <a class="el" href="../../d8/d87/MockMemory_8cpp_source.html">MockMemory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d87/MockMemory_8cpp_source.html#l00099">99</a> of file <a class="el" href="../../d8/d87/MockMemory_8cpp_source.html">MockMemory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/d87/MockMemory_8cpp_source.html#l00073">disable_mem_override()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d87/MockMemory_8cpp_source.html#l00099">disable_mem_override()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d87/MockMemory_8cpp_source.html#l00073">disable_mem_override()</a>, and <a class="el" href="../../dd/d3b/MockMemory_8h_source.html#l00026">Mantid::TestMemory::MockMemory::~MockMemory()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d87/MockMemory_8cpp_source.html#l00099">disable_mem_override()</a>, and <a class="el" href="../../dd/d3b/MockMemory_8h_source.html#l00029">Mantid::TestMemory::MockMemory::~MockMemory()</a>.</p>
 
 </div>
 </div>
@@ -155,11 +158,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d87/MockMemory_8cpp_source.html#l00072">72</a> of file <a class="el" href="../../d8/d87/MockMemory_8cpp_source.html">MockMemory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d87/MockMemory_8cpp_source.html#l00098">98</a> of file <a class="el" href="../../d8/d87/MockMemory_8cpp_source.html">MockMemory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/d87/MockMemory_8cpp_source.html#l00072">enable_mem_override()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d87/MockMemory_8cpp_source.html#l00098">enable_mem_override()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d87/MockMemory_8cpp_source.html#l00072">enable_mem_override()</a>, and <a class="el" href="../../dd/d3b/MockMemory_8h_source.html#l00025">Mantid::TestMemory::MockMemory::MockMemory()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d87/MockMemory_8cpp_source.html#l00098">enable_mem_override()</a>, and <a class="el" href="../../dd/d3b/MockMemory_8h_source.html#l00028">Mantid::TestMemory::MockMemory::MockMemory()</a>.</p>
 
 </div>
 </div>
@@ -185,6 +188,34 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../dd/d3b/MockMemory_8h_source.html#l00013">13</a> of file <a class="el" href="../../dd/d3b/MockMemory_8h_source.html">MockMemory.h</a>.</p>
+
+</div>
+</div>
+<a id="a9c75b91855d7223f0f59c55f9d114422" name="a9c75b91855d7223f0f59c55f9d114422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c75b91855d7223f0f59c55f9d114422">&#9670;&#160;</a></span>g_fallback_bin_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::size_t Mantid::TestMemory::g_fallback_bin_count {static_cast&lt;std::size_t&gt;(1e12)}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fallback bin count on non-Linux platforms where the memory mock is unavailable; large enough to reliably exhaust any real system's available memory. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d3b/MockMemory_8h_source.html#l00016">16</a> of file <a class="el" href="../../dd/d3b/MockMemory_8h_source.html">MockMemory.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d3b/MockMemory_8h_source.html#l00041">Mantid::TestMemory::MockMemory::numberOfFloats()</a>.</p>
 
 </div>
 </div>
