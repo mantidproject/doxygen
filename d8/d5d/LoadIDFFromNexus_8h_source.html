@@ -140,12 +140,13 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordtype">void</span> init() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keywordtype">void</span> exec() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keywordtype">bool</span> loadParameterFile(<span class="keyword">const</span> std::string &amp;fullPathName, <span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">API::MatrixWorkspace_sptr</a> &amp;localWorkspace);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>};</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keywordtype">bool</span> runLoadParameterFile(<span class="keyword">const</span> std::string &amp;fullPathName, <span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">API::MatrixWorkspace_sptr</a> &amp;localWorkspace);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <span class="keywordtype">void</span> loadParameterFile(<span class="keyword">const</span> std::shared_ptr&lt;API::MatrixWorkspace&gt; &amp;ws);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>};</div>
 </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>} <span class="comment">// namespace DataHandling</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>} <span class="comment">// namespace Mantid</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>} <span class="comment">// namespace DataHandling</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>} <span class="comment">// namespace Mantid</span></div>
 <div class="ttc" id="aAlgorithm_8h_html"><div class="ttname"><a href="../../d7/d36/Algorithm_8h.html">Algorithm.h</a></div></div>
 <div class="ttc" id="aclassMantid_1_1API_1_1Algorithm_html"><div class="ttname"><a href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html">Mantid::API::Algorithm</a></div><div class="ttdoc">Base class from which all concrete algorithm classes should be derived.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d36/Algorithm_8h_source.html#l00076">Algorithm.h:76</a></div></div>
 <div class="ttc" id="aclassMantid_1_1DataHandling_1_1LoadIDFFromNexus_html"><div class="ttname"><a href="../../d6/d5c/classMantid_1_1DataHandling_1_1LoadIDFFromNexus.html">Mantid::DataHandling::LoadIDFFromNexus</a></div><div class="ttdoc">DataHandling/LoadIDFFromNexus.h.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d5d/LoadIDFFromNexus_8h_source.html#l00038">LoadIDFFromNexus.h:38</a></div></div>

@@ -104,6 +104,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:afc6a8d43078be2e2adce661cfec18422" id="r_afc6a8d43078be2e2adce661cfec18422"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#afc6a8d43078be2e2adce661cfec18422">getInstrumentFilename</a> (const std::string &amp;instrumentName, const std::string &amp;date=&quot;&quot;)</td></tr>
 <tr class="memdesc:afc6a8d43078be2e2adce661cfec18422"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the IDF using the instrument name and date.  <br /></td></tr>
 <tr class="separator:afc6a8d43078be2e2adce661cfec18422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1dd18d46954174f2dcfd80179c5246e" id="r_ac1dd18d46954174f2dcfd80179c5246e"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#ac1dd18d46954174f2dcfd80179c5246e">getParameterFilename</a> (const std::string &amp;instrumentName, const std::string &amp;date=&quot;&quot;, const std::string &amp;dirHint=&quot;&quot;)</td></tr>
+<tr class="memdesc:ac1dd18d46954174f2dcfd80179c5246e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Parameter file using the instrument name and date, optionally searching dirHint first before the standard instrument directories.  <br /></td></tr>
+<tr class="separator:ac1dd18d46954174f2dcfd80179c5246e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88298e0ebe03bb9b66c5f719c817dcbe" id="r_a88298e0ebe03bb9b66c5f719c817dcbe"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a88298e0ebe03bb9b66c5f719c817dcbe">getParameterPath</a> (const std::string &amp;instName, const std::string &amp;dirHint=&quot;&quot;)</td></tr>
 <tr class="memdesc:a88298e0ebe03bb9b66c5f719c817dcbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search instrument directories for Parameter file, return full path name if found, else "".  <br /></td></tr>
 <tr class="separator:a88298e0ebe03bb9b66c5f719c817dcbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,6 +119,12 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a31219266363ca138f0684fba3bf2598c" id="r_a31219266363ca138f0684fba3bf2598c"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#a31219266363ca138f0684fba3bf2598c">getFilenameByInstrumentDateAndSearchTerm</a> (const std::string &amp;instrumentName, const std::string &amp;date, const std::string &amp;searchTerm, const std::vector&lt; std::string &gt; &amp;fileFormats, const std::string &amp;dirHint=&quot;&quot;)</td></tr>
+<tr class="memdesc:a31219266363ca138f0684fba3bf2598c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns a file name which finds a file which contains the given instrument name + search term and is valid at the given date.  <br /></td></tr>
+<tr class="separator:a31219266363ca138f0684fba3bf2598c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1f43f24c30582f951e506caf9a09ebd" id="r_ad1f43f24c30582f951e506caf9a09ebd"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#ad1f43f24c30582f951e506caf9a09ebd">getNormalisedDate</a> (const std::string &amp;date)</td></tr>
+<tr class="memdesc:ad1f43f24c30582f951e506caf9a09ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">If date with only YYYY - MM - DD was provided (no time component), append midnight so DateAndTime can parse it.  <br /></td></tr>
+<tr class="separator:ad1f43f24c30582f951e506caf9a09ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac32dbc5ca014a86373988313362de344" id="r_ac32dbc5ca014a86373988313362de344"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d15/classMantid_1_1API_1_1InstrumentFileFinder.html#ac32dbc5ca014a86373988313362de344">lookupIPF</a> (const std::string &amp;dir, std::string filename)</td></tr>
 <tr class="separator:ac32dbc5ca014a86373988313362de344"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -123,6 +132,82 @@ Static Private Member Functions</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="../../da/dd3/InstrumentFileFinder_8h_source.html#l00016">16</a> of file <a class="el" href="../../da/dd3/InstrumentFileFinder_8h_source.html">InstrumentFileFinder.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a31219266363ca138f0684fba3bf2598c" name="a31219266363ca138f0684fba3bf2598c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31219266363ca138f0684fba3bf2598c">&#9670;&#160;</a></span>getFilenameByInstrumentDateAndSearchTerm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Mantid::API::InstrumentFileFinder::getFilenameByInstrumentDateAndSearchTerm </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>instrumentName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>date</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>searchTerm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fileFormats</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>dirHint</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method returns a file name which finds a file which contains the given instrument name + search term and is valid at the given date. </p>
+<p>The search will look for filenames which start with InstrumentName + SearchTerm and match the provided file formats.</p>
+<p>If several files are found with valid names and valid date ranges, the file with the most recent "valid-from" date is selected. If files are found with valid names but which do not match the date, the file with the most recent "valid-from" date is selected.</p>
+<p>If no file is found to have a valid name, an empty string is returned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instrumentName</td><td>:: Instrument name e.g. GEM, TOPAS or BIOSANS </td></tr>
+    <tr><td class="paramname">date</td><td>:: ISO 8601 date </td></tr>
+    <tr><td class="paramname">searchTerm</td><td>:: Snippet expected as part of filename eg. "_Definition" or "_Parameters" </td></tr>
+    <tr><td class="paramname">fileFormats</td><td>:: Acceptable file extensions </td></tr>
+    <tr><td class="paramname">dirHint</td><td>:: Any non-standard directory that should be search alongside the Instrument Directories </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>full path of the file or empty string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00088">88</a> of file <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html">InstrumentFileFinder.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, and <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00264">getResourceFilenames()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00153">getInstrumentFilename()</a>, and <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00176">getParameterFilename()</a>.</p>
+
+</div>
+</div>
 <a id="afc6a8d43078be2e2adce661cfec18422" name="afc6a8d43078be2e2adce661cfec18422"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc6a8d43078be2e2adce661cfec18422">&#9670;&#160;</a></span>getInstrumentFilename()</h2>
 
@@ -159,9 +244,10 @@ Static Private Member Functions</h2></td></tr>
 
 <p>Get the IDF using the instrument name and date. </p>
 <p>A given instrument may have multiple definition files associated with it.</p>
-<p>This method returns a file name which identifies a given instrument definition for a given instrument. The instrument geometry can be loaded from either a ".xml" file (old-style IDF) or a ".hdf5/.nxs" file (new-style nexus). The filename is required to be of the form InstrumentName + _Definition + Identifier + extension. The identifier then is the part of a filename that identifies the instrument definition valid at a given date.</p>
-<p>If several instrument files files are valid at the given date the file with the most recent from date is selected. If no such files are found the file with the latest from date is selected.</p>
-<p>If no file is found for the given instrument, an empty string is returned.</p>
+<p>This method returns a file name which identifies a given instrument definition for a given instrument. The instrument geometry can be loaded from either a ".xml" file (old-style IDF) or a ".hdf5/.nxs" file (new-style nexus).</p>
+<p>The search will look for filenames which start with InstrumentName + _Definition and match the above extensions.</p>
+<p>If several files are found with valid names and valid date ranges, the file with the most recent "valid-from" date is selected. If files are found with valid names but which do not match the date, the file with the most recent "valid-from" date is selected.</p>
+<p>If no file is found to have a valid name, an empty string is returned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">instrumentName</td><td>:: Instrument name e.g. GEM, TOPAS or BIOSANS </td></tr>
@@ -169,19 +255,116 @@ Static Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>full path of instrument geometry file</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">Exception::NotFoundError</td><td>If no valid instrument definition filename is found </td></tr>
+<dl class="section return"><dt>Returns</dt><dd>full path of instrument geometry file </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00153">153</a> of file <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html">InstrumentFileFinder.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00088">getFilenameByInstrumentDateAndSearchTerm()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/db6/LoadDetectorsGroupingFile_8cpp_source.html#l00068">Mantid::DataHandling::LoadDetectorsGroupingFile::exec()</a>, <a class="el" href="../../d7/d9e/LoadInstrument_8cpp_source.html#l00091">Mantid::DataHandling::LoadInstrument::exec()</a>, <a class="el" href="../../d5/d1a/LoadNXSPE_8cpp_source.html#l00100">Mantid::DataHandling::LoadNXSPE::exec()</a>, <a class="el" href="../../da/d15/SNSAppendGeometryToNexus_8cpp_source.html#l00074">Mantid::DataHandling::SNSAppendGeometryToNexus::exec()</a>, <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html#l00067">export_ExperimentInfo()</a>, <a class="el" href="../../da/dbc/PythonInterface_2mantid_2api_2src_2Exports_2InstrumentFileFinder_8cpp_source.html#l00043">exportInstrumentFileFinder()</a>, <a class="el" href="../../de/dc1/NXcanSASUtil_8cpp_source.html#l00058">Mantid::DataHandling::NXcanSAS::InstrumentNameInfo::getIdfFromFile()</a>, <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html#l00046">getInstrumentFilenameWarn()</a>, <a class="el" href="../../d8/d7c/VesuvioL1ThetaResolution_8cpp_source.html#l00239">Mantid::Algorithms::VesuvioL1ThetaResolution::loadInstrument()</a>, <a class="el" href="../../d1/d72/LoadEventNexus_8h_source.html#l00445">Mantid::DataHandling::LoadEventNexus::runLoadInstrument()</a>, <a class="el" href="../../d4/da5/SlitCalculator_8cpp_source.html#l00035">MantidQt::MantidWidgets::SlitCalculator::setInstrument()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01082">Mantid::API::ExperimentInfo::setInstumentFromXML()</a>.</p>
+
+</div>
+</div>
+<a id="ad1f43f24c30582f951e506caf9a09ebd" name="ad1f43f24c30582f951e506caf9a09ebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1f43f24c30582f951e506caf9a09ebd">&#9670;&#160;</a></span>getNormalisedDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string Mantid::API::InstrumentFileFinder::getNormalisedDate </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>date</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If date with only YYYY - MM - DD was provided (no time component), append midnight so DateAndTime can parse it. </p>
+<p>Otherwise just return back the same date string</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">date</td><td>:: string of date read from file </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00081">81</a> of file <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html">InstrumentFileFinder.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00065">65</a> of file <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html">InstrumentFileFinder.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00186">getResourceFilenames()</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00264">getResourceFilenames()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/db6/LoadDetectorsGroupingFile_8cpp_source.html#l00068">Mantid::DataHandling::LoadDetectorsGroupingFile::exec()</a>, <a class="el" href="../../d7/d9e/LoadInstrument_8cpp_source.html#l00091">Mantid::DataHandling::LoadInstrument::exec()</a>, <a class="el" href="../../d5/d1a/LoadNXSPE_8cpp_source.html#l00100">Mantid::DataHandling::LoadNXSPE::exec()</a>, <a class="el" href="../../da/d15/SNSAppendGeometryToNexus_8cpp_source.html#l00074">Mantid::DataHandling::SNSAppendGeometryToNexus::exec()</a>, <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html#l00067">export_ExperimentInfo()</a>, <a class="el" href="../../da/dbc/PythonInterface_2mantid_2api_2src_2Exports_2InstrumentFileFinder_8cpp_source.html#l00042">exportInstrumentFileFinder()</a>, <a class="el" href="../../de/dc1/NXcanSASUtil_8cpp_source.html#l00058">Mantid::DataHandling::NXcanSAS::InstrumentNameInfo::getIdfFromFile()</a>, <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html#l00046">getInstrumentFilenameWarn()</a>, <a class="el" href="../../d8/d7c/VesuvioL1ThetaResolution_8cpp_source.html#l00239">Mantid::Algorithms::VesuvioL1ThetaResolution::loadInstrument()</a>, <a class="el" href="../../d1/d72/LoadEventNexus_8h_source.html#l00445">Mantid::DataHandling::LoadEventNexus::runLoadInstrument()</a>, <a class="el" href="../../d4/da5/SlitCalculator_8cpp_source.html#l00035">MantidQt::MantidWidgets::SlitCalculator::setInstrument()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01082">Mantid::API::ExperimentInfo::setInstumentFromXML()</a>.</p>
+</div>
+</div>
+<a id="ac1dd18d46954174f2dcfd80179c5246e" name="ac1dd18d46954174f2dcfd80179c5246e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1dd18d46954174f2dcfd80179c5246e">&#9670;&#160;</a></span>getParameterFilename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Mantid::API::InstrumentFileFinder::getParameterFilename </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>instrumentName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>date</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>dirHint</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the Parameter file using the instrument name and date, optionally searching dirHint first before the standard instrument directories. </p>
+<p>A given instrument may also have multiple parameter files associated with it.</p>
+<p>This method returns a file name which identifies a parameter file associated with the given date for a given instrument. The parameter can be loaded from either a ".xml" file (old-style IDF) or a ".hdf5/.nxs" file (new-style nexus).</p>
+<p>The search will look for filenames which start with InstrumentName + _Parameters and match the above extensions.</p>
+<p>If several files are found with valid names and valid date ranges, the file with the most recent "valid-from" date is selected. If files are found with valid names but which do not match the date, the file with the most recent "valid-from" date is selected.</p>
+<p>If no file is found to have a valid name, an empty string is returned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instrumentName</td><td>:: Instrument name e.g. GEM, TOPAS or BIOSANS </td></tr>
+    <tr><td class="paramname">date</td><td>:: ISO 8601 date </td></tr>
+    <tr><td class="paramname">dirHint</td><td>:: Any non-standard directory that should be search alongside the Instrument Directories </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>full path of instrument geometry file </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00176">176</a> of file <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html">InstrumentFileFinder.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00088">getFilenameByInstrumentDateAndSearchTerm()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../da/dbc/PythonInterface_2mantid_2api_2src_2Exports_2InstrumentFileFinder_8cpp_source.html#l00043">exportInstrumentFileFinder()</a>, <a class="el" href="../../d0/d53/LoadIDFFromNexus_8cpp_source.html#l00262">Mantid::DataHandling::LoadIDFFromNexus::loadParameterFile()</a>, and <a class="el" href="../../d7/d9e/LoadInstrument_8cpp_source.html#l00257">Mantid::DataHandling::LoadInstrument::runLoadParameterFile()</a>.</p>
 
 </div>
 </div>
@@ -222,11 +405,11 @@ Static Private Member Functions</h2></td></tr>
 <p>Search instrument directories for Parameter file, return full path name if found, else "". </p>
 <p>Search the directory for the Parameter IDF file and return full path name if found, else return "". </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00106">106</a> of file <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html">InstrumentFileFinder.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00184">184</a> of file <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html">InstrumentFileFinder.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01595">Mantid::Kernel::ConfigServiceImpl::getInstrumentDirectories()</a>, and <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00137">lookupIPF()</a>.</p>
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../d6/daf/Kernel_2src_2ConfigService_8cpp_source.html#l01595">Mantid::Kernel::ConfigServiceImpl::getInstrumentDirectories()</a>, and <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00215">lookupIPF()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/dbc/PythonInterface_2mantid_2api_2src_2Exports_2InstrumentFileFinder_8cpp_source.html#l00042">exportInstrumentFileFinder()</a>, and <a class="el" href="../../d7/d9e/LoadInstrument_8cpp_source.html#l00257">Mantid::DataHandling::LoadInstrument::runLoadParameterFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/dbc/PythonInterface_2mantid_2api_2src_2Exports_2InstrumentFileFinder_8cpp_source.html#l00043">exportInstrumentFileFinder()</a>.</p>
 
 </div>
 </div>
@@ -290,11 +473,11 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>list of absolute paths for each valid file </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00186">186</a> of file <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html">InstrumentFileFinder.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00264">264</a> of file <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html">InstrumentFileFinder.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00673">Mantid::Geometry::d</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00186">getResourceFilenames()</a>, and <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00283">getValidFromTo()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00673">Mantid::Geometry::d</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00065">getNormalisedDate()</a>, <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00264">getResourceFilenames()</a>, <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00394">getValidFromTo()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00081">getInstrumentFilename()</a>, <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html#l00039">getResourceFilenames()</a>, and <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00186">getResourceFilenames()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00088">getFilenameByInstrumentDateAndSearchTerm()</a>, <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html#l00039">getResourceFilenames()</a>, and <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00264">getResourceFilenames()</a>.</p>
 
 </div>
 </div>
@@ -349,9 +532,9 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00283">283</a> of file <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html">InstrumentFileFinder.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00394">394</a> of file <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html">InstrumentFileFinder.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00186">getResourceFilenames()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00264">getResourceFilenames()</a>, and <a class="el" href="../../d7/d9e/LoadInstrument_8cpp_source.html#l00257">Mantid::DataHandling::LoadInstrument::runLoadParameterFile()</a>.</p>
 
 </div>
 </div>
@@ -389,9 +572,9 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00137">137</a> of file <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html">InstrumentFileFinder.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00215">215</a> of file <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html">InstrumentFileFinder.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00106">getParameterPath()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00184">getParameterPath()</a>.</p>
 
 </div>
 </div>
