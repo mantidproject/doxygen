@@ -177,6 +177,7 @@ var menudata={children:[
 {text:"x",url:"namespacemembers_eval.html#index_x"},
 {text:"y",url:"namespacemembers_eval.html#index_y"},
 {text:"z",url:"namespacemembers_eval.html#index_z"}]}]}]},
+{text:"Concepts",url:"concepts.html"},
 {text:"Classes",url:"annotated.html",children:[
 {text:"Class List",url:"annotated.html"},
 {text:"Class Index",url:"classes.html"},

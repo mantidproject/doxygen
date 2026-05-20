@@ -91,6 +91,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#concepts">Concepts</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Mantid::Algorithms::Arithmetic Namespace Reference</div></div>
 </div><!--header-->
@@ -98,18 +99,50 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2e/classMantid_1_1Algorithms_1_1Arithmetic_1_1CovarianceMatrixProvider.html">CovarianceMatrixProvider</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de2/classMantid_1_1Algorithms_1_1Arithmetic_1_1ErrorPropagation.html">ErrorPropagation</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfd/classMantid_1_1Algorithms_1_1Arithmetic_1_1ErrorTypeHelper.html">ErrorTypeHelper</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="concepts" name="concepts"></a>
+Concepts</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d00/conceptMantid_1_1Algorithms_1_1Arithmetic_1_1CovarianceMatrixProviderFor.html">CovarianceMatrixProviderFor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a1990b5d09f3f226a9229f0689e042a93" id="r_a1990b5d09f3f226a9229f0689e042a93"><td class="memTemplParams" colspan="2">template&lt;size_t IndependentVars, size_t DependentVars, typename... DependentFuncs&gt; </td></tr>
+<tr class="memitem:a1990b5d09f3f226a9229f0689e042a93"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/dd1/namespaceMantid_1_1Algorithms_1_1Arithmetic.html#a1990b5d09f3f226a9229f0689e042a93">makeCovarianceMatrixProvider</a> (DependentFuncs &amp;&amp;...dependentFuncs)</td></tr>
+<tr class="separator:a1990b5d09f3f226a9229f0689e042a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a704fdff517ead9f044cb3d096ef122a1" id="r_a704fdff517ead9f044cb3d096ef122a1"><td class="memTemplParams" colspan="2">template&lt;size_t N, typename Func &gt; </td></tr>
 <tr class="memitem:a704fdff517ead9f044cb3d096ef122a1"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/dd1/namespaceMantid_1_1Algorithms_1_1Arithmetic.html#a704fdff517ead9f044cb3d096ef122a1">makeErrorPropagation</a> (Func &amp;&amp;func)</td></tr>
 <tr class="separator:a704fdff517ead9f044cb3d096ef122a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a1990b5d09f3f226a9229f0689e042a93" name="a1990b5d09f3f226a9229f0689e042a93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1990b5d09f3f226a9229f0689e042a93">&#9670;&#160;</a></span>makeCovarianceMatrixProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t IndependentVars, size_t DependentVars, typename... DependentFuncs&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Mantid::Algorithms::Arithmetic::makeCovarianceMatrixProvider </td>
+          <td>(</td>
+          <td class="paramtype">DependentFuncs &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>dependentFuncs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d84/PolarizationCorrectionsHelpers_8h_source.html#l00176">176</a> of file <a class="el" href="../../db/d84/PolarizationCorrectionsHelpers_8h_source.html">PolarizationCorrectionsHelpers.h</a>.</p>
+
+</div>
+</div>
 <a id="a704fdff517ead9f044cb3d096ef122a1" name="a704fdff517ead9f044cb3d096ef122a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a704fdff517ead9f044cb3d096ef122a1">&#9670;&#160;</a></span>makeErrorPropagation()</h2>
 
@@ -128,7 +161,7 @@ template&lt;size_t N, typename Func &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d84/PolarizationCorrectionsHelpers_8h_source.html#l00170">170</a> of file <a class="el" href="../../db/d84/PolarizationCorrectionsHelpers_8h_source.html">PolarizationCorrectionsHelpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d84/PolarizationCorrectionsHelpers_8h_source.html#l00308">308</a> of file <a class="el" href="../../db/d84/PolarizationCorrectionsHelpers_8h_source.html">PolarizationCorrectionsHelpers.h</a>.</p>
 
 </div>
 </div>

@@ -31,8 +31,9 @@ var searchData=
   ['functionfactory_28',['FunctionFactory',['../d9/da0/namespaceMantid_1_1API.html#ad011bb515a0d0623910f8ab23688507d',1,'Mantid::API']]],
   ['functionfactoryupdatenotification_29',['FunctionFactoryUpdateNotification',['../d9/da0/namespaceMantid_1_1API.html#aeb7df5dcf0f954b16207453a94e9dd83',1,'Mantid::API']]],
   ['functionfactoryupdatenotification_5fptr_30',['FunctionFactoryUpdateNotification_ptr',['../d9/da0/namespaceMantid_1_1API.html#a149a39ab087cd81739d1615773adaf49',1,'Mantid::API']]],
-  ['functioniterator_31',['FunctionIterator',['../df/dd7/classMantid_1_1Geometry_1_1CompositeImplicitFunction.html#ac966c0addd0ea200b0004a61a38c9133',1,'Mantid::Geometry::CompositeImplicitFunction']]],
-  ['functionmaptype_32',['FunctionMapType',['../db/d30/namespaceMantid_1_1CurveFitting_1_1ParameterEstimator.html#aaa0de35635c5238a79a299cfe6548f3d',1,'Mantid::CurveFitting::ParameterEstimator']]],
-  ['functionparameterdecorator_5fsptr_33',['FunctionParameterDecorator_sptr',['../d9/da0/namespaceMantid_1_1API.html#a5e2956650162b4df7510cb70feccff7e',1,'Mantid::API']]],
-  ['functionvalues_5fsptr_34',['FunctionValues_sptr',['../d9/da0/namespaceMantid_1_1API.html#a076d7e5f254f15facf80608a298c241d',1,'Mantid::API']]]
+  ['functioninput_31',['FunctionInput',['../d0/d2e/classMantid_1_1Algorithms_1_1Arithmetic_1_1CovarianceMatrixProvider.html#a840ee6df1e542fc8c37e7a3788b64023',1,'Mantid::Algorithms::Arithmetic::CovarianceMatrixProvider']]],
+  ['functioniterator_32',['FunctionIterator',['../df/dd7/classMantid_1_1Geometry_1_1CompositeImplicitFunction.html#ac966c0addd0ea200b0004a61a38c9133',1,'Mantid::Geometry::CompositeImplicitFunction']]],
+  ['functionmaptype_33',['FunctionMapType',['../db/d30/namespaceMantid_1_1CurveFitting_1_1ParameterEstimator.html#aaa0de35635c5238a79a299cfe6548f3d',1,'Mantid::CurveFitting::ParameterEstimator']]],
+  ['functionparameterdecorator_5fsptr_34',['FunctionParameterDecorator_sptr',['../d9/da0/namespaceMantid_1_1API.html#a5e2956650162b4df7510cb70feccff7e',1,'Mantid::API']]],
+  ['functionvalues_5fsptr_35',['FunctionValues_sptr',['../d9/da0/namespaceMantid_1_1API.html#a076d7e5f254f15facf80608a298c241d',1,'Mantid::API']]]
 ];

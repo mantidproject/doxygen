@@ -12,7 +12,8 @@ var indexSectionsWithContent =
   9: "abefilmostuw",
   10: "abcdefgiklmnoprstuw",
   11: "abcdefgiklmnpqrstuvw",
-  12: "adfilmost"
+  12: "adfilmost",
+  13: "m"
 };
 
 var indexSectionNames =
@@ -29,7 +30,8 @@ var indexSectionNames =
   9: "properties",
   10: "related",
   11: "defines",
-  12: "pages"
+  12: "pages",
+  13: "concepts"
 };
 
 var indexSectionLabels =
@@ -46,6 +48,7 @@ var indexSectionLabels =
   9: "Properties",
   10: "Friends",
   11: "Macros",
-  12: "Pages"
+  12: "Pages",
+  13: "Concepts"
 };
 
