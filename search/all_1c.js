@@ -24,6 +24,6 @@ var searchData=
   ['ystep_21',['ystep',['../db/d95/classMantid_1_1Geometry_1_1GridDetector.html#a8fd533af6bd9819b1bc6a150d79df098',1,'Mantid::Geometry::GridDetector']]],
   ['ytype_22',['YType',['../d2/dac/classMantid_1_1DataObjects_1_1EventWorkspaceMRU.html#a76d9ca58ebce250f0d46f43088285968',1,'Mantid::DataObjects::EventWorkspaceMRU']]],
   ['yunit_23',['YUnit',['../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#aae06868f8723558e4138bd88a887874f',1,'Mantid::API::MatrixWorkspace']]],
-  ['yunitlabel_24',['YUnitLabel',['../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a007d82c76946f09e8671c155e5177564',1,'Mantid::API::MatrixWorkspace']]],
+  ['yunitlabel_24',['YUnitLabel',['../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#aea85595ef5d4b113862cc2c2a891741a',1,'Mantid::API::MatrixWorkspace']]],
   ['ywithmarker_25',['YWithMarker',['../d2/dac/classMantid_1_1DataObjects_1_1EventWorkspaceMRU.html#a83c0884051274a5bfa948dd41c4095cf',1,'Mantid::DataObjects::EventWorkspaceMRU']]]
 ];

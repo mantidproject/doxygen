@@ -14,5 +14,5 @@ var searchData=
   ['ystart_11',['ystart',['../db/d95/classMantid_1_1Geometry_1_1GridDetector.html#a1827a0434d3db0fb04878e024e8be6a5',1,'Mantid::Geometry::GridDetector']]],
   ['ystep_12',['ystep',['../db/d95/classMantid_1_1Geometry_1_1GridDetector.html#a8fd533af6bd9819b1bc6a150d79df098',1,'Mantid::Geometry::GridDetector']]],
   ['yunit_13',['YUnit',['../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#aae06868f8723558e4138bd88a887874f',1,'Mantid::API::MatrixWorkspace']]],
-  ['yunitlabel_14',['YUnitLabel',['../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a007d82c76946f09e8671c155e5177564',1,'Mantid::API::MatrixWorkspace']]]
+  ['yunitlabel_14',['YUnitLabel',['../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#aea85595ef5d4b113862cc2c2a891741a',1,'Mantid::API::MatrixWorkspace']]]
 ];
