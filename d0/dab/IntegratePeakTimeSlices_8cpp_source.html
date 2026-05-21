@@ -332,16 +332,16 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  <span class="keywordtype">double</span> Row0 = lastRow;</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  <span class="keywordtype">double</span> lastCol = <a class="code hl_variable" href="../../d4/d17/classMantid_1_1Crystal_1_1IntegratePeakTimeSlices.html#a1c3a19330a83fa559f710fc8ba4335ad">m_COL</a>;</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  <span class="keywordtype">double</span> Col0 = lastCol;</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>  <span class="keywordtype">string</span> spec_idList;</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  <span class="comment">// For quickly looking up workspace index from det id</span></div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>  <a class="code hl_variable" href="../../d4/d17/classMantid_1_1Crystal_1_1IntegratePeakTimeSlices.html#a4ae38a1916ba75d016a0202f545ce8f8">m_wi_to_detid_map</a> = inpWkSpace-&gt;getDetectorIDToWorkspaceIndexMap();</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>  <a class="code hl_typedef" href="../../db/d22/namespaceMantid_1_1DataObjects.html#a3b90cd1b914ff14260f22d73f6a54129">TableWorkspace_sptr</a> TabWS = std::make_shared&lt;TableWorkspace&gt;(0);</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  <span class="comment">//----------------------------- get Peak extents</span></div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>  <span class="comment">//------------------------------</span></div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>  <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  <span class="comment">// For quickly looking up workspace index from det id</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  <a class="code hl_variable" href="../../d4/d17/classMantid_1_1Crystal_1_1IntegratePeakTimeSlices.html#a4ae38a1916ba75d016a0202f545ce8f8">m_wi_to_detid_map</a> = inpWkSpace-&gt;getDetectorIDToWorkspaceIndexMap();</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>  <a class="code hl_typedef" href="../../db/d22/namespaceMantid_1_1DataObjects.html#a3b90cd1b914ff14260f22d73f6a54129">TableWorkspace_sptr</a> TabWS = std::make_shared&lt;TableWorkspace&gt;(0);</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>  <span class="comment">//----------------------------- get Peak extents</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  <span class="comment">//------------------------------</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>  <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="keywordtype">string</span> spec_idList;</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    <span class="keywordtype">int</span> detID = peak.<a class="code hl_function" href="../../d1/d33/classMantid_1_1DataObjects_1_1Peak.html#a7904dfdc18d67d0073fa97edff5284ec">getDetectorID</a>();</div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    <span class="comment">// Find the workspace index for this detector ID</span></div>

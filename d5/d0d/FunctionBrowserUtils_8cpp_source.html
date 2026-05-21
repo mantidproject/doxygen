@@ -117,8 +117,8 @@ $(document).ready(function() { init_codefold(1); });
 <div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="../../df/d7a/namespaceMantidQt_1_1MantidWidgets.html#af27b7c9bd540ff4ac1a107eec7946a7b">   18</a></span>std::pair&lt;std::string, std::string&gt; <a class="code hl_function" href="../../df/d7a/namespaceMantidQt_1_1MantidWidgets.html#af27b7c9bd540ff4ac1a107eec7946a7b">splitParameterName</a>(std::string <span class="keyword">const</span> &amp;paramName) {</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  QString functionIndex;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  QString initialParamName = QString::fromStdString(paramName);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  QString parameterName = QString::fromStdString(paramName);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  QString <span class="keyword">const</span> initialParamName = QString::fromStdString(paramName);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  QString parameterName = initialParamName;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keywordtype">int</span> j = initialParamName.lastIndexOf(<span class="charliteral">&#39;.&#39;</span>);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordflow">if</span> (j &gt; 0) {</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    ++j;</div>

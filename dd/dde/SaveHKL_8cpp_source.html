@@ -666,70 +666,81 @@ $(document).ready(function() { init_codefold(1); });
 <div class="foldopen" id="foldopen00580" data-start="{" data-end="}">
 <div class="line"><a id="l00580" name="l00580"></a><span class="lineno"><a class="line" href="../../d8/d26/classMantid_1_1Crystal_1_1SaveHKL.html#acaf0b613a16d0faa496d1e069b850435">  580</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="../../d8/d26/classMantid_1_1Crystal_1_1SaveHKL.html#acaf0b613a16d0faa496d1e069b850435">SaveHKL::spectrumCalc</a>(<span class="keywordtype">double</span> <a class="code hl_enumvalue" href="../../d9/da0/namespaceMantid_1_1API.html#ae9f200e7b2faa4af0f90f099246b084fa35f028d0c643f64a7ea7dcdfe64c0817">TOF</a>, <span class="keywordtype">int</span> iSpec, <span class="keyword">const</span> std::vector&lt;std::vector&lt;double&gt;&gt; &amp;time,</div>
 <div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>                             <span class="keyword">const</span> std::vector&lt;std::vector&lt;double&gt;&gt; &amp;spectra, <span class="keywordtype">size_t</span> <span class="keywordtype">id</span>) {</div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>  <span class="keywordtype">double</span> spect = 0;</div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>  <span class="keywordflow">if</span> (iSpec == 1) {</div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>    <span class="comment">//&quot;Calculate the spectrum using spectral coefficients for the GSAS Type 2</span></div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>    <span class="comment">// incident spectrum.&quot;</span></div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>    <span class="keywordtype">double</span> T = <a class="code hl_enumvalue" href="../../d9/da0/namespaceMantid_1_1API.html#ae9f200e7b2faa4af0f90f099246b084fa35f028d0c643f64a7ea7dcdfe64c0817">TOF</a> / 1000.; <span class="comment">// time-of-flight in milliseconds</span></div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span> </div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>    <span class="keywordtype">double</span> c1 = spectra[id][0];</div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>    <span class="keywordtype">double</span> c2 = spectra[id][1];</div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>    <span class="keywordtype">double</span> c3 = spectra[id][2];</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>    <span class="keywordtype">double</span> c4 = spectra[id][3];</div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>    <span class="keywordtype">double</span> c5 = spectra[id][4];</div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>    <span class="keywordtype">double</span> c6 = spectra[id][5];</div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    <span class="keywordtype">double</span> c7 = spectra[id][6];</div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>    <span class="keywordtype">double</span> c8 = spectra[id][7];</div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>    <span class="keywordtype">double</span> c9 = spectra[id][8];</div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>    <span class="keywordtype">double</span> c10 = spectra[id][9];</div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>    <span class="keywordtype">double</span> c11 = spectra[id][10];</div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span> </div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>    spect = c1 + c2 * exp(-c3 / std::pow(T, 2)) / std::pow(T, 5) + c4 * exp(-c5 * std::pow(T, 2)) +</div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>            c6 * exp(-c7 * std::pow(T, 3)) + c8 * exp(-c9 * std::pow(T, 4)) + c10 * exp(-c11 * std::pow(T, 5));</div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>    <span class="keywordtype">size_t</span> i = 1;</div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>    <span class="keywordflow">for</span> (i = 1; i &lt; spectra[id].size(); ++i)</div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>      <span class="keywordflow">if</span> (<a class="code hl_enumvalue" href="../../d9/da0/namespaceMantid_1_1API.html#ae9f200e7b2faa4af0f90f099246b084fa35f028d0c643f64a7ea7dcdfe64c0817">TOF</a> &lt; time[<span class="keywordtype">id</span>][i])</div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>    spect = spectra[id][i - 1] +</div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>            (<a class="code hl_enumvalue" href="../../d9/da0/namespaceMantid_1_1API.html#ae9f200e7b2faa4af0f90f099246b084fa35f028d0c643f64a7ea7dcdfe64c0817">TOF</a> - time[id][i - 1]) / (time[<span class="keywordtype">id</span>][i] - time[<span class="keywordtype">id</span>][i - 1]) * (spectra[id][i] - spectra[id][i - 1]);</div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>  }</div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span> </div>
-<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>  <span class="keywordflow">return</span> spect;</div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>}</div>
-</div>
-<div class="foldopen" id="foldopen00613" data-start="{" data-end="}">
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno"><a class="line" href="../../d8/d26/classMantid_1_1Crystal_1_1SaveHKL.html#aaf43f9eea06e5dfdb891af9bc8d06b41">  613</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/d26/classMantid_1_1Crystal_1_1SaveHKL.html#aaf43f9eea06e5dfdb891af9bc8d06b41">SaveHKL::sizeBanks</a>(<span class="keyword">const</span> std::string &amp;bankName, <span class="keywordtype">int</span> &amp;nCols, <span class="keywordtype">int</span> &amp;nRows) {</div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>  <span class="keywordflow">if</span> (bankName == <span class="stringliteral">&quot;None&quot;</span>)</div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>  std::shared_ptr&lt;const IComponent&gt; parent = <a class="code hl_variable" href="../../d8/d26/classMantid_1_1Crystal_1_1SaveHKL.html#ab62691fe17f479b0db2364aa990bcf1f">m_ws</a>-&gt;getInstrument()-&gt;getComponentByName(bankName);</div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>  <span class="keywordflow">if</span> (!parent)</div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>  <span class="keywordflow">if</span> (parent-&gt;type() == <span class="stringliteral">&quot;RectangularDetector&quot;</span>) {</div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>    std::shared_ptr&lt;const RectangularDetector&gt; RDet = std::dynamic_pointer_cast&lt;const RectangularDetector&gt;(parent);</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>  <span class="keywordflow">if</span> (spectra[<span class="keywordtype">id</span>].size() &lt; 11) {</div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Not enough spectral coefficients for GSAS Type 2 spectrum.&quot;</span>);</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>  }</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>  <span class="keywordflow">if</span> (time[<span class="keywordtype">id</span>].size() &lt; spectra[<span class="keywordtype">id</span>].size()) {</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Not enough time points for the spectrum.&quot;</span>);</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>  }</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span> </div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>  <span class="keywordtype">double</span> spect = 0;</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>  <span class="keywordflow">if</span> (iSpec == 1) {</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>    <span class="comment">//&quot;Calculate the spectrum using spectral coefficients for the GSAS Type 2</span></div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>    <span class="comment">// incident spectrum.&quot;</span></div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>    <span class="keywordtype">double</span> T = <a class="code hl_enumvalue" href="../../d9/da0/namespaceMantid_1_1API.html#ae9f200e7b2faa4af0f90f099246b084fa35f028d0c643f64a7ea7dcdfe64c0817">TOF</a> / 1000.; <span class="comment">// time-of-flight in milliseconds</span></div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span> </div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>    <span class="keywordtype">double</span> c1 = spectra[id][0];</div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>    <span class="keywordtype">double</span> c2 = spectra[id][1];</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>    <span class="keywordtype">double</span> c3 = spectra[id][2];</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>    <span class="keywordtype">double</span> c4 = spectra[id][3];</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>    <span class="keywordtype">double</span> c5 = spectra[id][4];</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>    <span class="keywordtype">double</span> c6 = spectra[id][5];</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>    <span class="keywordtype">double</span> c7 = spectra[id][6];</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>    <span class="keywordtype">double</span> c8 = spectra[id][7];</div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>    <span class="keywordtype">double</span> c9 = spectra[id][8];</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>    <span class="keywordtype">double</span> c10 = spectra[id][9];</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>    <span class="keywordtype">double</span> c11 = spectra[id][10];</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span> </div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>    spect = c1 + c2 * exp(-c3 / std::pow(T, 2)) / std::pow(T, 5) + c4 * exp(-c5 * std::pow(T, 2)) +</div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>            c6 * exp(-c7 * std::pow(T, 3)) + c8 * exp(-c9 * std::pow(T, 4)) + c10 * exp(-c11 * std::pow(T, 5));</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>    <span class="keywordtype">size_t</span> i = 1;</div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>    <span class="keywordflow">for</span> (i = 1; i &lt; spectra[id].size(); ++i)</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>      <span class="keywordflow">if</span> (<a class="code hl_enumvalue" href="../../d9/da0/namespaceMantid_1_1API.html#ae9f200e7b2faa4af0f90f099246b084fa35f028d0c643f64a7ea7dcdfe64c0817">TOF</a> &lt; time[<span class="keywordtype">id</span>][i])</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>    <span class="keywordflow">if</span> (i &lt; spectra[<span class="keywordtype">id</span>].size()) {</div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>      spect = spectra[id][i - 1] +</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>              (<a class="code hl_enumvalue" href="../../d9/da0/namespaceMantid_1_1API.html#ae9f200e7b2faa4af0f90f099246b084fa35f028d0c643f64a7ea7dcdfe64c0817">TOF</a> - time[id][i - 1]) / (time[<span class="keywordtype">id</span>][i] - time[<span class="keywordtype">id</span>][i - 1]) * (spectra[id][i] - spectra[id][i - 1]);</div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>      spect = spectra[id].back();</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>    }</div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>  }</div>
 <div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span> </div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>    nCols = RDet-&gt;xpixels();</div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>    nRows = RDet-&gt;ypixels();</div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>    <span class="keyword">const</span> <span class="keyword">auto</span> &amp;componentInfo = <a class="code hl_variable" href="../../d8/d26/classMantid_1_1Crystal_1_1SaveHKL.html#ab62691fe17f479b0db2364aa990bcf1f">m_ws</a>-&gt;componentInfo();</div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>    <span class="keywordtype">size_t</span> parentIndex = componentInfo.indexOfAny(bankName);</div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span> </div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d8/d26/classMantid_1_1Crystal_1_1SaveHKL.html#ab62691fe17f479b0db2364aa990bcf1f">m_ws</a>-&gt;getInstrument()-&gt;getName() == <span class="stringliteral">&quot;CORELLI&quot;</span>) <span class="comment">// for Corelli with sixteenpack under bank</span></div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>    {</div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>      <span class="keyword">auto</span> children = componentInfo.children(parentIndex);</div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>      <span class="keywordflow">if</span> (!children.empty()) {</div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>        parentIndex = children[0];</div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>      }</div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>    }</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    <span class="keyword">auto</span> children = componentInfo.children(parentIndex);</div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>    <span class="keyword">auto</span> grandchildren = componentInfo.children(children[0]);</div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    nRows = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(grandchildren.size());</div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>    nCols = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(children.size());</div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>  }</div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>}</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>  <span class="keywordflow">return</span> spect;</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>}</div>
 </div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span> </div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>} <span class="comment">// namespace Mantid::Crystal</span></div>
+<div class="foldopen" id="foldopen00624" data-start="{" data-end="}">
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno"><a class="line" href="../../d8/d26/classMantid_1_1Crystal_1_1SaveHKL.html#aaf43f9eea06e5dfdb891af9bc8d06b41">  624</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/d26/classMantid_1_1Crystal_1_1SaveHKL.html#aaf43f9eea06e5dfdb891af9bc8d06b41">SaveHKL::sizeBanks</a>(<span class="keyword">const</span> std::string &amp;bankName, <span class="keywordtype">int</span> &amp;nCols, <span class="keywordtype">int</span> &amp;nRows) {</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>  <span class="keywordflow">if</span> (bankName == <span class="stringliteral">&quot;None&quot;</span>)</div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>  std::shared_ptr&lt;const IComponent&gt; parent = <a class="code hl_variable" href="../../d8/d26/classMantid_1_1Crystal_1_1SaveHKL.html#ab62691fe17f479b0db2364aa990bcf1f">m_ws</a>-&gt;getInstrument()-&gt;getComponentByName(bankName);</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>  <span class="keywordflow">if</span> (!parent)</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>  <span class="keywordflow">if</span> (parent-&gt;type() == <span class="stringliteral">&quot;RectangularDetector&quot;</span>) {</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>    std::shared_ptr&lt;const RectangularDetector&gt; RDet = std::dynamic_pointer_cast&lt;const RectangularDetector&gt;(parent);</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span> </div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>    nCols = RDet-&gt;xpixels();</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>    nRows = RDet-&gt;ypixels();</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>    <span class="keyword">const</span> <span class="keyword">auto</span> &amp;componentInfo = <a class="code hl_variable" href="../../d8/d26/classMantid_1_1Crystal_1_1SaveHKL.html#ab62691fe17f479b0db2364aa990bcf1f">m_ws</a>-&gt;componentInfo();</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    <span class="keywordtype">size_t</span> parentIndex = componentInfo.indexOfAny(bankName);</div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span> </div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d8/d26/classMantid_1_1Crystal_1_1SaveHKL.html#ab62691fe17f479b0db2364aa990bcf1f">m_ws</a>-&gt;getInstrument()-&gt;getName() == <span class="stringliteral">&quot;CORELLI&quot;</span>) <span class="comment">// for Corelli with sixteenpack under bank</span></div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>    {</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>      <span class="keyword">auto</span> children = componentInfo.children(parentIndex);</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>      <span class="keywordflow">if</span> (!children.empty()) {</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>        parentIndex = children[0];</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>      }</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>    }</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>    <span class="keyword">auto</span> children = componentInfo.children(parentIndex);</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>    <span class="keyword">auto</span> grandchildren = componentInfo.children(children[0]);</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>    nRows = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(grandchildren.size());</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>    nCols = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(children.size());</div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>  }</div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>}</div>
+</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span> </div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>} <span class="comment">// namespace Mantid::Crystal</span></div>
 <div class="ttc" id="aAlgorithm_8h_html_afdb48240ab340a0026eeadc6de8b72e1"><div class="ttname"><a href="../../d7/d36/Algorithm_8h.html#afdb48240ab340a0026eeadc6de8b72e1">DECLARE_ALGORITHM</a></div><div class="ttdeci">#define DECLARE_ALGORITHM(classname)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d36/Algorithm_8h_source.html#l00542">Algorithm.h:542</a></div></div>
 <div class="ttc" id="aAnvredCorrection_8h_html"><div class="ttname"><a href="../../dc/db2/AnvredCorrection_8h.html">AnvredCorrection.h</a></div></div>
 <div class="ttc" id="aAugmentedLagrangianOptimizer_8cpp_html_a320d27f89cda9b48a5fd624c8cd4b870"><div class="ttname"><a href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#a320d27f89cda9b48a5fd624c8cd4b870">lambda</a></div><div class="ttdeci">const std::vector&lt; double &gt; * lambda</div><div class="ttdef"><b>Definition</b> <a href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00045">AugmentedLagrangianOptimizer.cpp:45</a></div></div>
@@ -766,7 +777,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="ttc" id="aclassMantid_1_1Crystal_1_1SaveHKL_html_a1ea25139d8cc8fb934784533a10bab21"><div class="ttname"><a href="../../d8/d26/classMantid_1_1Crystal_1_1SaveHKL.html#a1ea25139d8cc8fb934784533a10bab21">Mantid::Crystal::SaveHKL::m_power_th</a></div><div class="ttdeci">double m_power_th</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/SaveHKL_8h_source.html#l00049">SaveHKL.h:49</a></div></div>
 <div class="ttc" id="aclassMantid_1_1Crystal_1_1SaveHKL_html_a2068ea7364a7b10d9cfd4d040e22f795"><div class="ttname"><a href="../../d8/d26/classMantid_1_1Crystal_1_1SaveHKL.html#a2068ea7364a7b10d9cfd4d040e22f795">Mantid::Crystal::SaveHKL::exec</a></div><div class="ttdeci">void exec() override</div><div class="ttdoc">Run the algorithm.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dde/SaveHKL_8cpp_source.html#l00094">SaveHKL.cpp:94</a></div></div>
 <div class="ttc" id="aclassMantid_1_1Crystal_1_1SaveHKL_html_a42cf1a24fd3e22e7837432ebfc8ef22c"><div class="ttname"><a href="../../d8/d26/classMantid_1_1Crystal_1_1SaveHKL.html#a42cf1a24fd3e22e7837432ebfc8ef22c">Mantid::Crystal::SaveHKL::m_smu</a></div><div class="ttdeci">double m_smu</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/SaveHKL_8h_source.html#l00047">SaveHKL.h:47</a></div></div>
-<div class="ttc" id="aclassMantid_1_1Crystal_1_1SaveHKL_html_aaf43f9eea06e5dfdb891af9bc8d06b41"><div class="ttname"><a href="../../d8/d26/classMantid_1_1Crystal_1_1SaveHKL.html#aaf43f9eea06e5dfdb891af9bc8d06b41">Mantid::Crystal::SaveHKL::sizeBanks</a></div><div class="ttdeci">void sizeBanks(const std::string &amp;bankName, int &amp;nCols, int &amp;nRows)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dde/SaveHKL_8cpp_source.html#l00613">SaveHKL.cpp:613</a></div></div>
+<div class="ttc" id="aclassMantid_1_1Crystal_1_1SaveHKL_html_aaf43f9eea06e5dfdb891af9bc8d06b41"><div class="ttname"><a href="../../d8/d26/classMantid_1_1Crystal_1_1SaveHKL.html#aaf43f9eea06e5dfdb891af9bc8d06b41">Mantid::Crystal::SaveHKL::sizeBanks</a></div><div class="ttdeci">void sizeBanks(const std::string &amp;bankName, int &amp;nCols, int &amp;nRows)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dde/SaveHKL_8cpp_source.html#l00624">SaveHKL.cpp:624</a></div></div>
 <div class="ttc" id="aclassMantid_1_1Crystal_1_1SaveHKL_html_ab62691fe17f479b0db2364aa990bcf1f"><div class="ttname"><a href="../../d8/d26/classMantid_1_1Crystal_1_1SaveHKL.html#ab62691fe17f479b0db2364aa990bcf1f">Mantid::Crystal::SaveHKL::m_ws</a></div><div class="ttdeci">DataObjects::PeaksWorkspace_sptr m_ws</div><div class="ttdef"><b>Definition</b> <a href="../../db/dbc/SaveHKL_8h_source.html#l00046">SaveHKL.h:46</a></div></div>
 <div class="ttc" id="aclassMantid_1_1Crystal_1_1SaveHKL_html_acaf0b613a16d0faa496d1e069b850435"><div class="ttname"><a href="../../d8/d26/classMantid_1_1Crystal_1_1SaveHKL.html#acaf0b613a16d0faa496d1e069b850435">Mantid::Crystal::SaveHKL::spectrumCalc</a></div><div class="ttdeci">double spectrumCalc(double TOF, int iSpec, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;time, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;spectra, size_t id)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dde/SaveHKL_8cpp_source.html#l00580">SaveHKL.cpp:580</a></div></div>
 <div class="ttc" id="aclassMantid_1_1Crystal_1_1SaveHKL_html_ace70c8a100c63da5a1e0f7835e4196cd"><div class="ttname"><a href="../../d8/d26/classMantid_1_1Crystal_1_1SaveHKL.html#ace70c8a100c63da5a1e0f7835e4196cd">Mantid::Crystal::SaveHKL::absorbSphere</a></div><div class="ttdeci">double absorbSphere(double radius, double twoth, double wl, double &amp;tbar)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dde/SaveHKL_8cpp_source.html#l00550">SaveHKL.cpp:550</a></div></div>
