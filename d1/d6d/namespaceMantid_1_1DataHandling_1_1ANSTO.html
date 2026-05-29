@@ -109,6 +109,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da8/classMantid_1_1DataHandling_1_1ANSTO_1_1BaseEventProcessor.html">BaseEventProcessor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">abstract base class for processing events as they are read from the file  <a href="../../de/da8/classMantid_1_1DataHandling_1_1ANSTO_1_1BaseEventProcessor.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc3/classMantid_1_1DataHandling_1_1ANSTO_1_1EventAssigner.html">EventAssigner</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db7/classMantid_1_1DataHandling_1_1ANSTO_1_1EventAssignerFixedWavelength.html">EventAssignerFixedWavelength</a></td></tr>
@@ -151,6 +154,9 @@ Functions</h2></td></tr>
 <tr class="memitem:afc2422e3befa45ba93d91f750597907b" id="r_afc2422e3befa45ba93d91f750597907b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d6d/namespaceMantid_1_1DataHandling_1_1ANSTO.html#afc2422e3befa45ba93d91f750597907b">filterDatasets</a> (const <a class="el" href="../../d1/ddf/classMantid_1_1Nexus_1_1NXEntry.html">Nexus::NXEntry</a> &amp;entry, const std::string &amp;groupAddress, const std::string &amp;regexFilter)</td></tr>
 <tr class="memdesc:afc2422e3befa45ba93d91f750597907b"><td class="mdescLeft">&#160;</td><td class="mdescRight">extract datasets from a group that match a regex filter  <br /></td></tr>
 <tr class="separator:afc2422e3befa45ba93d91f750597907b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa06e407d29a1eb9315ad668a067ec4e1" id="r_aa06e407d29a1eb9315ad668a067ec4e1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d6d/namespaceMantid_1_1DataHandling_1_1ANSTO.html#aa06e407d29a1eb9315ad668a067ec4e1">filterGroups</a> (const <a class="el" href="../../d1/ddf/classMantid_1_1Nexus_1_1NXEntry.html">Nexus::NXEntry</a> &amp;entry, const std::string &amp;groupAddress, const std::string &amp;regexFilter)</td></tr>
+<tr class="memdesc:aa06e407d29a1eb9315ad668a067ec4e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">extract groups from a group that match a regex filter  <br /></td></tr>
+<tr class="separator:aa06e407d29a1eb9315ad668a067ec4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45c19cd64a10458f9bf98ce2c976ec51" id="r_a45c19cd64a10458f9bf98ce2c976ec51"><td class="memTemplParams" colspan="2">template&lt;class IReader , class IEventHandler , class IProgress &gt; </td></tr>
 <tr class="memitem:a45c19cd64a10458f9bf98ce2c976ec51"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/d6d/namespaceMantid_1_1DataHandling_1_1ANSTO.html#a45c19cd64a10458f9bf98ce2c976ec51">ReadEventFile</a> (IReader &amp;loader, IEventHandler &amp;handler, IProgress &amp;progress, int32_t def_clock_scale, bool use_tx_chopper)</td></tr>
 <tr class="separator:a45c19cd64a10458f9bf98ce2c976ec51"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,7 +185,7 @@ Variables</h2></td></tr>
 
 <p>pointer to the vector of events </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d23/LoadANSTOHelper_8h_source.html#l00039">39</a> of file <a class="el" href="../../d7/d23/LoadANSTOHelper_8h_source.html">LoadANSTOHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d23/LoadANSTOHelper_8h_source.html#l00043">43</a> of file <a class="el" href="../../d7/d23/LoadANSTOHelper_8h_source.html">LoadANSTOHelper.h</a>.</p>
 
 </div>
 </div>
@@ -246,7 +252,49 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../d4/d86/NexusClasses_8h_source.html#l00557">Mantid::Nexus::NXClass::datasets()</a>, <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, and <a class="el" href="../../d4/d86/NexusClasses_8h_source.html#l00481">Mantid::Nexus::NXClass::openNXGroup()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d89/LoadEMU_8cpp_source.html#l01138">Mantid::DataHandling::LoadEMU&lt; FD &gt;::loadEnvironParameters()</a>, and <a class="el" href="../../df/d03/LoadPLN_8cpp_source.html#l00786">Mantid::DataHandling::LoadPLN::loadEnvironParameters()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d89/LoadEMU_8cpp_source.html#l01138">Mantid::DataHandling::LoadEMU&lt; FD &gt;::loadEnvironParameters()</a>, and <a class="el" href="../../df/d03/LoadPLN_8cpp_source.html#l00776">Mantid::DataHandling::LoadPLN::loadEnvironParameters()</a>.</p>
+
+</div>
+</div>
+<a id="aa06e407d29a1eb9315ad668a067ec4e1" name="aa06e407d29a1eb9315ad668a067ec4e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa06e407d29a1eb9315ad668a067ec4e1">&#9670;&#160;</a></span>filterGroups()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; Mantid::DataHandling::ANSTO::filterGroups </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/ddf/classMantid_1_1Nexus_1_1NXEntry.html">Nexus::NXEntry</a> &amp;&#160;</td>
+          <td class="paramname"><em>entry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>groupAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>regexFilter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>extract groups from a group that match a regex filter </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d72/LoadANSTOHelper_8cpp_source.html#l00039">39</a> of file <a class="el" href="../../d6/d72/LoadANSTOHelper_8cpp_source.html">LoadANSTOHelper.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, <a class="el" href="../../d4/d86/NexusClasses_8h_source.html#l00553">Mantid::Nexus::NXClass::groups()</a>, and <a class="el" href="../../d4/d86/NexusClasses_8h_source.html#l00481">Mantid::Nexus::NXClass::openNXGroup()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/ddb/LoadPLNnxs_8cpp_source.html#l00811">Mantid::DataHandling::LoadPLNnxs::loadEnvironParameters()</a>.</p>
 
 </div>
 </div>

@@ -139,7 +139,7 @@ var searchData=
   ['signalovererror_136',['SignalOverError',['../d2/d0c/classMantid_1_1Algorithms_1_1SignalOverError.html',1,'Mantid::Algorithms']]],
   ['simpleaverage_137',['SimpleAverage',['../df/d1e/structMantid_1_1Kernel_1_1VectorHelper_1_1SimpleAverage.html',1,'Mantid::Kernel::VectorHelper']]],
   ['simplechebfun_138',['SimpleChebfun',['../d2/de3/classMantid_1_1CurveFitting_1_1Functions_1_1SimpleChebfun.html',1,'Mantid::CurveFitting::Functions']]],
-  ['simplehist_139',['SimpleHist',['../d1/d3e/classMantid_1_1DataHandling_1_1PLN_1_1SimpleHist.html',1,'Mantid::DataHandling::PLN']]],
+  ['simplehist_139',['simplehist',['../d1/d3e/classMantid_1_1DataHandling_1_1PLN_1_1SimpleHist.html',1,'Mantid::DataHandling::PLN::SimpleHist'],['../d6/dca/classMantid_1_1DataHandling_1_1PLN2_1_1SimpleHist.html',1,'Mantid::DataHandling::PLN2::SimpleHist']]],
   ['simplemdevent_140',['SimpleMDEvent',['../d7/d4c/classMantid_1_1MDAlgorithms_1_1SimpleMDEvent.html',1,'Mantid::MDAlgorithms']]],
   ['simplereducestrategy_141',['SimpleReduceStrategy',['../d3/d37/classMantid_1_1Crystal_1_1FindSXPeaksHelper_1_1SimpleReduceStrategy.html',1,'Mantid::Crystal::FindSXPeaksHelper']]],
   ['simplexminimizer_142',['SimplexMinimizer',['../d1/d3b/classMantid_1_1CurveFitting_1_1FuncMinimisers_1_1SimplexMinimizer.html',1,'Mantid::CurveFitting::FuncMinimisers']]],
