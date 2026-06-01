@@ -63,7 +63,7 @@ var searchData=
   ['fit1d_60',['fit1D',['../d2/dd5/structMantid_1_1CurveFitting_1_1Algorithms_1_1FitData.html#a61ad91485452344e725bd707a0332ab7',1,'Mantid::CurveFitting::Algorithms::FitData']]],
   ['fit_5fframe_5fxpm_61',['fit_frame_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#a4fb7ad025907242162a134610ecb1e34',1,'MantidQt::API']]],
   ['fit_5fpeak_62',['FIT_PEAK',['../dc/db8/classMantid_1_1Algorithms_1_1GetEi.html#a94175da5a41441431b000584f738f47a',1,'Mantid::Algorithms::GetEi']]],
-  ['fit_5fxpm_63',['fit_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#a7e95a5bfce2d4fd39695fb5a2d319213',1,'MantidQt::API::fit_xpm'],['../d2/d36/namespaceMantidQt_1_1API.html#a439612b26e4f22c591733e63a77d2f23',1,'MantidQt::API::Fit_xpm']]],
+  ['fit_5fxpm_63',['fit_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#a439612b26e4f22c591733e63a77d2f23',1,'MantidQt::API::Fit_xpm'],['../d2/d36/namespaceMantidQt_1_1API.html#a7e95a5bfce2d4fd39695fb5a2d319213',1,'MantidQt::API::fit_xpm']]],
   ['fiterror_64',['fiterror',['../d9/db9/structMantid_1_1CurveFitting_1_1Algorithms_1_1Parameter.html#a92a8af0d1c578fa8d6a53f9e3881e1b1',1,'Mantid::CurveFitting::Algorithms::Parameter']]],
   ['fitstatus_65',['fitStatus',['../d9/d9b/structWorkspaceCreationHelper_1_1EPPTableRow.html#a42ffcd2196d60b98c49474d44bab2193',1,'WorkspaceCreationHelper::EPPTableRow']]],
   ['fittedws_66',['fittedWs',['../de/d39/structMantid_1_1CurveFitting_1_1Algorithms_1_1SplineBackground_1_1bSplinePointers.html#a68b4535f202c698c7e9ab15e325b617e',1,'Mantid::CurveFitting::Algorithms::SplineBackground::bSplinePointers']]],
