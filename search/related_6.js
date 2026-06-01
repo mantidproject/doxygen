@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['geometryhandler_0',['geometryhandler',['../df/db2/classMantid_1_1Geometry_1_1IObjComponent.html#a2161b74ca19eb5524560252c05fdf7dd',1,'Mantid::Geometry::IObjComponent::GeometryHandler'],['../de/d0c/classMantid_1_1Geometry_1_1CSGObject.html#a2161b74ca19eb5524560252c05fdf7dd',1,'Mantid::Geometry::CSGObject::GeometryHandler']]],
-  ['geometryrenderer_1',['GeometryRenderer',['../de/d0c/classMantid_1_1Geometry_1_1CSGObject.html#a83bada7048d10f8706eada36a08c04aa',1,'Mantid::Geometry::CSGObject']]],
-  ['griddetector_2',['GridDetector',['../d9/dbd/classMantid_1_1Geometry_1_1GridDetectorPixel.html#a6fb3495b4d168780f05c9338c4dfbcd9',1,'Mantid::Geometry::GridDetectorPixel']]],
-  ['griddetectorpixel_3',['GridDetectorPixel',['../db/d95/classMantid_1_1Geometry_1_1GridDetector.html#aab1f373b7908b3489e7b61ae78d61850',1,'Mantid::Geometry::GridDetector']]]
+  ['fillfromstream_0',['fillFromStream',['../dc/da6/classMantid_1_1Kernel_1_1Matrix.html#a9a358eb47362167d3166ead9a42811d4',1,'Mantid::Kernel::Matrix']]],
+  ['fitdata_1',['FitData',['../d5/d35/classMantid_1_1CurveFitting_1_1Algorithms_1_1Fit1D.html#a602dc3147ff7296be287f00d6c5aa3e8',1,'Mantid::CurveFitting::Algorithms::Fit1D']]],
+  ['functiongenerator_2',['FunctionGenerator',['../d5/de7/classMantid_1_1API_1_1IFunction.html#a69bd2c7d896e83d4a6521fb669fde7e5',1,'Mantid::API::IFunction']]],
+  ['functionparameterdecorator_3',['FunctionParameterDecorator',['../d5/de7/classMantid_1_1API_1_1IFunction.html#a1b650690e03d9a9b9a4cbf399c4cc2d1',1,'Mantid::API::IFunction']]]
 ];

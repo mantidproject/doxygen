@@ -23,7 +23,7 @@ var searchData=
   ['fileerror_20',['FileError',['../d0/d1c/classMantid_1_1Kernel_1_1Exception_1_1FileError.html',1,'Mantid::Kernel::Exception']]],
   ['filefinderimpl_21',['FileFinderImpl',['../df/d28/classMantid_1_1API_1_1FileFinderImpl.html',1,'Mantid::API']]],
   ['filefinderwidget_22',['FileFinderWidget',['../d6/d61/classMantidQt_1_1API_1_1FileFinderWidget.html',1,'MantidQt::API']]],
-  ['fileinfo_23',['FileInfo',['../d9/dde/structMantid_1_1DataHandling_1_1ANSTO_1_1Tar_1_1File_1_1FileInfo.html',1,'Mantid::DataHandling::ANSTO::Tar::File']]],
+  ['fileinfo_23',['fileinfo',['../d9/dde/structMantid_1_1DataHandling_1_1ANSTO_1_1Tar_1_1File_1_1FileInfo.html',1,'Mantid::DataHandling::ANSTO::Tar::File::FileInfo'],['../d2/dde/structMantid_1_1API_1_1FileFinderImpl_1_1FileInfo.html',1,'Mantid::API::FileFinderImpl::FileInfo']]],
   ['fileloader_24',['FileLoader',['../d4/d3b/classMantid_1_1DataHandling_1_1PLN2_1_1FileLoader.html',1,'Mantid::DataHandling::PLN2']]],
   ['fileloaderregistryimpl_25',['FileLoaderRegistryImpl',['../d7/d94/classMantid_1_1API_1_1FileLoaderRegistryImpl.html',1,'Mantid::API']]],
   ['filenamedialogeditor_26',['FilenameDialogEditor',['../da/dfa/classMantidQt_1_1MantidWidgets_1_1FilenameDialogEditor.html',1,'MantidQt::MantidWidgets']]],

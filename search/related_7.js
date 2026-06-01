@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['inputworkspacewidget_0',['InputWorkspaceWidget',['../d3/d49/classMantidQt_1_1CustomDialogs_1_1FitDialog.html#ae4e2752935a358fdc28f7d7c6a5b4e83',1,'MantidQt::CustomDialogs::FitDialog']]],
-  ['instrument_1',['instrument',['../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html#a2ff0e65835bfc4a6510c2a5e3c1fe8fb',1,'Mantid::Geometry::ComponentInfo::Instrument'],['../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#a2ff0e65835bfc4a6510c2a5e3c1fe8fb',1,'Mantid::Geometry::DetectorInfo::Instrument']]],
-  ['interfacemanager_2',['interfacemanager',['../dd/d19/classMantidQt_1_1API_1_1AlgorithmDialog.html#adc85d9158a19fc9838e15c3353b3a9d1',1,'MantidQt::API::AlgorithmDialog::InterfaceManager'],['../d9/d0d/classMantidQt_1_1API_1_1UserSubWindow.html#adc85d9158a19fc9838e15c3353b3a9d1',1,'MantidQt::API::UserSubWindow::InterfaceManager']]],
-  ['itableworkspace_3',['ITableWorkspace',['../df/d9a/classMantid_1_1API_1_1Column.html#ab5f6b20f9cdc71208835d56838cd7230',1,'Mantid::API::Column']]]
+  ['geometryhandler_0',['geometryhandler',['../df/db2/classMantid_1_1Geometry_1_1IObjComponent.html#a2161b74ca19eb5524560252c05fdf7dd',1,'Mantid::Geometry::IObjComponent::GeometryHandler'],['../de/d0c/classMantid_1_1Geometry_1_1CSGObject.html#a2161b74ca19eb5524560252c05fdf7dd',1,'Mantid::Geometry::CSGObject::GeometryHandler']]],
+  ['geometryrenderer_1',['GeometryRenderer',['../de/d0c/classMantid_1_1Geometry_1_1CSGObject.html#a83bada7048d10f8706eada36a08c04aa',1,'Mantid::Geometry::CSGObject']]],
+  ['griddetector_2',['GridDetector',['../d9/dbd/classMantid_1_1Geometry_1_1GridDetectorPixel.html#a6fb3495b4d168780f05c9338c4dfbcd9',1,'Mantid::Geometry::GridDetectorPixel']]],
+  ['griddetectorpixel_3',['GridDetectorPixel',['../db/d95/classMantid_1_1Geometry_1_1GridDetector.html#aab1f373b7908b3489e7b61ae78d61850',1,'Mantid::Geometry::GridDetector']]]
 ];

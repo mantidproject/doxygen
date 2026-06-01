@@ -116,6 +116,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1d3a4bea9ea9f0a6df243aaf42b406f6" id="r_a1d3a4bea9ea9f0a6df243aaf42b406f6"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../d5/dee/classMantid_1_1API_1_1Result.html">Result</a>&lt; std::filesystem::path &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df9/classMantid_1_1API_1_1IArchiveSearch.html#a1d3a4bea9ea9f0a6df243aaf42b406f6">getArchivePath</a> (const std::set&lt; std::string &gt; &amp;hintstrs, const std::vector&lt; std::string &gt; &amp;exts) const =0</td></tr>
 <tr class="memdesc:a1d3a4bea9ea9f0a6df243aaf42b406f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the full path to a data file in an archive.  <br /></td></tr>
 <tr class="separator:a1d3a4bea9ea9f0a6df243aaf42b406f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75f766790ae50bab7355e1b953bc1045" id="r_a75f766790ae50bab7355e1b953bc1045"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../d5/dee/classMantid_1_1API_1_1Result.html">Result</a>&lt; std::vector&lt; std::filesystem::path &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df9/classMantid_1_1API_1_1IArchiveSearch.html#a75f766790ae50bab7355e1b953bc1045">getArchivePaths</a> (const std::vector&lt; std::string &gt; &amp;) const</td></tr>
+<tr class="separator:a75f766790ae50bab7355e1b953bc1045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af218c5cd41222870fc3183e0a95477cc" id="r_af218c5cd41222870fc3183e0a95477cc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df9/classMantid_1_1API_1_1IArchiveSearch.html#af218c5cd41222870fc3183e0a95477cc">supportsMultipleHints</a> () const</td></tr>
+<tr class="memdesc:af218c5cd41222870fc3183e0a95477cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the archive can resolve multiple hints in a single call.  <br /></td></tr>
+<tr class="separator:af218c5cd41222870fc3183e0a95477cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcb4e159c362778da2b44e2c3978ac8a" id="r_abcb4e159c362778da2b44e2c3978ac8a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df9/classMantid_1_1API_1_1IArchiveSearch.html#abcb4e159c362778da2b44e2c3978ac8a">~IArchiveSearch</a> ()=default</td></tr>
 <tr class="memdesc:abcb4e159c362778da2b44e2c3978ac8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <br /></td></tr>
 <tr class="separator:abcb4e159c362778da2b44e2c3978ac8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,6 +204,68 @@ Public Member Functions</h2></td></tr>
 </dl>
 
 <p>Implemented in <a class="el" href="../../d3/d72/classMantid_1_1DataHandling_1_1ISISDataArchive.html#a1e057a334777f25550bf8812c903a9b0">Mantid::DataHandling::ISISDataArchive</a>, and <a class="el" href="../../d1/d75/classMantid_1_1DataHandling_1_1ORNLDataArchive.html#a84458a97513c2eebce3adb8439f2ef10">Mantid::DataHandling::ORNLDataArchive</a>.</p>
+
+</div>
+</div>
+<a id="a75f766790ae50bab7355e1b953bc1045" name="a75f766790ae50bab7355e1b953bc1045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75f766790ae50bab7355e1b953bc1045">&#9670;&#160;</a></span>getArchivePaths()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="../../d5/dee/classMantid_1_1API_1_1Result.html">Result</a>&lt; std::vector&lt; std::filesystem::path &gt; &gt; Mantid::API::IArchiveSearch::getArchivePaths </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="../../d1/d75/classMantid_1_1DataHandling_1_1ORNLDataArchive.html#a29ef72b287bb46703b63b0384a67d6d2">Mantid::DataHandling::ORNLDataArchive</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/IArchiveSearch_8h_source.html#l00056">56</a> of file <a class="el" href="../../d0/dbd/IArchiveSearch_8h_source.html">IArchiveSearch.h</a>.</p>
+
+</div>
+</div>
+<a id="af218c5cd41222870fc3183e0a95477cc" name="af218c5cd41222870fc3183e0a95477cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af218c5cd41222870fc3183e0a95477cc">&#9670;&#160;</a></span>supportsMultipleHints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Mantid::API::IArchiveSearch::supportsMultipleHints </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether the archive can resolve multiple hints in a single call. </p>
+<p>If true, FileFinder will batch unfound hints via getArchivePaths instead of calling getArchivePath once per hint. </p>
+
+<p>Reimplemented in <a class="el" href="../../d1/d75/classMantid_1_1DataHandling_1_1ORNLDataArchive.html#a0d568d1e156094ed3ec390dfe3de8f0b">Mantid::DataHandling::ORNLDataArchive</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/IArchiveSearch_8h_source.html#l00054">54</a> of file <a class="el" href="../../d0/dbd/IArchiveSearch_8h_source.html">IArchiveSearch.h</a>.</p>
 
 </div>
 </div>

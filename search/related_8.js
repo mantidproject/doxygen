@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['kernel_3a_3acreateusingnew_3c_20catalogfactoryimpl_20_3e_0',['CreateUsingNew&lt; CatalogFactoryImpl &gt;',['../d3/d9e/classMantid_1_1API_1_1CatalogFactoryImpl.html#aadc3ad2bb26c6c85b6a54772fff5ec42',1,'Mantid::API::CatalogFactoryImpl']]],
-  ['kernel_3a_3acreateusingnew_3c_20catalogmanagerimpl_20_3e_1',['CreateUsingNew&lt; CatalogManagerImpl &gt;',['../d7/dbd/classMantid_1_1API_1_1CatalogManagerImpl.html#a9bf7abee846fafbe305bc2688047d54b',1,'Mantid::API::CatalogManagerImpl']]],
-  ['kernel_3a_3acreateusingnew_3c_20livelistenerfactoryimpl_20_3e_2',['CreateUsingNew&lt; LiveListenerFactoryImpl &gt;',['../d8/dfa/classMantid_1_1API_1_1LiveListenerFactoryImpl.html#a7aaa0017540e8f97be70eca92a170f33',1,'Mantid::API::LiveListenerFactoryImpl']]],
-  ['kernel_3a_3acreateusingnew_3c_20mdtransffactoryimpl_20_3e_3',['CreateUsingNew&lt; MDTransfFactoryImpl &gt;',['../d3/d42/classMantid_1_1MDAlgorithms_1_1MDTransfFactoryImpl.html#a8a7bd750b51d1365e391e82ed9c5ed25',1,'Mantid::MDAlgorithms::MDTransfFactoryImpl']]]
+  ['inputworkspacewidget_0',['InputWorkspaceWidget',['../d3/d49/classMantidQt_1_1CustomDialogs_1_1FitDialog.html#ae4e2752935a358fdc28f7d7c6a5b4e83',1,'MantidQt::CustomDialogs::FitDialog']]],
+  ['instrument_1',['instrument',['../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html#a2ff0e65835bfc4a6510c2a5e3c1fe8fb',1,'Mantid::Geometry::ComponentInfo::Instrument'],['../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#a2ff0e65835bfc4a6510c2a5e3c1fe8fb',1,'Mantid::Geometry::DetectorInfo::Instrument']]],
+  ['interfacemanager_2',['interfacemanager',['../dd/d19/classMantidQt_1_1API_1_1AlgorithmDialog.html#adc85d9158a19fc9838e15c3353b3a9d1',1,'MantidQt::API::AlgorithmDialog::InterfaceManager'],['../d9/d0d/classMantidQt_1_1API_1_1UserSubWindow.html#adc85d9158a19fc9838e15c3353b3a9d1',1,'MantidQt::API::UserSubWindow::InterfaceManager']]],
+  ['itableworkspace_3',['ITableWorkspace',['../df/d9a/classMantid_1_1API_1_1Column.html#ab5f6b20f9cdc71208835d56838cd7230',1,'Mantid::API::Column']]]
 ];

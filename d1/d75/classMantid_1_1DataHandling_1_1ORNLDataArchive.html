@@ -115,8 +115,13 @@ Inheritance diagram for Mantid::DataHandling::ORNLDataArchive:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a84458a97513c2eebce3adb8439f2ef10" id="r_a84458a97513c2eebce3adb8439f2ef10"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d5/dee/classMantid_1_1API_1_1Result.html">API::Result</a>&lt; std::filesystem::path &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d75/classMantid_1_1DataHandling_1_1ORNLDataArchive.html#a84458a97513c2eebce3adb8439f2ef10">getArchivePath</a> (const std::set&lt; std::string &gt; &amp;hintstrs, const std::vector&lt; std::string &gt; &amp;suffixes) const override</td></tr>
 <tr class="separator:a84458a97513c2eebce3adb8439f2ef10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29ef72b287bb46703b63b0384a67d6d2" id="r_a29ef72b287bb46703b63b0384a67d6d2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d5/dee/classMantid_1_1API_1_1Result.html">API::Result</a>&lt; std::vector&lt; std::filesystem::path &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d75/classMantid_1_1DataHandling_1_1ORNLDataArchive.html#a29ef72b287bb46703b63b0384a67d6d2">getArchivePaths</a> (const std::vector&lt; std::string &gt; &amp;hintstrs) const override</td></tr>
+<tr class="separator:a29ef72b287bb46703b63b0384a67d6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac747a7ad9b631d26568d5a4466067f72" id="r_ac747a7ad9b631d26568d5a4466067f72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d75/classMantid_1_1DataHandling_1_1ORNLDataArchive.html#ac747a7ad9b631d26568d5a4466067f72">setONCat</a> (ONCat_uptr oncat)</td></tr>
 <tr class="separator:ac747a7ad9b631d26568d5a4466067f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d568d1e156094ed3ec390dfe3de8f0b" id="r_a0d568d1e156094ed3ec390dfe3de8f0b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d75/classMantid_1_1DataHandling_1_1ORNLDataArchive.html#a0d568d1e156094ed3ec390dfe3de8f0b">supportsMultipleHints</a> () const override</td></tr>
+<tr class="memdesc:a0d568d1e156094ed3ec390dfe3de8f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the archive can resolve multiple hints in a single call.  <br /></td></tr>
+<tr class="separator:a0d568d1e156094ed3ec390dfe3de8f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classMantid_1_1API_1_1IArchiveSearch"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classMantid_1_1API_1_1IArchiveSearch')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../dc/df9/classMantid_1_1API_1_1IArchiveSearch.html">Mantid::API::IArchiveSearch</a></td></tr>
 <tr class="memitem:abcb4e159c362778da2b44e2c3978ac8a inherit pub_methods_classMantid_1_1API_1_1IArchiveSearch" id="r_abcb4e159c362778da2b44e2c3978ac8a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df9/classMantid_1_1API_1_1IArchiveSearch.html#abcb4e159c362778da2b44e2c3978ac8a">~IArchiveSearch</a> ()=default</td></tr>
 <tr class="memdesc:abcb4e159c362778da2b44e2c3978ac8a inherit pub_methods_classMantid_1_1API_1_1IArchiveSearch"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <br /></td></tr>
@@ -186,9 +191,41 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../dc/df9/classMantid_1_1API_1_1IArchiveSearch.html#a1d3a4bea9ea9f0a6df243aaf42b406f6">Mantid::API::IArchiveSearch</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d6e/ORNLDataArchive_8cpp_source.html#l00096">96</a> of file <a class="el" href="../../da/d6e/ORNLDataArchive_8cpp_source.html">ORNLDataArchive.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d6e/ORNLDataArchive_8cpp_source.html#l00104">104</a> of file <a class="el" href="../../da/d6e/ORNLDataArchive_8cpp_source.html">ORNLDataArchive.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, and <a class="el" href="../../dc/d83/ORNLDataArchive_8h_source.html#l00038">m_oncat</a>.</p>
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, and <a class="el" href="../../dc/d83/ORNLDataArchive_8h_source.html#l00040">m_oncat</a>.</p>
+
+</div>
+</div>
+<a id="a29ef72b287bb46703b63b0384a67d6d2" name="a29ef72b287bb46703b63b0384a67d6d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29ef72b287bb46703b63b0384a67d6d2">&#9670;&#160;</a></span>getArchivePaths()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d5/dee/classMantid_1_1API_1_1Result.html">API::Result</a>&lt; std::vector&lt; std::filesystem::path &gt; &gt; Mantid::DataHandling::ORNLDataArchive::getArchivePaths </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>hintstrs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../dc/df9/classMantid_1_1API_1_1IArchiveSearch.html#a75f766790ae50bab7355e1b953bc1045">Mantid::API::IArchiveSearch</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d6e/ORNLDataArchive_8cpp_source.html#l00200">200</a> of file <a class="el" href="../../da/d6e/ORNLDataArchive_8cpp_source.html">ORNLDataArchive.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, and <a class="el" href="../../dc/d83/ORNLDataArchive_8h_source.html#l00040">m_oncat</a>.</p>
 
 </div>
 </div>
@@ -208,9 +245,41 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d6e/ORNLDataArchive_8cpp_source.html#l00196">196</a> of file <a class="el" href="../../da/d6e/ORNLDataArchive_8cpp_source.html">ORNLDataArchive.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d6e/ORNLDataArchive_8cpp_source.html#l00305">305</a> of file <a class="el" href="../../da/d6e/ORNLDataArchive_8cpp_source.html">ORNLDataArchive.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d83/ORNLDataArchive_8h_source.html#l00038">m_oncat</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d83/ORNLDataArchive_8h_source.html#l00040">m_oncat</a>.</p>
+
+</div>
+</div>
+<a id="a0d568d1e156094ed3ec390dfe3de8f0b" name="a0d568d1e156094ed3ec390dfe3de8f0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d568d1e156094ed3ec390dfe3de8f0b">&#9670;&#160;</a></span>supportsMultipleHints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mantid::DataHandling::ORNLDataArchive::supportsMultipleHints </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether the archive can resolve multiple hints in a single call. </p>
+<p>If true, FileFinder will batch unfound hints via getArchivePaths instead of calling getArchivePath once per hint. </p>
+
+<p>Reimplemented from <a class="el" href="../../dc/df9/classMantid_1_1API_1_1IArchiveSearch.html#af218c5cd41222870fc3183e0a95477cc">Mantid::API::IArchiveSearch</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d83/ORNLDataArchive_8h_source.html#l00030">30</a> of file <a class="el" href="../../dc/d83/ORNLDataArchive_8h_source.html">ORNLDataArchive.h</a>.</p>
 
 </div>
 </div>
@@ -235,9 +304,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d83/ORNLDataArchive_8h_source.html#l00038">38</a> of file <a class="el" href="../../dc/d83/ORNLDataArchive_8h_source.html">ORNLDataArchive.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d83/ORNLDataArchive_8h_source.html#l00040">40</a> of file <a class="el" href="../../dc/d83/ORNLDataArchive_8h_source.html">ORNLDataArchive.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d6e/ORNLDataArchive_8cpp_source.html#l00096">getArchivePath()</a>, and <a class="el" href="../../da/d6e/ORNLDataArchive_8cpp_source.html#l00196">setONCat()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d6e/ORNLDataArchive_8cpp_source.html#l00104">getArchivePath()</a>, <a class="el" href="../../da/d6e/ORNLDataArchive_8cpp_source.html#l00200">getArchivePaths()</a>, and <a class="el" href="../../da/d6e/ORNLDataArchive_8cpp_source.html#l00305">setONCat()</a>.</p>
 
 </div>
 </div>

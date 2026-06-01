@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['boost_3a_3aiterator_5fcore_5faccess_0',['boost::iterator_core_access',['../db/def/classMantid_1_1API_1_1SpectrumInfoIterator.html#ac09f73e325921cc50ebcd96bed0f8096',1,'Mantid::API::SpectrumInfoIterator::iterator_core_access'],['../d7/d6e/classMantid_1_1Geometry_1_1HKLGenerator_1_1const__iterator.html#ac09f73e325921cc50ebcd96bed0f8096',1,'Mantid::Geometry::HKLGenerator::const_iterator::iterator_core_access'],['../d6/d64/classMantid_1_1Geometry_1_1InfoIteratorBase.html#ac09f73e325921cc50ebcd96bed0f8096',1,'Mantid::Geometry::InfoIteratorBase::iterator_core_access']]]
+  ['accessfor_0',['AccessFor',['../db/d46/classMantid_1_1DataObjects_1_1MDLeanEvent.html#a70b2192dbcd15585723fc4eee9ce72e0',1,'Mantid::DataObjects::MDLeanEvent']]],
+  ['algorithm_1',['algorithm',['../df/dfd/classMantid_1_1API_1_1AlgorithmHistory.html#ab016b9124e80f55ad92e01579c060f08',1,'Mantid::API::AlgorithmHistory::Algorithm'],['../d9/de9/classMantid_1_1API_1_1WorkspaceGroup.html#ab016b9124e80f55ad92e01579c060f08',1,'Mantid::API::WorkspaceGroup::Algorithm']]],
+  ['analysisdataserviceimpl_2',['analysisdataserviceimpl',['../d3/de9/classMantid_1_1API_1_1Workspace.html#ac7bd92b342effad367c66a8dd6c91105',1,'Mantid::API::Workspace::AnalysisDataServiceImpl'],['../d9/de9/classMantid_1_1API_1_1WorkspaceGroup.html#ac7bd92b342effad367c66a8dd6c91105',1,'Mantid::API::WorkspaceGroup::AnalysisDataServiceImpl']]],
+  ['api_3a_3aidomaincreator_3',['IDomainCreator',['../dc/dd2/classMantid_1_1CurveFitting_1_1IFittingAlgorithm.html#ac1e6951356998c7e43294e84f23a7e42',1,'Mantid::CurveFitting::IFittingAlgorithm']]],
+  ['api_3a_3aspectruminfo_4',['SpectrumInfo',['../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#a30039c1a32147af1850756bed183d01d',1,'Mantid::Geometry::DetectorInfo']]]
 ];
