@@ -156,6 +156,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adba156d1f5e65f2bf0a9b1f533ac40a5" id="r_adba156d1f5e65f2bf0a9b1f533ac40a5"><td class="memItemLeft" align="right" valign="top">virtual const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc2/classMantid_1_1MDAlgorithms_1_1MDTransfInterface.html#adba156d1f5e65f2bf0a9b1f533ac40a5">transfID</a> () const =0</td></tr>
 <tr class="memdesc:adba156d1f5e65f2bf0a9b1f533ac40a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The method returns the name, under which the transformation would be known to a user.  <br /></td></tr>
 <tr class="separator:adba156d1f5e65f2bf0a9b1f533ac40a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6430ab8d1c375e7ca95540ad4756452" id="r_aa6430ab8d1c375e7ca95540ad4756452"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc2/classMantid_1_1MDAlgorithms_1_1MDTransfInterface.html#aa6430ab8d1c375e7ca95540ad4756452">updateRotMat</a> (const std::vector&lt; double &gt; &amp;newMat)</td></tr>
+<tr class="memdesc:aa6430ab8d1c375e7ca95540ad4756452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the internal rotation matrix for classes which support this.  <br /></td></tr>
+<tr class="separator:aa6430ab8d1c375e7ca95540ad4756452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62c1f3ebda8b77886c4d97e2a943a92f" id="r_a62c1f3ebda8b77886c4d97e2a943a92f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc2/classMantid_1_1MDAlgorithms_1_1MDTransfInterface.html#a62c1f3ebda8b77886c4d97e2a943a92f">~MDTransfInterface</a> ()=default</td></tr>
 <tr class="separator:a62c1f3ebda8b77886c4d97e2a943a92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -637,7 +640,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d1/d36/classMantid_1_1MDAlgorithms_1_1MDTransfNoQ.html#a9846b0ed95d6f121067ef83950ca4347">Mantid::MDAlgorithms::MDTransfNoQ</a>, <a class="el" href="../../d4/d46/classMantid_1_1MDAlgorithms_1_1MDTransfModQ.html#a69f7b0149e1b2952f25c68fbce396184">Mantid::MDAlgorithms::MDTransfModQ</a>, and <a class="el" href="../../d6/de5/classMantid_1_1MDAlgorithms_1_1MDTransfQ3D.html#afdabede120f5ceaa30f2551ee16f7c7b">Mantid::MDAlgorithms::MDTransfQ3D</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/d3f/MDWSDescription_8cpp_source.html#l00066">Mantid::MDAlgorithms::MDWSDescription::buildFromMatrixWS()</a>, <a class="el" href="../../d7/dbc/ConvertToMDMinMaxLocal_8cpp_source.html#l00041">Mantid::MDAlgorithms::ConvertToMDMinMaxLocal::exec()</a>, and <a class="el" href="../../dc/dfb/ConvertToMD_8cpp_source.html#l00607">Mantid::MDAlgorithms::ConvertToMD::findMinMax()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d3f/MDWSDescription_8cpp_source.html#l00066">Mantid::MDAlgorithms::MDWSDescription::buildFromMatrixWS()</a>, <a class="el" href="../../d7/dbc/ConvertToMDMinMaxLocal_8cpp_source.html#l00041">Mantid::MDAlgorithms::ConvertToMDMinMaxLocal::exec()</a>, and <a class="el" href="../../dc/dfb/ConvertToMD_8cpp_source.html#l00616">Mantid::MDAlgorithms::ConvertToMD::findMinMax()</a>.</p>
 
 </div>
 </div>
@@ -833,6 +836,40 @@ Public Member Functions</h2></td></tr>
 <p>Its overloaded and implemented in subscriptions </p>
 
 <p>Implemented in <a class="el" href="../../d4/d46/classMantid_1_1MDAlgorithms_1_1MDTransfModQ.html#ae3962858b2939b79a2072f6c9d31c3ca">Mantid::MDAlgorithms::MDTransfModQ</a>, <a class="el" href="../../d1/d36/classMantid_1_1MDAlgorithms_1_1MDTransfNoQ.html#a1dc0fd33fdd4ad9e457a9806da7a4d08">Mantid::MDAlgorithms::MDTransfNoQ</a>, and <a class="el" href="../../d6/de5/classMantid_1_1MDAlgorithms_1_1MDTransfQ3D.html#a1fb2ed9ae127bf55c4e52323058bb3b8">Mantid::MDAlgorithms::MDTransfQ3D</a>.</p>
+
+</div>
+</div>
+<a id="aa6430ab8d1c375e7ca95540ad4756452" name="aa6430ab8d1c375e7ca95540ad4756452"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6430ab8d1c375e7ca95540ad4756452">&#9670;&#160;</a></span>updateRotMat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Mantid::MDAlgorithms::MDTransfInterface::updateRotMat </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>newMat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates the internal rotation matrix for classes which support this. </p>
+
+<p>Reimplemented in <a class="el" href="../../d4/d46/classMantid_1_1MDAlgorithms_1_1MDTransfModQ.html#aeaa788e94171667d813ba95923ceaa79">Mantid::MDAlgorithms::MDTransfModQ</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/dd4/MDTransfInterface_8h_source.html#l00208">208</a> of file <a class="el" href="../../d9/dd4/MDTransfInterface_8h_source.html">MDTransfInterface.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/d39/System_8h_source.html#l00044">UNUSED_ARG</a>.</p>
 
 </div>
 </div>

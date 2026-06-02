@@ -117,9 +117,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac191479baffc58c517e50fd5fc49e5e8" id="r_ac191479baffc58c517e50fd5fc49e5e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d31/classMantid_1_1MDAlgorithms_1_1ConvToMDHistoWS.html#ac191479baffc58c517e50fd5fc49e5e8">ConvToMDHistoWS</a> ()</td></tr>
 <tr class="memdesc:ac191479baffc58c517e50fd5fc49e5e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <br /></td></tr>
 <tr class="separator:ac191479baffc58c517e50fd5fc49e5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e59ee711ef0c14d74fb52867028b66a" id="r_a6e59ee711ef0c14d74fb52867028b66a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d31/classMantid_1_1MDAlgorithms_1_1ConvToMDHistoWS.html#a6e59ee711ef0c14d74fb52867028b66a">initialize</a> (const <a class="el" href="../../d5/dc2/classMantid_1_1MDAlgorithms_1_1MDWSDescription.html">MDWSDescription</a> &amp;WSD, std::shared_ptr&lt; <a class="el" href="../../db/d21/classMantid_1_1MDAlgorithms_1_1MDEventWSWrapper.html">MDEventWSWrapper</a> &gt; inWSWrapper, bool ignoreZeros) override</td></tr>
-<tr class="memdesc:a6e59ee711ef0c14d74fb52867028b66a"><td class="mdescLeft">&#160;</td><td class="mdescRight">method sets up all internal variables necessary to convert from Matrix2D workspace to MDEvent workspace  <br /></td></tr>
-<tr class="separator:a6e59ee711ef0c14d74fb52867028b66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74a4175cb4555676f64e508f7cec3620" id="r_a74a4175cb4555676f64e508f7cec3620"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d31/classMantid_1_1MDAlgorithms_1_1ConvToMDHistoWS.html#a74a4175cb4555676f64e508f7cec3620">initialize</a> (const <a class="el" href="../../d5/dc2/classMantid_1_1MDAlgorithms_1_1MDWSDescription.html">MDWSDescription</a> &amp;WSD, std::shared_ptr&lt; <a class="el" href="../../db/d21/classMantid_1_1MDAlgorithms_1_1MDEventWSWrapper.html">MDEventWSWrapper</a> &gt; inWSWrapper, bool ignoreZeros, bool useLogTimes) override</td></tr>
+<tr class="memdesc:a74a4175cb4555676f64e508f7cec3620"><td class="mdescLeft">&#160;</td><td class="mdescRight">method sets up all internal variables necessary to convert from Matrix2D workspace to MDEvent workspace  <br /></td></tr>
+<tr class="separator:a74a4175cb4555676f64e508f7cec3620"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cc53266673888210f3763834fbac3ff" id="r_a1cc53266673888210f3763834fbac3ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d31/classMantid_1_1MDAlgorithms_1_1ConvToMDHistoWS.html#a1cc53266673888210f3763834fbac3ff">runConversion</a> (<a class="el" href="../../de/dd6/classMantid_1_1API_1_1Progress.html">API::Progress</a> *pProgress) override</td></tr>
 <tr class="memdesc:a1cc53266673888210f3763834fbac3ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">run conversion as multithread job  <br /></td></tr>
 <tr class="separator:a1cc53266673888210f3763834fbac3ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,6 +184,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a9e753f4319f46e8994c50e83a50d9884 inherit pro_attribs_classMantid_1_1MDAlgorithms_1_1ConvToMDBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9115df6979d23721a948b35a6505e0c inherit pro_attribs_classMantid_1_1MDAlgorithms_1_1ConvToMDBase" id="r_af9115df6979d23721a948b35a6505e0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df6/classMantid_1_1MDAlgorithms_1_1UnitsConversionHelper.html">UnitsConversionHelper</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d62/classMantid_1_1MDAlgorithms_1_1ConvToMDBase.html#af9115df6979d23721a948b35a6505e0c">m_UnitConversion</a></td></tr>
 <tr class="separator:af9115df6979d23721a948b35a6505e0c inherit pro_attribs_classMantid_1_1MDAlgorithms_1_1ConvToMDBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf91082ebaf9ddaf04b7629c9067468e inherit pro_attribs_classMantid_1_1MDAlgorithms_1_1ConvToMDBase" id="r_acf91082ebaf9ddaf04b7629c9067468e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d62/classMantid_1_1MDAlgorithms_1_1ConvToMDBase.html#acf91082ebaf9ddaf04b7629c9067468e">m_useLogTimes</a></td></tr>
+<tr class="memdesc:acf91082ebaf9ddaf04b7629c9067468e inherit pro_attribs_classMantid_1_1MDAlgorithms_1_1ConvToMDBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag to use log values corresponding to event pulse time instead of average values.  <br /></td></tr>
+<tr class="separator:acf91082ebaf9ddaf04b7629c9067468e inherit pro_attribs_classMantid_1_1MDAlgorithms_1_1ConvToMDBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_attribs_classMantid_1_1MDAlgorithms_1_1ConvToMDBase"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_classMantid_1_1MDAlgorithms_1_1ConvToMDBase')"><img src="../../closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="../../dc/d62/classMantid_1_1MDAlgorithms_1_1ConvToMDBase.html">Mantid::MDAlgorithms::ConvToMDBase</a></td></tr>
 <tr class="memitem:a43ce7cd5a54a57db500f39b6ba4ef1a1 inherit pro_static_attribs_classMantid_1_1MDAlgorithms_1_1ConvToMDBase" id="r_a43ce7cd5a54a57db500f39b6ba4ef1a1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html">Mantid::Kernel::Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d62/classMantid_1_1MDAlgorithms_1_1ConvToMDBase.html#a43ce7cd5a54a57db500f39b6ba4ef1a1">g_Log</a></td></tr>
 <tr class="separator:a43ce7cd5a54a57db500f39b6ba4ef1a1 inherit pro_static_attribs_classMantid_1_1MDAlgorithms_1_1ConvToMDBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -250,11 +253,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../dc/d62/classMantid_1_1MDAlgorithms_1_1ConvToMDBase.html#aecfff81e4f97cd6361bd08ddfb61845e">Mantid::MDAlgorithms::ConvToMDBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00049">49</a> of file <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html">ConvToMDHistoWS.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html">ConvToMDHistoWS.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/dbb/UnitsConversionHelper_8cpp_source.html#l00332">Mantid::MDAlgorithms::UnitsConversionHelper::convertUnits()</a>, <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00014">Mantid::MDAlgorithms::isNaN()</a>, <a class="el" href="../../db/de1/ConvToMDHistoWS_8h_source.html#l00045">m_bufferSize</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00074">Mantid::MDAlgorithms::ConvToMDBase::m_Coord</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00068">Mantid::MDAlgorithms::ConvToMDBase::m_detID</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00067">Mantid::MDAlgorithms::ConvToMDBase::m_detIDMap</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00063">Mantid::MDAlgorithms::ConvToMDBase::m_ExpInfoIndex</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00084">Mantid::MDAlgorithms::ConvToMDBase::m_ignoreZeros</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00053">Mantid::MDAlgorithms::ConvToMDBase::m_InWS2D</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00061">Mantid::MDAlgorithms::ConvToMDBase::m_NDims</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00066">Mantid::MDAlgorithms::ConvToMDBase::m_NSpectra</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00056">Mantid::MDAlgorithms::ConvToMDBase::m_OutWSWrapper</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00059">Mantid::MDAlgorithms::ConvToMDBase::m_QConverter</a>, <a class="el" href="../../db/de1/ConvToMDHistoWS_8h_source.html#l00042">m_spectraChunk</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00076">Mantid::MDAlgorithms::ConvToMDBase::m_UnitConversion</a>, <a class="el" href="../../d1/dbb/UnitsConversionHelper_8cpp_source.html#l00282">Mantid::MDAlgorithms::UnitsConversionHelper::updateConversion()</a>, and <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::X</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00157">runConversion()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00158">runConversion()</a>.</p>
 
 </div>
 </div>
@@ -308,16 +311,16 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00264">264</a> of file <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html">ConvToMDHistoWS.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00265">265</a> of file <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html">ConvToMDHistoWS.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00012">DATA_BUFFER_SIZE</a>, <a class="el" href="../../db/de1/ConvToMDHistoWS_8h_source.html#l00045">m_bufferSize</a>, and <a class="el" href="../../db/de1/ConvToMDHistoWS_8h_source.html#l00042">m_spectraChunk</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00157">runConversion()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00158">runConversion()</a>.</p>
 
 </div>
 </div>
-<a id="a6e59ee711ef0c14d74fb52867028b66a" name="a6e59ee711ef0c14d74fb52867028b66a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e59ee711ef0c14d74fb52867028b66a">&#9670;&#160;</a></span>initialize()</h2>
+<a id="a74a4175cb4555676f64e508f7cec3620" name="a74a4175cb4555676f64e508f7cec3620"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74a4175cb4555676f64e508f7cec3620">&#9670;&#160;</a></span>initialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -341,7 +344,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>ignoreZeros</em>&#160;</td>
+          <td class="paramname"><em>ignoreZeros</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useLogTimes</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -362,15 +371,16 @@ Additional Inherited Members</h2></td></tr>
     <tr><td class="paramname">WSD</td><td>&ndash; the class describing the target MD workspace, sorurce matrtix workspace and the transformations, necessary to perform on these workspaces </td></tr>
     <tr><td class="paramname">inWSWrapper</td><td>&ndash; the class wrapping the target MD workspace </td></tr>
     <tr><td class="paramname">ignoreZeros</td><td>&ndash; if zero value signals should be rejected </td></tr>
+    <tr><td class="paramname">useLogTimes</td><td>&ndash; if log values at event pulse time are used (ignored in this method) </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="../../dc/d62/classMantid_1_1MDAlgorithms_1_1ConvToMDBase.html#ad62293faf32d1872185995414e3339f5">Mantid::MDAlgorithms::ConvToMDBase</a>.</p>
+<p>Reimplemented from <a class="el" href="../../dc/d62/classMantid_1_1MDAlgorithms_1_1ConvToMDBase.html#a3f7d371c6b45e97eee0fb45b206c9485">Mantid::MDAlgorithms::ConvToMDBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html">ConvToMDHistoWS.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html">ConvToMDHistoWS.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00029">Mantid::MDAlgorithms::ConvToMDBase::initialize()</a>, and <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00053">Mantid::MDAlgorithms::ConvToMDBase::m_InWS2D</a>.</p>
+<p class="reference">References <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">Mantid::MDAlgorithms::ConvToMDBase::initialize()</a>, and <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00053">Mantid::MDAlgorithms::ConvToMDBase::m_InWS2D</a>.</p>
 
 </div>
 </div>
@@ -403,9 +413,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../dc/d62/classMantid_1_1MDAlgorithms_1_1ConvToMDBase.html#a476f204ee3296d6b6742fcba80382e81">Mantid::MDAlgorithms::ConvToMDBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00157">157</a> of file <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html">ConvToMDHistoWS.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00158">158</a> of file <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html">ConvToMDHistoWS.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00049">conversionChunk()</a>, <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00264">estimateThreadWork()</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00074">Mantid::MDAlgorithms::ConvToMDBase::m_Coord</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00086">Mantid::MDAlgorithms::ConvToMDBase::m_coordinateSystem</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00053">Mantid::MDAlgorithms::ConvToMDBase::m_InWS2D</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00061">Mantid::MDAlgorithms::ConvToMDBase::m_NDims</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00066">Mantid::MDAlgorithms::ConvToMDBase::m_NSpectra</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00082">Mantid::MDAlgorithms::ConvToMDBase::m_NumThreads</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00056">Mantid::MDAlgorithms::ConvToMDBase::m_OutWSWrapper</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00059">Mantid::MDAlgorithms::ConvToMDBase::m_QConverter</a>, <a class="el" href="../../db/de1/ConvToMDHistoWS_8h_source.html#l00042">m_spectraChunk</a>, <a class="el" href="../../d2/d14/ProgressBase_8h_source.html#l00051">Mantid::Kernel::ProgressBase::report()</a>, <a class="el" href="../../db/dd5/Kernel_2src_2ProgressBase_8cpp_source.html#l00162">Mantid::Kernel::ProgressBase::resetNumSteps()</a>, <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00166">Mantid::Kernel::ThreadSchedulerFIFO::size()</a>, and <a class="el" href="../../d2/d4f/FindFilesThreadPoolManager_8cpp_source.html#l00027">tp</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00050">conversionChunk()</a>, <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00265">estimateThreadWork()</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00074">Mantid::MDAlgorithms::ConvToMDBase::m_Coord</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00086">Mantid::MDAlgorithms::ConvToMDBase::m_coordinateSystem</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00053">Mantid::MDAlgorithms::ConvToMDBase::m_InWS2D</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00061">Mantid::MDAlgorithms::ConvToMDBase::m_NDims</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00066">Mantid::MDAlgorithms::ConvToMDBase::m_NSpectra</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00082">Mantid::MDAlgorithms::ConvToMDBase::m_NumThreads</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00056">Mantid::MDAlgorithms::ConvToMDBase::m_OutWSWrapper</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00059">Mantid::MDAlgorithms::ConvToMDBase::m_QConverter</a>, <a class="el" href="../../db/de1/ConvToMDHistoWS_8h_source.html#l00042">m_spectraChunk</a>, <a class="el" href="../../d2/d14/ProgressBase_8h_source.html#l00051">Mantid::Kernel::ProgressBase::report()</a>, <a class="el" href="../../db/dd5/Kernel_2src_2ProgressBase_8cpp_source.html#l00162">Mantid::Kernel::ProgressBase::resetNumSteps()</a>, <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00166">Mantid::Kernel::ThreadSchedulerFIFO::size()</a>, and <a class="el" href="../../d2/d4f/FindFilesThreadPoolManager_8cpp_source.html#l00027">tp</a>.</p>
 
 </div>
 </div>
@@ -432,7 +442,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/de1/ConvToMDHistoWS_8h_source.html#l00045">45</a> of file <a class="el" href="../../db/de1/ConvToMDHistoWS_8h_source.html">ConvToMDHistoWS.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00049">conversionChunk()</a>, and <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00264">estimateThreadWork()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00050">conversionChunk()</a>, and <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00265">estimateThreadWork()</a>.</p>
 
 </div>
 </div>
@@ -458,7 +468,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/de1/ConvToMDHistoWS_8h_source.html#l00042">42</a> of file <a class="el" href="../../db/de1/ConvToMDHistoWS_8h_source.html">ConvToMDHistoWS.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00049">conversionChunk()</a>, <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00264">estimateThreadWork()</a>, and <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00157">runConversion()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00050">conversionChunk()</a>, <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00265">estimateThreadWork()</a>, and <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00158">runConversion()</a>.</p>
 
 </div>
 </div>
