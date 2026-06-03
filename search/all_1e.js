@@ -21,7 +21,7 @@ var searchData=
   ['zoom_5fxpm_18',['zoom_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#adc3249f1b5944feee90b1a3de88a08f4',1,'MantidQt::API']]],
   ['zoomout_5fxpm_19',['zoomOut_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#a3f4ab6f51f1c38cd093d1d580edbf980',1,'MantidQt::API']]],
   ['zparameter_20',['zParameter',['../d0/d62/structMantid_1_1DataHandling_1_1ReadMaterial_1_1MaterialParameters.html#a9ffda8ba1bd774b8f726af257cf1f658',1,'Mantid::DataHandling::ReadMaterial::MaterialParameters']]],
-  ['zpixels_21',['zpixels',['../db/d95/classMantid_1_1Geometry_1_1GridDetector.html#aeaa4b320a4685ab59b1a240465b70353',1,'Mantid::Geometry::GridDetector']]],
+  ['zpixels_21',['zpixels',['../db/d95/classMantid_1_1Geometry_1_1GridDetector.html#ac199effdcf323000becced93c981d05f',1,'Mantid::Geometry::GridDetector']]],
   ['zsize_22',['zsize',['../db/d95/classMantid_1_1Geometry_1_1GridDetector.html#ad8e3de76ba49f73d258338cb51038919',1,'Mantid::Geometry::GridDetector']]],
   ['zstart_23',['zstart',['../db/d95/classMantid_1_1Geometry_1_1GridDetector.html#ad6f7c41f3e4c5534553c150f51cfdd28',1,'Mantid::Geometry::GridDetector']]],
   ['zstep_24',['zstep',['../db/d95/classMantid_1_1Geometry_1_1GridDetector.html#af55c4b6d99450dbba4462ce84a2cbb18',1,'Mantid::Geometry::GridDetector']]]

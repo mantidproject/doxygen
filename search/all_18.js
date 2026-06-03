@@ -366,7 +366,7 @@ var searchData=
   ['toolkit_20for_20instrument_20data_363',['Mantid - Manipulation and Analysis Toolkit for Instrument Data -',['../index.html',1,'']]],
   ['tooltip_364',['toolTip',['../d3/de7/classMantidQt_1_1MantidWidgets_1_1Batch_1_1Cell.html#aadd75fa47fd23810af87506a9aeea591',1,'MantidQt::MantidWidgets::Batch::Cell']]],
   ['tooutputframe_365',['toOutputFrame',['../dd/de5/classMantid_1_1MDAlgorithms_1_1LoadSQW2.html#ad4fd7ee5df1db25c802ef81e6ba1c279',1,'Mantid::MDAlgorithms::LoadSQW2']]],
-  ['top_366',['top',['../d8/d3d/namespaceGraphOptions.html#ae49bbff78bfeb4817f673dc3665279dea3e94707d100b2423ee2b911a1da0bf02',1,'GraphOptions::Top'],['../d8/d6b/LineProfile_8cpp.html#a4467598fbba812fe1339ab4e83806573',1,'top:&#160;LineProfile.cpp']]],
+  ['top_366',['top',['../d8/d6b/LineProfile_8cpp.html#a4467598fbba812fe1339ab4e83806573',1,'top:&#160;LineProfile.cpp'],['../d8/d3d/namespaceGraphOptions.html#ae49bbff78bfeb4817f673dc3665279dea3e94707d100b2423ee2b911a1da0bf02',1,'GraphOptions::Top']]],
   ['topas_367',['TOPAS',['../d9/d69/classMantid_1_1DataHandling_1_1SaveFocusedXYE.html#a0e4cebff33de8320677908344688bf48a91d2d847523f44584c5f0453547c0741',1,'Mantid::DataHandling::SaveFocusedXYE']]],
   ['topicinfo_368',['topicinfo',['../d7/dc1/classMantid_1_1Kernel_1_1TopicInfo.html',1,'Mantid::Kernel::TopicInfo'],['../d7/dc1/classMantid_1_1Kernel_1_1TopicInfo.html#ae42b31178a7b6db02b53be265c48e61b',1,'Mantid::Kernel::TopicInfo::TopicInfo(InstrumentInfo const *inst, const Poco::XML::Element *elem)'],['../d7/dc1/classMantid_1_1Kernel_1_1TopicInfo.html#a7d2f654fe773ba83a4667beccc3b5fde',1,'Mantid::Kernel::TopicInfo::TopicInfo(std::string name, TopicType type)']]],
   ['topicinfo_2ecpp_369',['TopicInfo.cpp',['../d0/d90/TopicInfo_8cpp.html',1,'']]],

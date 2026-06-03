@@ -12,7 +12,7 @@ var searchData=
   ['zmax_9',['zmax',['../d9/d19/classMantid_1_1Geometry_1_1BoundingBox.html#aa16f214a5f47bb6c07c0c1ea22e615e4',1,'Mantid::Geometry::BoundingBox::zMax() const'],['../d9/d19/classMantid_1_1Geometry_1_1BoundingBox.html#ac5ccda468be87a2731bff053efb7959d',1,'Mantid::Geometry::BoundingBox::zMax()']]],
   ['zmin_10',['zmin',['../d9/d19/classMantid_1_1Geometry_1_1BoundingBox.html#a6d20d2ea1aadfc1b868fd7798f028969',1,'Mantid::Geometry::BoundingBox::zMin() const'],['../d9/d19/classMantid_1_1Geometry_1_1BoundingBox.html#a8bebf984e22fa4641147c8636eeb9433',1,'Mantid::Geometry::BoundingBox::zMin()']]],
   ['zoom_11',['zoom',['../d9/db2/classMantidQt_1_1MantidWidgets_1_1InputController3DMove.html#ae0987d5614e699f68f3375ad915c3bc8',1,'MantidQt::MantidWidgets::InputController3DMove::zoom()'],['../dd/d51/classMantidQt_1_1MantidWidgets_1_1InputControllerMoveUnwrapped.html#ae1ef43a23e9b8f5dd889d89170a29bce',1,'MantidQt::MantidWidgets::InputControllerMoveUnwrapped::zoom()']]],
-  ['zpixels_12',['zpixels',['../db/d95/classMantid_1_1Geometry_1_1GridDetector.html#aeaa4b320a4685ab59b1a240465b70353',1,'Mantid::Geometry::GridDetector']]],
+  ['zpixels_12',['zpixels',['../db/d95/classMantid_1_1Geometry_1_1GridDetector.html#ac199effdcf323000becced93c981d05f',1,'Mantid::Geometry::GridDetector']]],
   ['zsize_13',['zsize',['../db/d95/classMantid_1_1Geometry_1_1GridDetector.html#ad8e3de76ba49f73d258338cb51038919',1,'Mantid::Geometry::GridDetector']]],
   ['zstart_14',['zstart',['../db/d95/classMantid_1_1Geometry_1_1GridDetector.html#ad6f7c41f3e4c5534553c150f51cfdd28',1,'Mantid::Geometry::GridDetector']]],
   ['zstep_15',['zstep',['../db/d95/classMantid_1_1Geometry_1_1GridDetector.html#af55c4b6d99450dbba4462ce84a2cbb18',1,'Mantid::Geometry::GridDetector']]]

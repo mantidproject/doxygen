@@ -429,7 +429,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>  <a class="code hl_variable" href="../../d8/d7f/classMantid_1_1Crystal_1_1PeakIntegration.html#ab2ed13c3a94caf74a66159662e53cc5d">outputW</a>-&gt;getSpectrum(idet).clearDetectorIDs();</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  <span class="comment">// Find the pixel ID at that XY position on the rectangular detector</span></div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  <span class="keywordtype">int</span> pixelID = peak.<a class="code hl_function" href="../../d1/d33/classMantid_1_1DataObjects_1_1Peak.html#a7904dfdc18d67d0073fa97edff5284ec">getDetectorID</a>(); <span class="comment">// det-&gt;getAtXY(x0,y0)-&gt;getID();</span></div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  <span class="keywordtype">int</span> pixelID = peak.<a class="code hl_function" href="../../d1/d33/classMantid_1_1DataObjects_1_1Peak.html#a7904dfdc18d67d0073fa97edff5284ec">getDetectorID</a>();</div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span> </div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>  <span class="comment">// Find the corresponding workspace index, if any</span></div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>  <span class="keyword">auto</span> wiEntry = pixel_to_wi.find(pixelID);</div>

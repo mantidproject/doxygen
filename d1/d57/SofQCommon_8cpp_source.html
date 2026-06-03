@@ -271,7 +271,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <span class="keywordflow">if</span> (!std::isfinite(Q1) || !std::isfinite(Q2)) {</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>      <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Cannot compute Q binning range: non-finite &quot;</span></div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>                                  <span class="stringliteral">&quot;Q found for detector ID &quot;</span> +</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>                                  <a class="code hl_function" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string</a>(detectorInfo.detectorIDs()[i]));</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>                                  <a class="code hl_function" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string</a>(detectorInfo.detid(i)));</div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    }</div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    <span class="keyword">const</span> <span class="keyword">auto</span> minmaxQ = std::minmax(Q1, Q2);</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    minQ = std::min(minQ, minmaxQ.first);</div>

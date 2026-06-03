@@ -329,7 +329,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;detIndex : detectorIndices) {</div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        <span class="comment">// c) get detector ID</span></div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        <span class="keyword">const</span> <span class="keyword">auto</span> detid = detectorInfo.detectorIDs()[detIndex];</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        <span class="keyword">const</span> <span class="keyword">auto</span> detid = detectorInfo.detid(detIndex);</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        <span class="keyword">auto</span> itx = indexmap.find(detid);</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        <span class="keywordflow">if</span> (itx != indexmap.end()) {</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>          <span class="keywordtype">size_t</span> wsindex = itx-&gt;second;</div>

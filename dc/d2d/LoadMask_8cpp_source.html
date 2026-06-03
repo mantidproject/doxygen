@@ -476,7 +476,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>    <a class="code hl_typedef" href="../../d8/d8e/namespaceMantid.html#a48bf366d08fb1b20ebb535f1b1b5c99e">detid_t</a> id_max(0);</div>
 <div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span> </div>
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;detIndex : detectorIndices) {</div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>      <a class="code hl_typedef" href="../../d8/d8e/namespaceMantid.html#a48bf366d08fb1b20ebb535f1b1b5c99e">detid_t</a> detid = detectorInfo.detectorIDs()[detIndex];</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>      <a class="code hl_typedef" href="../../d8/d8e/namespaceMantid.html#a48bf366d08fb1b20ebb535f1b1b5c99e">detid_t</a> detid = detectorInfo.detid(detIndex);</div>
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>      detectors.emplace_back(detid);</div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>      numdets++;</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>      <span class="keywordflow">if</span> (detid &lt; id_min)</div>

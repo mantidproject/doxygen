@@ -326,7 +326,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  <a class="code hl_class" href="../../de/dd6/classMantid_1_1API_1_1Progress.html">Progress</a> prog(<span class="keyword">this</span>, 0.5, 1.0, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(detectorInfo.size()));</div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; detectorInfo.size(); ++i) {</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keywordtype">int</span> idet = detectorInfo.detectorIDs()[i];</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keywordtype">int</span> idet = detectorInfo.detid(i);</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="comment">// Check if we have a shift, else do nothing.</span></div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <span class="keyword">auto</span> itPos = posMap.find(idet);</div>
