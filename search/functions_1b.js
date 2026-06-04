@@ -185,7 +185,7 @@ var searchData=
   ['_7eicataloginfoservice_182',['~ICatalogInfoService',['../dd/df4/classMantid_1_1API_1_1ICatalogInfoService.html#a15d76935329d5fb6ae1877c577f25543',1,'Mantid::API::ICatalogInfoService']]],
   ['_7eicluster_183',['~ICluster',['../d0/d96/classMantid_1_1Crystal_1_1ICluster.html#ad23e1d3dac8cb9e04a2a6fe6a3f09301',1,'Mantid::Crystal::ICluster']]],
   ['_7eicomponent_184',['~IComponent',['../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a762c550dbd4d6191a3f42d868fc5ba7b',1,'Mantid::Geometry::IComponent']]],
-  ['_7eiconfiguredalgorithm_185',['~IConfiguredAlgorithm',['../d3/d32/classMantidQt_1_1API_1_1IConfiguredAlgorithm.html#abf25b348df786baaaeec23015f4dea95',1,'MantidQt::API::IConfiguredAlgorithm']]],
+  ['_7eiconfiguredalgorithm_185',['~IConfiguredAlgorithm',['../d3/d32/classMantidQt_1_1API_1_1IConfiguredAlgorithm.html#a1186cce7509db4c0bf2fa04f409ce529',1,'MantidQt::API::IConfiguredAlgorithm']]],
   ['_7eicostfunction_186',['~ICostFunction',['../de/d10/classMantid_1_1API_1_1ICostFunction.html#a0f4eaaef8d5271a7e16e0e9f974daad5',1,'Mantid::API::ICostFunction']]],
   ['_7eidomaincreator_187',['~IDomainCreator',['../d9/db6/classMantid_1_1API_1_1IDomainCreator.html#a34b2f4a8a381956ec5a0017e05d0bc92',1,'Mantid::API::IDomainCreator']]],
   ['_7eidynamicrebinning_188',['~IDynamicRebinning',['../d5/d36/classMantid_1_1MDAlgorithms_1_1IDynamicRebinning.html#a1e66a745e9dd7e3bf08e8afa95f8253f',1,'Mantid::MDAlgorithms::IDynamicRebinning']]],
