@@ -1,15 +1,8 @@
 var searchData=
 [
-  ['tartypeflag_5fblockspecial_0',['TarTypeFlag_BlockSpecial',['../d7/d23/LoadANSTOHelper_8h.html#acfb19341931d7d3f8948079b1741922f',1,'LoadANSTOHelper.h']]],
-  ['tartypeflag_5fcharacterspecial_1',['TarTypeFlag_CharacterSpecial',['../d7/d23/LoadANSTOHelper_8h.html#a8c34658bc87f4d23064e8ca068c2e5d2',1,'LoadANSTOHelper.h']]],
-  ['tartypeflag_5fcontiguousfile_2',['TarTypeFlag_ContiguousFile',['../d7/d23/LoadANSTOHelper_8h.html#ac7e4ca760589e0469f23e40bc6775486',1,'LoadANSTOHelper.h']]],
-  ['tartypeflag_5fdirectory_3',['TarTypeFlag_Directory',['../d7/d23/LoadANSTOHelper_8h.html#ae3691d2fd69f5f0329ec35cad725d8da',1,'LoadANSTOHelper.h']]],
-  ['tartypeflag_5ffifo_4',['TarTypeFlag_FIFO',['../d7/d23/LoadANSTOHelper_8h.html#a7cededb8ec1e53294901fd155556b748',1,'LoadANSTOHelper.h']]],
-  ['tartypeflag_5fhardlink_5',['TarTypeFlag_HardLink',['../d7/d23/LoadANSTOHelper_8h.html#a2dce2ae8317ef9578a2dc4df5ebe87b6',1,'LoadANSTOHelper.h']]],
-  ['tartypeflag_5fnormalfile_6',['TarTypeFlag_NormalFile',['../d7/d23/LoadANSTOHelper_8h.html#a95e10d217ff0b6fc9bea13c6a6cd9fbe',1,'LoadANSTOHelper.h']]],
-  ['tartypeflag_5fsymboliclink_7',['TarTypeFlag_SymbolicLink',['../d7/d23/LoadANSTOHelper_8h.html#a029ecc5821736095dbe57db7469767c4',1,'LoadANSTOHelper.h']]],
-  ['tmde_8',['TMDE',['../df/d81/MDTypes_8h.html#a69a76fd3922f5d3f82b4f3aa282f4e5d',1,'MDTypes.h']]],
-  ['tmde_5fclass_9',['TMDE_CLASS',['../df/d81/MDTypes_8h.html#a51694c7be54e5a2dc8ebd889f3544b34',1,'MDTypes.h']]],
-  ['to_5fcstring_10',['TO_CSTRING',['../db/db6/VersionCompat_8h.html#a478efca5176986271b144cbc4bacc7e7',1,'VersionCompat.h']]],
-  ['to_5flong_11',['to_long',['../db/db6/VersionCompat_8h.html#a05597e00373197483d7e897433dd9d99',1,'TO_LONG:&#160;VersionCompat.h'],['../d5/da7/PythonInterface_2mantid_2api_2src_2Exports_2ITableWorkspace_8cpp.html#a05597e00373197483d7e897433dd9d99',1,'TO_LONG:&#160;ITableWorkspace.cpp']]]
+  ['undef_5fcoordt_0',['UNDEF_COORDT',['../df/d81/MDTypes_8h.html#a6a3e6f5cfd386f3235ac515d3745da73',1,'MDTypes.h']]],
+  ['undef_5fsizet_1',['UNDEF_SIZET',['../df/d81/MDTypes_8h.html#a4b72866b3bbcf140912156b2584ec9ee',1,'MDTypes.h']]],
+  ['undef_5fuint64_2',['UNDEF_UINT64',['../df/d81/MDTypes_8h.html#a3d71692d0e4e6cd25fa0369866aa722d',1,'MDTypes.h']]],
+  ['unused_5farg_3',['UNUSED_ARG',['../db/d39/System_8h.html#a8440e0d0d5694191d05dc392a7a7f760',1,'System.h']]],
+  ['user_5ftypes_4',['USER_TYPES',['../d5/da7/PythonInterface_2mantid_2api_2src_2Exports_2ITableWorkspace_8cpp.html#a48b14f9b7fc46977e5dfaa7b647d9a19',1,'ITableWorkspace.cpp']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['vax_5fdbl_5fbias_0',['VAX_DBL_BIAS',['../d7/dc0/vms__convert_8cpp.html#a1c88be3a2ace4f9eaadd96ae6fde988f',1,'vms_convert.cpp']]],
-  ['vax_5fsng_5fbias_1',['VAX_SNG_BIAS',['../d7/dc0/vms__convert_8cpp.html#a0893a28ccc7f0620c9cd11a51fb3be19',1,'vms_convert.cpp']]],
-  ['verbose_2',['VERBOSE',['../d3/d8c/PolygonIntersection_8cpp.html#a2f7ae93fe2825ca876cccb23cd497435',1,'PolygonIntersection.cpp']]]
+  ['windowsize_0',['WINDOWSIZE',['../de/d89/FitPowderDiffPeaks_8cpp.html#a7cf6abdb80c7e45e52a9484ed4f8ac0e',1,'FitPowderDiffPeaks.cpp']]],
+  ['with_5fnoglobal_1',['WITH_NOGLOBAL',['../dc/d36/ICat4Stub_8h.html#ab0e1c923db1547a75ad010a3172c065a',1,'ICat4Stub.h']]]
 ];

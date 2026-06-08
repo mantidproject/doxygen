@@ -112,7 +112,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a17865f36f8a707a4f5c797289f730a2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an icon ID for the given window ID.  <br /></td></tr>
 <tr class="separator:a17865f36f8a707a4f5c797289f730a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31a939acc8b9831ea3ecc96dd93aeac9" id="r_a31a939acc8b9831ea3ecc96dd93aeac9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddb/classMantidQt_1_1API_1_1WindowIcons.html#a31a939acc8b9831ea3ecc96dd93aeac9">WindowIcons</a> ()</td></tr>
-<tr class="memdesc:a31a939acc8b9831ea3ecc96dd93aeac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <br /></td></tr>
 <tr class="separator:a31a939acc8b9831ea3ecc96dd93aeac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -150,12 +149,6 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Default constructor. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../dd/da5/WindowIcons_8cpp_source.html#l00022">22</a> of file <a class="el" href="../../dd/da5/WindowIcons_8cpp_source.html">WindowIcons.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../dd/da5/WindowIcons_8cpp_source.html#l00056">initInternalLookup()</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -176,22 +169,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns an icon for the given ID. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">windowID</td><td>A string giving the ID for a window </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::runtime_error</td><td>if no icon can be found </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../dd/da5/WindowIcons_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../dd/da5/WindowIcons_8cpp_source.html">WindowIcons.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../df/d38/pixmaps_8cpp_source.html#l12823">MantidQt::API::getQPixmap()</a>, <a class="el" href="../../d4/dd8/WindowIcons_8h_source.html#l00035">m_idToPixmapName</a>, <a class="el" href="../../dd/da5/WindowIcons_8cpp_source.html#l00078">makeIconFromFile()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
 </div>
 </div>
@@ -212,20 +189,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns an icon ID for the given window ID. </p>
-<p>Get the string ID representing the icon.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">windowID</td><td>:: a string representing the ID of the window </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a string with the QPixmap id for this window. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="../../dd/da5/WindowIcons_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../dd/da5/WindowIcons_8cpp_source.html">WindowIcons.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d4/dd8/WindowIcons_8h_source.html#l00035">m_idToPixmapName</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../da/d31/ProjectSaveModel_8cpp_source.html#l00153">MantidQt::MantidWidgets::ProjectSaveModel::makeWindowInfoObject()</a>.</p>
 
 </div>
 </div>
@@ -253,13 +216,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Defines the mapping between ID &amp; pixmap name. </p>
-<p>Initilise the internal lookup map. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../dd/da5/WindowIcons_8cpp_source.html#l00056">56</a> of file <a class="el" href="../../dd/da5/WindowIcons_8cpp_source.html">WindowIcons.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d4/dd8/WindowIcons_8h_source.html#l00035">m_idToPixmapName</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../dd/da5/WindowIcons_8cpp_source.html#l00022">WindowIcons()</a>.</p>
 
 </div>
 </div>
@@ -288,19 +244,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Build a icon object from an image file. </p>
-<p>Make a QIcon object froma file path.</p>
-<p>This is used in the case that a pixmap does not exist and a file path to an image was provided instead.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">path</td><td>:: path to the image to use to create the icon </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>icon object made from the path </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="../../dd/da5/WindowIcons_8cpp_source.html#l00078">78</a> of file <a class="el" href="../../dd/da5/WindowIcons_8cpp_source.html">WindowIcons.cpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../dd/da5/WindowIcons_8cpp_source.html#l00028">getIcon()</a>.</p>
 
 </div>
 </div>
@@ -329,13 +272,10 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dd8/WindowIcons_8h_source.html#l00035">35</a> of file <a class="el" href="../../d4/dd8/WindowIcons_8h_source.html">WindowIcons.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/da5/WindowIcons_8cpp_source.html#l00028">getIcon()</a>, <a class="el" href="../../dd/da5/WindowIcons_8cpp_source.html#l00042">getIconID()</a>, and <a class="el" href="../../dd/da5/WindowIcons_8cpp_source.html#l00056">initInternalLookup()</a>.</p>
-
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>qt/widgets/common/inc/MantidQtWidgets/Common/<a class="el" href="../../d4/dd8/WindowIcons_8h_source.html">WindowIcons.h</a></li>
-<li>qt/widgets/common/src/<a class="el" href="../../dd/da5/WindowIcons_8cpp_source.html">WindowIcons.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

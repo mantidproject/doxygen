@@ -171,18 +171,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructor with workspace &amp; axis index. </p>
-<p>The title will be filled with the caption &amp; units from the given Axis object of the workspace.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">workspace</td><td>The workspace containing the axis information </td></tr>
-    <tr><td class="paramname">index</td><td>Index of the axis in the workspace to inspect </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html#l00053">53</a> of file <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html">PlotAxis.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html#l00087">titleFromIndex()</a>, and <a class="el" href="../../dc/dd8/IndexPeaks_8cpp_source.html#l00116">workspace</a>.</p>
 
 </div>
 </div>
@@ -203,17 +191,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructor with an IMDDimension. </p>
-<p>The title will be filled with the caption &amp; units from the given dimension object.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dim</td><td>A dimension object, usually from a workspace </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html#l00065">65</a> of file <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html">PlotAxis.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html#l00098">titleFromDimension()</a>.</p>
 
 </div>
 </div>
@@ -244,18 +221,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructor with just a workspace (reverse order to above so compiler doesn't convert a a bool to an size_t and call the wrong thing. </p>
-<p>The title will be filled with the caption &amp; label for the Y data values within the workspace, ~ the Z axis.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">plottingDistribution</td><td>If true, the Y axis has been divided by the bin width </td></tr>
-    <tr><td class="paramname">workspace</td><td>The workspace containing the Y title information </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html#l00074">74</a> of file <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html">PlotAxis.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html#l00116">titleFromYData()</a>, and <a class="el" href="../../dc/dd8/IndexPeaks_8cpp_source.html#l00116">workspace</a>.</p>
 
 </div>
 </div>
@@ -303,11 +268,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a new axis title. </p>
-<dl class="section return"><dt>Returns</dt><dd>A new title for this axis </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html#l00081">81</a> of file <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html">PlotAxis.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d1/d25/PlotAxis_8h_source.html#l00049">m_title</a>.</p>
 
 </div>
 </div>
@@ -336,18 +296,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a title suitable for an axis attached to the given dimension. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dim</td><td>A dimension object that encapsulates the axis data </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html#l00098">98</a> of file <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html">PlotAxis.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../dd/db2/classMantid_1_1Geometry_1_1IMDDimension.html#a3b4a91fd8f38c58ba9ec856e68ff0dde">Mantid::Geometry::IMDDimension::getName()</a>, <a class="el" href="../../dd/db2/classMantid_1_1Geometry_1_1IMDDimension.html#a654da285df8b2bbeeffb72782d4111f9">Mantid::Geometry::IMDDimension::getUnits()</a>, <a class="el" href="../../d1/d25/PlotAxis_8h_source.html#l00049">m_title</a>, and <a class="el" href="../../d5/d23/QStringUtils_8h_source.html#l00021">MantidQt::API::toQStringInternal()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html#l00065">PlotAxis()</a>, and <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html#l00087">titleFromIndex()</a>.</p>
 
 </div>
 </div>
@@ -386,19 +334,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a title suitable for an axis attached to the given index. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">workspace</td><td>The workspace containing the axis information </td></tr>
-    <tr><td class="paramname">index</td><td>Index of the axis in the workspace to inspect </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html#l00087">87</a> of file <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html">PlotAxis.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d1/d25/PlotAxis_8h_source.html#l00049">m_title</a>, <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html#l00098">titleFromDimension()</a>, and <a class="el" href="../../dc/dd8/IndexPeaks_8cpp_source.html#l00116">workspace</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html#l00053">PlotAxis()</a>.</p>
 
 </div>
 </div>
@@ -437,20 +372,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a title suitable for the Y data values. </p>
-<p>Constructs a title using the unicode methods of the UnitLabel.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">workspace</td><td>The workspace containing the Y title information </td></tr>
-    <tr><td class="paramname">plottingDistribution</td><td>If true, the Y axis has been divided by the bin width </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html#l00116">116</a> of file <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html">PlotAxis.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d1/d25/PlotAxis_8h_source.html#l00049">m_title</a>, and <a class="el" href="../../dc/dd8/IndexPeaks_8cpp_source.html#l00116">workspace</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html#l00074">PlotAxis()</a>.</p>
 
 </div>
 </div>
@@ -479,13 +400,10 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d25/PlotAxis_8h_source.html#l00049">49</a> of file <a class="el" href="../../d1/d25/PlotAxis_8h_source.html">PlotAxis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html#l00081">title()</a>, <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html#l00098">titleFromDimension()</a>, <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html#l00087">titleFromIndex()</a>, and <a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html#l00116">titleFromYData()</a>.</p>
-
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>qt/widgets/common/inc/MantidQtWidgets/Common/<a class="el" href="../../d1/d25/PlotAxis_8h_source.html">PlotAxis.h</a></li>
-<li>qt/widgets/common/src/<a class="el" href="../../d7/d5e/PlotAxis_8cpp_source.html">PlotAxis.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

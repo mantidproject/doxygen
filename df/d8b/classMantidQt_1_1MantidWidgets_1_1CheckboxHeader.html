@@ -122,7 +122,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a156e68768ecd684a30028cedc38af3b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override QHeaderView constructor.  <br /></td></tr>
 <tr class="separator:a156e68768ecd684a30028cedc38af3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf3cc636f493a7c078a978c783b3b45e" id="r_aaf3cc636f493a7c078a978c783b3b45e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8b/classMantidQt_1_1MantidWidgets_1_1CheckboxHeader.html#aaf3cc636f493a7c078a978c783b3b45e">setChecked</a> (bool checked)</td></tr>
-<tr class="memdesc:aaf3cc636f493a7c078a978c783b3b45e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has the user checked the checkbox in the header?  <br /></td></tr>
 <tr class="separator:aaf3cc636f493a7c078a978c783b3b45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -188,16 +187,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Override QHeaderView constructor. </p>
-<p>Constructor.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">orientation</td><td>:: The orientation (horizontal or vertical) of the header. </td></tr>
-    <tr><td class="paramname">parent</td><td>:: The table to apply the header to. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d1/d4c/CheckboxHeader_8cpp_source.html#l00017">17</a> of file <a class="el" href="../../d1/d4c/CheckboxHeader_8cpp_source.html">CheckboxHeader.cpp</a>.</p>
 
 </div>
 </div>
@@ -228,12 +217,6 @@ Private Attributes</h2></td></tr>
 
 <p>The area around the checkbox. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d4c/CheckboxHeader_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../d1/d4c/CheckboxHeader_8cpp_source.html">CheckboxHeader.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d1/d4c/CheckboxHeader_8cpp_source.html#l00077">checkBoxRect()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d1/d4c/CheckboxHeader_8cpp_source.html#l00077">checkBoxRect()</a>, and <a class="el" href="../../d1/d4c/CheckboxHeader_8cpp_source.html#l00041">paintSection()</a>.</p>
-
 </div>
 </div>
 <a id="a1d9a6618f688c21549472cf2f1318648" name="a1d9a6618f688c21549472cf2f1318648"></a>
@@ -261,17 +244,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set the checkbox to checked when it is clicked. </p>
-<p>Set the checkbox to checked if clicked, otherwise unchecked.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>:: The mouse event the user performs. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d1/d4c/CheckboxHeader_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../d1/d4c/CheckboxHeader_8cpp_source.html">CheckboxHeader.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../dc/dca/CheckboxHeader_8h_source.html#l00047">m_checked</a>, and <a class="el" href="../../df/d8b/classMantidQt_1_1MantidWidgets_1_1CheckboxHeader.html#a6feb82ff764dcc4dbd21ebc9c6985e92">toggled()</a>.</p>
 
 </div>
 </div>
@@ -316,19 +288,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Overrides QHeaderView allowing checkbox functionality in the first column of the table. </p>
-<p>Implements the checkbox functionality into the first column of the table.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">painter</td><td>:: Paints the specific widget. </td></tr>
-    <tr><td class="paramname">rect</td><td>:: The area to paint. </td></tr>
-    <tr><td class="paramname">logicalIndex</td><td>:: The column in the table. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d1/d4c/CheckboxHeader_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../d1/d4c/CheckboxHeader_8cpp_source.html">CheckboxHeader.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d1/d4c/CheckboxHeader_8cpp_source.html#l00077">checkBoxRect()</a>, <a class="el" href="../../dc/dca/CheckboxHeader_8h_source.html#l00047">m_checked</a>, and <a class="el" href="../../d5/d64/IDetector_8h_source.html#l00032">Mantid::Geometry::rect</a>.</p>
 
 </div>
 </div>
@@ -347,18 +306,6 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Has the user checked the checkbox in the header? </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">checked</td><td>:: True if user has checked the checkbox in the header. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d1/d4c/CheckboxHeader_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../d1/d4c/CheckboxHeader_8cpp_source.html">CheckboxHeader.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../dc/dca/CheckboxHeader_8h_source.html#l00047">m_checked</a>, and <a class="el" href="../../df/d8b/classMantidQt_1_1MantidWidgets_1_1CheckboxHeader.html#a6feb82ff764dcc4dbd21ebc9c6985e92">toggled()</a>.</p>
 
 </div>
 </div>
@@ -385,8 +332,6 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="../../d1/d4c/CheckboxHeader_8cpp_source.html#l00067">mousePressEvent()</a>, and <a class="el" href="../../d1/d4c/CheckboxHeader_8cpp_source.html#l00027">setChecked()</a>.</p>
 
 </div>
 </div>
@@ -415,13 +360,10 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/dca/CheckboxHeader_8h_source.html#l00047">47</a> of file <a class="el" href="../../dc/dca/CheckboxHeader_8h_source.html">CheckboxHeader.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/d4c/CheckboxHeader_8cpp_source.html#l00067">mousePressEvent()</a>, <a class="el" href="../../d1/d4c/CheckboxHeader_8cpp_source.html#l00041">paintSection()</a>, and <a class="el" href="../../d1/d4c/CheckboxHeader_8cpp_source.html#l00027">setChecked()</a>.</p>
-
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>qt/widgets/common/inc/MantidQtWidgets/Common/<a class="el" href="../../dc/dca/CheckboxHeader_8h_source.html">CheckboxHeader.h</a></li>
-<li>qt/widgets/common/src/<a class="el" href="../../d1/d4c/CheckboxHeader_8cpp_source.html">CheckboxHeader.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
