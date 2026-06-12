@@ -90,8 +90,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
@@ -116,6 +117,23 @@ Inheritance diagram for Mantid::Algorithms::Stitch1D:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d84/structMantid_1_1Algorithms_1_1Stitch1D_1_1overlapBounds.html">overlapBounds</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3e/structMantid_1_1Algorithms_1_1Stitch1D_1_1SpecialValueIndexes.html">SpecialValueIndexes</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indexes of Y and E values that were NaN or infinite before processing.  <a href="../../d5/d3e/structMantid_1_1Algorithms_1_1Stitch1D_1_1SpecialValueIndexes.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a41919d671e1ba58e0420dcbd1976e366" id="r_a41919d671e1ba58e0420dcbd1976e366"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a41919d671e1ba58e0420dcbd1976e366">SpecialTypeIndexes</a> = std::vector&lt; std::vector&lt; size_t &gt; &gt;</td></tr>
+<tr class="memdesc:a41919d671e1ba58e0420dcbd1976e366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper typedef for storing special-value indexes per spectrum.  <br /></td></tr>
+<tr class="separator:a41919d671e1ba58e0420dcbd1976e366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classMantid_1_1API_1_1Algorithm"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classMantid_1_1API_1_1Algorithm')"><img src="../../closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html">Mantid::API::Algorithm</a></td></tr>
+<tr class="memitem:a708c3b21e5781a621c25a093ff165c65 inherit pub_types_classMantid_1_1API_1_1Algorithm" id="r_a708c3b21e5781a621c25a093ff165c65"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a708c3b21e5781a621c25a093ff165c65">WorkspaceVector</a> = std::vector&lt; std::shared_ptr&lt; <a class="el" href="../../d3/de9/classMantid_1_1API_1_1Workspace.html">Workspace</a> &gt; &gt;</td></tr>
+<tr class="separator:a708c3b21e5781a621c25a093ff165c65 inherit pub_types_classMantid_1_1API_1_1Algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a77099e4faff5451450f6dc0bd475c835" id="r_a77099e4faff5451450f6dc0bd475c835"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a77099e4faff5451450f6dc0bd475c835">category</a> () const override</td></tr>
@@ -477,12 +495,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5565f50d5d4b9f6893575d8831318d66 inherit pub_methods_classMantid_1_1Kernel_1_1IPropertyManager" id="r_a5565f50d5d4b9f6893575d8831318d66"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html#a5565f50d5d4b9f6893575d8831318d66">~IPropertyManager</a> ()=default</td></tr>
 <tr class="separator:a5565f50d5d4b9f6893575d8831318d66 inherit pub_methods_classMantid_1_1Kernel_1_1IPropertyManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a41919d671e1ba58e0420dcbd1976e366" id="r_a41919d671e1ba58e0420dcbd1976e366"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a41919d671e1ba58e0420dcbd1976e366">SpecialTypeIndexes</a> = std::vector&lt; std::vector&lt; size_t &gt; &gt;</td></tr>
-<tr class="memdesc:a41919d671e1ba58e0420dcbd1976e366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper typedef.  <br /></td></tr>
-<tr class="separator:a41919d671e1ba58e0420dcbd1976e366"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:afaa127ea36c381fc987305d0f1934d05" id="r_afaa127ea36c381fc987305d0f1934d05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">Mantid::API::MatrixWorkspace_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#afaa127ea36c381fc987305d0f1934d05">conjoinXAxis</a> (<a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">Mantid::API::MatrixWorkspace_sptr</a> const &amp;inOne, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">Mantid::API::MatrixWorkspace_sptr</a> const &amp;inTwo)</td></tr>
@@ -515,17 +527,20 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a529e6cea736e518c04b5cd62c3711724" id="r_a529e6cea736e518c04b5cd62c3711724"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a529e6cea736e518c04b5cd62c3711724">maskInPlace</a> (int a1, int a2, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">Mantid::API::MatrixWorkspace_sptr</a> &amp;source)</td></tr>
 <tr class="memdesc:a529e6cea736e518c04b5cd62c3711724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mask out everything but the data in the ranges, but do it inplace.  <br /></td></tr>
 <tr class="separator:a529e6cea736e518c04b5cd62c3711724"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3936f00b7de7a7dfcad6294bf1b0ef4d" id="r_a3936f00b7de7a7dfcad6294bf1b0ef4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">Mantid::API::MatrixWorkspace_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a3936f00b7de7a7dfcad6294bf1b0ef4d">rebin</a> (<a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">Mantid::API::MatrixWorkspace_sptr</a> &amp;input, const std::vector&lt; double &gt; &amp;params)</td></tr>
-<tr class="memdesc:a3936f00b7de7a7dfcad6294bf1b0ef4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform rebin.  <br /></td></tr>
-<tr class="separator:a3936f00b7de7a7dfcad6294bf1b0ef4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9078ad05d6d741285c1e413aebd54eb" id="r_af9078ad05d6d741285c1e413aebd54eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#af9078ad05d6d741285c1e413aebd54eb">reinsertSpecialValues</a> (const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">Mantid::API::MatrixWorkspace_sptr</a> &amp;ws)</td></tr>
-<tr class="memdesc:af9078ad05d6d741285c1e413aebd54eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add back in any special values.  <br /></td></tr>
-<tr class="separator:af9078ad05d6d741285c1e413aebd54eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f85d032b293bf9158e0e3ce4e0ba4fb" id="r_a1f85d032b293bf9158e0e3ce4e0ba4fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">Mantid::API::MatrixWorkspace_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a1f85d032b293bf9158e0e3ce4e0ba4fb">rebin</a> (<a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">Mantid::API::MatrixWorkspace_sptr</a> &amp;input, const std::vector&lt; double &gt; &amp;params, <a class="el" href="../../d5/d3e/structMantid_1_1Algorithms_1_1Stitch1D_1_1SpecialValueIndexes.html">SpecialValueIndexes</a> &amp;specialValues)</td></tr>
+<tr class="memdesc:a1f85d032b293bf9158e0e3ce4e0ba4fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform rebin and record special values that are zeroed.  <br /></td></tr>
+<tr class="separator:a1f85d032b293bf9158e0e3ce4e0ba4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdaf22ac3eb3c86b555cbc2f7581f8b2" id="r_abdaf22ac3eb3c86b555cbc2f7581f8b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#abdaf22ac3eb3c86b555cbc2f7581f8b2">reinsertSpecialValues</a> (const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">Mantid::API::MatrixWorkspace_sptr</a> &amp;ws, const <a class="el" href="../../d5/d3e/structMantid_1_1Algorithms_1_1Stitch1D_1_1SpecialValueIndexes.html">SpecialValueIndexes</a> &amp;lhsSpecialValues, const <a class="el" href="../../d5/d3e/structMantid_1_1Algorithms_1_1Stitch1D_1_1SpecialValueIndexes.html">SpecialValueIndexes</a> &amp;rhsSpecialValues, <a class="el" href="../../d0/d84/structMantid_1_1Algorithms_1_1Stitch1D_1_1overlapBounds.html">overlapBounds</a> bounds)</td></tr>
+<tr class="memdesc:abdaf22ac3eb3c86b555cbc2f7581f8b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add back special values only where no valid data contributes to the output.  <br /></td></tr>
+<tr class="separator:abdaf22ac3eb3c86b555cbc2f7581f8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65a09db729dba7e8ee469916765cebec" id="r_a65a09db729dba7e8ee469916765cebec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a65a09db729dba7e8ee469916765cebec">scaleWorkspace</a> (<a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">API::MatrixWorkspace_sptr</a> &amp;ws, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">API::MatrixWorkspace_sptr</a> &amp;scaleFactorWS, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a97ac0dc7f26bb26c417c74e8b29d1181">API::MatrixWorkspace_const_sptr</a> &amp;dxWS)</td></tr>
 <tr class="memdesc:a65a09db729dba7e8ee469916765cebec"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/d97/classMantid_1_1Algorithms_1_1Scale.html" title="Scales an input workspace by the given factor, which can be either multiplicative or additive.">Scale</a> workspace (left hand side or right hand side)  <br /></td></tr>
 <tr class="separator:a65a09db729dba7e8ee469916765cebec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6139ff6ed3b2bcf5fe63de80ecb09c09" id="r_a6139ff6ed3b2bcf5fe63de80ecb09c09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">Mantid::API::MatrixWorkspace_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a6139ff6ed3b2bcf5fe63de80ecb09c09">singleValueWS</a> (const double val)</td></tr>
 <tr class="separator:a6139ff6ed3b2bcf5fe63de80ecb09c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a422d5f9463ba6c7b562d59bda326d298" id="r_a422d5f9463ba6c7b562d59bda326d298"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a422d5f9463ba6c7b562d59bda326d298">useValidOverlapData</a> (const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">Mantid::API::MatrixWorkspace_sptr</a> &amp;overlap, const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">Mantid::API::MatrixWorkspace_sptr</a> &amp;lhs, const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">Mantid::API::MatrixWorkspace_sptr</a> &amp;<a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp.html#a4a4185072ce68364465daf0b662bb479">rhs</a>, const <a class="el" href="../../d5/d3e/structMantid_1_1Algorithms_1_1Stitch1D_1_1SpecialValueIndexes.html">SpecialValueIndexes</a> &amp;lhsSpecialValues, const <a class="el" href="../../d5/d3e/structMantid_1_1Algorithms_1_1Stitch1D_1_1SpecialValueIndexes.html">SpecialValueIndexes</a> &amp;rhsSpecialValues, const <a class="el" href="../../d0/d84/structMantid_1_1Algorithms_1_1Stitch1D_1_1overlapBounds.html">overlapBounds</a> bounds)</td></tr>
+<tr class="memdesc:a422d5f9463ba6c7b562d59bda326d298"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use valid overlap values where exactly one workspace has an invalid signal value.  <br /></td></tr>
+<tr class="separator:a422d5f9463ba6c7b562d59bda326d298"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec760c29536606b03761b49b012fbd9c" id="r_aec760c29536606b03761b49b012fbd9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">Mantid::API::MatrixWorkspace_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#aec760c29536606b03761b49b012fbd9c">weightedMean</a> (<a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">Mantid::API::MatrixWorkspace_sptr</a> const &amp;inOne, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">Mantid::API::MatrixWorkspace_sptr</a> const &amp;inTwo)</td></tr>
 <tr class="memdesc:aec760c29536606b03761b49b012fbd9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the weighted mean.  <br /></td></tr>
 <tr class="separator:aec760c29536606b03761b49b012fbd9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -534,23 +549,16 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a4da40559f1de0e339cc67c7815d2a1d9" id="r_a4da40559f1de0e339cc67c7815d2a1d9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a4da40559f1de0e339cc67c7815d2a1d9">m_errorScaleFactor</a></td></tr>
 <tr class="separator:a4da40559f1de0e339cc67c7815d2a1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8c965aef005404cefa5114cec9ffdc8" id="r_af8c965aef005404cefa5114cec9ffdc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a41919d671e1ba58e0420dcbd1976e366">SpecialTypeIndexes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#af8c965aef005404cefa5114cec9ffdc8">m_infDxIndexes</a></td></tr>
-<tr class="separator:af8c965aef005404cefa5114cec9ffdc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a012b4f8b7a27c81e4be0579c35a345a3" id="r_a012b4f8b7a27c81e4be0579c35a345a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a41919d671e1ba58e0420dcbd1976e366">SpecialTypeIndexes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a012b4f8b7a27c81e4be0579c35a345a3">m_infEIndexes</a></td></tr>
-<tr class="memdesc:a012b4f8b7a27c81e4be0579c35a345a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index per workspace spectra of Infs.  <br /></td></tr>
-<tr class="separator:a012b4f8b7a27c81e4be0579c35a345a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd6af1ced018fe98c76753d48207fd16" id="r_abd6af1ced018fe98c76753d48207fd16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a41919d671e1ba58e0420dcbd1976e366">SpecialTypeIndexes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#abd6af1ced018fe98c76753d48207fd16">m_infYIndexes</a></td></tr>
-<tr class="separator:abd6af1ced018fe98c76753d48207fd16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1396cc9c64a7425326bbdcabb01ab82" id="r_ac1396cc9c64a7425326bbdcabb01ab82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a41919d671e1ba58e0420dcbd1976e366">SpecialTypeIndexes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#ac1396cc9c64a7425326bbdcabb01ab82">m_nanDxIndexes</a></td></tr>
-<tr class="separator:ac1396cc9c64a7425326bbdcabb01ab82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82baf8edacaaaff47155b2374ed54224" id="r_a82baf8edacaaaff47155b2374ed54224"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a41919d671e1ba58e0420dcbd1976e366">SpecialTypeIndexes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a82baf8edacaaaff47155b2374ed54224">m_nanEIndexes</a></td></tr>
-<tr class="memdesc:a82baf8edacaaaff47155b2374ed54224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index per workspace spectra of Nans.  <br /></td></tr>
-<tr class="separator:a82baf8edacaaaff47155b2374ed54224"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b0895fda4332181d6ce0764a15cf1a0" id="r_a1b0895fda4332181d6ce0764a15cf1a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a41919d671e1ba58e0420dcbd1976e366">SpecialTypeIndexes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a1b0895fda4332181d6ce0764a15cf1a0">m_nanYIndexes</a></td></tr>
-<tr class="separator:a1b0895fda4332181d6ce0764a15cf1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5ad51acebede3d3af3560207ef45ac" id="r_a0e5ad51acebede3d3af3560207ef45ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d3e/structMantid_1_1Algorithms_1_1Stitch1D_1_1SpecialValueIndexes.html">SpecialValueIndexes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a0e5ad51acebede3d3af3560207ef45ac">m_lhsSpecialValues</a></td></tr>
+<tr class="memdesc:a0e5ad51acebede3d3af3560207ef45ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index per workspace spectra of special values.  <br /></td></tr>
+<tr class="separator:a0e5ad51acebede3d3af3560207ef45ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a557efa43b4b2d5a33f84c327de8bb785" id="r_a557efa43b4b2d5a33f84c327de8bb785"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d3e/structMantid_1_1Algorithms_1_1Stitch1D_1_1SpecialValueIndexes.html">SpecialValueIndexes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a557efa43b4b2d5a33f84c327de8bb785">m_rhsSpecialValues</a></td></tr>
+<tr class="separator:a557efa43b4b2d5a33f84c327de8bb785"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4cacf644852e9302b2ae5b79e2a67d6" id="r_ac4cacf644852e9302b2ae5b79e2a67d6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#ac4cacf644852e9302b2ae5b79e2a67d6">m_scaleFactor</a></td></tr>
 <tr class="memdesc:ac4cacf644852e9302b2ae5b79e2a67d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scaling factors.  <br /></td></tr>
 <tr class="separator:ac4cacf644852e9302b2ae5b79e2a67d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b42124d4e5d4c780b23bc970f1ba917" id="r_a6b42124d4e5d4c780b23bc970f1ba917"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a6b42124d4e5d4c780b23bc970f1ba917">m_useValidDataOnly</a></td></tr>
+<tr class="separator:a6b42124d4e5d4c780b23bc970f1ba917"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -560,9 +568,6 @@ Static Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_classMantid_1_1API_1_1Algorithm"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classMantid_1_1API_1_1Algorithm')"><img src="../../closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html">Mantid::API::Algorithm</a></td></tr>
-<tr class="memitem:a708c3b21e5781a621c25a093ff165c65 inherit pub_types_classMantid_1_1API_1_1Algorithm" id="r_a708c3b21e5781a621c25a093ff165c65"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a708c3b21e5781a621c25a093ff165c65">WorkspaceVector</a> = std::vector&lt; std::shared_ptr&lt; <a class="el" href="../../d3/de9/classMantid_1_1API_1_1Workspace.html">Workspace</a> &gt; &gt;</td></tr>
-<tr class="separator:a708c3b21e5781a621c25a093ff165c65 inherit pub_types_classMantid_1_1API_1_1Algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classMantid_1_1API_1_1Algorithm"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classMantid_1_1API_1_1Algorithm')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html">Mantid::API::Algorithm</a></td></tr>
 <tr class="memitem:a6c686176d4b6f85c17fe0ed27d287d02 inherit pub_static_methods_classMantid_1_1API_1_1Algorithm" id="r_a6c686176d4b6f85c17fe0ed27d287d02"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a0934d9f70650f19c0b842728e7fe2242">IAlgorithm_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a6c686176d4b6f85c17fe0ed27d287d02">fromString</a> (const std::string &amp;input)</td></tr>
 <tr class="memdesc:a6c686176d4b6f85c17fe0ed27d287d02 inherit pub_static_methods_classMantid_1_1API_1_1Algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-serialize an object from a string.  <br /></td></tr>
@@ -694,25 +699,16 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a41919d671e1ba58e0420dcbd1976e366">Mantid::Algorithms::Stitch1D::SpecialTypeIndexes</a> =  std::vector&lt;std::vector&lt;size_t&gt; &gt;</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Helper typedef. </p>
-<p>For storing indexes of special values per spectra per workspace. </p>
+<p>Helper typedef for storing special-value indexes per spectrum. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00039">39</a> of file <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html">Stitch1D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00037">37</a> of file <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html">Stitch1D.h</a>.</p>
 
 </div>
 </div>
@@ -794,11 +790,11 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A shared pointer to the resulting MatrixWorkspace </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00386">386</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00413">413</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00865">Mantid::API::Algorithm::createChildAlgorithm()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00464">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00491">exec()</a>.</p>
 
 </div>
 </div>
@@ -830,9 +826,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#aace3ff902f31d5cfa309fff3d6b069aa">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00464">464</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00491">491</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00386">conjoinXAxis()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00865">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00406">findStartEndIndexes()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00423">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00215">getEndOverlap()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01928">Mantid::API::Algorithm::getPropertyValue()</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00243">getRebinParams()</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00186">getStartOverlap()</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00423">hasNonzeroErrors()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00355">integration()</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00077">m_errorScaleFactor</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00086">m_infEIndexes</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00087">m_infYIndexes</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00082">m_nanEIndexes</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00083">m_nanYIndexes</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00076">m_scaleFactor</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00061">maskAllBut()</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00096">maskInPlace()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00126">Mantid::Kernel::Logger::notice()</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00297">rebin()</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00592">reinsertSpecialValues()</a>, <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00098">rhs</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00440">scaleWorkspace()</a>, <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00270">Mantid::Kernel::IPropertyManager::setProperty()</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00372">weightedMean()</a>, and <a class="el" href="../../d2/d08/FloatingPointComparison_8cpp_source.html#l00137">Mantid::Kernel::withinAbsoluteDifference()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00413">conjoinXAxis()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00865">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00433">findStartEndIndexes()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00423">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00239">getEndOverlap()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01928">Mantid::API::Algorithm::getPropertyValue()</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00267">getRebinParams()</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00210">getStartOverlap()</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00450">hasNonzeroErrors()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00382">integration()</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00103">m_errorScaleFactor</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00109">m_lhsSpecialValues</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00110">m_rhsSpecialValues</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00102">m_scaleFactor</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00104">m_useValidDataOnly</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00082">maskAllBut()</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00117">maskInPlace()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00126">Mantid::Kernel::Logger::notice()</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00323">rebin()</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00627">reinsertSpecialValues()</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00045">Mantid::Algorithms::Stitch1D::SpecialValueIndexes::resize()</a>, <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00098">rhs</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00467">scaleWorkspace()</a>, <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00270">Mantid::Kernel::IPropertyManager::setProperty()</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00687">useValidOverlapData()</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00399">weightedMean()</a>, and <a class="el" href="../../d2/d08/FloatingPointComparison_8cpp_source.html#l00137">Mantid::Kernel::withinAbsoluteDifference()</a>.</p>
 
 </div>
 </div>
@@ -888,11 +884,11 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a boost::tuple&lt;int,int&gt; containing the bin indexes of the overlaps </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00406">406</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00433">433</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../dc/dd8/IndexPeaks_8cpp_source.html#l00116">workspace</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00464">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00491">exec()</a>.</p>
 
 </div>
 </div>
@@ -941,11 +937,11 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a double contianing the end of the overlapping region </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00215">215</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00239">239</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00423">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../d1/d32/classMantid_1_1Kernel_1_1Property.html#a6c8ddc0530da5e9e44d47fac8071e6b1">Mantid::Kernel::Property::isDefault()</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00074">range_tolerance</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00423">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../d1/d32/classMantid_1_1Kernel_1_1Property.html#a6c8ddc0530da5e9e44d47fac8071e6b1">Mantid::Kernel::Property::isDefault()</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00100">range_tolerance</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00464">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00491">exec()</a>.</p>
 
 </div>
 </div>
@@ -1001,11 +997,11 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a vector&lt;double&gt; contianing the rebinning parameters </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00243">243</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00267">267</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, and <a class="el" href="../../d1/d32/classMantid_1_1Kernel_1_1Property.html#a6c8ddc0530da5e9e44d47fac8071e6b1">Mantid::Kernel::Property::isDefault()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00464">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00491">exec()</a>.</p>
 
 </div>
 </div>
@@ -1054,11 +1050,11 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a double contianing the start of the overlapping region </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00186">186</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00210">210</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00423">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../d1/d32/classMantid_1_1Kernel_1_1Property.html#a6c8ddc0530da5e9e44d47fac8071e6b1">Mantid::Kernel::Property::isDefault()</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00074">range_tolerance</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00423">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../d1/d32/classMantid_1_1Kernel_1_1Property.html#a6c8ddc0530da5e9e44d47fac8071e6b1">Mantid::Kernel::Property::isDefault()</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00100">range_tolerance</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00464">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00491">exec()</a>.</p>
 
 </div>
 </div>
@@ -1088,9 +1084,9 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if there are any non-zero errors in the workspace </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00423">423</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00450">450</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00464">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00491">exec()</a>.</p>
 
 </div>
 </div>
@@ -1122,7 +1118,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a6dd0fd7bdcd432ca32c33f4a4c26583c">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00117">117</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00138">138</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01815">Mantid::API::Algorithm::declareProperty()</a>, <a class="el" href="../../db/d1c/EmptyValues_8h_source.html#l00042">Mantid::EMPTY_DBL()</a>, <a class="el" href="../../d3/d68/Property_8h_source.html#l00053">Mantid::Kernel::Direction::Input</a>, and <a class="el" href="../../d3/d68/Property_8h_source.html#l00054">Mantid::Kernel::Direction::Output</a>.</p>
 
@@ -1180,11 +1176,11 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A shared pointer to the resulting MatrixWorkspace </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00355">355</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00382">382</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00865">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00423">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, and <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00355">integration()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00865">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00423">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, and <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00382">integration()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00464">exec()</a>, and <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00355">integration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00491">exec()</a>, and <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00382">integration()</a>.</p>
 
 </div>
 </div>
@@ -1239,11 +1235,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00117">PARALLEL_CHECK_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00102">PARALLEL_END_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00218">PARALLEL_FOR_IF</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00094">PARALLEL_START_INTERRUPT_REGION</a>, and <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00022">Mantid::Kernel::threadSafe()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00464">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00491">exec()</a>.</p>
 
 </div>
 </div>
@@ -1298,11 +1294,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00096">96</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00117">117</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00117">PARALLEL_CHECK_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00102">PARALLEL_END_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00218">PARALLEL_FOR_IF</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00094">PARALLEL_START_INTERRUPT_REGION</a>, and <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00022">Mantid::Kernel::threadSafe()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00464">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00491">exec()</a>.</p>
 
 </div>
 </div>
@@ -1338,8 +1334,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a3936f00b7de7a7dfcad6294bf1b0ef4d" name="a3936f00b7de7a7dfcad6294bf1b0ef4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3936f00b7de7a7dfcad6294bf1b0ef4d">&#9670;&#160;</a></span>rebin()</h2>
+<a id="a1f85d032b293bf9158e0e3ce4e0ba4fb" name="a1f85d032b293bf9158e0e3ce4e0ba4fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f85d032b293bf9158e0e3ce4e0ba4fb">&#9670;&#160;</a></span>rebin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1357,7 +1353,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>params</em>&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d3e/structMantid_1_1Algorithms_1_1Stitch1D_1_1SpecialValueIndexes.html">SpecialValueIndexes</a> &amp;&#160;</td>
+          <td class="paramname"><em>specialValues</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1372,27 +1374,28 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Perform rebin. </p>
+<p>Perform rebin and record special values that are zeroed. </p>
 <p>Runs the <a class="el" href="../../d0/d5a/classMantid_1_1Algorithms_1_1Rebin.html" title="Takes a workspace as input and rebins the data according to the input rebin parameters.">Rebin</a> Algorithm as a child and replaces special values.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">input</td><td>:: The input workspace </td></tr>
     <tr><td class="paramname">params</td><td>:: a vector&lt;double&gt; containing rebinning parameters </td></tr>
+    <tr><td class="paramname">specialValues</td><td>:: Stores the rebinned Y and E indexes that contained NaN or infinite values before they were masked to zero for processing. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A shared pointer to the resulting MatrixWorkspace </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00297">297</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00323">323</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00865">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00423">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00086">m_infEIndexes</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00087">m_infYIndexes</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00082">m_nanEIndexes</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00083">m_nanYIndexes</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00117">PARALLEL_CHECK_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00102">PARALLEL_END_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00218">PARALLEL_FOR_IF</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00094">PARALLEL_START_INTERRUPT_REGION</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00297">rebin()</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00022">Mantid::Kernel::threadSafe()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00865">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00423">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00042">Mantid::Algorithms::Stitch1D::SpecialValueIndexes::infE</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00043">Mantid::Algorithms::Stitch1D::SpecialValueIndexes::infY</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00040">Mantid::Algorithms::Stitch1D::SpecialValueIndexes::nanE</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00041">Mantid::Algorithms::Stitch1D::SpecialValueIndexes::nanY</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00117">PARALLEL_CHECK_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00102">PARALLEL_END_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00218">PARALLEL_FOR_IF</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00094">PARALLEL_START_INTERRUPT_REGION</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00323">rebin()</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00022">Mantid::Kernel::threadSafe()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00464">exec()</a>, and <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00297">rebin()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00491">exec()</a>, and <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00323">rebin()</a>.</p>
 
 </div>
 </div>
-<a id="af9078ad05d6d741285c1e413aebd54eb" name="af9078ad05d6d741285c1e413aebd54eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9078ad05d6d741285c1e413aebd54eb">&#9670;&#160;</a></span>reinsertSpecialValues()</h2>
+<a id="abdaf22ac3eb3c86b555cbc2f7581f8b2" name="abdaf22ac3eb3c86b555cbc2f7581f8b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdaf22ac3eb3c86b555cbc2f7581f8b2">&#9670;&#160;</a></span>reinsertSpecialValues()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1404,8 +1407,30 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void Mantid::Algorithms::Stitch1D::reinsertSpecialValues </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">Mantid::API::MatrixWorkspace_sptr</a> &amp;&#160;</td>
-          <td class="paramname"><em>ws</em></td><td>)</td>
+          <td class="paramname"><em>ws</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d3e/structMantid_1_1Algorithms_1_1Stitch1D_1_1SpecialValueIndexes.html">SpecialValueIndexes</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhsSpecialValues</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d3e/structMantid_1_1Algorithms_1_1Stitch1D_1_1SpecialValueIndexes.html">SpecialValueIndexes</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhsSpecialValues</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d84/structMantid_1_1Algorithms_1_1Stitch1D_1_1overlapBounds.html">overlapBounds</a>&#160;</td>
+          <td class="paramname"><em>bounds</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -1415,20 +1440,21 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Add back in any special values. </p>
-<p>Put special values back.</p>
+<p>Add back special values only where no valid data contributes to the output. </p>
+<p>Put special values back only where the output has no valid data coverage.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ws</td><td>: MatrixWorkspace to resinsert special values into. </td></tr>
+    <tr><td class="paramname">ws</td><td>:: MatrixWorkspace to reinsert special values into. </td></tr>
+    <tr><td class="paramname">lhsSpecialValues</td><td>:: Special value indexes recorded from the LHS workspace. </td></tr>
+    <tr><td class="paramname">rhsSpecialValues</td><td>:: Special value indexes recorded from the RHS workspace. </td></tr>
+    <tr><td class="paramname">bounds</td><td>:: Indices of the bins containing the start and end of the overlap region. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00592">592</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00627">627</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00086">m_infEIndexes</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00087">m_infYIndexes</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00082">m_nanEIndexes</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00083">m_nanYIndexes</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00117">PARALLEL_CHECK_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00102">PARALLEL_END_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00218">PARALLEL_FOR_IF</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00094">PARALLEL_START_INTERRUPT_REGION</a>, and <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00022">Mantid::Kernel::threadSafe()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00464">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00491">exec()</a>.</p>
 
 </div>
 </div>
@@ -1483,11 +1509,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00440">440</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00467">467</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00423">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00077">m_errorScaleFactor</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00076">m_scaleFactor</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00423">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00103">m_errorScaleFactor</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00102">m_scaleFactor</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00464">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00491">exec()</a>.</p>
 
 </div>
 </div>
@@ -1579,6 +1605,86 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a422d5f9463ba6c7b562d59bda326d298" name="a422d5f9463ba6c7b562d59bda326d298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a422d5f9463ba6c7b562d59bda326d298">&#9670;&#160;</a></span>useValidOverlapData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mantid::Algorithms::Stitch1D::useValidOverlapData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">Mantid::API::MatrixWorkspace_sptr</a> &amp;&#160;</td>
+          <td class="paramname"><em>overlap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">Mantid::API::MatrixWorkspace_sptr</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">Mantid::API::MatrixWorkspace_sptr</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d3e/structMantid_1_1Algorithms_1_1Stitch1D_1_1SpecialValueIndexes.html">SpecialValueIndexes</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhsSpecialValues</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d3e/structMantid_1_1Algorithms_1_1Stitch1D_1_1SpecialValueIndexes.html">SpecialValueIndexes</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhsSpecialValues</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/d84/structMantid_1_1Algorithms_1_1Stitch1D_1_1overlapBounds.html">overlapBounds</a>&#160;</td>
+          <td class="paramname"><em>bounds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Use valid overlap values where exactly one workspace has an invalid signal value. </p>
+<p>Use valid overlap values where only one input workspace has an invalid signal value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">overlap</td><td>:: Workspace containing the calculated overlap values to update. </td></tr>
+    <tr><td class="paramname">lhs</td><td>:: LHS workspace masked to contain only overlap-region values. </td></tr>
+    <tr><td class="paramname">rhs</td><td>:: RHS workspace masked to contain only overlap-region values. </td></tr>
+    <tr><td class="paramname">lhsSpecialValues</td><td>:: Special value indexes recorded from the LHS workspace. </td></tr>
+    <tr><td class="paramname">rhsSpecialValues</td><td>:: Special value indexes recorded from the RHS workspace. </td></tr>
+    <tr><td class="paramname">bounds</td><td>:: Indices of the bins containing the start and end of the overlap region. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00687">687</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00054">Mantid::Algorithms::Stitch1D::overlapBounds::a1</a>, <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00055">Mantid::Algorithms::Stitch1D::overlapBounds::a2</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00117">PARALLEL_CHECK_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00102">PARALLEL_END_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00218">PARALLEL_FOR_IF</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00094">PARALLEL_START_INTERRUPT_REGION</a>, <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00098">rhs</a>, and <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00022">Mantid::Kernel::threadSafe()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00491">exec()</a>.</p>
+
+</div>
+</div>
 <a id="afdf85e7f9c3472053b6fa524d0adb266" name="afdf85e7f9c3472053b6fa524d0adb266"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afdf85e7f9c3472053b6fa524d0adb266">&#9670;&#160;</a></span>validateInputs()</h2>
 
@@ -1610,7 +1716,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d2d/classMantid_1_1API_1_1IAlgorithm.html#ade9fd99ad205148bccc8a46e3c3c8b18">Mantid::API::IAlgorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00154">154</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00178">178</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d4/d90/RunCombinationHelper_8cpp_source.html#l00079">Mantid::Algorithms::RunCombinationHelper::checkCompatibility()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00098">rhs</a>, and <a class="el" href="../../d4/d90/RunCombinationHelper_8cpp_source.html#l00056">Mantid::Algorithms::RunCombinationHelper::setReferenceProperties()</a>.</p>
 
@@ -1693,11 +1799,11 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A shared pointer to the resulting MatrixWorkspace </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00372">372</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00399">399</a> of file <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html">Stitch1D.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00865">Mantid::API::Algorithm::createChildAlgorithm()</a>, and <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00372">weightedMean()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00865">Mantid::API::Algorithm::createChildAlgorithm()</a>, and <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00399">weightedMean()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00464">exec()</a>, and <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00372">weightedMean()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00491">exec()</a>, and <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00399">weightedMean()</a>.</p>
 
 </div>
 </div>
@@ -1722,14 +1828,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00077">77</a> of file <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html">Stitch1D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00103">103</a> of file <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html">Stitch1D.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00464">exec()</a>, and <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00440">scaleWorkspace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00491">exec()</a>, and <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00467">scaleWorkspace()</a>.</p>
 
 </div>
 </div>
-<a id="af8c965aef005404cefa5114cec9ffdc8" name="af8c965aef005404cefa5114cec9ffdc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8c965aef005404cefa5114cec9ffdc8">&#9670;&#160;</a></span>m_infDxIndexes</h2>
+<a id="a0e5ad51acebede3d3af3560207ef45ac" name="a0e5ad51acebede3d3af3560207ef45ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e5ad51acebede3d3af3560207ef45ac">&#9670;&#160;</a></span>m_lhsSpecialValues</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1738,7 +1844,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a41919d671e1ba58e0420dcbd1976e366">SpecialTypeIndexes</a> Mantid::Algorithms::Stitch1D::m_infDxIndexes</td>
+          <td class="memname"><a class="el" href="../../d5/d3e/structMantid_1_1Algorithms_1_1Stitch1D_1_1SpecialValueIndexes.html">SpecialValueIndexes</a> Mantid::Algorithms::Stitch1D::m_lhsSpecialValues</td>
         </tr>
       </table>
   </td>
@@ -1748,12 +1854,16 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00088">88</a> of file <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html">Stitch1D.h</a>.</p>
+<p>Index per workspace spectra of special values. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00109">109</a> of file <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html">Stitch1D.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00491">exec()</a>.</p>
 
 </div>
 </div>
-<a id="a012b4f8b7a27c81e4be0579c35a345a3" name="a012b4f8b7a27c81e4be0579c35a345a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a012b4f8b7a27c81e4be0579c35a345a3">&#9670;&#160;</a></span>m_infEIndexes</h2>
+<a id="a557efa43b4b2d5a33f84c327de8bb785" name="a557efa43b4b2d5a33f84c327de8bb785"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a557efa43b4b2d5a33f84c327de8bb785">&#9670;&#160;</a></span>m_rhsSpecialValues</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1762,7 +1872,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a41919d671e1ba58e0420dcbd1976e366">SpecialTypeIndexes</a> Mantid::Algorithms::Stitch1D::m_infEIndexes</td>
+          <td class="memname"><a class="el" href="../../d5/d3e/structMantid_1_1Algorithms_1_1Stitch1D_1_1SpecialValueIndexes.html">SpecialValueIndexes</a> Mantid::Algorithms::Stitch1D::m_rhsSpecialValues</td>
         </tr>
       </table>
   </td>
@@ -1772,115 +1882,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Index per workspace spectra of Infs. </p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00110">110</a> of file <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html">Stitch1D.h</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00086">86</a> of file <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html">Stitch1D.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00464">exec()</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00297">rebin()</a>, and <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00592">reinsertSpecialValues()</a>.</p>
-
-</div>
-</div>
-<a id="abd6af1ced018fe98c76753d48207fd16" name="abd6af1ced018fe98c76753d48207fd16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd6af1ced018fe98c76753d48207fd16">&#9670;&#160;</a></span>m_infYIndexes</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a41919d671e1ba58e0420dcbd1976e366">SpecialTypeIndexes</a> Mantid::Algorithms::Stitch1D::m_infYIndexes</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00087">87</a> of file <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html">Stitch1D.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00464">exec()</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00297">rebin()</a>, and <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00592">reinsertSpecialValues()</a>.</p>
-
-</div>
-</div>
-<a id="ac1396cc9c64a7425326bbdcabb01ab82" name="ac1396cc9c64a7425326bbdcabb01ab82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1396cc9c64a7425326bbdcabb01ab82">&#9670;&#160;</a></span>m_nanDxIndexes</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a41919d671e1ba58e0420dcbd1976e366">SpecialTypeIndexes</a> Mantid::Algorithms::Stitch1D::m_nanDxIndexes</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00084">84</a> of file <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html">Stitch1D.h</a>.</p>
-
-</div>
-</div>
-<a id="a82baf8edacaaaff47155b2374ed54224" name="a82baf8edacaaaff47155b2374ed54224"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82baf8edacaaaff47155b2374ed54224">&#9670;&#160;</a></span>m_nanEIndexes</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a41919d671e1ba58e0420dcbd1976e366">SpecialTypeIndexes</a> Mantid::Algorithms::Stitch1D::m_nanEIndexes</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Index per workspace spectra of Nans. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00082">82</a> of file <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html">Stitch1D.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00464">exec()</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00297">rebin()</a>, and <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00592">reinsertSpecialValues()</a>.</p>
-
-</div>
-</div>
-<a id="a1b0895fda4332181d6ce0764a15cf1a0" name="a1b0895fda4332181d6ce0764a15cf1a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b0895fda4332181d6ce0764a15cf1a0">&#9670;&#160;</a></span>m_nanYIndexes</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../db/de5/classMantid_1_1Algorithms_1_1Stitch1D.html#a41919d671e1ba58e0420dcbd1976e366">SpecialTypeIndexes</a> Mantid::Algorithms::Stitch1D::m_nanYIndexes</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00083">83</a> of file <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html">Stitch1D.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00464">exec()</a>, <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00297">rebin()</a>, and <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00592">reinsertSpecialValues()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00491">exec()</a>.</p>
 
 </div>
 </div>
@@ -1906,9 +1910,35 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Scaling factors. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00076">76</a> of file <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html">Stitch1D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00102">102</a> of file <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html">Stitch1D.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00464">exec()</a>, and <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00440">scaleWorkspace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00491">exec()</a>, and <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00467">scaleWorkspace()</a>.</p>
+
+</div>
+</div>
+<a id="a6b42124d4e5d4c780b23bc970f1ba917" name="a6b42124d4e5d4c780b23bc970f1ba917"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b42124d4e5d4c780b23bc970f1ba917">&#9670;&#160;</a></span>m_useValidDataOnly</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mantid::Algorithms::Stitch1D::m_useValidDataOnly</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00104">104</a> of file <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html">Stitch1D.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00491">exec()</a>.</p>
 
 </div>
 </div>
@@ -1936,9 +1966,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Range tolerance This is required for machine precision reasons.</p>
 <p>Used to adjust StartOverlap and EndOverlap so that they are inclusive of bin boundaries if they are sitting ontop of the bin boundaries. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00074">74</a> of file <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html">Stitch1D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html#l00100">100</a> of file <a class="el" href="../../d5/d8a/Stitch1D_8h_source.html">Stitch1D.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00215">getEndOverlap()</a>, and <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00186">getStartOverlap()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00239">getEndOverlap()</a>, and <a class="el" href="../../d0/d56/Stitch1D_8cpp_source.html#l00210">getStartOverlap()</a>.</p>
 
 </div>
 </div>

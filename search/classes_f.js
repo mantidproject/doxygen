@@ -20,5 +20,6 @@ var searchData=
   ['orientedlattice_17',['OrientedLattice',['../de/ded/classMantid_1_1Geometry_1_1OrientedLattice.html',1,'Mantid::Geometry']]],
   ['orientedlatticevalidator_18',['OrientedLatticeValidator',['../da/d2d/classMantid_1_1API_1_1OrientedLatticeValidator.html',1,'Mantid::API']]],
   ['ormd_19',['OrMD',['../da/d27/classMantid_1_1MDAlgorithms_1_1OrMD.html',1,'Mantid::MDAlgorithms']]],
-  ['ornldataarchive_20',['ORNLDataArchive',['../d1/d75/classMantid_1_1DataHandling_1_1ORNLDataArchive.html',1,'Mantid::DataHandling']]]
+  ['ornldataarchive_20',['ORNLDataArchive',['../d1/d75/classMantid_1_1DataHandling_1_1ORNLDataArchive.html',1,'Mantid::DataHandling']]],
+  ['overlapbounds_21',['overlapBounds',['../d0/d84/structMantid_1_1Algorithms_1_1Stitch1D_1_1overlapBounds.html',1,'Mantid::Algorithms::Stitch1D']]]
 ];
