@@ -127,6 +127,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab3fd40a260019897c8053a3f9ad4b879"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html#ab3fd40a260019897c8053a3f9ad4b879">add</a> (const std::string &amp;type, const <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html">IComponent</a> *comp, const std::string &amp;<a class="el" href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>, const T &amp;<a class="el" href="../../d5/d0b/FitMW_8cpp.html#aee90379adb0307effb138f4871edbc5c">value</a>, const std::string *const pDescription=nullptr, const std::string &amp;pVisible=&quot;true&quot;)</td></tr>
 <tr class="memdesc:ab3fd40a260019897c8053a3f9ad4b879"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for adding a parameter providing its value of a particular type.  <br /></td></tr>
 <tr class="separator:ab3fd40a260019897c8053a3f9ad4b879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2a340ab10428814f94d179fa4ae7fc1" id="r_ac2a340ab10428814f94d179fa4ae7fc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html#ac2a340ab10428814f94d179fa4ae7fc1">addFittingParameter</a> (const <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html">IComponent</a> *comp, const std::string &amp;<a class="el" href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>, const std::string &amp;fittingFunction, const std::string &amp;<a class="el" href="../../d5/d0b/FitMW_8cpp.html#aee90379adb0307effb138f4871edbc5c">value</a>, const std::string *const pDescription=nullptr, const std::string &amp;pVisible=&quot;true&quot;)</td></tr>
+<tr class="memdesc:ac2a340ab10428814f94d179fa4ae7fc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a fitting parameter.  <br /></td></tr>
+<tr class="separator:ac2a340ab10428814f94d179fa4ae7fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18f4831253afc5c747ebef634f074f19" id="r_a18f4831253afc5c747ebef634f074f19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html#a18f4831253afc5c747ebef634f074f19">clear</a> ()</td></tr>
 <tr class="memdesc:a18f4831253afc5c747ebef634f074f19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the map.  <br /></td></tr>
 <tr class="separator:a18f4831253afc5c747ebef634f074f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -288,6 +291,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a469b442aa76bf6fd1b2f40111a223c86" id="r_a469b442aa76bf6fd1b2f40111a223c86"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../d9/dc5/classMantid_1_1Geometry_1_1Parameter.html">Parameter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html#a469b442aa76bf6fd1b2f40111a223c86">getRecursiveByType</a> (const <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html">IComponent</a> *comp, const std::string &amp;type) const</td></tr>
 <tr class="memdesc:a469b442aa76bf6fd1b2f40111a223c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Looks recursively upwards in the component tree for the first instance of a parameter with a specified type.  <br /></td></tr>
 <tr class="separator:a469b442aa76bf6fd1b2f40111a223c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc41f0e7a5b52e3eb1c451378526f2e2" id="r_acc41f0e7a5b52e3eb1c451378526f2e2"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../d9/dc5/classMantid_1_1Geometry_1_1Parameter.html">Parameter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html#acc41f0e7a5b52e3eb1c451378526f2e2">getRecursiveFittingParameter</a> (const <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html">IComponent</a> *comp, const std::string &amp;<a class="el" href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>, const std::string &amp;fittingFunction) const</td></tr>
+<tr class="memdesc:acc41f0e7a5b52e3eb1c451378526f2e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look for a fitting parameter recursively, picking the one whose embedded <a class="el" href="../../dd/d81/classMantid_1_1Geometry_1_1FitParameter.html" title="Store information about a fitting parameter such as its value if it is constrained or tied.">FitParameter</a> function name matches fittingFunction.  <br /></td></tr>
+<tr class="separator:acc41f0e7a5b52e3eb1c451378526f2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59e0fccd10bcfc7dc618986abcd8ef16" id="r_a59e0fccd10bcfc7dc618986abcd8ef16"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a59e0fccd10bcfc7dc618986abcd8ef16"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html#a59e0fccd10bcfc7dc618986abcd8ef16">getType</a> (const std::string &amp;compName, const std::string &amp;<a class="el" href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>) const</td></tr>
 <tr class="memdesc:a59e0fccd10bcfc7dc618986abcd8ef16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the values of a given parameter of all the components that have the name: compName.  <br /></td></tr>
@@ -477,7 +483,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Default constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00065">65</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00066">66</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
 </div>
 </div>
@@ -499,9 +505,9 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Const constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00069">69</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00070">70</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00327">m_componentInfo</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00323">m_detectorInfo</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00333">m_instrument</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01457">Mantid::Geometry::Instrument::makeBeamline()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00340">m_componentInfo</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00336">m_detectorInfo</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00346">m_instrument</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01457">Mantid::Geometry::Instrument::makeBeamline()</a>.</p>
 
 </div>
 </div>
@@ -575,9 +581,9 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00361">361</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00362">362</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00315">m_map</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00754">positionOf()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00328">m_map</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00811">positionOf()</a>.</p>
 
 </div>
 </div>
@@ -645,11 +651,11 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00347">347</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00348">348</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00347">add()</a>, <a class="el" href="../../d6/d06/Parameter_8cpp_source.html#l00083">Mantid::Geometry::ParameterFactory::create()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00348">add()</a>, <a class="el" href="../../d6/d06/Parameter_8cpp_source.html#l00083">Mantid::Geometry::ParameterFactory::create()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00347">add()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00571">addBool()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00558">addBool()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00502">addDouble()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00516">addDouble()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00530">addInt()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00544">addInt()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00653">addQuat()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00639">addV3D()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00625">addV3D()</a>, <a class="el" href="../../d4/d4a/CopyInstrumentParameters_8cpp_source.html#l00037">Mantid::Algorithms::CopyInstrumentParameters::exec()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01275">Mantid::API::ExperimentInfo::populateWithParameter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00348">add()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00628">addBool()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00615">addBool()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00559">addDouble()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00573">addDouble()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00587">addInt()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00601">addInt()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00710">addQuat()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00696">addV3D()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00682">addV3D()</a>, and <a class="el" href="../../d4/d4a/CopyInstrumentParameters_8cpp_source.html#l00037">Mantid::Algorithms::CopyInstrumentParameters::exec()</a>.</p>
 
 </div>
 </div>
@@ -794,9 +800,9 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00571">571</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00628">628</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00347">add()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00107">pBool()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00348">add()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00108">pBool()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
 </div>
 </div>
@@ -856,11 +862,11 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00558">558</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00615">615</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00347">add()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00107">pBool()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00348">add()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00108">pBool()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01275">Mantid::API::ExperimentInfo::populateWithParameter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01315">Mantid::API::ExperimentInfo::populateWithParameter()</a>.</p>
 
 </div>
 </div>
@@ -920,11 +926,11 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00502">502</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00559">559</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00347">add()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00103">pDouble()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00348">add()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00104">pDouble()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00448">addRotationParam()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01275">Mantid::API::ExperimentInfo::populateWithParameter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00505">addRotationParam()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01315">Mantid::API::ExperimentInfo::populateWithParameter()</a>.</p>
 
 </div>
 </div>
@@ -984,9 +990,83 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00516">516</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00573">573</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00347">add()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00103">pDouble()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00348">add()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00104">pDouble()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+
+</div>
+</div>
+<a id="ac2a340ab10428814f94d179fa4ae7fc1" name="ac2a340ab10428814f94d179fa4ae7fc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2a340ab10428814f94d179fa4ae7fc1">&#9670;&#160;</a></span>addFittingParameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mantid::Geometry::ParameterMap::addFittingParameter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html">IComponent</a> *&#160;</td>
+          <td class="paramname"><em>comp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fittingFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string *const&#160;</td>
+          <td class="paramname"><em>pDescription</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>pVisible</em> = <code>&quot;true&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a fitting parameter. </p>
+<p>Add a fitting parameter, deduplicating by (name, fittingFunction) instead of name alone.</p>
+<p>Dedupes by (name, fittingFunction) rather than just name so that two functions attached to the same component sharing a parameter name (e.g. IkedaCarpenterPV:Alpha0 and IkedaCarpenterMD:Alpha0) can coexist in the map.</p>
+<p>Two different fitting functions attached to the same component can declare a parameter with the same short name (e.g. Bk2BkExpConvPV:Gamma and IkedaCarpenterPV:Gamma). The regular <a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html#acc2f2a25e8e9ec541dec64387e9ff459" title="Method for adding a parameter providing its value as a string.">add()</a> path uses <a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html#a06e7972ceed05755880b004e7abf11ca" title="internal function to get position of the parameter in the parameter map">positionOf()</a> which only matches by name and would let one entry silently overwrite the other.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">comp</td><td>:: <a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html" title="Component is a wrapper for a Component which can modify some of its parameters, e....">Component</a> the parameter is attached to </td></tr>
+    <tr><td class="paramname">name</td><td>:: <a class="el" href="../../d9/dc5/classMantid_1_1Geometry_1_1Parameter.html" title="Base class for parameters of an instrument.">Parameter</a> short name (e.g. "Gamma") </td></tr>
+    <tr><td class="paramname">fittingFunction</td><td>:: Name of the fitting function this parameter applies to (may be empty) </td></tr>
+    <tr><td class="paramname">value</td><td>:: Serialised <a class="el" href="../../dd/d81/classMantid_1_1Geometry_1_1FitParameter.html" title="Store information about a fitting parameter such as its value if it is constrained or tied.">FitParameter</a> value string (as built by ExperimentInfo) </td></tr>
+    <tr><td class="paramname">pDescription</td><td>:: Optional description </td></tr>
+    <tr><td class="paramname">pVisible</td><td>:: Visibility flag </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00408">408</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d6/d06/Parameter_8cpp_source.html#l00083">Mantid::Geometry::ParameterFactory::create()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a6e2c3bb366023464404e005e59c22edb">Mantid::Geometry::g_log</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d4/d3d/FitParameter_8h_source.html#l00066">Mantid::Geometry::FitParameter::getFunction()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#afbed8261ade45e5adb24a7519c47c986">Mantid::Geometry::IComponent::getName()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00328">m_map</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01315">Mantid::API::ExperimentInfo::populateWithParameter()</a>.</p>
 
 </div>
 </div>
@@ -1046,11 +1126,11 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00530">530</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00587">587</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00347">add()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00105">pInt()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00348">add()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00106">pInt()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01275">Mantid::API::ExperimentInfo::populateWithParameter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01315">Mantid::API::ExperimentInfo::populateWithParameter()</a>.</p>
 
 </div>
 </div>
@@ -1110,9 +1190,9 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00544">544</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00601">601</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00347">add()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00105">pInt()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00348">add()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00106">pInt()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
 </div>
 </div>
@@ -1140,9 +1220,9 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01042">1042</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01142">1142</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00312">m_parameterFileNames</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00325">m_parameterFileNames</a>.</p>
 
 </div>
 </div>
@@ -1196,11 +1276,11 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00402">402</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00459">459</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00625">addV3D()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00955">clearPositionSensitiveCaches()</a>, <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a6e2c3bb366023464404e005e59c22edb">Mantid::Geometry::g_log</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00724">get()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a1df890cced40267900a821b0836a75e6">Mantid::Geometry::IComponent::getPos()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00085">pos()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00087">posx()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00089">posy()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00091">posz()</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00224">Mantid::Kernel::V3D::setX()</a>, <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00682">addV3D()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01055">clearPositionSensitiveCaches()</a>, <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a6e2c3bb366023464404e005e59c22edb">Mantid::Geometry::g_log</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00781">get()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a1df890cced40267900a821b0836a75e6">Mantid::Geometry::IComponent::getPos()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00086">pos()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00088">posx()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00090">posy()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00092">posz()</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00224">Mantid::Kernel::V3D::setX()</a>, <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01275">Mantid::API::ExperimentInfo::populateWithParameter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01315">Mantid::API::ExperimentInfo::populateWithParameter()</a>.</p>
 
 </div>
 </div>
@@ -1254,11 +1334,11 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00653">653</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00710">710</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00347">add()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00955">clearPositionSensitiveCaches()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00113">pQuat()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00348">add()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01055">clearPositionSensitiveCaches()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00114">pQuat()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00448">addRotationParam()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00505">addRotationParam()</a>.</p>
 
 </div>
 </div>
@@ -1312,11 +1392,11 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00448">448</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00505">505</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00502">addDouble()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00653">addQuat()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00955">clearPositionSensitiveCaches()</a>, <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a6e2c3bb366023464404e005e59c22edb">Mantid::Geometry::g_log</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00724">get()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00094">rot()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00096">rotx()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00098">roty()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00100">rotz()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00559">addDouble()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00710">addQuat()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01055">clearPositionSensitiveCaches()</a>, <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a6e2c3bb366023464404e005e59c22edb">Mantid::Geometry::g_log</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00781">get()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00095">rot()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00097">rotx()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00099">roty()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00101">rotz()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01275">Mantid::API::ExperimentInfo::populateWithParameter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01315">Mantid::API::ExperimentInfo::populateWithParameter()</a>.</p>
 
 </div>
 </div>
@@ -1376,11 +1456,11 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00612">612</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00669">669</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00109">pString()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00110">pString()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01275">Mantid::API::ExperimentInfo::populateWithParameter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01315">Mantid::API::ExperimentInfo::populateWithParameter()</a>.</p>
 
 </div>
 </div>
@@ -1434,9 +1514,9 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00639">639</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00696">696</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00347">add()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00955">clearPositionSensitiveCaches()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00111">pV3D()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00348">add()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01055">clearPositionSensitiveCaches()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00112">pV3D()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
 </div>
 </div>
@@ -1490,11 +1570,11 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00625">625</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00682">682</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00347">add()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00955">clearPositionSensitiveCaches()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00111">pV3D()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00348">add()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01055">clearPositionSensitiveCaches()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00112">pV3D()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00402">addPositionCoordinate()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00339">Mantid::API::ExperimentInfo::populateInstrumentParameters()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00459">addPositionCoordinate()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00339">Mantid::API::ExperimentInfo::populateInstrumentParameters()</a>.</p>
 
 </div>
 </div>
@@ -1517,11 +1597,11 @@ template&lt;class T &gt; </div>
 <p>Return a string representation of the parameter map.</p>
 <p>The format is either: |detID:id-value;param-type;param-name;param-value| for a detector or |comp-name;param-type;param-name;param-value| for other components. </p><dl class="section return"><dt>Returns</dt><dd>A string containing the contents of the parameter map. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00932">932</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01032">1032</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html#a98c14db658ac2d5cc163147124199814">Mantid::Geometry::IDetector::getID()</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00315">m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html#a98c14db658ac2d5cc163147124199814">Mantid::Geometry::IDetector::getID()</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00328">m_map</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00217">diff()</a>, <a class="el" href="../../d4/d4a/CopyInstrumentParameters_8cpp_source.html#l00037">Mantid::Algorithms::CopyInstrumentParameters::exec()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01017">saveNexus()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00218">diff()</a>, <a class="el" href="../../d4/d4a/CopyInstrumentParameters_8cpp_source.html#l00037">Mantid::Algorithms::CopyInstrumentParameters::exec()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01117">saveNexus()</a>.</p>
 
 </div>
 </div>
@@ -1550,7 +1630,7 @@ template&lt;class T &gt; </div>
 
 <p>access iterators. begin; </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00280">280</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00293">293</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
 
 </div>
 </div>
@@ -1577,7 +1657,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00281">281</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00294">294</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
 
 </div>
 </div>
@@ -1634,9 +1714,9 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00298">298</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00299">299</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00955">clearPositionSensitiveCaches()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00315">m_map</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00224">PARALLEL_CRITICAL</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00085">pos()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00094">rot()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01055">clearPositionSensitiveCaches()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00328">m_map</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00224">PARALLEL_CRITICAL</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00086">pos()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00095">rot()</a>.</p>
 
 </div>
 </div>
@@ -1675,9 +1755,9 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00318">318</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00319">319</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00955">clearPositionSensitiveCaches()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00315">m_map</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00224">PARALLEL_CRITICAL</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00085">pos()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00094">rot()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01055">clearPositionSensitiveCaches()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00328">m_map</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00224">PARALLEL_CRITICAL</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00086">pos()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00095">rot()</a>.</p>
 
 </div>
 </div>
@@ -1698,11 +1778,11 @@ template&lt;class T &gt; </div>
 
 <p>Clears the location, rotation &amp; bounding box caches. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00955">955</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01055">1055</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00317">m_cacheLocMap</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00319">m_cacheRotMap</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00330">m_cacheLocMap</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00332">m_cacheRotMap</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00402">addPositionCoordinate()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00653">addQuat()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00448">addRotationParam()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00639">addV3D()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00625">addV3D()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00298">clearParametersByName()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00318">clearParametersByName()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00459">addPositionCoordinate()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00710">addQuat()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00505">addRotationParam()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00696">addV3D()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00682">addV3D()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00299">clearParametersByName()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00319">clearParametersByName()</a>.</p>
 
 </div>
 </div>
@@ -1741,9 +1821,9 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01104">1104</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01204">1204</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00327">m_componentInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00340">m_componentInfo</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00301">Mantid::Geometry::Component::index()</a>.</p>
 
@@ -1766,9 +1846,9 @@ template&lt;class T &gt; </div>
 
 <p>Only for use by ExperimentInfo. Returns a reference to the <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html" title="ComponentInfo : Provides a component centric view on to the instrument.">ComponentInfo</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01086">1086</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01186">1186</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01065">hasComponentInfo()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00327">m_componentInfo</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00333">m_instrument</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01165">hasComponentInfo()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00340">m_componentInfo</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00346">m_instrument</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d8/d80/Geometry_2src_2Instrument_2ObjComponent_8cpp_source.html#l00178">Mantid::Geometry::ObjComponent::getBoundingBox()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00928">Mantid::Geometry::Instrument::getBoundingBox()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00352">Mantid::Geometry::CompAssembly::getBoundingBox()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00838">Mantid::Geometry::GridDetector::getBoundingBox()</a>, <a class="el" href="../../dd/da8/StructuredDetector_8cpp_source.html#l00484">Mantid::Geometry::StructuredDetector::getBoundingBox()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00329">Mantid::Geometry::Component::getPos()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00312">Mantid::Geometry::Component::getRelativePos()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00392">Mantid::Geometry::Component::getRelativeRot()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00408">Mantid::Geometry::Component::getRotation()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00286">Mantid::Geometry::Component::getScaleFactor()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01457">Mantid::Geometry::Instrument::makeBeamline()</a>, and <a class="el" href="../../d8/d80/Geometry_2src_2Instrument_2ObjComponent_8cpp_source.html#l00142">Mantid::Geometry::ObjComponent::solidAngle()</a>.</p>
 
@@ -1818,9 +1898,9 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A boolean indicating if the map contains the named parameter. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00678">678</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00735">735</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00315">m_map</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00328">m_map</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
 </div>
 </div>
@@ -1860,9 +1940,9 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the combination exists in the map, false otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00699">699</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00756">756</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00315">m_map</a>, and <a class="el" href="../../d0/ddd/Parameter_8h_source.html#l00045">Mantid::Geometry::Parameter::name()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00328">m_map</a>, and <a class="el" href="../../d0/ddd/Parameter_8h_source.html#l00045">Mantid::Geometry::Parameter::name()</a>.</p>
 
 </div>
 </div>
@@ -1910,11 +1990,11 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A boolean indicating if the map contains the named parameter. If the type is given then this must also match </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00666">666</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00723">723</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00666">contains()</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00723">contains()</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00666">contains()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00779">Mantid::Geometry::GridDetector::getBoundingBoxAtXYZ()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00603">Mantid::API::ExperimentInfo::getEMode()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00312">Mantid::Geometry::Component::getRelativePos()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00463">Mantid::Geometry::GridDetector::getRelativePosAtXYZ()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00392">Mantid::Geometry::Component::getRelativeRot()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00507">Mantid::Geometry::Component::hasParameter()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00357">Mantid::Geometry::GridDetector::xsize()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00321">Mantid::Geometry::GridDetector::xstart()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00285">Mantid::Geometry::GridDetector::xstep()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00369">Mantid::Geometry::GridDetector::ysize()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00333">Mantid::Geometry::GridDetector::ystart()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00297">Mantid::Geometry::GridDetector::ystep()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00381">Mantid::Geometry::GridDetector::zsize()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00345">Mantid::Geometry::GridDetector::zstart()</a>, and <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00309">Mantid::Geometry::GridDetector::zstep()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00723">contains()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00779">Mantid::Geometry::GridDetector::getBoundingBoxAtXYZ()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00605">Mantid::API::ExperimentInfo::getEMode()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00312">Mantid::Geometry::Component::getRelativePos()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00463">Mantid::Geometry::GridDetector::getRelativePosAtXYZ()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00392">Mantid::Geometry::Component::getRelativeRot()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00507">Mantid::Geometry::Component::hasParameter()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00357">Mantid::Geometry::GridDetector::xsize()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00321">Mantid::Geometry::GridDetector::xstart()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00285">Mantid::Geometry::GridDetector::xstep()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00369">Mantid::Geometry::GridDetector::ysize()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00333">Mantid::Geometry::GridDetector::ystart()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00297">Mantid::Geometry::GridDetector::ystep()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00381">Mantid::Geometry::GridDetector::zsize()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00345">Mantid::Geometry::GridDetector::zstart()</a>, and <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00309">Mantid::Geometry::GridDetector::zstep()</a>.</p>
 
 </div>
 </div>
@@ -1960,9 +2040,9 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00997">997</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01097">1097</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00724">get()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00315">m_map</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00910">names()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00781">get()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00328">m_map</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01010">names()</a>.</p>
 
 </div>
 </div>
@@ -2008,11 +2088,11 @@ template&lt;class T &gt; </div>
 
 <p>Wrapper for <a class="el" href="../../d2/d4c/classMantid_1_1Geometry_1_1ParameterFactory.html#a01dee55bd7f887bf29178f65e4030433" title="Creates an instance of a parameter.">ParameterFactory::create</a> to avoid include in header. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01045">1045</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01145">1145</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d6/d06/Parameter_8cpp_source.html#l00083">Mantid::Geometry::ParameterFactory::create()</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00583">forceUnsafeSetMasked()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00640">forceUnsafeSetMasked()</a>.</p>
 
 </div>
 </div>
@@ -2034,9 +2114,9 @@ template&lt;class T &gt; </div>
 
 <p>Only for use by <a class="el" href="../../d3/d38/classMantid_1_1Geometry_1_1Detector.html" title="This class represents a detector - i.e.">Detector</a>. Returns a detector index for a detector ID. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01102">1102</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01202">1202</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01332">Mantid::Geometry::Instrument::detectorIndex()</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00333">m_instrument</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01332">Mantid::Geometry::Instrument::detectorIndex()</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00346">m_instrument</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html#l00129">Mantid::Geometry::Detector::index()</a>.</p>
 
@@ -2059,9 +2139,9 @@ template&lt;class T &gt; </div>
 
 <p>Only for use by ExperimentInfo. Returns a reference to the <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html" title="Geometry::DetectorInfo is an intermediate step towards a DetectorInfo that is part of Instrument-2....">DetectorInfo</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01072">1072</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01172">1172</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01056">hasDetectorInfo()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00323">m_detectorInfo</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00333">m_instrument</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01156">hasDetectorInfo()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00336">m_detectorInfo</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00346">m_instrument</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01457">Mantid::Geometry::Instrument::makeBeamline()</a>.</p>
 
@@ -2117,11 +2197,11 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>diff as a string </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00217">217</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00218">218</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00932">asString()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00315">m_map</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00193">relErr()</a>, <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00098">rhs</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00059">size()</a>, and <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01032">asString()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00328">m_map</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00194">relErr()</a>, <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00098">rhs</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00059">size()</a>, and <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/da2/CompareWorkspaces_8cpp_source.html#l00831">Mantid::Algorithms::CompareWorkspaces::checkInstrument()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00132">operator==()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/da2/CompareWorkspaces_8cpp_source.html#l00831">Mantid::Algorithms::CompareWorkspaces::checkInstrument()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00133">operator==()</a>.</p>
 
 </div>
 </div>
@@ -2181,7 +2261,7 @@ template&lt;class T &gt; </div>
 
 <p>access iterators. end; </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00283">283</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00296">296</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
 
 </div>
 </div>
@@ -2208,7 +2288,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00284">284</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00297">297</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
 
 </div>
 </div>
@@ -2242,9 +2322,9 @@ template&lt;class T &gt; </div>
 <p>ONLY FOR INTERNAL USE by class <a class="el" href="../../da/d03/classMantid_1_1Geometry_1_1Instrument.html" title="Base Instrument Class.">Instrument</a>.</p>
 <p><a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html" title="ParameterMap class.">ParameterMap</a> usually rejects "legacy style" masking information since it is now stored in <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html" title="Geometry::DetectorInfo is an intermediate step towards a DetectorInfo that is part of Instrument-2....">DetectorInfo</a>. However, for the purpose of writing files class <a class="el" href="../../da/d03/classMantid_1_1Geometry_1_1Instrument.html" title="Base Instrument Class.">Instrument</a> needs to insert masking information. This method is only for internal use by class <a class="el" href="../../da/d03/classMantid_1_1Geometry_1_1Instrument.html" title="Base Instrument Class.">Instrument</a>. ParameterMaps modified by this method are only for use as a temporary. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00583">583</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00640">640</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01045">create()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00315">m_map</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00107">pBool()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01145">create()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00328">m_map</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00108">pBool()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
 </div>
 </div>
@@ -2292,9 +2372,9 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The named parameter of the given type if it exists or a NULL shared pointer if not </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00735">735</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00792">792</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00315">m_map</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00754">positionOf()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00328">m_map</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00811">positionOf()</a>.</p>
 
 </div>
 </div>
@@ -2342,11 +2422,11 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The named parameter of the given type if it exists or a NULL shared pointer if not </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00724">724</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00781">781</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00724">get()</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00781">get()</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00402">addPositionCoordinate()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00448">addRotationParam()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00997">copyFromParameterMap()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00724">get()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00779">Mantid::Geometry::GridDetector::getBoundingBoxAtXYZ()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00141">getDescription()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00603">Mantid::API::ExperimentInfo::getEMode()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00606">Mantid::Geometry::Component::getParamDescription()</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00335">Mantid::Geometry::Component::getParameter()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00637">Mantid::Geometry::Component::getParamShortDescription()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00869">getRecursive()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00312">Mantid::Geometry::Component::getRelativePos()</a>, <a class="el" href="../../d4/da0/GridDetectorPixel_8cpp_source.html#l00050">Mantid::Geometry::GridDetectorPixel::getRelativePos()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00463">Mantid::Geometry::GridDetector::getRelativePosAtXYZ()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00392">Mantid::Geometry::Component::getRelativeRot()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00286">Mantid::Geometry::Component::getScaleFactor()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00163">getShortDescription()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00893">getString()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00065">Mantid::Geometry::InstrumentVisitor::InstrumentVisitor()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00357">Mantid::Geometry::GridDetector::xsize()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00321">Mantid::Geometry::GridDetector::xstart()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00285">Mantid::Geometry::GridDetector::xstep()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00369">Mantid::Geometry::GridDetector::ysize()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00333">Mantid::Geometry::GridDetector::ystart()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00297">Mantid::Geometry::GridDetector::ystep()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00381">Mantid::Geometry::GridDetector::zsize()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00345">Mantid::Geometry::GridDetector::zstart()</a>, and <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00309">Mantid::Geometry::GridDetector::zstep()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00459">addPositionCoordinate()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00505">addRotationParam()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01097">copyFromParameterMap()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00781">get()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00779">Mantid::Geometry::GridDetector::getBoundingBoxAtXYZ()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00142">getDescription()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00605">Mantid::API::ExperimentInfo::getEMode()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00606">Mantid::Geometry::Component::getParamDescription()</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00335">Mantid::Geometry::Component::getParameter()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00637">Mantid::Geometry::Component::getParamShortDescription()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00926">getRecursive()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00312">Mantid::Geometry::Component::getRelativePos()</a>, <a class="el" href="../../d4/da0/GridDetectorPixel_8cpp_source.html#l00050">Mantid::Geometry::GridDetectorPixel::getRelativePos()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00463">Mantid::Geometry::GridDetector::getRelativePosAtXYZ()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00392">Mantid::Geometry::Component::getRelativeRot()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00286">Mantid::Geometry::Component::getScaleFactor()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00164">getShortDescription()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00993">getString()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00065">Mantid::Geometry::InstrumentVisitor::InstrumentVisitor()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00357">Mantid::Geometry::GridDetector::xsize()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00321">Mantid::Geometry::GridDetector::xstart()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00285">Mantid::Geometry::GridDetector::xstep()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00369">Mantid::Geometry::GridDetector::ysize()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00333">Mantid::Geometry::GridDetector::ystart()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00297">Mantid::Geometry::GridDetector::ystep()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00381">Mantid::Geometry::GridDetector::zsize()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00345">Mantid::Geometry::GridDetector::zstart()</a>, and <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00309">Mantid::Geometry::GridDetector::zstep()</a>.</p>
 
 </div>
 </div>
@@ -2388,11 +2468,11 @@ template&lt;class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>The typed parameter if it exists or a NULL shared pointer if not </dd></dl>
 <p>m_map.empty()</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00810">810</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00867">867</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00315">m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00328">m_map</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00835">getRecursiveByType()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00892">getRecursiveByType()</a>.</p>
 
 </div>
 </div>
@@ -2432,9 +2512,9 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the location is in the map, otherwise false </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00971">971</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01071">1071</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00317">m_cacheLocMap</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00330">m_cacheLocMap</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00452">Mantid::Geometry::CompAssembly::getPos()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00329">Mantid::Geometry::Component::getPos()</a>, and <a class="el" href="../../d5/d07/Geometry_2src_2Instrument_2ObjCompAssembly_8cpp_source.html#l00293">Mantid::Geometry::ObjCompAssembly::getPos()</a>.</p>
 
@@ -2476,9 +2556,9 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the rotation is in the map, otherwise false </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00986">986</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01086">1086</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00319">m_cacheRotMap</a>, and <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00052">rotation</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00332">m_cacheRotMap</a>, and <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00052">rotation</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00329">Mantid::Geometry::Component::getPos()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00470">Mantid::Geometry::CompAssembly::getRotation()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00408">Mantid::Geometry::Component::getRotation()</a>, and <a class="el" href="../../d5/d07/Geometry_2src_2Instrument_2ObjCompAssembly_8cpp_source.html#l00310">Mantid::Geometry::ObjCompAssembly::getRotation()</a>.</p>
 
@@ -2520,9 +2600,9 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>:: the description for the first parameter found and having non-empty description, or empty string if no description found. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00141">141</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00142">142</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00724">get()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00315">m_map</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00781">get()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00328">m_map</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
 </div>
 </div>
@@ -2570,7 +2650,7 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a double parameter from component with the requested name </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00239">239</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00252">252</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
@@ -2597,9 +2677,9 @@ template&lt;class T &gt; </div>
 <p>Return memory used by the parameter map, in bytes.</p>
 <dl class="section return"><dt>Returns</dt><dd>bytes used. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01134">1134</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01234">1234</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00317">m_cacheLocMap</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00319">m_cacheRotMap</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00327">m_componentInfo</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00323">m_detectorInfo</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00315">m_map</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00312">m_parameterFileNames</a>, and <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00330">m_cacheLocMap</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00332">m_cacheRotMap</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00340">m_componentInfo</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00336">m_detectorInfo</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00328">m_map</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00325">m_parameterFileNames</a>, and <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>.</p>
 
 </div>
 </div>
@@ -2621,9 +2701,9 @@ template&lt;class T &gt; </div>
 <p>Returns a list of all the parameter files loaded. </p>
 <dl class="section return"><dt>Returns</dt><dd>a vector of the filenames </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01037">1037</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01137">1137</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00312">m_parameterFileNames</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00325">m_parameterFileNames</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00112">Mantid::API::ExperimentInfo::toString()</a>.</p>
 
@@ -2673,9 +2753,9 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the first matching parameter. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00869">869</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00926">926</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00724">get()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a55640c130e1952c619f6fa0d80035c26">Mantid::Geometry::IComponent::getParent()</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00781">get()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a55640c130e1952c619f6fa0d80035c26">Mantid::Geometry::IComponent::getParent()</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
 </div>
 </div>
@@ -2723,11 +2803,11 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the first matching parameter. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00856">856</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00913">913</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00856">getRecursive()</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00913">getRecursive()</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d0c/DetectorEfficiencyCor_8cpp_source.html#l00196">Mantid::Algorithms::DetectorEfficiencyCor::correctForEfficiency()</a>, <a class="el" href="../../d0/de9/TimeAtSampleStrategyIndirect_8cpp_source.html#l00038">Mantid::API::TimeAtSampleStrategyIndirect::getEfixed()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00645">Mantid::API::ExperimentInfo::getEFixedForIndirect()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00690">Mantid::Geometry::Component::getFittingParameter()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00606">Mantid::Geometry::Component::getParamDescription()</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00335">Mantid::Geometry::Component::getParameter()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00637">Mantid::Geometry::Component::getParamShortDescription()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00856">getRecursive()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00893">getString()</a>, and <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00662">Mantid::Geometry::Component::setDescription()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d0c/DetectorEfficiencyCor_8cpp_source.html#l00196">Mantid::Algorithms::DetectorEfficiencyCor::correctForEfficiency()</a>, <a class="el" href="../../d0/de9/TimeAtSampleStrategyIndirect_8cpp_source.html#l00038">Mantid::API::TimeAtSampleStrategyIndirect::getEfixed()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00647">Mantid::API::ExperimentInfo::getEFixedForIndirect()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00690">Mantid::Geometry::Component::getFittingParameter()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00606">Mantid::Geometry::Component::getParamDescription()</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00335">Mantid::Geometry::Component::getParameter()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00637">Mantid::Geometry::Component::getParamShortDescription()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00913">getRecursive()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00993">getString()</a>, and <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00662">Mantid::Geometry::Component::setDescription()</a>.</p>
 
 </div>
 </div>
@@ -2768,9 +2848,61 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the first matching parameter. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00835">835</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00892">892</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00810">getByType()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00867">getByType()</a>.</p>
+
+</div>
+</div>
+<a id="acc41f0e7a5b52e3eb1c451378526f2e2" name="acc41f0e7a5b52e3eb1c451378526f2e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc41f0e7a5b52e3eb1c451378526f2e2">&#9670;&#160;</a></span>getRecursiveFittingParameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a186c1f412b2b03f602afc31f95e1330c">Parameter_sptr</a> Mantid::Geometry::ParameterMap::getRecursiveFittingParameter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html">IComponent</a> *&#160;</td>
+          <td class="paramname"><em>comp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fittingFunction</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Look for a fitting parameter recursively, picking the one whose embedded <a class="el" href="../../dd/d81/classMantid_1_1Geometry_1_1FitParameter.html" title="Store information about a fitting parameter such as its value if it is constrained or tied.">FitParameter</a> function name matches fittingFunction. </p>
+<p>Find a fitting parameter recursively, picking the one whose embedded <a class="el" href="../../dd/d81/classMantid_1_1Geometry_1_1FitParameter.html" title="Store information about a fitting parameter such as its value if it is constrained or tied.">FitParameter</a> function name matches the requested fittingFunction.</p>
+<p>Multiple fitting parameters can share a short name on the same component (one per function) — <a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html#a30cc96b2921a748fd0c6559f1f7331c2" title="Use get() recursively to see if can find param in all parents of comp and given type (std::string ver...">getRecursive()</a> would short-circuit on the first match, this walks them all.</p>
+<p>When two functions attached to the same component share a parameter short name (e.g. Bk2BkExpConvPV:Gamma and IkedaCarpenterPV:Gamma), <a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html#a30cc96b2921a748fd0c6559f1f7331c2" title="Use get() recursively to see if can find param in all parents of comp and given type (std::string ver...">getRecursive()</a> short-circuits on the first match and may return the wrong function's parameter. This method walks every entry on each level of the component tree so it can disambiguate by function name.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">comp</td><td>:: The component to start the search with </td></tr>
+    <tr><td class="paramname">name</td><td>:: <a class="el" href="../../d9/dc5/classMantid_1_1Geometry_1_1Parameter.html" title="Base class for parameters of an instrument.">Parameter</a> short name (e.g. "Gamma") </td></tr>
+    <tr><td class="paramname">fittingFunction</td><td>:: The fitting function name this parameter must belong to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the matching parameter, or a null shared pointer if none is found </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00955">955</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d4/d3d/FitParameter_8h_source.html#l00066">Mantid::Geometry::FitParameter::getFunction()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00328">m_map</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
 </div>
 </div>
@@ -2811,9 +2943,9 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>:: the short description for the first parameter found and having non-empty description, or empty string if no description found. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00163">163</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00164">164</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00724">get()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00315">m_map</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00781">get()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00328">m_map</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
 </div>
 </div>
@@ -2860,11 +2992,11 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string representation of the parameter </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00893">893</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00993">993</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00724">get()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00856">getRecursive()</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00781">get()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00913">getRecursive()</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00528">Mantid::API::ExperimentInfo::getLog()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00553">Mantid::API::ExperimentInfo::getLogAsSingleValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00530">Mantid::API::ExperimentInfo::getLog()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00555">Mantid::API::ExperimentInfo::getLogAsSingleValue()</a>.</p>
 
 </div>
 </div>
@@ -2904,7 +3036,7 @@ template&lt;class T &gt; </div>
 
 <p>Returns a string parameter as vector's first element if exists and an empty vector if it doesn't. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00229">229</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00242">242</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
@@ -2962,7 +3094,7 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>all component values from the given component name </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00207">207</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00220">220</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
@@ -3012,7 +3144,7 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html" title="Class for 3D vectors.">Kernel::V3D</a> parameter from component with the requested name </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00249">249</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00262">262</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
@@ -3037,11 +3169,11 @@ template&lt;class T &gt; </div>
 <p>Only for use by ExperimentInfo. </p>
 <p>Returns returns true if this instrument contains a <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html" title="ComponentInfo : Provides a component centric view on to the instrument.">ComponentInfo</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01065">1065</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01165">1165</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00327">m_componentInfo</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00333">m_instrument</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00340">m_componentInfo</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00346">m_instrument</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01086">componentInfo()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00928">Mantid::Geometry::Instrument::getBoundingBox()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00303">Mantid::Geometry::Component::hasComponentInfo()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01457">Mantid::Geometry::Instrument::makeBeamline()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01094">mutableComponentInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01186">componentInfo()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00928">Mantid::Geometry::Instrument::getBoundingBox()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00303">Mantid::Geometry::Component::hasComponentInfo()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01457">Mantid::Geometry::Instrument::makeBeamline()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01194">mutableComponentInfo()</a>.</p>
 
 </div>
 </div>
@@ -3065,11 +3197,11 @@ template&lt;class T &gt; </div>
 <p>Returns returns true if this instrument contains a <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html" title="Geometry::DetectorInfo is an intermediate step towards a DetectorInfo that is part of Instrument-2....">DetectorInfo</a>.</p>
 <p>The <code>instrument</code> argument is needed for the special case of having a neutronic and* a physical instrument. <code><a class="el" href="../../da/d03/classMantid_1_1Geometry_1_1Instrument.html" title="Base Instrument Class.">Instrument</a></code> uses the same parameter map for both, but the <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html" title="Geometry::DetectorInfo is an intermediate step towards a DetectorInfo that is part of Instrument-2....">DetectorInfo</a> is only for the neutronic instrument. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01056">1056</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01156">1156</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00323">m_detectorInfo</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00333">m_instrument</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00336">m_detectorInfo</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00346">m_instrument</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01072">detectorInfo()</a>, <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html#l00135">Mantid::Geometry::Detector::hasDetectorInfo()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01079">mutableDetectorInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01172">detectorInfo()</a>, <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html#l00135">Mantid::Geometry::Detector::hasDetectorInfo()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01179">mutableDetectorInfo()</a>.</p>
 
 </div>
 </div>
@@ -3090,9 +3222,9 @@ template&lt;class T &gt; </div>
 
 <p>Only for use by ExperimentInfo. Returns a reference to the <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html" title="ComponentInfo : Provides a component centric view on to the instrument.">ComponentInfo</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01094">1094</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01194">1194</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01065">hasComponentInfo()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00327">m_componentInfo</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00333">m_instrument</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01165">hasComponentInfo()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00340">m_componentInfo</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00346">m_instrument</a>.</p>
 
 </div>
 </div>
@@ -3113,9 +3245,9 @@ template&lt;class T &gt; </div>
 
 <p>Only for use by ExperimentInfo. Returns a reference to the <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html" title="Geometry::DetectorInfo is an intermediate step towards a DetectorInfo that is part of Instrument-2....">DetectorInfo</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01079">1079</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01179">1179</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01056">hasDetectorInfo()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00323">m_detectorInfo</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00333">m_instrument</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01156">hasDetectorInfo()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00336">m_detectorInfo</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00346">m_instrument</a>.</p>
 
 </div>
 </div>
@@ -3145,11 +3277,11 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A set of names of parameters for the given component </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00910">910</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01010">1010</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00315">m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00328">m_map</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00997">copyFromParameterMap()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00457">Mantid::Geometry::Component::getParameterNames()</a>, and <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00480">Mantid::Geometry::Component::getParameterNamesByComponent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01097">copyFromParameterMap()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00457">Mantid::Geometry::Component::getParameterNames()</a>, and <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00480">Mantid::Geometry::Component::getParameterNamesByComponent()</a>.</p>
 
 </div>
 </div>
@@ -3179,9 +3311,9 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the objects are considered not equal, false otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00124">124</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00125">125</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00132">operator==()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00133">operator==()</a>.</p>
 
 </div>
 </div>
@@ -3239,11 +3371,11 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the objects are considered equal, false otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00132">132</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00133">133</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00217">diff()</a>, and <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00098">rhs</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00218">diff()</a>, and <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00098">rhs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00124">operator!=()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00125">operator!=()</a>.</p>
 
 </div>
 </div>
@@ -3270,9 +3402,9 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00107">107</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00108">108</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00571">addBool()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00558">addBool()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00583">forceUnsafeSetMasked()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00628">addBool()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00615">addBool()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00640">forceUnsafeSetMasked()</a>.</p>
 
 </div>
 </div>
@@ -3299,9 +3431,9 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00103">103</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00104">104</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00502">addDouble()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00516">addDouble()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00559">addDouble()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00573">addDouble()</a>.</p>
 
 </div>
 </div>
@@ -3328,9 +3460,9 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00105">105</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00106">106</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00530">addInt()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00544">addInt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00587">addInt()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00601">addInt()</a>.</p>
 
 </div>
 </div>
@@ -3360,9 +3492,9 @@ template&lt;class T &gt; </div>
 <p>Return string to be used in the map. </p>
 <p>Return string to be inserted into the parameter map. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00085">85</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00402">addPositionCoordinate()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00298">clearParametersByName()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00318">clearParametersByName()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01344">Mantid::Geometry::Instrument::makeLegacyParameterMap()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00339">Mantid::API::ExperimentInfo::populateInstrumentParameters()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00459">addPositionCoordinate()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00299">clearParametersByName()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00319">clearParametersByName()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01344">Mantid::Geometry::Instrument::makeLegacyParameterMap()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00339">Mantid::API::ExperimentInfo::populateInstrumentParameters()</a>.</p>
 
 </div>
 </div>
@@ -3418,11 +3550,11 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The iterator parameter of the given type if it exists or a NULL shared pointer if not </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00754">754</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00811">811</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00315">m_map</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00328">m_map</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00361">add()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00735">get()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00362">add()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00792">get()</a>.</p>
 
 </div>
 </div>
@@ -3478,9 +3610,9 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The iterator parameter of the given type if it exists or a NULL shared pointer if not </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00783">783</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00840">840</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00315">m_map</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00328">m_map</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
 </div>
 </div>
@@ -3507,9 +3639,9 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00087">87</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00088">88</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00402">addPositionCoordinate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00459">addPositionCoordinate()</a>.</p>
 
 </div>
 </div>
@@ -3536,9 +3668,9 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00089">89</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00090">90</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00402">addPositionCoordinate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00459">addPositionCoordinate()</a>.</p>
 
 </div>
 </div>
@@ -3565,9 +3697,9 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00091">91</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00092">92</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00402">addPositionCoordinate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00459">addPositionCoordinate()</a>.</p>
 
 </div>
 </div>
@@ -3594,9 +3726,9 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00113">113</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00114">114</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00653">addQuat()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00710">addQuat()</a>.</p>
 
 </div>
 </div>
@@ -3623,9 +3755,9 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00109">109</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00110">110</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00612">addString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00669">addString()</a>.</p>
 
 </div>
 </div>
@@ -3652,9 +3784,9 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00111">111</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00112">112</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00639">addV3D()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00625">addV3D()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00696">addV3D()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00682">addV3D()</a>.</p>
 
 </div>
 </div>
@@ -3711,9 +3843,9 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if error or false if the value is within the limits requested </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00193">193</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00194">194</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00217">diff()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00218">diff()</a>.</p>
 
 </div>
 </div>
@@ -3740,9 +3872,9 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00094">94</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00095">95</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00448">addRotationParam()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00298">clearParametersByName()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00318">clearParametersByName()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01344">Mantid::Geometry::Instrument::makeLegacyParameterMap()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00505">addRotationParam()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00299">clearParametersByName()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00319">clearParametersByName()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01344">Mantid::Geometry::Instrument::makeLegacyParameterMap()</a>.</p>
 
 </div>
 </div>
@@ -3769,9 +3901,9 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00096">96</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00097">97</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00448">addRotationParam()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00505">addRotationParam()</a>.</p>
 
 </div>
 </div>
@@ -3798,9 +3930,9 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00098">98</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00099">99</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00448">addRotationParam()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00505">addRotationParam()</a>.</p>
 
 </div>
 </div>
@@ -3827,9 +3959,9 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00100">100</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00101">101</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00448">addRotationParam()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00505">addRotationParam()</a>.</p>
 
 </div>
 </div>
@@ -3869,9 +4001,9 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01017">1017</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01117">1117</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00932">asString()</a>, and <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01032">asString()</a>, and <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>.</p>
 
 </div>
 </div>
@@ -3898,7 +4030,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00116">116</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00117">117</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00286">Mantid::Geometry::Component::getScaleFactor()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01344">Mantid::Geometry::Instrument::makeLegacyParameterMap()</a>.</p>
 
@@ -3939,9 +4071,9 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00963">963</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01063">1063</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00317">m_cacheLocMap</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, and <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00330">m_cacheLocMap</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00452">Mantid::Geometry::CompAssembly::getPos()</a>, and <a class="el" href="../../d5/d07/Geometry_2src_2Instrument_2ObjCompAssembly_8cpp_source.html#l00293">Mantid::Geometry::ObjCompAssembly::getPos()</a>.</p>
 
@@ -3982,9 +4114,9 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00978">978</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01078">1078</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00319">m_cacheRotMap</a>, and <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00052">rotation</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00332">m_cacheRotMap</a>, and <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00052">rotation</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00470">Mantid::Geometry::CompAssembly::getRotation()</a>, and <a class="el" href="../../d5/d07/Geometry_2src_2Instrument_2ObjCompAssembly_8cpp_source.html#l00310">Mantid::Geometry::ObjCompAssembly::getRotation()</a>.</p>
 
@@ -4008,9 +4140,9 @@ template&lt;class T &gt; </div>
 
 <p>Only for use by <a class="el" href="../../da/d03/classMantid_1_1Geometry_1_1Instrument.html" title="Base Instrument Class.">Instrument</a>. Sets the pointer to the owning instrument. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01109">1109</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01209">1209</a> of file <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html">ParameterMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00075">Mantid::Geometry::Component::isParametrized()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00327">m_componentInfo</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00323">m_detectorInfo</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00333">m_instrument</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00315">m_map</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01457">Mantid::Geometry::Instrument::makeBeamline()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01475">Mantid::Geometry::Instrument::makeBeamlineNew()</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00075">Mantid::Geometry::Component::isParametrized()</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00340">m_componentInfo</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00336">m_detectorInfo</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00346">m_instrument</a>, <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00328">m_map</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01457">Mantid::Geometry::Instrument::makeBeamline()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01475">Mantid::Geometry::Instrument::makeBeamlineNew()</a>.</p>
 
 </div>
 </div>
@@ -4041,7 +4173,7 @@ template&lt;class T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00059">59</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00217">diff()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00218">diff()</a>.</p>
 
 </div>
 </div>
@@ -4099,9 +4231,9 @@ template&lt;class T &gt; </div>
 
 <p>internal cache map instance for cached position values </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00317">317</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00330">330</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00955">clearPositionSensitiveCaches()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00971">getCachedLocation()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01134">getMemorySize()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00963">setCachedLocation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01055">clearPositionSensitiveCaches()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01071">getCachedLocation()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01234">getMemorySize()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01063">setCachedLocation()</a>.</p>
 
 </div>
 </div>
@@ -4127,9 +4259,9 @@ template&lt;class T &gt; </div>
 
 <p>internal cache map instance for cached rotation values </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00319">319</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00332">332</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00955">clearPositionSensitiveCaches()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00986">getCachedRotation()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01134">getMemorySize()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00978">setCachedRotation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01055">clearPositionSensitiveCaches()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01086">getCachedRotation()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01234">getMemorySize()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01078">setCachedRotation()</a>.</p>
 
 </div>
 </div>
@@ -4156,9 +4288,9 @@ template&lt;class T &gt; </div>
 <p>Pointer to the <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html" title="ComponentInfo : Provides a component centric view on to the instrument.">ComponentInfo</a> wrapper. </p>
 <p>NULL unless the instrument is associated with an ExperimentInfo object. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00327">327</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00340">340</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01104">componentIndex()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01086">componentInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01134">getMemorySize()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01065">hasComponentInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01094">mutableComponentInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00069">ParameterMap()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01109">setInstrument()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01204">componentIndex()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01186">componentInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01234">getMemorySize()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01165">hasComponentInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01194">mutableComponentInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00070">ParameterMap()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01209">setInstrument()</a>.</p>
 
 </div>
 </div>
@@ -4185,9 +4317,9 @@ template&lt;class T &gt; </div>
 <p>Pointer to the <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html" title="Geometry::DetectorInfo is an intermediate step towards a DetectorInfo that is part of Instrument-2....">DetectorInfo</a> wrapper. </p>
 <p>NULL unless the instrument is associated with an ExperimentInfo object. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00323">323</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00336">336</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01072">detectorInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01134">getMemorySize()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01056">hasDetectorInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01079">mutableDetectorInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00069">ParameterMap()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01109">setInstrument()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01172">detectorInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01234">getMemorySize()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01156">hasDetectorInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01179">mutableDetectorInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00070">ParameterMap()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01209">setInstrument()</a>.</p>
 
 </div>
 </div>
@@ -4214,9 +4346,9 @@ template&lt;class T &gt; </div>
 <p>Pointer to the owning instrument for translating detector IDs into detector indices when accessing the <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html" title="Geometry::DetectorInfo is an intermediate step towards a DetectorInfo that is part of Instrument-2....">DetectorInfo</a> object. </p>
 <p>If the workspace distinguishes between a neutronic instrument and a physical instrument the owning instrument is the neutronic one. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00333">333</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00346">346</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01086">componentInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01102">detectorIndex()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01072">detectorInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01065">hasComponentInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01056">hasDetectorInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01094">mutableComponentInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01079">mutableDetectorInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00069">ParameterMap()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01109">setInstrument()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01186">componentInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01202">detectorIndex()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01172">detectorInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01165">hasComponentInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01156">hasDetectorInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01194">mutableComponentInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01179">mutableDetectorInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00070">ParameterMap()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01209">setInstrument()</a>.</p>
 
 </div>
 </div>
@@ -4242,9 +4374,9 @@ template&lt;class T &gt; </div>
 
 <p>internal parameter map instance </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00315">315</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00328">328</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00361">add()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00932">asString()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00298">clearParametersByName()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00318">clearParametersByName()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00678">contains()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00699">contains()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00997">copyFromParameterMap()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00217">diff()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00583">forceUnsafeSetMasked()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00735">get()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00810">getByType()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00141">getDescription()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01134">getMemorySize()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00163">getShortDescription()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00910">names()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00754">positionOf()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00783">positionOf()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01109">setInstrument()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00362">add()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00408">addFittingParameter()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01032">asString()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00299">clearParametersByName()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00319">clearParametersByName()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00735">contains()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00756">contains()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01097">copyFromParameterMap()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00218">diff()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00640">forceUnsafeSetMasked()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00792">get()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00867">getByType()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00142">getDescription()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01234">getMemorySize()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00955">getRecursiveFittingParameter()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00164">getShortDescription()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01010">names()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00811">positionOf()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00840">positionOf()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01209">setInstrument()</a>.</p>
 
 </div>
 </div>
@@ -4270,9 +4402,9 @@ template&lt;class T &gt; </div>
 
 <p>internal list of parameter files loaded </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00312">312</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00325">325</a> of file <a class="el" href="../../d9/d32/ParameterMap_8h_source.html">ParameterMap.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01042">addParameterFilename()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01134">getMemorySize()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01037">getParameterFilenames()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01142">addParameterFilename()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01234">getMemorySize()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01137">getParameterFilenames()</a>.</p>
 
 </div>
 </div>
