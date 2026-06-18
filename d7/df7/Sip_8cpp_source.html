@@ -116,14 +116,14 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="comment">// Some configs have a private sip module inside PyQt. Try this first</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#if QT_VERSION &lt; QT_VERSION_CHECK(6, 0, 0)</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  sip_API = (<span class="keyword">const</span> sipAPIDef *)PyCapsule_Import(<span class="stringliteral">&quot;PyQt5.sip._C_API&quot;</span>, 0);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  sip_API = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>sipAPIDef *<span class="keyword">&gt;</span>(PyCapsule_Import(<span class="stringliteral">&quot;PyQt5.sip._C_API&quot;</span>, 0));</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#error &quot;Unknown sip module for Qt &gt;= 6&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  sip_API = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>sipAPIDef *<span class="keyword">&gt;</span>(PyCapsule_Import(<span class="stringliteral">&quot;PyQt6.sip._C_API&quot;</span>, 0));</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="comment">// Try plain sip module</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordflow">if</span> (!sip_API) {</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    PyErr_Clear();</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    sip_API = (<span class="keyword">const</span> sipAPIDef *)PyCapsule_Import(<span class="stringliteral">&quot;sip._C_API&quot;</span>, 0);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    sip_API = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>sipAPIDef *<span class="keyword">&gt;</span>(PyCapsule_Import(<span class="stringliteral">&quot;sip._C_API&quot;</span>, 0));</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  }</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  assert(sip_API);</div>
@@ -132,7 +132,7 @@ $(document).ready(function() { init_codefold(1); });
 </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>} <span class="comment">// namespace MantidQt::Widgets::Common::Python::Detail</span></div>
 <div class="ttc" id="aSip_8h_html"><div class="ttname"><a href="../../d2/dd9/Sip_8h.html">Sip.h</a></div></div>
-<div class="ttc" id="anamespaceMantidQt_1_1Widgets_1_1Common_1_1Python_1_1Detail_html"><div class="ttname"><a href="../../dd/dba/namespaceMantidQt_1_1Widgets_1_1Common_1_1Python_1_1Detail.html">MantidQt::Widgets::Common::Python::Detail</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/dd9/Sip_8h_source.html#l00019">Sip.h:19</a></div></div>
+<div class="ttc" id="anamespaceMantidQt_1_1Widgets_1_1Common_1_1Python_1_1Detail_html"><div class="ttname"><a href="../../dd/dba/namespaceMantidQt_1_1Widgets_1_1Common_1_1Python_1_1Detail.html">MantidQt::Widgets::Common::Python::Detail</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/dd9/Sip_8h_source.html#l00020">Sip.h:20</a></div></div>
 <div class="ttc" id="anamespaceMantidQt_1_1Widgets_1_1Common_1_1Python_1_1Detail_html_a5f487293642e02839817d26b09d927c6"><div class="ttname"><a href="../../dd/dba/namespaceMantidQt_1_1Widgets_1_1Common_1_1Python_1_1Detail.html#a5f487293642e02839817d26b09d927c6">MantidQt::Widgets::Common::Python::Detail::sipAPI</a></div><div class="ttdeci">EXPORT_OPT_MANTIDQT_COMMON const sipAPIDef * sipAPI()</div><div class="ttdef"><b>Definition</b> <a href="../../d7/df7/Sip_8cpp_source.html#l00015">Sip.cpp:15</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

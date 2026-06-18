@@ -466,7 +466,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>  <span class="keyword">const</span> std::lock_guard&lt;std::mutex&gt; lock(<a class="code hl_variable" href="../../dd/daa/classMantidQt_1_1MantidWidgets_1_1WorkspaceSelector.html#aadba1936117f256e881fb0206f72aa82">m_adsMutex</a>);</div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>  <span class="keyword">const</span> QMimeData *mimeData = de-&gt;mimeData();</div>
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>  QString text = mimeData-&gt;text();</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>  <span class="keywordtype">int</span> equal_pos = text.indexOf(<span class="stringliteral">&quot;=&quot;</span>);</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>  <span class="keywordtype">int</span> equal_pos = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(text.indexOf(<span class="stringliteral">&quot;=&quot;</span>));</div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>  QString ws_name = text.left(equal_pos - 1);</div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>  QString ws_name_test = text.mid(equal_pos + 7, equal_pos - 1);</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>

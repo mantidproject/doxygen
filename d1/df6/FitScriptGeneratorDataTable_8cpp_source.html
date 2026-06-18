@@ -181,7 +181,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  this-&gt;setSelectionBehavior(QAbstractItemView::SelectRows);</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  this-&gt;setSelectionMode(QAbstractItemView::ExtendedSelection);</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  this-&gt;setShowGrid(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  this-&gt;setColumnCount(COLUMN_HEADINGS.size());</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  this-&gt;setColumnCount(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(COLUMN_HEADINGS.size()));</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  this-&gt;setRowCount(0);</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  this-&gt;horizontalHeader()-&gt;setHighlightSections(<span class="keyword">false</span>);</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  this-&gt;horizontalHeader()-&gt;setStretchLastSection(<span class="keyword">true</span>);</div>

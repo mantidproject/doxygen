@@ -153,7 +153,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="../../d2/dd8/classMantidQt_1_1MantidWidgets_1_1WorkspaceMultiSelector.html#a837b3b79acd70e3063a6071ecc4c7fda">   65</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d2/dd8/classMantidQt_1_1MantidWidgets_1_1WorkspaceMultiSelector.html#a837b3b79acd70e3063a6071ecc4c7fda">WorkspaceMultiSelector::setupTable</a>() {</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  this-&gt;setRowCount(0);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  this-&gt;setColumnCount(headerLabels.size());</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  this-&gt;setColumnCount(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(headerLabels.size()));</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  this-&gt;verticalHeader()-&gt;setVisible(<span class="keyword">false</span>);</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  this-&gt;horizontalHeader()-&gt;setVisible(<span class="keyword">true</span>);</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  this-&gt;setHorizontalHeaderLabels(headerLabels);</div>

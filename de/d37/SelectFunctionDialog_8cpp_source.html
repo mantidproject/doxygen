@@ -228,7 +228,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        <span class="comment">// go through the path and add the folders if they don&#39;t already exist</span></div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        QString currentPath = subCategories[0];</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        QTreeWidgetItem *catItem = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <span class="keywordtype">int</span> subCategoryNo = subCategories.size();</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <span class="keyword">auto</span> subCategoryNo = subCategories.size();</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        <span class="keywordtype">bool</span> show = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; subCategoryNo; ++j) {</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>          <span class="keywordflow">if</span> (showCategory(subCategories[j].toStdString())) {</div>

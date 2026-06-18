@@ -253,7 +253,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="foldopen" id="foldopen00166" data-start="{" data-end="}">
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="../../de/dd1/classMantidQt_1_1MantidWidgets_1_1UserFunctionDialog.html#a15fc6a8a3ec8ba7105c3e2f23e154f11">  166</a></span><span class="keywordtype">void</span> <a class="code hl_slot" href="../../de/dd1/classMantidQt_1_1MantidWidgets_1_1UserFunctionDialog.html#a15fc6a8a3ec8ba7105c3e2f23e154f11">UserFunctionDialog::addExpression</a>() {</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  QString expr = <a class="code hl_variable" href="../../de/dd1/classMantidQt_1_1MantidWidgets_1_1UserFunctionDialog.html#a385cd40b7aff63d0dd9bf886c97bb48a">m_uiForm</a>.teExpression-&gt;toPlainText();</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <span class="keywordtype">int</span> iBr = expr.indexOf(<span class="charliteral">&#39;\n&#39;</span>);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <span class="keywordtype">int</span> iBr = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(expr.indexOf(<span class="charliteral">&#39;\n&#39;</span>));</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  <span class="keywordflow">if</span> (iBr &gt; 0) {</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    expr.remove(iBr, expr.size());</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>  }</div>

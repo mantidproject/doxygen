@@ -312,9 +312,9 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
 <div class="foldopen" id="foldopen00265" data-start="{" data-end="}">
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="../../d5/d04/classScriptEditor.html#ac8e1d37865a0596f65dbaaa6d46d1e90">  265</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d04/classScriptEditor.html#ac8e1d37865a0596f65dbaaa6d46d1e90">ScriptEditor::setText</a>(<span class="keywordtype">int</span> lineno, <span class="keyword">const</span> QString &amp;txt, <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>) {</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  <span class="keywordtype">int</span> line_length = txt.length();</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  <span class="keywordtype">int</span> line_length = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(txt.length());</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>  <span class="comment">// Index is max of the length of current/new text</span></div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  setSelection(lineno, <a class="code hl_variable" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, lineno, qMax(line_length, this-&gt;text(lineno).length()));</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  setSelection(lineno, <a class="code hl_variable" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, lineno, qMax(line_length, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(this-&gt;text(lineno).length())));</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  removeSelectedText();</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>  insertAt(txt, lineno, <a class="code hl_variable" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>);</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>  setCursorPosition(lineno, line_length);</div>
@@ -490,9 +490,9 @@ $(document).ready(function() { init_codefold(1); });
 <div class="foldopen" id="foldopen00496" data-start="{" data-end="}">
 <div class="line"><a id="l00496" name="l00496"></a><span class="lineno"><a class="line" href="../../d5/d04/classScriptEditor.html#a22a0b6e4f50ed4f4296f718e00546a4a">  496</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d04/classScriptEditor.html#a22a0b6e4f50ed4f4296f718e00546a4a">ScriptEditor::dropEvent</a>(QDropEvent *de) {</div>
 <div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>  <span class="keywordflow">if</span> (!de-&gt;mimeData()-&gt;hasUrls()) {</div>
-<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>    QDropEvent localDrop(*de);</div>
-<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>    <span class="comment">// pass to base class - This handles text appropriately</span></div>
-<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>    QsciScintilla::dropEvent(&amp;localDrop);</div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>    <span class="comment">// pass to base class - This handles text appropriately. (QDropEvent&#39;s copy</span></div>
+<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>    <span class="comment">// constructor is protected in Qt6, so forward the event directly.)</span></div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>    QsciScintilla::dropEvent(de);</div>
 <div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>  }</div>
 <div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>}</div>
 </div>
@@ -535,73 +535,75 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>  <span class="comment">// This does that for you!</span></div>
 <div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>  <span class="keywordflow">if</span> (event-&gt;text() == <span class="stringliteral">&quot;(&quot;</span>) {</div>
 <div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>    <span class="keyword">auto</span> *backspEvent = <span class="keyword">new</span> QKeyEvent(QEvent::KeyPress, Qt::Key_Backspace, Qt::NoModifier);</div>
-<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>    <span class="keyword">auto</span> *bracketEvent = <span class="keyword">new</span> QKeyEvent(*event);</div>
-<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>    QsciScintilla::keyPressEvent(bracketEvent);</div>
-<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>    QsciScintilla::keyPressEvent(backspEvent);</div>
-<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span> </div>
-<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>    <span class="keyword">delete</span> backspEvent;</div>
-<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>    <span class="keyword">delete</span> bracketEvent;</div>
-<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>  }</div>
-<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span> </div>
-<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>  QsciScintilla::keyPressEvent(event);</div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>    <span class="comment">// QKeyEvent&#39;s copy constructor is protected in Qt6; rebuild from the original&#39;s fields</span></div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>    <span class="keyword">auto</span> *bracketEvent = <span class="keyword">new</span> QKeyEvent(event-&gt;type(), event-&gt;key(), event-&gt;modifiers(), event-&gt;text(),</div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>                                       event-&gt;isAutoRepeat(), <span class="keyword">static_cast&lt;</span>ushort<span class="keyword">&gt;</span>(event-&gt;count()));</div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>    QsciScintilla::keyPressEvent(bracketEvent);</div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>    QsciScintilla::keyPressEvent(backspEvent);</div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span> </div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>    <span class="keyword">delete</span> backspEvent;</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>    <span class="keyword">delete</span> bracketEvent;</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>  }</div>
 <div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span> </div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span><span class="comment">// Only need to do this for Unix and for QScintilla version &lt; 2.4.2. Moreover,</span></div>
-<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span><span class="comment">// only Gnome but I don&#39;t think we can detect that</span></div>
-<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span><span class="preprocessor">#ifdef Q_OS_LINUX</span></div>
-<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span><span class="preprocessor">#if QSCINTILLA_VERSION &lt; 0x020402</span></div>
-<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>  <span class="comment">// If an autocomplete box has surfaced, correct the window flags.</span></div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>  <span class="comment">// Unfortunately the only way to</span></div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>  <span class="comment">// do this is to search through the child objects.</span></div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>  <span class="keywordflow">if</span> (isListActive()) {</div>
-<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>    QObjectList children = this-&gt;children();</div>
-<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>    QListIterator&lt;QObject *&gt; itr(children);</div>
-<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>    <span class="comment">// Search is performed in reverse order as we want the last one created</span></div>
-<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>    itr.toBack();</div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>    <span class="keywordflow">while</span> (itr.hasPrevious()) {</div>
-<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>      QObject *child = itr.previous();</div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>      <span class="keywordflow">if</span> (child-&gt;inherits(<span class="stringliteral">&quot;QListWidget&quot;</span>)) {</div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>        QWidget *w = qobject_cast&lt;QWidget *&gt;(child);</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>        w-&gt;setWindowFlags(Qt::ToolTip | Qt::WindowStaysOnTopHint);</div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>        w-&gt;show();</div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>      }</div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>    }</div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>  }</div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>}</div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>  QsciScintilla::keyPressEvent(event);</div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span> </div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span><span class="comment">// Only need to do this for Unix and for QScintilla version &lt; 2.4.2. Moreover,</span></div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span><span class="comment">// only Gnome but I don&#39;t think we can detect that</span></div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span><span class="preprocessor">#ifdef Q_OS_LINUX</span></div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span><span class="preprocessor">#if QSCINTILLA_VERSION &lt; 0x020402</span></div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>  <span class="comment">// If an autocomplete box has surfaced, correct the window flags.</span></div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>  <span class="comment">// Unfortunately the only way to</span></div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>  <span class="comment">// do this is to search through the child objects.</span></div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>  <span class="keywordflow">if</span> (isListActive()) {</div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>    QObjectList children = this-&gt;children();</div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>    QListIterator&lt;QObject *&gt; itr(children);</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>    <span class="comment">// Search is performed in reverse order as we want the last one created</span></div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>    itr.toBack();</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>    <span class="keywordflow">while</span> (itr.hasPrevious()) {</div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>      QObject *child = itr.previous();</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>      <span class="keywordflow">if</span> (child-&gt;inherits(<span class="stringliteral">&quot;QListWidget&quot;</span>)) {</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>        QWidget *w = qobject_cast&lt;QWidget *&gt;(child);</div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>        w-&gt;setWindowFlags(Qt::ToolTip | Qt::WindowStaysOnTopHint);</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>        w-&gt;show();</div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>      }</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>    }</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>  }</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>}</div>
 </div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span> </div>
-<div class="foldopen" id="foldopen00589" data-start="{" data-end="}">
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno"><a class="line" href="../../d5/d04/classScriptEditor.html#a3301421ac40e98dcb31185061aecd8d9">  589</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d04/classScriptEditor.html#a3301421ac40e98dcb31185061aecd8d9">ScriptEditor::replaceAll</a>(<span class="keyword">const</span> QString &amp;searchString, <span class="keyword">const</span> QString &amp;replaceString, <span class="keywordtype">bool</span> regex, <span class="keywordtype">bool</span> caseSensitive,</div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>                              <span class="keywordtype">bool</span> matchWords, <span class="keywordtype">bool</span> wrap, <span class="keywordtype">bool</span> forward) {</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>  <span class="keywordtype">int</span> line(-1), <a class="code hl_variable" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>(-1), prevLine(-1), prevIndex(-1);</div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span> </div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>  <span class="comment">// Mark this as a set of actions that can be undone as one</span></div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>  this-&gt;beginUndoAction();</div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>  <span class="keywordtype">bool</span> found = this-&gt;findFirst(searchString, regex, caseSensitive, matchWords, wrap, forward, 0, 0);</div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>  <span class="comment">// If find first fails then there is nothing to replace</span></div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>  <span class="keywordflow">if</span> (!found) {</div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>    QMessageBox::information(<span class="keyword">this</span>, <span class="stringliteral">&quot;Mantid - Find and Replace&quot;</span>, <span class="stringliteral">&quot;No matches found in current document.&quot;</span>);</div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>  }</div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span> </div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>  <span class="keywordflow">while</span> (found) {</div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>    this-&gt;getCursorPosition(&amp;prevLine, &amp;prevIndex);</div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>    this-&gt;replace(replaceString);</div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>    found = this-&gt;findNext();</div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>    this-&gt;getCursorPosition(&amp;line, &amp;<a class="code hl_variable" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>);</div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>    <span class="comment">// if the next match is on the previous line</span></div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>    <span class="comment">// or if it is on the same line, but closer to the start</span></div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>    <span class="comment">// it means we have wrapped around the text in the editor</span></div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>    <span class="keywordflow">if</span> (line &lt; prevLine || (line == prevLine &amp;&amp; <a class="code hl_variable" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a> &lt;= prevIndex)) {</div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>    }</div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>  }</div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>  this-&gt;endUndoAction();</div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>}</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span> </div>
+<div class="foldopen" id="foldopen00591" data-start="{" data-end="}">
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno"><a class="line" href="../../d5/d04/classScriptEditor.html#a3301421ac40e98dcb31185061aecd8d9">  591</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d04/classScriptEditor.html#a3301421ac40e98dcb31185061aecd8d9">ScriptEditor::replaceAll</a>(<span class="keyword">const</span> QString &amp;searchString, <span class="keyword">const</span> QString &amp;replaceString, <span class="keywordtype">bool</span> regex, <span class="keywordtype">bool</span> caseSensitive,</div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>                              <span class="keywordtype">bool</span> matchWords, <span class="keywordtype">bool</span> wrap, <span class="keywordtype">bool</span> forward) {</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>  <span class="keywordtype">int</span> line(-1), <a class="code hl_variable" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>(-1), prevLine(-1), prevIndex(-1);</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span> </div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>  <span class="comment">// Mark this as a set of actions that can be undone as one</span></div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>  this-&gt;beginUndoAction();</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>  <span class="keywordtype">bool</span> found = this-&gt;findFirst(searchString, regex, caseSensitive, matchWords, wrap, forward, 0, 0);</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>  <span class="comment">// If find first fails then there is nothing to replace</span></div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>  <span class="keywordflow">if</span> (!found) {</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>    QMessageBox::information(<span class="keyword">this</span>, <span class="stringliteral">&quot;Mantid - Find and Replace&quot;</span>, <span class="stringliteral">&quot;No matches found in current document.&quot;</span>);</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>  }</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span> </div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>  <span class="keywordflow">while</span> (found) {</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>    this-&gt;getCursorPosition(&amp;prevLine, &amp;prevIndex);</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>    this-&gt;replace(replaceString);</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>    found = this-&gt;findNext();</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>    this-&gt;getCursorPosition(&amp;line, &amp;<a class="code hl_variable" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>);</div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>    <span class="comment">// if the next match is on the previous line</span></div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>    <span class="comment">// or if it is on the same line, but closer to the start</span></div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>    <span class="comment">// it means we have wrapped around the text in the editor</span></div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>    <span class="keywordflow">if</span> (line &lt; prevLine || (line == prevLine &amp;&amp; <a class="code hl_variable" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a> &lt;= prevIndex)) {</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>    }</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>  }</div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>  this-&gt;endUndoAction();</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>}</div>
 </div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span> </div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno"><a class="line" href="../../d5/d04/classScriptEditor.html#a339542d77df296f01c328f0f779b4777">  616</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d5/d04/classScriptEditor.html#a339542d77df296f01c328f0f779b4777">ScriptEditor::getZoom</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(SendScintilla(SCI_GETZOOM)); }</div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span> </div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno"><a class="line" href="../../d5/d04/classScriptEditor.html#a339542d77df296f01c328f0f779b4777">  618</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d5/d04/classScriptEditor.html#a339542d77df296f01c328f0f779b4777">ScriptEditor::getZoom</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(SendScintilla(SCI_GETZOOM)); }</div>
 <div class="ttc" id="aAPI_2src_2Run_8cpp_html_a9b45b3e13bd9167aab02e17e08916231"><div class="ttname"><a href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">Run.cpp:60</a></div></div>
 <div class="ttc" id="aAlternateCSPythonLexer_8h_html"><div class="ttname"><a href="../../d7/d00/AlternateCSPythonLexer_8h.html">AlternateCSPythonLexer.h</a></div></div>
 <div class="ttc" id="aFindReplaceDialog_8h_html"><div class="ttname"><a href="../../db/da0/FindReplaceDialog_8h.html">FindReplaceDialog.h</a></div></div>
@@ -626,8 +628,8 @@ $(document).ready(function() { init_codefold(1); });
 <div class="ttc" id="aclassScriptEditor_html_a244966cc35f7b6415c63b55ad4051b8b"><div class="ttname"><a href="../../d5/d04/classScriptEditor.html#a244966cc35f7b6415c63b55ad4051b8b">ScriptEditor::showFindReplaceDialog</a></div><div class="ttdeci">virtual void showFindReplaceDialog()</div><div class="ttdoc">Raise find replace dialog.</div><div class="ttdef"><b>Definition</b> <a href="../../de/d2d/ScriptEditor_8cpp_source.html#l00528">ScriptEditor.cpp:528</a></div></div>
 <div class="ttc" id="aclassScriptEditor_html_a2bb8010d802c587a8dd6e466f24f0889"><div class="ttname"><a href="../../d5/d04/classScriptEditor.html#a2bb8010d802c587a8dd6e466f24f0889">ScriptEditor::undoAvailable</a></div><div class="ttdeci">void undoAvailable(bool)</div><div class="ttdoc">Inform observers that undo information is available.</div></div>
 <div class="ttc" id="aclassScriptEditor_html_a2ec7b2b3e38d10bb7137fb96b3d327ef"><div class="ttname"><a href="../../d5/d04/classScriptEditor.html#a2ec7b2b3e38d10bb7137fb96b3d327ef">ScriptEditor::dragMoveEvent</a></div><div class="ttdeci">void dragMoveEvent(QDragMoveEvent *de) override</div><div class="ttdoc">Accept a drag move event and selects whether to accept the action.</div><div class="ttdef"><b>Definition</b> <a href="../../de/d2d/ScriptEditor_8cpp_source.html#l00464">ScriptEditor.cpp:464</a></div></div>
-<div class="ttc" id="aclassScriptEditor_html_a3301421ac40e98dcb31185061aecd8d9"><div class="ttname"><a href="../../d5/d04/classScriptEditor.html#a3301421ac40e98dcb31185061aecd8d9">ScriptEditor::replaceAll</a></div><div class="ttdeci">void replaceAll(const QString &amp;search, const QString &amp;replace, bool regex, bool caseSensitive, bool matchWords, bool wrap, bool forward=true)</div><div class="ttdoc">Replace all occurences of a string.</div><div class="ttdef"><b>Definition</b> <a href="../../de/d2d/ScriptEditor_8cpp_source.html#l00589">ScriptEditor.cpp:589</a></div></div>
-<div class="ttc" id="aclassScriptEditor_html_a339542d77df296f01c328f0f779b4777"><div class="ttname"><a href="../../d5/d04/classScriptEditor.html#a339542d77df296f01c328f0f779b4777">ScriptEditor::getZoom</a></div><div class="ttdeci">int getZoom() const</div><div class="ttdoc">Get the current zoom factor.</div><div class="ttdef"><b>Definition</b> <a href="../../de/d2d/ScriptEditor_8cpp_source.html#l00616">ScriptEditor.cpp:616</a></div></div>
+<div class="ttc" id="aclassScriptEditor_html_a3301421ac40e98dcb31185061aecd8d9"><div class="ttname"><a href="../../d5/d04/classScriptEditor.html#a3301421ac40e98dcb31185061aecd8d9">ScriptEditor::replaceAll</a></div><div class="ttdeci">void replaceAll(const QString &amp;search, const QString &amp;replace, bool regex, bool caseSensitive, bool matchWords, bool wrap, bool forward=true)</div><div class="ttdoc">Replace all occurences of a string.</div><div class="ttdef"><b>Definition</b> <a href="../../de/d2d/ScriptEditor_8cpp_source.html#l00591">ScriptEditor.cpp:591</a></div></div>
+<div class="ttc" id="aclassScriptEditor_html_a339542d77df296f01c328f0f779b4777"><div class="ttname"><a href="../../d5/d04/classScriptEditor.html#a339542d77df296f01c328f0f779b4777">ScriptEditor::getZoom</a></div><div class="ttdeci">int getZoom() const</div><div class="ttdoc">Get the current zoom factor.</div><div class="ttdef"><b>Definition</b> <a href="../../de/d2d/ScriptEditor_8cpp_source.html#l00618">ScriptEditor.cpp:618</a></div></div>
 <div class="ttc" id="aclassScriptEditor_html_a3a041c05d8d65c2b93313f77ec693463"><div class="ttname"><a href="../../d5/d04/classScriptEditor.html#a3a041c05d8d65c2b93313f77ec693463">ScriptEditor::m_progressArrowKey</a></div><div class="ttdeci">int m_progressArrowKey</div><div class="ttdoc">The margin marker.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d86/ScriptEditor_8h_source.html#l00172">ScriptEditor.h:172</a></div></div>
 <div class="ttc" id="aclassScriptEditor_html_a3f7f28bcbf9793e24fbfdbb28d26cd5d"><div class="ttname"><a href="../../d5/d04/classScriptEditor.html#a3f7f28bcbf9793e24fbfdbb28d26cd5d">ScriptEditor::editorFocusIn</a></div><div class="ttdeci">void editorFocusIn(const QString &amp;filename)</div><div class="ttdoc">The editor now has focus.</div></div>
 <div class="ttc" id="aclassScriptEditor_html_a4138217cdb58c91fb63952c35b4f1861"><div class="ttname"><a href="../../d5/d04/classScriptEditor.html#a4138217cdb58c91fb63952c35b4f1861">ScriptEditor::redoAvailable</a></div><div class="ttdeci">void redoAvailable(bool)</div><div class="ttdoc">Inform observers that redo information is available.</div></div>
