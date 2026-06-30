@@ -48,7 +48,7 @@ var searchData=
   ['lens_5fxpm_45',['lens_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#a100482366e501d8832705ec5f507403f',1,'MantidQt::API']]],
   ['level_46',['level',['../dc/d2a/structMantid_1_1MDAlgorithms_1_1MDEventTreeBuilder_1_1Task.html#a5d1f9af31a4f314e4a9df4a3d373cd6c',1,'Mantid::MDAlgorithms::MDEventTreeBuilder::Task']]],
   ['lfb_47',['lfb',['../df/d18/structMantid_1_1Geometry_1_1Hexahedron.html#ad176df16cbf59649d2099db2c0c72d60',1,'Mantid::Geometry::Hexahedron::lfb'],['../d2/d95/structMantid_1_1Geometry_1_1CuboidCorners.html#a9668d958f039319257f78798439a3972',1,'Mantid::Geometry::CuboidCorners::lfb']]],
-  ['lft_48',['lft',['../d2/d95/structMantid_1_1Geometry_1_1CuboidCorners.html#afbce65c7bec9654b06c7d44c5c1acb0a',1,'Mantid::Geometry::CuboidCorners::lft'],['../df/d18/structMantid_1_1Geometry_1_1Hexahedron.html#a53bfec60fa45cd2ce1935dcf43066587',1,'Mantid::Geometry::Hexahedron::lft']]],
+  ['lft_48',['lft',['../df/d18/structMantid_1_1Geometry_1_1Hexahedron.html#a53bfec60fa45cd2ce1935dcf43066587',1,'Mantid::Geometry::Hexahedron::lft'],['../d2/d95/structMantid_1_1Geometry_1_1CuboidCorners.html#afbce65c7bec9654b06c7d44c5c1acb0a',1,'Mantid::Geometry::CuboidCorners::lft']]],
   ['lib_5fprefix_49',['LIB_PREFIX',['../d9/dec/namespaceMantid_1_1Kernel.html#aea8167dbccc01b15181fb694b2cc5dc6',1,'Mantid::Kernel']]],
   ['lifetime_50',['LIFETIME',['../df/d49/namespaceMantid_1_1Algorithms_1_1PropertyNames.html#aa1b4e74a4ee3fbb0fcb45b1c8c1146fa',1,'Mantid::Algorithms::PropertyNames']]],
   ['lifetime_5ferror_51',['LIFETIME_ERROR',['../df/d49/namespaceMantid_1_1Algorithms_1_1PropertyNames.html#aac5b005ab2abc3cffa60ad4d5b0839e1',1,'Mantid::Algorithms::PropertyNames']]],
@@ -79,7 +79,7 @@ var searchData=
   ['localchanged_76',['LOCALCHANGED',['../d2/d36/namespaceMantidQt_1_1API.html#a01245f2857897f9d8e929b06abb67f20',1,'MantidQt::API']]],
   ['localonly_77',['LOCALONLY',['../d2/d36/namespaceMantidQt_1_1API.html#a965376e55c82739577b9e928ff11193b',1,'MantidQt::API']]],
   ['localworkspace_78',['localWorkspace',['../dc/da2/classMantid_1_1DataHandling_1_1LoadEventPreNexus2.html#ae83ff5dfbb15c3420c25899f8a5152d1',1,'Mantid::DataHandling::LoadEventPreNexus2']]],
-  ['location_79',['location',['../d5/dbf/classICat4_1_1ns1____dataset.html#aaa766ccc6dbf43fc8a98936d8a7589a8',1,'ICat4::ns1__dataset::location'],['../de/d5d/classICat4_1_1ns1____datafile.html#ae098ffff8bf25da77c4947eebe67a9e6',1,'ICat4::ns1__datafile::location']]],
+  ['location_79',['location',['../de/d5d/classICat4_1_1ns1____datafile.html#ae098ffff8bf25da77c4947eebe67a9e6',1,'ICat4::ns1__datafile::location'],['../d5/dbf/classICat4_1_1ns1____dataset.html#aaa766ccc6dbf43fc8a98936d8a7589a8',1,'ICat4::ns1__dataset::location']]],
   ['log_5fmin_80',['log_Min',['../dc/dcd/classMantid_1_1Algorithms_1_1Logarithm.html#aa4702b581bc5329713d9093f602f9847',1,'Mantid::Algorithms::Logarithm']]],
   ['log_5fname_81',['LOG_NAME',['../d2/d96/namespaceMantid_1_1Algorithms_1_1SpinStatesORSO.html#a28ffbba01a2079ec6621de2fba5688f5',1,'Mantid::Algorithms::SpinStatesORSO']]],
   ['log_5fxpm_82',['log_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#a888ef31234fa83acc21e8fb6fc6ab40c',1,'MantidQt::API']]],
@@ -95,10 +95,9 @@ var searchData=
   ['longest_5ftof_92',['longest_tof',['../d8/d67/classMantid_1_1DataHandling_1_1LoadEventNexus.html#a1dd3b9ac925edb3e5c7fba575cae2eb3',1,'Mantid::DataHandling::LoadEventNexus::longest_tof'],['../dc/da2/classMantid_1_1DataHandling_1_1LoadEventPreNexus2.html#a2ed4c28e53ae691e71c898ae0c198e3b',1,'Mantid::DataHandling::LoadEventPreNexus2::longest_tof']]],
   ['lorentzcorrection_93',['LorentzCorrection',['../df/d68/classMantid_1_1MDAlgorithms_1_1ConvertToDiffractionMDWorkspace.html#abafd21831b112da64892b3062257034f',1,'Mantid::MDAlgorithms::ConvertToDiffractionMDWorkspace']]],
   ['lorentzwidth_94',['lorentzWidth',['../d2/d30/structMantid_1_1CurveFitting_1_1Algorithms_1_1VesuvioCalculateGammaBackground_1_1FoilInfo.html#aaa693f2d85a21463228da9998e2ce9c0',1,'Mantid::CurveFitting::Algorithms::VesuvioCalculateGammaBackground::FoilInfo']]],
-  ['low_95',['low',['../d0/d54/structMantid_1_1WorkflowAlgorithms_1_1RegLowVectorPair.html#acb846393c0144ea7ddc569d569ee3511',1,'Mantid::WorkflowAlgorithms::RegLowVectorPair']]],
-  ['low_5ftof_5fcut_96',['low_tof_cut',['../de/d43/classMantid_1_1Algorithms_1_1EQSANSTofStructure.html#a3789a7badf9265272eaaca2f8e171f54',1,'Mantid::Algorithms::EQSANSTofStructure']]],
-  ['lower_97',['lower',['../dc/d98/TrustRegionMinimizer_8cpp.html#abb82b111deb51f3a5917cf8780fee484',1,'lower:&#160;TrustRegionMinimizer.cpp'],['../d1/dc7/structMantidQt_1_1MantidWidgets_1_1FunctionTreeView_1_1AConstraint.html#a1182cf6fb579bfaaca8bfe102f243503',1,'MantidQt::MantidWidgets::FunctionTreeView::AConstraint::lower']]],
-  ['lowerbound_98',['lowerBound',['../dc/d2a/structMantid_1_1MDAlgorithms_1_1MDEventTreeBuilder_1_1Task.html#a6d6b55953e7b99b8e447881b1fa9acc0',1,'Mantid::MDAlgorithms::MDEventTreeBuilder::Task']]],
-  ['lplot_5fxpm_99',['lPlot_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#a451aa6259aed156e7757c4c87246c1b5',1,'MantidQt::API']]],
-  ['lpplot_5fxpm_100',['lpPlot_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#adefb3f15cb3c4fc257ec4672335a3166',1,'MantidQt::API']]]
+  ['low_5ftof_5fcut_95',['low_tof_cut',['../de/d43/classMantid_1_1Algorithms_1_1EQSANSTofStructure.html#a3789a7badf9265272eaaca2f8e171f54',1,'Mantid::Algorithms::EQSANSTofStructure']]],
+  ['lower_96',['lower',['../dc/d98/TrustRegionMinimizer_8cpp.html#abb82b111deb51f3a5917cf8780fee484',1,'lower:&#160;TrustRegionMinimizer.cpp'],['../d1/dc7/structMantidQt_1_1MantidWidgets_1_1FunctionTreeView_1_1AConstraint.html#a1182cf6fb579bfaaca8bfe102f243503',1,'MantidQt::MantidWidgets::FunctionTreeView::AConstraint::lower']]],
+  ['lowerbound_97',['lowerBound',['../dc/d2a/structMantid_1_1MDAlgorithms_1_1MDEventTreeBuilder_1_1Task.html#a6d6b55953e7b99b8e447881b1fa9acc0',1,'Mantid::MDAlgorithms::MDEventTreeBuilder::Task']]],
+  ['lplot_5fxpm_98',['lPlot_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#a451aa6259aed156e7757c4c87246c1b5',1,'MantidQt::API']]],
+  ['lpplot_5fxpm_99',['lpPlot_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#adefb3f15cb3c4fc257ec4672335a3166',1,'MantidQt::API']]]
 ];
