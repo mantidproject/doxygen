@@ -1180,13 +1180,13 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l01262" name="l01262"></a><span class="lineno"> 1262</span>    <span class="comment">// H exists then combine (note: must do this if a composite divisor)</span></div>
 <div class="line"><a id="l01263" name="l01263"></a><span class="lineno"> 1263</span>    <span class="keywordflow">if</span> (!Hpart.<a class="code hl_function" href="../../d8/d45/classMantid_1_1Geometry_1_1Acomp.html#adc73d55bd972ff4be52a1dfeeed0410c">isNull</a>()) {</div>
 <div class="line"><a id="l01264" name="l01264"></a><span class="lineno"> 1264</span>      H *= Hpart;</div>
-<div class="line"><a id="l01265" name="l01265"></a><span class="lineno"> 1265</span>      H.joinDepth(); <span class="comment">// Up shift suitable objects.</span></div>
+<div class="line"><a id="l01265" name="l01265"></a><span class="lineno"> 1265</span>      H.<a class="code hl_function" href="../../d8/d45/classMantid_1_1Geometry_1_1Acomp.html#a91f2fd90af3b8a0102482855294902a2">joinDepth</a>(); <span class="comment">// Up shift suitable objects.</span></div>
 <div class="line"><a id="l01266" name="l01266"></a><span class="lineno"> 1266</span>      Hpart.<a class="code hl_variable" href="../../d8/d45/classMantid_1_1Geometry_1_1Acomp.html#af2005f8488be3cb6692abdf3d096e4a6">Comp</a>.clear();</div>
 <div class="line"><a id="l01267" name="l01267"></a><span class="lineno"> 1267</span>      Hpart.<a class="code hl_variable" href="../../d8/d45/classMantid_1_1Geometry_1_1Acomp.html#a19347047ff0b656ee67a0fe13a3f3028">Units</a>.clear(); <span class="comment">// Just in case</span></div>
 <div class="line"><a id="l01268" name="l01268"></a><span class="lineno"> 1268</span>    }</div>
 <div class="line"><a id="l01269" name="l01269"></a><span class="lineno"> 1269</span>  }</div>
-<div class="line"><a id="l01270" name="l01270"></a><span class="lineno"> 1270</span>  <span class="keywordflow">if</span> (!H.isDNF())</div>
-<div class="line"><a id="l01271" name="l01271"></a><span class="lineno"> 1271</span>    H.makeDNFobject();</div>
+<div class="line"><a id="l01270" name="l01270"></a><span class="lineno"> 1270</span>  <span class="keywordflow">if</span> (!H.<a class="code hl_function" href="../../d8/d45/classMantid_1_1Geometry_1_1Acomp.html#a31975d14196fddd650287976825bb1e2">isDNF</a>())</div>
+<div class="line"><a id="l01271" name="l01271"></a><span class="lineno"> 1271</span>    H.<a class="code hl_function" href="../../d8/d45/classMantid_1_1Geometry_1_1Acomp.html#a65b29750db991738e6d2a3c7f51a284c">makeDNFobject</a>();</div>
 <div class="line"><a id="l01272" name="l01272"></a><span class="lineno"> 1272</span>  <a class="code hl_class" href="../../d8/d45/classMantid_1_1Geometry_1_1Acomp.html">Acomp</a> Rem(*<span class="keyword">this</span>);</div>
 <div class="line"><a id="l01273" name="l01273"></a><span class="lineno"> 1273</span>  <a class="code hl_class" href="../../d8/d45/classMantid_1_1Geometry_1_1Acomp.html">Acomp</a> Factor(H);</div>
 <div class="line"><a id="l01274" name="l01274"></a><span class="lineno"> 1274</span>  Factor *= G;</div>
