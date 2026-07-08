@@ -129,8 +129,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a618c31c8f3c0e641dd53dc841e905121" id="r_a618c31c8f3c0e641dd53dc841e905121"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d46/classMantid_1_1Crystal_1_1SCDCalibratePanels2ObjFunc.html#a618c31c8f3c0e641dd53dc841e905121">SCDCalibratePanels2ObjFunc</a> ()</td></tr>
 <tr class="memdesc:a618c31c8f3c0e641dd53dc841e905121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for init input vector.  <br /></td></tr>
 <tr class="separator:a618c31c8f3c0e641dd53dc841e905121"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d8cb967b62ef01ff280935b85cbc337" id="r_a6d8cb967b62ef01ff280935b85cbc337"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d46/classMantid_1_1Crystal_1_1SCDCalibratePanels2ObjFunc.html#a6d8cb967b62ef01ff280935b85cbc337">setPeakWorkspace</a> (<a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a06a97a7e929668a97910eabd3205c95e">Mantid::API::IPeaksWorkspace_sptr</a> &amp;pws, const std::string &amp;componentName, const std::vector&lt; double &gt; &amp;tofs)</td></tr>
-<tr class="separator:a6d8cb967b62ef01ff280935b85cbc337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab00899e108ca200132c29f4299961bbe" id="r_ab00899e108ca200132c29f4299961bbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d46/classMantid_1_1Crystal_1_1SCDCalibratePanels2ObjFunc.html#ab00899e108ca200132c29f4299961bbe">setPeakWorkspace</a> (<a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a06a97a7e929668a97910eabd3205c95e">Mantid::API::IPeaksWorkspace_sptr</a> &amp;pws, const std::string &amp;componentName, const std::vector&lt; double &gt; &amp;tofs, bool waveFromUB=false)</td></tr>
+<tr class="separator:ab00899e108ca200132c29f4299961bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classMantid_1_1API_1_1ParamFunction"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classMantid_1_1API_1_1ParamFunction')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d9/d93/classMantid_1_1API_1_1ParamFunction.html">Mantid::API::ParamFunction</a></td></tr>
 <tr class="memitem:aced65a35e30d8b57abda900b12471b83 inherit pub_methods_classMantid_1_1API_1_1ParamFunction" id="r_aced65a35e30d8b57abda900b12471b83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a9e970cac310cd8af4937376738182998">IFunction_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d93/classMantid_1_1API_1_1ParamFunction.html#aced65a35e30d8b57abda900b12471b83">getContainingFunction</a> (const <a class="el" href="../../de/db6/classMantid_1_1API_1_1ParameterReference.html">ParameterReference</a> &amp;ref) const</td></tr>
 <tr class="memdesc:aced65a35e30d8b57abda900b12471b83 inherit pub_methods_classMantid_1_1API_1_1ParamFunction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the containing function.  <br /></td></tr>
@@ -463,6 +463,9 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a06d86b341978c806b98adb82d530fa15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66e6cee9c90195fdc5f08c5a7e3119ce" id="r_a66e6cee9c90195fdc5f08c5a7e3119ce"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d46/classMantid_1_1Crystal_1_1SCDCalibratePanels2ObjFunc.html#a66e6cee9c90195fdc5f08c5a7e3119ce">m_tofs</a></td></tr>
 <tr class="separator:a66e6cee9c90195fdc5f08c5a7e3119ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dbf2f50085f76b0bfb5881cdb5ffb7b" id="r_a2dbf2f50085f76b0bfb5881cdb5ffb7b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d46/classMantid_1_1Crystal_1_1SCDCalibratePanels2ObjFunc.html#a2dbf2f50085f76b0bfb5881cdb5ffb7b">m_waveFromUB</a> {false}</td></tr>
+<tr class="memdesc:a2dbf2f50085f76b0bfb5881cdb5ffb7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">if true, wavelength is computed from Bragg's law using the UB matrix and each peak's integer HKL instead of from the measured TOF (m_tofs)  <br /></td></tr>
+<tr class="separator:a2dbf2f50085f76b0bfb5881cdb5ffb7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa02d4c2979b3c358e02eaee38d3fc00" id="r_aaa02d4c2979b3c358e02eaee38d3fc00"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d46/classMantid_1_1Crystal_1_1SCDCalibratePanels2ObjFunc.html#aaa02d4c2979b3c358e02eaee38d3fc00">n_iter</a></td></tr>
 <tr class="separator:aaa02d4c2979b3c358e02eaee38d3fc00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2084d0e72826bcb8cad5758c0b0b1411" id="r_a2084d0e72826bcb8cad5758c0b0b1411"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Mantid::Kernel::V3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d46/classMantid_1_1Crystal_1_1SCDCalibratePanels2ObjFunc.html#a2084d0e72826bcb8cad5758c0b0b1411">UNSET_HKL</a> {0, 0, 0}</td></tr>
@@ -682,9 +685,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d0/dfb/classMantid_1_1API_1_1IFunction1D.html#afb2b8d9831d9480118317346809ddc4a">Mantid::API::IFunction1D</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00090">90</a> of file <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html">SCDCalibratePanels2ObjFunc.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00094">94</a> of file <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html">SCDCalibratePanels2ObjFunc.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00265">Mantid::DataObjects::Peak::getDetectorID()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00724">Mantid::DataObjects::Peak::getL1()</a>, <a class="el" href="../../d1/d51/ParamFunction_8cpp_source.html#l00062">Mantid::API::ParamFunction::getParameter()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00133">Mantid::Kernel::Unit::initialize()</a>, <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00040">m_cmpt</a>, <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00041">m_pws</a>, <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00043">m_tofs</a>, <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00198">moveInstruentComponentBy()</a>, <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00229">rotateInstrumentComponentBy()</a>, <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00275">scaleRectagularDetectorSize()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00206">Mantid::DataObjects::Peak::setDetectorID()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00294">Mantid::DataObjects::Peak::setInstrument()</a>, and <a class="el" href="../../db/d39/System_8h_source.html#l00044">UNUSED_ARG</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00265">Mantid::DataObjects::Peak::getDetectorID()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00112">Mantid::DataObjects::BasePeak::getIntHKL()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00724">Mantid::DataObjects::Peak::getL1()</a>, <a class="el" href="../../d1/d51/ParamFunction_8cpp_source.html#l00062">Mantid::API::ParamFunction::getParameter()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00391">Mantid::DataObjects::Peak::getScattering()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00133">Mantid::Kernel::Unit::initialize()</a>, <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00040">m_cmpt</a>, <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00041">m_pws</a>, <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00043">m_tofs</a>, <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00046">m_waveFromUB</a>, <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00227">moveInstruentComponentBy()</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00269">Mantid::Kernel::V3D::norm()</a>, <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00258">rotateInstrumentComponentBy()</a>, <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00304">scaleRectagularDetectorSize()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00206">Mantid::DataObjects::Peak::setDetectorID()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00294">Mantid::DataObjects::Peak::setInstrument()</a>, <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00188">Mantid::DataObjects::Peak::setWavelength()</a>, <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00049">UNSET_HKL</a>, and <a class="el" href="../../db/d39/System_8h_source.html#l00044">UNUSED_ARG</a>.</p>
 
 </div>
 </div>
@@ -753,9 +756,9 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00198">198</a> of file <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html">SCDCalibratePanels2ObjFunc.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00227">227</a> of file <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html">SCDCalibratePanels2ObjFunc.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00090">function1D()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00094">function1D()</a>.</p>
 
 </div>
 </div>
@@ -855,9 +858,9 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>IPeaksWorkspace_sptr </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00229">229</a> of file <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html">SCDCalibratePanels2ObjFunc.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00258">258</a> of file <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html">SCDCalibratePanels2ObjFunc.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00090">function1D()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00094">function1D()</a>.</p>
 
 </div>
 </div>
@@ -907,16 +910,16 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00275">275</a> of file <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html">SCDCalibratePanels2ObjFunc.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00304">304</a> of file <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html">SCDCalibratePanels2ObjFunc.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#ab18f3edd54aad55a13d7c435a84b4903">Mantid::API::applyRectangularDetectorScaleToComponentInfo()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00090">function1D()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00094">function1D()</a>.</p>
 
 </div>
 </div>
-<a id="a6d8cb967b62ef01ff280935b85cbc337" name="a6d8cb967b62ef01ff280935b85cbc337"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d8cb967b62ef01ff280935b85cbc337">&#9670;&#160;</a></span>setPeakWorkspace()</h2>
+<a id="ab00899e108ca200132c29f4299961bbe" name="ab00899e108ca200132c29f4299961bbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab00899e108ca200132c29f4299961bbe">&#9670;&#160;</a></span>setPeakWorkspace()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -937,7 +940,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>tofs</em>&#160;</td>
+          <td class="paramname"><em>tofs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>waveFromUB</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -949,7 +958,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html">SCDCalibratePanels2ObjFunc.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00040">m_cmpt</a>, <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00041">m_pws</a>, <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00043">m_tofs</a>, and <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00042">n_iter</a>.</p>
+<p class="reference">References <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00040">m_cmpt</a>, <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00041">m_pws</a>, <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00043">m_tofs</a>, <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00046">m_waveFromUB</a>, and <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00042">n_iter</a>.</p>
 
 </div>
 </div>
@@ -974,7 +983,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00045">45</a> of file <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html">SCDCalibratePanels2ObjFunc.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00048">48</a> of file <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html">SCDCalibratePanels2ObjFunc.h</a>.</p>
 
 </div>
 </div>
@@ -1002,7 +1011,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00040">40</a> of file <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html">SCDCalibratePanels2ObjFunc.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00090">function1D()</a>, and <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00062">setPeakWorkspace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00094">function1D()</a>, and <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00062">setPeakWorkspace()</a>.</p>
 
 </div>
 </div>
@@ -1028,7 +1037,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00041">41</a> of file <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html">SCDCalibratePanels2ObjFunc.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00090">function1D()</a>, and <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00062">setPeakWorkspace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00094">function1D()</a>, and <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00062">setPeakWorkspace()</a>.</p>
 
 </div>
 </div>
@@ -1054,7 +1063,35 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00043">43</a> of file <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html">SCDCalibratePanels2ObjFunc.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00090">function1D()</a>, and <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00062">setPeakWorkspace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00094">function1D()</a>, and <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00062">setPeakWorkspace()</a>.</p>
+
+</div>
+</div>
+<a id="a2dbf2f50085f76b0bfb5881cdb5ffb7b" name="a2dbf2f50085f76b0bfb5881cdb5ffb7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dbf2f50085f76b0bfb5881cdb5ffb7b">&#9670;&#160;</a></span>m_waveFromUB</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mantid::Crystal::SCDCalibratePanels2ObjFunc::m_waveFromUB {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>if true, wavelength is computed from Bragg's law using the UB matrix and each peak's integer HKL instead of from the measured TOF (m_tofs) </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00046">46</a> of file <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html">SCDCalibratePanels2ObjFunc.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00094">function1D()</a>, and <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00062">setPeakWorkspace()</a>.</p>
 
 </div>
 </div>
@@ -1104,7 +1141,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00046">46</a> of file <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html">SCDCalibratePanels2ObjFunc.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html#l00049">49</a> of file <a class="el" href="../../da/d3f/SCDCalibratePanels2ObjFunc_8h_source.html">SCDCalibratePanels2ObjFunc.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00094">function1D()</a>.</p>
 
 </div>
 </div>
