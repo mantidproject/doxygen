@@ -92,7 +92,8 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">ILiveListener.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -101,6 +102,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="../../d6/dd1/Kernel_2inc_2MantidKernel_2DateAndTime_8h_source.html">MantidKernel/DateAndTime.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../df/d5e/PropertyManager_8h_source.html">MantidKernel/PropertyManager.h</a>&quot;</code><br />
 <code>#include &lt;Poco/Net/SocketAddress.h&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 </div>
 <p><a href="../../d8/ddc/ILiveListener_8h_source.html">Go to the source code of this file.</a></p>
@@ -124,6 +126,16 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a0c40618ed83f9251841699f75625c14c" id="r_a0c40618ed83f9251841699f75625c14c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a0c40618ed83f9251841699f75625c14c">Mantid::API::ILiveListener_sptr</a> = std::shared_ptr&lt; <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html">ILiveListener</a> &gt;</td></tr>
 <tr class="memdesc:a0c40618ed83f9251841699f75625c14c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared pointer to an <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html" title="ILiveListener is the interface implemented by classes which connect directly to instrument data acqui...">ILiveListener</a>.  <br /></td></tr>
 <tr class="separator:a0c40618ed83f9251841699f75625c14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a34c51fb7f2f2838b5faa39c99ddb4e0d" id="r_a34c51fb7f2f2838b5faa39c99ddb4e0d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a34c51fb7f2f2838b5faa39c99ddb4e0d">Mantid::API::ListenerState</a> { <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a34c51fb7f2f2838b5faa39c99ddb4e0daef70e46fd3bbc21e3e1f0b6815e750c0">Mantid::API::Disconnected</a>
+, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a34c51fb7f2f2838b5faa39c99ddb4e0da2ec0d16e4ca169baedb9b2d50ec5c6d7">Mantid::API::Connected</a>
+, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a34c51fb7f2f2838b5faa39c99ddb4e0dacef4d5fb6a1cba65350ab29d71e6a84a">Mantid::API::ReadWait</a>
+, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a34c51fb7f2f2838b5faa39c99ddb4e0da902b0d55fddef6f8d651fe1035b7d4bd">Mantid::API::Error</a>
+ }</td></tr>
+<tr class="memdesc:a34c51fb7f2f2838b5faa39c99ddb4e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listener connection / health, independent of the DAS run state.  <a href="../../d9/da0/namespaceMantid_1_1API.html#a34c51fb7f2f2838b5faa39c99ddb4e0d">More...</a><br /></td></tr>
+<tr class="separator:a34c51fb7f2f2838b5faa39c99ddb4e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

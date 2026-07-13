@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kinetic_0',['KINETIC',['../dd/d61/classMantid_1_1DataHandling_1_1LoadILLSANS.html#a90b2074b1cd6289a3d065a49f9330f3ba599335b7efd36b0b96c7abc614250a02',1,'Mantid::DataHandling::LoadILLSANS']]]
+  ['joiningrun_0',['JoiningRun',['../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a22701647ff453b11253f49ed39d2022fa1ffe85e974946e3eaba04d5d84ad51d2',1,'Mantid::API::ILiveListener']]]
 ];

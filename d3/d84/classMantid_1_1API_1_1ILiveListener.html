@@ -115,12 +115,16 @@ Inheritance diagram for Mantid::API::ILiveListener:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a22701647ff453b11253f49ed39d2022f" id="r_a22701647ff453b11253f49ed39d2022f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a22701647ff453b11253f49ed39d2022f">RunStatus</a> { <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a22701647ff453b11253f49ed39d2022faaaaef604a7c30b469ac7d012dbe8af11">NoRun</a> = 0
-, <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a22701647ff453b11253f49ed39d2022fafeb340cd8e7c3e7877dcff6f80735b15">BeginRun</a> = 1
-, <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a22701647ff453b11253f49ed39d2022fa50bb485a7f81b50b14d3e30425ca5c8b">Running</a> = 2
-, <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a22701647ff453b11253f49ed39d2022fac1d96eeb6d21e176d5a4a7c5028323e6">EndRun</a> = 4
+<tr class="memitem:a22701647ff453b11253f49ed39d2022f" id="r_a22701647ff453b11253f49ed39d2022f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a22701647ff453b11253f49ed39d2022f">RunStatus</a> { <br />
+&#160;&#160;<a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a22701647ff453b11253f49ed39d2022faaaaef604a7c30b469ac7d012dbe8af11">NoRun</a> = 0
+, <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a22701647ff453b11253f49ed39d2022fa1ffe85e974946e3eaba04d5d84ad51d2">JoiningRun</a> = 1
+, <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a22701647ff453b11253f49ed39d2022fafeb340cd8e7c3e7877dcff6f80735b15">BeginRun</a> = 2
+, <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a22701647ff453b11253f49ed39d2022fa50bb485a7f81b50b14d3e30425ca5c8b">Running</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a22701647ff453b11253f49ed39d2022fac1d96eeb6d21e176d5a4a7c5028323e6">EndRun</a> = 4
+<br />
  }</td></tr>
-<tr class="memdesc:a22701647ff453b11253f49ed39d2022f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The possible run statuses (initial list taken from SNS SMS protocol) None : No current run Begin : A new run has begun since the last call to extractData Running : We are in a run End : The run has ended since the last call to extractData.  <a href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a22701647ff453b11253f49ed39d2022f">More...</a><br /></td></tr>
+<tr class="memdesc:a22701647ff453b11253f49ed39d2022f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The possible run statuses (initial list taken from SNS SMS protocol) Values are assigned in transition order.  <a href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a22701647ff453b11253f49ed39d2022f">More...</a><br /></td></tr>
 <tr class="separator:a22701647ff453b11253f49ed39d2022f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -140,15 +144,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af1d416d4710e3fb76f97fa947ba7255a" id="r_af1d416d4710e3fb76f97fa947ba7255a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#af1d416d4710e3fb76f97fa947ba7255a">isConnected</a> ()=0</td></tr>
 <tr class="memdesc:af1d416d4710e3fb76f97fa947ba7255a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has the connection to the DAS been established? Could also be used to check for a continued connection.  <br /></td></tr>
 <tr class="separator:af1d416d4710e3fb76f97fa947ba7255a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54b2047c35f09e209dd6d8f12eb19032" id="r_a54b2047c35f09e209dd6d8f12eb19032"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a54b2047c35f09e209dd6d8f12eb19032">isPaused</a> () const</td></tr>
+<tr class="memdesc:a54b2047c35f09e209dd6d8f12eb19032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the current run has been paused by a DAS annotation.  <br /></td></tr>
+<tr class="separator:a54b2047c35f09e209dd6d8f12eb19032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff5b52910b20d82d6e0bd945e63a0f3" id="r_afff5b52910b20d82d6e0bd945e63a0f3"><td class="memItemLeft" align="right" valign="top">virtual std::optional&lt; <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a22701647ff453b11253f49ed39d2022f">RunStatus</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#afff5b52910b20d82d6e0bd945e63a0f3">lastTransition</a> () const</td></tr>
+<tr class="memdesc:afff5b52910b20d82d6e0bd945e63a0f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The run-state transition (if any) that the most recent <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#aa6b86690d6ecbed8029cc0328823b51c" title="Get the data that&#39;s been buffered since the last call to this method (or since start() was called).">extractData()</a> call consumed.  <br /></td></tr>
+<tr class="separator:afff5b52910b20d82d6e0bd945e63a0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93172be66b43b1fdcfad9e81756d283f" id="r_a93172be66b43b1fdcfad9e81756d283f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a34c51fb7f2f2838b5faa39c99ddb4e0d">ListenerState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a93172be66b43b1fdcfad9e81756d283f">listenerState</a> () const =0</td></tr>
+<tr class="memdesc:a93172be66b43b1fdcfad9e81756d283f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listener connection / health.  <br /></td></tr>
+<tr class="separator:a93172be66b43b1fdcfad9e81756d283f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dac33149eecb2c57e4be729401e902e" id="r_a4dac33149eecb2c57e4be729401e902e"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a4dac33149eecb2c57e4be729401e902e">name</a> () const =0</td></tr>
 <tr class="memdesc:a4dac33149eecb2c57e4be729401e902e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of this listener.  <br /></td></tr>
 <tr class="separator:a4dac33149eecb2c57e4be729401e902e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e18541ba2be7b4dd1535ce6d0e57dae" id="r_a5e18541ba2be7b4dd1535ce6d0e57dae"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a5e18541ba2be7b4dd1535ce6d0e57dae">runNumber</a> () const =0</td></tr>
 <tr class="memdesc:a5e18541ba2be7b4dd1535ce6d0e57dae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the run number of the current run.  <br /></td></tr>
 <tr class="separator:a5e18541ba2be7b4dd1535ce6d0e57dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f2e51882b8fc774deae76e31ff0ef78" id="r_a2f2e51882b8fc774deae76e31ff0ef78"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a22701647ff453b11253f49ed39d2022f">ILiveListener::RunStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a2f2e51882b8fc774deae76e31ff0ef78">runStatus</a> ()=0</td></tr>
-<tr class="memdesc:a2f2e51882b8fc774deae76e31ff0ef78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current run status of the listened-to data stream.  <br /></td></tr>
-<tr class="separator:a2f2e51882b8fc774deae76e31ff0ef78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8afd2bbdd5931001fd7746715524f67" id="r_af8afd2bbdd5931001fd7746715524f67"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a22701647ff453b11253f49ed39d2022f">RunStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#af8afd2bbdd5931001fd7746715524f67">runState</a> () const</td></tr>
+<tr class="memdesc:af8afd2bbdd5931001fd7746715524f67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current DAS run state (NoRun / JoiningRun / BeginRun / Running / EndRun), as last reported by the background thread.  <br /></td></tr>
+<tr class="separator:af8afd2bbdd5931001fd7746715524f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad47513d57f7f27fdb81878e9b59bd06b" id="r_ad47513d57f7f27fdb81878e9b59bd06b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a22701647ff453b11253f49ed39d2022f">RunStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#ad47513d57f7f27fdb81878e9b59bd06b">runStatus</a> ()</td></tr>
+<tr class="memdesc:ad47513d57f7f27fdb81878e9b59bd06b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current run status of the listened-to data stream.  <br /></td></tr>
+<tr class="separator:ad47513d57f7f27fdb81878e9b59bd06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8d42934f42715e9ec8001b45c03f205" id="r_af8d42934f42715e9ec8001b45c03f205"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#af8d42934f42715e9ec8001b45c03f205">setAlgorithm</a> (const class <a class="el" href="../../d4/d2d/classMantid_1_1API_1_1IAlgorithm.html">IAlgorithm</a> &amp;callingAlgorithm)=0</td></tr>
 <tr class="memdesc:af8d42934f42715e9ec8001b45c03f205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow listener to see calling algorithm.  <br /></td></tr>
 <tr class="separator:af8d42934f42715e9ec8001b45c03f205"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -382,7 +398,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html" title="ILiveListener is the interface implemented by classes which connect directly to instrument data acqui...">ILiveListener</a> is the interface implemented by classes which connect directly to instrument data acquisition systems (DAS) for retrieval of 'live' data into <a class="el" href="../../d8/d8e/namespaceMantid.html" title="Helper class which provides the Collimation Length for SANS instruments.">Mantid</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddc/ILiveListener_8h_source.html#l00031">31</a> of file <a class="el" href="../../d8/ddc/ILiveListener_8h_source.html">ILiveListener.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddc/ILiveListener_8h_source.html#l00042">42</a> of file <a class="el" href="../../d8/ddc/ILiveListener_8h_source.html">ILiveListener.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a22701647ff453b11253f49ed39d2022f" name="a22701647ff453b11253f49ed39d2022f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22701647ff453b11253f49ed39d2022f">&#9670;&#160;</a></span>RunStatus</h2>
@@ -396,15 +412,17 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The possible run statuses (initial list taken from SNS SMS protocol) None : No current run Begin : A new run has begun since the last call to extractData Running : We are in a run End : The run has ended since the last call to extractData. </p>
+<p>The possible run statuses (initial list taken from SNS SMS protocol) Values are assigned in transition order. </p>
+<p>NoRun : No current run. JoiningRun : NEW_RUN received but workspace initialisation not yet complete. The DAS is in a run; the listener is still bootstrapping. Transitions to Running once init completes (via BeginRun edge). BeginRun : A new run has begun since the last call to extractData. Running : We are in a run and the workspace is initialised. EndRun : The run has ended since the last call to extractData. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a22701647ff453b11253f49ed39d2022faaaaef604a7c30b469ac7d012dbe8af11" name="a22701647ff453b11253f49ed39d2022faaaaef604a7c30b469ac7d012dbe8af11"></a>NoRun&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a22701647ff453b11253f49ed39d2022fa1ffe85e974946e3eaba04d5d84ad51d2" name="a22701647ff453b11253f49ed39d2022fa1ffe85e974946e3eaba04d5d84ad51d2"></a>JoiningRun&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a22701647ff453b11253f49ed39d2022fafeb340cd8e7c3e7877dcff6f80735b15" name="a22701647ff453b11253f49ed39d2022fafeb340cd8e7c3e7877dcff6f80735b15"></a>BeginRun&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a22701647ff453b11253f49ed39d2022fa50bb485a7f81b50b14d3e30425ca5c8b" name="a22701647ff453b11253f49ed39d2022fa50bb485a7f81b50b14d3e30425ca5c8b"></a>Running&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a22701647ff453b11253f49ed39d2022fac1d96eeb6d21e176d5a4a7c5028323e6" name="a22701647ff453b11253f49ed39d2022fac1d96eeb6d21e176d5a4a7c5028323e6"></a>EndRun&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddc/ILiveListener_8h_source.html#l00113">113</a> of file <a class="el" href="../../d8/ddc/ILiveListener_8h_source.html">ILiveListener.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddc/ILiveListener_8h_source.html#l00128">128</a> of file <a class="el" href="../../d8/ddc/ILiveListener_8h_source.html">ILiveListener.h</a>.</p>
 
 </div>
 </div>
@@ -536,6 +554,8 @@ Additional Inherited Members</h2></td></tr>
 </li>
 </ul>
 
+<p>Implemented in <a class="el" href="../../df/d74/classMantid_1_1API_1_1LiveListener.html#a3dfa49c7f3ccdfe58616d603e399d5a4">Mantid::API::LiveListener</a>.</p>
+
 </div>
 </div>
 <a id="af1d416d4710e3fb76f97fa947ba7255a" name="af1d416d4710e3fb76f97fa947ba7255a"></a>
@@ -562,6 +582,96 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Has the connection to the DAS been established? Could also be used to check for a continued connection. </p>
+
+</div>
+</div>
+<a id="a54b2047c35f09e209dd6d8f12eb19032" name="a54b2047c35f09e209dd6d8f12eb19032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54b2047c35f09e209dd6d8f12eb19032">&#9670;&#160;</a></span>isPaused()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Mantid::API::ILiveListener::isPaused </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether the current run has been paused by a DAS annotation. </p>
+<p>Orthogonal to <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#af8afd2bbdd5931001fd7746715524f67" title="Current DAS run state (NoRun / JoiningRun / BeginRun / Running / EndRun), as last reported by the bac...">runState()</a>: <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#af8afd2bbdd5931001fd7746715524f67" title="Current DAS run state (NoRun / JoiningRun / BeginRun / Running / EndRun), as last reported by the bac...">runState()</a> returns Running whether or not the run is paused. Default returns false. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/ddc/ILiveListener_8h_source.html#l00144">144</a> of file <a class="el" href="../../d8/ddc/ILiveListener_8h_source.html">ILiveListener.h</a>.</p>
+
+</div>
+</div>
+<a id="afff5b52910b20d82d6e0bd945e63a0f3" name="afff5b52910b20d82d6e0bd945e63a0f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afff5b52910b20d82d6e0bd945e63a0f3">&#9670;&#160;</a></span>lastTransition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::optional&lt; <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a22701647ff453b11253f49ed39d2022f">RunStatus</a> &gt; Mantid::API::ILiveListener::lastTransition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The run-state transition (if any) that the most recent <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#aa6b86690d6ecbed8029cc0328823b51c" title="Get the data that&#39;s been buffered since the last call to this method (or since start() was called).">extractData()</a> call consumed. </p>
+<p>Cleared only when <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#aa6b86690d6ecbed8029cc0328823b51c" title="Get the data that&#39;s been buffered since the last call to this method (or since start() was called).">extractData()</a> commits a <em>new</em> transition. Reports run-state edges (BeginRun / EndRun) only; pause/resume are not reported here — use <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a54b2047c35f09e209dd6d8f12eb19032" title="Whether the current run has been paused by a DAS annotation.">isPaused()</a> for those. Listeners that have no transition concept always return nullopt. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/ddc/ILiveListener_8h_source.html#l00158">158</a> of file <a class="el" href="../../d8/ddc/ILiveListener_8h_source.html">ILiveListener.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../df/d3f/ILiveListener_8cpp_source.html#l00023">runStatus()</a>.</p>
+
+</div>
+</div>
+<a id="a93172be66b43b1fdcfad9e81756d283f" name="a93172be66b43b1fdcfad9e81756d283f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93172be66b43b1fdcfad9e81756d283f">&#9670;&#160;</a></span>listenerState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a34c51fb7f2f2838b5faa39c99ddb4e0d">ListenerState</a> Mantid::API::ILiveListener::listenerState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Listener connection / health. </p>
+<p>Every concrete listener must override this to reflect actual connection state. Returns one of: Disconnected, ReadWait, Connected, Error. </p>
 
 </div>
 </div>
@@ -619,8 +729,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a2f2e51882b8fc774deae76e31ff0ef78" name="a2f2e51882b8fc774deae76e31ff0ef78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f2e51882b8fc774deae76e31ff0ef78">&#9670;&#160;</a></span>runStatus()</h2>
+<a id="af8afd2bbdd5931001fd7746715524f67" name="af8afd2bbdd5931001fd7746715524f67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8afd2bbdd5931001fd7746715524f67">&#9670;&#160;</a></span>runState()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -629,7 +739,39 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a22701647ff453b11253f49ed39d2022f">ILiveListener::RunStatus</a> Mantid::API::ILiveListener::runStatus </td>
+          <td class="memname">virtual <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a22701647ff453b11253f49ed39d2022f">RunStatus</a> Mantid::API::ILiveListener::runState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Current DAS run state (NoRun / JoiningRun / BeginRun / Running / EndRun), as last reported by the background thread. </p>
+<p>This is a pure getter — calling it must not mutate any internal state. Default implementation returns NoRun for listeners that have no concept of run boundaries. Override to reflect listener-specific state. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/ddc/ILiveListener_8h_source.html#l00138">138</a> of file <a class="el" href="../../d8/ddc/ILiveListener_8h_source.html">ILiveListener.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../df/d3f/ILiveListener_8cpp_source.html#l00023">runStatus()</a>.</p>
+
+</div>
+</div>
+<a id="ad47513d57f7f27fdb81878e9b59bd06b" name="ad47513d57f7f27fdb81878e9b59bd06b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad47513d57f7f27fdb81878e9b59bd06b">&#9670;&#160;</a></span>runStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#a22701647ff453b11253f49ed39d2022f">ILiveListener::RunStatus</a> Mantid::API::ILiveListener::runStatus </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -637,13 +779,21 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Gets the current run status of the listened-to data stream. </p>
+<p>Default backward-compatible implementation of the deprecated <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#ad47513d57f7f27fdb81878e9b59bd06b" title="Gets the current run status of the listened-to data stream.">runStatus()</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd>A value of the RunStatus enumeration indicating the present status </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#af8afd2bbdd5931001fd7746715524f67" title="Current DAS run state (NoRun / JoiningRun / BeginRun / Running / EndRun), as last reported by the bac...">runState()</a> / <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#afff5b52910b20d82d6e0bd945e63a0f3" title="The run-state transition (if any) that the most recent extractData() call consumed.">lastTransition()</a> and call <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#aa6b86690d6ecbed8029cc0328823b51c" title="Get the data that&#39;s been buffered since the last call to this method (or since start() was called).">extractData()</a> to commit pending transitions. This method will be removed in a future release. </dd></dl>
+<p>Returns <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#afff5b52910b20d82d6e0bd945e63a0f3" title="The run-state transition (if any) that the most recent extractData() call consumed.">lastTransition()</a> if a run-state edge was committed by the most recent <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#aa6b86690d6ecbed8029cc0328823b51c" title="Get the data that&#39;s been buffered since the last call to this method (or since start() was called).">extractData()</a> call, otherwise returns <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#af8afd2bbdd5931001fd7746715524f67" title="Current DAS run state (NoRun / JoiningRun / BeginRun / Running / EndRun), as last reported by the bac...">runState()</a>. This reproduces the historical contract for MonitorLiveData callers that call <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#aa6b86690d6ecbed8029cc0328823b51c" title="Get the data that&#39;s been buffered since the last call to this method (or since start() was called).">extractData()</a> first and then poll <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#ad47513d57f7f27fdb81878e9b59bd06b" title="Gets the current run status of the listened-to data stream.">runStatus()</a>.</p>
+<p>Concrete listeners that previously overrode <a class="el" href="../../d3/d84/classMantid_1_1API_1_1ILiveListener.html#ad47513d57f7f27fdb81878e9b59bd06b" title="Gets the current run status of the listened-to data stream.">runStatus()</a> with side effects must migrate those side effects to onBeginRun() / onEndRun() (SNS) or onBeforeExtract() (other listeners); see the v3 refactoring spec. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d3f/ILiveListener_8cpp_source.html#l00023">23</a> of file <a class="el" href="../../df/d3f/ILiveListener_8cpp_source.html">ILiveListener.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/ddc/ILiveListener_8h_source.html#l00158">lastTransition()</a>, and <a class="el" href="../../d8/ddc/ILiveListener_8h_source.html#l00138">runState()</a>.</p>
 
 </div>
 </div>
@@ -780,8 +930,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Framework/API/inc/MantidAPI/<a class="el" href="../../d8/ddc/ILiveListener_8h_source.html">ILiveListener.h</a></li>
+<li>Framework/API/src/<a class="el" href="../../df/d3f/ILiveListener_8cpp_source.html">ILiveListener.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
