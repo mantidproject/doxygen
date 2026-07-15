@@ -38,8 +38,9 @@ var searchData=
   ['cubic_35',['cubic',['../d1/d26/classMantid_1_1Geometry_1_1PointGroup.html#ad57110ba5064c3eee62bb88ac2e5d151aec6b5414eb175379ff9efc9b3eef5814',1,'Mantid::Geometry::PointGroup::Cubic'],['../d1/d26/classMantid_1_1Geometry_1_1PointGroup.html#a75d87e7ef46871c0576cc6c8a2441bd6aec6b5414eb175379ff9efc9b3eef5814',1,'Mantid::Geometry::PointGroup::Cubic']]],
   ['cuboid_36',['CUBOID',['../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3bad4a73a6358bb0266ec8562f37e81d414',1,'Mantid::Geometry::detail::ShapeInfo']]],
   ['cumulative_37',['Cumulative',['../da/dae/classMantid_1_1Kernel_1_1EqualBinsChecker.html#a978ee279cbfd75af35bc8a9ac883d00daeb2527806a7e1ef48009eaaa785368fe',1,'Mantid::Kernel::EqualBinsChecker']]],
-  ['customizedcorrect_38',['CustomizedCorrect',['../d2/dfb/classMantid_1_1Algorithms_1_1FilterEvents.html#aa7e2f46b2fa66bce475c68e11b3ea0dead9f6dd35959a1691c668c546ed4fa6b6',1,'Mantid::Algorithms::FilterEvents']]],
-  ['cw_39',['CW',['../dc/d67/namespaceMantid_1_1Geometry.html#a4230e866454139277557368e3f19d0a1a8c186442b2a2ff618203b881d5b67d78',1,'Mantid::Geometry']]],
-  ['cyl_40',['cyl',['../dc/d67/namespaceMantid_1_1Geometry.html#a87fd87248ab0cc69edc1bc0a03ed5522a54f3fa802d10bd26123f07570da72ccb',1,'Mantid::Geometry']]],
-  ['cylinder_41',['CYLINDER',['../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3baddec32fe897072b48368b1abe03de2aa',1,'Mantid::Geometry::detail::ShapeInfo']]]
+  ['custom_38',['CUSTOM',['../d5/de7/classMantid_1_1API_1_1IFunction.html#af246e290d1343f87b4e60f2fed37e67fa72baef04098f035e8a320b03ad197818',1,'Mantid::API::IFunction']]],
+  ['customizedcorrect_39',['CustomizedCorrect',['../d2/dfb/classMantid_1_1Algorithms_1_1FilterEvents.html#aa7e2f46b2fa66bce475c68e11b3ea0dead9f6dd35959a1691c668c546ed4fa6b6',1,'Mantid::Algorithms::FilterEvents']]],
+  ['cw_40',['CW',['../dc/d67/namespaceMantid_1_1Geometry.html#a4230e866454139277557368e3f19d0a1a8c186442b2a2ff618203b881d5b67d78',1,'Mantid::Geometry']]],
+  ['cyl_41',['cyl',['../dc/d67/namespaceMantid_1_1Geometry.html#a87fd87248ab0cc69edc1bc0a03ed5522a54f3fa802d10bd26123f07570da72ccb',1,'Mantid::Geometry']]],
+  ['cylinder_42',['CYLINDER',['../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3baddec32fe897072b48368b1abe03de2aa',1,'Mantid::Geometry::detail::ShapeInfo']]]
 ];

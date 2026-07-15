@@ -116,9 +116,9 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    : QDialog(parent), m_old_params(<a class="code hl_namespace" href="../../d8/dcc/namespacestd.html">std</a>::move(old_params)), m_new_params(new_params) {</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <a class="code hl_variable" href="../../d0/da4/classMantidQt_1_1MantidWidgets_1_1RenameParDialog.html#aa6ad37008f39006d962669f46e21cacc">m_uiForm</a>.setupUi(<span class="keyword">this</span>);</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  QAbstractItemModel *model = <a class="code hl_variable" href="../../d0/da4/classMantidQt_1_1MantidWidgets_1_1RenameParDialog.html#aa6ad37008f39006d962669f46e21cacc">m_uiForm</a>.tableWidget-&gt;model();</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordtype">int</span> nparams(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(new_params.size()));</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  model-&gt;insertRows(0, nparams);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> row = 0; row &lt; nparams; ++row) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordtype">int</span> nParams(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(new_params.size()));</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  model-&gt;insertRows(0, nParams);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> row = 0; row &lt; nParams; ++row) {</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    QString par = QString::fromStdString(new_params[row]);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    model-&gt;setData(model-&gt;index(row, 0), par);</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    model-&gt;setData(model-&gt;index(row, 1), par);</div>
