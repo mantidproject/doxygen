@@ -471,6 +471,12 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ac706dfe76c174f152fb8ff4354645f05" id="r_ac706dfe76c174f152fb8ff4354645f05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d22/namespaceMantid_1_1DataObjects.html#aa76ecd067298767b02fa3a587a0812e0">DataObjects::MDHistoWorkspace_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d15/classMantid_1_1MDAlgorithms_1_1MDNorm.html#ac706dfe76c174f152fb8ff4354645f05">binInputWS</a> (const std::vector&lt; <a class="el" href="../../d4/d82/classMantid_1_1Geometry_1_1SymmetryOperation.html">Geometry::SymmetryOperation</a> &gt; &amp;symmetryOps)</td></tr>
 <tr class="memdesc:ac706dfe76c174f152fb8ff4354645f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bin(MD) input MDE workspace.  <br /></td></tr>
 <tr class="separator:ac706dfe76c174f152fb8ff4354645f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac930b50cab68b9c8d0f664674338ea5c" id="r_ac930b50cab68b9c8d0f664674338ea5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d22/namespaceMantid_1_1DataObjects.html#aa76ecd067298767b02fa3a587a0812e0">DataObjects::MDHistoWorkspace_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d15/classMantid_1_1MDAlgorithms_1_1MDNorm.html#ac930b50cab68b9c8d0f664674338ea5c">binMDEventWorkspace</a> (const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a035dd273afe7040e65d84c147a5f3c84">API::IMDEventWorkspace_sptr</a> &amp;ws, const std::string &amp;temporaryWSPropertyName, const std::string &amp;outputWSPropertyName, const std::vector&lt; <a class="el" href="../../d4/d82/classMantid_1_1Geometry_1_1SymmetryOperation.html">Geometry::SymmetryOperation</a> &gt; &amp;symmetryOps, const std::map&lt; std::string, std::string &gt; &amp;parameters)</td></tr>
+<tr class="memdesc:ac930b50cab68b9c8d0f664674338ea5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bin(MD), per symmetry operation, an MDEventWorkspace using pre-computed bin parameters.  <br /></td></tr>
+<tr class="separator:ac930b50cab68b9c8d0f664674338ea5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa21bc259232af094e305a800752386e9" id="r_aa21bc259232af094e305a800752386e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d22/namespaceMantid_1_1DataObjects.html#aa76ecd067298767b02fa3a587a0812e0">DataObjects::MDHistoWorkspace_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d15/classMantid_1_1MDAlgorithms_1_1MDNorm.html#aa21bc259232af094e305a800752386e9">binMonoSCDNormalizationWS</a> (const std::vector&lt; <a class="el" href="../../d4/d82/classMantid_1_1Geometry_1_1SymmetryOperation.html">Geometry::SymmetryOperation</a> &gt; &amp;symmetryOps)</td></tr>
+<tr class="memdesc:aa21bc259232af094e305a800752386e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bin(MD) MonoSCDNormalizationWorkspace (monochromatic single crystal diffraction)  <br /></td></tr>
+<tr class="separator:aa21bc259232af094e305a800752386e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fc9e259302b07014acca836e8aeb793" id="r_a7fc9e259302b07014acca836e8aeb793"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#af7aba0cb1e2af14b7d5018cc3c22771d">Mantid::Kernel::DblMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d15/classMantid_1_1MDAlgorithms_1_1MDNorm.html#a7fc9e259302b07014acca836e8aeb793">buildSymmetryMatrix</a> (const <a class="el" href="../../d4/d82/classMantid_1_1Geometry_1_1SymmetryOperation.html">Geometry::SymmetryOperation</a> &amp;so)</td></tr>
 <tr class="memdesc:a7fc9e259302b07014acca836e8aeb793"><td class="mdescLeft">&#160;</td><td class="mdescRight">build symmetry matrix  <br /></td></tr>
 <tr class="separator:a7fc9e259302b07014acca836e8aeb793"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -582,6 +588,9 @@ Private Attributes</h2></td></tr>
 <tr class="separator:afe863bfd7b1991d98086506baa39a5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57f75cd6a82219e2c13a3a48629295db" id="r_a57f75cd6a82219e2c13a3a48629295db"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d15/classMantid_1_1MDAlgorithms_1_1MDNorm.html#a57f75cd6a82219e2c13a3a48629295db">m_lX</a></td></tr>
 <tr class="separator:a57f75cd6a82219e2c13a3a48629295db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03dbcaede6e5bd0f9aa6940ea8538927" id="r_a03dbcaede6e5bd0f9aa6940ea8538927"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d15/classMantid_1_1MDAlgorithms_1_1MDNorm.html#a03dbcaede6e5bd0f9aa6940ea8538927">m_monochromatic</a></td></tr>
+<tr class="memdesc:a03dbcaede6e5bd0f9aa6940ea8538927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag indicating a pre-computed MonoSCDNormalizationWorkspace was provided (monochromatic single crystal diffraction, e.g.  <br /></td></tr>
+<tr class="separator:a03dbcaede6e5bd0f9aa6940ea8538927"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a469b8e1dd6e0306999b35f86bbbc54bf" id="r_a469b8e1dd6e0306999b35f86bbbc54bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d22/namespaceMantid_1_1DataObjects.html#aa76ecd067298767b02fa3a587a0812e0">DataObjects::MDHistoWorkspace_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d15/classMantid_1_1MDAlgorithms_1_1MDNorm.html#a469b8e1dd6e0306999b35f86bbbc54bf">m_normWS</a></td></tr>
 <tr class="memdesc:a469b8e1dd6e0306999b35f86bbbc54bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalization workspace.  <br /></td></tr>
 <tr class="separator:a469b8e1dd6e0306999b35f86bbbc54bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -798,11 +807,11 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01069">1069</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01154">1154</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00972">buildSymmetryMatrix()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00865">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00998">determineBasisVector()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00634">getBinParameters()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01928">Mantid::API::Algorithm::getPropertyValue()</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00093">m_backgroundWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00091">m_inputWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00096">m_isRLU</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00113">m_numSymmOps</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00100">m_UB</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00102">m_W</a>, <a class="el" href="../../d1/d9b/IMDIterator_8h_source.html#l00027">Mantid::API::NoNormalization</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01048">setQUnit()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00813">validateBinningForTemporaryDataWorkspace()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01057">buildSymmetryMatrix()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00865">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01083">determineBasisVector()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00698">getBinParameters()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01928">Mantid::API::Algorithm::getPropertyValue()</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00107">m_backgroundWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00105">m_inputWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00110">m_isRLU</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00127">m_numSymmOps</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00114">m_UB</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00116">m_W</a>, <a class="el" href="../../d1/d9b/IMDIterator_8h_source.html#l00027">Mantid::API::NoNormalization</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01133">setQUnit()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00898">validateBinningForTemporaryDataWorkspace()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00447">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">exec()</a>.</p>
 
 </div>
 </div>
@@ -834,11 +843,121 @@ Additional Inherited Members</h2></td></tr>
 <p>Runs the <a class="el" href="../../dc/dd6/classMantid_1_1MDAlgorithms_1_1BinMD.html" title="Take a MDEventWorkspace and bin it to a dense histogram in a MDHistoWorkspace.">BinMD</a> algorithm on the input to provide the output workspace All slicing algorithm properties are passed along.</p>
 <dl class="section return"><dt>Returns</dt><dd>MDHistoWorkspace as a result of the binning </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01169">1169</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01254">1254</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00972">buildSymmetryMatrix()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00865">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00998">determineBasisVector()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00634">getBinParameters()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01928">Mantid::API::Algorithm::getPropertyValue()</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00091">m_inputWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00096">m_isRLU</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00100">m_UB</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00102">m_W</a>, <a class="el" href="../../d1/d9b/IMDIterator_8h_source.html#l00027">Mantid::API::NoNormalization</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01048">setQUnit()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00813">validateBinningForTemporaryDataWorkspace()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01289">binMDEventWorkspace()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00698">getBinParameters()</a>, and <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00105">m_inputWS</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00447">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">exec()</a>.</p>
+
+</div>
+</div>
+<a id="ac930b50cab68b9c8d0f664674338ea5c" name="ac930b50cab68b9c8d0f664674338ea5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac930b50cab68b9c8d0f664674338ea5c">&#9670;&#160;</a></span>binMDEventWorkspace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d22/namespaceMantid_1_1DataObjects.html#aa76ecd067298767b02fa3a587a0812e0">DataObjects::MDHistoWorkspace_sptr</a> Mantid::MDAlgorithms::MDNorm::binMDEventWorkspace </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a035dd273afe7040e65d84c147a5f3c84">API::IMDEventWorkspace_sptr</a> &amp;&#160;</td>
+          <td class="paramname"><em>ws</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>temporaryWSPropertyName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>outputWSPropertyName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../d4/d82/classMantid_1_1Geometry_1_1SymmetryOperation.html">Geometry::SymmetryOperation</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>symmetryOps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; std::string, std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>parameters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Bin(MD), per symmetry operation, an MDEventWorkspace using pre-computed bin parameters. </p>
+<p>Bin(MD), per symmetry operation, an MDEventWorkspace using pre-computed bin parameters, accumulating across symmetry operations via temporaryWSPropertyName.</p>
+<p>Shared by binInputWS and (for monochromatic-SCD input) binMonoSCDNormalizationWS, so that data and normalization end up on identical grids.</p>
+<p>Used both to bin the data (via binInputWS) and, for monochromatic-SCD input, to bin the pre-computed normalization workspace (via binMonoSCDNormalizationWS) with the exact same parameters, so both end up on identical grids. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ws</td><td>the MDEventWorkspace to bin </td></tr>
+    <tr><td class="paramname">temporaryWSPropertyName</td><td>name of the <a class="el" href="../../dc/d15/classMantid_1_1MDAlgorithms_1_1MDNorm.html" title="MDNormalization : Bin single crystal diffraction or direct geometry inelastic data and calculate the ...">MDNorm</a> property holding an optional accumulation workspace (e.g. "TemporaryDataWorkspace" or "TemporaryNormalizationWorkspace") </td></tr>
+    <tr><td class="paramname">outputWSPropertyName</td><td>name of the <a class="el" href="../../dc/d15/classMantid_1_1MDAlgorithms_1_1MDNorm.html" title="MDNormalization : Bin single crystal diffraction or direct geometry inelastic data and calculate the ...">MDNorm</a> property used to name the <a class="el" href="../../dc/dd6/classMantid_1_1MDAlgorithms_1_1BinMD.html" title="Take a MDEventWorkspace and bin it to a dense histogram in a MDHistoWorkspace.">BinMD</a> output (e.g. "OutputDataWorkspace" or "OutputNormalizationWorkspace") </td></tr>
+    <tr><td class="paramname">symmetryOps</td><td>symmetry operations to apply </td></tr>
+    <tr><td class="paramname">parameters</td><td>bin parameters, as returned by <a class="el" href="../../dc/d15/classMantid_1_1MDAlgorithms_1_1MDNorm.html#a4b2c5197415367489ef26581cd3959d7" title="Calculate binning parameters.">getBinParameters()</a>, bound to InputWorkspace </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01289">1289</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01057">buildSymmetryMatrix()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00865">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01083">determineBasisVector()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01928">Mantid::API::Algorithm::getPropertyValue()</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00110">m_isRLU</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00114">m_UB</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00116">m_W</a>, <a class="el" href="../../d1/d9b/IMDIterator_8h_source.html#l00027">Mantid::API::NoNormalization</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01133">setQUnit()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00898">validateBinningForTemporaryDataWorkspace()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01254">binInputWS()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01267">binMonoSCDNormalizationWS()</a>.</p>
+
+</div>
+</div>
+<a id="aa21bc259232af094e305a800752386e9" name="aa21bc259232af094e305a800752386e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa21bc259232af094e305a800752386e9">&#9670;&#160;</a></span>binMonoSCDNormalizationWS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d22/namespaceMantid_1_1DataObjects.html#aa76ecd067298767b02fa3a587a0812e0">DataObjects::MDHistoWorkspace_sptr</a> Mantid::MDAlgorithms::MDNorm::binMonoSCDNormalizationWS </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../d4/d82/classMantid_1_1Geometry_1_1SymmetryOperation.html">Geometry::SymmetryOperation</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>symmetryOps</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Bin(MD) MonoSCDNormalizationWorkspace (monochromatic single crystal diffraction) </p>
+<p>Bin(MD) MonoSCDNormalizationWorkspace with the exact same bin parameters used for InputWorkspace, so that the normalization ends up on the same grid as the data.</p>
+<p><a class="el" href="../../dc/d15/classMantid_1_1MDAlgorithms_1_1MDNorm.html#a4b2c5197415367489ef26581cd3959d7" title="Calculate binning parameters.">getBinParameters()</a> is a pure function of m_inputWS/m_isRLU/the current property values, none of which change during <a class="el" href="../../dc/d15/classMantid_1_1MDAlgorithms_1_1MDNorm.html#a30c3934b194d9cbb3d93c7fd62b4fa62" title="Execute the algorithm.">exec()</a>, so calling it again here (rather than threading through the map built in binInputWS) reproduces an identical parameters map. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01267">1267</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01289">binMDEventWorkspace()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00698">getBinParameters()</a>, and <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">exec()</a>.</p>
 
 </div>
 </div>
@@ -876,11 +995,11 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>:: matrix </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00972">972</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01057">1057</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00924">Mantid::Kernel::Matrix&lt; T &gt;::Invert()</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00675">Mantid::Kernel::Matrix&lt; T &gt;::setColumn()</a>, and <a class="el" href="../../dd/db0/Geometry_2src_2Crystal_2SymmetryOperation_8cpp_source.html#l00127">Mantid::Geometry::SymmetryOperation::transformHKL()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01069">binBackgroundWS()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01169">binInputWS()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01154">binBackgroundWS()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01289">binMDEventWorkspace()</a>.</p>
 
 </div>
 </div>
@@ -909,11 +1028,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Stores the X values from each H,K,L, and optionally DeltaE dimension as member variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01293">1293</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01415">1415</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00121">m_dEIntegrated</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00117">m_diffraction</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00115">m_Ei</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00109">m_eIdx</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00107">m_eX</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00109">m_hIdx</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00107">m_hX</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00109">m_kIdx</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00107">m_kX</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00109">m_lIdx</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00107">m_lX</a>, and <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00088">m_normWS</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00138">m_dEIntegrated</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00131">m_diffraction</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00129">m_Ei</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00123">m_eIdx</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00121">m_eX</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00123">m_hIdx</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00121">m_hX</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00123">m_kIdx</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00121">m_kX</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00123">m_lIdx</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00121">m_lX</a>, and <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00102">m_normWS</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00447">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">exec()</a>.</p>
 
 </div>
 </div>
@@ -981,11 +1100,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01356">1356</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01478">1478</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01748">calcIntegralsForIntersections()</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01870">calcIntegralsForIntersections()</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01467">calculateNormalization()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01589">calculateNormalization()</a>.</p>
 
 </div>
 </div>
@@ -1046,11 +1165,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01748">1748</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01870">1870</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00264">Mantid::API::MatrixWorkspace::x()</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00265">Mantid::API::MatrixWorkspace::y()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01356">calcDiffractionIntersectionIntegral()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01478">calcDiffractionIntersectionIntegral()</a>.</p>
 
 </div>
 </div>
@@ -1146,11 +1265,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01388">1388</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01510">1510</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00067">Mantid::Kernel::AtomicOp()</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838a63bcabf86a9a991864777c631c5b7617">Mantid::Kernel::delta</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00093">m_backgroundWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00117">m_diffraction</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00115">m_Ei</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00088">m_normWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00105">m_transformation</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00375">Mantid::Kernel::Matrix&lt; T &gt;::multiplyPoint()</a>, and <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00098">rhs</a>.</p>
+<p class="reference">References <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00067">Mantid::Kernel::AtomicOp()</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838a63bcabf86a9a991864777c631c5b7617">Mantid::Kernel::delta</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00107">m_backgroundWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00131">m_diffraction</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00129">m_Ei</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00102">m_normWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00119">m_transformation</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00375">Mantid::Kernel::Matrix&lt; T &gt;::multiplyPoint()</a>, and <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00098">rhs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01467">calculateNormalization()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01589">calculateNormalization()</a>.</p>
 
 </div>
 </div>
@@ -1225,11 +1344,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01615">1615</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01737">1737</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00127">convention</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00022">fabs</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00121">m_dEIntegrated</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00117">m_diffraction</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00115">m_Ei</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00107">m_eX</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00107">m_hX</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00107">m_kX</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00107">m_lX</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00238">Mantid::Kernel::V3D::X()</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00239">Mantid::Kernel::V3D::Y()</a>, and <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00240">Mantid::Kernel::V3D::Z()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00144">convention</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00022">fabs</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00138">m_dEIntegrated</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00131">m_diffraction</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00129">m_Ei</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00121">m_eX</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00121">m_hX</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00121">m_kX</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00121">m_lX</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00238">Mantid::Kernel::V3D::X()</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00239">Mantid::Kernel::V3D::Y()</a>, and <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00240">Mantid::Kernel::V3D::Z()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01467">calculateNormalization()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01589">calculateNormalization()</a>.</p>
 
 </div>
 </div>
@@ -1290,11 +1409,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01467">1467</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01589">1589</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01356">calcDiffractionIntersectionIntegral()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01388">calcSingleDetectorNorm()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01615">calculateIntersections()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01329">calQTransform()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00119">m_accumulate</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00093">m_backgroundWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00125">m_beamDir</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00089">m_bkgdNormWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00117">m_diffraction</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00091">m_inputWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00088">m_normWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00111">m_numExptInfos</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00113">m_numSymmOps</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00123">m_samplePos</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00117">PARALLEL_CHECK_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00102">PARALLEL_END_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00094">PARALLEL_START_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00234">PRAGMA_OMP</a>, and <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00022">Mantid::Kernel::threadSafe()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01478">calcDiffractionIntersectionIntegral()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01510">calcSingleDetectorNorm()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01737">calculateIntersections()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01451">calQTransform()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00136">m_accumulate</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00107">m_backgroundWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00142">m_beamDir</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00103">m_bkgdNormWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00131">m_diffraction</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00105">m_inputWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00102">m_normWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00125">m_numExptInfos</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00127">m_numSymmOps</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00140">m_samplePos</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00117">PARALLEL_CHECK_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00102">PARALLEL_END_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00094">PARALLEL_START_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00234">PRAGMA_OMP</a>, and <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00022">Mantid::Kernel::threadSafe()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00447">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">exec()</a>.</p>
 
 </div>
 </div>
@@ -1342,11 +1461,11 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01329">1329</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01451">1451</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00570">Mantid::API::Run::getGoniometerMatrix()</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00924">Mantid::Kernel::Matrix&lt; T &gt;::Invert()</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00100">m_UB</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00102">m_W</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00497">Mantid::API::ExperimentInfo::run()</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00675">Mantid::Kernel::Matrix&lt; T &gt;::setColumn()</a>, and <a class="el" href="../../dd/db0/Geometry_2src_2Crystal_2SymmetryOperation_8cpp_source.html#l00127">Mantid::Geometry::SymmetryOperation::transformHKL()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00570">Mantid::API::Run::getGoniometerMatrix()</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00924">Mantid::Kernel::Matrix&lt; T &gt;::Invert()</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00114">m_UB</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00116">m_W</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00497">Mantid::API::ExperimentInfo::run()</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00675">Mantid::Kernel::Matrix&lt; T &gt;::setColumn()</a>, and <a class="el" href="../../dd/db0/Geometry_2src_2Crystal_2SymmetryOperation_8cpp_source.html#l00127">Mantid::Geometry::SymmetryOperation::transformHKL()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01467">calculateNormalization()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01589">calculateNormalization()</a>.</p>
 
 </div>
 </div>
@@ -1406,11 +1525,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00791">791</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00876">876</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/df1/MDHistoWorkspace_8h_source.html#l00052">Mantid::DataObjects::MDHistoWorkspace::clone()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00093">m_backgroundWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00089">m_bkgdNormWS</a>, and <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00049">tmp</a>.</p>
+<p class="reference">References <a class="el" href="../../de/df1/MDHistoWorkspace_8h_source.html#l00052">Mantid::DataObjects::MDHistoWorkspace::clone()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00107">m_backgroundWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00103">m_bkgdNormWS</a>, and <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00049">tmp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00447">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">exec()</a>.</p>
 
 </div>
 </div>
@@ -1446,11 +1565,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00778">778</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00863">863</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/df1/MDHistoWorkspace_8h_source.html#l00052">Mantid::DataObjects::MDHistoWorkspace::clone()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00119">m_accumulate</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00088">m_normWS</a>, and <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00049">tmp</a>.</p>
+<p class="reference">References <a class="el" href="../../de/df1/MDHistoWorkspace_8h_source.html#l00052">Mantid::DataObjects::MDHistoWorkspace::clone()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00136">m_accumulate</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00102">m_normWS</a>, and <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00049">tmp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00447">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">exec()</a>.</p>
 
 </div>
 </div>
@@ -1525,11 +1644,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00998">998</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01083">1083</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00121">m_dEIntegrated</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00109">m_eIdx</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00109">m_hIdx</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00096">m_isRLU</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00109">m_kIdx</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00109">m_lIdx</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00098">m_Q0Basis</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00098">m_Q1Basis</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00098">m_Q2Basis</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00605">QDimensionName()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00589">QDimensionNameQSample()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00138">m_dEIntegrated</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00123">m_eIdx</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00123">m_hIdx</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00110">m_isRLU</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00123">m_kIdx</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00123">m_lIdx</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00112">m_Q0Basis</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00112">m_Q1Basis</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00112">m_Q2Basis</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00669">QDimensionName()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00653">QDimensionNameQSample()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01069">binBackgroundWS()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01169">binInputWS()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01154">binBackgroundWS()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01289">binMDEventWorkspace()</a>.</p>
 
 </div>
 </div>
@@ -1585,11 +1704,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00570">570</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00634">634</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00865">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00570">divideMD()</a>, and <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00098">rhs</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00865">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00634">divideMD()</a>, and <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00098">rhs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00570">divideMD()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00447">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00634">divideMD()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">exec()</a>.</p>
 
 </div>
 </div>
@@ -1620,9 +1739,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#aace3ff902f31d5cfa309fff3d6b069aa">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00447">447</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">499</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01069">binBackgroundWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01169">binInputWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01293">cacheDimensionXValues()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01467">calculateNormalization()</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00127">convention</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00791">createBackgroundNormalizationWS()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00865">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00778">createNormalizationWS()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00570">divideMD()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00423">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01928">Mantid::API::Algorithm::getPropertyValue()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01252">getValuesFromOtherDimensions()</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00119">m_accumulate</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00093">m_backgroundWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00125">m_beamDir</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00089">m_bkgdNormWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00117">m_diffraction</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00115">m_Ei</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00091">m_inputWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00096">m_isRLU</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00088">m_normWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00111">m_numExptInfos</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00113">m_numSymmOps</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00123">m_samplePos</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00352">Mantid::Kernel::normalize()</a>, <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00270">Mantid::Kernel::IPropertyManager::setProperty()</a>, <a class="el" href="../../d1/d32/classMantid_1_1Kernel_1_1Property.html#ae89a523a4082248ef6119d751d385c08">Mantid::Kernel::Property::value()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01154">binBackgroundWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01254">binInputWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01267">binMonoSCDNormalizationWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01415">cacheDimensionXValues()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01589">calculateNormalization()</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00144">convention</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00876">createBackgroundNormalizationWS()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00865">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00863">createNormalizationWS()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00634">divideMD()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00423">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01928">Mantid::API::Algorithm::getPropertyValue()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01374">getValuesFromOtherDimensions()</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00136">m_accumulate</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00107">m_backgroundWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00142">m_beamDir</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00103">m_bkgdNormWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00131">m_diffraction</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00129">m_Ei</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00105">m_inputWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00110">m_isRLU</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00134">m_monochromatic</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00102">m_normWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00125">m_numExptInfos</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00127">m_numSymmOps</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00140">m_samplePos</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00352">Mantid::Kernel::normalize()</a>, <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00270">Mantid::Kernel::IPropertyManager::setProperty()</a>, <a class="el" href="../../d1/d32/classMantid_1_1Kernel_1_1Property.html#ae89a523a4082248ef6119d751d385c08">Mantid::Kernel::Property::value()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
 </div>
 </div>
@@ -1652,11 +1771,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Calculate binning parameters. </p>
 <dl class="section return"><dt>Returns</dt><dd>map of parameters to be passed to <a class="el" href="../../dc/dd6/classMantid_1_1MDAlgorithms_1_1BinMD.html" title="Take a MDEventWorkspace and bin it to a dense histogram in a MDHistoWorkspace.">BinMD</a> (non axis-aligned) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00634">634</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00698">698</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/d3d/Geometry_2src_2Crystal_2UnitCell_8cpp_source.html#l00094">Mantid::Geometry::UnitCell::a()</a>, <a class="el" href="../../d8/d3d/Geometry_2src_2Crystal_2UnitCell_8cpp_source.html#l00123">Mantid::Geometry::UnitCell::b()</a>, <a class="el" href="../../d8/d3d/Geometry_2src_2Crystal_2UnitCell_8cpp_source.html#l00128">Mantid::Geometry::UnitCell::c()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../dd/d09/PhysicalConstants_8h_source.html#l00029">Mantid::PhysicalConstants::h</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00117">m_diffraction</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00091">m_inputWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00096">m_isRLU</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00098">m_Q0Basis</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00098">m_Q1Basis</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00098">m_Q2Basis</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00105">m_transformation</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00100">m_UB</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00102">m_W</a>, <a class="el" href="../../dd/d09/PhysicalConstants_8h_source.html#l00051">Mantid::PhysicalConstants::meV</a>, <a class="el" href="../../dd/d09/PhysicalConstants_8h_source.html#l00039">Mantid::PhysicalConstants::NeutronMass</a>, <a class="el" href="../../db/d31/Geometry_2src_2Crystal_2OrientedLattice_8cpp_source.html#l00115">Mantid::Geometry::OrientedLattice::setUB()</a>, <a class="el" href="../../de/d6d/Strings_8cpp_source.html#l00734">Mantid::Kernel::Strings::toString()</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00793">Mantid::Kernel::Matrix&lt; T &gt;::Transpose()</a>, and <a class="el" href="../../d1/d32/classMantid_1_1Kernel_1_1Property.html#ae89a523a4082248ef6119d751d385c08">Mantid::Kernel::Property::value()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d3d/Geometry_2src_2Crystal_2UnitCell_8cpp_source.html#l00094">Mantid::Geometry::UnitCell::a()</a>, <a class="el" href="../../d8/d3d/Geometry_2src_2Crystal_2UnitCell_8cpp_source.html#l00123">Mantid::Geometry::UnitCell::b()</a>, <a class="el" href="../../d8/d3d/Geometry_2src_2Crystal_2UnitCell_8cpp_source.html#l00128">Mantid::Geometry::UnitCell::c()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../dd/d09/PhysicalConstants_8h_source.html#l00029">Mantid::PhysicalConstants::h</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00131">m_diffraction</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00105">m_inputWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00110">m_isRLU</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00134">m_monochromatic</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00112">m_Q0Basis</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00112">m_Q1Basis</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00112">m_Q2Basis</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00119">m_transformation</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00114">m_UB</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00116">m_W</a>, <a class="el" href="../../dd/d09/PhysicalConstants_8h_source.html#l00051">Mantid::PhysicalConstants::meV</a>, <a class="el" href="../../dd/d09/PhysicalConstants_8h_source.html#l00039">Mantid::PhysicalConstants::NeutronMass</a>, <a class="el" href="../../db/d31/Geometry_2src_2Crystal_2OrientedLattice_8cpp_source.html#l00115">Mantid::Geometry::OrientedLattice::setUB()</a>, <a class="el" href="../../de/d6d/Strings_8cpp_source.html#l00734">Mantid::Kernel::Strings::toString()</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00793">Mantid::Kernel::Matrix&lt; T &gt;::Transpose()</a>, and <a class="el" href="../../d1/d32/classMantid_1_1Kernel_1_1Property.html#ae89a523a4082248ef6119d751d385c08">Mantid::Kernel::Property::value()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01069">binBackgroundWS()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01169">binInputWS()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01154">binBackgroundWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01254">binInputWS()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01267">binMonoSCDNormalizationWS()</a>.</p>
 
 </div>
 </div>
@@ -1704,11 +1823,11 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A vector of values from other dimensions to be include in normalized MD position calculation </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01252">1252</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01374">1374</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00091">m_inputWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00088">m_normWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00105">m_transformation</a>, <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00144">Mantid::Kernel::Matrix&lt; T &gt;::numRows()</a>, <a class="el" href="../../d1/dd6/Statistics_8h_source.html#l00024">Mantid::Kernel::Math::TimeAveragedMean</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00105">m_inputWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00102">m_normWS</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00119">m_transformation</a>, <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00144">Mantid::Kernel::Matrix&lt; T &gt;::numRows()</a>, <a class="el" href="../../d1/dd6/Statistics_8h_source.html#l00024">Mantid::Kernel::Math::TimeAveragedMean</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00447">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">exec()</a>.</p>
 
 </div>
 </div>
@@ -1775,7 +1894,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00069">69</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00605">QDimensionName()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00669">QDimensionName()</a>.</p>
 
 </div>
 </div>
@@ -1812,11 +1931,11 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string containing the name </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00605">605</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00669">669</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00069">name()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00998">determineBasisVector()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00813">validateBinningForTemporaryDataWorkspace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01083">determineBasisVector()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00898">validateBinningForTemporaryDataWorkspace()</a>.</p>
 
 </div>
 </div>
@@ -1853,9 +1972,9 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string containing the name </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00589">589</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00653">653</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00998">determineBasisVector()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00813">validateBinningForTemporaryDataWorkspace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01083">determineBasisVector()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00898">validateBinningForTemporaryDataWorkspace()</a>.</p>
 
 </div>
 </div>
@@ -1933,11 +2052,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01048">1048</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01133">1133</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00077">Mantid::Kernel::Matrix&lt; T &gt;::getVector()</a>, <a class="el" href="../../de/da0/HKL_8h_source.html#l00026">Mantid::Geometry::HKL::HKLName</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00102">m_W</a>, <a class="el" href="../../df/d73/MDFrameFactory_8cpp_source.html#l00086">Mantid::Geometry::makeMDFrameFactoryChain()</a>, and <a class="el" href="../../d3/d62/UnitLabelTypes_8h_source.html#l00046">Mantid::Kernel::Units::Symbol::RLU</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00077">Mantid::Kernel::Matrix&lt; T &gt;::getVector()</a>, <a class="el" href="../../de/da0/HKL_8h_source.html#l00026">Mantid::Geometry::HKL::HKLName</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00116">m_W</a>, <a class="el" href="../../df/d73/MDFrameFactory_8cpp_source.html#l00086">Mantid::Geometry::makeMDFrameFactoryChain()</a>, and <a class="el" href="../../d3/d62/UnitLabelTypes_8h_source.html#l00046">Mantid::Kernel::Units::Symbol::RLU</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01069">binBackgroundWS()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01169">binInputWS()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01154">binBackgroundWS()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01289">binMDEventWorkspace()</a>.</p>
 
 </div>
 </div>
@@ -2016,11 +2135,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00813">813</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00898">898</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00423">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00096">m_isRLU</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00098">m_Q0Basis</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00098">m_Q1Basis</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00098">m_Q2Basis</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00605">QDimensionName()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00589">QDimensionNameQSample()</a>, <a class="el" href="../../df/d35/namespaceMantid_1_1Kernel_1_1VectorHelper.html#a75a21518e0b15421a401a08c7262a1c3">Mantid::Kernel::VectorHelper::splitStringIntoVector&lt; double &gt;()</a>, <a class="el" href="../../df/d35/namespaceMantid_1_1Kernel_1_1VectorHelper.html#a35e52559bedac89c1442c7dce353d784">Mantid::Kernel::VectorHelper::splitStringIntoVector&lt; size_t &gt;()</a>, <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00423">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00110">m_isRLU</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00112">m_Q0Basis</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00112">m_Q1Basis</a>, <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00112">m_Q2Basis</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00669">QDimensionName()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00653">QDimensionNameQSample()</a>, <a class="el" href="../../df/d35/namespaceMantid_1_1Kernel_1_1VectorHelper.html#a75a21518e0b15421a401a08c7262a1c3">Mantid::Kernel::VectorHelper::splitStringIntoVector&lt; double &gt;()</a>, <a class="el" href="../../df/d35/namespaceMantid_1_1Kernel_1_1VectorHelper.html#a35e52559bedac89c1442c7dce353d784">Mantid::Kernel::VectorHelper::splitStringIntoVector&lt; size_t &gt;()</a>, <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01069">binBackgroundWS()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01169">binInputWS()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01154">binBackgroundWS()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01289">binMDEventWorkspace()</a>.</p>
 
 </div>
 </div>
@@ -2053,7 +2172,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#ace18d3c42732dbb269705afcaba59813">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00213">213</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00223">223</a> of file <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html">MDNorm.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l01048">Mantid::Kernel::Matrix&lt; T &gt;::determinant()</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00022">fabs</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d0/d55/QLab_8h_source.html#l00034">Mantid::Geometry::QLab::QLabName</a>, <a class="el" href="../../da/d64/QSample_8h_source.html#l00022">Mantid::Geometry::QSample::QSampleName</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00675">Mantid::Kernel::Matrix&lt; T &gt;::setColumn()</a>, and <a class="el" href="../../de/d6d/Strings_8cpp_source.html#l00734">Mantid::Kernel::Strings::toString()</a>.</p>
 
@@ -2114,9 +2233,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>ki-kf for Inelastic convention; kf-ki for Crystallography convention </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00127">127</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00144">144</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01615">calculateIntersections()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00447">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01737">calculateIntersections()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">exec()</a>.</p>
 
 </div>
 </div>
@@ -2142,9 +2261,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Flag to accumulate normalization. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00119">119</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00136">136</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01467">calculateNormalization()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00778">createNormalizationWS()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00447">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01589">calculateNormalization()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00863">createNormalizationWS()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">exec()</a>.</p>
 
 </div>
 </div>
@@ -2170,9 +2289,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Input background workspace. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00093">93</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00107">107</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01069">binBackgroundWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01388">calcSingleDetectorNorm()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01467">calculateNormalization()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00791">createBackgroundNormalizationWS()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00447">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01154">binBackgroundWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01510">calcSingleDetectorNorm()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01589">calculateNormalization()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00876">createBackgroundNormalizationWS()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">exec()</a>.</p>
 
 </div>
 </div>
@@ -2198,9 +2317,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Beam direction. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00125">125</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00142">142</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01467">calculateNormalization()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00447">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01589">calculateNormalization()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">exec()</a>.</p>
 
 </div>
 </div>
@@ -2224,9 +2343,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00089">89</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00103">103</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01467">calculateNormalization()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00791">createBackgroundNormalizationWS()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00447">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01589">calculateNormalization()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00876">createBackgroundNormalizationWS()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">exec()</a>.</p>
 
 </div>
 </div>
@@ -2252,9 +2371,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Flag to indicate that the energy dimension is integrated. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00121">121</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00138">138</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01293">cacheDimensionXValues()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01615">calculateIntersections()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00998">determineBasisVector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01415">cacheDimensionXValues()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01737">calculateIntersections()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01083">determineBasisVector()</a>.</p>
 
 </div>
 </div>
@@ -2280,9 +2399,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Flag indicating if the input workspace is from diffraction. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00117">117</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00131">131</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01293">cacheDimensionXValues()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01388">calcSingleDetectorNorm()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01615">calculateIntersections()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01467">calculateNormalization()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00447">exec()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00634">getBinParameters()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01415">cacheDimensionXValues()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01510">calcSingleDetectorNorm()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01737">calculateIntersections()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01589">calculateNormalization()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">exec()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00698">getBinParameters()</a>.</p>
 
 </div>
 </div>
@@ -2308,9 +2427,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Cached value of incident energy dor direct geometry. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00115">115</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00129">129</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01293">cacheDimensionXValues()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01388">calcSingleDetectorNorm()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01615">calculateIntersections()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00447">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01415">cacheDimensionXValues()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01510">calcSingleDetectorNorm()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01737">calculateIntersections()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">exec()</a>.</p>
 
 </div>
 </div>
@@ -2334,9 +2453,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00109">109</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00123">123</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01293">cacheDimensionXValues()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00998">determineBasisVector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01415">cacheDimensionXValues()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01083">determineBasisVector()</a>.</p>
 
 </div>
 </div>
@@ -2360,9 +2479,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00107">107</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00121">121</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01293">cacheDimensionXValues()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01615">calculateIntersections()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01415">cacheDimensionXValues()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01737">calculateIntersections()</a>.</p>
 
 </div>
 </div>
@@ -2388,9 +2507,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>index of h,k,l, dE dimensions in the output workspaces </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00109">109</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00123">123</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01293">cacheDimensionXValues()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00998">determineBasisVector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01415">cacheDimensionXValues()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01083">determineBasisVector()</a>.</p>
 
 </div>
 </div>
@@ -2416,9 +2535,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>cached X values along dimensions h,k,l. dE </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00107">107</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00121">121</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01293">cacheDimensionXValues()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01615">calculateIntersections()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01415">cacheDimensionXValues()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01737">calculateIntersections()</a>.</p>
 
 </div>
 </div>
@@ -2444,9 +2563,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Input workspace. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00091">91</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00105">105</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01069">binBackgroundWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01169">binInputWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01467">calculateNormalization()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00447">exec()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00634">getBinParameters()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01252">getValuesFromOtherDimensions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01154">binBackgroundWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01254">binInputWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01589">calculateNormalization()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">exec()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00698">getBinParameters()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01374">getValuesFromOtherDimensions()</a>.</p>
 
 </div>
 </div>
@@ -2472,9 +2591,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>flag for reciprocal lattice units </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00096">96</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00110">110</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01069">binBackgroundWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01169">binInputWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00998">determineBasisVector()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00447">exec()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00634">getBinParameters()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00813">validateBinningForTemporaryDataWorkspace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01154">binBackgroundWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01289">binMDEventWorkspace()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01083">determineBasisVector()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">exec()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00698">getBinParameters()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00898">validateBinningForTemporaryDataWorkspace()</a>.</p>
 
 </div>
 </div>
@@ -2498,9 +2617,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00109">109</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00123">123</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01293">cacheDimensionXValues()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00998">determineBasisVector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01415">cacheDimensionXValues()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01083">determineBasisVector()</a>.</p>
 
 </div>
 </div>
@@ -2524,9 +2643,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00107">107</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00121">121</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01293">cacheDimensionXValues()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01615">calculateIntersections()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01415">cacheDimensionXValues()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01737">calculateIntersections()</a>.</p>
 
 </div>
 </div>
@@ -2550,9 +2669,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00109">109</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00123">123</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01293">cacheDimensionXValues()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00998">determineBasisVector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01415">cacheDimensionXValues()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01083">determineBasisVector()</a>.</p>
 
 </div>
 </div>
@@ -2576,9 +2695,38 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00107">107</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00121">121</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01293">cacheDimensionXValues()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01615">calculateIntersections()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01415">cacheDimensionXValues()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01737">calculateIntersections()</a>.</p>
+
+</div>
+</div>
+<a id="a03dbcaede6e5bd0f9aa6940ea8538927" name="a03dbcaede6e5bd0f9aa6940ea8538927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03dbcaede6e5bd0f9aa6940ea8538927">&#9670;&#160;</a></span>m_monochromatic</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mantid::MDAlgorithms::MDNorm::m_monochromatic</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Flag indicating a pre-computed MonoSCDNormalizationWorkspace was provided (monochromatic single crystal diffraction, e.g. </p>
+<p>WAND, DEMAND) </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00134">134</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">exec()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00698">getBinParameters()</a>.</p>
 
 </div>
 </div>
@@ -2604,9 +2752,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Normalization workspace. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00088">88</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00102">102</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01293">cacheDimensionXValues()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01388">calcSingleDetectorNorm()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01467">calculateNormalization()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00778">createNormalizationWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00447">exec()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01252">getValuesFromOtherDimensions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01415">cacheDimensionXValues()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01510">calcSingleDetectorNorm()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01589">calculateNormalization()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00863">createNormalizationWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">exec()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01374">getValuesFromOtherDimensions()</a>.</p>
 
 </div>
 </div>
@@ -2632,9 +2780,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>number of experimentInfo objects </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00111">111</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00125">125</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01467">calculateNormalization()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00447">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01589">calculateNormalization()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">exec()</a>.</p>
 
 </div>
 </div>
@@ -2660,9 +2808,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>number of symmetry operations </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00113">113</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00127">127</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01069">binBackgroundWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01467">calculateNormalization()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00447">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01154">binBackgroundWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01589">calculateNormalization()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">exec()</a>.</p>
 
 </div>
 </div>
@@ -2688,9 +2836,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The projection vectors. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00098">98</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00112">112</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00998">determineBasisVector()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00634">getBinParameters()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00813">validateBinningForTemporaryDataWorkspace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01083">determineBasisVector()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00698">getBinParameters()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00898">validateBinningForTemporaryDataWorkspace()</a>.</p>
 
 </div>
 </div>
@@ -2714,9 +2862,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00098">98</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00112">112</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00998">determineBasisVector()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00634">getBinParameters()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00813">validateBinningForTemporaryDataWorkspace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01083">determineBasisVector()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00698">getBinParameters()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00898">validateBinningForTemporaryDataWorkspace()</a>.</p>
 
 </div>
 </div>
@@ -2740,9 +2888,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00098">98</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00112">112</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00998">determineBasisVector()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00634">getBinParameters()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00813">validateBinningForTemporaryDataWorkspace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01083">determineBasisVector()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00698">getBinParameters()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00898">validateBinningForTemporaryDataWorkspace()</a>.</p>
 
 </div>
 </div>
@@ -2768,9 +2916,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Sample position. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00123">123</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00140">140</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01467">calculateNormalization()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00447">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01589">calculateNormalization()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00499">exec()</a>.</p>
 
 </div>
 </div>
@@ -2796,9 +2944,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>matrix for transforming from intersections to positions in the normalization workspace </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00105">105</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00119">119</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01388">calcSingleDetectorNorm()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00634">getBinParameters()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01252">getValuesFromOtherDimensions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01510">calcSingleDetectorNorm()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00698">getBinParameters()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01374">getValuesFromOtherDimensions()</a>.</p>
 
 </div>
 </div>
@@ -2824,9 +2972,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>UB matrix. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00100">100</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00114">114</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01069">binBackgroundWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01169">binInputWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01329">calQTransform()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00634">getBinParameters()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01154">binBackgroundWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01289">binMDEventWorkspace()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01451">calQTransform()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00698">getBinParameters()</a>.</p>
 
 </div>
 </div>
@@ -2852,9 +3000,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>W matrix. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00102">102</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d21/MDNorm_8h_source.html#l00116">116</a> of file <a class="el" href="../../d6/d21/MDNorm_8h_source.html">MDNorm.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01069">binBackgroundWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01169">binInputWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01329">calQTransform()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00634">getBinParameters()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01048">setQUnit()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01154">binBackgroundWS()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01289">binMDEventWorkspace()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01451">calQTransform()</a>, <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l00698">getBinParameters()</a>, and <a class="el" href="../../d1/db3/MDNorm_8cpp_source.html#l01133">setQUnit()</a>.</p>
 
 </div>
 </div>
