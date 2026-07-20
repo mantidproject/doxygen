@@ -147,20 +147,17 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  std::unique_ptr&lt;TopoDS_Shape&gt; m_objSurface; </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordtype">void</span> OCAnalyzeObject();</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordtype">size_t</span> numPoints() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordtype">size_t</span> numFaces() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordtype">void</span> setupPoints();</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordtype">void</span> setupFaces();</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keywordtype">bool</span> hasOCSurface() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keyword">const</span> TopoDS_Shape &amp;getOCSurface();</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>};</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordtype">void</span> setupMesh(); </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordtype">bool</span> hasOCSurface() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keyword">const</span> TopoDS_Shape &amp;getOCSurface();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>};</div>
 </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>} <span class="comment">// namespace detail</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>} <span class="comment">// namespace Geometry</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>} <span class="comment">// namespace Mantid</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>} <span class="comment">// namespace detail</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>} <span class="comment">// namespace Geometry</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>} <span class="comment">// namespace Mantid</span></div>
 <div class="ttc" id="aTrustRegionMinimizer_8cpp_html_a5a07dc43c2c656f0a9241e1d9c266bf3"><div class="ttname"><a href="../../dc/d98/TrustRegionMinimizer_8cpp.html#a5a07dc43c2c656f0a9241e1d9c266bf3">obj</a></div><div class="ttdeci">double obj</div><div class="ttdoc">the value of the quadratic function</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d98/TrustRegionMinimizer_8cpp_source.html#l00495">TrustRegionMinimizer.cpp:495</a></div></div>
 <div class="ttc" id="aclassMantid_1_1Geometry_1_1CSGObject_html"><div class="ttname"><a href="../../de/d0c/classMantid_1_1Geometry_1_1CSGObject.html">Mantid::Geometry::CSGObject</a></div><div class="ttdoc">Constructive Solid Geometry object.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dde/CSGObject_8h_source.html#l00051">CSGObject.h:51</a></div></div>
 <div class="ttc" id="aclassMantid_1_1Geometry_1_1detail_1_1GeometryTriangulator_html"><div class="ttname"><a href="../../d6/da9/classMantid_1_1Geometry_1_1detail_1_1GeometryTriangulator.html">Mantid::Geometry::detail::GeometryTriangulator</a></div><div class="ttdoc">GeometryTriangulator : Triangulates object surfaces.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d03/GeometryTriangulator_8h_source.html#l00025">GeometryTriangulator.h:25</a></div></div>

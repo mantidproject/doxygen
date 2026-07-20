@@ -196,6 +196,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1dfff8e81e68dbba129599e74f06a1c9" id="r_a1dfff8e81e68dbba129599e74f06a1c9"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; const <a class="el" href="../../d7/dd7/classMantid_1_1Geometry_1_1Surface.html">Surface</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d0c/classMantid_1_1Geometry_1_1CSGObject.html#a1dfff8e81e68dbba129599e74f06a1c9">getSurfacePtr</a> () const</td></tr>
 <tr class="memdesc:a1dfff8e81e68dbba129599e74f06a1c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of surfaces (const version)  <br /></td></tr>
 <tr class="separator:a1dfff8e81e68dbba129599e74f06a1c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d702842b94324868e3354e4c934afe8" id="r_a5d702842b94324868e3354e4c934afe8"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; uint32_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d0c/classMantid_1_1Geometry_1_1CSGObject.html#a5d702842b94324868e3354e4c934afe8">getTriangleFaces</a> () const</td></tr>
+<tr class="memdesc:a5d702842b94324868e3354e4c934afe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">get faces  <br /></td></tr>
+<tr class="separator:a5d702842b94324868e3354e4c934afe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78939dab308ca2de5c94c5ffc1e4a13b" id="r_a78939dab308ca2de5c94c5ffc1e4a13b"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d0c/classMantid_1_1Geometry_1_1CSGObject.html#a78939dab308ca2de5c94c5ffc1e4a13b">getTriangleVertices</a> () const</td></tr>
+<tr class="memdesc:a78939dab308ca2de5c94c5ffc1e4a13b"><td class="mdescLeft">&#160;</td><td class="mdescRight">get vertices  <br /></td></tr>
+<tr class="separator:a78939dab308ca2de5c94c5ffc1e4a13b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca595915e28c77c81cf4261fb89c35a2" id="r_aca595915e28c77c81cf4261fb89c35a2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d0c/classMantid_1_1Geometry_1_1CSGObject.html#aca595915e28c77c81cf4261fb89c35a2">hasComplement</a> () const</td></tr>
 <tr class="memdesc:aca595915e28c77c81cf4261fb89c35a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the object has a complementary object.  <br /></td></tr>
 <tr class="separator:aca595915e28c77c81cf4261fb89c35a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -328,12 +334,6 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a3cc64912615b8206113df6beaee29b08" id="r_a3cc64912615b8206113df6beaee29b08"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d0c/classMantid_1_1Geometry_1_1CSGObject.html#a3cc64912615b8206113df6beaee29b08">checkSurfaceValid</a> (const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;) const</td></tr>
 <tr class="memdesc:a3cc64912615b8206113df6beaee29b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a point is valid by checking both directions of the normal away from the line A good point will have one valid and one invalid.  <br /></td></tr>
 <tr class="separator:a3cc64912615b8206113df6beaee29b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d702842b94324868e3354e4c934afe8" id="r_a5d702842b94324868e3354e4c934afe8"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; uint32_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d0c/classMantid_1_1Geometry_1_1CSGObject.html#a5d702842b94324868e3354e4c934afe8">getTriangleFaces</a> () const</td></tr>
-<tr class="memdesc:a5d702842b94324868e3354e4c934afe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">for solid angle from triangulation  <br /></td></tr>
-<tr class="separator:a5d702842b94324868e3354e4c934afe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78939dab308ca2de5c94c5ffc1e4a13b" id="r_a78939dab308ca2de5c94c5ffc1e4a13b"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d0c/classMantid_1_1Geometry_1_1CSGObject.html#a78939dab308ca2de5c94c5ffc1e4a13b">getTriangleVertices</a> () const</td></tr>
-<tr class="memdesc:a78939dab308ca2de5c94c5ffc1e4a13b"><td class="mdescLeft">&#160;</td><td class="mdescRight">get vertices  <br /></td></tr>
-<tr class="separator:a78939dab308ca2de5c94c5ffc1e4a13b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abafc747e09c6b86f436ee90c3acfe3dc" id="r_abafc747e09c6b86f436ee90c3acfe3dc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d0c/classMantid_1_1Geometry_1_1CSGObject.html#abafc747e09c6b86f436ee90c3acfe3dc">monteCarloVolume</a> () const</td></tr>
 <tr class="memdesc:abafc747e09c6b86f436ee90c3acfe3dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the volume.  <br /></td></tr>
 <tr class="separator:abafc747e09c6b86f436ee90c3acfe3dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -586,7 +586,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01727">1727</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3bac55b85dc15b00950104cb1ac870876a5">Mantid::Geometry::detail::ShapeInfo::CONE</a>, <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3bad4a73a6358bb0266ec8562f37e81d414">Mantid::Geometry::detail::ShapeInfo::CUBOID</a>, <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3baddec32fe897072b48368b1abe03de2aa">Mantid::Geometry::detail::ShapeInfo::CYLINDER</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01900">defineBoundingBox()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00155">height</a>, <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3ba8efa397d080e415a2a4b45794abc1f76">Mantid::Geometry::detail::ShapeInfo::HEXAHEDRON</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00216">m_handler</a>, <a class="el" href="../../d8/d6b/LineProfile_8cpp_source.html#l00078">top</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00238">Mantid::Kernel::V3D::X()</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00239">Mantid::Kernel::V3D::Y()</a>, and <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00240">Mantid::Kernel::V3D::Z()</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3bac55b85dc15b00950104cb1ac870876a5">Mantid::Geometry::detail::ShapeInfo::CONE</a>, <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3bad4a73a6358bb0266ec8562f37e81d414">Mantid::Geometry::detail::ShapeInfo::CUBOID</a>, <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3baddec32fe897072b48368b1abe03de2aa">Mantid::Geometry::detail::ShapeInfo::CYLINDER</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01900">defineBoundingBox()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00155">height</a>, <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3ba8efa397d080e415a2a4b45794abc1f76">Mantid::Geometry::detail::ShapeInfo::HEXAHEDRON</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00219">m_handler</a>, <a class="el" href="../../d8/d6b/LineProfile_8cpp_source.html#l00078">top</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00238">Mantid::Kernel::V3D::X()</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00239">Mantid::Kernel::V3D::Y()</a>, and <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00240">Mantid::Kernel::V3D::Z()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01612">getBoundingBox()</a>.</p>
 
@@ -621,7 +621,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01659">1659</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01900">defineBoundingBox()</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00201">m_topRule</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01900">defineBoundingBox()</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00204">m_topRule</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01612">getBoundingBox()</a>.</p>
 
@@ -790,7 +790,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00911">911</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00201">m_topRule</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00204">m_topRule</a>.</p>
 
 </div>
 </div>
@@ -1009,7 +1009,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00763">763</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d2a/Rules_8h_source.html#l00059">Mantid::Geometry::Rule::leaf()</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00241">m_surList</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00201">m_topRule</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d2a/Rules_8h_source.html#l00059">Mantid::Geometry::Rule::leaf()</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00241">m_surList</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00204">m_topRule</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00417">operator=()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00551">populate()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00826">removeSurface()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00842">substituteSurf()</a>.</p>
 
@@ -1082,7 +1082,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01900">1900</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00205">AABBxMax</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00208">AABBxMin</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00206">AABByMax</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00209">AABByMin</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00207">AABBzMax</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00210">AABBzMin</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00211">boolBounded</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00063">Mantid::Geometry::BoundingBox::checkValid()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01900">defineBoundingBox()</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00203">m_boundingBox</a>, and <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00224">PARALLEL_CRITICAL</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00208">AABBxMax</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00211">AABBxMin</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00209">AABByMax</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00212">AABByMin</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00210">AABBzMax</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00213">AABBzMin</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00214">boolBounded</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00063">Mantid::Geometry::BoundingBox::checkValid()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01900">defineBoundingBox()</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00206">m_boundingBox</a>, and <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00224">PARALLEL_CRITICAL</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01727">calcBoundingBoxByGeometry()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01659">calcBoundingBoxByRule()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01690">calcBoundingBoxByVertices()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01900">defineBoundingBox()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01612">getBoundingBox()</a>.</p>
 
@@ -1164,7 +1164,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02085">2085</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00216">m_handler</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00219">m_handler</a>.</p>
 
 </div>
 </div>
@@ -1223,7 +1223,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02005">2005</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d7d/RandomPoint_8h_source.html#l00062">Mantid::Geometry::RandomPoint::bounded()</a>, <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3bad4a73a6358bb0266ec8562f37e81d414">Mantid::Geometry::detail::ShapeInfo::CUBOID</a>, <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3baddec32fe897072b48368b1abe03de2aa">Mantid::Geometry::detail::ShapeInfo::CYLINDER</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02201">GetObjectGeom()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00155">height</a>, <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3baf24ed67ad2b21f5939aa6ed2d49d5a2f">Mantid::Geometry::detail::ShapeInfo::HOLLOWCYLINDER</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00216">m_handler</a>, and <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3ba6f7cea7381e843e2ee0338b4a92b0d43">Mantid::Geometry::detail::ShapeInfo::SPHERE</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d7d/RandomPoint_8h_source.html#l00062">Mantid::Geometry::RandomPoint::bounded()</a>, <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3bad4a73a6358bb0266ec8562f37e81d414">Mantid::Geometry::detail::ShapeInfo::CUBOID</a>, <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3baddec32fe897072b48368b1abe03de2aa">Mantid::Geometry::detail::ShapeInfo::CYLINDER</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02201">GetObjectGeom()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00155">height</a>, <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3baf24ed67ad2b21f5939aa6ed2d49d5a2f">Mantid::Geometry::detail::ShapeInfo::HOLLOWCYLINDER</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00219">m_handler</a>, and <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3ba6f7cea7381e843e2ee0338b4a92b0d43">Mantid::Geometry::detail::ShapeInfo::SPHERE</a>.</p>
 
 </div>
 </div>
@@ -1276,7 +1276,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01959">1959</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3bad4a73a6358bb0266ec8562f37e81d414">Mantid::Geometry::detail::ShapeInfo::CUBOID</a>, <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3baddec32fe897072b48368b1abe03de2aa">Mantid::Geometry::detail::ShapeInfo::CYLINDER</a>, <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3baf24ed67ad2b21f5939aa6ed2d49d5a2f">Mantid::Geometry::detail::ShapeInfo::HOLLOWCYLINDER</a>, <a class="el" href="../../d5/de3/RandomPoint_8cpp_source.html#l00050">Mantid::Geometry::RandomPoint::inCuboid()</a>, <a class="el" href="../../d5/de3/RandomPoint_8cpp_source.html#l00067">Mantid::Geometry::RandomPoint::inCylinder()</a>, <a class="el" href="../../d5/de3/RandomPoint_8cpp_source.html#l00132">Mantid::Geometry::RandomPoint::inGenericShape()</a>, <a class="el" href="../../d5/de3/RandomPoint_8cpp_source.html#l00087">Mantid::Geometry::RandomPoint::inHollowCylinder()</a>, <a class="el" href="../../d5/de3/RandomPoint_8cpp_source.html#l00110">Mantid::Geometry::RandomPoint::inSphere()</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00216">m_handler</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02182">shape()</a>, and <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3ba6f7cea7381e843e2ee0338b4a92b0d43">Mantid::Geometry::detail::ShapeInfo::SPHERE</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3bad4a73a6358bb0266ec8562f37e81d414">Mantid::Geometry::detail::ShapeInfo::CUBOID</a>, <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3baddec32fe897072b48368b1abe03de2aa">Mantid::Geometry::detail::ShapeInfo::CYLINDER</a>, <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3baf24ed67ad2b21f5939aa6ed2d49d5a2f">Mantid::Geometry::detail::ShapeInfo::HOLLOWCYLINDER</a>, <a class="el" href="../../d5/de3/RandomPoint_8cpp_source.html#l00050">Mantid::Geometry::RandomPoint::inCuboid()</a>, <a class="el" href="../../d5/de3/RandomPoint_8cpp_source.html#l00067">Mantid::Geometry::RandomPoint::inCylinder()</a>, <a class="el" href="../../d5/de3/RandomPoint_8cpp_source.html#l00132">Mantid::Geometry::RandomPoint::inGenericShape()</a>, <a class="el" href="../../d5/de3/RandomPoint_8cpp_source.html#l00087">Mantid::Geometry::RandomPoint::inHollowCylinder()</a>, <a class="el" href="../../d5/de3/RandomPoint_8cpp_source.html#l00110">Mantid::Geometry::RandomPoint::inSphere()</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00219">m_handler</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02182">shape()</a>, and <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3ba6f7cea7381e843e2ee0338b4a92b0d43">Mantid::Geometry::detail::ShapeInfo::SPHERE</a>.</p>
 
 </div>
 </div>
@@ -1311,9 +1311,9 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01612">1612</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01727">calcBoundingBoxByGeometry()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01659">calcBoundingBoxByRule()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01690">calcBoundingBoxByVertices()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01900">defineBoundingBox()</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00105">Mantid::Geometry::BoundingBox::isNonNull()</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00203">m_boundingBox</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00201">m_topRule</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01918">setNullBoundingBox()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01727">calcBoundingBoxByGeometry()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01659">calcBoundingBoxByRule()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01690">calcBoundingBoxByVertices()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01900">defineBoundingBox()</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00105">Mantid::Geometry::BoundingBox::isNonNull()</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00206">m_boundingBox</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00204">m_topRule</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01918">setNullBoundingBox()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/db4/PythonInterface_2mantid_2geometry_2src_2Exports_2CSGObject_8cpp_source.html#l00084">export_Object()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01925">getPointInObject()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01193">rayTraceSolidAngle()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01560">singleShotMonteCarloVolume()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01311">triangulatedSolidAngle()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01398">triangulatedSolidAngle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/db4/PythonInterface_2mantid_2geometry_2src_2Exports_2CSGObject_8cpp_source.html#l00092">export_Object()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01925">getPointInObject()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01193">rayTraceSolidAngle()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01560">singleShotMonteCarloVolume()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01311">triangulatedSolidAngle()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01398">triangulatedSolidAngle()</a>.</p>
 
 </div>
 </div>
@@ -1393,7 +1393,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01858">1858</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00205">AABBxMax</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00208">AABBxMin</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00206">AABByMax</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00209">AABByMin</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00207">AABBzMax</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00210">AABBzMin</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00211">boolBounded</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00201">m_topRule</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00208">AABBxMax</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00211">AABBxMin</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00209">AABByMax</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00212">AABByMin</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00210">AABBzMax</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00213">AABBzMin</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00214">boolBounded</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00204">m_topRule</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/d6f/RuleItems_8cpp_source.html#l01093">Mantid::Geometry::CompObj::getBoundingBox()</a>.</p>
 
@@ -1428,7 +1428,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02122">2122</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00216">m_handler</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00219">m_handler</a>.</p>
 
 </div>
 </div>
@@ -1521,7 +1521,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02201">2201</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00155">height</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00216">m_handler</a>, and <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3ba2278004a12e3bb9c7a95950447015e7f">Mantid::Geometry::detail::ShapeInfo::NOSHAPE</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00155">height</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00219">m_handler</a>, and <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3ba2278004a12e3bb9c7a95950447015e7f">Mantid::Geometry::detail::ShapeInfo::NOSHAPE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02005">generatePointInObject()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01311">triangulatedSolidAngle()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01398">triangulatedSolidAngle()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01470">volume()</a>.</p>
 
@@ -1592,7 +1592,7 @@ Friends</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00232">m_shapeXML</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/db4/PythonInterface_2mantid_2geometry_2src_2Exports_2CSGObject_8cpp_source.html#l00084">export_Object()</a>, and <a class="el" href="../../d6/db4/PythonInterface_2mantid_2geometry_2src_2Exports_2CSGObject_8cpp_source.html#l00046">wrapMeshWithNDArray()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/db4/PythonInterface_2mantid_2geometry_2src_2Exports_2CSGObject_8cpp_source.html#l00092">export_Object()</a>, and <a class="el" href="../../d6/db4/PythonInterface_2mantid_2geometry_2src_2Exports_2CSGObject_8cpp_source.html#l00046">wrapMeshWithNDArray()</a>.</p>
 
 </div>
 </div>
@@ -1683,9 +1683,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const std::vector&lt; uint32_t &gt; &amp; Mantid::Geometry::CSGObject::getTriangleFaces </td>
@@ -1694,21 +1691,15 @@ Friends</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>for solid angle from triangulation </p>
 <p>get faces </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02175">2175</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00216">m_handler</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00219">m_handler</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01311">triangulatedSolidAngle()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01398">triangulatedSolidAngle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01311">triangulatedSolidAngle()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01398">triangulatedSolidAngle()</a>, and <a class="el" href="../../d6/db4/PythonInterface_2mantid_2geometry_2src_2Exports_2CSGObject_8cpp_source.html#l00046">wrapMeshWithNDArray()</a>.</p>
 
 </div>
 </div>
@@ -1717,9 +1708,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const std::vector&lt; double &gt; &amp; Mantid::Geometry::CSGObject::getTriangleVertices </td>
@@ -1728,20 +1716,15 @@ Friends</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>get vertices </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02165">2165</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00216">m_handler</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00219">m_handler</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01690">calcBoundingBoxByVertices()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01311">triangulatedSolidAngle()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01398">triangulatedSolidAngle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01690">calcBoundingBoxByVertices()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01311">triangulatedSolidAngle()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01398">triangulatedSolidAngle()</a>, and <a class="el" href="../../d6/db4/PythonInterface_2mantid_2geometry_2src_2Exports_2CSGObject_8cpp_source.html#l00046">wrapMeshWithNDArray()</a>.</p>
 
 </div>
 </div>
@@ -1771,7 +1754,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00537">537</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00201">m_topRule</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00204">m_topRule</a>.</p>
 
 </div>
 </div>
@@ -1806,9 +1789,9 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00464">464</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00241">m_surList</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00201">m_topRule</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00241">m_surList</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00204">m_topRule</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/db4/PythonInterface_2mantid_2geometry_2src_2Exports_2CSGObject_8cpp_source.html#l00084">export_Object()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/db4/PythonInterface_2mantid_2geometry_2src_2Exports_2CSGObject_8cpp_source.html#l00092">export_Object()</a>.</p>
 
 </div>
 </div>
@@ -1870,7 +1853,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02097">2097</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00216">m_handler</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00219">m_handler</a>.</p>
 
 </div>
 </div>
@@ -2033,7 +2016,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00740">740</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00201">m_topRule</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00204">m_topRule</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01109">calcValidType()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01130">calcValidTypeBy3Points()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00726">checkSurfaceValid()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01193">rayTraceSolidAngle()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02054">searchForObject()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01560">singleShotMonteCarloVolume()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01311">triangulatedSolidAngle()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01398">triangulatedSolidAngle()</a>.</p>
 
@@ -2067,7 +2050,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00751">751</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00201">m_topRule</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00204">m_topRule</a>.</p>
 
 </div>
 </div>
@@ -2090,7 +2073,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00893">893</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00201">m_topRule</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00654">procComp()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00204">m_topRule</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00654">procComp()</a>.</p>
 
 </div>
 </div>
@@ -2188,7 +2171,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02152">2152</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00216">m_handler</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00219">m_handler</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01170">solidAngle()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01311">triangulatedSolidAngle()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01398">triangulatedSolidAngle()</a>.</p>
 
@@ -2219,7 +2202,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02157">2157</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00216">m_handler</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00219">m_handler</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01690">calcBoundingBoxByVertices()</a>.</p>
 
@@ -2252,7 +2235,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00417">417</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00205">AABBxMax</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00208">AABBxMin</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00206">AABByMax</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00209">AABByMin</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00207">AABBzMax</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00210">AABBzMin</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00220">bGeometryCaching</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00211">boolBounded</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00763">createSurfaceList()</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00216">m_handler</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00234">m_id</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00236">m_material</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00214">m_objNum</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00232">m_shapeXML</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00201">m_topRule</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00457">material()</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00222">vtkCacheReader</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00224">vtkCacheWriter</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00208">AABBxMax</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00211">AABBxMin</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00209">AABByMax</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00212">AABByMin</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00210">AABBzMax</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00213">AABBzMin</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00223">bGeometryCaching</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00214">boolBounded</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00763">createSurfaceList()</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00219">m_handler</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00234">m_id</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00236">m_material</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00217">m_objNum</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00232">m_shapeXML</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00204">m_topRule</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00457">material()</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00225">vtkCacheReader</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00227">vtkCacheWriter</a>.</p>
 
 </div>
 </div>
@@ -2289,7 +2272,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00551">551</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00763">createSurfaceList()</a>, <a class="el" href="../../d6/d2a/Rules_8h_source.html#l00059">Mantid::Geometry::Rule::leaf()</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00201">m_topRule</a>, and <a class="el" href="../../d2/d6f/RuleItems_8cpp_source.html#l00752">Mantid::Geometry::SurfPoint::setKey()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00763">createSurfaceList()</a>, <a class="el" href="../../d6/d2a/Rules_8h_source.html#l00059">Mantid::Geometry::Rule::leaf()</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00204">m_topRule</a>, and <a class="el" href="../../d2/d6f/RuleItems_8cpp_source.html#l00752">Mantid::Geometry::SurfPoint::setKey()</a>.</p>
 
 </div>
 </div>
@@ -2320,7 +2303,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00854">854</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d2a/Rules_8h_source.html#l00059">Mantid::Geometry::Rule::leaf()</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00214">m_objNum</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00201">m_topRule</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d2a/Rules_8h_source.html#l00059">Mantid::Geometry::Rule::leaf()</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00217">m_objNum</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00204">m_topRule</a>.</p>
 
 </div>
 </div>
@@ -2343,7 +2326,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00901">901</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00214">m_objNum</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00201">m_topRule</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00217">m_objNum</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00204">m_topRule</a>.</p>
 
 </div>
 </div>
@@ -2479,7 +2462,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00949">949</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d6d/Strings_8cpp_source.html#l00670">Mantid::Kernel::Strings::convPartNum()</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00201">m_topRule</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00654">procComp()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00595">procPair()</a>, and <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d6d/Strings_8cpp_source.html#l00670">Mantid::Kernel::Strings::convPartNum()</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00204">m_topRule</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00654">procComp()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00595">procPair()</a>, and <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00493">convertComplement()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00475">setObject()</a>.</p>
 
@@ -2545,7 +2528,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00826">826</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00763">createSurfaceList()</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00201">m_topRule</a>, and <a class="el" href="../../d2/dbe/Rules_8cpp_source.html#l00376">Mantid::Geometry::Rule::removeItem()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00763">createSurfaceList()</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00204">m_topRule</a>, and <a class="el" href="../../d2/dbe/Rules_8cpp_source.html#l00376">Mantid::Geometry::Rule::removeItem()</a>.</p>
 
 </div>
 </div>
@@ -2647,7 +2630,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02076">2076</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00216">m_handler</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00219">m_handler</a>.</p>
 
 </div>
 </div>
@@ -2769,7 +2752,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01918">1918</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00203">m_boundingBox</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00206">m_boundingBox</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01612">getBoundingBox()</a>.</p>
 
@@ -2813,7 +2796,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00475">475</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00214">m_objNum</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00241">m_surList</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00949">procString()</a>, and <a class="el" href="../../dd/d59/RegexStrings_8cpp_source.html#l00058">Mantid::Kernel::Strings::StrLook()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00217">m_objNum</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00241">m_surList</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00949">procString()</a>, and <a class="el" href="../../dd/d59/RegexStrings_8cpp_source.html#l00058">Mantid::Kernel::Strings::StrLook()</a>.</p>
 
 </div>
 </div>
@@ -2837,7 +2820,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02114">2114</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02131">updateGeometryHandler()</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00222">vtkCacheReader</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02131">updateGeometryHandler()</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00225">vtkCacheReader</a>.</p>
 
 </div>
 </div>
@@ -2861,7 +2844,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02106">2106</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02131">updateGeometryHandler()</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00224">vtkCacheWriter</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02131">updateGeometryHandler()</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00227">vtkCacheWriter</a>.</p>
 
 </div>
 </div>
@@ -2892,7 +2875,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02182">2182</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00216">m_handler</a>, and <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3ba2278004a12e3bb9c7a95950447015e7f">Mantid::Geometry::detail::ShapeInfo::NOSHAPE</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00219">m_handler</a>, and <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3ba2278004a12e3bb9c7a95950447015e7f">Mantid::Geometry::detail::ShapeInfo::NOSHAPE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01959">generatePointInObject()</a>.</p>
 
@@ -2925,9 +2908,9 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02190">2190</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00216">m_handler</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00219">m_handler</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/db4/PythonInterface_2mantid_2geometry_2src_2Exports_2CSGObject_8cpp_source.html#l00084">export_Object()</a>, and <a class="el" href="../../d7/d45/CylinderAbsorption_8cpp_source.html#l00060">Mantid::Algorithms::CylinderAbsorption::getShapeFromSample()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/db4/PythonInterface_2mantid_2geometry_2src_2Exports_2CSGObject_8cpp_source.html#l00092">export_Object()</a>, and <a class="el" href="../../d7/d45/CylinderAbsorption_8cpp_source.html#l00060">Mantid::Algorithms::CylinderAbsorption::getShapeFromSample()</a>.</p>
 
 </div>
 </div>
@@ -3097,7 +3080,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00923">923</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00214">m_objNum</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00201">m_topRule</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00217">m_objNum</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00204">m_topRule</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00937">write()</a>.</p>
 
@@ -3148,7 +3131,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00842">842</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00763">createSurfaceList()</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00201">m_topRule</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00763">createSurfaceList()</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00204">m_topRule</a>.</p>
 
 </div>
 </div>
@@ -3286,7 +3269,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02131">2131</a> of file <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html">CSGObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00220">bGeometryCaching</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00216">m_handler</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00222">vtkCacheReader</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00224">vtkCacheWriter</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00223">bGeometryCaching</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00219">m_handler</a>, <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00225">vtkCacheReader</a>, and <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00227">vtkCacheWriter</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d53/GeometryHandler_8cpp_source.html#l00074">Mantid::Geometry::GeometryHandler::initialize()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02114">setVtkGeometryCacheReader()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02106">setVtkGeometryCacheWriter()</a>.</p>
 
@@ -3325,7 +3308,7 @@ Friends</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00284">Mantid::Kernel::V3D::cross_prod()</a>, <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3bad4a73a6358bb0266ec8562f37e81d414">Mantid::Geometry::detail::ShapeInfo::CUBOID</a>, <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3baddec32fe897072b48368b1abe03de2aa">Mantid::Geometry::detail::ShapeInfo::CYLINDER</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02201">GetObjectGeom()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00155">height</a>, <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3baf24ed67ad2b21f5939aa6ed2d49d5a2f">Mantid::Geometry::detail::ShapeInfo::HOLLOWCYLINDER</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01526">monteCarloVolume()</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00280">Mantid::Kernel::V3D::scalar_prod()</a>, and <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3ba6f7cea7381e843e2ee0338b4a92b0d43">Mantid::Geometry::detail::ShapeInfo::SPHERE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/db4/PythonInterface_2mantid_2geometry_2src_2Exports_2CSGObject_8cpp_source.html#l00084">export_Object()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/db4/PythonInterface_2mantid_2geometry_2src_2Exports_2CSGObject_8cpp_source.html#l00092">export_Object()</a>.</p>
 
 </div>
 </div>
@@ -3381,7 +3364,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00217">217</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00220">220</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
 
 </div>
 </div>
@@ -3405,7 +3388,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00218">218</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00221">221</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
 
 </div>
 </div>
@@ -3432,7 +3415,7 @@ Friends</h2></td></tr>
 
 <p>xmax of Axis aligned bounding box cache </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00205">205</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00208">208</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01900">defineBoundingBox()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01858">getBoundingBox()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00417">operator=()</a>.</p>
 
@@ -3460,7 +3443,7 @@ Friends</h2></td></tr>
 
 <p>xmin of Axis aligned bounding box cache </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00208">208</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00211">211</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01900">defineBoundingBox()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01858">getBoundingBox()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00417">operator=()</a>.</p>
 
@@ -3488,7 +3471,7 @@ Friends</h2></td></tr>
 
 <p>ymax of Axis aligned bounding box cache </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00206">206</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00209">209</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01900">defineBoundingBox()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01858">getBoundingBox()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00417">operator=()</a>.</p>
 
@@ -3516,7 +3499,7 @@ Friends</h2></td></tr>
 
 <p>xmin of Axis aligned bounding box cache </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00209">209</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00212">212</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01900">defineBoundingBox()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01858">getBoundingBox()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00417">operator=()</a>.</p>
 
@@ -3544,7 +3527,7 @@ Friends</h2></td></tr>
 
 <p>zmax of Axis aligned bounding box cache </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00207">207</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00210">210</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01900">defineBoundingBox()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01858">getBoundingBox()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00417">operator=()</a>.</p>
 
@@ -3572,7 +3555,7 @@ Friends</h2></td></tr>
 
 <p>zmin of Axis Aligned Bounding Box Cache </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00210">210</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00213">213</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01900">defineBoundingBox()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01858">getBoundingBox()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00417">operator=()</a>.</p>
 
@@ -3600,7 +3583,7 @@ Friends</h2></td></tr>
 
 <p>Is geometry caching enabled? </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00220">220</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00223">223</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00417">operator=()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02131">updateGeometryHandler()</a>.</p>
 
@@ -3628,7 +3611,7 @@ Friends</h2></td></tr>
 
 <p>flag true if a bounding box exists, either by </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00211">211</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00214">214</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01900">defineBoundingBox()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01858">getBoundingBox()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00417">operator=()</a>.</p>
 
@@ -3656,7 +3639,7 @@ Friends</h2></td></tr>
 
 <p>Object's bounding box. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00203">203</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00206">206</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01900">defineBoundingBox()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01612">getBoundingBox()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01918">setNullBoundingBox()</a>.</p>
 
@@ -3684,7 +3667,7 @@ Friends</h2></td></tr>
 
 <p><a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html">Geometry</a> Handle for rendering. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00216">216</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00219">219</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01727">calcBoundingBoxByGeometry()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02085">draw()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02005">generatePointInObject()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01959">generatePointInObject()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02122">getGeometryHandler()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02201">GetObjectGeom()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02175">getTriangleFaces()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02165">getTriangleVertices()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02097">initDraw()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02152">numberOfTriangles()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02157">numberOfVertices()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00417">operator=()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02076">setGeometryHandler()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02182">shape()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02190">shapeInfo()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02131">updateGeometryHandler()</a>.</p>
 
@@ -3794,7 +3777,7 @@ Friends</h2></td></tr>
 
 <p>Creation number. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00214">214</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00217">217</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00417">operator=()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00854">print()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00901">printTree()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00475">setObject()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00923">str()</a>.</p>
 
@@ -3878,7 +3861,7 @@ Friends</h2></td></tr>
 
 <p>Top rule [ Geometric scope of object]. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00201">201</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00204">204</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01659">calcBoundingBoxByRule()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00911">cellCompStr()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00763">createSurfaceList()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01612">getBoundingBox()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l01858">getBoundingBox()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00537">hasComplement()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00464">hasValidShape()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00740">isValid()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00751">isValid()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00893">makeComplement()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00417">operator=()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00551">populate()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00854">print()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00901">printTree()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00949">procString()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00826">removeSurface()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00923">str()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00842">substituteSurf()</a>.</p>
 
@@ -3906,7 +3889,7 @@ Friends</h2></td></tr>
 
 <p>a pointer to a class for reading from the geometry cache </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00222">222</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00225">225</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00417">operator=()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02114">setVtkGeometryCacheReader()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02131">updateGeometryHandler()</a>.</p>
 
@@ -3934,7 +3917,7 @@ Friends</h2></td></tr>
 
 <p>a pointer to a class for writing to the geometry cache </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00224">224</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dde/CSGObject_8h_source.html#l00227">227</a> of file <a class="el" href="../../db/dde/CSGObject_8h_source.html">CSGObject.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l00417">operator=()</a>, <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02106">setVtkGeometryCacheWriter()</a>, and <a class="el" href="../../d7/dd3/Geometry_2src_2Objects_2CSGObject_8cpp_source.html#l02131">updateGeometryHandler()</a>.</p>
 
