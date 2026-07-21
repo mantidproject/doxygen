@@ -120,6 +120,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a97dd2d0514cf2db95df53a965161718a" id="r_a97dd2d0514cf2db95df53a965161718a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d62/classMantid_1_1MDAlgorithms_1_1ConvToMDBase.html#a97dd2d0514cf2db95df53a965161718a">ConvToMDBase</a> ()</td></tr>
 <tr class="memdesc:a97dd2d0514cf2db95df53a965161718a"><td class="mdescLeft">&#160;</td><td class="mdescRight">empty default constructor  <br /></td></tr>
 <tr class="separator:a97dd2d0514cf2db95df53a965161718a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e88bfb0708c2ef1d047ede809c40b9a" id="r_a1e88bfb0708c2ef1d047ede809c40b9a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d62/classMantid_1_1MDAlgorithms_1_1ConvToMDBase.html#a1e88bfb0708c2ef1d047ede809c40b9a">getTimeLogsName</a> ()</td></tr>
+<tr class="separator:a1e88bfb0708c2ef1d047ede809c40b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5765af9b1cb4f24644d6d82016297efc" id="r_a5765af9b1cb4f24644d6d82016297efc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df6/classMantid_1_1MDAlgorithms_1_1UnitsConversionHelper.html">UnitsConversionHelper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d62/classMantid_1_1MDAlgorithms_1_1ConvToMDBase.html#a5765af9b1cb4f24644d6d82016297efc">getUnitConversionHelper</a> ()</td></tr>
 <tr class="memdesc:a5765af9b1cb4f24644d6d82016297efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">method returns unit conversion helper, used to convert input workspace units to the units, used by appropriate MD transformation (if such conversion is necessary)  <br /></td></tr>
 <tr class="separator:a5765af9b1cb4f24644d6d82016297efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,6 +166,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:af1138bc189e4443fd217e9f6f9ebdfb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e753f4319f46e8994c50e83a50d9884" id="r_a9e753f4319f46e8994c50e83a50d9884"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/de0/namespaceMantid_1_1MDAlgorithms.html#a80aff6e802242230a529008d20983e94">MDTransf_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d62/classMantid_1_1MDAlgorithms_1_1ConvToMDBase.html#a9e753f4319f46e8994c50e83a50d9884">m_QConverter</a></td></tr>
 <tr class="separator:a9e753f4319f46e8994c50e83a50d9884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32836d0002e347b135cff7724559eb48" id="r_a32836d0002e347b135cff7724559eb48"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d62/classMantid_1_1MDAlgorithms_1_1ConvToMDBase.html#a32836d0002e347b135cff7724559eb48">m_timeLogsName</a></td></tr>
+<tr class="separator:a32836d0002e347b135cff7724559eb48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9115df6979d23721a948b35a6505e0c" id="r_af9115df6979d23721a948b35a6505e0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df6/classMantid_1_1MDAlgorithms_1_1UnitsConversionHelper.html">UnitsConversionHelper</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d62/classMantid_1_1MDAlgorithms_1_1ConvToMDBase.html#af9115df6979d23721a948b35a6505e0c">m_UnitConversion</a></td></tr>
 <tr class="separator:af9115df6979d23721a948b35a6505e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf91082ebaf9ddaf04b7629c9067468e" id="r_acf91082ebaf9ddaf04b7629c9067468e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d62/classMantid_1_1MDAlgorithms_1_1ConvToMDBase.html#acf91082ebaf9ddaf04b7629c9067468e">m_useLogTimes</a></td></tr>
@@ -272,6 +276,33 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a1e88bfb0708c2ef1d047ede809c40b9a" name="a1e88bfb0708c2ef1d047ede809c40b9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e88bfb0708c2ef1d047ede809c40b9a">&#9670;&#160;</a></span>getTimeLogsName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; Mantid::MDAlgorithms::ConvToMDBase::getTimeLogsName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00051">51</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
+
+</div>
+</div>
 <a id="a5765af9b1cb4f24644d6d82016297efc" name="a5765af9b1cb4f24644d6d82016297efc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5765af9b1cb4f24644d6d82016297efc">&#9670;&#160;</a></span>getUnitConversionHelper()</h2>
 
@@ -363,7 +394,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html">ConvToMDBase.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/dd4/MDWSDescription_8h_source.html#l00049">Mantid::MDAlgorithms::MDWSDescription::AlgID</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00072">g_Log</a>, <a class="el" href="../../d1/d3f/MDWSDescription_8cpp_source.html#l00398">Mantid::MDAlgorithms::MDWSDescription::getCoordinateSystem()</a>, <a class="el" href="../../d4/dd4/MDWSDescription_8h_source.html#l00073">Mantid::MDAlgorithms::MDWSDescription::getEMode()</a>, <a class="el" href="../../d4/dd4/MDWSDescription_8h_source.html#l00084">Mantid::MDAlgorithms::MDWSDescription::getInWS()</a>, <a class="el" href="../../da/d50/LogManager_8cpp_source.html#l00468">Mantid::API::LogManager::getPropertyValueAsType()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../d1/dbb/UnitsConversionHelper_8cpp_source.html#l00078">Mantid::MDAlgorithms::UnitsConversionHelper::initialize()</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00074">m_Coord</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00086">m_coordinateSystem</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00068">m_detID</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00067">m_detIDMap</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00063">m_ExpInfoIndex</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00084">m_ignoreZeros</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00053">m_InWS2D</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00061">m_NDims</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00066">m_NSpectra</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00082">m_NumThreads</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00056">m_OutWSWrapper</a>, <a class="el" href="../../d4/dd4/MDWSDescription_8h_source.html#l00057">Mantid::MDAlgorithms::MDWSDescription::m_PreprDetTable</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00059">m_QConverter</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00076">m_UnitConversion</a>, and <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00088">m_useLogTimes</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/dd4/MDWSDescription_8h_source.html#l00049">Mantid::MDAlgorithms::MDWSDescription::AlgID</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00074">g_Log</a>, <a class="el" href="../../d1/d3f/MDWSDescription_8cpp_source.html#l00398">Mantid::MDAlgorithms::MDWSDescription::getCoordinateSystem()</a>, <a class="el" href="../../d4/dd4/MDWSDescription_8h_source.html#l00073">Mantid::MDAlgorithms::MDWSDescription::getEMode()</a>, <a class="el" href="../../d4/dd4/MDWSDescription_8h_source.html#l00084">Mantid::MDAlgorithms::MDWSDescription::getInWS()</a>, <a class="el" href="../../da/d50/LogManager_8cpp_source.html#l00468">Mantid::API::LogManager::getPropertyValueAsType()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../d1/dbb/UnitsConversionHelper_8cpp_source.html#l00078">Mantid::MDAlgorithms::UnitsConversionHelper::initialize()</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00076">m_Coord</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00088">m_coordinateSystem</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00070">m_detID</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00069">m_detIDMap</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00065">m_ExpInfoIndex</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00086">m_ignoreZeros</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00055">m_InWS2D</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00063">m_NDims</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00068">m_NSpectra</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00084">m_NumThreads</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00058">m_OutWSWrapper</a>, <a class="el" href="../../d4/dd4/MDWSDescription_8h_source.html#l00057">Mantid::MDAlgorithms::MDWSDescription::m_PreprDetTable</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00061">m_QConverter</a>, <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00078">m_UnitConversion</a>, and <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00090">m_useLogTimes</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00125">Mantid::MDAlgorithms::ConvToMDEventsWS::initialize()</a>, and <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00030">Mantid::MDAlgorithms::ConvToMDHistoWS::initialize()</a>.</p>
 
@@ -437,7 +468,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00117">117</a> of file <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html">ConvToMDBase.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00059">m_QConverter</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00061">m_QConverter</a>.</p>
 
 </div>
 </div>
@@ -462,7 +493,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00072">72</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00074">74</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d9c/ConvToMDEventsWSIndexing_8h_source.html#l00159">Mantid::MDAlgorithms::ConvToMDEventsWSIndexing::appendEvents()</a>, and <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">initialize()</a>.</p>
 
@@ -488,9 +519,9 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00074">74</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00076">76</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00050">Mantid::MDAlgorithms::ConvToMDHistoWS::conversionChunk()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00034">Mantid::MDAlgorithms::ConvToMDEventsWS::convertEventList()</a>, <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">initialize()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00168">Mantid::MDAlgorithms::ConvToMDEventsWS::runConversion()</a>, and <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00158">Mantid::MDAlgorithms::ConvToMDHistoWS::runConversion()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00050">Mantid::MDAlgorithms::ConvToMDHistoWS::conversionChunk()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00034">Mantid::MDAlgorithms::ConvToMDEventsWS::convertEventList()</a>, <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">initialize()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00169">Mantid::MDAlgorithms::ConvToMDEventsWS::runConversion()</a>, and <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00158">Mantid::MDAlgorithms::ConvToMDHistoWS::runConversion()</a>.</p>
 
 </div>
 </div>
@@ -516,9 +547,9 @@ Private Member Functions</h2></td></tr>
 
 <p>Any special coordinate system used. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00086">86</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00088">88</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00125">Mantid::MDAlgorithms::ConvToMDEventsWS::initialize()</a>, <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">initialize()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00168">Mantid::MDAlgorithms::ConvToMDEventsWS::runConversion()</a>, and <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00158">Mantid::MDAlgorithms::ConvToMDHistoWS::runConversion()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00125">Mantid::MDAlgorithms::ConvToMDEventsWS::initialize()</a>, <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">initialize()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00169">Mantid::MDAlgorithms::ConvToMDEventsWS::runConversion()</a>, and <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00158">Mantid::MDAlgorithms::ConvToMDHistoWS::runConversion()</a>.</p>
 
 </div>
 </div>
@@ -542,7 +573,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00068">68</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00070">70</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00050">Mantid::MDAlgorithms::ConvToMDHistoWS::conversionChunk()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00034">Mantid::MDAlgorithms::ConvToMDEventsWS::convertEventList()</a>, <a class="el" href="../../d3/d9c/ConvToMDEventsWSIndexing_8h_source.html#l00083">Mantid::MDAlgorithms::ConvToMDEventsWSIndexing::convertEvents()</a>, and <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">initialize()</a>.</p>
 
@@ -568,7 +599,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00067">67</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00069">69</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00050">Mantid::MDAlgorithms::ConvToMDHistoWS::conversionChunk()</a>, and <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">initialize()</a>.</p>
 
@@ -594,7 +625,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00063">63</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00065">65</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00050">Mantid::MDAlgorithms::ConvToMDHistoWS::conversionChunk()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00034">Mantid::MDAlgorithms::ConvToMDEventsWS::convertEventList()</a>, <a class="el" href="../../d3/d9c/ConvToMDEventsWSIndexing_8h_source.html#l00083">Mantid::MDAlgorithms::ConvToMDEventsWSIndexing::convertEvents()</a>, and <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">initialize()</a>.</p>
 
@@ -620,7 +651,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00084">84</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00086">86</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00050">Mantid::MDAlgorithms::ConvToMDHistoWS::conversionChunk()</a>, and <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">initialize()</a>.</p>
 
@@ -646,7 +677,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00053">53</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00055">55</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00050">Mantid::MDAlgorithms::ConvToMDHistoWS::conversionChunk()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00125">Mantid::MDAlgorithms::ConvToMDEventsWS::initialize()</a>, <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00030">Mantid::MDAlgorithms::ConvToMDHistoWS::initialize()</a>, <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">initialize()</a>, and <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00158">Mantid::MDAlgorithms::ConvToMDHistoWS::runConversion()</a>.</p>
 
@@ -674,9 +705,9 @@ Private Member Functions</h2></td></tr>
 
 <p>number of target ws dimensions </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00061">61</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00063">63</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00050">Mantid::MDAlgorithms::ConvToMDHistoWS::conversionChunk()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00034">Mantid::MDAlgorithms::ConvToMDEventsWS::convertEventList()</a>, <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">initialize()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00168">Mantid::MDAlgorithms::ConvToMDEventsWS::runConversion()</a>, and <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00158">Mantid::MDAlgorithms::ConvToMDHistoWS::runConversion()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00050">Mantid::MDAlgorithms::ConvToMDHistoWS::conversionChunk()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00034">Mantid::MDAlgorithms::ConvToMDEventsWS::convertEventList()</a>, <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">initialize()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00169">Mantid::MDAlgorithms::ConvToMDEventsWS::runConversion()</a>, and <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00158">Mantid::MDAlgorithms::ConvToMDHistoWS::runConversion()</a>.</p>
 
 </div>
 </div>
@@ -700,9 +731,9 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00066">66</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00068">68</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00186">Mantid::MDAlgorithms::ConvToMDEventsWS::appendEventsFromInputWS()</a>, <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00050">Mantid::MDAlgorithms::ConvToMDHistoWS::conversionChunk()</a>, <a class="el" href="../../d3/d9c/ConvToMDEventsWSIndexing_8h_source.html#l00083">Mantid::MDAlgorithms::ConvToMDEventsWSIndexing::convertEvents()</a>, <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">initialize()</a>, and <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00158">Mantid::MDAlgorithms::ConvToMDHistoWS::runConversion()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00187">Mantid::MDAlgorithms::ConvToMDEventsWS::appendEventsFromInputWS()</a>, <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00050">Mantid::MDAlgorithms::ConvToMDHistoWS::conversionChunk()</a>, <a class="el" href="../../d3/d9c/ConvToMDEventsWSIndexing_8h_source.html#l00083">Mantid::MDAlgorithms::ConvToMDEventsWSIndexing::convertEvents()</a>, <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">initialize()</a>, and <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00158">Mantid::MDAlgorithms::ConvToMDHistoWS::runConversion()</a>.</p>
 
 </div>
 </div>
@@ -726,9 +757,9 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00082">82</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00084">84</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00186">Mantid::MDAlgorithms::ConvToMDEventsWS::appendEventsFromInputWS()</a>, <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">initialize()</a>, <a class="el" href="../../d3/d9c/ConvToMDEventsWSIndexing_8h_source.html#l00051">Mantid::MDAlgorithms::ConvToMDEventsWSIndexing::numWorkers()</a>, and <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00158">Mantid::MDAlgorithms::ConvToMDHistoWS::runConversion()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00187">Mantid::MDAlgorithms::ConvToMDEventsWS::appendEventsFromInputWS()</a>, <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">initialize()</a>, <a class="el" href="../../d3/d9c/ConvToMDEventsWSIndexing_8h_source.html#l00051">Mantid::MDAlgorithms::ConvToMDEventsWSIndexing::numWorkers()</a>, and <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00158">Mantid::MDAlgorithms::ConvToMDHistoWS::runConversion()</a>.</p>
 
 </div>
 </div>
@@ -752,9 +783,9 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00056">56</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00058">58</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d9c/ConvToMDEventsWSIndexing_8h_source.html#l00159">Mantid::MDAlgorithms::ConvToMDEventsWSIndexing::appendEvents()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00186">Mantid::MDAlgorithms::ConvToMDEventsWS::appendEventsFromInputWS()</a>, <a class="el" href="../../d3/d9c/ConvToMDEventsWSIndexing_8h_source.html#l00224">Mantid::MDAlgorithms::ConvToMDEventsWSIndexing::appendEventsFromInputWS()</a>, <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00050">Mantid::MDAlgorithms::ConvToMDHistoWS::conversionChunk()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00034">Mantid::MDAlgorithms::ConvToMDEventsWS::convertEventList()</a>, <a class="el" href="../../d3/d9c/ConvToMDEventsWSIndexing_8h_source.html#l00083">Mantid::MDAlgorithms::ConvToMDEventsWSIndexing::convertEvents()</a>, <a class="el" href="../../de/df7/ConvToMDEventsWSIndexing_8cpp_source.html#l00013">Mantid::MDAlgorithms::ConvToMDEventsWSIndexing::initialize()</a>, <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">initialize()</a>, <a class="el" href="../../d3/d9c/ConvToMDEventsWSIndexing_8h_source.html#l00244">Mantid::MDAlgorithms::ConvToMDEventsWSIndexing::mdEventType()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00168">Mantid::MDAlgorithms::ConvToMDEventsWS::runConversion()</a>, and <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00158">Mantid::MDAlgorithms::ConvToMDHistoWS::runConversion()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d9c/ConvToMDEventsWSIndexing_8h_source.html#l00159">Mantid::MDAlgorithms::ConvToMDEventsWSIndexing::appendEvents()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00187">Mantid::MDAlgorithms::ConvToMDEventsWS::appendEventsFromInputWS()</a>, <a class="el" href="../../d3/d9c/ConvToMDEventsWSIndexing_8h_source.html#l00224">Mantid::MDAlgorithms::ConvToMDEventsWSIndexing::appendEventsFromInputWS()</a>, <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00050">Mantid::MDAlgorithms::ConvToMDHistoWS::conversionChunk()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00034">Mantid::MDAlgorithms::ConvToMDEventsWS::convertEventList()</a>, <a class="el" href="../../d3/d9c/ConvToMDEventsWSIndexing_8h_source.html#l00083">Mantid::MDAlgorithms::ConvToMDEventsWSIndexing::convertEvents()</a>, <a class="el" href="../../de/df7/ConvToMDEventsWSIndexing_8cpp_source.html#l00013">Mantid::MDAlgorithms::ConvToMDEventsWSIndexing::initialize()</a>, <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">initialize()</a>, <a class="el" href="../../d3/d9c/ConvToMDEventsWSIndexing_8h_source.html#l00244">Mantid::MDAlgorithms::ConvToMDEventsWSIndexing::mdEventType()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00169">Mantid::MDAlgorithms::ConvToMDEventsWS::runConversion()</a>, and <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00158">Mantid::MDAlgorithms::ConvToMDHistoWS::runConversion()</a>.</p>
 
 </div>
 </div>
@@ -778,9 +809,35 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00059">59</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00061">61</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00050">Mantid::MDAlgorithms::ConvToMDHistoWS::conversionChunk()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00034">Mantid::MDAlgorithms::ConvToMDEventsWS::convertEventList()</a>, <a class="el" href="../../d3/d9c/ConvToMDEventsWSIndexing_8h_source.html#l00083">Mantid::MDAlgorithms::ConvToMDEventsWSIndexing::convertEvents()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00125">Mantid::MDAlgorithms::ConvToMDEventsWS::initialize()</a>, <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">initialize()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00168">Mantid::MDAlgorithms::ConvToMDEventsWS::runConversion()</a>, <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00158">Mantid::MDAlgorithms::ConvToMDHistoWS::runConversion()</a>, <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00117">setDisplayNormalization()</a>, and <a class="el" href="../../d1/d71/ConvToMDEventsWS_8h_source.html#l00066">Mantid::MDAlgorithms::ConvToMDEventsWS::setGoniometersFromLogs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00050">Mantid::MDAlgorithms::ConvToMDHistoWS::conversionChunk()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00034">Mantid::MDAlgorithms::ConvToMDEventsWS::convertEventList()</a>, <a class="el" href="../../d3/d9c/ConvToMDEventsWSIndexing_8h_source.html#l00083">Mantid::MDAlgorithms::ConvToMDEventsWSIndexing::convertEvents()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00125">Mantid::MDAlgorithms::ConvToMDEventsWS::initialize()</a>, <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">initialize()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00169">Mantid::MDAlgorithms::ConvToMDEventsWS::runConversion()</a>, <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00158">Mantid::MDAlgorithms::ConvToMDHistoWS::runConversion()</a>, <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00117">setDisplayNormalization()</a>, and <a class="el" href="../../d1/d71/ConvToMDEventsWS_8h_source.html#l00066">Mantid::MDAlgorithms::ConvToMDEventsWS::setGoniometersFromLogs()</a>.</p>
+
+</div>
+</div>
+<a id="a32836d0002e347b135cff7724559eb48" name="a32836d0002e347b135cff7724559eb48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32836d0002e347b135cff7724559eb48">&#9670;&#160;</a></span>m_timeLogsName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; Mantid::MDAlgorithms::ConvToMDBase::m_timeLogsName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00091">91</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00125">Mantid::MDAlgorithms::ConvToMDEventsWS::initialize()</a>.</p>
 
 </div>
 </div>
@@ -804,7 +861,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00076">76</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00078">78</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dfe/ConvToMDHistoWS_8cpp_source.html#l00050">Mantid::MDAlgorithms::ConvToMDHistoWS::conversionChunk()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00034">Mantid::MDAlgorithms::ConvToMDEventsWS::convertEventList()</a>, <a class="el" href="../../d3/d9c/ConvToMDEventsWSIndexing_8h_source.html#l00083">Mantid::MDAlgorithms::ConvToMDEventsWSIndexing::convertEvents()</a>, and <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">initialize()</a>.</p>
 
@@ -832,7 +889,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Flag to use log values corresponding to event pulse time instead of average values. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00088">88</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html#l00090">90</a> of file <a class="el" href="../../d9/d87/ConvToMDBase_8h_source.html">ConvToMDBase.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00125">Mantid::MDAlgorithms::ConvToMDEventsWS::initialize()</a>, <a class="el" href="../../da/dd6/ConvToMDBase_8cpp_source.html#l00032">initialize()</a>, <a class="el" href="../../da/dda/ConvToMDEventsWS_8cpp_source.html#l00015">Mantid::MDAlgorithms::ConvToMDEventsWS::setGenericVariableFromLogs()</a>, and <a class="el" href="../../d1/d71/ConvToMDEventsWS_8h_source.html#l00066">Mantid::MDAlgorithms::ConvToMDEventsWS::setGoniometersFromLogs()</a>.</p>
 
