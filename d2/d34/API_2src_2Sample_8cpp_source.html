@@ -415,7 +415,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>    <span class="comment">// Only replace the default shape if the file actually defines one; otherwise</span></div>
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>    <span class="comment">// keep the valid (empty) shape so callers never observe a null m_shape.</span></div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="../../dc/d67/namespaceMantid_1_1Geometry.html#ae2b0bf777fb422d17f76df83eacdd829">IObject_sptr</a> loadedShape = loadShapeFromFile(file))</div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>      <a class="code hl_variable" href="../../db/def/classMantid_1_1API_1_1Sample.html#abf3d22017182ee3896451f79dd55425f">m_shape</a> = loadedShape;</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>      <a class="code hl_variable" href="../../db/def/classMantid_1_1API_1_1Sample.html#abf3d22017182ee3896451f79dd55425f">m_shape</a> = std::move(loadedShape);</div>
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span> </div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>    <span class="comment">// sample environment</span></div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    <span class="keywordflow">if</span> (file-&gt;hasAttr(<span class="stringliteral">&quot;env_name&quot;</span>)) {</div>
