@@ -599,7 +599,7 @@ var searchData=
   ['setgoniometerindex_596',['setGoniometerIndex',['../db/d82/classMantid_1_1DataObjects_1_1MDEvent.html#a0a56689f2d0bb19dd89d17dda6de4a3d',1,'Mantid::DataObjects::MDEvent']]],
   ['setgoniometermatrix_597',['setgoniometermatrix',['../d0/d3d/classMantid_1_1DataObjects_1_1BasePeak.html#afab4cddc01b83c883cb94b7795932134',1,'Mantid::DataObjects::BasePeak::setGoniometerMatrix()'],['../da/dea/classMantid_1_1Geometry_1_1IPeak.html#a2c2764631b226ed11dd7bfa1860879eb',1,'Mantid::Geometry::IPeak::setGoniometerMatrix()']]],
   ['setgoniometers_598',['setGoniometers',['../d6/d91/classMantid_1_1API_1_1Run.html#ad0de338866ca17787f7c905b22d42d51',1,'Mantid::API::Run']]],
-  ['setgoniometersfromlogs_599',['setGoniometersFromLogs',['../d6/d10/classMantid_1_1MDAlgorithms_1_1ConvToMDEventsWS.html#a62713f457e38adc9bb53ad94b0755de2',1,'Mantid::MDAlgorithms::ConvToMDEventsWS']]],
+  ['setgoniometersfromlogs_599',['setGoniometersFromLogs',['../d6/d10/classMantid_1_1MDAlgorithms_1_1ConvToMDEventsWS.html#a9792be2d8d5f3fa4661db4be0c03cd1b',1,'Mantid::MDAlgorithms::ConvToMDEventsWS']]],
   ['setgroup_600',['setGroup',['../d1/d32/classMantid_1_1Kernel_1_1Property.html#a4998d89aa3373aeec724b36d13320147',1,'Mantid::Kernel::Property']]],
   ['setgroupnames_601',['setGroupNames',['../de/d4f/classMantidQt_1_1MantidWidgets_1_1MuonFitPropertyBrowser.html#a0551c2cb986ad297f9692e6feac5e6ed',1,'MantidQt::MantidWidgets::MuonFitPropertyBrowser']]],
   ['setgroupsselected_602',['setGroupsSelected',['../d3/de8/classMantidQt_1_1MantidWidgets_1_1MuonFitDataSelector.html#a9a58655709d60ea560147828f53d2c0a',1,'MantidQt::MantidWidgets::MuonFitDataSelector']]],
