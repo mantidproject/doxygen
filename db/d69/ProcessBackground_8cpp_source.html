@@ -983,9 +983,9 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span>  vec_peakfwhm.resize(numrows, 0.);</div>
 <div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span> </div>
 <div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; numrows; ++i) {</div>
-<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>    <span class="keywordtype">double</span> centre = peaktablews-&gt;cell&lt;<span class="keywordtype">double</span>&gt;(i, index_centre);</div>
+<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a> = peaktablews-&gt;cell&lt;<span class="keywordtype">double</span>&gt;(i, index_centre);</div>
 <div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>    <span class="keywordtype">double</span> fwhm = peaktablews-&gt;cell&lt;<span class="keywordtype">double</span>&gt;(i, index_fwhm);</div>
-<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>    vec_peakcentre[i] = centre;</div>
+<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>    vec_peakcentre[i] = <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a>;</div>
 <div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>    vec_peakfwhm[i] = fwhm;</div>
 <div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>  }</div>
 <div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>}</div>
@@ -1005,10 +1005,10 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>  <span class="keywordtype">size_t</span> numpeaks = v_centre.size();</div>
 <div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; numpeaks; ++i) {</div>
 <div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>    <span class="comment">// Define boundary</span></div>
-<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>    <span class="keywordtype">double</span> centre = v_centre[i];</div>
+<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a> = v_centre[i];</div>
 <div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>    <span class="keywordtype">double</span> fwhm = v_fwhm[i];</div>
-<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>    <span class="keywordtype">double</span> xmin = centre - num_fwhm * fwhm;</div>
-<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>    <span class="keywordtype">double</span> xmax = centre + num_fwhm * fwhm;</div>
+<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>    <span class="keywordtype">double</span> xmin = <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a> - num_fwhm * fwhm;</div>
+<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>    <span class="keywordtype">double</span> xmax = <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a> + num_fwhm * fwhm;</div>
 <div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span> </div>
 <div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>    vector&lt;double&gt;::iterator viter;</div>
 <div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>    <span class="keywordtype">int</span> i_min, i_max;</div>
@@ -1045,6 +1045,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="ttc" id="aAlgorithm_8h_html_afdb48240ab340a0026eeadc6de8b72e1"><div class="ttname"><a href="../../d7/d36/Algorithm_8h.html#afdb48240ab340a0026eeadc6de8b72e1">DECLARE_ALGORITHM</a></div><div class="ttdeci">#define DECLARE_ALGORITHM(classname)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d36/Algorithm_8h_source.html#l00542">Algorithm.h:542</a></div></div>
 <div class="ttc" id="aAxis_8h_html"><div class="ttname"><a href="../../dd/dbb/Axis_8h.html">Axis.h</a></div></div>
 <div class="ttc" id="aChebyshev_8h_html"><div class="ttname"><a href="../../d5/d80/Chebyshev_8h.html">Chebyshev.h</a></div></div>
+<div class="ttc" id="aEstimatePeakIntensities_8cpp_html_a98fde6c7b4025f809ebd3b5da1bf6918"><div class="ttname"><a href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a></div><div class="ttdeci">double centre</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00037">EstimatePeakIntensities.cpp:37</a></div></div>
 <div class="ttc" id="aIPeak_8h_html"><div class="ttname"><a href="../../d3/df6/IPeak_8h.html">IPeak.h</a></div></div>
 <div class="ttc" id="aKernel_2src_2DeltaEMode_8cpp_html_a88e786823474a4114810b8da86f8916e"><div class="ttname"><a href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a></div><div class="ttdeci">std::map&lt; DeltaEMode::Type, std::string &gt; index</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">DeltaEMode.cpp:19</a></div></div>
 <div class="ttc" id="aListValidator_8h_html"><div class="ttname"><a href="../../dc/d96/ListValidator_8h.html">ListValidator.h</a></div></div>

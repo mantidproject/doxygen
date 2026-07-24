@@ -311,13 +311,13 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>      ws-&gt;mutableY(i)[0] = VERY_BIG_VALUE;</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>      ws-&gt;mutableE(i)[0] = 0.0;</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (xVal &gt;= startX &amp;&amp; xVal &lt;= endX) {</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>      <span class="keyword">auto</span> <span class="keyword">const</span> background = bkg[i];</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>      <span class="keywordflow">if</span> (background &lt;= 0.0) {</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Background is expected to be positive, found value &quot;</span> + <a class="code hl_function" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string</a>(background) +</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>      <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#aa53add3f540d099c26e6dc28fe788f7f">background</a> = bkg[i];</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#aa53add3f540d099c26e6dc28fe788f7f">background</a> &lt;= 0.0) {</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Background is expected to be positive, found value &quot;</span> + <a class="code hl_function" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string</a>(<a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#aa53add3f540d099c26e6dc28fe788f7f">background</a>) +</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                                 <span class="stringliteral">&quot; at spectrum with workspace index &quot;</span> + <a class="code hl_function" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string</a>(i));</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>      }</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>      ws-&gt;mutableY(i)[0] /= background;</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>      ws-&gt;mutableE(i)[0] /= background;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>      ws-&gt;mutableY(i)[0] /= <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#aa53add3f540d099c26e6dc28fe788f7f">background</a>;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>      ws-&gt;mutableE(i)[0] /= <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#aa53add3f540d099c26e6dc28fe788f7f">background</a>;</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>      ws-&gt;mutableY(i)[0] = 1.0;</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>      ws-&gt;mutableE(i)[0] = 0.0;</div>
@@ -396,6 +396,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="ttc" id="aArrayProperty_8h_html"><div class="ttname"><a href="../../df/da4/ArrayProperty_8h.html">ArrayProperty.h</a></div></div>
 <div class="ttc" id="aConfigService_8h_html"><div class="ttname"><a href="../../d1/dbc/ConfigService_8h.html">ConfigService.h</a></div></div>
 <div class="ttc" id="aCreateFloodWorkspace_8h_html"><div class="ttname"><a href="../../da/dc7/CreateFloodWorkspace_8h.html">CreateFloodWorkspace.h</a></div></div>
+<div class="ttc" id="aEstimatePeakIntensities_8cpp_html_aa53add3f540d099c26e6dc28fe788f7f"><div class="ttname"><a href="../../d3/d17/EstimatePeakIntensities_8cpp.html#aa53add3f540d099c26e6dc28fe788f7f">background</a></div><div class="ttdeci">double background</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00036">EstimatePeakIntensities.cpp:36</a></div></div>
 <div class="ttc" id="aFacilityInfo_8h_html"><div class="ttname"><a href="../../da/d42/FacilityInfo_8h.html">FacilityInfo.h</a></div></div>
 <div class="ttc" id="aFileProperty_8h_html"><div class="ttname"><a href="../../d1/d17/FileProperty_8h.html">FileProperty.h</a></div></div>
 <div class="ttc" id="aIFunction_8h_html"><div class="ttname"><a href="../../de/d94/IFunction_8h.html">IFunction.h</a></div></div>

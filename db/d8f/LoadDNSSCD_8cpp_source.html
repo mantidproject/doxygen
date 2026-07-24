@@ -176,8 +176,8 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  } <span class="keywordflow">catch</span> (std::exception &amp;) {</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">int</span> tzd;</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    Poco::DateTime dt;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">bool</span> ok = Poco::DateTimeParser::tryParse(str, dt, tzd);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">if</span> (ok) {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a1d67bd6634a9002df97231d8c8dbc66c">ok</a> = Poco::DateTimeParser::tryParse(str, dt, tzd);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a1d67bd6634a9002df97231d8c8dbc66c">ok</a>) {</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      <span class="keyword">auto</span> time = Poco::DateTimeFormatter::format(dt, <span class="stringliteral">&quot;%Y-%m-%dT%H:%M:%S&quot;</span>);</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>      <span class="keywordflow">return</span> time;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
@@ -919,6 +919,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="ttc" id="aAugmentedLagrangianOptimizer_8cpp_html_a3d05cf6aa68b03e254d70afbe869e305"><div class="ttname"><a href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#a3d05cf6aa68b03e254d70afbe869e305">n</a></div><div class="ttdeci">size_t n</div><div class="ttdef"><b>Definition</b> <a href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">AugmentedLagrangianOptimizer.cpp:42</a></div></div>
 <div class="ttc" id="aBoundedValidator_8h_html"><div class="ttname"><a href="../../dd/d4d/BoundedValidator_8h.html">BoundedValidator.h</a></div></div>
 <div class="ttc" id="aConfigService_8h_html"><div class="ttname"><a href="../../d1/dbc/ConfigService_8h.html">ConfigService.h</a></div></div>
+<div class="ttc" id="aEstimatePeakIntensities_8cpp_html_a1d67bd6634a9002df97231d8c8dbc66c"><div class="ttname"><a href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a1d67bd6634a9002df97231d8c8dbc66c">ok</a></div><div class="ttdeci">bool ok</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00042">EstimatePeakIntensities.cpp:42</a></div></div>
 <div class="ttc" id="aExperimentInfo_8h_html"><div class="ttname"><a href="../../da/dd7/ExperimentInfo_8h.html">ExperimentInfo.h</a></div></div>
 <div class="ttc" id="aFileProperty_8h_html"><div class="ttname"><a href="../../d1/d17/FileProperty_8h.html">FileProperty.h</a></div></div>
 <div class="ttc" id="aHKL_8h_html"><div class="ttname"><a href="../../de/da0/HKL_8h.html">HKL.h</a></div></div>

@@ -129,10 +129,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a0ed014a13bcedad33439930b1c02386f"><td class="mdescLeft">&#160;</td><td class="mdescRight">overwrite IPeakFunction base class methods  <br /></td></tr>
 <tr class="separator:a0ed014a13bcedad33439930b1c02386f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf78e31abc1c8fe73de97b680f43d88a" id="r_adf78e31abc1c8fe73de97b680f43d88a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d15/classMantid_1_1CurveFitting_1_1Functions_1_1Gaussian.html#adf78e31abc1c8fe73de97b680f43d88a">fixCentre</a> (bool isDefault=false) override</td></tr>
-<tr class="memdesc:adf78e31abc1c8fe73de97b680f43d88a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fix a parameter or set up a tie such that value returned by <a class="el" href="../../de/d15/classMantid_1_1CurveFitting_1_1Functions_1_1Gaussian.html#a0ed014a13bcedad33439930b1c02386f" title="overwrite IPeakFunction base class methods">centre()</a> is constant during fitting.  <br /></td></tr>
+<tr class="memdesc:adf78e31abc1c8fe73de97b680f43d88a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fix a parameter or set up a tie such that value returned by <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre()</a> is constant during fitting.  <br /></td></tr>
 <tr class="separator:adf78e31abc1c8fe73de97b680f43d88a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06dcdd0473f71df6e67a26c2ff2551bd" id="r_a06dcdd0473f71df6e67a26c2ff2551bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d15/classMantid_1_1CurveFitting_1_1Functions_1_1Gaussian.html#a06dcdd0473f71df6e67a26c2ff2551bd">fixIntensity</a> (bool isDefault=false) override</td></tr>
-<tr class="memdesc:a06dcdd0473f71df6e67a26c2ff2551bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fix a parameter or set up a tie such that value returned by <a class="el" href="../../de/d15/classMantid_1_1CurveFitting_1_1Functions_1_1Gaussian.html#a5808d13b9327f1e653e17dd0c6df8244" title="Returns the integral intensity of the peak.">intensity()</a> is constant during fitting.  <br /></td></tr>
+<tr class="memdesc:a06dcdd0473f71df6e67a26c2ff2551bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fix a parameter or set up a tie such that value returned by <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a2118076db8e8f8a25c2376e1d4acfb67">intensity()</a> is constant during fitting.  <br /></td></tr>
 <tr class="separator:a06dcdd0473f71df6e67a26c2ff2551bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a642353be30e4a5bc7143ff25774ed7c5" id="r_a642353be30e4a5bc7143ff25774ed7c5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d15/classMantid_1_1CurveFitting_1_1Functions_1_1Gaussian.html#a642353be30e4a5bc7143ff25774ed7c5">fwhm</a> () const override</td></tr>
 <tr class="memdesc:a642353be30e4a5bc7143ff25774ed7c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the peak FWHM.  <br /></td></tr>
@@ -787,7 +787,7 @@ Sigma - standard deviation (default 0.0) </li>
 </table>
 </div><div class="memdoc">
 
-<p>Fix a parameter or set up a tie such that value returned by <a class="el" href="../../de/d15/classMantid_1_1CurveFitting_1_1Functions_1_1Gaussian.html#a0ed014a13bcedad33439930b1c02386f" title="overwrite IPeakFunction base class methods">centre()</a> is constant during fitting. </p>
+<p>Fix a parameter or set up a tie such that value returned by <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre()</a> is constant during fitting. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">isDefault</td><td>:: If true fix centre by default: don't show it in ties </td></tr>
@@ -827,7 +827,7 @@ Sigma - standard deviation (default 0.0) </li>
 </table>
 </div><div class="memdoc">
 
-<p>Fix a parameter or set up a tie such that value returned by <a class="el" href="../../de/d15/classMantid_1_1CurveFitting_1_1Functions_1_1Gaussian.html#a5808d13b9327f1e653e17dd0c6df8244" title="Returns the integral intensity of the peak.">intensity()</a> is constant during fitting. </p>
+<p>Fix a parameter or set up a tie such that value returned by <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a2118076db8e8f8a25c2376e1d4acfb67">intensity()</a> is constant during fitting. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">isDefault</td><td>:: If true fix intensity by default: don't show it in ties </td></tr>
@@ -1246,7 +1246,7 @@ Sigma - standard deviation (default 0.0) </li>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d18/Gaussian_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../df/d18/Gaussian_8cpp_source.html">Gaussian.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d51/ParamFunction_8cpp_source.html#l00062">Mantid::API::ParamFunction::getParameter()</a>, <a class="el" href="../../d0/dea/Gaussian_8h_source.html#l00073">m_intensityCache</a>, and <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00156">sigma</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d51/ParamFunction_8cpp_source.html#l00062">Mantid::API::ParamFunction::getParameter()</a>, <a class="el" href="../../d0/dea/Gaussian_8h_source.html#l00073">m_intensityCache</a>, and <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00035">sigma</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d18/Gaussian_8cpp_source.html#l00118">fixIntensity()</a>, <a class="el" href="../../df/d18/Gaussian_8cpp_source.html#l00132">histogram1D()</a>, and <a class="el" href="../../df/d18/Gaussian_8cpp_source.html#l00094">intensityError()</a>.</p>
 
@@ -1495,7 +1495,7 @@ Sigma - standard deviation (default 0.0) </li>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d18/Gaussian_8cpp_source.html#l00104">104</a> of file <a class="el" href="../../df/d18/Gaussian_8cpp_source.html">Gaussian.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d51/ParamFunction_8cpp_source.html#l00062">Mantid::API::ParamFunction::getParameter()</a>, <a class="el" href="../../d0/dea/Gaussian_8h_source.html#l00073">m_intensityCache</a>, <a class="el" href="../../d9/d53/API_2src_2IPeakFunction_8cpp_source.html#l00151">Mantid::API::IPeakFunction::setParameter()</a>, and <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00156">sigma</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d51/ParamFunction_8cpp_source.html#l00062">Mantid::API::ParamFunction::getParameter()</a>, <a class="el" href="../../d0/dea/Gaussian_8h_source.html#l00073">m_intensityCache</a>, <a class="el" href="../../d9/d53/API_2src_2IPeakFunction_8cpp_source.html#l00151">Mantid::API::IPeakFunction::setParameter()</a>, and <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00035">sigma</a>.</p>
 
 </div>
 </div>

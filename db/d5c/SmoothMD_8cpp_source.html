@@ -174,7 +174,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="comment">// Calculate sigma from FWHM</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="comment">// FWHM = 2 sqrt(2 * ln(2)) * sigma</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="../../d6/d64/GetAllEi_8cpp.html#a4ef930be9d7ab47d59cc0668d0d1fac8">sigma</a> = (fwhm * 0.42463) / 2.0;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a4ef930be9d7ab47d59cc0668d0d1fac8">sigma</a> = (fwhm * 0.42463) / 2.0;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keyword">const</span> <span class="keywordtype">double</span> sigma_factor = M_SQRT1_2 / (fwhm * 0.42463);</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <a class="code hl_typedef" href="../../db/d5c/SmoothMD_8cpp.html#a0e391308d38b748e13fde7205841b3a8">KernelVector</a> kernel_one_side;</div>
@@ -183,13 +183,13 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="comment">// for consistency with Horace</span></div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="comment">// Use erf to get the value of the Gaussian integrated over the width of the</span></div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="comment">// pixel, more accurate than just using centre value of pixel and erf is fast</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="keywordtype">double</span> pixel_value = std::erf(0.5 * sigma_factor) * <a class="code hl_variable" href="../../d6/d64/GetAllEi_8cpp.html#a4ef930be9d7ab47d59cc0668d0d1fac8">sigma</a>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="keywordtype">double</span> pixel_value = std::erf(0.5 * sigma_factor) * <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a4ef930be9d7ab47d59cc0668d0d1fac8">sigma</a>;</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keywordtype">int</span> pixel_count = 0;</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="keywordflow">while</span> (pixel_value &gt; 0.02) {</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    kernel_one_side.emplace_back(pixel_value);</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    pixel_count++;</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    pixel_value =</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        (std::erf((pixel_count + 0.5) * sigma_factor) - std::erf((pixel_count - 0.5) * sigma_factor)) * 0.5 * <a class="code hl_variable" href="../../d6/d64/GetAllEi_8cpp.html#a4ef930be9d7ab47d59cc0668d0d1fac8">sigma</a>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        (std::erf((pixel_count + 0.5) * sigma_factor) - std::erf((pixel_count - 0.5) * sigma_factor)) * 0.5 * <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a4ef930be9d7ab47d59cc0668d0d1fac8">sigma</a>;</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  }</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="comment">// Create the symmetric kernel vector</span></div>
@@ -587,9 +587,9 @@ $(document).ready(function() { init_codefold(1); });
 <div class="ttc" id="aArrayBoundedValidator_8h_html"><div class="ttname"><a href="../../d0/d9e/ArrayBoundedValidator_8h.html">ArrayBoundedValidator.h</a></div></div>
 <div class="ttc" id="aArrayProperty_8h_html"><div class="ttname"><a href="../../df/da4/ArrayProperty_8h.html">ArrayProperty.h</a></div></div>
 <div class="ttc" id="aCompositeValidator_8h_html"><div class="ttname"><a href="../../d1/d8f/CompositeValidator_8h.html">CompositeValidator.h</a></div></div>
+<div class="ttc" id="aEstimatePeakIntensities_8cpp_html_a4ef930be9d7ab47d59cc0668d0d1fac8"><div class="ttname"><a href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a4ef930be9d7ab47d59cc0668d0d1fac8">sigma</a></div><div class="ttdeci">double sigma</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00035">EstimatePeakIntensities.cpp:35</a></div></div>
 <div class="ttc" id="aFitMW_8cpp_html_aee90379adb0307effb138f4871edbc5c"><div class="ttname"><a href="../../d5/d0b/FitMW_8cpp.html#aee90379adb0307effb138f4871edbc5c">value</a></div><div class="ttdeci">double value</div><div class="ttdoc">The value of the point.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d0b/FitMW_8cpp_source.html#l00051">FitMW.cpp:51</a></div></div>
 <div class="ttc" id="aFrameworkManager_8h_html"><div class="ttname"><a href="../../de/d08/FrameworkManager_8h.html">FrameworkManager.h</a></div></div>
-<div class="ttc" id="aGetAllEi_8cpp_html_a4ef930be9d7ab47d59cc0668d0d1fac8"><div class="ttname"><a href="../../d6/d64/GetAllEi_8cpp.html#a4ef930be9d7ab47d59cc0668d0d1fac8">sigma</a></div><div class="ttdeci">double sigma</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d64/GetAllEi_8cpp_source.html#l00156">GetAllEi.cpp:156</a></div></div>
 <div class="ttc" id="aIMDHistoWorkspace_8h_html"><div class="ttname"><a href="../../d6/dc7/IMDHistoWorkspace_8h.html">IMDHistoWorkspace.h</a></div></div>
 <div class="ttc" id="aIMDIterator_8h_html"><div class="ttname"><a href="../../d1/d9b/IMDIterator_8h.html">IMDIterator.h</a></div></div>
 <div class="ttc" id="aIndexPeaks_8cpp_html_a1ec236df65b93a338aecdf3fa64790f9"><div class="ttname"><a href="../../dc/dd8/IndexPeaks_8cpp.html#a1ec236df65b93a338aecdf3fa64790f9">error</a></div><div class="ttdeci">double error</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dd8/IndexPeaks_8cpp_source.html#l00136">IndexPeaks.cpp:136</a></div></div>

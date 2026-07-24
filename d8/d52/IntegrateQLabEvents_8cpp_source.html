@@ -209,7 +209,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    sigmas[i] = sqrt(eigen_values[i]);</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keywordtype">bool</span> invalid_peak =</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>      std::any_of(sigmas.cbegin(), sigmas.cend(), [](<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="../../d6/d64/GetAllEi_8cpp.html#a4ef930be9d7ab47d59cc0668d0d1fac8">sigma</a>) { return std::isnan(sigma) || sigma &lt;= 0; });</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>      std::any_of(sigmas.cbegin(), sigmas.cend(), [](<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a4ef930be9d7ab47d59cc0668d0d1fac8">sigma</a>) { return std::isnan(sigma) || sigma &lt;= 0; });</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <span class="comment">// if data collapses to a line or plane, the ellipsoid volume is zero</span></div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <span class="keywordflow">if</span> (invalid_peak)</div>
@@ -508,7 +508,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span> </div>
 <div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>} <span class="comment">// namespace MDAlgorithms</span></div>
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>} <span class="comment">// namespace Mantid</span></div>
-<div class="ttc" id="aGetAllEi_8cpp_html_a4ef930be9d7ab47d59cc0668d0d1fac8"><div class="ttname"><a href="../../d6/d64/GetAllEi_8cpp.html#a4ef930be9d7ab47d59cc0668d0d1fac8">sigma</a></div><div class="ttdeci">double sigma</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d64/GetAllEi_8cpp_source.html#l00156">GetAllEi.cpp:156</a></div></div>
+<div class="ttc" id="aEstimatePeakIntensities_8cpp_html_a4ef930be9d7ab47d59cc0668d0d1fac8"><div class="ttname"><a href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a4ef930be9d7ab47d59cc0668d0d1fac8">sigma</a></div><div class="ttdeci">double sigma</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00035">EstimatePeakIntensities.cpp:35</a></div></div>
 <div class="ttc" id="aIndexingUtils_8h_html"><div class="ttname"><a href="../../d8/de5/IndexingUtils_8h.html">IndexingUtils.h</a></div></div>
 <div class="ttc" id="aIntegrateQLabEvents_8h_html"><div class="ttname"><a href="../../d3/d72/IntegrateQLabEvents_8h.html">IntegrateQLabEvents.h</a></div></div>
 <div class="ttc" id="aLogger_8h_html"><div class="ttname"><a href="../../dd/da4/Logger_8h.html">Logger.h</a></div></div>

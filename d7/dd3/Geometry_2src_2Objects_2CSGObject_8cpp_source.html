@@ -166,7 +166,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">return</span> 0.0; <span class="comment">// not certain this is correct</span></div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keywordtype">double</span> coneSolidAngle(<span class="keyword">const</span> <a class="code hl_class" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">V3D</a> &amp;observer, <span class="keyword">const</span> <a class="code hl_class" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Mantid::Kernel::V3D</a> &amp;centre, <span class="keyword">const</span> <a class="code hl_class" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Mantid::Kernel::V3D</a> &amp;axis,</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keywordtype">double</span> coneSolidAngle(<span class="keyword">const</span> <a class="code hl_class" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">V3D</a> &amp;observer, <span class="keyword">const</span> <a class="code hl_class" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Mantid::Kernel::V3D</a> &amp;<a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a>, <span class="keyword">const</span> <a class="code hl_class" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Mantid::Kernel::V3D</a> &amp;axis,</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                      <span class="keyword">const</span> <span class="keywordtype">double</span> radius, <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="../../d6/d64/GetAllEi_8cpp.html#a89f6abd564014faeff7cd20c340a9c7d">height</a>) {</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="comment">// The cone is broken down into three pieces and then in turn broken down into</span></div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="comment">// triangles. Any triangle that has a normal facing away from the observer</span></div>
@@ -203,10 +203,10 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    transform.rotate(pt2);</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    transform.rotate(pt3);</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    pt2 += centre;</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    pt3 += centre;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    pt2 += <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a>;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    pt3 += <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a>;</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordtype">double</span> sa = triangleSolidAngle(centre, pt2, pt3, observer);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordtype">double</span> sa = triangleSolidAngle(<a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a>, pt2, pt3, observer);</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordflow">if</span> (sa &gt; 0.0) {</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>      solid_angle += sa;</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    }</div>
@@ -243,10 +243,10 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>      transform.rotate(pt2);</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>      transform.rotate(pt4);</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>      pt1 += centre;</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>      pt2 += centre;</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>      pt3 += centre;</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>      pt4 += centre;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>      pt1 += <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a>;</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>      pt2 += <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a>;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>      pt3 += <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a>;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>      pt4 += <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a>;</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>      <span class="keywordtype">double</span> sa = triangleSolidAngle(pt1, pt4, pt3, observer);</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>      <span class="keywordflow">if</span> (sa &gt; 0.0) {</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        solid_angle += sa;</div>
@@ -264,9 +264,9 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>  }</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>  <span class="comment">// Top section</span></div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  <a class="code hl_class" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">V3D</a> top_centre = <a class="code hl_class" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">V3D</a>(0.0, 0.0, <a class="code hl_variable" href="../../d6/d64/GetAllEi_8cpp.html#a89f6abd564014faeff7cd20c340a9c7d">height</a>) + centre;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  <a class="code hl_class" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">V3D</a> top_centre = <a class="code hl_class" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">V3D</a>(0.0, 0.0, <a class="code hl_variable" href="../../d6/d64/GetAllEi_8cpp.html#a89f6abd564014faeff7cd20c340a9c7d">height</a>) + <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a>;</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  transform.<a class="code hl_function" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html#a6bd7c983b81a656ca42432b9c31aba03">rotate</a>(top_centre);</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  top_centre += centre;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  top_centre += <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a>;</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> sl = 0; sl &lt; <a class="code hl_variable" href="../../d3/d63/classMantid_1_1Geometry_1_1Cone.html#a1e43b6db525ae8fa1bc246b398254127">Cone::g_NSLICES</a>; ++sl) {</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="keywordtype">int</span> vertex = sl;</div>
@@ -282,8 +282,8 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    transform.rotate(pt2);</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    transform.rotate(pt3);</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    pt2 += centre;</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    pt3 += centre;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    pt2 += <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a>;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    pt3 += <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a>;</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="keywordtype">double</span> sa = triangleSolidAngle(top_centre, pt3, pt2, observer);</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <span class="keywordflow">if</span> (sa &gt; 0.0) {</div>
@@ -358,7 +358,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  <span class="keywordflow">return</span> sangle;</div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>}</div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="keywordtype">double</span> cylinderSolidAngle(<span class="keyword">const</span> <a class="code hl_class" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">V3D</a> &amp;observer, <span class="keyword">const</span> <a class="code hl_class" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">V3D</a> &amp;centre, <span class="keyword">const</span> <a class="code hl_class" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">V3D</a> &amp;axis, <span class="keyword">const</span> <span class="keywordtype">double</span> radius,</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="keywordtype">double</span> cylinderSolidAngle(<span class="keyword">const</span> <a class="code hl_class" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">V3D</a> &amp;observer, <span class="keyword">const</span> <a class="code hl_class" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">V3D</a> &amp;<a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a>, <span class="keyword">const</span> <a class="code hl_class" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">V3D</a> &amp;axis, <span class="keyword">const</span> <span class="keywordtype">double</span> radius,</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>                          <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="../../d6/d64/GetAllEi_8cpp.html#a89f6abd564014faeff7cd20c340a9c7d">height</a>, <span class="keyword">const</span> <span class="keywordtype">int</span> numberOfSlices) {</div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>  <span class="comment">// The cylinder is triangulated along its axis EXCLUDING the end caps so that</span></div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  <span class="comment">// stacked cylinders give the correct value of solid angle (i.e shadowing is</span></div>
@@ -399,10 +399,10 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>      transform.rotate(pt2);</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>      transform.rotate(pt4);</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span> </div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>      pt1 += centre;</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>      pt2 += centre;</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>      pt3 += centre;</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>      pt4 += centre;</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>      pt1 += <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a>;</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>      pt2 += <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a>;</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>      pt3 += <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a>;</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>      pt4 += <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a>;</div>
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>      <span class="keywordtype">double</span> sa = triangleSolidAngle(pt1, pt4, pt3, observer);</div>
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>      <span class="keywordflow">if</span> (sa &gt; 0.0) {</div>
@@ -2020,6 +2020,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="ttc" id="aCSGObject_8h_html"><div class="ttname"><a href="../../db/dde/CSGObject_8h.html">CSGObject.h</a></div></div>
 <div class="ttc" id="aCone_8h_html"><div class="ttname"><a href="../../d1/d9b/Cone_8h.html">Cone.h</a></div></div>
 <div class="ttc" id="aCylinder_8h_html"><div class="ttname"><a href="../../d9/d0a/Cylinder_8h.html">Cylinder.h</a></div></div>
+<div class="ttc" id="aEstimatePeakIntensities_8cpp_html_a98fde6c7b4025f809ebd3b5da1bf6918"><div class="ttname"><a href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a></div><div class="ttdeci">double centre</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00037">EstimatePeakIntensities.cpp:37</a></div></div>
 <div class="ttc" id="aException_8h_html"><div class="ttname"><a href="../../d8/d8a/Exception_8h.html">Exception.h</a></div></div>
 <div class="ttc" id="aGeometryHandler_8h_html"><div class="ttname"><a href="../../d2/d79/GeometryHandler_8h.html">GeometryHandler.h</a></div></div>
 <div class="ttc" id="aGetAllEi_8cpp_html_a89f6abd564014faeff7cd20c340a9c7d"><div class="ttname"><a href="../../d6/d64/GetAllEi_8cpp.html#a89f6abd564014faeff7cd20c340a9c7d">height</a></div><div class="ttdeci">double height</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d64/GetAllEi_8cpp_source.html#l00155">GetAllEi.cpp:155</a></div></div>

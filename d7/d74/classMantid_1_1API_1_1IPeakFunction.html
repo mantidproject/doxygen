@@ -131,7 +131,7 @@ Inheritance diagram for Mantid::API::IPeakFunction:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4a59e6e5b07cf3b9f8ef40f3d3bf3704" id="r_a4a59e6e5b07cf3b9f8ef40f3d3bf3704"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d74/classMantid_1_1API_1_1IPeakFunction.html#a4a59e6e5b07cf3b9f8ef40f3d3bf3704">fixIntensity</a> (bool isDefault=false)</td></tr>
-<tr class="memdesc:a4a59e6e5b07cf3b9f8ef40f3d3bf3704"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fix a parameter or set up a tie such that value returned by <a class="el" href="../../d7/d74/classMantid_1_1API_1_1IPeakFunction.html#a7acd23bf9d19e2105150838b2517c7cc" title="Returns the integral intensity of the peak.">intensity()</a> is constant during fitting.  <br /></td></tr>
+<tr class="memdesc:a4a59e6e5b07cf3b9f8ef40f3d3bf3704"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fix a parameter or set up a tie such that value returned by <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a2118076db8e8f8a25c2376e1d4acfb67">intensity()</a> is constant during fitting.  <br /></td></tr>
 <tr class="separator:a4a59e6e5b07cf3b9f8ef40f3d3bf3704"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4813a7f6c3bfc53e475878805dc32dd0" id="r_a4813a7f6c3bfc53e475878805dc32dd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d74/classMantid_1_1API_1_1IPeakFunction.html#a4813a7f6c3bfc53e475878805dc32dd0">function</a> (const <a class="el" href="../../df/d91/classMantid_1_1API_1_1FunctionDomain.html">FunctionDomain</a> &amp;domain, <a class="el" href="../../d9/d9c/classMantid_1_1API_1_1FunctionValues.html">FunctionValues</a> &amp;values) const override</td></tr>
 <tr class="memdesc:a4813a7f6c3bfc53e475878805dc32dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the function for all arguments in the domain.  <br /></td></tr>
@@ -189,7 +189,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:afa239049a1cc969b37c669a23b193ae7 inherit pub_methods_classMantid_1_1API_1_1IFunctionWithLocation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the centre of the function, which may be something as simple as the centre of the fitting range in the case of a background function or peak shape function this return value reflects the centre of the peak.  <br /></td></tr>
 <tr class="separator:afa239049a1cc969b37c669a23b193ae7 inherit pub_methods_classMantid_1_1API_1_1IFunctionWithLocation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec069653d315e7acd10099c2038d3c94 inherit pub_methods_classMantid_1_1API_1_1IFunctionWithLocation" id="r_aec069653d315e7acd10099c2038d3c94"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/classMantid_1_1API_1_1IFunctionWithLocation.html#aec069653d315e7acd10099c2038d3c94">fixCentre</a> (bool isDefault=false)</td></tr>
-<tr class="memdesc:aec069653d315e7acd10099c2038d3c94 inherit pub_methods_classMantid_1_1API_1_1IFunctionWithLocation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fix a parameter or set up a tie such that value returned by <a class="el" href="../../d5/dd0/classMantid_1_1API_1_1IFunctionWithLocation.html#afa239049a1cc969b37c669a23b193ae7" title="Returns the centre of the function, which may be something as simple as the centre of the fitting ran...">centre()</a> is constant during fitting.  <br /></td></tr>
+<tr class="memdesc:aec069653d315e7acd10099c2038d3c94 inherit pub_methods_classMantid_1_1API_1_1IFunctionWithLocation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fix a parameter or set up a tie such that value returned by <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre()</a> is constant during fitting.  <br /></td></tr>
 <tr class="separator:aec069653d315e7acd10099c2038d3c94 inherit pub_methods_classMantid_1_1API_1_1IFunctionWithLocation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f4f78f730296384c70d810669e1d705 inherit pub_methods_classMantid_1_1API_1_1IFunctionWithLocation" id="r_a4f4f78f730296384c70d810669e1d705"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/classMantid_1_1API_1_1IFunctionWithLocation.html#a4f4f78f730296384c70d810669e1d705">height</a> () const =0</td></tr>
 <tr class="memdesc:a4f4f78f730296384c70d810669e1d705 inherit pub_methods_classMantid_1_1API_1_1IFunctionWithLocation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the height of the function.  <br /></td></tr>
@@ -702,7 +702,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Fix a parameter or set up a tie such that value returned by <a class="el" href="../../d7/d74/classMantid_1_1API_1_1IPeakFunction.html#a7acd23bf9d19e2105150838b2517c7cc" title="Returns the integral intensity of the peak.">intensity()</a> is constant during fitting. </p>
+<p>Fix a parameter or set up a tie such that value returned by <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a2118076db8e8f8a25c2376e1d4acfb67">intensity()</a> is constant during fitting. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">isDefault</td><td>:: If true fix intensity by default: don't show it in ties </td></tr>
@@ -1198,7 +1198,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../d9/d53/API_2src_2IPeakFunction_8cpp_source.html#l00161">integrate()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/d1e/PythonInterface_2mantid_2api_2src_2Exports_2IPeakFunction_8cpp_source.html#l00017">export_IPeakFunction()</a>, <a class="el" href="../../d6/d09/Bk2BkExpConvPV_8cpp_source.html#l00128">Mantid::CurveFitting::Functions::Bk2BkExpConvPV::functionLocal()</a>, and <a class="el" href="../../d9/d53/API_2src_2IPeakFunction_8cpp_source.html#l00188">setIntensity()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d1e/PythonInterface_2mantid_2api_2src_2Exports_2IPeakFunction_8cpp_source.html#l00017">export_IPeakFunction()</a>, and <a class="el" href="../../d6/d09/Bk2BkExpConvPV_8cpp_source.html#l00128">Mantid::CurveFitting::Functions::Bk2BkExpConvPV::functionLocal()</a>.</p>
 
 </div>
 </div>
@@ -1301,7 +1301,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/d53/API_2src_2IPeakFunction_8cpp_source.html#l00188">188</a> of file <a class="el" href="../../d9/d53/API_2src_2IPeakFunction_8cpp_source.html">IPeakFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/dd0/classMantid_1_1API_1_1IFunctionWithLocation.html#a4f4f78f730296384c70d810669e1d705">Mantid::API::IFunctionWithLocation::height()</a>, <a class="el" href="../../d9/d53/API_2src_2IPeakFunction_8cpp_source.html#l00179">intensity()</a>, and <a class="el" href="../../d5/dd0/classMantid_1_1API_1_1IFunctionWithLocation.html#a11e861fdfe4ca6926b985eb11a823d44">Mantid::API::IFunctionWithLocation::setHeight()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/dd0/classMantid_1_1API_1_1IFunctionWithLocation.html#a4f4f78f730296384c70d810669e1d705">Mantid::API::IFunctionWithLocation::height()</a>, <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00034">intensity</a>, and <a class="el" href="../../d5/dd0/classMantid_1_1API_1_1IFunctionWithLocation.html#a11e861fdfe4ca6926b985eb11a823d44">Mantid::API::IFunctionWithLocation::setHeight()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d1/d1e/PythonInterface_2mantid_2api_2src_2Exports_2IPeakFunction_8cpp_source.html#l00017">export_IPeakFunction()</a>, and <a class="el" href="../../df/d1e/CrystalFieldPeakUtils_8cpp_source.html#l00226">Mantid::CurveFitting::Functions::CrystalFieldUtils::updatePeak()</a>.</p>
 

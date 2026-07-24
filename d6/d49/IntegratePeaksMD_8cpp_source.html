@@ -620,10 +620,10 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>        errorSquared = std::fabs(signal);</div>
 <div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>        <span class="comment">// Get background counts</span></div>
 <div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; numSteps; j++) {</div>
-<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>          <span class="keywordtype">double</span> background =</div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>          <span class="keywordtype">double</span> <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#aa53add3f540d099c26e6dc28fe788f7f">background</a> =</div>
 <div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>              paramsValue[numcols - 3] * <a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#af9966bf83559a0e8759072837e5ab80f">x</a>[j] * <a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#af9966bf83559a0e8759072837e5ab80f">x</a>[j] + paramsValue[numcols - 4] * <a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#af9966bf83559a0e8759072837e5ab80f">x</a>[j] + paramsValue[numcols - 5];</div>
 <div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>          <span class="keywordflow">if</span> (j &lt; peakMin || j &gt; peakMax)</div>
-<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>            background_total = background_total + background;</div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>            background_total = background_total + <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#aa53add3f540d099c26e6dc28fe788f7f">background</a>;</div>
 <div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>        }</div>
 <div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>      }</div>
 <div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>    }</div>
@@ -720,6 +720,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="ttc" id="aAnalysisDataService_8h_html"><div class="ttname"><a href="../../d8/dd2/AnalysisDataService_8h.html">AnalysisDataService.h</a></div></div>
 <div class="ttc" id="aColumn_8h_html"><div class="ttname"><a href="../../dc/d1f/Column_8h.html">Column.h</a></div></div>
 <div class="ttc" id="aCoordTransformDistance_8h_html"><div class="ttname"><a href="../../db/d95/CoordTransformDistance_8h.html">CoordTransformDistance.h</a></div></div>
+<div class="ttc" id="aEstimatePeakIntensities_8cpp_html_aa53add3f540d099c26e6dc28fe788f7f"><div class="ttname"><a href="../../d3/d17/EstimatePeakIntensities_8cpp.html#aa53add3f540d099c26e6dc28fe788f7f">background</a></div><div class="ttdeci">double background</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00036">EstimatePeakIntensities.cpp:36</a></div></div>
 <div class="ttc" id="aFileProperty_8h_html"><div class="ttname"><a href="../../d1/d17/FileProperty_8h.html">FileProperty.h</a></div></div>
 <div class="ttc" id="aFunctionDomain1D_8h_html"><div class="ttname"><a href="../../d9/d28/FunctionDomain1D_8h.html">FunctionDomain1D.h</a></div></div>
 <div class="ttc" id="aFunctionFactory_8h_html"><div class="ttname"><a href="../../d4/d07/FunctionFactory_8h.html">FunctionFactory.h</a></div></div>
