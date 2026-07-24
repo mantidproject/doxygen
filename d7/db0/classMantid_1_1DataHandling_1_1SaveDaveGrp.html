@@ -127,6 +127,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7b3e6bbbf8cfd227bc8c844e6041a14a" id="r_a7b3e6bbbf8cfd227bc8c844e6041a14a"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db0/classMantid_1_1DataHandling_1_1SaveDaveGrp.html#a7b3e6bbbf8cfd227bc8c844e6041a14a">summary</a> () const override</td></tr>
 <tr class="memdesc:a7b3e6bbbf8cfd227bc8c844e6041a14a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Summary of algorithms purpose.  <br /></td></tr>
 <tr class="separator:a7b3e6bbbf8cfd227bc8c844e6041a14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a439f0a65d08fc4c545a0953f891a055c" id="r_a439f0a65d08fc4c545a0953f891a055c"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db0/classMantid_1_1DataHandling_1_1SaveDaveGrp.html#a439f0a65d08fc4c545a0953f891a055c">validateInputs</a> () override</td></tr>
+<tr class="memdesc:a439f0a65d08fc4c545a0953f891a055c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform validation of ALL the input properties of the algorithm.  <br /></td></tr>
+<tr class="separator:a439f0a65d08fc4c545a0953f891a055c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ba25cdd927e11c8856ee4e1f4f188b4" id="r_a1ba25cdd927e11c8856ee4e1f4f188b4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db0/classMantid_1_1DataHandling_1_1SaveDaveGrp.html#a1ba25cdd927e11c8856ee4e1f4f188b4">version</a> () const override</td></tr>
 <tr class="memdesc:a1ba25cdd927e11c8856ee4e1f4f188b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Algorithm's version for identification.  <br /></td></tr>
 <tr class="separator:a1ba25cdd927e11c8856ee4e1f4f188b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,9 +155,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab027893e5d6f1fd32cd8bd392f46e2e8 inherit pub_methods_classMantid_1_1API_1_1Algorithm" id="r_ab027893e5d6f1fd32cd8bd392f46e2e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#ab027893e5d6f1fd32cd8bd392f46e2e8">executeAsChildAlg</a> () override</td></tr>
 <tr class="memdesc:ab027893e5d6f1fd32cd8bd392f46e2e8 inherit pub_methods_classMantid_1_1API_1_1Algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute as a Child <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html" title="Base class from which all concrete algorithm classes should be derived.">Algorithm</a>.  <br /></td></tr>
 <tr class="separator:ab027893e5d6f1fd32cd8bd392f46e2e8 inherit pub_methods_classMantid_1_1API_1_1Algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace18d3c42732dbb269705afcaba59813 inherit pub_methods_classMantid_1_1API_1_1Algorithm" id="r_ace18d3c42732dbb269705afcaba59813"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#ace18d3c42732dbb269705afcaba59813">validateInputs</a> () override</td></tr>
-<tr class="memdesc:ace18d3c42732dbb269705afcaba59813 inherit pub_methods_classMantid_1_1API_1_1Algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform validation of ALL the input properties of the algorithm.  <br /></td></tr>
-<tr class="separator:ace18d3c42732dbb269705afcaba59813 inherit pub_methods_classMantid_1_1API_1_1Algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ecf06cfe9317cb67f203ba335f7042f inherit pub_methods_classMantid_1_1API_1_1Algorithm" id="r_a7ecf06cfe9317cb67f203ba335f7042f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#ab59ce448f00de05a5c763ac1f1b67f8c">ExecutionState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a7ecf06cfe9317cb67f203ba335f7042f">executionState</a> () const override</td></tr>
 <tr class="memdesc:a7ecf06cfe9317cb67f203ba335f7042f inherit pub_methods_classMantid_1_1API_1_1Algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current execution state.  <br /></td></tr>
 <tr class="separator:a7ecf06cfe9317cb67f203ba335f7042f inherit pub_methods_classMantid_1_1API_1_1Algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -688,9 +688,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#aace3ff902f31d5cfa309fff3d6b069aa">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/ddb/SaveDaveGrp_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../d9/ddb/SaveDaveGrp_8cpp_source.html">SaveDaveGrp.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/ddb/SaveDaveGrp_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../d9/ddb/SaveDaveGrp_8cpp_source.html">SaveDaveGrp.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00423">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../dd/d65/LoadNexusProcessed_8cpp_source.html#l00073">nSpectra</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00245">Mantid::API::Algorithm::progress()</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>, <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::Y</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00865">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00423">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../dd/d65/LoadNexusProcessed_8cpp_source.html#l00073">nSpectra</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00245">Mantid::API::Algorithm::progress()</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>, <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::Y</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>.</p>
 
 </div>
 </div>
@@ -818,6 +818,42 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#adfff14154e5762875923c9a4f3679b51">Mantid::API::Algorithm</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d9a/SaveDaveGrp_8h_source.html#l00034">34</a> of file <a class="el" href="../../d7/d9a/SaveDaveGrp_8h_source.html">SaveDaveGrp.h</a>.</p>
+
+</div>
+</div>
+<a id="a439f0a65d08fc4c545a0953f891a055c" name="a439f0a65d08fc4c545a0953f891a055c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a439f0a65d08fc4c545a0953f891a055c">&#9670;&#160;</a></span>validateInputs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; std::string, std::string &gt; Mantid::DataHandling::SaveDaveGrp::validateInputs </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Perform validation of ALL the input properties of the algorithm. </p>
+<p>This is to be overridden by specific algorithms. It will be called in dialogs after parsing all inputs and setting the properties, but BEFORE executing.</p>
+<dl class="section return"><dt>Returns</dt><dd>a map where: Key = string name of the property; Value = string describing the problem with the property. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#ace18d3c42732dbb269705afcaba59813">Mantid::API::Algorithm</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/ddb/SaveDaveGrp_8cpp_source.html#l00037">37</a> of file <a class="el" href="../../d9/ddb/SaveDaveGrp_8cpp_source.html">SaveDaveGrp.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>.</p>
 
 </div>
 </div>

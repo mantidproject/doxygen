@@ -126,15 +126,16 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d7/db0/classMantid_1_1DataHandling_1_1SaveDaveGrp.html#af907ddf6d66007480855f5e673ed49fa">   41</a></span>  <span class="keyword">const</span> std::vector&lt;std::string&gt; <a class="code hl_function" href="../../d7/db0/classMantid_1_1DataHandling_1_1SaveDaveGrp.html#af907ddf6d66007480855f5e673ed49fa">seeAlso</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> {<span class="stringliteral">&quot;LoadDaveGrp&quot;</span>}; }</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../d7/db0/classMantid_1_1DataHandling_1_1SaveDaveGrp.html#a72e629b6e7b98fd76b01f7dfd81190c4">   43</a></span>  <span class="keyword">const</span> std::string <a class="code hl_function" href="../../d7/db0/classMantid_1_1DataHandling_1_1SaveDaveGrp.html#a72e629b6e7b98fd76b01f7dfd81190c4">category</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;DataHandling\\Text;Inelastic\\DataHandling&quot;</span>; }</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../d7/db0/classMantid_1_1DataHandling_1_1SaveDaveGrp.html#ab13add280da1c58abefc03810845720c">   45</a></span>  <span class="keyword">const</span> std::string <a class="code hl_function" href="../../d7/db0/classMantid_1_1DataHandling_1_1SaveDaveGrp.html#ab13add280da1c58abefc03810845720c">alias</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;SaveDASC&quot;</span>; }</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordtype">void</span> init() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">void</span> exec() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>};</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  std::map&lt;std::string, std::string&gt; validateInputs() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordtype">void</span> init() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordtype">void</span> exec() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
 </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>} <span class="comment">// namespace DataHandling</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>} <span class="comment">// namespace Mantid</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>} <span class="comment">// namespace DataHandling</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>} <span class="comment">// namespace Mantid</span></div>
 <div class="ttc" id="aAlgorithm_8h_html"><div class="ttname"><a href="../../d7/d36/Algorithm_8h.html">Algorithm.h</a></div></div>
 <div class="ttc" id="aclassMantid_1_1API_1_1Algorithm_html"><div class="ttname"><a href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html">Mantid::API::Algorithm</a></div><div class="ttdoc">Base class from which all concrete algorithm classes should be derived.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d36/Algorithm_8h_source.html#l00076">Algorithm.h:76</a></div></div>
 <div class="ttc" id="aclassMantid_1_1DataHandling_1_1SaveDaveGrp_html"><div class="ttname"><a href="../../d7/db0/classMantid_1_1DataHandling_1_1SaveDaveGrp.html">Mantid::DataHandling::SaveDaveGrp</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/d9a/SaveDaveGrp_8h_source.html#l00029">SaveDaveGrp.h:29</a></div></div>
