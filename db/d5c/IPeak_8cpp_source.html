@@ -159,7 +159,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="comment">// return_value_policy for read-only numpy array</span></div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keyword">using </span>return_copy_to_numpy = return_value_policy&lt;Policies::MatrixToNumpy&gt;;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  register_ptr_to_python&lt;IPeak *&gt;();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  register_ptr_to_python&lt;std::shared_ptr&lt;IPeak&gt;&gt;();</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  class_&lt;IPeak, boost::noncopyable&gt;(<span class="stringliteral">&quot;IPeak&quot;</span>, no_init)</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      .def(<span class="stringliteral">&quot;getRunNumber&quot;</span>, &amp;<a class="code hl_function" href="../../da/dea/classMantid_1_1Geometry_1_1IPeak.html#a91733ec7dffcfa68d20ef1962502e397">IPeak::getRunNumber</a>, arg(<span class="stringliteral">&quot;self&quot;</span>), <span class="stringliteral">&quot;Return the run number this peak was measured at&quot;</span>)</div>
