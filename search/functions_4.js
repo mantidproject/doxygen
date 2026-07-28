@@ -248,7 +248,7 @@ var searchData=
   ['disable_5fmem_5foverride_245',['disable_mem_override',['../d8/dc5/namespaceMantid_1_1TestMemory.html#a6ee20dcfa546d97ab8650bd8eaaef4db',1,'Mantid::TestMemory']]],
   ['disableallelementbuttons_246',['disableAllElementButtons',['../df/d33/classPeriodicTableWidget.html#aa667d4560d8ce6b8856489b0e14003dc',1,'PeriodicTableWidget']]],
   ['disableautocompletion_247',['disableAutoCompletion',['../d5/d04/classScriptEditor.html#a75f91e1504f2e86f604c23e1baddd0e5',1,'ScriptEditor']]],
-  ['disablebuttons_248',['disableButtons',['../df/d33/classPeriodicTableWidget.html#a81656c07e065593bd3b8b3f0148404bc',1,'PeriodicTableWidget']]],
+  ['disablebuttons_248',['disableButtons',['../df/d33/classPeriodicTableWidget.html#aba42f51bbc4d81caba98aa92da568b85',1,'PeriodicTableWidget']]],
   ['disabled_249',['disabled',['../d0/d4f/classMantidQt_1_1MantidWidgets_1_1InputController.html#a331682e121faacc696aab469c50be1e1',1,'MantidQt::MantidWidgets::InputController']]],
   ['disabledatafilebuttons_250',['disableDatafileButtons',['../d9/d15/classMantidQt_1_1MantidWidgets_1_1CatalogSearch.html#a22bfa9cb504bb39a343a0d80eb5848ae',1,'MantidQt::MantidWidgets::CatalogSearch']]],
   ['disabledialog_251',['disableDialog',['../df/d94/classMantidQt_1_1CustomDialogs_1_1CatalogPublishDialog.html#a5493f44aa60b4db450a2168cbd30f010',1,'MantidQt::CustomDialogs::CatalogPublishDialog']]],

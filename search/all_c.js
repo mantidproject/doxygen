@@ -26,7 +26,7 @@ var searchData=
   ['hallrosssqe_23',['HallRossSQE',['../d5/de0/classMantid_1_1CurveFitting_1_1Functions_1_1HallRossSQE.html',1,'Mantid::CurveFitting::Functions']]],
   ['hallrosssqe_2ecpp_24',['HallRossSQE.cpp',['../dc/dfb/HallRossSQE_8cpp.html',1,'']]],
   ['hallrosssqe_2eh_25',['HallRossSQE.h',['../dd/df6/HallRossSQE_8h.html',1,'']]],
-  ['halogens_26',['Halogens',['../df/d33/classPeriodicTableWidget.html#abb33fe4ea1f237ac5d2e9704239c1729',1,'PeriodicTableWidget']]],
+  ['halogens_26',['Halogens',['../df/d33/classPeriodicTableWidget.html#a3353f1790d321ee00bade0ffa62d75cd',1,'PeriodicTableWidget']]],
   ['hand_5fxpm_27',['hand_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#a1309e44f8a65b0af9ce8980234d68e3c',1,'MantidQt::API']]],
   ['handedness_28',['Handedness',['../dc/d67/namespaceMantid_1_1Geometry.html#a08c8a312cda0772d12e5ad09b06e5557',1,'Mantid::Geometry']]],
   ['handle_29',['handle',['../d6/d5c/classMantid_1_1DataHandling_1_1ANSTO_1_1FastReadOnlyFile.html#a864c6426cd1f61317430b0b56730a443',1,'Mantid::DataHandling::ANSTO::FastReadOnlyFile::handle()'],['../df/db2/classMantid_1_1Geometry_1_1IObjComponent.html#a1692feef7b2c330b904b27ef8657c1d8',1,'Mantid::Geometry::IObjComponent::Handle()'],['../d1/dbf/classMantidQt_1_1API_1_1MantidDialog.html#a53184136b8a8d73a457a3b89dc474a11',1,'MantidQt::API::MantidDialog::handle()'],['../df/db2/classMantid_1_1Geometry_1_1IObjComponent.html#a587a005d6ea1c6d12acd55dfea1437db',1,'Mantid::Geometry::IObjComponent::handle'],['../d0/d53/classMantid_1_1Kernel_1_1BinaryFile.html#a8a42decf00b3e0e68d222e391a1a2cda',1,'Mantid::Kernel::BinaryFile::handle'],['../d0/d2e/namespaceMantidQt_1_1Widgets_1_1Common_1_1Python.html#ae977b6d572b6da62b37d8aae2f41ca65',1,'MantidQt::Widgets::Common::Python::Handle']]],

@@ -32,7 +32,7 @@ var searchData=
   ['unitstring_29',['unitString',['../db/de9/classMantid_1_1Geometry_1_1MDFrameArgument.html#ad6e97e474a9399f35bce4b264c5a623a',1,'Mantid::Geometry::MDFrameArgument']]],
   ['unknown_5fclass_30',['UNKNOWN_CLASS',['../dc/d25/NexusDescriptorLazy_8cpp.html#af39aa2db82219acd51807b697726cd73',1,'NexusDescriptorLazy.cpp']]],
   ['unknownframename_31',['UnknownFrameName',['../db/d49/classMantid_1_1Geometry_1_1UnknownFrame.html#a3447d741a49a320389155e91b54f0106',1,'Mantid::Geometry::UnknownFrame']]],
-  ['unknownproperties_32',['UnknownProperties',['../df/d33/classPeriodicTableWidget.html#a6887133851e63a4d2a315c53340278e1',1,'PeriodicTableWidget']]],
+  ['unknownproperties_32',['UnknownProperties',['../df/d33/classPeriodicTableWidget.html#adb8b561188b59cb924c818fc9d1e2ae1',1,'PeriodicTableWidget']]],
   ['unpolarized_5ftransmission_33',['UNPOLARIZED_TRANSMISSION',['../df/d49/namespaceMantid_1_1Algorithms_1_1PropertyNames.html#a67bf4732704cebcb12f1f52bb6988824',1,'Mantid::Algorithms::PropertyNames']]],
   ['unroll_5fcolumn_5findex_34',['UNROLL_COLUMN_INDEX',['../dc/ddf/classAlgHistoryTreeWidget.html#a480b4f52b07f9eb43dcf8362dc775ed5',1,'AlgHistoryTreeWidget']]],
   ['unset_5fdateandtime_35',['UNSET_DATEANDTIME',['../dc/d1a/classMantid_1_1DataObjects_1_1WeightedEventNoTime.html#a83d574fd2f9d30c14527bf7181742be8',1,'Mantid::DataObjects::WeightedEventNoTime']]],

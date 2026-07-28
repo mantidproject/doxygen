@@ -382,7 +382,7 @@ var searchData=
   ['osname_379',['osName',['../de/db4/classMantid_1_1Kernel_1_1EnvironmentHistory.html#a059745b2cd89ebe4385c274c801bbbcd',1,'Mantid::Kernel::EnvironmentHistory']]],
   ['osversion_380',['osVersion',['../de/db4/classMantid_1_1Kernel_1_1EnvironmentHistory.html#abb80ed6443424d485c46bfd85a2c57be',1,'Mantid::Kernel::EnvironmentHistory']]],
   ['other_381',['other',['../de/d30/namespaceMantid_1_1DataHandling_1_1NXcanSAS.html#a7222d9256de2d33e1d1bca6cd4c9dc78a795f3202b17cb6bc3d4b771d8c6c9eaf',1,'Mantid::DataHandling::NXcanSAS']]],
-  ['othernonmetals_382',['OtherNonMetals',['../df/d33/classPeriodicTableWidget.html#af676b56871490dc1554a972a59c000a5',1,'PeriodicTableWidget']]],
+  ['othernonmetals_382',['OtherNonMetals',['../df/d33/classPeriodicTableWidget.html#aed07498a48f2b3f858b7b91833f944e8',1,'PeriodicTableWidget']]],
   ['otherpropname_383',['otherPropName',['../d4/da8/structMantid_1_1Kernel_1_1EnabledWhenProperty_1_1PropertyDetails.html#a44facaaa9e108d5ea733656be328bced',1,'Mantid::Kernel::EnabledWhenProperty::PropertyDetails']]],
   ['otherscan_384',['OtherScan',['../d2/d6c/classMantid_1_1DataHandling_1_1LoadILLDiffraction.html#a06c7f8f6e4ebedce95bb0c4a3a7468d5a0d5048c4f8c8d5254ff99e78106cc685',1,'Mantid::DataHandling::LoadILLDiffraction']]],
   ['otherusersubwindowcreated_385',['otherusersubwindowcreated',['../d9/d0d/classMantidQt_1_1API_1_1UserSubWindow.html#a69b0360305b0ff325f22625182b51199',1,'MantidQt::API::UserSubWindow::otherUserSubWindowCreated(QList&lt; QPointer&lt; UserSubWindow &gt; &gt; &amp;windows)'],['../d9/d0d/classMantidQt_1_1API_1_1UserSubWindow.html#a4ee17719f7e9743b03665b7a956bbcf7',1,'MantidQt::API::UserSubWindow::otherUserSubWindowCreated(QPointer&lt; UserSubWindow &gt; window)']]],

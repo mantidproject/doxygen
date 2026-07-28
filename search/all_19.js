@@ -137,7 +137,7 @@ var searchData=
   ['unknownframe_2eh_134',['UnknownFrame.h',['../da/d2a/UnknownFrame_8h.html',1,'']]],
   ['unknownframefactory_135',['UnknownFrameFactory',['../dd/dcd/classMantid_1_1Geometry_1_1UnknownFrameFactory.html',1,'Mantid::Geometry']]],
   ['unknownframename_136',['UnknownFrameName',['../db/d49/classMantid_1_1Geometry_1_1UnknownFrame.html#a3447d741a49a320389155e91b54f0106',1,'Mantid::Geometry::UnknownFrame']]],
-  ['unknownproperties_137',['UnknownProperties',['../df/d33/classPeriodicTableWidget.html#a6887133851e63a4d2a315c53340278e1',1,'PeriodicTableWidget']]],
+  ['unknownproperties_137',['UnknownProperties',['../df/d33/classPeriodicTableWidget.html#adb8b561188b59cb924c818fc9d1e2ae1',1,'PeriodicTableWidget']]],
   ['unlock_138',['unlock',['../d5/dad/classMantid_1_1Kernel_1_1DataItem.html#acb8108cc54b7bda38df98fc15a449ba1',1,'Mantid::Kernel::DataItem']]],
   ['unlockcurrentfittingtype_139',['unlockCurrentFittingType',['../de/d96/classMantidQt_1_1MantidWidgets_1_1FitOptionsBrowser.html#af03f1bbc13606466dfe6e5040871f2b9',1,'MantidQt::MantidWidgets::FitOptionsBrowser']]],
   ['unlockworkspaces_140',['unlockWorkspaces',['../d3/d69/classMantid_1_1API_1_1Algorithm.html#af648b3b225d2ce513f6f84eef74ecd6e',1,'Mantid::API::Algorithm']]],

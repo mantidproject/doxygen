@@ -29,7 +29,7 @@ var searchData=
   ['orientaton_26',['ORIENTATON',['../dd/dde/namespaceMantid_1_1DataHandling_1_1NeXusEntry.html#a0ed71d9cd70af3baf93f0a02329a0ea6',1,'Mantid::DataHandling::NeXusEntry']]],
   ['origin_27',['origin',['../df/df9/classICat4_1_1ns1____publicStep.html#a176ef82e6744989ad260570310f17458',1,'ICat4::ns1__publicStep::origin'],['../d9/d7c/classMantid_1_1Geometry_1_1MDPlaneImplicitFunction.html#a53065cc14598e1680d716718d58956fa',1,'Mantid::Geometry::MDPlaneImplicitFunction::origin']]],
   ['original_5fub_28',['original_UB',['../d1/d83/classMantid_1_1Geometry_1_1ConventionalCell.html#a2f5ef447c6dceb710099ab8aa395dcf4',1,'Mantid::Geometry::ConventionalCell']]],
-  ['othernonmetals_29',['OtherNonMetals',['../df/d33/classPeriodicTableWidget.html#af676b56871490dc1554a972a59c000a5',1,'PeriodicTableWidget']]],
+  ['othernonmetals_29',['OtherNonMetals',['../df/d33/classPeriodicTableWidget.html#aed07498a48f2b3f858b7b91833f944e8',1,'PeriodicTableWidget']]],
   ['otherpropname_30',['otherPropName',['../d4/da8/structMantid_1_1Kernel_1_1EnabledWhenProperty_1_1PropertyDetails.html#a44facaaa9e108d5ea733656be328bced',1,'Mantid::Kernel::EnabledWhenProperty::PropertyDetails']]],
   ['out_31',['out',['../d9/dd4/classMantid_1_1MDAlgorithms_1_1MergeMD.html#ace60dad476507c495bfdb1c4dd71a1ba',1,'Mantid::MDAlgorithms::MergeMD']]],
   ['outbuff_32',['outbuff',['../d9/d10/classISISRAW2.html#a7db0ad9c24da2675de648f43e3b7bf1e',1,'ISISRAW2']]],

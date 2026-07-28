@@ -220,7 +220,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="foldopen" id="foldopen00105" data-start="{" data-end="}">
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="../../de/ded/classMantidQt_1_1API_1_1FlowLayout.html#a037ffba8cdffb6f7954bbc7ce0dd5aad">  105</a></span>QSize <a class="code hl_function" href="../../de/ded/classMantidQt_1_1API_1_1FlowLayout.html#a037ffba8cdffb6f7954bbc7ce0dd5aad">FlowLayout::minimumSize</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  QSize size;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keywordflow">foreach</span> (QLayoutItem *item, <a class="code hl_variable" href="../../de/ded/classMantidQt_1_1API_1_1FlowLayout.html#accac88fa3a16bef8c57d18b533709c7b">itemList</a>)</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keywordflow">for</span> (QLayoutItem *item : <a class="code hl_variable" href="../../de/ded/classMantidQt_1_1API_1_1FlowLayout.html#accac88fa3a16bef8c57d18b533709c7b">itemList</a>)</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    size = size.expandedTo(item-&gt;minimumSize());</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keyword">const</span> QMargins margins = contentsMargins();</div>

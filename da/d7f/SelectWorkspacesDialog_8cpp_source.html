@@ -200,7 +200,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="../../da/dd5/classMantidQt_1_1MantidWidgets_1_1SelectWorkspacesDialog.html#a35a85124cb9fc71c8a81146c362a25e1">  102</a></span>QStringList <a class="code hl_function" href="../../da/dd5/classMantidQt_1_1MantidWidgets_1_1SelectWorkspacesDialog.html#a35a85124cb9fc71c8a81146c362a25e1">SelectWorkspacesDialog::getSelectedNames</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <a class="code hl_class" href="../../d1/d4a/classQList.html">QList&lt;QListWidgetItem *&gt;</a> items = <a class="code hl_variable" href="../../da/dd5/classMantidQt_1_1MantidWidgets_1_1SelectWorkspacesDialog.html#a22fc7a470979cd677c4cb42ead05d607">m_wsList</a>-&gt;selectedItems();</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  QStringList res;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="keywordflow">foreach</span> (QListWidgetItem *item, items) {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="keywordflow">for</span> (QListWidgetItem *item : items) {</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    res &lt;&lt; item-&gt;text();</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  }</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  <span class="keywordflow">return</span> res;</div>

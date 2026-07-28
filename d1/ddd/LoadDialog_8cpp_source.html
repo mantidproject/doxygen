@@ -281,7 +281,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>  <a class="code hl_variable" href="../../d0/d10/classMantidQt_1_1CustomDialogs_1_1LoadDialog.html#a152991de543fb90ff18b37ec21b3af1e">m_form</a>.fileWidget-&gt;saveSettings(<span class="stringliteral">&quot;Mantid/Algorithms/Load&quot;</span>);</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>  AlgorithmDialog::saveInput();</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  <span class="comment">// Ensure the filename is store as the full file</span></div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  API::AlgorithmInputHistory::Instance().storeNewValue(<span class="stringliteral">&quot;Load&quot;</span>, QPair&lt;QString, QString&gt;(<span class="stringliteral">&quot;Filename&quot;</span>, <a class="code hl_variable" href="../../d0/d10/classMantidQt_1_1CustomDialogs_1_1LoadDialog.html#aff7ebd2e6a136c098a662462706669e0">m_currentFiles</a>));</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  API::AlgorithmInputHistory::Instance().storeNewValue(<span class="stringliteral">&quot;Load&quot;</span>, std::pair&lt;QString, QString&gt;(<span class="stringliteral">&quot;Filename&quot;</span>, <a class="code hl_variable" href="../../d0/d10/classMantidQt_1_1CustomDialogs_1_1LoadDialog.html#aff7ebd2e6a136c098a662462706669e0">m_currentFiles</a>));</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>}</div>
 </div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>

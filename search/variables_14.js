@@ -97,7 +97,7 @@ var searchData=
   ['transform_94',['transform',['../df/df2/classMantid_1_1Geometry_1_1ReducedCell.html#a4fe9989b628237e74cf464fdfc2c151e',1,'Mantid::Geometry::ReducedCell']]],
   ['transform_5fmodifier_95',['transform_modifier',['../dc/d67/namespaceMantid_1_1Geometry.html#a54e82ace87b827caeff8e3a276c96d49',1,'Mantid::Geometry']]],
   ['transforms_96',['transforms',['../dc/d67/namespaceMantid_1_1Geometry.html#a762214c6d8c0ea638d182b84b9f10da7',1,'Mantid::Geometry']]],
-  ['transitionmetals_97',['TransitionMetals',['../df/d33/classPeriodicTableWidget.html#a8014bd5c7f06004c23b9f40112fd3ca5',1,'PeriodicTableWidget']]],
+  ['transitionmetals_97',['TransitionMetals',['../df/d33/classPeriodicTableWidget.html#a2d39dc21fbd60e6c6ec2cf19d6d52c19',1,'PeriodicTableWidget']]],
   ['transmission_98',['TRANSMISSION',['../df/d9b/namespaceMantid_1_1DataHandling_1_1NXcanSAS_1_1StandardProperties.html#a9a5f6d99b9e736714451a29583ae8dd2',1,'Mantid::DataHandling::NXcanSAS::StandardProperties']]],
   ['transmission_5fcan_99',['TRANSMISSION_CAN',['../df/d9b/namespaceMantid_1_1DataHandling_1_1NXcanSAS_1_1StandardProperties.html#a15fce9d9b2bab3ed460d57f89d7c460c',1,'Mantid::DataHandling::NXcanSAS::StandardProperties']]],
   ['triangle_5fcount_5fdata_5fsize_100',['TRIANGLE_COUNT_DATA_SIZE',['../db/dcc/classMantid_1_1DataHandling_1_1LoadBinaryStl.html#addeb0a5a6bebf004fd3d56d57d42d674',1,'Mantid::DataHandling::LoadBinaryStl']]],

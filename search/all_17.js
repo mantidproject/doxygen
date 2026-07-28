@@ -5736,7 +5736,7 @@ var searchData=
   ['storeint_5733',['storeInt',['../d4/d4e/classMantidQt_1_1API_1_1TSVSerialiser.html#a95fc0d40533240b79ce921c324745bd5',1,'MantidQt::API::TSVSerialiser']]],
   ['storemetadataintows_5734',['storeMetaDataIntoWS',['../d1/d75/classMantid_1_1DataHandling_1_1LoadHFIRSANS.html#a1d95b5a9b239fdad13d325682a6570f5',1,'Mantid::DataHandling::LoadHFIRSANS']]],
   ['storemodulationinfo_5735',['storeModulationInfo',['../dc/dd8/IndexPeaks_8cpp.html#abd8887c2e05e53e907779f7323de9413',1,'IndexPeaks.cpp']]],
-  ['storenewvalue_5736',['storeNewValue',['../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html#aedfabc4388f415894c998d4084afe589',1,'MantidQt::API::AbstractAlgorithmInputHistory']]],
+  ['storenewvalue_5736',['storeNewValue',['../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html#a9c0a1b754ab802b5568bde6ec5a52e64',1,'MantidQt::API::AbstractAlgorithmInputHistory']]],
   ['storeoutputworkspace_5737',['storeOutputWorkspace',['../d1/d17/classMantid_1_1Algorithms_1_1FindCenterOfMassPosition2.html#a8859d2891707de483469dc15894e333b',1,'Mantid::Algorithms::FindCenterOfMassPosition2']]],
   ['storepeakresults_5738',['storePeakResults',['../d2/d79/classMantid_1_1Algorithms_1_1FindPeaksConvolve.html#ac0a63a517c3855eb75e6c20cba21e899',1,'Mantid::Algorithms::FindPeaksConvolve']]],
   ['storepropertyvalue_5739',['storePropertyValue',['../dd/d19/classMantidQt_1_1API_1_1AlgorithmDialog.html#a8986227f313cc91adad31064331be35a',1,'MantidQt::API::AlgorithmDialog']]],

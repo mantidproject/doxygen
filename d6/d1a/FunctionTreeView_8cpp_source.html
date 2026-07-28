@@ -414,7 +414,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  <span class="comment">// remove references to the children</span></div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>  <span class="keyword">auto</span> children = prop-&gt;subProperties();</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  <span class="keywordflow">foreach</span> (QtProperty *child, children) {</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  <span class="keywordflow">for</span> (QtProperty *child : children) {</div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>    <a class="code hl_function" href="../../d6/d37/classMantidQt_1_1MantidWidgets_1_1FunctionTreeView.html#a3f1285f5ce3a02c09ee5eb52d3386964">removeProperty</a>(child);</div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>  }</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>  <a class="code hl_variable" href="../../d6/d37/classMantidQt_1_1MantidWidgets_1_1FunctionTreeView.html#a978c34c1f2b8d4a2ec23829f5f9b30a8">m_properties</a>.erase(p);</div>
@@ -498,7 +498,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="foldopen" id="foldopen00429" data-start="{" data-end="}">
 <div class="line"><a id="l00429" name="l00429"></a><span class="lineno"><a class="line" href="../../d6/d37/classMantidQt_1_1MantidWidgets_1_1FunctionTreeView.html#a004a50b12f401e700a4f51087f42c01f">  429</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/d37/classMantidQt_1_1MantidWidgets_1_1FunctionTreeView.html#a744a426f5384e44558ca581f4834ae20">FunctionTreeView::setFunction</a>(QtProperty *prop, <span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a9e970cac310cd8af4937376738182998">Mantid::API::IFunction_sptr</a> &amp;fun) {</div>
 <div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>  <span class="keyword">auto</span> children = prop-&gt;subProperties();</div>
-<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>  <span class="keywordflow">foreach</span> (QtProperty *child, children) {</div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>  <span class="keywordflow">for</span> (QtProperty *child : children) {</div>
 <div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>    <a class="code hl_function" href="../../d6/d37/classMantidQt_1_1MantidWidgets_1_1FunctionTreeView.html#a3f1285f5ce3a02c09ee5eb52d3386964">removeProperty</a>(child);</div>
 <div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>  }</div>
 <div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>  <span class="comment">// m_localParameterValues.clear();</span></div>
@@ -829,7 +829,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>  }</div>
 <div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>  <span class="keyword">auto</span> children = prop-&gt;subProperties();</div>
 <div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>  <span class="keywordtype">size_t</span> i = 0;</div>
-<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>  <span class="keywordflow">foreach</span> (QtProperty *child, children) {</div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>  <span class="keywordflow">for</span> (QtProperty *child : children) {</div>
 <div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d6/d37/classMantidQt_1_1MantidWidgets_1_1FunctionTreeView.html#a742e24cf35279abd7f1862f4d827a3c9">isFunction</a>(child)) {</div>
 <div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>      <a class="code hl_function" href="../../d6/d37/classMantidQt_1_1MantidWidgets_1_1FunctionTreeView.html#ab3dd54adb07af76e3a6d3b1c5d72fb04">updateFunctionIndices</a>(child, <a class="code hl_variable" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a> + <span class="stringliteral">&quot;f&quot;</span> + <a class="code hl_function" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string</a>(i) + <span class="stringliteral">&quot;.&quot;</span>);</div>
 <div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>      ++i;</div>
@@ -1304,7 +1304,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l01355" name="l01355"></a><span class="lineno"> 1355</span>  <span class="keyword">auto</span> cf = std::dynamic_pointer_cast&lt;Mantid::API::CompositeFunction&gt;(fun);</div>
 <div class="line"><a id="l01356" name="l01356"></a><span class="lineno"> 1356</span>  <span class="keywordflow">if</span> (cf) {</div>
 <div class="line"><a id="l01357" name="l01357"></a><span class="lineno"> 1357</span>    <span class="keyword">auto</span> children = prop-&gt;subProperties();</div>
-<div class="line"><a id="l01358" name="l01358"></a><span class="lineno"> 1358</span>    <span class="keywordflow">foreach</span> (QtProperty *child, children) {</div>
+<div class="line"><a id="l01358" name="l01358"></a><span class="lineno"> 1358</span>    <span class="keywordflow">for</span> (QtProperty *child : children) {</div>
 <div class="line"><a id="l01359" name="l01359"></a><span class="lineno"> 1359</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d6/d37/classMantidQt_1_1MantidWidgets_1_1FunctionTreeView.html#a742e24cf35279abd7f1862f4d827a3c9">isFunction</a>(child)) {</div>
 <div class="line"><a id="l01360" name="l01360"></a><span class="lineno"> 1360</span>        <span class="keyword">auto</span> f = <a class="code hl_function" href="../../d6/d37/classMantidQt_1_1MantidWidgets_1_1FunctionTreeView.html#af9d21f40a5005a699c3936b425b87b4c">getFunction</a>(child);</div>
 <div class="line"><a id="l01361" name="l01361"></a><span class="lineno"> 1361</span>        <span class="comment">// if f is null ignore that function</span></div>
@@ -1318,7 +1318,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l01369" name="l01369"></a><span class="lineno"> 1369</span>  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l01370" name="l01370"></a><span class="lineno"> 1370</span>    <span class="comment">// loop over the children properties and set parameters and attributes</span></div>
 <div class="line"><a id="l01371" name="l01371"></a><span class="lineno"> 1371</span>    <span class="keyword">auto</span> children = prop-&gt;subProperties();</div>
-<div class="line"><a id="l01372" name="l01372"></a><span class="lineno"> 1372</span>    <span class="keywordflow">foreach</span> (QtProperty *child, children) {</div>
+<div class="line"><a id="l01372" name="l01372"></a><span class="lineno"> 1372</span>    <span class="keywordflow">for</span> (QtProperty *child : children) {</div>
 <div class="line"><a id="l01373" name="l01373"></a><span class="lineno"> 1373</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d6/d37/classMantidQt_1_1MantidWidgets_1_1FunctionTreeView.html#acc870b72b71810817a87bb8876c2681b">isAttribute</a>(child)) {</div>
 <div class="line"><a id="l01374" name="l01374"></a><span class="lineno"> 1374</span>        <a class="code hl_slot" href="../../d6/d37/classMantidQt_1_1MantidWidgets_1_1FunctionTreeView.html#a53a79f97224b208bc5721cda605a0496">setAttributeToFunction</a>(*fun, child);</div>
 <div class="line"><a id="l01375" name="l01375"></a><span class="lineno"> 1375</span>      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!attributesOnly &amp;&amp; <a class="code hl_function" href="../../d6/d37/classMantidQt_1_1MantidWidgets_1_1FunctionTreeView.html#a942b5181c5405785a04bf5bd6465ee6c">isParameter</a>(child)) {</div>
@@ -1348,7 +1348,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l01399" name="l01399"></a><span class="lineno"> 1399</span>      }</div>
 <div class="line"><a id="l01400" name="l01400"></a><span class="lineno"> 1400</span>    }</div>
 <div class="line"><a id="l01401" name="l01401"></a><span class="lineno"> 1401</span>    <span class="comment">// remove failed ties from the browser</span></div>
-<div class="line"><a id="l01402" name="l01402"></a><span class="lineno"> 1402</span>    <span class="keywordflow">foreach</span> (QtProperty *p, failedTies) {</div>
+<div class="line"><a id="l01402" name="l01402"></a><span class="lineno"> 1402</span>    <span class="keywordflow">for</span> (QtProperty *p : failedTies) {</div>
 <div class="line"><a id="l01403" name="l01403"></a><span class="lineno"> 1403</span>      <a class="code hl_function" href="../../d6/d37/classMantidQt_1_1MantidWidgets_1_1FunctionTreeView.html#a3f1285f5ce3a02c09ee5eb52d3386964">removeProperty</a>(p);</div>
 <div class="line"><a id="l01404" name="l01404"></a><span class="lineno"> 1404</span>    }</div>
 <div class="line"><a id="l01405" name="l01405"></a><span class="lineno"> 1405</span>  }</div>
@@ -1720,7 +1720,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="foldopen" id="foldopen01807" data-start="{" data-end="}">
 <div class="line"><a id="l01807" name="l01807"></a><span class="lineno"><a class="line" href="../../d6/d37/classMantidQt_1_1MantidWidgets_1_1FunctionTreeView.html#ae949ab4b6e940153779a754e8e74f814"> 1807</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/d37/classMantidQt_1_1MantidWidgets_1_1FunctionTreeView.html#ae949ab4b6e940153779a754e8e74f814">FunctionTreeView::removeConstraintsQuiet</a>(QtProperty *prop) {</div>
 <div class="line"><a id="l01808" name="l01808"></a><span class="lineno"> 1808</span>  <span class="keyword">auto</span> props = prop-&gt;subProperties();</div>
-<div class="line"><a id="l01809" name="l01809"></a><span class="lineno"> 1809</span>  <span class="keywordflow">foreach</span> (QtProperty *p, props) {</div>
+<div class="line"><a id="l01809" name="l01809"></a><span class="lineno"> 1809</span>  <span class="keywordflow">for</span> (QtProperty *p : props) {</div>
 <div class="line"><a id="l01810" name="l01810"></a><span class="lineno"> 1810</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d6/d37/classMantidQt_1_1MantidWidgets_1_1FunctionTreeView.html#a021e182658080b006dc75652dd6376c0">isConstraint</a>(p)) {</div>
 <div class="line"><a id="l01811" name="l01811"></a><span class="lineno"> 1811</span>      <a class="code hl_function" href="../../d6/d37/classMantidQt_1_1MantidWidgets_1_1FunctionTreeView.html#a3f1285f5ce3a02c09ee5eb52d3386964">removeProperty</a>(p);</div>
 <div class="line"><a id="l01812" name="l01812"></a><span class="lineno"> 1812</span>    }</div>

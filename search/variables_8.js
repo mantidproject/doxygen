@@ -8,7 +8,7 @@ var searchData=
   ['h_5fover_5fneutron_5fmass_5',['H_OVER_NEUTRON_MASS',['../d0/dee/namespaceMantid_1_1Kernel_1_1Units.html#ab945c617e25bc4ed796515d857183422',1,'Mantid::Kernel::Units']]],
   ['half_5fwindow_6',['HALF_WINDOW',['../dc/db8/classMantid_1_1Algorithms_1_1GetEi.html#a0be9ed5d6c0fa5e341151b90a01fb003',1,'Mantid::Algorithms::GetEi']]],
   ['halfwidthathalfheightradius_7',['HalfWidthAtHalfHeightRadius',['../dd/d44/classMantid_1_1Crystal_1_1DataModeHandler.html#a7fdbaa10a668057b5a5f8e7c9f24f23e',1,'Mantid::Crystal::DataModeHandler']]],
-  ['halogens_8',['Halogens',['../df/d33/classPeriodicTableWidget.html#abb33fe4ea1f237ac5d2e9704239c1729',1,'PeriodicTableWidget']]],
+  ['halogens_8',['Halogens',['../df/d33/classPeriodicTableWidget.html#a3353f1790d321ee00bade0ffa62d75cd',1,'PeriodicTableWidget']]],
   ['hand_5fxpm_9',['hand_xpm',['../d2/d36/namespaceMantidQt_1_1API.html#a1309e44f8a65b0af9ce8980234d68e3c',1,'MantidQt::API']]],
   ['handle_10',['handle',['../df/db2/classMantid_1_1Geometry_1_1IObjComponent.html#a587a005d6ea1c6d12acd55dfea1437db',1,'Mantid::Geometry::IObjComponent::handle'],['../d0/d53/classMantid_1_1Kernel_1_1BinaryFile.html#a8a42decf00b3e0e68d222e391a1a2cda',1,'Mantid::Kernel::BinaryFile::handle']]],
   ['hard_5fcase_11',['hard_case',['../dc/d98/TrustRegionMinimizer_8cpp.html#a22215075b7081ccac9f121daf07a0f7e',1,'TrustRegionMinimizer.cpp']]],

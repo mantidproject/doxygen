@@ -180,7 +180,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="comment">// Make a record of each interface&#39;s categories.</span></div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keyword">const</span> QStringList interfaceCategories = TYPE::categoryInfo().split(<span class="stringliteral">&quot;;&quot;</span>, Qt::SkipEmptyParts);</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  QSet&lt;QString&gt; result;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keywordflow">foreach</span> (<span class="keyword">const</span> QString &amp;category, interfaceCategories) {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> QString &amp;category : interfaceCategories) {</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    result.insert(category.trimmed());</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  }</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <a class="code hl_variable" href="../../d5/d76/classMantidQt_1_1API_1_1UserSubWindowFactoryImpl.html#a4848006f187464b1f20cfbaf6bff0896">m_categoryLookup</a>[QString::fromStdString(realName)] = result;</div>

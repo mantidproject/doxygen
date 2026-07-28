@@ -4016,7 +4016,7 @@ var searchData=
   ['storehistogrambinboundaries_4013',['storeHistogramBinBoundaries',['../d6/d91/classMantid_1_1API_1_1Run.html#a0d6f21f2f531a55fb3c265196896dec4',1,'Mantid::API::Run']]],
   ['storeint_4014',['storeInt',['../d4/d4e/classMantidQt_1_1API_1_1TSVSerialiser.html#a95fc0d40533240b79ce921c324745bd5',1,'MantidQt::API::TSVSerialiser']]],
   ['storemetadataintows_4015',['storeMetaDataIntoWS',['../d1/d75/classMantid_1_1DataHandling_1_1LoadHFIRSANS.html#a1d95b5a9b239fdad13d325682a6570f5',1,'Mantid::DataHandling::LoadHFIRSANS']]],
-  ['storenewvalue_4016',['storeNewValue',['../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html#aedfabc4388f415894c998d4084afe589',1,'MantidQt::API::AbstractAlgorithmInputHistory']]],
+  ['storenewvalue_4016',['storeNewValue',['../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html#a9c0a1b754ab802b5568bde6ec5a52e64',1,'MantidQt::API::AbstractAlgorithmInputHistory']]],
   ['storeoutputworkspace_4017',['storeOutputWorkspace',['../d1/d17/classMantid_1_1Algorithms_1_1FindCenterOfMassPosition2.html#a8859d2891707de483469dc15894e333b',1,'Mantid::Algorithms::FindCenterOfMassPosition2']]],
   ['storepeakresults_4018',['storePeakResults',['../d2/d79/classMantid_1_1Algorithms_1_1FindPeaksConvolve.html#ac0a63a517c3855eb75e6c20cba21e899',1,'Mantid::Algorithms::FindPeaksConvolve']]],
   ['storepropertyvalue_4019',['storePropertyValue',['../dd/d19/classMantidQt_1_1API_1_1AlgorithmDialog.html#a8986227f313cc91adad31064331be35a',1,'MantidQt::API::AlgorithmDialog']]],

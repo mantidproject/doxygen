@@ -772,7 +772,7 @@ var searchData=
   ['postdeleterequested_769',['postDeleteRequested',['../d5/d30/classMantidQt_1_1API_1_1ObserverCallback.html#add9acbc0b793223627b082f7aef350c8',1,'MantidQt::API::ObserverCallback']]],
   ['postmultiplybydiagonal_770',['postMultiplyByDiagonal',['../dc/da6/classMantid_1_1Kernel_1_1Matrix.html#afef3acc1bc10a288b475f94de68bfe1d',1,'Mantid::Kernel::Matrix']]],
   ['postnotification_771',['postNotification',['../d9/d17/classMantidQt_1_1API_1_1BatchAlgorithmRunner.html#aa35f871c8b40e6d0a57a9f94ec91cbf0',1,'MantidQt::API::BatchAlgorithmRunner']]],
-  ['posttransitionmetals_772',['PostTransitionMetals',['../df/d33/classPeriodicTableWidget.html#a3d3b353a90c00f1d9263fd087be09017',1,'PeriodicTableWidget']]],
+  ['posttransitionmetals_772',['PostTransitionMetals',['../df/d33/classPeriodicTableWidget.html#adee37940ba408fd99027d28c81125c67',1,'PeriodicTableWidget']]],
   ['posx_773',['posx',['../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html#adf6bfc6216053d77f691188fdfdbf59a',1,'Mantid::Geometry::ParameterMap']]],
   ['posy_774',['posy',['../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html#adec08733c10b13fcb5ee2d0c392e1d44',1,'Mantid::Geometry::ParameterMap']]],
   ['posz_775',['posz',['../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html#aaf9101f640a5d567fc19791f937074b2',1,'Mantid::Geometry::ParameterMap']]],

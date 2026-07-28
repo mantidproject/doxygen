@@ -117,7 +117,7 @@ var searchData=
   ['elasticwindow_2eh_114',['ElasticWindow.h',['../dd/d7b/ElasticWindow_8h.html',1,'']]],
   ['elementconsttype_115',['elementconsttype',['../d1/d10/classMantid_1_1CurveFitting_1_1FortranVector.html#af305cfd57737f7e8b210c26a0f98100d',1,'Mantid::CurveFitting::FortranVector::ElementConstType'],['../d8/de4/classMantid_1_1CurveFitting_1_1FortranMatrix.html#ae83c336f7e3b9af7b198bf3b05b2b655',1,'Mantid::CurveFitting::FortranMatrix::ElementConstType']]],
   ['elementreftype_116',['elementreftype',['../d1/d10/classMantid_1_1CurveFitting_1_1FortranVector.html#a51a4c27b22196bd7c7dc0472d89d71be',1,'Mantid::CurveFitting::FortranVector::ElementRefType'],['../d8/de4/classMantid_1_1CurveFitting_1_1FortranMatrix.html#a9a18a292f4b10c850d221ec5261512d2',1,'Mantid::CurveFitting::FortranMatrix::ElementRefType']]],
-  ['elementsselectedtostring_117',['elementsSelectedToString',['../df/d33/classPeriodicTableWidget.html#a7827d9470795560ba18bf9875799bc0c',1,'PeriodicTableWidget']]],
+  ['elementsselectedtostring_117',['elementsSelectedToString',['../df/d33/classPeriodicTableWidget.html#a86f780cf39aeba5c99272e6f1e2cd0a2',1,'PeriodicTableWidget']]],
   ['elementtraits_118',['ElementTraits',['../d2/d55/structMantid_1_1API_1_1ElementTraits.html',1,'Mantid::API']]],
   ['elementtraits_3c_20bool_20_3e_119',['ElementTraits&lt; bool &gt;',['../d4/d40/structMantid_1_1API_1_1ElementTraits_3_01bool_01_4.html',1,'Mantid::API']]],
   ['elementtraits_3c_20double_20_3e_120',['ElementTraits&lt; double &gt;',['../d9/d24/structMantid_1_1API_1_1ElementTraits_3_01double_01_4.html',1,'Mantid::API']]],

@@ -186,7 +186,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="../../d2/d36/namespaceMantidQt_1_1API.html#a62f7aa9684f29b69dcf13fc4c91fb5c9">   81</a></span>std::string <a class="code hl_function" href="../../d2/d36/namespaceMantidQt_1_1API.html#a62f7aa9684f29b69dcf13fc4c91fb5c9">outputJsonToString</a>(QVariant &amp;v) {</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  QJsonDocument doc;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordflow">if</span> (v.type() == 8 &amp;&amp; v.canConvert(8)) { <span class="comment">// 8 = map - is there an enum?</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordflow">if</span> (v.typeId() == QMetaType::QVariantMap) {</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    QVariantMap map = v.toMap();</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    doc = QJsonDocument{QJsonObject::fromVariantMap(map)};</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (v.canConvert&lt;QString&gt;()) {</div>

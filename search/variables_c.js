@@ -10,7 +10,7 @@ var searchData=
   ['lambda_7',['lambda',['../dc/d98/TrustRegionMinimizer_8cpp.html#a3db359547eed8cfd48ca821d95f577af',1,'lambda:&#160;TrustRegionMinimizer.cpp'],['../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#a320d27f89cda9b48a5fd624c8cd4b870',1,'lambda:&#160;AugmentedLagrangianOptimizer.cpp']]],
   ['lambda_5fconversion_5ffactor_8',['LAMBDA_CONVERSION_FACTOR',['../d1/d12/namespaceMantid_1_1Algorithms.html#a5e53d0a1bce41b7080f3a4faf364925c',1,'Mantid::Algorithms']]],
   ['lambdaontwostr_9',['LambdaOnTwoStr',['../d8/d23/namespaceMantid_1_1DataHandling.html#a835ca579cb682b40e6968686ed44f27a',1,'Mantid::DataHandling']]],
-  ['lanthanides_10',['Lanthanides',['../df/d33/classPeriodicTableWidget.html#a30dcc434683810fab19df017f9363555',1,'PeriodicTableWidget']]],
+  ['lanthanides_10',['Lanthanides',['../df/d33/classPeriodicTableWidget.html#a4b06c77a04b98ce39658e09b8d6e779b',1,'PeriodicTableWidget']]],
   ['largest_5fsv_11',['largest_sv',['../d9/dcf/structMantid_1_1CurveFitting_1_1NLLS_1_1NLLS__workspace.html#a52ae5548fedfecc27c242ffd520e5c8f',1,'Mantid::CurveFitting::NLLS::NLLS_workspace::largest_sv'],['../d3/d02/structMantid_1_1CurveFitting_1_1NLLS_1_1nlls__inform.html#a392f6e2e989f411fb23cc324990ff544',1,'Mantid::CurveFitting::NLLS::nlls_inform::largest_sv']]],
   ['last_12',['last',['../df/ded/structMantid_1_1DataHandling_1_1LoadISISNexus2_1_1SpectraBlock.html#a1095366bd8b5cba86e4f2506a2ddef80',1,'Mantid::DataHandling::LoadISISNexus2::SpectraBlock']]],
   ['last_5findex_13',['LAST_INDEX',['../d8/d23/namespaceMantid_1_1DataHandling.html#ae13617c56e2016d23a675c08b48174aa',1,'Mantid::DataHandling']]],
