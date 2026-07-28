@@ -356,7 +356,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    it_err_start += (timeNums - 1);</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    it_err_end += (timeNums - 1);</div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="keyword">auto</span> toPass = Kernel::make_cow&lt;HistogramData::HistogramX&gt;(xRef);</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    <a class="code hl_variable" href="../../dc/dd8/IndexPeaks_8cpp.html#af6254baf8945f24221a11ff9da209153">workspace</a>-&gt;setX(hist, toPass);</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    <a class="code hl_variable" href="../../dc/dd8/IndexPeaks_8cpp.html#af6254baf8945f24221a11ff9da209153">workspace</a>-&gt;setSharedX(hist, toPass);</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    ++hist;</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>  }</div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>}</div>

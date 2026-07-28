@@ -362,7 +362,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  <span class="comment">// and the last value.</span></div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>  <span class="comment">// check that centre is inside the range available for the instrument</span></div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>  <span class="keyword">const</span> <a class="code hl_typedef" href="../../d8/d8e/namespaceMantid.html#ac23552b2a51978a38cbc8f569163a682">MantidVec</a> &amp;refX = inputWS-&gt;readX(inputWS-&gt;getNumberHistograms() / 2);</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>  Mantid::HistogramData::HistogramX <span class="keyword">const</span> &amp;refX = inputWS-&gt;x(inputWS-&gt;getNumberHistograms() / 2);</div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  <span class="comment">// get the limits of the axis 0 (X)</span></div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>  <span class="keywordtype">double</span> min_v_x, max_v_x;</div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  min_v_x = std::min(refX[0], refX.back());</div>

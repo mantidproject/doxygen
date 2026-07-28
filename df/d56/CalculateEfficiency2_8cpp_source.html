@@ -424,8 +424,8 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>        <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">MatrixWorkspace_sptr</a> entry = std::static_pointer_cast&lt;API::MatrixWorkspace&gt;(input.<a class="code hl_function" href="../../d9/de9/classMantid_1_1API_1_1WorkspaceGroup.html#a923f253feebf936ea5aedbe0a44b9130">getItem</a>(entryNo));</div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        <span class="keyword">auto</span> spectrumInfoEntry = entry-&gt;spectrumInfo();</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>        <span class="keywordflow">if</span> (!spectrumInfoEntry.isMasked(spectrumNo)) {</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>          dataY += entry-&gt;readY(spectrumNo)[0];</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>          dataE += pow(entry-&gt;readE(spectrumNo)[0], 2); <span class="comment">// propagate errors</span></div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>          dataY += entry-&gt;y(spectrumNo)[0];</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>          dataE += pow(entry-&gt;e(spectrumNo)[0], 2); <span class="comment">// propagate errors</span></div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>          nonMaskedEntries++;</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>        }</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>      }</div>

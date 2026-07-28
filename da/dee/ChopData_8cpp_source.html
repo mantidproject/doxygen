@@ -154,7 +154,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keyword">const</span> <span class="keywordtype">int</span> monitorWi = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a5356ea547c4381e4144caa2b37599ead">getProperty</a>(<span class="stringliteral">&quot;MonitorWorkspaceIndex&quot;</span>);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keyword">const</span> <span class="keyword">auto</span> nHist = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(inputWS-&gt;getNumberHistograms());</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keyword">const</span> <span class="keywordtype">size_t</span> nBins = inputWS-&gt;blocksize();</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keyword">const</span> <span class="keywordtype">double</span> maxX = inputWS-&gt;readX(0)[nBins];</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keyword">const</span> <span class="keywordtype">double</span> maxX = inputWS-&gt;x(0)[nBins];</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  std::map&lt;int, double&gt; intMap;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordtype">int</span> prelow = -1;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  std::vector&lt;MatrixWorkspace_sptr&gt; workspaces;</div>

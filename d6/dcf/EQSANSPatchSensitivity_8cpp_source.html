@@ -170,8 +170,8 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      <span class="keywordflow">if</span> (spectrumInfo.isMonitor(iDet))</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>      <span class="keyword">const</span> <a class="code hl_typedef" href="../../d8/d8e/namespaceMantid.html#ac23552b2a51978a38cbc8f569163a682">MantidVec</a> &amp;YValues = inputWS-&gt;readY(iDet);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>      <span class="keyword">const</span> <a class="code hl_typedef" href="../../d8/d8e/namespaceMantid.html#ac23552b2a51978a38cbc8f569163a682">MantidVec</a> &amp;YErrors = inputWS-&gt;readE(iDet);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>      Mantid::HistogramData::HistogramY <span class="keyword">const</span> &amp;YValues = inputWS-&gt;y(iDet);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>      Mantid::HistogramData::HistogramE <span class="keyword">const</span> &amp;YErrors = inputWS-&gt;e(iDet);</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      <span class="comment">// If this detector is masked, skip to the next one</span></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      <span class="keywordflow">if</span> (spectrumInfo.isMasked(iDet))</div>

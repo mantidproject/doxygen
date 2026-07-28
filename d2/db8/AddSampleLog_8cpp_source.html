@@ -421,9 +421,9 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>  <span class="comment">// set up the time vector</span></div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>  std::vector&lt;Types::Core::DateAndTime&gt; timevec;</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>  <span class="keywordtype">size_t</span> vecsize = dataws-&gt;readX(workspace_index).size();</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>  <span class="keywordtype">size_t</span> vecsize = dataws-&gt;x(workspace_index).size();</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; vecsize; ++i) {</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>    <span class="keywordtype">double</span> timedbl = dataws-&gt;readX(workspace_index)[i];</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>    <span class="keywordtype">double</span> timedbl = dataws-&gt;x(workspace_index)[i];</div>
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    <span class="keywordflow">if</span> (is_second)</div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>      timedbl *= 1.E9;</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    <span class="keyword">auto</span> entry_i64 = <span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(timedbl);</div>
@@ -453,9 +453,9 @@ $(document).ready(function() { init_codefold(1); });
 <div class="foldopen" id="foldopen00392" data-start="{" data-end="}">
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno"><a class="line" href="../../d5/d99/classMantid_1_1Algorithms_1_1AddSampleLog.html#a50d296871b8bebaf0334ebd3607e8d8d">  392</a></span>std::vector&lt;double&gt; <a class="code hl_function" href="../../d5/d99/classMantid_1_1Algorithms_1_1AddSampleLog.html#a50d296871b8bebaf0334ebd3607e8d8d">AddSampleLog::getDblValues</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a97ac0dc7f26bb26c417c74e8b29d1181">API::MatrixWorkspace_const_sptr</a> &amp;dataws, <span class="keywordtype">int</span> workspace_index) {</div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>  std::vector&lt;double&gt; valuevec;</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>  <span class="keywordtype">size_t</span> vecsize = dataws-&gt;readY(workspace_index).size();</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>  <span class="keywordtype">size_t</span> vecsize = dataws-&gt;y(workspace_index).size();</div>
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; vecsize; ++i)</div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    valuevec.emplace_back(dataws-&gt;readY(workspace_index)[i]);</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    valuevec.emplace_back(dataws-&gt;y(workspace_index)[i]);</div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>  <span class="keywordflow">return</span> valuevec;</div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>}</div>
@@ -464,9 +464,9 @@ $(document).ready(function() { init_codefold(1); });
 <div class="foldopen" id="foldopen00408" data-start="{" data-end="}">
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno"><a class="line" href="../../d5/d99/classMantid_1_1Algorithms_1_1AddSampleLog.html#aa8c6524d2c5c83957c23b6d27eb24705">  408</a></span>std::vector&lt;int&gt; <a class="code hl_function" href="../../d5/d99/classMantid_1_1Algorithms_1_1AddSampleLog.html#aa8c6524d2c5c83957c23b6d27eb24705">AddSampleLog::getIntValues</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a97ac0dc7f26bb26c417c74e8b29d1181">API::MatrixWorkspace_const_sptr</a> &amp;dataws, <span class="keywordtype">int</span> workspace_index) {</div>
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>  std::vector&lt;int&gt; valuevec;</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>  <span class="keywordtype">size_t</span> vecsize = dataws-&gt;readY(workspace_index).size();</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>  <span class="keywordtype">size_t</span> vecsize = dataws-&gt;y(workspace_index).size();</div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; vecsize; ++i)</div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>    valuevec.emplace_back(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(dataws-&gt;readY(workspace_index)[i]));</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>    valuevec.emplace_back(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(dataws-&gt;y(workspace_index)[i]));</div>
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span> </div>
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>  <span class="keywordflow">return</span> valuevec;</div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>}</div>

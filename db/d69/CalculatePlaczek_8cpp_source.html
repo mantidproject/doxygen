@@ -281,13 +281,13 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>      issues[<span class="stringliteral">&quot;IncidentSpectra&quot;</span>] = <span class="stringliteral">&quot;Need three spectra here for second order calculation.&quot;</span>;</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>      <span class="comment">// if there are the correct number of spectra make sure all are not empty</span></div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>      <span class="keywordflow">if</span> (incidentWS-&gt;readY(0).empty()) {</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>      <span class="keywordflow">if</span> (incidentWS-&gt;y(0).empty()) {</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        issues[<span class="stringliteral">&quot;IncidentSpectra&quot;</span>] = <span class="stringliteral">&quot;Flux is empty&quot;</span>;</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>      }</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>      <span class="keywordflow">if</span> (incidentWS-&gt;readY(1).empty()) {</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>      <span class="keywordflow">if</span> (incidentWS-&gt;y(1).empty()) {</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        issues[<span class="stringliteral">&quot;IncidentSpectra&quot;</span>] = <span class="stringliteral">&quot;First order derivate of the incident spectrum is empty&quot;</span>;</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>      }</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>      <span class="keywordflow">if</span> (incidentWS-&gt;readY(2).empty()) {</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>      <span class="keywordflow">if</span> (incidentWS-&gt;y(2).empty()) {</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        issues[<span class="stringliteral">&quot;IncidentSpectra&quot;</span>] = <span class="stringliteral">&quot;Second order derivate of the incident spectrum is empty&quot;</span>;</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>      }</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    }</div>
@@ -297,10 +297,10 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>      issues[<span class="stringliteral">&quot;IncidentSpectra&quot;</span>] = <span class="stringliteral">&quot;Need two spectra here for first order calculation.&quot;</span>;</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>      <span class="comment">// if there are the correct number of spectra make sure all are not empty</span></div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>      <span class="keywordflow">if</span> (incidentWS-&gt;readY(0).empty()) {</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>      <span class="keywordflow">if</span> (incidentWS-&gt;y(0).empty()) {</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        issues[<span class="stringliteral">&quot;IncidentSpectra&quot;</span>] = <span class="stringliteral">&quot;Flux is empty&quot;</span>;</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>      }</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>      <span class="keywordflow">if</span> (incidentWS-&gt;readY(1).empty()) {</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>      <span class="keywordflow">if</span> (incidentWS-&gt;y(1).empty()) {</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        issues[<span class="stringliteral">&quot;IncidentSpectra&quot;</span>] = <span class="stringliteral">&quot;First order derivate of the incident spectrum is empty&quot;</span>;</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>      }</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    }</div>
@@ -316,13 +316,13 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        issues[<span class="stringliteral">&quot;EfficiencySpectra&quot;</span>] = <span class="stringliteral">&quot;Need three spectra here for second order calculation.&quot;</span>;</div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>      } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        <span class="comment">// if there are the correct number of spectra make sure all are not empty</span></div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        <span class="keywordflow">if</span> (efficiencyWS-&gt;readY(0).empty()) {</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        <span class="keywordflow">if</span> (efficiencyWS-&gt;y(0).empty()) {</div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>          issues[<span class="stringliteral">&quot;EfficiencySpectra&quot;</span>] = <span class="stringliteral">&quot;Detector efficiency is empty&quot;</span>;</div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        }</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        <span class="keywordflow">if</span> (efficiencyWS-&gt;readY(1).empty()) {</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        <span class="keywordflow">if</span> (efficiencyWS-&gt;y(1).empty()) {</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>          issues[<span class="stringliteral">&quot;EfficiencySpectra&quot;</span>] = <span class="stringliteral">&quot;First order derivate of the efficiency spectrum is empty&quot;</span>;</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        }</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        <span class="keywordflow">if</span> (efficiencyWS-&gt;readY(2).empty()) {</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        <span class="keywordflow">if</span> (efficiencyWS-&gt;y(2).empty()) {</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>          issues[<span class="stringliteral">&quot;EfficiencySpectra&quot;</span>] = <span class="stringliteral">&quot;Second order derivate of the efficiency spectrum is empty&quot;</span>;</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        }</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>      }</div>
@@ -332,10 +332,10 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        issues[<span class="stringliteral">&quot;EfficiencySpectra&quot;</span>] = <span class="stringliteral">&quot;Need two spectra here for first order calculation.&quot;</span>;</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>      } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        <span class="comment">// if there are the correct number of spectra make sure all are not empty</span></div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        <span class="keywordflow">if</span> (efficiencyWS-&gt;readY(0).empty()) {</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        <span class="keywordflow">if</span> (efficiencyWS-&gt;y(0).empty()) {</div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>          issues[<span class="stringliteral">&quot;EfficiencySpectra&quot;</span>] = <span class="stringliteral">&quot;Detector efficiency is empty&quot;</span>;</div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        }</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        <span class="keywordflow">if</span> (efficiencyWS-&gt;readY(1).empty()) {</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        <span class="keywordflow">if</span> (efficiencyWS-&gt;y(1).empty()) {</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>          issues[<span class="stringliteral">&quot;EfficiencySpectra&quot;</span>] = <span class="stringliteral">&quot;First order derivate of the efficiency spectrum is empty&quot;</span>;</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        }</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>      }</div>
@@ -545,8 +545,8 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span> </div>
 <div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>  <span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">API::MatrixWorkspace_sptr</a> incidentWS = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a5356ea547c4381e4144caa2b37599ead">getProperty</a>(<span class="stringliteral">&quot;IncidentSpectra&quot;</span>);</div>
 <div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>  <span class="keyword">const</span> <span class="keyword">auto</span> xLambda = incidentWS-&gt;getSpectrum(0).points();</div>
-<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>  <span class="keyword">const</span> <span class="keyword">auto</span> &amp;incident = incidentWS-&gt;readY(0);</div>
-<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>  <span class="keyword">const</span> <span class="keyword">auto</span> &amp;incidentPrime = incidentWS-&gt;readY(1);</div>
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>  <span class="keyword">const</span> <span class="keyword">auto</span> &amp;incident = incidentWS-&gt;y(0);</div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>  <span class="keyword">const</span> <span class="keyword">auto</span> &amp;incidentPrime = incidentWS-&gt;y(1);</div>
 <div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>  <span class="comment">// phi1 = lambda * phi&#39;(lambda)/phi(lambda)</span></div>
 <div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; xLambda.size(); i++) {</div>
 <div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>    phi1.emplace_back(xLambda[i] * incidentPrime[i] / incident[i]);</div>
@@ -562,8 +562,8 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span> </div>
 <div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span>  <span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">API::MatrixWorkspace_sptr</a> incidentWS = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a5356ea547c4381e4144caa2b37599ead">getProperty</a>(<span class="stringliteral">&quot;IncidentSpectra&quot;</span>);</div>
 <div class="line"><a id="l00482" name="l00482"></a><span class="lineno">  482</span>  <span class="keyword">const</span> <span class="keyword">auto</span> xLambda = incidentWS-&gt;getSpectrum(0).points();</div>
-<div class="line"><a id="l00483" name="l00483"></a><span class="lineno">  483</span>  <span class="keyword">const</span> <span class="keyword">auto</span> &amp;incident = incidentWS-&gt;readY(0);</div>
-<div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span>  <span class="keyword">const</span> <span class="keyword">auto</span> &amp;incidentPrime2 = incidentWS-&gt;readY(2);</div>
+<div class="line"><a id="l00483" name="l00483"></a><span class="lineno">  483</span>  <span class="keyword">const</span> <span class="keyword">auto</span> &amp;incident = incidentWS-&gt;y(0);</div>
+<div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span>  <span class="keyword">const</span> <span class="keyword">auto</span> &amp;incidentPrime2 = incidentWS-&gt;y(2);</div>
 <div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>  <span class="comment">// phi2 = lambda^2 * phi&#39;&#39;(lambda)/phi(lambda)</span></div>
 <div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; xLambda.size(); i++) {</div>
 <div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>    phi2.emplace_back(xLambda[i] * xLambda[i] * incidentPrime2[i] / incident[i]);</div>
@@ -585,8 +585,8 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>  <span class="keywordflow">if</span> (efficiencyWS) {</div>
 <div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>    <span class="comment">// Use the formula</span></div>
 <div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>    <span class="comment">// eps1 = k * eps&#39;/eps, k = 2pi/lambda</span></div>
-<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>    std::vector&lt;double&gt; eps = efficiencyWS-&gt;readY(0);</div>
-<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>    std::vector&lt;double&gt; epsPrime = efficiencyWS-&gt;readY(1);</div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>    Mantid::HistogramData::HistogramY <span class="keyword">const</span> &amp;eps = efficiencyWS-&gt;y(0);</div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>    Mantid::HistogramData::HistogramY <span class="keyword">const</span> &amp;epsPrime = efficiencyWS-&gt;y(1);</div>
 <div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; xLambda.size(); i++) {</div>
 <div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>      <span class="keywordtype">double</span> <a class="code hl_variable" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#a320d27f89cda9b48a5fd624c8cd4b870">lambda</a> = xLambda[i];</div>
 <div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>      <span class="keywordtype">double</span> k = 2.0 * M_PI / <a class="code hl_variable" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#a320d27f89cda9b48a5fd624c8cd4b870">lambda</a>;</div>
@@ -620,8 +620,8 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>  <span class="keywordflow">if</span> (efficiencyWS) {</div>
 <div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>    <span class="comment">// Use the formula</span></div>
 <div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>    <span class="comment">// eps1 = k^2 * eps&#39;&#39;/eps, k = 2pi/lambda</span></div>
-<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>    std::vector&lt;double&gt; eps = efficiencyWS-&gt;readY(0);</div>
-<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>    std::vector&lt;double&gt; epsPrime2 = efficiencyWS-&gt;readY(2);</div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>    Mantid::HistogramData::HistogramY <span class="keyword">const</span> &amp;eps = efficiencyWS-&gt;y(0);</div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>    Mantid::HistogramData::HistogramY <span class="keyword">const</span> &amp;epsPrime2 = efficiencyWS-&gt;y(2);</div>
 <div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; xLambda.size(); i++) {</div>
 <div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>      <span class="keywordtype">double</span> <a class="code hl_variable" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#a320d27f89cda9b48a5fd624c8cd4b870">lambda</a> = xLambda[i];</div>
 <div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>      <span class="keywordtype">double</span> k = 2.0 * M_PI / <a class="code hl_variable" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#a320d27f89cda9b48a5fd624c8cd4b870">lambda</a>;</div>

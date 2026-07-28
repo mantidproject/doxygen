@@ -869,7 +869,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> g = 0; g &lt; groups.size(); g++) {</div>
 <div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>      <span class="comment">// Create the x-axis for histogramming.</span></div>
 <div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>      <span class="keyword">const</span> <span class="keywordtype">double</span> x0 = xOffset * <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(g);</div>
-<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>      retVal-&gt;setX(g, make_cow&lt;HistogramX&gt;(numBins, LinearGenerator(x0, binDelta)));</div>
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>      retVal-&gt;setSharedX(g, make_cow&lt;HistogramX&gt;(numBins, LinearGenerator(x0, binDelta)));</div>
 <div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>    }</div>
 <div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>  }</div>
 <div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span> </div>

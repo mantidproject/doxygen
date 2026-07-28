@@ -472,8 +472,8 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>  }</div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>  <span class="comment">// this input multiplies up the adjustment if it exists</span></div>
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>  <span class="keywordflow">if</span> (pixelAdj) {</div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    weight *= pixelAdj-&gt;readY(wsIndex)[0];</div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    <a class="code hl_variable" href="../../dc/dd8/IndexPeaks_8cpp.html#a1ec236df65b93a338aecdf3fa64790f9">error</a> = weight * pixelAdj-&gt;readE(wsIndex)[0];</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    weight *= pixelAdj-&gt;y(wsIndex)[0];</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    <a class="code hl_variable" href="../../dc/dd8/IndexPeaks_8cpp.html#a1ec236df65b93a338aecdf3fa64790f9">error</a> = weight * pixelAdj-&gt;e(wsIndex)[0];</div>
 <div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>    <a class="code hl_variable" href="../../dc/dd8/IndexPeaks_8cpp.html#a1ec236df65b93a338aecdf3fa64790f9">error</a> = 0.0;</div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>  }</div>
