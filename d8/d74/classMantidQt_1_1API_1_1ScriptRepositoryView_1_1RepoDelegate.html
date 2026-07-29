@@ -96,7 +96,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Delegate to show the icons Download and Upload.  
+<p>Delegate to show the Download icons.  
  <a href="../../d8/d74/classMantidQt_1_1API_1_1ScriptRepositoryView_1_1RepoDelegate.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for MantidQt::API::ScriptRepositoryView::RepoDelegate:</div>
@@ -122,7 +122,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae558863c3d2233be008a94323688090a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Delegate to show the icons Download and Upload. </p>
+<div class="textblock"><p>Delegate to show the Download icons. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html#l00030">30</a> of file <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html">ScriptRepositoryView.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -142,7 +142,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00307">307</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00305">305</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
 
 </div>
 </div>
@@ -196,8 +196,7 @@ Public Member Functions</h2></td></tr>
 <p>Reacts to the iteraction with the user when he clicks on the buttons displayed at paint. </p>
 <p>Given the state of an entry (folder/file) there is only on available action. So, it is enough to get the event that the user interact with the pushbutton to decide what to do.</p>
 <p>It will filter the event in order to get the Left-Click of mouse. If it gets the click of the mouse, it will trigger the action:</p><ul>
-<li>Upload: if the file/folder is local_only or local_changed</li>
-<li>No Action when the entry is in Updated state.</li>
+<li>No Action when the entry is in Updated state, or is local only or locally changed (there is nothing to fetch).</li>
 <li>Download: for the other cases</li>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -211,9 +210,9 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if it handles or false to ignore. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00402">402</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00411">411</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00212">MantidQt::API::RepoModel::data()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00939">MantidQt::API::RepoModel::localChangedSt()</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00935">MantidQt::API::RepoModel::localOnlySt()</a>, <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html#l00082">MantidQt::API::ScriptRepositoryView::model</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00384">MantidQt::API::RepoModel::setData()</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00943">MantidQt::API::RepoModel::updatedSt()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00153">MantidQt::API::RepoModel::data()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00696">MantidQt::API::RepoModel::localChangedSt()</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00692">MantidQt::API::RepoModel::localOnlySt()</a>, <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html#l00073">MantidQt::API::ScriptRepositoryView::model</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00302">MantidQt::API::RepoModel::setData()</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00700">MantidQt::API::RepoModel::updatedSt()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
 </div>
 </div>
@@ -233,9 +232,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00363">363</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00372">372</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00945">MantidQt::API::RepoModel::bothChangedSt()</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00947">MantidQt::API::RepoModel::downloadSt()</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00939">MantidQt::API::RepoModel::localChangedSt()</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00935">MantidQt::API::RepoModel::localOnlySt()</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00941">MantidQt::API::RepoModel::remoteChangedSt()</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00937">MantidQt::API::RepoModel::remoteOnlySt()</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00943">MantidQt::API::RepoModel::updatedSt()</a>, and <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00949">MantidQt::API::RepoModel::uploadSt()</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00702">MantidQt::API::RepoModel::bothChangedSt()</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00704">MantidQt::API::RepoModel::downloadSt()</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00696">MantidQt::API::RepoModel::localChangedSt()</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00698">MantidQt::API::RepoModel::remoteChangedSt()</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00694">MantidQt::API::RepoModel::remoteOnlySt()</a>, and <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00700">MantidQt::API::RepoModel::updatedSt()</a>.</p>
 
 </div>
 </div>
@@ -292,9 +291,9 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00332">332</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00330">330</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00696">MantidQt::API::RepoModel::localChangedSt()</a>.</p>
 
 </div>
 </div>
@@ -335,7 +334,7 @@ Public Member Functions</h2></td></tr>
 <p>Provides the ideal size for this column. </p>
 <dl class="section return"><dt>Returns</dt><dd>ideal size for this column </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00422">422</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00429">429</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
 
 </div>
 </div>

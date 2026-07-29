@@ -121,9 +121,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a77b99ca7388ee230825447e5e58daed2" id="r_a77b99ca7388ee230825447e5e58daed2"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d99/classMantidQt_1_1API_1_1RepoModel_1_1RepoItem.html#a77b99ca7388ee230825447e5e58daed2">path</a> () const</td></tr>
 <tr class="memdesc:a77b99ca7388ee230825447e5e58daed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">access to the script repository path  <br /></td></tr>
 <tr class="separator:a77b99ca7388ee230825447e5e58daed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a389cee0b384d82c74102ce2022dec8eb" id="r_a389cee0b384d82c74102ce2022dec8eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d99/classMantidQt_1_1API_1_1RepoModel_1_1RepoItem.html#a389cee0b384d82c74102ce2022dec8eb">removeChild</a> (int <a class="el" href="../../dc/d99/classMantidQt_1_1API_1_1RepoModel_1_1RepoItem.html#a5c6a5aee0c4c7747623a8e26d4761ed2">row</a>)</td></tr>
-<tr class="memdesc:a389cee0b384d82c74102ce2022dec8eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">allow to remove a child, which allows erasing rows from the view.  <br /></td></tr>
-<tr class="separator:a389cee0b384d82c74102ce2022dec8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62cb542672403d7e7fe577da04b3cfe7" id="r_a62cb542672403d7e7fe577da04b3cfe7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d99/classMantidQt_1_1API_1_1RepoModel_1_1RepoItem.html#a62cb542672403d7e7fe577da04b3cfe7">RepoItem</a> (QString <a class="el" href="../../dc/d99/classMantidQt_1_1API_1_1RepoModel_1_1RepoItem.html#a7135535e7a7952f3d7218f161e4d1a5d">label</a>, QString <a class="el" href="../../dc/d99/classMantidQt_1_1API_1_1RepoModel_1_1RepoItem.html#a77b99ca7388ee230825447e5e58daed2">path</a>=&quot;/&quot;, <a class="el" href="../../dc/d99/classMantidQt_1_1API_1_1RepoModel_1_1RepoItem.html">RepoItem</a> *<a class="el" href="../../dc/d99/classMantidQt_1_1API_1_1RepoModel_1_1RepoItem.html#a2a57132b3ece246d609442999f6e86c6">parent</a>=nullptr)</td></tr>
 <tr class="separator:a62cb542672403d7e7fe577da04b3cfe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c6a5aee0c4c7747623a8e26d4761ed2" id="r_a5c6a5aee0c4c7747623a8e26d4761ed2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d99/classMantidQt_1_1API_1_1RepoModel_1_1RepoItem.html#a5c6a5aee0c4c7747623a8e26d4761ed2">row</a> () const</td></tr>
@@ -159,7 +156,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><p>A nested class to help <a class="el" href="../../dc/dec/classMantidQt_1_1API_1_1RepoModel.html" title="RepoModel : Wrapper for ScriptRepository to fit the Model View Qt Framework.">RepoModel</a> to implement the QAbstractItemModel. </p>
 <p>This class in indended to keep track of the path inside the Repository of the entries, in such a way the repomodel will be able to get from the index the path. The RepoModel::appendChild allows the <a class="el" href="../../dc/dec/classMantidQt_1_1API_1_1RepoModel.html" title="RepoModel : Wrapper for ScriptRepository to fit the Model View Qt Framework.">RepoModel</a> to reconstruct the tree of the directories, while the RepoModel::child and <a class="el" href="../../dc/dec/classMantidQt_1_1API_1_1RepoModel.html#aa9eeb5a6da68891ec30b7426a2daeb71" title="access to parent">RepoModel::parent</a> methods allow to iterate over the tree. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da5/RepoModel_8h_source.html#l00087">87</a> of file <a class="el" href="../../d8/da5/RepoModel_8h_source.html">RepoModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/da5/RepoModel_8h_source.html#l00080">80</a> of file <a class="el" href="../../d8/da5/RepoModel_8h_source.html">RepoModel.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a62cb542672403d7e7fe577da04b3cfe7" name="a62cb542672403d7e7fe577da04b3cfe7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a62cb542672403d7e7fe577da04b3cfe7">&#9670;&#160;</a></span>RepoItem() <span class="overload">[1/2]</span></h2>
@@ -193,7 +190,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00100">100</a> of file <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html">RepoModel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html">RepoModel.cpp</a>.</p>
 
 </div>
 </div>
@@ -214,7 +211,7 @@ Private Attributes</h2></td></tr>
 
 <p>destruct all the childItems. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00103">103</a> of file <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html">RepoModel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html">RepoModel.cpp</a>.</p>
 
 </div>
 </div>
@@ -263,9 +260,9 @@ Private Attributes</h2></td></tr>
 
 <p>This method is the very responsible to allow the reconstruction of the hierarchical tree, keeping track of the children of one item. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00107">107</a> of file <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html">RepoModel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00065">65</a> of file <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html">RepoModel.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00764">MantidQt::API::RepoModel::getParent()</a>, and <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00824">MantidQt::API::RepoModel::setupModelData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00549">MantidQt::API::RepoModel::getParent()</a>, and <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00609">MantidQt::API::RepoModel::setupModelData()</a>.</p>
 
 </div>
 </div>
@@ -296,9 +293,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The pointer to the row_th children. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00120">120</a> of file <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html">RepoModel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00078">78</a> of file <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html">RepoModel.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00631">MantidQt::API::RepoModel::index()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00416">MantidQt::API::RepoModel::index()</a>.</p>
 
 </div>
 </div>
@@ -320,9 +317,9 @@ Private Attributes</h2></td></tr>
 <p>Return the number of children that this entry may find. </p>
 <dl class="section return"><dt>Returns</dt><dd>Number of children </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00125">125</a> of file <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html">RepoModel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html">RepoModel.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00677">MantidQt::API::RepoModel::rowCount()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00462">MantidQt::API::RepoModel::rowCount()</a>.</p>
 
 </div>
 </div>
@@ -352,7 +349,7 @@ Private Attributes</h2></td></tr>
 <p>access to the label provided at construction </p>
 <dl class="section return"><dt>Returns</dt><dd>: label for this entry </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da5/RepoModel_8h_source.html#l00106">106</a> of file <a class="el" href="../../d8/da5/RepoModel_8h_source.html">RepoModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/da5/RepoModel_8h_source.html#l00099">99</a> of file <a class="el" href="../../d8/da5/RepoModel_8h_source.html">RepoModel.h</a>.</p>
 
 </div>
 </div>
@@ -408,9 +405,9 @@ Private Attributes</h2></td></tr>
 <p>access to the parent of this entry </p>
 <dl class="section return"><dt>Returns</dt><dd>: this entry parent's </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da5/RepoModel_8h_source.html#l00109">109</a> of file <a class="el" href="../../d8/da5/RepoModel_8h_source.html">RepoModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/da5/RepoModel_8h_source.html#l00102">102</a> of file <a class="el" href="../../d8/da5/RepoModel_8h_source.html">RepoModel.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00658">MantidQt::API::RepoModel::parent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00443">MantidQt::API::RepoModel::parent()</a>.</p>
 
 </div>
 </div>
@@ -440,33 +437,9 @@ Private Attributes</h2></td></tr>
 <p>access to the script repository path </p>
 <dl class="section return"><dt>Returns</dt><dd>: script repository path </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da5/RepoModel_8h_source.html#l00103">103</a> of file <a class="el" href="../../d8/da5/RepoModel_8h_source.html">RepoModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/da5/RepoModel_8h_source.html#l00096">96</a> of file <a class="el" href="../../d8/da5/RepoModel_8h_source.html">RepoModel.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00212">MantidQt::API::RepoModel::data()</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00899">MantidQt::API::RepoModel::isDownloading()</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00927">MantidQt::API::RepoModel::isUploading()</a>, and <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00384">MantidQt::API::RepoModel::setData()</a>.</p>
-
-</div>
-</div>
-<a id="a389cee0b384d82c74102ce2022dec8eb" name="a389cee0b384d82c74102ce2022dec8eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a389cee0b384d82c74102ce2022dec8eb">&#9670;&#160;</a></span>removeChild()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool RepoModel::RepoItem::removeChild </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>row</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>allow to remove a child, which allows erasing rows from the view. </p>
-<p>Remove the given child from the childItems.</p>
-<p>Used to allow removing rows from the view </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00136">136</a> of file <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html">RepoModel.cpp</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00153">MantidQt::API::RepoModel::data()</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00684">MantidQt::API::RepoModel::isDownloading()</a>, and <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00302">MantidQt::API::RepoModel::setData()</a>.</p>
 
 </div>
 </div>
@@ -489,9 +462,9 @@ Private Attributes</h2></td></tr>
 <p>Provide the row number of this entry related to its parent.</p>
 <dl class="section return"><dt>Returns</dt><dd>It's child position. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00129">129</a> of file <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html">RepoModel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00087">87</a> of file <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html">RepoModel.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00658">MantidQt::API::RepoModel::parent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00443">MantidQt::API::RepoModel::parent()</a>.</p>
 
 </div>
 </div>
@@ -518,7 +491,7 @@ Private Attributes</h2></td></tr>
 
 <p>track the list of children for this entry </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da5/RepoModel_8h_source.html#l00115">115</a> of file <a class="el" href="../../d8/da5/RepoModel_8h_source.html">RepoModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/da5/RepoModel_8h_source.html#l00106">106</a> of file <a class="el" href="../../d8/da5/RepoModel_8h_source.html">RepoModel.h</a>.</p>
 
 </div>
 </div>
@@ -544,7 +517,7 @@ Private Attributes</h2></td></tr>
 
 <p>the path of the script repository </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da5/RepoModel_8h_source.html#l00119">119</a> of file <a class="el" href="../../d8/da5/RepoModel_8h_source.html">RepoModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/da5/RepoModel_8h_source.html#l00110">110</a> of file <a class="el" href="../../d8/da5/RepoModel_8h_source.html">RepoModel.h</a>.</p>
 
 </div>
 </div>
@@ -570,7 +543,7 @@ Private Attributes</h2></td></tr>
 
 <p>the label of this entry </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da5/RepoModel_8h_source.html#l00117">117</a> of file <a class="el" href="../../d8/da5/RepoModel_8h_source.html">RepoModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/da5/RepoModel_8h_source.html#l00108">108</a> of file <a class="el" href="../../d8/da5/RepoModel_8h_source.html">RepoModel.h</a>.</p>
 
 </div>
 </div>
@@ -596,7 +569,7 @@ Private Attributes</h2></td></tr>
 
 <p>the parent of this entry </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da5/RepoModel_8h_source.html#l00121">121</a> of file <a class="el" href="../../d8/da5/RepoModel_8h_source.html">RepoModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/da5/RepoModel_8h_source.html#l00112">112</a> of file <a class="el" href="../../d8/da5/RepoModel_8h_source.html">RepoModel.h</a>.</p>
 
 </div>
 </div>

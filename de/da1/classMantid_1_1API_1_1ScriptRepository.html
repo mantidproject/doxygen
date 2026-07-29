@@ -101,13 +101,13 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af3c3fcc6cf45009504c0686ff7d25030" id="r_af3c3fcc6cf45009504c0686ff7d25030"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#af3c3fcc6cf45009504c0686ff7d25030">check4Update</a> ()=0</td></tr>
-<tr class="memdesc:af3c3fcc6cf45009504c0686ff7d25030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connects to the remote repository checking for updates.  <br /></td></tr>
+<tr class="memdesc:af3c3fcc6cf45009504c0686ff7d25030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the remote repository and check for updates.  <br /></td></tr>
 <tr class="separator:af3c3fcc6cf45009504c0686ff7d25030"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aead57a75d7261600a39072f6a8e1bff5" id="r_aead57a75d7261600a39072f6a8e1bff5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#aead57a75d7261600a39072f6a8e1bff5">connect</a> (const std::string &amp;webserverurl=&quot;&quot;)=0</td></tr>
-<tr class="memdesc:aead57a75d7261600a39072f6a8e1bff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow the <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html">ScriptRepository</a> to double check the connection with the web server.  <br /></td></tr>
+<tr class="memdesc:aead57a75d7261600a39072f6a8e1bff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow the <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html">ScriptRepository</a> to double-check the connection with the web server.  <br /></td></tr>
 <tr class="separator:aead57a75d7261600a39072f6a8e1bff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42f8cf65723da425e751453b7661cf6c" id="r_a42f8cf65723da425e751453b7661cf6c"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#a42f8cf65723da425e751453b7661cf6c">description</a> (const std::string &amp;path)=0</td></tr>
-<tr class="memdesc:a42f8cf65723da425e751453b7661cf6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide the description of the file given the path.  <br /></td></tr>
+<tr class="memdesc:a42f8cf65723da425e751453b7661cf6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide the description of the file at the given path.  <br /></td></tr>
 <tr class="separator:a42f8cf65723da425e751453b7661cf6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4f0d43e4d1d456909107589be18285f" id="r_ae4f0d43e4d1d456909107589be18285f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#ae4f0d43e4d1d456909107589be18285f">download</a> (const std::string &amp;file_path)=0</td></tr>
 <tr class="memdesc:ae4f0d43e4d1d456909107589be18285f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a copy of the remote file/folder inside the local repository.  <br /></td></tr>
@@ -118,39 +118,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab2c38a2360dc6038699aa95bbfcde0ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the status of the file, according to the status defined in <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#aebb8eff89f8e43872396f1d37408a8ce" title="Represent the possible states for a given file:">Mantid::API::SCRIPTSTATUS</a>.  <br /></td></tr>
 <tr class="separator:ab2c38a2360dc6038699aa95bbfcde0ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46a41ba2d8f2c05781d8517595c66cd7" id="r_a46a41ba2d8f2c05781d8517595c66cd7"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#a46a41ba2d8f2c05781d8517595c66cd7">ignorePatterns</a> ()=0</td></tr>
-<tr class="memdesc:a46a41ba2d8f2c05781d8517595c66cd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the ignore patters that was defined through <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#a11e105f8a9e6824f2e34a5656e15020f" title="Define the file patterns that will not be listed in listFiles.">ScriptRepository::setIgnorePatterns</a>.  <br /></td></tr>
+<tr class="memdesc:a46a41ba2d8f2c05781d8517595c66cd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the ignore patterns that were defined through <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#a11e105f8a9e6824f2e34a5656e15020f" title="Define the file patterns that will not be listed by listFiles.">ScriptRepository::setIgnorePatterns</a>.  <br /></td></tr>
 <tr class="separator:a46a41ba2d8f2c05781d8517595c66cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac28f1b2030adb02f99ace39cc935f5a6" id="r_ac28f1b2030adb02f99ace39cc935f5a6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/d21/structMantid_1_1API_1_1ScriptInfo.html">ScriptInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#ac28f1b2030adb02f99ace39cc935f5a6">info</a> (const std::string &amp;path)=0</td></tr>
-<tr class="memdesc:ac28f1b2030adb02f99ace39cc935f5a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the information about the script through the <a class="el" href="../../d4/d21/structMantid_1_1API_1_1ScriptInfo.html" title="Information about the files inside the repository.">Mantid::API::ScriptInfo</a> struct.  <br /></td></tr>
+<tr class="memdesc:ac28f1b2030adb02f99ace39cc935f5a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return information about the script through the <a class="el" href="../../d4/d21/structMantid_1_1API_1_1ScriptInfo.html" title="Information about the files inside the repository.">Mantid::API::ScriptInfo</a> struct.  <br /></td></tr>
 <tr class="separator:ac28f1b2030adb02f99ace39cc935f5a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a422b7c10f032b67676cbaec8791670ba" id="r_a422b7c10f032b67676cbaec8791670ba"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#a422b7c10f032b67676cbaec8791670ba">install</a> (const std::string &amp;local_path)=0</td></tr>
-<tr class="memdesc:a422b7c10f032b67676cbaec8791670ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Install the necessary resources at the local_path given that allows the <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html">ScriptRepository</a> to operate locally.  <br /></td></tr>
+<tr class="memdesc:a422b7c10f032b67676cbaec8791670ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Install, at the given local_path, the resources that allow the <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html">ScriptRepository</a> to operate locally.  <br /></td></tr>
 <tr class="separator:a422b7c10f032b67676cbaec8791670ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18244d65586b783c7d2d921101402433" id="r_a18244d65586b783c7d2d921101402433"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#a18244d65586b783c7d2d921101402433">isValid</a> ()=0</td></tr>
-<tr class="memdesc:a18244d65586b783c7d2d921101402433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the local repository exists.  <br /></td></tr>
+<tr class="memdesc:a18244d65586b783c7d2d921101402433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the local repository exists.  <br /></td></tr>
 <tr class="separator:a18244d65586b783c7d2d921101402433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac78968bbc0d196e376c1a0afedd7377c" id="r_ac78968bbc0d196e376c1a0afedd7377c"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#ac78968bbc0d196e376c1a0afedd7377c">listFiles</a> ()=0</td></tr>
 <tr class="memdesc:ac78968bbc0d196e376c1a0afedd7377c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the list of files inside the repository.  <br /></td></tr>
 <tr class="separator:ac78968bbc0d196e376c1a0afedd7377c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4169b488411755ef80ca7c79c014a8cc" id="r_a4169b488411755ef80ca7c79c014a8cc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#a4169b488411755ef80ca7c79c014a8cc">remove</a> (const std::string &amp;file_path, const std::string &amp;comment, const std::string &amp;author, const std::string &amp;email)=0</td></tr>
-<tr class="memdesc:a4169b488411755ef80ca7c79c014a8cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the file from the remote repository (it does not touch the local copy).  <br /></td></tr>
-<tr class="separator:a4169b488411755ef80ca7c79c014a8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cb0fef1498484bf9a88cecdec0bc2b9" id="r_a2cb0fef1498484bf9a88cecdec0bc2b9"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#a2cb0fef1498484bf9a88cecdec0bc2b9">setAutoUpdate</a> (const std::string &amp;path, bool option=true)=0</td></tr>
-<tr class="memdesc:a2cb0fef1498484bf9a88cecdec0bc2b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the AutoUpdate option, which define if a file will be updated as soon as new versions are available at the central repository.  <br /></td></tr>
+<tr class="memdesc:a2cb0fef1498484bf9a88cecdec0bc2b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the AutoUpdate option, which determines whether a file is updated as soon as new versions are available in the central repository.  <br /></td></tr>
 <tr class="separator:a2cb0fef1498484bf9a88cecdec0bc2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11e105f8a9e6824f2e34a5656e15020f" id="r_a11e105f8a9e6824f2e34a5656e15020f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#a11e105f8a9e6824f2e34a5656e15020f">setIgnorePatterns</a> (const std::string &amp;patterns)=0</td></tr>
-<tr class="memdesc:a11e105f8a9e6824f2e34a5656e15020f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the file patterns that will not be listed in listFiles.  <br /></td></tr>
+<tr class="memdesc:a11e105f8a9e6824f2e34a5656e15020f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the file patterns that will not be listed by listFiles.  <br /></td></tr>
 <tr class="separator:a11e105f8a9e6824f2e34a5656e15020f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65252887f7a53e75824e941edeb7dbe1" id="r_a65252887f7a53e75824e941edeb7dbe1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#a65252887f7a53e75824e941edeb7dbe1">upload</a> (const std::string &amp;file_path, const std::string &amp;comment, const std::string &amp;author, const std::string &amp;email)=0</td></tr>
-<tr class="memdesc:a65252887f7a53e75824e941edeb7dbe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upload the local file/folder to be available at the remote repository.  <br /></td></tr>
-<tr class="separator:a65252887f7a53e75824e941edeb7dbe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affe304a99333fb918f153ee32b48227e" id="r_affe304a99333fb918f153ee32b48227e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#affe304a99333fb918f153ee32b48227e">~ScriptRepository</a> ()=default</td></tr>
 <tr class="memdesc:affe304a99333fb918f153ee32b48227e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor (always needed for abstract classes)  <br /></td></tr>
 <tr class="separator:affe304a99333fb918f153ee32b48227e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../de/da8/ScriptRepository_8h_source.html#l00291">291</a> of file <a class="el" href="../../de/da8/ScriptRepository_8h_source.html">ScriptRepository.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/da8/ScriptRepository_8h_source.html#l00267">267</a> of file <a class="el" href="../../de/da8/ScriptRepository_8h_source.html">ScriptRepository.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="affe304a99333fb918f153ee32b48227e" name="affe304a99333fb918f153ee32b48227e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#affe304a99333fb918f153ee32b48227e">&#9670;&#160;</a></span>~ScriptRepository()</h2>
@@ -203,18 +197,18 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Connects to the remote repository checking for updates. </p>
-<p>This method, needs to know the remote URL wich must be available to the object before calling the check4update.</p>
-<p>It must check the state of the central repository and download all the files marked as AutoUpdate.</p>
-<dl class="section attention"><dt>Attention</dt><dd>The responsibility of executing this method periodically, is not of the <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html">ScriptRepository</a> it self. The others methods may not respond propperly, if this method is not executed.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This operation requires internet connection.</dd></dl>
+<p>Connect to the remote repository and check for updates. </p>
+<p>This method needs to know the remote URL, which must be available to the object before check4Update is called.</p>
+<p>It checks the state of the central repository and downloads all the files marked as AutoUpdate.</p>
+<dl class="section attention"><dt>Attention</dt><dd>Executing this method periodically is not the responsibility of the <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html">ScriptRepository</a> itself. The other methods may not respond properly if this method is not executed.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This operation requires an internet connection.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../d3/d73/classMantid_1_1API_1_1ScriptRepoException.html" title="The ScriptRepository class is intended to be used mainly by the users, who will be willing to share a...">ScriptRepoException</a></td><td>notifies mainly connection failure, but, may eventually, notify that the local repository may not be created.</td></tr>
+    <tr><td class="paramname"><a class="el" href="../../d3/d73/classMantid_1_1API_1_1ScriptRepoException.html" title="The ScriptRepository class is intended to be used mainly by users, who will want to share and downloa...">ScriptRepoException</a></td><td>mainly reports a connection failure, but may also report that the local repository could not be created.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>List with all the files automatically downloaded. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>List of all the files that were automatically downloaded. </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/d5f/UpdateScriptRepository_8cpp_source.html#l00036">Mantid::Algorithms::UpdateScriptRepository::exec()</a>, and <a class="el" href="../../d7/d8b/PythonInterface_2mantid_2api_2src_2Exports_2ScriptRepository_8cpp_source.html#l00085">export_ScriptRepository()</a>.</p>
 
@@ -244,9 +238,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Allow the <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html">ScriptRepository</a> to double check the connection with the web server. </p>
-<p>An optional argument is allowed webserverurl, but, it may be taken from the settings defined for the <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html">ScriptRepository</a>.</p>
-<p>This method ensures that the network and the link is available.</p>
+<p>Allow the <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html">ScriptRepository</a> to double-check the connection with the web server. </p>
+<p>The webserverurl argument is optional; if omitted, it is taken from the settings defined for the <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html">ScriptRepository</a>.</p>
+<p>This method ensures that the network and the link are available.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">webserverurl</td><td>: url of the mantid web server. </td></tr>
@@ -255,7 +249,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../d3/d73/classMantid_1_1API_1_1ScriptRepoException.html" title="The ScriptRepository class is intended to be used mainly by the users, who will be willing to share a...">ScriptRepoException</a></td><td>Failure to connect to the web server and the reason why. </td></tr>
+    <tr><td class="paramname"><a class="el" href="../../d3/d73/classMantid_1_1API_1_1ScriptRepoException.html" title="The ScriptRepository class is intended to be used mainly by users, who will want to share and downloa...">ScriptRepoException</a></td><td>failure to connect to the web server, and the reason why. </td></tr>
   </table>
   </dd>
 </dl>
@@ -286,10 +280,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Provide the description of the file given the path. </p>
+<p>Provide the description of the file at the given path. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">path</td><td>Script path related to the reposititory, or the operative system. </td></tr>
+    <tr><td class="paramname">path</td><td>script path relative to the repository, or to the operating system. </td></tr>
   </table>
   </dd>
 </dl>
@@ -322,9 +316,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a copy of the remote file/folder inside the local repository. </p>
-<p>For folder, it will copy all the files inside the folder as well.</p>
-<p>If one file is reported to have local changes (</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#ab2c38a2360dc6038699aa95bbfcde0ea" title="Return the status of the file, according to the status defined in Mantid::API::SCRIPTSTATUS.">ScriptRepository::fileStatus</a>) the <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#ae4f0d43e4d1d456909107589be18285f" title="Create a copy of the remote file/folder inside the local repository.">download</a> will make a copy of the remote file, but will preserve a backup of the local file. This incident will be reported through throwing an exception.</dd></dl>
-<p>For folders, the exception will also list all the files that a backup was created.</p>
+<p>For a folder, it copies all the files inside the folder as well.</p>
+<p>If a file is reported to have local changes (</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#ab2c38a2360dc6038699aa95bbfcde0ea" title="Return the status of the file, according to the status defined in Mantid::API::SCRIPTSTATUS.">ScriptRepository::fileStatus</a>), the <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#ae4f0d43e4d1d456909107589be18285f" title="Create a copy of the remote file/folder inside the local repository.">download</a> will overwrite it with a copy of the remote file, but will keep a backup of the local file. This is reported by throwing an exception.</dd></dl>
+<p>For folders, the exception will also list all the files for which a backup was created.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">file_path</td><td>of a file or folder to be downloaded.</td></tr>
@@ -333,7 +327,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../d3/d73/classMantid_1_1API_1_1ScriptRepoException.html" title="The ScriptRepository class is intended to be used mainly by the users, who will be willing to share a...">ScriptRepoException</a></td><td>to indicate file is not available at remotely or to indicate that a conflict was found. </td></tr>
+    <tr><td class="paramname"><a class="el" href="../../d3/d73/classMantid_1_1API_1_1ScriptRepoException.html" title="The ScriptRepository class is intended to be used mainly by users, who will want to share and downloa...">ScriptRepoException</a></td><td>to indicate that the file is not available remotely, or that a conflict was found. </td></tr>
   </table>
   </dd>
 </dl>
@@ -365,9 +359,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>Previous version, to be removed. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>Old name for <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#ac28f1b2030adb02f99ace39cc935f5a6" title="Return information about the script through the Mantid::API::ScriptInfo struct.">info()</a>; kept for compatibility and to be removed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/da8/ScriptRepository_8h_source.html#l00324">324</a> of file <a class="el" href="../../de/da8/ScriptRepository_8h_source.html">ScriptRepository.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/da8/ScriptRepository_8h_source.html#l00301">301</a> of file <a class="el" href="../../de/da8/ScriptRepository_8h_source.html">ScriptRepository.h</a>.</p>
 
 </div>
 </div>
@@ -405,7 +399,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>SCRIPTSTATUS : of the given file/folder </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../d3/d73/classMantid_1_1API_1_1ScriptRepoException.html" title="The ScriptRepository class is intended to be used mainly by the users, who will be willing to share a...">ScriptRepoException</a></td><td>to indicate that file is not available. </td></tr>
+    <tr><td class="paramname"><a class="el" href="../../d3/d73/classMantid_1_1API_1_1ScriptRepoException.html" title="The ScriptRepository class is intended to be used mainly by users, who will want to share and downloa...">ScriptRepoException</a></td><td>to indicate that file is not available. </td></tr>
   </table>
   </dd>
 </dl>
@@ -435,7 +429,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Return the ignore patters that was defined through <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#a11e105f8a9e6824f2e34a5656e15020f" title="Define the file patterns that will not be listed in listFiles.">ScriptRepository::setIgnorePatterns</a>. </p>
+<p>Return the ignore patterns that were defined through <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#a11e105f8a9e6824f2e34a5656e15020f" title="Define the file patterns that will not be listed by listFiles.">ScriptRepository::setIgnorePatterns</a>. </p>
 
 </div>
 </div>
@@ -463,26 +457,26 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Return the information about the script through the <a class="el" href="../../d4/d21/structMantid_1_1API_1_1ScriptInfo.html" title="Information about the files inside the repository.">Mantid::API::ScriptInfo</a> struct. </p>
-<p>It may throw exception if the file is not presented locally, or even remotelly.</p>
+<p>Return information about the script through the <a class="el" href="../../d4/d21/structMantid_1_1API_1_1ScriptInfo.html" title="Information about the files inside the repository.">Mantid::API::ScriptInfo</a> struct. </p>
+<p>It may throw an exception if the file is present neither locally nor remotely.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">path</td><td>: Script path related to the repository, or to operate system. </td></tr>
+    <tr><td class="paramname">path</td><td>: script path relative to the repository, or to the operating system. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d4/d21/structMantid_1_1API_1_1ScriptInfo.html" title="Information about the files inside the repository.">Mantid::API::ScriptInfo</a> : Information about the script.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../d3/d73/classMantid_1_1API_1_1ScriptRepoException.html" title="The ScriptRepository class is intended to be used mainly by the users, who will be willing to share a...">ScriptRepoException</a></td><td>Mainly for scripts not found.</td></tr>
+    <tr><td class="paramname"><a class="el" href="../../d3/d73/classMantid_1_1API_1_1ScriptRepoException.html" title="The ScriptRepository class is intended to be used mainly by users, who will want to share and downloa...">ScriptRepoException</a></td><td>Mainly for scripts not found.</td></tr>
   </table>
   </dd>
 </dl>
 <div class="fragment"><div class="line">ScriptSharing spt;</div>
 <div class="line"><a class="code hl_struct" href="../../d4/d21/structMantid_1_1API_1_1ScriptInfo.html">ScriptInfo</a> <a class="code hl_function" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#ac28f1b2030adb02f99ace39cc935f5a6">info</a> = spt.info(<span class="stringliteral">&quot;README.md&quot;</span>);</div>
 <div class="line"><span class="comment">// info.author : returns the file author.</span></div>
-<div class="ttc" id="aclassMantid_1_1API_1_1ScriptRepository_html_ac28f1b2030adb02f99ace39cc935f5a6"><div class="ttname"><a href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#ac28f1b2030adb02f99ace39cc935f5a6">Mantid::API::ScriptRepository::info</a></div><div class="ttdeci">virtual ScriptInfo info(const std::string &amp;path)=0</div><div class="ttdoc">Return the information about the script through the Mantid::API::ScriptInfo struct.</div></div>
-<div class="ttc" id="astructMantid_1_1API_1_1ScriptInfo_html"><div class="ttname"><a href="../../d4/d21/structMantid_1_1API_1_1ScriptInfo.html">Mantid::API::ScriptInfo</a></div><div class="ttdoc">Information about the files inside the repository.</div><div class="ttdef"><b>Definition</b> <a href="../../de/da8/ScriptRepository_8h_source.html#l00020">ScriptRepository.h:20</a></div></div>
+<div class="ttc" id="aclassMantid_1_1API_1_1ScriptRepository_html_ac28f1b2030adb02f99ace39cc935f5a6"><div class="ttname"><a href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#ac28f1b2030adb02f99ace39cc935f5a6">Mantid::API::ScriptRepository::info</a></div><div class="ttdeci">virtual ScriptInfo info(const std::string &amp;path)=0</div><div class="ttdoc">Return information about the script through the Mantid::API::ScriptInfo struct.</div></div>
+<div class="ttc" id="astructMantid_1_1API_1_1ScriptInfo_html"><div class="ttname"><a href="../../d4/d21/structMantid_1_1API_1_1ScriptInfo.html">Mantid::API::ScriptInfo</a></div><div class="ttdoc">Information about the files inside the repository.</div><div class="ttdef"><b>Definition</b> <a href="../../de/da8/ScriptRepository_8h_source.html#l00019">ScriptRepository.h:19</a></div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -510,18 +504,18 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Install the necessary resources at the local_path given that allows the <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html">ScriptRepository</a> to operate locally. </p>
-<p>It is allowed to create hidden files that would be necessary for the operation of this class.</p>
-<p>At the end, a new folder is created (if it does not exists already), with the given local_path given.</p>
+<p>Install, at the given local_path, the resources that allow the <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html">ScriptRepository</a> to operate locally. </p>
+<p>It may create any hidden files needed for the operation of this class.</p>
+<p>At the end, a new folder is created at local_path (if it does not already exist).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">local_path</td><td>path where the folder (having the same name given) will be created.</td></tr>
+    <tr><td class="paramname">local_path</td><td>path at which the folder will be created.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../d3/d73/classMantid_1_1API_1_1ScriptRepoException.html" title="The ScriptRepository class is intended to be used mainly by the users, who will be willing to share a...">ScriptRepoException</a></td><td>If the local_path may not be created (Permission issues). </td></tr>
+    <tr><td class="paramname"><a class="el" href="../../d3/d73/classMantid_1_1API_1_1ScriptRepoException.html" title="The ScriptRepository class is intended to be used mainly by users, who will want to share and downloa...">ScriptRepoException</a></td><td>if local_path cannot be created (for example, because of permission issues). </td></tr>
   </table>
   </dd>
 </dl>
@@ -553,8 +547,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Check if the local repository exists. </p>
-<p>If there is no local repository, the repository was never installed, the isValid will return false, and the only method valid is <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#a422b7c10f032b67676cbaec8791670ba" title="Install the necessary resources at the local_path given that allows the ScriptRepository to operate l...">ScriptRepository::install</a>. </p>
+<p>Check whether the local repository exists. </p>
+<p>If there is no local repository (it was never installed), isValid returns false and the only valid method is <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#a422b7c10f032b67676cbaec8791670ba" title="Install, at the given local_path, the resources that allow the ScriptRepository to operate locally.">ScriptRepository::install</a>. </p>
 
 </div>
 </div>
@@ -582,8 +576,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return the list of files inside the repository. </p>
-<p>It provides a file-system like path for all the files, folders that are inside the local repository as well as remotely.</p>
-<dl class="section note"><dt>Note</dt><dd>The path used a normal slash to separate folders.</dd></dl>
+<p>It provides a file-system like path for all the files and folders that are inside the local repository as well as remotely.</p>
+<dl class="section note"><dt>Note</dt><dd>The path uses a normal slash to separate folders.</dd></dl>
 <p>Consider the following repository:</p>
 <pre class="fragment">README.md
 folderA
@@ -597,78 +591,10 @@ folderA
 folderA/fileB
 fileC
 NewFile
-</pre><dl class="section return"><dt>Returns</dt><dd>List of all the files available inside the repository as a file system path relative to the local repository.</dd></dl>
+</pre><dl class="section return"><dt>Returns</dt><dd>List of all the files available inside the repository, as a file-system path relative to the local repository.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">May</td><td>throw Invalid Repository if the local repository was not generated. In this case, it is necessary to execute the <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#a422b7c10f032b67676cbaec8791670ba" title="Install the necessary resources at the local_path given that allows the ScriptRepository to operate l...">ScriptRepository::install</a> (at least once). </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a4169b488411755ef80ca7c79c014a8cc" name="a4169b488411755ef80ca7c79c014a8cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4169b488411755ef80ca7c79c014a8cc">&#9670;&#160;</a></span>remove()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Mantid::API::ScriptRepository::remove </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>file_path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>comment</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>author</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>email</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Delete the file from the remote repository (it does not touch the local copy). </p>
-<p>After this, the file will not be available for anyone among the users. As so, it is required a justification of why to remove (the comment), and the current rule accept that only the owner of the file (which is considered the last one to use the file) is allowed to remove it.</p>
-<p>The file will be removed from the central repository (git)</p>
-<dl class="section note"><dt>Note</dt><dd>This operation requires internet connection.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">file_path</td><td>for the file to be deleted. It will not accept deleting folders for security reason.</td></tr>
-    <tr><td class="paramname">comment</td><td>The reson of why deleting this entry.</td></tr>
-    <tr><td class="paramname">author</td><td>An string that may identify who is requesting to delete the file. It accept only the last author to remove it.</td></tr>
-    <tr><td class="paramname">email</td><td>An string that identifies the email of the author.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../d3/d73/classMantid_1_1API_1_1ScriptRepoException.html" title="The ScriptRepository class is intended to be used mainly by the users, who will be willing to share a...">ScriptRepoException</a></td><td>may be triggered for an attempt to delete folders, or a non existent file, or not allowed operation, or any network erros. </td></tr>
+    <tr><td class="paramname">May</td><td>throw Invalid Repository if the local repository was not generated. In this case, <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html#a422b7c10f032b67676cbaec8791670ba" title="Install, at the given local_path, the resources that allow the ScriptRepository to operate locally.">ScriptRepository::install</a> must be run (at least once). </td></tr>
   </table>
   </dd>
 </dl>
@@ -709,19 +635,19 @@ NewFile
 </table>
 </div><div class="memdoc">
 
-<p>Define the AutoUpdate option, which define if a file will be updated as soon as new versions are available at the central repository. </p>
-<p>This information will be kept in a property system, in order to be available afterwards.</p>
+<p>Define the AutoUpdate option, which determines whether a file is updated as soon as new versions are available in the central repository. </p>
+<p>This information is kept in a property system so that it is available afterwards.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">path</td><td>: file or folder inside the local repository</td></tr>
-    <tr><td class="paramname">option</td><td>flag to set for auto-update, or not. If true, new versions of the path will replace the local file as soon as they are available at the central repository.</td></tr>
+    <tr><td class="paramname">path</td><td>: file or folder inside the local repository.</td></tr>
+    <tr><td class="paramname">option</td><td>auto-update flag. If true, new versions of the path will replace the local file as soon as they are available in the central repository.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>int: number of files changed (because of the cascading of folders)</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>int: number of files changed (folders cascade to their contents).</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../d3/d73/classMantid_1_1API_1_1ScriptRepoException.html" title="The ScriptRepository class is intended to be used mainly by the users, who will be willing to share a...">ScriptRepoException</a></td><td>: Invalid entry. </td></tr>
+    <tr><td class="paramname"><a class="el" href="../../d3/d73/classMantid_1_1API_1_1ScriptRepoException.html" title="The ScriptRepository class is intended to be used mainly by users, who will want to share and downloa...">ScriptRepoException</a></td><td>: invalid entry. </td></tr>
   </table>
   </dd>
 </dl>
@@ -752,86 +678,18 @@ NewFile
 </table>
 </div><div class="memdoc">
 
-<p>Define the file patterns that will not be listed in listFiles. </p>
-<p>This is important to force the <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html">ScriptRepository</a> to not list hidden files, automatic generated files and so on. This helps to present to the user a clean presentation of the Repository</p>
-<p>For example, there are the pyc files that are automatically generated, and should be discarded. We could set also to ignore files that end with ~, temporary files in linux. The patterns will be evaluated as a csv regex patterns.</p>
+<p>Define the file patterns that will not be listed by listFiles. </p>
+<p>This lets the <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html">ScriptRepository</a> avoid listing hidden files, automatically generated files and so on, giving the user a cleaner view of the repository.</p>
+<p>For example, pyc files are automatically generated and should be discarded. You could also ignore files ending with ~, which are temporary files on linux. The patterns are evaluated as csv regex patterns.</p>
 <p>To discard all pyc files, set: "*pyc".</p>
-<p>To discard all pyc files and hidden files and folders: "*pyc;\b\.*"</p>
+<p>To discard all pyc files as well as hidden files and folders: "*pyc;\b\.*"</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">patterns</td><td>: csv regex patterns to be ignored when listing files.</td></tr>
   </table>
   </dd>
 </dl>
-<p>This settings must be preserved, and be available after trough the configure system. </p>
-
-</div>
-</div>
-<a id="a65252887f7a53e75824e941edeb7dbe1" name="a65252887f7a53e75824e941edeb7dbe1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65252887f7a53e75824e941edeb7dbe1">&#9670;&#160;</a></span>upload()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Mantid::API::ScriptRepository::upload </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>file_path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>comment</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>author</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>email</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Upload the local file/folder to be available at the remote repository. </p>
-<p>After this, this file/folder will be available for every, being published as with the same license as the mantid framework itself.</p>
-<p>The user is not allowed to upload files that are marked as BOTH_CHANGED. It must first download the file (wich will make a copy of the local one), than update the downloaded file with the user own changes. At this point, he may published his file.</p>
-<dl class="section note"><dt>Note</dt><dd>This operation requires internet connection.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">file_path</td><td>for the file/folder to be published. For folders, it will publish all the files inside the folder. (Empty folders will not be accepted).</td></tr>
-    <tr><td class="paramname">comment</td><td>Allows to give information of the last changes, updates on a given file/folder. It differs from description, in the sense, that it may inform just what changed from the last version, while, the description must provide information about the scope of the file.</td></tr>
-    <tr><td class="paramname">author</td><td>An string that may identify who is the responsible for changing that file. It may be a nick name, or an e-mail, or even a code, but, it it necessary that it identifies who was responsible for changing the file.</td></tr>
-    <tr><td class="paramname">email</td><td>An string that identifies the email of the author.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../d3/d73/classMantid_1_1API_1_1ScriptRepoException.html" title="The ScriptRepository class is intended to be used mainly by the users, who will be willing to share a...">ScriptRepoException</a></td><td>may be triggered for an attempt to publish an empty folder, a file not present locally, because the file, or one of the files inside the folder are marked as BOTH_CHANGED, or even failure to connect to the remote repository. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>These settings must be preserved and remain available afterwards through the configuration system. </p>
 
 </div>
 </div>

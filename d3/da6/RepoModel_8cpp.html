@@ -104,18 +104,7 @@ $(function() {
 <code>#include &quot;MantidQtIcons/Icon.h&quot;</code><br />
 <code>#include &lt;QIcon&gt;</code><br />
 <code>#include &lt;QPixmap&gt;</code><br />
-<code>#include &lt;QCheckBox&gt;</code><br />
-<code>#include &lt;QDebug&gt;</code><br />
-<code>#include &lt;QDialogButtonBox&gt;</code><br />
-<code>#include &lt;QFormLayout&gt;</code><br />
-<code>#include &lt;QGridLayout&gt;</code><br />
-<code>#include &lt;QGroupBox&gt;</code><br />
-<code>#include &lt;QLabel&gt;</code><br />
-<code>#include &lt;QLineEdit&gt;</code><br />
-<code>#include &lt;QSettings&gt;</code><br />
-<code>#include &lt;QTextEdit&gt;</code><br />
-<code>#include &lt;QTextStream&gt;</code><br />
-<code>#include &lt;QVBoxLayout&gt;</code><br />
+<code>#include &lt;QMessageBox&gt;</code><br />
 <code>#include &lt;QtConcurrentRun&gt;</code><br />
 <code>#include &lt;stdexcept&gt;</code><br />
 </div>
@@ -123,87 +112,16 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:adf316bca92abd308c95b3a06715a4b0a" id="r_adf316bca92abd308c95b3a06715a4b0a"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/da6/RepoModel_8cpp.html#adf316bca92abd308c95b3a06715a4b0a">delete_thread</a> (<a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a5d1e6f3c57a3894963656fc7014ba23b">Mantid::API::ScriptRepository_sptr</a> &amp;pt, const std::string &amp;path, const QString &amp;email, const QString &amp;author, const QString &amp;comment)</td></tr>
-<tr class="memdesc:adf316bca92abd308c95b3a06715a4b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the remove from ScriptRepository.  <br /></td></tr>
-<tr class="separator:adf316bca92abd308c95b3a06715a4b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54220b78d5f1f43ec67ff584fdf7ab2e" id="r_a54220b78d5f1f43ec67ff584fdf7ab2e"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/da6/RepoModel_8cpp.html#a54220b78d5f1f43ec67ff584fdf7ab2e">download_thread</a> (<a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a5d1e6f3c57a3894963656fc7014ba23b">Mantid::API::ScriptRepository_sptr</a> &amp;pt, const std::string &amp;path)</td></tr>
 <tr class="memdesc:a54220b78d5f1f43ec67ff584fdf7ab2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the download from ScriptRepository.  <br /></td></tr>
 <tr class="separator:a54220b78d5f1f43ec67ff584fdf7ab2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8b4de377ac8767d9f4db19e639e7d75" id="r_ab8b4de377ac8767d9f4db19e639e7d75"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/da6/RepoModel_8cpp.html#ab8b4de377ac8767d9f4db19e639e7d75">upload_thread</a> (<a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a5d1e6f3c57a3894963656fc7014ba23b">Mantid::API::ScriptRepository_sptr</a> &amp;pt, const std::string &amp;path, const QString &amp;email, const QString &amp;author, const QString &amp;comment)</td></tr>
-<tr class="memdesc:ab8b4de377ac8767d9f4db19e639e7d75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the upload from ScriptRepository.  <br /></td></tr>
-<tr class="separator:ab8b4de377ac8767d9f4db19e639e7d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aae35c23300a4d091c47b7bcbc79ed10e" id="r_aae35c23300a4d091c47b7bcbc79ed10e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/da6/RepoModel_8cpp.html#aae35c23300a4d091c47b7bcbc79ed10e">delete_mark</a> = &quot;*DELETE*&quot;</td></tr>
-<tr class="separator:aae35c23300a4d091c47b7bcbc79ed10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a787f04548dc348103919b9b788f22dda" id="r_a787f04548dc348103919b9b788f22dda"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/da6/RepoModel_8cpp.html#a787f04548dc348103919b9b788f22dda">nofile_flag</a> = &quot;nofile&quot;</td></tr>
 <tr class="separator:a787f04548dc348103919b9b788f22dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="adf316bca92abd308c95b3a06715a4b0a" name="adf316bca92abd308c95b3a06715a4b0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf316bca92abd308c95b3a06715a4b0a">&#9670;&#160;</a></span>delete_thread()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static QString delete_thread </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a5d1e6f3c57a3894963656fc7014ba23b">Mantid::API::ScriptRepository_sptr</a> &amp;&#160;</td>
-          <td class="paramname"><em>pt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>email</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>author</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>comment</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Execute the remove from ScriptRepository. </p>
-<p>This function will be executed in a separate thread. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html">RepoModel.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00044">delete_mark</a>, and <a class="el" href="../../d1/df1/API_2src_2ScriptRepository_8cpp_source.html#l00025">Mantid::API::ScriptRepoException::what()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00384">MantidQt::API::RepoModel::setData()</a>.</p>
-
-</div>
-</div>
 <a id="a54220b78d5f1f43ec67ff584fdf7ab2e" name="a54220b78d5f1f43ec67ff584fdf7ab2e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54220b78d5f1f43ec67ff584fdf7ab2e">&#9670;&#160;</a></span>download_thread()</h2>
 
@@ -241,94 +159,15 @@ Variables</h2></td></tr>
 <p>Executes the download from ScriptRepository. </p>
 <p>This function will be executed in a separate thread </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00049">49</a> of file <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html">RepoModel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html">RepoModel.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/df1/API_2src_2ScriptRepository_8cpp_source.html#l00025">Mantid::API::ScriptRepoException::what()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00384">MantidQt::API::RepoModel::setData()</a>.</p>
-
-</div>
-</div>
-<a id="ab8b4de377ac8767d9f4db19e639e7d75" name="ab8b4de377ac8767d9f4db19e639e7d75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8b4de377ac8767d9f4db19e639e7d75">&#9670;&#160;</a></span>upload_thread()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static QString upload_thread </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a5d1e6f3c57a3894963656fc7014ba23b">Mantid::API::ScriptRepository_sptr</a> &amp;&#160;</td>
-          <td class="paramname"><em>pt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>email</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>author</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>comment</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Execute the upload from ScriptRepository. </p>
-<p>This function will be executed in a separate thread </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00064">64</a> of file <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html">RepoModel.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d1/df1/API_2src_2ScriptRepository_8cpp_source.html#l00025">Mantid::API::ScriptRepoException::what()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00302">MantidQt::API::RepoModel::setData()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="aae35c23300a4d091c47b7bcbc79ed10e" name="aae35c23300a4d091c47b7bcbc79ed10e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae35c23300a4d091c47b7bcbc79ed10e">&#9670;&#160;</a></span>delete_mark</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* delete_mark = &quot;*DELETE*&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00044">44</a> of file <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html">RepoModel.cpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00077">delete_thread()</a>, and <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00906">MantidQt::API::RepoModel::uploadFinished()</a>.</p>
-
-</div>
-</div>
 <a id="a787f04548dc348103919b9b788f22dda" name="a787f04548dc348103919b9b788f22dda"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a787f04548dc348103919b9b788f22dda">&#9670;&#160;</a></span>nofile_flag</h2>
 
@@ -341,9 +180,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html">RepoModel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html">RepoModel.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00885">MantidQt::API::RepoModel::downloadFinished()</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00154">MantidQt::API::RepoModel::RepoModel()</a>, and <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00906">MantidQt::API::RepoModel::uploadFinished()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00670">MantidQt::API::RepoModel::downloadFinished()</a>, and <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00103">MantidQt::API::RepoModel::RepoModel()</a>.</p>
 
 </div>
 </div>

@@ -120,11 +120,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db4/classMantidQt_1_1API_1_1ScriptRepositoryView_1_1CheckBoxDelegate.html">CheckBoxDelegate</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate to show the checkbox for configuring the auto update.  <a href="../../dc/db4/classMantidQt_1_1API_1_1ScriptRepositoryView_1_1CheckBoxDelegate.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/db0/classMantidQt_1_1API_1_1ScriptRepositoryView_1_1RemoveEntryDelegate.html">RemoveEntryDelegate</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate to show the icon to remove the entry from the local and central repository.  <a href="../../dd/db0/classMantidQt_1_1API_1_1ScriptRepositoryView_1_1RemoveEntryDelegate.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d74/classMantidQt_1_1API_1_1ScriptRepositoryView_1_1RepoDelegate.html">RepoDelegate</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate to show the icons Download and Upload.  <a href="../../d8/d74/classMantidQt_1_1API_1_1ScriptRepositoryView_1_1RepoDelegate.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate to show the Download icons.  <a href="../../d8/d74/classMantidQt_1_1API_1_1ScriptRepositoryView_1_1RepoDelegate.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
@@ -223,11 +220,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Creates the widget for the <a class="el" href="../../dd/d2a/classMantidQt_1_1API_1_1ScriptRepositoryView.html" title="ScriptRepositoryView : Provide the User Interface to the ScriptRepository.">ScriptRepositoryView</a>. </p>
 <p>Before constructing the widget, it must ensure that the ScriptRepository was installed before.</p>
 <p>If it has not been installed, them, it will first try to install it. If it fails to install, them, it will not be able to create the widget, and it will fail gracelly.</p>
-<p>In normal condition, it will create the widget (Ui::ScriptRepositoryView) and populate it with the <a class="el" href="../../dc/dec/classMantidQt_1_1API_1_1RepoModel.html" title="RepoModel : Wrapper for ScriptRepository to fit the Model View Qt Framework.">RepoModel</a>, and define the delegates <a class="el" href="../../d8/d74/classMantidQt_1_1API_1_1ScriptRepositoryView_1_1RepoDelegate.html" title="Delegate to show the icons Download and Upload.">ScriptRepositoryView::RepoDelegate</a> and <a class="el" href="../../dc/db4/classMantidQt_1_1API_1_1ScriptRepositoryView_1_1CheckBoxDelegate.html" title="Delegate to show the checkbox for configuring the auto update.">ScriptRepositoryView::CheckBoxDelegate</a> and <a class="el" href="../../dd/db0/classMantidQt_1_1API_1_1ScriptRepositoryView_1_1RemoveEntryDelegate.html" title="Delegate to show the icon to remove the entry from the local and central repository.">ScriptRepositoryView::RemoveEntryDelegate</a>. </p>
+<p>In normal condition, it will create the widget (Ui::ScriptRepositoryView) and populate it with the <a class="el" href="../../dc/dec/classMantidQt_1_1API_1_1RepoModel.html" title="RepoModel : Wrapper for ScriptRepository to fit the Model View Qt Framework.">RepoModel</a>, and define the delegates <a class="el" href="../../d8/d74/classMantidQt_1_1API_1_1ScriptRepositoryView_1_1RepoDelegate.html" title="Delegate to show the Download icons.">ScriptRepositoryView::RepoDelegate</a> and <a class="el" href="../../dc/db4/classMantidQt_1_1API_1_1ScriptRepositoryView_1_1CheckBoxDelegate.html" title="Delegate to show the checkbox for configuring the auto update.">ScriptRepositoryView::CheckBoxDelegate</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00093">93</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00092">92</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00264">cell_activated()</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00157">chooseLocationAndInstall()</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00283">currentChanged()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00300">helpClicked()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html#l00082">model</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00611">openFolderLink()</a>, <a class="el" href="../../de/da8/ScriptRepository_8h_source.html#l00112">Mantid::API::ScriptRepoException::systemError()</a>, <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html#l00081">ui</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00215">updateLocationString()</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00238">updateModel()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>, and <a class="el" href="../../d1/df1/API_2src_2ScriptRepository_8cpp_source.html#l00025">Mantid::API::ScriptRepoException::what()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00262">cell_activated()</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00155">chooseLocationAndInstall()</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00281">currentChanged()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00298">helpClicked()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html#l00073">model</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00530">openFolderLink()</a>, <a class="el" href="../../de/da8/ScriptRepository_8h_source.html#l00109">Mantid::API::ScriptRepoException::systemError()</a>, <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html#l00072">ui</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00213">updateLocationString()</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00236">updateModel()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>, and <a class="el" href="../../d1/df1/API_2src_2ScriptRepository_8cpp_source.html#l00025">Mantid::API::ScriptRepoException::what()</a>.</p>
 
 </div>
 </div>
@@ -256,9 +253,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00256">256</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00254">254</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html#l00081">ui</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html#l00072">ui</a>.</p>
 
 </div>
 </div>
@@ -290,11 +287,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Allows the user to open a file to investigate it. </p>
 <p>If the user selects and activate one Row, double-clicking on the first column, it will try to retrieve the file path (if it is local) and emit the signal loadScript. <a class="el" href="../../d8/d8e/namespaceMantid.html" title="Helper class which provides the Collimation Length for SANS instruments.">Mantid</a> will get this signal to load the file and show its contents to the user. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00264">264</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00262">262</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00731">MantidQt::API::RepoModel::filePath()</a>, <a class="el" href="../../dd/d2a/classMantidQt_1_1API_1_1ScriptRepositoryView.html#ac3b64f247f0ca30b2fc1aca2c4572946">loadScript()</a>, and <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html#l00081">ui</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00516">MantidQt::API::RepoModel::filePath()</a>, <a class="el" href="../../dd/d2a/classMantidQt_1_1API_1_1ScriptRepositoryView.html#ac3b64f247f0ca30b2fc1aca2c4572946">loadScript()</a>, and <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html#l00072">ui</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00093">ScriptRepositoryView()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00092">ScriptRepositoryView()</a>.</p>
 
 </div>
 </div>
@@ -331,11 +328,11 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if successfully installed, false if not </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00157">157</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00155">155</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00037">count</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00062">MantidQt::API::dir_not_empty_label</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00033">MantidQt::API::install_mantid_label</a>, and <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00215">updateLocationString()</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00037">count</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00062">MantidQt::API::dir_not_empty_label</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00033">MantidQt::API::install_mantid_label</a>, and <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00213">updateLocationString()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00093">ScriptRepositoryView()</a>, and <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00238">updateModel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00092">ScriptRepositoryView()</a>, and <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00236">updateModel()</a>.</p>
 
 </div>
 </div>
@@ -366,11 +363,11 @@ Additional Inherited Members</h2></td></tr>
 <p>This method will be executed every time the user change the selection. </p>
 <p>It allows to update all the entries that are related to the current selection. Currently, the description field will be updated. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00283">283</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00281">281</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00714">MantidQt::API::RepoModel::author()</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00701">MantidQt::API::RepoModel::fileDescription()</a>, and <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html#l00081">ui</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00499">MantidQt::API::RepoModel::author()</a>, <a class="el" href="../../d3/da6/RepoModel_8cpp_source.html#l00486">MantidQt::API::RepoModel::fileDescription()</a>, and <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html#l00072">ui</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00093">ScriptRepositoryView()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00092">ScriptRepositoryView()</a>.</p>
 
 </div>
 </div>
@@ -399,11 +396,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Open the ScriptRepository Page on Web Browser. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00300">300</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00298">298</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../df/dfb/HelpWindow_8cpp_source.html#l00028">MantidQt::API::HelpWindow::showPage()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00093">ScriptRepositoryView()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00092">ScriptRepositoryView()</a>.</p>
 
 </div>
 </div>
@@ -431,7 +428,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00264">cell_activated()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00262">cell_activated()</a>.</p>
 
 </div>
 </div>
@@ -467,11 +464,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00611">611</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00530">530</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, and <a class="el" href="../../d5/d42/MantidDesktopServices_8cpp_source.html#l00035">MantidQt::API::MantidDesktopServices::openUrl()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00093">ScriptRepositoryView()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00092">ScriptRepositoryView()</a>.</p>
 
 </div>
 </div>
@@ -499,11 +496,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00215">215</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00213">213</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html#l00081">ui</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html#l00072">ui</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00157">chooseLocationAndInstall()</a>, and <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00093">ScriptRepositoryView()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00155">chooseLocationAndInstall()</a>, and <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00092">ScriptRepositoryView()</a>.</p>
 
 </div>
 </div>
@@ -533,11 +530,11 @@ Additional Inherited Members</h2></td></tr>
 <p>This method refreshes the ScriptRepository and allows it to check list the files again. </p>
 <p>It will also check for new files and folders. It is easier to just recreate <a class="el" href="../../dc/dec/classMantidQt_1_1API_1_1RepoModel.html" title="RepoModel : Wrapper for ScriptRepository to fit the Model View Qt Framework.">RepoModel</a> than figuring out the entries that were inserted or deleted from the ScriptRepository. This method could be rewritten in order to be more efficient. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00238">238</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00236">236</a> of file <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html">ScriptRepositoryView.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00157">chooseLocationAndInstall()</a>, <a class="el" href="../../d8/da5/RepoModel_8h_source.html#l00198">MantidQt::API::RepoModel::getRepoPtr()</a>, <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html#l00082">model</a>, and <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html#l00081">ui</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00155">chooseLocationAndInstall()</a>, <a class="el" href="../../d8/da5/RepoModel_8h_source.html#l00153">MantidQt::API::RepoModel::getRepoPtr()</a>, <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html#l00073">model</a>, and <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html#l00072">ui</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00093">ScriptRepositoryView()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00092">ScriptRepositoryView()</a>.</p>
 
 </div>
 </div>
@@ -562,9 +559,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html#l00082">82</a> of file <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html">ScriptRepositoryView.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html#l00073">73</a> of file <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html">ScriptRepositoryView.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00402">MantidQt::API::ScriptRepositoryView::RepoDelegate::editorEvent()</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00503">MantidQt::API::ScriptRepositoryView::CheckBoxDelegate::editorEvent()</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00590">MantidQt::API::ScriptRepositoryView::RemoveEntryDelegate::editorEvent()</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00093">ScriptRepositoryView()</a>, and <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00238">updateModel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00411">MantidQt::API::ScriptRepositoryView::RepoDelegate::editorEvent()</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00510">MantidQt::API::ScriptRepositoryView::CheckBoxDelegate::editorEvent()</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00092">ScriptRepositoryView()</a>, and <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00236">updateModel()</a>.</p>
 
 </div>
 </div>
@@ -588,9 +585,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html#l00081">81</a> of file <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html">ScriptRepositoryView.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html#l00072">72</a> of file <a class="el" href="../../dc/d0a/ScriptRepositoryView_8h_source.html">ScriptRepositoryView.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00264">cell_activated()</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00283">currentChanged()</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00093">ScriptRepositoryView()</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00215">updateLocationString()</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00238">updateModel()</a>, and <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00256">~ScriptRepositoryView()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00262">cell_activated()</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00281">currentChanged()</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00092">ScriptRepositoryView()</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00213">updateLocationString()</a>, <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00236">updateModel()</a>, and <a class="el" href="../../de/d48/ScriptRepositoryView_8cpp_source.html#l00254">~ScriptRepositoryView()</a>.</p>
 
 </div>
 </div>

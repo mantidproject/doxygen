@@ -653,7 +653,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about the files inside the repository.  <a href="../../d4/d21/structMantid_1_1API_1_1ScriptInfo.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/classMantid_1_1API_1_1ScriptRepoException.html">ScriptRepoException</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html">ScriptRepository</a> class is intended to be used mainly by the users, who will be willing to share and download scripts for their analysis.  <a href="../../d3/d73/classMantid_1_1API_1_1ScriptRepoException.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html">ScriptRepository</a> class is intended to be used mainly by users, who will want to share and download scripts for their analysis.  <a href="../../d3/d73/classMantid_1_1API_1_1ScriptRepoException.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html">ScriptRepository</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1071,7 +1071,7 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ae2509cec81555cfa33fe3ed345594dcf" id="r_ae2509cec81555cfa33fe3ed345594dcf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#ae2509cec81555cfa33fe3ed345594dcf">Projection_sptr</a> = std::shared_ptr&lt; <a class="el" href="../../dd/de4/classMantid_1_1API_1_1Projection.html">Projection</a> &gt;</td></tr>
 <tr class="separator:ae2509cec81555cfa33fe3ed345594dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d1e6f3c57a3894963656fc7014ba23b" id="r_a5d1e6f3c57a3894963656fc7014ba23b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a5d1e6f3c57a3894963656fc7014ba23b">ScriptRepository_sptr</a> = std::shared_ptr&lt; <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html">ScriptRepository</a> &gt;</td></tr>
-<tr class="memdesc:a5d1e6f3c57a3894963656fc7014ba23b"><td class="mdescLeft">&#160;</td><td class="mdescRight">shared pointer to the function base class  <br /></td></tr>
+<tr class="memdesc:a5d1e6f3c57a3894963656fc7014ba23b"><td class="mdescLeft">&#160;</td><td class="mdescRight">shared pointer to the <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html">ScriptRepository</a> base class  <br /></td></tr>
 <tr class="separator:a5d1e6f3c57a3894963656fc7014ba23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3d8867788a31d26a938473487a416bf" id="r_ac3d8867788a31d26a938473487a416bf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#ac3d8867788a31d26a938473487a416bf">ScriptRepositoryFactory</a> = <a class="el" href="../../d1/d8d/classMantid_1_1Kernel_1_1SingletonHolder.html">Mantid::Kernel::SingletonHolder</a>&lt; <a class="el" href="../../de/de1/classMantid_1_1API_1_1ScriptRepositoryFactoryImpl.html">ScriptRepositoryFactoryImpl</a> &gt;</td></tr>
 <tr class="separator:ac3d8867788a31d26a938473487a416bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3422,9 +3422,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>shared pointer to the function base class </p>
+<p>shared pointer to the <a class="el" href="../../de/da1/classMantid_1_1API_1_1ScriptRepository.html">ScriptRepository</a> base class </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/da8/ScriptRepository_8h_source.html#l00588">588</a> of file <a class="el" href="../../de/da8/ScriptRepository_8h_source.html">ScriptRepository.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/da8/ScriptRepository_8h_source.html#l00474">474</a> of file <a class="el" href="../../de/da8/ScriptRepository_8h_source.html">ScriptRepository.h</a>.</p>
 
 </div>
 </div>
@@ -4140,20 +4140,20 @@ Variables</h2></td></tr>
 
 <p>Represent the possible states for a given file: </p>
 <ul>
-<li>REMOTE_ONLY: it exists only at the remote repository.</li>
-<li>LOCAL_ONLY: it exists only at the local folder.</li>
-<li>REMOTE_CHANGED: it has been changed remotely, may be updated.</li>
-<li>LOCAL_CHANGED: it has been modified locally, may be published.</li>
-<li>BOTH_CHANGED: modified locally and remotelly.</li>
-<li>BOTH_UNCHANGED: the local file is a copy of the remotely one.</li>
+<li>REMOTE_ONLY: it exists only in the remote repository.</li>
+<li>LOCAL_ONLY: it exists only in the local folder.</li>
+<li>REMOTE_CHANGED: it has been changed remotely and may be updated.</li>
+<li>LOCAL_CHANGED: it has been modified locally.</li>
+<li>BOTH_CHANGED: modified both locally and remotely.</li>
+<li>BOTH_UNCHANGED: the local file is a copy of the remote one.</li>
 </ul>
-<p>For folders, the reason are slightly different:</p><ul>
+<p>For folders, the meanings are slightly different:</p><ul>
 <li>REMOTE_ONLY: the folder exists only remotely.</li>
 <li>LOCAL_ONLY: the folder exists only locally.</li>
-<li>BOTH_UNCHANGED: if no file inside the folder has the XXX_CHANGED status.</li>
-<li>BOTH_CHANGED: if inside the folder it has one file with BOTH_CHANGED status or one REMOTE_CHANGED with another LOCAL_CHANGED.</li>
-<li>REMOTE_CHANGED: at least one marked with REMOTE_CHANGED and others as REMOTE_CHANGED or BOTH_UNCHANGED.</li>
-<li>LOCAL_CHANGED: analogous to REMOTE_CHANGED, but locally. </li>
+<li>BOTH_UNCHANGED: no file inside the folder has a XXX_CHANGED status.</li>
+<li>BOTH_CHANGED: the folder contains a file marked BOTH_CHANGED, or one file marked REMOTE_CHANGED together with another marked LOCAL_CHANGED.</li>
+<li>REMOTE_CHANGED: at least one file is marked REMOTE_CHANGED and the rest are REMOTE_CHANGED or BOTH_UNCHANGED.</li>
+<li>LOCAL_CHANGED: analogous to REMOTE_CHANGED, but for local changes. </li>
 </ul>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aebb8eff89f8e43872396f1d37408a8cea51a45846fa8c05065936b019acd8184b" name="aebb8eff89f8e43872396f1d37408a8cea51a45846fa8c05065936b019acd8184b"></a>BOTH_UNCHANGED&#160;</td><td class="fielddoc"></td></tr>
@@ -4164,7 +4164,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="aebb8eff89f8e43872396f1d37408a8cea86ebdf56e989f9adb4ed7ea880b9b0bd" name="aebb8eff89f8e43872396f1d37408a8cea86ebdf56e989f9adb4ed7ea880b9b0bd"></a>BOTH_CHANGED&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../de/da8/ScriptRepository_8h_source.html#l00050">50</a> of file <a class="el" href="../../de/da8/ScriptRepository_8h_source.html">ScriptRepository.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/da8/ScriptRepository_8h_source.html#l00048">48</a> of file <a class="el" href="../../de/da8/ScriptRepository_8h_source.html">ScriptRepository.h</a>.</p>
 
 </div>
 </div>
