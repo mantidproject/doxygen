@@ -92,13 +92,15 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">IFuncMinimizer.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;MantidAPI/DllConfig.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d3/dea/ICostFunction_8h_source.html">MantidAPI/ICostFunction.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../df/d5e/PropertyManager_8h_source.html">MantidKernel/PropertyManager.h</a>&quot;</code><br />
+<code>#include &lt;string&gt;</code><br />
 </div>
 <p><a href="../../d6/dac/IFuncMinimizer_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -115,11 +117,26 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d9/da0/namespaceMantid_1_1API" id="r_d9/da0/namespaceMantid_1_1API"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html">Mantid::API</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dc/d3d/namespaceMantid_1_1API_1_1MinimizerStatus" id="r_dc/d3d/namespaceMantid_1_1API_1_1MinimizerStatus"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d3d/namespaceMantid_1_1API_1_1MinimizerStatus.html">Mantid::API::MinimizerStatus</a></td></tr>
+<tr class="memdesc:dc/d3d/namespaceMantid_1_1API_1_1MinimizerStatus"><td class="mdescLeft">&#160;</td><td class="mdescRight">Canonical minimizer "OutputStatus" strings. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:aafd8cd0acd65409f5528b34177a8cf3e" id="r_aafd8cd0acd65409f5528b34177a8cf3e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#aafd8cd0acd65409f5528b34177a8cf3e">Mantid::API::IFuncMinimizer_sptr</a> = std::shared_ptr&lt; <a class="el" href="../../df/dfb/classMantid_1_1API_1_1IFuncMinimizer.html">IFuncMinimizer</a> &gt;</td></tr>
 <tr class="separator:aafd8cd0acd65409f5528b34177a8cf3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a8274b35ffcd540cd639fa85d93992f56" id="r_a8274b35ffcd540cd639fa85d93992f56"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d3d/namespaceMantid_1_1API_1_1MinimizerStatus.html#a8274b35ffcd540cd639fa85d93992f56">Mantid::API::MinimizerStatus::CHANGES_IN_FUNCTION_TOO_SMALL</a> = &quot;Changes in function <a class="el" href="../../d5/d0b/FitMW_8cpp.html#aee90379adb0307effb138f4871edbc5c">value</a> are too small&quot;</td></tr>
+<tr class="memdesc:a8274b35ffcd540cd639fa85d93992f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reported by Levenberg-Marquardt when the change in the cost function between iterations has fallen below tolerance (an essentially-converged stop).  <br /></td></tr>
+<tr class="separator:a8274b35ffcd540cd639fa85d93992f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada16de943dbac49f9283498592299495" id="r_ada16de943dbac49f9283498592299495"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d3d/namespaceMantid_1_1API_1_1MinimizerStatus.html#ada16de943dbac49f9283498592299495">Mantid::API::MinimizerStatus::CHANGES_IN_PARAMETER_TOO_SMALL</a> = &quot;Changes in parameter <a class="el" href="../../d5/d0b/FitMW_8cpp.html#aee90379adb0307effb138f4871edbc5c">value</a> are too small&quot;</td></tr>
+<tr class="memdesc:ada16de943dbac49f9283498592299495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reported by Levenberg-Marquardt when the change in the parameter values between iterations has fallen below tolerance (an essentially-converged stop).  <br /></td></tr>
+<tr class="separator:ada16de943dbac49f9283498592299495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe9db5ae3769a2f686a8cb56354d5d0a" id="r_afe9db5ae3769a2f686a8cb56354d5d0a"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d3d/namespaceMantid_1_1API_1_1MinimizerStatus.html#afe9db5ae3769a2f686a8cb56354d5d0a">Mantid::API::MinimizerStatus::SUCCESS</a> = &quot;success&quot;</td></tr>
+<tr class="memdesc:afe9db5ae3769a2f686a8cb56354d5d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reported when a minimizer has fully converged.  <br /></td></tr>
+<tr class="separator:afe9db5ae3769a2f686a8cb56354d5d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
