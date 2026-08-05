@@ -12,7 +12,7 @@ var searchData=
   ['floatmatrix_9',['FloatMatrix',['../d9/dec/namespaceMantid_1_1Kernel.html#a528a93b65cce62c559fb7e0b67c1762c',1,'Mantid::Kernel']]],
   ['fmtflags_10',['fmtflags',['../d6/d19/classMantid_1_1Kernel_1_1____save__flags.html#a038dd3f0055ad130477280c429d9cdba',1,'Mantid::Kernel::__save_flags']]],
   ['fort_5fint_11',['fort_int',['../dc/d84/vms__convert_8h.html#ad68b8bf622f90b6a70e2a12ecc0fe5d2',1,'vms_convert.h']]],
-  ['fpadddata_12',['fpAddData',['../d8/de0/namespaceMantid_1_1MDAlgorithms.html#aeef689ad989a21696a941ca8f90a71ee',1,'Mantid::MDAlgorithms']]],
+  ['fpadddata_12',['fpAddData',['../d8/de0/namespaceMantid_1_1MDAlgorithms.html#a3fe7082457d467830076839696114f70',1,'Mantid::MDAlgorithms']]],
   ['fpcreatebox_13',['fpCreateBox',['../d4/dd3/classMantid_1_1DataObjects_1_1MDEventFactory.html#a3e32a608bdd852d6c3e43a10abc8d46d',1,'Mantid::DataObjects::MDEventFactory']]],
   ['fpcreatemdws_14',['fpCreateMDWS',['../d4/dd3/classMantid_1_1DataObjects_1_1MDEventFactory.html#af1c2d5ce8748b1273b5fbbc91c468d42',1,'Mantid::DataObjects::MDEventFactory']]],
   ['fpcreatews_15',['fpCreateWS',['../d8/de0/namespaceMantid_1_1MDAlgorithms.html#adc8f9d3b192143191d9fa528f061ec3f',1,'Mantid::MDAlgorithms']]],

@@ -779,7 +779,7 @@ var searchData=
   ['found_776',['found',['../d2/dde/structMantid_1_1API_1_1FileFinderImpl_1_1FileInfo.html#adf5a213e368c963599dd42ff29b5f28d',1,'Mantid::API::FileFinderImpl::FileInfo::found'],['../d8/d77/classMantid_1_1Kernel_1_1InternetHelper.html#aad263cc54689786ffec924aec281b740a3e918e9c9f594bda6b0cf358391c3b1a',1,'Mantid::Kernel::InternetHelper::FOUND']]],
   ['fourdigitprecision_777',['FourDigitPrecision',['../db/dfa/classMantidQt_1_1MantidWidgets_1_1ImageInfoModel.html#ada57093a785635f3d28b418ad7495814',1,'MantidQt::MantidWidgets::ImageInfoModel']]],
   ['fouriertransform_778',['fourierTransform',['../dc/d0f/classMantid_1_1Algorithms_1_1CalculateIqt.html#afeb0c9dd3b36f107f9d7c018d1702baf',1,'Mantid::Algorithms::CalculateIqt']]],
-  ['fpadddata_779',['fpAddData',['../d8/de0/namespaceMantid_1_1MDAlgorithms.html#aeef689ad989a21696a941ca8f90a71ee',1,'Mantid::MDAlgorithms']]],
+  ['fpadddata_779',['fpAddData',['../d8/de0/namespaceMantid_1_1MDAlgorithms.html#a3fe7082457d467830076839696114f70',1,'Mantid::MDAlgorithms']]],
   ['fpcreatebox_780',['fpCreateBox',['../d4/dd3/classMantid_1_1DataObjects_1_1MDEventFactory.html#a3e32a608bdd852d6c3e43a10abc8d46d',1,'Mantid::DataObjects::MDEventFactory']]],
   ['fpcreatemdws_781',['fpCreateMDWS',['../d4/dd3/classMantid_1_1DataObjects_1_1MDEventFactory.html#af1c2d5ce8748b1273b5fbbc91c468d42',1,'Mantid::DataObjects::MDEventFactory']]],
   ['fpcreatews_782',['fpCreateWS',['../d8/de0/namespaceMantid_1_1MDAlgorithms.html#adc8f9d3b192143191d9fa528f061ec3f',1,'Mantid::MDAlgorithms']]],
