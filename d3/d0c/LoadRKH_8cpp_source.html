@@ -438,7 +438,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    outWrksp-&gt;setSharedX(i, toPass);</div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>    <span class="comment">// now read in the Y values</span></div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>    <a class="code hl_typedef" href="../../d8/d8e/namespaceMantid.html#ac23552b2a51978a38cbc8f569163a682">MantidVec</a> &amp;YOut = outWrksp-&gt;dataY(i);</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>    <span class="keyword">auto</span> &amp;YOut = outWrksp-&gt;mutableY(i);</div>
 <div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>    <span class="keywordflow">for</span> (<span class="keywordtype">double</span> &amp;<a class="code hl_variable" href="../../d5/d0b/FitMW_8cpp.html#aee90379adb0307effb138f4871edbc5c">value</a> : YOut) {</div>
 <div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>      <a class="code hl_variable" href="../../d5/dac/classMantid_1_1DataHandling_1_1LoadRKH.html#aacbb46fd89b428cb6634c6ac35530a55">m_fileIn</a> &gt;&gt; <a class="code hl_variable" href="../../d5/d0b/FitMW_8cpp.html#aee90379adb0307effb138f4871edbc5c">value</a>;</div>
 <div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>    }</div>
@@ -447,7 +447,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span> </div>
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>  <span class="comment">// the error values form one big block after the Y-values</span></div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; nAxis1Values; ++i) {</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    <a class="code hl_typedef" href="../../d8/d8e/namespaceMantid.html#ac23552b2a51978a38cbc8f569163a682">MantidVec</a> &amp;EOut = outWrksp-&gt;dataE(i);</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    <span class="keyword">auto</span> &amp;EOut = outWrksp-&gt;mutableE(i);</div>
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    <span class="keywordflow">for</span> (<span class="keywordtype">double</span> &amp;<a class="code hl_variable" href="../../d5/d0b/FitMW_8cpp.html#aee90379adb0307effb138f4871edbc5c">value</a> : EOut) {</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>      <a class="code hl_variable" href="../../d5/dac/classMantid_1_1DataHandling_1_1LoadRKH.html#aacbb46fd89b428cb6634c6ac35530a55">m_fileIn</a> &gt;&gt; <a class="code hl_variable" href="../../d5/d0b/FitMW_8cpp.html#aee90379adb0307effb138f4871edbc5c">value</a>;</div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    }</div>
