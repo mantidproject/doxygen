@@ -333,7 +333,7 @@ var searchData=
   ['calculateumatrix_330',['CalculateUMatrix',['../d7/d94/classMantid_1_1Crystal_1_1CalculateUMatrix.html',1,'Mantid::Crystal']]],
   ['calculateumatrix_2ecpp_331',['CalculateUMatrix.cpp',['../d2/d0b/CalculateUMatrix_8cpp.html',1,'']]],
   ['calculateumatrix_2eh_332',['CalculateUMatrix.h',['../d4/d81/CalculateUMatrix_8h.html',1,'']]],
-  ['calculatevalues_333',['calculateValues',['../dd/d83/classMantid_1_1Algorithms_1_1ConvertAxisByFormula.html#aa8628a9a463fb2f3c955c99db7e7061f',1,'Mantid::Algorithms::ConvertAxisByFormula']]],
+  ['calculatevalues_333',['calculateValues',['../dd/d83/classMantid_1_1Algorithms_1_1ConvertAxisByFormula.html#aa801f9d538dbb2bce422885dc858ae6f',1,'Mantid::Algorithms::ConvertAxisByFormula']]],
   ['calculatewavelengthfromqlab_334',['calculateWavelengthFromQLab',['../d0/d3d/classMantid_1_1DataObjects_1_1BasePeak.html#aa57277d0f24baf7db5b796e2ac5d929a',1,'Mantid::DataObjects::BasePeak']]],
   ['calculatewidth_335',['calculateWidth',['../dc/dca/namespaceMantid_1_1CurveFitting_1_1Functions_1_1CrystalFieldUtils.html#acf45562085c954be589da49707f0b929',1,'Mantid::CurveFitting::Functions::CrystalFieldUtils']]],
   ['calculateworkspacesize_336',['calculateworkspacesize',['../d3/df4/classMantid_1_1DataHandling_1_1LoadNexusProcessed.html#ae799b32612658485d7c5dbde75107a60',1,'Mantid::DataHandling::LoadNexusProcessed::calculateWorkspaceSize()'],['../da/d99/classMantid_1_1DataHandling_1_1LoadRawHelper.html#ade249f3935c22fe0aeec812349589cd7',1,'Mantid::DataHandling::LoadRawHelper::calculateWorkspaceSize()']]],

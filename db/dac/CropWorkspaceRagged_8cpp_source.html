@@ -222,9 +222,9 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <span class="keywordflow">for</span> (int64_t i = 0; i &lt; int64_t(numSpectra); ++i) {</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <a class="code hl_define" href="../../da/d1c/MultiThreaded_8h.html#a164243312e5f41c589da0b72982db403">PARALLEL_START_INTERRUPT_REGION</a></div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keyword">auto</span> points = <a class="code hl_variable" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#a660359cf4ac080f70be4b1dd129eb766">tmp</a>-&gt;points(i);</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keyword">auto</span> &amp;dataX = outputWS-&gt;dataX(i);</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keyword">auto</span> &amp;dataY = outputWS-&gt;dataY(i);</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keyword">auto</span> &amp;dataE = outputWS-&gt;dataE(i);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keyword">const</span> <span class="keyword">auto</span> &amp;xValues = outputWS-&gt;x(i);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keyword">const</span> <span class="keyword">auto</span> &amp;yValues = outputWS-&gt;y(i);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keyword">const</span> <span class="keyword">auto</span> &amp;eValues = outputWS-&gt;e(i);</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="comment">// get iterators for cropped region using points</span></div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keyword">auto</span> low = std::lower_bound(points.begin(), points.end(), xMin[i]);</div>
@@ -234,33 +234,31 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    int64_t upperIndex = std::distance(points.begin(), up);</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="comment">// get new vectors</span></div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    std::vector&lt;double&gt; newY = getSubVector(dataY, lowerIndex, upperIndex);</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    std::vector&lt;double&gt; newE = getSubVector(dataE, lowerIndex, upperIndex);</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keywordflow">if</span> (histogram &amp;&amp; upperIndex + (<span class="keywordtype">size_t</span>)1 &lt;= dataX.size()) {</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    std::vector&lt;double&gt; newY = getSubVector(yValues.rawData(), lowerIndex, upperIndex);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    std::vector&lt;double&gt; newE = getSubVector(eValues.rawData(), lowerIndex, upperIndex);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keywordflow">if</span> (histogram &amp;&amp; upperIndex + (<span class="keywordtype">size_t</span>)1 &lt;= xValues.size()) {</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>      <span class="comment">// the offset adds one to the upper index for histograms</span></div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>      <span class="comment">// only use the offset if the end is cropped</span></div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>      upperIndex += 1;</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    }</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    std::vector&lt;double&gt; newX = getSubVector(dataX, lowerIndex, upperIndex);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    std::vector&lt;double&gt; newX = getSubVector(xValues.rawData(), lowerIndex, upperIndex);</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="comment">// resize the data</span></div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    dataX.resize(newX.size());</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    dataY.resize(newY.size());</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    dataE.resize(newE.size());</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="comment">// update the data</span></div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    outputWS-&gt;mutableX(i) = newX;</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    outputWS-&gt;mutableY(i) = newY;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    outputWS-&gt;mutableE(i) = newE;</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <a class="code hl_define" href="../../da/d1c/MultiThreaded_8h.html#a7fb41a280bb4bae89e196799ca08d474">PARALLEL_END_INTERRUPT_REGION</a></div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  }</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <a class="code hl_define" href="../../da/d1c/MultiThreaded_8h.html#af0f7f1874219b0417e2134f3ecdc6bc4">PARALLEL_CHECK_INTERRUPT_REGION</a></div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  <a class="code hl_function" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html#a3819af9d65d799ec151ab97c15f147e4">setProperty</a>(<span class="stringliteral">&quot;OutputWorkspace&quot;</span>, outputWS);</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>}</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="comment">// resize the histogram; this keeps X, Y and E consistent with the storage mode</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    outputWS-&gt;resizeHistogram(i, newY.size());</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="comment">// update the data</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    outputWS-&gt;mutableX(i) = newX;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    outputWS-&gt;mutableY(i) = newY;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    outputWS-&gt;mutableE(i) = newE;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <a class="code hl_define" href="../../da/d1c/MultiThreaded_8h.html#a7fb41a280bb4bae89e196799ca08d474">PARALLEL_END_INTERRUPT_REGION</a></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  }</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  <a class="code hl_define" href="../../da/d1c/MultiThreaded_8h.html#af0f7f1874219b0417e2134f3ecdc6bc4">PARALLEL_CHECK_INTERRUPT_REGION</a></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <a class="code hl_function" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html#a3819af9d65d799ec151ab97c15f147e4">setProperty</a>(<span class="stringliteral">&quot;OutputWorkspace&quot;</span>, outputWS);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>}</div>
 </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>} <span class="comment">// namespace Mantid::Algorithms</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>} <span class="comment">// namespace Mantid::Algorithms</span></div>
 <div class="ttc" id="aAlgorithm_8h_html_afdb48240ab340a0026eeadc6de8b72e1"><div class="ttname"><a href="../../d7/d36/Algorithm_8h.html#afdb48240ab340a0026eeadc6de8b72e1">DECLARE_ALGORITHM</a></div><div class="ttdeci">#define DECLARE_ALGORITHM(classname)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d36/Algorithm_8h_source.html#l00542">Algorithm.h:542</a></div></div>
 <div class="ttc" id="aArrayProperty_8h_html"><div class="ttname"><a href="../../df/da4/ArrayProperty_8h.html">ArrayProperty.h</a></div></div>
 <div class="ttc" id="aAugmentedLagrangianOptimizer_8cpp_html_a660359cf4ac080f70be4b1dd129eb766"><div class="ttname"><a href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#a660359cf4ac080f70be4b1dd129eb766">tmp</a></div><div class="ttdeci">gsl_vector * tmp</div><div class="ttdef"><b>Definition</b> <a href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00049">AugmentedLagrangianOptimizer.cpp:49</a></div></div>

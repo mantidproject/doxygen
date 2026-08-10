@@ -146,6 +146,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a787e115f96cef07b4cb3c71f1c304e1d" id="r_a787e115f96cef07b4cb3c71f1c304e1d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#a787e115f96cef07b4cb3c71f1c304e1d">convertSingleToTOF</a> (const double xvalue, const double &amp;<a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#abb0d212523804cc45b5b6eeb10b91fe0">l1</a>, const int &amp;<a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#ad50bbb43e7192f5bbd34e3e1234a2bcb">emode</a>, const <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#a5b5c824ff0aff187501a9787ea439f2b">UnitParametersMap</a> &amp;params)</td></tr>
 <tr class="memdesc:a787e115f96cef07b4cb3c71f1c304e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert from the concrete unit to time-of-flight. TOF is in microseconds.  <br /></td></tr>
 <tr class="separator:a787e115f96cef07b4cb3c71f1c304e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaf330ab31691bfb6d7cb854c739e4ea" id="r_abaf330ab31691bfb6d7cb854c739e4ea"><td class="memTemplParams" colspan="2">template&lt;typename Iterator &gt; </td></tr>
+<tr class="memitem:abaf330ab31691bfb6d7cb854c739e4ea"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#abaf330ab31691bfb6d7cb854c739e4ea">fromTOF</a> (Iterator const xbegin, Iterator const xend, double const <a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#abb0d212523804cc45b5b6eeb10b91fe0">l1</a>, int const <a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#ad50bbb43e7192f5bbd34e3e1234a2bcb">emode</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#a5b5c824ff0aff187501a9787ea439f2b">UnitParametersMap</a> const &amp;params)</td></tr>
+<tr class="memdesc:abaf330ab31691bfb6d7cb854c739e4ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a range of X values in place from time-of-flight to the concrete unit.  <br /></td></tr>
+<tr class="separator:abaf330ab31691bfb6d7cb854c739e4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05d2d6ddc31d240534461fb297de8a87" id="r_a05d2d6ddc31d240534461fb297de8a87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#a05d2d6ddc31d240534461fb297de8a87">fromTOF</a> (std::vector&lt; double &gt; &amp;xdata, std::vector&lt; double &gt; const &amp;ydata, const double &amp;_l1, const int &amp;_emode, const <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#a5b5c824ff0aff187501a9787ea439f2b">UnitParametersMap</a> &amp;params)</td></tr>
 <tr class="separator:a05d2d6ddc31d240534461fb297de8a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a574ace16ce8e4f30c53ed2f347d99191" id="r_a574ace16ce8e4f30c53ed2f347d99191"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#a574ace16ce8e4f30c53ed2f347d99191">fromTOF</a> (std::vector&lt; double &gt; &amp;xdata, std::vector&lt; double &gt; const &amp;ydata, const double &amp;_l1, const int &amp;_emode, std::initializer_list&lt; std::pair&lt; const <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838">UnitParams</a>, double &gt; &gt; params)</td></tr>
@@ -181,6 +185,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4c0c3bd6e1594f1da786a2a9f1f98637" id="r_a4c0c3bd6e1594f1da786a2a9f1f98637"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#a4c0c3bd6e1594f1da786a2a9f1f98637">singleToTOF</a> (const double <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#af9966bf83559a0e8759072837e5ab80f">x</a>) const =0</td></tr>
 <tr class="memdesc:a4c0c3bd6e1594f1da786a2a9f1f98637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a single X value to TOF.  <br /></td></tr>
 <tr class="separator:a4c0c3bd6e1594f1da786a2a9f1f98637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d3b67e69ba3c403878c212449678841" id="r_a1d3b67e69ba3c403878c212449678841"><td class="memTemplParams" colspan="2">template&lt;typename Iterator &gt; </td></tr>
+<tr class="memitem:a1d3b67e69ba3c403878c212449678841"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#a1d3b67e69ba3c403878c212449678841">toTOF</a> (Iterator const xbegin, Iterator const xend, double const <a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#abb0d212523804cc45b5b6eeb10b91fe0">l1</a>, int const <a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#ad50bbb43e7192f5bbd34e3e1234a2bcb">emode</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#a5b5c824ff0aff187501a9787ea439f2b">UnitParametersMap</a> const &amp;params)</td></tr>
+<tr class="memdesc:a1d3b67e69ba3c403878c212449678841"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a range of X values in place from the concrete unit to time-of-flight.  <br /></td></tr>
+<tr class="separator:a1d3b67e69ba3c403878c212449678841"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeb06c80cd95634714e8e0df5164cd24" id="r_afeb06c80cd95634714e8e0df5164cd24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#afeb06c80cd95634714e8e0df5164cd24">toTOF</a> (std::vector&lt; double &gt; &amp;xdata, std::vector&lt; double &gt; const &amp;ydata, const double &amp;_l1, const int &amp;_emode, const <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#a5b5c824ff0aff187501a9787ea439f2b">UnitParametersMap</a> &amp;params)</td></tr>
 <tr class="separator:afeb06c80cd95634714e8e0df5164cd24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7079da33998e6fd152fbd53caab8d4f7" id="r_a7079da33998e6fd152fbd53caab8d4f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#a7079da33998e6fd152fbd53caab8d4f7">toTOF</a> (std::vector&lt; double &gt; &amp;xdata, std::vector&lt; double &gt; const &amp;ydata, const double &amp;_l1, const int &amp;_emode, std::initializer_list&lt; std::pair&lt; const <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838">UnitParams</a>, double &gt; &gt; params)</td></tr>
@@ -243,7 +251,7 @@ Static Private Attributes</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Russell Taylor, Tessella Support Services plc </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>25/02/2008 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00041">41</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00042">42</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aacb4a911e9976e90286e596e57e587ac" name="aacb4a911e9976e90286e596e57e587ac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aacb4a911e9976e90286e596e57e587ac">&#9670;&#160;</a></span>ConstantAndPower</h2>
@@ -267,7 +275,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>A 'quick conversion' requires the constant by which to multiply the input and the power to which to raise it. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00182">182</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00227">227</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
 
 </div>
 </div>
@@ -293,7 +301,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>The possible 'quick conversions' are held in a map with the starting unit as the key. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00188">188</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00233">233</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
 
 </div>
 </div>
@@ -319,7 +327,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Lists, for a given starting unit, the units to which a 'quick conversion' can be made. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00185">185</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00230">230</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
 
 </div>
 </div>
@@ -426,7 +434,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00114">114</a> of file <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html">Unit.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/daf/Unit_8h_source.html#l00190">s_conversionFactors</a>, and <a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#a9486ddb89f203d75e17bbe4e87a83cd0">unitID()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/daf/Unit_8h_source.html#l00235">s_conversionFactors</a>, and <a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#a9486ddb89f203d75e17bbe4e87a83cd0">unitID()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00936">Mantid::Kernel::Units::DeltaE::DeltaE()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l01105">Mantid::Kernel::Units::DeltaE_inFrequency::DeltaE_inFrequency()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l01081">Mantid::Kernel::Units::DeltaE_inWavenumber::DeltaE_inWavenumber()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00434">Mantid::Kernel::Units::Energy::Energy()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00496">Mantid::Kernel::Units::Energy_inWavenumber::Energy_inWavenumber()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l01117">Mantid::Kernel::Units::Momentum::Momentum()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00860">Mantid::Kernel::Units::MomentumTransfer::MomentumTransfer()</a>, and <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00909">Mantid::Kernel::Units::QSquared::QSquared()</a>.</p>
 
@@ -637,7 +645,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00199">199</a> of file <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html">Unit.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/daf/Unit_8h_source.html#l00171">emode</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00133">initialize()</a>, and <a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#aadfd7c33368f6e3d4d97aad8751e0d3c">singleFromTOF()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/daf/Unit_8h_source.html#l00216">emode</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00133">initialize()</a>, and <a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#aadfd7c33368f6e3d4d97aad8751e0d3c">singleFromTOF()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/dba/Kernel_2src_2UnitConversion_8cpp_source.html#l00099">Mantid::Kernel::UnitConversion::convertViaTOF()</a>, <a class="el" href="../../d3/db2/AnvredCorrection_8cpp_source.html#l00144">Mantid::Crystal::AnvredCorrection::exec()</a>, and <a class="el" href="../../d3/db2/AnvredCorrection_8cpp_source.html#l00279">Mantid::Crystal::AnvredCorrection::execEvent()</a>.</p>
 
@@ -695,14 +703,84 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00169">169</a> of file <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html">Unit.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/daf/Unit_8h_source.html#l00171">emode</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00133">initialize()</a>, and <a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#a4c0c3bd6e1594f1da786a2a9f1f98637">singleToTOF()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/daf/Unit_8h_source.html#l00216">emode</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00133">initialize()</a>, and <a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#a4c0c3bd6e1594f1da786a2a9f1f98637">singleToTOF()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/dba/Kernel_2src_2UnitConversion_8cpp_source.html#l00099">Mantid::Kernel::UnitConversion::convertViaTOF()</a>.</p>
 
 </div>
 </div>
+<a id="abaf330ab31691bfb6d7cb854c739e4ea" name="abaf330ab31691bfb6d7cb854c739e4ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaf330ab31691bfb6d7cb854c739e4ea">&#9670;&#160;</a></span>fromTOF() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Iterator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mantid::Kernel::Unit::fromTOF </td>
+          <td>(</td>
+          <td class="paramtype">Iterator const&#160;</td>
+          <td class="paramname"><em>xbegin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Iterator const&#160;</td>
+          <td class="paramname"><em>xend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double const&#160;</td>
+          <td class="paramname"><em>l1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int const&#160;</td>
+          <td class="paramname"><em>emode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#a5b5c824ff0aff187501a9787ea439f2b">UnitParametersMap</a> const &amp;&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert a range of X values in place from time-of-flight to the concrete unit. </p>
+<p>TOF is in microseconds. This overload takes an iterator range rather than a <code>std::vector&lt;double&gt; &amp;</code>, so that it can be used with the size-checked histogram data types, which deliberately do not hand out a modifiable <code>std::vector&lt;double&gt;</code>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xbegin</td><td>:: Iterator to the first X value to be converted </td></tr>
+    <tr><td class="paramname">xend</td><td>:: Iterator one past the last X value to be converted </td></tr>
+    <tr><td class="paramname">l1</td><td>:: The source-sample distance (in metres) </td></tr>
+    <tr><td class="paramname">emode</td><td>:: The energy mode (0=elastic, 1=direct geometry, 2=indirect geometry) </td></tr>
+    <tr><td class="paramname">params</td><td>:: Map containing optional parameters eg The sample-detector distance (in metres) The scattering angle (in radians) Fixed energy: EI (emode=1) or EF (emode=2)(in meV) Delta (not currently used) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00157">157</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
+
+</div>
+</div>
 <a id="a05d2d6ddc31d240534461fb297de8a87" name="a05d2d6ddc31d240534461fb297de8a87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05d2d6ddc31d240534461fb297de8a87">&#9670;&#160;</a></span>fromTOF() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a05d2d6ddc31d240534461fb297de8a87">&#9670;&#160;</a></span>fromTOF() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -752,7 +830,7 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a574ace16ce8e4f30c53ed2f347d99191" name="a574ace16ce8e4f30c53ed2f347d99191"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a574ace16ce8e4f30c53ed2f347d99191">&#9670;&#160;</a></span>fromTOF() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a574ace16ce8e4f30c53ed2f347d99191">&#9670;&#160;</a></span>fromTOF() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -892,7 +970,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00133">133</a> of file <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html">Unit.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/daf/Unit_8h_source.html#l00171">emode</a>, <a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#a12bdba8d2c60cda8760186af1087b87b">init()</a>, <a class="el" href="../../d1/daf/Unit_8h_source.html#l00166">initialized</a>, <a class="el" href="../../d1/daf/Unit_8h_source.html#l00168">l1</a>, <a class="el" href="../../d1/daf/Unit_8h_source.html#l00177">m_params</a>, and <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00142">validateUnitParams()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/daf/Unit_8h_source.html#l00216">emode</a>, <a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#a12bdba8d2c60cda8760186af1087b87b">init()</a>, <a class="el" href="../../d1/daf/Unit_8h_source.html#l00211">initialized</a>, <a class="el" href="../../d1/daf/Unit_8h_source.html#l00213">l1</a>, <a class="el" href="../../d1/daf/Unit_8h_source.html#l00222">m_params</a>, and <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00142">validateUnitParams()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d4/df5/LoadIsawPeaks_8cpp_source.html#l00426">Mantid::Crystal::LoadIsawPeaks::appendFile()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00782">Mantid::Kernel::Units::dSpacing::calcTofMax()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00775">Mantid::Kernel::Units::dSpacing::calcTofMin()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00199">convertSingleFromTOF()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00169">convertSingleToTOF()</a>, <a class="el" href="../../d6/d82/PeakHKLErrors_8cpp_source.html#l00600">Mantid::Crystal::PeakHKLErrors::createNewPeak()</a>, <a class="el" href="../../d8/dd5/SCDPanelErrors_8cpp_source.html#l00169">Mantid::Crystal::SCDPanelErrors::eval()</a>, <a class="el" href="../../d9/d6c/ApplyInstrumentToPeaks_8cpp_source.html#l00030">Mantid::Algorithms::ApplyInstrumentToPeaks::exec()</a>, <a class="el" href="../../db/d69/CalculatePlaczek_8cpp_source.html#l00257">Mantid::Algorithms::CalculatePlaczek::exec()</a>, <a class="el" href="../../db/d01/PDCalibration_8cpp_source.html#l00444">Mantid::Algorithms::PDCalibration::exec()</a>, <a class="el" href="../../dc/d95/SCDCalibratePanels_8cpp_source.html#l00310">Mantid::Crystal::SCDCalibratePanels::findT0()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00184">fromTOF()</a>, <a class="el" href="../../d3/d84/SCDCalibratePanels2ObjFunc_8cpp_source.html#l00094">Mantid::Crystal::SCDCalibratePanels2ObjFunc::function1D()</a>, <a class="el" href="../../d0/d57/RemoveBackground_8cpp_source.html#l00226">Mantid::Algorithms::BackgroundHelper::removeBackground()</a>, and <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00154">toTOF()</a>.</p>
 
@@ -926,7 +1004,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d3/d03/classMantid_1_1Kernel_1_1Units_1_1Empty.html#ae59f5aadb9bbb51da2896df356258cd3">Mantid::Kernel::Units::Empty</a>, and <a class="el" href="../../d3/de8/classMantid_1_1Kernel_1_1Units_1_1Time.html#a6b2bdc478e2578390af02bd535bcff64">Mantid::Kernel::Units::Time</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00068">68</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00069">69</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
 
 </div>
 </div>
@@ -954,7 +1032,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if the unit was initialized and so can use <a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#a4c0c3bd6e1594f1da786a2a9f1f98637" title="Convert a single X value to TOF.">singleToTOF()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00141">141</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00186">186</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d8/de1/EventList_8cpp_source.html#l04479">Mantid::DataObjects::EventList::convertUnitsViaTof()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00696">Mantid::Kernel::Units::dSpacing::singleFromTOF()</a>, and <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00670">Mantid::Kernel::Units::dSpacing::singleToTOF()</a>.</p>
 
@@ -1131,7 +1209,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html">Unit.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/daf/Unit_8h_source.html#l00190">s_conversionFactors</a>, and <a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#a9486ddb89f203d75e17bbe4e87a83cd0">unitID()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/daf/Unit_8h_source.html#l00235">s_conversionFactors</a>, and <a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#a9486ddb89f203d75e17bbe4e87a83cd0">unitID()</a>.</p>
 
 </div>
 </div>
@@ -1213,8 +1291,80 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a1d3b67e69ba3c403878c212449678841" name="a1d3b67e69ba3c403878c212449678841"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d3b67e69ba3c403878c212449678841">&#9670;&#160;</a></span>toTOF() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Iterator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mantid::Kernel::Unit::toTOF </td>
+          <td>(</td>
+          <td class="paramtype">Iterator const&#160;</td>
+          <td class="paramname"><em>xbegin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Iterator const&#160;</td>
+          <td class="paramname"><em>xend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double const&#160;</td>
+          <td class="paramname"><em>l1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int const&#160;</td>
+          <td class="paramname"><em>emode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#a5b5c824ff0aff187501a9787ea439f2b">UnitParametersMap</a> const &amp;&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert a range of X values in place from the concrete unit to time-of-flight. </p>
+<p>TOF is in microseconds. This overload takes an iterator range rather than a <code>std::vector&lt;double&gt; &amp;</code>, so that it can be used with the size-checked histogram data types, which deliberately do not hand out a modifiable <code>std::vector&lt;double&gt;</code>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xbegin</td><td>:: Iterator to the first X value to be converted </td></tr>
+    <tr><td class="paramname">xend</td><td>:: Iterator one past the last X value to be converted </td></tr>
+    <tr><td class="paramname">l1</td><td>:: The source-sample distance (in metres) </td></tr>
+    <tr><td class="paramname">emode</td><td>:: The energy mode (0=elastic, 1=direct geometry, 2=indirect geometry) </td></tr>
+    <tr><td class="paramname">params</td><td>:: Map containing optional parameters eg The sample-detector distance (in metres) The scattering angle (in radians) Fixed energy: EI (emode=1) or EF (emode=2)(in meV) Delta (not currently used) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00113">113</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
+
+</div>
+</div>
 <a id="afeb06c80cd95634714e8e0df5164cd24" name="afeb06c80cd95634714e8e0df5164cd24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afeb06c80cd95634714e8e0df5164cd24">&#9670;&#160;</a></span>toTOF() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afeb06c80cd95634714e8e0df5164cd24">&#9670;&#160;</a></span>toTOF() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1264,7 +1414,7 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a7079da33998e6fd152fbd53caab8d4f7" name="a7079da33998e6fd152fbd53caab8d4f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7079da33998e6fd152fbd53caab8d4f7">&#9670;&#160;</a></span>toTOF() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7079da33998e6fd152fbd53caab8d4f7">&#9670;&#160;</a></span>toTOF() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1425,7 +1575,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>emode :: The energy mode (0=elastic, 1=direct geometry, 2=indirect geometry) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00171">171</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00216">216</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l01208">Mantid::Kernel::Units::Momentum::conversionTOFMax()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00403">Mantid::Kernel::Units::Wavelength::conversionTOFMin()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l01045">Mantid::Kernel::Units::DeltaE::conversionTOFMin()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l01202">Mantid::Kernel::Units::Momentum::conversionTOFMin()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00199">convertSingleFromTOF()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00169">convertSingleToTOF()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00333">Mantid::Kernel::Units::Wavelength::init()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00965">Mantid::Kernel::Units::DeltaE::init()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l01141">Mantid::Kernel::Units::Momentum::init()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l01240">Mantid::Kernel::Units::SpinEchoLength::init()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l01290">Mantid::Kernel::Units::SpinEchoTime::init()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00133">initialize()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l01022">Mantid::Kernel::Units::DeltaE::singleFromTOF()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l01195">Mantid::Kernel::Units::Momentum::singleToTOF()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00387">Mantid::Kernel::Units::Wavelength::singleToTOF()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00998">Mantid::Kernel::Units::DeltaE::singleToTOF()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00942">Mantid::Kernel::Units::DeltaE::validateUnitParams()</a>, and <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l01130">Mantid::Kernel::Units::Momentum::validateUnitParams()</a>.</p>
 
@@ -1453,7 +1603,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>The unit values have been initialized. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00166">166</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00211">211</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00133">initialize()</a>.</p>
 
@@ -1481,7 +1631,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>l1 :: The source-sample distance (in metres) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00168">168</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00213">213</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00333">Mantid::Kernel::Units::Wavelength::init()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00451">Mantid::Kernel::Units::Energy::init()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00515">Mantid::Kernel::Units::Energy_inWavenumber::init()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00642">Mantid::Kernel::Units::dSpacing::init()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00814">Mantid::Kernel::Units::dSpacingPerpendicular::init()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00876">Mantid::Kernel::Units::MomentumTransfer::init()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00965">Mantid::Kernel::Units::DeltaE::init()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l01141">Mantid::Kernel::Units::Momentum::init()</a>, and <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00133">initialize()</a>.</p>
 
@@ -1509,7 +1659,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>additional parameters l2 :: distance from sample to detector (in metres) twoTheta :: scattering angle in radians efixed :: Value of fixed energy: EI (emode=1) or EF (emode=2) (in meV) difc :: diffractometer constant DIFC </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00177">177</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00222">222</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00333">Mantid::Kernel::Units::Wavelength::init()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00451">Mantid::Kernel::Units::Energy::init()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00515">Mantid::Kernel::Units::Energy_inWavenumber::init()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00642">Mantid::Kernel::Units::dSpacing::init()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00814">Mantid::Kernel::Units::dSpacingPerpendicular::init()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00876">Mantid::Kernel::Units::MomentumTransfer::init()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00965">Mantid::Kernel::Units::DeltaE::init()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l01141">Mantid::Kernel::Units::Momentum::init()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l01240">Mantid::Kernel::Units::SpinEchoLength::init()</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l01290">Mantid::Kernel::Units::SpinEchoTime::init()</a>, and <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00133">initialize()</a>.</p>
 
@@ -1537,7 +1687,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>The table of possible 'quick conversions'. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00190">190</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/daf/Unit_8h_source.html#l00235">235</a> of file <a class="el" href="../../d1/daf/Unit_8h_source.html">Unit.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00114">addConversion()</a>, and <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00083">quickConversion()</a>.</p>
 
