@@ -87,7 +87,7 @@ var searchData=
   ['_7econfigobserver_84',['~ConfigObserver',['../d1/d2b/classMantid_1_1Kernel_1_1ConfigObserver.html#a5a4d8a80c32e6512ecd40794d4d4f848',1,'Mantid::Kernel::ConfigObserver']]],
   ['_7econfigpropertyobserver_85',['~ConfigPropertyObserver',['../d6/dd2/classMantid_1_1Kernel_1_1ConfigPropertyObserver.html#a23189e096f047931c285f55db61f577c',1,'Mantid::Kernel::ConfigPropertyObserver']]],
   ['_7econfigserviceimpl_86',['~ConfigServiceImpl',['../df/dbb/classMantid_1_1Kernel_1_1ConfigServiceImpl.html#a3974a513ad27271a519e2b1ce57934bf',1,'Mantid::Kernel::ConfigServiceImpl']]],
-  ['_7econfigurable_87',['~Configurable',['../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.html#a745793480edaeca7b7c9360c47e04d82',1,'MantidQt::MantidWidgets::Configurable']]],
+  ['_7econfigurable_87',['~Configurable',['../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.html#a6b205c22b3ac84841d7b4e6e8d17809e',1,'MantidQt::MantidWidgets::Configurable']]],
   ['_7econfiguredalgorithm_88',['~ConfiguredAlgorithm',['../d4/d12/classMantidQt_1_1API_1_1ConfiguredAlgorithm.html#a1db43261fb4487deeb4ed87bfdb6667a',1,'MantidQt::API::ConfiguredAlgorithm']]],
   ['_7econnectedcomponentlabeling_89',['~ConnectedComponentLabeling',['../dd/db2/classMantid_1_1Crystal_1_1ConnectedComponentLabeling.html#a9ee7748430fdd04dfd67ed0dab1614b0',1,'Mantid::Crystal::ConnectedComponentLabeling']]],
   ['_7econstattributevisitor_90',['~ConstAttributeVisitor',['../d0/dc4/classMantid_1_1API_1_1IFunction_1_1ConstAttributeVisitor.html#ad1ad130a838faf8e8bf1369fef901eba',1,'Mantid::API::IFunction::ConstAttributeVisitor']]],

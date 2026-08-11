@@ -12,7 +12,7 @@ var indexSectionsWithContent =
   9: "abefilmostuw",
   10: ":abcdefgiklmnoprstuw",
   11: "abcdefgiklmnprstuvw",
-  12: "adfilmost",
+  12: "adfilmopst",
   13: "m"
 };
 

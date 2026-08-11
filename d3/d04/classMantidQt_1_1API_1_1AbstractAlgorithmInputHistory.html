@@ -109,8 +109,8 @@ Inheritance diagram for MantidQt::API::AbstractAlgorithmInputHistory:</div>
  <div class="center">
   <img src="../../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.png" usemap="#MantidQt::API::AbstractAlgorithmInputHistory_map" alt=""/>
   <map id="MantidQt::API::AbstractAlgorithmInputHistory_map" name="MantidQt::API::AbstractAlgorithmInputHistory_map">
-<area href="../../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.html" title="Defines an interface for an object to load and store any configuration settings that should persist b..." alt="MantidQt::MantidWidgets::Configurable" shape="rect" coords="0,0,262,24"/>
-<area href="../../d2/d44/classMantidQt_1_1API_1_1AlgorithmInputHistoryImpl.html" alt="MantidQt::API::AlgorithmInputHistoryImpl" shape="rect" coords="0,112,262,136"/>
+<area href="../../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.html" alt="MantidQt::MantidWidgets::Configurable&lt; AlgorithmInputHistorySettings &gt;" shape="rect" coords="0,0,418,24"/>
+<area href="../../d2/d44/classMantidQt_1_1API_1_1AlgorithmInputHistoryImpl.html" alt="MantidQt::API::AlgorithmInputHistoryImpl" shape="rect" coords="0,112,418,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -118,6 +118,9 @@ Inheritance diagram for MantidQt::API::AbstractAlgorithmInputHistory:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9ee872b60fe9a7c9a27f9d5f28db429b" id="r_a9ee872b60fe9a7c9a27f9d5f28db429b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html#a9ee872b60fe9a7c9a27f9d5f28db429b">AbstractAlgorithmInputHistory</a> (const <a class="el" href="../../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html">AbstractAlgorithmInputHistory</a> &amp;)=delete</td></tr>
 <tr class="separator:a9ee872b60fe9a7c9a27f9d5f28db429b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49bfb350787bfc1ce29f66fa835018cc" id="r_a49bfb350787bfc1ce29f66fa835018cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d19/classMantidQt_1_1API_1_1AlgorithmInputHistorySettings.html">AlgorithmInputHistorySettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html#a49bfb350787bfc1ce29f66fa835018cc">captureSettings</a> () const override</td></tr>
+<tr class="memdesc:a49bfb350787bfc1ce29f66fa835018cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capture current history without persistent I/O.  <br /></td></tr>
+<tr class="separator:a49bfb350787bfc1ce29f66fa835018cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e2afd3267992459f0c57ee1e3048607" id="r_a7e2afd3267992459f0c57ee1e3048607"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html#a7e2afd3267992459f0c57ee1e3048607">clearAlgorithmInput</a> (const QString &amp;algName)</td></tr>
 <tr class="memdesc:a7e2afd3267992459f0c57ee1e3048607"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear values for a particular algorithm.  <br /></td></tr>
 <tr class="separator:a7e2afd3267992459f0c57ee1e3048607"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,25 +132,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abe68cd357a1206f633c8b1ce58c7c917" id="r_abe68cd357a1206f633c8b1ce58c7c917"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html#abe68cd357a1206f633c8b1ce58c7c917">previousInput</a> (const QString &amp;algName, const QString &amp;propName) const</td></tr>
 <tr class="memdesc:abe68cd357a1206f633c8b1ce58c7c917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve an old parameter value.  <br /></td></tr>
 <tr class="separator:abe68cd357a1206f633c8b1ce58c7c917"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a806319683439d358d2c4de3bdcffdcf2" id="r_a806319683439d358d2c4de3bdcffdcf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html#a806319683439d358d2c4de3bdcffdcf2">readSettings</a> (const QSettings &amp;storage) override</td></tr>
-<tr class="separator:a806319683439d358d2c4de3bdcffdcf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3f8705e59835f92f95d4e1cd771c96a" id="r_af3f8705e59835f92f95d4e1cd771c96a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d19/classMantidQt_1_1API_1_1AlgorithmInputHistorySettings.html">AlgorithmInputHistorySettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html#af3f8705e59835f92f95d4e1cd771c96a">readSettings</a> (const QSettings &amp;storage) const</td></tr>
+<tr class="memdesc:af3f8705e59835f92f95d4e1cd771c96a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query persistent storage without changing the history.  <br /></td></tr>
+<tr class="separator:af3f8705e59835f92f95d4e1cd771c96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7991b99e38b3bc85d3fefb16bcddf602" id="r_a7991b99e38b3bc85d3fefb16bcddf602"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html#a7991b99e38b3bc85d3fefb16bcddf602">restoreSettings</a> (const <a class="el" href="../../df/d19/classMantidQt_1_1API_1_1AlgorithmInputHistorySettings.html">AlgorithmInputHistorySettings</a> &amp;settings) override</td></tr>
+<tr class="memdesc:a7991b99e38b3bc85d3fefb16bcddf602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply an already-read snapshot without persistent I/O.  <br /></td></tr>
+<tr class="separator:a7991b99e38b3bc85d3fefb16bcddf602"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00192ab79beefb1303fd4c09d3d6f579" id="r_a00192ab79beefb1303fd4c09d3d6f579"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html#a00192ab79beefb1303fd4c09d3d6f579">save</a> () const</td></tr>
 <tr class="memdesc:a00192ab79beefb1303fd4c09d3d6f579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the values stored here to persistent storage.  <br /></td></tr>
 <tr class="separator:a00192ab79beefb1303fd4c09d3d6f579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a972b09d7b6466a9d9e19b9c7674177ec" id="r_a972b09d7b6466a9d9e19b9c7674177ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html#a972b09d7b6466a9d9e19b9c7674177ec">saveSettings</a> (QSettings &amp;storage, const <a class="el" href="../../df/d19/classMantidQt_1_1API_1_1AlgorithmInputHistorySettings.html">AlgorithmInputHistorySettings</a> &amp;settings) const</td></tr>
+<tr class="memdesc:a972b09d7b6466a9d9e19b9c7674177ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Persist an explicit snapshot.  <br /></td></tr>
+<tr class="separator:a972b09d7b6466a9d9e19b9c7674177ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3138e946f0c071cccca904091bf7a938" id="r_a3138e946f0c071cccca904091bf7a938"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html#a3138e946f0c071cccca904091bf7a938">setPreviousDirectory</a> (const QString &amp;lastdir)</td></tr>
 <tr class="memdesc:a3138e946f0c071cccca904091bf7a938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the directory that was accessed when the previous open file dialog was used.  <br /></td></tr>
 <tr class="separator:a3138e946f0c071cccca904091bf7a938"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c0a1b754ab802b5568bde6ec5a52e64" id="r_a9c0a1b754ab802b5568bde6ec5a52e64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html#a9c0a1b754ab802b5568bde6ec5a52e64">storeNewValue</a> (const QString &amp;algName, const std::pair&lt; QString, QString &gt; &amp;property)</td></tr>
 <tr class="memdesc:a9c0a1b754ab802b5568bde6ec5a52e64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the old values that are stored here.  <br /></td></tr>
 <tr class="separator:a9c0a1b754ab802b5568bde6ec5a52e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b03b64924b9b577553469e4bbc3d00c" id="r_a7b03b64924b9b577553469e4bbc3d00c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html#a7b03b64924b9b577553469e4bbc3d00c">writeSettings</a> (QSettings &amp;storage) const override</td></tr>
-<tr class="separator:a7b03b64924b9b577553469e4bbc3d00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43a3bd2322c3a67ba56cfe5ba7c5633a" id="r_a43a3bd2322c3a67ba56cfe5ba7c5633a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html#a43a3bd2322c3a67ba56cfe5ba7c5633a">~AbstractAlgorithmInputHistory</a> () override=0</td></tr>
 <tr class="memdesc:a43a3bd2322c3a67ba56cfe5ba7c5633a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract destructor.  <br /></td></tr>
 <tr class="separator:a43a3bd2322c3a67ba56cfe5ba7c5633a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classMantidQt_1_1MantidWidgets_1_1Configurable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classMantidQt_1_1MantidWidgets_1_1Configurable')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.html">MantidQt::MantidWidgets::Configurable</a></td></tr>
-<tr class="memitem:a745793480edaeca7b7c9360c47e04d82 inherit pub_methods_classMantidQt_1_1MantidWidgets_1_1Configurable" id="r_a745793480edaeca7b7c9360c47e04d82"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.html#a745793480edaeca7b7c9360c47e04d82">~Configurable</a> ()=default</td></tr>
-<tr class="separator:a745793480edaeca7b7c9360c47e04d82 inherit pub_methods_classMantidQt_1_1MantidWidgets_1_1Configurable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classMantidQt_1_1MantidWidgets_1_1Configurable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classMantidQt_1_1MantidWidgets_1_1Configurable')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.html">MantidQt::MantidWidgets::Configurable&lt; AlgorithmInputHistorySettings &gt;</a></td></tr>
+<tr class="memitem:a62c454e0afa44beec9ee6d4e8eeb47b1 inherit pub_methods_classMantidQt_1_1MantidWidgets_1_1Configurable" id="r_a62c454e0afa44beec9ee6d4e8eeb47b1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.html#a62c454e0afa44beec9ee6d4e8eeb47b1">restoreSettings</a> (const AlgorithmInputHistorySettings &amp;)=0</td></tr>
+<tr class="memdesc:a62c454e0afa44beec9ee6d4e8eeb47b1 inherit pub_methods_classMantidQt_1_1MantidWidgets_1_1Configurable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply an already-read snapshot without persistent I/O.  <br /></td></tr>
+<tr class="separator:a62c454e0afa44beec9ee6d4e8eeb47b1 inherit pub_methods_classMantidQt_1_1MantidWidgets_1_1Configurable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b205c22b3ac84841d7b4e6e8d17809e inherit pub_methods_classMantidQt_1_1MantidWidgets_1_1Configurable" id="r_a6b205c22b3ac84841d7b4e6e8d17809e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.html#a6b205c22b3ac84841d7b4e6e8d17809e">~Configurable</a> ()=default</td></tr>
+<tr class="separator:a6b205c22b3ac84841d7b4e6e8d17809e inherit pub_methods_classMantidQt_1_1MantidWidgets_1_1Configurable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -157,9 +168,9 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a745321a4ed650f6c533b0c79718aaea9" id="r_a745321a4ed650f6c533b0c79718aaea9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html#a745321a4ed650f6c533b0c79718aaea9">load</a> ()</td></tr>
-<tr class="memdesc:a745321a4ed650f6c533b0c79718aaea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load any values that are available from persistent storage.  <br /></td></tr>
-<tr class="separator:a745321a4ed650f6c533b0c79718aaea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f9a486878e386443b4aed6e2816d6f7" id="r_a1f9a486878e386443b4aed6e2816d6f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html#a1f9a486878e386443b4aed6e2816d6f7">initializeSettings</a> ()</td></tr>
+<tr class="memdesc:a1f9a486878e386443b4aed6e2816d6f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load any values that are available from persistent storage.  <br /></td></tr>
+<tr class="separator:a1f9a486878e386443b4aed6e2816d6f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -179,7 +190,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This abstract class deals with the loading and saving of previous algorithm property values to/from MantidPlot's QSettings. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00024">24</a> of file <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html">AlgorithmInputHistory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00038">38</a> of file <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html">AlgorithmInputHistory.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9ee872b60fe9a7c9a27f9d5f28db429b" name="a9ee872b60fe9a7c9a27f9d5f28db429b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9ee872b60fe9a7c9a27f9d5f28db429b">&#9670;&#160;</a></span>AbstractAlgorithmInputHistory() <span class="overload">[1/2]</span></h2>
@@ -233,7 +244,7 @@ Private Attributes</h2></td></tr>
 <p>Abstract destructor. </p>
 <p>Destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00044">44</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
 
 </div>
 </div>
@@ -263,13 +274,48 @@ Private Attributes</h2></td></tr>
 
 <p>Constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00154">load()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00170">initializeSettings()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a49bfb350787bfc1ce29f66fa835018cc" name="a49bfb350787bfc1ce29f66fa835018cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49bfb350787bfc1ce29f66fa835018cc">&#9670;&#160;</a></span>captureSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d19/classMantidQt_1_1API_1_1AlgorithmInputHistorySettings.html">AlgorithmInputHistorySettings</a> AbstractAlgorithmInputHistory::captureSettings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Capture current history without persistent I/O. </p>
+
+<p>Implements <a class="el" href="../../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.html#ad9cb97095aaa0aae948130d7a5803ed1">MantidQt::MantidWidgets::Configurable&lt; AlgorithmInputHistorySettings &gt;</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00134">134</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00085">m_lastInput</a>, and <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00088">m_previousDirectory</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00099">save()</a>.</p>
+
+</div>
+</div>
 <a id="a7e2afd3267992459f0c57ee1e3048607" name="a7e2afd3267992459f0c57ee1e3048607"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7e2afd3267992459f0c57ee1e3048607">&#9670;&#160;</a></span>clearAlgorithmInput()</h2>
 
@@ -289,9 +335,9 @@ Private Attributes</h2></td></tr>
 <p>Clear values for a particular algorithm. </p>
 <p>Clear all stored values associated with a particular algorithm. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00064">64</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00067">m_lastInput</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00085">m_lastInput</a>.</p>
 
 </div>
 </div>
@@ -312,14 +358,14 @@ Private Attributes</h2></td></tr>
 
 <p>Get the directory that was accessed when the previous open file dialog was used. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00085">85</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00094">94</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00070">m_previousDirectory</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00088">m_previousDirectory</a>.</p>
 
 </div>
 </div>
-<a id="a745321a4ed650f6c533b0c79718aaea9" name="a745321a4ed650f6c533b0c79718aaea9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a745321a4ed650f6c533b0c79718aaea9">&#9670;&#160;</a></span>load()</h2>
+<a id="a1f9a486878e386443b4aed6e2816d6f7" name="a1f9a486878e386443b4aed6e2816d6f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f9a486878e386443b4aed6e2816d6f7">&#9670;&#160;</a></span>initializeSettings()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -328,7 +374,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void AbstractAlgorithmInputHistory::load </td>
+          <td class="memname">void AbstractAlgorithmInputHistory::initializeSettings </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -344,11 +390,11 @@ Private Attributes</h2></td></tr>
 <p>Load any values that are available from persistent storage. </p>
 <p>Note: this clears all currently values stored </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00154">154</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00170">170</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00095">readSettings()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00104">readSettings()</a>, and <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00129">restoreSettings()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00026">AbstractAlgorithmInputHistory()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00035">AbstractAlgorithmInputHistory()</a>.</p>
 
 </div>
 </div>
@@ -413,16 +459,42 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00065">65</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00074">74</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00067">m_lastInput</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00085">m_lastInput</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00161">MantidQt::API::AlgorithmPropertiesWidget::initLayout()</a>.</p>
 
 </div>
 </div>
-<a id="a806319683439d358d2c4de3bdcffdcf2" name="a806319683439d358d2c4de3bdcffdcf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a806319683439d358d2c4de3bdcffdcf2">&#9670;&#160;</a></span>readSettings()</h2>
+<a id="af3f8705e59835f92f95d4e1cd771c96a" name="af3f8705e59835f92f95d4e1cd771c96a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3f8705e59835f92f95d4e1cd771c96a">&#9670;&#160;</a></span>readSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d19/classMantidQt_1_1API_1_1AlgorithmInputHistorySettings.html">AlgorithmInputHistorySettings</a> AbstractAlgorithmInputHistory::readSettings </td>
+          <td>(</td>
+          <td class="paramtype">const QSettings &amp;&#160;</td>
+          <td class="paramname"><em>storage</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Query persistent storage without changing the history. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00104">104</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00092">m_algorithmsGroup</a>, <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00095">m_dirKey</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00170">initializeSettings()</a>.</p>
+
+</div>
+</div>
+<a id="a7991b99e38b3bc85d3fefb16bcddf602" name="a7991b99e38b3bc85d3fefb16bcddf602"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7991b99e38b3bc85d3fefb16bcddf602">&#9670;&#160;</a></span>restoreSettings()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -431,29 +503,27 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void AbstractAlgorithmInputHistory::readSettings </td>
+          <td class="memname">void AbstractAlgorithmInputHistory::restoreSettings </td>
           <td>(</td>
-          <td class="paramtype">const QSettings &amp;&#160;</td>
-          <td class="paramname"><em>storage</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="../../df/d19/classMantidQt_1_1API_1_1AlgorithmInputHistorySettings.html">AlgorithmInputHistorySettings</a> &amp;&#160;</td>
+          <td class="paramname"><em>settings</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p></p>
+<p>Apply an already-read snapshot without persistent I/O. </p>
 
-<p>Implements <a class="el" href="../../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.html#a0a10e373437a7bcf12a24aa2a47d6a85">MantidQt::MantidWidgets::Configurable</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00129">129</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00095">95</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00026">MantidQt::API::AlgorithmInputHistorySettings::lastInput()</a>, <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00085">m_lastInput</a>, <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00088">m_previousDirectory</a>, and <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00030">MantidQt::API::AlgorithmInputHistorySettings::previousDirectory()</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00074">m_algorithmsGroup</a>, <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00077">m_dirKey</a>, <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00067">m_lastInput</a>, <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00070">m_previousDirectory</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00154">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00170">initializeSettings()</a>.</p>
 
 </div>
 </div>
@@ -475,9 +545,45 @@ Private Attributes</h2></td></tr>
 <p>Save the values stored here to persistent storage. </p>
 <p>Save the stored information to persistent storage. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00090">90</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00099">99</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00125">writeSettings()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00134">captureSettings()</a>, and <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00138">saveSettings()</a>.</p>
+
+</div>
+</div>
+<a id="a972b09d7b6466a9d9e19b9c7674177ec" name="a972b09d7b6466a9d9e19b9c7674177ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a972b09d7b6466a9d9e19b9c7674177ec">&#9670;&#160;</a></span>saveSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractAlgorithmInputHistory::saveSettings </td>
+          <td>(</td>
+          <td class="paramtype">QSettings &amp;&#160;</td>
+          <td class="paramname"><em>storage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/d19/classMantidQt_1_1API_1_1AlgorithmInputHistorySettings.html">AlgorithmInputHistorySettings</a> &amp;&#160;</td>
+          <td class="paramname"><em>settings</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Persist an explicit snapshot. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00138">138</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00026">MantidQt::API::AlgorithmInputHistorySettings::lastInput()</a>, <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00092">m_algorithmsGroup</a>, <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00095">m_dirKey</a>, <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00030">MantidQt::API::AlgorithmInputHistorySettings::previousDirectory()</a>, <a class="el" href="../../dc/d57/QSettingsChangeAware_8h_source.html#l00049">MantidQt::MantidWidgets::QSettingsChangeAware::remove()</a>, and <a class="el" href="../../dc/d57/QSettingsChangeAware_8h_source.html#l00037">MantidQt::MantidWidgets::QSettingsChangeAware::setValue()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00099">save()</a>.</p>
 
 </div>
 </div>
@@ -505,9 +611,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00081">81</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00090">90</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00070">m_previousDirectory</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00088">m_previousDirectory</a>.</p>
 
 </div>
 </div>
@@ -548,47 +654,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00048">48</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00067">m_lastInput</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00085">m_lastInput</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../de/d82/AlgorithmPropertiesWidget_8cpp_source.html#l00452">MantidQt::API::AlgorithmPropertiesWidget::saveInput()</a>.</p>
-
-</div>
-</div>
-<a id="a7b03b64924b9b577553469e4bbc3d00c" name="a7b03b64924b9b577553469e4bbc3d00c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b03b64924b9b577553469e4bbc3d00c">&#9670;&#160;</a></span>writeSettings()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AbstractAlgorithmInputHistory::writeSettings </td>
-          <td>(</td>
-          <td class="paramtype">QSettings &amp;&#160;</td>
-          <td class="paramname"><em>storage</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p></p>
-
-<p>Implements <a class="el" href="../../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.html#a3b1c3c3c629219233fdb5221b711c1de">MantidQt::MantidWidgets::Configurable</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00125">125</a> of file <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html">AlgorithmInputHistory.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00044">iend</a>, <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00074">m_algorithmsGroup</a>, <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00077">m_dirKey</a>, <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00067">m_lastInput</a>, and <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00070">m_previousDirectory</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00090">save()</a>.</p>
 
 </div>
 </div>
@@ -615,9 +685,9 @@ Private Attributes</h2></td></tr>
 
 <p>The string denoting the group (in the QSettings) where the algorithm properties are stored. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00074">74</a> of file <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html">AlgorithmInputHistory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00092">92</a> of file <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html">AlgorithmInputHistory.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00095">readSettings()</a>, and <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00125">writeSettings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00104">readSettings()</a>, and <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00138">saveSettings()</a>.</p>
 
 </div>
 </div>
@@ -643,9 +713,9 @@ Private Attributes</h2></td></tr>
 
 <p>The string denoting the key for the previous dir storage. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00077">77</a> of file <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html">AlgorithmInputHistory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00095">95</a> of file <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html">AlgorithmInputHistory.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00095">readSettings()</a>, and <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00125">writeSettings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00104">readSettings()</a>, and <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00138">saveSettings()</a>.</p>
 
 </div>
 </div>
@@ -671,9 +741,9 @@ Private Attributes</h2></td></tr>
 
 <p>A map indexing the algorithm name and a list of property name:value pairs. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00067">67</a> of file <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html">AlgorithmInputHistory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00085">85</a> of file <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html">AlgorithmInputHistory.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00055">clearAlgorithmInput()</a>, <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00065">previousInput()</a>, <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00095">readSettings()</a>, <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00048">storeNewValue()</a>, and <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00125">writeSettings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00134">captureSettings()</a>, <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00064">clearAlgorithmInput()</a>, <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00074">previousInput()</a>, <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00129">restoreSettings()</a>, and <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00057">storeNewValue()</a>.</p>
 
 </div>
 </div>
@@ -699,9 +769,9 @@ Private Attributes</h2></td></tr>
 
 <p>The directory that last used by an open file dialog. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00070">70</a> of file <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html">AlgorithmInputHistory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html#l00088">88</a> of file <a class="el" href="../../d6/d42/AlgorithmInputHistory_8h_source.html">AlgorithmInputHistory.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00085">getPreviousDirectory()</a>, <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00095">readSettings()</a>, <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00081">setPreviousDirectory()</a>, and <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00125">writeSettings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00134">captureSettings()</a>, <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00094">getPreviousDirectory()</a>, <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00129">restoreSettings()</a>, and <a class="el" href="../../dc/d2d/AlgorithmInputHistory_8cpp_source.html#l00090">setPreviousDirectory()</a>.</p>
 
 </div>
 </div>

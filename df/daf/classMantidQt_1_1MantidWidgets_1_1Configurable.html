@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mantid: MantidQt::MantidWidgets::Configurable Class Reference</title>
+<title>Mantid: MantidQt::MantidWidgets::Configurable&lt; Settings &gt; Class Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -92,52 +92,46 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="../../df/d69/classMantidQt_1_1MantidWidgets_1_1Configurable-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">MantidQt::MantidWidgets::Configurable Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+  <div class="headertitle"><div class="title">MantidQt::MantidWidgets::Configurable&lt; Settings &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Defines an interface for an object to load and store any configuration settings that should persist between objects.  
+<p>Defines the in-memory half of the persistent settings lifecycle.  
  <a href="../../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d9/dff/Configurable_8h_source.html">Configurable.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for MantidQt::MantidWidgets::Configurable:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="../../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.png" usemap="#MantidQt::MantidWidgets::Configurable_map" alt=""/>
-  <map id="MantidQt::MantidWidgets::Configurable_map" name="MantidQt::MantidWidgets::Configurable_map">
-<area href="../../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html" title="This abstract class deals with the loading and saving of previous algorithm property values to/from M..." alt="MantidQt::API::AbstractAlgorithmInputHistory" shape="rect" coords="0,56,262,80"/>
-<area href="../../df/dc1/classMantidQt_1_1MantidWidgets_1_1MessageDisplay.html" title="Provides a widget for display messages in a text box It deals with Message objects which in turn hide..." alt="MantidQt::MantidWidgets::MessageDisplay" shape="rect" coords="272,56,534,80"/>
-<area href="../../d2/d44/classMantidQt_1_1API_1_1AlgorithmInputHistoryImpl.html" alt="MantidQt::API::AlgorithmInputHistoryImpl" shape="rect" coords="0,112,262,136"/>
-  </map>
-</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0a10e373437a7bcf12a24aa2a47d6a85" id="r_a0a10e373437a7bcf12a24aa2a47d6a85"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.html#a0a10e373437a7bcf12a24aa2a47d6a85">readSettings</a> (const QSettings &amp;)=0</td></tr>
-<tr class="separator:a0a10e373437a7bcf12a24aa2a47d6a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b1c3c3c629219233fdb5221b711c1de" id="r_a3b1c3c3c629219233fdb5221b711c1de"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.html#a3b1c3c3c629219233fdb5221b711c1de">writeSettings</a> (QSettings &amp;) const =0</td></tr>
-<tr class="separator:a3b1c3c3c629219233fdb5221b711c1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a745793480edaeca7b7c9360c47e04d82" id="r_a745793480edaeca7b7c9360c47e04d82"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.html#a745793480edaeca7b7c9360c47e04d82">~Configurable</a> ()=default</td></tr>
-<tr class="separator:a745793480edaeca7b7c9360c47e04d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9cb97095aaa0aae948130d7a5803ed1" id="r_ad9cb97095aaa0aae948130d7a5803ed1"><td class="memItemLeft" align="right" valign="top">virtual Settings&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.html#ad9cb97095aaa0aae948130d7a5803ed1">captureSettings</a> () const =0</td></tr>
+<tr class="memdesc:ad9cb97095aaa0aae948130d7a5803ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capture current in-memory state without persistent I/O.  <br /></td></tr>
+<tr class="separator:ad9cb97095aaa0aae948130d7a5803ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62c454e0afa44beec9ee6d4e8eeb47b1" id="r_a62c454e0afa44beec9ee6d4e8eeb47b1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.html#a62c454e0afa44beec9ee6d4e8eeb47b1">restoreSettings</a> (const Settings &amp;)=0</td></tr>
+<tr class="memdesc:a62c454e0afa44beec9ee6d4e8eeb47b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply an already-read snapshot without persistent I/O.  <br /></td></tr>
+<tr class="separator:a62c454e0afa44beec9ee6d4e8eeb47b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b205c22b3ac84841d7b4e6e8d17809e" id="r_a6b205c22b3ac84841d7b4e6e8d17809e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.html#a6b205c22b3ac84841d7b4e6e8d17809e">~Configurable</a> ()=default</td></tr>
+<tr class="separator:a6b205c22b3ac84841d7b4e6e8d17809e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Defines an interface for an object to load and store any configuration settings that should persist between objects. </p>
-<p>A widget should inherit from this class and define the loadSettings and saveSettings member functions. These functions are expected to be called by the client along with a QSettings instance, opened at the correct group, which will either give access or receive the values. </p>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename Settings&gt;<br />
+class MantidQt::MantidWidgets::Configurable&lt; Settings &gt;</div><p>Defines the in-memory half of the persistent settings lifecycle. </p>
+<p>Persistent read and save operations belong to the concrete Settings type. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dff/Configurable_8h_source.html#l00024">24</a> of file <a class="el" href="../../d9/dff/Configurable_8h_source.html">Configurable.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dff/Configurable_8h_source.html#l00046">46</a> of file <a class="el" href="../../d9/dff/Configurable_8h_source.html">Configurable.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a745793480edaeca7b7c9360c47e04d82" name="a745793480edaeca7b7c9360c47e04d82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a745793480edaeca7b7c9360c47e04d82">&#9670;&#160;</a></span>~Configurable()</h2>
+<a id="a6b205c22b3ac84841d7b4e6e8d17809e" name="a6b205c22b3ac84841d7b4e6e8d17809e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b205c22b3ac84841d7b4e6e8d17809e">&#9670;&#160;</a></span>~Configurable()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename Settings &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual MantidQt::MantidWidgets::Configurable::~Configurable </td>
+          <td class="memname">virtual <a class="el" href="../../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.html">MantidQt::MantidWidgets::Configurable</a>&lt; Settings &gt;::~<a class="el" href="../../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.html">Configurable</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -153,47 +147,20 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0a10e373437a7bcf12a24aa2a47d6a85" name="a0a10e373437a7bcf12a24aa2a47d6a85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a10e373437a7bcf12a24aa2a47d6a85">&#9670;&#160;</a></span>readSettings()</h2>
+<a id="ad9cb97095aaa0aae948130d7a5803ed1" name="ad9cb97095aaa0aae948130d7a5803ed1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9cb97095aaa0aae948130d7a5803ed1">&#9670;&#160;</a></span>captureSettings()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename Settings &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void MantidQt::MantidWidgets::Configurable::readSettings </td>
+          <td class="memname">virtual Settings <a class="el" href="../../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.html">MantidQt::MantidWidgets::Configurable</a>&lt; Settings &gt;::captureSettings </td>
           <td>(</td>
-          <td class="paramtype">const QSettings &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="../../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html#a806319683439d358d2c4de3bdcffdcf2">MantidQt::API::AbstractAlgorithmInputHistory</a>, and <a class="el" href="../../df/dc1/classMantidQt_1_1MantidWidgets_1_1MessageDisplay.html#aa4b1f1fc410cdc27b191041b5d66c93d">MantidQt::MantidWidgets::MessageDisplay</a>.</p>
-
-</div>
-</div>
-<a id="a3b1c3c3c629219233fdb5221b711c1de" name="a3b1c3c3c629219233fdb5221b711c1de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b1c3c3c629219233fdb5221b711c1de">&#9670;&#160;</a></span>writeSettings()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void MantidQt::MantidWidgets::Configurable::writeSettings </td>
-          <td>(</td>
-          <td class="paramtype">QSettings &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
@@ -205,7 +172,41 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="../../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html#a7b03b64924b9b577553469e4bbc3d00c">MantidQt::API::AbstractAlgorithmInputHistory</a>, and <a class="el" href="../../df/dc1/classMantidQt_1_1MantidWidgets_1_1MessageDisplay.html#ab5deea9a7e2312767882ebab7a6814d7">MantidQt::MantidWidgets::MessageDisplay</a>.</p>
+<p>Capture current in-memory state without persistent I/O. </p>
+
+<p>Implemented in <a class="el" href="../../d3/d04/classMantidQt_1_1API_1_1AbstractAlgorithmInputHistory.html#a49bfb350787bfc1ce29f66fa835018cc">MantidQt::API::AbstractAlgorithmInputHistory</a>, and <a class="el" href="../../df/dc1/classMantidQt_1_1MantidWidgets_1_1MessageDisplay.html#a1259a9487fc5314dc23ddb6a1871e795">MantidQt::MantidWidgets::MessageDisplay</a>.</p>
+
+</div>
+</div>
+<a id="a62c454e0afa44beec9ee6d4e8eeb47b1" name="a62c454e0afa44beec9ee6d4e8eeb47b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62c454e0afa44beec9ee6d4e8eeb47b1">&#9670;&#160;</a></span>restoreSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Settings &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="../../df/daf/classMantidQt_1_1MantidWidgets_1_1Configurable.html">MantidQt::MantidWidgets::Configurable</a>&lt; Settings &gt;::restoreSettings </td>
+          <td>(</td>
+          <td class="paramtype">const Settings &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Apply an already-read snapshot without persistent I/O. </p>
+
+<p>Implemented in <a class="el" href="../../df/dc1/classMantidQt_1_1MantidWidgets_1_1MessageDisplay.html#a568ffc22c8cbe5cc9844b601ac264a44">MantidQt::MantidWidgets::MessageDisplay</a>.</p>
 
 </div>
 </div>
