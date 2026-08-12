@@ -111,12 +111,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ee95f2fa6b51055f57e30e986043599" id="r_a4ee95f2fa6b51055f57e30e986043599"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a4ee95f2fa6b51055f57e30e986043599">addPeaks</a> (const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;peakhkls)</td></tr>
 <tr class="memdesc:a4ee95f2fa6b51055f57e30e986043599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate peaks, and add them to this composite function.  <br /></td></tr>
 <tr class="separator:a4ee95f2fa6b51055f57e30e986043599"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dcbc3ea85c2f00b5fae0cf4ca624ef4" id="r_a7dcbc3ea85c2f00b5fae0cf4ca624ef4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a7dcbc3ea85c2f00b5fae0cf4ca624ef4">calculatePeaksIntensities</a> (const std::vector&lt; double &gt; &amp;vecX, const std::vector&lt; double &gt; &amp;vecY, std::vector&lt; double &gt; &amp;vec_summedpeaks)</td></tr>
-<tr class="memdesc:a7dcbc3ea85c2f00b5fae0cf4ca624ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate peak intensities by Le Bail algorithm.  <br /></td></tr>
-<tr class="separator:a7dcbc3ea85c2f00b5fae0cf4ca624ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88d45340dd1a5e622693acc10a832505" id="r_a88d45340dd1a5e622693acc10a832505"><td class="memItemLeft" align="right" valign="top">Mantid::HistogramData::HistogramY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a88d45340dd1a5e622693acc10a832505">calPeak</a> (size_t ipk, const std::vector&lt; double &gt; &amp;xvalues, size_t ySize) const</td></tr>
-<tr class="memdesc:a88d45340dd1a5e622693acc10a832505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a single peak's value.  <br /></td></tr>
-<tr class="separator:a88d45340dd1a5e622693acc10a832505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97c37c7cd79341de7f83b8932cf3e385" id="r_a97c37c7cd79341de7f83b8932cf3e385"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a97c37c7cd79341de7f83b8932cf3e385">calculatePeaksIntensities</a> (std::span&lt; double const &gt; vecX, std::span&lt; double const &gt; vecY, std::vector&lt; double &gt; &amp;vec_summedpeaks)</td></tr>
+<tr class="memdesc:a97c37c7cd79341de7f83b8932cf3e385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate peak intensities by Le Bail algorithm.  <br /></td></tr>
+<tr class="separator:a97c37c7cd79341de7f83b8932cf3e385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a315bda562e8c463f93cc088b85330265" id="r_a315bda562e8c463f93cc088b85330265"><td class="memItemLeft" align="right" valign="top">Mantid::HistogramData::HistogramY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a315bda562e8c463f93cc088b85330265">calPeak</a> (size_t ipk, std::span&lt; double const &gt; xvalues, size_t ySize) const</td></tr>
+<tr class="memdesc:a315bda562e8c463f93cc088b85330265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a single peak's value.  <br /></td></tr>
+<tr class="separator:a315bda562e8c463f93cc088b85330265"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a286aeb65b008f5fba2b90a26af68a1d9" id="r_a286aeb65b008f5fba2b90a26af68a1d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a286aeb65b008f5fba2b90a26af68a1d9">calPeaksParameters</a> ()</td></tr>
 <tr class="memdesc:a286aeb65b008f5fba2b90a26af68a1d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force to make all peaks to calculate peak parameters.  <br /></td></tr>
 <tr class="separator:a286aeb65b008f5fba2b90a26af68a1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,9 +177,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a8696f1b8ba37898dae90c31cedb0c14e" id="r_a8696f1b8ba37898dae90c31cedb0c14e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a8696f1b8ba37898dae90c31cedb0c14e">calculateGroupPeakIntensities</a> (std::vector&lt; std::pair&lt; double, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">API::IPowderDiffPeakFunction_sptr</a> &gt; &gt; peakgroup, const std::vector&lt; double &gt; &amp;vecX, const std::vector&lt; double &gt; &amp;vecY, std::vector&lt; double &gt; &amp;vec_summedpeaks)</td></tr>
-<tr class="memdesc:a8696f1b8ba37898dae90c31cedb0c14e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the peaks intensities in same group.  <br /></td></tr>
-<tr class="separator:a8696f1b8ba37898dae90c31cedb0c14e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad12fd154ee4c5d49e5ce4d81fc8680" id="r_a7ad12fd154ee4c5d49e5ce4d81fc8680"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a7ad12fd154ee4c5d49e5ce4d81fc8680">calculateGroupPeakIntensities</a> (std::vector&lt; std::pair&lt; double, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">API::IPowderDiffPeakFunction_sptr</a> &gt; &gt; peakgroup, std::span&lt; double const &gt; vecX, std::span&lt; double const &gt; vecY, std::vector&lt; double &gt; &amp;vec_summedpeaks)</td></tr>
+<tr class="memdesc:a7ad12fd154ee4c5d49e5ce4d81fc8680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the peaks intensities in same group.  <br /></td></tr>
+<tr class="separator:a7ad12fd154ee4c5d49e5ce4d81fc8680"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26baf143d8c366dcff87b0ad5eb6f5cc" id="r_a26baf143d8c366dcff87b0ad5eb6f5cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a26baf143d8c366dcff87b0ad5eb6f5cc">calculatePeakParameterValues</a> () const</td></tr>
 <tr class="memdesc:a26baf143d8c366dcff87b0ad5eb6f5cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate all peaks' parameter value.  <br /></td></tr>
 <tr class="separator:a26baf143d8c366dcff87b0ad5eb6f5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -246,7 +246,7 @@ Private Attributes</h2></td></tr>
 <p>Note: This is not a <a class="el" href="../../d8/d8e/namespaceMantid.html" title="Helper class which provides the Collimation Length for SANS instruments.">Mantid</a> <a class="el" href="../../d0/d8c/classMantid_1_1CurveFitting_1_1Algorithms_1_1Fit.html" title="A generic fitting algorithm.">Fit</a> Function, just a helper class to the algorithm</p>
 <dl class="section date"><dt>Date</dt><dd>2013-04-26 : original <a class="el" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html" title="LeBailFunction : LeBailFunction is to calculate peak intensities in a composite function including ne...">LeBailFunction</a> is not used by any other functions. And thus it is rewritten. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00033">33</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00035">35</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7623cc1433c86ea63899e6b743ed9d7d" name="a7623cc1433c86ea63899e6b743ed9d7d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7623cc1433c86ea63899e6b743ed9d7d">&#9670;&#160;</a></span>LeBailFunction()</h2>
@@ -268,7 +268,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00044">44</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00152">m_compsiteFunction</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00157">m_functionParameters</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00160">m_hasNewPeakValue</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00163">m_isInputValue</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00168">m_maxTOFPeakCentre</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00167">m_minTOFPeakCentre</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00136">m_numPeaks</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00142">m_orderedProfileParameterNames</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00140">m_peakParameterNameVec</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00133">m_peakType</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00154">m_compsiteFunction</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00159">m_functionParameters</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00162">m_hasNewPeakValue</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00165">m_isInputValue</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00170">m_maxTOFPeakCentre</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00169">m_minTOFPeakCentre</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00138">m_numPeaks</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00144">m_orderedProfileParameterNames</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00142">m_peakParameterNameVec</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00135">m_peakType</a>.</p>
 
 </div>
 </div>
@@ -363,9 +363,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00801">801</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00799">799</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00036">background</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00154">m_background</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00036">background</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00156">m_background</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
 </div>
 </div>
@@ -393,14 +393,14 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00239">239</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00238">238</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00296">generatePeak()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00147">m_dspPeakVec</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00163">m_isInputValue</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00149">m_mapHKLPeak</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00168">m_maxTOFPeakCentre</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00167">m_minTOFPeakCentre</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00136">m_numPeaks</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00145">m_vecPeaks</a>.</p>
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00295">generatePeak()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00149">m_dspPeakVec</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00165">m_isInputValue</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00151">m_mapHKLPeak</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00170">m_maxTOFPeakCentre</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00169">m_minTOFPeakCentre</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00138">m_numPeaks</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00147">m_vecPeaks</a>.</p>
 
 </div>
 </div>
-<a id="a8696f1b8ba37898dae90c31cedb0c14e" name="a8696f1b8ba37898dae90c31cedb0c14e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8696f1b8ba37898dae90c31cedb0c14e">&#9670;&#160;</a></span>calculateGroupPeakIntensities()</h2>
+<a id="a7ad12fd154ee4c5d49e5ce4d81fc8680" name="a7ad12fd154ee4c5d49e5ce4d81fc8680"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ad12fd154ee4c5d49e5ce4d81fc8680">&#9670;&#160;</a></span>calculateGroupPeakIntensities()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -417,13 +417,13 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>vecX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>vecY</em>, </td>
         </tr>
         <tr>
@@ -458,11 +458,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>:: boolean whether the peaks' heights are physical </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00367">367</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00366">366</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00034">intensity</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00324">calculatePeaksIntensities()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00323">calculatePeaksIntensities()</a>.</p>
 
 </div>
 </div>
@@ -491,16 +491,16 @@ Private Attributes</h2></td></tr>
 
 <p>Calculate all peaks' parameter value. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00214">214</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00213">213</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00160">m_hasNewPeakValue</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00136">m_numPeaks</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00145">m_vecPeaks</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00162">m_hasNewPeakValue</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00138">m_numPeaks</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00147">m_vecPeaks</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00183">isParameterValid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00182">isParameterValid()</a>.</p>
 
 </div>
 </div>
-<a id="a7dcbc3ea85c2f00b5fae0cf4ca624ef4" name="a7dcbc3ea85c2f00b5fae0cf4ca624ef4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7dcbc3ea85c2f00b5fae0cf4ca624ef4">&#9670;&#160;</a></span>calculatePeaksIntensities()</h2>
+<a id="a97c37c7cd79341de7f83b8932cf3e385" name="a97c37c7cd79341de7f83b8932cf3e385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97c37c7cd79341de7f83b8932cf3e385">&#9670;&#160;</a></span>calculatePeaksIntensities()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -508,13 +508,13 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">bool Mantid::CurveFitting::Algorithms::LeBailFunction::calculatePeaksIntensities </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>vecX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>vecY</em>, </td>
         </tr>
         <tr>
@@ -543,14 +543,14 @@ Private Attributes</h2></td></tr>
 </dl>
 <p>Return: True if all peaks' height are physical. False otherwise </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00324">324</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00323">323</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00367">calculateGroupPeakIntensities()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00699">groupPeaks()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00366">calculateGroupPeakIntensities()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00697">groupPeaks()</a>.</p>
 
 </div>
 </div>
-<a id="a88d45340dd1a5e622693acc10a832505" name="a88d45340dd1a5e622693acc10a832505"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88d45340dd1a5e622693acc10a832505">&#9670;&#160;</a></span>calPeak()</h2>
+<a id="a315bda562e8c463f93cc088b85330265" name="a315bda562e8c463f93cc088b85330265"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a315bda562e8c463f93cc088b85330265">&#9670;&#160;</a></span>calPeak()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -564,7 +564,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>xvalues</em>, </td>
         </tr>
         <tr>
@@ -583,9 +583,9 @@ Private Attributes</h2></td></tr>
 
 <p>Calculate a single peak's value. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00142">142</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00141">141</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00136">m_numPeaks</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00145">m_vecPeaks</a>.</p>
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00138">m_numPeaks</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00147">m_vecPeaks</a>.</p>
 
 </div>
 </div>
@@ -625,9 +625,9 @@ Private Attributes</h2></td></tr>
 
 <p>Fix all background parameters. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00901">901</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00899">899</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00154">m_background</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00156">m_background</a>.</p>
 
 </div>
 </div>
@@ -666,9 +666,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00876">876</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00874">874</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00152">m_compsiteFunction</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00136">m_numPeaks</a>.</p>
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00154">m_compsiteFunction</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00138">m_numPeaks</a>.</p>
 
 </div>
 </div>
@@ -718,7 +718,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00104">104</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00154">m_background</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00136">m_numPeaks</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00145">m_vecPeaks</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00156">m_background</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00138">m_numPeaks</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00147">m_vecPeaks</a>.</p>
 
 </div>
 </div>
@@ -772,11 +772,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00296">296</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00295">295</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00157">m_functionParameters</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00140">m_peakParameterNameVec</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00133">m_peakType</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00159">m_functionParameters</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00142">m_peakParameterNameVec</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00135">m_peakType</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00239">addPeaks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00238">addPeaks()</a>.</p>
 
 </div>
 </div>
@@ -799,7 +799,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00091">91</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00152">m_compsiteFunction</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00154">m_compsiteFunction</a>.</p>
 
 </div>
 </div>
@@ -828,7 +828,7 @@ Private Attributes</h2></td></tr>
 
 <p>Get number of peaks. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00069">69</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00071">71</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
 
 </div>
 </div>
@@ -851,9 +851,9 @@ Private Attributes</h2></td></tr>
 <p>Get reference to a peak. </p>
 <p>Get the reference to a peak. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00944">944</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00942">942</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00136">m_numPeaks</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00145">m_vecPeaks</a>.</p>
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00138">m_numPeaks</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00147">m_vecPeaks</a>.</p>
 
 </div>
 </div>
@@ -891,9 +891,9 @@ Private Attributes</h2></td></tr>
 
 <p>Get the maximum value of a peak in a given set of data points. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l01034">1034</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l01032">1032</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00149">m_mapHKLPeak</a>.</p>
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00151">m_mapHKLPeak</a>.</p>
 
 </div>
 </div>
@@ -926,9 +926,9 @@ Private Attributes</h2></td></tr>
 <p>Get peak parameters (calculated) </p>
 <p>Get value of one specific peak's parameter. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00982">982</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00980">980</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l01002">getPeakParameterValue()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00136">m_numPeaks</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00145">m_vecPeaks</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l01000">getPeakParameterValue()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00138">m_numPeaks</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00147">m_vecPeaks</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
 </div>
 </div>
@@ -961,9 +961,9 @@ Private Attributes</h2></td></tr>
 <p>Get peak parameters (calculated) </p>
 <p>Get value of one specific peak's parameter. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00960">960</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00958">958</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l01002">getPeakParameterValue()</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00149">m_mapHKLPeak</a>.</p>
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l01000">getPeakParameterValue()</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00151">m_mapHKLPeak</a>.</p>
 
 </div>
 </div>
@@ -1011,11 +1011,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l01002">1002</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l01000">1000</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00142">m_orderedProfileParameterNames</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00144">m_orderedProfileParameterNames</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00982">getPeakParameter()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00960">getPeakParameter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00980">getPeakParameter()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00958">getPeakParameter()</a>.</p>
 
 </div>
 </div>
@@ -1077,11 +1077,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00699">699</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00697">697</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00147">m_dspPeakVec</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00136">m_numPeaks</a>.</p>
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00149">m_dspPeakVec</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00138">m_numPeaks</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00324">calculatePeaksIntensities()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00323">calculatePeaksIntensities()</a>.</p>
 
 </div>
 </div>
@@ -1109,9 +1109,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00161">161</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00160">160</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00142">m_orderedProfileParameterNames</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00144">m_orderedProfileParameterNames</a>.</p>
 
 </div>
 </div>
@@ -1134,9 +1134,9 @@ Private Attributes</h2></td></tr>
 <p>Check whether the newly set parameters are correct, i.e., all peaks are physical. </p>
 <p>Check whether the newly set parameters are correct, i.e., all peaks are physical This function would be used with setParameters() and etc. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00183">183</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00182">182</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00214">calculatePeakParameterValues()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00160">m_hasNewPeakValue</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00136">m_numPeaks</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00145">m_vecPeaks</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00213">calculatePeakParameterValues()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00162">m_hasNewPeakValue</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00138">m_numPeaks</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00147">m_vecPeaks</a>.</p>
 
 </div>
 </div>
@@ -1183,9 +1183,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00851">851</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00849">849</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00152">m_compsiteFunction</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00136">m_numPeaks</a>.</p>
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00154">m_compsiteFunction</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00138">m_numPeaks</a>.</p>
 
 </div>
 </div>
@@ -1206,9 +1206,9 @@ Private Attributes</h2></td></tr>
 
 <p>Fix all peaks' intensity/height. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00911">911</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00909">909</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00147">m_dspPeakVec</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00136">m_numPeaks</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00149">m_dspPeakVec</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00138">m_numPeaks</a>.</p>
 
 </div>
 </div>
@@ -1254,9 +1254,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00229">229</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00228">228</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00168">m_maxTOFPeakCentre</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00167">m_minTOFPeakCentre</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00170">m_maxTOFPeakCentre</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00169">m_minTOFPeakCentre</a>.</p>
 
 </div>
 </div>
@@ -1285,7 +1285,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00923">923</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00921">921</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../db/d39/System_8h_source.html#l00044">UNUSED_ARG</a>.</p>
 
@@ -1349,7 +1349,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00577">577</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00575">575</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../db/d39/System_8h_source.html#l00044">UNUSED_ARG</a>.</p>
 
@@ -1385,9 +1385,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00637">637</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00635">635</a> of file <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html">LeBailFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00022">fabs</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00157">m_functionParameters</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00160">m_hasNewPeakValue</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00163">m_isInputValue</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00136">m_numPeaks</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00140">m_peakParameterNameVec</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00145">m_vecPeaks</a>.</p>
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00022">fabs</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00159">m_functionParameters</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00162">m_hasNewPeakValue</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00165">m_isInputValue</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00138">m_numPeaks</a>, <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00142">m_peakParameterNameVec</a>, and <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00147">m_vecPeaks</a>.</p>
 
 </div>
 </div>
@@ -1412,7 +1412,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00165">165</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00167">167</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
 
 </div>
 </div>
@@ -1438,9 +1438,9 @@ Private Attributes</h2></td></tr>
 
 <p>Background function. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00154">154</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00156">156</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00801">addBackgroundFunction()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00901">fixBackgroundParameters()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00104">function()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00799">addBackgroundFunction()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00899">fixBackgroundParameters()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00104">function()</a>.</p>
 
 </div>
 </div>
@@ -1466,9 +1466,9 @@ Private Attributes</h2></td></tr>
 
 <p>Composite functions for all peaks and background. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00152">152</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00154">154</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00876">fixPeakParameter()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00091">getFunction()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00044">LeBailFunction()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00851">setFitProfileParameter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00874">fixPeakParameter()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00091">getFunction()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00044">LeBailFunction()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00849">setFitProfileParameter()</a>.</p>
 
 </div>
 </div>
@@ -1494,9 +1494,9 @@ Private Attributes</h2></td></tr>
 
 <p>Vector of pair &lt;peak position in d-space, Peak&gt; sortable. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00147">147</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00149">149</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00239">addPeaks()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00699">groupPeaks()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00911">setFixPeakHeights()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00238">addPeaks()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00697">groupPeaks()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00909">setFixPeakHeights()</a>.</p>
 
 </div>
 </div>
@@ -1522,9 +1522,9 @@ Private Attributes</h2></td></tr>
 
 <p>Parameters. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00157">157</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00159">159</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00296">generatePeak()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00044">LeBailFunction()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00637">setProfileParameterValues()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00295">generatePeak()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00044">LeBailFunction()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00635">setProfileParameterValues()</a>.</p>
 
 </div>
 </div>
@@ -1550,9 +1550,9 @@ Private Attributes</h2></td></tr>
 
 <p>Has new peak values. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00160">160</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00162">162</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00214">calculatePeakParameterValues()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00183">isParameterValid()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00044">LeBailFunction()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00637">setProfileParameterValues()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00213">calculatePeakParameterValues()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00182">isParameterValid()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00044">LeBailFunction()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00635">setProfileParameterValues()</a>.</p>
 
 </div>
 </div>
@@ -1578,9 +1578,9 @@ Private Attributes</h2></td></tr>
 
 <p>Has first value set up. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00163">163</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00165">165</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00239">addPeaks()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00044">LeBailFunction()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00637">setProfileParameterValues()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00238">addPeaks()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00044">LeBailFunction()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00635">setProfileParameterValues()</a>.</p>
 
 </div>
 </div>
@@ -1606,9 +1606,9 @@ Private Attributes</h2></td></tr>
 
 <p>Vector of all peak's Miller indexes. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00149">149</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00151">151</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00239">addPeaks()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l01034">getPeakMaximumValue()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00960">getPeakParameter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00238">addPeaks()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l01032">getPeakMaximumValue()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00958">getPeakParameter()</a>.</p>
 
 </div>
 </div>
@@ -1632,9 +1632,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00168">168</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00170">170</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00239">addPeaks()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00044">LeBailFunction()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00229">setPeakCentreTolerance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00238">addPeaks()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00044">LeBailFunction()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00228">setPeakCentreTolerance()</a>.</p>
 
 </div>
 </div>
@@ -1658,9 +1658,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00167">167</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00169">169</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00239">addPeaks()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00044">LeBailFunction()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00229">setPeakCentreTolerance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00238">addPeaks()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00044">LeBailFunction()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00228">setPeakCentreTolerance()</a>.</p>
 
 </div>
 </div>
@@ -1686,9 +1686,9 @@ Private Attributes</h2></td></tr>
 
 <p>Number of peaks. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00136">136</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00138">138</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00239">addPeaks()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00214">calculatePeakParameterValues()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00142">calPeak()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00876">fixPeakParameter()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00104">function()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00944">getPeak()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00982">getPeakParameter()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00699">groupPeaks()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00183">isParameterValid()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00044">LeBailFunction()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00851">setFitProfileParameter()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00911">setFixPeakHeights()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00637">setProfileParameterValues()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00238">addPeaks()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00213">calculatePeakParameterValues()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00141">calPeak()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00874">fixPeakParameter()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00104">function()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00942">getPeak()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00980">getPeakParameter()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00697">groupPeaks()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00182">isParameterValid()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00044">LeBailFunction()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00849">setFitProfileParameter()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00909">setFixPeakHeights()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00635">setProfileParameterValues()</a>.</p>
 
 </div>
 </div>
@@ -1714,9 +1714,9 @@ Private Attributes</h2></td></tr>
 
 <p>Ordered profile parameter names for search. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00142">142</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00144">144</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l01002">getPeakParameterValue()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00161">hasProfileParameter()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00044">LeBailFunction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l01000">getPeakParameterValue()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00160">hasProfileParameter()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00044">LeBailFunction()</a>.</p>
 
 </div>
 </div>
@@ -1742,9 +1742,9 @@ Private Attributes</h2></td></tr>
 
 <p>Name of peak parameter names (be same as the order in IPowderDiffPeakFunction) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00140">140</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00142">142</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00296">generatePeak()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00044">LeBailFunction()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00637">setProfileParameterValues()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00295">generatePeak()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00044">LeBailFunction()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00635">setProfileParameterValues()</a>.</p>
 
 </div>
 </div>
@@ -1770,9 +1770,9 @@ Private Attributes</h2></td></tr>
 
 <p>Peak type. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00133">133</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00135">135</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00296">generatePeak()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00044">LeBailFunction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00295">generatePeak()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00044">LeBailFunction()</a>.</p>
 
 </div>
 </div>
@@ -1798,9 +1798,9 @@ Private Attributes</h2></td></tr>
 
 <p>Vector of all peaks. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00145">145</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00147">147</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00239">addPeaks()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00214">calculatePeakParameterValues()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00142">calPeak()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00104">function()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00944">getPeak()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00982">getPeakParameter()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00183">isParameterValid()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00637">setProfileParameterValues()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00238">addPeaks()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00213">calculatePeakParameterValues()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00141">calPeak()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00104">function()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00942">getPeak()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00980">getPeakParameter()</a>, <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00182">isParameterValid()</a>, and <a class="el" href="../../d6/d14/LeBailFunction_8cpp_source.html#l00635">setProfileParameterValues()</a>.</p>
 
 </div>
 </div>

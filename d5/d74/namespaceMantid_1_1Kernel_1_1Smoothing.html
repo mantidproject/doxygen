@@ -105,6 +105,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a577cb81068605b15adf9a7c82b055572" id="r_a577cb81068605b15adf9a7c82b055572"><td class="memItemLeft" align="right" valign="top">MANTID_KERNEL_DLL std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d74/namespaceMantid_1_1Kernel_1_1Smoothing.html#a577cb81068605b15adf9a7c82b055572">boxcarErrorSmooth</a> (std::span&lt; double const &gt; input, unsigned int const numPoints)</td></tr>
+<tr class="separator:a577cb81068605b15adf9a7c82b055572"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af686677bd179fb2fe60402bd9ed0a7ad" id="r_af686677bd179fb2fe60402bd9ed0a7ad"><td class="memItemLeft" align="right" valign="top">template MANTID_KERNEL_DLL std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d74/namespaceMantid_1_1Kernel_1_1Smoothing.html#af686677bd179fb2fe60402bd9ed0a7ad">boxcarErrorSmooth</a> (std::vector&lt; double &gt; const &amp;, unsigned int const)</td></tr>
 <tr class="separator:af686677bd179fb2fe60402bd9ed0a7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a159c195716dd7d462c43ec9382fce342" id="r_a159c195716dd7d462c43ec9382fce342"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
@@ -117,6 +119,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae02f21baa5315685bef61dc2c427525c"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d74/namespaceMantid_1_1Kernel_1_1Smoothing.html#ae02f21baa5315685bef61dc2c427525c">boxcarRMSESmooth</a> (std::vector&lt; T &gt; const &amp;input, unsigned int const numPoints)</td></tr>
 <tr class="memdesc:ae02f21baa5315685bef61dc2c427525c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs boxcar (moving average) smoothing on the input data, using a RMSE average, as is appropriate for error averaging.  <br /></td></tr>
 <tr class="separator:ae02f21baa5315685bef61dc2c427525c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f28cc13a7b82661b05a87ad14f763b" id="r_af9f28cc13a7b82661b05a87ad14f763b"><td class="memItemLeft" align="right" valign="top">MANTID_KERNEL_DLL std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d74/namespaceMantid_1_1Kernel_1_1Smoothing.html#af9f28cc13a7b82661b05a87ad14f763b">boxcarSmooth</a> (std::span&lt; double const &gt; input, unsigned int const numPoints)</td></tr>
+<tr class="memdesc:af9f28cc13a7b82661b05a87ad14f763b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloads taking a contiguous range of doubles, so that the size-checked histogram data types, which do not hand out a std::vector&lt;double&gt;, can be smoothed directly.  <br /></td></tr>
+<tr class="separator:af9f28cc13a7b82661b05a87ad14f763b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad44c471994c55afa19752908af0e89b6" id="r_ad44c471994c55afa19752908af0e89b6"><td class="memItemLeft" align="right" valign="top">template MANTID_KERNEL_DLL std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d74/namespaceMantid_1_1Kernel_1_1Smoothing.html#ad44c471994c55afa19752908af0e89b6">boxcarSmooth</a> (std::vector&lt; double &gt; const &amp;, unsigned int const)</td></tr>
 <tr class="separator:ad44c471994c55afa19752908af0e89b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91c3c0c0dc3726a145932e0ca2bb91ab" id="r_a91c3c0c0dc3726a145932e0ca2bb91ab"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
@@ -137,8 +142,40 @@ Functions</h2></td></tr>
 <tr class="separator:ae061ecfa735cdf450d10e4df29672e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a577cb81068605b15adf9a7c82b055572" name="a577cb81068605b15adf9a7c82b055572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a577cb81068605b15adf9a7c82b055572">&#9670;&#160;</a></span>boxcarErrorSmooth() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; double &gt; Mantid::Kernel::Smoothing::boxcarErrorSmooth </td>
+          <td>(</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int const&#160;</td>
+          <td class="paramname"><em>numPoints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00166">166</a> of file <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html">Smoothing.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00093">Mantid::Kernel::Smoothing::detail::boxcarSmoothWithFunction()</a>.</p>
+
+</div>
+</div>
 <a id="af686677bd179fb2fe60402bd9ed0a7ad" name="af686677bd179fb2fe60402bd9ed0a7ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af686677bd179fb2fe60402bd9ed0a7ad">&#9670;&#160;</a></span>boxcarErrorSmooth() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af686677bd179fb2fe60402bd9ed0a7ad">&#9670;&#160;</a></span>boxcarErrorSmooth() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,7 +203,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a159c195716dd7d462c43ec9382fce342" name="a159c195716dd7d462c43ec9382fce342"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a159c195716dd7d462c43ec9382fce342">&#9670;&#160;</a></span>boxcarErrorSmooth() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a159c195716dd7d462c43ec9382fce342">&#9670;&#160;</a></span>boxcarErrorSmooth() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -216,9 +253,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00146">146</a> of file <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html">Smoothing.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00093">Mantid::Kernel::Smoothing::detail::boxcarSmoothWithFunction()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00147">147</a> of file <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html">Smoothing.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d2d/SmoothData_8cpp_source.html#l00133">Mantid::Algorithms::smooth()</a>.</p>
 
@@ -302,14 +337,61 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00151">151</a> of file <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html">Smoothing.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00152">152</a> of file <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html">Smoothing.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af9f28cc13a7b82661b05a87ad14f763b" name="af9f28cc13a7b82661b05a87ad14f763b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f28cc13a7b82661b05a87ad14f763b">&#9670;&#160;</a></span>boxcarSmooth() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; double &gt; Mantid::Kernel::Smoothing::boxcarSmooth </td>
+          <td>(</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int const&#160;</td>
+          <td class="paramname"><em>numPoints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Overloads taking a contiguous range of doubles, so that the size-checked histogram data types, which do not hand out a std::vector&lt;double&gt;, can be smoothed directly. </p>
+<p>A std::vector&lt;double&gt; argument still selects the templates above; deduction cannot produce a std::span, hence these are not templates.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>The contiguous range to be smoothed </td></tr>
+    <tr><td class="paramname">numPoints</td><td>The width of the boxcar window (must be &gt;= 3) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new vector containing the smoothed data </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>if numPoints is too small </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00161">161</a> of file <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html">Smoothing.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00093">Mantid::Kernel::Smoothing::detail::boxcarSmoothWithFunction()</a>.</p>
 
 </div>
 </div>
 <a id="ad44c471994c55afa19752908af0e89b6" name="ad44c471994c55afa19752908af0e89b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad44c471994c55afa19752908af0e89b6">&#9670;&#160;</a></span>boxcarSmooth() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad44c471994c55afa19752908af0e89b6">&#9670;&#160;</a></span>boxcarSmooth() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -337,7 +419,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a91c3c0c0dc3726a145932e0ca2bb91ab" name="a91c3c0c0dc3726a145932e0ca2bb91ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91c3c0c0dc3726a145932e0ca2bb91ab">&#9670;&#160;</a></span>boxcarSmooth() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a91c3c0c0dc3726a145932e0ca2bb91ab">&#9670;&#160;</a></span>boxcarSmooth() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -387,8 +469,6 @@ template&lt;typename T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00141">141</a> of file <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html">Smoothing.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00093">Mantid::Kernel::Smoothing::detail::boxcarSmoothWithFunction()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/db3/AddLogSmoothed_8cpp_source.html#l00168">Mantid::Algorithms::AddLogSmoothed::exec()</a>, and <a class="el" href="../../d3/d2d/SmoothData_8cpp_source.html#l00133">Mantid::Algorithms::smooth()</a>.</p>
 
@@ -479,9 +559,9 @@ template&lt;typename <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometr
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00247">247</a> of file <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html">Smoothing.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00258">258</a> of file <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html">Smoothing.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00198">Mantid::Kernel::Smoothing::fft::fftSmoothWithFilter()</a>, and <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00209">Mantid::Kernel::Smoothing::fft::fftSmoothWithFilter()</a>, and <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/db3/AddLogSmoothed_8cpp_source.html#l00168">Mantid::Algorithms::AddLogSmoothed::exec()</a>, and <a class="el" href="../../da/d88/FFTSmooth2_8cpp_source.html#l00173">Mantid::Algorithms::FFTSmooth::FFTSmooth2::exec()</a>.</p>
 
@@ -559,7 +639,7 @@ template&lt;typename <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometr
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00234">234</a> of file <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html">Smoothing.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00245">245</a> of file <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html">Smoothing.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>.</p>
 

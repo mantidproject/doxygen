@@ -143,16 +143,16 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:af8e0c4e5dcfbb54178a210ea8529fa1f" id="r_af8e0c4e5dcfbb54178a210ea8529fa1f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/classMantid_1_1DataHandling_1_1CompressEventAccumulator.html#af8e0c4e5dcfbb54178a210ea8529fa1f">m_divisor</a></td></tr>
 <tr class="memdesc:af8e0c4e5dcfbb54178a210ea8529fa1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">keep track if the m_tof is already sorted  <br /></td></tr>
 <tr class="separator:af8e0c4e5dcfbb54178a210ea8529fa1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a394d36a8d4cad61a3251e27acbc02500" id="r_a394d36a8d4cad61a3251e27acbc02500"><td class="memItemLeft" align="right" valign="top">std::optional&lt; size_t &gt;(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/classMantid_1_1DataHandling_1_1CompressEventAccumulator.html#a394d36a8d4cad61a3251e27acbc02500">m_findBin</a> )(const MantidVec &amp;, const double, const double, const double, const bool)</td></tr>
-<tr class="memdesc:a394d36a8d4cad61a3251e27acbc02500"><td class="mdescLeft">&#160;</td><td class="mdescRight">function pointer on how to find the bin boundaries  <br /></td></tr>
-<tr class="separator:a394d36a8d4cad61a3251e27acbc02500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebc21966bc76fe569278e5424af9930f" id="r_aebc21966bc76fe569278e5424af9930f"><td class="memItemLeft" align="right" valign="top">std::optional&lt; size_t &gt;(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/classMantid_1_1DataHandling_1_1CompressEventAccumulator.html#aebc21966bc76fe569278e5424af9930f">m_findBin</a> )(std::span&lt; double const &gt;, const double, const double, const double, const bool)</td></tr>
+<tr class="memdesc:aebc21966bc76fe569278e5424af9930f"><td class="mdescLeft">&#160;</td><td class="mdescRight">function pointer on how to find the bin boundaries  <br /></td></tr>
+<tr class="separator:aebc21966bc76fe569278e5424af9930f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8428f11150f10dff12126ddd8b30afb8" id="r_a8428f11150f10dff12126ddd8b30afb8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/classMantid_1_1DataHandling_1_1CompressEventAccumulator.html#a8428f11150f10dff12126ddd8b30afb8">m_offset</a></td></tr>
 <tr class="separator:a8428f11150f10dff12126ddd8b30afb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../de/ddd/classMantid_1_1DataHandling_1_1CompressEventAccumulator.html" title="CompressEventAccumulator : TODO: DESCRIPTION.">CompressEventAccumulator</a> : TODO: DESCRIPTION. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00021">21</a> of file <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html">CompressEventAccumulator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00022">22</a> of file <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html">CompressEventAccumulator.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a82c6497c9cea324756632aca758ab06d" name="a82c6497c9cea324756632aca758ab06d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a82c6497c9cea324756632aca758ab06d">&#9670;&#160;</a></span>CompressEventAccumulator()</h2>
@@ -188,7 +188,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d65/CompressEventAccumulator_8cpp_source.html#l00018">18</a> of file <a class="el" href="../../d3/d65/CompressEventAccumulator_8cpp_source.html">CompressEventAccumulator.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/de1/EventList_8cpp_source.html#l02623">Mantid::DataObjects::EventList::findLinearBin()</a>, <a class="el" href="../../d8/de1/EventList_8cpp_source.html#l02652">Mantid::DataObjects::EventList::findLogBin()</a>, <a class="el" href="../../d8/d23/namespaceMantid_1_1DataHandling.html#a65a83564769b38cc311cf8fa3f739dd3aaac544aacc3615aada24897a215f5046">Mantid::DataHandling::LINEAR</a>, <a class="el" href="../../d8/d23/namespaceMantid_1_1DataHandling.html#a65a83564769b38cc311cf8fa3f739dd3ab571df9bc691a00abcc83992d37b9723">Mantid::DataHandling::LOGARITHMIC</a>, <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00045">m_divisor</a>, <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00048">m_findBin</a>, <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00039">m_histogram_edges</a>, and <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00046">m_offset</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/de1/EventList_8cpp_source.html#l02624">Mantid::DataObjects::EventList::findLinearBin()</a>, <a class="el" href="../../d8/de1/EventList_8cpp_source.html#l02653">Mantid::DataObjects::EventList::findLogBin()</a>, <a class="el" href="../../d8/d23/namespaceMantid_1_1DataHandling.html#a65a83564769b38cc311cf8fa3f739dd3aaac544aacc3615aada24897a215f5046">Mantid::DataHandling::LINEAR</a>, <a class="el" href="../../d8/d23/namespaceMantid_1_1DataHandling.html#a65a83564769b38cc311cf8fa3f739dd3ab571df9bc691a00abcc83992d37b9723">Mantid::DataHandling::LOGARITHMIC</a>, <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00046">m_divisor</a>, <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00049">m_findBin</a>, <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00040">m_histogram_edges</a>, and <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00047">m_offset</a>.</p>
 
 </div>
 </div>
@@ -296,7 +296,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d65/CompressEventAccumulator_8cpp_source.html#l00046">46</a> of file <a class="el" href="../../d3/d65/CompressEventAccumulator_8cpp_source.html">CompressEventAccumulator.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00045">m_divisor</a>, <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00048">m_findBin</a>, <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00039">m_histogram_edges</a>, and <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00046">m_offset</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00046">m_divisor</a>, <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00049">m_findBin</a>, <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00040">m_histogram_edges</a>, and <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00047">m_offset</a>.</p>
 
 </div>
 </div>
@@ -328,7 +328,7 @@ template&lt;typename INT_TYPE &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d65/CompressEventAccumulator_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../d3/d65/CompressEventAccumulator_8cpp_source.html">CompressEventAccumulator.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00039">m_histogram_edges</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00040">m_histogram_edges</a>.</p>
 
 </div>
 </div>
@@ -374,7 +374,7 @@ template&lt;typename INT_TYPE &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d65/CompressEventAccumulator_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../d3/d65/CompressEventAccumulator_8cpp_source.html">CompressEventAccumulator.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00039">m_histogram_edges</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00040">m_histogram_edges</a>.</p>
 
 </div>
 </div>
@@ -426,14 +426,14 @@ template&lt;typename INT_TYPE &gt; </div>
 
 <p>keep track if the m_tof is already sorted </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00045">45</a> of file <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html">CompressEventAccumulator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00046">46</a> of file <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html">CompressEventAccumulator.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d65/CompressEventAccumulator_8cpp_source.html#l00018">CompressEventAccumulator()</a>, and <a class="el" href="../../d3/d65/CompressEventAccumulator_8cpp_source.html#l00046">findBin()</a>.</p>
 
 </div>
 </div>
-<a id="a394d36a8d4cad61a3251e27acbc02500" name="a394d36a8d4cad61a3251e27acbc02500"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a394d36a8d4cad61a3251e27acbc02500">&#9670;&#160;</a></span>m_findBin</h2>
+<a id="aebc21966bc76fe569278e5424af9930f" name="aebc21966bc76fe569278e5424af9930f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebc21966bc76fe569278e5424af9930f">&#9670;&#160;</a></span>m_findBin</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -442,7 +442,7 @@ template&lt;typename INT_TYPE &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::optional&lt; size_t &gt;(* Mantid::DataHandling::CompressEventAccumulator::m_findBin) (const MantidVec &amp;, const double, const double, const double, const bool)</td>
+          <td class="memname">std::optional&lt; size_t &gt;(* Mantid::DataHandling::CompressEventAccumulator::m_findBin) (std::span&lt; double const  &gt;, const double, const double, const double, const bool)</td>
         </tr>
       </table>
   </td>
@@ -454,7 +454,7 @@ template&lt;typename INT_TYPE &gt; </div>
 
 <p>function pointer on how to find the bin boundaries </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00046">46</a> of file <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html">CompressEventAccumulator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00047">47</a> of file <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html">CompressEventAccumulator.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d65/CompressEventAccumulator_8cpp_source.html#l00018">CompressEventAccumulator()</a>, and <a class="el" href="../../d3/d65/CompressEventAccumulator_8cpp_source.html#l00046">findBin()</a>.</p>
 
@@ -482,7 +482,7 @@ template&lt;typename INT_TYPE &gt; </div>
 
 <p>shared pointer for the histogram bin boundaries </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00039">39</a> of file <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html">CompressEventAccumulator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00040">40</a> of file <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html">CompressEventAccumulator.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d65/CompressEventAccumulator_8cpp_source.html#l00018">CompressEventAccumulator()</a>, <a class="el" href="../../d3/d65/CompressEventAccumulator_8cpp_source.html#l00046">findBin()</a>, <a class="el" href="../../d3/d65/CompressEventAccumulator_8cpp_source.html#l00040">getBinCenter()</a>, and <a class="el" href="../../d3/d65/CompressEventAccumulator_8cpp_source.html#l00038">numberHistBins()</a>.</p>
 
@@ -510,7 +510,7 @@ template&lt;typename INT_TYPE &gt; </div>
 
 <p>track whether this has allocated the "big" memory objects </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00052">52</a> of file <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html">CompressEventAccumulator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00053">53</a> of file <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html">CompressEventAccumulator.h</a>.</p>
 
 </div>
 </div>
@@ -534,7 +534,7 @@ template&lt;typename INT_TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00046">46</a> of file <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html">CompressEventAccumulator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html#l00047">47</a> of file <a class="el" href="../../df/d04/CompressEventAccumulator_8h_source.html">CompressEventAccumulator.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d65/CompressEventAccumulator_8cpp_source.html#l00018">CompressEventAccumulator()</a>, and <a class="el" href="../../d3/d65/CompressEventAccumulator_8cpp_source.html#l00046">findBin()</a>.</p>
 

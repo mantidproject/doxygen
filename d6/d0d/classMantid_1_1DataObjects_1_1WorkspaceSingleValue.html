@@ -130,9 +130,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aab529f4e7a0b7e05dc600c0b1b4777db" id="r_aab529f4e7a0b7e05dc600c0b1b4777db"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d6/d0d/classMantid_1_1DataObjects_1_1WorkspaceSingleValue.html">WorkspaceSingleValue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0d/classMantid_1_1DataObjects_1_1WorkspaceSingleValue.html#aab529f4e7a0b7e05dc600c0b1b4777db">cloneEmpty</a> () const</td></tr>
 <tr class="memdesc:aab529f4e7a0b7e05dc600c0b1b4777db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a default-initialized clone of the workspace.  <br /></td></tr>
 <tr class="separator:aab529f4e7a0b7e05dc600c0b1b4777db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef21d8f4c792db3a06b6426b3dd89278" id="r_aef21d8f4c792db3a06b6426b3dd89278"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0d/classMantid_1_1DataObjects_1_1WorkspaceSingleValue.html#aef21d8f4c792db3a06b6426b3dd89278">generateHistogram</a> (const std::size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, const <a class="el" href="../../d8/d8e/namespaceMantid.html#ac23552b2a51978a38cbc8f569163a682">MantidVec</a> &amp;<a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#aedd34f47323e974c90c7be1d535d9832ae1c6b00b155620edd51f0b2900aa98f9">X</a>, <a class="el" href="../../d8/d8e/namespaceMantid.html#ac23552b2a51978a38cbc8f569163a682">MantidVec</a> &amp;<a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#aedd34f47323e974c90c7be1d535d9832af42e5e73c92b0916160ef8af250eb2ea">Y</a>, <a class="el" href="../../d8/d8e/namespaceMantid.html#ac23552b2a51978a38cbc8f569163a682">MantidVec</a> &amp;E, bool skipError=false) const override</td></tr>
-<tr class="memdesc:aef21d8f4c792db3a06b6426b3dd89278"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rebin the workspace. Not implemented for this workspace.  <br /></td></tr>
-<tr class="separator:aef21d8f4c792db3a06b6426b3dd89278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc5ff1f84d905277c34ca99fb4bbcb04" id="r_afc5ff1f84d905277c34ca99fb4bbcb04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0d/classMantid_1_1DataObjects_1_1WorkspaceSingleValue.html#afc5ff1f84d905277c34ca99fb4bbcb04">generateHistogram</a> (const std::size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, std::span&lt; double const &gt; <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#aedd34f47323e974c90c7be1d535d9832ae1c6b00b155620edd51f0b2900aa98f9">X</a>, <a class="el" href="../../d8/d8e/namespaceMantid.html#ac23552b2a51978a38cbc8f569163a682">MantidVec</a> &amp;<a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#aedd34f47323e974c90c7be1d535d9832af42e5e73c92b0916160ef8af250eb2ea">Y</a>, <a class="el" href="../../d8/d8e/namespaceMantid.html#ac23552b2a51978a38cbc8f569163a682">MantidVec</a> &amp;E, bool skipError=false) const override</td></tr>
+<tr class="memdesc:afc5ff1f84d905277c34ca99fb4bbcb04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rebin the workspace. Not implemented for this workspace.  <br /></td></tr>
+<tr class="separator:afc5ff1f84d905277c34ca99fb4bbcb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a2e70376d872343e135ca358134335d" id="r_a4a2e70376d872343e135ca358134335d"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0d/classMantid_1_1DataObjects_1_1WorkspaceSingleValue.html#a4a2e70376d872343e135ca358134335d">getMaxNumberBins</a> () const override</td></tr>
 <tr class="memdesc:a4a2e70376d872343e135ca358134335d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum number of bins in a workspace.  <br /></td></tr>
 <tr class="separator:a4a2e70376d872343e135ca358134335d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1278,8 +1278,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aef21d8f4c792db3a06b6426b3dd89278" name="aef21d8f4c792db3a06b6426b3dd89278"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef21d8f4c792db3a06b6426b3dd89278">&#9670;&#160;</a></span>generateHistogram()</h2>
+<a id="afc5ff1f84d905277c34ca99fb4bbcb04" name="afc5ff1f84d905277c34ca99fb4bbcb04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc5ff1f84d905277c34ca99fb4bbcb04">&#9670;&#160;</a></span>generateHistogram()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1296,7 +1296,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d8/d8e/namespaceMantid.html#ac23552b2a51978a38cbc8f569163a682">MantidVec</a> &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>X</em>, </td>
         </tr>
         <tr>
@@ -1332,7 +1332,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Rebin the workspace. Not implemented for this workspace. </p>
 
-<p>Implements <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#ad540ad7b6ff244e422fb4e963822a0d4">Mantid::API::MatrixWorkspace</a>.</p>
+<p>Implements <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a8dae71492b43d653bbf4608585765005">Mantid::API::MatrixWorkspace</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/d7e/WorkspaceSingleValue_8cpp_source.html#l00060">60</a> of file <a class="el" href="../../d9/d7e/WorkspaceSingleValue_8cpp_source.html">WorkspaceSingleValue.cpp</a>.</p>
 
@@ -1628,7 +1628,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/d7e/WorkspaceSingleValue_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../d9/d7e/WorkspaceSingleValue_8cpp_source.html">WorkspaceSingleValue.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00211">Mantid::API::MatrixWorkspace::histogram()</a>, and <a class="el" href="../../db/d39/System_8h_source.html#l00044">UNUSED_ARG</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00212">Mantid::API::MatrixWorkspace::histogram()</a>, and <a class="el" href="../../db/d39/System_8h_source.html#l00044">UNUSED_ARG</a>.</p>
 
 </div>
 </div>

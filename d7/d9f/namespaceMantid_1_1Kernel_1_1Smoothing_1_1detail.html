@@ -115,13 +115,13 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2aaefe4b9b7cbf02df579de88d53247b" id="r_a2aaefe4b9b7cbf02df579de88d53247b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a2aaefe4b9b7cbf02df579de88d53247b"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d9f/namespaceMantid_1_1Kernel_1_1Smoothing_1_1detail.html#a2aaefe4b9b7cbf02df579de88d53247b">boxcarSmoothWithFunction</a> (std::vector&lt; T &gt; const &amp;input, unsigned int const numPoints, <a class="el" href="../../d9/d9d/structMantid_1_1Kernel_1_1Smoothing_1_1detail_1_1Averager.html">Averager</a>&lt; T &gt; &amp;averager)</td></tr>
-<tr class="separator:a2aaefe4b9b7cbf02df579de88d53247b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01a9b90e0d9eaa24227de2e0de1d16d6" id="r_a01a9b90e0d9eaa24227de2e0de1d16d6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a01a9b90e0d9eaa24227de2e0de1d16d6"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d9f/namespaceMantid_1_1Kernel_1_1Smoothing_1_1detail.html#a01a9b90e0d9eaa24227de2e0de1d16d6">boxcarSmoothWithFunction</a> (std::span&lt; T const &gt; const input, unsigned int const numPoints, <a class="el" href="../../d9/d9d/structMantid_1_1Kernel_1_1Smoothing_1_1detail_1_1Averager.html">Averager</a>&lt; T &gt; &amp;averager)</td></tr>
+<tr class="separator:a01a9b90e0d9eaa24227de2e0de1d16d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a2aaefe4b9b7cbf02df579de88d53247b" name="a2aaefe4b9b7cbf02df579de88d53247b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2aaefe4b9b7cbf02df579de88d53247b">&#9670;&#160;</a></span>boxcarSmoothWithFunction()</h2>
+<a id="a01a9b90e0d9eaa24227de2e0de1d16d6" name="a01a9b90e0d9eaa24227de2e0de1d16d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01a9b90e0d9eaa24227de2e0de1d16d6">&#9670;&#160;</a></span>boxcarSmoothWithFunction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -131,7 +131,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">std::vector&lt; T &gt; Mantid::Kernel::Smoothing::detail::boxcarSmoothWithFunction </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; T &gt; const &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; T const &gt; const&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -158,7 +158,7 @@ template&lt;typename T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00034">Mantid::Kernel::Smoothing::detail::Averager&lt; T &gt;::accumulate()</a>, <a class="el" href="../../d9/d9d/structMantid_1_1Kernel_1_1Smoothing_1_1detail_1_1Averager.html#a37e1d838bf7d9901d6b5c1883029bedb">Mantid::Kernel::Smoothing::detail::Averager&lt; T &gt;::getAverage()</a>, and <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00043">Mantid::Kernel::Smoothing::detail::Averager&lt; T &gt;::separate()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00146">Mantid::Kernel::Smoothing::boxcarErrorSmooth()</a>, <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00151">Mantid::Kernel::Smoothing::boxcarRMSESmooth()</a>, and <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00141">Mantid::Kernel::Smoothing::boxcarSmooth()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00166">Mantid::Kernel::Smoothing::boxcarErrorSmooth()</a>, and <a class="el" href="../../de/ddf/Smoothing_8cpp_source.html#l00161">Mantid::Kernel::Smoothing::boxcarSmooth()</a>.</p>
 
 </div>
 </div>

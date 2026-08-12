@@ -121,9 +121,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a668e2c2a823efecb3e4344712354f3a1" id="r_a668e2c2a823efecb3e4344712354f3a1"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d3e/classMantid_1_1Algorithms_1_1Regroup.html#a668e2c2a823efecb3e4344712354f3a1">name</a> () const override</td></tr>
 <tr class="memdesc:a668e2c2a823efecb3e4344712354f3a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Algorithm's name for identification overriding a virtual method.  <br /></td></tr>
 <tr class="separator:a668e2c2a823efecb3e4344712354f3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af14b697fcbfd0a5163d1bc5577178658" id="r_af14b697fcbfd0a5163d1bc5577178658"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d3e/classMantid_1_1Algorithms_1_1Regroup.html#af14b697fcbfd0a5163d1bc5577178658">newAxis</a> (const std::vector&lt; double &gt; &amp;params, const std::vector&lt; double &gt; &amp;xold, std::vector&lt; double &gt; &amp;xnew, std::vector&lt; int &gt; &amp;xoldIndex)</td></tr>
-<tr class="memdesc:af14b697fcbfd0a5163d1bc5577178658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new output X array according to specific boundary defnitions.  <br /></td></tr>
-<tr class="separator:af14b697fcbfd0a5163d1bc5577178658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba263177de9cc234e49f86ab35411962" id="r_aba263177de9cc234e49f86ab35411962"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d3e/classMantid_1_1Algorithms_1_1Regroup.html#aba263177de9cc234e49f86ab35411962">newAxis</a> (const std::vector&lt; double &gt; &amp;params, std::span&lt; double const &gt; xold, std::vector&lt; double &gt; &amp;xnew, std::vector&lt; int &gt; &amp;xoldIndex)</td></tr>
+<tr class="memdesc:aba263177de9cc234e49f86ab35411962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new output X array according to specific boundary defnitions.  <br /></td></tr>
+<tr class="separator:aba263177de9cc234e49f86ab35411962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7a0aadc21227a437c9afd1e9531d853" id="r_ad7a0aadc21227a437c9afd1e9531d853"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d3e/classMantid_1_1Algorithms_1_1Regroup.html#ad7a0aadc21227a437c9afd1e9531d853">seeAlso</a> () const override</td></tr>
 <tr class="memdesc:ad7a0aadc21227a437c9afd1e9531d853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return all of the seeAlso algorithms related to this algorithm.  <br /></td></tr>
 <tr class="separator:ad7a0aadc21227a437c9afd1e9531d853"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -622,7 +622,7 @@ OutputWorkspace - The name of the workspace in which to store the result  </li>
 <dl class="section author"><dt>Author</dt><dd>Roman Tolchenov </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>16/07/2008 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d9b/Regroup_8h_source.html#l00037">37</a> of file <a class="el" href="../../d2/d9b/Regroup_8h_source.html">Regroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d9b/Regroup_8h_source.html#l00039">39</a> of file <a class="el" href="../../d2/d9b/Regroup_8h_source.html">Regroup.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a99e07cec7fceb32f6bf74343baaab2b8" name="a99e07cec7fceb32f6bf74343baaab2b8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a99e07cec7fceb32f6bf74343baaab2b8">&#9670;&#160;</a></span>category()</h2>
@@ -651,7 +651,7 @@ OutputWorkspace - The name of the workspace in which to store the result  </li>
 
 <p>Implements <a class="el" href="../../d4/d2d/classMantid_1_1API_1_1IAlgorithm.html#a75bab30e43a51c5b87a4409a95ca800c">Mantid::API::IAlgorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d9b/Regroup_8h_source.html#l00048">48</a> of file <a class="el" href="../../d2/d9b/Regroup_8h_source.html">Regroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d9b/Regroup_8h_source.html#l00050">50</a> of file <a class="el" href="../../d2/d9b/Regroup_8h_source.html">Regroup.h</a>.</p>
 
 </div>
 </div>
@@ -748,12 +748,12 @@ OutputWorkspace - The name of the workspace in which to store the result  </li>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#af7d20753d77a5d2875edf5a37eaef39f">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d9b/Regroup_8h_source.html#l00040">40</a> of file <a class="el" href="../../d2/d9b/Regroup_8h_source.html">Regroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d9b/Regroup_8h_source.html#l00042">42</a> of file <a class="el" href="../../d2/d9b/Regroup_8h_source.html">Regroup.h</a>.</p>
 
 </div>
 </div>
-<a id="af14b697fcbfd0a5163d1bc5577178658" name="af14b697fcbfd0a5163d1bc5577178658"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af14b697fcbfd0a5163d1bc5577178658">&#9670;&#160;</a></span>newAxis()</h2>
+<a id="aba263177de9cc234e49f86ab35411962" name="aba263177de9cc234e49f86ab35411962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba263177de9cc234e49f86ab35411962">&#9670;&#160;</a></span>newAxis()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -767,7 +767,7 @@ OutputWorkspace - The name of the workspace in which to store the result  </li>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>xold</em>, </td>
         </tr>
         <tr>
@@ -930,7 +930,7 @@ OutputWorkspace - The name of the workspace in which to store the result  </li>
 
 <p>Implements <a class="el" href="../../d4/d2d/classMantid_1_1API_1_1IAlgorithm.html#a6f295c4532b0f121081fcdfc8691bbfd">Mantid::API::IAlgorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d9b/Regroup_8h_source.html#l00046">46</a> of file <a class="el" href="../../d2/d9b/Regroup_8h_source.html">Regroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d9b/Regroup_8h_source.html#l00048">48</a> of file <a class="el" href="../../d2/d9b/Regroup_8h_source.html">Regroup.h</a>.</p>
 
 </div>
 </div>
@@ -961,7 +961,7 @@ OutputWorkspace - The name of the workspace in which to store the result  </li>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#adfff14154e5762875923c9a4f3679b51">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d9b/Regroup_8h_source.html#l00042">42</a> of file <a class="el" href="../../d2/d9b/Regroup_8h_source.html">Regroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d9b/Regroup_8h_source.html#l00044">44</a> of file <a class="el" href="../../d2/d9b/Regroup_8h_source.html">Regroup.h</a>.</p>
 
 </div>
 </div>
@@ -992,7 +992,7 @@ OutputWorkspace - The name of the workspace in which to store the result  </li>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#ac1fab4b33f78654eccab880db81f14c0">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d9b/Regroup_8h_source.html#l00045">45</a> of file <a class="el" href="../../d2/d9b/Regroup_8h_source.html">Regroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d9b/Regroup_8h_source.html#l00047">47</a> of file <a class="el" href="../../d2/d9b/Regroup_8h_source.html">Regroup.h</a>.</p>
 
 </div>
 </div>

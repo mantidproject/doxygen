@@ -120,8 +120,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a083108c8d209883b3e1e171f62f0302e" id="r_a083108c8d209883b3e1e171f62f0302e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d99/classAxeslessWorkspaceTester.html#a083108c8d209883b3e1e171f62f0302e">blocksize</a> () const override</td></tr>
 <tr class="memdesc:a083108c8d209883b3e1e171f62f0302e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of each block of data returned by the dataY accessors.  <br /></td></tr>
 <tr class="separator:a083108c8d209883b3e1e171f62f0302e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add75edc40ded5ae1391e5065c5ae1a86" id="r_add75edc40ded5ae1391e5065c5ae1a86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d99/classAxeslessWorkspaceTester.html#add75edc40ded5ae1391e5065c5ae1a86">generateHistogram</a> (const std::size_t, const MantidVec &amp;, MantidVec &amp;, MantidVec &amp;, bool) const override</td></tr>
-<tr class="separator:add75edc40ded5ae1391e5065c5ae1a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad50ad6c73e2cf5900c9b945059065f8d" id="r_ad50ad6c73e2cf5900c9b945059065f8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d99/classAxeslessWorkspaceTester.html#ad50ad6c73e2cf5900c9b945059065f8d">generateHistogram</a> (const std::size_t, std::span&lt; double const &gt;, MantidVec &amp;, MantidVec &amp;, bool) const override</td></tr>
+<tr class="separator:ad50ad6c73e2cf5900c9b945059065f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05a823f0887c9b79e1f6d7daa70eb500" id="r_a05a823f0887c9b79e1f6d7daa70eb500"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d99/classAxeslessWorkspaceTester.html#a05a823f0887c9b79e1f6d7daa70eb500">getMaxNumberBins</a> () const override</td></tr>
 <tr class="memdesc:a05a823f0887c9b79e1f6d7daa70eb500"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum number of bins in a workspace (works on ragged data).  <br /></td></tr>
 <tr class="separator:a05a823f0887c9b79e1f6d7daa70eb500"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -407,9 +407,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa576bf51ac0fef21899b638ba32625ce inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace" id="r_aa576bf51ac0fef21899b638ba32625ce"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#aa576bf51ac0fef21899b638ba32625ce">hasDx</a> (const std::size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>) const</td></tr>
 <tr class="memdesc:aa576bf51ac0fef21899b638ba32625ce inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Probes if DX (X Error) values were set on a particular spectrum.  <br /></td></tr>
 <tr class="separator:aa576bf51ac0fef21899b638ba32625ce inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad540ad7b6ff244e422fb4e963822a0d4 inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace" id="r_ad540ad7b6ff244e422fb4e963822a0d4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#ad540ad7b6ff244e422fb4e963822a0d4">generateHistogram</a> (const std::size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, const <a class="el" href="../../d8/d8e/namespaceMantid.html#ac23552b2a51978a38cbc8f569163a682">MantidVec</a> &amp;<a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#aedd34f47323e974c90c7be1d535d9832ae1c6b00b155620edd51f0b2900aa98f9">X</a>, <a class="el" href="../../d8/d8e/namespaceMantid.html#ac23552b2a51978a38cbc8f569163a682">MantidVec</a> &amp;<a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#aedd34f47323e974c90c7be1d535d9832af42e5e73c92b0916160ef8af250eb2ea">Y</a>, <a class="el" href="../../d8/d8e/namespaceMantid.html#ac23552b2a51978a38cbc8f569163a682">MantidVec</a> &amp;E, bool skipError=false) const =0</td></tr>
-<tr class="memdesc:ad540ad7b6ff244e422fb4e963822a0d4 inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the histogram or rebin the existing histogram.  <br /></td></tr>
-<tr class="separator:ad540ad7b6ff244e422fb4e963822a0d4 inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dae71492b43d653bbf4608585765005 inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace" id="r_a8dae71492b43d653bbf4608585765005"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a8dae71492b43d653bbf4608585765005">generateHistogram</a> (const std::size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, std::span&lt; double const &gt; <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#aedd34f47323e974c90c7be1d535d9832ae1c6b00b155620edd51f0b2900aa98f9">X</a>, <a class="el" href="../../d8/d8e/namespaceMantid.html#ac23552b2a51978a38cbc8f569163a682">MantidVec</a> &amp;<a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#aedd34f47323e974c90c7be1d535d9832af42e5e73c92b0916160ef8af250eb2ea">Y</a>, <a class="el" href="../../d8/d8e/namespaceMantid.html#ac23552b2a51978a38cbc8f569163a682">MantidVec</a> &amp;E, bool skipError=false) const =0</td></tr>
+<tr class="memdesc:a8dae71492b43d653bbf4608585765005 inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the histogram or rebin the existing histogram.  <br /></td></tr>
+<tr class="separator:a8dae71492b43d653bbf4608585765005 inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c7a74a68ff79866ef64c77984f48b00 inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace" id="r_a9c7a74a68ff79866ef64c77984f48b00"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a9c7a74a68ff79866ef64c77984f48b00">getIntegratedSpectra</a> (std::vector&lt; double &gt; &amp;out, const double minX, const double maxX, const bool entireRange) const</td></tr>
 <tr class="memdesc:a9c7a74a68ff79866ef64c77984f48b00 inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a vector with the integrated counts for all spectra withing the given range.  <br /></td></tr>
 <tr class="separator:a9c7a74a68ff79866ef64c77984f48b00 inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1035,7 +1035,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00121">121</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00122">122</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7a9cbffcc1bf3adede47f68148fcaf6a" name="a7a9cbffcc1bf3adede47f68148fcaf6a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a9cbffcc1bf3adede47f68148fcaf6a">&#9670;&#160;</a></span>AxeslessWorkspaceTester()</h2>
@@ -1060,9 +1060,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00123">123</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00124">124</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00204">doClone()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00211">doClone()</a>.</p>
 
 </div>
 </div>
@@ -1097,9 +1097,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../de/da5/classVariableBinThrowingTester.html#a8f8f4d433b383c949ed00d87da7597d9">VariableBinThrowingTester</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00142">142</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00143">143</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00210">m_vec</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00217">m_vec</a>.</p>
 
 </div>
 </div>
@@ -1132,9 +1132,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../dd/d2a/classWorkspaceTester.html#aae1736ac51f5dd559e9e20150b16a8ba">WorkspaceTester</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00204">204</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00211">211</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00123">AxeslessWorkspaceTester()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00124">AxeslessWorkspaceTester()</a>.</p>
 
 </div>
 </div>
@@ -1168,12 +1168,12 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../dd/d2a/classWorkspaceTester.html#a6720c8a192c20bc253deb387614f86fb">WorkspaceTester</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00205">205</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00212">212</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
 
 </div>
 </div>
-<a id="add75edc40ded5ae1391e5065c5ae1a86" name="add75edc40ded5ae1391e5065c5ae1a86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add75edc40ded5ae1391e5065c5ae1a86">&#9670;&#160;</a></span>generateHistogram()</h2>
+<a id="ad50ad6c73e2cf5900c9b945059065f8d" name="ad50ad6c73e2cf5900c9b945059065f8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad50ad6c73e2cf5900c9b945059065f8d">&#9670;&#160;</a></span>generateHistogram()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1190,7 +1190,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const MantidVec &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -1224,7 +1224,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00177">177</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00178">178</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
 
 </div>
 </div>
@@ -1255,9 +1255,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#aacba5d4175e558539ffad726eecf2519">Mantid::API::MatrixWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00159">159</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00160">160</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00210">m_vec</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00217">m_vec</a>.</p>
 
 </div>
 </div>
@@ -1289,9 +1289,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#aba2afa60188ebccd58725ddb58d239cf">Mantid::API::MatrixWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00153">153</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00154">154</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00210">m_vec</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00217">m_vec</a>.</p>
 
 </div>
 </div>
@@ -1322,9 +1322,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a45f497b1c1daa956a1220ed2cadc565c">Mantid::API::MatrixWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00136">136</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00137">137</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00211">m_spec</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00218">m_spec</a>.</p>
 
 </div>
 </div>
@@ -1353,7 +1353,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d7/d7b/classMantid_1_1API_1_1IMDWorkspace.html#a74341ca07807b43860f056ea536ed2db">Mantid::API::IMDWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00178">178</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00179">179</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../db/d13/SpecialCoordinateSystem_8h_source.html#l00014">Mantid::Kernel::None</a>.</p>
 
@@ -1387,9 +1387,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a41aba25fe60c300f39c8d55e31f06ee0">Mantid::API::MatrixWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00176">176</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00177">177</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00210">m_vec</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00217">m_vec</a>.</p>
 
 </div>
 </div>
@@ -1421,11 +1421,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a102f653c7988a6b711cc6accfbbb9216">Mantid::API::MatrixWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00171">171</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00172">172</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00507">Mantid::API::MatrixWorkspace::invalidateCommonBinsFlag()</a>, and <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00210">m_vec</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00510">Mantid::API::MatrixWorkspace::invalidateCommonBinsFlag()</a>, and <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00217">m_vec</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00613">VariableBinThrowingTester::blocksize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00620">VariableBinThrowingTester::blocksize()</a>.</p>
 
 </div>
 </div>
@@ -1455,9 +1455,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#ae7d955aa20ba1843a45448764cd3ea3f">Mantid::API::MatrixWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00212">212</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00219">219</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00210">m_vec</a>, and <a class="el" href="../../dc/ddb/API_2src_2ISpectrum_8cpp_source.html#l00185">Mantid::API::ISpectrum::setMatrixWorkspace()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00217">m_vec</a>, and <a class="el" href="../../dc/ddb/API_2src_2ISpectrum_8cpp_source.html#l00185">Mantid::API::ISpectrum::setMatrixWorkspace()</a>.</p>
 
 </div>
 </div>
@@ -1490,7 +1490,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../dd/d2a/classWorkspaceTester.html#aed9fe47ae12d4cfef2d72f69e5a931e6">WorkspaceTester</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00137">137</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00138">138</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
 
 </div>
 </div>
@@ -1518,9 +1518,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00194">194</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00201">201</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00211">Mantid::API::MatrixWorkspace::histogram()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00211">m_spec</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00210">m_vec</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00443">Mantid::API::ExperimentInfo::numberOfDetectorGroups()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00212">Mantid::API::MatrixWorkspace::histogram()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00218">m_spec</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00217">m_vec</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00443">Mantid::API::ExperimentInfo::numberOfDetectorGroups()</a>.</p>
 
 </div>
 </div>
@@ -1564,11 +1564,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00181">181</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00182">182</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00211">m_spec</a>, and <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00210">m_vec</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00212">Mantid::API::MatrixWorkspace::histogram()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00218">m_spec</a>, and <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00217">m_vec</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00239">WorkspaceTester::init()</a>, and <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00231">WorkspaceTester::init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00246">WorkspaceTester::init()</a>, and <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00238">WorkspaceTester::init()</a>.</p>
 
 </div>
 </div>
@@ -1599,9 +1599,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a89add575f9676ae1857266e63511643f">Mantid::API::MatrixWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00125">125</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00126">126</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00210">m_vec</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00217">m_vec</a>.</p>
 
 </div>
 </div>
@@ -1632,11 +1632,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#adbeda01fd111f8f5a2356b1c3906b1bb">Mantid::API::MatrixWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00138">138</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00139">139</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00210">m_vec</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00217">m_vec</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00613">VariableBinThrowingTester::blocksize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00620">VariableBinThrowingTester::blocksize()</a>.</p>
 
 </div>
 </div>
@@ -1661,9 +1661,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00211">211</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00218">218</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00136">getNumberHistograms()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00194">init()</a>, and <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00181">init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00137">getNumberHistograms()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00201">init()</a>, and <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00182">init()</a>.</p>
 
 </div>
 </div>
@@ -1687,9 +1687,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00210">210</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00217">217</a> of file <a class="el" href="../../d4/def/FakeObjects_8h_source.html">FakeObjects.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00142">blocksize()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00159">getMaxNumberBins()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00153">getNumberBins()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00176">getSpectrum()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00171">getSpectrum()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00212">getSpectrumWithoutInvalidation()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00194">init()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00181">init()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00125">isRaggedWorkspace()</a>, and <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00138">size()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00143">blocksize()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00160">getMaxNumberBins()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00154">getNumberBins()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00177">getSpectrum()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00172">getSpectrum()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00219">getSpectrumWithoutInvalidation()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00201">init()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00182">init()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00126">isRaggedWorkspace()</a>, and <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00139">size()</a>.</p>
 
 </div>
 </div>

@@ -835,9 +835,9 @@ Friends</h2></td></tr>
 <tr class="memitem:aa576bf51ac0fef21899b638ba32625ce" id="r_aa576bf51ac0fef21899b638ba32625ce"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#aa576bf51ac0fef21899b638ba32625ce">hasDx</a> (const std::size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>) const</td></tr>
 <tr class="memdesc:aa576bf51ac0fef21899b638ba32625ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Probes if DX (X Error) values were set on a particular spectrum.  <br /></td></tr>
 <tr class="separator:aa576bf51ac0fef21899b638ba32625ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad540ad7b6ff244e422fb4e963822a0d4" id="r_ad540ad7b6ff244e422fb4e963822a0d4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#ad540ad7b6ff244e422fb4e963822a0d4">generateHistogram</a> (const std::size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, const <a class="el" href="../../d8/d8e/namespaceMantid.html#ac23552b2a51978a38cbc8f569163a682">MantidVec</a> &amp;<a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#aedd34f47323e974c90c7be1d535d9832ae1c6b00b155620edd51f0b2900aa98f9">X</a>, <a class="el" href="../../d8/d8e/namespaceMantid.html#ac23552b2a51978a38cbc8f569163a682">MantidVec</a> &amp;<a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#aedd34f47323e974c90c7be1d535d9832af42e5e73c92b0916160ef8af250eb2ea">Y</a>, <a class="el" href="../../d8/d8e/namespaceMantid.html#ac23552b2a51978a38cbc8f569163a682">MantidVec</a> &amp;E, bool skipError=false) const =0</td></tr>
-<tr class="memdesc:ad540ad7b6ff244e422fb4e963822a0d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the histogram or rebin the existing histogram.  <br /></td></tr>
-<tr class="separator:ad540ad7b6ff244e422fb4e963822a0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dae71492b43d653bbf4608585765005" id="r_a8dae71492b43d653bbf4608585765005"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a8dae71492b43d653bbf4608585765005">generateHistogram</a> (const std::size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, std::span&lt; double const &gt; <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#aedd34f47323e974c90c7be1d535d9832ae1c6b00b155620edd51f0b2900aa98f9">X</a>, <a class="el" href="../../d8/d8e/namespaceMantid.html#ac23552b2a51978a38cbc8f569163a682">MantidVec</a> &amp;<a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#aedd34f47323e974c90c7be1d535d9832af42e5e73c92b0916160ef8af250eb2ea">Y</a>, <a class="el" href="../../d8/d8e/namespaceMantid.html#ac23552b2a51978a38cbc8f569163a682">MantidVec</a> &amp;E, bool skipError=false) const =0</td></tr>
+<tr class="memdesc:a8dae71492b43d653bbf4608585765005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the histogram or rebin the existing histogram.  <br /></td></tr>
+<tr class="separator:a8dae71492b43d653bbf4608585765005"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c7a74a68ff79866ef64c77984f48b00" id="r_a9c7a74a68ff79866ef64c77984f48b00"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a9c7a74a68ff79866ef64c77984f48b00">getIntegratedSpectra</a> (std::vector&lt; double &gt; &amp;out, const double minX, const double maxX, const bool entireRange) const</td></tr>
 <tr class="memdesc:a9c7a74a68ff79866ef64c77984f48b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a vector with the integrated counts for all spectra withing the given range.  <br /></td></tr>
 <tr class="separator:a9c7a74a68ff79866ef64c77984f48b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1096,7 +1096,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Laurent C Chapon, ISIS, RAL </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>26/09/2007 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00093">93</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00094">94</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a5ddca006a238f1e9b07317c5e90e8ba7" name="a5ddca006a238f1e9b07317c5e90e8ba7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5ddca006a238f1e9b07317c5e90e8ba7">&#9670;&#160;</a></span>MaskList</h2>
@@ -1112,7 +1112,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Masked bins for each spectrum are stored as a set of pairs containing &lt;bin index, weight&gt; </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00413">413</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00416">416</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 </div>
 </div>
@@ -1173,7 +1173,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00118">118</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00525">m_axes</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00562">m_isCommonBinsFlag</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00560">m_isCommonBinsFlagValid</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00528">m_axes</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00565">m_isCommonBinsFlag</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00563">m_isCommonBinsFlagValid</a>.</p>
 
 </div>
 </div>
@@ -1225,7 +1225,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00948">948</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00525">m_axes</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00528">m_axes</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d4a/PythonInterface_2mantid_2api_2src_2Exports_2MatrixWorkspace_8cpp_source.html#l00593">export_MatrixWorkspace()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01651">getDimensionWithId()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01724">getSignalAtCoord()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00204">toString()</a>.</p>
 
@@ -1255,7 +1255,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00217">217</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00218">218</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -1377,7 +1377,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l02129">2129</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00778">Mantid::API::ExperimentInfo::detectorInfo()</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00549">m_indexInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00778">Mantid::API::ExperimentInfo::detectorInfo()</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00552">m_indexInfo</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00160">setIndexInfo()</a>.</p>
 
@@ -1439,7 +1439,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns a clone of the workspace. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00112">112</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00113">113</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 </div>
 </div>
@@ -1468,7 +1468,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns a default-initialized clone of the workspace. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00115">115</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00116">116</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 </div>
 </div>
@@ -1496,7 +1496,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00215">215</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00216">216</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -1526,7 +1526,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00216">216</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00217">217</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -1556,7 +1556,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00234">234</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00235">235</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -1588,7 +1588,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00236">236</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00237">237</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -1618,7 +1618,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00235">235</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00236">236</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -1706,7 +1706,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d7/d39/classMantid_1_1DataObjects_1_1EventWorkspace.html#a73ebc9dacae99de4b4cc353810df18e0">Mantid::DataObjects::EventWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00320">320</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00321">321</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -1740,7 +1740,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d7/d39/classMantid_1_1DataObjects_1_1EventWorkspace.html#a647d2d563f66b078f883caefbc115efe">Mantid::DataObjects::EventWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00329">329</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00330">330</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -1774,7 +1774,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d7/d39/classMantid_1_1DataObjects_1_1EventWorkspace.html#adc92bc71b8aee5105430ac866be29fea">Mantid::DataObjects::EventWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00318">318</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00319">319</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -1810,7 +1810,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d7/d39/classMantid_1_1DataObjects_1_1EventWorkspace.html#acf6d2f396367468180d99fcd7a971fa4">Mantid::DataObjects::EventWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00327">327</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00328">328</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -1844,7 +1844,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d7/d39/classMantid_1_1DataObjects_1_1EventWorkspace.html#abe56f62e4f1b1d714820ae38c2fb5beb">Mantid::DataObjects::EventWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00314">314</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00315">315</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -1878,7 +1878,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d7/d39/classMantid_1_1DataObjects_1_1EventWorkspace.html#ae7b5f1c54fc0919cba5d17b41c1c0225">Mantid::DataObjects::EventWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00323">323</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00324">324</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -1912,11 +1912,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d7/d39/classMantid_1_1DataObjects_1_1EventWorkspace.html#a19a8046ab75953fb1aebd2a639d09738">Mantid::DataObjects::EventWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00316">316</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00317">317</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00613">VariableBinThrowingTester::blocksize()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l02103">setImageY()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l02103">setImageY()</a>.</p>
 
 </div>
 </div>
@@ -1948,7 +1948,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d7/d39/classMantid_1_1DataObjects_1_1EventWorkspace.html#a73eacca89f3444dea12a556baa085fde">Mantid::DataObjects::EventWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00325">325</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00326">326</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -2119,7 +2119,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00267">267</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00268">268</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -2151,7 +2151,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00266">266</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00267">267</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -2253,7 +2253,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01240">1240</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00567">m_masks</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01205">maskBin()</a>, and <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00224">PARALLEL_CRITICAL</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00570">m_masks</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01205">maskBin()</a>, and <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00224">PARALLEL_CRITICAL</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01205">maskBin()</a>.</p>
 
@@ -2283,7 +2283,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00239">239</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00240">240</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -2313,7 +2313,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00243">243</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00244">244</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -2343,14 +2343,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00240">240</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00241">241</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
 </div>
 </div>
-<a id="ad540ad7b6ff244e422fb4e963822a0d4" name="ad540ad7b6ff244e422fb4e963822a0d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad540ad7b6ff244e422fb4e963822a0d4">&#9670;&#160;</a></span>generateHistogram()</h2>
+<a id="a8dae71492b43d653bbf4608585765005" name="a8dae71492b43d653bbf4608585765005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dae71492b43d653bbf4608585765005">&#9670;&#160;</a></span>generateHistogram()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2367,7 +2367,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d8/d8e/namespaceMantid.html#ac23552b2a51978a38cbc8f569163a682">MantidVec</a> &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>X</em>, </td>
         </tr>
         <tr>
@@ -2402,8 +2402,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generate the histogram or rebin the existing histogram. </p>
+<p>X is a span so that the size-checked <a class="el" href="../../d1/d0d/namespaceMantid_1_1HistogramData.html">HistogramData</a> types can be passed without a std::vector&lt;double&gt;; Y and E stay vectors because they are resized to match X. </p>
 
-<p>Implemented in <a class="el" href="../../d7/d39/classMantid_1_1DataObjects_1_1EventWorkspace.html#acffc9bf64c8c75493d57a4cb2aa8319d">Mantid::DataObjects::EventWorkspace</a>, <a class="el" href="../../d8/d42/classMantid_1_1DataObjects_1_1Workspace2D.html#a6885571b3538e5548b1a712c80434c5c">Mantid::DataObjects::Workspace2D</a>, <a class="el" href="../../d6/d0d/classMantid_1_1DataObjects_1_1WorkspaceSingleValue.html#aef21d8f4c792db3a06b6426b3dd89278">Mantid::DataObjects::WorkspaceSingleValue</a>, and <a class="el" href="../../d9/d8f/classMantid_1_1API_1_1IEventWorkspace.html#ac4aef2b7e498a8e332c95a32d45ea072">Mantid::API::IEventWorkspace</a>.</p>
+<p>Implemented in <a class="el" href="../../d7/d39/classMantid_1_1DataObjects_1_1EventWorkspace.html#a064fa1bed65710753a93e4b925cb51c1">Mantid::DataObjects::EventWorkspace</a>, <a class="el" href="../../d8/d42/classMantid_1_1DataObjects_1_1Workspace2D.html#a702814b9723805cf992d35dce9666876">Mantid::DataObjects::Workspace2D</a>, <a class="el" href="../../d6/d0d/classMantid_1_1DataObjects_1_1WorkspaceSingleValue.html#afc5ff1f84d905277c34ca99fb4bbcb04">Mantid::DataObjects::WorkspaceSingleValue</a>, and <a class="el" href="../../d9/d8f/classMantid_1_1API_1_1IEventWorkspace.html#ae01f035b7e9605e33987567b6fdcff5a">Mantid::API::IEventWorkspace</a>.</p>
 
 </div>
 </div>
@@ -2448,7 +2449,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00956">956</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00525">m_axes</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00528">m_axes</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/dfc/AppendSpectra_8cpp_source.html#l00142">Mantid::Algorithms::AppendSpectra::appendYAxisLabels()</a>, <a class="el" href="../../dc/d25/LoadMuonNexusV2_8cpp_source.html#l00274">Mantid::DataHandling::LoadMuonNexusV2::applyTimeAxisUnitCorrection()</a>, <a class="el" href="../../dd/dc3/MatrixWorkspaceMDIterator_8cpp_source.html#l00086">Mantid::API::MatrixWorkspaceMDIterator::calcWorkspacePos()</a>, <a class="el" href="../../d7/dce/WorkspaceJoiners_8cpp_source.html#l00156">Mantid::Algorithms::WorkspaceJoiners::checkCompatibility()</a>, <a class="el" href="../../d1/da2/CompareWorkspaces_8cpp_source.html#l00452">Mantid::Algorithms::CompareWorkspaces::compareEventWorkspaces()</a>, <a class="el" href="../../d0/d4a/PythonInterface_2mantid_2api_2src_2Exports_2MatrixWorkspace_8cpp_source.html#l00593">export_MatrixWorkspace()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01641">getDimension()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01651">getDimensionWithId()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01584">Mantid::API::MWXDimension::getName()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01724">getSignalAtCoord()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01594">Mantid::API::MWXDimension::getUnits()</a>, <a class="el" href="../../dd/d65/LoadNexusProcessed_8cpp_source.html#l01999">Mantid::DataHandling::LoadNexusProcessed::readInstrumentGroup()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00204">toString()</a>.</p>
 
@@ -2636,7 +2637,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01641">1641</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00956">getAxis()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00444">xDimensionId</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00446">yDimensionId</a>.</p>
+<p class="reference">References <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00956">getAxis()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00447">xDimensionId</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00449">yDimensionId</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/dc3/MatrixWorkspaceMDIterator_8cpp_source.html#l00029">Mantid::API::MatrixWorkspaceMDIterator::MatrixWorkspaceMDIterator()</a>.</p>
 
@@ -2670,7 +2671,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01482">1482</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/dad/classMantid_1_1Kernel_1_1DataItem.html#aac17a303ba29eb33dff9bc07a48c3a09">Mantid::Kernel::DataItem::id()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00444">xDimensionId</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00446">yDimensionId</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/dad/classMantid_1_1Kernel_1_1DataItem.html#aac17a303ba29eb33dff9bc07a48c3a09">Mantid::Kernel::DataItem::id()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00447">xDimensionId</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00449">yDimensionId</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01651">getDimensionWithId()</a>.</p>
 
@@ -2893,7 +2894,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01993">1993</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01838">getImage()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01956">getImageStartEndXIndices()</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00307">readE()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01838">getImage()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01956">getImageStartEndXIndices()</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00308">readE()</a>.</p>
 
 </div>
 </div>
@@ -3006,7 +3007,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01980">1980</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01838">getImage()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01956">getImageStartEndXIndices()</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00303">readY()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01838">getImage()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01956">getImageStartEndXIndices()</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00304">readY()</a>.</p>
 
 </div>
 </div>
@@ -3077,7 +3078,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00691">691</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/ddb/API_2src_2ISpectrum_8cpp_source.html#l00113">Mantid::API::ISpectrum::getDetectorIDs()</a>, <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a45f497b1c1daa956a1220ed2cadc565c">getNumberHistograms()</a>, <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a102f653c7988a6b711cc6accfbbb9216">getSpectrum()</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00549">m_indexInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/ddb/API_2src_2ISpectrum_8cpp_source.html#l00113">Mantid::API::ISpectrum::getDetectorIDs()</a>, <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a45f497b1c1daa956a1220ed2cadc565c">getNumberHistograms()</a>, <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a102f653c7988a6b711cc6accfbbb9216">getSpectrum()</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00552">m_indexInfo</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/df8/CalculateEfficiency_8cpp_source.html#l00265">Mantid::Algorithms::CalculateEfficiency::maskComponent()</a>.</p>
 
@@ -3341,7 +3342,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00406">406</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00578">m_marker_size</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00581">m_marker_size</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d4a/PythonInterface_2mantid_2api_2src_2Exports_2MatrixWorkspace_8cpp_source.html#l00593">export_MatrixWorkspace()</a>.</p>
 
@@ -3368,7 +3369,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00385">385</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00577">m_marker</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00580">m_marker</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d4a/PythonInterface_2mantid_2api_2src_2Exports_2MatrixWorkspace_8cpp_source.html#l00593">export_MatrixWorkspace()</a>.</p>
 
@@ -3470,7 +3471,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01359">1359</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a45f497b1c1daa956a1220ed2cadc565c">getNumberHistograms()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00274">sharedX()</a>, and <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::X</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a45f497b1c1daa956a1220ed2cadc565c">getNumberHistograms()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00275">sharedX()</a>, and <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::X</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/df5/EventWorkspace_8cpp_source.html#l00484">Mantid::DataObjects::EventWorkspace::getMemorySize()</a>.</p>
 
@@ -3503,7 +3504,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d7/d7b/classMantid_1_1API_1_1IMDWorkspace.html#a67181db65ad69309372416eaf9e54c5a">Mantid::API::IMDWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00442">442</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00445">445</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 </div>
 </div>
@@ -3599,7 +3600,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d7/d39/classMantid_1_1DataObjects_1_1EventWorkspace.html#a58ab27115797b03db2b2fe0a7a4860ba">Mantid::DataObjects::EventWorkspace</a>, <a class="el" href="../../d8/d42/classMantid_1_1DataObjects_1_1Workspace2D.html#a1fba46008a8cc63de4db94348d564e1c">Mantid::DataObjects::Workspace2D</a>, <a class="el" href="../../d6/d0d/classMantid_1_1DataObjects_1_1WorkspaceSingleValue.html#af8f78b5c19ff36730e912ef7913ad319">Mantid::DataObjects::WorkspaceSingleValue</a>, and <a class="el" href="../../db/d99/classAxeslessWorkspaceTester.html#aab3c73d9c78ffeba9797566a049c7e16">AxeslessWorkspaceTester</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/dfc/AppendSpectra_8cpp_source.html#l00142">Mantid::Algorithms::AppendSpectra::appendYAxisLabels()</a>, <a class="el" href="../../d9/d0e/ConjoinWorkspaces_8cpp_source.html#l00119">Mantid::Algorithms::ConjoinWorkspaces::checkForOverlap()</a>, <a class="el" href="../../dd/db1/CloneMatrixWorkspace_8cpp_source.html#l00115">Mantid::PythonInterface::cloneDx()</a>, <a class="el" href="../../dd/db1/CloneMatrixWorkspace_8cpp_source.html#l00106">Mantid::PythonInterface::cloneE()</a>, <a class="el" href="../../dd/db1/CloneMatrixWorkspace_8cpp_source.html#l00089">Mantid::PythonInterface::cloneX()</a>, <a class="el" href="../../dd/db1/CloneMatrixWorkspace_8cpp_source.html#l00097">Mantid::PythonInterface::cloneY()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01677">createIterators()</a>, <a class="el" href="../../df/d79/IntegrateFlux_8cpp_source.html#l00090">Mantid::MDAlgorithms::IntegrateFlux::createOutputWorkspace()</a>, <a class="el" href="../../d5/d97/MonteCarloAbsorption_8cpp_source.html#l00260">Mantid::Algorithms::MonteCarloAbsorption::doSimulation()</a>, <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l00497">Mantid::Algorithms::DiscusMultipleScatteringCorrection::exec()</a>, <a class="el" href="../../d7/dce/WorkspaceJoiners_8cpp_source.html#l00033">Mantid::Algorithms::WorkspaceJoiners::execWS2D()</a>, <a class="el" href="../../d0/d4a/PythonInterface_2mantid_2api_2src_2Exports_2MatrixWorkspace_8cpp_source.html#l00593">export_MatrixWorkspace()</a>, <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00163">Mantid::Algorithms::SparseWorkspace::extremeAngles()</a>, <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00194">Mantid::Algorithms::SparseWorkspace::extremeWavelengths()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01926">findY()</a>, <a class="el" href="../../df/dfc/AppendSpectra_8cpp_source.html#l00120">Mantid::Algorithms::AppendSpectra::fixSpectrumNumbers()</a>, <a class="el" href="../../d9/d0e/ConjoinWorkspaces_8cpp_source.html#l00215">Mantid::Algorithms::ConjoinWorkspaces::fixSpectrumNumbers()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00557">getDetectorIDToWorkspaceIndexMap()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00604">getDetectorIDToWorkspaceIndexVector()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00672">getIndexFromSpectrumNumber()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00691">getIndicesFromDetectorIDs()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00648">getIndicesFromSpectra()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00803">getIntegratedSpectra()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01341">getMemorySize()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01359">getMemorySizeForXAxes()</a>, <a class="el" href="../../d7/dce/WorkspaceJoiners_8cpp_source.html#l00187">Mantid::Algorithms::WorkspaceJoiners::getMinMax()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01724">getSignalAtCoord()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00733">getSpectraFromDetectorIDs()</a>, <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l00355">Mantid::Algorithms::DiscusMultipleScatteringCorrection::getXMinMax()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00770">getXMinMax()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00530">hasGroupedDetectors()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01254">hasMaskedBins()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00140">indexInfo()</a>, <a class="el" href="../../d2/d14/SpectraAxis_8cpp_source.html#l00089">Mantid::API::SpectraAxis::indexOfValue()</a>, <a class="el" href="../../d5/d5e/API_2src_2WorkspaceFactory_8cpp_source.html#l00095">Mantid::API::WorkspaceFactoryImpl::initializeFromParent()</a>, <a class="el" href="../../df/d79/IntegrateFlux_8cpp_source.html#l00163">Mantid::MDAlgorithms::IntegrateFlux::integrateSpectraEvents()</a>, <a class="el" href="../../df/d79/IntegrateFlux_8cpp_source.html#l00223">Mantid::MDAlgorithms::IntegrateFlux::integrateSpectraHistograms()</a>, <a class="el" href="../../df/d79/IntegrateFlux_8cpp_source.html#l00340">Mantid::MDAlgorithms::IntegrateFlux::integrateSpectraPointData()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01110">isCommonBins()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00986">isCommonLogBins()</a>, <a class="el" href="../../dc/d6e/SortXAxis_8cpp_source.html#l00197">Mantid::Algorithms::isItSorted()</a>, <a class="el" href="../../d2/d14/SpectraAxis_8cpp_source.html#l00054">Mantid::API::SpectraAxis::length()</a>, <a class="el" href="../../db/d66/RemoveMaskedSpectra_8cpp_source.html#l00082">Mantid::Algorithms::RemoveMaskedSpectra::makeIndexList()</a>, <a class="el" href="../../d6/dd3/DetectorDiagnostic_8cpp_source.html#l00484">Mantid::Algorithms::DetectorDiagnostic::makeInstrumentMap()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01205">maskBin()</a>, <a class="el" href="../../dd/dc3/MatrixWorkspaceMDIterator_8cpp_source.html#l00029">Mantid::API::MatrixWorkspaceMDIterator::MatrixWorkspaceMDIterator()</a>, <a class="el" href="../../d9/d43/PolarizationEfficiencyCor_8cpp_source.html#l00303">Mantid::Algorithms::PolarizationEfficiencyCor::needInterpolation()</a>, <a class="el" href="../../dc/d09/DirectILLTubeBackground_8cpp_source.html#l00389">Mantid::Algorithms::DirectILLTubeBackground::peakExcludingAverage()</a>, <a class="el" href="../../d9/da6/MaskNonOverlappingBins_8cpp_source.html#l00221">Mantid::Algorithms::MaskNonOverlappingBins::processNonRagged()</a>, <a class="el" href="../../d9/da6/MaskNonOverlappingBins_8cpp_source.html#l00206">Mantid::Algorithms::MaskNonOverlappingBins::processRagged()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00434">rebuildSpectraMapping()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01065">setDistribution()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l02063">setImage()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00160">setIndexInfo()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00192">setIndexInfoWithoutISpectrumUpdate()</a>, <a class="el" href="../../d4/d90/RunCombinationHelper_8cpp_source.html#l00056">Mantid::Algorithms::RunCombinationHelper::setReferenceProperties()</a>, <a class="el" href="../../d9/dd8/SmoothNeighbours_8cpp_source.html#l00597">Mantid::Algorithms::SmoothNeighbours::setupNewInstrument()</a>, <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00046">Mantid::Algorithms::SparseWorkspace::SparseWorkspace()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00204">toString()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00408">updateSpectraUsing()</a>, <a class="el" href="../../da/d94/API_2src_2WorkspaceNearestNeighbourInfo_8cpp_source.html#l00021">Mantid::API::WorkspaceNearestNeighbourInfo::WorkspaceNearestNeighbourInfo()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01399">yIndexOfX()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/dfc/AppendSpectra_8cpp_source.html#l00142">Mantid::Algorithms::AppendSpectra::appendYAxisLabels()</a>, <a class="el" href="../../d9/d0e/ConjoinWorkspaces_8cpp_source.html#l00119">Mantid::Algorithms::ConjoinWorkspaces::checkForOverlap()</a>, <a class="el" href="../../dd/db1/CloneMatrixWorkspace_8cpp_source.html#l00115">Mantid::PythonInterface::cloneDx()</a>, <a class="el" href="../../dd/db1/CloneMatrixWorkspace_8cpp_source.html#l00106">Mantid::PythonInterface::cloneE()</a>, <a class="el" href="../../dd/db1/CloneMatrixWorkspace_8cpp_source.html#l00089">Mantid::PythonInterface::cloneX()</a>, <a class="el" href="../../dd/db1/CloneMatrixWorkspace_8cpp_source.html#l00097">Mantid::PythonInterface::cloneY()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01677">createIterators()</a>, <a class="el" href="../../df/d79/IntegrateFlux_8cpp_source.html#l00090">Mantid::MDAlgorithms::IntegrateFlux::createOutputWorkspace()</a>, <a class="el" href="../../d5/d97/MonteCarloAbsorption_8cpp_source.html#l00260">Mantid::Algorithms::MonteCarloAbsorption::doSimulation()</a>, <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l00496">Mantid::Algorithms::DiscusMultipleScatteringCorrection::exec()</a>, <a class="el" href="../../d7/dce/WorkspaceJoiners_8cpp_source.html#l00033">Mantid::Algorithms::WorkspaceJoiners::execWS2D()</a>, <a class="el" href="../../d0/d4a/PythonInterface_2mantid_2api_2src_2Exports_2MatrixWorkspace_8cpp_source.html#l00593">export_MatrixWorkspace()</a>, <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00163">Mantid::Algorithms::SparseWorkspace::extremeAngles()</a>, <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00194">Mantid::Algorithms::SparseWorkspace::extremeWavelengths()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01926">findY()</a>, <a class="el" href="../../df/dfc/AppendSpectra_8cpp_source.html#l00120">Mantid::Algorithms::AppendSpectra::fixSpectrumNumbers()</a>, <a class="el" href="../../d9/d0e/ConjoinWorkspaces_8cpp_source.html#l00215">Mantid::Algorithms::ConjoinWorkspaces::fixSpectrumNumbers()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00557">getDetectorIDToWorkspaceIndexMap()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00604">getDetectorIDToWorkspaceIndexVector()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00672">getIndexFromSpectrumNumber()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00691">getIndicesFromDetectorIDs()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00648">getIndicesFromSpectra()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00803">getIntegratedSpectra()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01341">getMemorySize()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01359">getMemorySizeForXAxes()</a>, <a class="el" href="../../d7/dce/WorkspaceJoiners_8cpp_source.html#l00187">Mantid::Algorithms::WorkspaceJoiners::getMinMax()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01724">getSignalAtCoord()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00733">getSpectraFromDetectorIDs()</a>, <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l00354">Mantid::Algorithms::DiscusMultipleScatteringCorrection::getXMinMax()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00770">getXMinMax()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00530">hasGroupedDetectors()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01254">hasMaskedBins()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00140">indexInfo()</a>, <a class="el" href="../../d2/d14/SpectraAxis_8cpp_source.html#l00089">Mantid::API::SpectraAxis::indexOfValue()</a>, <a class="el" href="../../d5/d5e/API_2src_2WorkspaceFactory_8cpp_source.html#l00095">Mantid::API::WorkspaceFactoryImpl::initializeFromParent()</a>, <a class="el" href="../../df/d79/IntegrateFlux_8cpp_source.html#l00163">Mantid::MDAlgorithms::IntegrateFlux::integrateSpectraEvents()</a>, <a class="el" href="../../df/d79/IntegrateFlux_8cpp_source.html#l00223">Mantid::MDAlgorithms::IntegrateFlux::integrateSpectraHistograms()</a>, <a class="el" href="../../df/d79/IntegrateFlux_8cpp_source.html#l00340">Mantid::MDAlgorithms::IntegrateFlux::integrateSpectraPointData()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01110">isCommonBins()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00986">isCommonLogBins()</a>, <a class="el" href="../../dc/d6e/SortXAxis_8cpp_source.html#l00197">Mantid::Algorithms::isItSorted()</a>, <a class="el" href="../../d2/d14/SpectraAxis_8cpp_source.html#l00054">Mantid::API::SpectraAxis::length()</a>, <a class="el" href="../../db/d66/RemoveMaskedSpectra_8cpp_source.html#l00082">Mantid::Algorithms::RemoveMaskedSpectra::makeIndexList()</a>, <a class="el" href="../../d6/dd3/DetectorDiagnostic_8cpp_source.html#l00484">Mantid::Algorithms::DetectorDiagnostic::makeInstrumentMap()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01205">maskBin()</a>, <a class="el" href="../../dd/dc3/MatrixWorkspaceMDIterator_8cpp_source.html#l00029">Mantid::API::MatrixWorkspaceMDIterator::MatrixWorkspaceMDIterator()</a>, <a class="el" href="../../d9/d43/PolarizationEfficiencyCor_8cpp_source.html#l00303">Mantid::Algorithms::PolarizationEfficiencyCor::needInterpolation()</a>, <a class="el" href="../../dc/d09/DirectILLTubeBackground_8cpp_source.html#l00389">Mantid::Algorithms::DirectILLTubeBackground::peakExcludingAverage()</a>, <a class="el" href="../../d9/da6/MaskNonOverlappingBins_8cpp_source.html#l00221">Mantid::Algorithms::MaskNonOverlappingBins::processNonRagged()</a>, <a class="el" href="../../d9/da6/MaskNonOverlappingBins_8cpp_source.html#l00206">Mantid::Algorithms::MaskNonOverlappingBins::processRagged()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00434">rebuildSpectraMapping()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01065">setDistribution()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l02063">setImage()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00160">setIndexInfo()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00192">setIndexInfoWithoutISpectrumUpdate()</a>, <a class="el" href="../../d4/d90/RunCombinationHelper_8cpp_source.html#l00056">Mantid::Algorithms::RunCombinationHelper::setReferenceProperties()</a>, <a class="el" href="../../d9/dd8/SmoothNeighbours_8cpp_source.html#l00597">Mantid::Algorithms::SmoothNeighbours::setupNewInstrument()</a>, <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00046">Mantid::Algorithms::SparseWorkspace::SparseWorkspace()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00204">toString()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00408">updateSpectraUsing()</a>, <a class="el" href="../../da/d94/API_2src_2WorkspaceNearestNeighbourInfo_8cpp_source.html#l00021">Mantid::API::WorkspaceNearestNeighbourInfo::WorkspaceNearestNeighbourInfo()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01399">yIndexOfX()</a>.</p>
 
 </div>
 </div>
@@ -3894,7 +3895,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d7/d39/classMantid_1_1DataObjects_1_1EventWorkspace.html#a41c4123b95e9bf91ff66d3e3621e5fd3">Mantid::DataObjects::EventWorkspace</a>, <a class="el" href="../../d8/d42/classMantid_1_1DataObjects_1_1Workspace2D.html#ad09ac8a90e6c5f51c3221ba88c152f6a">Mantid::DataObjects::Workspace2D</a>, <a class="el" href="../../d6/d0d/classMantid_1_1DataObjects_1_1WorkspaceSingleValue.html#a98e5b944c792950d8242dbd56e7aad7f">Mantid::DataObjects::WorkspaceSingleValue</a>, <a class="el" href="../../db/d99/classAxeslessWorkspaceTester.html#a02078bd784787dbd5772ed57482c321b">AxeslessWorkspaceTester</a>, and <a class="el" href="../../d9/d8f/classMantid_1_1API_1_1IEventWorkspace.html#a977a59645d47e39d353ecc23b715e2db">Mantid::API::IEventWorkspace</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/d0e/ConjoinWorkspaces_8cpp_source.html#l00119">Mantid::Algorithms::ConjoinWorkspaces::checkForOverlap()</a>, <a class="el" href="../../d5/d97/MonteCarloAbsorption_8cpp_source.html#l00260">Mantid::Algorithms::MonteCarloAbsorption::doSimulation()</a>, <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l00497">Mantid::Algorithms::DiscusMultipleScatteringCorrection::exec()</a>, <a class="el" href="../../d7/dce/WorkspaceJoiners_8cpp_source.html#l00033">Mantid::Algorithms::WorkspaceJoiners::execWS2D()</a>, <a class="el" href="../../d0/d4a/PythonInterface_2mantid_2api_2src_2Exports_2MatrixWorkspace_8cpp_source.html#l00593">export_MatrixWorkspace()</a>, <a class="el" href="../../d9/d0e/ConjoinWorkspaces_8cpp_source.html#l00215">Mantid::Algorithms::ConjoinWorkspaces::fixSpectrumNumbers()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00869">getDetector()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00557">getDetectorIDToWorkspaceIndexMap()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00604">getDetectorIDToWorkspaceIndexVector()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00672">getIndexFromSpectrumNumber()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00691">getIndicesFromDetectorIDs()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00648">getIndicesFromSpectra()</a>, <a class="el" href="../../d2/d14/SpectraAxis_8cpp_source.html#l00164">Mantid::API::SpectraAxis::getMax()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01341">getMemorySize()</a>, <a class="el" href="../../d2/d14/SpectraAxis_8cpp_source.html#l00161">Mantid::API::SpectraAxis::getMin()</a>, <a class="el" href="../../d7/dce/WorkspaceJoiners_8cpp_source.html#l00187">Mantid::Algorithms::WorkspaceJoiners::getMinMax()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00733">getSpectraFromDetectorIDs()</a>, <a class="el" href="../../d2/d14/SpectraAxis_8cpp_source.html#l00121">Mantid::API::SpectraAxis::getSpectraIndexMap()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00530">hasGroupedDetectors()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00140">indexInfo()</a>, <a class="el" href="../../d5/d5e/API_2src_2WorkspaceFactory_8cpp_source.html#l00095">Mantid::API::WorkspaceFactoryImpl::initializeFromParent()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01059">isDistribution()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01088">isHistogramDataByIndex()</a>, <a class="el" href="../../d3/df8/CalculateEfficiency_8cpp_source.html#l00265">Mantid::Algorithms::CalculateEfficiency::maskComponent()</a>, <a class="el" href="../../d2/d14/SpectraAxis_8cpp_source.html#l00063">Mantid::API::SpectraAxis::operator()()</a>, <a class="el" href="../../d1/dac/BinaryOperation_8cpp_source.html#l00431">Mantid::Algorithms::BinaryOperation::propagateSpectraMask()</a>, <a class="el" href="../../dd/d65/LoadNexusProcessed_8cpp_source.html#l01999">Mantid::DataHandling::LoadNexusProcessed::readInstrumentGroup()</a>, <a class="el" href="../../d2/dc4/SaveNexusProcessed_8cpp_source.html#l00618">Mantid::DataHandling::SaveNexusProcessed::saveSpectrumNumbersNexus()</a>, <a class="el" href="../../d9/dd8/SmoothNeighbours_8cpp_source.html#l00597">Mantid::Algorithms::SmoothNeighbours::setupNewInstrument()</a>, <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00046">Mantid::Algorithms::SparseWorkspace::SparseWorkspace()</a>, <a class="el" href="../../d2/d14/SpectraAxis_8cpp_source.html#l00109">Mantid::API::SpectraAxis::spectraNo()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l02125">updateCachedDetectorGrouping()</a>, and <a class="el" href="../../da/d94/API_2src_2WorkspaceNearestNeighbourInfo_8cpp_source.html#l00021">Mantid::API::WorkspaceNearestNeighbourInfo::WorkspaceNearestNeighbourInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/d0e/ConjoinWorkspaces_8cpp_source.html#l00119">Mantid::Algorithms::ConjoinWorkspaces::checkForOverlap()</a>, <a class="el" href="../../d5/d97/MonteCarloAbsorption_8cpp_source.html#l00260">Mantid::Algorithms::MonteCarloAbsorption::doSimulation()</a>, <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l00496">Mantid::Algorithms::DiscusMultipleScatteringCorrection::exec()</a>, <a class="el" href="../../d7/dce/WorkspaceJoiners_8cpp_source.html#l00033">Mantid::Algorithms::WorkspaceJoiners::execWS2D()</a>, <a class="el" href="../../d0/d4a/PythonInterface_2mantid_2api_2src_2Exports_2MatrixWorkspace_8cpp_source.html#l00593">export_MatrixWorkspace()</a>, <a class="el" href="../../d9/d0e/ConjoinWorkspaces_8cpp_source.html#l00215">Mantid::Algorithms::ConjoinWorkspaces::fixSpectrumNumbers()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00869">getDetector()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00557">getDetectorIDToWorkspaceIndexMap()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00604">getDetectorIDToWorkspaceIndexVector()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00672">getIndexFromSpectrumNumber()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00691">getIndicesFromDetectorIDs()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00648">getIndicesFromSpectra()</a>, <a class="el" href="../../d2/d14/SpectraAxis_8cpp_source.html#l00164">Mantid::API::SpectraAxis::getMax()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01341">getMemorySize()</a>, <a class="el" href="../../d2/d14/SpectraAxis_8cpp_source.html#l00161">Mantid::API::SpectraAxis::getMin()</a>, <a class="el" href="../../d7/dce/WorkspaceJoiners_8cpp_source.html#l00187">Mantid::Algorithms::WorkspaceJoiners::getMinMax()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00733">getSpectraFromDetectorIDs()</a>, <a class="el" href="../../d2/d14/SpectraAxis_8cpp_source.html#l00121">Mantid::API::SpectraAxis::getSpectraIndexMap()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00530">hasGroupedDetectors()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00140">indexInfo()</a>, <a class="el" href="../../d5/d5e/API_2src_2WorkspaceFactory_8cpp_source.html#l00095">Mantid::API::WorkspaceFactoryImpl::initializeFromParent()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01059">isDistribution()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01088">isHistogramDataByIndex()</a>, <a class="el" href="../../d3/df8/CalculateEfficiency_8cpp_source.html#l00265">Mantid::Algorithms::CalculateEfficiency::maskComponent()</a>, <a class="el" href="../../d2/d14/SpectraAxis_8cpp_source.html#l00063">Mantid::API::SpectraAxis::operator()()</a>, <a class="el" href="../../d1/dac/BinaryOperation_8cpp_source.html#l00431">Mantid::Algorithms::BinaryOperation::propagateSpectraMask()</a>, <a class="el" href="../../dd/d65/LoadNexusProcessed_8cpp_source.html#l01999">Mantid::DataHandling::LoadNexusProcessed::readInstrumentGroup()</a>, <a class="el" href="../../d2/dc4/SaveNexusProcessed_8cpp_source.html#l00618">Mantid::DataHandling::SaveNexusProcessed::saveSpectrumNumbersNexus()</a>, <a class="el" href="../../d9/dd8/SmoothNeighbours_8cpp_source.html#l00597">Mantid::Algorithms::SmoothNeighbours::setupNewInstrument()</a>, <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00046">Mantid::Algorithms::SparseWorkspace::SparseWorkspace()</a>, <a class="el" href="../../d2/d14/SpectraAxis_8cpp_source.html#l00109">Mantid::API::SpectraAxis::spectraNo()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l02125">updateCachedDetectorGrouping()</a>, and <a class="el" href="../../da/d94/API_2src_2WorkspaceNearestNeighbourInfo_8cpp_source.html#l00021">Mantid::API::WorkspaceNearestNeighbourInfo::WorkspaceNearestNeighbourInfo()</a>.</p>
 
 </div>
 </div>
@@ -3917,7 +3918,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00468">468</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00525">m_axes</a>.</p>
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00528">m_axes</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d2d/LoadMask_8cpp_source.html#l00638">Mantid::DataHandling::LoadMask::convertSpMasksToDetIDs()</a>.</p>
 
@@ -3958,7 +3959,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00490">490</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00525">m_axes</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00528">m_axes</a>.</p>
 
 </div>
 </div>
@@ -4187,7 +4188,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a45f497b1c1daa956a1220ed2cadc565c">getNumberHistograms()</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00763">getXMax()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00756">getXMin()</a>, <a class="el" href="../../d8/ded/Rebin_8cpp_source.html#l00077">Mantid::Algorithms::Rebin::rebinParamsFromInput()</a>, and <a class="el" href="../../d7/df9/SofQW_8h_source.html#l00085">Mantid::Algorithms::SofQW::setUpOutputWorkspace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00763">getXMax()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00756">getXMin()</a>, <a class="el" href="../../d8/ded/Rebin_8cpp_source.html#l00079">Mantid::Algorithms::Rebin::rebinParamsFromInput()</a>, and <a class="el" href="../../d7/df9/SofQW_8h_source.html#l00085">Mantid::Algorithms::SofQW::setUpOutputWorkspace()</a>.</p>
 
 </div>
 </div>
@@ -4211,7 +4212,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01265">1265</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00567">m_masks</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00570">m_masks</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d4a/PythonInterface_2mantid_2api_2src_2Exports_2MatrixWorkspace_8cpp_source.html#l00593">export_MatrixWorkspace()</a>.</p>
 
@@ -4249,7 +4250,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00356">356</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00357">357</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -4308,7 +4309,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01254">1254</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a45f497b1c1daa956a1220ed2cadc565c">getNumberHistograms()</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00567">m_masks</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a45f497b1c1daa956a1220ed2cadc565c">getNumberHistograms()</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00570">m_masks</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d9/ddb/SplineBackground_8cpp_source.html#l00122">Mantid::CurveFitting::Algorithms::SplineBackground::addWsDataToSpline()</a>, <a class="el" href="../../d9/ddb/SplineBackground_8cpp_source.html#l00102">Mantid::CurveFitting::Algorithms::SplineBackground::calculateNumBinsToProcess()</a>, <a class="el" href="../../d7/dce/WorkspaceJoiners_8cpp_source.html#l00033">Mantid::Algorithms::WorkspaceJoiners::execWS2D()</a>, and <a class="el" href="../../d0/d4a/PythonInterface_2mantid_2api_2src_2Exports_2MatrixWorkspace_8cpp_source.html#l00593">export_MatrixWorkspace()</a>.</p>
 
@@ -4371,11 +4372,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns the <a class="el" href="../../d1/d87/namespaceMantid_1_1Histogram.html">Histogram</a> at the given workspace index. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00211">211</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00212">212</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00376">Mantid::Algorithms::SparseWorkspace::bilinearInterpolateFromDetectorGrid()</a>, <a class="el" href="../../d5/d97/MonteCarloAbsorption_8cpp_source.html#l00260">Mantid::Algorithms::MonteCarloAbsorption::doSimulation()</a>, <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00194">Mantid::Algorithms::SparseWorkspace::extremeWavelengths()</a>, <a class="el" href="../../d7/df5/EventWorkspace_8cpp_source.html#l00111">Mantid::DataObjects::EventWorkspace::init()</a>, <a class="el" href="../../d7/d3d/RebinnedOutput_8cpp_source.html#l00043">Mantid::DataObjects::RebinnedOutput::init()</a>, <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00095">Mantid::DataObjects::SpecialWorkspace2D::init()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00075">Mantid::DataObjects::Workspace2D::init()</a>, <a class="el" href="../../d9/d7e/WorkspaceSingleValue_8cpp_source.html#l00051">Mantid::DataObjects::WorkspaceSingleValue::init()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00194">AxeslessWorkspaceTester::init()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00239">WorkspaceTester::init()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00283">initialize()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00276">initialize()</a>, <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00330">Mantid::Algorithms::SparseWorkspace::interpolateFromDetectorGrid()</a>, <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l02096">Mantid::Algorithms::DiscusMultipleScatteringCorrection::interpolateFromSparse()</a>, <a class="el" href="../../d5/d97/MonteCarloAbsorption_8cpp_source.html#l00421">Mantid::Algorithms::MonteCarloAbsorption::interpolateFromSparse()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01088">isHistogramDataByIndex()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00102">Mantid::DataObjects::Workspace2D::isRaggedWorkspace()</a>, and <a class="el" href="../../dc/d09/DirectILLTubeBackground_8cpp_source.html#l00389">Mantid::Algorithms::DirectILLTubeBackground::peakExcludingAverage()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00376">Mantid::Algorithms::SparseWorkspace::bilinearInterpolateFromDetectorGrid()</a>, <a class="el" href="../../d5/d97/MonteCarloAbsorption_8cpp_source.html#l00260">Mantid::Algorithms::MonteCarloAbsorption::doSimulation()</a>, <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00194">Mantid::Algorithms::SparseWorkspace::extremeWavelengths()</a>, <a class="el" href="../../d7/df5/EventWorkspace_8cpp_source.html#l00111">Mantid::DataObjects::EventWorkspace::init()</a>, <a class="el" href="../../d7/d3d/RebinnedOutput_8cpp_source.html#l00043">Mantid::DataObjects::RebinnedOutput::init()</a>, <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00095">Mantid::DataObjects::SpecialWorkspace2D::init()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00075">Mantid::DataObjects::Workspace2D::init()</a>, <a class="el" href="../../d9/d7e/WorkspaceSingleValue_8cpp_source.html#l00051">Mantid::DataObjects::WorkspaceSingleValue::init()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00201">AxeslessWorkspaceTester::init()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00246">WorkspaceTester::init()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00182">AxeslessWorkspaceTester::init()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00283">initialize()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00276">initialize()</a>, <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00330">Mantid::Algorithms::SparseWorkspace::interpolateFromDetectorGrid()</a>, <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l02099">Mantid::Algorithms::DiscusMultipleScatteringCorrection::interpolateFromSparse()</a>, <a class="el" href="../../d5/d97/MonteCarloAbsorption_8cpp_source.html#l00421">Mantid::Algorithms::MonteCarloAbsorption::interpolateFromSparse()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01088">isHistogramDataByIndex()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00102">Mantid::DataObjects::Workspace2D::isRaggedWorkspace()</a>, and <a class="el" href="../../dc/d09/DirectILLTubeBackground_8cpp_source.html#l00389">Mantid::Algorithms::DirectILLTubeBackground::peakExcludingAverage()</a>.</p>
 
 </div>
 </div>
@@ -4403,7 +4404,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00293">293</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00294">294</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -4429,7 +4430,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00140">140</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a45f497b1c1daa956a1220ed2cadc565c">getNumberHistograms()</a>, <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a102f653c7988a6b711cc6accfbbb9216">getSpectrum()</a>, <a class="el" href="../../dc/ddb/API_2src_2ISpectrum_8cpp_source.html#l00123">Mantid::API::ISpectrum::getSpectrumNo()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00549">m_indexInfo</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00574">m_indexInfoMutex</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00573">m_indexInfoNeedsUpdate</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00794">Mantid::API::ExperimentInfo::spectrumInfo()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a45f497b1c1daa956a1220ed2cadc565c">getNumberHistograms()</a>, <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a102f653c7988a6b711cc6accfbbb9216">getSpectrum()</a>, <a class="el" href="../../dc/ddb/API_2src_2ISpectrum_8cpp_source.html#l00123">Mantid::API::ISpectrum::getSpectrumNo()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00552">m_indexInfo</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00577">m_indexInfoMutex</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00576">m_indexInfoNeedsUpdate</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00794">Mantid::API::ExperimentInfo::spectrumInfo()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../da/d92/ScanningWorkspaceBuilder_8cpp_source.html#l00275">Mantid::DataObjects::ScanningWorkspaceBuilder::createDetectorOrientedIndexInfo()</a>, <a class="el" href="../../da/d92/ScanningWorkspaceBuilder_8cpp_source.html#l00261">Mantid::DataObjects::ScanningWorkspaceBuilder::createTimeOrientedIndexInfo()</a>, <a class="el" href="../../db/d1d/WorkspaceCreation_8cpp_source.html#l00049">Mantid::DataObjects::detail::doInitializeFromParent&lt; std::true_type &gt;()</a>, <a class="el" href="../../df/dfc/AppendSpectra_8cpp_source.html#l00120">Mantid::Algorithms::AppendSpectra::fixSpectrumNumbers()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00283">initialize()</a>, <a class="el" href="../../d5/d5e/API_2src_2WorkspaceFactory_8cpp_source.html#l00095">Mantid::API::WorkspaceFactoryImpl::initializeFromParent()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00160">setIndexInfo()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00192">setIndexInfoWithoutISpectrumUpdate()</a>.</p>
 
@@ -4540,7 +4541,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00283">283</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00211">histogram()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00140">indexInfo()</a>, <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#adf41b897333c64349e764f31a46911e2">init()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00552">m_isInitialized</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00160">setIndexInfo()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00430">Mantid::API::ExperimentInfo::setNumberOfDetectorGroups()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00212">histogram()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00140">indexInfo()</a>, <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#adf41b897333c64349e764f31a46911e2">init()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00555">m_isInitialized</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00160">setIndexInfo()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00430">Mantid::API::ExperimentInfo::setNumberOfDetectorGroups()</a>.</p>
 
 </div>
 </div>
@@ -4572,7 +4573,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00276">276</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00211">histogram()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00251">initialize()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00212">histogram()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00251">initialize()</a>.</p>
 
 </div>
 </div>
@@ -4620,7 +4621,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00251">251</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#adf41b897333c64349e764f31a46911e2">init()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00549">m_indexInfo</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00552">m_isInitialized</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00430">Mantid::API::ExperimentInfo::setNumberOfDetectorGroups()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#adf41b897333c64349e764f31a46911e2">init()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00552">m_indexInfo</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00555">m_isInitialized</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00430">Mantid::API::ExperimentInfo::setNumberOfDetectorGroups()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00276">initialize()</a>, <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00046">Mantid::Algorithms::SparseWorkspace::SparseWorkspace()</a>, <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00052">Mantid::DataObjects::SpecialWorkspace2D::SpecialWorkspace2D()</a>, and <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00065">Mantid::DataObjects::SpecialWorkspace2D::SpecialWorkspace2D()</a>.</p>
 
@@ -4643,7 +4644,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l02117">2117</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00573">m_indexInfoNeedsUpdate</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00576">m_indexInfoNeedsUpdate</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/ddb/API_2src_2ISpectrum_8cpp_source.html#l00191">Mantid::API::ISpectrum::invalidateCachedSpectrumNumbers()</a>.</p>
 
@@ -4675,9 +4676,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Invalidates the commons bins flag. </p>
 <p>This is generally called when a method could allow the X values to be changed. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00507">507</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00510">510</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00171">AxeslessWorkspaceTester::getSpectrum()</a>, and <a class="el" href="../../d7/df5/EventWorkspace_8cpp_source.html#l00594">Mantid::DataObjects::EventWorkspace::setAllX()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00172">AxeslessWorkspaceTester::getSpectrum()</a>, and <a class="el" href="../../d7/df5/EventWorkspace_8cpp_source.html#l00594">Mantid::DataObjects::EventWorkspace::setAllX()</a>.</p>
 
 </div>
 </div>
@@ -4710,7 +4711,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01110">1110</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d22/LeBailFit_8cpp.html#a03753d269f71ecb0794184a295416dc5">EPSILON()</a>, <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a45f497b1c1daa956a1220ed2cadc565c">getNumberHistograms()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00562">m_isCommonBinsFlag</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00560">m_isCommonBinsFlagValid</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00564">m_isCommonBinsMutex</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00218">PARALLEL_FOR_IF</a>, <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#adbeda01fd111f8f5a2356b1c3906b1bb">size()</a>, <a class="el" href="../../de/db2/Workspace_8h_source.html#l00066">Mantid::API::Workspace::threadSafe()</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d22/LeBailFit_8cpp.html#a03753d269f71ecb0794184a295416dc5">EPSILON()</a>, <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a45f497b1c1daa956a1220ed2cadc565c">getNumberHistograms()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00565">m_isCommonBinsFlag</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00563">m_isCommonBinsFlagValid</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00567">m_isCommonBinsMutex</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00218">PARALLEL_FOR_IF</a>, <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#adbeda01fd111f8f5a2356b1c3906b1bb">size()</a>, <a class="el" href="../../de/db2/Workspace_8h_source.html#l00066">Mantid::API::Workspace::threadSafe()</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d4a/PythonInterface_2mantid_2api_2src_2Exports_2MatrixWorkspace_8cpp_source.html#l00593">export_MatrixWorkspace()</a>, <a class="el" href="../../d9/da6/MaskNonOverlappingBins_8cpp_source.html#l00195">Mantid::Algorithms::MaskNonOverlappingBins::isCommonBins()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00986">isCommonLogBins()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01178">isIntegerBins()</a>.</p>
 
@@ -4774,7 +4775,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a102f653c7988a6b711cc6accfbbb9216">getSpectrum()</a>, and <a class="el" href="../../d1/d7b/ISpectrum_8h_source.html#l00104">Mantid::API::ISpectrum::yMode()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/dce/WorkspaceJoiners_8cpp_source.html#l00156">Mantid::Algorithms::WorkspaceJoiners::checkCompatibility()</a>, <a class="el" href="../../dc/d09/DirectILLTubeBackground_8cpp_source.html#l00263">Mantid::Algorithms::DirectILLTubeBackground::exec()</a>, <a class="el" href="../../d0/d4a/PythonInterface_2mantid_2api_2src_2Exports_2MatrixWorkspace_8cpp_source.html#l00593">export_MatrixWorkspace()</a>, <a class="el" href="../../d5/d5e/API_2src_2WorkspaceFactory_8cpp_source.html#l00095">Mantid::API::WorkspaceFactoryImpl::initializeFromParent()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01065">setDistribution()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00204">toString()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01036">YUnitLabel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/dce/WorkspaceJoiners_8cpp_source.html#l00156">Mantid::Algorithms::WorkspaceJoiners::checkCompatibility()</a>, <a class="el" href="../../dc/d09/DirectILLTubeBackground_8cpp_source.html#l00263">Mantid::Algorithms::DirectILLTubeBackground::exec()</a>, <a class="el" href="../../d0/d4a/PythonInterface_2mantid_2api_2src_2Exports_2MatrixWorkspace_8cpp_source.html#l00593">export_MatrixWorkspace()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00325">Mantid::DataObjects::Workspace2D::generateHistogram()</a>, <a class="el" href="../../d5/d5e/API_2src_2WorkspaceFactory_8cpp_source.html#l00095">Mantid::API::WorkspaceFactoryImpl::initializeFromParent()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01065">setDistribution()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00204">toString()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01036">YUnitLabel()</a>.</p>
 
 </div>
 </div>
@@ -4850,7 +4851,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01088">1088</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a102f653c7988a6b711cc6accfbbb9216">getSpectrum()</a>, <a class="el" href="../../d1/d7b/ISpectrum_8h_source.html#l00094">Mantid::API::ISpectrum::histogram()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00211">histogram()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a102f653c7988a6b711cc6accfbbb9216">getSpectrum()</a>, <a class="el" href="../../d1/d7b/ISpectrum_8h_source.html#l00094">Mantid::API::ISpectrum::histogram()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00212">histogram()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01078">isHistogramData()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01399">yIndexOfX()</a>.</p>
 
@@ -4982,7 +4983,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01205">1205</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01240">flagMasked()</a>, <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a45f497b1c1daa956a1220ed2cadc565c">getNumberHistograms()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00273">mutableE()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00272">mutableY()</a>, <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#adbeda01fd111f8f5a2356b1c3906b1bb">size()</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>.</p>
+<p class="reference">References <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01240">flagMasked()</a>, <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a45f497b1c1daa956a1220ed2cadc565c">getNumberHistograms()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00274">mutableE()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00273">mutableY()</a>, <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#adbeda01fd111f8f5a2356b1c3906b1bb">size()</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01240">flagMasked()</a>.</p>
 
@@ -5021,7 +5022,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01273">1273</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00567">m_masks</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00570">m_masks</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d9/ddb/SplineBackground_8cpp_source.html#l00122">Mantid::CurveFitting::Algorithms::SplineBackground::addWsDataToSpline()</a>, <a class="el" href="../../d9/ddb/SplineBackground_8cpp_source.html#l00102">Mantid::CurveFitting::Algorithms::SplineBackground::calculateNumBinsToProcess()</a>, <a class="el" href="../../d7/dce/WorkspaceJoiners_8cpp_source.html#l00033">Mantid::Algorithms::WorkspaceJoiners::execWS2D()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01306">setMaskedBins()</a>.</p>
 
@@ -5045,7 +5046,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01284">1284</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00567">m_masks</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00570">m_masks</a>.</p>
 
 </div>
 </div>
@@ -5068,7 +5069,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01336">1336</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00571">m_monitorWorkspace</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00574">m_monitorWorkspace</a>.</p>
 
 </div>
 </div>
@@ -5096,7 +5097,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00269">269</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00270">270</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -5128,7 +5129,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00273">273</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00274">274</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -5160,7 +5161,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00268">268</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00269">269</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -5192,11 +5193,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00272">272</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00273">273</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00271">Mantid::DataObjects::SpecialWorkspace2D::binaryAND()</a>, <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00331">Mantid::DataObjects::SpecialWorkspace2D::binaryNOT()</a>, <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00288">Mantid::DataObjects::SpecialWorkspace2D::binaryOR()</a>, <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00313">Mantid::DataObjects::SpecialWorkspace2D::binaryXOR()</a>, <a class="el" href="../../db/de1/SplineSmoothing_8cpp_source.html#l00239">Mantid::CurveFitting::Algorithms::SplineSmoothing::calculateDerivatives()</a>, <a class="el" href="../../db/de1/SplineSmoothing_8cpp_source.html#l00219">Mantid::CurveFitting::Algorithms::SplineSmoothing::calculateSmoothing()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00072">Mantid::DataObjects::MaskWorkspace::clearMask()</a>, <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00383">Mantid::DataObjects::SpecialWorkspace2D::copyFrom()</a>, <a class="el" href="../../dc/d6e/SortXAxis_8cpp_source.html#l00155">Mantid::Algorithms::SortXAxis::copyYandEToOutputWorkspace()</a>, <a class="el" href="../../d7/d3d/RebinnedOutput_8cpp_source.html#l00120">Mantid::DataObjects::RebinnedOutput::finalize()</a>, <a class="el" href="../../d4/d59/SolidAngle_8cpp_source.html#l00314">Mantid::Algorithms::SolidAngle::initSpectrum()</a>, <a class="el" href="../../df/d79/IntegrateFlux_8cpp_source.html#l00163">Mantid::MDAlgorithms::IntegrateFlux::integrateSpectraEvents()</a>, <a class="el" href="../../df/d79/IntegrateFlux_8cpp_source.html#l00223">Mantid::MDAlgorithms::IntegrateFlux::integrateSpectraHistograms()</a>, <a class="el" href="../../df/d79/IntegrateFlux_8cpp_source.html#l00340">Mantid::MDAlgorithms::IntegrateFlux::integrateSpectraPointData()</a>, <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l02096">Mantid::Algorithms::DiscusMultipleScatteringCorrection::interpolateFromSparse()</a>, <a class="el" href="../../d5/d97/MonteCarloAbsorption_8cpp_source.html#l00421">Mantid::Algorithms::MonteCarloAbsorption::interpolateFromSparse()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01205">maskBin()</a>, <a class="el" href="../../d7/dc2/FractionalRebinning_8cpp_source.html#l00571">Mantid::DataObjects::FractionalRebinning::rebinToFractionalOutput()</a>, <a class="el" href="../../d7/dc2/FractionalRebinning_8cpp_source.html#l00504">Mantid::DataObjects::FractionalRebinning::rebinToOutput()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00236">Mantid::DataObjects::MaskWorkspace::setMaskedIndex()</a>, <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00180">Mantid::DataObjects::SpecialWorkspace2D::setValue()</a>, and <a class="el" href="../../d7/d3d/RebinnedOutput_8cpp_source.html#l00169">Mantid::DataObjects::RebinnedOutput::unfinalize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00271">Mantid::DataObjects::SpecialWorkspace2D::binaryAND()</a>, <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00331">Mantid::DataObjects::SpecialWorkspace2D::binaryNOT()</a>, <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00288">Mantid::DataObjects::SpecialWorkspace2D::binaryOR()</a>, <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00313">Mantid::DataObjects::SpecialWorkspace2D::binaryXOR()</a>, <a class="el" href="../../db/de1/SplineSmoothing_8cpp_source.html#l00239">Mantid::CurveFitting::Algorithms::SplineSmoothing::calculateDerivatives()</a>, <a class="el" href="../../db/de1/SplineSmoothing_8cpp_source.html#l00219">Mantid::CurveFitting::Algorithms::SplineSmoothing::calculateSmoothing()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00072">Mantid::DataObjects::MaskWorkspace::clearMask()</a>, <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00383">Mantid::DataObjects::SpecialWorkspace2D::copyFrom()</a>, <a class="el" href="../../dc/d6e/SortXAxis_8cpp_source.html#l00155">Mantid::Algorithms::SortXAxis::copyYandEToOutputWorkspace()</a>, <a class="el" href="../../d7/d3d/RebinnedOutput_8cpp_source.html#l00120">Mantid::DataObjects::RebinnedOutput::finalize()</a>, <a class="el" href="../../d4/d59/SolidAngle_8cpp_source.html#l00314">Mantid::Algorithms::SolidAngle::initSpectrum()</a>, <a class="el" href="../../df/d79/IntegrateFlux_8cpp_source.html#l00163">Mantid::MDAlgorithms::IntegrateFlux::integrateSpectraEvents()</a>, <a class="el" href="../../df/d79/IntegrateFlux_8cpp_source.html#l00223">Mantid::MDAlgorithms::IntegrateFlux::integrateSpectraHistograms()</a>, <a class="el" href="../../df/d79/IntegrateFlux_8cpp_source.html#l00340">Mantid::MDAlgorithms::IntegrateFlux::integrateSpectraPointData()</a>, <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l02099">Mantid::Algorithms::DiscusMultipleScatteringCorrection::interpolateFromSparse()</a>, <a class="el" href="../../d5/d97/MonteCarloAbsorption_8cpp_source.html#l00421">Mantid::Algorithms::MonteCarloAbsorption::interpolateFromSparse()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01205">maskBin()</a>, <a class="el" href="../../d7/dc2/FractionalRebinning_8cpp_source.html#l00571">Mantid::DataObjects::FractionalRebinning::rebinToFractionalOutput()</a>, <a class="el" href="../../d7/dc2/FractionalRebinning_8cpp_source.html#l00504">Mantid::DataObjects::FractionalRebinning::rebinToOutput()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00236">Mantid::DataObjects::MaskWorkspace::setMaskedIndex()</a>, <a class="el" href="../../d6/d40/SpecialWorkspace2D_8cpp_source.html#l00180">Mantid::DataObjects::SpecialWorkspace2D::setValue()</a>, and <a class="el" href="../../d7/d3d/RebinnedOutput_8cpp_source.html#l00169">Mantid::DataObjects::RebinnedOutput::unfinalize()</a>.</p>
 
 </div>
 </div>
@@ -5221,7 +5222,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01026">1026</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00525">m_axes</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00528">m_axes</a>.</p>
 
 </div>
 </div>
@@ -5275,11 +5276,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00218">218</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00219">219</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/ddb/SplineBackground_8cpp_source.html#l00122">Mantid::CurveFitting::Algorithms::SplineBackground::addWsDataToSpline()</a>, <a class="el" href="../../d5/d97/MonteCarloAbsorption_8cpp_source.html#l00260">Mantid::Algorithms::MonteCarloAbsorption::doSimulation()</a>, <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l00497">Mantid::Algorithms::DiscusMultipleScatteringCorrection::exec()</a>, and <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l00355">Mantid::Algorithms::DiscusMultipleScatteringCorrection::getXMinMax()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/ddb/SplineBackground_8cpp_source.html#l00122">Mantid::CurveFitting::Algorithms::SplineBackground::addWsDataToSpline()</a>, <a class="el" href="../../d5/d97/MonteCarloAbsorption_8cpp_source.html#l00260">Mantid::Algorithms::MonteCarloAbsorption::doSimulation()</a>, <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l00496">Mantid::Algorithms::DiscusMultipleScatteringCorrection::exec()</a>, and <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l00354">Mantid::Algorithms::DiscusMultipleScatteringCorrection::getXMinMax()</a>.</p>
 
 </div>
 </div>
@@ -5307,7 +5308,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00219">219</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00220">220</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -5345,7 +5346,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00311">311</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00312">312</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -5383,7 +5384,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00307">307</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00308">308</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -5423,7 +5424,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00299">299</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00300">300</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -5461,7 +5462,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00303">303</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00304">304</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -5494,7 +5495,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l02160">2160</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00778">Mantid::API::ExperimentInfo::detectorInfo()</a>, <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#ae7d955aa20ba1843a45448764cd3ea3f">getSpectrumWithoutInvalidation()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00549">m_indexInfo</a>, and <a class="el" href="../../db/d13/SpecialCoordinateSystem_8h_source.html#l00014">Mantid::Kernel::None</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00778">Mantid::API::ExperimentInfo::detectorInfo()</a>, <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#ae7d955aa20ba1843a45448764cd3ea3f">getSpectrumWithoutInvalidation()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00552">m_indexInfo</a>, and <a class="el" href="../../db/d13/SpecialCoordinateSystem_8h_source.html#l00014">Mantid::Kernel::None</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00160">setIndexInfo()</a>.</p>
 
@@ -5572,7 +5573,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d7/d39/classMantid_1_1DataObjects_1_1EventWorkspace.html#a20bf55db2be0102026ce7161d7037c2d">Mantid::DataObjects::EventWorkspace</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00336">336</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00337">337</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -5622,7 +5623,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00973">973</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00525">m_axes</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00528">m_axes</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d0f/ReflectometryTransform_8cpp_source.html#l00183">Mantid::DataObjects::createVerticalAxis()</a>, and <a class="el" href="../../df/d0f/ReflectometryTransform_8cpp_source.html#l00152">Mantid::DataObjects::createXAxis()</a>.</p>
 
@@ -5662,7 +5663,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00292">292</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00293">293</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>.</p>
 
@@ -5704,7 +5705,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00222">222</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00223">223</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -5746,7 +5747,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00246">246</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00247">247</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -5788,7 +5789,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00252">252</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00253">253</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -5830,7 +5831,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00249">249</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00250">250</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -5898,7 +5899,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00255">255</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00256">256</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -5940,7 +5941,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00261">261</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00262">262</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -5982,7 +5983,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00258">258</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00259">259</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -6024,11 +6025,11 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00212">212</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00213">213</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l02096">Mantid::Algorithms::DiscusMultipleScatteringCorrection::interpolateFromSparse()</a>, and <a class="el" href="../../d5/d97/MonteCarloAbsorption_8cpp_source.html#l00421">Mantid::Algorithms::MonteCarloAbsorption::interpolateFromSparse()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l02099">Mantid::Algorithms::DiscusMultipleScatteringCorrection::interpolateFromSparse()</a>, and <a class="el" href="../../d5/d97/MonteCarloAbsorption_8cpp_source.html#l00421">Mantid::Algorithms::MonteCarloAbsorption::interpolateFromSparse()</a>.</p>
 
 </div>
 </div>
@@ -6151,7 +6152,7 @@ template&lt;typename... T&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l02113">2113</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00318">dataE()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l02063">setImage()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00319">dataE()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l02063">setImage()</a>.</p>
 
 </div>
 </div>
@@ -6209,7 +6210,7 @@ template&lt;typename... T&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l02103">2103</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00316">dataY()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l02063">setImage()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00317">dataY()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l02063">setImage()</a>.</p>
 
 </div>
 </div>
@@ -6234,7 +6235,7 @@ template&lt;typename... T&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00160">160</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l02129">buildDefaultSpectrumDefinitions()</a>, <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a45f497b1c1daa956a1220ed2cadc565c">getNumberHistograms()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00140">indexInfo()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00549">m_indexInfo</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00573">m_indexInfoNeedsUpdate</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l02160">rebuildDetectorIDGroupings()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00848">Mantid::API::ExperimentInfo::setSpectrumDefinitions()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l02129">buildDefaultSpectrumDefinitions()</a>, <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a45f497b1c1daa956a1220ed2cadc565c">getNumberHistograms()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00140">indexInfo()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00552">m_indexInfo</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00576">m_indexInfoNeedsUpdate</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l02160">rebuildDetectorIDGroupings()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00848">Mantid::API::ExperimentInfo::setSpectrumDefinitions()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../da/d92/ScanningWorkspaceBuilder_8cpp_source.html#l00275">Mantid::DataObjects::ScanningWorkspaceBuilder::createDetectorOrientedIndexInfo()</a>, <a class="el" href="../../da/d92/ScanningWorkspaceBuilder_8cpp_source.html#l00261">Mantid::DataObjects::ScanningWorkspaceBuilder::createTimeOrientedIndexInfo()</a>, <a class="el" href="../../db/d1d/WorkspaceCreation_8cpp_source.html#l00049">Mantid::DataObjects::detail::doInitializeFromParent&lt; std::true_type &gt;()</a>, <a class="el" href="../../df/dfc/AppendSpectra_8cpp_source.html#l00120">Mantid::Algorithms::AppendSpectra::fixSpectrumNumbers()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00283">initialize()</a>.</p>
 
@@ -6268,7 +6269,7 @@ template&lt;typename... T&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00192">192</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a45f497b1c1daa956a1220ed2cadc565c">getNumberHistograms()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00140">indexInfo()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00549">m_indexInfo</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00573">m_indexInfoNeedsUpdate</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00848">Mantid::API::ExperimentInfo::setSpectrumDefinitions()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a45f497b1c1daa956a1220ed2cadc565c">getNumberHistograms()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00140">indexInfo()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00552">m_indexInfo</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00576">m_indexInfoNeedsUpdate</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00848">Mantid::API::ExperimentInfo::setSpectrumDefinitions()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/d5e/API_2src_2WorkspaceFactory_8cpp_source.html#l00095">Mantid::API::WorkspaceFactoryImpl::initializeFromParent()</a>.</p>
 
@@ -6301,7 +6302,7 @@ template&lt;typename... T&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00397">397</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00578">m_marker_size</a>, and <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#adbeda01fd111f8f5a2356b1c3906b1bb">size()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00581">m_marker_size</a>, and <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#adbeda01fd111f8f5a2356b1c3906b1bb">size()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d4a/PythonInterface_2mantid_2api_2src_2Exports_2MatrixWorkspace_8cpp_source.html#l00593">export_MatrixWorkspace()</a>.</p>
 
@@ -6334,7 +6335,7 @@ template&lt;typename... T&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00365">365</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00577">m_marker</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00037">Mantid::validMarkerStyles</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00580">m_marker</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00038">Mantid::validMarkerStyles</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d4a/PythonInterface_2mantid_2api_2src_2Exports_2MatrixWorkspace_8cpp_source.html#l00593">export_MatrixWorkspace()</a>.</p>
 
@@ -6372,7 +6373,7 @@ template&lt;typename... T&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01306">1306</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00567">m_masks</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01273">maskedBins()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00570">m_masks</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01273">maskedBins()</a>.</p>
 
 </div>
 </div>
@@ -6442,7 +6443,7 @@ template&lt;typename... T&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01326">1326</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00571">m_monitorWorkspace</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00574">m_monitorWorkspace</a>.</p>
 
 </div>
 </div>
@@ -6473,7 +6474,7 @@ template&lt;typename... T&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00332">332</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/dc7/LogManager_8h_source.html#l00090">Mantid::API::LogManager::addProperty()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00507">Mantid::API::ExperimentInfo::mutableRun()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00497">Mantid::API::ExperimentInfo::run()</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00036">Mantid::validPlotTypes</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/dc7/LogManager_8h_source.html#l00090">Mantid::API::LogManager::addProperty()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00507">Mantid::API::ExperimentInfo::mutableRun()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00497">Mantid::API::ExperimentInfo::run()</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00037">Mantid::validPlotTypes</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d4a/PythonInterface_2mantid_2api_2src_2Exports_2MatrixWorkspace_8cpp_source.html#l00593">export_MatrixWorkspace()</a>.</p>
 
@@ -6515,7 +6516,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00225">225</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00226">226</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -6557,7 +6558,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00231">231</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00232">232</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -6599,7 +6600,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00228">228</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00229">229</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -6639,7 +6640,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00283">283</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00284">284</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -6679,7 +6680,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00289">289</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00290">290</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -6719,7 +6720,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00280">280</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00281">281</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
 
@@ -6761,7 +6762,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00286">286</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00287">287</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>.</p>
 
@@ -6837,7 +6838,7 @@ template&lt;typename... T&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01315">1315</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00567">m_masks</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00570">m_masks</a>.</p>
 
 </div>
 </div>
@@ -6878,7 +6879,7 @@ template&lt;typename... T&gt; </div>
 <p>Deprecated, use <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a1abbf7a1ff87a6b42801b22620cf179c">setSharedX()</a> instead. </p>
 <p>Set the specified X array to point to the given existing array </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00342">342</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00343">343</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -6921,7 +6922,7 @@ template&lt;typename... T&gt; </div>
 <p>Deprecated, use <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a1abbf7a1ff87a6b42801b22620cf179c">setSharedX()</a> instead. </p>
 <p>Set the specified X array to point to the given existing array </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00348">348</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00349">349</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -6947,7 +6948,7 @@ template&lt;typename... T&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01029">1029</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00555">m_YUnit</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00558">m_YUnit</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d4a/PythonInterface_2mantid_2api_2src_2Exports_2MatrixWorkspace_8cpp_source.html#l00593">export_MatrixWorkspace()</a>, <a class="el" href="../../d5/d5e/API_2src_2WorkspaceFactory_8cpp_source.html#l00095">Mantid::API::WorkspaceFactoryImpl::initializeFromParent()</a>, and <a class="el" href="../../d9/d0e/ConjoinWorkspaces_8cpp_source.html#l00263">Mantid::Algorithms::ConjoinWorkspaces::setYUnitAndLabel()</a>.</p>
 
@@ -6973,7 +6974,7 @@ template&lt;typename... T&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01053">1053</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00557">m_YUnitLabel</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00560">m_YUnitLabel</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d4a/PythonInterface_2mantid_2api_2src_2Exports_2MatrixWorkspace_8cpp_source.html#l00593">export_MatrixWorkspace()</a>, <a class="el" href="../../d5/d5e/API_2src_2WorkspaceFactory_8cpp_source.html#l00095">Mantid::API::WorkspaceFactoryImpl::initializeFromParent()</a>, and <a class="el" href="../../d9/d0e/ConjoinWorkspaces_8cpp_source.html#l00263">Mantid::Algorithms::ConjoinWorkspaces::setYUnitAndLabel()</a>.</p>
 
@@ -7003,7 +7004,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00277">277</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00278">278</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -7033,7 +7034,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00276">276</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00277">277</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -7063,7 +7064,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00274">274</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00275">275</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -7095,7 +7096,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00275">275</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00276">276</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -7324,7 +7325,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00264">264</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00265">265</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -7415,7 +7416,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00265">265</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00266">266</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -7497,7 +7498,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00397">397</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00400">400</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d4a/PythonInterface_2mantid_2api_2src_2Exports_2MatrixWorkspace_8cpp_source.html#l00593">export_MatrixWorkspace()</a>.</p>
 
@@ -7529,7 +7530,7 @@ template&lt;typename... T&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01036">1036</a> of file <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html">MatrixWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01059">isDistribution()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00555">m_YUnit</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00557">m_YUnitLabel</a>.</p>
+<p class="reference">References <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01059">isDistribution()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00558">m_YUnit</a>, and <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00560">m_YUnitLabel</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d4a/PythonInterface_2mantid_2api_2src_2Exports_2MatrixWorkspace_8cpp_source.html#l00593">export_MatrixWorkspace()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00204">toString()</a>.</p>
 
@@ -7556,7 +7557,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00101">101</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00102">102</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 </div>
 </div>
@@ -7583,9 +7584,9 @@ template&lt;typename... T&gt; </div>
 
 <p>A vector of pointers to the axes for this workspace. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00525">525</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00528">528</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00948">axes()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00956">getAxis()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00468">getSpectrumToWorkspaceIndexMap()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00490">getSpectrumToWorkspaceIndexVector()</a>, <a class="el" href="../../d7/df5/EventWorkspace_8cpp_source.html#l00111">Mantid::DataObjects::EventWorkspace::init()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00075">Mantid::DataObjects::Workspace2D::init()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00239">WorkspaceTester::init()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00231">WorkspaceTester::init()</a>, <a class="el" href="../../d7/df5/EventWorkspace_8cpp_source.html#l00080">Mantid::DataObjects::EventWorkspace::init()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00053">Mantid::DataObjects::Workspace2D::init()</a>, <a class="el" href="../../d5/d5e/API_2src_2WorkspaceFactory_8cpp_source.html#l00095">Mantid::API::WorkspaceFactoryImpl::initializeFromParent()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00118">MatrixWorkspace()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01026">numberOfAxis()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00973">replaceAxis()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00948">axes()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00956">getAxis()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00468">getSpectrumToWorkspaceIndexMap()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00490">getSpectrumToWorkspaceIndexVector()</a>, <a class="el" href="../../d7/df5/EventWorkspace_8cpp_source.html#l00111">Mantid::DataObjects::EventWorkspace::init()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00075">Mantid::DataObjects::Workspace2D::init()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00246">WorkspaceTester::init()</a>, <a class="el" href="../../d4/def/FakeObjects_8h_source.html#l00238">WorkspaceTester::init()</a>, <a class="el" href="../../d7/df5/EventWorkspace_8cpp_source.html#l00080">Mantid::DataObjects::EventWorkspace::init()</a>, <a class="el" href="../../db/d2d/Workspace2D_8cpp_source.html#l00053">Mantid::DataObjects::Workspace2D::init()</a>, <a class="el" href="../../d5/d5e/API_2src_2WorkspaceFactory_8cpp_source.html#l00095">Mantid::API::WorkspaceFactoryImpl::initializeFromParent()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00118">MatrixWorkspace()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01026">numberOfAxis()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00973">replaceAxis()</a>.</p>
 
 </div>
 </div>
@@ -7609,7 +7610,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00549">549</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00552">552</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l02129">buildDefaultSpectrumDefinitions()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00691">getIndicesFromDetectorIDs()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00140">indexInfo()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00251">initialize()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l02160">rebuildDetectorIDGroupings()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00160">setIndexInfo()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00192">setIndexInfoWithoutISpectrumUpdate()</a>.</p>
 
@@ -7635,7 +7636,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00574">574</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00577">577</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00140">indexInfo()</a>.</p>
 
@@ -7661,7 +7662,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00573">573</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00576">576</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00140">indexInfo()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l02117">invalidateCachedSpectrumNumbers()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00160">setIndexInfo()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00192">setIndexInfoWithoutISpectrumUpdate()</a>.</p>
 
@@ -7689,7 +7690,7 @@ template&lt;typename... T&gt; </div>
 
 <p>Flag indicating whether the data has common bins. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00562">562</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00565">565</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01110">isCommonBins()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00118">MatrixWorkspace()</a>.</p>
 
@@ -7717,7 +7718,7 @@ template&lt;typename... T&gt; </div>
 
 <p>Flag indicating if the common bins flag is in a valid state. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00560">560</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00563">563</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01110">isCommonBins()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00118">MatrixWorkspace()</a>.</p>
 
@@ -7745,7 +7746,7 @@ template&lt;typename... T&gt; </div>
 
 <p>A mutex protecting the update of m_isCommonBinsFlag. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00564">564</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00567">567</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01110">isCommonBins()</a>.</p>
 
@@ -7773,7 +7774,7 @@ template&lt;typename... T&gt; </div>
 
 <p>Has this workspace been initialised? </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00552">552</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00555">555</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00283">initialize()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00251">initialize()</a>, and <a class="el" href="../../d5/d5e/API_2src_2WorkspaceFactory_8cpp_source.html#l00095">Mantid::API::WorkspaceFactoryImpl::initializeFromParent()</a>.</p>
 
@@ -7799,7 +7800,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00577">577</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00580">580</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00385">getMarkerStyle()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00365">setMarkerStyle()</a>.</p>
 
@@ -7825,7 +7826,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00578">578</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00581">581</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00406">getMarkerSize()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l00397">setMarkerSize()</a>.</p>
 
@@ -7853,7 +7854,7 @@ template&lt;typename... T&gt; </div>
 
 <p>The set of masked bins in a map keyed on workspace index. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00567">567</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00570">570</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01240">flagMasked()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01265">hasAnyMaskedBins()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01254">hasMaskedBins()</a>, <a class="el" href="../../d5/d5e/API_2src_2WorkspaceFactory_8cpp_source.html#l00095">Mantid::API::WorkspaceFactoryImpl::initializeFromParent()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01273">maskedBins()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01284">maskedBinsIndices()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01306">setMaskedBins()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01315">setUnmaskedBins()</a>.</p>
 
@@ -7881,7 +7882,7 @@ template&lt;typename... T&gt; </div>
 
 <p>A workspace holding monitor data relating to the main data in the containing workspace (null if none). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00571">571</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00574">574</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01336">monitorWorkspace()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01326">setMonitorWorkspace()</a>.</p>
 
@@ -7909,7 +7910,7 @@ template&lt;typename... T&gt; </div>
 
 <p>The unit for the data values (e.g. Counts) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00555">555</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00558">558</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/d5e/API_2src_2WorkspaceFactory_8cpp_source.html#l00095">Mantid::API::WorkspaceFactoryImpl::initializeFromParent()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01029">setYUnit()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01036">YUnitLabel()</a>.</p>
 
@@ -7937,7 +7938,7 @@ template&lt;typename... T&gt; </div>
 
 <p>A text label for use when plotting spectra. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00557">557</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00560">560</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/d5e/API_2src_2WorkspaceFactory_8cpp_source.html#l00095">Mantid::API::WorkspaceFactoryImpl::initializeFromParent()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01053">setYUnitLabel()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01036">YUnitLabel()</a>.</p>
 
@@ -7965,7 +7966,7 @@ template&lt;typename... T&gt; </div>
 
 <p>Dimension id for x-dimension. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00444">444</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00447">447</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01641">getDimension()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01482">getDimensionIdFromAxis()</a>.</p>
 
@@ -7993,7 +7994,7 @@ template&lt;typename... T&gt; </div>
 
 <p>Dimensin id for y-dimension. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00446">446</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00449">449</a> of file <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MatrixWorkspace.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01641">getDimension()</a>, and <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01482">getDimensionIdFromAxis()</a>.</p>
 

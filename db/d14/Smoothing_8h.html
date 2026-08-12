@@ -95,7 +95,9 @@ $(function() {
   <div class="headertitle"><div class="title">Smoothing.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<div class="textblock"><code>#include &quot;MantidKernel/DllConfig.h&quot;</code><br />
+<code>#include &lt;span&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="../../db/d14/Smoothing_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -111,6 +113,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a577cb81068605b15adf9a7c82b055572" id="r_a577cb81068605b15adf9a7c82b055572"><td class="memItemLeft" align="right" valign="top">MANTID_KERNEL_DLL std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d74/namespaceMantid_1_1Kernel_1_1Smoothing.html#a577cb81068605b15adf9a7c82b055572">Mantid::Kernel::Smoothing::boxcarErrorSmooth</a> (std::span&lt; double const &gt; input, unsigned int const numPoints)</td></tr>
+<tr class="separator:a577cb81068605b15adf9a7c82b055572"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a159c195716dd7d462c43ec9382fce342" id="r_a159c195716dd7d462c43ec9382fce342"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a159c195716dd7d462c43ec9382fce342"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d74/namespaceMantid_1_1Kernel_1_1Smoothing.html#a159c195716dd7d462c43ec9382fce342">Mantid::Kernel::Smoothing::boxcarErrorSmooth</a> (std::vector&lt; T &gt; const &amp;input, unsigned int const numPoints)</td></tr>
 <tr class="memdesc:a159c195716dd7d462c43ec9382fce342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs boxcar (moving average) smoothing on the input data, using error propagation formula.  <br /></td></tr>
@@ -119,6 +123,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae02f21baa5315685bef61dc2c427525c"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d74/namespaceMantid_1_1Kernel_1_1Smoothing.html#ae02f21baa5315685bef61dc2c427525c">Mantid::Kernel::Smoothing::boxcarRMSESmooth</a> (std::vector&lt; T &gt; const &amp;input, unsigned int const numPoints)</td></tr>
 <tr class="memdesc:ae02f21baa5315685bef61dc2c427525c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs boxcar (moving average) smoothing on the input data, using a RMSE average, as is appropriate for error averaging.  <br /></td></tr>
 <tr class="separator:ae02f21baa5315685bef61dc2c427525c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f28cc13a7b82661b05a87ad14f763b" id="r_af9f28cc13a7b82661b05a87ad14f763b"><td class="memItemLeft" align="right" valign="top">MANTID_KERNEL_DLL std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d74/namespaceMantid_1_1Kernel_1_1Smoothing.html#af9f28cc13a7b82661b05a87ad14f763b">Mantid::Kernel::Smoothing::boxcarSmooth</a> (std::span&lt; double const &gt; input, unsigned int const numPoints)</td></tr>
+<tr class="memdesc:af9f28cc13a7b82661b05a87ad14f763b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloads taking a contiguous range of doubles, so that the size-checked histogram data types, which do not hand out a std::vector&lt;double&gt;, can be smoothed directly.  <br /></td></tr>
+<tr class="separator:af9f28cc13a7b82661b05a87ad14f763b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91c3c0c0dc3726a145932e0ca2bb91ab" id="r_a91c3c0c0dc3726a145932e0ca2bb91ab"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a91c3c0c0dc3726a145932e0ca2bb91ab"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d74/namespaceMantid_1_1Kernel_1_1Smoothing.html#a91c3c0c0dc3726a145932e0ca2bb91ab">Mantid::Kernel::Smoothing::boxcarSmooth</a> (std::vector&lt; T &gt; const &amp;input, unsigned int const numPoints)</td></tr>
 <tr class="memdesc:a91c3c0c0dc3726a145932e0ca2bb91ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs boxcar (moving average) smoothing on the input data.  <br /></td></tr>

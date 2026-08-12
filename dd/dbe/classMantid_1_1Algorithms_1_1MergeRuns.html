@@ -583,18 +583,18 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a7bcf375e816fa0337166f2220bd46fe6" id="r_a7bcf375e816fa0337166f2220bd46fe6"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dbe/classMantid_1_1Algorithms_1_1MergeRuns.html#a7bcf375e816fa0337166f2220bd46fe6">calculateRebinParams</a> (const std::vector&lt; double &gt; &amp;bins1, const std::vector&lt; double &gt; &amp;bins2)</td></tr>
-<tr class="memdesc:a7bcf375e816fa0337166f2220bd46fe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the parameters to hand to the <a class="el" href="../../d0/d5a/classMantid_1_1Algorithms_1_1Rebin.html" title="Takes a workspace as input and rebins the data according to the input rebin parameters.">Rebin</a> algorithm.  <br /></td></tr>
-<tr class="separator:a7bcf375e816fa0337166f2220bd46fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6688e09aed42b6709722493b8bc2e294" id="r_a6688e09aed42b6709722493b8bc2e294"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dbe/classMantid_1_1Algorithms_1_1MergeRuns.html#a6688e09aed42b6709722493b8bc2e294">inclusionParams</a> (const HistogramData::HistogramX &amp;X1, size_t &amp;i, const HistogramData::HistogramX &amp;X2, std::vector&lt; double &gt; &amp;params)</td></tr>
-<tr class="memdesc:a6688e09aed42b6709722493b8bc2e294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the rebin parameters in the case where the range of the second workspace is entirely within that of the first workspace.  <br /></td></tr>
-<tr class="separator:a6688e09aed42b6709722493b8bc2e294"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afad62e7100a6e5a5b4f1febfcc12ba4d" id="r_afad62e7100a6e5a5b4f1febfcc12ba4d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dbe/classMantid_1_1Algorithms_1_1MergeRuns.html#afad62e7100a6e5a5b4f1febfcc12ba4d">intersectionParams</a> (const HistogramData::HistogramX &amp;X1, size_t &amp;i, const HistogramData::HistogramX &amp;X2, std::vector&lt; double &gt; &amp;params)</td></tr>
-<tr class="memdesc:afad62e7100a6e5a5b4f1febfcc12ba4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the rebin parameters in the case where the bins of the two workspaces intersect.  <br /></td></tr>
-<tr class="separator:afad62e7100a6e5a5b4f1febfcc12ba4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a755c8c0912fe1251bb96ccad30674ba4" id="r_a755c8c0912fe1251bb96ccad30674ba4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dbe/classMantid_1_1Algorithms_1_1MergeRuns.html#a755c8c0912fe1251bb96ccad30674ba4">noOverlapParams</a> (const HistogramData::HistogramX &amp;X1, const HistogramData::HistogramX &amp;X2, std::vector&lt; double &gt; &amp;params)</td></tr>
-<tr class="memdesc:a755c8c0912fe1251bb96ccad30674ba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the rebin paramters in the case where the two input workspaces do not overlap at all.  <br /></td></tr>
-<tr class="separator:a755c8c0912fe1251bb96ccad30674ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a5bb7b9c8775573f1d1f7f82487997" id="r_a94a5bb7b9c8775573f1d1f7f82487997"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dbe/classMantid_1_1Algorithms_1_1MergeRuns.html#a94a5bb7b9c8775573f1d1f7f82487997">calculateRebinParams</a> (std::span&lt; double const &gt; bins1, std::span&lt; double const &gt; bins2)</td></tr>
+<tr class="memdesc:a94a5bb7b9c8775573f1d1f7f82487997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the parameters to hand to the <a class="el" href="../../d0/d5a/classMantid_1_1Algorithms_1_1Rebin.html" title="Takes a workspace as input and rebins the data according to the input rebin parameters.">Rebin</a> algorithm.  <br /></td></tr>
+<tr class="separator:a94a5bb7b9c8775573f1d1f7f82487997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc9687cb67d018598743a2ad85af94eb" id="r_abc9687cb67d018598743a2ad85af94eb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dbe/classMantid_1_1Algorithms_1_1MergeRuns.html#abc9687cb67d018598743a2ad85af94eb">inclusionParams</a> (std::span&lt; double const &gt; X1, size_t &amp;i, std::span&lt; double const &gt; X2, std::vector&lt; double &gt; &amp;params)</td></tr>
+<tr class="memdesc:abc9687cb67d018598743a2ad85af94eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the rebin parameters in the case where the range of the second workspace is entirely within that of the first workspace.  <br /></td></tr>
+<tr class="separator:abc9687cb67d018598743a2ad85af94eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacf36341234d97e8c4f485680575cdbd" id="r_aacf36341234d97e8c4f485680575cdbd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dbe/classMantid_1_1Algorithms_1_1MergeRuns.html#aacf36341234d97e8c4f485680575cdbd">intersectionParams</a> (std::span&lt; double const &gt; X1, size_t &amp;i, std::span&lt; double const &gt; X2, std::vector&lt; double &gt; &amp;params)</td></tr>
+<tr class="memdesc:aacf36341234d97e8c4f485680575cdbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the rebin parameters in the case where the bins of the two workspaces intersect.  <br /></td></tr>
+<tr class="separator:aacf36341234d97e8c4f485680575cdbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c881e5b1fd2dfa3ee4c23bc16519ff8" id="r_a4c881e5b1fd2dfa3ee4c23bc16519ff8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dbe/classMantid_1_1Algorithms_1_1MergeRuns.html#a4c881e5b1fd2dfa3ee4c23bc16519ff8">noOverlapParams</a> (std::span&lt; double const &gt; X1, std::span&lt; double const &gt; X2, std::vector&lt; double &gt; &amp;params)</td></tr>
+<tr class="memdesc:a4c881e5b1fd2dfa3ee4c23bc16519ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the rebin paramters in the case where the two input workspaces do not overlap at all.  <br /></td></tr>
+<tr class="separator:a4c881e5b1fd2dfa3ee4c23bc16519ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -678,7 +678,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00063">63</a> of file <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html">MergeRuns.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00064">64</a> of file <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html">MergeRuns.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aebeec47cdfd62620f2f5537fc98aa0b4" name="aebeec47cdfd62620f2f5537fc98aa0b4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aebeec47cdfd62620f2f5537fc98aa0b4">&#9670;&#160;</a></span>AdditionTable</h2>
@@ -703,7 +703,7 @@ Additional Inherited Members</h2></td></tr>
 <p>An addition table is a list of pairs: First int = workspace index in the EW being added, Second int = workspace index to which it will be added in the OUTPUT EW. </p>
 <p>-1 if it should add a new entry at the end. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00099">99</a> of file <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html">MergeRuns.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00100">100</a> of file <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html">MergeRuns.h</a>.</p>
 
 </div>
 </div>
@@ -782,7 +782,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00669">669</a> of file <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html">MergeRuns.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00672">672</a> of file <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html">MergeRuns.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00219">PARALLEL_FOR_NO_WSP_CHECK</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00455">Mantid::Geometry::DetectorInfo::scanCount()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00461">Mantid::Geometry::DetectorInfo::scanIntervals()</a>.</p>
 
@@ -826,14 +826,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00101">101</a> of file <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html">MergeRuns.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00669">buildScanIntervals()</a>, <a class="el" href="../../d1/d12/namespaceMantid_1_1Algorithms.html#a1df11b24516136d1856eeea68a0492b0">Mantid::Algorithms::g_log</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00672">buildScanIntervals()</a>, <a class="el" href="../../d1/d12/namespaceMantid_1_1Algorithms.html#a1df11b24516136d1856eeea68a0492b0">Mantid::Algorithms::g_log</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00313">execHistogram()</a>.</p>
 
 </div>
 </div>
-<a id="a7bcf375e816fa0337166f2220bd46fe6" name="a7bcf375e816fa0337166f2220bd46fe6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bcf375e816fa0337166f2220bd46fe6">&#9670;&#160;</a></span>calculateRebinParams()</h2>
+<a id="a94a5bb7b9c8775573f1d1f7f82487997" name="a94a5bb7b9c8775573f1d1f7f82487997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94a5bb7b9c8775573f1d1f7f82487997">&#9670;&#160;</a></span>calculateRebinParams()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -844,13 +844,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">std::vector&lt; double &gt; Mantid::Algorithms::MergeRuns::calculateRebinParams </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>bins1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>bins2</em>&#160;</td>
         </tr>
         <tr>
@@ -878,7 +878,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00479">479</a> of file <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html">MergeRuns.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00597">inclusionParams()</a>, <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00552">intersectionParams()</a>, and <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00523">noOverlapParams()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00599">inclusionParams()</a>, <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00553">intersectionParams()</a>, and <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00523">noOverlapParams()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00435">checkRebinning()</a>.</p>
 
@@ -911,7 +911,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d2d/classMantid_1_1API_1_1IAlgorithm.html#a75bab30e43a51c5b87a4409a95ca800c">Mantid::API::IAlgorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00077">77</a> of file <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html">MergeRuns.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00078">78</a> of file <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html">MergeRuns.h</a>.</p>
 
 </div>
 </div>
@@ -977,7 +977,7 @@ template&lt;typename <a class="el" href="../../d6/d23/classMantid_1_1Geometry_1_
 
 <p>Copy the history from the input workspaces to the output workspaces. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00101">101</a> of file <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html">MergeRuns.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00102">102</a> of file <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html">MergeRuns.h</a>.</p>
 
 </div>
 </div>
@@ -1080,7 +1080,7 @@ template&lt;typename <a class="el" href="../../d6/d23/classMantid_1_1Geometry_1_
 
 <p class="definition">Definition at line <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00313">313</a> of file <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html">MergeRuns.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00101">buildScanningOutputWorkspace()</a>, <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00435">checkRebinning()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00059">Mantid::Algorithms::MergeRunsParameter::FAIL_MERGE</a>, <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00060">Mantid::Algorithms::MergeRunsParameter::FAIL_MERGE_TOLERANCES</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00048">Mantid::Algorithms::SampleLogsBehaviour::FAIL_PROP</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00050">Mantid::Algorithms::SampleLogsBehaviour::FAIL_TOL_PROP</a>, <a class="el" href="../../d1/d12/namespaceMantid_1_1Algorithms.html#a1df11b24516136d1856eeea68a0492b0">Mantid::Algorithms::g_log</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01928">Mantid::API::Algorithm::getPropertyValue()</a>, <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00056">Mantid::Algorithms::MergeRunsParameter::LIST_MERGE</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00042">Mantid::Algorithms::SampleLogsBehaviour::LIST_PROP</a>, <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00143">m_inMatrixWS</a>, <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00138">m_progress</a>, <a class="el" href="../../d3/d75/SampleLogsBehaviour_8cpp_source.html#l00371">Mantid::Algorithms::SampleLogsBehaviour::mergeSampleLogs()</a>, <a class="el" href="../../d3/d75/SampleLogsBehaviour_8cpp_source.html#l00593">Mantid::Algorithms::SampleLogsBehaviour::readdSampleLogToWorkspace()</a>, <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00639">rebinInput()</a>, <a class="el" href="../../d3/d75/SampleLogsBehaviour_8cpp_source.html#l00578">Mantid::Algorithms::SampleLogsBehaviour::removeSampleLogsFromWorkspace()</a>, <a class="el" href="../../d3/d75/SampleLogsBehaviour_8cpp_source.html#l00606">Mantid::Algorithms::SampleLogsBehaviour::resetSampleLogs()</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00068">Mantid::Algorithms::SampleLogsBehaviour::SampleLogNames::sampleLogsFail</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00069">Mantid::Algorithms::SampleLogsBehaviour::SampleLogNames::sampleLogsFailTolerances</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00065">Mantid::Algorithms::SampleLogsBehaviour::SampleLogNames::sampleLogsList</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00063">Mantid::Algorithms::SampleLogsBehaviour::SampleLogNames::sampleLogsSum</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00064">Mantid::Algorithms::SampleLogsBehaviour::SampleLogNames::sampleLogsTimeSeries</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00066">Mantid::Algorithms::SampleLogsBehaviour::SampleLogNames::sampleLogsWarn</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00067">Mantid::Algorithms::SampleLogsBehaviour::SampleLogNames::sampleLogsWarnTolerances</a>, <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00270">Mantid::Kernel::IPropertyManager::setProperty()</a>, <a class="el" href="../../d3/d75/SampleLogsBehaviour_8cpp_source.html#l00558">Mantid::Algorithms::SampleLogsBehaviour::setUpdatedSampleLogs()</a>, <a class="el" href="../../d1/db1/RunCombinationHelper_8h_source.html#l00025">Mantid::Algorithms::RunCombinationOptions::SKIP_BEHAVIOUR</a>, <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00054">Mantid::Algorithms::MergeRunsParameter::SUM_MERGE</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00052">Mantid::Algorithms::SampleLogsBehaviour::SUM_PROP</a>, <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00055">Mantid::Algorithms::MergeRunsParameter::TIME_SERIES_MERGE</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00040">Mantid::Algorithms::SampleLogsBehaviour::TIME_SERIES_PROP</a>, <a class="el" href="../../d4/d90/RunCombinationHelper_8cpp_source.html#l00124">Mantid::Algorithms::RunCombinationHelper::validateInputWorkspaces()</a>, <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00057">Mantid::Algorithms::MergeRunsParameter::WARN_MERGE</a>, <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00058">Mantid::Algorithms::MergeRunsParameter::WARN_MERGE_TOLERANCES</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00044">Mantid::Algorithms::SampleLogsBehaviour::WARN_PROP</a>, and <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00046">Mantid::Algorithms::SampleLogsBehaviour::WARN_TOL_PROP</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00101">buildScanningOutputWorkspace()</a>, <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00435">checkRebinning()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00060">Mantid::Algorithms::MergeRunsParameter::FAIL_MERGE</a>, <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00061">Mantid::Algorithms::MergeRunsParameter::FAIL_MERGE_TOLERANCES</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00048">Mantid::Algorithms::SampleLogsBehaviour::FAIL_PROP</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00050">Mantid::Algorithms::SampleLogsBehaviour::FAIL_TOL_PROP</a>, <a class="el" href="../../d1/d12/namespaceMantid_1_1Algorithms.html#a1df11b24516136d1856eeea68a0492b0">Mantid::Algorithms::g_log</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01928">Mantid::API::Algorithm::getPropertyValue()</a>, <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00057">Mantid::Algorithms::MergeRunsParameter::LIST_MERGE</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00042">Mantid::Algorithms::SampleLogsBehaviour::LIST_PROP</a>, <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00143">m_inMatrixWS</a>, <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00138">m_progress</a>, <a class="el" href="../../d3/d75/SampleLogsBehaviour_8cpp_source.html#l00371">Mantid::Algorithms::SampleLogsBehaviour::mergeSampleLogs()</a>, <a class="el" href="../../d3/d75/SampleLogsBehaviour_8cpp_source.html#l00593">Mantid::Algorithms::SampleLogsBehaviour::readdSampleLogToWorkspace()</a>, <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00642">rebinInput()</a>, <a class="el" href="../../d3/d75/SampleLogsBehaviour_8cpp_source.html#l00578">Mantid::Algorithms::SampleLogsBehaviour::removeSampleLogsFromWorkspace()</a>, <a class="el" href="../../d3/d75/SampleLogsBehaviour_8cpp_source.html#l00606">Mantid::Algorithms::SampleLogsBehaviour::resetSampleLogs()</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00068">Mantid::Algorithms::SampleLogsBehaviour::SampleLogNames::sampleLogsFail</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00069">Mantid::Algorithms::SampleLogsBehaviour::SampleLogNames::sampleLogsFailTolerances</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00065">Mantid::Algorithms::SampleLogsBehaviour::SampleLogNames::sampleLogsList</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00063">Mantid::Algorithms::SampleLogsBehaviour::SampleLogNames::sampleLogsSum</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00064">Mantid::Algorithms::SampleLogsBehaviour::SampleLogNames::sampleLogsTimeSeries</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00066">Mantid::Algorithms::SampleLogsBehaviour::SampleLogNames::sampleLogsWarn</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00067">Mantid::Algorithms::SampleLogsBehaviour::SampleLogNames::sampleLogsWarnTolerances</a>, <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00270">Mantid::Kernel::IPropertyManager::setProperty()</a>, <a class="el" href="../../d3/d75/SampleLogsBehaviour_8cpp_source.html#l00558">Mantid::Algorithms::SampleLogsBehaviour::setUpdatedSampleLogs()</a>, <a class="el" href="../../d1/db1/RunCombinationHelper_8h_source.html#l00025">Mantid::Algorithms::RunCombinationOptions::SKIP_BEHAVIOUR</a>, <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00055">Mantid::Algorithms::MergeRunsParameter::SUM_MERGE</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00052">Mantid::Algorithms::SampleLogsBehaviour::SUM_PROP</a>, <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00056">Mantid::Algorithms::MergeRunsParameter::TIME_SERIES_MERGE</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00040">Mantid::Algorithms::SampleLogsBehaviour::TIME_SERIES_PROP</a>, <a class="el" href="../../d4/d90/RunCombinationHelper_8cpp_source.html#l00124">Mantid::Algorithms::RunCombinationHelper::validateInputWorkspaces()</a>, <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00058">Mantid::Algorithms::MergeRunsParameter::WARN_MERGE</a>, <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00059">Mantid::Algorithms::MergeRunsParameter::WARN_MERGE_TOLERANCES</a>, <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00044">Mantid::Algorithms::SampleLogsBehaviour::WARN_PROP</a>, and <a class="el" href="../../d6/db3/SampleLogsBehaviour_8h_source.html#l00046">Mantid::Algorithms::SampleLogsBehaviour::WARN_TOL_PROP</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00081">exec()</a>.</p>
 
@@ -1144,14 +1144,14 @@ template&lt;typename <a class="el" href="../../d6/d23/classMantid_1_1Geometry_1_
 
 <p>Reimplemented from <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a54565ef12874808dbe15cdec4cf44824">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00652">652</a> of file <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html">MergeRuns.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00655">655</a> of file <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html">MergeRuns.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00141">m_inEventWS</a>, and <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00143">m_inMatrixWS</a>.</p>
 
 </div>
 </div>
-<a id="a6688e09aed42b6709722493b8bc2e294" name="a6688e09aed42b6709722493b8bc2e294"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6688e09aed42b6709722493b8bc2e294">&#9670;&#160;</a></span>inclusionParams()</h2>
+<a id="abc9687cb67d018598743a2ad85af94eb" name="abc9687cb67d018598743a2ad85af94eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc9687cb67d018598743a2ad85af94eb">&#9670;&#160;</a></span>inclusionParams()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1162,7 +1162,7 @@ template&lt;typename <a class="el" href="../../d6/d23/classMantid_1_1Geometry_1_
         <tr>
           <td class="memname">void Mantid::Algorithms::MergeRuns::inclusionParams </td>
           <td>(</td>
-          <td class="paramtype">const HistogramData::HistogramX &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>X1</em>, </td>
         </tr>
         <tr>
@@ -1174,7 +1174,7 @@ template&lt;typename <a class="el" href="../../d6/d23/classMantid_1_1Geometry_1_
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const HistogramData::HistogramX &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>X2</em>, </td>
         </tr>
         <tr>
@@ -1207,7 +1207,7 @@ template&lt;typename <a class="el" href="../../d6/d23/classMantid_1_1Geometry_1_
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00597">597</a> of file <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html">MergeRuns.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00599">599</a> of file <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html">MergeRuns.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00479">calculateRebinParams()</a>.</p>
 
@@ -1246,8 +1246,8 @@ template&lt;typename <a class="el" href="../../d6/d23/classMantid_1_1Geometry_1_
 
 </div>
 </div>
-<a id="afad62e7100a6e5a5b4f1febfcc12ba4d" name="afad62e7100a6e5a5b4f1febfcc12ba4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afad62e7100a6e5a5b4f1febfcc12ba4d">&#9670;&#160;</a></span>intersectionParams()</h2>
+<a id="aacf36341234d97e8c4f485680575cdbd" name="aacf36341234d97e8c4f485680575cdbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacf36341234d97e8c4f485680575cdbd">&#9670;&#160;</a></span>intersectionParams()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1258,7 +1258,7 @@ template&lt;typename <a class="el" href="../../d6/d23/classMantid_1_1Geometry_1_
         <tr>
           <td class="memname">void Mantid::Algorithms::MergeRuns::intersectionParams </td>
           <td>(</td>
-          <td class="paramtype">const HistogramData::HistogramX &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>X1</em>, </td>
         </tr>
         <tr>
@@ -1270,7 +1270,7 @@ template&lt;typename <a class="el" href="../../d6/d23/classMantid_1_1Geometry_1_
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const HistogramData::HistogramX &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>X2</em>, </td>
         </tr>
         <tr>
@@ -1303,7 +1303,7 @@ template&lt;typename <a class="el" href="../../d6/d23/classMantid_1_1Geometry_1_
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00552">552</a> of file <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html">MergeRuns.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00553">553</a> of file <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html">MergeRuns.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00479">calculateRebinParams()</a>.</p>
 
@@ -1336,12 +1336,12 @@ template&lt;typename <a class="el" href="../../d6/d23/classMantid_1_1Geometry_1_
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#af7d20753d77a5d2875edf5a37eaef39f">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00066">66</a> of file <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html">MergeRuns.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00067">67</a> of file <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html">MergeRuns.h</a>.</p>
 
 </div>
 </div>
-<a id="a755c8c0912fe1251bb96ccad30674ba4" name="a755c8c0912fe1251bb96ccad30674ba4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a755c8c0912fe1251bb96ccad30674ba4">&#9670;&#160;</a></span>noOverlapParams()</h2>
+<a id="a4c881e5b1fd2dfa3ee4c23bc16519ff8" name="a4c881e5b1fd2dfa3ee4c23bc16519ff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c881e5b1fd2dfa3ee4c23bc16519ff8">&#9670;&#160;</a></span>noOverlapParams()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1352,13 +1352,13 @@ template&lt;typename <a class="el" href="../../d6/d23/classMantid_1_1Geometry_1_
         <tr>
           <td class="memname">void Mantid::Algorithms::MergeRuns::noOverlapParams </td>
           <td>(</td>
-          <td class="paramtype">const HistogramData::HistogramX &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>X1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const HistogramData::HistogramX &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>X2</em>, </td>
         </tr>
         <tr>
@@ -1446,7 +1446,7 @@ template&lt;typename <a class="el" href="../../d6/d23/classMantid_1_1Geometry_1_
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00639">639</a> of file <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html">MergeRuns.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00642">642</a> of file <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html">MergeRuns.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00865">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d8/ddc/VectorHelper_8cpp_source.html#l00305">Mantid::Kernel::VectorHelper::rebin()</a>, and <a class="el" href="../../dc/dd8/IndexPeaks_8cpp_source.html#l00116">workspace</a>.</p>
 
@@ -1481,7 +1481,7 @@ template&lt;typename <a class="el" href="../../d6/d23/classMantid_1_1Geometry_1_
 
 <p>Implements <a class="el" href="../../d4/d2d/classMantid_1_1API_1_1IAlgorithm.html#a6f295c4532b0f121081fcdfc8691bbfd">Mantid::API::IAlgorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00075">75</a> of file <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html">MergeRuns.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00076">76</a> of file <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html">MergeRuns.h</a>.</p>
 
 </div>
 </div>
@@ -1512,7 +1512,7 @@ template&lt;typename <a class="el" href="../../d6/d23/classMantid_1_1Geometry_1_
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#adfff14154e5762875923c9a4f3679b51">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00068">68</a> of file <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html">MergeRuns.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00069">69</a> of file <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html">MergeRuns.h</a>.</p>
 
 </div>
 </div>
@@ -1621,7 +1621,7 @@ template&lt;typename <a class="el" href="../../d6/d23/classMantid_1_1Geometry_1_
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#ac1fab4b33f78654eccab880db81f14c0">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00074">74</a> of file <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html">MergeRuns.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00075">75</a> of file <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html">MergeRuns.h</a>.</p>
 
 </div>
 </div>
@@ -1650,7 +1650,7 @@ template&lt;typename <a class="el" href="../../d6/d23/classMantid_1_1Geometry_1_
 
 <p class="definition">Definition at line <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00141">141</a> of file <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html">MergeRuns.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00149">buildAdditionTables()</a>, <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00269">execEvent()</a>, <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00652">fillHistory()</a>, and <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00394">validateInputsForEventWorkspaces()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00149">buildAdditionTables()</a>, <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00269">execEvent()</a>, <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00655">fillHistory()</a>, and <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00394">validateInputsForEventWorkspaces()</a>.</p>
 
 </div>
 </div>
@@ -1678,7 +1678,7 @@ template&lt;typename <a class="el" href="../../d6/d23/classMantid_1_1Geometry_1_
 
 <p class="definition">Definition at line <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html#l00143">143</a> of file <a class="el" href="../../d1/dc7/MergeRuns_8h_source.html">MergeRuns.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00435">checkRebinning()</a>, <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00313">execHistogram()</a>, and <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00652">fillHistory()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00435">checkRebinning()</a>, <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00313">execHistogram()</a>, and <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00655">fillHistory()</a>.</p>
 
 </div>
 </div>

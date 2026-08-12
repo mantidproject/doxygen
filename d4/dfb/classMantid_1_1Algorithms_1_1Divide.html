@@ -497,9 +497,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:adb40c77dc8f7903e589d6ddb110c6fdf" id="r_adb40c77dc8f7903e589d6ddb110c6fdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dfb/classMantid_1_1Algorithms_1_1Divide.html#adb40c77dc8f7903e589d6ddb110c6fdf">performEventBinaryOperation</a> (<a class="el" href="../../db/d9a/classMantid_1_1DataObjects_1_1EventList.html">DataObjects::EventList</a> &amp;lhs, const double &amp;rhsY, const double &amp;rhsE) override</td></tr>
 <tr class="memdesc:adb40c77dc8f7903e589d6ddb110c6fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carries out the binary operation IN-PLACE on a single EventList, with a single (double) value as the right-hand operand.  <br /></td></tr>
 <tr class="separator:adb40c77dc8f7903e589d6ddb110c6fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2adc010c3da8531da1ed6cf504dd7bc" id="r_ad2adc010c3da8531da1ed6cf504dd7bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dfb/classMantid_1_1Algorithms_1_1Divide.html#ad2adc010c3da8531da1ed6cf504dd7bc">performEventBinaryOperation</a> (<a class="el" href="../../db/d9a/classMantid_1_1DataObjects_1_1EventList.html">DataObjects::EventList</a> &amp;lhs, const MantidVec &amp;rhsX, const MantidVec &amp;rhsY, const MantidVec &amp;rhsE) override</td></tr>
-<tr class="memdesc:ad2adc010c3da8531da1ed6cf504dd7bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carries out the binary operation IN-PLACE on a single EventList, with another (histogrammed) spectrum as the right-hand operand.  <br /></td></tr>
-<tr class="separator:ad2adc010c3da8531da1ed6cf504dd7bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae86d7abeabfd8bb10017f14163100e64" id="r_ae86d7abeabfd8bb10017f14163100e64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dfb/classMantid_1_1Algorithms_1_1Divide.html#ae86d7abeabfd8bb10017f14163100e64">performEventBinaryOperation</a> (<a class="el" href="../../db/d9a/classMantid_1_1DataObjects_1_1EventList.html">DataObjects::EventList</a> &amp;lhs, std::span&lt; double const &gt; rhsX, std::span&lt; double const &gt; rhsY, std::span&lt; double const &gt; rhsE) override</td></tr>
+<tr class="memdesc:ae86d7abeabfd8bb10017f14163100e64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carries out the binary operation IN-PLACE on a single EventList, with another (histogrammed) spectrum as the right-hand operand.  <br /></td></tr>
+<tr class="separator:ae86d7abeabfd8bb10017f14163100e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69a3e9657f101cd546a4b9687e53121e" id="r_a69a3e9657f101cd546a4b9687e53121e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dfb/classMantid_1_1Algorithms_1_1Divide.html#a69a3e9657f101cd546a4b9687e53121e">setOutputUnits</a> (const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a97ac0dc7f26bb26c417c74e8b29d1181">API::MatrixWorkspace_const_sptr</a> lhs, const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a97ac0dc7f26bb26c417c74e8b29d1181">API::MatrixWorkspace_const_sptr</a> <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp.html#a4a4185072ce68364465daf0b662bb479">rhs</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">API::MatrixWorkspace_sptr</a> out) override</td></tr>
 <tr class="memdesc:a69a3e9657f101cd546a4b9687e53121e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should be overridden by operations that need to manipulate the units of the output workspace.  <br /></td></tr>
 <tr class="separator:a69a3e9657f101cd546a4b9687e53121e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -775,7 +775,7 @@ OutputWorkspace - The name of the workspace in which to store the division data 
 
 <p class="definition">Definition at line <a class="el" href="../../d0/d54/Divide_8cpp_source.html#l00162">162</a> of file <a class="el" href="../../d0/d54/Divide_8cpp_source.html">Divide.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00170">Mantid::Algorithms::BinaryOperation::m_elhs</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00202">Mantid::Algorithms::BinaryOperation::m_flipSides</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00208">Mantid::Algorithms::BinaryOperation::m_keepEventWorkspace</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00198">Mantid::Algorithms::BinaryOperation::m_matchXSize</a>, and <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00214">Mantid::Algorithms::BinaryOperation::m_useHistogramForRhsEventWorkspace</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00173">Mantid::Algorithms::BinaryOperation::m_elhs</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00205">Mantid::Algorithms::BinaryOperation::m_flipSides</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00211">Mantid::Algorithms::BinaryOperation::m_keepEventWorkspace</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00201">Mantid::Algorithms::BinaryOperation::m_matchXSize</a>, and <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00217">Mantid::Algorithms::BinaryOperation::m_useHistogramForRhsEventWorkspace</a>.</p>
 
 </div>
 </div>
@@ -833,7 +833,7 @@ OutputWorkspace - The name of the workspace in which to store the division data 
 
 <p class="definition">Definition at line <a class="el" href="../../d0/d54/Divide_8cpp_source.html#l00193">193</a> of file <a class="el" href="../../d0/d54/Divide_8cpp_source.html">Divide.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00183">Mantid::Algorithms::BinaryOperation::m_AllowDifferentNumberSpectra</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00192">Mantid::Algorithms::BinaryOperation::m_lhsRagged</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00198">Mantid::Algorithms::BinaryOperation::m_matchXSize</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00189">Mantid::Algorithms::BinaryOperation::m_rhsBlocksize</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00194">Mantid::Algorithms::BinaryOperation::m_rhsRagged</a>, <a class="el" href="../../db/da3/WorkspaceOpOverloads_8cpp_source.html#l00370">Mantid::API::WorkspaceHelpers::matchingBins()</a>, and <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00098">rhs</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00186">Mantid::Algorithms::BinaryOperation::m_AllowDifferentNumberSpectra</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00195">Mantid::Algorithms::BinaryOperation::m_lhsRagged</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00201">Mantid::Algorithms::BinaryOperation::m_matchXSize</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00192">Mantid::Algorithms::BinaryOperation::m_rhsBlocksize</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00197">Mantid::Algorithms::BinaryOperation::m_rhsRagged</a>, <a class="el" href="../../db/da3/WorkspaceOpOverloads_8cpp_source.html#l00370">Mantid::API::WorkspaceHelpers::matchingBins()</a>, and <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00098">rhs</a>.</p>
 
 </div>
 </div>
@@ -1126,7 +1126,7 @@ OutputWorkspace - The name of the workspace in which to store the division data 
 
 <p class="definition">Definition at line <a class="el" href="../../d0/d54/Divide_8cpp_source.html#l00121">121</a> of file <a class="el" href="../../d0/d54/Divide_8cpp_source.html">Divide.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/de1/EventList_8cpp_source.html#l04115">Mantid::DataObjects::EventList::divide()</a>, and <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00098">rhs</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/de1/EventList_8cpp_source.html#l04116">Mantid::DataObjects::EventList::divide()</a>, and <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00098">rhs</a>.</p>
 
 </div>
 </div>
@@ -1185,12 +1185,12 @@ OutputWorkspace - The name of the workspace in which to store the division data 
 
 <p class="definition">Definition at line <a class="el" href="../../d0/d54/Divide_8cpp_source.html#l00150">150</a> of file <a class="el" href="../../d0/d54/Divide_8cpp_source.html">Divide.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/de1/EventList_8cpp_source.html#l04115">Mantid::DataObjects::EventList::divide()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/de1/EventList_8cpp_source.html#l04116">Mantid::DataObjects::EventList::divide()</a>.</p>
 
 </div>
 </div>
-<a id="ad2adc010c3da8531da1ed6cf504dd7bc" name="ad2adc010c3da8531da1ed6cf504dd7bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2adc010c3da8531da1ed6cf504dd7bc">&#9670;&#160;</a></span>performEventBinaryOperation() <span class="overload">[3/3]</span></h2>
+<a id="ae86d7abeabfd8bb10017f14163100e64" name="ae86d7abeabfd8bb10017f14163100e64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae86d7abeabfd8bb10017f14163100e64">&#9670;&#160;</a></span>performEventBinaryOperation() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1207,19 +1207,19 @@ OutputWorkspace - The name of the workspace in which to store the division data 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const MantidVec &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>rhsX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const MantidVec &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>rhsY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const MantidVec &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>rhsE</em>&#160;</td>
         </tr>
         <tr>
@@ -1246,11 +1246,11 @@ OutputWorkspace - The name of the workspace in which to store the division data 
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="../../d4/d14/classMantid_1_1Algorithms_1_1BinaryOperation.html#a4c36ed34fabb2fc551a93be42b93a228">Mantid::Algorithms::BinaryOperation</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d4/d14/classMantid_1_1Algorithms_1_1BinaryOperation.html#a76d5f00d7b58ea6b984fab10aa118680">Mantid::Algorithms::BinaryOperation</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/d54/Divide_8cpp_source.html#l00136">136</a> of file <a class="el" href="../../d0/d54/Divide_8cpp_source.html">Divide.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/de1/EventList_8cpp_source.html#l04115">Mantid::DataObjects::EventList::divide()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/de1/EventList_8cpp_source.html#l04116">Mantid::DataObjects::EventList::divide()</a>.</p>
 
 </div>
 </div>
@@ -1339,7 +1339,7 @@ OutputWorkspace - The name of the workspace in which to store the division data 
 
 <p class="definition">Definition at line <a class="el" href="../../d0/d54/Divide_8cpp_source.html#l00080">80</a> of file <a class="el" href="../../d0/d54/Divide_8cpp_source.html">Divide.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00189">Mantid::Algorithms::BinaryOperation::m_rhsBlocksize</a>, <a class="el" href="../../db/da3/WorkspaceOpOverloads_8cpp_source.html#l00370">Mantid::API::WorkspaceHelpers::matchingBins()</a>, and <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00098">rhs</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01978">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00192">Mantid::Algorithms::BinaryOperation::m_rhsBlocksize</a>, <a class="el" href="../../db/da3/WorkspaceOpOverloads_8cpp_source.html#l00370">Mantid::API::WorkspaceHelpers::matchingBins()</a>, and <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00098">rhs</a>.</p>
 
 </div>
 </div>

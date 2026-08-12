@@ -500,9 +500,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ac6fe0b42275326d020d1cacfdb46ab78" id="r_ac6fe0b42275326d020d1cacfdb46ab78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d2e/classMantid_1_1Algorithms_1_1Plus.html#ac6fe0b42275326d020d1cacfdb46ab78">performEventBinaryOperation</a> (<a class="el" href="../../db/d9a/classMantid_1_1DataObjects_1_1EventList.html">DataObjects::EventList</a> &amp;lhs, const double &amp;rhsY, const double &amp;rhsE) override</td></tr>
 <tr class="memdesc:ac6fe0b42275326d020d1cacfdb46ab78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carries out the binary operation IN-PLACE on a single EventList, with a single (double) value as the right-hand operand.  <br /></td></tr>
 <tr class="separator:ac6fe0b42275326d020d1cacfdb46ab78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85e5279c2d2ba2e781c85f13b1ccd51a" id="r_a85e5279c2d2ba2e781c85f13b1ccd51a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d2e/classMantid_1_1Algorithms_1_1Plus.html#a85e5279c2d2ba2e781c85f13b1ccd51a">performEventBinaryOperation</a> (<a class="el" href="../../db/d9a/classMantid_1_1DataObjects_1_1EventList.html">DataObjects::EventList</a> &amp;lhs, const MantidVec &amp;rhsX, const MantidVec &amp;rhsY, const MantidVec &amp;rhsE) override</td></tr>
-<tr class="memdesc:a85e5279c2d2ba2e781c85f13b1ccd51a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carries out the binary operation IN-PLACE on a single EventList, with another (histogrammed) spectrum as the right-hand operand.  <br /></td></tr>
-<tr class="separator:a85e5279c2d2ba2e781c85f13b1ccd51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1106fbee4cd4e880cdb2d1f351bbfa2" id="r_ae1106fbee4cd4e880cdb2d1f351bbfa2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d2e/classMantid_1_1Algorithms_1_1Plus.html#ae1106fbee4cd4e880cdb2d1f351bbfa2">performEventBinaryOperation</a> (<a class="el" href="../../db/d9a/classMantid_1_1DataObjects_1_1EventList.html">DataObjects::EventList</a> &amp;lhs, std::span&lt; double const &gt; rhsX, std::span&lt; double const &gt; rhsY, std::span&lt; double const &gt; rhsE) override</td></tr>
+<tr class="memdesc:ae1106fbee4cd4e880cdb2d1f351bbfa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carries out the binary operation IN-PLACE on a single EventList, with another (histogrammed) spectrum as the right-hand operand.  <br /></td></tr>
+<tr class="separator:ae1106fbee4cd4e880cdb2d1f351bbfa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -825,7 +825,7 @@ OutputWorkspace - The name of the workspace in which to store the added data  </
 
 <p class="definition">Definition at line <a class="el" href="../../de/d3c/Plus_8cpp_source.html#l00100">100</a> of file <a class="el" href="../../de/d3c/Plus_8cpp_source.html">Plus.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dac/BinaryOperation_8cpp_source.html#l00863">Mantid::Algorithms::BinaryOperation::checkRequirements()</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00220">Mantid::Algorithms::BinaryOperation::m_do2D_even_for_SingleColumn_on_rhs</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00170">Mantid::Algorithms::BinaryOperation::m_elhs</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00180">Mantid::Algorithms::BinaryOperation::m_eout</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00175">Mantid::Algorithms::BinaryOperation::m_erhs</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00202">Mantid::Algorithms::BinaryOperation::m_flipSides</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00208">Mantid::Algorithms::BinaryOperation::m_keepEventWorkspace</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00168">Mantid::Algorithms::BinaryOperation::m_lhs</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00198">Mantid::Algorithms::BinaryOperation::m_matchXSize</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00173">Mantid::Algorithms::BinaryOperation::m_rhs</a>, and <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00214">Mantid::Algorithms::BinaryOperation::m_useHistogramForRhsEventWorkspace</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dac/BinaryOperation_8cpp_source.html#l00862">Mantid::Algorithms::BinaryOperation::checkRequirements()</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00223">Mantid::Algorithms::BinaryOperation::m_do2D_even_for_SingleColumn_on_rhs</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00173">Mantid::Algorithms::BinaryOperation::m_elhs</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00183">Mantid::Algorithms::BinaryOperation::m_eout</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00178">Mantid::Algorithms::BinaryOperation::m_erhs</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00205">Mantid::Algorithms::BinaryOperation::m_flipSides</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00211">Mantid::Algorithms::BinaryOperation::m_keepEventWorkspace</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00171">Mantid::Algorithms::BinaryOperation::m_lhs</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00201">Mantid::Algorithms::BinaryOperation::m_matchXSize</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00176">Mantid::Algorithms::BinaryOperation::m_rhs</a>, and <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00217">Mantid::Algorithms::BinaryOperation::m_useHistogramForRhsEventWorkspace</a>.</p>
 
 </div>
 </div>
@@ -883,7 +883,7 @@ OutputWorkspace - The name of the workspace in which to store the added data  </
 
 <p class="definition">Definition at line <a class="el" href="../../de/d3c/Plus_8cpp_source.html#l00179">179</a> of file <a class="el" href="../../de/d3c/Plus_8cpp_source.html">Plus.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dac/BinaryOperation_8cpp_source.html#l00361">Mantid::Algorithms::BinaryOperation::checkSizeCompatibility()</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00170">Mantid::Algorithms::BinaryOperation::m_elhs</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00175">Mantid::Algorithms::BinaryOperation::m_erhs</a>, and <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00098">rhs</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dac/BinaryOperation_8cpp_source.html#l00361">Mantid::Algorithms::BinaryOperation::checkSizeCompatibility()</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00173">Mantid::Algorithms::BinaryOperation::m_elhs</a>, <a class="el" href="../../df/dc6/BinaryOperation_8h_source.html#l00178">Mantid::Algorithms::BinaryOperation::m_erhs</a>, and <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00098">rhs</a>.</p>
 
 </div>
 </div>
@@ -1272,8 +1272,8 @@ OutputWorkspace - The name of the workspace in which to store the added data  </
 
 </div>
 </div>
-<a id="a85e5279c2d2ba2e781c85f13b1ccd51a" name="a85e5279c2d2ba2e781c85f13b1ccd51a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85e5279c2d2ba2e781c85f13b1ccd51a">&#9670;&#160;</a></span>performEventBinaryOperation() <span class="overload">[3/3]</span></h2>
+<a id="ae1106fbee4cd4e880cdb2d1f351bbfa2" name="ae1106fbee4cd4e880cdb2d1f351bbfa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1106fbee4cd4e880cdb2d1f351bbfa2">&#9670;&#160;</a></span>performEventBinaryOperation() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1290,19 +1290,19 @@ OutputWorkspace - The name of the workspace in which to store the added data  </
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const MantidVec &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>rhsX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const MantidVec &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>rhsY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const MantidVec &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>rhsE</em>&#160;</td>
         </tr>
         <tr>
@@ -1329,7 +1329,7 @@ OutputWorkspace - The name of the workspace in which to store the added data  </
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="../../d4/d14/classMantid_1_1Algorithms_1_1BinaryOperation.html#a4c36ed34fabb2fc551a93be42b93a228">Mantid::Algorithms::BinaryOperation</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d4/d14/classMantid_1_1Algorithms_1_1BinaryOperation.html#a76d5f00d7b58ea6b984fab10aa118680">Mantid::Algorithms::BinaryOperation</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="../../de/d3c/Plus_8cpp_source.html#l00064">64</a> of file <a class="el" href="../../de/d3c/Plus_8cpp_source.html">Plus.cpp</a>.</p>
 

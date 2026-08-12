@@ -128,8 +128,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeb460b245d64621e9237856ae8f88e48" id="r_aeb460b245d64621e9237856ae8f88e48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc5/classMantid_1_1API_1_1IPowderDiffPeakFunction.html#aeb460b245d64621e9237856ae8f88e48">function</a> (const <a class="el" href="../../df/d91/classMantid_1_1API_1_1FunctionDomain.html">FunctionDomain</a> &amp;domain, <a class="el" href="../../d9/d9c/classMantid_1_1API_1_1FunctionValues.html">FunctionValues</a> &amp;values) const override</td></tr>
 <tr class="memdesc:aeb460b245d64621e9237856ae8f88e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate function in a range.  <br /></td></tr>
 <tr class="separator:aeb460b245d64621e9237856ae8f88e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abac933bf4421296c4148ffa3a9fe0e00" id="r_abac933bf4421296c4148ffa3a9fe0e00"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc5/classMantid_1_1API_1_1IPowderDiffPeakFunction.html#abac933bf4421296c4148ffa3a9fe0e00">function</a> (std::vector&lt; double &gt; &amp;out, const std::vector&lt; double &gt; &amp;xValues) const =0</td></tr>
-<tr class="separator:abac933bf4421296c4148ffa3a9fe0e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a151550adf4a6256bd03b59bdfd5f19da" id="r_a151550adf4a6256bd03b59bdfd5f19da"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc5/classMantid_1_1API_1_1IPowderDiffPeakFunction.html#a151550adf4a6256bd03b59bdfd5f19da">function</a> (std::span&lt; double &gt; out, std::span&lt; double const &gt; xValues) const =0</td></tr>
+<tr class="separator:a151550adf4a6256bd03b59bdfd5f19da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8832a571e15d63626669bb1c9e579d9" id="r_aa8832a571e15d63626669bb1c9e579d9"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc5/classMantid_1_1API_1_1IPowderDiffPeakFunction.html#aa8832a571e15d63626669bb1c9e579d9">fwhm</a> () const</td></tr>
 <tr class="memdesc:aa8832a571e15d63626669bb1c9e579d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get peakl's FWHM.  <br /></td></tr>
 <tr class="separator:aa8832a571e15d63626669bb1c9e579d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -648,7 +648,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Roman Tolchenov, Tessella Support Services plc </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>16/10/2009 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00022">22</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00023">23</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aced6cee5605bc3f78fa0988257d3bce7" name="aced6cee5605bc3f78fa0988257d3bce7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aced6cee5605bc3f78fa0988257d3bce7">&#9670;&#160;</a></span>IPowderDiffPeakFunction()</h2>
@@ -671,7 +671,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html">IPowderDiffPeakFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00103">s_peakRadius</a>, and <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00182">setPeakRadius()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00106">s_peakRadius</a>, and <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00182">setPeakRadius()</a>.</p>
 
 </div>
 </div>
@@ -737,9 +737,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00070">70</a> of file <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html">IPowderDiffPeakFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/dc5/classMantid_1_1API_1_1IPowderDiffPeakFunction.html#a9fecc044d00717078d2dc59d994d37f3">calculateParameters()</a>, <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00106">m_centre</a>, and <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00113">m_hasNewParameterValue</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/dc5/classMantid_1_1API_1_1IPowderDiffPeakFunction.html#a9fecc044d00717078d2dc59d994d37f3">calculateParameters()</a>, <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00109">m_centre</a>, and <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00116">m_hasNewParameterValue</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00673">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::function1D()</a>, and <a class="el" href="../../de/d89/FitPowderDiffPeaks_8cpp_source.html#l02523">Mantid::CurveFitting::Algorithms::FitPowderDiffPeaks::genPeak()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00674">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::function1D()</a>, and <a class="el" href="../../de/d89/FitPowderDiffPeaks_8cpp_source.html#l02523">Mantid::CurveFitting::Algorithms::FitPowderDiffPeaks::genPeak()</a>.</p>
 
 </div>
 </div>
@@ -778,6 +778,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculate function in a range. </p>
+<p>The ranges are taken as spans so that the size-checked histogram data types can be evaluated over, and written into, directly. <code>out</code> must already be sized; implementations do not resize it. </p>
 
 <p>Implements <a class="el" href="../../d5/de7/classMantid_1_1API_1_1IFunction.html#ab042940272b95772bc0331965cf0a639">Mantid::API::IFunction</a>.</p>
 
@@ -787,8 +788,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="abac933bf4421296c4148ffa3a9fe0e00" name="abac933bf4421296c4148ffa3a9fe0e00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abac933bf4421296c4148ffa3a9fe0e00">&#9670;&#160;</a></span>function() <span class="overload">[2/2]</span></h2>
+<a id="a151550adf4a6256bd03b59bdfd5f19da" name="a151550adf4a6256bd03b59bdfd5f19da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a151550adf4a6256bd03b59bdfd5f19da">&#9670;&#160;</a></span>function() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -799,13 +800,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void Mantid::API::IPowderDiffPeakFunction::function </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double &gt;&#160;</td>
           <td class="paramname"><em>out</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>xValues</em>&#160;</td>
         </tr>
         <tr>
@@ -821,7 +822,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="../../d8/d94/classMantid_1_1CurveFitting_1_1Functions_1_1NeutronBk2BkExpConvPVoigt.html#a32cd7408ca40a41d59c16e720452df09">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt</a>, and <a class="el" href="../../de/dca/classMantid_1_1CurveFitting_1_1Functions_1_1ThermalNeutronBk2BkExpConvPVoigt.html#a6ab76ff6d22acb3625f7f27c8dfbb705">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt</a>.</p>
+<p>Implemented in <a class="el" href="../../d8/d94/classMantid_1_1CurveFitting_1_1Functions_1_1NeutronBk2BkExpConvPVoigt.html#abc13b71939d059ff6aedcca90adee81b">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt</a>, and <a class="el" href="../../de/dca/classMantid_1_1CurveFitting_1_1Functions_1_1ThermalNeutronBk2BkExpConvPVoigt.html#ab740b6bc48bbc2f847bc57db04aa2f69">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00123">getMaximumValue()</a>.</p>
 
@@ -855,9 +856,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00113">113</a> of file <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html">IPowderDiffPeakFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/dc5/classMantid_1_1API_1_1IPowderDiffPeakFunction.html#a9fecc044d00717078d2dc59d994d37f3">calculateParameters()</a>, <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00110">m_fwhm</a>, and <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00113">m_hasNewParameterValue</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/dc5/classMantid_1_1API_1_1IPowderDiffPeakFunction.html#a9fecc044d00717078d2dc59d994d37f3">calculateParameters()</a>, <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00113">m_fwhm</a>, and <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00116">m_hasNewParameterValue</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00673">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::function1D()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00674">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::function1D()</a>.</p>
 
 </div>
 </div>
@@ -899,7 +900,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00123">123</a> of file <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html">IPowderDiffPeakFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/dc5/classMantid_1_1API_1_1IPowderDiffPeakFunction.html#abac933bf4421296c4148ffa3a9fe0e00">function()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/dc5/classMantid_1_1API_1_1IPowderDiffPeakFunction.html#a151550adf4a6256bd03b59bdfd5f19da">function()</a>.</p>
 
 </div>
 </div>
@@ -947,7 +948,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00172">172</a> of file <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html">IPowderDiffPeakFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00130">mH</a>, <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00131">mK</a>, and <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00132">mL</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00133">mH</a>, <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00134">mK</a>, and <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00135">mL</a>.</p>
 
 </div>
 </div>
@@ -1009,7 +1010,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00194">194</a> of file <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html">IPowderDiffPeakFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00118">m_sortedProfileParameterNames</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00121">m_sortedProfileParameterNames</a>.</p>
 
 </div>
 </div>
@@ -1041,7 +1042,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00105">105</a> of file <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html">IPowderDiffPeakFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d51/ParamFunction_8cpp_source.html#l00062">Mantid::API::ParamFunction::getParameter()</a>, <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00105">height()</a>, and <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00136">HEIGHTINDEX</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d51/ParamFunction_8cpp_source.html#l00062">Mantid::API::ParamFunction::getParameter()</a>, <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00105">height()</a>, and <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00139">HEIGHTINDEX</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00316">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::functionLocal()</a>, and <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00105">height()</a>.</p>
 
@@ -1072,7 +1073,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The flag to show whether the parameters set to peak function making an valid peak. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00063">63</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00064">64</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
 
 </div>
 </div>
@@ -1108,7 +1109,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00100">100</a> of file <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html">IPowderDiffPeakFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00136">HEIGHTINDEX</a>, and <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00045">setParameter()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00139">HEIGHTINDEX</a>, and <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00045">setParameter()</a>.</p>
 
 </div>
 </div>
@@ -1157,7 +1158,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00144">144</a> of file <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html">IPowderDiffPeakFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00130">mH</a>, <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00133">mHKLSet</a>, <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00131">mK</a>, <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00132">mL</a>, and <a class="el" href="../../d5/de7/classMantid_1_1API_1_1IFunction.html#a914dec3d7873dd8208ed78f91ed6400e">Mantid::API::IFunction::name()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00133">mH</a>, <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00136">mHKLSet</a>, <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00134">mK</a>, <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00135">mL</a>, and <a class="el" href="../../d5/de7/classMantid_1_1API_1_1IFunction.html#a914dec3d7873dd8208ed78f91ed6400e">Mantid::API::IFunction::name()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../de/d89/FitPowderDiffPeaks_8cpp_source.html#l02523">Mantid::CurveFitting::Algorithms::FitPowderDiffPeaks::genPeak()</a>.</p>
 
@@ -1220,7 +1221,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html">IPowderDiffPeakFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00022">fabs</a>, <a class="el" href="../../d1/d51/ParamFunction_8cpp_source.html#l00062">Mantid::API::ParamFunction::getParameter()</a>, <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00018">IGNOREDCHANGE</a>, <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00113">m_hasNewParameterValue</a>, <a class="el" href="../../d5/de7/classMantid_1_1API_1_1IFunction.html#a914dec3d7873dd8208ed78f91ed6400e">Mantid::API::IFunction::name()</a>, <a class="el" href="../../d1/d51/ParamFunction_8cpp_source.html#l00029">Mantid::API::ParamFunction::setParameter()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00022">fabs</a>, <a class="el" href="../../d1/d51/ParamFunction_8cpp_source.html#l00062">Mantid::API::ParamFunction::getParameter()</a>, <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00018">IGNOREDCHANGE</a>, <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00116">m_hasNewParameterValue</a>, <a class="el" href="../../d5/de7/classMantid_1_1API_1_1IFunction.html#a914dec3d7873dd8208ed78f91ed6400e">Mantid::API::IFunction::name()</a>, <a class="el" href="../../d1/d51/ParamFunction_8cpp_source.html#l00029">Mantid::API::ParamFunction::setParameter()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
 </div>
 </div>
@@ -1281,7 +1282,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html">IPowderDiffPeakFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00022">fabs</a>, <a class="el" href="../../d1/d51/ParamFunction_8cpp_source.html#l00062">Mantid::API::ParamFunction::getParameter()</a>, <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00018">IGNOREDCHANGE</a>, <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00113">m_hasNewParameterValue</a>, <a class="el" href="../../d1/d51/ParamFunction_8cpp_source.html#l00029">Mantid::API::ParamFunction::setParameter()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00022">fabs</a>, <a class="el" href="../../d1/d51/ParamFunction_8cpp_source.html#l00062">Mantid::API::ParamFunction::getParameter()</a>, <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00018">IGNOREDCHANGE</a>, <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00116">m_hasNewParameterValue</a>, <a class="el" href="../../d1/d51/ParamFunction_8cpp_source.html#l00029">Mantid::API::ParamFunction::setParameter()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00100">setHeight()</a>.</p>
 
@@ -1322,7 +1323,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00182">182</a> of file <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html">IPowderDiffPeakFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00103">s_peakRadius</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00106">s_peakRadius</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00028">IPowderDiffPeakFunction()</a>.</p>
 
@@ -1354,7 +1355,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Set up the flag to show whether (from client) cell parameter value changed. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00059">59</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00060">60</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
 
 </div>
 </div>
@@ -1379,7 +1380,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00136">136</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00139">139</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00305">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::function()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00336">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::function1D()</a>, <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00105">height()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00049">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::init()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00052">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::init()</a>, and <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00100">setHeight()</a>.</p>
 
@@ -1405,9 +1406,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00135">135</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00138">138</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00151">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00213">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00049">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::init()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00052">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::init()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00282">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::setParameter()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00565">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::setParameter()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00262">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::setParameter()</a>, and <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00545">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::setParameter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00151">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00213">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00049">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::init()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00052">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::init()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00282">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::setParameter()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00566">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::setParameter()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00262">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::setParameter()</a>, and <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00546">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::setParameter()</a>.</p>
 
 </div>
 </div>
@@ -1433,9 +1434,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>An indicator to re-calculate peak d-space position. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00115">115</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00118">118</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00151">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00213">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00049">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::init()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00052">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::init()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00282">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::setParameter()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00565">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::setParameter()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00262">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::setParameter()</a>, and <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00545">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::setParameter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00151">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00213">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00049">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::init()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00052">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::init()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00282">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::setParameter()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00566">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::setParameter()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00262">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::setParameter()</a>, and <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00546">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::setParameter()</a>.</p>
 
 </div>
 </div>
@@ -1461,7 +1462,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Centre of the peak. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00106">106</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00109">109</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00151">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00213">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00394">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::calOmega()</a>, <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00070">centre()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00305">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::function()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00384">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::function()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00336">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::function1D()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00316">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::functionLocal()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00110">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::getPeakParameter()</a>, and <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00172">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::getPeakParameter()</a>.</p>
 
@@ -1489,7 +1490,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Centre of the peak in d-space. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00108">108</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00111">111</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00151">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00213">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00110">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::getPeakParameter()</a>, and <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00172">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::getPeakParameter()</a>.</p>
 
@@ -1517,7 +1518,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Peak's FWHM. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00110">110</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00113">113</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00151">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00213">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00394">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::calOmega()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00305">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::function()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00384">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::function()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00336">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::function1D()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00316">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::functionLocal()</a>, <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00113">fwhm()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00110">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::getPeakParameter()</a>, and <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00172">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::getPeakParameter()</a>.</p>
 
@@ -1545,9 +1546,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Flag if any parameter value changed. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00113">113</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00116">116</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00151">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00213">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00070">centre()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00305">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::function()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00384">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::function()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00336">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::function1D()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00316">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::functionLocal()</a>, <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00113">fwhm()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00110">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::getPeakParameter()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00172">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::getPeakParameter()</a>, <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00059">setParameter()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00282">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::setParameter()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00565">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::setParameter()</a>, <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00045">setParameter()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00262">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::setParameter()</a>, and <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00545">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::setParameter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00151">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00213">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00070">centre()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00305">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::function()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00384">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::function()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00336">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::function1D()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00316">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::functionLocal()</a>, <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00113">fwhm()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00110">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::getPeakParameter()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00172">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::getPeakParameter()</a>, <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00059">setParameter()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00282">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::setParameter()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00566">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::setParameter()</a>, <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00045">setParameter()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00262">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::setParameter()</a>, and <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00546">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::setParameter()</a>.</p>
 
 </div>
 </div>
@@ -1573,7 +1574,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Flag to indicate whether peaks' parameters value can generate a valid peak. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00127">127</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00130">130</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00151">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::calculateParameters()</a>, and <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00213">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::calculateParameters()</a>.</p>
 
@@ -1601,7 +1602,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Peak profile parameters names in ascending order. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00118">118</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00121">121</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00194">hasProfileParameter()</a>.</p>
 
@@ -1629,7 +1630,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Unit cell. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00121">121</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00124">124</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00151">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::calculateParameters()</a>, and <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00213">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::calculateParameters()</a>.</p>
 
@@ -1657,9 +1658,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Unit cell size. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00124">124</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00127">127</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00049">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::init()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00052">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::init()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00282">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::setParameter()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00565">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::setParameter()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00262">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::setParameter()</a>, and <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00545">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::setParameter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00049">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::init()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00052">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::init()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00282">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::setParameter()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00566">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::setParameter()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00262">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::setParameter()</a>, and <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00546">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::setParameter()</a>.</p>
 
 </div>
 </div>
@@ -1685,7 +1686,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Miller Indices. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00130">130</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00133">133</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00151">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00213">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00394">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::calOmega()</a>, <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00172">getMillerIndex()</a>, and <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00144">setMillerIndex()</a>.</p>
 
@@ -1711,7 +1712,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00133">133</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00136">136</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00151">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::calculateParameters()</a>, and <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00144">setMillerIndex()</a>.</p>
 
@@ -1737,7 +1738,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00131">131</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00134">134</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00151">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00213">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00394">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::calOmega()</a>, <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00172">getMillerIndex()</a>, and <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00144">setMillerIndex()</a>.</p>
 
@@ -1763,7 +1764,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00132">132</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00135">135</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00151">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d4/d72/ThermalNeutronBk2BkExpConvPVoigt_8cpp_source.html#l00213">Mantid::CurveFitting::Functions::ThermalNeutronBk2BkExpConvPVoigt::calculateParameters()</a>, <a class="el" href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00394">Mantid::CurveFitting::Functions::NeutronBk2BkExpConvPVoigt::calOmega()</a>, <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00172">getMillerIndex()</a>, and <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00144">setMillerIndex()</a>.</p>
 
@@ -1793,7 +1794,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Local function for calculation in <a class="el" href="../../d8/d8e/namespaceMantid.html" title="Helper class which provides the Collimation Length for SANS instruments.">Mantid</a> General implementation of the method for all peaks. Calculates derivatives only void functionDeriv1D(Jacobian* out, const double* xValues, const size_t
 nData) const; General implemenation of derivative Defines the area around the centre where the peak values are to be calculated (in FWHM). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00103">103</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html#l00106">106</a> of file <a class="el" href="../../d7/d22/IPowderDiffPeakFunction_8h_source.html">IPowderDiffPeakFunction.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00028">IPowderDiffPeakFunction()</a>, and <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00182">setPeakRadius()</a>.</p>
 

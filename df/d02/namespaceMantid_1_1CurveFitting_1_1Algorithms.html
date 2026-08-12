@@ -230,9 +230,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a16f682c6a7c8b0563f8d2d1ec60fe042" id="r_a16f682c6a7c8b0563f8d2d1ec60fe042"><td class="memItemLeft" align="right" valign="top">MANTID_CURVEFITTING_DLL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d02/namespaceMantid_1_1CurveFitting_1_1Algorithms.html#a16f682c6a7c8b0563f8d2d1ec60fe042">appendInputSpectraToList</a> (std::vector&lt; <a class="el" href="../../d1/d56/structMantid_1_1CurveFitting_1_1Algorithms_1_1InputSpectraToFit.html">InputSpectraToFit</a> &gt; &amp;nameList, const std::string &amp;<a class="el" href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>, const std::shared_ptr&lt; <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html">API::MatrixWorkspace</a> &gt; &amp;ws, int workspaceIndex, int spectrumNumber, double start, double end, int period, const bool &amp;workspaceOptional)</td></tr>
 <tr class="memdesc:a16f682c6a7c8b0563f8d2d1ec60fe042"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a workspace.  <br /></td></tr>
 <tr class="separator:a16f682c6a7c8b0563f8d2d1ec60fe042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5953c861d126556c23a71099cf51a584" id="r_a5953c861d126556c23a71099cf51a584"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d02/namespaceMantid_1_1CurveFitting_1_1Algorithms.html#a5953c861d126556c23a71099cf51a584">calculateFunctionChiSquare</a> (const std::vector&lt; double &gt; &amp;modelY, const std::vector&lt; double &gt; &amp;dataY, const std::vector&lt; double &gt; &amp;dataE)</td></tr>
-<tr class="memdesc:a5953c861d126556c23a71099cf51a584"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate Chi^2.  <br /></td></tr>
-<tr class="separator:a5953c861d126556c23a71099cf51a584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac66e7eef9952e1086592213af295d2d4" id="r_ac66e7eef9952e1086592213af295d2d4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d02/namespaceMantid_1_1CurveFitting_1_1Algorithms.html#ac66e7eef9952e1086592213af295d2d4">calculateFunctionChiSquare</a> (std::span&lt; double const &gt; modelY, std::span&lt; double const &gt; dataY, std::span&lt; double const &gt; dataE)</td></tr>
+<tr class="memdesc:ac66e7eef9952e1086592213af295d2d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate Chi^2.  <br /></td></tr>
+<tr class="separator:ac66e7eef9952e1086592213af295d2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fe98f0508d5d3430c24b7c8734b26db" id="r_a6fe98f0508d5d3430c24b7c8734b26db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d02/namespaceMantid_1_1CurveFitting_1_1Algorithms.html#a6fe98f0508d5d3430c24b7c8734b26db">convertToDict</a> (std::vector&lt; std::string &gt; strvec, std::map&lt; std::string, size_t &gt; &amp;lookupdict)</td></tr>
 <tr class="memdesc:a6fe98f0508d5d3430c24b7c8734b26db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a vector to a lookup map (dictionary)  <br /></td></tr>
 <tr class="separator:a6fe98f0508d5d3430c24b7c8734b26db"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -252,9 +252,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7ebdf574c5cc22998234f71c685ba269" id="r_a7ebdf574c5cc22998234f71c685ba269"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d02/namespaceMantid_1_1CurveFitting_1_1Algorithms.html#a7ebdf574c5cc22998234f71c685ba269">findMaxValue</a> (const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">API::MatrixWorkspace_sptr</a> &amp;dataws, size_t wsindex, double leftbound, double rightbound)</td></tr>
 <tr class="memdesc:a7ebdf574c5cc22998234f71c685ba269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find maximum value.  <br /></td></tr>
 <tr class="separator:a7ebdf574c5cc22998234f71c685ba269"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3daa9f2a813a8f88cbc7bd874af4e5ef" id="r_a3daa9f2a813a8f88cbc7bd874af4e5ef"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d02/namespaceMantid_1_1CurveFitting_1_1Algorithms.html#a3daa9f2a813a8f88cbc7bd874af4e5ef">findMaxValue</a> (const std::vector&lt; double &gt; &amp;<a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#aedd34f47323e974c90c7be1d535d9832af42e5e73c92b0916160ef8af250eb2ea">Y</a>)</td></tr>
-<tr class="memdesc:a3daa9f2a813a8f88cbc7bd874af4e5ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find maximum value.  <br /></td></tr>
-<tr class="separator:a3daa9f2a813a8f88cbc7bd874af4e5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee677b01fd1236fabf1af96822ff1ccf" id="r_aee677b01fd1236fabf1af96822ff1ccf"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d02/namespaceMantid_1_1CurveFitting_1_1Algorithms.html#aee677b01fd1236fabf1af96822ff1ccf">findMaxValue</a> (std::span&lt; double const &gt; <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#aedd34f47323e974c90c7be1d535d9832af42e5e73c92b0916160ef8af250eb2ea">Y</a>)</td></tr>
+<tr class="memdesc:aee677b01fd1236fabf1af96822ff1ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find maximum value.  <br /></td></tr>
+<tr class="separator:aee677b01fd1236fabf1af96822ff1ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a629aa6da5af10ae437be99e646c5a0b6" id="r_a629aa6da5af10ae437be99e646c5a0b6"><td class="memItemLeft" align="right" valign="top">MANTID_CURVEFITTING_DLL <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a9e970cac310cd8af4937376738182998">Mantid::API::IFunction_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d02/namespaceMantid_1_1CurveFitting_1_1Algorithms.html#a629aa6da5af10ae437be99e646c5a0b6">getDoublePulseFunction</a> (std::shared_ptr&lt; const <a class="el" href="../../d5/de7/classMantid_1_1API_1_1IFunction.html">API::IFunction</a> &gt; const &amp;function, double offset, double firstPulseWeight, double secondPulseWeight)</td></tr>
 <tr class="separator:a629aa6da5af10ae437be99e646c5a0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad181674a3df6b3429561e32cf4ca11c8" id="r_ad181674a3df6b3429561e32cf4ca11c8"><td class="memItemLeft" align="right" valign="top">MANTID_CURVEFITTING_DLL <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a9e970cac310cd8af4937376738182998">Mantid::API::IFunction_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d02/namespaceMantid_1_1CurveFitting_1_1Algorithms.html#ad181674a3df6b3429561e32cf4ca11c8">getDoublePulseMultiDomainFunction</a> (std::shared_ptr&lt; const <a class="el" href="../../dd/de1/classMantid_1_1API_1_1MultiDomainFunction.html">API::MultiDomainFunction</a> &gt; const &amp;function, double offset, double firstPulseWeight, double secondPulseWeight)</td></tr>
@@ -409,7 +409,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00190">190</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html#l00192">192</a> of file <a class="el" href="../../df/dc0/LeBailFunction_8h_source.html">LeBailFunction.h</a>.</p>
 
 </div>
 </div>
@@ -668,8 +668,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5953c861d126556c23a71099cf51a584" name="a5953c861d126556c23a71099cf51a584"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5953c861d126556c23a71099cf51a584">&#9670;&#160;</a></span>calculateFunctionChiSquare()</h2>
+<a id="ac66e7eef9952e1086592213af295d2d4" name="ac66e7eef9952e1086592213af295d2d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac66e7eef9952e1086592213af295d2d4">&#9670;&#160;</a></span>calculateFunctionChiSquare()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -677,19 +677,19 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">double Mantid::CurveFitting::Algorithms::calculateFunctionChiSquare </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>modelY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>dataY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
           <td class="paramname"><em>dataE</em>&#160;</td>
         </tr>
         <tr>
@@ -773,7 +773,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d8d/RefinePowderInstrumentParameters3_8cpp_source.html#l01219">1219</a> of file <a class="el" href="../../d3/d8d/RefinePowderInstrumentParameters3_8cpp_source.html">RefinePowderInstrumentParameters3.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/dc8/LeBailFit_8h_source.html#l00040">Mantid::CurveFitting::Algorithms::Parameter::curvalue</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/dc8/LeBailFit_8h_source.html#l00042">Mantid::CurveFitting::Algorithms::Parameter::curvalue</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d02/namespaceMantid_1_1CurveFitting_1_1Algorithms.html#a8a9b0a53e3d14880fa531d2241d6aac7">restoreFunctionParameterValue()</a>.</p>
 
@@ -979,8 +979,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3daa9f2a813a8f88cbc7bd874af4e5ef" name="a3daa9f2a813a8f88cbc7bd874af4e5ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3daa9f2a813a8f88cbc7bd874af4e5ef">&#9670;&#160;</a></span>findMaxValue() <span class="overload">[2/2]</span></h2>
+<a id="aee677b01fd1236fabf1af96822ff1ccf" name="aee677b01fd1236fabf1af96822ff1ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee677b01fd1236fabf1af96822ff1ccf">&#9670;&#160;</a></span>findMaxValue() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -988,7 +988,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">size_t Mantid::CurveFitting::Algorithms::findMaxValue </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">std::span&lt; double const &gt; const&#160;</td>
           <td class="paramname"><em>Y</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1519,11 +1519,11 @@ template&lt;class Type &gt; </div>
 
 <p>Formular for linear iterpolation: X = [(xf-x0)*Y - (xf*y0-x0*yf)]/(yf-y0) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d32/FitPowderDiffPeaks_8h_source.html#l00348">348</a> of file <a class="el" href="../../d1/d32/FitPowderDiffPeaks_8h_source.html">FitPowderDiffPeaks.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d32/FitPowderDiffPeaks_8h_source.html#l00350">350</a> of file <a class="el" href="../../d1/d32/FitPowderDiffPeaks_8h_source.html">FitPowderDiffPeaks.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d32/FitPowderDiffPeaks_8h_source.html#l00348">linearInterpolateX()</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d32/FitPowderDiffPeaks_8h_source.html#l00350">linearInterpolateX()</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/d32/FitPowderDiffPeaks_8h_source.html#l00348">linearInterpolateX()</a>, and <a class="el" href="../../de/d89/FitPowderDiffPeaks_8cpp_source.html#l02964">observePeakParameters()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d32/FitPowderDiffPeaks_8h_source.html#l00350">linearInterpolateX()</a>, and <a class="el" href="../../de/d89/FitPowderDiffPeaks_8cpp_source.html#l02964">observePeakParameters()</a>.</p>
 
 </div>
 </div>
@@ -1581,11 +1581,11 @@ template&lt;class Type &gt; </div>
 
 <p>Formula for linear interpolation: Y = ( (xf*y0-x0*yf) + x*(yf-y0) )/(xf-x0) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d32/FitPowderDiffPeaks_8h_source.html#l00355">355</a> of file <a class="el" href="../../d1/d32/FitPowderDiffPeaks_8h_source.html">FitPowderDiffPeaks.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d32/FitPowderDiffPeaks_8h_source.html#l00357">357</a> of file <a class="el" href="../../d1/d32/FitPowderDiffPeaks_8h_source.html">FitPowderDiffPeaks.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d32/FitPowderDiffPeaks_8h_source.html#l00355">linearInterpolateY()</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d32/FitPowderDiffPeaks_8h_source.html#l00357">linearInterpolateY()</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/d32/FitPowderDiffPeaks_8h_source.html#l00355">linearInterpolateY()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d32/FitPowderDiffPeaks_8h_source.html#l00357">linearInterpolateY()</a>.</p>
 
 </div>
 </div>
@@ -1697,7 +1697,7 @@ template&lt;class Type &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../de/d89/FitPowderDiffPeaks_8cpp_source.html#l02964">2964</a> of file <a class="el" href="../../de/d89/FitPowderDiffPeaks_8cpp_source.html">FitPowderDiffPeaks.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00037">centre</a>, <a class="el" href="../../de/d89/FitPowderDiffPeaks_8cpp_source.html#l03059">findMaxValue()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00155">height</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d1/d32/FitPowderDiffPeaks_8h_source.html#l00348">linearInterpolateX()</a>, <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::X</a>, and <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::Y</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00037">centre</a>, <a class="el" href="../../de/d89/FitPowderDiffPeaks_8cpp_source.html#l03059">findMaxValue()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00155">height</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d1/d32/FitPowderDiffPeaks_8h_source.html#l00350">linearInterpolateX()</a>, <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::X</a>, and <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::Y</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../de/d89/FitPowderDiffPeaks_8cpp_source.html#l00553">Mantid::CurveFitting::Algorithms::FitPowderDiffPeaks::fitSinglePeakRobust()</a>.</p>
 
@@ -2017,7 +2017,7 @@ template&lt;class Type &gt; </div>
 
 <p>Write a set of (XY) data to a column file. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d22/LeBailFit_8cpp_source.html#l02224">2224</a> of file <a class="el" href="../../dd/d22/LeBailFit_8cpp_source.html">LeBailFit.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d22/LeBailFit_8cpp_source.html#l02225">2225</a> of file <a class="el" href="../../dd/d22/LeBailFit_8cpp_source.html">LeBailFit.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/d22/LeBailFit_8cpp_source.html#l01407">Mantid::CurveFitting::Algorithms::LeBailFit::doMarkovChain()</a>.</p>
 
@@ -2050,7 +2050,7 @@ template&lt;class Type &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d22/LeBailFit_8cpp_source.html#l01825">Mantid::CurveFitting::Algorithms::LeBailFit::calculateDiffractionPattern()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d22/LeBailFit_8cpp_source.html#l01826">Mantid::CurveFitting::Algorithms::LeBailFit::calculateDiffractionPattern()</a>.</p>
 
 </div>
 </div>

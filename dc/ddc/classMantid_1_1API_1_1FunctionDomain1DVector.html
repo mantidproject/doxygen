@@ -127,6 +127,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abe3cb98a3e29b23c7a8a4911b712a5ee" id="r_abe3cb98a3e29b23c7a8a4911b712a5ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ddc/classMantid_1_1API_1_1FunctionDomain1DVector.html#abe3cb98a3e29b23c7a8a4911b712a5ee">FunctionDomain1DVector</a> (const std::vector&lt; double &gt; &amp;xvalues)</td></tr>
 <tr class="memdesc:abe3cb98a3e29b23c7a8a4911b712a5ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:abe3cb98a3e29b23c7a8a4911b712a5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a7f10c4b8244b2cf39d7eddfc1dd8bb" id="r_a3a7f10c4b8244b2cf39d7eddfc1dd8bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ddc/classMantid_1_1API_1_1FunctionDomain1DVector.html#a3a7f10c4b8244b2cf39d7eddfc1dd8bb">FunctionDomain1DVector</a> (std::span&lt; double const &gt; xvalues)</td></tr>
+<tr class="memdesc:a3a7f10c4b8244b2cf39d7eddfc1dd8bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor taking a contiguous range.  <br /></td></tr>
+<tr class="separator:a3a7f10c4b8244b2cf39d7eddfc1dd8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa39f09532395e3a4a5fa0b2420e56508" id="r_aa39f09532395e3a4a5fa0b2420e56508"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ddc/classMantid_1_1API_1_1FunctionDomain1DVector.html#aa39f09532395e3a4a5fa0b2420e56508">FunctionDomain1DVector</a> (std::vector&lt; double &gt; &amp;&amp;xvalues)</td></tr>
 <tr class="memdesc:aa39f09532395e3a4a5fa0b2420e56508"><td class="mdescLeft">&#160;</td><td class="mdescRight">No-copy constructor.  <br /></td></tr>
 <tr class="separator:aa39f09532395e3a4a5fa0b2420e56508"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,10 +194,10 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implements <a class="el" href="../../d1/de3/classMantid_1_1API_1_1FunctionDomain1D.html" title="Represent a domain for functions of one real argument.">FunctionDomain1D</a> with its own storage in form of a std::vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00072">72</a> of file <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html">FunctionDomain1D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00073">73</a> of file <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html">FunctionDomain1D.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5e31bcc3622dd8b95b9b0200ccf87fb1" name="a5e31bcc3622dd8b95b9b0200ccf87fb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e31bcc3622dd8b95b9b0200ccf87fb1">&#9670;&#160;</a></span>FunctionDomain1DVector() <span class="overload">[1/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e31bcc3622dd8b95b9b0200ccf87fb1">&#9670;&#160;</a></span>FunctionDomain1DVector() <span class="overload">[1/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,14 +221,14 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00107">107</a> of file <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html">FunctionDomain1D.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00119">119</a> of file <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html">FunctionDomain1D.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00092">m_X</a>, <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00055">Mantid::API::FunctionDomain1D::resetData()</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00096">m_X</a>, <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00056">Mantid::API::FunctionDomain1D::resetData()</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
 
 </div>
 </div>
 <a id="a676b6f90a23ec260409358bcbc72431e" name="a676b6f90a23ec260409358bcbc72431e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a676b6f90a23ec260409358bcbc72431e">&#9670;&#160;</a></span>FunctionDomain1DVector() <span class="overload">[2/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a676b6f90a23ec260409358bcbc72431e">&#9670;&#160;</a></span>FunctionDomain1DVector() <span class="overload">[2/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -267,14 +270,14 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html">FunctionDomain1D.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00098">98</a> of file <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html">FunctionDomain1D.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00092">m_X</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>, and <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00055">Mantid::API::FunctionDomain1D::resetData()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00096">m_X</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>, and <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00056">Mantid::API::FunctionDomain1D::resetData()</a>.</p>
 
 </div>
 </div>
 <a id="abe3cb98a3e29b23c7a8a4911b712a5ee" name="abe3cb98a3e29b23c7a8a4911b712a5ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe3cb98a3e29b23c7a8a4911b712a5ee">&#9670;&#160;</a></span>FunctionDomain1DVector() <span class="overload">[3/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abe3cb98a3e29b23c7a8a4911b712a5ee">&#9670;&#160;</a></span>FunctionDomain1DVector() <span class="overload">[3/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -300,12 +303,44 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html">FunctionDomain1D.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00092">m_X</a>, and <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00055">Mantid::API::FunctionDomain1D::resetData()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00096">m_X</a>, and <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00056">Mantid::API::FunctionDomain1D::resetData()</a>.</p>
+
+</div>
+</div>
+<a id="a3a7f10c4b8244b2cf39d7eddfc1dd8bb" name="a3a7f10c4b8244b2cf39d7eddfc1dd8bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a7f10c4b8244b2cf39d7eddfc1dd8bb">&#9670;&#160;</a></span>FunctionDomain1DVector() <span class="overload">[4/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mantid::API::FunctionDomain1DVector::FunctionDomain1DVector </td>
+          <td>(</td>
+          <td class="paramtype">std::span&lt; double const &gt;&#160;</td>
+          <td class="paramname"><em>xvalues</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor taking a contiguous range. </p>
+<p>Create a domain from a contiguous range.</p>
+<p>Allows the size-checked histogram data types, which do not hand out a std::vector&lt;double&gt;, to be used directly.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xvalues</td><td>:: Range with function arguments to be copied from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00053">53</a> of file <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html">FunctionDomain1D.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00096">m_X</a>, and <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00056">Mantid::API::FunctionDomain1D::resetData()</a>.</p>
 
 </div>
 </div>
 <a id="aa39f09532395e3a4a5fa0b2420e56508" name="aa39f09532395e3a4a5fa0b2420e56508"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa39f09532395e3a4a5fa0b2420e56508">&#9670;&#160;</a></span>FunctionDomain1DVector() <span class="overload">[4/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa39f09532395e3a4a5fa0b2420e56508">&#9670;&#160;</a></span>FunctionDomain1DVector() <span class="overload">[5/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -329,14 +364,14 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00053">53</a> of file <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html">FunctionDomain1D.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00065">65</a> of file <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html">FunctionDomain1D.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00092">m_X</a>, and <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00055">Mantid::API::FunctionDomain1D::resetData()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00096">m_X</a>, and <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00056">Mantid::API::FunctionDomain1D::resetData()</a>.</p>
 
 </div>
 </div>
 <a id="af4cea80f04f82352ec56ab53bcdecdcb" name="af4cea80f04f82352ec56ab53bcdecdcb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4cea80f04f82352ec56ab53bcdecdcb">&#9670;&#160;</a></span>FunctionDomain1DVector() <span class="overload">[5/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af4cea80f04f82352ec56ab53bcdecdcb">&#9670;&#160;</a></span>FunctionDomain1DVector() <span class="overload">[6/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -371,14 +406,14 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html">FunctionDomain1D.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00080">80</a> of file <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html">FunctionDomain1D.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00092">m_X</a>, and <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00055">Mantid::API::FunctionDomain1D::resetData()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00096">m_X</a>, and <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00056">Mantid::API::FunctionDomain1D::resetData()</a>.</p>
 
 </div>
 </div>
 <a id="a45901c84e14fa7818aca573ceb8ae87f" name="a45901c84e14fa7818aca573ceb8ae87f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45901c84e14fa7818aca573ceb8ae87f">&#9670;&#160;</a></span>FunctionDomain1DVector() <span class="overload">[6/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a45901c84e14fa7818aca573ceb8ae87f">&#9670;&#160;</a></span>FunctionDomain1DVector() <span class="overload">[7/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -401,7 +436,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00117">117</a> of file <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html">FunctionDomain1D.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00129">129</a> of file <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html">FunctionDomain1D.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d8/d6b/LineProfile_8cpp_source.html#l00081">right</a>.</p>
 
@@ -433,7 +468,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Get the underlying vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00089">89</a> of file <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html">FunctionDomain1D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00093">93</a> of file <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html">FunctionDomain1D.h</a>.</p>
 
 </div>
 </div>
@@ -461,9 +496,9 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00125">125</a> of file <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html">FunctionDomain1D.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00137">137</a> of file <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html">FunctionDomain1D.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00092">m_X</a>, <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00055">Mantid::API::FunctionDomain1D::resetData()</a>, and <a class="el" href="../../d8/d6b/LineProfile_8cpp_source.html#l00081">right</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00096">m_X</a>, <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00056">Mantid::API::FunctionDomain1D::resetData()</a>, and <a class="el" href="../../d8/d6b/LineProfile_8cpp_source.html#l00081">right</a>.</p>
 
 </div>
 </div>
@@ -490,9 +525,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>vector of function arguments </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00092">92</a> of file <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html">FunctionDomain1D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html#l00096">96</a> of file <a class="el" href="../../d9/d28/FunctionDomain1D_8h_source.html">FunctionDomain1D.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00086">FunctionDomain1DVector()</a>, <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00107">FunctionDomain1DVector()</a>, <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00041">FunctionDomain1DVector()</a>, <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00053">FunctionDomain1DVector()</a>, <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00068">FunctionDomain1DVector()</a>, and <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00125">operator=()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00098">FunctionDomain1DVector()</a>, <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00119">FunctionDomain1DVector()</a>, <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00041">FunctionDomain1DVector()</a>, <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00053">FunctionDomain1DVector()</a>, <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00065">FunctionDomain1DVector()</a>, <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00080">FunctionDomain1DVector()</a>, and <a class="el" href="../../dc/db1/API_2src_2FunctionDomain1D_8cpp_source.html#l00137">operator=()</a>.</p>
 
 </div>
 </div>
