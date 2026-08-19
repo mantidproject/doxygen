@@ -150,7 +150,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>Types::Core::DateAndTime create_releaseDateAndTime() {</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keyword">const</span> std::string REVISION_DATE{<span class="stringliteral">&quot;Wed, 19 Aug 2026 13:36:01 -0400&quot;</span>};</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keyword">const</span> std::string REVISION_DATE{<span class="stringliteral">&quot;Wed, 19 Aug 2026 14:47:32 -0400&quot;</span>};</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  Types::Core::DateAndTime release;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="comment">// cppcheck-suppress knownConditionTrueFalse</span></div>
@@ -196,11 +196,11 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keywordflow">return</span> release;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="keyword">const</span> std::string DOI{<span class="stringliteral">&quot;http://dx.doi.org/10.1016/j.nima.2014.07.029&quot;</span>};</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="keyword">const</span> std::string DOI{<span class="stringliteral">&quot;https://doi.org/10.1016/j.nima.2014.07.029&quot;</span>};</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="keyword">const</span> std::string VERSION_FULL{<span class="stringliteral">&quot;0.0.0&quot;</span>};</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keyword">const</span> std::string VERSION_SHORT{<span class="stringliteral">&quot;0.0&quot;</span>};</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keyword">const</span> std::string REVISION_SHORT{<span class="stringliteral">&quot;gae9dc938&quot;</span>};</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="keyword">const</span> std::string REVISION_FULL{<span class="stringliteral">&quot;ae9dc9386e3802ff5960257a277ead941eddcde3&quot;</span>};</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keyword">const</span> std::string REVISION_SHORT{<span class="stringliteral">&quot;g6c13d82c&quot;</span>};</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="keyword">const</span> std::string REVISION_FULL{<span class="stringliteral">&quot;6c13d82c0eba832b3b44ffce0874db5cda2711a4&quot;</span>};</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="keyword">const</span> Types::Core::DateAndTime REVISION_DATE_AND_TIME = create_releaseDateAndTime();</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>} <span class="comment">// namespace</span></div>
@@ -270,7 +270,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
 <div class="foldopen" id="foldopen00170" data-start="{" data-end="}">
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="../../d1/d24/classMantid_1_1Kernel_1_1MantidVersion.html#a2017b4ab4512e2b0a5b269e4d743fbed">  170</a></span>std::string <a class="code hl_function" href="../../d1/d24/classMantid_1_1Kernel_1_1MantidVersion.html#a2017b4ab4512e2b0a5b269e4d743fbed">MantidVersion::doi</a>() {</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>  <span class="keyword">const</span> std::string MAIN = <span class="stringliteral">&quot;http://dx.doi.org/10.5286/Software/Mantid&quot;</span>;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>  <span class="keyword">const</span> std::string MAIN = <span class="stringliteral">&quot;https://doi.org/10.5286/Software/Mantid&quot;</span>;</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  <span class="comment">// Cast here in those cases where patch number is of the form 20131022.1356.</span></div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> patchVersion = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(0);</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
