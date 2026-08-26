@@ -354,6 +354,9 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ab9615e0ba329b22f33f4b83586263c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c6c16ca361c2255fd4c5b67617c1709" id="r_a5c6c16ca361c2255fd4c5b67617c1709"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d4a/classQList.html">QList</a>&lt; QtProperty * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d9a/classMantidQt_1_1MantidWidgets_1_1PropertyHandler.html#a5c6c16ca361c2255fd4c5b67617c1709">m_parameters</a></td></tr>
 <tr class="separator:a5c6c16ca361c2255fd4c5b67617c1709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a720116f456c8659cc87586b7d12ce27d" id="r_a720116f456c8659cc87586b7d12ce27d"><td class="memItemLeft" align="right" valign="top">QMap&lt; QtProperty *, <a class="el" href="../../d8/d9a/classMantidQt_1_1MantidWidgets_1_1PropertyHandler.html">PropertyHandler</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d9a/classMantidQt_1_1MantidWidgets_1_1PropertyHandler.html#a720116f456c8659cc87586b7d12ce27d">m_paramToPropertyHandlerMap</a></td></tr>
+<tr class="memdesc:a720116f456c8659cc87586b7d12ce27d"><td class="mdescLeft">&#160;</td><td class="mdescRight">QtProperties to <a class="el" href="../../d8/d9a/classMantidQt_1_1MantidWidgets_1_1PropertyHandler.html" title="Helps display and edit functions in FitPropertyBrowser.">PropertyHandler</a> map for faster lookup.  <br /></td></tr>
+<tr class="separator:a720116f456c8659cc87586b7d12ce27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af49422006087ebe540ee62468e0e98d2" id="r_af49422006087ebe540ee62468e0e98d2"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../dd/d27/classMantid_1_1API_1_1CompositeFunction.html">Mantid::API::CompositeFunction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d9a/classMantidQt_1_1MantidWidgets_1_1PropertyHandler.html#af49422006087ebe540ee62468e0e98d2">m_parent</a></td></tr>
 <tr class="separator:af49422006087ebe540ee62468e0e98d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71c9e326cea63526afa10a2814b78fae" id="r_a71c9e326cea63526afa10a2814b78fae"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../d7/d74/classMantid_1_1API_1_1IPeakFunction.html">Mantid::API::IPeakFunction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d9a/classMantidQt_1_1MantidWidgets_1_1PropertyHandler.html#a71c9e326cea63526afa10a2814b78fae">m_pf</a></td></tr>
@@ -506,11 +509,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Add constraint to parameter property parProp. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01427">1427</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01437">1437</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02455">MantidQt::MantidWidgets::FitPropertyBrowser::addDoubleProperty()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00554">MantidQt::MantidWidgets::FitPropertyBrowser::m_changeSlotsEnabled</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00212">m_constraints</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00500">MantidQt::MantidWidgets::FitPropertyBrowser::m_doubleManager</a>, and <a class="el" href="../../de/d94/IFunction_8h_source.html#l00774">Mantid::API::FunctionHandler::m_fun</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02457">MantidQt::MantidWidgets::FitPropertyBrowser::addDoubleProperty()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00554">MantidQt::MantidWidgets::FitPropertyBrowser::m_changeSlotsEnabled</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00212">m_constraints</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00500">MantidQt::MantidWidgets::FitPropertyBrowser::m_doubleManager</a>, and <a class="el" href="../../de/d94/IFunction_8h_source.html#l00774">Mantid::API::FunctionHandler::m_fun</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02345">MantidQt::MantidWidgets::FitPropertyBrowser::addConstraint()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01365">MantidQt::MantidWidgets::FitPropertyBrowser::doubleChanged()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02347">MantidQt::MantidWidgets::FitPropertyBrowser::addConstraint()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01367">MantidQt::MantidWidgets::FitPropertyBrowser::doubleChanged()</a>.</p>
 
 </div>
 </div>
@@ -538,11 +541,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00351">351</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00360">360</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00132">MantidQt::MantidWidgets::FitPropertyBrowser::compositeFunction()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02130">MantidQt::MantidWidgets::FitPropertyBrowser::disableUndo()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01929">MantidQt::MantidWidgets::FitPropertyBrowser::endX()</a>, <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00044">iend</a>, <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00043">istart</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00554">MantidQt::MantidWidgets::FitPropertyBrowser::m_changeSlotsEnabled</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02638">MantidQt::MantidWidgets::FitPropertyBrowser::reset()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00827">setAttribute()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01583">MantidQt::MantidWidgets::FitPropertyBrowser::setCurrentFunction()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01072">MantidQt::MantidWidgets::FitPropertyBrowser::setDefaultBackgroundType()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01065">MantidQt::MantidWidgets::FitPropertyBrowser::setDefaultPeakType()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02141">MantidQt::MantidWidgets::FitPropertyBrowser::setFitEnabled()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02645">MantidQt::MantidWidgets::FitPropertyBrowser::setWorkspace()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01923">MantidQt::MantidWidgets::FitPropertyBrowser::startX()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01127">MantidQt::MantidWidgets::FitPropertyBrowser::workspaceIndex()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01089">MantidQt::MantidWidgets::FitPropertyBrowser::workspaceName()</a>, <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::X</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>, and <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::Y</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00132">MantidQt::MantidWidgets::FitPropertyBrowser::compositeFunction()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02132">MantidQt::MantidWidgets::FitPropertyBrowser::disableUndo()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01931">MantidQt::MantidWidgets::FitPropertyBrowser::endX()</a>, <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00044">iend</a>, <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00043">istart</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00554">MantidQt::MantidWidgets::FitPropertyBrowser::m_changeSlotsEnabled</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02640">MantidQt::MantidWidgets::FitPropertyBrowser::reset()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00837">setAttribute()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01585">MantidQt::MantidWidgets::FitPropertyBrowser::setCurrentFunction()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01074">MantidQt::MantidWidgets::FitPropertyBrowser::setDefaultBackgroundType()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01067">MantidQt::MantidWidgets::FitPropertyBrowser::setDefaultPeakType()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02143">MantidQt::MantidWidgets::FitPropertyBrowser::setFitEnabled()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02647">MantidQt::MantidWidgets::FitPropertyBrowser::setWorkspace()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01925">MantidQt::MantidWidgets::FitPropertyBrowser::startX()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01129">MantidQt::MantidWidgets::FitPropertyBrowser::workspaceIndex()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01091">MantidQt::MantidWidgets::FitPropertyBrowser::workspaceName()</a>, <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::X</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>, and <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::Y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00745">MantidQt::MantidWidgets::FitPropertyBrowser::acceptFit()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02661">MantidQt::MantidWidgets::FitPropertyBrowser::addAutoBackground()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00712">MantidQt::MantidWidgets::FitPropertyBrowser::addFunction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00747">MantidQt::MantidWidgets::FitPropertyBrowser::acceptFit()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02663">MantidQt::MantidWidgets::FitPropertyBrowser::addAutoBackground()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00712">MantidQt::MantidWidgets::FitPropertyBrowser::addFunction()</a>.</p>
 
 </div>
 </div>
@@ -562,11 +565,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01138">1138</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01148">1148</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00132">MantidQt::MantidWidgets::FitPropertyBrowser::compositeFunction()</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00654">Mantid::API::IFunction::Fixed</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01120">getParameterProperty()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00554">MantidQt::MantidWidgets::FitPropertyBrowser::m_changeSlotsEnabled</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00504">MantidQt::MantidWidgets::FitPropertyBrowser::m_stringManager</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00211">m_ties</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01003">updateParameters()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00132">MantidQt::MantidWidgets::FitPropertyBrowser::compositeFunction()</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00654">Mantid::API::IFunction::Fixed</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01130">getParameterProperty()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00554">MantidQt::MantidWidgets::FitPropertyBrowser::m_changeSlotsEnabled</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00504">MantidQt::MantidWidgets::FitPropertyBrowser::m_stringManager</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00211">m_ties</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01013">updateParameters()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02152">MantidQt::MantidWidgets::FitPropertyBrowser::addTie()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02180">MantidQt::MantidWidgets::FitPropertyBrowser::addTieToFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01178">fix()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01436">MantidQt::MantidWidgets::FitPropertyBrowser::stringChanged()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02154">MantidQt::MantidWidgets::FitPropertyBrowser::addTie()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02182">MantidQt::MantidWidgets::FitPropertyBrowser::addTieToFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01188">fix()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01438">MantidQt::MantidWidgets::FitPropertyBrowser::stringChanged()</a>.</p>
 
 </div>
 </div>
@@ -603,11 +606,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00960">960</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00970">970</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00960">applyToAllAttributes()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00554">getHandler()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00209">m_attributes</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00970">applyToAllAttributes()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">getHandler()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00209">m_attributes</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00960">applyToAllAttributes()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00974">updateAttributes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00970">applyToAllAttributes()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00984">updateAttributes()</a>.</p>
 
 </div>
 </div>
@@ -644,11 +647,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00991">991</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01001">1001</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00991">applyToAllParameters()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00554">getHandler()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00210">m_parameters</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01001">applyToAllParameters()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">getHandler()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00210">m_parameters</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00991">applyToAllParameters()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01007">clearErrors()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01005">updateErrors()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01003">updateParameters()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01001">applyToAllParameters()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01017">clearErrors()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01015">updateErrors()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01013">updateParameters()</a>.</p>
 
 </div>
 </div>
@@ -696,11 +699,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Calculate m_base: the baseline level under the peak (if this function is a peak and auto background is on) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01288">1288</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01298">1298</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01077">MantidQt::MantidWidgets::FitPropertyBrowser::getWorkspace()</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00678">MantidQt::MantidWidgets::FitPropertyBrowser::m_autoBackground</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00219">m_base</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00220">m_ci</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01127">MantidQt::MantidWidgets::FitPropertyBrowser::workspaceIndex()</a>, <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::X</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>, <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::Y</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01079">MantidQt::MantidWidgets::FitPropertyBrowser::getWorkspace()</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00678">MantidQt::MantidWidgets::FitPropertyBrowser::m_autoBackground</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00219">m_base</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00220">m_ci</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01129">MantidQt::MantidWidgets::FitPropertyBrowser::workspaceIndex()</a>, <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::X</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>, <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::Y</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01316">calcBaseAll()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01326">calcBaseAll()</a>.</p>
 
 </div>
 </div>
@@ -722,11 +725,11 @@ Additional Inherited Members</h2></td></tr>
 <p>If the handled function is composite calculate the peak baselines for all members. </p>
 <p>If auto background is off does nothing. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01316">1316</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01326">1326</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01288">calcBase()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01316">calcBaseAll()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00066">cfun()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00554">getHandler()</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00678">MantidQt::MantidWidgets::FitPropertyBrowser::m_autoBackground</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00068">pfun()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01298">calcBase()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01326">calcBaseAll()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00066">cfun()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">getHandler()</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00678">MantidQt::MantidWidgets::FitPropertyBrowser::m_autoBackground</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00068">pfun()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02661">MantidQt::MantidWidgets::FitPropertyBrowser::addAutoBackground()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01316">calcBaseAll()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01588">fit()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02663">MantidQt::MantidWidgets::FitPropertyBrowser::addAutoBackground()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01326">calcBaseAll()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01598">fit()</a>.</p>
 
 </div>
 </div>
@@ -745,9 +748,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01389">1389</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01399">1399</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01929">MantidQt::MantidWidgets::FitPropertyBrowser::endX()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00205">m_pf</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01923">MantidQt::MantidWidgets::FitPropertyBrowser::startX()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01931">MantidQt::MantidWidgets::FitPropertyBrowser::endX()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00205">m_pf</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01925">MantidQt::MantidWidgets::FitPropertyBrowser::startX()</a>.</p>
 
 </div>
 </div>
@@ -776,7 +779,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00066">66</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01316">calcBaseAll()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00527">functionPrefix()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01505">getPeakList()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00447">removeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00888">setAttribute()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01613">updateWorkspaces()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01326">calcBaseAll()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00537">functionPrefix()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01515">getPeakList()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00457">removeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00898">setAttribute()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01623">updateWorkspaces()</a>.</p>
 
 </div>
 </div>
@@ -804,11 +807,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01035">1035</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01045">1045</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01035">changeType()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01929">MantidQt::MantidWidgets::FitPropertyBrowser::endX()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01588">fit()</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00554">getHandler()</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00678">MantidQt::MantidWidgets::FitPropertyBrowser::m_autoBackground</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00554">MantidQt::MantidWidgets::FitPropertyBrowser::m_changeSlotsEnabled</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00501">MantidQt::MantidWidgets::FitPropertyBrowser::m_enumManager</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00208">m_item</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00206">m_parent</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00205">m_pf</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00207">m_type</a>, <a class="el" href="../../d0/d9e/classMantidQt_1_1MantidWidgets_1_1FitPropertyBrowser.html#a8ccf428414f1c85fb86c74944c85c302">MantidQt::MantidWidgets::FitPropertyBrowser::removePlotSignal()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01344">setCentre()</a>, <a class="el" href="../../d5/dd0/classMantid_1_1API_1_1IFunctionWithLocation.html#a9795ffce6ca5df959da632b3253d464b">Mantid::API::IFunctionWithLocation::setCentre()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01072">MantidQt::MantidWidgets::FitPropertyBrowser::setDefaultBackgroundType()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01065">MantidQt::MantidWidgets::FitPropertyBrowser::setDefaultPeakType()</a>, <a class="el" href="../../d7/d74/classMantid_1_1API_1_1IPeakFunction.html#a4610e6d15018e4fe58553e49476cdf83">Mantid::API::IPeakFunction::setFwhm()</a>, <a class="el" href="../../d5/dd0/classMantid_1_1API_1_1IFunctionWithLocation.html#a11e861fdfe4ca6926b985eb11a823d44">Mantid::API::IFunctionWithLocation::setHeight()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01923">MantidQt::MantidWidgets::FitPropertyBrowser::startX()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01127">MantidQt::MantidWidgets::FitPropertyBrowser::workspaceIndex()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01089">MantidQt::MantidWidgets::FitPropertyBrowser::workspaceName()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01045">changeType()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01931">MantidQt::MantidWidgets::FitPropertyBrowser::endX()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01598">fit()</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">getHandler()</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00678">MantidQt::MantidWidgets::FitPropertyBrowser::m_autoBackground</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00554">MantidQt::MantidWidgets::FitPropertyBrowser::m_changeSlotsEnabled</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00501">MantidQt::MantidWidgets::FitPropertyBrowser::m_enumManager</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00208">m_item</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00206">m_parent</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00205">m_pf</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00207">m_type</a>, <a class="el" href="../../d0/d9e/classMantidQt_1_1MantidWidgets_1_1FitPropertyBrowser.html#a8ccf428414f1c85fb86c74944c85c302">MantidQt::MantidWidgets::FitPropertyBrowser::removePlotSignal()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01354">setCentre()</a>, <a class="el" href="../../d5/dd0/classMantid_1_1API_1_1IFunctionWithLocation.html#a9795ffce6ca5df959da632b3253d464b">Mantid::API::IFunctionWithLocation::setCentre()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01074">MantidQt::MantidWidgets::FitPropertyBrowser::setDefaultBackgroundType()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01067">MantidQt::MantidWidgets::FitPropertyBrowser::setDefaultPeakType()</a>, <a class="el" href="../../d7/d74/classMantid_1_1API_1_1IPeakFunction.html#a4610e6d15018e4fe58553e49476cdf83">Mantid::API::IPeakFunction::setFwhm()</a>, <a class="el" href="../../d5/dd0/classMantid_1_1API_1_1IFunctionWithLocation.html#a11e861fdfe4ca6926b985eb11a823d44">Mantid::API::IFunctionWithLocation::setHeight()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01925">MantidQt::MantidWidgets::FitPropertyBrowser::startX()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01129">MantidQt::MantidWidgets::FitPropertyBrowser::workspaceIndex()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01091">MantidQt::MantidWidgets::FitPropertyBrowser::workspaceName()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01035">changeType()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01249">MantidQt::MantidWidgets::FitPropertyBrowser::enumChanged()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01045">changeType()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01251">MantidQt::MantidWidgets::FitPropertyBrowser::enumChanged()</a>.</p>
 
 </div>
 </div>
@@ -844,11 +847,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01029">1029</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01039">1039</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, and <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00511">MantidQt::MantidWidgets::FitPropertyBrowser::m_parameterManager</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01007">clearErrors()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01017">clearErrors()</a>.</p>
 
 </div>
 </div>
@@ -869,11 +872,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Clear all parameter error values in the manager. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01007">1007</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01017">1017</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00991">applyToAllParameters()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01029">clearError()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01001">applyToAllParameters()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01039">clearError()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02116">MantidQt::MantidWidgets::FitPropertyBrowser::undoFit()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02118">MantidQt::MantidWidgets::FitPropertyBrowser::undoFit()</a>.</p>
 
 </div>
 </div>
@@ -896,9 +899,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Create a simple estimate of the full width half maximum.</p>
 <dl class="section return"><dt>Returns</dt><dd>and estimate of the peak width, or 0 if an error occurs </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01244">1244</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01254">1254</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01929">MantidQt::MantidWidgets::FitPropertyBrowser::endX()</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00022">fabs</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01077">MantidQt::MantidWidgets::FitPropertyBrowser::getWorkspace()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00219">m_base</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00220">m_ci</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01923">MantidQt::MantidWidgets::FitPropertyBrowser::startX()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01127">MantidQt::MantidWidgets::FitPropertyBrowser::workspaceIndex()</a>, <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::X</a>, and <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::Y</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01931">MantidQt::MantidWidgets::FitPropertyBrowser::endX()</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00022">fabs</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01079">MantidQt::MantidWidgets::FitPropertyBrowser::getWorkspace()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00219">m_base</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00220">m_ci</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01925">MantidQt::MantidWidgets::FitPropertyBrowser::startX()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01129">MantidQt::MantidWidgets::FitPropertyBrowser::workspaceIndex()</a>, <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::X</a>, and <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::Y</a>.</p>
 
 </div>
 </div>
@@ -920,11 +923,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns 'this' if item == m_item and this is a composite function or calls findCompositeFunction recursively with all its children or zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">564</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00574">574</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">findCompositeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00554">getHandler()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00072">item()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00208">m_item</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00574">findCompositeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">getHandler()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00072">item()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00208">m_item</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00745">MantidQt::MantidWidgets::FitPropertyBrowser::acceptFit()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00730">MantidQt::MantidWidgets::FitPropertyBrowser::addFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">findCompositeFunction()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00824">MantidQt::MantidWidgets::FitPropertyBrowser::popupMenu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00747">MantidQt::MantidWidgets::FitPropertyBrowser::acceptFit()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00732">MantidQt::MantidWidgets::FitPropertyBrowser::addFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00574">findCompositeFunction()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00826">MantidQt::MantidWidgets::FitPropertyBrowser::popupMenu()</a>.</p>
 
 </div>
 </div>
@@ -946,11 +949,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns 'this' if item == m_item or calls findFunction recursively with all its children or zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00580">580</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00590">590</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00580">findFunction()</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00554">getHandler()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00072">item()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00208">m_item</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00590">findFunction()</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">getHandler()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00072">item()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00208">m_item</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00580">findFunction()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00824">MantidQt::MantidWidgets::FitPropertyBrowser::popupMenu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00590">findFunction()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00826">MantidQt::MantidWidgets::FitPropertyBrowser::popupMenu()</a>.</p>
 
 </div>
 </div>
@@ -970,11 +973,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00643">643</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00653">653</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00643">findHandler()</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00554">getHandler()</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00653">findHandler()</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">getHandler()</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00745">MantidQt::MantidWidgets::FitPropertyBrowser::acceptFit()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02345">MantidQt::MantidWidgets::FitPropertyBrowser::addConstraint()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02226">MantidQt::MantidWidgets::FitPropertyBrowser::addFixTie()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02152">MantidQt::MantidWidgets::FitPropertyBrowser::addTie()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02180">MantidQt::MantidWidgets::FitPropertyBrowser::addTieToFunction()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01290">MantidQt::MantidWidgets::FitPropertyBrowser::boolChanged()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02045">MantidQt::MantidWidgets::FitPropertyBrowser::currentItemChanged()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01041">MantidQt::MantidWidgets::FitPropertyBrowser::deleteFunction()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02240">MantidQt::MantidWidgets::FitPropertyBrowser::deleteTie()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01365">MantidQt::MantidWidgets::FitPropertyBrowser::doubleChanged()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01249">MantidQt::MantidWidgets::FitPropertyBrowser::enumChanged()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00643">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00630">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00593">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00207">initTies()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01317">MantidQt::MantidWidgets::FitPropertyBrowser::intChanged()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00824">MantidQt::MantidWidgets::FitPropertyBrowser::popupMenu()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02409">MantidQt::MantidWidgets::FitPropertyBrowser::removeBounds()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01436">MantidQt::MantidWidgets::FitPropertyBrowser::stringChanged()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02058">MantidQt::MantidWidgets::FitPropertyBrowser::vectorDoubleChanged()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02069">MantidQt::MantidWidgets::FitPropertyBrowser::vectorSizeChanged()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00747">MantidQt::MantidWidgets::FitPropertyBrowser::acceptFit()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02347">MantidQt::MantidWidgets::FitPropertyBrowser::addConstraint()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02228">MantidQt::MantidWidgets::FitPropertyBrowser::addFixTie()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02154">MantidQt::MantidWidgets::FitPropertyBrowser::addTie()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02182">MantidQt::MantidWidgets::FitPropertyBrowser::addTieToFunction()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01292">MantidQt::MantidWidgets::FitPropertyBrowser::boolChanged()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02047">MantidQt::MantidWidgets::FitPropertyBrowser::currentItemChanged()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01043">MantidQt::MantidWidgets::FitPropertyBrowser::deleteFunction()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02242">MantidQt::MantidWidgets::FitPropertyBrowser::deleteTie()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01367">MantidQt::MantidWidgets::FitPropertyBrowser::doubleChanged()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01251">MantidQt::MantidWidgets::FitPropertyBrowser::enumChanged()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00653">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00640">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00603">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00207">initTies()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01319">MantidQt::MantidWidgets::FitPropertyBrowser::intChanged()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00826">MantidQt::MantidWidgets::FitPropertyBrowser::popupMenu()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02411">MantidQt::MantidWidgets::FitPropertyBrowser::removeBounds()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01438">MantidQt::MantidWidgets::FitPropertyBrowser::stringChanged()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02060">MantidQt::MantidWidgets::FitPropertyBrowser::vectorDoubleChanged()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02071">MantidQt::MantidWidgets::FitPropertyBrowser::vectorSizeChanged()</a>.</p>
 
 </div>
 </div>
@@ -994,9 +997,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00630">630</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00640">640</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00643">findHandler()</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00554">getHandler()</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00653">findHandler()</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">getHandler()</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>.</p>
 
 </div>
 </div>
@@ -1016,9 +1019,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00593">593</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00603">603</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00643">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00554">getHandler()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00209">m_attributes</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00212">m_constraints</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00208">m_item</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00210">m_parameters</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00211">m_ties</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00207">m_type</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00213">m_vectorMembers</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00214">m_vectorSizes</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00217">m_workspace</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00218">m_workspaceIndex</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00653">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">getHandler()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00209">m_attributes</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00212">m_constraints</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00208">m_item</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00210">m_parameters</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00211">m_ties</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00207">m_type</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00213">m_vectorMembers</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00214">m_vectorSizes</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00217">m_workspace</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00218">m_workspaceIndex</a>.</p>
 
 </div>
 </div>
@@ -1037,11 +1040,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01588">1588</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01598">1598</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01316">calcBaseAll()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01929">MantidQt::MantidWidgets::FitPropertyBrowser::endX()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00708">MantidQt::MantidWidgets::FitPropertyBrowser::getHandler()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00774">Mantid::API::FunctionHandler::m_fun</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01923">MantidQt::MantidWidgets::FitPropertyBrowser::startX()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01003">updateParameters()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01127">MantidQt::MantidWidgets::FitPropertyBrowser::workspaceIndex()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01089">MantidQt::MantidWidgets::FitPropertyBrowser::workspaceName()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01326">calcBaseAll()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01931">MantidQt::MantidWidgets::FitPropertyBrowser::endX()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00708">MantidQt::MantidWidgets::FitPropertyBrowser::getHandler()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00774">Mantid::API::FunctionHandler::m_fun</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01925">MantidQt::MantidWidgets::FitPropertyBrowser::startX()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01013">updateParameters()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01129">MantidQt::MantidWidgets::FitPropertyBrowser::workspaceIndex()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01091">MantidQt::MantidWidgets::FitPropertyBrowser::workspaceName()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02661">MantidQt::MantidWidgets::FitPropertyBrowser::addAutoBackground()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01035">changeType()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02703">MantidQt::MantidWidgets::FitPropertyBrowser::refitAutoBackground()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00827">setAttribute()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02663">MantidQt::MantidWidgets::FitPropertyBrowser::addAutoBackground()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01045">changeType()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02705">MantidQt::MantidWidgets::FitPropertyBrowser::refitAutoBackground()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00837">setAttribute()</a>.</p>
 
 </div>
 </div>
@@ -1061,11 +1064,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01178">1178</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01188">1188</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01138">addTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00527">functionPrefix()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01120">getParameterProperty()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, and <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00511">MantidQt::MantidWidgets::FitPropertyBrowser::m_parameterManager</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01148">addTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00537">functionPrefix()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01130">getParameterProperty()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, and <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00511">MantidQt::MantidWidgets::FitPropertyBrowser::m_parameterManager</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02226">MantidQt::MantidWidgets::FitPropertyBrowser::addFixTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00243">initParameters()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00661">setParameter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02228">MantidQt::MantidWidgets::FitPropertyBrowser::addFixTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00243">initParameters()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00671">setParameter()</a>.</p>
 
 </div>
 </div>
@@ -1086,11 +1089,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Creates name for this function to be displayed in the browser. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00518">518</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00528">528</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00527">functionPrefix()</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00537">functionPrefix()</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00056">init()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00467">renameChildren()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00056">init()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00477">renameChildren()</a>.</p>
 
 </div>
 </div>
@@ -1109,11 +1112,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00527">527</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00537">537</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00066">cfun()</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00527">functionPrefix()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00547">parentHandler()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00066">cfun()</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00537">functionPrefix()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00557">parentHandler()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02152">MantidQt::MantidWidgets::FitPropertyBrowser::addTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01178">fix()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00518">functionName()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00527">functionPrefix()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00467">renameChildren()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00661">setParameter()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01436">MantidQt::MantidWidgets::FitPropertyBrowser::stringChanged()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02154">MantidQt::MantidWidgets::FitPropertyBrowser::addTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01188">fix()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00528">functionName()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00537">functionPrefix()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00477">renameChildren()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00671">setParameter()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01438">MantidQt::MantidWidgets::FitPropertyBrowser::stringChanged()</a>.</p>
 
 </div>
 </div>
@@ -1132,7 +1135,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01396">1396</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01406">1406</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00205">m_pf</a>.</p>
 
@@ -1153,7 +1156,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01410">1410</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01420">1420</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00205">m_pf</a>.</p>
 
@@ -1175,11 +1178,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00554">554</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">564</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00960">applyToAllAttributes()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00991">applyToAllParameters()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01316">calcBaseAll()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01035">changeType()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">findCompositeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00580">findFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00643">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00630">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00593">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01505">getPeakList()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01579">removeAllPlots()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00467">renameChildren()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00888">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00827">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00661">setParameter()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01541">updateStructureTooltip()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01613">updateWorkspaces()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00970">applyToAllAttributes()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01001">applyToAllParameters()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01326">calcBaseAll()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01045">changeType()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00574">findCompositeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00590">findFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00653">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00640">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00603">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01515">getPeakList()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01589">removeAllPlots()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00477">renameChildren()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00898">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00837">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01551">updateStructureTooltip()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01623">updateWorkspaces()</a>.</p>
 
 </div>
 </div>
@@ -1199,11 +1202,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01120">1120</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01130">1130</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00210">m_parameters</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01138">addTie()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01365">MantidQt::MantidWidgets::FitPropertyBrowser::doubleChanged()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01178">fix()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01214">removeTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01192">removeTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00467">renameChildren()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01436">MantidQt::MantidWidgets::FitPropertyBrowser::stringChanged()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01148">addTie()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01367">MantidQt::MantidWidgets::FitPropertyBrowser::doubleChanged()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01188">fix()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01224">removeTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01202">removeTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00477">renameChildren()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01438">MantidQt::MantidWidgets::FitPropertyBrowser::stringChanged()</a>.</p>
 
 </div>
 </div>
@@ -1223,7 +1226,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01129">1129</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01139">1139</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00210">m_parameters</a>.</p>
 
@@ -1246,11 +1249,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Make a list of all peaks in this function. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01505">1505</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01515">1515</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00066">cfun()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00554">getHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01505">getPeakList()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00205">m_pf</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00068">pfun()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00066">cfun()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">getHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01515">getPeakList()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00205">m_pf</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00068">pfun()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01505">getPeakList()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01515">getPeakList()</a>.</p>
 
 </div>
 </div>
@@ -1279,7 +1282,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00188">188</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02240">MantidQt::MantidWidgets::FitPropertyBrowser::deleteTie()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02242">MantidQt::MantidWidgets::FitPropertyBrowser::deleteTie()</a>.</p>
 
 </div>
 </div>
@@ -1298,7 +1301,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01403">1403</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01413">1413</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00205">m_pf</a>.</p>
 
@@ -1329,7 +1332,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00174">174</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02661">MantidQt::MantidWidgets::FitPropertyBrowser::addAutoBackground()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00824">MantidQt::MantidWidgets::FitPropertyBrowser::popupMenu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02663">MantidQt::MantidWidgets::FitPropertyBrowser::addAutoBackground()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00826">MantidQt::MantidWidgets::FitPropertyBrowser::popupMenu()</a>.</p>
 
 </div>
 </div>
@@ -1375,7 +1378,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01382">1382</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01392">1392</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00205">m_pf</a>.</p>
 
@@ -1406,7 +1409,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00070">70</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l03211">MantidQt::MantidWidgets::FitPropertyBrowser::functionHelp()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01637">setFunctionWorkspace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l03217">MantidQt::MantidWidgets::FitPropertyBrowser::functionHelp()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01647">setFunctionWorkspace()</a>.</p>
 
 </div>
 </div>
@@ -1439,7 +1442,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00056">56</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00518">functionName()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00224">initAttributes()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00243">initParameters()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00207">initTies()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00302">initWorkspace()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00072">item()</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00538">MantidQt::MantidWidgets::FitPropertyBrowser::m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00554">MantidQt::MantidWidgets::FitPropertyBrowser::m_changeSlotsEnabled</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00501">MantidQt::MantidWidgets::FitPropertyBrowser::m_enumManager</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00774">Mantid::API::FunctionHandler::m_fun</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00546">MantidQt::MantidWidgets::FitPropertyBrowser::m_functionsGroup</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00499">MantidQt::MantidWidgets::FitPropertyBrowser::m_groupManager</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00208">m_item</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00206">m_parent</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00560">MantidQt::MantidWidgets::FitPropertyBrowser::m_registeredFunctions</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00207">m_type</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00547">parentHandler()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00528">functionName()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00224">initAttributes()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00243">initParameters()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00207">initTies()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00311">initWorkspace()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00072">item()</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00538">MantidQt::MantidWidgets::FitPropertyBrowser::m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00554">MantidQt::MantidWidgets::FitPropertyBrowser::m_changeSlotsEnabled</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00501">MantidQt::MantidWidgets::FitPropertyBrowser::m_enumManager</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00774">Mantid::API::FunctionHandler::m_fun</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00546">MantidQt::MantidWidgets::FitPropertyBrowser::m_functionsGroup</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00499">MantidQt::MantidWidgets::FitPropertyBrowser::m_groupManager</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00208">m_item</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00206">m_parent</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00560">MantidQt::MantidWidgets::FitPropertyBrowser::m_registeredFunctions</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00207">m_type</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00557">parentHandler()</a>.</p>
 
 </div>
 </div>
@@ -1472,7 +1475,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../de/d94/IFunction_8h_source.html#l00303">Mantid::API::IFunction::Attribute::apply()</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00320">Mantid::API::IFunction::Attribute::getValidator()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00209">m_attributes</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00208">m_item</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00213">m_vectorMembers</a>, and <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00049">tmp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00056">init()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00920">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00888">setAttribute()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00827">setAttribute()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00056">init()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00930">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00898">setAttribute()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00837">setAttribute()</a>.</p>
 
 </div>
 </div>
@@ -1501,9 +1504,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00243">243</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02455">MantidQt::MantidWidgets::FitPropertyBrowser::addDoubleProperty()</a>, <a class="el" href="../../d8/d2a/classMantid_1_1API_1_1IConstraint.html#a5476bd902b58d696e0b7d0f37e6f000e">Mantid::API::IConstraint::asString()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01178">fix()</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00554">MantidQt::MantidWidgets::FitPropertyBrowser::m_changeSlotsEnabled</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00212">m_constraints</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00500">MantidQt::MantidWidgets::FitPropertyBrowser::m_doubleManager</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00774">Mantid::API::FunctionHandler::m_fun</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00208">m_item</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00511">MantidQt::MantidWidgets::FitPropertyBrowser::m_parameterManager</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00210">m_parameters</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02457">MantidQt::MantidWidgets::FitPropertyBrowser::addDoubleProperty()</a>, <a class="el" href="../../d8/d2a/classMantid_1_1API_1_1IConstraint.html#a5476bd902b58d696e0b7d0f37e6f000e">Mantid::API::IConstraint::asString()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01188">fix()</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00554">MantidQt::MantidWidgets::FitPropertyBrowser::m_changeSlotsEnabled</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00212">m_constraints</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00500">MantidQt::MantidWidgets::FitPropertyBrowser::m_doubleManager</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00774">Mantid::API::FunctionHandler::m_fun</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00208">m_item</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00511">MantidQt::MantidWidgets::FitPropertyBrowser::m_parameterManager</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00210">m_parameters</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00225">m_paramToPropertyHandlerMap</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00557">parentHandler()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00056">init()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00920">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00888">setAttribute()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00827">setAttribute()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00056">init()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00930">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00898">setAttribute()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00837">setAttribute()</a>.</p>
 
 </div>
 </div>
@@ -1534,7 +1537,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00207">207</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00643">findHandler()</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00653">findHandler()</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00056">init()</a>.</p>
 
@@ -1563,7 +1566,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00302">302</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00311">311</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00206">m_parent</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00217">m_workspace</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00218">m_workspaceIndex</a>.</p>
 
@@ -1587,11 +1590,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01118">1118</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01128">1128</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00210">m_parameters</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02226">MantidQt::MantidWidgets::FitPropertyBrowser::addFixTie()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02152">MantidQt::MantidWidgets::FitPropertyBrowser::addTie()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02180">MantidQt::MantidWidgets::FitPropertyBrowser::addTieToFunction()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00824">MantidQt::MantidWidgets::FitPropertyBrowser::popupMenu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02228">MantidQt::MantidWidgets::FitPropertyBrowser::addFixTie()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02154">MantidQt::MantidWidgets::FitPropertyBrowser::addTie()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02182">MantidQt::MantidWidgets::FitPropertyBrowser::addTieToFunction()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00826">MantidQt::MantidWidgets::FitPropertyBrowser::popupMenu()</a>.</p>
 
 </div>
 </div>
@@ -1611,7 +1614,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01417">1417</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01427">1427</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00205">m_pf</a>.</p>
 
@@ -1642,7 +1645,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00072">72</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">findCompositeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00580">findFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00056">init()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00447">removeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00467">renameChildren()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01583">MantidQt::MantidWidgets::FitPropertyBrowser::setCurrentFunction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00574">findCompositeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00590">findFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00056">init()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00457">removeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00477">renameChildren()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01585">MantidQt::MantidWidgets::FitPropertyBrowser::setCurrentFunction()</a>.</p>
 
 </div>
 </div>
@@ -1661,11 +1664,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00547">547</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00557">557</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00206">m_parent</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01249">MantidQt::MantidWidgets::FitPropertyBrowser::enumChanged()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00527">functionPrefix()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00056">init()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00447">removeFunction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01251">MantidQt::MantidWidgets::FitPropertyBrowser::enumChanged()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00537">functionPrefix()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00056">init()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00243">initParameters()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00457">removeFunction()</a>.</p>
 
 </div>
 </div>
@@ -1694,7 +1697,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00068">68</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01316">calcBaseAll()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01518">MantidQt::MantidWidgets::FitPropertyBrowser::centre()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01556">MantidQt::MantidWidgets::FitPropertyBrowser::fwhm()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01505">getPeakList()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01537">MantidQt::MantidWidgets::FitPropertyBrowser::height()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01915">MantidQt::MantidWidgets::FitPropertyBrowser::isPeak()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01326">calcBaseAll()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01520">MantidQt::MantidWidgets::FitPropertyBrowser::centre()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01558">MantidQt::MantidWidgets::FitPropertyBrowser::fwhm()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01515">getPeakList()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01539">MantidQt::MantidWidgets::FitPropertyBrowser::height()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01917">MantidQt::MantidWidgets::FitPropertyBrowser::isPeak()</a>.</p>
 
 </div>
 </div>
@@ -1723,7 +1726,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Remove the reference to the function curve as it has been deleted. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01528">1528</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01538">1538</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00222">m_hasPlot</a>.</p>
 
@@ -1746,11 +1749,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Remove all plots including children's. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01579">1579</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01589">1589</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00554">getHandler()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01579">removeAllPlots()</a>, and <a class="el" href="../../d0/d9e/classMantidQt_1_1MantidWidgets_1_1FitPropertyBrowser.html#a8ccf428414f1c85fb86c74944c85c302">MantidQt::MantidWidgets::FitPropertyBrowser::removePlotSignal()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">getHandler()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01589">removeAllPlots()</a>, and <a class="el" href="../../d0/d9e/classMantidQt_1_1MantidWidgets_1_1FitPropertyBrowser.html#a8ccf428414f1c85fb86c74944c85c302">MantidQt::MantidWidgets::FitPropertyBrowser::removePlotSignal()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02089">MantidQt::MantidWidgets::FitPropertyBrowser::clear()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02609">MantidQt::MantidWidgets::FitPropertyBrowser::loadFunction()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01579">removeAllPlots()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02091">MantidQt::MantidWidgets::FitPropertyBrowser::clear()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02611">MantidQt::MantidWidgets::FitPropertyBrowser::loadFunction()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01589">removeAllPlots()</a>.</p>
 
 </div>
 </div>
@@ -1770,11 +1773,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01487">1487</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01497">1497</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00212">m_constraints</a>, and <a class="el" href="../../de/d94/IFunction_8h_source.html#l00774">Mantid::API::FunctionHandler::m_fun</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02409">MantidQt::MantidWidgets::FitPropertyBrowser::removeBounds()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02411">MantidQt::MantidWidgets::FitPropertyBrowser::removeBounds()</a>.</p>
 
 </div>
 </div>
@@ -1793,11 +1796,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00447">447</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00457">457</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00066">cfun()</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00072">item()</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00678">MantidQt::MantidWidgets::FitPropertyBrowser::m_autoBackground</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00208">m_item</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00547">parentHandler()</a>, <a class="el" href="../../d0/d9e/classMantidQt_1_1MantidWidgets_1_1FitPropertyBrowser.html#a8ccf428414f1c85fb86c74944c85c302">MantidQt::MantidWidgets::FitPropertyBrowser::removePlotSignal()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00467">renameChildren()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02141">MantidQt::MantidWidgets::FitPropertyBrowser::setFitEnabled()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00066">cfun()</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00072">item()</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00678">MantidQt::MantidWidgets::FitPropertyBrowser::m_autoBackground</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00208">m_item</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00557">parentHandler()</a>, <a class="el" href="../../d0/d9e/classMantidQt_1_1MantidWidgets_1_1FitPropertyBrowser.html#a8ccf428414f1c85fb86c74944c85c302">MantidQt::MantidWidgets::FitPropertyBrowser::removePlotSignal()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00477">renameChildren()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02143">MantidQt::MantidWidgets::FitPropertyBrowser::setFitEnabled()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02661">MantidQt::MantidWidgets::FitPropertyBrowser::addAutoBackground()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00718">MantidQt::MantidWidgets::FitPropertyBrowser::removeFunction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02663">MantidQt::MantidWidgets::FitPropertyBrowser::addAutoBackground()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00720">MantidQt::MantidWidgets::FitPropertyBrowser::removeFunction()</a>.</p>
 
 </div>
 </div>
@@ -1825,9 +1828,9 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01234">1234</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01244">1244</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00211">m_ties</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01192">removeTie()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00211">m_ties</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01202">removeTie()</a>.</p>
 
 </div>
 </div>
@@ -1855,9 +1858,9 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01214">1214</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01224">1224</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01120">getParameterProperty()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00554">MantidQt::MantidWidgets::FitPropertyBrowser::m_changeSlotsEnabled</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00774">Mantid::API::FunctionHandler::m_fun</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00211">m_ties</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01130">getParameterProperty()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00554">MantidQt::MantidWidgets::FitPropertyBrowser::m_changeSlotsEnabled</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00774">Mantid::API::FunctionHandler::m_fun</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00211">m_ties</a>.</p>
 
 </div>
 </div>
@@ -1896,11 +1899,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01192">1192</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01202">1202</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00132">MantidQt::MantidWidgets::FitPropertyBrowser::compositeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01120">getParameterProperty()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00554">MantidQt::MantidWidgets::FitPropertyBrowser::m_changeSlotsEnabled</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00211">m_ties</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00132">MantidQt::MantidWidgets::FitPropertyBrowser::compositeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01130">getParameterProperty()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00554">MantidQt::MantidWidgets::FitPropertyBrowser::m_changeSlotsEnabled</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00211">m_ties</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02240">MantidQt::MantidWidgets::FitPropertyBrowser::deleteTie()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01234">removeTie()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02242">MantidQt::MantidWidgets::FitPropertyBrowser::deleteTie()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01244">removeTie()</a>.</p>
 
 </div>
 </div>
@@ -1920,11 +1923,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00467">467</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00477">477</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00132">MantidQt::MantidWidgets::FitPropertyBrowser::compositeFunction()</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00654">Mantid::API::IFunction::Fixed</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00654">Mantid::API::IFunction::FixedByDefault</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00518">functionName()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00527">functionPrefix()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00554">getHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01120">getParameterProperty()</a>, <a class="el" href="../../db/d1f/API_2src_2CompositeFunction_8cpp_source.html#l00491">Mantid::API::CompositeFunction::getParameterStatus()</a>, <a class="el" href="../../db/d1f/API_2src_2CompositeFunction_8cpp_source.html#l00819">Mantid::API::CompositeFunction::getTie()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00072">item()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00554">MantidQt::MantidWidgets::FitPropertyBrowser::m_changeSlotsEnabled</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00504">MantidQt::MantidWidgets::FitPropertyBrowser::m_stringManager</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00211">m_ties</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00467">renameChildren()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00132">MantidQt::MantidWidgets::FitPropertyBrowser::compositeFunction()</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00654">Mantid::API::IFunction::Fixed</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00654">Mantid::API::IFunction::FixedByDefault</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00528">functionName()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00537">functionPrefix()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">getHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01130">getParameterProperty()</a>, <a class="el" href="../../db/d1f/API_2src_2CompositeFunction_8cpp_source.html#l00491">Mantid::API::CompositeFunction::getParameterStatus()</a>, <a class="el" href="../../db/d1f/API_2src_2CompositeFunction_8cpp_source.html#l00819">Mantid::API::CompositeFunction::getTie()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00072">item()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00554">MantidQt::MantidWidgets::FitPropertyBrowser::m_changeSlotsEnabled</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00504">MantidQt::MantidWidgets::FitPropertyBrowser::m_stringManager</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00211">m_ties</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00477">renameChildren()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00447">removeFunction()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00467">renameChildren()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00457">removeFunction()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00477">renameChildren()</a>.</p>
 
 </div>
 </div>
@@ -1964,7 +1967,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00920">920</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00930">930</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../de/d94/IFunction_8h_source.html#l00303">Mantid::API::IFunction::Attribute::apply()</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00132">MantidQt::MantidWidgets::FitPropertyBrowser::compositeFunction()</a>, <a class="el" href="../../d0/d65/API_2src_2IFunction_8cpp_source.html#l01051">Mantid::API::IFunction::Attribute::fromString()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00224">initAttributes()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00243">initParameters()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00209">m_attributes</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00774">Mantid::API::FunctionHandler::m_fun</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00049">tmp</a>.</p>
 
@@ -2008,9 +2011,9 @@ template&lt;typename AttributeType &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00888">888</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00898">898</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00066">cfun()</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00132">MantidQt::MantidWidgets::FitPropertyBrowser::compositeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00554">getHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00224">initAttributes()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00243">initParameters()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00209">m_attributes</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00774">Mantid::API::FunctionHandler::m_fun</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00827">setAttribute()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00066">cfun()</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00132">MantidQt::MantidWidgets::FitPropertyBrowser::compositeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">getHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00224">initAttributes()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00243">initParameters()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00209">m_attributes</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00774">Mantid::API::FunctionHandler::m_fun</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00837">setAttribute()</a>.</p>
 
 </div>
 </div>
@@ -2049,9 +2052,9 @@ template&lt;typename AttributeType &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00872">872</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00882">882</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d65/API_2src_2IFunction_8cpp_source.html#l00819">Mantid::API::IFunction::Attribute::asDouble()</a>, <a class="el" href="../../d0/d65/API_2src_2IFunction_8cpp_source.html#l00806">Mantid::API::IFunction::Attribute::asInt()</a>, <a class="el" href="../../d0/d65/API_2src_2IFunction_8cpp_source.html#l00740">Mantid::API::IFunction::Attribute::asString()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00827">setAttribute()</a>, and <a class="el" href="../../d0/d65/API_2src_2IFunction_8cpp_source.html#l00688">Mantid::API::IFunction::Attribute::type()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d65/API_2src_2IFunction_8cpp_source.html#l00819">Mantid::API::IFunction::Attribute::asDouble()</a>, <a class="el" href="../../d0/d65/API_2src_2IFunction_8cpp_source.html#l00806">Mantid::API::IFunction::Attribute::asInt()</a>, <a class="el" href="../../d0/d65/API_2src_2IFunction_8cpp_source.html#l00740">Mantid::API::IFunction::Attribute::asString()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00837">setAttribute()</a>, and <a class="el" href="../../d0/d65/API_2src_2IFunction_8cpp_source.html#l00688">Mantid::API::IFunction::Attribute::type()</a>.</p>
 
 </div>
 </div>
@@ -2091,11 +2094,11 @@ template&lt;typename AttributeType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if successfull </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00827">827</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00837">837</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d94/IFunction_8h_source.html#l00303">Mantid::API::IFunction::Attribute::apply()</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00132">MantidQt::MantidWidgets::FitPropertyBrowser::compositeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01588">fit()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00554">getHandler()</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00320">Mantid::API::IFunction::Attribute::getValidator()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00224">initAttributes()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00243">initParameters()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00209">m_attributes</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00678">MantidQt::MantidWidgets::FitPropertyBrowser::m_autoBackground</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00774">Mantid::API::FunctionHandler::m_fun</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00827">setAttribute()</a>, and <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00049">tmp</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d94/IFunction_8h_source.html#l00303">Mantid::API::IFunction::Attribute::apply()</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00132">MantidQt::MantidWidgets::FitPropertyBrowser::compositeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01598">fit()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">getHandler()</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00320">Mantid::API::IFunction::Attribute::getValidator()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00224">initAttributes()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00243">initParameters()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00209">m_attributes</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00678">MantidQt::MantidWidgets::FitPropertyBrowser::m_autoBackground</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00774">Mantid::API::FunctionHandler::m_fun</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00837">setAttribute()</a>, and <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00049">tmp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02661">MantidQt::MantidWidgets::FitPropertyBrowser::addAutoBackground()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00351">addFunction()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01365">MantidQt::MantidWidgets::FitPropertyBrowser::doubleChanged()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01406">MantidQt::MantidWidgets::FitPropertyBrowser::enactAttributeChange()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01317">MantidQt::MantidWidgets::FitPropertyBrowser::intChanged()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00888">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00872">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00827">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00944">setVectorAttribute()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01934">MantidQt::MantidWidgets::FitPropertyBrowser::setXRange()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00979">updateAttribute()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02663">MantidQt::MantidWidgets::FitPropertyBrowser::addAutoBackground()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00360">addFunction()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01367">MantidQt::MantidWidgets::FitPropertyBrowser::doubleChanged()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01408">MantidQt::MantidWidgets::FitPropertyBrowser::enactAttributeChange()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01319">MantidQt::MantidWidgets::FitPropertyBrowser::intChanged()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00898">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00882">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00837">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00954">setVectorAttribute()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01936">MantidQt::MantidWidgets::FitPropertyBrowser::setXRange()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00989">updateAttribute()</a>.</p>
 
 </div>
 </div>
@@ -2146,11 +2149,11 @@ template&lt;typename AttributeType &gt; </div>
 <p>Set the centre of the handled peak function. </p>
 <p>Find m_ci: x-index of the peakcentre. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01344">1344</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01354">1354</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01077">MantidQt::MantidWidgets::FitPropertyBrowser::getWorkspace()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00220">m_ci</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00205">m_pf</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01127">MantidQt::MantidWidgets::FitPropertyBrowser::workspaceIndex()</a>, <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::X</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01079">MantidQt::MantidWidgets::FitPropertyBrowser::getWorkspace()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00220">m_ci</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00205">m_pf</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01129">MantidQt::MantidWidgets::FitPropertyBrowser::workspaceIndex()</a>, <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::X</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01035">changeType()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01528">MantidQt::MantidWidgets::FitPropertyBrowser::setCentre()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01045">changeType()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01530">MantidQt::MantidWidgets::FitPropertyBrowser::setCentre()</a>.</p>
 
 </div>
 </div>
@@ -2169,11 +2172,11 @@ template&lt;typename AttributeType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01637">1637</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01647">1647</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01929">MantidQt::MantidWidgets::FitPropertyBrowser::endX()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00070">ifun()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00501">MantidQt::MantidWidgets::FitPropertyBrowser::m_enumManager</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00502">MantidQt::MantidWidgets::FitPropertyBrowser::m_intManager</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00208">m_item</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00217">m_workspace</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00218">m_workspaceIndex</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00570">MantidQt::MantidWidgets::FitPropertyBrowser::m_workspaceNames</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01923">MantidQt::MantidWidgets::FitPropertyBrowser::startX()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01931">MantidQt::MantidWidgets::FitPropertyBrowser::endX()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00070">ifun()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00501">MantidQt::MantidWidgets::FitPropertyBrowser::m_enumManager</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00502">MantidQt::MantidWidgets::FitPropertyBrowser::m_intManager</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00208">m_item</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00217">m_workspace</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00218">m_workspaceIndex</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00570">MantidQt::MantidWidgets::FitPropertyBrowser::m_workspaceNames</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01925">MantidQt::MantidWidgets::FitPropertyBrowser::startX()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01317">MantidQt::MantidWidgets::FitPropertyBrowser::intChanged()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01319">MantidQt::MantidWidgets::FitPropertyBrowser::intChanged()</a>.</p>
 
 </div>
 </div>
@@ -2193,11 +2196,11 @@ template&lt;typename AttributeType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01376">1376</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01386">1386</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00205">m_pf</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01566">MantidQt::MantidWidgets::FitPropertyBrowser::setFwhm()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01568">MantidQt::MantidWidgets::FitPropertyBrowser::setFwhm()</a>.</p>
 
 </div>
 </div>
@@ -2247,11 +2250,11 @@ template&lt;typename AttributeType &gt; </div>
 
 <p>Set the height of the handled peak function. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01334">1334</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01344">1344</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00219">m_base</a>, and <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00205">m_pf</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01547">MantidQt::MantidWidgets::FitPropertyBrowser::setHeight()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01549">MantidQt::MantidWidgets::FitPropertyBrowser::setHeight()</a>.</p>
 
 </div>
 </div>
@@ -2280,11 +2283,11 @@ template&lt;typename AttributeType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if successfull </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00661">661</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00671">671</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01178">fix()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00527">functionPrefix()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00554">getHandler()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00774">Mantid::API::FunctionHandler::m_fun</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00511">MantidQt::MantidWidgets::FitPropertyBrowser::m_parameterManager</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00210">m_parameters</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00238">MantidQt::MantidWidgets::FitPropertyBrowser::sendParameterChanged()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00661">setParameter()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01003">updateParameters()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01188">fix()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00537">functionPrefix()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00774">Mantid::API::FunctionHandler::m_fun</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00511">MantidQt::MantidWidgets::FitPropertyBrowser::m_parameterManager</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00210">m_parameters</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00225">m_paramToPropertyHandlerMap</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00238">MantidQt::MantidWidgets::FitPropertyBrowser::sendParameterChanged()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01013">updateParameters()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01426">MantidQt::MantidWidgets::FitPropertyBrowser::parameterChanged()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00661">setParameter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01428">MantidQt::MantidWidgets::FitPropertyBrowser::parameterChanged()</a>.</p>
 
 </div>
 </div>
@@ -2312,11 +2315,11 @@ template&lt;typename AttributeType &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00944">944</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00954">954</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00209">m_attributes</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00214">m_vectorSizes</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00827">setAttribute()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00209">m_attributes</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00214">m_vectorSizes</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00837">setAttribute()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01406">MantidQt::MantidWidgets::FitPropertyBrowser::enactAttributeChange()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01408">MantidQt::MantidWidgets::FitPropertyBrowser::enactAttributeChange()</a>.</p>
 
 </div>
 </div>
@@ -2352,11 +2355,11 @@ template&lt;typename AttributeType &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00979">979</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00989">989</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00209">m_attributes</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00827">setAttribute()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00209">m_attributes</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00837">setAttribute()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00974">updateAttributes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00984">updateAttributes()</a>.</p>
 
 </div>
 </div>
@@ -2378,11 +2381,11 @@ template&lt;typename AttributeType &gt; </div>
 <p>Sync all parameter values with the manager. </p>
 <p>Updates all string, double and int attributes which have changed in a function. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00974">974</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00984">984</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00960">applyToAllAttributes()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00979">updateAttribute()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00970">applyToAllAttributes()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00989">updateAttribute()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02084">MantidQt::MantidWidgets::FitPropertyBrowser::updateAttributes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02086">MantidQt::MantidWidgets::FitPropertyBrowser::updateAttributes()</a>.</p>
 
 </div>
 </div>
@@ -2418,11 +2421,11 @@ template&lt;typename AttributeType &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01020">1020</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01030">1030</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../dc/dd8/IndexPeaks_8cpp_source.html#l00136">error</a>, <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, and <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00511">MantidQt::MantidWidgets::FitPropertyBrowser::m_parameterManager</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01005">updateErrors()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01015">updateErrors()</a>.</p>
 
 </div>
 </div>
@@ -2443,11 +2446,11 @@ template&lt;typename AttributeType &gt; </div>
 
 <p>Set all parameter error values in the manager. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01005">1005</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01015">1015</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00991">applyToAllParameters()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01020">updateError()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01001">applyToAllParameters()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01030">updateError()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d7f/SequentialFitDialog_8cpp_source.html#l00426">MantidQt::MantidWidgets::SequentialFitDialog::getFitResults()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02104">MantidQt::MantidWidgets::FitPropertyBrowser::updateBrowserFromFitResults()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d7f/SequentialFitDialog_8cpp_source.html#l00426">MantidQt::MantidWidgets::SequentialFitDialog::getFitResults()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02106">MantidQt::MantidWidgets::FitPropertyBrowser::updateBrowserFromFitResults()</a>.</p>
 
 </div>
 </div>
@@ -2483,11 +2486,11 @@ template&lt;typename AttributeType &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01012">1012</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01022">1022</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, and <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00511">MantidQt::MantidWidgets::FitPropertyBrowser::m_parameterManager</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01003">updateParameters()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01013">updateParameters()</a>.</p>
 
 </div>
 </div>
@@ -2508,11 +2511,11 @@ template&lt;typename AttributeType &gt; </div>
 
 <p>Sync all parameter values with the manager. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01003">1003</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01013">1013</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00991">applyToAllParameters()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01012">updateParameter()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01001">applyToAllParameters()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01022">updateParameter()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01138">addTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01588">fit()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01528">MantidQt::MantidWidgets::FitPropertyBrowser::setCentre()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01566">MantidQt::MantidWidgets::FitPropertyBrowser::setFwhm()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01547">MantidQt::MantidWidgets::FitPropertyBrowser::setHeight()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00661">setParameter()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02079">MantidQt::MantidWidgets::FitPropertyBrowser::updateParameters()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01148">addTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01598">fit()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01530">MantidQt::MantidWidgets::FitPropertyBrowser::setCentre()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01568">MantidQt::MantidWidgets::FitPropertyBrowser::setFwhm()</a>, <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l01549">MantidQt::MantidWidgets::FitPropertyBrowser::setHeight()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00671">setParameter()</a>, and <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l02081">MantidQt::MantidWidgets::FitPropertyBrowser::updateParameters()</a>.</p>
 
 </div>
 </div>
@@ -2539,9 +2542,9 @@ template&lt;typename AttributeType &gt; </div>
 <p>For non-composite functions: <a class="el" href="../../de/d38/classMantid_1_1API_1_1FunctionHandler.html#a5e343503887925f9b816dc670d6954c7" title="Return the handled function.">function()</a>-&gt;<a class="el" href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name()</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd>The new tooltip </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01541">1541</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01551">1551</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00554">getHandler()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00208">m_item</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d94/IFunction_8h_source.html#l00771">Mantid::API::FunctionHandler::function()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">getHandler()</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">m_cf</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00208">m_item</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d8/d61/FitPropertyBrowser_8cpp_source.html#l00638">MantidQt::MantidWidgets::FitPropertyBrowser::updateStructureTooltips()</a>.</p>
 
@@ -2563,11 +2566,11 @@ template&lt;typename AttributeType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01613">1613</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01623">1623</a> of file <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html">PropertyHandler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00066">cfun()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00554">getHandler()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00501">MantidQt::MantidWidgets::FitPropertyBrowser::m_enumManager</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00217">m_workspace</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00570">MantidQt::MantidWidgets::FitPropertyBrowser::m_workspaceNames</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01613">updateWorkspaces()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00066">cfun()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">getHandler()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">m_browser</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00501">MantidQt::MantidWidgets::FitPropertyBrowser::m_enumManager</a>, <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00217">m_workspace</a>, <a class="el" href="../../d0/dfa/FitPropertyBrowser_8h_source.html#l00570">MantidQt::MantidWidgets::FitPropertyBrowser::m_workspaceNames</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01623">updateWorkspaces()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01613">updateWorkspaces()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01623">updateWorkspaces()</a>.</p>
 
 </div>
 </div>
@@ -2592,7 +2595,7 @@ template&lt;typename AttributeType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00242">242</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00245">245</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
 </div>
 </div>
@@ -2619,7 +2622,7 @@ template&lt;typename AttributeType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00209">209</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00960">applyToAllAttributes()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00593">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00224">initAttributes()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00920">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00888">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00827">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00944">setVectorAttribute()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00979">updateAttribute()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00970">applyToAllAttributes()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00603">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00224">initAttributes()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00930">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00898">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00837">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00954">setVectorAttribute()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00989">updateAttribute()</a>.</p>
 
 </div>
 </div>
@@ -2645,7 +2648,7 @@ template&lt;typename AttributeType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00219">219</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01288">calcBase()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01244">EstimateFwhm()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01334">setHeight()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01298">calcBase()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01254">EstimateFwhm()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01344">setHeight()</a>.</p>
 
 </div>
 </div>
@@ -2671,7 +2674,7 @@ template&lt;typename AttributeType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00203">203</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01427">addConstraint()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00351">addFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01138">addTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01288">calcBase()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01316">calcBaseAll()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01389">centre()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01035">changeType()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01029">clearError()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01244">EstimateFwhm()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01588">fit()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01178">fix()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00056">init()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00224">initAttributes()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00243">initParameters()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01579">removeAllPlots()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00447">removeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01214">removeTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01192">removeTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00467">renameChildren()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00920">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00888">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00827">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01344">setCentre()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01637">setFunctionWorkspace()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00661">setParameter()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01020">updateError()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01012">updateParameter()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01613">updateWorkspaces()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01437">addConstraint()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00360">addFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01148">addTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01298">calcBase()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01326">calcBaseAll()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01399">centre()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01045">changeType()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01039">clearError()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01254">EstimateFwhm()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01598">fit()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01188">fix()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00056">init()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00224">initAttributes()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00243">initParameters()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01589">removeAllPlots()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00457">removeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01224">removeTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01202">removeTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00477">renameChildren()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00930">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00898">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00837">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01354">setCentre()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01647">setFunctionWorkspace()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00671">setParameter()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01030">updateError()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01022">updateParameter()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01623">updateWorkspaces()</a>.</p>
 
 </div>
 </div>
@@ -2697,7 +2700,7 @@ template&lt;typename AttributeType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00204">204</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00351">addFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00960">applyToAllAttributes()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00991">applyToAllParameters()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01316">calcBaseAll()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01035">changeType()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">findCompositeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00580">findFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00643">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00630">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00593">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00554">getHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01505">getPeakList()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00056">init()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00207">initTies()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01579">removeAllPlots()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00467">renameChildren()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00827">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00661">setParameter()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01541">updateStructureTooltip()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00360">addFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00970">applyToAllAttributes()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01001">applyToAllParameters()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01326">calcBaseAll()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01045">changeType()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00574">findCompositeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00590">findFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00653">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00640">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00603">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">getHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01515">getPeakList()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00056">init()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00207">initTies()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01589">removeAllPlots()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00477">renameChildren()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00837">setAttribute()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00671">setParameter()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01551">updateStructureTooltip()</a>.</p>
 
 </div>
 </div>
@@ -2723,7 +2726,7 @@ template&lt;typename AttributeType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00220">220</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01288">calcBase()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01244">EstimateFwhm()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01344">setCentre()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01298">calcBase()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01254">EstimateFwhm()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01354">setCentre()</a>.</p>
 
 </div>
 </div>
@@ -2749,7 +2752,7 @@ template&lt;typename AttributeType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00212">212</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01427">addConstraint()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00593">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00243">initParameters()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01487">removeConstraint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01437">addConstraint()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00603">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00243">initParameters()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01497">removeConstraint()</a>.</p>
 
 </div>
 </div>
@@ -2775,7 +2778,7 @@ template&lt;typename AttributeType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00222">222</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01528">plotRemoved()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01538">plotRemoved()</a>.</p>
 
 </div>
 </div>
@@ -2827,7 +2830,7 @@ template&lt;typename AttributeType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00208">208</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01035">changeType()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00564">findCompositeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00580">findFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00593">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00056">init()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00224">initAttributes()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00243">initParameters()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00447">removeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01637">setFunctionWorkspace()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01541">updateStructureTooltip()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01045">changeType()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00574">findCompositeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00590">findFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00603">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00056">init()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00224">initAttributes()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00243">initParameters()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00457">removeFunction()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01647">setFunctionWorkspace()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01551">updateStructureTooltip()</a>.</p>
 
 </div>
 </div>
@@ -2853,7 +2856,35 @@ template&lt;typename AttributeType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00210">210</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00991">applyToAllParameters()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00593">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01120">getParameterProperty()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01129">getParameterProperty()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00243">initParameters()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01118">isParameter()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00661">setParameter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01001">applyToAllParameters()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00603">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01130">getParameterProperty()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01139">getParameterProperty()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00243">initParameters()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01128">isParameter()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00671">setParameter()</a>.</p>
+
+</div>
+</div>
+<a id="a720116f456c8659cc87586b7d12ce27d" name="a720116f456c8659cc87586b7d12ce27d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a720116f456c8659cc87586b7d12ce27d">&#9670;&#160;</a></span>m_paramToPropertyHandlerMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QMap&lt;QtProperty *, <a class="el" href="../../d8/d9a/classMantidQt_1_1MantidWidgets_1_1PropertyHandler.html">PropertyHandler</a> *&gt; MantidQt::MantidWidgets::PropertyHandler::m_paramToPropertyHandlerMap</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>QtProperties to <a class="el" href="../../d8/d9a/classMantidQt_1_1MantidWidgets_1_1PropertyHandler.html" title="Helps display and edit functions in FitPropertyBrowser.">PropertyHandler</a> map for faster lookup. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00225">225</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00243">initParameters()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00671">setParameter()</a>.</p>
 
 </div>
 </div>
@@ -2879,7 +2910,7 @@ template&lt;typename AttributeType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00206">206</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01035">changeType()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00056">init()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00302">initWorkspace()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00547">parentHandler()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01045">changeType()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00056">init()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00311">initWorkspace()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00557">parentHandler()</a>.</p>
 
 </div>
 </div>
@@ -2905,7 +2936,7 @@ template&lt;typename AttributeType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00205">205</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01389">centre()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01035">changeType()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01396">fwhm()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01410">getCentreParameterName()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01505">getPeakList()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01403">getWidthParameterName()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01382">height()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01417">isParameterExplicitlySet()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01344">setCentre()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01376">setFwhm()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01334">setHeight()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01399">centre()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01045">changeType()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01406">fwhm()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01420">getCentreParameterName()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01515">getPeakList()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01413">getWidthParameterName()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01392">height()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01427">isParameterExplicitlySet()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01354">setCentre()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01386">setFwhm()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01344">setHeight()</a>.</p>
 
 </div>
 </div>
@@ -2931,7 +2962,7 @@ template&lt;typename AttributeType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00211">211</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01138">addTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00593">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01234">removeTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01214">removeTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01192">removeTie()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00467">renameChildren()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01148">addTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00603">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01244">removeTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01224">removeTie()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01202">removeTie()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00477">renameChildren()</a>.</p>
 
 </div>
 </div>
@@ -2957,7 +2988,7 @@ template&lt;typename AttributeType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00207">207</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01035">changeType()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00593">findHandler()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00056">init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01045">changeType()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00603">findHandler()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00056">init()</a>.</p>
 
 </div>
 </div>
@@ -2983,7 +3014,7 @@ template&lt;typename AttributeType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00213">213</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00176">MantidQt::MantidWidgets::CreateAttributeProperty::apply()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00593">findHandler()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00224">initAttributes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00176">MantidQt::MantidWidgets::CreateAttributeProperty::apply()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00603">findHandler()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00224">initAttributes()</a>.</p>
 
 </div>
 </div>
@@ -3009,7 +3040,7 @@ template&lt;typename AttributeType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00214">214</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00176">MantidQt::MantidWidgets::CreateAttributeProperty::apply()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00593">findHandler()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00944">setVectorAttribute()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00176">MantidQt::MantidWidgets::CreateAttributeProperty::apply()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00603">findHandler()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00954">setVectorAttribute()</a>.</p>
 
 </div>
 </div>
@@ -3038,7 +3069,7 @@ template&lt;typename AttributeType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00217">217</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00593">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00302">initWorkspace()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01637">setFunctionWorkspace()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01613">updateWorkspaces()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00603">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00311">initWorkspace()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01647">setFunctionWorkspace()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01623">updateWorkspaces()</a>.</p>
 
 </div>
 </div>
@@ -3066,7 +3097,7 @@ template&lt;typename AttributeType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html#l00218">218</a> of file <a class="el" href="../../d7/d16/PropertyHandler_8h_source.html">PropertyHandler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00593">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00302">initWorkspace()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01637">setFunctionWorkspace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00603">findHandler()</a>, <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l00311">initWorkspace()</a>, and <a class="el" href="../../d4/d8c/PropertyHandler_8cpp_source.html#l01647">setFunctionWorkspace()</a>.</p>
 
 </div>
 </div>
