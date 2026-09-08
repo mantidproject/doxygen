@@ -152,9 +152,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5f8bca79dac3638075674c0ecc09ec1e" id="r_a5f8bca79dac3638075674c0ecc09ec1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d51/classMantid_1_1DataObjects_1_1MDGridBox.html#a5f8bca79dac3638075674c0ecc09ec1e">calculateGridCaches</a> () override final</td></tr>
 <tr class="memdesc:a5f8bca79dac3638075674c0ecc09ec1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates caches for grid box recursively, assuming leafs have computed values.  <br /></td></tr>
 <tr class="separator:a5f8bca79dac3638075674c0ecc09ec1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ccf4ff7b776a1d58327a1e064ce7e20" id="r_a4ccf4ff7b776a1d58327a1e064ce7e20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d51/classMantid_1_1DataObjects_1_1MDGridBox.html#a4ccf4ff7b776a1d58327a1e064ce7e20">centerpointBin</a> (<a class="el" href="../../d7/da8/classMantid_1_1DataObjects_1_1MDBin.html">MDBin</a>&lt; MDE, nd &gt; &amp;bin, bool *fullyContained) const override</td></tr>
-<tr class="memdesc:a4ccf4ff7b776a1d58327a1e064ce7e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform centerpoint binning of events, with bins defined in axes perpendicular to the axes of the workspace.  <br /></td></tr>
-<tr class="separator:a4ccf4ff7b776a1d58327a1e064ce7e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a988eb658f1933838a083334dc0c8475e" id="r_a988eb658f1933838a083334dc0c8475e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d51/classMantid_1_1DataObjects_1_1MDGridBox.html#a988eb658f1933838a083334dc0c8475e">centroidSphere</a> (<a class="el" href="../../d0/d93/classMantid_1_1API_1_1CoordTransform.html">Mantid::API::CoordTransform</a> &amp;radiusTransform, const <a class="el" href="../../d8/d8e/namespaceMantid.html#a48a3f1c344c2d96fe85a4d92fb84f165">coord_t</a> radiusSquared, <a class="el" href="../../d8/d8e/namespaceMantid.html#a48a3f1c344c2d96fe85a4d92fb84f165">coord_t</a> *centroid, <a class="el" href="../../d8/d8e/namespaceMantid.html#aa317d86074a6132ceea787aa720eaa91">signal_t</a> &amp;signal) const override</td></tr>
 <tr class="memdesc:a988eb658f1933838a083334dc0c8475e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the centroid of all events contained within by doing a weighted average of their coordinates.  <br /></td></tr>
 <tr class="separator:a988eb658f1933838a083334dc0c8475e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,18 +163,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab2d9e33f7d77de472248fb43e3f72d42" id="r_ab2d9e33f7d77de472248fb43e3f72d42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d51/classMantid_1_1DataObjects_1_1MDGridBox.html#ab2d9e33f7d77de472248fb43e3f72d42">clearFileBacked</a> (bool loadDiskBackedData) override</td></tr>
 <tr class="memdesc:ab2d9e33f7d77de472248fb43e3f72d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively clear the file-backed information stored in mdBoxes from the boxes if such information exists.  <br /></td></tr>
 <tr class="separator:ab2d9e33f7d77de472248fb43e3f72d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bab639ff80b5c41131870f22ff7892b" id="r_a5bab639ff80b5c41131870f22ff7892b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d51/classMantid_1_1DataObjects_1_1MDGridBox.html#a5bab639ff80b5c41131870f22ff7892b">generalBin</a> (<a class="el" href="../../d7/da8/classMantid_1_1DataObjects_1_1MDBin.html">MDBin</a>&lt; MDE, nd &gt; &amp;, <a class="el" href="../../db/db4/classMantid_1_1Geometry_1_1MDImplicitFunction.html">Mantid::Geometry::MDImplicitFunction</a> &amp;) const override</td></tr>
-<tr class="memdesc:a5bab639ff80b5c41131870f22ff7892b"><td class="mdescLeft">&#160;</td><td class="mdescRight">General binning method for any shape.  <br /></td></tr>
-<tr class="separator:a5bab639ff80b5c41131870f22ff7892b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e09c4839b262fd8a48abb51d4052708" id="r_a1e09c4839b262fd8a48abb51d4052708"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html">API::IMDNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d51/classMantid_1_1DataObjects_1_1MDGridBox.html#a1e09c4839b262fd8a48abb51d4052708">getBoxAtCoord</a> (const <a class="el" href="../../d8/d8e/namespaceMantid.html#a48a3f1c344c2d96fe85a4d92fb84f165">coord_t</a> *coords) override</td></tr>
 <tr class="memdesc:a1e09c4839b262fd8a48abb51d4052708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the lowest-level box at the given coordinates.  <br /></td></tr>
 <tr class="separator:a1e09c4839b262fd8a48abb51d4052708"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc68445fa9bccda7b736e1acc4026b1e" id="r_adc68445fa9bccda7b736e1acc4026b1e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html">MDBoxBase</a>&lt; MDE, nd &gt; * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d51/classMantid_1_1DataObjects_1_1MDGridBox.html#adc68445fa9bccda7b736e1acc4026b1e">getBoxes</a> ()</td></tr>
 <tr class="memdesc:adc68445fa9bccda7b736e1acc4026b1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">For testing: get (a reference to) the vector of boxes.  <br /></td></tr>
 <tr class="separator:adc68445fa9bccda7b736e1acc4026b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81e0a51f8b32116ec5bce6808758502d" id="r_a81e0a51f8b32116ec5bce6808758502d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d51/classMantid_1_1DataObjects_1_1MDGridBox.html#a81e0a51f8b32116ec5bce6808758502d">getBoxes</a> (std::vector&lt; <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html">API::IMDNode</a> * &gt; &amp;outBoxes, const std::function&lt; bool(<a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html">API::IMDNode</a> *)&gt; &amp;cond) final override</td></tr>
-<tr class="memdesc:a81e0a51f8b32116ec5bce6808758502d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all boxes contained within.  <br /></td></tr>
-<tr class="separator:a81e0a51f8b32116ec5bce6808758502d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb395b4c449b1174279d2d0802d3e05f" id="r_abb395b4c449b1174279d2d0802d3e05f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d51/classMantid_1_1DataObjects_1_1MDGridBox.html#abb395b4c449b1174279d2d0802d3e05f">getBoxes</a> (std::vector&lt; <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html">API::IMDNode</a> * &gt; &amp;outBoxes, size_t maxDepth, bool leafOnly) override</td></tr>
 <tr class="memdesc:abb395b4c449b1174279d2d0802d3e05f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all boxes contained within.  <br /></td></tr>
 <tr class="separator:abb395b4c449b1174279d2d0802d3e05f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,7 +216,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae38861e39f05eef20ebe8d45869793dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate the signal within a sphere; for example, to perform single-crystal peak integration.  <br /></td></tr>
 <tr class="separator:ae38861e39f05eef20ebe8d45869793dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7f27603e4b03c6fd4d454f2c52f1cb1" id="r_ae7f27603e4b03c6fd4d454f2c52f1cb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d51/classMantid_1_1DataObjects_1_1MDGridBox.html#ae7f27603e4b03c6fd4d454f2c52f1cb1">integrateSphere</a> (<a class="el" href="../../d0/d93/classMantid_1_1API_1_1CoordTransform.html">Mantid::API::CoordTransform</a> &amp;radiusTransform, const <a class="el" href="../../d8/d8e/namespaceMantid.html#a48a3f1c344c2d96fe85a4d92fb84f165">coord_t</a> radiusSquared, <a class="el" href="../../d8/d8e/namespaceMantid.html#aa317d86074a6132ceea787aa720eaa91">signal_t</a> &amp;signal, <a class="el" href="../../d8/d8e/namespaceMantid.html#aa317d86074a6132ceea787aa720eaa91">signal_t</a> &amp;errorSquared, const <a class="el" href="../../d8/d8e/namespaceMantid.html#a48a3f1c344c2d96fe85a4d92fb84f165">coord_t</a> innerRadiusSquared=0.0, const bool useOnePercentBackgroundCorrection=true) const override</td></tr>
-<tr class="memdesc:ae7f27603e4b03c6fd4d454f2c52f1cb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::cout &lt;&lt; "vertex at " &lt;&lt; vertexCoord[0] &lt;&lt; ", " &lt;&lt; vertexCoord[1] &lt;&lt; ", " &lt;&lt; vertexCoord[2] &lt;&lt; " is contained\n";  <br /></td></tr>
+<tr class="memdesc:ae7f27603e4b03c6fd4d454f2c52f1cb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate the signal within a sphere; for example, to perform single-crystal peak integration.  <br /></td></tr>
 <tr class="separator:ae7f27603e4b03c6fd4d454f2c52f1cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1446856a97ab71555a7b5901a77fa09" id="r_aa1446856a97ab71555a7b5901a77fa09"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d51/classMantid_1_1DataObjects_1_1MDGridBox.html#aa1446856a97ab71555a7b5901a77fa09">isBox</a> () const override</td></tr>
 <tr class="memdesc:aa1446856a97ab71555a7b5901a77fa09"><td class="mdescLeft">&#160;</td><td class="mdescRight">to avoid casting (which need also the number of dimensions) method say if Node is a box.  <br /></td></tr>
@@ -535,7 +526,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Typedef for a vector of <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html" title="Templated super-class of a multi-dimensional event &quot;box&quot;.">MDBoxBase</a> pointers. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00202">202</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00196">196</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
 
 </div>
 </div>
@@ -553,7 +544,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Typedef for a shared pointer to a <a class="el" href="../../d5/d51/classMantid_1_1DataObjects_1_1MDGridBox.html" title="Templated class for a GRIDDED multi-dimensional event &quot;box&quot;.">MDGridBox</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00199">199</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00193">193</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
 
 </div>
 </div>
@@ -845,9 +836,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#abc8577f650d79e0eca3bd7401189da85">Mantid::DataObjects::MDBoxBase&lt; MDE, nd &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01633">1633</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01305">1305</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01542">Mantid::DataObjects::IF_EVENT&lt; MDE, nd &gt;::EXEC()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01214">Mantid::DataObjects::IF_EVENT&lt; MDE, nd &gt;::EXEC()</a>.</p>
 
 </div>
 </div>
@@ -890,7 +881,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#a10ee1cbb5b2a772622dd31e60f7b3809">Mantid::DataObjects::MDBoxBase&lt; MDE, nd &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01664">1664</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01336">1336</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -965,7 +956,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01596">1596</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01268">1268</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -1034,7 +1025,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of events rejected (0 as nothing is rejected here) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01577">1577</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01249">1249</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -1110,7 +1101,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01614">1614</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01286">1286</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -1140,7 +1131,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The function used to satisfy IMDNode interface but the physical meaning is unclear. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00178">178</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00172">172</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
 
 </div>
 </div>
@@ -1180,7 +1171,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The function used to satisfy IMDNode interface but the physical meaning is unclear. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00185">185</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00179">179</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
 
 </div>
 </div>
@@ -1216,7 +1207,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01728">1728</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01400">1400</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00673">Mantid::Geometry::d</a>, and <a class="el" href="../../d4/dfa/Acomp_8cpp_source.html#l00042">Mantid::Geometry::split()</a>.</p>
 
@@ -1251,57 +1242,6 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#a42affbc3b5f9affcac5fd58bff0af50b">Mantid::DataObjects::MDBoxBase&lt; MDE, nd &gt;</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00378">378</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
-
-</div>
-</div>
-<a id="a4ccf4ff7b776a1d58327a1e064ce7e20" name="a4ccf4ff7b776a1d58327a1e064ce7e20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ccf4ff7b776a1d58327a1e064ce7e20">&#9670;&#160;</a></span>centerpointBin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Mantid::DataObjects::MDGridBox::centerpointBin </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d7/da8/classMantid_1_1DataObjects_1_1MDBin.html">MDBin</a>&lt; MDE, nd &gt; &amp;&#160;</td>
-          <td class="paramname"><em>bin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>fullyContained</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Perform centerpoint binning of events, with bins defined in axes perpendicular to the axes of the workspace. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bin</td><td>:: <a class="el" href="../../d7/da8/classMantid_1_1DataObjects_1_1MDBin.html" title="MDBin : Class describing a single bin in a dense, Multidimensional histogram.">MDBin</a> object giving the limits of events to accept. </td></tr>
-    <tr><td class="paramname">fullyContained</td><td>:: optional bool array sized [nd] of which dimensions are known to be fully contained (for MDSplitBox) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#a2079eb4d3ac0567a2dda33108b006249">Mantid::DataObjects::MDBoxBase&lt; MDE, nd &gt;</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00773">773</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00673">Mantid::Geometry::d</a>, and <a class="el" href="../../d4/dfa/Acomp_8cpp_source.html#l00042">Mantid::Geometry::split()</a>.</p>
 
 </div>
 </div>
@@ -1364,7 +1304,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#a96f053c2a93ec6c7f1bf55be3fc4a82c">Mantid::DataObjects::MDBoxBase&lt; MDE, nd &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01283">1283</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00955">955</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html#a3cb5355d4adecf5b4dc44f5b6e6080e6">Mantid::API::IMDNode::centroidSphere()</a>, and <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html#a74ab3567ae63d362116281d1026ef0a4">Mantid::API::IMDNode::getCenter()</a>.</p>
 
@@ -1460,7 +1400,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01717">1717</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01389">1389</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -1538,48 +1478,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a5bab639ff80b5c41131870f22ff7892b" name="a5bab639ff80b5c41131870f22ff7892b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5bab639ff80b5c41131870f22ff7892b">&#9670;&#160;</a></span>generalBin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Mantid::DataObjects::MDGridBox::generalBin </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d7/da8/classMantid_1_1DataObjects_1_1MDBin.html">MDBin</a>&lt; MDE, nd &gt; &amp;&#160;</td>
-          <td class="paramname"><em>bin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../db/db4/classMantid_1_1Geometry_1_1MDImplicitFunction.html">Mantid::Geometry::MDImplicitFunction</a> &amp;&#160;</td>
-          <td class="paramname"><em>function</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>General binning method for any shape. </p>
-
-<p>Implements <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#a131c6c3961db9e908e319a158655a506">Mantid::DataObjects::MDBoxBase&lt; MDE, nd &gt;</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00146">146</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
-
-</div>
-</div>
 <a id="a1e09c4839b262fd8a48abb51d4052708" name="a1e09c4839b262fd8a48abb51d4052708"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1e09c4839b262fd8a48abb51d4052708">&#9670;&#160;</a></span>getBoxAtCoord()</h2>
 
@@ -1613,14 +1511,14 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html" title="Templated super-class of a multi-dimensional event &quot;box&quot;.">MDBoxBase</a> pointer. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00635">635</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00621">621</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00673">Mantid::Geometry::d</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
 
 </div>
 </div>
 <a id="adc68445fa9bccda7b736e1acc4026b1e" name="adc68445fa9bccda7b736e1acc4026b1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc68445fa9bccda7b736e1acc4026b1e">&#9670;&#160;</a></span>getBoxes() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adc68445fa9bccda7b736e1acc4026b1e">&#9670;&#160;</a></span>getBoxes() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1644,59 +1542,12 @@ Additional Inherited Members</h2></td></tr>
 
 <p>For testing: get (a reference to) the vector of boxes. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00173">173</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
-
-</div>
-</div>
-<a id="a81e0a51f8b32116ec5bce6808758502d" name="a81e0a51f8b32116ec5bce6808758502d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81e0a51f8b32116ec5bce6808758502d">&#9670;&#160;</a></span>getBoxes() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Mantid::DataObjects::MDGridBox::getBoxes </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html">API::IMDNode</a> * &gt; &amp;&#160;</td>
-          <td class="paramname"><em>outBoxes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::function&lt; bool(<a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html">API::IMDNode</a> *)&gt; &amp;&#160;</td>
-          <td class="paramname"><em>cond</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">override</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return all boxes contained within. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">outBoxes</td><td>:: vector to fill </td></tr>
-    <tr><td class="paramname">cond</td><td>:: condition to check (leaves on the tree) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00623">623</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00167">167</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
 
 </div>
 </div>
 <a id="abb395b4c449b1174279d2d0802d3e05f" name="abb395b4c449b1174279d2d0802d3e05f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb395b4c449b1174279d2d0802d3e05f">&#9670;&#160;</a></span>getBoxes() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abb395b4c449b1174279d2d0802d3e05f">&#9670;&#160;</a></span>getBoxes() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1750,7 +1601,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="af1c24c9a703274280a1d1047d21f0fd1" name="af1c24c9a703274280a1d1047d21f0fd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1c24c9a703274280a1d1047d21f0fd1">&#9670;&#160;</a></span>getBoxes() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af1c24c9a703274280a1d1047d21f0fd1">&#9670;&#160;</a></span>getBoxes() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1839,7 +1690,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The function used to satisfy IMDNode interface but the physical meaning is unclear. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00192">192</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00186">186</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
 
 </div>
 </div>
@@ -1907,7 +1758,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the index into the children of this grid box; size_t(-1) if NOT found. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00693">693</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00679">679</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -2060,7 +1911,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Getter for the masking status of the gridded box. </p>
 <dl class="section return"><dt>Returns</dt><dd>TRUE if ANY ONE of its referenced boxes is masked. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01502">1502</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01174">1174</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html#a4d53b4872404f9e7158983b14c5699dd">Mantid::API::IMDNode::getIsMasked()</a>.</p>
 
@@ -2358,7 +2209,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#ac3a61751b732e6db209a5f5c29255bf5">Mantid::DataObjects::MDBoxBase&lt; MDE, nd &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01323">1323</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00995">995</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00673">Mantid::Geometry::d</a>, <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html#a74ab3567ae63d362116281d1026ef0a4">Mantid::API::IMDNode::getCenter()</a>, <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html#a615eb2f96eb291bb16f23c2ac280314c">Mantid::API::IMDNode::getErrorSquared()</a>, <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html#a61ad7d7563388ca1488818622871381b">Mantid::API::IMDNode::getEventsData()</a>, <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html#ae64dc0ff0aafe661d24310df69bd3cb7">Mantid::API::IMDNode::getSignal()</a>, <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html#a20236033e58d67cdc7aa798b81a2653d">Mantid::API::IMDNode::integrateCylinder()</a>, and <a class="el" href="../../d4/dfa/Acomp_8cpp_source.html#l00042">Mantid::Geometry::split()</a>.</p>
 
@@ -2422,9 +2273,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>std::cout &lt;&lt; "vertex at " &lt;&lt; vertexCoord[0] &lt;&lt; ", " &lt;&lt; vertexCoord[1] &lt;&lt; ", " &lt;&lt; vertexCoord[2] &lt;&lt; " is contained\n"; </p>
-<p>std::cout &lt;&lt; "... added 1 vertex to box " &lt;&lt; boxes[linearIndex]-&gt;<a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#a17005deaf933154d1c6b2eb8d67908e3" title="Returns the extents as a string, for convenience.">getExtentsStr()</a> &lt;&lt; "\n"; std::cout &lt;&lt; "Depth " &lt;&lt; this-&gt;<a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#a510742db1241649d3ec2cf1695058a9c" title="For testing, mostly: return the recursion depth of this box.">getDepth()</a> &lt;&lt; " with " &lt;&lt; numFullyContained &lt;&lt; " fully contained; " &lt;&lt; numPartiallyContained &lt;&lt; "
-partial. Signal = " &lt;&lt; signal &lt;&lt;"\n"; Integrate the signal within a sphere; for example, to perform single-crystal peak integration. The CoordTransform object could be used for more complex shapes, e.g. "lentil" integration, as long as it reduces the dimensions to a single value.</p>
+<p>Integrate the signal within a sphere; for example, to perform single-crystal peak integration. </p>
+<p>The CoordTransform object could be used for more complex shapes, e.g. "lentil" integration, as long as it reduces the dimensions to a single value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">radiusTransform</td><td>:: nd-to-1 coordinate transformation that converts from these dimensions to the distance (squared) from the center of the sphere. </td></tr>
@@ -2439,7 +2289,7 @@ partial. Signal = " &lt;&lt; signal &lt;&lt;"\n"; Integrate the signal within a 
 
 <p>Implements <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#aa520124ba66b707bcbec69ead2f32d2d">Mantid::DataObjects::MDBoxBase&lt; MDE, nd &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01094">1094</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00766">766</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00673">Mantid::Geometry::d</a>, and <a class="el" href="../../d4/dfa/Acomp_8cpp_source.html#l00042">Mantid::Geometry::split()</a>.</p>
 
@@ -2599,7 +2449,7 @@ partial. Signal = " &lt;&lt; signal &lt;&lt;"\n"; Integrate the signal within a 
 
 <p>Setter for masking the box. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01516">1516</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01188">1188</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html#a1b6c276fa9392212480f042fe0f0d51f">Mantid::API::IMDNode::mask()</a>.</p>
 
@@ -2753,7 +2603,7 @@ partial. Signal = " &lt;&lt; signal &lt;&lt;"\n"; Integrate the signal within a 
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01684">1684</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01356">1356</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -2840,7 +2690,7 @@ partial. Signal = " &lt;&lt; signal &lt;&lt;"\n"; Integrate the signal within a 
 <p>Make the box file-backed without knowing its position on the HDD. </p>
 <p>Works recursively through all children </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01700">1700</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01372">1372</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -2888,7 +2738,7 @@ partial. Signal = " &lt;&lt; signal &lt;&lt;"\n"; Integrate the signal within a 
 <p>Recursively make this and all underlaying boxes file-backed.</p>
 <p>Not(yet?) implemented for gridboxes </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01692">1692</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01364">1364</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -2954,11 +2804,11 @@ partial. Signal = " &lt;&lt; signal &lt;&lt;"\n"; Integrate the signal within a 
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00708">708</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00694">694</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d82/MDBox_8h_source.html#l00087">Mantid::DataObjects::MDBox::getDataInMemorySize()</a>, <a class="el" href="../../d2/d89/MDBoxBase_8h_source.html#l00286">Mantid::DataObjects::MDBoxBase::getDepth()</a>, <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00160">Mantid::DataObjects::MDBox::getISaveable()</a>, <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00225">Mantid::DataObjects::MDBox::getNPoints()</a>, <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00708">splitAllIfNeeded()</a>, and <a class="el" href="../../de/d82/MDBox_8h_source.html#l00157">Mantid::DataObjects::MDBox::splitAllIfNeeded()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d82/MDBox_8h_source.html#l00087">Mantid::DataObjects::MDBox::getDataInMemorySize()</a>, <a class="el" href="../../d2/d89/MDBoxBase_8h_source.html#l00275">Mantid::DataObjects::MDBoxBase::getDepth()</a>, <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00160">Mantid::DataObjects::MDBox::getISaveable()</a>, <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00213">Mantid::DataObjects::MDBox::getNPoints()</a>, <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00694">splitAllIfNeeded()</a>, and <a class="el" href="../../de/d82/MDBox_8h_source.html#l00155">Mantid::DataObjects::MDBox::splitAllIfNeeded()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00708">splitAllIfNeeded()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00694">splitAllIfNeeded()</a>.</p>
 
 </div>
 </div>
@@ -2998,9 +2848,9 @@ partial. Signal = " &lt;&lt; signal &lt;&lt;"\n"; Integrate the signal within a 
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00663">663</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00649">649</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d2/d89/MDBoxBase_8h_source.html#l00286">Mantid::DataObjects::MDBoxBase::getDepth()</a>, and <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/d89/MDBoxBase_8h_source.html#l00275">Mantid::DataObjects::MDBoxBase::getDepth()</a>, and <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d52/MDEventWorkspace_8hxx_source.html#l00165">Mantid::DataObjects::MDEventWorkspace&lt; MDE, nd &gt;::setMinRecursionDepth()</a>.</p>
 
@@ -3081,7 +2931,7 @@ partial. Signal = " &lt;&lt; signal &lt;&lt;"\n"; Integrate the signal within a 
 
 <p>Setter for unmasking the box. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01525">1525</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01197">1197</a> of file <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html">MDGridBox.hxx</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html#a9cd3c76b58476b3415a8d21cb7b86ca3">Mantid::API::IMDNode::unmask()</a>.</p>
 
@@ -3111,7 +2961,7 @@ partial. Signal = " &lt;&lt; signal &lt;&lt;"\n"; Integrate the signal within a 
 <p>Length (squared) of the diagonal through every dimension = sum(
 boxSize[i]^2 ) Used in some calculations like peak integration. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00230">230</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00224">224</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
 
 </div>
 </div>
@@ -3139,7 +2989,7 @@ boxSize[i]^2 ) Used in some calculations like peak integration. </p>
 <p>These map to the nd-array. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00225">225</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00219">219</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
 
 </div>
 </div>
@@ -3165,7 +3015,7 @@ boxSize[i]^2 ) Used in some calculations like peak integration. </p>
 
 <p>size of each sub-box (the one this GridBox can be split into) in correspondent direction </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00215">215</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00209">209</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
 
 </div>
 </div>
@@ -3191,7 +3041,7 @@ boxSize[i]^2 ) Used in some calculations like peak integration. </p>
 
 <p>Precomputed reciprocal of m_SubBoxSize; replaces division with multiplication in calculateChildIndex. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00217">217</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00211">211</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
 
 </div>
 </div>
@@ -3217,7 +3067,7 @@ boxSize[i]^2 ) Used in some calculations like peak integration. </p>
 
 <p>Cached number of points contained (including all sub-boxes) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00233">233</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00227">227</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
 
 </div>
 </div>
@@ -3243,7 +3093,7 @@ boxSize[i]^2 ) Used in some calculations like peak integration. </p>
 
 <p>How many boxes in the boxes vector? This is just to avoid boxes.size() calls. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00221">221</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00215">215</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
 
 </div>
 </div>
@@ -3269,7 +3119,7 @@ boxSize[i]^2 ) Used in some calculations like peak integration. </p>
 
 <p>Each dimension is split into this many equally-sized boxes. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00209">209</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00203">203</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
 
 </div>
 </div>
@@ -3295,7 +3145,7 @@ boxSize[i]^2 ) Used in some calculations like peak integration. </p>
 
 <p>Cumulative dimension splitting: split[n] = 1*split[0]*split[..]*split[n-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00212">212</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d24/MDGridBox_8h_source.html#l00206">206</a> of file <a class="el" href="../../d4/d24/MDGridBox_8h_source.html">MDGridBox.h</a>.</p>
 
 </div>
 </div>

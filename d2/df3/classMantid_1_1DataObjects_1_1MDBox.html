@@ -161,9 +161,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad857c67417298bf8816691cdf12c8cd4" id="r_ad857c67417298bf8816691cdf12c8cd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/classMantid_1_1DataObjects_1_1MDBox.html#ad857c67417298bf8816691cdf12c8cd4">calculateDimensionStats</a> (<a class="el" href="../../da/d45/classMantid_1_1DataObjects_1_1MDDimensionStats.html">MDDimensionStats</a> *stats) const</td></tr>
 <tr class="memdesc:ad857c67417298bf8816691cdf12c8cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the statistics for each dimension of this <a class="el" href="../../d2/df3/classMantid_1_1DataObjects_1_1MDBox.html" title="Templated class for a multi-dimensional event &quot;box&quot;.">MDBox</a>, using all the contained events.  <br /></td></tr>
 <tr class="separator:ad857c67417298bf8816691cdf12c8cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaadde390da5a0eb5c28a7b7b55f4aff0" id="r_aaadde390da5a0eb5c28a7b7b55f4aff0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/classMantid_1_1DataObjects_1_1MDBox.html#aaadde390da5a0eb5c28a7b7b55f4aff0">centerpointBin</a> (<a class="el" href="../../d7/da8/classMantid_1_1DataObjects_1_1MDBin.html">MDBin</a>&lt; MDE, nd &gt; &amp;bin, bool *fullyContained) const override</td></tr>
-<tr class="memdesc:aaadde390da5a0eb5c28a7b7b55f4aff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform centerpoint binning of events.  <br /></td></tr>
-<tr class="separator:aaadde390da5a0eb5c28a7b7b55f4aff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf6314ad71bb1e5a85564b935debbb93" id="r_adf6314ad71bb1e5a85564b935debbb93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/classMantid_1_1DataObjects_1_1MDBox.html#adf6314ad71bb1e5a85564b935debbb93">centroidSphere</a> (<a class="el" href="../../d0/d93/classMantid_1_1API_1_1CoordTransform.html">Mantid::API::CoordTransform</a> &amp;radiusTransform, const <a class="el" href="../../d8/d8e/namespaceMantid.html#a48a3f1c344c2d96fe85a4d92fb84f165">coord_t</a> radiusSquared, <a class="el" href="../../d8/d8e/namespaceMantid.html#a48a3f1c344c2d96fe85a4d92fb84f165">coord_t</a> *centroid, <a class="el" href="../../d8/d8e/namespaceMantid.html#aa317d86074a6132ceea787aa720eaa91">signal_t</a> &amp;signal) const override</td></tr>
 <tr class="memdesc:adf6314ad71bb1e5a85564b935debbb93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the centroid of all events contained within by doing a weighted average of their coordinates.  <br /></td></tr>
 <tr class="separator:adf6314ad71bb1e5a85564b935debbb93"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,16 +173,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aabae5e564c6cb8fa05b738ae7d2ee3e3" id="r_aabae5e564c6cb8fa05b738ae7d2ee3e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/classMantid_1_1DataObjects_1_1MDBox.html#aabae5e564c6cb8fa05b738ae7d2ee3e3">clearFileBacked</a> (bool loadDiskBackedData) override</td></tr>
 <tr class="memdesc:aabae5e564c6cb8fa05b738ae7d2ee3e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">clear file-backed information from the box if such information exists  <br /></td></tr>
 <tr class="separator:aabae5e564c6cb8fa05b738ae7d2ee3e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ab0141ab45f807fd0ada34803166555" id="r_a0ab0141ab45f807fd0ada34803166555"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/classMantid_1_1DataObjects_1_1MDBox.html#a0ab0141ab45f807fd0ada34803166555">generalBin</a> (<a class="el" href="../../d7/da8/classMantid_1_1DataObjects_1_1MDBin.html">MDBin</a>&lt; MDE, nd &gt; &amp;bin, <a class="el" href="../../db/db4/classMantid_1_1Geometry_1_1MDImplicitFunction.html">Mantid::Geometry::MDImplicitFunction</a> &amp;function) const override</td></tr>
-<tr class="memdesc:a0ab0141ab45f807fd0ada34803166555"><td class="mdescLeft">&#160;</td><td class="mdescRight">General (non-axis-aligned) centerpoint binning method.  <br /></td></tr>
-<tr class="separator:a0ab0141ab45f807fd0ada34803166555"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71623f9137c2113b9cc66627cd83fc20" id="r_a71623f9137c2113b9cc66627cd83fc20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/classMantid_1_1DataObjects_1_1MDBox.html#a71623f9137c2113b9cc66627cd83fc20">getBoxes</a> (std::vector&lt; <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html">API::IMDNode</a> * &gt; &amp;boxes, size_t maxDepth, bool leafOnly, <a class="el" href="../../db/db4/classMantid_1_1Geometry_1_1MDImplicitFunction.html">Mantid::Geometry::MDImplicitFunction</a> *function) override</td></tr>
 <tr class="separator:a71623f9137c2113b9cc66627cd83fc20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7624abf6627f22f2959b8975547646e3" id="r_a7624abf6627f22f2959b8975547646e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/classMantid_1_1DataObjects_1_1MDBox.html#a7624abf6627f22f2959b8975547646e3">getBoxes</a> (std::vector&lt; <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html">API::IMDNode</a> * &gt; &amp;boxes, size_t, bool) override</td></tr>
 <tr class="separator:a7624abf6627f22f2959b8975547646e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85e1d4dce5657bb9470d5585d024a2e6" id="r_a85e1d4dce5657bb9470d5585d024a2e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/classMantid_1_1DataObjects_1_1MDBox.html#a85e1d4dce5657bb9470d5585d024a2e6">getBoxes</a> (std::vector&lt; <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html">API::IMDNode</a> * &gt; &amp;outBoxes, const std::function&lt; bool(<a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html">API::IMDNode</a> *)&gt; &amp;cond) final override</td></tr>
-<tr class="memdesc:a85e1d4dce5657bb9470d5585d024a2e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all boxes contained within.  <br /></td></tr>
-<tr class="separator:a85e1d4dce5657bb9470d5585d024a2e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcc44dcd6426886fcbccfbf0431e11ca" id="r_adcc44dcd6426886fcbccfbf0431e11ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df3/classMantid_1_1DataObjects_1_1MDBox.html#adcc44dcd6426886fcbccfbf0431e11ca">getBoxes</a> (std::vector&lt; <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html">MDBoxBase</a>&lt; MDE, nd &gt; * &gt; &amp;boxes, size_t maxDepth, bool leafOnly, <a class="el" href="../../db/db4/classMantid_1_1Geometry_1_1MDImplicitFunction.html">Mantid::Geometry::MDImplicitFunction</a> *function)</td></tr>
 <tr class="memdesc:adcc44dcd6426886fcbccfbf0431e11ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill a vector with all the boxes up to a certain depth.  <br /></td></tr>
 <tr class="separator:adcc44dcd6426886fcbccfbf0431e11ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -539,7 +530,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Typedef for a shared pointer to a <a class="el" href="../../d2/df3/classMantid_1_1DataObjects_1_1MDBox.html" title="Templated class for a multi-dimensional event &quot;box&quot;.">MDBox</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d82/MDBox_8h_source.html#l00217">217</a> of file <a class="el" href="../../de/d82/MDBox_8h_source.html">MDBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d82/MDBox_8h_source.html#l00214">214</a> of file <a class="el" href="../../de/d82/MDBox_8h_source.html">MDBox.h</a>.</p>
 
 </div>
 </div>
@@ -557,7 +548,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Typedef for a vector of the conatined events. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d82/MDBox_8h_source.html#l00220">220</a> of file <a class="el" href="../../de/d82/MDBox_8h_source.html">MDBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d82/MDBox_8h_source.html#l00217">217</a> of file <a class="el" href="../../de/d82/MDBox_8h_source.html">MDBox.h</a>.</p>
 
 </div>
 </div>
@@ -846,7 +837,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00103">103</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d2/d89/MDBoxBase_8h_source.html#l00368">Mantid::DataObjects::MDBoxBase::calcCaches()</a>, <a class="el" href="../../de/d82/MDBox_8h_source.html#l00201">data</a>, <a class="el" href="../../d7/d46/BoxController_8h_source.html#l00374">Mantid::API::BoxController::isFileBacked()</a>, and <a class="el" href="../../d2/d89/MDBoxBase_8h_source.html#l00336">Mantid::DataObjects::MDBoxBase&lt; MDE, nd &gt;::m_BoxController</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/d89/MDBoxBase_8h_source.html#l00357">Mantid::DataObjects::MDBoxBase::calcCaches()</a>, <a class="el" href="../../de/d82/MDBox_8h_source.html#l00198">data</a>, <a class="el" href="../../d7/d46/BoxController_8h_source.html#l00374">Mantid::API::BoxController::isFileBacked()</a>, and <a class="el" href="../../d2/d89/MDBoxBase_8h_source.html#l00325">Mantid::DataObjects::MDBoxBase&lt; MDE, nd &gt;::m_BoxController</a>.</p>
 
 </div>
 </div>
@@ -982,7 +973,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#abc8577f650d79e0eca3bd7401189da85">Mantid::DataObjects::MDBoxBase&lt; MDE, nd &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00786">786</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00698">698</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -1022,7 +1013,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#a7a379566931b1f8ccb7533d64b7477c0">Mantid::DataObjects::MDBoxBase&lt; MDE, nd &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00812">812</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00724">724</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -1104,7 +1095,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#a10ee1cbb5b2a772622dd31e60f7b3809">Mantid::DataObjects::MDBoxBase&lt; MDE, nd &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00800">800</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00712">712</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -1179,7 +1170,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00754">754</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00666">666</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -1239,7 +1230,7 @@ Additional Inherited Members</h2></td></tr>
 <p>No bounds checking is made!</p>
 <dl class="section return"><dt>Returns</dt><dd>number of events rejected (0 as nothing is rejected here) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00731">731</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00643">643</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -1315,7 +1306,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00774">774</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00686">686</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -1351,7 +1342,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00405">405</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00393">393</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00673">Mantid::Geometry::d</a>.</p>
 
@@ -1400,7 +1391,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00433">433</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00421">421</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00673">Mantid::Geometry::d</a>.</p>
 
@@ -1430,58 +1421,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00465">465</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00673">Mantid::Geometry::d</a>.</p>
-
-</div>
-</div>
-<a id="aaadde390da5a0eb5c28a7b7b55f4aff0" name="aaadde390da5a0eb5c28a7b7b55f4aff0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaadde390da5a0eb5c28a7b7b55f4aff0">&#9670;&#160;</a></span>centerpointBin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Mantid::DataObjects::MDBox::centerpointBin </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d7/da8/classMantid_1_1DataObjects_1_1MDBin.html">MDBin</a>&lt; MDE, nd &gt; &amp;&#160;</td>
-          <td class="paramname"><em>bin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>fullyContained</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Perform centerpoint binning of events. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bin</td><td>:: <a class="el" href="../../d7/da8/classMantid_1_1DataObjects_1_1MDBin.html" title="MDBin : Class describing a single bin in a dense, Multidimensional histogram.">MDBin</a> object giving the limits of events to accept. </td></tr>
-    <tr><td class="paramname">fullyContained</td><td>:: optional bool array sized [nd] of which dimensions are known to be fully contained (for MDSplitBox) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#a2079eb4d3ac0567a2dda33108b006249">Mantid::DataObjects::MDBoxBase&lt; MDE, nd &gt;</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00479">479</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00453">453</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00673">Mantid::Geometry::d</a>.</p>
 
@@ -1546,7 +1486,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#a96f053c2a93ec6c7f1bf55be3fc4a82c">Mantid::DataObjects::MDBoxBase&lt; MDE, nd &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00674">674</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00586">586</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00673">Mantid::Geometry::d</a>.</p>
 
@@ -1644,62 +1584,12 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00943">943</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
-
-</div>
-</div>
-<a id="a0ab0141ab45f807fd0ada34803166555" name="a0ab0141ab45f807fd0ada34803166555"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ab0141ab45f807fd0ada34803166555">&#9670;&#160;</a></span>generalBin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Mantid::DataObjects::MDBox::generalBin </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d7/da8/classMantid_1_1DataObjects_1_1MDBin.html">MDBin</a>&lt; MDE, nd &gt; &amp;&#160;</td>
-          <td class="paramname"><em>bin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../db/db4/classMantid_1_1Geometry_1_1MDImplicitFunction.html">Mantid::Geometry::MDImplicitFunction</a> &amp;&#160;</td>
-          <td class="paramname"><em>function</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>General (non-axis-aligned) centerpoint binning method. </p>
-<p>TODO: TEST THIS!</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bin</td><td>:: a <a class="el" href="../../d7/da8/classMantid_1_1DataObjects_1_1MDBin.html" title="MDBin : Class describing a single bin in a dense, Multidimensional histogram.">MDBin</a> object giving the limits, aligned with the axes of the workspace, of where the non-aligned bin MIGHT be present. </td></tr>
-    <tr><td class="paramname">function</td><td>:: a ImplicitFunction that will evaluate true for any coordinate that is contained within the (non-axis-aligned) bin. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#a131c6c3961db9e908e319a158655a506">Mantid::DataObjects::MDBoxBase&lt; MDE, nd &gt;</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00535">535</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00855">855</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 </div>
 </div>
 <a id="a71623f9137c2113b9cc66627cd83fc20" name="a71623f9137c2113b9cc66627cd83fc20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71623f9137c2113b9cc66627cd83fc20">&#9670;&#160;</a></span>getBoxes() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a71623f9137c2113b9cc66627cd83fc20">&#9670;&#160;</a></span>getBoxes() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1749,7 +1639,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a7624abf6627f22f2959b8975547646e3" name="a7624abf6627f22f2959b8975547646e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7624abf6627f22f2959b8975547646e3">&#9670;&#160;</a></span>getBoxes() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7624abf6627f22f2959b8975547646e3">&#9670;&#160;</a></span>getBoxes() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1792,55 +1682,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a85e1d4dce5657bb9470d5585d024a2e6" name="a85e1d4dce5657bb9470d5585d024a2e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85e1d4dce5657bb9470d5585d024a2e6">&#9670;&#160;</a></span>getBoxes() <span class="overload">[3/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Mantid::DataObjects::MDBox::getBoxes </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html">API::IMDNode</a> * &gt; &amp;&#160;</td>
-          <td class="paramname"><em>outBoxes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::function&lt; bool(<a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html">API::IMDNode</a> *)&gt; &amp;&#160;</td>
-          <td class="paramname"><em>cond</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">override</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return all boxes contained within. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">outBoxes</td><td>:: vector to fill </td></tr>
-    <tr><td class="paramname">cond</td><td>:: condition to check (leaves on the tree) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00214">214</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
-
-</div>
-</div>
 <a id="adcc44dcd6426886fcbccfbf0431e11ca" name="adcc44dcd6426886fcbccfbf0431e11ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcc44dcd6426886fcbccfbf0431e11ca">&#9670;&#160;</a></span>getBoxes() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adcc44dcd6426886fcbccfbf0431e11ca">&#9670;&#160;</a></span>getBoxes() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1884,7 +1727,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a3557ebd24736e1e7f3f4deef1e5165fc" name="a3557ebd24736e1e7f3f4deef1e5165fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3557ebd24736e1e7f3f4deef1e5165fc">&#9670;&#160;</a></span>getBoxes() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3557ebd24736e1e7f3f4deef1e5165fc">&#9670;&#160;</a></span>getBoxes() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1946,7 +1789,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Return the centroid of this box. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00661">661</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00573">573</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -2001,7 +1844,7 @@ Additional Inherited Members</h2></td></tr>
 </p>
 <p>VERY IMPORTANT: call <a class="el" href="../../d2/df3/classMantid_1_1DataObjects_1_1MDBox.html#aed5c4dbf9922084d015681aca93ac356" title="For file-backed MDBoxes, this marks that the data vector is no longer &quot;busy&quot;, and so it is safe for t...">MDBox::releaseEvents()</a> when you are done accessing that data. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00269">269</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00257">257</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d6b/BinMD_8cpp_source.html#l00093">Mantid::MDAlgorithms::BinMD::binMDBox()</a>, <a class="el" href="../../d7/d8b/CompareMDWorkspaces_8cpp_source.html#l00337">Mantid::MDAlgorithms::CompareMDWorkspaces::compare2Boxes()</a>, <a class="el" href="../../d2/db6/MinusMD_8cpp_source.html#l00057">Mantid::MDAlgorithms::MinusMD::doMinus()</a>, <a class="el" href="../../d1/d9f/MergeMD_8cpp_source.html#l00188">Mantid::MDAlgorithms::MergeMD::doPlus()</a>, <a class="el" href="../../d8/d3b/PlusMD_8cpp_source.html#l00031">Mantid::MDAlgorithms::PlusMD::doPlus()</a>, <a class="el" href="../../d1/d50/MDBoxIterator_8hxx_source.html#l00189">Mantid::DataObjects::MDBoxIterator::getEvents()</a>, and <a class="el" href="../../d3/df4/SliceMD_8cpp_source.html#l00100">Mantid::MDAlgorithms::SliceMD::slice()</a>.</p>
 
@@ -2032,7 +1875,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../de/d82/MDBox_8h_source.html#l00087">87</a> of file <a class="el" href="../../de/d82/MDBox_8h_source.html">MDBox.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00708">Mantid::DataObjects::MDGridBox::splitAllIfNeeded()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00694">Mantid::DataObjects::MDGridBox::splitAllIfNeeded()</a>.</p>
 
 </div>
 </div>
@@ -2057,7 +1900,7 @@ Additional Inherited Members</h2></td></tr>
 </p>
 <p>VERY IMPORTANT: call <a class="el" href="../../d2/df3/classMantid_1_1DataObjects_1_1MDBox.html#aed5c4dbf9922084d015681aca93ac356" title="For file-backed MDBoxes, this marks that the data vector is no longer &quot;busy&quot;, and so it is safe for t...">MDBox::releaseEvents()</a> when you are done accessing that data. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00243">243</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00231">231</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/de0/QTransform_8cpp_source.html#l00086">Mantid::MDAlgorithms::QTransform::applyCorrection()</a>, <a class="el" href="../../da/d8f/ApplyDetailedBalanceMD_8cpp_source.html#l00199">Mantid::MDAlgorithms::ApplyDetailedBalanceMD::applyDetailedBalance()</a>, <a class="el" href="../../d1/d82/SpectralMomentMD_8cpp_source.html#l00126">Mantid::MDAlgorithms::SpectralMomentMD::applyScaling()</a>, <a class="el" href="../../dd/d9b/DgsScatteredTransmissionCorrectionMD_8cpp_source.html#l00135">Mantid::MDAlgorithms::DgsScatteredTransmissionCorrectionMD::correctForTransmission()</a>, <a class="el" href="../../d9/d98/MultiplyMD_8cpp_source.html#l00049">Mantid::MDAlgorithms::MultiplyMD::execEventScalar()</a>, <a class="el" href="../../d1/d0a/FlippingRatioCorrectionMD_8cpp_source.html#l00153">Mantid::MDAlgorithms::FlippingRatioCorrectionMD::executeTemplatedMDE()</a>, and <a class="el" href="../../dc/d3a/FindPeaksMD_8cpp_source.html#l00379">Mantid::MDAlgorithms::FindPeaksMD::findPeaks()</a>.</p>
 
@@ -2078,7 +1921,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00263">263</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00251">251</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -2109,7 +1952,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#a22f31ea6a639014d86aa9529f44c929b">Mantid::DataObjects::MDBoxBase&lt; MDE, nd &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00328">328</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00316">316</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -2156,7 +1999,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00307">307</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00295">295</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -2212,7 +2055,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00160">160</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00708">Mantid::DataObjects::MDGridBox::splitAllIfNeeded()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00694">Mantid::DataObjects::MDGridBox::splitAllIfNeeded()</a>.</p>
 
 </div>
 </div>
@@ -2239,7 +2082,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d82/MDBox_8h_source.html#l00190">190</a> of file <a class="el" href="../../de/d82/MDBox_8h_source.html">MDBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d82/MDBox_8h_source.html#l00187">187</a> of file <a class="el" href="../../de/d82/MDBox_8h_source.html">MDBox.h</a>.</p>
 
 </div>
 </div>
@@ -2268,9 +2111,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns the total number of points (events) in this box either they are all in memory, or on disk or partially on memory and partially on disk for partially loaded object substantially relies on correct settings of wasSaved and isLoaded switches of iSaveable object. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00225">225</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00213">213</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d6b/BinMD_8cpp_source.html#l00093">Mantid::MDAlgorithms::BinMD::binMDBox()</a>, and <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00708">Mantid::DataObjects::MDGridBox::splitAllIfNeeded()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d6b/BinMD_8cpp_source.html#l00093">Mantid::MDAlgorithms::BinMD::binMDBox()</a>, and <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00694">Mantid::DataObjects::MDGridBox::splitAllIfNeeded()</a>.</p>
 
 </div>
 </div>
@@ -2494,7 +2337,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#ac3a61751b732e6db209a5f5c29255bf5">Mantid::DataObjects::MDBoxBase&lt; MDE, nd &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00628">628</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00540">540</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -2572,7 +2415,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#aa520124ba66b707bcbec69ead2f32d2d">Mantid::DataObjects::MDBoxBase&lt; MDE, nd &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00564">564</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00476">476</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -2619,7 +2462,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if events were added to the box (using <a class="el" href="../../d2/df3/classMantid_1_1DataObjects_1_1MDBox.html#a50eba1c5146bb3e2be8afc8afb574893" title="Add a MDLeanEvent to the box.">addEvent()</a>) while the rest of the event list is cached to disk </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00393">393</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00381">381</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -2673,7 +2516,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00916">916</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00828">828</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -2734,7 +2577,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00888">888</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00800">800</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -2763,7 +2606,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Setter for masking the box. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00717">717</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00629">629</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -2797,7 +2640,7 @@ Additional Inherited Members</h2></td></tr>
 <p>beware, that it wrongly accumulates signal and error when part of the data is on file and and some recent data were not saved to the HDD before adding new data This actually means that refreshCache has to be called only once in events adding process </p>
 <p>TODO #4734: sum the individual weights of each event?</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00350">350</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00338">338</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -2818,7 +2661,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>For file-backed MDBoxes, this marks that the data vector is no longer "busy", and so it is safe for the MRU to cache it back to disk if needed. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00294">294</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00282">282</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d6b/BinMD_8cpp_source.html#l00093">Mantid::MDAlgorithms::BinMD::binMDBox()</a>, and <a class="el" href="../../d7/d8b/CompareMDWorkspaces_8cpp_source.html#l00337">Mantid::MDAlgorithms::CompareMDWorkspaces::compare2Boxes()</a>.</p>
 
@@ -2856,7 +2699,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00876">876</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00788">788</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d8b/LoadMD_8cpp_source.html#l00457">Mantid::MDAlgorithms::LoadMD::doLoad()</a>.</p>
 
@@ -2905,7 +2748,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00847">847</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00759">759</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -2987,7 +2830,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00323">323</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00311">311</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -3017,7 +2860,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Make this box file-backed but its place on the file is not identified yet. </p>
 <p>It will be identified by the disk buffer </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00835">835</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00747">747</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 <p class="reference">References <a class="el" href="../../df/d81/MDTypes_8h_source.html#l00063">UNDEF_UINT64</a>.</p>
 
@@ -3073,7 +2916,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00827">827</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00739">739</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -3101,9 +2944,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d82/MDBox_8h_source.html#l00157">157</a> of file <a class="el" href="../../de/d82/MDBox_8h_source.html">MDBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d82/MDBox_8h_source.html#l00155">155</a> of file <a class="el" href="../../de/d82/MDBox_8h_source.html">MDBox.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00708">Mantid::DataObjects::MDGridBox::splitAllIfNeeded()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00694">Mantid::DataObjects::MDGridBox::splitAllIfNeeded()</a>.</p>
 
 </div>
 </div>
@@ -3150,7 +2993,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00703">703</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00615">615</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00673">Mantid::Geometry::d</a>.</p>
 
@@ -3181,7 +3024,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Setter for unmasking the box. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00724">724</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00636">636</a> of file <a class="el" href="../../d9/db5/MDBox_8hxx_source.html">MDBox.hxx</a>.</p>
 
 </div>
 </div>
@@ -3208,7 +3051,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Vector of <a class="el" href="../../db/d82/classMantid_1_1DataObjects_1_1MDEvent.html" title="Templated class holding data about a neutron detection event in N-dimensions (for example,...">MDEvent</a>'s, in no particular order. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d82/MDBox_8h_source.html#l00201">201</a> of file <a class="el" href="../../de/d82/MDBox_8h_source.html">MDBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d82/MDBox_8h_source.html#l00198">198</a> of file <a class="el" href="../../de/d82/MDBox_8h_source.html">MDBox.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d9/db5/MDBox_8hxx_source.html#l00103">MDBox()</a>.</p>
 
@@ -3236,7 +3079,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Flag indicating that masking has been applied. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d82/MDBox_8h_source.html#l00204">204</a> of file <a class="el" href="../../de/d82/MDBox_8h_source.html">MDBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d82/MDBox_8h_source.html#l00201">201</a> of file <a class="el" href="../../de/d82/MDBox_8h_source.html">MDBox.h</a>.</p>
 
 </div>
 </div>
@@ -3260,7 +3103,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d82/MDBox_8h_source.html#l00199">199</a> of file <a class="el" href="../../de/d82/MDBox_8h_source.html">MDBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d82/MDBox_8h_source.html#l00196">196</a> of file <a class="el" href="../../de/d82/MDBox_8h_source.html">MDBox.h</a>.</p>
 
 </div>
 </div>
@@ -3286,7 +3129,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>member to avoid reallocation </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d82/MDBox_8h_source.html#l00213">213</a> of file <a class="el" href="../../de/d82/MDBox_8h_source.html">MDBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d82/MDBox_8h_source.html#l00210">210</a> of file <a class="el" href="../../de/d82/MDBox_8h_source.html">MDBox.h</a>.</p>
 
 </div>
 </div>

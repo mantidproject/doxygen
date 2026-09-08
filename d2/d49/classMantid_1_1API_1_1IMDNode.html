@@ -152,9 +152,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa600a754969009b8dc42ecb267fd5815" id="r_aa600a754969009b8dc42ecb267fd5815"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html#aa600a754969009b8dc42ecb267fd5815">getBoxes</a> (std::vector&lt; <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html">IMDNode</a> * &gt; &amp;boxes, size_t maxDepth, bool leafOnly, <a class="el" href="../../db/db4/classMantid_1_1Geometry_1_1MDImplicitFunction.html">Mantid::Geometry::MDImplicitFunction</a> *function)=0</td></tr>
 <tr class="memdesc:aa600a754969009b8dc42ecb267fd5815"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill a vector with all the boxes who are the childred of this one up to a certain depth and selected by the function.  <br /></td></tr>
 <tr class="separator:aa600a754969009b8dc42ecb267fd5815"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad275de724cb069c8af97d7e316885fba" id="r_ad275de724cb069c8af97d7e316885fba"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html#ad275de724cb069c8af97d7e316885fba">getBoxes</a> (std::vector&lt; <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html">IMDNode</a> * &gt; &amp;outBoxes, const std::function&lt; bool(<a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html">IMDNode</a> *)&gt; &amp;cond)=0</td></tr>
-<tr class="memdesc:ad275de724cb069c8af97d7e316885fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill a vector with all the boxes who are satisfying the condition.  <br /></td></tr>
-<tr class="separator:ad275de724cb069c8af97d7e316885fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74ab3567ae63d362116281d1026ef0a4" id="r_a74ab3567ae63d362116281d1026ef0a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html#a74ab3567ae63d362116281d1026ef0a4">getCenter</a> (<a class="el" href="../../d8/d8e/namespaceMantid.html#a48a3f1c344c2d96fe85a4d92fb84f165">coord_t</a> *const) const =0</td></tr>
 <tr class="separator:a74ab3567ae63d362116281d1026ef0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c28040b903751998f46656d24a2c417" id="r_a7c28040b903751998f46656d24a2c417"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d8/d8e/namespaceMantid.html#a48a3f1c344c2d96fe85a4d92fb84f165">coord_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html#a7c28040b903751998f46656d24a2c417">getCentroid</a> () const =0</td></tr>
@@ -668,7 +665,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#a96f053c2a93ec6c7f1bf55be3fc4a82c">Mantid::DataObjects::MDBoxBase</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01283">Mantid::DataObjects::MDGridBox::centroidSphere()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00955">Mantid::DataObjects::MDGridBox::centroidSphere()</a>.</p>
 
 </div>
 </div>
@@ -810,11 +807,11 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/db8/IMDNode_8h_source.html#l00279">279</a> of file <a class="el" href="../../d5/db8/IMDNode_8h_source.html">IMDNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/db8/IMDNode_8h_source.html#l00276">276</a> of file <a class="el" href="../../d5/db8/IMDNode_8h_source.html">IMDNode.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html#a808c055fd736120ac400431a34c6007f">getID()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/db8/IMDNode_8h_source.html#l00292">sortObjByID()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/db8/IMDNode_8h_source.html#l00289">sortObjByID()</a>.</p>
 
 </div>
 </div>
@@ -905,7 +902,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a21e87974aa9af6a4a6e2ee23adf6f75f" name="a21e87974aa9af6a4a6e2ee23adf6f75f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21e87974aa9af6a4a6e2ee23adf6f75f">&#9670;&#160;</a></span>getBoxes() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a21e87974aa9af6a4a6e2ee23adf6f75f">&#9670;&#160;</a></span>getBoxes() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -951,7 +948,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa600a754969009b8dc42ecb267fd5815" name="aa600a754969009b8dc42ecb267fd5815"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa600a754969009b8dc42ecb267fd5815">&#9670;&#160;</a></span>getBoxes() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa600a754969009b8dc42ecb267fd5815">&#9670;&#160;</a></span>getBoxes() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1000,44 +997,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad275de724cb069c8af97d7e316885fba" name="ad275de724cb069c8af97d7e316885fba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad275de724cb069c8af97d7e316885fba">&#9670;&#160;</a></span>getBoxes() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Mantid::API::IMDNode::getBoxes </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html">IMDNode</a> * &gt; &amp;&#160;</td>
-          <td class="paramname"><em>outBoxes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::function&lt; bool(<a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html">IMDNode</a> *)&gt; &amp;&#160;</td>
-          <td class="paramname"><em>cond</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Fill a vector with all the boxes who are satisfying the condition. </p>
-
-</div>
-</div>
 <a id="a74ab3567ae63d362116281d1026ef0a4" name="a74ab3567ae63d362116281d1026ef0a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74ab3567ae63d362116281d1026ef0a4">&#9670;&#160;</a></span>getCenter()</h2>
 
@@ -1064,7 +1023,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#a3e7eb1a69ebe301eb378e5445dbeb77c">Mantid::DataObjects::MDBoxBase</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01283">Mantid::DataObjects::MDGridBox::centroidSphere()</a>, and <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01323">Mantid::DataObjects::MDGridBox::integrateCylinder()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00955">Mantid::DataObjects::MDGridBox::centroidSphere()</a>, and <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00995">Mantid::DataObjects::MDGridBox::integrateCylinder()</a>.</p>
 
 </div>
 </div>
@@ -1263,7 +1222,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#a52092bbb6bde99bf45440590031632c1">Mantid::DataObjects::MDBoxBase</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/d8b/CompareMDWorkspaces_8cpp_source.html#l00337">Mantid::MDAlgorithms::CompareMDWorkspaces::compare2Boxes()</a>, and <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01323">Mantid::DataObjects::MDGridBox::integrateCylinder()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/d8b/CompareMDWorkspaces_8cpp_source.html#l00337">Mantid::MDAlgorithms::CompareMDWorkspaces::compare2Boxes()</a>, and <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00995">Mantid::DataObjects::MDGridBox::integrateCylinder()</a>.</p>
 
 </div>
 </div>
@@ -1312,7 +1271,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#afbe7752151b4da1f50757c603de29aa8">Mantid::DataObjects::MDBoxBase</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01323">Mantid::DataObjects::MDGridBox::integrateCylinder()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00995">Mantid::DataObjects::MDGridBox::integrateCylinder()</a>.</p>
 
 </div>
 </div>
@@ -1400,7 +1359,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#ae9bfb9a311dcc19190865b02cbe83ae1">Mantid::DataObjects::MDBoxBase</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/d8b/CompareMDWorkspaces_8cpp_source.html#l00337">Mantid::MDAlgorithms::CompareMDWorkspaces::compare2Boxes()</a>, <a class="el" href="../../d5/db8/IMDNode_8h_source.html#l00279">CompareFilePosition()</a>, and <a class="el" href="../../d1/d3d/MergeMDFiles_8cpp_source.html#l00149">Mantid::MDAlgorithms::MergeMDFiles::loadEventsFromSubBoxes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/d8b/CompareMDWorkspaces_8cpp_source.html#l00337">Mantid::MDAlgorithms::CompareMDWorkspaces::compare2Boxes()</a>, <a class="el" href="../../d5/db8/IMDNode_8h_source.html#l00276">CompareFilePosition()</a>, and <a class="el" href="../../d1/d3d/MergeMDFiles_8cpp_source.html#l00149">Mantid::MDAlgorithms::MergeMDFiles::loadEventsFromSubBoxes()</a>.</p>
 
 </div>
 </div>
@@ -1514,7 +1473,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Getter for the masking. </p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01502">Mantid::DataObjects::MDGridBox::getIsMasked()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01174">Mantid::DataObjects::MDGridBox::getIsMasked()</a>.</p>
 
 </div>
 </div>
@@ -1543,7 +1502,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Get total number of points both in memory and on file if present;. </p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/d8b/CompareMDWorkspaces_8cpp_source.html#l00337">Mantid::MDAlgorithms::CompareMDWorkspaces::compare2Boxes()</a>, <a class="el" href="../../d7/d8b/CompareMDWorkspaces_8cpp_source.html#l00272">Mantid::MDAlgorithms::CompareMDWorkspaces::compareMDEventWorkspaces()</a>, <a class="el" href="../../dc/d3a/FindPeaksMD_8cpp_source.html#l00379">Mantid::MDAlgorithms::FindPeaksMD::findPeaks()</a>, <a class="el" href="../../dc/d52/MDEventWorkspace_8hxx_source.html#l00359">Mantid::DataObjects::MDEventWorkspace&lt; MDE, nd &gt;::getMinimumExtents()</a>, <a class="el" href="../../dc/d52/MDEventWorkspace_8hxx_source.html#l00278">Mantid::DataObjects::MDEventWorkspace&lt; MDE, nd &gt;::getNormalizedSignal()</a>, and <a class="el" href="../../d5/db8/IMDNode_8h_source.html#l00266">getSignalByNEvents()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/d8b/CompareMDWorkspaces_8cpp_source.html#l00337">Mantid::MDAlgorithms::CompareMDWorkspaces::compare2Boxes()</a>, <a class="el" href="../../d7/d8b/CompareMDWorkspaces_8cpp_source.html#l00272">Mantid::MDAlgorithms::CompareMDWorkspaces::compareMDEventWorkspaces()</a>, <a class="el" href="../../dc/d3a/FindPeaksMD_8cpp_source.html#l00379">Mantid::MDAlgorithms::FindPeaksMD::findPeaks()</a>, <a class="el" href="../../dc/d52/MDEventWorkspace_8hxx_source.html#l00359">Mantid::DataObjects::MDEventWorkspace&lt; MDE, nd &gt;::getMinimumExtents()</a>, <a class="el" href="../../dc/d52/MDEventWorkspace_8hxx_source.html#l00278">Mantid::DataObjects::MDEventWorkspace&lt; MDE, nd &gt;::getNormalizedSignal()</a>, and <a class="el" href="../../d5/db8/IMDNode_8h_source.html#l00263">getSignalByNEvents()</a>.</p>
 
 </div>
 </div>
@@ -1713,7 +1672,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#a29ac70bee416261650de5607e66f229c">Mantid::DataObjects::MDBoxBase</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/d8b/CompareMDWorkspaces_8cpp_source.html#l00337">Mantid::MDAlgorithms::CompareMDWorkspaces::compare2Boxes()</a>, <a class="el" href="../../dc/d52/MDEventWorkspace_8hxx_source.html#l00278">Mantid::DataObjects::MDEventWorkspace&lt; MDE, nd &gt;::getNormalizedSignal()</a>, <a class="el" href="../../d5/db8/IMDNode_8h_source.html#l00266">getSignalByNEvents()</a>, and <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01323">Mantid::DataObjects::MDGridBox::integrateCylinder()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/d8b/CompareMDWorkspaces_8cpp_source.html#l00337">Mantid::MDAlgorithms::CompareMDWorkspaces::compare2Boxes()</a>, <a class="el" href="../../dc/d52/MDEventWorkspace_8hxx_source.html#l00278">Mantid::DataObjects::MDEventWorkspace&lt; MDE, nd &gt;::getNormalizedSignal()</a>, <a class="el" href="../../d5/db8/IMDNode_8h_source.html#l00263">getSignalByNEvents()</a>, and <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00995">Mantid::DataObjects::MDGridBox::integrateCylinder()</a>.</p>
 
 </div>
 </div>
@@ -1740,7 +1699,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/db8/IMDNode_8h_source.html#l00266">266</a> of file <a class="el" href="../../d5/db8/IMDNode_8h_source.html">IMDNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/db8/IMDNode_8h_source.html#l00263">263</a> of file <a class="el" href="../../d5/db8/IMDNode_8h_source.html">IMDNode.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html#a82cfb1bc02adf8aed714e751f439a212">getNPoints()</a>, and <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html#ae64dc0ff0aafe661d24310df69bd3cb7">getSignal()</a>.</p>
 
@@ -1973,7 +1932,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d9/db9/classMantid_1_1DataObjects_1_1MDBoxBase.html#ac3a61751b732e6db209a5f5c29255bf5">Mantid::DataObjects::MDBoxBase</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01323">Mantid::DataObjects::MDGridBox::integrateCylinder()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00995">Mantid::DataObjects::MDGridBox::integrateCylinder()</a>.</p>
 
 </div>
 </div>
@@ -2229,7 +2188,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Setter for masking the box. </p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01516">Mantid::DataObjects::MDGridBox::mask()</a>, and <a class="el" href="../../dc/d52/MDEventWorkspace_8hxx_source.html#l00785">Mantid::DataObjects::MDEventWorkspace&lt; MDE, nd &gt;::setMDMasking()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01188">Mantid::DataObjects::MDGridBox::mask()</a>, and <a class="el" href="../../dc/d52/MDEventWorkspace_8hxx_source.html#l00785">Mantid::DataObjects::MDEventWorkspace&lt; MDE, nd &gt;::setMDMasking()</a>.</p>
 
 </div>
 </div>
@@ -2669,9 +2628,9 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/db8/IMDNode_8h_source.html#l00292">292</a> of file <a class="el" href="../../d5/db8/IMDNode_8h_source.html">IMDNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/db8/IMDNode_8h_source.html#l00289">289</a> of file <a class="el" href="../../d5/db8/IMDNode_8h_source.html">IMDNode.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/db8/IMDNode_8h_source.html#l00279">CompareFilePosition()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/db8/IMDNode_8h_source.html#l00276">CompareFilePosition()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d6b/BinMD_8cpp_source.html#l00219">Mantid::MDAlgorithms::BinMD::binByIterating()</a>, <a class="el" href="../../d3/d72/TransformMD_8cpp_source.html#l00065">Mantid::MDAlgorithms::TransformMD::doTransform()</a>, <a class="el" href="../../d6/df9/MDBoxFlatTree_8cpp_source.html#l00070">Mantid::DataObjects::MDBoxFlatTree::initFlatStructure()</a>, and <a class="el" href="../../d3/df4/SliceMD_8cpp_source.html#l00100">Mantid::MDAlgorithms::SliceMD::slice()</a>.</p>
 
@@ -2768,7 +2727,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Setter for unmasking the box. </p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d52/MDEventWorkspace_8hxx_source.html#l00802">Mantid::DataObjects::MDEventWorkspace&lt; MDE, nd &gt;::clearMDMasking()</a>, and <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01525">Mantid::DataObjects::MDGridBox::unmask()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d52/MDEventWorkspace_8hxx_source.html#l00802">Mantid::DataObjects::MDEventWorkspace&lt; MDE, nd &gt;::clearMDMasking()</a>, and <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l01197">Mantid::DataObjects::MDGridBox::unmask()</a>.</p>
 
 </div>
 </div>

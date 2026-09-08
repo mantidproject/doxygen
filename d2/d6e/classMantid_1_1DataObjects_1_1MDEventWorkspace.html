@@ -265,7 +265,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af6749bfb52cdeed57a48a7b9a0f9b95a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Goes through all the sub-boxes and splits them if they contain enough events to be worth it.  <br /></td></tr>
 <tr class="separator:af6749bfb52cdeed57a48a7b9a0f9b95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc52ee39babf5ebabc478a1b7884bc35" id="r_afc52ee39babf5ebabc478a1b7884bc35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6e/classMantid_1_1DataObjects_1_1MDEventWorkspace.html#afc52ee39babf5ebabc478a1b7884bc35">splitBox</a> () override</td></tr>
-<tr class="memdesc:afc52ee39babf5ebabc478a1b7884bc35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split the contained <a class="el" href="../../d2/df3/classMantid_1_1DataObjects_1_1MDBox.html" title="Templated class for a multi-dimensional event &quot;box&quot;.">MDBox</a> into a <a class="el" href="../../d5/d51/classMantid_1_1DataObjects_1_1MDGridBox.html" title="Templated class for a GRIDDED multi-dimensional event &quot;box&quot;.">MDGridBox</a> or MDSplitBox, if it is not that already.  <br /></td></tr>
+<tr class="memdesc:afc52ee39babf5ebabc478a1b7884bc35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split the contained <a class="el" href="../../d2/df3/classMantid_1_1DataObjects_1_1MDBox.html" title="Templated class for a multi-dimensional event &quot;box&quot;.">MDBox</a> into a <a class="el" href="../../d5/d51/classMantid_1_1DataObjects_1_1MDGridBox.html" title="Templated class for a GRIDDED multi-dimensional event &quot;box&quot;.">MDGridBox</a>, if it is not that already.  <br /></td></tr>
 <tr class="separator:afc52ee39babf5ebabc478a1b7884bc35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6e0bb35e7c1ee0b7bb4fea609c651d7" id="r_aa6e0bb35e7c1ee0b7bb4fea609c651d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6e/classMantid_1_1DataObjects_1_1MDEventWorkspace.html#aa6e0bb35e7c1ee0b7bb4fea609c651d7">splitTrackedBoxes</a> (<a class="el" href="../../d3/d0a/classMantid_1_1Kernel_1_1ThreadScheduler.html">Kernel::ThreadScheduler</a> *ts)</td></tr>
 <tr class="memdesc:aa6e0bb35e7c1ee0b7bb4fea609c651d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Goes through the MDBoxes that were tracked by the BoxController as being too large, and splits them.  <br /></td></tr>
@@ -2265,7 +2265,7 @@ template&lt;typename MDE , size_t nd&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d52/MDEventWorkspace_8hxx_source.html#l00447">447</a> of file <a class="el" href="../../dc/d52/MDEventWorkspace_8hxx_source.html">MDEventWorkspace.hxx</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d2/d89/MDBoxBase_8h_source.html#l00286">Mantid::DataObjects::MDBoxBase::getDepth()</a>, <a class="el" href="../../d2/d89/MDBoxBase_8h_source.html#l00188">Mantid::DataObjects::MDBoxBase::getExtentsStr()</a>, <a class="el" href="../../d2/d89/MDBoxBase_8h_source.html#l00071">Mantid::DataObjects::MDBoxBase::getID()</a>, <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html#aa7c05937ce9f9ba7aa56c3a0148cef1a">Mantid::API::IMDNode::getISaveable()</a>, <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html#a26d78da12fe83c44c43c43543dec05af">Mantid::API::IMDNode::getNumChildren()</a>, and <a class="el" href="../../db/d39/System_8h_source.html#l00044">UNUSED_ARG</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/d89/MDBoxBase_8h_source.html#l00275">Mantid::DataObjects::MDBoxBase::getDepth()</a>, <a class="el" href="../../d2/d89/MDBoxBase_8h_source.html#l00177">Mantid::DataObjects::MDBoxBase::getExtentsStr()</a>, <a class="el" href="../../d2/d89/MDBoxBase_8h_source.html#l00070">Mantid::DataObjects::MDBoxBase::getID()</a>, <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html#aa7c05937ce9f9ba7aa56c3a0148cef1a">Mantid::API::IMDNode::getISaveable()</a>, <a class="el" href="../../d2/d49/classMantid_1_1API_1_1IMDNode.html#a26d78da12fe83c44c43c43543dec05af">Mantid::API::IMDNode::getNumChildren()</a>, and <a class="el" href="../../db/d39/System_8h_source.html#l00044">UNUSED_ARG</a>.</p>
 
 </div>
 </div>
@@ -2657,7 +2657,7 @@ template&lt;typename MDE , size_t nd&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d52/MDEventWorkspace_8hxx_source.html#l00165">165</a> of file <a class="el" href="../../dc/d52/MDEventWorkspace_8hxx_source.html">MDEventWorkspace.hxx</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00402">Mantid::Kernel::MemoryStats::availMem()</a>, <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00293">Mantid::DataObjects::MDGridBox::getNumChildren()</a>, and <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00663">Mantid::DataObjects::MDGridBox::splitContents()</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d39/Kernel_2src_2Memory_8cpp_source.html#l00402">Mantid::Kernel::MemoryStats::availMem()</a>, <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00293">Mantid::DataObjects::MDGridBox::getNumChildren()</a>, and <a class="el" href="../../db/d3d/MDGridBox_8hxx_source.html#l00649">Mantid::DataObjects::MDGridBox::splitContents()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/dec/CreateMDWorkspace_8cpp_source.html#l00120">Mantid::MDAlgorithms::CreateMDWorkspace::finish()</a>.</p>
 
@@ -2763,7 +2763,7 @@ template&lt;typename MDE , size_t nd&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Split the contained <a class="el" href="../../d2/df3/classMantid_1_1DataObjects_1_1MDBox.html" title="Templated class for a multi-dimensional event &quot;box&quot;.">MDBox</a> into a <a class="el" href="../../d5/d51/classMantid_1_1DataObjects_1_1MDGridBox.html" title="Templated class for a GRIDDED multi-dimensional event &quot;box&quot;.">MDGridBox</a> or MDSplitBox, if it is not that already. </p>
+<p>Split the contained <a class="el" href="../../d2/df3/classMantid_1_1DataObjects_1_1MDBox.html" title="Templated class for a multi-dimensional event &quot;box&quot;.">MDBox</a> into a <a class="el" href="../../d5/d51/classMantid_1_1DataObjects_1_1MDGridBox.html" title="Templated class for a GRIDDED multi-dimensional event &quot;box&quot;.">MDGridBox</a>, if it is not that already. </p>
 
 <p>Implements <a class="el" href="../../dc/d21/classMantid_1_1API_1_1IMDEventWorkspace.html#a5e93cf237801e07ab4fcc1f31eef205b">Mantid::API::IMDEventWorkspace</a>.</p>
 

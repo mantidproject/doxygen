@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['s_0',['s',['../dc/d3b/structMantid_1_1CurveFitting_1_1NLLS_1_1get__svd__J__work.html#acb33544a1d762bd5d89fc9b3ff1b09bb',1,'Mantid::CurveFitting::NLLS::get_svd_J_work::S'],['../da/d0d/structsgl__limits__struct.html#af8ac3f80664698905167b3713880540d',1,'sgl_limits_struct::s']]],
+  ['s_0',['s',['../da/d0d/structsgl__limits__struct.html#af8ac3f80664698905167b3713880540d',1,'sgl_limits_struct::s'],['../dc/d3b/structMantid_1_1CurveFitting_1_1NLLS_1_1get__svd__J__work.html#acb33544a1d762bd5d89fc9b3ff1b09bb',1,'Mantid::CurveFitting::NLLS::get_svd_J_work::S']]],
   ['s1_1',['s1',['../d2/d38/structQuadraticCoefficients.html#a5a41b8d00349c7e98324e81f96ed36b3',1,'QuadraticCoefficients']]],
   ['s2_2',['s2',['../d2/d38/structQuadraticCoefficients.html#a4dd61050ccc173958ee21ac228df8b94',1,'QuadraticCoefficients']]],
   ['s_5fconversionfactors_3',['s_conversionFactors',['../da/d13/classMantid_1_1Kernel_1_1Unit.html#ad43e3df728318712b2b106e7b03e85e8',1,'Mantid::Kernel::Unit']]],
