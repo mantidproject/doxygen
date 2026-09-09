@@ -50,7 +50,7 @@ var searchData=
   ['qhelper_47',['Qhelper',['../da/dab/classMantid_1_1Algorithms_1_1Qhelper.html',1,'Mantid::Algorithms']]],
   ['qhelper_2ecpp_48',['Qhelper.cpp',['../dd/d31/Qhelper_8cpp.html',1,'']]],
   ['qhelper_2eh_49',['Qhelper.h',['../d4/d97/Qhelper_8h.html',1,'']]],
-  ['qlab_50',['qlab',['../d9/dec/namespaceMantid_1_1Kernel.html#a64cf2f0f54fd71419546474a9960fb15a1a8b26b519aa3bc89f0c40cd96b22363',1,'Mantid::Kernel::QLab'],['../d3/dc8/classMantid_1_1Geometry_1_1QLab.html',1,'Mantid::Geometry::QLab'],['../d7/da3/classMantid_1_1MDAlgorithms_1_1FindPeaksMD.html#a6460fa2de675642d7e7e2c8bb0d7a5c2a6f30defd5fb80cbccc421db70e82ec70',1,'Mantid::MDAlgorithms::FindPeaksMD::QLAB'],['../d3/dc8/classMantid_1_1Geometry_1_1QLab.html#a160efb3f1660d43dea3f918ec41026a1',1,'Mantid::Geometry::QLab::QLab()']]],
+  ['qlab_50',['qlab',['../d9/dec/namespaceMantid_1_1Kernel.html#a64cf2f0f54fd71419546474a9960fb15a1a8b26b519aa3bc89f0c40cd96b22363',1,'Mantid::Kernel::QLab'],['../d3/dc8/classMantid_1_1Geometry_1_1QLab.html',1,'Mantid::Geometry::QLab'],['../d3/dc8/classMantid_1_1Geometry_1_1QLab.html#a160efb3f1660d43dea3f918ec41026a1',1,'Mantid::Geometry::QLab::QLab()'],['../d7/da3/classMantid_1_1MDAlgorithms_1_1FindPeaksMD.html#a6460fa2de675642d7e7e2c8bb0d7a5c2a6f30defd5fb80cbccc421db70e82ec70',1,'Mantid::MDAlgorithms::FindPeaksMD::QLAB']]],
   ['qlab_2ecpp_51',['QLab.cpp',['../d0/de3/QLab_8cpp.html',1,'']]],
   ['qlab_2eh_52',['QLab.h',['../d0/d55/QLab_8h.html',1,'']]],
   ['qlabframe_53',['qLabFrame',['../d7/d4b/classMantid_1_1Crystal_1_1PeaksIntersection.html#ae8b1d69a608315d8598fe21f568d3986',1,'Mantid::Crystal::PeaksIntersection']]],
