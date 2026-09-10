@@ -473,9 +473,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ab5c68e372be36a17506116aeff6d9222" id="r_ab5c68e372be36a17506116aeff6d9222"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/classMantid_1_1MDAlgorithms_1_1ConvertToDetectorFaceMD.html#ab5c68e372be36a17506116aeff6d9222">exec</a> () override</td></tr>
 <tr class="memdesc:ab5c68e372be36a17506116aeff6d9222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the algorithm.  <br /></td></tr>
 <tr class="separator:ab5c68e372be36a17506116aeff6d9222"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8446e978be9b500e76edfe4ff45bcff8" id="r_a8446e978be9b500e76edfe4ff45bcff8"><td class="memItemLeft" align="right" valign="top">std::map&lt; int, <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a61d6301628240e90bde9ccc5ca9dff42">Geometry::RectangularDetector_const_sptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/classMantid_1_1MDAlgorithms_1_1ConvertToDetectorFaceMD.html#a8446e978be9b500e76edfe4ff45bcff8">getBanks</a> ()</td></tr>
-<tr class="memdesc:a8446e978be9b500e76edfe4ff45bcff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of banks, given the settings.  <br /></td></tr>
-<tr class="separator:a8446e978be9b500e76edfe4ff45bcff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a601f52b345d7f9ce2bb638154739b676" id="r_a601f52b345d7f9ce2bb638154739b676"><td class="memItemLeft" align="right" valign="top">std::map&lt; int, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/classMantid_1_1MDAlgorithms_1_1ConvertToDetectorFaceMD.html#a601f52b345d7f9ce2bb638154739b676">getBanks</a> ()</td></tr>
+<tr class="memdesc:a601f52b345d7f9ce2bb638154739b676"><td class="mdescLeft">&#160;</td><td class="mdescRight">Component indices of the rectangular bank for each requested bank number.  <br /></td></tr>
+<tr class="separator:a601f52b345d7f9ce2bb638154739b676"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a2f698a3a7690ec676a1d2348115192" id="r_a4a2f698a3a7690ec676a1d2348115192"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/classMantid_1_1MDAlgorithms_1_1ConvertToDetectorFaceMD.html#a4a2f698a3a7690ec676a1d2348115192">init</a> () override</td></tr>
 <tr class="memdesc:a4a2f698a3a7690ec676a1d2348115192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the algorithm's properties.  <br /></td></tr>
 <tr class="separator:a4a2f698a3a7690ec676a1d2348115192"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -764,7 +764,7 @@ template&lt;class T , class <a class="el" href="../../d8/de0/namespaceMantid_1_1
 
 <p class="definition">Definition at line <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00075">75</a> of file <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html">ConvertToDetectorFaceMD.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/d22/namespaceMantid_1_1DataObjects.html#a0a7d4bc72658e1f72ad4ee4f5b1c4e12">Mantid::DataObjects::getEventsFrom()</a>, <a class="el" href="../../d8/de1/EventList_8cpp_source.html#l01306">Mantid::DataObjects::EventList::getNumberEvents()</a>, <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00050">in_ws</a>, <a class="el" href="../../d8/de1/EventList_8cpp_source.html#l01032">Mantid::DataObjects::EventList::reserve()</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>.</p>
+<p class="reference">References <a class="el" href="../../db/d22/namespaceMantid_1_1DataObjects.html#a0a7d4bc72658e1f72ad4ee4f5b1c4e12">Mantid::DataObjects::getEventsFrom()</a>, <a class="el" href="../../d8/de1/EventList_8cpp_source.html#l01306">Mantid::DataObjects::EventList::getNumberEvents()</a>, <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00051">in_ws</a>, <a class="el" href="../../d8/de1/EventList_8cpp_source.html#l01032">Mantid::DataObjects::EventList::reserve()</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>.</p>
 
 </div>
 </div>
@@ -795,14 +795,14 @@ template&lt;class T , class <a class="el" href="../../d8/de0/namespaceMantid_1_1
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#aace3ff902f31d5cfa309fff3d6b069aa">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00176">176</a> of file <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html">ConvertToDetectorFaceMD.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00178">178</a> of file <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html">ConvertToDetectorFaceMD.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/d29/MDEventFactory_8cpp_source.html#l00177">Mantid::DataObjects::MDEventFactory::CreateMDWorkspace()</a>, <a class="el" href="../../de/d49/GeneralFrame_8h_source.html#l00024">Mantid::Geometry::GeneralFrame::GeneralFrameName</a>, <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00118">getBanks()</a>, <a class="el" href="../../d8/de1/EventList_8cpp_source.html#l00746">Mantid::DataObjects::EventList::getEventType()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01983">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d0/dc1/API_2src_2Axis_8cpp_source.html#l00051">Mantid::API::Axis::getValue()</a>, <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00050">in_ws</a>, <a class="el" href="../../d6/d26/classMantid_1_1API_1_1Axis.html#a806a8fdc822dca8885b84714380d05ba">Mantid::API::Axis::length()</a>, <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00058">m_detID_to_WI</a>, <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00059">m_detID_to_WI_offset</a>, <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00053">m_numXPixels</a>, <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00055">m_numYPixels</a>, <a class="el" href="../../d6/d32/BoxControllerSettingsAlgorithm_8cpp_source.html#l00110">Mantid::API::BoxControllerSettingsAlgorithm::setBoxController()</a>, <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00270">Mantid::Kernel::IPropertyManager::setProperty()</a>, <a class="el" href="../../d0/dc1/API_2src_2Axis_8cpp_source.html#l00020">Mantid::API::Axis::title()</a>, <a class="el" href="../../d4/da0/IEventList_8h_source.html#l00019">Mantid::API::TOF</a>, <a class="el" href="../../d2/d4f/FindFilesThreadPoolManager_8cpp_source.html#l00027">tp</a>, <a class="el" href="../../d0/dc1/API_2src_2Axis_8cpp_source.html#l00028">Mantid::API::Axis::unit()</a>, <a class="el" href="../../d4/da0/IEventList_8h_source.html#l00019">Mantid::API::WEIGHTED</a>, <a class="el" href="../../d4/da0/IEventList_8h_source.html#l00019">Mantid::API::WEIGHTED_NOTIME</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d29/MDEventFactory_8cpp_source.html#l00177">Mantid::DataObjects::MDEventFactory::CreateMDWorkspace()</a>, <a class="el" href="../../de/d49/GeneralFrame_8h_source.html#l00024">Mantid::Geometry::GeneralFrame::GeneralFrameName</a>, <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00118">getBanks()</a>, <a class="el" href="../../d8/de1/EventList_8cpp_source.html#l00746">Mantid::DataObjects::EventList::getEventType()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01983">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d0/dc1/API_2src_2Axis_8cpp_source.html#l00051">Mantid::API::Axis::getValue()</a>, <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00051">in_ws</a>, <a class="el" href="../../d6/d26/classMantid_1_1API_1_1Axis.html#a806a8fdc822dca8885b84714380d05ba">Mantid::API::Axis::length()</a>, <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00059">m_detID_to_WI</a>, <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00060">m_detID_to_WI_offset</a>, <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00054">m_numXPixels</a>, <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00056">m_numYPixels</a>, <a class="el" href="../../d6/d32/BoxControllerSettingsAlgorithm_8cpp_source.html#l00110">Mantid::API::BoxControllerSettingsAlgorithm::setBoxController()</a>, <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00270">Mantid::Kernel::IPropertyManager::setProperty()</a>, <a class="el" href="../../d0/dc1/API_2src_2Axis_8cpp_source.html#l00020">Mantid::API::Axis::title()</a>, <a class="el" href="../../d4/da0/IEventList_8h_source.html#l00019">Mantid::API::TOF</a>, <a class="el" href="../../d2/d4f/FindFilesThreadPoolManager_8cpp_source.html#l00027">tp</a>, <a class="el" href="../../d0/dc1/API_2src_2Axis_8cpp_source.html#l00028">Mantid::API::Axis::unit()</a>, <a class="el" href="../../d4/da0/IEventList_8h_source.html#l00019">Mantid::API::WEIGHTED</a>, <a class="el" href="../../d4/da0/IEventList_8h_source.html#l00019">Mantid::API::WEIGHTED_NOTIME</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>.</p>
 
 </div>
 </div>
-<a id="a8446e978be9b500e76edfe4ff45bcff8" name="a8446e978be9b500e76edfe4ff45bcff8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8446e978be9b500e76edfe4ff45bcff8">&#9670;&#160;</a></span>getBanks()</h2>
+<a id="a601f52b345d7f9ce2bb638154739b676" name="a601f52b345d7f9ce2bb638154739b676"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a601f52b345d7f9ce2bb638154739b676">&#9670;&#160;</a></span>getBanks()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -811,7 +811,7 @@ template&lt;class T , class <a class="el" href="../../d8/de0/namespaceMantid_1_1
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt; int, <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a61d6301628240e90bde9ccc5ca9dff42">RectangularDetector_const_sptr</a> &gt; Mantid::MDAlgorithms::ConvertToDetectorFaceMD::getBanks </td>
+          <td class="memname">std::map&lt; int, size_t &gt; Mantid::MDAlgorithms::ConvertToDetectorFaceMD::getBanks </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -824,14 +824,15 @@ template&lt;class T , class <a class="el" href="../../d8/de0/namespaceMantid_1_1
 </table>
 </div><div class="memdoc">
 
-<p>Get the list of banks, given the settings. </p>
+<p>Component indices of the rectangular bank for each requested bank number. </p>
+<p>Get the list of banks, given the settings.</p>
 <dl class="section return"><dt>Returns</dt><dd>map with key = bank number; value = pointer to the rectangular detector </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00118">118</a> of file <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html">ConvertToDetectorFaceMD.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d6d/Strings_8cpp_source.html#l00696">Mantid::Kernel::Strings::convert()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01983">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00050">in_ws</a>, <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00053">m_numXPixels</a>, <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00055">m_numYPixels</a>, <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00033">name()</a>, and <a class="el" href="../../de/d6d/Strings_8cpp_source.html#l00734">Mantid::Kernel::Strings::toString()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d6d/Strings_8cpp_source.html#l00696">Mantid::Kernel::Strings::convert()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01983">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00051">in_ws</a>, <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00054">m_numXPixels</a>, <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00056">m_numYPixels</a>, <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00033">name()</a>, and <a class="el" href="../../de/d6d/Strings_8cpp_source.html#l00734">Mantid::Kernel::Strings::toString()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00176">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00178">exec()</a>.</p>
 
 </div>
 </div>
@@ -1019,9 +1020,9 @@ template&lt;class T , class <a class="el" href="../../d8/de0/namespaceMantid_1_1
 
 <p>The input event workspace. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00050">50</a> of file <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html">ConvertToDetectorFaceMD.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00051">51</a> of file <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html">ConvertToDetectorFaceMD.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00075">convertEventList()</a>, <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00176">exec()</a>, and <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00118">getBanks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00075">convertEventList()</a>, <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00178">exec()</a>, and <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00118">getBanks()</a>.</p>
 
 </div>
 </div>
@@ -1045,9 +1046,9 @@ template&lt;class T , class <a class="el" href="../../d8/de0/namespaceMantid_1_1
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00058">58</a> of file <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html">ConvertToDetectorFaceMD.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00059">59</a> of file <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html">ConvertToDetectorFaceMD.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00176">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00178">exec()</a>.</p>
 
 </div>
 </div>
@@ -1071,9 +1072,9 @@ template&lt;class T , class <a class="el" href="../../d8/de0/namespaceMantid_1_1
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00059">59</a> of file <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html">ConvertToDetectorFaceMD.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00060">60</a> of file <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html">ConvertToDetectorFaceMD.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00176">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00178">exec()</a>.</p>
 
 </div>
 </div>
@@ -1099,9 +1100,9 @@ template&lt;class T , class <a class="el" href="../../d8/de0/namespaceMantid_1_1
 
 <p>Width in pixels of the widest detector. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00053">53</a> of file <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html">ConvertToDetectorFaceMD.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00054">54</a> of file <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html">ConvertToDetectorFaceMD.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00176">exec()</a>, and <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00118">getBanks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00178">exec()</a>, and <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00118">getBanks()</a>.</p>
 
 </div>
 </div>
@@ -1127,9 +1128,9 @@ template&lt;class T , class <a class="el" href="../../d8/de0/namespaceMantid_1_1
 
 <p>Height in pixels of the widest detector. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00055">55</a> of file <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html">ConvertToDetectorFaceMD.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html#l00056">56</a> of file <a class="el" href="../../dd/d74/ConvertToDetectorFaceMD_8h_source.html">ConvertToDetectorFaceMD.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00176">exec()</a>, and <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00118">getBanks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00178">exec()</a>, and <a class="el" href="../../d9/da4/ConvertToDetectorFaceMD_8cpp_source.html#l00118">getBanks()</a>.</p>
 
 </div>
 </div>

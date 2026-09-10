@@ -484,9 +484,9 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a315690642302d50ed033dceee54e35cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad69f045491afe93f9a3164103316fb3" id="r_aad69f045491afe93f9a3164103316fb3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df6/classMantid_1_1Crystal_1_1LoadIsawPeaks.html#aad69f045491afe93f9a3164103316fb3">findPixelID</a> (const <a class="el" href="../../db/d22/namespaceMantid_1_1DataObjects.html#a053aa6bc9a4d3d3987eaa02279f1154e">DataObjects::PeaksWorkspace_sptr</a> &amp;ws, const std::string &amp;bankName, int col, int row)</td></tr>
 <tr class="separator:aad69f045491afe93f9a3164103316fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f5ef0cde3072110f15be1f154c9722c" id="r_a4f5ef0cde3072110f15be1f154c9722c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; const <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html">Geometry::IComponent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df6/classMantid_1_1Crystal_1_1LoadIsawPeaks.html#a4f5ef0cde3072110f15be1f154c9722c">getCachedBankByName</a> (const std::string &amp;bankname, const std::shared_ptr&lt; const <a class="el" href="../../da/d03/classMantid_1_1Geometry_1_1Instrument.html">Geometry::Instrument</a> &gt; &amp;inst)</td></tr>
-<tr class="memdesc:a4f5ef0cde3072110f15be1f154c9722c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve cached bank (or load and cache for next time)  <br /></td></tr>
-<tr class="separator:a4f5ef0cde3072110f15be1f154c9722c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a022ab7dfcb29456a16471591071d79a5" id="r_a022ab7dfcb29456a16471591071d79a5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df6/classMantid_1_1Crystal_1_1LoadIsawPeaks.html#a022ab7dfcb29456a16471591071d79a5">getCachedBankIndex</a> (std::string const &amp;bankname, <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html">Geometry::ComponentInfo</a> const &amp;componentInfo)</td></tr>
+<tr class="memdesc:a022ab7dfcb29456a16471591071d79a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve cached bank component index (or look up and cache for next time).  <br /></td></tr>
+<tr class="separator:a022ab7dfcb29456a16471591071d79a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa80eb074768e0aca83574ef3f0216b3" id="r_aaa80eb074768e0aca83574ef3f0216b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df6/classMantid_1_1Crystal_1_1LoadIsawPeaks.html#aaa80eb074768e0aca83574ef3f0216b3">init</a> () override</td></tr>
 <tr class="memdesc:aaa80eb074768e0aca83574ef3f0216b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise the properties.  <br /></td></tr>
 <tr class="separator:aaa80eb074768e0aca83574ef3f0216b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -502,9 +502,9 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:af2d476e0aa7998c70664afba39d8ce01" id="r_af2d476e0aa7998c70664afba39d8ce01"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::shared_ptr&lt; const <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html">Geometry::IComponent</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df6/classMantid_1_1Crystal_1_1LoadIsawPeaks.html#af2d476e0aa7998c70664afba39d8ce01">m_banks</a></td></tr>
-<tr class="memdesc:af2d476e0aa7998c70664afba39d8ce01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local cache of bank IComponents used in file.  <br /></td></tr>
-<tr class="separator:af2d476e0aa7998c70664afba39d8ce01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16baaa0af4e834459f4807d21bd6a8bd" id="r_a16baaa0af4e834459f4807d21bd6a8bd"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df6/classMantid_1_1Crystal_1_1LoadIsawPeaks.html#a16baaa0af4e834459f4807d21bd6a8bd">m_bankIndices</a></td></tr>
+<tr class="memdesc:a16baaa0af4e834459f4807d21bd6a8bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local cache of bank component indices used in file.  <br /></td></tr>
+<tr class="separator:a16baaa0af4e834459f4807d21bd6a8bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbc211197285fdd5211eec9173e14561" id="r_adbc211197285fdd5211eec9173e14561"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df6/classMantid_1_1Crystal_1_1LoadIsawPeaks.html#adbc211197285fdd5211eec9173e14561">m_isModulatedStructure</a></td></tr>
 <tr class="memdesc:adbc211197285fdd5211eec9173e14561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag for reading modulated structures.  <br /></td></tr>
 <tr class="separator:adbc211197285fdd5211eec9173e14561"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -646,7 +646,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Janik Zikovsky, SNS </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2011-03-07 15:22:11.897153 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00025">25</a> of file <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html">LoadIsawPeaks.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00026">26</a> of file <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html">LoadIsawPeaks.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6f5180718b725d093a7c99114abd7fcb" name="a6f5180718b725d093a7c99114abd7fcb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6f5180718b725d093a7c99114abd7fcb">&#9670;&#160;</a></span>appendFile()</h2>
@@ -727,7 +727,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#aac664d897bb69f4ca2246b8dff697309">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00038">38</a> of file <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html">LoadIsawPeaks.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00039">39</a> of file <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html">LoadIsawPeaks.h</a>.</p>
 
 </div>
 </div>
@@ -909,14 +909,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/df5/LoadIsawPeaks_8cpp_source.html#l00348">348</a> of file <a class="el" href="../../d4/df5/LoadIsawPeaks_8cpp_source.html">LoadIsawPeaks.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/df5/LoadIsawPeaks_8cpp_source.html#l00584">getCachedBankByName()</a>, <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html#a98c14db658ac2d5cc163147124199814">Mantid::Geometry::IDetector::getID()</a>, and <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00320">Mantid::DataObjects::Peak::getInstrument()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/LoadIsawPeaks_8cpp_source.html#l00583">getCachedBankIndex()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d4/df5/LoadIsawPeaks_8cpp_source.html#l00256">readPeak()</a>.</p>
 
 </div>
 </div>
-<a id="a4f5ef0cde3072110f15be1f154c9722c" name="a4f5ef0cde3072110f15be1f154c9722c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f5ef0cde3072110f15be1f154c9722c">&#9670;&#160;</a></span>getCachedBankByName()</h2>
+<a id="a022ab7dfcb29456a16471591071d79a5" name="a022ab7dfcb29456a16471591071d79a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a022ab7dfcb29456a16471591071d79a5">&#9670;&#160;</a></span>getCachedBankIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -925,16 +925,16 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt; const <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html">IComponent</a> &gt; Mantid::Crystal::LoadIsawPeaks::getCachedBankByName </td>
+          <td class="memname">size_t Mantid::Crystal::LoadIsawPeaks::getCachedBankIndex </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
           <td class="paramname"><em>bankname</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::shared_ptr&lt; const <a class="el" href="../../da/d03/classMantid_1_1Geometry_1_1Instrument.html">Geometry::Instrument</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>inst</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html">Geometry::ComponentInfo</a> const &amp;&#160;</td>
+          <td class="paramname"><em>componentInfo</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -949,20 +949,29 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Retrieve cached bank (or load and cache for next time) </p>
-<p>Retrieves pointer to given bank from local cache.</p>
-<p>When the bank isn't in the local cache, it is loaded and added to the cache for later use. Lifetime of the cache is bound to the lifetime of this instance of the algorithm (typically, the instance should be destroyed once <a class="el" href="../../da/df6/classMantid_1_1Crystal_1_1LoadIsawPeaks.html#a315690642302d50ed033dceee54e35cb" title="Run the algorithm.">exec()</a> finishes).</p>
+<p>Retrieve cached bank component index (or look up and cache for next time). </p>
+<p>Retrieves component index of given bank from local cache.</p>
+<p>Throws std::invalid_argument (via <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html#a290901f13afa477b17a5bd50465b14c5">ComponentInfo::indexOfAny</a>) if bankname does not exist.</p>
+<p>When the bank isn't in the local cache, it is looked up and added to the cache for later use. Lifetime of the cache is bound to the lifetime of this instance of the algorithm (typically, the instance should be destroyed once <a class="el" href="../../da/df6/classMantid_1_1Crystal_1_1LoadIsawPeaks.html#a315690642302d50ed033dceee54e35cb" title="Run the algorithm.">exec()</a> finishes).</p>
 <p>Note that while this is used only for banks here, it would work for caching any component without modification.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bankname</td><td>:: the name of the requested bank </td></tr>
-    <tr><td class="paramname">inst</td><td>:: the instrument from which to load the bank if it is not yet cached </td></tr>
+    <tr><td class="paramname">componentInfo</td><td>:: the ComponentInfo to look the bank up in if it is not yet cached </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A shared pointer to the request bank (empty shared pointer if not found) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The component index of the requested bank </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>if bankname does not exist </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/df5/LoadIsawPeaks_8cpp_source.html#l00584">584</a> of file <a class="el" href="../../d4/df5/LoadIsawPeaks_8cpp_source.html">LoadIsawPeaks.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/df5/LoadIsawPeaks_8cpp_source.html#l00583">583</a> of file <a class="el" href="../../d4/df5/LoadIsawPeaks_8cpp_source.html">LoadIsawPeaks.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00131">Mantid::Geometry::ComponentInfo::indexOfAny()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d4/df5/LoadIsawPeaks_8cpp_source.html#l00348">findPixelID()</a>.</p>
 
@@ -1029,7 +1038,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#af7d20753d77a5d2875edf5a37eaef39f">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00028">28</a> of file <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html">LoadIsawPeaks.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00029">29</a> of file <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html">LoadIsawPeaks.h</a>.</p>
 
 </div>
 </div>
@@ -1087,7 +1096,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/df5/LoadIsawPeaks_8cpp_source.html#l00127">127</a> of file <a class="el" href="../../d4/df5/LoadIsawPeaks_8cpp_source.html">LoadIsawPeaks.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d6d/Strings_8cpp_source.html#l00696">Mantid::Kernel::Strings::convert()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00866">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00423">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01933">Mantid::API::Algorithm::getPropertyValue()</a>, <a class="el" href="../../de/d06/SingletonHolder_8h_source.html#l00091">Mantid::Kernel::SingletonHolder&lt; T &gt;::Instance()</a>, and <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00045">m_isModulatedStructure</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d6d/Strings_8cpp_source.html#l00696">Mantid::Kernel::Strings::convert()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00866">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00423">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01933">Mantid::API::Algorithm::getPropertyValue()</a>, <a class="el" href="../../de/d06/SingletonHolder_8h_source.html#l00091">Mantid::Kernel::SingletonHolder&lt; T &gt;::Instance()</a>, and <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00046">m_isModulatedStructure</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d4/df5/LoadIsawPeaks_8cpp_source.html#l00426">appendFile()</a>.</p>
 
@@ -1169,7 +1178,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/df5/LoadIsawPeaks_8cpp_source.html#l00256">256</a> of file <a class="el" href="../../d4/df5/LoadIsawPeaks_8cpp_source.html">LoadIsawPeaks.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/df5/LoadIsawPeaks_8cpp_source.html#l00348">findPixelID()</a>, <a class="el" href="../../dd/d09/PhysicalConstants_8h_source.html#l00029">Mantid::PhysicalConstants::h</a>, <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00045">m_isModulatedStructure</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00201">Mantid::DataObjects::BasePeak::setBinCount()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00131">Mantid::DataObjects::BasePeak::setHKL()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00197">Mantid::DataObjects::BasePeak::setIntensity()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00147">Mantid::DataObjects::BasePeak::setIntHKL()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00152">Mantid::DataObjects::BasePeak::setIntMNP()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00238">Mantid::DataObjects::BasePeak::setPeakNumber()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00205">Mantid::DataObjects::BasePeak::setSigmaIntensity()</a>, and <a class="el" href="../../db/d39/System_8h_source.html#l00044">UNUSED_ARG</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/df5/LoadIsawPeaks_8cpp_source.html#l00348">findPixelID()</a>, <a class="el" href="../../dd/d09/PhysicalConstants_8h_source.html#l00029">Mantid::PhysicalConstants::h</a>, <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00046">m_isModulatedStructure</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00201">Mantid::DataObjects::BasePeak::setBinCount()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00131">Mantid::DataObjects::BasePeak::setHKL()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00197">Mantid::DataObjects::BasePeak::setIntensity()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00147">Mantid::DataObjects::BasePeak::setIntHKL()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00152">Mantid::DataObjects::BasePeak::setIntMNP()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00238">Mantid::DataObjects::BasePeak::setPeakNumber()</a>, <a class="el" href="../../de/dd3/BasePeak_8cpp_source.html#l00205">Mantid::DataObjects::BasePeak::setSigmaIntensity()</a>, and <a class="el" href="../../db/d39/System_8h_source.html#l00044">UNUSED_ARG</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d4/df5/LoadIsawPeaks_8cpp_source.html#l00426">appendFile()</a>.</p>
 
@@ -1281,7 +1290,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#ac7479973136d934042211c3a703abfc8">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00035">35</a> of file <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html">LoadIsawPeaks.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00036">36</a> of file <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html">LoadIsawPeaks.h</a>.</p>
 
 </div>
 </div>
@@ -1312,7 +1321,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#adfff14154e5762875923c9a4f3679b51">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00031">31</a> of file <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html">LoadIsawPeaks.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00032">32</a> of file <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html">LoadIsawPeaks.h</a>.</p>
 
 </div>
 </div>
@@ -1343,13 +1352,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#ac1fab4b33f78654eccab880db81f14c0">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00034">34</a> of file <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html">LoadIsawPeaks.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00035">35</a> of file <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html">LoadIsawPeaks.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="af2d476e0aa7998c70664afba39d8ce01" name="af2d476e0aa7998c70664afba39d8ce01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2d476e0aa7998c70664afba39d8ce01">&#9670;&#160;</a></span>m_banks</h2>
+<a id="a16baaa0af4e834459f4807d21bd6a8bd" name="a16baaa0af4e834459f4807d21bd6a8bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16baaa0af4e834459f4807d21bd6a8bd">&#9670;&#160;</a></span>m_bankIndices</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1358,7 +1367,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;std::string, std::shared_ptr&lt;const <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html">Geometry::IComponent</a>&gt; &gt; Mantid::Crystal::LoadIsawPeaks::m_banks</td>
+          <td class="memname">std::map&lt;std::string, size_t&gt; Mantid::Crystal::LoadIsawPeaks::m_bankIndices</td>
         </tr>
       </table>
   </td>
@@ -1368,9 +1377,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Local cache of bank IComponents used in file. </p>
+<p>Local cache of bank component indices used in file. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00077">77</a> of file <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html">LoadIsawPeaks.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00078">78</a> of file <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html">LoadIsawPeaks.h</a>.</p>
 
 </div>
 </div>
@@ -1396,7 +1405,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Flag for reading modulated structures. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00045">45</a> of file <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html">LoadIsawPeaks.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00046">46</a> of file <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html">LoadIsawPeaks.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d4/df5/LoadIsawPeaks_8cpp_source.html#l00127">readHeader()</a>, and <a class="el" href="../../d4/df5/LoadIsawPeaks_8cpp_source.html#l00256">readPeak()</a>.</p>
 
@@ -1422,7 +1431,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00046">46</a> of file <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html">LoadIsawPeaks.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00047">47</a> of file <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html">LoadIsawPeaks.h</a>.</p>
 
 </div>
 </div>
@@ -1446,7 +1455,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00047">47</a> of file <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html">LoadIsawPeaks.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00048">48</a> of file <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html">LoadIsawPeaks.h</a>.</p>
 
 </div>
 </div>
@@ -1470,7 +1479,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00048">48</a> of file <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html">LoadIsawPeaks.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html#l00049">49</a> of file <a class="el" href="../../d9/d1f/LoadIsawPeaks_8h_source.html">LoadIsawPeaks.h</a>.</p>
 
 </div>
 </div>
