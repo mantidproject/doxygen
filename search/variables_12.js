@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['r_0',['r',['../d1/d39/structMantid_1_1Algorithms_1_1CreateDetectorTable_1_1DetectorRowData.html#aede3fce92b3ee84ee55d8fff3da60943',1,'Mantid::Algorithms::CreateDetectorTable::DetectorRowData::R'],['../dc/db7/classMantid_1_1Geometry_1_1StructuredDetector.html#ac263615198f126b92766b05cc349a574',1,'Mantid::Geometry::StructuredDetector::r']]],
+  ['r_0',['r',['../dc/db7/classMantid_1_1Geometry_1_1StructuredDetector.html#ac263615198f126b92766b05cc349a574',1,'Mantid::Geometry::StructuredDetector::r'],['../d1/d39/structMantid_1_1Algorithms_1_1CreateDetectorTable_1_1DetectorRowData.html#aede3fce92b3ee84ee55d8fff3da60943',1,'Mantid::Algorithms::CreateDetectorTable::DetectorRowData::R']]],
   ['r_5fdaytel_1',['r_daytel',['../d5/df9/structUSER__STRUCT.html#aa0337fce58cabb46b6a71b2ee9c4d83a',1,'USER_STRUCT']]],
   ['r_5fdaytel2_2',['r_daytel2',['../d5/df9/structUSER__STRUCT.html#aa8a0a4ef8425ca39446f72175e898bb4',1,'USER_STRUCT']]],
   ['r_5fdmp_3',['r_dmp',['../d4/de9/structRPB__STRUCT.html#a34d7ea6359d59dee5f84dddcfee4bac4',1,'RPB_STRUCT']]],
