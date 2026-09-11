@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mantid: Framework/MDAlgorithms/src/Integrate3DEvents.cpp File Reference</title>
+<title>Mantid: Framework/MDAlgorithms/inc/MantidMDAlgorithms/IntegratePeaksShapeMD.h File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -85,35 +85,33 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_bcbb2cf9a3d3d83e5515c82071a07177.html">Framework</a></li><li class="navelem"><a class="el" href="../../dir_9ae835fae120a63a3750d3fe93190059.html">MDAlgorithms</a></li><li class="navelem"><a class="el" href="../../dir_63e44a8f5d6faf1ed663d1d9ef91ff62.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_bcbb2cf9a3d3d83e5515c82071a07177.html">Framework</a></li><li class="navelem"><a class="el" href="../../dir_9ae835fae120a63a3750d3fe93190059.html">MDAlgorithms</a></li><li class="navelem"><a class="el" href="../../dir_398190b8c8b42af1fc5eddff500036f9.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_5d7cb311839fd61ad3120a72837b162d.html">MantidMDAlgorithms</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a>  </div>
-  <div class="headertitle"><div class="title">Integrate3DEvents.cpp File Reference</div></div>
+  <div class="headertitle"><div class="title">IntegratePeaksShapeMD.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">MantidMDAlgorithms/Integrate3DEvents.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d3/d5a/NoShape_8h_source.html">MantidDataObjects/NoShape.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dc/d56/PeakShapeEllipsoid_8h_source.html">MantidDataObjects/PeakShapeEllipsoid.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d8/de5/IndexingUtils_8h_source.html">MantidGeometry/Crystal/IndexingUtils.h</a>&quot;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;boost/math/special_functions/round.hpp&gt;</code><br />
-<code>#include &lt;cmath&gt;</code><br />
-<code>#include &lt;fstream&gt;</code><br />
-<code>#include &lt;limits&gt;</code><br />
-<code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;numeric&gt;</code><br />
-<code>#include &lt;tuple&gt;</code><br />
-<code>#include &lt;cstdio&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
-<code>#include &lt;gsl/gsl_eigen.h&gt;</code><br />
-<code>#include &lt;gsl/gsl_matrix.h&gt;</code><br />
-<code>#include &lt;gsl/gsl_vector.h&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d7/d36/Algorithm_8h_source.html">MantidAPI/Algorithm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MantidAPI/MatrixWorkspace.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/df3/Progress_8h_source.html">MantidAPI/Progress.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/d08/EventWorkspace_8h_source.html">MantidDataObjects/EventWorkspace.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/da6/PeaksWorkspace_8h_source.html">MantidDataObjects/PeaksWorkspace.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d95/Workspace2D_8h_source.html">MantidDataObjects/Workspace2D.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/db1/Matrix_8h_source.html">MantidKernel/Matrix.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">MantidMDAlgorithms/Integrate3DEvents.h</a>&quot;</code><br />
 </div>
-<p><a href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Go to the source code of this file.</a></p>
+<p><a href="../../d6/d3c/IntegratePeaksShapeMD_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d9e/classMantid_1_1MDAlgorithms_1_1IntegratePeaksShapeMD.html">Mantid::MDAlgorithms::IntegratePeaksShapeMD</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../dd/d9e/classMantid_1_1MDAlgorithms_1_1IntegratePeaksShapeMD.html" title="IntegratePeaksShapeMD integrates single crystal Bragg peaks using the ellipsoidal peak shape already ...">IntegratePeaksShapeMD</a> integrates single crystal Bragg peaks using the ellipsoidal peak shape already stored on each peak in the input PeaksWorkspace (e.g.  <a href="../../dd/d9e/classMantid_1_1MDAlgorithms_1_1IntegratePeaksShapeMD.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:d8/d8e/namespaceMantid" id="r_d8/d8e/namespaceMantid"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d8e/namespaceMantid.html">Mantid</a></td></tr>

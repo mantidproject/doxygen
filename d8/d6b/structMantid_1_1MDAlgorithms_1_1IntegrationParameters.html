@@ -96,26 +96,37 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Parameters for controlling peak integration.  
+ <a href="../../d8/d6b/structMantid_1_1MDAlgorithms_1_1IntegrationParameters.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:adbc54060a5628d77d2cba36237e7c50a" id="r_adbc54060a5628d77d2cba36237e7c50a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6b/structMantid_1_1MDAlgorithms_1_1IntegrationParameters.html#adbc54060a5628d77d2cba36237e7c50a">backgroundInnerRadius</a></td></tr>
+<tr class="memdesc:adbc54060a5628d77d2cba36237e7c50a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inner radius of background shell.  <br /></td></tr>
 <tr class="separator:adbc54060a5628d77d2cba36237e7c50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b180f7bb25c079f109494bb3e6bff51" id="r_a2b180f7bb25c079f109494bb3e6bff51"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6b/structMantid_1_1MDAlgorithms_1_1IntegrationParameters.html#a2b180f7bb25c079f109494bb3e6bff51">backgroundOuterRadius</a></td></tr>
+<tr class="memdesc:a2b180f7bb25c079f109494bb3e6bff51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outer radius of background shell.  <br /></td></tr>
 <tr class="separator:a2b180f7bb25c079f109494bb3e6bff51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5b189bfb1dafa930b6f86fe7c9bacea" id="r_ae5b189bfb1dafa930b6f86fe7c9bacea"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6b/structMantid_1_1MDAlgorithms_1_1IntegrationParameters.html#ae5b189bfb1dafa930b6f86fe7c9bacea">E1Vectors</a></td></tr>
+<tr class="memdesc:ae5b189bfb1dafa930b6f86fe7c9bacea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vectors for calculating detector edges.  <br /></td></tr>
 <tr class="separator:ae5b189bfb1dafa930b6f86fe7c9bacea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fa020511b818a037c235791e704c90a" id="r_a9fa020511b818a037c235791e704c90a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6b/structMantid_1_1MDAlgorithms_1_1IntegrationParameters.html#a9fa020511b818a037c235791e704c90a">peakRadius</a></td></tr>
+<tr class="memdesc:a9fa020511b818a037c235791e704c90a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Radius of peak ellipsoid.  <br /></td></tr>
 <tr class="separator:a9fa020511b818a037c235791e704c90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6adb823e0655033b4930193c9d65d66" id="r_ae6adb823e0655033b4930193c9d65d66"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6b/structMantid_1_1MDAlgorithms_1_1IntegrationParameters.html#ae6adb823e0655033b4930193c9d65d66">regionRadius</a></td></tr>
+<tr class="memdesc:ae6adb823e0655033b4930193c9d65d66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Radius of region to search for events.  <br /></td></tr>
 <tr class="separator:ae6adb823e0655033b4930193c9d65d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab33fb96f38aceef49ae970f10dabb179" id="r_ab33fb96f38aceef49ae970f10dabb179"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6b/structMantid_1_1MDAlgorithms_1_1IntegrationParameters.html#ab33fb96f38aceef49ae970f10dabb179">specifySize</a></td></tr>
+<tr class="memdesc:ab33fb96f38aceef49ae970f10dabb179"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, use specified sizes; if false, use data-driven sizes.  <br /></td></tr>
 <tr class="separator:ab33fb96f38aceef49ae970f10dabb179"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00027">27</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
+<div class="textblock"><p>Parameters for controlling peak integration. </p>
+<p>This structure contains the parameters needed to control the integration of peaks using ellipsoidal volumes. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00044">44</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="adbc54060a5628d77d2cba36237e7c50a" name="adbc54060a5628d77d2cba36237e7c50a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adbc54060a5628d77d2cba36237e7c50a">&#9670;&#160;</a></span>backgroundInnerRadius</h2>
@@ -129,9 +140,11 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00029">29</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
+<p>Inner radius of background shell. </p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01169">Mantid::MDAlgorithms::Integrate3DEvents::calculateRadiusFactors()</a>, and <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00290">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::makeIntegrationParameters()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00046">46</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01517">Mantid::MDAlgorithms::Integrate3DEvents::calculateRadiusFactors()</a>, and <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00290">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::makeIntegrationParameters()</a>.</p>
 
 </div>
 </div>
@@ -147,9 +160,11 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00030">30</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
+<p>Outer radius of background shell. </p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01169">Mantid::MDAlgorithms::Integrate3DEvents::calculateRadiusFactors()</a>, and <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00290">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::makeIntegrationParameters()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00047">47</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01517">Mantid::MDAlgorithms::Integrate3DEvents::calculateRadiusFactors()</a>, and <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00290">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::makeIntegrationParameters()</a>.</p>
 
 </div>
 </div>
@@ -165,9 +180,11 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00028">28</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
+<p>Vectors for calculating detector edges. </p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00127">Mantid::MDAlgorithms::Integrate3DEvents::integrateStrongPeak()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00205">Mantid::MDAlgorithms::Integrate3DEvents::integrateWeakPeak()</a>, and <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00290">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::makeIntegrationParameters()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00045">45</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00129">Mantid::MDAlgorithms::Integrate3DEvents::integrateStrongPeak()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00221">Mantid::MDAlgorithms::Integrate3DEvents::integrateWeakPeak()</a>, and <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00290">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::makeIntegrationParameters()</a>.</p>
 
 </div>
 </div>
@@ -183,9 +200,11 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00032">32</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
+<p>Radius of peak ellipsoid. </p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01169">Mantid::MDAlgorithms::Integrate3DEvents::calculateRadiusFactors()</a>, and <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00290">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::makeIntegrationParameters()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00049">49</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01517">Mantid::MDAlgorithms::Integrate3DEvents::calculateRadiusFactors()</a>, and <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00290">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::makeIntegrationParameters()</a>.</p>
 
 </div>
 </div>
@@ -201,9 +220,11 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00031">31</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
+<p>Radius of region to search for events. </p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01169">Mantid::MDAlgorithms::Integrate3DEvents::calculateRadiusFactors()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00264">Mantid::MDAlgorithms::Integrate3DEvents::estimateSignalToNoiseRatio()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00127">Mantid::MDAlgorithms::Integrate3DEvents::integrateStrongPeak()</a>, and <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00290">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::makeIntegrationParameters()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00048">48</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01517">Mantid::MDAlgorithms::Integrate3DEvents::calculateRadiusFactors()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00612">Mantid::MDAlgorithms::Integrate3DEvents::estimateSignalToNoiseRatio()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00129">Mantid::MDAlgorithms::Integrate3DEvents::integrateStrongPeak()</a>, and <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00290">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::makeIntegrationParameters()</a>.</p>
 
 </div>
 </div>
@@ -219,9 +240,11 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00033">33</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
+<p>If true, use specified sizes; if false, use data-driven sizes. </p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01169">Mantid::MDAlgorithms::Integrate3DEvents::calculateRadiusFactors()</a>, and <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00290">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::makeIntegrationParameters()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00050">50</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01517">Mantid::MDAlgorithms::Integrate3DEvents::calculateRadiusFactors()</a>, and <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00290">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::makeIntegrationParameters()</a>.</p>
 
 </div>
 </div>

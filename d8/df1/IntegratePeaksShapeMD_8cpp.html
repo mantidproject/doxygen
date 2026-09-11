@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mantid: Framework/MDAlgorithms/src/Integrate3DEvents.cpp File Reference</title>
+<title>Mantid: Framework/MDAlgorithms/src/IntegratePeaksShapeMD.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -91,28 +91,28 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a>  </div>
-  <div class="headertitle"><div class="title">Integrate3DEvents.cpp File Reference</div></div>
+  <div class="headertitle"><div class="title">IntegratePeaksShapeMD.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">MantidMDAlgorithms/Integrate3DEvents.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d3/d5a/NoShape_8h_source.html">MantidDataObjects/NoShape.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d6/d3c/IntegratePeaksShapeMD_8h_source.html">MantidMDAlgorithms/IntegratePeaksShapeMD.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/daf/InstrumentValidator_8h_source.html">MantidAPI/InstrumentValidator.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d49/Run_8h_source.html">MantidAPI/Run.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/d08/EventWorkspace_8h_source.html">MantidDataObjects/EventWorkspace.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dc/d56/PeakShapeEllipsoid_8h_source.html">MantidDataObjects/PeakShapeEllipsoid.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/da6/PeaksWorkspace_8h_source.html">MantidDataObjects/PeaksWorkspace.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d95/Workspace2D_8h_source.html">MantidDataObjects/Workspace2D.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d8/de5/IndexingUtils_8h_source.html">MantidGeometry/Crystal/IndexingUtils.h</a>&quot;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d4d/BoundedValidator_8h_source.html">MantidKernel/BoundedValidator.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/d8f/CompositeValidator_8h_source.html">MantidKernel/CompositeValidator.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">MantidMDAlgorithms/Integrate3DEvents.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d33/MDTransfFactory_8h_source.html">MantidMDAlgorithms/MDTransfFactory.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d5c/MDTransfQ3D_8h_source.html">MantidMDAlgorithms/MDTransfQ3D.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/d0b/UnitsConversionHelper_8h_source.html">MantidMDAlgorithms/UnitsConversionHelper.h</a>&quot;</code><br />
 <code>#include &lt;boost/math/special_functions/round.hpp&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
-<code>#include &lt;fstream&gt;</code><br />
-<code>#include &lt;limits&gt;</code><br />
-<code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;numeric&gt;</code><br />
-<code>#include &lt;tuple&gt;</code><br />
-<code>#include &lt;cstdio&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
-<code>#include &lt;gsl/gsl_eigen.h&gt;</code><br />
-<code>#include &lt;gsl/gsl_matrix.h&gt;</code><br />
-<code>#include &lt;gsl/gsl_vector.h&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 </div>
-<p><a href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Go to the source code of this file.</a></p>
+<p><a href="../../d8/df1/IntegratePeaksShapeMD_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>

@@ -116,6 +116,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8d19df87a02bac9fee7b1ca1842d5b38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the net integrated intensity of a modulated peak, using ellipsoidal volumes.  <br /></td></tr>
 <tr class="separator:a8d19df87a02bac9fee7b1ca1842d5b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2d4083a62ef232fd81fc5bc622ebf1f" id="r_aa2d4083a62ef232fd81fc5bc622ebf1f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d5d/classMantid_1_1MDAlgorithms_1_1Integrate3DEvents.html#aa2d4083a62ef232fd81fc5bc622ebf1f">estimateSignalToNoiseRatio</a> (const <a class="el" href="../../d8/d6b/structMantid_1_1MDAlgorithms_1_1IntegrationParameters.html">IntegrationParameters</a> &amp;params, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Mantid::Kernel::V3D</a> &amp;center, bool forceSpherical=false, double sphericityTol=0.02)</td></tr>
+<tr class="memdesc:aa2d4083a62ef232fd81fc5bc622ebf1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate the signal-to-noise ratio for a peak at the given position by fitting an ellipsoid to the events and comparing peak to background.  <br /></td></tr>
 <tr class="separator:aa2d4083a62ef232fd81fc5bc622ebf1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17edb91591a0cd9aef683c3251bb2bdb" id="r_a17edb91591a0cd9aef683c3251bb2bdb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d5d/classMantid_1_1MDAlgorithms_1_1Integrate3DEvents.html#a17edb91591a0cd9aef683c3251bb2bdb">Integrate3DEvents</a> (const std::vector&lt; std::pair&lt; std::pair&lt; double, double &gt;, <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Mantid::Kernel::V3D</a> &gt; &gt; &amp;peak_q_list, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#af7aba0cb1e2af14b7d5018cc3c22771d">Kernel::DblMatrix</a> UBinv, double radius, const bool useOnePercentBackgroundCorrection=true)</td></tr>
 <tr class="memdesc:a17edb91591a0cd9aef683c3251bb2bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct object to store events around peaks and integrate peaks.  <br /></td></tr>
@@ -124,9 +125,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:abb5e0fd30d09b45cf662e33f52a1d103"><td class="mdescLeft">&#160;</td><td class="mdescRight">With modulation vectors, construct an object to store events that correspond to a peak and are within the specified radius of the specified peak centers, and to integrate the peaks.  <br /></td></tr>
 <tr class="separator:abb5e0fd30d09b45cf662e33f52a1d103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d78f98aeaf2b1e3df54ca2593f2d080" id="r_a5d78f98aeaf2b1e3df54ca2593f2d080"><td class="memItemLeft" align="right" valign="top">std::pair&lt; std::shared_ptr&lt; const <a class="el" href="../../db/dcf/classMantid_1_1Geometry_1_1PeakShape.html">Mantid::Geometry::PeakShape</a> &gt;, std::tuple&lt; double, double, double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d5d/classMantid_1_1MDAlgorithms_1_1Integrate3DEvents.html#a5d78f98aeaf2b1e3df54ca2593f2d080">integrateStrongPeak</a> (const <a class="el" href="../../d8/d6b/structMantid_1_1MDAlgorithms_1_1IntegrationParameters.html">IntegrationParameters</a> &amp;params, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;peak_q, double &amp;inti, double &amp;sigi)</td></tr>
-<tr class="memdesc:a5d78f98aeaf2b1e3df54ca2593f2d080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the net integrated intensity of a peak, using ellipsoidal volumes.  <br /></td></tr>
+<tr class="memdesc:a5d78f98aeaf2b1e3df54ca2593f2d080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the net integrated intensity of a strong peak, using ellipsoidal volumes fit from the events, and return peak shape and library peak parameters.  <br /></td></tr>
 <tr class="separator:a5d78f98aeaf2b1e3df54ca2593f2d080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955d6badefbe1678311bf61b4c0dddd9" id="r_a955d6badefbe1678311bf61b4c0dddd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d5d/classMantid_1_1MDAlgorithms_1_1Integrate3DEvents.html#a955d6badefbe1678311bf61b4c0dddd9">integrateUsingShape</a> (const <a class="el" href="../../dc/df9/classMantid_1_1DataObjects_1_1PeakShapeEllipsoid.html">Mantid::DataObjects::PeakShapeEllipsoid</a> &amp;shape, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Mantid::Kernel::V3D</a> &amp;peak_q, double &amp;inti, double &amp;sigi)</td></tr>
+<tr class="memdesc:a955d6badefbe1678311bf61b4c0dddd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate a peak using a shape supplied by the caller (e.g.  <br /></td></tr>
+<tr class="separator:a955d6badefbe1678311bf61b4c0dddd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a802140c1cc3335874d344207d1742f29" id="r_a802140c1cc3335874d344207d1742f29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d5d/classMantid_1_1MDAlgorithms_1_1Integrate3DEvents.html#a802140c1cc3335874d344207d1742f29">integrateUsingShapeProfileFit</a> (const <a class="el" href="../../dc/df9/classMantid_1_1DataObjects_1_1PeakShapeEllipsoid.html">Mantid::DataObjects::PeakShapeEllipsoid</a> &amp;shape, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Mantid::Kernel::V3D</a> &amp;peak_q, bool adjustCenter, <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Mantid::Kernel::V3D</a> &amp;center, double &amp;inti, double &amp;sigi)</td></tr>
+<tr class="memdesc:a802140c1cc3335874d344207d1742f29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate a peak using a shape supplied by the caller, by maximizing the Poisson log-likelihood of a Gaussian peak (amplitude fit) plus a flat background rate against the raw events, instead of counting events inside/outside ellipsoidal boundaries.  <br /></td></tr>
+<tr class="separator:a802140c1cc3335874d344207d1742f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92d8305be312d9436b9259321dacea41" id="r_a92d8305be312d9436b9259321dacea41"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; const <a class="el" href="../../db/dcf/classMantid_1_1Geometry_1_1PeakShape.html">Geometry::PeakShape</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d5d/classMantid_1_1MDAlgorithms_1_1Integrate3DEvents.html#a92d8305be312d9436b9259321dacea41">integrateWeakPeak</a> (const <a class="el" href="../../d8/d6b/structMantid_1_1MDAlgorithms_1_1IntegrationParameters.html">IntegrationParameters</a> &amp;params, <a class="el" href="../../db/d22/namespaceMantid_1_1DataObjects.html#a98bf4920cb540eb407d54afe5535c8b8">Mantid::DataObjects::PeakShapeEllipsoid_const_sptr</a> shape, const std::tuple&lt; double, double, double &gt; &amp;libPeak, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Mantid::Kernel::V3D</a> &amp;peak_q, double &amp;inti, double &amp;sigi)</td></tr>
+<tr class="memdesc:a92d8305be312d9436b9259321dacea41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate a weak peak using a shape from a library peak, scaling the shape by the fractional intensity from the library peak.  <br /></td></tr>
 <tr class="separator:a92d8305be312d9436b9259321dacea41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -141,6 +149,7 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:a99e01f5d7733528d5a5a7b1fe79a41c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the radius to use for each axis of the ellipsoid from the parameters provided.  <br /></td></tr>
 <tr class="separator:a99e01f5d7733528d5a5a7b1fe79a41c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ba2aa19a91a3b3df0483a7b2b27e7e1" id="r_a3ba2aa19a91a3b3df0483a7b2b27e7e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d5d/classMantid_1_1MDAlgorithms_1_1Integrate3DEvents.html#a3ba2aa19a91a3b3df0483a7b2b27e7e1">correctForDetectorEdges</a> (std::tuple&lt; double, double, double &gt; &amp;radii, const std::vector&lt; <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Mantid::Kernel::V3D</a> &gt; &amp;E1Vecs, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Mantid::Kernel::V3D</a> &amp;peak_q, const <a class="el" href="../../db/d22/namespaceMantid_1_1DataObjects.html#a84701bd621862edf8d01b8f0bc20d276">DataObjects::PeakEllipsoidExtent</a> &amp;axesRadii, const <a class="el" href="../../db/d22/namespaceMantid_1_1DataObjects.html#a84701bd621862edf8d01b8f0bc20d276">DataObjects::PeakEllipsoidExtent</a> &amp;bkgInnerRadii, const <a class="el" href="../../db/d22/namespaceMantid_1_1DataObjects.html#a84701bd621862edf8d01b8f0bc20d276">DataObjects::PeakEllipsoidExtent</a> &amp;bkgOuterRadii)</td></tr>
+<tr class="memdesc:a3ba2aa19a91a3b3df0483a7b2b27e7e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Correct integration radii if peak extends to detector edges and return false if peak center is off detector.  <br /></td></tr>
 <tr class="separator:a3ba2aa19a91a3b3df0483a7b2b27e7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ac7f33140cf31bb2c06526a997f34d0" id="r_a1ac7f33140cf31bb2c06526a997f34d0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d5d/classMantid_1_1MDAlgorithms_1_1Integrate3DEvents.html#a1ac7f33140cf31bb2c06526a997f34d0">detectorQ</a> (const std::vector&lt; <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &gt; &amp;E1Vec, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Mantid::Kernel::V3D</a> &amp;QLabFrame, const <a class="el" href="../../db/d22/namespaceMantid_1_1DataObjects.html#a84701bd621862edf8d01b8f0bc20d276">DataObjects::PeakEllipsoidExtent</a> &amp;r)</td></tr>
 <tr class="memdesc:a1ac7f33140cf31bb2c06526a997f34d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute if a particular Q falls on the edge of a detector.  <br /></td></tr>
@@ -212,7 +221,7 @@ Private Attributes</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Dennis Mikkelson </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2012-12-19 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00055">55</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00072">72</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a17edb91591a0cd9aef683c3251bb2bdb" name="a17edb91591a0cd9aef683c3251bb2bdb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a17edb91591a0cd9aef683c3251bb2bdb">&#9670;&#160;</a></span>Integrate3DEvents() <span class="overload">[1/2]</span></h2>
@@ -264,9 +273,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00048">48</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00693">getHklKey()</a>, and <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00159">m_peak_qs</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01041">getHklKey()</a>, and <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00208">m_peak_qs</a>.</p>
 
 </div>
 </div>
@@ -361,9 +370,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00084">84</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00712">getHklMnpKey()</a>, and <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00159">m_peak_qs</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01060">getHklMnpKey()</a>, and <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00208">m_peak_qs</a>.</p>
 
 </div>
 </div>
@@ -413,11 +422,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00948">948</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01296">1296</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00693">getHklKey()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00727">getHklKey2()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00160">m_event_lists</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00159">m_peak_qs</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00163">m_radius</a>, and <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00161">m_UBinv</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01041">getHklKey()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01075">getHklKey2()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00209">m_event_lists</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00208">m_peak_qs</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00212">m_radius</a>, and <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00210">m_UBinv</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00116">addEvents()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00118">addEvents()</a>.</p>
 
 </div>
 </div>
@@ -458,11 +467,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00116">116</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00118">118</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00948">addEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00986">addModEvent()</a>, and <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00165">maxOrder</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01296">addEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01334">addModEvent()</a>, and <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00214">maxOrder</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00312">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::qListFromEventWS()</a>, <a class="el" href="../../d8/d3b/IntegrateEllipsoidsV1_8cpp_source.html#l00061">Mantid::MDAlgorithms::IntegrateEllipsoidsV1::qListFromEventWS()</a>, <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00402">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::qListFromHistoWS()</a>, and <a class="el" href="../../d8/d3b/IntegrateEllipsoidsV1_8cpp_source.html#l00129">Mantid::MDAlgorithms::IntegrateEllipsoidsV1::qListFromHistoWS()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/df1/IntegratePeaksShapeMD_8cpp_source.html#l00203">Mantid::MDAlgorithms::IntegratePeaksShapeMD::qListFromEventWS()</a>, <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00312">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::qListFromEventWS()</a>, <a class="el" href="../../d8/d3b/IntegrateEllipsoidsV1_8cpp_source.html#l00061">Mantid::MDAlgorithms::IntegrateEllipsoidsV1::qListFromEventWS()</a>, <a class="el" href="../../d8/df1/IntegratePeaksShapeMD_8cpp_source.html#l00281">Mantid::MDAlgorithms::IntegratePeaksShapeMD::qListFromHistoWS()</a>, <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00402">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::qListFromHistoWS()</a>, and <a class="el" href="../../d8/d3b/IntegrateEllipsoidsV1_8cpp_source.html#l00129">Mantid::MDAlgorithms::IntegrateEllipsoidsV1::qListFromHistoWS()</a>.</p>
 
 </div>
 </div>
@@ -510,11 +519,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00986">986</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01334">1334</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00712">getHklMnpKey()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00740">getHklMnpKey2()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00160">m_event_lists</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00159">m_peak_qs</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00163">m_radius</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00161">m_UBinv</a>, and <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00164">s_radius</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01060">getHklMnpKey()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01088">getHklMnpKey2()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00209">m_event_lists</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00208">m_peak_qs</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00212">m_radius</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00210">m_UBinv</a>, and <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00213">s_radius</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00116">addEvents()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00118">addEvents()</a>.</p>
 
 </div>
 </div>
@@ -562,11 +571,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>tuple of values representing the radius for each axis. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01169">1169</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01517">1517</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00029">Mantid::MDAlgorithms::IntegrationParameters::backgroundInnerRadius</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00030">Mantid::MDAlgorithms::IntegrationParameters::backgroundOuterRadius</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00032">Mantid::MDAlgorithms::IntegrationParameters::peakRadius</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00031">Mantid::MDAlgorithms::IntegrationParameters::regionRadius</a>, and <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00033">Mantid::MDAlgorithms::IntegrationParameters::specifySize</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00046">Mantid::MDAlgorithms::IntegrationParameters::backgroundInnerRadius</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00047">Mantid::MDAlgorithms::IntegrationParameters::backgroundOuterRadius</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00049">Mantid::MDAlgorithms::IntegrationParameters::peakRadius</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00048">Mantid::MDAlgorithms::IntegrationParameters::regionRadius</a>, and <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00050">Mantid::MDAlgorithms::IntegrationParameters::specifySize</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00264">estimateSignalToNoiseRatio()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00127">integrateStrongPeak()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00205">integrateWeakPeak()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00612">estimateSignalToNoiseRatio()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00129">integrateStrongPeak()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00221">integrateWeakPeak()</a>.</p>
 
 </div>
 </div>
@@ -628,11 +637,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00345">345</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p>Correct integration radii if peak extends to detector edges and return false if peak center is off detector. </p>
 
-<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01149">detectorQ()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00693">693</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00127">integrateStrongPeak()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00205">integrateWeakPeak()</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01497">detectorQ()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00129">integrateStrongPeak()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00221">integrateWeakPeak()</a>.</p>
 
 </div>
 </div>
@@ -688,11 +699,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01149">1149</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01497">1497</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/dd1/IPowderDiffPeakFunction_8cpp_source.html#l00207">Mantid::API::E1()</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00269">Mantid::Kernel::V3D::norm()</a>, and <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00280">Mantid::Kernel::V3D::scalar_prod()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00345">correctForDetectorEdges()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01053">ellipseIntegrateEvents()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00693">correctForDetectorEdges()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01401">ellipseIntegrateEvents()</a>.</p>
 
 </div>
 </div>
@@ -810,9 +821,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01053">1053</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01401">1401</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01149">detectorQ()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00163">m_radius</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00167">m_useOnePercentBackgroundCorrection</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00528">numInEllipsoid()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00564">numInEllipsoidBkg()</a>, and <a class="el" href="../../db/d13/SpecialCoordinateSystem_8h_source.html#l00014">Mantid::Kernel::QLab</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01497">detectorQ()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00212">m_radius</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00216">m_useOnePercentBackgroundCorrection</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00876">numInEllipsoid()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00912">numInEllipsoidBkg()</a>, and <a class="el" href="../../db/d13/SpecialCoordinateSystem_8h_source.html#l00014">Mantid::Kernel::QLab</a>.</p>
 
 </div>
 </div>
@@ -902,11 +913,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00413">413</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00761">761</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00413">ellipseIntegrateEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00655">getEigenVectors()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00693">getHklKey()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00160">m_event_lists</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00163">m_radius</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00626">makeCovarianceMatrix()</a>, and <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00035">sigma</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00761">ellipseIntegrateEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01003">getEigenVectors()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01041">getHklKey()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00209">m_event_lists</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00212">m_radius</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00974">makeCovarianceMatrix()</a>, and <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00035">sigma</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00413">ellipseIntegrateEvents()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00462">ellipseIntegrateModEvents()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00761">ellipseIntegrateEvents()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00810">ellipseIntegrateModEvents()</a>.</p>
 
 </div>
 </div>
@@ -992,9 +1003,9 @@ Private Attributes</h2></td></tr>
 
 <p>Find the net integrated intensity of a modulated peak, using ellipsoidal volumes. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00462">462</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00810">810</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00413">ellipseIntegrateEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00655">getEigenVectors()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00712">getHklMnpKey()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00160">m_event_lists</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00163">m_radius</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00626">makeCovarianceMatrix()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00164">s_radius</a>, and <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00035">sigma</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00761">ellipseIntegrateEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01003">getEigenVectors()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01060">getHklMnpKey()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00209">m_event_lists</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00212">m_radius</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00974">makeCovarianceMatrix()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00213">s_radius</a>, and <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00035">sigma</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d8/d3b/IntegrateEllipsoidsV1_8cpp_source.html#l00306">Mantid::MDAlgorithms::IntegrateEllipsoidsV1::exec()</a>.</p>
 
@@ -1038,9 +1049,22 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00264">264</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p>Estimate the signal-to-noise ratio for a peak at the given position by fitting an ellipsoid to the events and comparing peak to background. </p>
+<p>Estimates the signal-to-noise ratio for a peak at the specified reciprocal-space position.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>Integration parameters that define the analysis region and radius factors. </td></tr>
+    <tr><td class="paramname">center</td><td>Reciprocal-space position of the peak. </td></tr>
+    <tr><td class="paramname">forceSpherical</td><td>Whether to require and use a spherically symmetric peak shape. </td></tr>
+    <tr><td class="paramname">sphericityTol</td><td>Maximum relative difference between the largest and smallest peak widths when spherical symmetry is required. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Signal-to-noise ratio after background subtraction, or zero when the peak cannot be analyzed or does not meet the requested shape constraints. </dd></dl>
 
-<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01169">calculateRadiusFactors()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00655">getEigenVectors()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00326">getEvents()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00167">m_useOnePercentBackgroundCorrection</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00626">makeCovarianceMatrix()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00528">numInEllipsoid()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00564">numInEllipsoidBkg()</a>, and <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00031">Mantid::MDAlgorithms::IntegrationParameters::regionRadius</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00612">612</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01517">calculateRadiusFactors()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01003">getEigenVectors()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00674">getEvents()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00216">m_useOnePercentBackgroundCorrection</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00974">makeCovarianceMatrix()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00876">numInEllipsoid()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00912">numInEllipsoidBkg()</a>, and <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00048">Mantid::MDAlgorithms::IntegrationParameters::regionRadius</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00110">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::exec()</a>.</p>
 
@@ -1097,9 +1121,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00655">655</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01003">1003</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00413">ellipseIntegrateEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00462">ellipseIntegrateModEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00264">estimateSignalToNoiseRatio()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00127">integrateStrongPeak()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00761">ellipseIntegrateEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00810">ellipseIntegrateModEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00612">estimateSignalToNoiseRatio()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00129">integrateStrongPeak()</a>.</p>
 
 </div>
 </div>
@@ -1129,11 +1153,11 @@ Private Attributes</h2></td></tr>
 
 <p>Get a list of events for a given Q. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00326">326</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00674">674</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00693">getHklKey()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00712">getHklMnpKey()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00160">m_event_lists</a>, and <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00165">maxOrder</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01041">getHklKey()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01060">getHklMnpKey()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00209">m_event_lists</a>, and <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00214">maxOrder</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00264">estimateSignalToNoiseRatio()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00127">integrateStrongPeak()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00205">integrateWeakPeak()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00612">estimateSignalToNoiseRatio()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00129">integrateStrongPeak()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00425">integrateUsingShape()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00473">integrateUsingShapeProfileFit()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00221">integrateWeakPeak()</a>.</p>
 
 </div>
 </div>
@@ -1188,9 +1212,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00693">693</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01041">1041</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00948">addEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00413">ellipseIntegrateEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00326">getEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00831">getHklKey()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00727">getHklKey2()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00048">Integrate3DEvents()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01296">addEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00761">ellipseIntegrateEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00674">getEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01179">getHklKey()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01075">getHklKey2()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00050">Integrate3DEvents()</a>.</p>
 
 </div>
 </div>
@@ -1227,9 +1251,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00831">831</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01179">1179</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00693">getHklKey()</a>, and <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00161">m_UBinv</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01041">getHklKey()</a>, and <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00210">m_UBinv</a>.</p>
 
 </div>
 </div>
@@ -1266,11 +1290,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00727">727</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01075">1075</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00693">getHklKey()</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01041">getHklKey()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00948">addEvent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01296">addEvent()</a>.</p>
 
 </div>
 </div>
@@ -1345,11 +1369,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00712">712</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01060">1060</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00802">Mantid::Geometry::m</a>, and <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00986">addModEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00462">ellipseIntegrateModEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00326">getEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00847">getHklMnpKey()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00740">getHklMnpKey2()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00082">Integrate3DEvents()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01334">addModEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00810">ellipseIntegrateModEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00674">getEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01195">getHklMnpKey()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01088">getHklMnpKey2()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00084">Integrate3DEvents()</a>.</p>
 
 </div>
 </div>
@@ -1386,9 +1410,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00847">847</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01195">1195</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00166">crossterm</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00712">getHklMnpKey()</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00802">Mantid::Geometry::m</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00162">m_ModHKL</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00163">m_radius</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00161">m_UBinv</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00165">maxOrder</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00164">s_radius</a>, and <a class="el" href="../../de/d8c/IndexingUtils_8cpp_source.html#l02047">Mantid::Geometry::IndexingUtils::ValidIndex()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00215">crossterm</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01060">getHklMnpKey()</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00802">Mantid::Geometry::m</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00211">m_ModHKL</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00212">m_radius</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00210">m_UBinv</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00214">maxOrder</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00213">s_radius</a>, and <a class="el" href="../../de/d8c/IndexingUtils_8cpp_source.html#l02047">Mantid::Geometry::IndexingUtils::ValidIndex()</a>.</p>
 
 </div>
 </div>
@@ -1425,11 +1449,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00740">740</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01088">1088</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00166">crossterm</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00712">getHklMnpKey()</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00802">Mantid::Geometry::m</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00162">m_ModHKL</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00163">m_radius</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00165">maxOrder</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00164">s_radius</a>, and <a class="el" href="../../de/d8c/IndexingUtils_8cpp_source.html#l02047">Mantid::Geometry::IndexingUtils::ValidIndex()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00215">crossterm</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01060">getHklMnpKey()</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00802">Mantid::Geometry::m</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00211">m_ModHKL</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00212">m_radius</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00214">maxOrder</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00213">s_radius</a>, and <a class="el" href="../../de/d8c/IndexingUtils_8cpp_source.html#l02047">Mantid::Geometry::IndexingUtils::ValidIndex()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00986">addModEvent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01334">addModEvent()</a>.</p>
 
 </div>
 </div>
@@ -1471,13 +1495,146 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Find the net integrated intensity of a peak, using ellipsoidal volumes. </p>
+<p>Find the net integrated intensity of a strong peak, using ellipsoidal volumes fit from the events, and return peak shape and library peak parameters. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00127">127</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00129">129</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01169">calculateRadiusFactors()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00345">correctForDetectorEdges()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00028">Mantid::MDAlgorithms::IntegrationParameters::E1Vectors</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00655">getEigenVectors()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00326">getEvents()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00167">m_useOnePercentBackgroundCorrection</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00626">makeCovarianceMatrix()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00528">numInEllipsoid()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00564">numInEllipsoidBkg()</a>, <a class="el" href="../../db/d13/SpecialCoordinateSystem_8h_source.html#l00014">Mantid::Kernel::QLab</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00031">Mantid::MDAlgorithms::IntegrationParameters::regionRadius</a>, and <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00035">sigma</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01517">calculateRadiusFactors()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00693">correctForDetectorEdges()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00045">Mantid::MDAlgorithms::IntegrationParameters::E1Vectors</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01003">getEigenVectors()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00674">getEvents()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00216">m_useOnePercentBackgroundCorrection</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00974">makeCovarianceMatrix()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00876">numInEllipsoid()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00912">numInEllipsoidBkg()</a>, <a class="el" href="../../db/d13/SpecialCoordinateSystem_8h_source.html#l00014">Mantid::Kernel::QLab</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00048">Mantid::MDAlgorithms::IntegrationParameters::regionRadius</a>, and <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00035">sigma</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00110">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::exec()</a>.</p>
+
+</div>
+</div>
+<a id="a955d6badefbe1678311bf61b4c0dddd9" name="a955d6badefbe1678311bf61b4c0dddd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a955d6badefbe1678311bf61b4c0dddd9">&#9670;&#160;</a></span>integrateUsingShape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mantid::MDAlgorithms::Integrate3DEvents::integrateUsingShape </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dc/df9/classMantid_1_1DataObjects_1_1PeakShapeEllipsoid.html">Mantid::DataObjects::PeakShapeEllipsoid</a> &amp;&#160;</td>
+          <td class="paramname"><em>shape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Mantid::Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>peak_q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>inti</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>sigi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Integrate a peak using a shape supplied by the caller (e.g. </p>
+<p>Integrate a peak using a fixed ellipsoidal shape, rather than fitting one from the events themselves.</p>
+<p>from an already-integrated PeaksWorkspace) instead of one fit from the events, used exactly as supplied and centered on peak_q.</p>
+<p>The shape's directions and radii (peak and background) are used exactly as supplied, centered on peak_q.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>The ellipsoid shape (directions, peak radii, background inner/outer radii) to integrate with. </td></tr>
+    <tr><td class="paramname">peak_q</td><td>Q-vector at which to center the shape. </td></tr>
+    <tr><td class="paramname">inti</td><td>Returns the net (background-subtracted) integrated intensity. </td></tr>
+    <tr><td class="paramname">sigi</td><td>Returns the standard deviation of inti. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00425">425</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/dcb/PeakShapeEllipsoid_8cpp_source.html#l00032">Mantid::DataObjects::PeakShapeEllipsoid::abcRadii()</a>, <a class="el" href="../../d1/dcb/PeakShapeEllipsoid_8cpp_source.html#l00034">Mantid::DataObjects::PeakShapeEllipsoid::abcRadiiBackgroundInner()</a>, <a class="el" href="../../d1/dcb/PeakShapeEllipsoid_8cpp_source.html#l00036">Mantid::DataObjects::PeakShapeEllipsoid::abcRadiiBackgroundOuter()</a>, <a class="el" href="../../d1/dcb/PeakShapeEllipsoid_8cpp_source.html#l00038">Mantid::DataObjects::PeakShapeEllipsoid::directions()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00674">getEvents()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00216">m_useOnePercentBackgroundCorrection</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00876">numInEllipsoid()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00912">numInEllipsoidBkg()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/df1/IntegratePeaksShapeMD_8cpp_source.html#l00104">Mantid::MDAlgorithms::IntegratePeaksShapeMD::exec()</a>.</p>
+
+</div>
+</div>
+<a id="a802140c1cc3335874d344207d1742f29" name="a802140c1cc3335874d344207d1742f29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a802140c1cc3335874d344207d1742f29">&#9670;&#160;</a></span>integrateUsingShapeProfileFit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mantid::MDAlgorithms::Integrate3DEvents::integrateUsingShapeProfileFit </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dc/df9/classMantid_1_1DataObjects_1_1PeakShapeEllipsoid.html">Mantid::DataObjects::PeakShapeEllipsoid</a> &amp;&#160;</td>
+          <td class="paramname"><em>shape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Mantid::Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>peak_q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>adjustCenter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Mantid::Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>center</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>inti</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>sigi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Integrate a peak using a shape supplied by the caller, by maximizing the Poisson log-likelihood of a Gaussian peak (amplitude fit) plus a flat background rate against the raw events, instead of counting events inside/outside ellipsoidal boundaries. </p>
+<p>Fits a Gaussian peak and constant background within the search radius and returns the integrated Gaussian intensity.</p>
+<p>The shape's peak radii are interpreted as the Gaussian's standard deviations (1-sigma) along its principal axes; the shape's background radii are not used, since the background rate is fit directly instead. shape.translation() seeds the fit center (an offset from peak_q), so a previously found correction is honored rather than discarded. If adjustCenter is true, also refines the center by a bounded, coordinate-ascent Gauss-Newton step (capped at one standard deviation of incremental shift from shape.translation()) &ndash; a slight correction, not a free centroid search. center returns the offset from peak_q actually used for the fit (unchanged from shape.translation() if adjustCenter is false), for the caller to persist as the output shape's translation if it wants to.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>Ellipsoidal peak shape; its principal radii define the Gaussian standard deviations. shape.translation() seeds the fit center (offset from peak_q), so a previously found correction is honored and further refined rather than discarded. </td></tr>
+    <tr><td class="paramname">peak_q</td><td>Q-vector used as the reference peak center. </td></tr>
+    <tr><td class="paramname">adjustCenter</td><td>Whether to refine the peak center during fitting. </td></tr>
+    <tr><td class="paramname">center</td><td>Receives the center offset from peak_q actually used for the fit: shape.translation() unchanged if adjustCenter is false, or the refined offset (capped at one standard deviation of incremental shift from shape.translation()) if true. </td></tr>
+    <tr><td class="paramname">inti</td><td>Receives the fitted integrated peak intensity. </td></tr>
+    <tr><td class="paramname">sigi</td><td>Receives the standard deviation of the fitted intensity. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00473">473</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/dcb/PeakShapeEllipsoid_8cpp_source.html#l00032">Mantid::DataObjects::PeakShapeEllipsoid::abcRadii()</a>, <a class="el" href="../../d1/dcb/PeakShapeEllipsoid_8cpp_source.html#l00038">Mantid::DataObjects::PeakShapeEllipsoid::directions()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00674">getEvents()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00212">m_radius</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00269">Mantid::Kernel::V3D::norm()</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00280">Mantid::Kernel::V3D::scalar_prod()</a>, and <a class="el" href="../../d1/dcb/PeakShapeEllipsoid_8cpp_source.html#l00040">Mantid::DataObjects::PeakShapeEllipsoid::translation()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/df1/IntegratePeaksShapeMD_8cpp_source.html#l00104">Mantid::MDAlgorithms::IntegratePeaksShapeMD::exec()</a>.</p>
 
 </div>
 </div>
@@ -1531,9 +1688,25 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00205">205</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p>Integrate a weak peak using a shape from a library peak, scaling the shape by the fractional intensity from the library peak. </p>
+<p>Integrates a weak peak using a supplied ellipsoidal shape and peak fraction.</p>
+<p>Applies background subtraction, detector-edge correction, and fractional-intensity scaling before returning the scaled integration shape.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">params</td><td>Integration settings used to determine radius factors and detector-edge corrections. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">shape</td><td>Supplied peak and background ellipsoid. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">libPeak</td><td>Tuple containing the peak fraction, its uncertainty, and the maximum peak width. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">peak_q</td><td>Peak center in Q-space. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">inti</td><td>Integrated peak intensity. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">sigi</td><td>Uncertainty of the integrated peak intensity. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The scaled peak shape, or a no-shape result when no events are available. </dd></dl>
 
-<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01169">calculateRadiusFactors()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00345">correctForDetectorEdges()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00028">Mantid::MDAlgorithms::IntegrationParameters::E1Vectors</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00326">getEvents()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00167">m_useOnePercentBackgroundCorrection</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00528">numInEllipsoid()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00564">numInEllipsoidBkg()</a>, and <a class="el" href="../../db/d13/SpecialCoordinateSystem_8h_source.html#l00014">Mantid::Kernel::QLab</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00221">221</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01517">calculateRadiusFactors()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00693">correctForDetectorEdges()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00045">Mantid::MDAlgorithms::IntegrationParameters::E1Vectors</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00674">getEvents()</a>, <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00216">m_useOnePercentBackgroundCorrection</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00876">numInEllipsoid()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00912">numInEllipsoidBkg()</a>, and <a class="el" href="../../db/d13/SpecialCoordinateSystem_8h_source.html#l00014">Mantid::Kernel::QLab</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00110">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::exec()</a>.</p>
 
@@ -1592,9 +1765,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00626">626</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00974">974</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00413">ellipseIntegrateEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00462">ellipseIntegrateModEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00264">estimateSignalToNoiseRatio()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00127">integrateStrongPeak()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00761">ellipseIntegrateEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00810">ellipseIntegrateModEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00612">estimateSignalToNoiseRatio()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00129">integrateStrongPeak()</a>.</p>
 
 </div>
 </div>
@@ -1651,11 +1824,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Then number of events that are in or on the specified ellipsoid. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00528">528</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00876">876</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00037">count</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01053">ellipseIntegrateEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00264">estimateSignalToNoiseRatio()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00127">integrateStrongPeak()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00205">integrateWeakPeak()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01401">ellipseIntegrateEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00612">estimateSignalToNoiseRatio()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00129">integrateStrongPeak()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00425">integrateUsingShape()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00221">integrateWeakPeak()</a>.</p>
 
 </div>
 </div>
@@ -1726,11 +1899,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Then number of events that are in or on the specified ellipsoid. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00564">564</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00912">912</a> of file <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html">Integrate3DEvents.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00037">count</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01053">ellipseIntegrateEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00264">estimateSignalToNoiseRatio()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00127">integrateStrongPeak()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00205">integrateWeakPeak()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01401">ellipseIntegrateEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00612">estimateSignalToNoiseRatio()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00129">integrateStrongPeak()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00425">integrateUsingShape()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00221">integrateWeakPeak()</a>.</p>
 
 </div>
 </div>
@@ -1755,9 +1928,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00166">166</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00215">215</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00847">getHklMnpKey()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00740">getHklMnpKey2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01195">getHklMnpKey()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01088">getHklMnpKey2()</a>.</p>
 
 </div>
 </div>
@@ -1781,9 +1954,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00160">160</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00209">209</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00948">addEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00986">addModEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00413">ellipseIntegrateEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00462">ellipseIntegrateModEvents()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00326">getEvents()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01296">addEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01334">addModEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00761">ellipseIntegrateEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00810">ellipseIntegrateModEvents()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00674">getEvents()</a>.</p>
 
 </div>
 </div>
@@ -1807,9 +1980,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00162">162</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00211">211</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00847">getHklMnpKey()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00740">getHklMnpKey2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01195">getHklMnpKey()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01088">getHklMnpKey2()</a>.</p>
 
 </div>
 </div>
@@ -1833,9 +2006,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00159">159</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00208">208</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00948">addEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00986">addModEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00048">Integrate3DEvents()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00082">Integrate3DEvents()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01296">addEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01334">addModEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00050">Integrate3DEvents()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00084">Integrate3DEvents()</a>.</p>
 
 </div>
 </div>
@@ -1859,9 +2032,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00163">163</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00212">212</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00948">addEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00986">addModEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01053">ellipseIntegrateEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00413">ellipseIntegrateEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00462">ellipseIntegrateModEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00847">getHklMnpKey()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00740">getHklMnpKey2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01296">addEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01334">addModEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01401">ellipseIntegrateEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00761">ellipseIntegrateEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00810">ellipseIntegrateModEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01195">getHklMnpKey()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01088">getHklMnpKey2()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00473">integrateUsingShapeProfileFit()</a>.</p>
 
 </div>
 </div>
@@ -1885,9 +2058,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00161">161</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00210">210</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00948">addEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00986">addModEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00831">getHklKey()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00847">getHklMnpKey()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01296">addEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01334">addModEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01179">getHklKey()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01195">getHklMnpKey()</a>.</p>
 
 </div>
 </div>
@@ -1913,9 +2086,9 @@ Private Attributes</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">      <span class="keyword">true</span></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00167">167</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00216">216</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01053">ellipseIntegrateEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00264">estimateSignalToNoiseRatio()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00127">integrateStrongPeak()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00205">integrateWeakPeak()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01401">ellipseIntegrateEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00612">estimateSignalToNoiseRatio()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00129">integrateStrongPeak()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00425">integrateUsingShape()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00221">integrateWeakPeak()</a>.</p>
 
 </div>
 </div>
@@ -1939,9 +2112,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00165">165</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00214">214</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00116">addEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00326">getEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00847">getHklMnpKey()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00740">getHklMnpKey2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00118">addEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00674">getEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01195">getHklMnpKey()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01088">getHklMnpKey2()</a>.</p>
 
 </div>
 </div>
@@ -1965,9 +2138,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00164">164</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html#l00213">213</a> of file <a class="el" href="../../d4/dcf/Integrate3DEvents_8h_source.html">Integrate3DEvents.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00986">addModEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00462">ellipseIntegrateModEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00847">getHklMnpKey()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00740">getHklMnpKey2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01334">addModEvent()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l00810">ellipseIntegrateModEvents()</a>, <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01195">getHklMnpKey()</a>, and <a class="el" href="../../dd/d8e/Integrate3DEvents_8cpp_source.html#l01088">getHklMnpKey2()</a>.</p>
 
 </div>
 </div>

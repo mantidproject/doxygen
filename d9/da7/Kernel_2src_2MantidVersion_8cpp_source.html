@@ -150,7 +150,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>Types::Core::DateAndTime create_releaseDateAndTime() {</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keyword">const</span> std::string REVISION_DATE{<span class="stringliteral">&quot;Fri, 11 Sep 2026 11:03:30 +0100&quot;</span>};</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keyword">const</span> std::string REVISION_DATE{<span class="stringliteral">&quot;Fri, 11 Sep 2026 12:03:36 -0400&quot;</span>};</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  Types::Core::DateAndTime release;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="comment">// cppcheck-suppress knownConditionTrueFalse</span></div>
@@ -199,8 +199,8 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="keyword">const</span> std::string DOI{<span class="stringliteral">&quot;https://doi.org/10.1016/j.nima.2014.07.029&quot;</span>};</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="keyword">const</span> std::string VERSION_FULL{<span class="stringliteral">&quot;0.0.0&quot;</span>};</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keyword">const</span> std::string VERSION_SHORT{<span class="stringliteral">&quot;0.0&quot;</span>};</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keyword">const</span> std::string REVISION_SHORT{<span class="stringliteral">&quot;ga1adf250&quot;</span>};</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="keyword">const</span> std::string REVISION_FULL{<span class="stringliteral">&quot;a1adf2503df4b20b272b9bde68108ac7e9de9ccf&quot;</span>};</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keyword">const</span> std::string REVISION_SHORT{<span class="stringliteral">&quot;g14849b82&quot;</span>};</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="keyword">const</span> std::string REVISION_FULL{<span class="stringliteral">&quot;14849b82cd8b8d9d5f3dccb233576a0118b8634d&quot;</span>};</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="keyword">const</span> Types::Core::DateAndTime REVISION_DATE_AND_TIME = create_releaseDateAndTime();</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>} <span class="comment">// namespace</span></div>
@@ -239,7 +239,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> minorVersion = std::stoul(<a class="code hl_function" href="../../d1/d24/classMantid_1_1Kernel_1_1MantidVersion.html#a09d477d24792b65be4f4add2ab69f0d0">version</a>.minor);</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  std::stringstream nextMinorVersionLabel;</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  nextMinorVersionLabel &lt;&lt; <a class="code hl_function" href="../../d1/d24/classMantid_1_1Kernel_1_1MantidVersion.html#a09d477d24792b65be4f4add2ab69f0d0">version</a>.major &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; minorVersion + 1 &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; <span class="stringliteral">&quot;0&quot;</span>;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  nextMinorVersionLabel &lt;&lt; <a class="code hl_function" href="../../d1/d24/classMantid_1_1Kernel_1_1MantidVersion.html#a09d477d24792b65be4f4add2ab69f0d0">version</a>.major &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; minorVersion + 1 &lt;&lt; <span class="stringliteral">&quot;.0&quot;</span>;</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  <span class="keywordflow">return</span> nextMinorVersionLabel.str();</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>}</div>
