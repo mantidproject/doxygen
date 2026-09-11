@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mantid: Framework/DataHandling/src/LoadRaw3.cpp File Reference</title>
+<title>Mantid: Framework/DataHandling/src/InstrumentSpectraMapping.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -90,30 +90,26 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
-  <div class="headertitle"><div class="title">LoadRaw3.cpp File Reference</div></div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">InstrumentSpectraMapping.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d2/de9/LoadRaw3_8h_source.html">MantidDataHandling/LoadRaw3.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d8/dfd/isisraw2_8h_source.html">LoadRaw/isisraw2.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d1/d17/FileProperty_8h_source.html">MantidAPI/FileProperty.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d5/db4/RegisterFileLoader_8h_source.html">MantidAPI/RegisterFileLoader.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d4/dbc/SpectraAxis_8h_source.html">MantidAPI/SpectraAxis.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d4/db1/SpectrumDetectorMapping_8h_source.html">MantidAPI/SpectrumDetectorMapping.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d6/d38/WorkspaceGroup__fwd_8h_source.html">MantidAPI/WorkspaceGroup_fwd.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d7/db2/InstrumentSpectraMapping_8h_source.html">MantidDataHandling/InstrumentSpectraMapping.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../db/d11/LoadLog_8h_source.html">MantidDataHandling/LoadLog.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d2/d95/Workspace2D_8h_source.html">MantidDataObjects/Workspace2D.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../df/da4/ArrayProperty_8h_source.html">MantidKernel/ArrayProperty.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dd/d4d/BoundedValidator_8h_source.html">MantidKernel/BoundedValidator.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d1/dbc/ConfigService_8h_source.html">MantidKernel/ConfigService.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dc/d96/ListValidator_8h_source.html">MantidKernel/ListValidator.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d3/dfd/UnitFactory_8h_source.html">MantidKernel/UnitFactory.h</a>&quot;</code><br />
-<code>#include &lt;cmath&gt;</code><br />
-<code>#include &lt;cstdio&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d7/db2/InstrumentSpectraMapping_8h_source.html">MantidDataHandling/InstrumentSpectraMapping.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/d36/Algorithm_8h_source.html">MantidAPI/Algorithm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/d7b/ISpectrum_8h_source.html">MantidAPI/ISpectrum.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html">MantidAPI/MatrixWorkspace.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/db2/Workspace_8h_source.html">MantidAPI/Workspace.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/db3/WorkspaceGroup_8h_source.html">MantidAPI/WorkspaceGroup.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/d0a/Instrument_8h_source.html">MantidGeometry/Instrument.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/da4/Logger_8h_source.html">MantidKernel/Logger.h</a>&quot;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;unordered_set&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div>
-<p><a href="../../d4/da5/LoadRaw3_8cpp_source.html">Go to the source code of this file.</a></p>
+<p><a href="../../db/dce/InstrumentSpectraMapping_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -122,6 +118,15 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d8/d23/namespaceMantid_1_1DataHandling" id="r_d8/d23/namespaceMantid_1_1DataHandling"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d23/namespaceMantid_1_1DataHandling.html">Mantid::DataHandling</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a1723a6350b2b986c3d0235baaac9d328" id="r_a1723a6350b2b986c3d0235baaac9d328"><td class="memItemLeft" align="right" valign="top">MANTID_DATAHANDLING_DLL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d23/namespaceMantid_1_1DataHandling.html#a1723a6350b2b986c3d0235baaac9d328">Mantid::DataHandling::correctLoadedWorkspaces</a> (const <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html">API::Algorithm</a> &amp;loader, <a class="el" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html">Kernel::Logger</a> &amp;log)</td></tr>
+<tr class="memdesc:a1723a6350b2b986c3d0235baaac9d328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies correctSpectraMapping to whichever workspaces a loader declared: its output, every period of a multiperiod group, and any separately loaded monitor workspace.  <br /></td></tr>
+<tr class="separator:a1723a6350b2b986c3d0235baaac9d328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a07f678bbef024a482c92b8f4d28009" id="r_a3a07f678bbef024a482c92b8f4d28009"><td class="memItemLeft" align="right" valign="top">MANTID_DATAHANDLING_DLL bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d23/namespaceMantid_1_1DataHandling.html#a3a07f678bbef024a482c92b8f4d28009">Mantid::DataHandling::correctSpectraMapping</a> (<a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html">API::MatrixWorkspace</a> &amp;<a class="el" href="../../dc/dd8/IndexPeaks_8cpp.html#af6254baf8945f24221a11ff9da209153">workspace</a>, <a class="el" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html">Kernel::Logger</a> &amp;log)</td></tr>
+<tr class="memdesc:a3a07f678bbef024a482c92b8f4d28009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Corrects spectrum-to-detector mappings for files that use detector IDs not recognized by the instrument definition file.  <br /></td></tr>
+<tr class="separator:a3a07f678bbef024a482c92b8f4d28009"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -916,6 +916,12 @@ Functions</h2></td></tr>
 <tr class="separator:a69b9ac77d61dade124922e2a1273c33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6c258ac5c91d78b53bb0783331ccf24" id="r_ad6c258ac5c91d78b53bb0783331ccf24"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d23/namespaceMantid_1_1DataHandling.html#ad6c258ac5c91d78b53bb0783331ccf24">compare</a> (const <a class="el" href="../../d8/d23/namespaceMantid_1_1DataHandling.html#a1921adc6af2f6b58c033d84b747bb3a4">mypair</a> &amp;<a class="el" href="../../d8/d6b/LineProfile_8cpp.html#a5eeeb20fab9ff0f54568882b94d57921">left</a>, const <a class="el" href="../../d8/d23/namespaceMantid_1_1DataHandling.html#a1921adc6af2f6b58c033d84b747bb3a4">mypair</a> &amp;<a class="el" href="../../d8/d6b/LineProfile_8cpp.html#ab833bacb3fa8d1a189efcbba74f10fa1">right</a>)</td></tr>
 <tr class="separator:ad6c258ac5c91d78b53bb0783331ccf24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1723a6350b2b986c3d0235baaac9d328" id="r_a1723a6350b2b986c3d0235baaac9d328"><td class="memItemLeft" align="right" valign="top">MANTID_DATAHANDLING_DLL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d23/namespaceMantid_1_1DataHandling.html#a1723a6350b2b986c3d0235baaac9d328">correctLoadedWorkspaces</a> (const <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html">API::Algorithm</a> &amp;loader, <a class="el" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html">Kernel::Logger</a> &amp;log)</td></tr>
+<tr class="memdesc:a1723a6350b2b986c3d0235baaac9d328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies correctSpectraMapping to whichever workspaces a loader declared: its output, every period of a multiperiod group, and any separately loaded monitor workspace.  <br /></td></tr>
+<tr class="separator:a1723a6350b2b986c3d0235baaac9d328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a07f678bbef024a482c92b8f4d28009" id="r_a3a07f678bbef024a482c92b8f4d28009"><td class="memItemLeft" align="right" valign="top">MANTID_DATAHANDLING_DLL bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d23/namespaceMantid_1_1DataHandling.html#a3a07f678bbef024a482c92b8f4d28009">correctSpectraMapping</a> (<a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html">API::MatrixWorkspace</a> &amp;<a class="el" href="../../dc/dd8/IndexPeaks_8cpp.html#af6254baf8945f24221a11ff9da209153">workspace</a>, <a class="el" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html">Kernel::Logger</a> &amp;log)</td></tr>
+<tr class="memdesc:a3a07f678bbef024a482c92b8f4d28009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Corrects spectrum-to-detector mappings for files that use detector IDs not recognized by the instrument definition file.  <br /></td></tr>
+<tr class="separator:a3a07f678bbef024a482c92b8f4d28009"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd7e2dec8b08cc4382cebcd33c48220e" id="r_abd7e2dec8b08cc4382cebcd33c48220e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d22/namespaceMantid_1_1DataObjects.html#a3b90cd1b914ff14260f22d73f6a54129">DataObjects::TableWorkspace_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d23/namespaceMantid_1_1DataHandling.html#abd7e2dec8b08cc4382cebcd33c48220e">createTimeZeroTable</a> (const size_t numSpec, const std::vector&lt; double &gt; &amp;timeZeros)</td></tr>
 <tr class="memdesc:abd7e2dec8b08cc4382cebcd33c48220e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a timezero table for the loaded detectors.  <br /></td></tr>
 <tr class="separator:abd7e2dec8b08cc4382cebcd33c48220e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1170,6 +1176,11 @@ Variables</h2></td></tr>
 <tr class="separator:a71e6119b42c3a97c80cf3661cb670f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bd2cde12bfed7285654662b7c09e1c2" id="r_a2bd2cde12bfed7285654662b7c09e1c2"><td class="memItemLeft" align="right" valign="top">constexpr char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d23/namespaceMantid_1_1DataHandling.html#a2bd2cde12bfed7285654662b7c09e1c2">SelectDetectorTubesStr</a> [] = &quot;SelectDetectorTubes&quot;</td></tr>
 <tr class="separator:a2bd2cde12bfed7285654662b7c09e1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93a1423fc6beb8e2260c8bfb9b2d1a6d" id="r_a93a1423fc6beb8e2260c8bfb9b2d1a6d"><td class="memItemLeft" align="right" valign="top">MANTID_DATAHANDLING_DLL const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d23/namespaceMantid_1_1DataHandling.html#a93a1423fc6beb8e2260c8bfb9b2d1a6d">SPECTRA_MAP_FROM_INSTRUMENT</a> = &quot;instrument&quot;</td></tr>
+<tr class="separator:a93a1423fc6beb8e2260c8bfb9b2d1a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c6a50a8b063a143cc09ad441c8a37aa" id="r_a6c6a50a8b063a143cc09ad441c8a37aa"><td class="memItemLeft" align="right" valign="top">MANTID_DATAHANDLING_DLL const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d23/namespaceMantid_1_1DataHandling.html#a6c6a50a8b063a143cc09ad441c8a37aa">SPECTRA_MAP_SOURCE</a> = &quot;spectra-map-source&quot;</td></tr>
+<tr class="memdesc:a6c6a50a8b063a143cc09ad441c8a37aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The specific instrument parameter and target value that enables the correction.  <br /></td></tr>
+<tr class="separator:a6c6a50a8b063a143cc09ad441c8a37aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17949775abe05faee6d0a342f9f45dfc" id="r_a17949775abe05faee6d0a342f9f45dfc"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d23/namespaceMantid_1_1DataHandling.html#a17949775abe05faee6d0a342f9f45dfc">STRING</a> = 's'</td></tr>
 <tr class="separator:a17949775abe05faee6d0a342f9f45dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca96b77d33c1737b7b2eedd8b31548c1" id="r_aca96b77d33c1737b7b2eedd8b31548c1"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d23/namespaceMantid_1_1DataHandling.html#aca96b77d33c1737b7b2eedd8b31548c1">TOF_CONVERSION</a> = .1</td></tr>
@@ -2032,6 +2043,96 @@ template&lt;typename T &gt; </div>
 <p class="reference">References <a class="el" href="../../d8/d6b/LineProfile_8cpp_source.html#l00080">left</a>, and <a class="el" href="../../d8/d6b/LineProfile_8cpp_source.html#l00081">right</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/d1c/LoadSassena_8cpp_source.html#l00092">Mantid::DataHandling::LoadSassena::loadQvectors()</a>, and <a class="el" href="../../d2/d34/API_2src_2Sample_8cpp_source.html#l00478">Mantid::API::Sample::operator==()</a>.</p>
+
+</div>
+</div>
+<a id="a1723a6350b2b986c3d0235baaac9d328" name="a1723a6350b2b986c3d0235baaac9d328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1723a6350b2b986c3d0235baaac9d328">&#9670;&#160;</a></span>correctLoadedWorkspaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mantid::DataHandling::correctLoadedWorkspaces </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html">API::Algorithm</a> &amp;&#160;</td>
+          <td class="paramname"><em>loader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html">Kernel::Logger</a> &amp;&#160;</td>
+          <td class="paramname"><em>log</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Applies correctSpectraMapping to whichever workspaces a loader declared: its output, every period of a multiperiod group, and any separately loaded monitor workspace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loader</td><td>:: the loader that has just finished executing </td></tr>
+    <tr><td class="paramname">log</td><td>:: logger used to report what was corrected </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dce/InstrumentSpectraMapping_8cpp_source.html#l00100">100</a> of file <a class="el" href="../../db/dce/InstrumentSpectraMapping_8cpp_source.html">InstrumentSpectraMapping.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01915">Mantid::API::Algorithm::existsProperty()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01983">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../dc/dd8/IndexPeaks_8cpp_source.html#l00116">workspace</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../de/dcc/LoadISISNexus2_8cpp_source.html#l00139">Mantid::DataHandling::LoadISISNexus2::exec()</a>, and <a class="el" href="../../d4/da5/LoadRaw3_8cpp_source.html#l00084">Mantid::DataHandling::LoadRaw3::exec()</a>.</p>
+
+</div>
+</div>
+<a id="a3a07f678bbef024a482c92b8f4d28009" name="a3a07f678bbef024a482c92b8f4d28009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a07f678bbef024a482c92b8f4d28009">&#9670;&#160;</a></span>correctSpectraMapping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mantid::DataHandling::correctSpectraMapping </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html">API::MatrixWorkspace</a> &amp;&#160;</td>
+          <td class="paramname"><em>workspace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html">Kernel::Logger</a> &amp;&#160;</td>
+          <td class="paramname"><em>log</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Corrects spectrum-to-detector mappings for files that use detector IDs not recognized by the instrument definition file. </p>
+<p>If an unknown detector ID is found, it maps the spectrum to a detector ID that matches its spectrum number instead.</p>
+<p>This behavior is enabled by setting the SPECTRA_MAP_SOURCE parameter to SPECTRA_MAP_FROM_INSTRUMENT, and only applies if unknown detector IDs are present. Valid mappings are left untouched.</p>
+<p>The OSIRIS silicon analyser is the case this was written for and currently the only user: its electronics read each pixel out as eight hardware elements, which they sum into one spectrum while still recording all eight element numbers in the file's table.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">workspace</td><td>:: the workspace to correct (must already hold the instrument) </td></tr>
+    <tr><td class="paramname">log</td><td>:: logger used to report what was corrected </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>whether any spectrum was changed </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dce/InstrumentSpectraMapping_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../db/dce/InstrumentSpectraMapping_8cpp_source.html">InstrumentSpectraMapping.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, and <a class="el" href="../../dc/dd8/IndexPeaks_8cpp_source.html#l00116">workspace</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d74/LoadMappingTable_8cpp_source.html#l00032">Mantid::DataHandling::LoadMappingTable::exec()</a>.</p>
 
 </div>
 </div>
@@ -3549,7 +3650,7 @@ template&lt;typename T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d54/DataBlockComposite_8cpp_source.html#l00233">Mantid::DataHandling::DataBlockComposite::addDataBlock()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d2/d09/DataBlock_8cpp_source.html#l00037">Mantid::DataHandling::DataBlock::setMaxSpectrumID()</a>, and <a class="el" href="../../d2/d09/DataBlock_8cpp_source.html#l00033">Mantid::DataHandling::DataBlock::setMinSpectrumID()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/dcc/LoadISISNexus2_8cpp_source.html#l00415">Mantid::DataHandling::LoadISISNexus2::checkOptionalProperties()</a>, and <a class="el" href="../../de/dcc/LoadISISNexus2_8cpp_source.html#l00942">Mantid::DataHandling::LoadISISNexus2::findSpectraDetRangeInFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/dcc/LoadISISNexus2_8cpp_source.html#l00420">Mantid::DataHandling::LoadISISNexus2::checkOptionalProperties()</a>, and <a class="el" href="../../de/dcc/LoadISISNexus2_8cpp_source.html#l00947">Mantid::DataHandling::LoadISISNexus2::findSpectraDetRangeInFile()</a>.</p>
 
 </div>
 </div>
@@ -5439,6 +5540,40 @@ template&lt;typename T &gt; </div>
 <p class="definition">Definition at line <a class="el" href="../../d0/ddb/LoadPLNnxs_8cpp_source.html#l00043">43</a> of file <a class="el" href="../../d0/ddb/LoadPLNnxs_8cpp_source.html">LoadPLNnxs.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/ddb/LoadPLNnxs_8cpp_source.html#l00543">Mantid::DataHandling::LoadPLNnxs::exec()</a>, <a class="el" href="../../dd/d89/LoadEMU_8cpp_source.html#l00674">Mantid::DataHandling::LoadEMU&lt; FD &gt;::exec()</a>, <a class="el" href="../../df/d03/LoadPLN_8cpp_source.html#l00521">Mantid::DataHandling::LoadPLN::exec()</a>, <a class="el" href="../../df/d03/LoadPLN_8cpp_source.html#l00448">Mantid::DataHandling::LoadPLN::init()</a>, <a class="el" href="../../d0/ddb/LoadPLNnxs_8cpp_source.html#l00477">Mantid::DataHandling::LoadPLNnxs::init()</a>, and <a class="el" href="../../dd/d89/LoadEMU_8cpp_source.html#l00586">Mantid::DataHandling::LoadEMU&lt; FD &gt;::init()</a>.</p>
+
+</div>
+</div>
+<a id="a93a1423fc6beb8e2260c8bfb9b2d1a6d" name="a93a1423fc6beb8e2260c8bfb9b2d1a6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93a1423fc6beb8e2260c8bfb9b2d1a6d">&#9670;&#160;</a></span>SPECTRA_MAP_FROM_INSTRUMENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string Mantid::DataHandling::SPECTRA_MAP_FROM_INSTRUMENT = &quot;instrument&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/dce/InstrumentSpectraMapping_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../db/dce/InstrumentSpectraMapping_8cpp_source.html">InstrumentSpectraMapping.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6c6a50a8b063a143cc09ad441c8a37aa" name="a6c6a50a8b063a143cc09ad441c8a37aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c6a50a8b063a143cc09ad441c8a37aa">&#9670;&#160;</a></span>SPECTRA_MAP_SOURCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string Mantid::DataHandling::SPECTRA_MAP_SOURCE = &quot;spectra-map-source&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The specific instrument parameter and target value that enables the correction. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dce/InstrumentSpectraMapping_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../db/dce/InstrumentSpectraMapping_8cpp_source.html">InstrumentSpectraMapping.cpp</a>.</p>
 
 </div>
 </div>
