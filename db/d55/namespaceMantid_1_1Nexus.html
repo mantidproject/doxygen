@@ -92,6 +92,7 @@ $(function() {
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#concepts">Concepts</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -177,11 +178,18 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wrapper class for managing HDF5 object handles (hid_t).  <a href="../../d9/d37/classMantid_1_1Nexus_1_1UniqueID.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="concepts" name="concepts"></a>
+Concepts</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dbe/conceptMantid_1_1Nexus_1_1entryTypes.html">entryTypes</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a3cf93bf8bd38df667ed445dfda644c71" id="r_a3cf93bf8bd38df667ed445dfda644c71"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a3cf93bf8bd38df667ed445dfda644c71"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html#a3cf93bf8bd38df667ed445dfda644c71">container_T</a> = std::conditional_t&lt; std::is_same&lt; T, bool &gt;{}, boost::container::vector&lt; bool &gt;, std::vector&lt; T &gt; &gt;</td></tr>
 <tr class="separator:a3cf93bf8bd38df667ed445dfda644c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b4c2bea146c8fab63cac10519438c06" id="r_a4b4c2bea146c8fab63cac10519438c06"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html#a4b4c2bea146c8fab63cac10519438c06">CRS_t</a> = <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a85aeddf46f680dce99de77cfa0495e2c">NexusDescriptorLazy::CacheReturnStatus_t</a></td></tr>
+<tr class="separator:a4b4c2bea146c8fab63cac10519438c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a992b7f61bc72ed17c40896f7a307e26a" id="r_a992b7f61bc72ed17c40896f7a307e26a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a7f81cce70fb546af88da24d9285d3c1c">hsize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html#a992b7f61bc72ed17c40896f7a307e26a">dimsize_t</a></td></tr>
 <tr class="separator:a992b7f61bc72ed17c40896f7a307e26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a854287744374f990d85531000c8f07cc" id="r_a854287744374f990d85531000c8f07cc"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html#a992b7f61bc72ed17c40896f7a307e26a">dimsize_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html#a854287744374f990d85531000c8f07cc">DimVector</a></td></tr>
@@ -222,6 +230,8 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a801114fa6ed2ca62e369d96699373d36" id="r_a801114fa6ed2ca62e369d96699373d36"><td class="memItemLeft" align="right" valign="top">std::string const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html#a801114fa6ed2ca62e369d96699373d36">GROUP_CLASS_SPEC</a> (&quot;NX_class&quot;)</td></tr>
 <tr class="separator:a801114fa6ed2ca62e369d96699373d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af34b7c1757e7d2302d3bb82507d1bfab" id="r_af34b7c1757e7d2302d3bb82507d1bfab"><td class="memItemLeft" align="right" valign="top">template MANTID_NEXUS_DLL std::pair&lt; std::string, <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a85aeddf46f680dce99de77cfa0495e2c">NexusDescriptorLazy::CacheReturnStatus_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html#af34b7c1757e7d2302d3bb82507d1bfab">NexusDescriptorLazy::getDataValue&lt; std::string &gt;</a> (const std::string &amp;) const</td></tr>
+<tr class="separator:af34b7c1757e7d2302d3bb82507d1bfab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbe321a7e14101bc90a373c364989ffa" id="r_acbe321a7e14101bc90a373c364989ffa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html#a5c39d45f74e6fcc109848052674643a5">NXDimArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html#acbe321a7e14101bc90a373c364989ffa">nxdimArray</a> (const <a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html#a854287744374f990d85531000c8f07cc">DimVector</a> &amp;xd)</td></tr>
 <tr class="separator:acbe321a7e14101bc90a373c364989ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af01bc92d184b0048390605d4160268f8" id="r_af01bc92d184b0048390605d4160268f8"><td class="memItemLeft" align="right" valign="top">MANTID_NEXUS_DLL std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html#af01bc92d184b0048390605d4160268f8">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="../../d4/dcc/classMantid_1_1Nexus_1_1Exception.html">Exception</a> &amp;err)</td></tr>
@@ -273,6 +283,22 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d86/NexusClasses_8h_source.html#l00193">193</a> of file <a class="el" href="../../d4/d86/NexusClasses_8h_source.html">NexusClasses.h</a>.</p>
+
+</div>
+</div>
+<a id="a4b4c2bea146c8fab63cac10519438c06" name="a4b4c2bea146c8fab63cac10519438c06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b4c2bea146c8fab63cac10519438c06">&#9670;&#160;</a></span>CRS_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a85aeddf46f680dce99de77cfa0495e2c">Mantid::Nexus::CRS_t</a> = typedef <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a85aeddf46f680dce99de77cfa0495e2c">NexusDescriptorLazy::CacheReturnStatus_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00267">267</a> of file <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html">NexusDescriptorLazy.cpp</a>.</p>
 
 </div>
 </div>
@@ -531,6 +557,24 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="af34b7c1757e7d2302d3bb82507d1bfab" name="af34b7c1757e7d2302d3bb82507d1bfab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af34b7c1757e7d2302d3bb82507d1bfab">&#9670;&#160;</a></span>NexusDescriptorLazy::getDataValue&lt; std::string &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template MANTID_NEXUS_DLL std::pair&lt; std::string, <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a85aeddf46f680dce99de77cfa0495e2c">NexusDescriptorLazy::CacheReturnStatus_t</a> &gt; <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a7249eb1618a64da9385a3bd330bfe1d1">Mantid::Nexus::NexusDescriptorLazy::getDataValue</a>&lt; std::string &gt; </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="acbe321a7e14101bc90a373c364989ffa" name="acbe321a7e14101bc90a373c364989ffa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acbe321a7e14101bc90a373c364989ffa">&#9670;&#160;</a></span>nxdimArray()</h2>
 
@@ -615,7 +659,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../d5/dd6/LoadMcStas_8cpp_source.html#l00519">Mantid::DataHandling::LoadMcStas::confidence()</a>, <a class="el" href="../../d5/d1a/LoadNXSPE_8cpp_source.html#l00070">Mantid::DataHandling::LoadNXSPE::confidence()</a>, <a class="el" href="../../d5/dd6/LoadMcStas_8cpp_source.html#l00075">Mantid::DataHandling::LoadMcStas::exec()</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00160">Mantid::Nexus::NexusDescriptorLazy::getStrData()</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00068">Mantid::Nexus::NexusDescriptorLazy::isEntry()</a>, and <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00177">Mantid::Nexus::NexusDescriptorLazy::loadGroups()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00269">Mantid::Nexus::NexusDescriptorLazy::_getDataValue()</a>, <a class="el" href="../../d5/dd6/LoadMcStas_8cpp_source.html#l00519">Mantid::DataHandling::LoadMcStas::confidence()</a>, <a class="el" href="../../d5/d1a/LoadNXSPE_8cpp_source.html#l00070">Mantid::DataHandling::LoadNXSPE::confidence()</a>, <a class="el" href="../../d5/dd6/LoadMcStas_8cpp_source.html#l00075">Mantid::DataHandling::LoadMcStas::exec()</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00160">Mantid::Nexus::NexusDescriptorLazy::getStrData()</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00068">Mantid::Nexus::NexusDescriptorLazy::isEntry()</a>, and <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00177">Mantid::Nexus::NexusDescriptorLazy::loadGroups()</a>.</p>
 
 </div>
 </div>

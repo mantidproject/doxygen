@@ -90,6 +90,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -100,6 +101,23 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a85aeddf46f680dce99de77cfa0495e2c" id="r_a85aeddf46f680dce99de77cfa0495e2c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a85aeddf46f680dce99de77cfa0495e2c">CacheReturnStatus_t</a> { <br />
+&#160;&#160;<a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a85aeddf46f680dce99de77cfa0495e2cafe93fedaf67dd890d738d5a68b91f3ba">NXFOUND</a>
+, <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a85aeddf46f680dce99de77cfa0495e2ca6ee8accc992c66e253e70015698e0f7d">NXCACHED</a>
+, <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a85aeddf46f680dce99de77cfa0495e2caec9672276a300b10594ffdd406437d9b">NXNOT_DATASET</a>
+, <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a85aeddf46f680dce99de77cfa0495e2ca196a5a178ad109a44ca07986fe1a45b8">NXDATASET_NOT_FOUND</a>
+, <br />
+&#160;&#160;<a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a85aeddf46f680dce99de77cfa0495e2ca39b1c07a4e48f6efe05be153d833a891">NXWRONG_TYPE</a>
+, <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a85aeddf46f680dce99de77cfa0495e2ca5cd8e4ea78a8f7b0a211224c1993b9ac">NXERROR</a>
+, <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a85aeddf46f680dce99de77cfa0495e2ca814f7de136c2e49566588d4ec417299b">NXUNSET</a>
+<br />
+ }</td></tr>
+<tr class="separator:a85aeddf46f680dce99de77cfa0495e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac239812b0b68e0b37349869bd56d89dd" id="r_ac239812b0b68e0b37349869bd56d89dd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#ac239812b0b68e0b37349869bd56d89dd">CacheValue_t</a> = std::variant&lt; float, double, int8_t, uint8_t, int16_t, uint16_t, int32_t, uint32_t, int64_t, uint64_t, std::string, <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a85aeddf46f680dce99de77cfa0495e2c">CacheReturnStatus_t</a> &gt;</td></tr>
+<tr class="separator:ac239812b0b68e0b37349869bd56d89dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abfefac42897eba5abee402196e9ba299" id="r_abfefac42897eba5abee402196e9ba299"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#abfefac42897eba5abee402196e9ba299">classTypeExists</a> (std::string const &amp;classType) const</td></tr>
@@ -120,6 +138,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5c90a9ce6af831a319d2c8d44fe43651" id="r_a5c90a9ce6af831a319d2c8d44fe43651"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a5c90a9ce6af831a319d2c8d44fe43651">getAllEntries</a> () const noexcept</td></tr>
 <tr class="memdesc:a5c90a9ce6af831a319d2c8d44fe43651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const reference of the internal map holding all entries in the <a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html" title="Header for a base Nexus::Exception.">Nexus</a> HDF5 file.  <br /></td></tr>
 <tr class="separator:a5c90a9ce6af831a319d2c8d44fe43651"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7249eb1618a64da9385a3bd330bfe1d1" id="r_a7249eb1618a64da9385a3bd330bfe1d1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a7249eb1618a64da9385a3bd330bfe1d1"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; T, <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a85aeddf46f680dce99de77cfa0495e2c">NexusDescriptorLazy::CacheReturnStatus_t</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a7249eb1618a64da9385a3bd330bfe1d1">getDataValue</a> (const std::string &amp;datasetAddress) const</td></tr>
+<tr class="memdesc:a7249eb1618a64da9385a3bd330bfe1d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value of an entry in the <a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html" title="Header for a base Nexus::Exception.">Nexus</a> file.  <br /></td></tr>
+<tr class="separator:a7249eb1618a64da9385a3bd330bfe1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a5b52dabba3d0b851b7ea33145ac6e5" id="r_a1a5b52dabba3d0b851b7ea33145ac6e5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a1a5b52dabba3d0b851b7ea33145ac6e5">getStrData</a> (std::string const &amp;address)</td></tr>
 <tr class="memdesc:a1a5b52dabba3d0b851b7ea33145ac6e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get string data from a dataset at address.  <br /></td></tr>
 <tr class="separator:a1a5b52dabba3d0b851b7ea33145ac6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,6 +173,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a336d6ecb29492bcc007df9c6084c14ec" id="r_a336d6ecb29492bcc007df9c6084c14ec"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#ac239812b0b68e0b37349869bd56d89dd">CacheValue_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a336d6ecb29492bcc007df9c6084c14ec">_getDataValue</a> (const std::string &amp;datasetAddress) const</td></tr>
+<tr class="separator:a336d6ecb29492bcc007df9c6084c14ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af13c490f3f438166be416ed8a94e4a4f" id="r_af13c490f3f438166be416ed8a94e4a4f"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#af13c490f3f438166be416ed8a94e4a4f">initAllEntries</a> ()</td></tr>
 <tr class="memdesc:af13c490f3f438166be416ed8a94e4a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets m_allEntries, called in HDF5 constructor.  <br /></td></tr>
 <tr class="separator:af13c490f3f438166be416ed8a94e4a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,6 +200,9 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a1332b191408e320214936e1cac2d3137"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50c61dc456c86fd5ddec0091cd7edee0" id="r_a50c61dc456c86fd5ddec0091cd7edee0"><td class="memItemLeft" align="right" valign="top">std::pair&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a50c61dc456c86fd5ddec0091cd7edee0">m_firstEntryNameType</a></td></tr>
 <tr class="separator:a50c61dc456c86fd5ddec0091cd7edee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af953011bab2ce7956eef1d7c26111fd9" id="r_af953011bab2ce7956eef1d7c26111fd9"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#ac239812b0b68e0b37349869bd56d89dd">CacheValue_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#af953011bab2ce7956eef1d7c26111fd9">m_readEntries</a></td></tr>
+<tr class="memdesc:af953011bab2ce7956eef1d7c26111fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">the map of all read entry values that have been checked  <br /></td></tr>
+<tr class="separator:af953011bab2ce7956eef1d7c26111fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6761416f84fda6a81873b10981a65601" id="r_a6761416f84fda6a81873b10981a65601"><td class="memItemLeft" align="right" valign="top">std::shared_mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a6761416f84fda6a81873b10981a65601">m_readNexusMutex</a></td></tr>
 <tr class="memdesc:a6761416f84fda6a81873b10981a65601"><td class="mdescLeft">&#160;</td><td class="mdescRight">mutex to protect reading from file after initialization in const methods  <br /></td></tr>
 <tr class="separator:a6761416f84fda6a81873b10981a65601"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,8 +212,59 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00021">21</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00026">26</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ac239812b0b68e0b37349869bd56d89dd" name="ac239812b0b68e0b37349869bd56d89dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac239812b0b68e0b37349869bd56d89dd">&#9670;&#160;</a></span>CacheValue_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#ac239812b0b68e0b37349869bd56d89dd">Mantid::Nexus::NexusDescriptorLazy::CacheValue_t</a> =  std::variant&lt;float, double, int8_t, uint8_t, int16_t, uint16_t, int32_t, uint32_t, int64_t, uint64_t, std::string, <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a85aeddf46f680dce99de77cfa0495e2c">CacheReturnStatus_t</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00039">39</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a85aeddf46f680dce99de77cfa0495e2c" name="a85aeddf46f680dce99de77cfa0495e2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85aeddf46f680dce99de77cfa0495e2c">&#9670;&#160;</a></span>CacheReturnStatus_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a85aeddf46f680dce99de77cfa0495e2c">Mantid::Nexus::NexusDescriptorLazy::CacheReturnStatus_t</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a85aeddf46f680dce99de77cfa0495e2cafe93fedaf67dd890d738d5a68b91f3ba" name="a85aeddf46f680dce99de77cfa0495e2cafe93fedaf67dd890d738d5a68b91f3ba"></a>NXFOUND&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a85aeddf46f680dce99de77cfa0495e2ca6ee8accc992c66e253e70015698e0f7d" name="a85aeddf46f680dce99de77cfa0495e2ca6ee8accc992c66e253e70015698e0f7d"></a>NXCACHED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a85aeddf46f680dce99de77cfa0495e2caec9672276a300b10594ffdd406437d9b" name="a85aeddf46f680dce99de77cfa0495e2caec9672276a300b10594ffdd406437d9b"></a>NXNOT_DATASET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a85aeddf46f680dce99de77cfa0495e2ca196a5a178ad109a44ca07986fe1a45b8" name="a85aeddf46f680dce99de77cfa0495e2ca196a5a178ad109a44ca07986fe1a45b8"></a>NXDATASET_NOT_FOUND&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a85aeddf46f680dce99de77cfa0495e2ca39b1c07a4e48f6efe05be153d833a891" name="a85aeddf46f680dce99de77cfa0495e2ca39b1c07a4e48f6efe05be153d833a891"></a>NXWRONG_TYPE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a85aeddf46f680dce99de77cfa0495e2ca5cd8e4ea78a8f7b0a211224c1993b9ac" name="a85aeddf46f680dce99de77cfa0495e2ca5cd8e4ea78a8f7b0a211224c1993b9ac"></a>NXERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a85aeddf46f680dce99de77cfa0495e2ca814f7de136c2e49566588d4ec417299b" name="a85aeddf46f680dce99de77cfa0495e2ca814f7de136c2e49566588d4ec417299b"></a>NXUNSET&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00029">29</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8c2a9c344a4f3a7b9f03dd5d245e66bf" name="a8c2a9c344a4f3a7b9f03dd5d245e66bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c2a9c344a4f3a7b9f03dd5d245e66bf">&#9670;&#160;</a></span>NexusDescriptorLazy() <span class="overload">[1/4]</span></h2>
 
@@ -320,6 +398,38 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a336d6ecb29492bcc007df9c6084c14ec" name="a336d6ecb29492bcc007df9c6084c14ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a336d6ecb29492bcc007df9c6084c14ec">&#9670;&#160;</a></span>_getDataValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#ac239812b0b68e0b37349869bd56d89dd">NexusDescriptorLazy::CacheValue_t</a> Mantid::Nexus::NexusDescriptorLazy::_getDataValue </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>datasetAddress</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00269">269</a> of file <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html">NexusDescriptorLazy.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00099">isEntry()</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00151">m_fileID</a>, <a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html#a42b4430236e9d51e14f1061b1f593a25">Mantid::Nexus::SCIENTIFIC_DATA_SET()</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00304">getDataValue()</a>.</p>
+
+</div>
+</div>
 <a id="abfefac42897eba5abee402196e9ba299" name="abfefac42897eba5abee402196e9ba299"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abfefac42897eba5abee402196e9ba299">&#9670;&#160;</a></span>classTypeExists()</h2>
 
@@ -348,7 +458,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00112">112</a> of file <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html">NexusDescriptorLazy.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00136">m_allEntries</a>, and <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00139">m_readNexusMutex</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00165">m_allEntries</a>, and <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00168">m_readNexusMutex</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../de/dfb/LoadEventNexus_8cpp_source.html#l00117">Mantid::DataHandling::LoadEventNexus::confidence()</a>, and <a class="el" href="../../dc/d8b/LoadMD_8cpp_source.html#l00063">Mantid::MDAlgorithms::LoadMD::confidence()</a>.</p>
 
@@ -385,7 +495,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00119">119</a> of file <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html">NexusDescriptorLazy.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00081">isEntry()</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00136">m_allEntries</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00139">m_readNexusMutex</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00099">isEntry()</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00165">m_allEntries</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00168">m_readNexusMutex</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d79/LoadTOFRawNexus_8cpp_source.html#l00077">Mantid::DataHandling::LoadTOFRawNexus::confidence()</a>.</p>
 
@@ -417,7 +527,7 @@ Private Attributes</h2></td></tr>
 <p>Access the file extension. </p>
 <p>Defined as the string after and including the last period character </p><dl class="section return"><dt>Returns</dt><dd>A reference to a const string containing the file extension </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00055">55</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00073">73</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/d89/LoadEMU_8cpp_source.html#l01186">Mantid::DataHandling::LoadEMUHdf::confidence()</a>, <a class="el" href="../../df/d1c/LoadNXcanSAS_8cpp_source.html#l00461">Mantid::DataHandling::NXcanSAS::LoadNXcanSAS::confidence()</a>, <a class="el" href="../../df/d03/LoadPLN_8cpp_source.html#l00816">Mantid::DataHandling::LoadPLN::confidence()</a>, and <a class="el" href="../../d0/ddb/LoadPLNnxs_8cpp_source.html#l00849">Mantid::DataHandling::LoadPLNnxs::confidence()</a>.</p>
 
@@ -449,7 +559,7 @@ Private Attributes</h2></td></tr>
 <p>Returns a constant reference to the current file name. </p>
 <dl class="section return"><dt>Returns</dt><dd>A reference to a const string containing the file name </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00048">48</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00066">66</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
 
 </div>
 </div>
@@ -478,7 +588,7 @@ Private Attributes</h2></td></tr>
 
 <p>Returns the name &amp; type of the first entry in the file. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00058">58</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00076">76</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/d7e/LoadMcStasNexus_8cpp_source.html#l00045">Mantid::DataHandling::LoadMcStasNexus::confidence()</a>, and <a class="el" href="../../da/d0c/LoadEmptyInstrument_8cpp_source.html#l00239">Mantid::DataHandling::LoadEmptyInstrument::runLoadIDFFromNexus()</a>.</p>
 
@@ -513,9 +623,42 @@ Private Attributes</h2></td></tr>
   value: group class (e.g., NXentry, NXlog)
 </pre> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00072">72</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00090">90</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d1c/LoadNXcanSAS_8cpp_source.html#l00461">Mantid::DataHandling::NXcanSAS::LoadNXcanSAS::confidence()</a>, and <a class="el" href="../../d5/d1a/LoadNXSPE_8cpp_source.html#l00070">Mantid::DataHandling::LoadNXSPE::confidence()</a>.</p>
+
+</div>
+</div>
+<a id="a7249eb1618a64da9385a3bd330bfe1d1" name="a7249eb1618a64da9385a3bd330bfe1d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7249eb1618a64da9385a3bd330bfe1d1">&#9670;&#160;</a></span>getDataValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">template MANTID_NEXUS_DLL std::pair&lt; float, <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a85aeddf46f680dce99de77cfa0495e2c">NexusDescriptorLazy::CacheReturnStatus_t</a> &gt; Mantid::Nexus::NexusDescriptorLazy::getDataValue&lt; float &gt; </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>datasetAddress</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the value of an entry in the <a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html" title="Header for a base Nexus::Exception.">Nexus</a> file. </p>
+<p>Only single values are returned, either numeric or strings. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">datasetAddress</td><td>full address for an entry name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pair&lt;value, status&gt; where value is valid only if the return status is FOUND or CACHED </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00304">304</a> of file <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html">NexusDescriptorLazy.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00269">_getDataValue()</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00174">m_readEntries</a>, <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a85aeddf46f680dce99de77cfa0495e2ca6ee8accc992c66e253e70015698e0f7d">NXCACHED</a>, <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a85aeddf46f680dce99de77cfa0495e2cafe93fedaf67dd890d738d5a68b91f3ba">NXFOUND</a>, <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#a85aeddf46f680dce99de77cfa0495e2ca39b1c07a4e48f6efe05be153d833a891">NXWRONG_TYPE</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
 </div>
 </div>
@@ -546,7 +689,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00160">160</a> of file <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html">NexusDescriptorLazy.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00081">isEntry()</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00122">m_fileID</a>, and <a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html#a42b4430236e9d51e14f1061b1f593a25">Mantid::Nexus::SCIENTIFIC_DATA_SET()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00099">isEntry()</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00151">m_fileID</a>, and <a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html#a42b4430236e9d51e14f1061b1f593a25">Mantid::Nexus::SCIENTIFIC_DATA_SET()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/dd6/LoadMcStas_8cpp_source.html#l00519">Mantid::DataHandling::LoadMcStas::confidence()</a>, <a class="el" href="../../dc/d25/LoadMuonNexusV2_8cpp_source.html#l00056">Mantid::DataHandling::LoadMuonNexusV2::confidence()</a>, <a class="el" href="../../df/d1c/LoadNXcanSAS_8cpp_source.html#l00461">Mantid::DataHandling::NXcanSAS::LoadNXcanSAS::confidence()</a>, and <a class="el" href="../../d5/d1a/LoadNXSPE_8cpp_source.html#l00070">Mantid::DataHandling::LoadNXSPE::confidence()</a>.</p>
 
@@ -572,7 +715,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00138">138</a> of file <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html">NexusDescriptorLazy.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00122">m_fileID</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00139">m_readNexusMutex</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00125">m_rootAttrs</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00151">m_fileID</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00168">m_readNexusMutex</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00154">m_rootAttrs</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
 </div>
 </div>
@@ -604,7 +747,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00213">213</a> of file <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html">NexusDescriptorLazy.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d0f/H5Util_8cpp_source.html#l00119">Mantid::Nexus::H5Util::defaultFileAcc()</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00027">ENTRY_DEPTH</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00026">INIT_DEPTH</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00028">INSTR_DEPTH</a>, <a class="el" href="../../db/d34/UniqueID_8h_source.html#l00053">Mantid::Nexus::Hdf5ID&lt; D &gt;::isValid()</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00177">loadGroups()</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00122">m_fileID</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00118">m_filename</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00127">m_firstEntryNameType</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00029">SPECIAL_ADDRESS</a>, and <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00030">UNKNOWN_CLASS</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d0f/H5Util_8cpp_source.html#l00119">Mantid::Nexus::H5Util::defaultFileAcc()</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00027">ENTRY_DEPTH</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00026">INIT_DEPTH</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00028">INSTR_DEPTH</a>, <a class="el" href="../../db/d34/UniqueID_8h_source.html#l00053">Mantid::Nexus::Hdf5ID&lt; D &gt;::isValid()</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00177">loadGroups()</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00151">m_fileID</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00147">m_filename</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00156">m_firstEntryNameType</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00029">SPECIAL_ADDRESS</a>, and <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00030">UNKNOWN_CLASS</a>.</p>
 
 </div>
 </div>
@@ -635,7 +778,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html">NexusDescriptorLazy.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00136">m_allEntries</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00142">m_allMisses</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00122">m_fileID</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00139">m_readNexusMutex</a>, and <a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html#a42b4430236e9d51e14f1061b1f593a25">Mantid::Nexus::SCIENTIFIC_DATA_SET()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00165">m_allEntries</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00171">m_allMisses</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00151">m_fileID</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00168">m_readNexusMutex</a>, and <a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html#a42b4430236e9d51e14f1061b1f593a25">Mantid::Nexus::SCIENTIFIC_DATA_SET()</a>.</p>
 
 </div>
 </div>
@@ -683,9 +826,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true: entryName exists for a groupClass, otherwise false </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00081">81</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00099">99</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00119">classTypeExistsChild()</a>, <a class="el" href="../../dd/d89/LoadEMU_8cpp_source.html#l01186">Mantid::DataHandling::LoadEMUHdf::confidence()</a>, <a class="el" href="../../de/dfb/LoadEventNexus_8cpp_source.html#l00117">Mantid::DataHandling::LoadEventNexus::confidence()</a>, <a class="el" href="../../d2/dca/LoadILLIndirect2_8cpp_source.html#l00062">Mantid::DataHandling::LoadILLIndirect2::confidence()</a>, <a class="el" href="../../d7/d3f/LoadILLSALSA_8cpp_source.html#l00037">Mantid::DataHandling::LoadILLSALSA::confidence()</a>, <a class="el" href="../../d7/da4/LoadILLSANS_8cpp_source.html#l00072">Mantid::DataHandling::LoadILLSANS::confidence()</a>, <a class="el" href="../../de/dcc/LoadISISNexus2_8cpp_source.html#l00082">Mantid::DataHandling::LoadISISNexus2::confidence()</a>, <a class="el" href="../../d5/dd6/LoadMcStas_8cpp_source.html#l00519">Mantid::DataHandling::LoadMcStas::confidence()</a>, <a class="el" href="../../d7/d7e/LoadMcStasNexus_8cpp_source.html#l00045">Mantid::DataHandling::LoadMcStasNexus::confidence()</a>, <a class="el" href="../../d7/d7a/LoadMLZ_8cpp_source.html#l00102">Mantid::DataHandling::LoadMLZ::confidence()</a>, <a class="el" href="../../dc/d25/LoadMuonNexusV2_8cpp_source.html#l00056">Mantid::DataHandling::LoadMuonNexusV2::confidence()</a>, <a class="el" href="../../dd/d65/LoadNexusProcessed_8cpp_source.html#l00197">Mantid::DataHandling::LoadNexusProcessed::confidence()</a>, <a class="el" href="../../da/dc8/LoadNexusProcessed2_8cpp_source.html#l00238">Mantid::DataHandling::LoadNexusProcessed2::confidence()</a>, <a class="el" href="../../d5/d1a/LoadNXSPE_8cpp_source.html#l00070">Mantid::DataHandling::LoadNXSPE::confidence()</a>, <a class="el" href="../../df/d03/LoadPLN_8cpp_source.html#l00816">Mantid::DataHandling::LoadPLN::confidence()</a>, <a class="el" href="../../d0/ddb/LoadPLNnxs_8cpp_source.html#l00849">Mantid::DataHandling::LoadPLNnxs::confidence()</a>, <a class="el" href="../../d0/d47/LoadSINQFocus_8cpp_source.html#l00064">Mantid::DataHandling::LoadSINQFocus::confidence()</a>, <a class="el" href="../../db/d79/LoadTOFRawNexus_8cpp_source.html#l00077">Mantid::DataHandling::LoadTOFRawNexus::confidence()</a>, <a class="el" href="../../dc/d8b/LoadMD_8cpp_source.html#l00063">Mantid::MDAlgorithms::LoadMD::confidence()</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00160">getStrData()</a>, and <a class="el" href="../../da/d0c/LoadEmptyInstrument_8cpp_source.html#l00239">Mantid::DataHandling::LoadEmptyInstrument::runLoadIDFFromNexus()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00269">_getDataValue()</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00119">classTypeExistsChild()</a>, <a class="el" href="../../dd/d89/LoadEMU_8cpp_source.html#l01186">Mantid::DataHandling::LoadEMUHdf::confidence()</a>, <a class="el" href="../../de/dfb/LoadEventNexus_8cpp_source.html#l00117">Mantid::DataHandling::LoadEventNexus::confidence()</a>, <a class="el" href="../../d2/dca/LoadILLIndirect2_8cpp_source.html#l00062">Mantid::DataHandling::LoadILLIndirect2::confidence()</a>, <a class="el" href="../../d7/d3f/LoadILLSALSA_8cpp_source.html#l00037">Mantid::DataHandling::LoadILLSALSA::confidence()</a>, <a class="el" href="../../d7/da4/LoadILLSANS_8cpp_source.html#l00072">Mantid::DataHandling::LoadILLSANS::confidence()</a>, <a class="el" href="../../de/dcc/LoadISISNexus2_8cpp_source.html#l00082">Mantid::DataHandling::LoadISISNexus2::confidence()</a>, <a class="el" href="../../d5/dd6/LoadMcStas_8cpp_source.html#l00519">Mantid::DataHandling::LoadMcStas::confidence()</a>, <a class="el" href="../../d7/d7e/LoadMcStasNexus_8cpp_source.html#l00045">Mantid::DataHandling::LoadMcStasNexus::confidence()</a>, <a class="el" href="../../d7/d7a/LoadMLZ_8cpp_source.html#l00102">Mantid::DataHandling::LoadMLZ::confidence()</a>, <a class="el" href="../../dc/d25/LoadMuonNexusV2_8cpp_source.html#l00056">Mantid::DataHandling::LoadMuonNexusV2::confidence()</a>, <a class="el" href="../../dd/d65/LoadNexusProcessed_8cpp_source.html#l00197">Mantid::DataHandling::LoadNexusProcessed::confidence()</a>, <a class="el" href="../../da/dc8/LoadNexusProcessed2_8cpp_source.html#l00238">Mantid::DataHandling::LoadNexusProcessed2::confidence()</a>, <a class="el" href="../../d5/d1a/LoadNXSPE_8cpp_source.html#l00070">Mantid::DataHandling::LoadNXSPE::confidence()</a>, <a class="el" href="../../df/d03/LoadPLN_8cpp_source.html#l00816">Mantid::DataHandling::LoadPLN::confidence()</a>, <a class="el" href="../../d0/ddb/LoadPLNnxs_8cpp_source.html#l00849">Mantid::DataHandling::LoadPLNnxs::confidence()</a>, <a class="el" href="../../d0/d47/LoadSINQFocus_8cpp_source.html#l00064">Mantid::DataHandling::LoadSINQFocus::confidence()</a>, <a class="el" href="../../db/d79/LoadTOFRawNexus_8cpp_source.html#l00077">Mantid::DataHandling::LoadTOFRawNexus::confidence()</a>, <a class="el" href="../../dc/d8b/LoadMD_8cpp_source.html#l00063">Mantid::MDAlgorithms::LoadMD::confidence()</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00160">getStrData()</a>, and <a class="el" href="../../da/d0c/LoadEmptyInstrument_8cpp_source.html#l00239">Mantid::DataHandling::LoadEmptyInstrument::runLoadIDFFromNexus()</a>.</p>
 
 </div>
 </div>
@@ -737,7 +880,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00177">177</a> of file <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html">NexusDescriptorLazy.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/d34/UniqueID_8h_source.html#l00049">Mantid::Nexus::Hdf5ID&lt; D &gt;::get()</a>, <a class="el" href="../../db/d34/UniqueID_8h_source.html#l00053">Mantid::Nexus::Hdf5ID&lt; D &gt;::isValid()</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00177">loadGroups()</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00122">m_fileID</a>, and <a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html#a42b4430236e9d51e14f1061b1f593a25">Mantid::Nexus::SCIENTIFIC_DATA_SET()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00177">loadGroups()</a>, <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00151">m_fileID</a>, and <a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html#a42b4430236e9d51e14f1061b1f593a25">Mantid::Nexus::SCIENTIFIC_DATA_SET()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00213">initAllEntries()</a>, and <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00177">loadGroups()</a>.</p>
 
@@ -821,7 +964,7 @@ Private Attributes</h2></td></tr>
   key: group address
   value: group class (e.g. NXentry, NXlog)
 </pre> 
-<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00136">136</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00165">165</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00112">classTypeExists()</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00119">classTypeExistsChild()</a>, and <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00068">isEntry()</a>.</p>
 
@@ -849,7 +992,7 @@ Private Attributes</h2></td></tr>
 
 <p>the set of non-existent entries that have been checked </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00142">142</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00171">171</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00068">isEntry()</a>.</p>
 
@@ -877,7 +1020,7 @@ Private Attributes</h2></td></tr>
 
 <p>Extension. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00120">120</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00149">149</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
 
 </div>
 </div>
@@ -903,9 +1046,9 @@ Private Attributes</h2></td></tr>
 
 <p>HDF5 File Handle. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00122">122</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00151">151</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00160">getStrData()</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00138">hasRootAttr()</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00213">initAllEntries()</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00068">isEntry()</a>, and <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00177">loadGroups()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00269">_getDataValue()</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00160">getStrData()</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00138">hasRootAttr()</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00213">initAllEntries()</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00068">isEntry()</a>, and <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00177">loadGroups()</a>.</p>
 
 </div>
 </div>
@@ -931,7 +1074,7 @@ Private Attributes</h2></td></tr>
 
 <p><a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html" title="Header for a base Nexus::Exception.">Nexus</a> HDF5 file name. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00118">118</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00147">147</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00213">initAllEntries()</a>.</p>
 
@@ -957,9 +1100,37 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00127">127</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00156">156</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00213">initAllEntries()</a>.</p>
+
+</div>
+</div>
+<a id="af953011bab2ce7956eef1d7c26111fd9" name="af953011bab2ce7956eef1d7c26111fd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af953011bab2ce7956eef1d7c26111fd9">&#9670;&#160;</a></span>m_readEntries</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, <a class="el" href="../../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#ac239812b0b68e0b37349869bd56d89dd">CacheValue_t</a>&gt; Mantid::Nexus::NexusDescriptorLazy::m_readEntries</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>the map of all read entry values that have been checked </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00174">174</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00304">getDataValue()</a>.</p>
 
 </div>
 </div>
@@ -985,7 +1156,7 @@ Private Attributes</h2></td></tr>
 
 <p>mutex to protect reading from file after initialization in const methods </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00139">139</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00168">168</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00112">classTypeExists()</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00119">classTypeExistsChild()</a>, <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00138">hasRootAttr()</a>, and <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00068">isEntry()</a>.</p>
 
@@ -1014,7 +1185,7 @@ Private Attributes</h2></td></tr>
 <p>Root attributes cache. </p>
 <p>This is mutable because it is modified in a const method. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00125">125</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html#l00154">154</a> of file <a class="el" href="../../d7/d53/NexusDescriptorLazy_8h_source.html">NexusDescriptorLazy.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d25/NexusDescriptorLazy_8cpp_source.html#l00138">hasRootAttr()</a>.</p>
 
