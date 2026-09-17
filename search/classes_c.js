@@ -126,7 +126,7 @@ var searchData=
   ['loadpln_123',['LoadPLN',['../de/de1/classMantid_1_1DataHandling_1_1LoadPLN.html',1,'Mantid::DataHandling']]],
   ['loadplnnxs_124',['LoadPLNnxs',['../d7/da0/classMantid_1_1DataHandling_1_1LoadPLNnxs.html',1,'Mantid::DataHandling']]],
   ['loadprenexus_125',['LoadPreNexus',['../df/d81/classMantid_1_1DataHandling_1_1LoadPreNexus.html',1,'Mantid::DataHandling']]],
-  ['loadprenexusmonitors_126',['loadprenexusmonitors',['../d0/db5/classMantid_1_1DataHandling_1_1LoadPreNexusMonitors.html',1,'Mantid::DataHandling::LoadPreNexusMonitors'],['../dd/d51/classMantid_1_1DataHandling_1_1LoadPreNeXusMonitors.html',1,'LoadPreNeXusMonitors']]],
+  ['loadprenexusmonitors_126',['loadprenexusmonitors',['../dd/d51/classMantid_1_1DataHandling_1_1LoadPreNeXusMonitors.html',1,'LoadPreNeXusMonitors'],['../d0/db5/classMantid_1_1DataHandling_1_1LoadPreNexusMonitors.html',1,'Mantid::DataHandling::LoadPreNexusMonitors']]],
   ['loadpsimuonbin_127',['LoadPSIMuonBin',['../dc/d36/classMantid_1_1DataHandling_1_1LoadPSIMuonBin.html',1,'Mantid::DataHandling']]],
   ['loadqkk_128',['LoadQKK',['../df/d18/classMantid_1_1DataHandling_1_1LoadQKK.html',1,'Mantid::DataHandling']]],
   ['loadraw3_129',['LoadRaw3',['../db/d07/classMantid_1_1DataHandling_1_1LoadRaw3.html',1,'Mantid::DataHandling']]],
