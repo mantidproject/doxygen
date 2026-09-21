@@ -101,9 +101,12 @@ $(function() {
 <code>#include &quot;<a class="el" href="../../dd/dae/IDTypes_8h_source.html">MantidGeometry/IDTypes.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d5/d64/IDetector_8h_source.html">MantidGeometry/IDetector.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d0/ddd/Parameter_8h_source.html">MantidGeometry/Instrument/Parameter.h</a>&quot;</code><br />
-<code>#include &quot;tbb/concurrent_unordered_map.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/dac/ParameterInfo_8h_source.html">MantidGeometry/Instrument/ParameterInfo.h</a>&quot;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;typeinfo&gt;</code><br />
+<code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="../../d9/d32/ParameterMap_8h_source.html">Go to the source code of this file.</a></p>
@@ -111,7 +114,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html">Mantid::Geometry::ParameterMap</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html" title="ParameterMap class.">ParameterMap</a> class.  <a href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d9/dc5/classMantid_1_1Geometry_1_1Parameter.html" title="Base class for parameters of an instrument.">Parameter</a> map iterator typedef.  <a href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -126,16 +129,11 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a17bb826b68cc5a7b9c5c3260cb230d69" id="r_a17bb826b68cc5a7b9c5c3260cb230d69"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a17bb826b68cc5a7b9c5c3260cb230d69">Mantid::Geometry::component_map_cit</a> = tbb::concurrent_unordered_multimap&lt; <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#aa5066a4c7d8266085b04b20f0a40ccf2">ComponentID</a>, std::shared_ptr&lt; <a class="el" href="../../d9/dc5/classMantid_1_1Geometry_1_1Parameter.html">Parameter</a> &gt; &gt;::const_iterator</td></tr>
-<tr class="separator:a17bb826b68cc5a7b9c5c3260cb230d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34861c99cd26d60141d4c6c40fd8c27d" id="r_a34861c99cd26d60141d4c6c40fd8c27d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a34861c99cd26d60141d4c6c40fd8c27d">Mantid::Geometry::component_map_it</a> = tbb::concurrent_unordered_multimap&lt; <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#aa5066a4c7d8266085b04b20f0a40ccf2">ComponentID</a>, std::shared_ptr&lt; <a class="el" href="../../d9/dc5/classMantid_1_1Geometry_1_1Parameter.html">Parameter</a> &gt; &gt;::iterator</td></tr>
-<tr class="memdesc:a34861c99cd26d60141d4c6c40fd8c27d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d9/dc5/classMantid_1_1Geometry_1_1Parameter.html" title="Base class for parameters of an instrument.">Parameter</a> map iterator typedef.  <br /></td></tr>
-<tr class="separator:a34861c99cd26d60141d4c6c40fd8c27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af131a0413a43d7243e70591e0f603957" id="r_af131a0413a43d7243e70591e0f603957"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#af131a0413a43d7243e70591e0f603957">Mantid::Geometry::ParameterMap_const_sptr</a> = std::shared_ptr&lt; const <a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html">ParameterMap</a> &gt;</td></tr>
-<tr class="memdesc:af131a0413a43d7243e70591e0f603957"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html" title="ParameterMap class.">ParameterMap</a> constant shared pointer typedef.  <br /></td></tr>
+<tr class="memdesc:af131a0413a43d7243e70591e0f603957"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html" title="Parameter map iterator typedef.">ParameterMap</a> constant shared pointer typedef.  <br /></td></tr>
 <tr class="separator:af131a0413a43d7243e70591e0f603957"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a839f06158e59d954fb6b4a0ffc98b4f8" id="r_a839f06158e59d954fb6b4a0ffc98b4f8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a839f06158e59d954fb6b4a0ffc98b4f8">Mantid::Geometry::ParameterMap_sptr</a> = std::shared_ptr&lt; <a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html">ParameterMap</a> &gt;</td></tr>
-<tr class="memdesc:a839f06158e59d954fb6b4a0ffc98b4f8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html" title="ParameterMap class.">ParameterMap</a> shared pointer typedef.  <br /></td></tr>
+<tr class="memdesc:a839f06158e59d954fb6b4a0ffc98b4f8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html" title="Parameter map iterator typedef.">ParameterMap</a> shared pointer typedef.  <br /></td></tr>
 <tr class="separator:a839f06158e59d954fb6b4a0ffc98b4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

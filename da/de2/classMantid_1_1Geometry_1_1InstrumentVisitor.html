@@ -180,6 +180,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a3cf087f2bcfb5ee6d2d23e8134b83f9c" id="r_a3cf087f2bcfb5ee6d2d23e8134b83f9c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de2/classMantid_1_1Geometry_1_1InstrumentVisitor.html#a3cf087f2bcfb5ee6d2d23e8134b83f9c">commonRegistration</a> (const <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html">Mantid::Geometry::IComponent</a> &amp;component)</td></tr>
 <tr class="memdesc:a3cf087f2bcfb5ee6d2d23e8134b83f9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the common aspects relevant to all component types.  <br /></td></tr>
 <tr class="separator:a3cf087f2bcfb5ee6d2d23e8134b83f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae54ebce654a289395abebff9f8802128" id="r_ae54ebce654a289395abebff9f8802128"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../d8/d24/classMantid_1_1Geometry_1_1ParameterInfo.html">ParameterInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de2/classMantid_1_1Geometry_1_1InstrumentVisitor.html#ae54ebce654a289395abebff9f8802128">makeParameterInfo</a> () const</td></tr>
+<tr class="memdesc:ae54ebce654a289395abebff9f8802128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rekey the <a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html" title="Parameter map iterator typedef.">ParameterMap</a>'s parameters from legacy component pointers to component indices.  <br /></td></tr>
+<tr class="separator:ae54ebce654a289395abebff9f8802128"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafcbd6d4f0bdd19599e95182366cd733" id="r_aafcbd6d4f0bdd19599e95182366cd733"><td class="memItemLeft" align="right" valign="top">std::pair&lt; std::unique_ptr&lt; <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html">ComponentInfo</a> &gt;, std::unique_ptr&lt; <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html">DetectorInfo</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de2/classMantid_1_1Geometry_1_1InstrumentVisitor.html#aafcbd6d4f0bdd19599e95182366cd733">makeWrappers</a> () const</td></tr>
 <tr class="separator:aafcbd6d4f0bdd19599e95182366cd733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d12a373b57fa856eb5975713ecf2274" id="r_a4d12a373b57fa856eb5975713ecf2274"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de2/classMantid_1_1Geometry_1_1InstrumentVisitor.html#a4d12a373b57fa856eb5975713ecf2274">markAsSourceOrSample</a> (<a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html">Mantid::Geometry::IComponent</a> *componentId, const size_t componentIndex)</td></tr>
@@ -276,7 +279,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><p><a class="el" href="../../da/de2/classMantid_1_1Geometry_1_1InstrumentVisitor.html" title="InstrumentVisitor : Visitor for components with access to Info wrapping features.">InstrumentVisitor</a> : Visitor for components with access to Info wrapping features. </p>
 <p>This visitor ensures only minimal changes are required to any of the IComponent/Instrument1.0 hierachy in order to fully process it. It also eliminates the need for any dynamic casting. Note that <a class="el" href="../../da/de2/classMantid_1_1Geometry_1_1InstrumentVisitor.html" title="InstrumentVisitor : Visitor for components with access to Info wrapping features.">InstrumentVisitor</a> provides accessors for the client to extract visited information such as ComponentIDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00049">49</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00050">50</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1f8ed9950dbd707559e4a0b8df7d8c54" name="a1f8ed9950dbd707559e4a0b8df7d8c54"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f8ed9950dbd707559e4a0b8df7d8c54">&#9670;&#160;</a></span>InstrumentVisitor()</h2>
@@ -304,7 +307,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00090">90</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00784">Mantid::Geometry::ParameterMap::get()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00058">m_assemblySortedDetectorIndices</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00076">m_componentIdToIndexMap</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00097">m_instrument</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00052">m_orderedDetectorIds</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00100">m_pmap</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00106">m_sampleId</a>, and <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00103">m_sourceId</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00818">Mantid::Geometry::ParameterMap::get()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00059">m_assemblySortedDetectorIndices</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00077">m_componentIdToIndexMap</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00098">m_instrument</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00053">m_orderedDetectorIds</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00101">m_pmap</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00107">m_sampleId</a>, and <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00104">m_sourceId</a>.</p>
 
 </div>
 </div>
@@ -337,7 +340,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00147">147</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#afbed8261ade45e5adb24a7519c47c986">Mantid::Geometry::IComponent::getName()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a1df890cced40267900a821b0836a75e6">Mantid::Geometry::IComponent::getPos()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a575cdf2cce053f27ab53673e05a39cdc">Mantid::Geometry::IComponent::getRotation()</a>, <a class="el" href="../../df/d56/IComponent_8h_source.html#l00124">Mantid::Geometry::IComponent::getScaleFactor()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a48f1451daf9f607e13e04978da5af9d8">Mantid::Geometry::IComponent::getSideBySideViewPos()</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00055">m_componentIds</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00127">m_names</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00115">m_nullShape</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00100">m_pmap</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00082">m_positions</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00088">m_rotations</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00121">m_scaleFactors</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00118">m_shapes</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00321">markAsSourceOrSample()</a>, <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00044">Mantid::Kernel::toQuaterniond()</a>, <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00041">Mantid::Kernel::toVector2d()</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00038">Mantid::Kernel::toVector3d()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#afbed8261ade45e5adb24a7519c47c986">Mantid::Geometry::IComponent::getName()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a1df890cced40267900a821b0836a75e6">Mantid::Geometry::IComponent::getPos()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a575cdf2cce053f27ab53673e05a39cdc">Mantid::Geometry::IComponent::getRotation()</a>, <a class="el" href="../../df/d56/IComponent_8h_source.html#l00124">Mantid::Geometry::IComponent::getScaleFactor()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a48f1451daf9f607e13e04978da5af9d8">Mantid::Geometry::IComponent::getSideBySideViewPos()</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00056">m_componentIds</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00128">m_names</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00116">m_nullShape</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00101">m_pmap</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00083">m_positions</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00089">m_rotations</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00122">m_scaleFactors</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00119">m_shapes</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00321">markAsSourceOrSample()</a>, <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00044">Mantid::Kernel::toQuaterniond()</a>, <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00041">Mantid::Kernel::toVector2d()</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00038">Mantid::Kernel::toVector3d()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00167">registerComponentAssembly()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00204">registerGenericComponent()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00230">registerInfiniteComponent()</a>.</p>
 
@@ -363,9 +366,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00382">382</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00055">m_componentIds</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00056">m_componentIds</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00418">makeWrappers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00424">makeWrappers()</a>.</p>
 
 </div>
 </div>
@@ -386,9 +389,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00396">396</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00076">m_componentIdToIndexMap</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00077">m_componentIdToIndexMap</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00418">makeWrappers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00424">makeWrappers()</a>.</p>
 
 </div>
 </div>
@@ -409,9 +412,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00404">404</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00061">m_assemblySortedComponentIndices</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00058">m_assemblySortedDetectorIndices</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00067">m_children</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00073">m_componentRanges</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00124">m_componentType</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00070">m_detectorRanges</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00127">m_names</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00064">m_parentComponentIndices</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00133">m_pixelGridComponents</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00082">m_positions</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00088">m_rotations</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00112">m_sampleIndex</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00121">m_scaleFactors</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00130">m_sideBySideViewPositions</a>, and <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00109">m_sourceIndex</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00062">m_assemblySortedComponentIndices</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00059">m_assemblySortedDetectorIndices</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00068">m_children</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00074">m_componentRanges</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00125">m_componentType</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00071">m_detectorRanges</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00128">m_names</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00065">m_parentComponentIndices</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00134">m_pixelGridComponents</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00083">m_positions</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00089">m_rotations</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00113">m_sampleIndex</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00122">m_scaleFactors</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00131">m_sideBySideViewPositions</a>, and <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00110">m_sourceIndex</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00418">makeWrappers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00424">makeWrappers()</a>.</p>
 
 </div>
 </div>
@@ -432,9 +435,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00416">416</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00052">m_orderedDetectorIds</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00053">m_orderedDetectorIds</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00418">makeWrappers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00424">makeWrappers()</a>.</p>
 
 </div>
 </div>
@@ -455,9 +458,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00400">400</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00079">m_detectorIdToIndexMap</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00080">m_detectorIdToIndexMap</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00418">makeWrappers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00424">makeWrappers()</a>.</p>
 
 </div>
 </div>
@@ -478,9 +481,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00411">411</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00085">m_detectorPositions</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00091">m_detectorRotations</a>, and <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00094">m_monitorIndices</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00086">m_detectorPositions</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00092">m_detectorRotations</a>, and <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00095">m_monitorIndices</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00418">makeWrappers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00424">makeWrappers()</a>.</p>
 
 </div>
 </div>
@@ -502,6 +505,39 @@ Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00393">393</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00391">size()</a>.</p>
+
+</div>
+</div>
+<a id="ae54ebce654a289395abebff9f8802128" name="ae54ebce654a289395abebff9f8802128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae54ebce654a289395abebff9f8802128">&#9670;&#160;</a></span>makeParameterInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="../../d8/d24/classMantid_1_1Geometry_1_1ParameterInfo.html">ParameterInfo</a> &gt; Mantid::Geometry::InstrumentVisitor::makeParameterInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rekey the <a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html" title="Parameter map iterator typedef.">ParameterMap</a>'s parameters from legacy component pointers to component indices. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00419">419</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00077">m_componentIdToIndexMap</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00101">m_pmap</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00150">Mantid::Geometry::ParameterMap::rekey()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00424">makeWrappers()</a>.</p>
 
 </div>
 </div>
@@ -528,11 +564,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00418">418</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00424">424</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00382">componentIds()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00396">componentIdToIndexMap()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00404">componentInfo()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00416">detectorIds()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00400">detectorIdToIndexMap()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00411">detectorInfo()</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00097">m_instrument</a>, and <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00118">m_shapes</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00382">componentIds()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00396">componentIdToIndexMap()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00404">componentInfo()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00416">detectorIds()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00400">detectorIdToIndexMap()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00411">detectorInfo()</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00098">m_instrument</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00119">m_shapes</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00419">makeParameterInfo()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00125">Mantid::Geometry::InstrumentRayTracer::ensureOwnedInfoIsBuilt()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01457">Mantid::Geometry::Instrument::makeBeamline()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01475">Mantid::Geometry::Instrument::makeBeamlineNew()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00433">makeWrappers()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01444">Mantid::Geometry::Instrument::parseTreeAndCacheBeamline()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00125">Mantid::Geometry::InstrumentRayTracer::ensureOwnedInfoIsBuilt()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01457">Mantid::Geometry::Instrument::makeBeamline()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01475">Mantid::Geometry::Instrument::makeBeamlineNew()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00439">makeWrappers()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01444">Mantid::Geometry::Instrument::parseTreeAndCacheBeamline()</a>.</p>
 
 </div>
 </div>
@@ -570,9 +606,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00433">433</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00439">439</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/da6/ParComponentFactory_8cpp_source.html#l00043">Mantid::Geometry::ParComponentFactory::createInstrument()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00418">makeWrappers()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00138">walkInstrument()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/da6/ParComponentFactory_8cpp_source.html#l00043">Mantid::Geometry::ParComponentFactory::createInstrument()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00424">makeWrappers()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00138">walkInstrument()</a>.</p>
 
 </div>
 </div>
@@ -612,7 +648,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00321">321</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00106">m_sampleId</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00112">m_sampleIndex</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00103">m_sourceId</a>, and <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00109">m_sourceIndex</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00107">m_sampleId</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00113">m_sampleIndex</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00104">m_sourceId</a>, and <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00110">m_sourceIndex</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00147">commonRegistration()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00334">registerDetector()</a>.</p>
 
@@ -646,7 +682,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00167">167</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00147">commonRegistration()</a>, <a class="el" href="../../d7/d36/classMantid_1_1Geometry_1_1ICompAssembly.html#a4cb97da413b406f97b4a19baa11d4fef">Mantid::Geometry::ICompAssembly::getChildren()</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00061">m_assemblySortedComponentIndices</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00058">m_assemblySortedDetectorIndices</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00067">m_children</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00073">m_componentRanges</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00124">m_componentType</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00070">m_detectorRanges</a>, and <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00064">m_parentComponentIndices</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00147">commonRegistration()</a>, <a class="el" href="../../d7/d36/classMantid_1_1Geometry_1_1ICompAssembly.html#a4cb97da413b406f97b4a19baa11d4fef">Mantid::Geometry::ICompAssembly::getChildren()</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00062">m_assemblySortedComponentIndices</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00059">m_assemblySortedDetectorIndices</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00068">m_children</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00074">m_componentRanges</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00125">m_componentType</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00071">m_detectorRanges</a>, and <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00065">m_parentComponentIndices</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00280">registerGridBank()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00311">registerObjComponentAssembly()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00267">registerRectangularBank()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00304">registerStructuredBank()</a>.</p>
 
@@ -689,7 +725,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00334">334</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d65/LoadNexusProcessed_8cpp_source.html#l00079">detectorIndex</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html#a98c14db658ac2d5cc163147124199814">Mantid::Geometry::IDetector::getID()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#afbed8261ade45e5adb24a7519c47c986">Mantid::Geometry::IComponent::getName()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a1df890cced40267900a821b0836a75e6">Mantid::Geometry::IComponent::getPos()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a575cdf2cce053f27ab53673e05a39cdc">Mantid::Geometry::IComponent::getRotation()</a>, <a class="el" href="../../df/d56/IComponent_8h_source.html#l00124">Mantid::Geometry::IComponent::getScaleFactor()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a48f1451daf9f607e13e04978da5af9d8">Mantid::Geometry::IComponent::getSideBySideViewPos()</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00058">m_assemblySortedDetectorIndices</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00079">m_detectorIdToIndexMap</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00097">m_instrument</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00094">m_monitorIndices</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00100">m_pmap</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00321">markAsSourceOrSample()</a>, <a class="el" href="../../df/db2/classMantid_1_1Geometry_1_1IObjComponent.html#a28d8012bb2db57418115c8f11b3bc739">Mantid::Geometry::IObjComponent::shape()</a>, <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00044">Mantid::Kernel::toQuaterniond()</a>, <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00041">Mantid::Kernel::toVector2d()</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00038">Mantid::Kernel::toVector3d()</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d65/LoadNexusProcessed_8cpp_source.html#l00079">detectorIndex</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html#a98c14db658ac2d5cc163147124199814">Mantid::Geometry::IDetector::getID()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#afbed8261ade45e5adb24a7519c47c986">Mantid::Geometry::IComponent::getName()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a1df890cced40267900a821b0836a75e6">Mantid::Geometry::IComponent::getPos()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a575cdf2cce053f27ab53673e05a39cdc">Mantid::Geometry::IComponent::getRotation()</a>, <a class="el" href="../../df/d56/IComponent_8h_source.html#l00124">Mantid::Geometry::IComponent::getScaleFactor()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a48f1451daf9f607e13e04978da5af9d8">Mantid::Geometry::IComponent::getSideBySideViewPos()</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00059">m_assemblySortedDetectorIndices</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00080">m_detectorIdToIndexMap</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00098">m_instrument</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00095">m_monitorIndices</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00101">m_pmap</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00321">markAsSourceOrSample()</a>, <a class="el" href="../../df/db2/classMantid_1_1Geometry_1_1IObjComponent.html#a28d8012bb2db57418115c8f11b3bc739">Mantid::Geometry::IObjComponent::shape()</a>, <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00044">Mantid::Kernel::toQuaterniond()</a>, <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00041">Mantid::Kernel::toVector2d()</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00038">Mantid::Kernel::toVector3d()</a>.</p>
 
 </div>
 </div>
@@ -730,7 +766,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00204">204</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00147">commonRegistration()</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00061">m_assemblySortedComponentIndices</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00067">m_children</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00073">m_componentRanges</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00124">m_componentType</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00070">m_detectorRanges</a>, and <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00064">m_parentComponentIndices</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00147">commonRegistration()</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00062">m_assemblySortedComponentIndices</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00068">m_children</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00074">m_componentRanges</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00125">m_componentType</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00071">m_detectorRanges</a>, and <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00065">m_parentComponentIndices</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00256">registerGenericObjComponent()</a>.</p>
 
@@ -814,7 +850,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00280">280</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00052">m_orderedDetectorIds</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00167">registerComponentAssembly()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00053">m_orderedDetectorIds</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00167">registerComponentAssembly()</a>.</p>
 
 </div>
 </div>
@@ -855,7 +891,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00230">230</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00147">commonRegistration()</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00061">m_assemblySortedComponentIndices</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00067">m_children</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00073">m_componentRanges</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00124">m_componentType</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00070">m_detectorRanges</a>, and <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00064">m_parentComponentIndices</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00147">commonRegistration()</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00062">m_assemblySortedComponentIndices</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00068">m_children</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00074">m_componentRanges</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00125">m_componentType</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00071">m_detectorRanges</a>, and <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00065">m_parentComponentIndices</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00293">registerInfiniteObjComponent()</a>.</p>
 
@@ -930,7 +966,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00311">311</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00052">m_orderedDetectorIds</a>, <a class="el" href="../../dc/d98/TrustRegionMinimizer_8cpp_source.html#l00495">obj</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00167">registerComponentAssembly()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00053">m_orderedDetectorIds</a>, <a class="el" href="../../dc/d98/TrustRegionMinimizer_8cpp_source.html#l00495">obj</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00167">registerComponentAssembly()</a>.</p>
 
 </div>
 </div>
@@ -971,7 +1007,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00267">267</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00052">m_orderedDetectorIds</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00167">registerComponentAssembly()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00053">m_orderedDetectorIds</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00167">registerComponentAssembly()</a>.</p>
 
 </div>
 </div>
@@ -1012,7 +1048,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00304">304</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00052">m_orderedDetectorIds</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00167">registerComponentAssembly()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00053">m_orderedDetectorIds</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00167">registerComponentAssembly()</a>.</p>
 
 </div>
 </div>
@@ -1036,7 +1072,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00391">391</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00055">m_componentIds</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00056">m_componentIds</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00393">isEmpty()</a>.</p>
 
@@ -1059,9 +1095,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00138">138</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00058">Mantid::Geometry::ParameterMap::empty()</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00097">m_instrument</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00100">m_pmap</a>, and <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a0fe37346fb9f98e2311cb4706cd08208">Mantid::Geometry::IComponent::registerContents()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00055">Mantid::Geometry::ParameterMap::empty()</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00098">m_instrument</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00101">m_pmap</a>, and <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a0fe37346fb9f98e2311cb4706cd08208">Mantid::Geometry::IComponent::registerContents()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00433">makeWrappers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00439">makeWrappers()</a>.</p>
 
 </div>
 </div>
@@ -1088,7 +1124,7 @@ Private Attributes</h2></td></tr>
 
 <p><a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html" title="Component is a wrapper for a Component which can modify some of its parameters, e....">Component</a> indexes sorted by assembly. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00061">61</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00062">62</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00404">componentInfo()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00167">registerComponentAssembly()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00204">registerGenericComponent()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00230">registerInfiniteComponent()</a>.</p>
 
@@ -1116,7 +1152,7 @@ Private Attributes</h2></td></tr>
 
 <p><a class="el" href="../../d3/d38/classMantid_1_1Geometry_1_1Detector.html" title="This class represents a detector - i.e.">Detector</a> indexes sorted by assembly. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00058">58</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00059">59</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00404">componentInfo()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00090">InstrumentVisitor()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00167">registerComponentAssembly()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00334">registerDetector()</a>.</p>
 
@@ -1144,7 +1180,7 @@ Private Attributes</h2></td></tr>
 
 <p>Stores instrument tree structure by storing children of all Components. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00067">67</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00068">68</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00404">componentInfo()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00167">registerComponentAssembly()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00204">registerGenericComponent()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00230">registerInfiniteComponent()</a>.</p>
 
@@ -1172,7 +1208,7 @@ Private Attributes</h2></td></tr>
 
 <p>Detectors components always specified first. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00055">55</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00056">56</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00147">commonRegistration()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00382">componentIds()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00391">size()</a>.</p>
 
@@ -1200,9 +1236,9 @@ Private Attributes</h2></td></tr>
 
 <p><a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html" title="Component is a wrapper for a Component which can modify some of its parameters, e....">Component</a> ID -&gt; <a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html" title="Component is a wrapper for a Component which can modify some of its parameters, e....">Component</a> Index map. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00076">76</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00077">77</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00396">componentIdToIndexMap()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00090">InstrumentVisitor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00396">componentIdToIndexMap()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00090">InstrumentVisitor()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00419">makeParameterInfo()</a>.</p>
 
 </div>
 </div>
@@ -1228,7 +1264,7 @@ Private Attributes</h2></td></tr>
 
 <p><a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html" title="Component is a wrapper for a Component which can modify some of its parameters, e....">Component</a> ranges. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00073">73</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00074">74</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00404">componentInfo()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00167">registerComponentAssembly()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00204">registerGenericComponent()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00230">registerInfiniteComponent()</a>.</p>
 
@@ -1256,7 +1292,7 @@ Private Attributes</h2></td></tr>
 
 <p>Structured bank flag. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00124">124</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00125">125</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00404">componentInfo()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00167">registerComponentAssembly()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00204">registerGenericComponent()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00230">registerInfiniteComponent()</a>.</p>
 
@@ -1284,7 +1320,7 @@ Private Attributes</h2></td></tr>
 
 <p><a class="el" href="../../d3/d38/classMantid_1_1Geometry_1_1Detector.html" title="This class represents a detector - i.e.">Detector</a> ID -&gt; index mappings. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00079">79</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00080">80</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00400">detectorIdToIndexMap()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00334">registerDetector()</a>.</p>
 
@@ -1312,7 +1348,7 @@ Private Attributes</h2></td></tr>
 
 <p>Positions for detectors. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00085">85</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00086">86</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00411">detectorInfo()</a>.</p>
 
@@ -1340,7 +1376,7 @@ Private Attributes</h2></td></tr>
 
 <p>Only Assemblies and other NON-detectors yield detector ranges. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00070">70</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00071">71</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00404">componentInfo()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00167">registerComponentAssembly()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00204">registerGenericComponent()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00230">registerInfiniteComponent()</a>.</p>
 
@@ -1368,7 +1404,7 @@ Private Attributes</h2></td></tr>
 
 <p>Rotations for detectors. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00091">91</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00092">92</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00411">detectorInfo()</a>.</p>
 
@@ -1396,9 +1432,9 @@ Private Attributes</h2></td></tr>
 
 <p><a class="el" href="../../da/d03/classMantid_1_1Geometry_1_1Instrument.html" title="Base Instrument Class.">Instrument</a> to build around. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00097">97</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00098">98</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00090">InstrumentVisitor()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00418">makeWrappers()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00334">registerDetector()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00138">walkInstrument()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00090">InstrumentVisitor()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00424">makeWrappers()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00334">registerDetector()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00138">walkInstrument()</a>.</p>
 
 </div>
 </div>
@@ -1424,7 +1460,7 @@ Private Attributes</h2></td></tr>
 
 <p>Monitor indexes for detectors. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00094">94</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00095">95</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00411">detectorInfo()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00334">registerDetector()</a>.</p>
 
@@ -1452,7 +1488,7 @@ Private Attributes</h2></td></tr>
 
 <p><a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html" title="Component is a wrapper for a Component which can modify some of its parameters, e....">Component</a> names. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00127">127</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00128">128</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00147">commonRegistration()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00404">componentInfo()</a>.</p>
 
@@ -1480,7 +1516,7 @@ Private Attributes</h2></td></tr>
 
 <p>Null shared (empty shape) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00115">115</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00116">116</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00147">commonRegistration()</a>.</p>
 
@@ -1508,7 +1544,7 @@ Private Attributes</h2></td></tr>
 
 <p><a class="el" href="../../d3/d38/classMantid_1_1Geometry_1_1Detector.html" title="This class represents a detector - i.e.">Detector</a> indices. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00052">52</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00053">53</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00416">detectorIds()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00090">InstrumentVisitor()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00280">registerGridBank()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00311">registerObjComponentAssembly()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00267">registerRectangularBank()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00304">registerStructuredBank()</a>.</p>
 
@@ -1536,7 +1572,7 @@ Private Attributes</h2></td></tr>
 
 <p>Index of the parent component. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00064">64</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00065">65</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00404">componentInfo()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00167">registerComponentAssembly()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00204">registerGenericComponent()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00230">registerInfiniteComponent()</a>.</p>
 
@@ -1564,7 +1600,7 @@ Private Attributes</h2></td></tr>
 
 <p>Rectangular/Grid bank pixel-grid metadata. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00133">133</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00134">134</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00404">componentInfo()</a>.</p>
 
@@ -1592,9 +1628,9 @@ Private Attributes</h2></td></tr>
 
 <p><a class="el" href="../../d9/dc5/classMantid_1_1Geometry_1_1Parameter.html" title="Base class for parameters of an instrument.">Parameter</a> map to purge. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00100">100</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00101">101</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00147">commonRegistration()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00090">InstrumentVisitor()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00334">registerDetector()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00138">walkInstrument()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00147">commonRegistration()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00090">InstrumentVisitor()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00419">makeParameterInfo()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00334">registerDetector()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00138">walkInstrument()</a>.</p>
 
 </div>
 </div>
@@ -1620,7 +1656,7 @@ Private Attributes</h2></td></tr>
 
 <p>Positions for non-detectors. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00082">82</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00083">83</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00147">commonRegistration()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00404">componentInfo()</a>.</p>
 
@@ -1648,7 +1684,7 @@ Private Attributes</h2></td></tr>
 
 <p>Rotations for non-detectors. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00088">88</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00089">89</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00147">commonRegistration()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00404">componentInfo()</a>.</p>
 
@@ -1676,7 +1712,7 @@ Private Attributes</h2></td></tr>
 
 <p>Sample id to look for. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00106">106</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00107">107</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00090">InstrumentVisitor()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00321">markAsSourceOrSample()</a>.</p>
 
@@ -1704,7 +1740,7 @@ Private Attributes</h2></td></tr>
 
 <p>Sample index to set. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00112">112</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00113">113</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00404">componentInfo()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00321">markAsSourceOrSample()</a>.</p>
 
@@ -1732,7 +1768,7 @@ Private Attributes</h2></td></tr>
 
 <p>Scale factors. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00121">121</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00122">122</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00147">commonRegistration()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00404">componentInfo()</a>.</p>
 
@@ -1760,9 +1796,9 @@ Private Attributes</h2></td></tr>
 
 <p>Shapes stored in fly-weight fashion. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00118">118</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00119">119</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00147">commonRegistration()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00418">makeWrappers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00147">commonRegistration()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00424">makeWrappers()</a>.</p>
 
 </div>
 </div>
@@ -1788,7 +1824,7 @@ Private Attributes</h2></td></tr>
 
 <p>Side-by-side (unwrapped) instrument-view positions when declared in the IDF. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00130">130</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00131">131</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00404">componentInfo()</a>.</p>
 
@@ -1816,7 +1852,7 @@ Private Attributes</h2></td></tr>
 
 <p>Source id to look for. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00103">103</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00104">104</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00090">InstrumentVisitor()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00321">markAsSourceOrSample()</a>.</p>
 
@@ -1844,7 +1880,7 @@ Private Attributes</h2></td></tr>
 
 <p>Source index to set. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00109">109</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00110">110</a> of file <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html">InstrumentVisitor.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00404">componentInfo()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00321">markAsSourceOrSample()</a>.</p>
 

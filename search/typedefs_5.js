@@ -6,7 +6,7 @@ var searchData=
   ['elementconsttype_3',['elementconsttype',['../d8/de4/classMantid_1_1CurveFitting_1_1FortranMatrix.html#ae83c336f7e3b9af7b198bf3b05b2b655',1,'Mantid::CurveFitting::FortranMatrix::ElementConstType'],['../d1/d10/classMantid_1_1CurveFitting_1_1FortranVector.html#af305cfd57737f7e8b210c26a0f98100d',1,'Mantid::CurveFitting::FortranVector::ElementConstType']]],
   ['elementreftype_4',['elementreftype',['../d8/de4/classMantid_1_1CurveFitting_1_1FortranMatrix.html#a9a18a292f4b10c850d221ec5261512d2',1,'Mantid::CurveFitting::FortranMatrix::ElementRefType'],['../d1/d10/classMantid_1_1CurveFitting_1_1FortranVector.html#a51a4c27b22196bd7c7dc0472d89d71be',1,'Mantid::CurveFitting::FortranVector::ElementRefType']]],
   ['entries_5',['Entries',['../db/d55/namespaceMantid_1_1Nexus.html#a23664bbe3442d2dba927094a460f0753',1,'Mantid::Nexus']]],
-  ['entry_6',['Entry',['../db/d55/namespaceMantid_1_1Nexus.html#af7bb3039332db890612e4a488c7235e7',1,'Mantid::Nexus']]],
+  ['entry_6',['entry',['../db/d55/namespaceMantid_1_1Nexus.html#af7bb3039332db890612e4a488c7235e7',1,'Mantid::Nexus::Entry'],['../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html#a876166a15959868b668cfa5602335362',1,'Mantid::Geometry::ParameterMap::Entry']]],
   ['enumstring_7',['ENUMSTRING',['../d3/d90/classMantid_1_1Kernel_1_1EnumeratedStringProperty.html#aa0439a8332cb54d7d669c99bdf31eb1f',1,'Mantid::Kernel::EnumeratedStringProperty']]],
   ['erroralreadyset_8',['ErrorAlreadySet',['../d0/d2e/namespaceMantidQt_1_1Widgets_1_1Common_1_1Python.html#a0c17d08c63c0a904285122bb56fb375e',1,'MantidQt::Widgets::Common::Python']]],
   ['etype_9',['EType',['../d2/dac/classMantid_1_1DataObjects_1_1EventWorkspaceMRU.html#a926d0d72bb41c0193868d967210cadde',1,'Mantid::DataObjects::EventWorkspaceMRU']]],
