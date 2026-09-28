@@ -1106,7 +1106,7 @@ var searchData=
   ['autobackgroundselection_1103',['autoBackgroundSelection',['../df/d62/classMantid_1_1CurveFitting_1_1Functions_1_1ProcessBackground.html#a02e6ee6817503fe10942da930a019c4c',1,'Mantid::CurveFitting::Functions::ProcessBackground']]],
   ['autodevresult_1104',['AutoDevResult',['../d8/da3/structMantid_1_1Algorithms_1_1Arithmetic_1_1ErrorPropagation_1_1AutoDevResult.html',1,'Mantid::Algorithms::Arithmetic::ErrorPropagation']]],
   ['autodistributionkey_1105',['AUTODISTRIBUTIONKEY',['../d4/d5b/classMantid_1_1Algorithms_1_1CreateUserDefinedBackground.html#a579084c974f8e23badbe848a04029fc6',1,'Mantid::Algorithms::CreateUserDefinedBackground']]],
-  ['autoloadfile_1106',['autoLoadFile',['../d1/d86/classMantidQt_1_1MantidWidgets_1_1DataSelector.html#a21d46352c01075d3c9bdca344da83796',1,'MantidQt::MantidWidgets::DataSelector']]],
+  ['autoloadfile_1106',['autoLoadFile',['../d1/d86/classMantidQt_1_1MantidWidgets_1_1DataSelector.html#a97ab5cd88ad5b9e225a16458aa7fb5a9',1,'MantidQt::MantidWidgets::DataSelector']]],
   ['automethod_1107',['AutoMethod',['../df/de2/classMantid_1_1MDAlgorithms_1_1CutMD.html#add9bf659e87073843ffb4e767b805d8b',1,'Mantid::MDAlgorithms::CutMD']]],
   ['autoselect_1108',['AutoSelect',['../d8/daf/namespaceMantid_1_1MDAlgorithms_1_1CnvrtToMD.html#ac8e31dce867891d0b35b5ba9ebb94f6caaa570554cc643a944c82e079a23eaf74',1,'Mantid::MDAlgorithms::CnvrtToMD']]],
   ['autotrim_1109',['autoTrim',['../d1/d32/classMantid_1_1Kernel_1_1Property.html#a3db8f31efc5d053a7d878ff7f4534b70',1,'Mantid::Kernel::Property']]],

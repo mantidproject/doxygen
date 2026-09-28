@@ -565,7 +565,7 @@ var searchData=
   ['executegetdatafiles_562',['executeGetDataFiles',['../db/d99/classMantidQt_1_1MantidWidgets_1_1CatalogHelper.html#af9e468db937ca049d6234d45364768d1',1,'MantidQt::MantidWidgets::CatalogHelper']]],
   ['executeimpl_563',['executeImpl',['../d6/d82/classMantid_1_1API_1_1TaskBasedAlgorithm_1_1AlgorithmTask.html#a28cd20d8f6d69a6811a21d008d0a35cf',1,'Mantid::API::TaskBasedAlgorithm::AlgorithmTask']]],
   ['executeinternal_564',['executeInternal',['../d3/d69/classMantid_1_1API_1_1Algorithm.html#aa84ddf064f535583e0b2c081e092a759',1,'Mantid::API::Algorithm']]],
-  ['executeloadalgorithm_565',['executeLoadAlgorithm',['../d1/d86/classMantidQt_1_1MantidWidgets_1_1DataSelector.html#ad6a58fe7cb0e41ed13bb36efe13c82d6',1,'MantidQt::MantidWidgets::DataSelector']]],
+  ['executeloadalgorithm_565',['executeLoadAlgorithm',['../d1/d86/classMantidQt_1_1MantidWidgets_1_1DataSelector.html#a072466e42b0960cc262d6d5c146bba4d',1,'MantidQt::MantidWidgets::DataSelector']]],
   ['executemd_566',['executeMD',['../d9/d18/classMantid_1_1DataObjects_1_1ReflectometryTransform.html#ac39b5c242e21742cb1499fd4cde9e9ca',1,'Mantid::DataObjects::ReflectometryTransform']]],
   ['executemdnormpoly_567',['executeMDNormPoly',['../d9/d18/classMantid_1_1DataObjects_1_1ReflectometryTransform.html#a3619c0ab0bcee390926ede8f6f40033c',1,'Mantid::DataObjects::ReflectometryTransform']]],
   ['executenormpoly_568',['executeNormPoly',['../d9/d18/classMantid_1_1DataObjects_1_1ReflectometryTransform.html#abbb1e111f91017fb49880e87731b0685',1,'Mantid::DataObjects::ReflectometryTransform']]],
