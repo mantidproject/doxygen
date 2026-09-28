@@ -187,6 +187,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a79296efff0479c7ddf62e1cd5e3b6ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3e21ec2469e104d52b6a0a97fb78486" id="r_ab3e21ec2469e104d52b6a0a97fb78486"><td class="memItemLeft" align="right" valign="top">std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html#ab3e21ec2469e104d52b6a0a97fb78486">getParameterNames</a> (const size_t componentIndex, bool recursive=true) const</td></tr>
 <tr class="separator:ab3e21ec2469e104d52b6a0a97fb78486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad24eae85f502d321569d7b2560da747a" id="r_ad24eae85f502d321569d7b2560da747a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html#ad24eae85f502d321569d7b2560da747a">getParameterType</a> (const size_t componentIndex, const std::string &amp;<a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html#ac6e2d6ae551211a75bd9dce53c621597">name</a>, bool recursive=true) const</td></tr>
+<tr class="memdesc:ad24eae85f502d321569d7b2560da747a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of the named parameter, or an empty string if the component has no such parameter.  <br /></td></tr>
+<tr class="separator:ad24eae85f502d321569d7b2560da747a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f6ac3099a3268bd002ed2e1016de60f" id="r_a5f6ac3099a3268bd002ed2e1016de60f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html#a5f6ac3099a3268bd002ed2e1016de60f">getStringParameter</a> (const size_t componentIndex, const std::string &amp;<a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html#ac6e2d6ae551211a75bd9dce53c621597">name</a>, bool recursive=true) const</td></tr>
 <tr class="separator:a5f6ac3099a3268bd002ed2e1016de60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a13afb743d0c254a8006dcc9cdeb303" id="r_a1a13afb743d0c254a8006dcc9cdeb303"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html#a1a13afb743d0c254a8006dcc9cdeb303">hasDetectorInfo</a> () const</td></tr>
@@ -1105,7 +1108,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00504">boundingBox()</a>, <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00155">Mantid::API::PanelsSurfaceCalculator::calculateBankNormal()</a>, <a class="el" href="../../df/d61/EdgePixel_8cpp_source.html#l00023">Mantid::Geometry::edgePixel()</a>, <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00300">Mantid::API::PanelsSurfaceCalculator::examineAllComponents()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00560">findBankParent()</a>, <a class="el" href="../../d9/d69/SaveIsawDetCal_8cpp_source.html#l00213">Mantid::DataHandling::SaveIsawDetCal::findPixelPos()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00612">indexOfFullName()</a>, <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00135">Mantid::API::PanelsSurfaceCalculator::isBankFlat()</a>, <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00056">Mantid::API::PanelsSurfaceCalculator::retrievePanelCorners()</a>, <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00189">Mantid::API::PanelsSurfaceCalculator::setBankVisited()</a>, <a class="el" href="../../d9/d69/SaveIsawDetCal_8cpp_source.html#l00233">Mantid::DataHandling::SaveIsawDetCal::sizeBanks()</a>, <a class="el" href="../../d3/db2/AnvredCorrection_8cpp_source.html#l00563">Mantid::Crystal::AnvredCorrection::slantPathLength()</a>, <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00532">Mantid::Crystal::SaveHKL::slantPathLength()</a>, and <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00327">Mantid::API::PanelsSurfaceCalculator::tubeDetectorParentIDs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00504">boundingBox()</a>, <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00155">Mantid::API::PanelsSurfaceCalculator::calculateBankNormal()</a>, <a class="el" href="../../df/d61/EdgePixel_8cpp_source.html#l00023">Mantid::Geometry::edgePixel()</a>, <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00300">Mantid::API::PanelsSurfaceCalculator::examineAllComponents()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00560">findBankParent()</a>, <a class="el" href="../../d9/d69/SaveIsawDetCal_8cpp_source.html#l00213">Mantid::DataHandling::SaveIsawDetCal::findPixelPos()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00612">indexOfFullName()</a>, <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00135">Mantid::API::PanelsSurfaceCalculator::isBankFlat()</a>, <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00056">Mantid::API::PanelsSurfaceCalculator::retrievePanelCorners()</a>, <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00189">Mantid::API::PanelsSurfaceCalculator::setBankVisited()</a>, <a class="el" href="../../d9/d69/SaveIsawDetCal_8cpp_source.html#l00233">Mantid::DataHandling::SaveIsawDetCal::sizeBanks()</a>, <a class="el" href="../../d3/db2/AnvredCorrection_8cpp_source.html#l00563">Mantid::Crystal::AnvredCorrection::slantPathLength()</a>, <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00532">Mantid::Crystal::SaveHKL::slantPathLength()</a>, and <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00327">Mantid::API::PanelsSurfaceCalculator::tubeDetectorParentIDs()</a>.</p>
 
 </div>
 </div>
@@ -1221,7 +1224,7 @@ template&lt;class T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00435">435</a> of file <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html">ComponentInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00540">componentType()</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00117">Mantid::Geometry::BoundingBox::getCoordSystem()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00153">hasValidShape()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00115">Mantid::Geometry::BoundingBox::isAxisAligned()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00149">isDetector()</a>, <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, <a class="el" href="../../d0/d7e/Geometry_2src_2Objects_2BoundingBox_8cpp_source.html#l00179">Mantid::Geometry::BoundingBox::realign()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00080">rotation</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00259">shape()</a>, <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::X</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00079">Mantid::Geometry::BoundingBox::xMax()</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00077">Mantid::Geometry::BoundingBox::xMin()</a>, <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::Y</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00083">Mantid::Geometry::BoundingBox::yMax()</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00081">Mantid::Geometry::BoundingBox::yMin()</a>, <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::Z</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00087">Mantid::Geometry::BoundingBox::zMax()</a>, and <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00085">Mantid::Geometry::BoundingBox::zMin()</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00540">componentType()</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00117">Mantid::Geometry::BoundingBox::getCoordSystem()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00153">hasValidShape()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00115">Mantid::Geometry::BoundingBox::isAxisAligned()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00149">isDetector()</a>, <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, <a class="el" href="../../d0/d7e/Geometry_2src_2Objects_2BoundingBox_8cpp_source.html#l00179">Mantid::Geometry::BoundingBox::realign()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00144">rotation</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00259">shape()</a>, <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::X</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00079">Mantid::Geometry::BoundingBox::xMax()</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00077">Mantid::Geometry::BoundingBox::xMin()</a>, <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::Y</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00083">Mantid::Geometry::BoundingBox::yMax()</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00081">Mantid::Geometry::BoundingBox::yMin()</a>, <a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html#l00016">Mantid::Geometry::Z</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00087">Mantid::Geometry::BoundingBox::zMax()</a>, and <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00085">Mantid::Geometry::BoundingBox::zMin()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00504">boundingBox()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00421">growBoundingBoxAsOutline()</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00400">growBoundingBoxAsRectuangularBank()</a>.</p>
 
@@ -1277,7 +1280,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>.</p>
 
 </div>
 </div>
@@ -1301,7 +1304,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00504">boundingBox()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00435">componentBoundingBox()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>, <a class="el" href="../../d5/d28/ComponentInfoBankHelpers_8cpp_source.html#l00025">Mantid::Geometry::ComponentInfoBankHelpers::isDetectorFixedInBank()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00116">quadrilateralComponent()</a>, and <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00327">Mantid::API::PanelsSurfaceCalculator::tubeDetectorParentIDs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00504">boundingBox()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00435">componentBoundingBox()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>, <a class="el" href="../../d5/d28/ComponentInfoBankHelpers_8cpp_source.html#l00025">Mantid::Geometry::ComponentInfoBankHelpers::isDetectorFixedInBank()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00116">quadrilateralComponent()</a>, and <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00327">Mantid::API::PanelsSurfaceCalculator::tubeDetectorParentIDs()</a>.</p>
 
 </div>
 </div>
@@ -1347,7 +1350,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>, and <a class="el" href="../../d9/d69/SaveIsawDetCal_8cpp_source.html#l00213">Mantid::DataHandling::SaveIsawDetCal::findPixelPos()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>, and <a class="el" href="../../d9/d69/SaveIsawDetCal_8cpp_source.html#l00213">Mantid::DataHandling::SaveIsawDetCal::findPixelPos()</a>.</p>
 
 </div>
 </div>
@@ -1371,7 +1374,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/d03/ResizeRectangularDetectorHelper_8cpp_source.html#l00020">Mantid::API::applyRectangularDetectorScaleToComponentInfo()</a>, <a class="el" href="../../dc/d77/ScaleInstrumentComponent_8cpp_source.html#l00096">Mantid::DataHandling::ScaleInstrumentComponent::exec()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>, and <a class="el" href="../../d5/d28/ComponentInfoBankHelpers_8cpp_source.html#l00052">Mantid::Geometry::ComponentInfoBankHelpers::isSaveableBank()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/d03/ResizeRectangularDetectorHelper_8cpp_source.html#l00020">Mantid::API::applyRectangularDetectorScaleToComponentInfo()</a>, <a class="el" href="../../dc/d77/ScaleInstrumentComponent_8cpp_source.html#l00096">Mantid::DataHandling::ScaleInstrumentComponent::exec()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>, and <a class="el" href="../../d5/d28/ComponentInfoBankHelpers_8cpp_source.html#l00052">Mantid::Geometry::ComponentInfoBankHelpers::isSaveableBank()</a>.</p>
 
 </div>
 </div>
@@ -1454,7 +1457,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00200">hasParent()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00198">parent()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00612">indexOfFullName()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00612">indexOfFullName()</a>.</p>
 
 </div>
 </div>
@@ -1528,7 +1531,7 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00792">792</a> of file <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html">ComponentInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00804">804</a> of file <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html">ComponentInfo.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../df/d16/FitParameter_8cpp_source.html#l00069">Mantid::Geometry::FitParameter::getValue()</a>, <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00065">m_parameterInfo</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
@@ -1590,11 +1593,11 @@ template&lt;class T &gt; </div>
 <p>Return memory used by the component info, in bytes. </p>
 <dl class="section return"><dt>Returns</dt><dd>bytes used. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00811">811</a> of file <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html">ComponentInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00823">823</a> of file <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html">ComponentInfo.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>, <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00062">m_shapes</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00114">size()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>.</p>
 
 </div>
 </div>
@@ -1715,6 +1718,46 @@ template&lt;class T &gt; </div>
 <p class="reference">References <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00670">getParameterNames()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00200">hasParent()</a>, <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00065">m_parameterInfo</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00198">parent()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00670">getParameterNames()</a>.</p>
+
+</div>
+</div>
+<a id="ad24eae85f502d321569d7b2560da747a" name="ad24eae85f502d321569d7b2560da747a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad24eae85f502d321569d7b2560da747a">&#9670;&#160;</a></span>getParameterType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Mantid::Geometry::ComponentInfo::getParameterType </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>componentIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>recursive</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The type of the named parameter, or an empty string if the component has no such parameter. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00792">792</a> of file <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html">ComponentInfo.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00065">m_parameterInfo</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
 </div>
 </div>
@@ -1952,7 +1995,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>.</p>
 
 </div>
 </div>
@@ -1976,7 +2019,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>.</p>
 
 </div>
 </div>
@@ -2040,7 +2083,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00587">fullName()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00670">getParameterNames()</a>, <a class="el" href="../../d1/d74/ParameterInfo_8cpp_source.html#l00126">Mantid::Geometry::ParameterInfo::getRecursive()</a>, <a class="el" href="../../d1/d74/ParameterInfo_8cpp_source.html#l00139">Mantid::Geometry::ParameterInfo::getRecursiveByType()</a>, <a class="el" href="../../d1/d74/ParameterInfo_8cpp_source.html#l00153">Mantid::Geometry::ParameterInfo::getRecursiveFittingParameter()</a>, and <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00327">Mantid::API::PanelsSurfaceCalculator::tubeDetectorParentIDs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00587">fullName()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00670">getParameterNames()</a>, <a class="el" href="../../d1/d74/ParameterInfo_8cpp_source.html#l00126">Mantid::Geometry::ParameterInfo::getRecursive()</a>, <a class="el" href="../../d1/d74/ParameterInfo_8cpp_source.html#l00139">Mantid::Geometry::ParameterInfo::getRecursiveByType()</a>, <a class="el" href="../../d1/d74/ParameterInfo_8cpp_source.html#l00153">Mantid::Geometry::ParameterInfo::getRecursiveFittingParameter()</a>, and <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00327">Mantid::API::PanelsSurfaceCalculator::tubeDetectorParentIDs()</a>.</p>
 
 </div>
 </div>
@@ -2063,7 +2106,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>.</p>
 
 </div>
 </div>
@@ -2086,7 +2129,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00504">boundingBox()</a>, and <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00504">boundingBox()</a>, and <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>.</p>
 
 </div>
 </div>
@@ -2108,7 +2151,7 @@ template&lt;class T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00153">153</a> of file <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html">ComponentInfo.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00435">componentBoundingBox()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00367">solidAngle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00435">componentBoundingBox()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00367">solidAngle()</a>.</p>
 
 </div>
 </div>
@@ -2156,7 +2199,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/dd8/CalibrationHelpers_8cpp_source.html#l00063">Mantid::Crystal::CalibrationHelpers::adjustBankPositionsAndSizes()</a>, <a class="el" href="../../df/d61/EdgePixel_8cpp_source.html#l00023">Mantid::Geometry::edgePixel()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>, <a class="el" href="../../d9/d69/SaveIsawDetCal_8cpp_source.html#l00213">Mantid::DataHandling::SaveIsawDetCal::findPixelPos()</a>, <a class="el" href="../../d4/df5/LoadIsawPeaks_8cpp_source.html#l00583">Mantid::Crystal::LoadIsawPeaks::getCachedBankIndex()</a>, <a class="el" href="../../d9/d69/SaveIsawDetCal_8cpp_source.html#l00233">Mantid::DataHandling::SaveIsawDetCal::sizeBanks()</a>, <a class="el" href="../../d3/db2/AnvredCorrection_8cpp_source.html#l00563">Mantid::Crystal::AnvredCorrection::slantPathLength()</a>, and <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00532">Mantid::Crystal::SaveHKL::slantPathLength()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/dd8/CalibrationHelpers_8cpp_source.html#l00063">Mantid::Crystal::CalibrationHelpers::adjustBankPositionsAndSizes()</a>, <a class="el" href="../../df/d61/EdgePixel_8cpp_source.html#l00023">Mantid::Geometry::edgePixel()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>, <a class="el" href="../../d9/d69/SaveIsawDetCal_8cpp_source.html#l00213">Mantid::DataHandling::SaveIsawDetCal::findPixelPos()</a>, <a class="el" href="../../d4/df5/LoadIsawPeaks_8cpp_source.html#l00583">Mantid::Crystal::LoadIsawPeaks::getCachedBankIndex()</a>, <a class="el" href="../../d9/d69/SaveIsawDetCal_8cpp_source.html#l00233">Mantid::DataHandling::SaveIsawDetCal::sizeBanks()</a>, <a class="el" href="../../d3/db2/AnvredCorrection_8cpp_source.html#l00563">Mantid::Crystal::AnvredCorrection::slantPathLength()</a>, and <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00532">Mantid::Crystal::SaveHKL::slantPathLength()</a>.</p>
 
 </div>
 </div>
@@ -2184,6 +2227,8 @@ template&lt;class T &gt; </div>
 <p class="definition">Definition at line <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00612">612</a> of file <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html">ComponentInfo.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00110">children()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00587">fullName()</a>, <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00051">invalidIndex</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00249">root()</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00114">size()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>.</p>
 
 </div>
 </div>
@@ -2233,7 +2278,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00504">boundingBox()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00435">componentBoundingBox()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00236">hasDetectors()</a>, <a class="el" href="../../d5/d28/ComponentInfoBankHelpers_8cpp_source.html#l00025">Mantid::Geometry::ComponentInfoBankHelpers::isDetectorFixedInBank()</a>, <a class="el" href="../../d5/d28/ComponentInfoBankHelpers_8cpp_source.html#l00052">Mantid::Geometry::ComponentInfoBankHelpers::isSaveableBank()</a>, <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00056">Mantid::API::PanelsSurfaceCalculator::retrievePanelCorners()</a>, and <a class="el" href="../../dc/d77/ScaleInstrumentComponent_8cpp_source.html#l00038">Mantid::DataHandling::ScaleInstrumentComponent::validateInputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00504">boundingBox()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00435">componentBoundingBox()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00236">hasDetectors()</a>, <a class="el" href="../../d5/d28/ComponentInfoBankHelpers_8cpp_source.html#l00025">Mantid::Geometry::ComponentInfoBankHelpers::isDetectorFixedInBank()</a>, <a class="el" href="../../d5/d28/ComponentInfoBankHelpers_8cpp_source.html#l00052">Mantid::Geometry::ComponentInfoBankHelpers::isSaveableBank()</a>, <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00056">Mantid::API::PanelsSurfaceCalculator::retrievePanelCorners()</a>, and <a class="el" href="../../dc/d77/ScaleInstrumentComponent_8cpp_source.html#l00038">Mantid::DataHandling::ScaleInstrumentComponent::validateInputs()</a>.</p>
 
 </div>
 </div>
@@ -2257,7 +2302,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d61/EdgePixel_8cpp_source.html#l00023">Mantid::Geometry::edgePixel()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00298">pixelGridComponent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d61/EdgePixel_8cpp_source.html#l00023">Mantid::Geometry::edgePixel()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00298">pixelGridComponent()</a>.</p>
 
 </div>
 </div>
@@ -2280,7 +2325,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/dd8/CalibrationHelpers_8cpp_source.html#l00026">Mantid::Crystal::CalibrationHelpers::adjustUpSampleAndSourcePositions()</a>, and <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/dd8/CalibrationHelpers_8cpp_source.html#l00026">Mantid::Crystal::CalibrationHelpers::adjustUpSampleAndSourcePositions()</a>, and <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>.</p>
 
 </div>
 </div>
@@ -2362,7 +2407,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/dd8/CalibrationHelpers_8cpp_source.html#l00063">Mantid::Crystal::CalibrationHelpers::adjustBankPositionsAndSizes()</a>, <a class="el" href="../../df/d61/EdgePixel_8cpp_source.html#l00023">Mantid::Geometry::edgePixel()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>, <a class="el" href="../../d9/d69/SaveIsawDetCal_8cpp_source.html#l00213">Mantid::DataHandling::SaveIsawDetCal::findPixelPos()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00904">Mantid::API::ExperimentInfo::getInstrumentName()</a>, <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00135">Mantid::API::PanelsSurfaceCalculator::isBankFlat()</a>, and <a class="el" href="../../d9/d69/SaveIsawDetCal_8cpp_source.html#l00233">Mantid::DataHandling::SaveIsawDetCal::sizeBanks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/dd8/CalibrationHelpers_8cpp_source.html#l00063">Mantid::Crystal::CalibrationHelpers::adjustBankPositionsAndSizes()</a>, <a class="el" href="../../df/d61/EdgePixel_8cpp_source.html#l00023">Mantid::Geometry::edgePixel()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>, <a class="el" href="../../d9/d69/SaveIsawDetCal_8cpp_source.html#l00213">Mantid::DataHandling::SaveIsawDetCal::findPixelPos()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00904">Mantid::API::ExperimentInfo::getInstrumentName()</a>, <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00135">Mantid::API::PanelsSurfaceCalculator::isBankFlat()</a>, and <a class="el" href="../../d9/d69/SaveIsawDetCal_8cpp_source.html#l00233">Mantid::DataHandling::SaveIsawDetCal::sizeBanks()</a>.</p>
 
 </div>
 </div>
@@ -2438,7 +2483,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/dd8/CalibrationHelpers_8cpp_source.html#l00063">Mantid::Crystal::CalibrationHelpers::adjustBankPositionsAndSizes()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00504">boundingBox()</a>, <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00300">Mantid::API::PanelsSurfaceCalculator::examineAllComponents()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00560">findBankParent()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00587">fullName()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00670">getParameterNames()</a>, <a class="el" href="../../d1/d74/ParameterInfo_8cpp_source.html#l00126">Mantid::Geometry::ParameterInfo::getRecursive()</a>, <a class="el" href="../../d1/d74/ParameterInfo_8cpp_source.html#l00139">Mantid::Geometry::ParameterInfo::getRecursiveByType()</a>, <a class="el" href="../../d1/d74/ParameterInfo_8cpp_source.html#l00153">Mantid::Geometry::ParameterInfo::getRecursiveFittingParameter()</a>, <a class="el" href="../../d5/d28/ComponentInfoBankHelpers_8cpp_source.html#l00083">Mantid::Geometry::ComponentInfoBankHelpers::isAncestorOf()</a>, <a class="el" href="../../d5/d28/ComponentInfoBankHelpers_8cpp_source.html#l00025">Mantid::Geometry::ComponentInfoBankHelpers::isDetectorFixedInBank()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00116">quadrilateralComponent()</a>, and <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00327">Mantid::API::PanelsSurfaceCalculator::tubeDetectorParentIDs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/dd8/CalibrationHelpers_8cpp_source.html#l00063">Mantid::Crystal::CalibrationHelpers::adjustBankPositionsAndSizes()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00504">boundingBox()</a>, <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00300">Mantid::API::PanelsSurfaceCalculator::examineAllComponents()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00560">findBankParent()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00587">fullName()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00670">getParameterNames()</a>, <a class="el" href="../../d1/d74/ParameterInfo_8cpp_source.html#l00126">Mantid::Geometry::ParameterInfo::getRecursive()</a>, <a class="el" href="../../d1/d74/ParameterInfo_8cpp_source.html#l00139">Mantid::Geometry::ParameterInfo::getRecursiveByType()</a>, <a class="el" href="../../d1/d74/ParameterInfo_8cpp_source.html#l00153">Mantid::Geometry::ParameterInfo::getRecursiveFittingParameter()</a>, <a class="el" href="../../d5/d28/ComponentInfoBankHelpers_8cpp_source.html#l00083">Mantid::Geometry::ComponentInfoBankHelpers::isAncestorOf()</a>, <a class="el" href="../../d5/d28/ComponentInfoBankHelpers_8cpp_source.html#l00025">Mantid::Geometry::ComponentInfoBankHelpers::isDetectorFixedInBank()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00116">quadrilateralComponent()</a>, and <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00327">Mantid::API::PanelsSurfaceCalculator::tubeDetectorParentIDs()</a>.</p>
 
 </div>
 </div>
@@ -2556,7 +2601,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00027">Mantid::Kernel::toV3D()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>, and <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00312">Mantid::Geometry::Component::getRelativePos()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>, and <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00312">Mantid::Geometry::Component::getRelativePos()</a>.</p>
 
 </div>
 </div>
@@ -2580,7 +2625,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00033">Mantid::Kernel::toQuat()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/dd8/CalibrationHelpers_8cpp_source.html#l00063">Mantid::Crystal::CalibrationHelpers::adjustBankPositionsAndSizes()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>, and <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00392">Mantid::Geometry::Component::getRelativeRot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/dd8/CalibrationHelpers_8cpp_source.html#l00063">Mantid::Crystal::CalibrationHelpers::adjustBankPositionsAndSizes()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>, and <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00392">Mantid::Geometry::Component::getRelativeRot()</a>.</p>
 
 </div>
 </div>
@@ -2603,7 +2648,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00300">Mantid::API::PanelsSurfaceCalculator::examineAllComponents()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00904">Mantid::API::ExperimentInfo::getInstrumentName()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00612">indexOfFullName()</a>, and <a class="el" href="../../d5/d28/ComponentInfoBankHelpers_8cpp_source.html#l00083">Mantid::Geometry::ComponentInfoBankHelpers::isAncestorOf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00300">Mantid::API::PanelsSurfaceCalculator::examineAllComponents()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00904">Mantid::API::ExperimentInfo::getInstrumentName()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00612">indexOfFullName()</a>, and <a class="el" href="../../d5/d28/ComponentInfoBankHelpers_8cpp_source.html#l00083">Mantid::Geometry::ComponentInfoBankHelpers::isAncestorOf()</a>.</p>
 
 </div>
 </div>
@@ -2672,7 +2717,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/dd8/CalibrationHelpers_8cpp_source.html#l00026">Mantid::Crystal::CalibrationHelpers::adjustUpSampleAndSourcePositions()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>, and <a class="el" href="../../d5/d28/ComponentInfoBankHelpers_8cpp_source.html#l00052">Mantid::Geometry::ComponentInfoBankHelpers::isSaveableBank()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/dd8/CalibrationHelpers_8cpp_source.html#l00026">Mantid::Crystal::CalibrationHelpers::adjustUpSampleAndSourcePositions()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>, and <a class="el" href="../../d5/d28/ComponentInfoBankHelpers_8cpp_source.html#l00052">Mantid::Geometry::ComponentInfoBankHelpers::isSaveableBank()</a>.</p>
 
 </div>
 </div>
@@ -2695,7 +2740,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00027">Mantid::Kernel::toV3D()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/dd8/CalibrationHelpers_8cpp_source.html#l00026">Mantid::Crystal::CalibrationHelpers::adjustUpSampleAndSourcePositions()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>, <a class="el" href="../../d3/db2/AnvredCorrection_8cpp_source.html#l00563">Mantid::Crystal::AnvredCorrection::slantPathLength()</a>, and <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00532">Mantid::Crystal::SaveHKL::slantPathLength()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/dd8/CalibrationHelpers_8cpp_source.html#l00026">Mantid::Crystal::CalibrationHelpers::adjustUpSampleAndSourcePositions()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>, <a class="el" href="../../d3/db2/AnvredCorrection_8cpp_source.html#l00563">Mantid::Crystal::AnvredCorrection::slantPathLength()</a>, and <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00532">Mantid::Crystal::SaveHKL::slantPathLength()</a>.</p>
 
 </div>
 </div>
@@ -2785,7 +2830,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00027">Mantid::Kernel::toV3D()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d77/ScaleInstrumentComponent_8cpp_source.html#l00096">Mantid::DataHandling::ScaleInstrumentComponent::exec()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00286">Mantid::Geometry::Component::getScaleFactor()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00286">setScaleFactor()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00367">solidAngle()</a>, <a class="el" href="../../d4/d59/SolidAngle_8cpp_source.html#l00121">Mantid::Algorithms::SolidAngleHelpers::Rectangle::solidAngle()</a>, <a class="el" href="../../d4/d59/SolidAngle_8cpp_source.html#l00133">Mantid::Algorithms::SolidAngleHelpers::Tube::solidAngle()</a>, and <a class="el" href="../../d4/d59/SolidAngle_8cpp_source.html#l00144">Mantid::Algorithms::SolidAngleHelpers::Wing::solidAngle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d77/ScaleInstrumentComponent_8cpp_source.html#l00096">Mantid::DataHandling::ScaleInstrumentComponent::exec()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00286">Mantid::Geometry::Component::getScaleFactor()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00286">setScaleFactor()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00367">solidAngle()</a>, <a class="el" href="../../d4/d59/SolidAngle_8cpp_source.html#l00121">Mantid::Algorithms::SolidAngleHelpers::Rectangle::solidAngle()</a>, <a class="el" href="../../d4/d59/SolidAngle_8cpp_source.html#l00133">Mantid::Algorithms::SolidAngleHelpers::Tube::solidAngle()</a>, and <a class="el" href="../../d4/d59/SolidAngle_8cpp_source.html#l00144">Mantid::Algorithms::SolidAngleHelpers::Wing::solidAngle()</a>.</p>
 
 </div>
 </div>
@@ -2972,7 +3017,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00278">scaleFactor()</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00038">Mantid::Kernel::toVector3d()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d77/ScaleInstrumentComponent_8cpp_source.html#l00096">Mantid::DataHandling::ScaleInstrumentComponent::exec()</a>, and <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d77/ScaleInstrumentComponent_8cpp_source.html#l00096">Mantid::DataHandling::ScaleInstrumentComponent::exec()</a>, and <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>.</p>
 
 </div>
 </div>
@@ -3016,7 +3061,7 @@ template&lt;class T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00259">259</a> of file <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html">ComponentInfo.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00435">componentBoundingBox()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>, <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00056">Mantid::API::PanelsSurfaceCalculator::retrievePanelCorners()</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00367">solidAngle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00435">componentBoundingBox()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>, <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00056">Mantid::API::PanelsSurfaceCalculator::retrievePanelCorners()</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00367">solidAngle()</a>.</p>
 
 </div>
 </div>
@@ -3069,7 +3114,7 @@ template&lt;class T &gt; </div>
 
 <p>This allows <a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html" title="Parameter map iterator typedef.">ParameterMap</a> to delegate to <a class="el" href="../../d8/d24/classMantid_1_1Geometry_1_1ParameterInfo.html" title="ParameterInfo : the named parameters of an instrument, addressed by component index.">ParameterInfo</a>, rather than keeping a parallel copy that would silently diverge. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00226">226</a> of file <a class="el" href="../../da/d05/ComponentInfo_8h_source.html">ComponentInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00228">228</a> of file <a class="el" href="../../da/d05/ComponentInfo_8h_source.html">ComponentInfo.h</a>.</p>
 
 </div>
 </div>
@@ -3116,7 +3161,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00552">begin()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00504">boundingBox()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00556">cbegin()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00558">cend()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00554">end()</a>, <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00300">Mantid::API::PanelsSurfaceCalculator::examineAllComponents()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00811">getMemorySize()</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00612">indexOfFullName()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00552">begin()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00504">boundingBox()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00556">cbegin()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00558">cend()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00554">end()</a>, <a class="el" href="../../dc/d33/API_2src_2PanelsSurfaceCalculator_8cpp_source.html#l00300">Mantid::API::PanelsSurfaceCalculator::examineAllComponents()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00823">getMemorySize()</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00612">indexOfFullName()</a>.</p>
 
 </div>
 </div>
@@ -3173,7 +3218,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/dd8/CalibrationHelpers_8cpp_source.html#l00026">Mantid::Crystal::CalibrationHelpers::adjustUpSampleAndSourcePositions()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00504">boundingBox()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>, and <a class="el" href="../../d5/d28/ComponentInfoBankHelpers_8cpp_source.html#l00052">Mantid::Geometry::ComponentInfoBankHelpers::isSaveableBank()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/dd8/CalibrationHelpers_8cpp_source.html#l00026">Mantid::Crystal::CalibrationHelpers::adjustUpSampleAndSourcePositions()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00504">boundingBox()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>, and <a class="el" href="../../d5/d28/ComponentInfoBankHelpers_8cpp_source.html#l00052">Mantid::Geometry::ComponentInfoBankHelpers::isSaveableBank()</a>.</p>
 
 </div>
 </div>
@@ -3196,7 +3241,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00027">Mantid::Kernel::toV3D()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/dd8/CalibrationHelpers_8cpp_source.html#l00026">Mantid::Crystal::CalibrationHelpers::adjustUpSampleAndSourcePositions()</a>, and <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/dd8/CalibrationHelpers_8cpp_source.html#l00026">Mantid::Crystal::CalibrationHelpers::adjustUpSampleAndSourcePositions()</a>, and <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>.</p>
 
 </div>
 </div>
@@ -3220,7 +3265,7 @@ template&lt;class T &gt; </div>
 
 <p class="reference">References <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">m_componentInfo</a>, and <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00087">export_ComponentInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>.</p>
 
 </div>
 </div>
@@ -3280,7 +3325,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00228">228</a> of file <a class="el" href="../../da/d05/ComponentInfo_8h_source.html">ComponentInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00230">230</a> of file <a class="el" href="../../da/d05/ComponentInfo_8h_source.html">ComponentInfo.h</a>.</p>
 
 </div>
 </div>
@@ -3309,7 +3354,7 @@ template&lt;class T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00051">51</a> of file <a class="el" href="../../da/d05/ComponentInfo_8h_source.html">ComponentInfo.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00449">Mantid::Geometry::ParameterMap::add()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00490">Mantid::Geometry::ParameterMap::addFittingParameter()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00406">Mantid::Geometry::ParameterMap::clearParametersByName()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00785">Mantid::Geometry::ParameterMap::contains()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00796">Mantid::Geometry::ParameterMap::contains()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00829">Mantid::Geometry::ParameterMap::get()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00840">Mantid::Geometry::ParameterMap::getByType()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00914">Mantid::Geometry::ParameterMap::getRecursiveFittingParameter()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00114">Mantid::Geometry::ParameterMap::indexForWrite()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00103">Mantid::Geometry::ParameterMap::indexOf()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00612">indexOfFullName()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00140">indexOfOrInvalid()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00972">Mantid::Geometry::ParameterMap::names()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00353">Mantid::API::ExperimentInfo::populateInstrumentParameters()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01380">Mantid::API::ExperimentInfo::populateWithParameter()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01222">Mantid::API::ExperimentInfo::readParameterMap()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00449">Mantid::Geometry::ParameterMap::add()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00490">Mantid::Geometry::ParameterMap::addFittingParameter()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00406">Mantid::Geometry::ParameterMap::clearParametersByName()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00785">Mantid::Geometry::ParameterMap::contains()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00796">Mantid::Geometry::ParameterMap::contains()</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00151">export_ComponentInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00829">Mantid::Geometry::ParameterMap::get()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00840">Mantid::Geometry::ParameterMap::getByType()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00914">Mantid::Geometry::ParameterMap::getRecursiveFittingParameter()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00114">Mantid::Geometry::ParameterMap::indexForWrite()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00103">Mantid::Geometry::ParameterMap::indexOf()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00612">indexOfFullName()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00140">indexOfOrInvalid()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00972">Mantid::Geometry::ParameterMap::names()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00353">Mantid::API::ExperimentInfo::populateInstrumentParameters()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01380">Mantid::API::ExperimentInfo::populateWithParameter()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01222">Mantid::API::ExperimentInfo::readParameterMap()</a>.</p>
 
 </div>
 </div>
@@ -3393,7 +3438,7 @@ template&lt;class T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00055">55</a> of file <a class="el" href="../../da/d05/ComponentInfo_8h_source.html">ComponentInfo.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00110">children()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00435">componentBoundingBox()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00061">ComponentInfo()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00106">componentsInSubtree()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00540">componentType()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00305">detectorIndexAtXYZ()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00102">detectorsInSubtree()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00811">getMemorySize()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00202">hasDetectorInfo()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00236">hasDetectors()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00232">hasEquivalentSample()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00218">hasEquivalentSource()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00200">hasParent()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00222">hasSample()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00208">hasSource()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00145">indexOfAny()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00149">isDetector()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00294">isGridDetector()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00247">l1()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00550">merge()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00282">name()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00198">parent()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00298">pixelGridComponent()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00158">position()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00162">position()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00116">quadrilateralComponent()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00174">relativePosition()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00178">relativeRotation()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00249">root()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00166">rotation()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00170">rotation()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00245">sample()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00206">samplePosition()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00190">scaleComponent()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00194">scaleComponent()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00278">scaleFactor()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00548">scanCount()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00182">setPosition()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00251">setPosition()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00186">setRotation()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00255">setRotation()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00286">setScaleFactor()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00544">setScanInterval()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00290">sideBySideViewPosition()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00114">size()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00367">solidAngle()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00243">source()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00204">sourcePosition()</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00147">uniqueName()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00110">children()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00435">componentBoundingBox()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00061">ComponentInfo()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00106">componentsInSubtree()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00540">componentType()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00305">detectorIndexAtXYZ()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00102">detectorsInSubtree()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00823">getMemorySize()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00202">hasDetectorInfo()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00236">hasDetectors()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00232">hasEquivalentSample()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00218">hasEquivalentSource()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00200">hasParent()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00222">hasSample()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00208">hasSource()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00145">indexOfAny()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00149">isDetector()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00294">isGridDetector()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00247">l1()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00550">merge()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00282">name()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00198">parent()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00298">pixelGridComponent()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00158">position()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00162">position()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00116">quadrilateralComponent()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00174">relativePosition()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00178">relativeRotation()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00249">root()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00166">rotation()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00170">rotation()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00245">sample()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00206">samplePosition()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00190">scaleComponent()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00194">scaleComponent()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00278">scaleFactor()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00548">scanCount()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00182">setPosition()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00251">setPosition()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00186">setRotation()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00255">setRotation()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00286">setScaleFactor()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00544">setScanInterval()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00290">sideBySideViewPosition()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00114">size()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00367">solidAngle()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00243">source()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00204">sourcePosition()</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00147">uniqueName()</a>.</p>
 
 </div>
 </div>
@@ -3421,7 +3466,7 @@ template&lt;class T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00065">65</a> of file <a class="el" href="../../da/d05/ComponentInfo_8h_source.html">ComponentInfo.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00761">clearParameter()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00792">getFittingParameter()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00648">getParameter()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00670">getParameterNames()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00660">hasParameter()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00683">mutableParameterInfo()</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00767">parameters()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00761">clearParameter()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00804">getFittingParameter()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00648">getParameter()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00670">getParameterNames()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00792">getParameterType()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00660">hasParameter()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00683">mutableParameterInfo()</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00767">parameters()</a>.</p>
 
 </div>
 </div>
@@ -3449,7 +3494,7 @@ template&lt;class T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00062">62</a> of file <a class="el" href="../../da/d05/ComponentInfo_8h_source.html">ComponentInfo.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00811">getMemorySize()</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00267">shapeToComponentIndices()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00823">getMemorySize()</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00267">shapeToComponentIndices()</a>.</p>
 
 </div>
 </div>
