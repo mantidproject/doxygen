@@ -134,6 +134,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a926d0606bba6ebd64546ed6219c24ea1" id="r_a926d0606bba6ebd64546ed6219c24ea1"><td class="memItemLeft" align="right" valign="top">std::runtime_error&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d0a/classMantid_1_1Kernel_1_1ThreadScheduler.html#a926d0606bba6ebd64546ed6219c24ea1">getAbortException</a> ()</td></tr>
 <tr class="memdesc:a926d0606bba6ebd64546ed6219c24ea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the exception that was caught, if any.  <br /></td></tr>
 <tr class="separator:a926d0606bba6ebd64546ed6219c24ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad314fe64de4e456ea2c4480914e467d8" id="r_ad314fe64de4e456ea2c4480914e467d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d0a/classMantid_1_1Kernel_1_1ThreadScheduler.html#ad314fe64de4e456ea2c4480914e467d8">hasBusyThreads</a> () const</td></tr>
+<tr class="memdesc:ad314fe64de4e456ea2c4480914e467d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if any thread is busy.  <br /></td></tr>
+<tr class="separator:ad314fe64de4e456ea2c4480914e467d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82300576c07ac2a9ed310a09963527b9" id="r_a82300576c07ac2a9ed310a09963527b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d0a/classMantid_1_1Kernel_1_1ThreadScheduler.html#a82300576c07ac2a9ed310a09963527b9">markBusy</a> ()</td></tr>
+<tr class="memdesc:a82300576c07ac2a9ed310a09963527b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark a thread as busy.  <br /></td></tr>
+<tr class="separator:a82300576c07ac2a9ed310a09963527b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a240ee11b3b77e3f450088e2121d29f6e" id="r_a240ee11b3b77e3f450088e2121d29f6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d0a/classMantid_1_1Kernel_1_1ThreadScheduler.html#a240ee11b3b77e3f450088e2121d29f6e">markIdle</a> ()</td></tr>
+<tr class="memdesc:a240ee11b3b77e3f450088e2121d29f6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark a thread as no longer busy. See <a class="el" href="../../d3/d0a/classMantid_1_1Kernel_1_1ThreadScheduler.html#a82300576c07ac2a9ed310a09963527b9" title="Mark a thread as busy.">markBusy()</a>.  <br /></td></tr>
+<tr class="separator:a240ee11b3b77e3f450088e2121d29f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cb3b0425beb1211b1ac6708754558f6" id="r_a8cb3b0425beb1211b1ac6708754558f6"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="../../d0/d48/classMantid_1_1Kernel_1_1Task.html">Task</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d0a/classMantid_1_1Kernel_1_1ThreadScheduler.html#a8cb3b0425beb1211b1ac6708754558f6">pop</a> (size_t threadnum)=0</td></tr>
 <tr class="memdesc:a8cb3b0425beb1211b1ac6708754558f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the next <a class="el" href="../../d0/d48/classMantid_1_1Kernel_1_1Task.html" title="A Task is a unit of work to be scheduled and run by a ThreadPool.">Task</a> to execute.  <br /></td></tr>
 <tr class="separator:a8cb3b0425beb1211b1ac6708754558f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,6 +179,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a40ce7f248d242322391c387dccf567a0" id="r_a40ce7f248d242322391c387dccf567a0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d0a/classMantid_1_1Kernel_1_1ThreadScheduler.html#a40ce7f248d242322391c387dccf567a0">m_costExecuted</a></td></tr>
 <tr class="memdesc:a40ce7f248d242322391c387dccf567a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accumulated cost of tasks that have been executed (popped)  <br /></td></tr>
 <tr class="separator:a40ce7f248d242322391c387dccf567a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb3fe21d97a5a4514edec4df1427a57f" id="r_adb3fe21d97a5a4514edec4df1427a57f"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d0a/classMantid_1_1Kernel_1_1ThreadScheduler.html#adb3fe21d97a5a4514edec4df1427a57f">m_numBusyThreads</a> {0}</td></tr>
+<tr class="memdesc:adb3fe21d97a5a4514edec4df1427a57f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of threads that are getting or running a task.  <br /></td></tr>
+<tr class="separator:adb3fe21d97a5a4514edec4df1427a57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a503f00a76dc98d211c022077040e6eb5" id="r_a503f00a76dc98d211c022077040e6eb5"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d0a/classMantid_1_1Kernel_1_1ThreadScheduler.html#a503f00a76dc98d211c022077040e6eb5">m_queueLock</a></td></tr>
 <tr class="memdesc:a503f00a76dc98d211c022077040e6eb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex to prevent simultaneous access to the queue.  <br /></td></tr>
 <tr class="separator:a503f00a76dc98d211c022077040e6eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,7 +192,7 @@ Protected Attributes</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Janik Zikovsky, SNS </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>Feb 7, 2011 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00032">32</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00033">33</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae397793d541c6a41d551fa13408c0d87" name="ae397793d541c6a41d551fa13408c0d87"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae397793d541c6a41d551fa13408c0d87">&#9670;&#160;</a></span>ThreadScheduler()</h2>
@@ -207,7 +219,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00036">36</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00037">37</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
 
 </div>
 </div>
@@ -272,9 +284,9 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00071">71</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00072">72</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d59/ThreadPoolRunnable_8cpp_source.html#l00041">Mantid::Kernel::ThreadPoolRunnable::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d59/ThreadPoolRunnable_8cpp_source.html#l00062">Mantid::Kernel::ThreadPoolRunnable::run()</a>.</p>
 
 </div>
 </div>
@@ -334,7 +346,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d1/daa/classMantid_1_1Kernel_1_1ThreadSchedulerFIFO.html#a7037310d58e63c29cf31a0a13baa9eae">Mantid::Kernel::ThreadSchedulerFIFO</a>, <a class="el" href="../../d1/d66/classMantid_1_1Kernel_1_1ThreadSchedulerLargestCost.html#ad475569923c5e71860fa3ad939c8422c">Mantid::Kernel::ThreadSchedulerLargestCost</a>, and <a class="el" href="../../dc/d8e/classMantid_1_1Kernel_1_1ThreadSchedulerMutexes.html#a603022cc4d38470d11f16e9d722e723d">Mantid::Kernel::ThreadSchedulerMutexes</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d59/ThreadPoolRunnable_8cpp_source.html#l00041">Mantid::Kernel::ThreadPoolRunnable::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d59/ThreadPoolRunnable_8cpp_source.html#l00062">Mantid::Kernel::ThreadPoolRunnable::run()</a>.</p>
 
 </div>
 </div>
@@ -383,11 +395,11 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../dc/d8e/classMantid_1_1Kernel_1_1ThreadSchedulerMutexes.html#ac0730e8c215b8428a4f7a9d597a81dbd">Mantid::Kernel::ThreadSchedulerMutexes</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00060">60</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00061">61</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
 
 <p class="reference">References <a class="el" href="../../db/d39/System_8h_source.html#l00044">UNUSED_ARG</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d59/ThreadPoolRunnable_8cpp_source.html#l00041">Mantid::Kernel::ThreadPoolRunnable::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d59/ThreadPoolRunnable_8cpp_source.html#l00062">Mantid::Kernel::ThreadPoolRunnable::run()</a>.</p>
 
 </div>
 </div>
@@ -416,7 +428,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Returns true if the execution was aborted. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00102">102</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00103">103</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
 
 </div>
 </div>
@@ -445,7 +457,98 @@ Protected Attributes</h2></td></tr>
 
 <p>Returns the exception that was caught, if any. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00099">99</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00100">100</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
+
+</div>
+</div>
+<a id="ad314fe64de4e456ea2c4480914e467d8" name="ad314fe64de4e456ea2c4480914e467d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad314fe64de4e456ea2c4480914e467d8">&#9670;&#160;</a></span>hasBusyThreads()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mantid::Kernel::ThreadScheduler::hasBusyThreads </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if any thread is busy. </p>
+<p>A running task may still add tasks to the queue, so threads should not exit while this is true. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00117">117</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d6/d59/ThreadPoolRunnable_8cpp_source.html#l00062">Mantid::Kernel::ThreadPoolRunnable::run()</a>.</p>
+
+</div>
+</div>
+<a id="a82300576c07ac2a9ed310a09963527b9" name="a82300576c07ac2a9ed310a09963527b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82300576c07ac2a9ed310a09963527b9">&#9670;&#160;</a></span>markBusy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mantid::Kernel::ThreadScheduler::markBusy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mark a thread as busy. </p>
+<p>A thread calls this before asking for a task and calls <a class="el" href="../../d3/d0a/classMantid_1_1Kernel_1_1ThreadScheduler.html#a240ee11b3b77e3f450088e2121d29f6e" title="Mark a thread as no longer busy. See markBusy().">markIdle()</a> once it has none, or once the task it got has finished. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00109">109</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
+
+</div>
+</div>
+<a id="a240ee11b3b77e3f450088e2121d29f6e" name="a240ee11b3b77e3f450088e2121d29f6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a240ee11b3b77e3f450088e2121d29f6e">&#9670;&#160;</a></span>markIdle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mantid::Kernel::ThreadScheduler::markIdle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mark a thread as no longer busy. See <a class="el" href="../../d3/d0a/classMantid_1_1Kernel_1_1ThreadScheduler.html#a82300576c07ac2a9ed310a09963527b9" title="Mark a thread as busy.">markBusy()</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00112">112</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
 
 </div>
 </div>
@@ -484,7 +587,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d1/daa/classMantid_1_1Kernel_1_1ThreadSchedulerFIFO.html#a7ecb00ce2557e2375c850f8d2131a378">Mantid::Kernel::ThreadSchedulerFIFO</a>, <a class="el" href="../../d1/ddd/classMantid_1_1Kernel_1_1ThreadSchedulerLIFO.html#a6f9918e9c5e900702bcb6ace5407c05f">Mantid::Kernel::ThreadSchedulerLIFO</a>, <a class="el" href="../../d1/d66/classMantid_1_1Kernel_1_1ThreadSchedulerLargestCost.html#a14ef9f79cd5a5c3c5067d8ddd98a235b">Mantid::Kernel::ThreadSchedulerLargestCost</a>, and <a class="el" href="../../dc/d8e/classMantid_1_1Kernel_1_1ThreadSchedulerMutexes.html#ab8bd09257504595cc3529cb539fdd3ef">Mantid::Kernel::ThreadSchedulerMutexes</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d59/ThreadPoolRunnable_8cpp_source.html#l00041">Mantid::Kernel::ThreadPoolRunnable::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d59/ThreadPoolRunnable_8cpp_source.html#l00062">Mantid::Kernel::ThreadPoolRunnable::run()</a>.</p>
 
 </div>
 </div>
@@ -582,7 +685,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Returns the total cost of all <a class="el" href="../../d0/d48/classMantid_1_1Kernel_1_1Task.html" title="A Task is a unit of work to be scheduled and run by a ThreadPool.">Task</a>'s in the queue. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00091">91</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00092">92</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
 
 </div>
 </div>
@@ -611,7 +714,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Returns the total cost of all <a class="el" href="../../d0/d48/classMantid_1_1Kernel_1_1Task.html" title="A Task is a unit of work to be scheduled and run by a ThreadPool.">Task</a>'s in the queue. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00095">95</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00096">96</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
 
 </div>
 </div>
@@ -638,7 +741,7 @@ Protected Attributes</h2></td></tr>
 
 <p>The run was aborted due to an exception. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00114">114</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00129">129</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
 
 </div>
 </div>
@@ -664,7 +767,7 @@ Protected Attributes</h2></td></tr>
 
 <p>The exception that aborted the run. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00112">112</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00127">127</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
 
 </div>
 </div>
@@ -690,7 +793,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Total cost of all tasks. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00106">106</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00121">121</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
 
 </div>
 </div>
@@ -716,7 +819,33 @@ Protected Attributes</h2></td></tr>
 
 <p>Accumulated cost of tasks that have been executed (popped) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00108">108</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00123">123</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
+
+</div>
+</div>
+<a id="adb3fe21d97a5a4514edec4df1427a57f" name="adb3fe21d97a5a4514edec4df1427a57f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb3fe21d97a5a4514edec4df1427a57f">&#9670;&#160;</a></span>m_numBusyThreads</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;size_t&gt; Mantid::Kernel::ThreadScheduler::m_numBusyThreads {0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Number of threads that are getting or running a task. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00131">131</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
 
 </div>
 </div>
@@ -742,7 +871,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Mutex to prevent simultaneous access to the queue. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00110">110</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html#l00125">125</a> of file <a class="el" href="../../d9/d93/ThreadScheduler_8h_source.html">ThreadScheduler.h</a>.</p>
 
 </div>
 </div>
