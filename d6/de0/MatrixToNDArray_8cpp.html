@@ -98,6 +98,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d8/d82/MatrixToNDArray_8h_source.html">MantidPythonInterface/core/Converters/MatrixToNDArray.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d1/d89/NDArrayTypeIndex_8h_source.html">MantidPythonInterface/core/Converters/NDArrayTypeIndex.h</a>&quot;</code><br />
+<code>#include &quot;MantidPythonInterface/core/DllConfig.h&quot;</code><br />
 <code>#include &lt;numpy/arrayobject.h&gt;</code><br />
 </div>
 <p><a href="../../d6/de0/MatrixToNDArray_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -152,11 +153,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">template</span> <a class="code hl_define" href="../../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247">DLLExport</a> PyObject *wrapWithNDArray&lt;Kernel::Matrix&lt;ElementType&gt;&gt;(<span class="keyword">const</span> Kernel::Matrix&lt;ElementType&gt; &amp;,       \</div>
-<div class="line">                                                                            <span class="keyword">const</span> NumpyWrapMode);</div>
-<div class="ttc" id="aSystem_8h_html_a76a25d39b515cd13499e0d9047485247"><div class="ttname"><a href="../../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247">DLLExport</a></div><div class="ttdeci">#define DLLExport</div><div class="ttdoc">Definitions of the DLLImport compiler directives for MSVC.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d39/System_8h_source.html#l00033">System.h:33</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">template</span> MANTID_PYTHONINTERFACE_CORE_DLL PyObject *wrapWithNDArray&lt;Kernel::Matrix&lt;ElementType&gt;&gt;(                     \</div>
+<div class="line">      <span class="keyword">const</span> Kernel::Matrix&lt;ElementType&gt; &amp;, <span class="keyword">const</span> NumpyWrapMode);</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="../../d6/de0/MatrixToNDArray_8cpp_source.html#l00044">44</a> of file <a class="el" href="../../d6/de0/MatrixToNDArray_8cpp_source.html">MatrixToNDArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/de0/MatrixToNDArray_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../d6/de0/MatrixToNDArray_8cpp_source.html">MatrixToNDArray.cpp</a>.</p>
 
 </div>
 </div>
@@ -172,7 +172,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/de0/MatrixToNDArray_8cpp_source.html#l00014">14</a> of file <a class="el" href="../../d6/de0/MatrixToNDArray_8cpp_source.html">MatrixToNDArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/de0/MatrixToNDArray_8cpp_source.html#l00015">15</a> of file <a class="el" href="../../d6/de0/MatrixToNDArray_8cpp_source.html">MatrixToNDArray.cpp</a>.</p>
 
 </div>
 </div>
@@ -188,7 +188,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/de0/MatrixToNDArray_8cpp_source.html#l00013">13</a> of file <a class="el" href="../../d6/de0/MatrixToNDArray_8cpp_source.html">MatrixToNDArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/de0/MatrixToNDArray_8cpp_source.html#l00014">14</a> of file <a class="el" href="../../d6/de0/MatrixToNDArray_8cpp_source.html">MatrixToNDArray.cpp</a>.</p>
 
 </div>
 </div>

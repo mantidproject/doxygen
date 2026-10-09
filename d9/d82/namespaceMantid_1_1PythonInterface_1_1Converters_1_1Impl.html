@@ -98,7 +98,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a26ef36765ad0827ae95c6fdd6cc7bcc2" id="r_a26ef36765ad0827ae95c6fdd6cc7bcc2"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:a26ef36765ad0827ae95c6fdd6cc7bcc2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d7/dff/core_2inc_2MantidPythonInterface_2core_2DllConfig_8h.html#ab93c73ffac105fa542e0728e8b3a41f9">MANTID_PYTHONINTERFACE_CORE_DLL</a> PyObject *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d82/namespaceMantid_1_1PythonInterface_1_1Converters_1_1Impl.html#a26ef36765ad0827ae95c6fdd6cc7bcc2">clone1D</a> (const std::vector&lt; bool &gt; &amp;cvector)</td></tr>
+<tr class="memitem:a26ef36765ad0827ae95c6fdd6cc7bcc2"><td class="memTemplItemLeft" align="right" valign="top">MANTID_PYTHONINTERFACE_CORE_DLL PyObject *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d82/namespaceMantid_1_1PythonInterface_1_1Converters_1_1Impl.html#a26ef36765ad0827ae95c6fdd6cc7bcc2">clone1D</a> (const std::vector&lt; bool &gt; &amp;cvector)</td></tr>
 <tr class="memdesc:a26ef36765ad0827ae95c6fdd6cc7bcc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialisation for vector&lt;bool&gt; that stores the underlying data differently Returns a new numpy array with the a copy of the data vector of booleans.  <br /></td></tr>
 <tr class="separator:a26ef36765ad0827ae95c6fdd6cc7bcc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87a25bb3e55ee199e08361b5edf43924" id="r_a87a25bb3e55ee199e08361b5edf43924"><td class="memTemplParams" colspan="2">template&lt;typename ElementType &gt; </td></tr>
@@ -106,7 +106,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a87a25bb3e55ee199e08361b5edf43924"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new numpy array with the a copy of the data from 1D vector with the exception of string elements where a Python list is produced.  <br /></td></tr>
 <tr class="separator:a87a25bb3e55ee199e08361b5edf43924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10c935d94b4ebf42b117fc554fadd91d" id="r_a10c935d94b4ebf42b117fc554fadd91d"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:a10c935d94b4ebf42b117fc554fadd91d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d7/dff/core_2inc_2MantidPythonInterface_2core_2DllConfig_8h.html#ab93c73ffac105fa542e0728e8b3a41f9">MANTID_PYTHONINTERFACE_CORE_DLL</a> PyObject *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d82/namespaceMantid_1_1PythonInterface_1_1Converters_1_1Impl.html#a10c935d94b4ebf42b117fc554fadd91d">clone1D</a> (const std::vector&lt; Types::Core::DateAndTime &gt; &amp;cvector)</td></tr>
+<tr class="memitem:a10c935d94b4ebf42b117fc554fadd91d"><td class="memTemplItemLeft" align="right" valign="top">MANTID_PYTHONINTERFACE_CORE_DLL PyObject *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d82/namespaceMantid_1_1PythonInterface_1_1Converters_1_1Impl.html#a10c935d94b4ebf42b117fc554fadd91d">clone1D</a> (const std::vector&lt; Types::Core::DateAndTime &gt; &amp;cvector)</td></tr>
 <tr class="memdesc:a10c935d94b4ebf42b117fc554fadd91d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialisation for vector&lt;DateAndTime&gt; that stores the underlying data differently Returns a new numpy array with the a copy of the data vector of np.datetime64.  <br /></td></tr>
 <tr class="separator:a10c935d94b4ebf42b117fc554fadd91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22c480c40eb09895d9e9a5c1bfa63ef5" id="r_a22c480c40eb09895d9e9a5c1bfa63ef5"><td class="memTemplParams" colspan="2">template&lt;typename ElementType &gt; </td></tr>
@@ -117,14 +117,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ae3a9e0c3105c35d3b06a0b36d575c19e"><td class="memTemplItemLeft" align="right" valign="top">PyObject *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d82/namespaceMantid_1_1PythonInterface_1_1Converters_1_1Impl.html#ae3a9e0c3105c35d3b06a0b36d575c19e">cloneND</a> (const std::string *carray, const int ndims, Py_intptr_t *dims)</td></tr>
 <tr class="memdesc:ae3a9e0c3105c35d3b06a0b36d575c19e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new python list of strings from the given array of strings.  <br /></td></tr>
 <tr class="separator:ae3a9e0c3105c35d3b06a0b36d575c19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0e00d2a9fde0f237266fcf77f23b531" id="r_ac0e00d2a9fde0f237266fcf77f23b531"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/dff/core_2inc_2MantidPythonInterface_2core_2DllConfig_8h.html#ab93c73ffac105fa542e0728e8b3a41f9">MANTID_PYTHONINTERFACE_CORE_DLL</a> <a class="el" href="../../df/dd8/NumpyFunctions_8h.html#ad069df4aabe3fd3c9e0ecadf455c5f29">PyArray_Descr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/namespaceMantid_1_1PythonInterface_1_1Converters_1_1Impl.html#ac0e00d2a9fde0f237266fcf77f23b531">func_PyArray_Descr</a> (const char *datadescr)</td></tr>
+<tr class="memitem:ac0e00d2a9fde0f237266fcf77f23b531" id="r_ac0e00d2a9fde0f237266fcf77f23b531"><td class="memItemLeft" align="right" valign="top">MANTID_PYTHONINTERFACE_CORE_DLL <a class="el" href="../../df/dd8/NumpyFunctions_8h.html#ad069df4aabe3fd3c9e0ecadf455c5f29">PyArray_Descr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/namespaceMantid_1_1PythonInterface_1_1Converters_1_1Impl.html#ac0e00d2a9fde0f237266fcf77f23b531">func_PyArray_Descr</a> (const char *datadescr)</td></tr>
 <tr class="separator:ac0e00d2a9fde0f237266fcf77f23b531"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee89ae3b10eb7da345a0c5ac2bd59cd5" id="r_aee89ae3b10eb7da345a0c5ac2bd59cd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/dff/core_2inc_2MantidPythonInterface_2core_2DllConfig_8h.html#ab93c73ffac105fa542e0728e8b3a41f9">MANTID_PYTHONINTERFACE_CORE_DLL</a> PyObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/namespaceMantid_1_1PythonInterface_1_1Converters_1_1Impl.html#aee89ae3b10eb7da345a0c5ac2bd59cd5">func_PyArray_IterNew</a> (<a class="el" href="../../df/dd8/NumpyFunctions_8h.html#a0572ea018a5a595f04eb5169b4225dbc">PyArrayObject</a> *arr)</td></tr>
+<tr class="memitem:aee89ae3b10eb7da345a0c5ac2bd59cd5" id="r_aee89ae3b10eb7da345a0c5ac2bd59cd5"><td class="memItemLeft" align="right" valign="top">MANTID_PYTHONINTERFACE_CORE_DLL PyObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/namespaceMantid_1_1PythonInterface_1_1Converters_1_1Impl.html#aee89ae3b10eb7da345a0c5ac2bd59cd5">func_PyArray_IterNew</a> (<a class="el" href="../../df/dd8/NumpyFunctions_8h.html#a0572ea018a5a595f04eb5169b4225dbc">PyArrayObject</a> *arr)</td></tr>
 <tr class="memdesc:aee89ae3b10eb7da345a0c5ac2bd59cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">equivalent to macro PyArray_IterNew  <br /></td></tr>
 <tr class="separator:aee89ae3b10eb7da345a0c5ac2bd59cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac784d56a1e70dea2a4ae3f07c35b55f2" id="r_ac784d56a1e70dea2a4ae3f07c35b55f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/dff/core_2inc_2MantidPythonInterface_2core_2DllConfig_8h.html#ab93c73ffac105fa542e0728e8b3a41f9">MANTID_PYTHONINTERFACE_CORE_DLL</a> <a class="el" href="../../df/dd8/NumpyFunctions_8h.html#a0572ea018a5a595f04eb5169b4225dbc">PyArrayObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/namespaceMantid_1_1PythonInterface_1_1Converters_1_1Impl.html#ac784d56a1e70dea2a4ae3f07c35b55f2">func_PyArray_NewFromDescr</a> (const char *datadescr, int ndims, Py_intptr_t *dims)</td></tr>
+<tr class="memitem:ac784d56a1e70dea2a4ae3f07c35b55f2" id="r_ac784d56a1e70dea2a4ae3f07c35b55f2"><td class="memItemLeft" align="right" valign="top">MANTID_PYTHONINTERFACE_CORE_DLL <a class="el" href="../../df/dd8/NumpyFunctions_8h.html#a0572ea018a5a595f04eb5169b4225dbc">PyArrayObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/namespaceMantid_1_1PythonInterface_1_1Converters_1_1Impl.html#ac784d56a1e70dea2a4ae3f07c35b55f2">func_PyArray_NewFromDescr</a> (const char *datadescr, int ndims, Py_intptr_t *dims)</td></tr>
 <tr class="separator:ac784d56a1e70dea2a4ae3f07c35b55f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92ea9b830fca41e84c96516adc38c96e" id="r_a92ea9b830fca41e84c96516adc38c96e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/dff/core_2inc_2MantidPythonInterface_2core_2DllConfig_8h.html#ab93c73ffac105fa542e0728e8b3a41f9">MANTID_PYTHONINTERFACE_CORE_DLL</a> <a class="el" href="../../df/dd8/NumpyFunctions_8h.html#a0572ea018a5a595f04eb5169b4225dbc">PyArrayObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/namespaceMantid_1_1PythonInterface_1_1Converters_1_1Impl.html#a92ea9b830fca41e84c96516adc38c96e">func_PyArray_NewFromDescr</a> (int datatype, int ndims, Py_intptr_t *dims)</td></tr>
+<tr class="memitem:a92ea9b830fca41e84c96516adc38c96e" id="r_a92ea9b830fca41e84c96516adc38c96e"><td class="memItemLeft" align="right" valign="top">MANTID_PYTHONINTERFACE_CORE_DLL <a class="el" href="../../df/dd8/NumpyFunctions_8h.html#a0572ea018a5a595f04eb5169b4225dbc">PyArrayObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/namespaceMantid_1_1PythonInterface_1_1Converters_1_1Impl.html#a92ea9b830fca41e84c96516adc38c96e">func_PyArray_NewFromDescr</a> (int datatype, int ndims, Py_intptr_t *dims)</td></tr>
 <tr class="memdesc:a92ea9b830fca41e84c96516adc38c96e"><td class="mdescLeft">&#160;</td><td class="mdescRight">equivalent to macro PyArray_NewFromDescr  <br /></td></tr>
 <tr class="separator:a92ea9b830fca41e84c96516adc38c96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a637e447596214984f0a96100f7ea012c" id="r_a637e447596214984f0a96100f7ea012c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/namespaceMantid_1_1PythonInterface_1_1Converters_1_1Impl.html#a637e447596214984f0a96100f7ea012c">INSTANTIATE_MATRIX_WRAP</a> (double)</td></tr>
@@ -152,7 +152,7 @@ Functions</h2></td></tr>
 template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d7/dff/core_2inc_2MantidPythonInterface_2core_2DllConfig_8h.html#ab93c73ffac105fa542e0728e8b3a41f9">MANTID_PYTHONINTERFACE_CORE_DLL</a> PyObject * Mantid::PythonInterface::Converters::Impl::clone1D </td>
+          <td class="memname">MANTID_PYTHONINTERFACE_CORE_DLL PyObject * Mantid::PythonInterface::Converters::Impl::clone1D </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; bool &gt; &amp;&#160;</td>
           <td class="paramname"><em>cvector</em></td><td>)</td>
@@ -170,9 +170,9 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The new cloned array </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00075">75</a> of file <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html">CloneToNDArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00076">76</a> of file <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html">CloneToNDArray.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00042">clone1D()</a>, and <a class="el" href="../../df/d08/NumpyFunctions_8cpp_source.html#l00019">func_PyArray_NewFromDescr()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00043">clone1D()</a>, and <a class="el" href="../../df/d08/NumpyFunctions_8cpp_source.html#l00019">func_PyArray_NewFromDescr()</a>.</p>
 
 </div>
 </div>
@@ -203,11 +203,11 @@ template&lt;typename ElementType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The new cloned array </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html">CloneToNDArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00043">43</a> of file <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html">CloneToNDArray.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00042">clone1D()</a>, and <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00098">cloneND()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00043">clone1D()</a>, and <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00099">cloneND()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00075">clone1D()</a>, <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00042">clone1D()</a>, and <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00052">clone1D()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00076">clone1D()</a>, <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00043">clone1D()</a>, and <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00053">clone1D()</a>.</p>
 
 </div>
 </div>
@@ -220,7 +220,7 @@ template&lt;typename ElementType &gt; </div>
 template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d7/dff/core_2inc_2MantidPythonInterface_2core_2DllConfig_8h.html#ab93c73ffac105fa542e0728e8b3a41f9">MANTID_PYTHONINTERFACE_CORE_DLL</a> PyObject * Mantid::PythonInterface::Converters::Impl::clone1D </td>
+          <td class="memname">MANTID_PYTHONINTERFACE_CORE_DLL PyObject * Mantid::PythonInterface::Converters::Impl::clone1D </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; Types::Core::DateAndTime &gt; &amp;&#160;</td>
           <td class="paramname"><em>cvector</em></td><td>)</td>
@@ -231,9 +231,9 @@ template&lt;&gt; </div>
 
 <p>Specialisation for vector&lt;DateAndTime&gt; that stores the underlying data differently Returns a new numpy array with the a copy of the data vector of np.datetime64. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00052">52</a> of file <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html">CloneToNDArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00053">53</a> of file <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html">CloneToNDArray.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00042">clone1D()</a>, <a class="el" href="../../df/d8e/PythonInterface_2core_2src_2Converters_2DateAndTime_8cpp_source.html#l00046">Mantid::PythonInterface::Converters::descr_ns()</a>, and <a class="el" href="../../d4/de3/namespaceMantid_1_1PythonInterface_1_1Converters.html#af6fa5c4541405514bc07b220cad9b1bb">Mantid::PythonInterface::Converters::to_npy_datetime()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00043">clone1D()</a>, <a class="el" href="../../df/d8e/PythonInterface_2core_2src_2Converters_2DateAndTime_8cpp_source.html#l00046">Mantid::PythonInterface::Converters::descr_ns()</a>, and <a class="el" href="../../d4/de3/namespaceMantid_1_1PythonInterface_1_1Converters.html#af6fa5c4541405514bc07b220cad9b1bb">Mantid::PythonInterface::Converters::to_npy_datetime()</a>.</p>
 
 </div>
 </div>
@@ -282,11 +282,11 @@ template&lt;typename ElementType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00098">98</a> of file <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html">CloneToNDArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00099">99</a> of file <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html">CloneToNDArray.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00098">cloneND()</a>, and <a class="el" href="../../df/d08/NumpyFunctions_8cpp_source.html#l00019">func_PyArray_NewFromDescr()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00099">cloneND()</a>, and <a class="el" href="../../df/d08/NumpyFunctions_8cpp_source.html#l00019">func_PyArray_NewFromDescr()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00042">clone1D()</a>, <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00098">cloneND()</a>, and <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00127">cloneND()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00043">clone1D()</a>, <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00099">cloneND()</a>, and <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00128">cloneND()</a>.</p>
 
 </div>
 </div>
@@ -335,9 +335,9 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00127">127</a> of file <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html">CloneToNDArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00128">128</a> of file <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html">CloneToNDArray.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00098">cloneND()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00099">cloneND()</a>.</p>
 
 </div>
 </div>
@@ -461,7 +461,7 @@ template&lt;&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d08/NumpyFunctions_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../df/d08/NumpyFunctions_8cpp_source.html">NumpyFunctions.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00075">clone1D()</a>, and <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00098">cloneND()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00076">clone1D()</a>, and <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00099">cloneND()</a>.</p>
 
 </div>
 </div>
@@ -557,7 +557,7 @@ template&lt;typename ContainerType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to a numpy ndarray object </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/de0/MatrixToNDArray_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../d6/de0/MatrixToNDArray_8cpp_source.html">MatrixToNDArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/de0/MatrixToNDArray_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../d6/de0/MatrixToNDArray_8cpp_source.html">MatrixToNDArray.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d9/de8/WrapWithNDArray_8h_source.html#l00016">Mantid::PythonInterface::Converters::ReadOnly</a>.</p>
 
@@ -622,11 +622,11 @@ template&lt;typename ElementType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to a numpy ndarray object </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dc4/WrapWithNDArray_8cpp_source.html#l00079">79</a> of file <a class="el" href="../../d9/dc4/WrapWithNDArray_8cpp_source.html">WrapWithNDArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dc4/WrapWithNDArray_8cpp_source.html#l00080">80</a> of file <a class="el" href="../../d9/dc4/WrapWithNDArray_8cpp_source.html">WrapWithNDArray.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/de8/WrapWithNDArray_8h_source.html#l00018">Mantid::PythonInterface::Converters::Python</a>, <a class="el" href="../../d9/de8/WrapWithNDArray_8h_source.html#l00016">Mantid::PythonInterface::Converters::ReadOnly</a>, and <a class="el" href="../../d9/dc4/WrapWithNDArray_8cpp_source.html#l00079">wrapWithNDArray()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/de8/WrapWithNDArray_8h_source.html#l00018">Mantid::PythonInterface::Converters::Python</a>, <a class="el" href="../../d9/de8/WrapWithNDArray_8h_source.html#l00016">Mantid::PythonInterface::Converters::ReadOnly</a>, and <a class="el" href="../../d9/dc4/WrapWithNDArray_8cpp_source.html#l00080">wrapWithNDArray()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/de8/WrapWithNDArray_8h_source.html#l00056">Mantid::PythonInterface::Converters::WrapReadOnly::apply&lt; ElementType &gt;::createFromArray()</a>, <a class="el" href="../../d9/de8/WrapWithNDArray_8h_source.html#l00090">Mantid::PythonInterface::Converters::WrapReadWrite::apply&lt; ElementType &gt;::createFromArray()</a>, <a class="el" href="../../d6/db4/PythonInterface_2mantid_2geometry_2src_2Exports_2CSGObject_8cpp_source.html#l00038">getEmptyArrayObject()</a>, <a class="el" href="../../d6/db4/PythonInterface_2mantid_2geometry_2src_2Exports_2CSGObject_8cpp_source.html#l00046">wrapMeshWithNDArray()</a>, <a class="el" href="../../db/d68/PythonInterface_2mantid_2geometry_2src_2Exports_2MeshObject_8cpp_source.html#l00030">wrapMeshWithNDArray()</a>, and <a class="el" href="../../d9/dc4/WrapWithNDArray_8cpp_source.html#l00079">wrapWithNDArray()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/de8/WrapWithNDArray_8h_source.html#l00056">Mantid::PythonInterface::Converters::WrapReadOnly::apply&lt; ElementType &gt;::createFromArray()</a>, <a class="el" href="../../d9/de8/WrapWithNDArray_8h_source.html#l00090">Mantid::PythonInterface::Converters::WrapReadWrite::apply&lt; ElementType &gt;::createFromArray()</a>, <a class="el" href="../../d6/db4/PythonInterface_2mantid_2geometry_2src_2Exports_2CSGObject_8cpp_source.html#l00038">getEmptyArrayObject()</a>, <a class="el" href="../../d6/db4/PythonInterface_2mantid_2geometry_2src_2Exports_2CSGObject_8cpp_source.html#l00046">wrapMeshWithNDArray()</a>, <a class="el" href="../../db/d68/PythonInterface_2mantid_2geometry_2src_2Exports_2MeshObject_8cpp_source.html#l00030">wrapMeshWithNDArray()</a>, and <a class="el" href="../../d9/dc4/WrapWithNDArray_8cpp_source.html#l00080">wrapWithNDArray()</a>.</p>
 
 </div>
 </div>

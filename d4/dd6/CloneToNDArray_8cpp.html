@@ -100,6 +100,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="../../db/d39/PythonInterface_2core_2inc_2MantidPythonInterface_2core_2Converters_2DateAndTime_8h_source.html">MantidPythonInterface/core/Converters/DateAndTime.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d1/d89/NDArrayTypeIndex_8h_source.html">MantidPythonInterface/core/Converters/NDArrayTypeIndex.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../df/dd8/NumpyFunctions_8h_source.html">MantidPythonInterface/core/Converters/NumpyFunctions.h</a>&quot;</code><br />
+<code>#include &quot;MantidPythonInterface/core/DllConfig.h&quot;</code><br />
 <code>#include &quot;MantidTypes/Core/DateAndTime.h&quot;</code><br />
 <code>#include &lt;boost/python/list.hpp&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
@@ -123,9 +124,9 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:ab98024cb7ecbf975ea1b1baa04f4bec0" id="r_ab98024cb7ecbf975ea1b1baa04f4bec0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd6/CloneToNDArray_8cpp.html#ab98024cb7ecbf975ea1b1baa04f4bec0">INSTANTIATE_CLONE</a>(ElementType)</td></tr>
 <tr class="separator:ab98024cb7ecbf975ea1b1baa04f4bec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afebe13820b2473883d7ae65b1645d3f0" id="r_afebe13820b2473883d7ae65b1645d3f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd6/CloneToNDArray_8cpp.html#afebe13820b2473883d7ae65b1645d3f0">INSTANTIATE_CLONE1D</a>(ElementType)&#160;&#160;&#160;  template <a class="el" href="../../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247">DLLExport</a> PyObject *clone1D&lt;ElementType&gt;(const std::vector&lt;ElementType&gt; &amp;cvector);</td></tr>
+<tr class="memitem:afebe13820b2473883d7ae65b1645d3f0" id="r_afebe13820b2473883d7ae65b1645d3f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd6/CloneToNDArray_8cpp.html#afebe13820b2473883d7ae65b1645d3f0">INSTANTIATE_CLONE1D</a>(ElementType)&#160;&#160;&#160;  template MANTID_PYTHONINTERFACE_CORE_DLL PyObject *clone1D&lt;ElementType&gt;(const std::vector&lt;ElementType&gt; &amp;cvector);</td></tr>
 <tr class="separator:afebe13820b2473883d7ae65b1645d3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9a018c0223ba00317f95253c2c20323" id="r_ae9a018c0223ba00317f95253c2c20323"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd6/CloneToNDArray_8cpp.html#ae9a018c0223ba00317f95253c2c20323">INSTANTIATE_CLONEND</a>(ElementType)&#160;&#160;&#160;  template <a class="el" href="../../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247">DLLExport</a> PyObject *cloneND&lt;ElementType&gt;(const ElementType *, const int ndims, Py_intptr_t *dims);</td></tr>
+<tr class="memitem:ae9a018c0223ba00317f95253c2c20323" id="r_ae9a018c0223ba00317f95253c2c20323"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd6/CloneToNDArray_8cpp.html#ae9a018c0223ba00317f95253c2c20323">INSTANTIATE_CLONEND</a>(ElementType)</td></tr>
 <tr class="separator:ae9a018c0223ba00317f95253c2c20323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2cd12e09a08db7cbcae2e74f723d6c4" id="r_ad2cd12e09a08db7cbcae2e74f723d6c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd6/CloneToNDArray_8cpp.html#ad2cd12e09a08db7cbcae2e74f723d6c4">NO_IMPORT_ARRAY</a></td></tr>
 <tr class="separator:ad2cd12e09a08db7cbcae2e74f723d6c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,7 +136,7 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a26ef36765ad0827ae95c6fdd6cc7bcc2" id="r_a26ef36765ad0827ae95c6fdd6cc7bcc2"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:a26ef36765ad0827ae95c6fdd6cc7bcc2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d7/dff/core_2inc_2MantidPythonInterface_2core_2DllConfig_8h.html#ab93c73ffac105fa542e0728e8b3a41f9">MANTID_PYTHONINTERFACE_CORE_DLL</a> PyObject *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d82/namespaceMantid_1_1PythonInterface_1_1Converters_1_1Impl.html#a26ef36765ad0827ae95c6fdd6cc7bcc2">Mantid::PythonInterface::Converters::Impl::clone1D</a> (const std::vector&lt; bool &gt; &amp;cvector)</td></tr>
+<tr class="memitem:a26ef36765ad0827ae95c6fdd6cc7bcc2"><td class="memTemplItemLeft" align="right" valign="top">MANTID_PYTHONINTERFACE_CORE_DLL PyObject *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d82/namespaceMantid_1_1PythonInterface_1_1Converters_1_1Impl.html#a26ef36765ad0827ae95c6fdd6cc7bcc2">Mantid::PythonInterface::Converters::Impl::clone1D</a> (const std::vector&lt; bool &gt; &amp;cvector)</td></tr>
 <tr class="memdesc:a26ef36765ad0827ae95c6fdd6cc7bcc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialisation for vector&lt;bool&gt; that stores the underlying data differently Returns a new numpy array with the a copy of the data vector of booleans.  <br /></td></tr>
 <tr class="separator:a26ef36765ad0827ae95c6fdd6cc7bcc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87a25bb3e55ee199e08361b5edf43924" id="r_a87a25bb3e55ee199e08361b5edf43924"><td class="memTemplParams" colspan="2">template&lt;typename ElementType &gt; </td></tr>
@@ -143,7 +144,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a87a25bb3e55ee199e08361b5edf43924"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new numpy array with the a copy of the data from 1D vector with the exception of string elements where a Python list is produced.  <br /></td></tr>
 <tr class="separator:a87a25bb3e55ee199e08361b5edf43924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10c935d94b4ebf42b117fc554fadd91d" id="r_a10c935d94b4ebf42b117fc554fadd91d"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:a10c935d94b4ebf42b117fc554fadd91d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d7/dff/core_2inc_2MantidPythonInterface_2core_2DllConfig_8h.html#ab93c73ffac105fa542e0728e8b3a41f9">MANTID_PYTHONINTERFACE_CORE_DLL</a> PyObject *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d82/namespaceMantid_1_1PythonInterface_1_1Converters_1_1Impl.html#a10c935d94b4ebf42b117fc554fadd91d">Mantid::PythonInterface::Converters::Impl::clone1D</a> (const std::vector&lt; Types::Core::DateAndTime &gt; &amp;cvector)</td></tr>
+<tr class="memitem:a10c935d94b4ebf42b117fc554fadd91d"><td class="memTemplItemLeft" align="right" valign="top">MANTID_PYTHONINTERFACE_CORE_DLL PyObject *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d82/namespaceMantid_1_1PythonInterface_1_1Converters_1_1Impl.html#a10c935d94b4ebf42b117fc554fadd91d">Mantid::PythonInterface::Converters::Impl::clone1D</a> (const std::vector&lt; Types::Core::DateAndTime &gt; &amp;cvector)</td></tr>
 <tr class="memdesc:a10c935d94b4ebf42b117fc554fadd91d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialisation for vector&lt;DateAndTime&gt; that stores the underlying data differently Returns a new numpy array with the a copy of the data vector of np.datetime64.  <br /></td></tr>
 <tr class="separator:a10c935d94b4ebf42b117fc554fadd91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22c480c40eb09895d9e9a5c1bfa63ef5" id="r_a22c480c40eb09895d9e9a5c1bfa63ef5"><td class="memTemplParams" colspan="2">template&lt;typename ElementType &gt; </td></tr>
@@ -173,9 +174,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="../../d4/dd6/CloneToNDArray_8cpp.html#afebe13820b2473883d7ae65b1645d3f0">INSTANTIATE_CLONE1D</a>(ElementType)                                                                                     \</div>
 <div class="line">  INSTANTIATE_CLONEND(ElementType)</div>
-<div class="ttc" id="aCloneToNDArray_8cpp_html_afebe13820b2473883d7ae65b1645d3f0"><div class="ttname"><a href="../../d4/dd6/CloneToNDArray_8cpp.html#afebe13820b2473883d7ae65b1645d3f0">INSTANTIATE_CLONE1D</a></div><div class="ttdeci">#define INSTANTIATE_CLONE1D(ElementType)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00145">CloneToNDArray.cpp:145</a></div></div>
+<div class="ttc" id="aCloneToNDArray_8cpp_html_afebe13820b2473883d7ae65b1645d3f0"><div class="ttname"><a href="../../d4/dd6/CloneToNDArray_8cpp.html#afebe13820b2473883d7ae65b1645d3f0">INSTANTIATE_CLONE1D</a></div><div class="ttdeci">#define INSTANTIATE_CLONE1D(ElementType)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00146">CloneToNDArray.cpp:146</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00151">151</a> of file <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html">CloneToNDArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00153">153</a> of file <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html">CloneToNDArray.cpp</a>.</p>
 
 </div>
 </div>
@@ -190,12 +191,12 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">ElementType</td><td>)</td>
-          <td>&#160;&#160;&#160;  template <a class="el" href="../../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247">DLLExport</a> PyObject *clone1D&lt;ElementType&gt;(const std::vector&lt;ElementType&gt; &amp;cvector);</td>
+          <td>&#160;&#160;&#160;  template MANTID_PYTHONINTERFACE_CORE_DLL PyObject *clone1D&lt;ElementType&gt;(const std::vector&lt;ElementType&gt; &amp;cvector);</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00145">145</a> of file <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html">CloneToNDArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00146">146</a> of file <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html">CloneToNDArray.cpp</a>.</p>
 
 </div>
 </div>
@@ -210,12 +211,14 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">ElementType</td><td>)</td>
-          <td>&#160;&#160;&#160;  template <a class="el" href="../../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247">DLLExport</a> PyObject *cloneND&lt;ElementType&gt;(const ElementType *, const int ndims, Py_intptr_t *dims);</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00148">148</a> of file <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html">CloneToNDArray.cpp</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">template</span> MANTID_PYTHONINTERFACE_CORE_DLL PyObject *cloneND&lt;ElementType&gt;(<span class="keyword">const</span> ElementType *, <span class="keyword">const</span> <span class="keywordtype">int</span> ndims,        \</div>
+<div class="line">                                                                          Py_intptr_t *dims);</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00149">149</a> of file <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html">CloneToNDArray.cpp</a>.</p>
 
 </div>
 </div>
@@ -231,7 +234,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html">CloneToNDArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00020">20</a> of file <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html">CloneToNDArray.cpp</a>.</p>
 
 </div>
 </div>
@@ -247,7 +250,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00018">18</a> of file <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html">CloneToNDArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../d4/dd6/CloneToNDArray_8cpp_source.html">CloneToNDArray.cpp</a>.</p>
 
 </div>
 </div>

@@ -10,15 +10,12 @@ var searchData=
   ['export_5flengthvalidator_7',['EXPORT_LENGTHVALIDATOR',['../de/d0b/PythonInterface_2mantid_2kernel_2src_2Exports_2ArrayLengthValidator_8cpp.html#a13c368211f04af3f4ac8d53b77db9a97',1,'ArrayLengthValidator.cpp']]],
   ['export_5flistvalidator_8',['EXPORT_LISTVALIDATOR',['../d6/da8/ListValidator_8cpp.html#a14e386e3b943b2be1162f18c92bff2d7',1,'ListValidator.cpp']]],
   ['export_5fmandatoryvalidator_9',['EXPORT_MANDATORYVALIDATOR',['../d9/dc9/PythonInterface_2mantid_2kernel_2src_2Exports_2MandatoryValidator_8cpp.html#a3902a180c2f3bcf8a5203fd0f7ebea15',1,'MandatoryValidator.cpp']]],
-  ['export_5fopt_5fmantidqt_5fcommon_10',['EXPORT_OPT_MANTIDQT_COMMON',['../dc/d51/DllOption_8h.html#ab1740ebc9120fcd47d7c3e328da10f6d',1,'DllOption.h']]],
-  ['export_5fopt_5fmantidqt_5fmantidwidgets_11',['EXPORT_OPT_MANTIDQT_MANTIDWIDGETS',['../d6/dcc/WidgetDllOption_8h.html#a63f92276779a8c62518cef05e9c5befa',1,'WidgetDllOption.h']]],
-  ['export_5fpairsvalidator_12',['EXPORT_PAIRSVALIDATOR',['../de/da5/PythonInterface_2mantid_2kernel_2src_2Exports_2ArrayOrderedPairsValidator_8cpp.html#aebfa6f7a8fc8159e81273451669d763c',1,'ArrayOrderedPairsValidator.cpp']]],
-  ['export_5ftimeseries_5fprop_13',['EXPORT_TIMESERIES_PROP',['../d7/d36/PythonInterface_2mantid_2kernel_2src_2Exports_2TimeSeriesProperty_8cpp.html#addde011fffe74a6bf12c00a4e4550514',1,'TimeSeriesProperty.cpp']]],
-  ['export_5ftypedvalidator_14',['EXPORT_TYPEDVALIDATOR',['../d3/d15/TypedValidatorExporter_8h.html#aab326c84b94f238092d3ffe9a474a2d2',1,'TypedValidatorExporter.h']]],
-  ['export_5fwksp_5fvalidator_5farg_15',['EXPORT_WKSP_VALIDATOR_ARG',['../d6/dfc/WorkspaceValidators_8cpp.html#a920d7391f229f36abd69d838588a0593',1,'WorkspaceValidators.cpp']]],
-  ['export_5fwksp_5fvalidator_5fdefault_5farg_16',['EXPORT_WKSP_VALIDATOR_DEFAULT_ARG',['../d6/dfc/WorkspaceValidators_8cpp.html#abf3715788edeec9d5018ecdfa627f2c6',1,'WorkspaceValidators.cpp']]],
-  ['export_5fwksp_5fvalidator_5fno_5farg_17',['EXPORT_WKSP_VALIDATOR_NO_ARG',['../d6/dfc/WorkspaceValidators_8cpp.html#a607f5e3cef5588aa56349298fd7d7096',1,'WorkspaceValidators.cpp']]],
-  ['exportparallelminmax_18',['EXPORTPARALLELMINMAX',['../d8/d4a/ParallelMinMax_8cpp.html#a79054a66ea32f2b3627a60239e4ae8ce',1,'ParallelMinMax.cpp']]],
-  ['extern_5fimport_19',['EXTERN_IMPORT',['../db/d39/System_8h.html#a4e587fd2393b420085d662b95fc887fd',1,'System.h']]],
-  ['extern_5fmantidqt_5fcommon_20',['EXTERN_MANTIDQT_COMMON',['../dc/d51/DllOption_8h.html#ab708412ca0599a9a96608a7c6d7f5ba3',1,'DllOption.h']]]
+  ['export_5fpairsvalidator_10',['EXPORT_PAIRSVALIDATOR',['../de/da5/PythonInterface_2mantid_2kernel_2src_2Exports_2ArrayOrderedPairsValidator_8cpp.html#aebfa6f7a8fc8159e81273451669d763c',1,'ArrayOrderedPairsValidator.cpp']]],
+  ['export_5ftimeseries_5fprop_11',['EXPORT_TIMESERIES_PROP',['../d7/d36/PythonInterface_2mantid_2kernel_2src_2Exports_2TimeSeriesProperty_8cpp.html#addde011fffe74a6bf12c00a4e4550514',1,'TimeSeriesProperty.cpp']]],
+  ['export_5ftypedvalidator_12',['EXPORT_TYPEDVALIDATOR',['../d3/d15/TypedValidatorExporter_8h.html#aab326c84b94f238092d3ffe9a474a2d2',1,'TypedValidatorExporter.h']]],
+  ['export_5fwksp_5fvalidator_5farg_13',['EXPORT_WKSP_VALIDATOR_ARG',['../d6/dfc/WorkspaceValidators_8cpp.html#a920d7391f229f36abd69d838588a0593',1,'WorkspaceValidators.cpp']]],
+  ['export_5fwksp_5fvalidator_5fdefault_5farg_14',['EXPORT_WKSP_VALIDATOR_DEFAULT_ARG',['../d6/dfc/WorkspaceValidators_8cpp.html#abf3715788edeec9d5018ecdfa627f2c6',1,'WorkspaceValidators.cpp']]],
+  ['export_5fwksp_5fvalidator_5fno_5farg_15',['EXPORT_WKSP_VALIDATOR_NO_ARG',['../d6/dfc/WorkspaceValidators_8cpp.html#a607f5e3cef5588aa56349298fd7d7096',1,'WorkspaceValidators.cpp']]],
+  ['exportparallelminmax_16',['EXPORTPARALLELMINMAX',['../d8/d4a/ParallelMinMax_8cpp.html#a79054a66ea32f2b3627a60239e4ae8ce',1,'ParallelMinMax.cpp']]],
+  ['extern_5fimport_17',['EXTERN_IMPORT',['../db/d39/System_8h.html#a4e587fd2393b420085d662b95fc887fd',1,'System.h']]]
 ];

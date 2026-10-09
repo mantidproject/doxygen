@@ -98,6 +98,7 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d5/d8d/NDArrayToVector_8h_source.html">MantidPythonInterface/core/Converters/NDArrayToVector.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d1/d89/NDArrayTypeIndex_8h_source.html">MantidPythonInterface/core/Converters/NDArrayTypeIndex.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../df/dd8/NumpyFunctions_8h_source.html">MantidPythonInterface/core/Converters/NumpyFunctions.h</a>&quot;</code><br />
+<code>#include &quot;MantidPythonInterface/core/DllConfig.h&quot;</code><br />
 <code>#include &lt;boost/python/extract.hpp&gt;</code><br />
 <code>#include &lt;boost/python/stl_iterator.hpp&gt;</code><br />
 <code>#include &lt;boost/python/str.hpp&gt;</code><br />
@@ -120,7 +121,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a6446d6b8f2bb55e920641b1460e2175e" id="r_a6446d6b8f2bb55e920641b1460e2175e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d8d/NDArrayToVector_8cpp.html#a6446d6b8f2bb55e920641b1460e2175e">DECLARE_EXTERN</a>(HeldType)</td></tr>
 <tr class="memdesc:a6446d6b8f2bb55e920641b1460e2175e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to declare template instantiations as extern; those are defined in <a class="el" href="../../da/df3/NDArrayTypeIndex_8cpp.html">NDArrayTypeIndex.cpp</a>.  <br /></td></tr>
 <tr class="separator:a6446d6b8f2bb55e920641b1460e2175e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a593cf931813a35cf2097faacbfb9ff0e" id="r_a593cf931813a35cf2097faacbfb9ff0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d8d/NDArrayToVector_8cpp.html#a593cf931813a35cf2097faacbfb9ff0e">INSTANTIATE_TOVECTOR</a>(ElementType)&#160;&#160;&#160;template struct <a class="el" href="../../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247">DLLExport</a> NDArrayToVector&lt;ElementType&gt;;</td></tr>
+<tr class="memitem:a593cf931813a35cf2097faacbfb9ff0e" id="r_a593cf931813a35cf2097faacbfb9ff0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d8d/NDArrayToVector_8cpp.html#a593cf931813a35cf2097faacbfb9ff0e">INSTANTIATE_TOVECTOR</a>(ElementType)&#160;&#160;&#160;template struct MANTID_PYTHONINTERFACE_CORE_DLL NDArrayToVector&lt;ElementType&gt;;</td></tr>
 <tr class="separator:a593cf931813a35cf2097faacbfb9ff0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2cd12e09a08db7cbcae2e74f723d6c4" id="r_ad2cd12e09a08db7cbcae2e74f723d6c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d8d/NDArrayToVector_8cpp.html#ad2cd12e09a08db7cbcae2e74f723d6c4">NO_IMPORT_ARRAY</a></td></tr>
 <tr class="separator:ad2cd12e09a08db7cbcae2e74f723d6c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,7 +149,7 @@ Macros</h2></td></tr>
 </div><!-- fragment -->
 <p>Macro to declare template instantiations as extern; those are defined in <a class="el" href="../../da/df3/NDArrayTypeIndex_8cpp.html">NDArrayTypeIndex.cpp</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d8d/NDArrayToVector_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../d2/d8d/NDArrayToVector_8cpp_source.html">NDArrayToVector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d8d/NDArrayToVector_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../d2/d8d/NDArrayToVector_8cpp_source.html">NDArrayToVector.cpp</a>.</p>
 
 </div>
 </div>
@@ -163,12 +164,12 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">ElementType</td><td>)</td>
-          <td>&#160;&#160;&#160;template struct <a class="el" href="../../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247">DLLExport</a> NDArrayToVector&lt;ElementType&gt;;</td>
+          <td>&#160;&#160;&#160;template struct MANTID_PYTHONINTERFACE_CORE_DLL NDArrayToVector&lt;ElementType&gt;;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d8d/NDArrayToVector_8cpp_source.html#l00165">165</a> of file <a class="el" href="../../d2/d8d/NDArrayToVector_8cpp_source.html">NDArrayToVector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d8d/NDArrayToVector_8cpp_source.html#l00166">166</a> of file <a class="el" href="../../d2/d8d/NDArrayToVector_8cpp_source.html">NDArrayToVector.cpp</a>.</p>
 
 </div>
 </div>
@@ -184,7 +185,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d8d/NDArrayToVector_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../d2/d8d/NDArrayToVector_8cpp_source.html">NDArrayToVector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d8d/NDArrayToVector_8cpp_source.html#l00020">20</a> of file <a class="el" href="../../d2/d8d/NDArrayToVector_8cpp_source.html">NDArrayToVector.cpp</a>.</p>
 
 </div>
 </div>
@@ -200,7 +201,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d8d/NDArrayToVector_8cpp_source.html#l00018">18</a> of file <a class="el" href="../../d2/d8d/NDArrayToVector_8cpp_source.html">NDArrayToVector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d8d/NDArrayToVector_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../d2/d8d/NDArrayToVector_8cpp_source.html">NDArrayToVector.cpp</a>.</p>
 
 </div>
 </div>
