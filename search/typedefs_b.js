@@ -11,9 +11,13 @@ var searchData=
   ['list_8',['List',['../d0/d2e/namespaceMantidQt_1_1Widgets_1_1Common_1_1Python.html#a2ae3c13389de27883c4f279b9af88463',1,'MantidQt::Widgets::Common::Python']]],
   ['livebuttonopts_9',['LiveButtonOpts',['../df/d7a/namespaceMantidQt_1_1MantidWidgets.html#a44edf01fa83f2d0fbe5b887f40122a68',1,'MantidQt::MantidWidgets']]],
   ['livelistenerfactory_10',['LiveListenerFactory',['../d9/da0/namespaceMantid_1_1API.html#a1ae6b09cccb9fc937349ceccc95208e1',1,'Mantid::API']]],
-  ['loggerflushfunction_11',['LoggerFlushFunction',['../d7/d63/PythonInterface_2mantid_2kernel_2src_2Exports_2Logger_8cpp.html#a4b4743179848bd7b5a71d8259fb141d7',1,'Logger.cpp']]],
-  ['loggermsgfunction_12',['LoggerMsgFunction',['../d7/d63/PythonInterface_2mantid_2kernel_2src_2Exports_2Logger_8cpp.html#a24d73683f80c34410cdaaafee1b66dcb',1,'Logger.cpp']]],
-  ['logmanager_5fconst_5fsptr_13',['LogManager_const_sptr',['../d9/da0/namespaceMantid_1_1API.html#a2d3a7a44b38c4edd789b98ede0ae5672',1,'Mantid::API']]],
-  ['logmanager_5fsptr_14',['LogManager_sptr',['../d9/da0/namespaceMantid_1_1API.html#a53cdea17848e6da5fdf357bf92854098',1,'Mantid::API']]],
-  ['ltype_15',['LType',['../d4/de1/classMantid_1_1Geometry_1_1Track.html#a60aa6a856559932aa577adebe0efe060',1,'Mantid::Geometry::Track']]]
+  ['logger_5fconst_5fsptr_11',['Logger_const_sptr',['../d9/dec/namespaceMantid_1_1Kernel.html#a733f6a85e15b09b71b315a62a8b1f7b8',1,'Mantid::Kernel']]],
+  ['logger_5fconst_5fuptr_12',['Logger_const_uptr',['../d9/dec/namespaceMantid_1_1Kernel.html#a4c072fd5ca756189fa8ffa9ba8067f2a',1,'Mantid::Kernel']]],
+  ['logger_5fsptr_13',['Logger_sptr',['../d9/dec/namespaceMantid_1_1Kernel.html#a435eee7995fce08613703d3ef8d5490b',1,'Mantid::Kernel']]],
+  ['logger_5fuptr_14',['Logger_uptr',['../d9/dec/namespaceMantid_1_1Kernel.html#a9786936943e10d1a350d4712f26ceba3',1,'Mantid::Kernel']]],
+  ['loggerflushfunction_15',['LoggerFlushFunction',['../d7/d63/PythonInterface_2mantid_2kernel_2src_2Exports_2Logger_8cpp.html#a4b4743179848bd7b5a71d8259fb141d7',1,'Logger.cpp']]],
+  ['loggermsgfunction_16',['LoggerMsgFunction',['../d7/d63/PythonInterface_2mantid_2kernel_2src_2Exports_2Logger_8cpp.html#a24d73683f80c34410cdaaafee1b66dcb',1,'Logger.cpp']]],
+  ['logmanager_5fconst_5fsptr_17',['LogManager_const_sptr',['../d9/da0/namespaceMantid_1_1API.html#a2d3a7a44b38c4edd789b98ede0ae5672',1,'Mantid::API']]],
+  ['logmanager_5fsptr_18',['LogManager_sptr',['../d9/da0/namespaceMantid_1_1API.html#a53cdea17848e6da5fdf357bf92854098',1,'Mantid::API']]],
+  ['ltype_19',['LType',['../d4/de1/classMantid_1_1Geometry_1_1Track.html#a60aa6a856559932aa577adebe0efe060',1,'Mantid::Geometry::Track']]]
 ];
