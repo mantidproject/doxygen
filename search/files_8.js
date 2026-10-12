@@ -276,7 +276,7 @@ var searchData=
   ['ipeakfunction_2eh_273',['IPeakFunction.h',['../d0/d3d/IPeakFunction_8h.html',1,'']]],
   ['ipeakfunctionadapter_2ecpp_274',['IPeakFunctionAdapter.cpp',['../de/dcb/IPeakFunctionAdapter_8cpp.html',1,'']]],
   ['ipeakfunctionadapter_2eh_275',['IPeakFunctionAdapter.h',['../d5/d37/IPeakFunctionAdapter_8h.html',1,'']]],
-  ['ipeaksworkspace_2ecpp_276',['ipeaksworkspace.cpp',['../dd/d93/PythonInterface_2mantid_2api_2src_2Exports_2IPeaksWorkspace_8cpp.html',1,'(Global Namespace)'],['../db/df7/API_2src_2IPeaksWorkspace_8cpp.html',1,'(Global Namespace)']]],
+  ['ipeaksworkspace_2ecpp_276',['ipeaksworkspace.cpp',['../db/df7/API_2src_2IPeaksWorkspace_8cpp.html',1,'(Global Namespace)'],['../dd/d93/PythonInterface_2mantid_2api_2src_2Exports_2IPeaksWorkspace_8cpp.html',1,'(Global Namespace)']]],
   ['ipeaksworkspace_2eh_277',['IPeaksWorkspace.h',['../d9/d3c/IPeaksWorkspace_8h.html',1,'']]],
   ['ipeaksworkspace_5ffwd_2eh_278',['IPeaksWorkspace_fwd.h',['../d2/d15/IPeaksWorkspace__fwd_8h.html',1,'']]],
   ['ipeaksworkspaceproperty_2ecpp_279',['IPeaksWorkspaceProperty.cpp',['../db/d08/IPeaksWorkspaceProperty_8cpp.html',1,'']]],
@@ -330,8 +330,9 @@ var searchData=
   ['itransformscale_2eh_327',['ITransformScale.h',['../d3/db8/ITransformScale_8h.html',1,'']]],
   ['ivalidator_2ecpp_328',['IValidator.cpp',['../dc/db8/IValidator_8cpp.html',1,'']]],
   ['ivalidator_2eh_329',['IValidator.h',['../d4/d81/IValidator_8h.html',1,'']]],
-  ['iworkspacedockview_2eh_330',['IWorkspaceDockView.h',['../dd/da0/IWorkspaceDockView_8h.html',1,'']]],
-  ['iworkspacefitcontrol_2eh_331',['IWorkspaceFitControl.h',['../d3/dfe/IWorkspaceFitControl_8h.html',1,'']]],
-  ['iworkspaceproperty_2ecpp_332',['IWorkspaceProperty.cpp',['../dc/dd0/IWorkspaceProperty_8cpp.html',1,'']]],
-  ['iworkspaceproperty_2eh_333',['IWorkspaceProperty.h',['../dd/da9/IWorkspaceProperty_8h.html',1,'']]]
+  ['ivalidator_5ffwd_2eh_330',['IValidator_fwd.h',['../dd/dc8/IValidator__fwd_8h.html',1,'']]],
+  ['iworkspacedockview_2eh_331',['IWorkspaceDockView.h',['../dd/da0/IWorkspaceDockView_8h.html',1,'']]],
+  ['iworkspacefitcontrol_2eh_332',['IWorkspaceFitControl.h',['../d3/dfe/IWorkspaceFitControl_8h.html',1,'']]],
+  ['iworkspaceproperty_2ecpp_333',['IWorkspaceProperty.cpp',['../dc/dd0/IWorkspaceProperty_8cpp.html',1,'']]],
+  ['iworkspaceproperty_2eh_334',['IWorkspaceProperty.h',['../dd/da9/IWorkspaceProperty_8h.html',1,'']]]
 ];
