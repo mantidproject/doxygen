@@ -348,7 +348,7 @@ var searchData=
   ['populateanglemetadata_345',['populateAngleMetaData',['../d1/ded/classMantid_1_1DataHandling_1_1SaveAscii2.html#a0ea17576a9af71557f0a2c774be10ff3',1,'Mantid::DataHandling::SaveAscii2']]],
   ['populatecellswithpeaks_346',['populateCellsWithPeaks',['../dd/da7/classMantid_1_1MDAlgorithms_1_1IntegrateQLabEvents.html#ad79f83c69a0edebedb01703a9d5535bc',1,'Mantid::MDAlgorithms::IntegrateQLabEvents']]],
   ['populatechilddata_347',['populateChildData',['../d8/d24/classMantidQt_1_1MantidWidgets_1_1WorkspaceTreeWidget.html#a9a9e6f573607a01a3f649a6d03357bbe',1,'MantidQt::MantidWidgets::WorkspaceTreeWidget']]],
-  ['populatedatablockcompositewithcontainer_348',['populateDataBlockCompositeWithContainer',['../d8/d23/namespaceMantid_1_1DataHandling.html#a0c76e1be3f6f962eaf2bcca1a5a004c6',1,'Mantid::DataHandling']]],
+  ['populatedatablockcompositewithcontainer_348',['populateDataBlockCompositeWithContainer',['../d8/d23/namespaceMantid_1_1DataHandling.html#afe4cbfc584543a127fe137eaa9eb64e8',1,'Mantid::DataHandling']]],
   ['populatedatafiletable_349',['populateDataFileTable',['../d9/d15/classMantidQt_1_1MantidWidgets_1_1CatalogSearch.html#ad14e22f9dd467a0f62ae96c86d7bf37b',1,'MantidQt::MantidWidgets::CatalogSearch']]],
   ['populatedatafiletype_350',['populateDataFileType',['../d9/d15/classMantidQt_1_1MantidWidgets_1_1CatalogSearch.html#aafc9e2c2eeed75b6d20dc6740300b100',1,'MantidQt::MantidWidgets::CatalogSearch']]],
   ['populatedataws_351',['populateDataWS',['../d9/d3e/classMantid_1_1Algorithms_1_1MaxEnt.html#ae94591aa15948b627ab2f88259bb9639',1,'Mantid::Algorithms::MaxEnt']]],

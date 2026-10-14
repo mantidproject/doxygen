@@ -334,6 +334,8 @@ template&lt;class KEYTYPE , class VALUETYPE &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d73/Cache_8h_source.html#l00056">56</a> of file <a class="el" href="../../d4/d73/Cache_8h_source.html">Cache.h</a>.</p>
 
+<p class="reference">References <a class="el" href="../../d4/d73/Cache_8h_source.html#l00145">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::m_cacheHit</a>, <a class="el" href="../../d4/d73/Cache_8h_source.html#l00150">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::m_cacheMap</a>, <a class="el" href="../../d4/d73/Cache_8h_source.html#l00148">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::m_cacheMiss</a>, and <a class="el" href="../../d4/d73/Cache_8h_source.html#l00152">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::m_mutex</a>.</p>
+
 </div>
 </div>
 <a id="af0198e618a981a06f16ff9fd989a049f" name="af0198e618a981a06f16ff9fd989a049f"></a>
@@ -385,7 +387,7 @@ template&lt;class KEYTYPE , class VALUETYPE &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d73/Cache_8h_source.html#l00098">98</a> of file <a class="el" href="../../d4/d73/Cache_8h_source.html">Cache.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00225">PARALLEL_ATOMIC</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d73/Cache_8h_source.html#l00132">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::getCacheNoStats()</a>, <a class="el" href="../../d4/d73/Cache_8h_source.html#l00145">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::m_cacheHit</a>, <a class="el" href="../../d4/d73/Cache_8h_source.html#l00148">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::m_cacheMiss</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00225">PARALLEL_ATOMIC</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
 </div>
 </div>
@@ -437,7 +439,9 @@ template&lt;class KEYTYPE , class VALUETYPE &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d73/Cache_8h_source.html#l00132">132</a> of file <a class="el" href="../../d4/d73/Cache_8h_source.html">Cache.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d73/Cache_8h_source.html#l00150">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::m_cacheMap</a>, <a class="el" href="../../d4/d73/Cache_8h_source.html#l00152">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::m_mutex</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d73/Cache_8h_source.html#l00098">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::getCache()</a>.</p>
 
 </div>
 </div>
@@ -470,6 +474,8 @@ template&lt;class KEYTYPE , class VALUETYPE &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d73/Cache_8h_source.html#l00067">67</a> of file <a class="el" href="../../d4/d73/Cache_8h_source.html">Cache.h</a>.</p>
 
+<p class="reference">References <a class="el" href="../../d4/d73/Cache_8h_source.html#l00145">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::m_cacheHit</a>.</p>
+
 </div>
 </div>
 <a id="aad0c647f45784f5f261ed973597ad85d" name="aad0c647f45784f5f261ed973597ad85d"></a>
@@ -501,6 +507,10 @@ template&lt;class KEYTYPE , class VALUETYPE &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d73/Cache_8h_source.html#l00072">72</a> of file <a class="el" href="../../d4/d73/Cache_8h_source.html">Cache.h</a>.</p>
 
+<p class="reference">References <a class="el" href="../../d4/d73/Cache_8h_source.html#l00072">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::hitRatio()</a>, <a class="el" href="../../d4/d73/Cache_8h_source.html#l00145">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::m_cacheHit</a>, and <a class="el" href="../../d4/d73/Cache_8h_source.html#l00148">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::m_cacheMiss</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d73/Cache_8h_source.html#l00072">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::hitRatio()</a>.</p>
+
 </div>
 </div>
 <a id="ab5456970b7bfa01e402391f58ad9593f" name="ab5456970b7bfa01e402391f58ad9593f"></a>
@@ -531,6 +541,8 @@ template&lt;class KEYTYPE , class VALUETYPE &gt; </div>
 <p>total number of times the cache has contained the requested information </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d73/Cache_8h_source.html#l00069">69</a> of file <a class="el" href="../../d4/d73/Cache_8h_source.html">Cache.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/d73/Cache_8h_source.html#l00148">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::m_cacheMiss</a>.</p>
 
 </div>
 </div>
@@ -570,7 +582,7 @@ template&lt;class KEYTYPE , class VALUETYPE &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d73/Cache_8h_source.html#l00045">45</a> of file <a class="el" href="../../d4/d73/Cache_8h_source.html">Cache.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00099">rhs</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d73/Cache_8h_source.html#l00145">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::m_cacheHit</a>, <a class="el" href="../../d4/d73/Cache_8h_source.html#l00150">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::m_cacheMap</a>, <a class="el" href="../../d4/d73/Cache_8h_source.html#l00148">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::m_cacheMiss</a>, and <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00099">rhs</a>.</p>
 
 </div>
 </div>
@@ -609,6 +621,8 @@ template&lt;class KEYTYPE , class VALUETYPE &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d73/Cache_8h_source.html#l00119">119</a> of file <a class="el" href="../../d4/d73/Cache_8h_source.html">Cache.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/d73/Cache_8h_source.html#l00150">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::m_cacheMap</a>, and <a class="el" href="../../d4/d73/Cache_8h_source.html#l00152">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::m_mutex</a>.</p>
 
 </div>
 </div>
@@ -659,7 +673,7 @@ template&lt;class KEYTYPE , class VALUETYPE &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d73/Cache_8h_source.html#l00085">85</a> of file <a class="el" href="../../d4/d73/Cache_8h_source.html">Cache.h</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d73/Cache_8h_source.html#l00150">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::m_cacheMap</a>, <a class="el" href="../../d4/d73/Cache_8h_source.html#l00152">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::m_mutex</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
 </div>
 </div>
@@ -692,6 +706,8 @@ template&lt;class KEYTYPE , class VALUETYPE &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d73/Cache_8h_source.html#l00064">64</a> of file <a class="el" href="../../d4/d73/Cache_8h_source.html">Cache.h</a>.</p>
 
+<p class="reference">References <a class="el" href="../../d4/d73/Cache_8h_source.html#l00150">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::m_cacheMap</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -721,6 +737,8 @@ template&lt;class KEYTYPE , class VALUETYPE &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d73/Cache_8h_source.html#l00145">145</a> of file <a class="el" href="../../d4/d73/Cache_8h_source.html">Cache.h</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="../../d4/d73/Cache_8h_source.html#l00056">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::clear()</a>, <a class="el" href="../../d4/d73/Cache_8h_source.html#l00098">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::getCache()</a>, <a class="el" href="../../d4/d73/Cache_8h_source.html#l00067">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::hitCount()</a>, <a class="el" href="../../d4/d73/Cache_8h_source.html#l00072">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::hitRatio()</a>, and <a class="el" href="../../d4/d73/Cache_8h_source.html#l00045">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::operator=()</a>.</p>
+
 </div>
 </div>
 <a id="a80fdcbf3be9c583598a8fdfde14523a3" name="a80fdcbf3be9c583598a8fdfde14523a3"></a>
@@ -748,6 +766,8 @@ template&lt;class KEYTYPE , class VALUETYPE &gt; </div>
 <p>internal cache map </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d73/Cache_8h_source.html#l00150">150</a> of file <a class="el" href="../../d4/d73/Cache_8h_source.html">Cache.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d73/Cache_8h_source.html#l00056">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::clear()</a>, <a class="el" href="../../d4/d73/Cache_8h_source.html#l00132">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::getCacheNoStats()</a>, <a class="el" href="../../d4/d73/Cache_8h_source.html#l00045">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::operator=()</a>, <a class="el" href="../../d4/d73/Cache_8h_source.html#l00119">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::removeCache()</a>, <a class="el" href="../../d4/d73/Cache_8h_source.html#l00085">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::setCache()</a>, and <a class="el" href="../../d4/d73/Cache_8h_source.html#l00064">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::size()</a>.</p>
 
 </div>
 </div>
@@ -777,6 +797,8 @@ template&lt;class KEYTYPE , class VALUETYPE &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d73/Cache_8h_source.html#l00148">148</a> of file <a class="el" href="../../d4/d73/Cache_8h_source.html">Cache.h</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="../../d4/d73/Cache_8h_source.html#l00056">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::clear()</a>, <a class="el" href="../../d4/d73/Cache_8h_source.html#l00098">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::getCache()</a>, <a class="el" href="../../d4/d73/Cache_8h_source.html#l00072">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::hitRatio()</a>, <a class="el" href="../../d4/d73/Cache_8h_source.html#l00069">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::missCount()</a>, and <a class="el" href="../../d4/d73/Cache_8h_source.html#l00045">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::operator=()</a>.</p>
+
 </div>
 </div>
 <a id="ab68db636f8f1ac3616f09cb353a666e0" name="ab68db636f8f1ac3616f09cb353a666e0"></a>
@@ -804,6 +826,8 @@ template&lt;class KEYTYPE , class VALUETYPE &gt; </div>
 <p>internal mutex </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d73/Cache_8h_source.html#l00152">152</a> of file <a class="el" href="../../d4/d73/Cache_8h_source.html">Cache.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d73/Cache_8h_source.html#l00056">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::clear()</a>, <a class="el" href="../../d4/d73/Cache_8h_source.html#l00132">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::getCacheNoStats()</a>, <a class="el" href="../../d4/d73/Cache_8h_source.html#l00119">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::removeCache()</a>, and <a class="el" href="../../d4/d73/Cache_8h_source.html#l00085">Mantid::Kernel::Cache&lt; KEYTYPE, VALUETYPE &gt;::setCache()</a>.</p>
 
 </div>
 </div>

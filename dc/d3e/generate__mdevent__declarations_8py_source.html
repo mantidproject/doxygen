@@ -307,14 +307,14 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="keywordflow">for</span> c <span class="keywordflow">in</span> mdevent_types:</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        lines.append(<span class="stringliteral">&quot;%s// Instantiations for %s&quot;</span> % (padding, c))</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        <span class="keywordflow">for</span> nd <span class="keywordflow">in</span> dimensions:</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            lines.append(<span class="stringliteral">&quot;%s template class DLLExport %s&lt;%d&gt;;&quot;</span> % (padding, c, nd))</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            lines.append(<span class="stringliteral">&quot;%s template class MANTID_DATAOBJECTS_DLL %s&lt;%d&gt;;&quot;</span> % (padding, c, nd))</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="comment"># Classes with MDLeanEvent&lt;x&gt;,x</span></div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keywordflow">for</span> c <span class="keywordflow">in</span> classes_cpp:</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        lines.append(<span class="stringliteral">&quot;%s// Instantiations for %s&quot;</span> % (padding, c))</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        <span class="keywordflow">for</span> mdevent_type <span class="keywordflow">in</span> mdevent_types:</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            <span class="keywordflow">for</span> nd <span class="keywordflow">in</span> dimensions:</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                lines.append(<span class="stringliteral">&quot;%s template class DLLExport %s&lt;%s&lt;%d&gt;, %d&gt;;&quot;</span> % (padding, c, mdevent_type, nd, nd))</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                lines.append(<span class="stringliteral">&quot;%s template class MANTID_DATAOBJECTS_DLL %s&lt;%s&lt;%d&gt;, %d&gt;;&quot;</span> % (padding, c, mdevent_type, nd, nd))</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        lines.append(<span class="stringliteral">&quot;\n &quot;</span>)</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    lines += footer_lines + lines_after</div>

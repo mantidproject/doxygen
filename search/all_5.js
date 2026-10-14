@@ -505,7 +505,7 @@ var searchData=
   ['adjustbankpositionsandsizes_502',['adjustBankPositionsAndSizes',['../d0/dfd/namespaceMantid_1_1Crystal_1_1CalibrationHelpers.html#ad4d3b141d926da1902807480450ee8a3',1,'Mantid::Crystal::CalibrationHelpers']]],
   ['adjustcomponent_503',['adjustComponent',['../d0/d08/classMantid_1_1Crystal_1_1SCDCalibratePanels2.html#a0ccce360b8b841759ec959e6e65ef625',1,'Mantid::Crystal::SCDCalibratePanels2']]],
   ['adjusted_5fub_504',['adjusted_UB',['../d1/d83/classMantid_1_1Geometry_1_1ConventionalCell.html#a9c56a9d546019211d23a95194a9529c5',1,'Mantid::Geometry::ConventionalCell']]],
-  ['adjusteventdatablock_505',['adjustEventDataBlock',['../dd/df9/classMantid_1_1DataObjects_1_1BoxControllerNeXusIO.html#ad549fcaf6f01e83a967bacc2f83a4f83',1,'Mantid::DataObjects::BoxControllerNeXusIO']]],
+  ['adjusteventdatablock_505',['adjustEventDataBlock',['../dd/df9/classMantid_1_1DataObjects_1_1BoxControllerNeXusIO.html#a96de0f9baae98478b24b882f209c5db7',1,'Mantid::DataObjects::BoxControllerNeXusIO']]],
   ['adjustinstrument_506',['adjustInstrument',['../d9/d6c/classMantid_1_1DataHandling_1_1CreateSimulationWorkspace.html#af748092d98da2646aea7aa50cb010a4d',1,'Mantid::DataHandling::CreateSimulationWorkspace']]],
   ['adjusttimeofflightisislegacy_507',['adjustTimeOfFlightISISLegacy',['../d8/d23/namespaceMantid_1_1DataHandling.html#aabfa3ea6c80d66445cfc083b09595b08',1,'Mantid::DataHandling']]],
   ['adjusttof_508',['adjustTOF',['../dd/d61/classMantid_1_1DataHandling_1_1LoadILLSANS.html#ac45683534509d02aded3559ede821d65',1,'Mantid::DataHandling::LoadILLSANS']]],
