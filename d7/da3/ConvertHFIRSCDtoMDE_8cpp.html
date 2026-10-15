@@ -95,23 +95,28 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../de/d25/ConvertHFIRSCDtoMDE_8h_source.html">MantidMDAlgorithms/ConvertHFIRSCDtoMDE.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/dd2/AnalysisDataService_8h_source.html">MantidAPI/AnalysisDataService.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../de/d61/IMDEventWorkspace_8h_source.html">MantidAPI/IMDEventWorkspace.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d6/dc7/IMDHistoWorkspace_8h_source.html">MantidAPI/IMDHistoWorkspace.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d1/d9b/IMDIterator_8h_source.html">MantidAPI/IMDIterator.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/df3/Progress_8h_source.html">MantidAPI/Progress.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dd/d49/Run_8h_source.html">MantidAPI/Run.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/db3/WorkspaceGroup_8h_source.html">MantidAPI/WorkspaceGroup.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d2/d89/MDBoxBase_8h_source.html">MantidDataObjects/MDBoxBase.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dd/dea/MDEventFactory_8h_source.html">MantidDataObjects/MDEventFactory.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dd/d12/MDEventInserter_8h_source.html">MantidDataObjects/MDEventInserter.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d7/d30/DetectorInfo_8h_source.html">MantidGeometry/Instrument/DetectorInfo.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/d64/QSample_8h_source.html">MantidGeometry/MDGeometry/QSample.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/d9e/ArrayBoundedValidator_8h_source.html">MantidKernel/ArrayBoundedValidator.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../df/da4/ArrayProperty_8h_source.html">MantidKernel/ArrayProperty.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dd/d4d/BoundedValidator_8h_source.html">MantidKernel/BoundedValidator.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d1/dbc/ConfigService_8h_source.html">MantidKernel/ConfigService.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d4/d2d/PropertyWithValue_8h_source.html">MantidKernel/PropertyWithValue.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d5/db2/TimeSeriesProperty_8h_source.html">MantidKernel/TimeSeriesProperty.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d3/d62/UnitLabelTypes_8h_source.html">MantidKernel/UnitLabelTypes.h</a>&quot;</code><br />
 <code>#include &quot;Eigen/Dense&quot;</code><br />
 <code>#include &quot;boost/math/constants/constants.hpp&quot;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;stdexcept&gt;</code><br />
 </div>
 <p><a href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">

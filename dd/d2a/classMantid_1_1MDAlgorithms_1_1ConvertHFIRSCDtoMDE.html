@@ -92,6 +92,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="../../de/d71/classMantid_1_1MDAlgorithms_1_1ConvertHFIRSCDtoMDE-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Mantid::MDAlgorithms::ConvertHFIRSCDtoMDE Class Reference</div></div>
 </div><!--header-->
@@ -119,6 +120,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a95ed6496089b2af334c700525c1e6b0a" id="r_a95ed6496089b2af334c700525c1e6b0a"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2a/classMantid_1_1MDAlgorithms_1_1ConvertHFIRSCDtoMDE.html#a95ed6496089b2af334c700525c1e6b0a">category</a> () const override</td></tr>
 <tr class="memdesc:a95ed6496089b2af334c700525c1e6b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Algorithm's category for identification.  <br /></td></tr>
 <tr class="separator:a95ed6496089b2af334c700525c1e6b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a977107d61336c7e446b08e0bec9f15f0" id="r_a977107d61336c7e446b08e0bec9f15f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2a/classMantid_1_1MDAlgorithms_1_1ConvertHFIRSCDtoMDE.html#a977107d61336c7e446b08e0bec9f15f0">checkGroups</a> () override</td></tr>
+<tr class="memdesc:a977107d61336c7e446b08e0bec9f15f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the input workspace properties for groups.  <br /></td></tr>
+<tr class="separator:a977107d61336c7e446b08e0bec9f15f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a467d06678920e358673cd032817b2354" id="r_a467d06678920e358673cd032817b2354"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2a/classMantid_1_1MDAlgorithms_1_1ConvertHFIRSCDtoMDE.html#a467d06678920e358673cd032817b2354">name</a> () const override</td></tr>
 <tr class="memdesc:a467d06678920e358673cd032817b2354"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d1/d12/namespaceMantid_1_1Algorithms.html">Algorithms</a> name for identification.  <br /></td></tr>
 <tr class="separator:a467d06678920e358673cd032817b2354"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,9 +261,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae171478803258e28db281499ca1588d5 inherit pub_methods_classMantid_1_1API_1_1Algorithm" id="r_ae171478803258e28db281499ca1588d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#ae171478803258e28db281499ca1588d5">findWorkspaces</a> (<a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a708c3b21e5781a621c25a093ff165c65">WorkspaceVector</a> &amp;workspaces, unsigned int direction, bool checkADS=false) const</td></tr>
 <tr class="memdesc:ae171478803258e28db281499ca1588d5 inherit pub_methods_classMantid_1_1API_1_1Algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populate lists of the workspace properties for a given direction (InOut workspaces are included in both input/output)  <br /></td></tr>
 <tr class="separator:ae171478803258e28db281499ca1588d5 inherit pub_methods_classMantid_1_1API_1_1Algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae948dc44d29590a7479377b0f3675109 inherit pub_methods_classMantid_1_1API_1_1Algorithm" id="r_ae948dc44d29590a7479377b0f3675109"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#ae948dc44d29590a7479377b0f3675109">checkGroups</a> ()</td></tr>
-<tr class="memdesc:ae948dc44d29590a7479377b0f3675109 inherit pub_methods_classMantid_1_1API_1_1Algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the input workspace properties for groups.  <br /></td></tr>
-<tr class="separator:ae948dc44d29590a7479377b0f3675109 inherit pub_methods_classMantid_1_1API_1_1Algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af739f32d1281209956ab95d06962dfa8 inherit pub_methods_classMantid_1_1API_1_1Algorithm" id="r_af739f32d1281209956ab95d06962dfa8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#af739f32d1281209956ab95d06962dfa8">processGroups</a> ()</td></tr>
 <tr class="memdesc:af739f32d1281209956ab95d06962dfa8 inherit pub_methods_classMantid_1_1API_1_1Algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process <a class="el" href="../../d9/de9/classMantid_1_1API_1_1WorkspaceGroup.html" title="Class to hold a set of workspaces.">WorkspaceGroup</a> inputs.  <br /></td></tr>
 <tr class="separator:af739f32d1281209956ab95d06962dfa8 inherit pub_methods_classMantid_1_1API_1_1Algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -465,12 +466,33 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a732556a9b4af8f69e55ebf993ee5f547" id="r_a732556a9b4af8f69e55ebf993ee5f547"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a035dd273afe7040e65d84c147a5f3c84">API::IMDEventWorkspace_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2a/classMantid_1_1MDAlgorithms_1_1ConvertHFIRSCDtoMDE.html#a732556a9b4af8f69e55ebf993ee5f547">convertWorkspace</a> (const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a98dbedb8238aed0fdc6e9f85c81f83e7">API::IMDHistoWorkspace_sptr</a> &amp;inputWS, double wavelength)</td></tr>
+<tr class="memdesc:a732556a9b4af8f69e55ebf993ee5f547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert one detector-space workspace into a Q-sample MDEventWorkspace.  <br /></td></tr>
+<tr class="separator:a732556a9b4af8f69e55ebf993ee5f547"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70787fc614f06a50cfd9abe35ccce603" id="r_a70787fc614f06a50cfd9abe35ccce603"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2a/classMantid_1_1MDAlgorithms_1_1ConvertHFIRSCDtoMDE.html#a70787fc614f06a50cfd9abe35ccce603">exec</a> () override</td></tr>
 <tr class="memdesc:a70787fc614f06a50cfd9abe35ccce603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the algorithm.  <br /></td></tr>
 <tr class="separator:a70787fc614f06a50cfd9abe35ccce603"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa820f395c42aedfeda4885db40781d19" id="r_aa820f395c42aedfeda4885db40781d19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2a/classMantid_1_1MDAlgorithms_1_1ConvertHFIRSCDtoMDE.html#aa820f395c42aedfeda4885db40781d19">init</a> () override</td></tr>
 <tr class="memdesc:aa820f395c42aedfeda4885db40781d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the algorithm's properties.  <br /></td></tr>
 <tr class="separator:aa820f395c42aedfeda4885db40781d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35f359328fe79056078f93543c0e4d05" id="r_a35f359328fe79056078f93543c0e4d05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a035dd273afe7040e65d84c147a5f3c84">API::IMDEventWorkspace_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2a/classMantid_1_1MDAlgorithms_1_1ConvertHFIRSCDtoMDE.html#a35f359328fe79056078f93543c0e4d05">mergeWorkspaces</a> (const std::vector&lt; <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a035dd273afe7040e65d84c147a5f3c84">API::IMDEventWorkspace_sptr</a> &gt; &amp;workspaces)</td></tr>
+<tr class="memdesc:a35f359328fe79056078f93543c0e4d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merge converted workspaces with <a class="el" href="../../d9/dd4/classMantid_1_1MDAlgorithms_1_1MergeMD.html" title="Merge several MDWorkspaces into one.">MergeMD</a>, with the box controller settings of this algorithm.  <br /></td></tr>
+<tr class="separator:a35f359328fe79056078f93543c0e4d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bcc3dcf6aa0e55bae4adb41f2d1e202" id="r_a4bcc3dcf6aa0e55bae4adb41f2d1e202"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2a/classMantid_1_1MDAlgorithms_1_1ConvertHFIRSCDtoMDE.html#a4bcc3dcf6aa0e55bae4adb41f2d1e202">resolveWavelength</a> (const <a class="el" href="../../d4/da9/classMantid_1_1API_1_1IMDHistoWorkspace.html">API::IMDHistoWorkspace</a> &amp;inputWS, const std::optional&lt; double &gt; &amp;fallback, bool logChoice) const</td></tr>
+<tr class="memdesc:a4bcc3dcf6aa0e55bae4adb41f2d1e202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the wavelength for a workspace, following HB3AAdjustSampleNorm: the 'wavelength' sample log when present, otherwise the fallback value.  <br /></td></tr>
+<tr class="separator:a4bcc3dcf6aa0e55bae4adb41f2d1e202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3c07f65fb7878e4160329a11ae345ba" id="r_ab3c07f65fb7878e4160329a11ae345ba"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2a/classMantid_1_1MDAlgorithms_1_1ConvertHFIRSCDtoMDE.html#ab3c07f65fb7878e4160329a11ae345ba">validateInputWorkspace</a> (const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a98dbedb8238aed0fdc6e9f85c81f83e7">API::IMDHistoWorkspace_sptr</a> &amp;inputWS) const</td></tr>
+<tr class="memdesc:ab3c07f65fb7878e4160329a11ae345ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that a workspace can be converted.  <br /></td></tr>
+<tr class="separator:ab3c07f65fb7878e4160329a11ae345ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:ac519eefee5008b70122d19cbb4c297b3" id="r_ac519eefee5008b70122d19cbb4c297b3"><td class="memItemLeft" align="right" valign="top">static std::optional&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2a/classMantid_1_1MDAlgorithms_1_1ConvertHFIRSCDtoMDE.html#ac519eefee5008b70122d19cbb4c297b3">fallbackWavelength</a> (const std::vector&lt; double &gt; &amp;wavelengths, size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>)</td></tr>
+<tr class="memdesc:ac519eefee5008b70122d19cbb4c297b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fallback wavelength given in the Wavelength property for an input workspace, if any.  <br /></td></tr>
+<tr class="separator:ac519eefee5008b70122d19cbb4c297b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d839297e65f2effadad80d033a5a98c" id="r_a5d839297e65f2effadad80d033a5a98c"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a98dbedb8238aed0fdc6e9f85c81f83e7">API::IMDHistoWorkspace_sptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2a/classMantid_1_1MDAlgorithms_1_1ConvertHFIRSCDtoMDE.html#a5d839297e65f2effadad80d033a5a98c">inputWorkspaceList</a> (const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a67efae9d0a0899c159be4b1705bc3d76">API::Workspace_sptr</a> &amp;input)</td></tr>
+<tr class="memdesc:a5d839297e65f2effadad80d033a5a98c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The input workspaces to convert: the members of a group in order, or the single input workspace.  <br /></td></tr>
+<tr class="separator:a5d839297e65f2effadad80d033a5a98c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -616,7 +638,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../dd/d2a/classMantid_1_1MDAlgorithms_1_1ConvertHFIRSCDtoMDE.html" title="ConvertHFIRSCDtoMDE : TODO: DESCRIPTION.">ConvertHFIRSCDtoMDE</a> : TODO: DESCRIPTION. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d25/ConvertHFIRSCDtoMDE_8h_source.html#l00017">17</a> of file <a class="el" href="../../de/d25/ConvertHFIRSCDtoMDE_8h_source.html">ConvertHFIRSCDtoMDE.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d25/ConvertHFIRSCDtoMDE_8h_source.html#l00023">23</a> of file <a class="el" href="../../de/d25/ConvertHFIRSCDtoMDE_8h_source.html">ConvertHFIRSCDtoMDE.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a95ed6496089b2af334c700525c1e6b0a" name="a95ed6496089b2af334c700525c1e6b0a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95ed6496089b2af334c700525c1e6b0a">&#9670;&#160;</a></span>category()</h2>
@@ -646,7 +668,108 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#aac664d897bb69f4ca2246b8dff697309">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00049">49</a> of file <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html">ConvertHFIRSCDtoMDE.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00074">74</a> of file <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html">ConvertHFIRSCDtoMDE.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a977107d61336c7e446b08e0bec9f15f0" name="a977107d61336c7e446b08e0bec9f15f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a977107d61336c7e446b08e0bec9f15f0">&#9670;&#160;</a></span>checkGroups()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mantid::MDAlgorithms::ConvertHFIRSCDtoMDE::checkGroups </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check the input workspace properties for groups. </p>
+<p>If there are more than one input workspace properties, then:</p><ul>
+<li>All inputs should be groups of the same size<ul>
+<li>In this case, algorithms are processed in order</li>
+</ul>
+</li>
+<li>OR, only one input should be a group, the others being size of 1</li>
+</ul>
+<p>If the property itself is a WorkspaceProperty&lt;WorkspaceGroup&gt; then this returns false</p>
+<p>Returns true if <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#af739f32d1281209956ab95d06962dfa8" title="Process WorkspaceGroup inputs.">processGroups()</a> should be called. It also sets up some other members.</p>
+<p>Override if it is needed to customize the group checking.</p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>if the groups sizes are incompatible. </td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>if a member is not found</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This method (or an override) must NOT THROW any exception if there are no input workspace groups </p>
+
+<p>Reimplemented from <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#ae948dc44d29590a7479377b0f3675109">Mantid::API::Algorithm</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d25/ConvertHFIRSCDtoMDE_8h_source.html#l00031">31</a> of file <a class="el" href="../../de/d25/ConvertHFIRSCDtoMDE_8h_source.html">ConvertHFIRSCDtoMDE.h</a>.</p>
+
+</div>
+</div>
+<a id="a732556a9b4af8f69e55ebf993ee5f547" name="a732556a9b4af8f69e55ebf993ee5f547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a732556a9b4af8f69e55ebf993ee5f547">&#9670;&#160;</a></span>convertWorkspace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a035dd273afe7040e65d84c147a5f3c84">API::IMDEventWorkspace_sptr</a> Mantid::MDAlgorithms::ConvertHFIRSCDtoMDE::convertWorkspace </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a98dbedb8238aed0fdc6e9f85c81f83e7">API::IMDHistoWorkspace_sptr</a> &amp;&#160;</td>
+          <td class="paramname"><em>inputWS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>wavelength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert one detector-space workspace into a Q-sample MDEventWorkspace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inputWS</td><td>:: detector-space workspace to convert </td></tr>
+    <tr><td class="paramname">wavelength</td><td>:: incident wavelength, in Angstrom </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the converted workspace </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00404">404</a> of file <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html">ConvertHFIRSCDtoMDE.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00860">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d3/d29/MDEventFactory_8cpp_source.html#l00178">Mantid::DataObjects::MDEventFactory::CreateMDWorkspace()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01981">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00802">Mantid::Geometry::m</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>, <a class="el" href="../../db/d13/SpecialCoordinateSystem_8h_source.html#l00014">Mantid::Kernel::QSample</a>, <a class="el" href="../../d6/d32/BoxControllerSettingsAlgorithm_8cpp_source.html#l00110">Mantid::API::BoxControllerSettingsAlgorithm::setBoxController()</a>, <a class="el" href="../../d2/d4f/FindFilesThreadPoolManager_8cpp_source.html#l00027">tp</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00252">exec()</a>.</p>
 
 </div>
 </div>
@@ -677,9 +800,61 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#aace3ff902f31d5cfa309fff3d6b069aa">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00162">162</a> of file <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html">ConvertHFIRSCDtoMDE.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00252">252</a> of file <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html">ConvertHFIRSCDtoMDE.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00860">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d3/d29/MDEventFactory_8cpp_source.html#l00178">Mantid::DataObjects::MDEventFactory::CreateMDWorkspace()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01981">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00802">Mantid::Geometry::m</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>, <a class="el" href="../../db/d13/SpecialCoordinateSystem_8h_source.html#l00014">Mantid::Kernel::QSample</a>, <a class="el" href="../../d6/d32/BoxControllerSettingsAlgorithm_8cpp_source.html#l00110">Mantid::API::BoxControllerSettingsAlgorithm::setBoxController()</a>, <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00265">Mantid::Kernel::IPropertyManager::setProperty()</a>, <a class="el" href="../../d2/d4f/FindFilesThreadPoolManager_8cpp_source.html#l00027">tp</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00404">convertWorkspace()</a>, <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00345">fallbackWavelength()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00203">Mantid::API::Algorithm::getAlwaysStoreInADS()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01981">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01931">Mantid::API::Algorithm::getPropertyValue()</a>, <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00329">inputWorkspaceList()</a>, <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00297">mergeWorkspaces()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00246">Mantid::API::Algorithm::progress()</a>, <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00363">resolveWavelength()</a>, and <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00265">Mantid::Kernel::IPropertyManager::setProperty()</a>.</p>
+
+</div>
+</div>
+<a id="ac519eefee5008b70122d19cbb4c297b3" name="ac519eefee5008b70122d19cbb4c297b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac519eefee5008b70122d19cbb4c297b3">&#9670;&#160;</a></span>fallbackWavelength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; double &gt; Mantid::MDAlgorithms::ConvertHFIRSCDtoMDE::fallbackWavelength </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>wavelengths</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The fallback wavelength given in the Wavelength property for an input workspace, if any. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wavelengths</td><td>:: values of the Wavelength property </td></tr>
+    <tr><td class="paramname">index</td><td>:: position of the input workspace in the group, 0 for a single input </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the value for this workspace, or no value if the property is empty </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00345">345</a> of file <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html">ConvertHFIRSCDtoMDE.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00252">exec()</a>, and <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00122">validateInputs()</a>.</p>
 
 </div>
 </div>
@@ -710,9 +885,91 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a6dd0fd7bdcd432ca32c33f4a4c26583c">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00130">130</a> of file <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html">ConvertHFIRSCDtoMDE.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00213">213</a> of file <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html">ConvertHFIRSCDtoMDE.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01818">Mantid::API::Algorithm::declareProperty()</a>, <a class="el" href="../../d6/d32/BoxControllerSettingsAlgorithm_8cpp_source.html#l00029">Mantid::API::BoxControllerSettingsAlgorithm::initBoxControllerProps()</a>, <a class="el" href="../../d3/d68/Property_8h_source.html#l00054">Mantid::Kernel::Direction::Input</a>, and <a class="el" href="../../d3/d68/Property_8h_source.html#l00055">Mantid::Kernel::Direction::Output</a>.</p>
+
+</div>
+</div>
+<a id="a5d839297e65f2effadad80d033a5a98c" name="a5d839297e65f2effadad80d033a5a98c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d839297e65f2effadad80d033a5a98c">&#9670;&#160;</a></span>inputWorkspaceList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a98dbedb8238aed0fdc6e9f85c81f83e7">API::IMDHistoWorkspace_sptr</a> &gt; Mantid::MDAlgorithms::ConvertHFIRSCDtoMDE::inputWorkspaceList </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a67efae9d0a0899c159be4b1705bc3d76">API::Workspace_sptr</a> &amp;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The input workspaces to convert: the members of a group in order, or the single input workspace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>:: value of the InputWorkspace property </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>one entry per workspace, null for an entry that is not an MDHistoWorkspace </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00329">329</a> of file <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html">ConvertHFIRSCDtoMDE.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00252">exec()</a>, and <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00122">validateInputs()</a>.</p>
+
+</div>
+</div>
+<a id="a35f359328fe79056078f93543c0e4d05" name="a35f359328fe79056078f93543c0e4d05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35f359328fe79056078f93543c0e4d05">&#9670;&#160;</a></span>mergeWorkspaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a035dd273afe7040e65d84c147a5f3c84">API::IMDEventWorkspace_sptr</a> Mantid::MDAlgorithms::ConvertHFIRSCDtoMDE::mergeWorkspaces </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a035dd273afe7040e65d84c147a5f3c84">API::IMDEventWorkspace_sptr</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>workspaces</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Merge converted workspaces with <a class="el" href="../../d9/dd4/classMantid_1_1MDAlgorithms_1_1MergeMD.html" title="Merge several MDWorkspaces into one.">MergeMD</a>, with the box controller settings of this algorithm. </p>
+<p><a class="el" href="../../d9/dd4/classMantid_1_1MDAlgorithms_1_1MergeMD.html" title="Merge several MDWorkspaces into one.">MergeMD</a> reads its inputs from the AnalysisDataService, so the workspaces are stored there under hidden temporary names, which are removed afterwards, also if the merge fails. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">workspaces</td><td>:: converted workspaces, in group order </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the merged workspace </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00297">297</a> of file <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html">ConvertHFIRSCDtoMDE.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00860">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01931">Mantid::API::Algorithm::getPropertyValue()</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>, and <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00068">name()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00252">exec()</a>.</p>
 
 </div>
 </div>
@@ -744,7 +1001,74 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#af7d20753d77a5d2875edf5a37eaef39f">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00043">43</a> of file <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html">ConvertHFIRSCDtoMDE.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html">ConvertHFIRSCDtoMDE.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00297">mergeWorkspaces()</a>.</p>
+
+</div>
+</div>
+<a id="a4bcc3dcf6aa0e55bae4adb41f2d1e202" name="a4bcc3dcf6aa0e55bae4adb41f2d1e202"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bcc3dcf6aa0e55bae4adb41f2d1e202">&#9670;&#160;</a></span>resolveWavelength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Mantid::MDAlgorithms::ConvertHFIRSCDtoMDE::resolveWavelength </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/da9/classMantid_1_1API_1_1IMDHistoWorkspace.html">API::IMDHistoWorkspace</a> &amp;&#160;</td>
+          <td class="paramname"><em>inputWS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::optional&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>logChoice</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Find the wavelength for a workspace, following HB3AAdjustSampleNorm: the 'wavelength' sample log when present, otherwise the fallback value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inputWS</td><td>:: detector-space workspace to convert </td></tr>
+    <tr><td class="paramname">fallback</td><td>:: value to use when the sample log is missing </td></tr>
+    <tr><td class="paramname">logChoice</td><td>:: log which value is used, and warn when the sample log overrides a different fallback value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the wavelength, in Angstrom </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>if the sample log is not a positive number, or if neither the sample log nor the fallback is available </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00363">363</a> of file <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html">ConvertHFIRSCDtoMDE.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00423">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../dc/dc7/API_2src_2MultipleExperimentInfos_8cpp_source.html#l00037">Mantid::API::MultipleExperimentInfos::getExperimentInfo()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00252">exec()</a>, and <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00122">validateInputs()</a>.</p>
 
 </div>
 </div>
@@ -775,7 +1099,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#ac7479973136d934042211c3a703abfc8">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d25/ConvertHFIRSCDtoMDE_8h_source.html#l00021">21</a> of file <a class="el" href="../../de/d25/ConvertHFIRSCDtoMDE_8h_source.html">ConvertHFIRSCDtoMDE.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d25/ConvertHFIRSCDtoMDE_8h_source.html#l00027">27</a> of file <a class="el" href="../../de/d25/ConvertHFIRSCDtoMDE_8h_source.html">ConvertHFIRSCDtoMDE.h</a>.</p>
 
 </div>
 </div>
@@ -807,7 +1131,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#adfff14154e5762875923c9a4f3679b51">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00052">52</a> of file <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html">ConvertHFIRSCDtoMDE.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html">ConvertHFIRSCDtoMDE.cpp</a>.</p>
 
 </div>
 </div>
@@ -841,9 +1165,48 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#ace18d3c42732dbb269705afcaba59813">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html">ConvertHFIRSCDtoMDE.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00122">122</a> of file <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html">ConvertHFIRSCDtoMDE.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01981">Mantid::API::Algorithm::getProperty()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00345">fallbackWavelength()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01981">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00329">inputWorkspaceList()</a>, <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00363">resolveWavelength()</a>, <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>, and <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00086">validateInputWorkspace()</a>.</p>
+
+</div>
+</div>
+<a id="ab3c07f65fb7878e4160329a11ae345ba" name="ab3c07f65fb7878e4160329a11ae345ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3c07f65fb7878e4160329a11ae345ba">&#9670;&#160;</a></span>validateInputWorkspace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Mantid::MDAlgorithms::ConvertHFIRSCDtoMDE::validateInputWorkspace </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a98dbedb8238aed0fdc6e9f85c81f83e7">API::IMDHistoWorkspace_sptr</a> &amp;&#160;</td>
+          <td class="paramname"><em>inputWS</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check that a workspace can be converted. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inputWS</td><td>:: detector-space workspace to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>description of the problems found, or an empty string if there are none </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html">ConvertHFIRSCDtoMDE.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00122">validateInputs()</a>.</p>
 
 </div>
 </div>
@@ -875,7 +1238,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#ac1fab4b33f78654eccab880db81f14c0">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00046">46</a> of file <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html">ConvertHFIRSCDtoMDE.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html#l00071">71</a> of file <a class="el" href="../../d7/da3/ConvertHFIRSCDtoMDE_8cpp_source.html">ConvertHFIRSCDtoMDE.cpp</a>.</p>
 
 </div>
 </div>
