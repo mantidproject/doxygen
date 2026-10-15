@@ -293,11 +293,11 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  <span class="comment">// NXinstrument</span></div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  nxFile.makeGroup(<span class="stringliteral">&quot;instrument&quot;</span>, <span class="stringliteral">&quot;NXinstrument&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  <span class="comment">// Write the instrument name</span></div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  nxFile.writeData(<span class="stringliteral">&quot;name&quot;</span>, inputWS-&gt;getInstrument()-&gt;getName());</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  nxFile.writeData(<span class="stringliteral">&quot;name&quot;</span>, inputWS-&gt;getInstrumentName());</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  <span class="comment">// and the short name</span></div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  nxFile.openData(<span class="stringliteral">&quot;name&quot;</span>);</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  <span class="comment">// TODO: Get the instrument short name</span></div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  nxFile.putAttr(<span class="stringliteral">&quot;short_name&quot;</span>, inputWS-&gt;getInstrument()-&gt;getName());</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  nxFile.putAttr(<span class="stringliteral">&quot;short_name&quot;</span>, inputWS-&gt;getInstrumentName());</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  nxFile.closeData();</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  nxFile.writeData(<span class="stringliteral">&quot;run_number&quot;</span>, inputWS-&gt;getRunNumber());</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>

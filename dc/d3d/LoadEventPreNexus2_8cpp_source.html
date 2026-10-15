@@ -251,7 +251,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keywordflow">return</span> dataversion.string();</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <span class="comment">// get a list of all proposal directories</span></div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  <span class="keywordtype">string</span> instrument = wksp-&gt;getInstrument()-&gt;getName();</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  <span class="keywordtype">string</span> instrument = wksp-&gt;getInstrumentName();</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  std::filesystem::path base(<span class="stringliteral">&quot;/SNS/&quot;</span> + instrument + <span class="stringliteral">&quot;/&quot;</span>);</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  <span class="comment">// try short instrument name</span></div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  <span class="keywordflow">if</span> (!std::filesystem::exists(base)) {</div>

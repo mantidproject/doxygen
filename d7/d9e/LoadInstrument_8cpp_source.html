@@ -360,7 +360,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  <span class="keyword">const</span> <span class="keyword">auto</span> pathSep = idfFilename.find_last_of(<span class="stringliteral">&quot;/\\&quot;</span>);</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  <span class="keyword">const</span> std::string idfDir = (pathSep != std::string::npos) ? idfFilename.substr(0, pathSep) : <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  <span class="keyword">const</span> std::string instName = ws-&gt;getInstrument()-&gt;getName();</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  <span class="keyword">const</span> std::string instName = ws-&gt;getInstrumentName();</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  std::string runDate = ws-&gt;getAvailableWorkspaceStartDate();</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>  <span class="comment">// When the workspace has no run date (e.g. LoadEmptyInstrument), fall back to</span></div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>  <span class="comment">// the IDF&#39;s own valid-from date so that a specific versioned IDF selects its</span></div>

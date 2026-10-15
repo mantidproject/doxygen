@@ -172,12 +172,12 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>std::string getInstName(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a9593a933a4999f9efd881de5e93f50db">API::Workspace_const_sptr</a> &amp;wksp) {</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a97ac0dc7f26bb26c417c74e8b29d1181">MatrixWorkspace_const_sptr</a> matrixWksp = std::dynamic_pointer_cast&lt;const MatrixWorkspace&gt;(wksp);</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keywordflow">if</span> (matrixWksp) {</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">return</span> matrixWksp-&gt;getInstrument()-&gt;getName();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">return</span> matrixWksp-&gt;getInstrumentName();</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  }</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <a class="code hl_typedef" href="../../db/d22/namespaceMantid_1_1DataObjects.html#a00d1db58b7521667c708a5899167f312">PeaksWorkspace_const_sptr</a> peaksWksp = std::dynamic_pointer_cast&lt;const PeaksWorkspace&gt;(wksp);</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keywordflow">if</span> (peaksWksp) {</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">return</span> peaksWksp-&gt;getInstrument()-&gt;getName();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">return</span> peaksWksp-&gt;getInstrumentName();</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  }</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Failed to determine instrument name&quot;</span>);</div>

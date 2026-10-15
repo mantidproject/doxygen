@@ -204,7 +204,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keyword">const</span> <span class="keyword">auto</span> numHist = firstWS-&gt;<a class="code hl_function" href="../../d7/d39/classMantid_1_1DataObjects_1_1EventWorkspace.html#a58ab27115797b03db2b2fe0a7a4860ba">getNumberHistograms</a>();</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keyword">const</span> <span class="keyword">auto</span> blocksize = firstWS-&gt;blocksize();</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="keyword">const</span> <span class="keyword">auto</span> eventType = firstWS-&gt;getEventType();</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="keyword">const</span> <span class="keyword">auto</span> instrumentName = firstWS-&gt;getInstrument()-&gt;getName();</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="keyword">const</span> <span class="keyword">auto</span> instrumentName = firstWS-&gt;getInstrumentName();</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="keywordtype">double</span> protonChargeMin = firstWS-&gt;run().getProtonCharge();</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="keywordtype">double</span> protonChargeMax = firstWS-&gt;run().getProtonCharge();</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
@@ -235,7 +235,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>      <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordflow">if</span> (ws-&gt;getInstrument()-&gt;getName() != instrumentName) {</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordflow">if</span> (ws-&gt;getInstrumentName() != instrumentName) {</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>      issues[<span class="stringliteral">&quot;InputWorkspaces&quot;</span>] = <span class="stringliteral">&quot;Instrument name mismatch.&quot;</span>;</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>      <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    }</div>

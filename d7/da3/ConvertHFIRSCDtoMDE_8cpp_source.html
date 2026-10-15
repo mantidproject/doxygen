@@ -184,14 +184,14 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    inputWSmsg &lt;&lt; <span class="stringliteral">&quot;Wrong dimensions&quot;</span>;</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (inputWS-&gt;getNumExperimentInfo() == 0) {</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    inputWSmsg &lt;&lt; <span class="stringliteral">&quot;Missing experiment info&quot;</span>;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (inputWS-&gt;getExperimentInfo(0)-&gt;getInstrument()-&gt;getName() != <span class="stringliteral">&quot;HB3A&quot;</span> &amp;&amp;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>             inputWS-&gt;getExperimentInfo(0)-&gt;getInstrument()-&gt;getName() != <span class="stringliteral">&quot;WAND&quot;</span>) {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (inputWS-&gt;getExperimentInfo(0)-&gt;getInstrumentName() != <span class="stringliteral">&quot;HB3A&quot;</span> &amp;&amp;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>             inputWS-&gt;getExperimentInfo(0)-&gt;getInstrumentName() != <span class="stringliteral">&quot;WAND&quot;</span>) {</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    inputWSmsg &lt;&lt; <span class="stringliteral">&quot;This only works for DEMAND (HB3A) or WAND (HB2C)&quot;</span>;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (inputWS-&gt;getDimension(2)-&gt;getNBins() != inputWS-&gt;getExperimentInfo(0)-&gt;run().getNumGoniometers()) {</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    inputWSmsg &lt;&lt; <span class="stringliteral">&quot;goniometers not set correctly, did you run SetGoniometer &quot;</span></div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                  <span class="stringliteral">&quot;with Average=False&quot;</span>;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    std::string instrument = inputWS-&gt;getExperimentInfo(0)-&gt;getInstrument()-&gt;getName();</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    std::string instrument = inputWS-&gt;getExperimentInfo(0)-&gt;getInstrumentName();</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keyword">const</span> <span class="keyword">auto</span> run = inputWS-&gt;getExperimentInfo(0)-&gt;run();</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordtype">size_t</span> number_of_runs = inputWS-&gt;getDimension(2)-&gt;getNBins();</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    std::vector&lt;std::string&gt; logs;</div>
@@ -481,7 +481,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>  <span class="keywordtype">bool</span> lorentz = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a5356ea547c4381e4144caa2b37599ead">getProperty</a>(<span class="stringliteral">&quot;LorentzCorrection&quot;</span>);</div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>  <span class="keyword">auto</span> &amp;expInfo = *(inputWS-&gt;getExperimentInfo(<span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>(0)));</div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>  std::string instrument = expInfo.getInstrument()-&gt;getName();</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>  std::string instrument = expInfo.getInstrumentName();</div>
 <div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span> </div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>  std::vector&lt;double&gt; twotheta, azimuthal;</div>
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>  std::vector&lt;int&gt; detectorID; <span class="comment">// detector ID for each (twotheta, azimuthal), most useful when detector grouping done</span></div>
