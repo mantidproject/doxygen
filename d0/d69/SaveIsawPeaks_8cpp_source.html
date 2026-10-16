@@ -181,7 +181,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="comment">// We cannot assume the peaks have bank type detector modules, so we have a</span></div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="comment">// string to check this</span></div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  std::string bankPart = <span class="stringliteral">&quot;bank&quot;</span>;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../dd/df4/classMantid_1_1Crystal_1_1SaveIsawPeaks.html#aa9454c4040fa543929e6b58a7513cca3">inst</a>-&gt;getName() == <span class="stringliteral">&quot;WISH&quot;</span>)</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../dd/df4/classMantid_1_1Crystal_1_1SaveIsawPeaks.html#a361332337956fbed00ce9094a765ad6f">m_ws</a>-&gt;getInstrumentName() == <span class="stringliteral">&quot;WISH&quot;</span>)</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    bankPart = <span class="stringliteral">&quot;WISHpanel&quot;</span>;</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="comment">// Get all children</span></div>
@@ -284,7 +284,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    out.open(filename.c_str());</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keyword">const</span> <span class="keyword">auto</span> instrumentName = <a class="code hl_variable" href="../../dd/df4/classMantid_1_1Crystal_1_1SaveIsawPeaks.html#aa9454c4040fa543929e6b58a7513cca3">inst</a>-&gt;getName();</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keyword">const</span> <span class="keyword">auto</span> instrumentName = <a class="code hl_variable" href="../../dd/df4/classMantid_1_1Crystal_1_1SaveIsawPeaks.html#a361332337956fbed00ce9094a765ad6f">m_ws</a>-&gt;getInstrumentName();</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    std::string facilityName;</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="keywordflow">try</span> {</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>      facilityName = ConfigService::Instance().getInstrument(instrumentName).facility().name();</div>
@@ -338,7 +338,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>      std::string bankName = mess.str();</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>      <span class="comment">// Retrieve it</span></div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>      std::shared_ptr&lt;const IComponent&gt; det = <a class="code hl_variable" href="../../dd/df4/classMantid_1_1Crystal_1_1SaveIsawPeaks.html#aa9454c4040fa543929e6b58a7513cca3">inst</a>-&gt;getComponentByName(bankName);</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../dd/df4/classMantid_1_1Crystal_1_1SaveIsawPeaks.html#aa9454c4040fa543929e6b58a7513cca3">inst</a>-&gt;getName() == <span class="stringliteral">&quot;CORELLI&quot;</span>) <span class="comment">// for Corelli with sixteenpack under bank</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../dd/df4/classMantid_1_1Crystal_1_1SaveIsawPeaks.html#a361332337956fbed00ce9094a765ad6f">m_ws</a>-&gt;getInstrumentName() == <span class="stringliteral">&quot;CORELLI&quot;</span>) <span class="comment">// for Corelli with sixteenpack under bank</span></div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>      {</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        <span class="keyword">const</span> <span class="keywordtype">size_t</span> bankIndex = componentInfo.indexOfAny(bankName);</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        <span class="keyword">const</span> <span class="keyword">auto</span> children = componentInfo.children(bankIndex);</div>
@@ -570,7 +570,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>    }</div>
 <div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>    <span class="keywordtype">int</span> col0 = col - 1;</div>
 <div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>    <span class="comment">// WISH detectors are in bank in this order in instrument</span></div>
-<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../dd/df4/classMantid_1_1Crystal_1_1SaveIsawPeaks.html#aa9454c4040fa543929e6b58a7513cca3">inst</a>-&gt;getName() == <span class="stringliteral">&quot;WISH&quot;</span>)</div>
+<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../dd/df4/classMantid_1_1Crystal_1_1SaveIsawPeaks.html#a361332337956fbed00ce9094a765ad6f">m_ws</a>-&gt;getInstrumentName() == <span class="stringliteral">&quot;WISH&quot;</span>)</div>
 <div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>      col0 = (col % 2 == 0 ? col / 2 + 75 : (col - 1) / 2);</div>
 <div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span> </div>
 <div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>    <span class="keyword">auto</span> grandchildren = componentInfo.children(children[col0]);</div>

@@ -292,7 +292,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  <span class="comment">// We cannot assume the peaks have bank type detector modules, so we have a</span></div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  <span class="comment">// string to check this</span></div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  std::string bankPart = <span class="stringliteral">&quot;bank&quot;</span>;</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  <span class="keywordflow">if</span> (instr-&gt;getName() == <span class="stringliteral">&quot;WISH&quot;</span>)</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  <span class="keywordflow">if</span> (tempWS-&gt;getInstrumentName() == <span class="stringliteral">&quot;WISH&quot;</span>)</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    bankPart = <span class="stringliteral">&quot;WISHpanel&quot;</span>;</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  <span class="comment">// Get all children</span></div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  <span class="keyword">const</span> <span class="keyword">auto</span> &amp;componentInfo = outWS-&gt;componentInfo();</div>
@@ -322,7 +322,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>      <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#ae1cbff5af2427fd1a1add0488fed3929">Algorithm_sptr</a> alg = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a601ae146d6e558587e743cfad107e6bd">createChildAlgorithm</a>(<span class="stringliteral">&quot;MaskBTP&quot;</span>);</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>      alg-&gt;setProperty&lt;<a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a67efae9d0a0899c159be4b1705bc3d76">Workspace_sptr</a>&gt;(<span class="stringliteral">&quot;Workspace&quot;</span>, outWS);</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>      alg-&gt;setProperty(<span class="stringliteral">&quot;Bank&quot;</span>, maskBanks);</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>      alg-&gt;setProperty(<span class="stringliteral">&quot;Instrument&quot;</span>, instr-&gt;getName());</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>      alg-&gt;setProperty(<span class="stringliteral">&quot;Instrument&quot;</span>, tempWS-&gt;getInstrumentName());</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>      <span class="keywordflow">if</span> (!alg-&gt;execute())</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;MaskDetectors Child Algorithm has not executed successfully&quot;</span>);</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    } <span class="keywordflow">catch</span> (...) {</div>

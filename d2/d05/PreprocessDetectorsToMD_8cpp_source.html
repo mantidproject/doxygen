@@ -295,7 +295,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>                                                       inputWS-&gt;getTitle());</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  }</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  <span class="comment">// Instrument name</span></div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  std::string InstrName = instrument-&gt;getName();</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  std::string InstrName = inputWS-&gt;getInstrumentName();</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  targWS-&gt;logs()-&gt;addProperty&lt;std::string&gt;(<span class="stringliteral">&quot;InstrumentName&quot;</span>, InstrName,</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>                                           <span class="keyword">true</span>); <span class="comment">// &quot;The name which should unique identify current instrument&quot;);</span></div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  targWS-&gt;logs()-&gt;addProperty&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;FakeDetectors&quot;</span>, <span class="keyword">false</span>, <span class="keyword">true</span>);</div>

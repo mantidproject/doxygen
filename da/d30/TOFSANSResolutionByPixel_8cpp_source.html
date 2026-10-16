@@ -323,15 +323,14 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="../../d4/d44/classMantid_1_1Algorithms_1_1TOFSANSResolutionByPixel.html#a7566dce8111b080fb7f371ee3d31cb2e">  227</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d4/d44/classMantid_1_1Algorithms_1_1TOFSANSResolutionByPixel.html#a7566dce8111b080fb7f371ee3d31cb2e">TOFSANSResolutionByPixel::checkInput</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">Mantid::API::MatrixWorkspace_sptr</a> &amp;inWS) {</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  <span class="comment">// Make sure that input workspace has an instrument as we rely heavily on</span></div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  <span class="comment">// thisa</span></div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  <span class="keyword">auto</span> inst = inWS-&gt;getInstrument();</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  <span class="keywordflow">if</span> (inst-&gt;getName().empty()) {</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;TOFSANSResolutionByPixel: The input workspace &quot;</span></div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                                <span class="stringliteral">&quot;does not contain an instrument&quot;</span>);</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  }</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>}</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  <span class="keywordflow">if</span> (inWS-&gt;getInstrumentName().empty()) {</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;TOFSANSResolutionByPixel: The input workspace &quot;</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                                <span class="stringliteral">&quot;does not contain an instrument&quot;</span>);</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  }</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>}</div>
 </div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>} <span class="comment">// namespace Mantid::Algorithms</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>} <span class="comment">// namespace Mantid::Algorithms</span></div>
 <div class="ttc" id="aAlgorithm_8h_html_afdb48240ab340a0026eeadc6de8b72e1"><div class="ttname"><a href="../../d7/d36/Algorithm_8h.html#afdb48240ab340a0026eeadc6de8b72e1">DECLARE_ALGORITHM</a></div><div class="ttdeci">#define DECLARE_ALGORITHM(classname)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d36/Algorithm_8h_source.html#l00542">Algorithm.h:542</a></div></div>
 <div class="ttc" id="aArrayProperty_8h_html"><div class="ttname"><a href="../../df/da4/ArrayProperty_8h.html">ArrayProperty.h</a></div></div>
 <div class="ttc" id="aBoundedValidator_8h_html"><div class="ttname"><a href="../../dd/d4d/BoundedValidator_8h.html">BoundedValidator.h</a></div></div>

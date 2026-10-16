@@ -175,7 +175,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="comment">// We cannot assume the peaks have bank type detector modules, so we have a</span></div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="comment">// string to check this</span></div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  std::string bankPart = <span class="stringliteral">&quot;bank&quot;</span>;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d2/d3d/classMantid_1_1DataHandling_1_1SaveIsawDetCal.html#ae6c0e11a012718db072d75812d5f789e">inst</a>-&gt;getName() == <span class="stringliteral">&quot;WISH&quot;</span>)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keywordflow">if</span> (ws-&gt;getInstrumentName() == <span class="stringliteral">&quot;WISH&quot;</span>)</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    bankPart = <span class="stringliteral">&quot;WISHpanel&quot;</span>;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  std::set&lt;int&gt; uniqueBanks;</div>
@@ -255,7 +255,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    std::string bankName = mess.str();</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <span class="comment">// Retrieve it</span></div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    std::shared_ptr&lt;const IComponent&gt; det = <a class="code hl_variable" href="../../d2/d3d/classMantid_1_1DataHandling_1_1SaveIsawDetCal.html#ae6c0e11a012718db072d75812d5f789e">inst</a>-&gt;getComponentByName(bankName);</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d2/d3d/classMantid_1_1DataHandling_1_1SaveIsawDetCal.html#ae6c0e11a012718db072d75812d5f789e">inst</a>-&gt;getName() == <span class="stringliteral">&quot;CORELLI&quot;</span>) <span class="comment">// for Corelli with sixteenpack under bank</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keywordflow">if</span> (ws-&gt;getInstrumentName() == <span class="stringliteral">&quot;CORELLI&quot;</span>) <span class="comment">// for Corelli with sixteenpack under bank</span></div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    {</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>      <span class="keyword">const</span> <span class="keywordtype">size_t</span> bankIndex = componentInfo.indexOfAny(bankName);</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>      <span class="keyword">const</span> <span class="keyword">auto</span> children = componentInfo.children(bankIndex);</div>
