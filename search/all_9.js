@@ -197,7 +197,7 @@ var searchData=
   ['energy_194',['energy',['../de/d36/classMantid_1_1Kernel_1_1Units_1_1Energy.html',1,'Mantid::Kernel::Units::Energy'],['../d6/d64/GetAllEi_8cpp.html#a1d26cc49e49afe96406210d6beaf418a',1,'energy:&#160;GetAllEi.cpp'],['../de/d36/classMantid_1_1Kernel_1_1Units_1_1Energy.html#a9020d89adc72abf50056b7d50ec1d5f2',1,'Mantid::Kernel::Units::Energy::Energy()']]],
   ['energy_5finwavenumber_195',['energy_inwavenumber',['../dd/da4/classMantid_1_1Kernel_1_1Units_1_1Energy__inWavenumber.html',1,'Mantid::Kernel::Units::Energy_inWavenumber'],['../dd/da4/classMantid_1_1Kernel_1_1Units_1_1Energy__inWavenumber.html#acdd0e787dd99e578b7b7c8a211790f11',1,'Mantid::Kernel::Units::Energy_inWavenumber::Energy_inWavenumber()']]],
   ['enforced_196',['enforced',['../d1/d8c/classICat4_1_1ns1____parameterType.html#a75b952596bb63708572873b0bdbda396',1,'ICat4::ns1__parameterType']]],
-  ['enqueue_197',['enqueue',['../dd/d01/classPoco_1_1PythonLoggingChannel.html#a1f74bd495c4b3466afd272ff5921c1a8',1,'Poco::PythonLoggingChannel']]],
+  ['enqueue_197',['enqueue',['../dd/d01/classPoco_1_1PythonLoggingChannel.html#a29f0556f65a0d69272c70f80969dac71',1,'Poco::PythonLoggingChannel']]],
   ['ensurecompatiblesize_198',['ensureCompatibleSize',['../dc/d99/classMantid_1_1Kernel_1_1EnumeratedString.html#a6a84629f03b381050d1c47c19af6993a',1,'Mantid::Kernel::EnumeratedString']]],
   ['ensureenoughbufferse_199',['ensureEnoughBuffersE',['../d2/dac/classMantid_1_1DataObjects_1_1EventWorkspaceMRU.html#adabf78e65ea9d7869211af5fcdaa2e1c',1,'Mantid::DataObjects::EventWorkspaceMRU']]],
   ['ensureenoughbuffersy_200',['ensureEnoughBuffersY',['../d2/dac/classMantid_1_1DataObjects_1_1EventWorkspaceMRU.html#afe007a37c3864e87b4b6bb867e5543b0',1,'Mantid::DataObjects::EventWorkspaceMRU']]],
