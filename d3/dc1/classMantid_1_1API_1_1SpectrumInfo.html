@@ -157,6 +157,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a679a706b7da97e623a98ce2afabd00db" id="r_a679a706b7da97e623a98ce2afabd00db"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc1/classMantid_1_1API_1_1SpectrumInfo.html#a679a706b7da97e623a98ce2afabd00db">l2</a> (const size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>) const</td></tr>
 <tr class="memdesc:a679a706b7da97e623a98ce2afabd00db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns L2 (distance from sample to spectrum).  <br /></td></tr>
 <tr class="separator:a679a706b7da97e623a98ce2afabd00db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5f5391ca402e8178f3c31fad209dcd8" id="r_aa5f5391ca402e8178f3c31fad209dcd8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc1/classMantid_1_1API_1_1SpectrumInfo.html#aa5f5391ca402e8178f3c31fad209dcd8">phi</a> (const size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>) const</td></tr>
+<tr class="memdesc:aa5f5391ca402e8178f3c31fad209dcd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the angle of the spectrum position about the lab-frame z axis, atan2(y, x), in radians.  <br /></td></tr>
+<tr class="separator:aa5f5391ca402e8178f3c31fad209dcd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0467ff0b410bf7f951672d7b54a2dd32" id="r_a0467ff0b410bf7f951672d7b54a2dd32"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc1/classMantid_1_1API_1_1SpectrumInfo.html#a0467ff0b410bf7f951672d7b54a2dd32">phiOffset</a> (const size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, const double offset) const</td></tr>
+<tr class="memdesc:a0467ff0b410bf7f951672d7b54a2dd32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <a class="el" href="../../d3/dc1/classMantid_1_1API_1_1SpectrumInfo.html#aa5f5391ca402e8178f3c31fad209dcd8" title="Returns the angle of the spectrum position about the lab-frame z axis, atan2(y, x),...">phi()</a> reflected about <code>offset</code> (radians): offset - phi for phi &gt;= 0 and -(offset + phi) otherwise.  <br /></td></tr>
+<tr class="separator:a0467ff0b410bf7f951672d7b54a2dd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62c6e1073404d0ceed67733bcfd212ff" id="r_a62c6e1073404d0ceed67733bcfd212ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc1/classMantid_1_1API_1_1SpectrumInfo.html#a62c6e1073404d0ceed67733bcfd212ff">position</a> (const size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>) const</td></tr>
 <tr class="memdesc:a62c6e1073404d0ceed67733bcfd212ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the position of the spectrum with given index.  <br /></td></tr>
 <tr class="separator:a62c6e1073404d0ceed67733bcfd212ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,6 +177,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a02dda7cfdfcf8f8eb01c36c5988b0734" id="r_a02dda7cfdfcf8f8eb01c36c5988b0734"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc1/classMantid_1_1API_1_1SpectrumInfo.html#a02dda7cfdfcf8f8eb01c36c5988b0734">signedTwoTheta</a> (const size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>) const</td></tr>
 <tr class="memdesc:a02dda7cfdfcf8f8eb01c36c5988b0734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the signed scattering angle 2 theta in radians (angle w.r.t.  <br /></td></tr>
 <tr class="separator:a02dda7cfdfcf8f8eb01c36c5988b0734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a086eb05f010fa0d5c1a33a8afe9e3633" id="r_a086eb05f010fa0d5c1a33a8afe9e3633"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc1/classMantid_1_1API_1_1SpectrumInfo.html#a086eb05f010fa0d5c1a33a8afe9e3633">signedTwoTheta</a> (const size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;observer, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;axis) const</td></tr>
+<tr class="memdesc:a086eb05f010fa0d5c1a33a8afe9e3633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the average signed angle between the vectors from <code>observer</code> to each detector of the spectrum and <code>axis</code>, signed using the instrument's theta-sign axis (<a class="el" href="../../d4/d4d/classMantid_1_1Geometry_1_1ReferenceFrame.html#a538ce730a3152715c06e73da3b6a233f" title="Convert along the axis defining the 2theta sign.">ReferenceFrame::vecThetaSign</a>).  <br /></td></tr>
+<tr class="separator:a086eb05f010fa0d5c1a33a8afe9e3633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21324a80213c46b5264d873e6244ca73" id="r_a21324a80213c46b5264d873e6244ca73"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc1/classMantid_1_1API_1_1SpectrumInfo.html#a21324a80213c46b5264d873e6244ca73">signedTwoTheta</a> (const size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;observer, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;axis, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;instrumentUp) const</td></tr>
+<tr class="memdesc:a21324a80213c46b5264d873e6244ca73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the average signed angle between the vectors from <code>observer</code> to each detector of the spectrum and <code>axis</code>, signed according to the rotation direction relative to <code>axis</code> and <code>instrumentUp</code>.  <br /></td></tr>
+<tr class="separator:a21324a80213c46b5264d873e6244ca73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacd131b98d06d1abc5b700b6ae119236" id="r_aacd131b98d06d1abc5b700b6ae119236"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc1/classMantid_1_1API_1_1SpectrumInfo.html#aacd131b98d06d1abc5b700b6ae119236">size</a> () const</td></tr>
 <tr class="memdesc:aacd131b98d06d1abc5b700b6ae119236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the <a class="el" href="../../d3/dc1/classMantid_1_1API_1_1SpectrumInfo.html" title="API::SpectrumInfo is an intermediate step towards a SpectrumInfo that is part of Instrument-2....">SpectrumInfo</a>, i.e., the number of spectra.  <br /></td></tr>
 <tr class="separator:aacd131b98d06d1abc5b700b6ae119236"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,6 +197,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a572cbc99f972a6ee74360746a35c45a6" id="r_a572cbc99f972a6ee74360746a35c45a6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc1/classMantid_1_1API_1_1SpectrumInfo.html#a572cbc99f972a6ee74360746a35c45a6">twoTheta</a> (const size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>) const</td></tr>
 <tr class="memdesc:a572cbc99f972a6ee74360746a35c45a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the scattering angle 2 theta in radians (angle w.r.t.  <br /></td></tr>
 <tr class="separator:a572cbc99f972a6ee74360746a35c45a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d8baec68229be158b4f71b7a2f6e499" id="r_a1d8baec68229be158b4f71b7a2f6e499"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc1/classMantid_1_1API_1_1SpectrumInfo.html#a1d8baec68229be158b4f71b7a2f6e499">twoTheta</a> (const size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;observer, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;axis) const</td></tr>
+<tr class="memdesc:a1d8baec68229be158b4f71b7a2f6e499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the average angle between the vectors from <code>observer</code> to each detector of the spectrum and <code>axis</code>.  <br /></td></tr>
+<tr class="separator:a1d8baec68229be158b4f71b7a2f6e499"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27f86166a56c7e7c251e88b4528f2184" id="r_a27f86166a56c7e7c251e88b4528f2184"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc1/classMantid_1_1API_1_1SpectrumInfo.html#a27f86166a56c7e7c251e88b4528f2184">~SpectrumInfo</a> ()</td></tr>
 <tr class="separator:a27f86166a56c7e7c251e88b4528f2184"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -255,7 +270,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
 </div>
 </div>
@@ -307,11 +322,11 @@ Friends</h2></td></tr>
 <p>to vecPointingHorizontal direction).</p>
 <p>Throws an exception if the spectrum is a monitor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00113">113</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00115">115</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00361">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00436">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00038">export_SpectrumInfo()</a>, and <a class="el" href="../../d1/dc6/ImageInfoModelMatrixWS_8cpp_source.html#l00054">MantidQt::MantidWidgets::ImageInfoModelMatrixWS::info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00073">export_SpectrumInfo()</a>, and <a class="el" href="../../d1/dc6/ImageInfoModelMatrixWS_8cpp_source.html#l00054">MantidQt::MantidWidgets::ImageInfoModelMatrixWS::info()</a>.</p>
 
 </div>
 </div>
@@ -330,7 +345,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00369">369</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00444">444</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
 </div>
 </div>
@@ -349,7 +364,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00374">374</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00449">449</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
 </div>
 </div>
@@ -368,9 +383,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00377">377</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00452">452</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00038">size()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00040">size()</a>.</p>
 
 </div>
 </div>
@@ -398,11 +413,11 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00361">361</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00436">436</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00038">size()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00043">spectrumDefinition()</a>, and <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00040">size()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00045">spectrumDefinition()</a>, and <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00113">azimuthal()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00155">diffractometerConstants()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00125">geographicalAngles()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00062">isMasked()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00055">isMonitor()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00073">l2()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00137">position()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00311">setMasked()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00099">signedTwoTheta()</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00086">twoTheta()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00115">azimuthal()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00230">diffractometerConstants()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00200">geographicalAngles()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00064">isMasked()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00057">isMonitor()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00075">l2()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00170">phi()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00212">position()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00386">setMasked()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00101">signedTwoTheta()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00155">signedTwoTheta()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00142">signedTwoTheta()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00088">twoTheta()</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00128">twoTheta()</a>.</p>
 
 </div>
 </div>
@@ -432,11 +447,11 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00277">277</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00352">352</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00223">getDetectorValues()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00298">getDetectorValues()</a>.</p>
 
 </div>
 </div>
@@ -458,11 +473,11 @@ Friends</h2></td></tr>
 
 <p>Return a const reference to the detector or detector group of the spectrum with given index. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00318">318</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00393">393</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00329">getDetector()</a>, and <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00404">getDetector()</a>, and <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/dfe/WorkspaceNearestNeighbours_8cpp_source.html#l00111">Mantid::API::WorkspaceNearestNeighbours::build()</a>, <a class="el" href="../../d8/da3/MDNormBase_8cpp_source.html#l00456">Mantid::MDAlgorithms::MDNormBase::calculateNormInner()</a>, <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00341">Mantid::Crystal::FindSXPeaksHelper::PeakFindingStrategy::calculatePhi()</a>, <a class="el" href="../../d9/d44/ModeratorTzeroLinear_8cpp_source.html#l00227">Mantid::Algorithms::ModeratorTzeroLinear::calculateTfLi()</a>, <a class="el" href="../../d8/d8b/He3TubeEfficiency_8cpp_source.html#l00156">Mantid::Algorithms::He3TubeEfficiency::correctForEfficiency()</a>, <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00285">Mantid::DataHandling::GenerateGroupingPowder::createGroups()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00223">getDetectorValues()</a>, <a class="el" href="../../d6/d3b/GetEi2_8cpp_source.html#l00273">Mantid::Algorithms::GetEi2::getDistanceFromSource()</a>, <a class="el" href="../../d0/de9/TimeAtSampleStrategyIndirect_8cpp_source.html#l00038">Mantid::API::TimeAtSampleStrategyIndirect::getEfixed()</a>, <a class="el" href="../../da/d0d/CorrectKiKf_8cpp_source.html#l00290">Mantid::Algorithms::CorrectKiKf::getEfixedFromParameterMap()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00253">Mantid::Algorithms::CreateDetectorTable::getQ()</a>, <a class="el" href="../../d6/dd3/DetectorDiagnostic_8cpp_source.html#l00492">Mantid::Algorithms::DetectorDiagnostic::makeMap()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00327">Mantid::Algorithms::CreateDetectorTable::retrieveSignedThetaParameter()</a>, <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00428">Mantid::DataHandling::GenerateGroupingPowder::saveAsPAR()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00131">Mantid::Algorithms::CreateDetectorTable::setup()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00069">Mantid::Crystal::FindSXPeaksHelper::SXPeak::SXPeak()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/dfe/WorkspaceNearestNeighbours_8cpp_source.html#l00111">Mantid::API::WorkspaceNearestNeighbours::build()</a>, <a class="el" href="../../d8/da3/MDNormBase_8cpp_source.html#l00456">Mantid::MDAlgorithms::MDNormBase::calculateNormInner()</a>, <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00341">Mantid::Crystal::FindSXPeaksHelper::PeakFindingStrategy::calculatePhi()</a>, <a class="el" href="../../d9/d44/ModeratorTzeroLinear_8cpp_source.html#l00227">Mantid::Algorithms::ModeratorTzeroLinear::calculateTfLi()</a>, <a class="el" href="../../d8/d8b/He3TubeEfficiency_8cpp_source.html#l00156">Mantid::Algorithms::He3TubeEfficiency::correctForEfficiency()</a>, <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00285">Mantid::DataHandling::GenerateGroupingPowder::createGroups()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00298">getDetectorValues()</a>, <a class="el" href="../../d6/d3b/GetEi2_8cpp_source.html#l00273">Mantid::Algorithms::GetEi2::getDistanceFromSource()</a>, <a class="el" href="../../d0/de9/TimeAtSampleStrategyIndirect_8cpp_source.html#l00038">Mantid::API::TimeAtSampleStrategyIndirect::getEfixed()</a>, <a class="el" href="../../da/d0d/CorrectKiKf_8cpp_source.html#l00290">Mantid::Algorithms::CorrectKiKf::getEfixedFromParameterMap()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00253">Mantid::Algorithms::CreateDetectorTable::getQ()</a>, <a class="el" href="../../d6/dd3/DetectorDiagnostic_8cpp_source.html#l00492">Mantid::Algorithms::DetectorDiagnostic::makeMap()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00327">Mantid::Algorithms::CreateDetectorTable::retrieveSignedThetaParameter()</a>, <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00428">Mantid::DataHandling::GenerateGroupingPowder::saveAsPAR()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00131">Mantid::Algorithms::CreateDetectorTable::setup()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00069">Mantid::Crystal::FindSXPeaksHelper::SXPeak::SXPeak()</a>.</p>
 
 </div>
 </div>
@@ -481,11 +496,11 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00110">m_spectrumInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00116">m_spectrumInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00038">export_SpectrumInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00073">export_SpectrumInfo()</a>.</p>
 
 </div>
 </div>
@@ -514,11 +529,11 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The average DIFC </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00204">204</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00279">279</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00327">l1()</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838abec25675775e9e0a0d783a5018b463e3">Mantid::Kernel::l2</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00589">Mantid::Kernel::Units::tofToDSpacingFactor()</a>, and <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838a42a1e2ac7189716fcd6c609460a50e97">Mantid::Kernel::twoTheta</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00402">l1()</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838abec25675775e9e0a0d783a5018b463e3">Mantid::Kernel::l2</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00589">Mantid::Kernel::Units::tofToDSpacingFactor()</a>, and <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838a42a1e2ac7189716fcd6c609460a50e97">Mantid::Kernel::twoTheta</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/d44/RemoveLowResTOF_8cpp_source.html#l00221">Mantid::Algorithms::RemoveLowResTOF::calcTofMin()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00155">diffractometerConstants()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00038">export_SpectrumInfo()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00223">getDetectorValues()</a>, and <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00274">Mantid::Algorithms::CreateDetectorTable::getDiffConst()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/d44/RemoveLowResTOF_8cpp_source.html#l00221">Mantid::Algorithms::RemoveLowResTOF::calcTofMin()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00230">diffractometerConstants()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00073">export_SpectrumInfo()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00298">getDetectorValues()</a>, and <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00274">Mantid::Algorithms::CreateDetectorTable::getDiffConst()</a>.</p>
 
 </div>
 </div>
@@ -547,9 +562,9 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>map containing the average constants </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00194">194</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00269">269</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00155">diffractometerConstants()</a>, and <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00230">diffractometerConstants()</a>, and <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
 </div>
 </div>
@@ -589,11 +604,11 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>map containing the average constants </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00155">155</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00230">230</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00361">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838a7726a3674fbfab26b520ddac1d28818c">Mantid::Kernel::difa</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838ae70415a8c871333cf8b7b88db030289f">Mantid::Kernel::difc</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00204">difcUncalibrated()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00271">Mantid::Geometry::DetectorInfo::diffractometerConstants()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00086">Mantid::Geometry::DetectorInfo::isScanning()</a>, <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00109">m_detectorInfo</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00043">spectrumDefinition()</a>, and <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838ac2bc3ab2d52f36e3e9a0c3cefecf5a62">Mantid::Kernel::tzero</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00436">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838a7726a3674fbfab26b520ddac1d28818c">Mantid::Kernel::difa</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838ae70415a8c871333cf8b7b88db030289f">Mantid::Kernel::difc</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00279">difcUncalibrated()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00363">Mantid::Geometry::DetectorInfo::diffractometerConstants()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00111">Mantid::Geometry::DetectorInfo::isScanning()</a>, <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00115">m_detectorInfo</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00045">spectrumDefinition()</a>, and <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838ac2bc3ab2d52f36e3e9a0c3cefecf5a62">Mantid::Kernel::tzero</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00194">diffractometerConstants()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00038">export_SpectrumInfo()</a>, <a class="el" href="../../d9/d22/SaveGSS_8cpp_source.html#l00317">Mantid::DataHandling::SaveGSS::generateBankHeader()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00223">getDetectorValues()</a>, and <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00274">Mantid::Algorithms::CreateDetectorTable::getDiffConst()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00269">diffractometerConstants()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00073">export_SpectrumInfo()</a>, <a class="el" href="../../d9/d22/SaveGSS_8cpp_source.html#l00317">Mantid::DataHandling::SaveGSS::generateBankHeader()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00298">getDetectorValues()</a>, and <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00274">Mantid::Algorithms::CreateDetectorTable::getDiffConst()</a>.</p>
 
 </div>
 </div>
@@ -612,9 +627,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00372">372</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00447">447</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00038">size()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00040">size()</a>.</p>
 
 </div>
 </div>
@@ -643,11 +658,11 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pair containing the latitude and longitude values. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00125">125</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00200">200</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00361">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00302">Mantid::Geometry::DetectorInfo::geographicalAngles()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00109">m_detectorInfo</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00038">size()</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00043">spectrumDefinition()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00436">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00394">Mantid::Geometry::DetectorInfo::geographicalAngles()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00115">m_detectorInfo</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00040">size()</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00045">spectrumDefinition()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00376">Mantid::Algorithms::SparseWorkspace::bilinearInterpolateFromDetectorGrid()</a>, <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00163">Mantid::Algorithms::SparseWorkspace::extremeAngles()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00032">geographicalAngles()</a>, and <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00330">Mantid::Algorithms::SparseWorkspace::interpolateFromDetectorGrid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00376">Mantid::Algorithms::SparseWorkspace::bilinearInterpolateFromDetectorGrid()</a>, <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00163">Mantid::Algorithms::SparseWorkspace::extremeAngles()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00034">geographicalAngles()</a>, and <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00330">Mantid::Algorithms::SparseWorkspace::interpolateFromDetectorGrid()</a>.</p>
 
 </div>
 </div>
@@ -675,11 +690,11 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00329">329</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00404">404</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00488">Mantid::Geometry::DetectorInfo::getDetectorPtr()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00109">m_detectorInfo</a>, <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00111">m_lastDetector</a>, <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00112">m_lastIndex</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00226">PARALLEL_THREAD_NUMBER</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00043">spectrumDefinition()</a>, and <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00580">Mantid::Geometry::DetectorInfo::getDetectorPtr()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00115">m_detectorInfo</a>, <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00117">m_lastDetector</a>, <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00118">m_lastIndex</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00226">PARALLEL_THREAD_NUMBER</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00045">spectrumDefinition()</a>, and <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00318">detector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00393">detector()</a>.</p>
 
 </div>
 </div>
@@ -746,9 +761,9 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00223">223</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00298">298</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00277">createDetectorIdLogMessages()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00318">detector()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00204">difcUncalibrated()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00155">diffractometerConstants()</a>, <a class="el" href="../../de/d2e/DeltaEMode_8h_source.html#l00030">Mantid::Kernel::DeltaEMode::Elastic</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00706">Mantid::API::ExperimentInfo::getEFixedGivenEMode()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00295">hasDetectors()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00055">isMonitor()</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838abec25675775e9e0a0d783a5018b463e3">Mantid::Kernel::l2</a>, <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00108">m_experimentInfo</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00099">signedTwoTheta()</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838a42a1e2ac7189716fcd6c609460a50e97">Mantid::Kernel::twoTheta</a>, <a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#a9486ddb89f203d75e17bbe4e87a83cd0">Mantid::Kernel::Unit::unitID()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00352">createDetectorIdLogMessages()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00393">detector()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00279">difcUncalibrated()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00230">diffractometerConstants()</a>, <a class="el" href="../../de/d2e/DeltaEMode_8h_source.html#l00030">Mantid::Kernel::DeltaEMode::Elastic</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00706">Mantid::API::ExperimentInfo::getEFixedGivenEMode()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00370">hasDetectors()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00057">isMonitor()</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838abec25675775e9e0a0d783a5018b463e3">Mantid::Kernel::l2</a>, <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00114">m_experimentInfo</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00101">signedTwoTheta()</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838a42a1e2ac7189716fcd6c609460a50e97">Mantid::Kernel::twoTheta</a>, <a class="el" href="../../da/d13/classMantid_1_1Kernel_1_1Unit.html#a9486ddb89f203d75e17bbe4e87a83cd0">Mantid::Kernel::Unit::unitID()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00372">Mantid::Crystal::FindSXPeaksHelper::PeakFindingStrategy::convertToTOF()</a>, <a class="el" href="../../db/d69/CalculatePlaczek_8cpp_source.html#l00257">Mantid::Algorithms::CalculatePlaczek::exec()</a>, <a class="el" href="../../d0/d57/RemoveBackground_8cpp_source.html#l00226">Mantid::Algorithms::BackgroundHelper::removeBackground()</a>, <a class="el" href="../../d1/dc6/ImageInfoModelMatrixWS_8cpp_source.html#l00097">MantidQt::MantidWidgets::ImageInfoModelMatrixWS::setUnitsInfo()</a>, <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00069">Mantid::Crystal::FindSXPeaksHelper::SXPeak::SXPeak()</a>, and <a class="el" href="../../da/d68/RemoveBins_8cpp_source.html#l00244">Mantid::Algorithms::RemoveBins::transformRangeUnit()</a>.</p>
 
@@ -772,11 +787,11 @@ Friends</h2></td></tr>
 
 <p>Returns true if the spectrum is associated with detectors in the instrument. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00295">295</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00370">370</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00043">spectrumDefinition()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00045">spectrumDefinition()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/da3/MDNormBase_8cpp_source.html#l00456">Mantid::MDAlgorithms::MDNormBase::calculateNormInner()</a>, <a class="el" href="../../d9/d44/ModeratorTzeroLinear_8cpp_source.html#l00227">Mantid::Algorithms::ModeratorTzeroLinear::calculateTfLi()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00339">Mantid::Algorithms::CreateDetectorTable::calculateWsIdxData()</a>, <a class="el" href="../../d2/df1/ConvertToDiffractionMDWorkspace_8cpp_source.html#l00177">Mantid::MDAlgorithms::ConvertToDiffractionMDWorkspace::convertEventList()</a>, <a class="el" href="../../d0/d0c/DetectorEfficiencyCor_8cpp_source.html#l00196">Mantid::Algorithms::DetectorEfficiencyCor::correctForEfficiency()</a>, <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00285">Mantid::DataHandling::GenerateGroupingPowder::createGroups()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00038">export_SpectrumInfo()</a>, <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00163">Mantid::Algorithms::SparseWorkspace::extremeAngles()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00223">getDetectorValues()</a>, <a class="el" href="../../d6/d3b/GetEi2_8cpp_source.html#l00273">Mantid::Algorithms::GetEi2::getDistanceFromSource()</a>, <a class="el" href="../../dd/dc3/MatrixWorkspaceMDIterator_8cpp_source.html#l00256">Mantid::API::MatrixWorkspaceMDIterator::getIsMasked()</a>, <a class="el" href="../../dd/d3d/ScaleX_8cpp_source.html#l00224">Mantid::Algorithms::ScaleX::getScaleFactor()</a>, <a class="el" href="../../d3/dfe/WorkspaceNearestNeighbours_8cpp_source.html#l00217">Mantid::API::WorkspaceNearestNeighbours::getSpectraDetectors()</a>, <a class="el" href="../../d1/dc6/ImageInfoModelMatrixWS_8cpp_source.html#l00054">MantidQt::MantidWidgets::ImageInfoModelMatrixWS::info()</a>, <a class="el" href="../../de/d3b/WorkspaceBoundingBox_8cpp_source.html#l00103">Mantid::Algorithms::WorkspaceBoundingBox::isValidIndex()</a>, <a class="el" href="../../df/db2/LorentzCorrection_8cpp_source.html#l00163">Mantid::Algorithms::LorentzCorrection::processTOF_PD()</a>, <a class="el" href="../../df/db2/LorentzCorrection_8cpp_source.html#l00126">Mantid::Algorithms::LorentzCorrection::processTOF_SCD()</a>, <a class="el" href="../../d1/dac/BinaryOperation_8cpp_source.html#l00431">Mantid::Algorithms::BinaryOperation::propagateSpectraMask()</a>, <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00428">Mantid::DataHandling::GenerateGroupingPowder::saveAsPAR()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00131">Mantid::Algorithms::CreateDetectorTable::setup()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00069">Mantid::Crystal::FindSXPeaksHelper::SXPeak::SXPeak()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/da3/MDNormBase_8cpp_source.html#l00456">Mantid::MDAlgorithms::MDNormBase::calculateNormInner()</a>, <a class="el" href="../../d9/d44/ModeratorTzeroLinear_8cpp_source.html#l00227">Mantid::Algorithms::ModeratorTzeroLinear::calculateTfLi()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00339">Mantid::Algorithms::CreateDetectorTable::calculateWsIdxData()</a>, <a class="el" href="../../d2/df1/ConvertToDiffractionMDWorkspace_8cpp_source.html#l00177">Mantid::MDAlgorithms::ConvertToDiffractionMDWorkspace::convertEventList()</a>, <a class="el" href="../../d0/d0c/DetectorEfficiencyCor_8cpp_source.html#l00196">Mantid::Algorithms::DetectorEfficiencyCor::correctForEfficiency()</a>, <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00285">Mantid::DataHandling::GenerateGroupingPowder::createGroups()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00073">export_SpectrumInfo()</a>, <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00163">Mantid::Algorithms::SparseWorkspace::extremeAngles()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00298">getDetectorValues()</a>, <a class="el" href="../../d6/d3b/GetEi2_8cpp_source.html#l00273">Mantid::Algorithms::GetEi2::getDistanceFromSource()</a>, <a class="el" href="../../dd/dc3/MatrixWorkspaceMDIterator_8cpp_source.html#l00256">Mantid::API::MatrixWorkspaceMDIterator::getIsMasked()</a>, <a class="el" href="../../dd/d3d/ScaleX_8cpp_source.html#l00224">Mantid::Algorithms::ScaleX::getScaleFactor()</a>, <a class="el" href="../../d3/dfe/WorkspaceNearestNeighbours_8cpp_source.html#l00217">Mantid::API::WorkspaceNearestNeighbours::getSpectraDetectors()</a>, <a class="el" href="../../d1/dc6/ImageInfoModelMatrixWS_8cpp_source.html#l00054">MantidQt::MantidWidgets::ImageInfoModelMatrixWS::info()</a>, <a class="el" href="../../de/d3b/WorkspaceBoundingBox_8cpp_source.html#l00103">Mantid::Algorithms::WorkspaceBoundingBox::isValidIndex()</a>, <a class="el" href="../../df/db2/LorentzCorrection_8cpp_source.html#l00163">Mantid::Algorithms::LorentzCorrection::processTOF_PD()</a>, <a class="el" href="../../df/db2/LorentzCorrection_8cpp_source.html#l00126">Mantid::Algorithms::LorentzCorrection::processTOF_SCD()</a>, <a class="el" href="../../d1/dac/BinaryOperation_8cpp_source.html#l00431">Mantid::Algorithms::BinaryOperation::propagateSpectraMask()</a>, <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00428">Mantid::DataHandling::GenerateGroupingPowder::saveAsPAR()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00131">Mantid::Algorithms::CreateDetectorTable::setup()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00069">Mantid::Crystal::FindSXPeaksHelper::SXPeak::SXPeak()</a>.</p>
 
 </div>
 </div>
@@ -798,11 +813,11 @@ Friends</h2></td></tr>
 
 <p>Returns true if the spectrum is associated with exactly one detector. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00302">302</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00377">377</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00043">spectrumDefinition()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00045">spectrumDefinition()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00285">Mantid::DataHandling::GenerateGroupingPowder::createGroups()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00038">export_SpectrumInfo()</a>, and <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00428">Mantid::DataHandling::GenerateGroupingPowder::saveAsPAR()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00285">Mantid::DataHandling::GenerateGroupingPowder::createGroups()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00073">export_SpectrumInfo()</a>, and <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00428">Mantid::DataHandling::GenerateGroupingPowder::saveAsPAR()</a>.</p>
 
 </div>
 </div>
@@ -824,11 +839,11 @@ Friends</h2></td></tr>
 
 <p>Returns true if the detector(s) associated with the spectrum are masked. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00064">64</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00361">checkAndGetSpectrumDefinition()</a>, and <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00436">checkAndGetSpectrumDefinition()</a>, and <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/db6/CorrectTOFAxis_8cpp_source.html#l00429">Mantid::Algorithms::CorrectTOFAxis::averageL2()</a>, <a class="el" href="../../d2/db6/CorrectTOFAxis_8cpp_source.html#l00389">Mantid::Algorithms::CorrectTOFAxis::averageL2AndEPP()</a>, <a class="el" href="../../d8/da3/MDNormBase_8cpp_source.html#l00456">Mantid::MDAlgorithms::MDNormBase::calculateNormInner()</a>, <a class="el" href="../../d0/d0c/DetectorEfficiencyCor_8cpp_source.html#l00196">Mantid::Algorithms::DetectorEfficiencyCor::correctForEfficiency()</a>, <a class="el" href="../../d8/d8b/He3TubeEfficiency_8cpp_source.html#l00156">Mantid::Algorithms::He3TubeEfficiency::correctForEfficiency()</a>, <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00285">Mantid::DataHandling::GenerateGroupingPowder::createGroups()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00038">export_SpectrumInfo()</a>, <a class="el" href="../../dd/dc3/MatrixWorkspaceMDIterator_8cpp_source.html#l00256">Mantid::API::MatrixWorkspaceMDIterator::getIsMasked()</a>, <a class="el" href="../../d3/dfe/WorkspaceNearestNeighbours_8cpp_source.html#l00217">Mantid::API::WorkspaceNearestNeighbours::getSpectraDetectors()</a>, <a class="el" href="../../d1/dac/BinaryOperation_8cpp_source.html#l00431">Mantid::Algorithms::BinaryOperation::propagateSpectraMask()</a>, and <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00428">Mantid::DataHandling::GenerateGroupingPowder::saveAsPAR()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/db6/CorrectTOFAxis_8cpp_source.html#l00429">Mantid::Algorithms::CorrectTOFAxis::averageL2()</a>, <a class="el" href="../../d2/db6/CorrectTOFAxis_8cpp_source.html#l00389">Mantid::Algorithms::CorrectTOFAxis::averageL2AndEPP()</a>, <a class="el" href="../../d8/da3/MDNormBase_8cpp_source.html#l00456">Mantid::MDAlgorithms::MDNormBase::calculateNormInner()</a>, <a class="el" href="../../d0/d0c/DetectorEfficiencyCor_8cpp_source.html#l00196">Mantid::Algorithms::DetectorEfficiencyCor::correctForEfficiency()</a>, <a class="el" href="../../d8/d8b/He3TubeEfficiency_8cpp_source.html#l00156">Mantid::Algorithms::He3TubeEfficiency::correctForEfficiency()</a>, <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00285">Mantid::DataHandling::GenerateGroupingPowder::createGroups()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00073">export_SpectrumInfo()</a>, <a class="el" href="../../dd/dc3/MatrixWorkspaceMDIterator_8cpp_source.html#l00256">Mantid::API::MatrixWorkspaceMDIterator::getIsMasked()</a>, <a class="el" href="../../d3/dfe/WorkspaceNearestNeighbours_8cpp_source.html#l00217">Mantid::API::WorkspaceNearestNeighbours::getSpectraDetectors()</a>, <a class="el" href="../../d1/dac/BinaryOperation_8cpp_source.html#l00431">Mantid::Algorithms::BinaryOperation::propagateSpectraMask()</a>, and <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00428">Mantid::DataHandling::GenerateGroupingPowder::saveAsPAR()</a>.</p>
 
 </div>
 </div>
@@ -850,11 +865,11 @@ Friends</h2></td></tr>
 
 <p>Returns true if the detector(s) associated with the spectrum are monitors. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00361">checkAndGetSpectrumDefinition()</a>, and <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00436">checkAndGetSpectrumDefinition()</a>, and <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d0e/TimeAtSampleStrategyElastic_8cpp_source.html#l00036">Mantid::API::TimeAtSampleStrategyElastic::calculate()</a>, <a class="el" href="../../d0/de9/TimeAtSampleStrategyIndirect_8cpp_source.html#l00065">Mantid::API::TimeAtSampleStrategyIndirect::calculate()</a>, <a class="el" href="../../d8/da3/MDNormBase_8cpp_source.html#l00456">Mantid::MDAlgorithms::MDNormBase::calculateNormInner()</a>, <a class="el" href="../../d9/d44/ModeratorTzeroLinear_8cpp_source.html#l00227">Mantid::Algorithms::ModeratorTzeroLinear::calculateTfLi()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00339">Mantid::Algorithms::CreateDetectorTable::calculateWsIdxData()</a>, <a class="el" href="../../d0/d0c/DetectorEfficiencyCor_8cpp_source.html#l00196">Mantid::Algorithms::DetectorEfficiencyCor::correctForEfficiency()</a>, <a class="el" href="../../d8/d8b/He3TubeEfficiency_8cpp_source.html#l00156">Mantid::Algorithms::He3TubeEfficiency::correctForEfficiency()</a>, <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00285">Mantid::DataHandling::GenerateGroupingPowder::createGroups()</a>, <a class="el" href="../../db/d69/CalculatePlaczek_8cpp_source.html#l00257">Mantid::Algorithms::CalculatePlaczek::exec()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00038">export_SpectrumInfo()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00223">getDetectorValues()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00274">Mantid::Algorithms::CreateDetectorTable::getDiffConst()</a>, <a class="el" href="../../da/d0d/CorrectKiKf_8cpp_source.html#l00290">Mantid::Algorithms::CorrectKiKf::getEfixedFromParameterMap()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00253">Mantid::Algorithms::CreateDetectorTable::getQ()</a>, <a class="el" href="../../d3/dfe/WorkspaceNearestNeighbours_8cpp_source.html#l00217">Mantid::API::WorkspaceNearestNeighbours::getSpectraDetectors()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00212">Mantid::Algorithms::CreateDetectorTable::getSphericalCoordinates()</a>, <a class="el" href="../../de/d3b/WorkspaceBoundingBox_8cpp_source.html#l00103">Mantid::Algorithms::WorkspaceBoundingBox::isValidIndex()</a>, and <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00428">Mantid::DataHandling::GenerateGroupingPowder::saveAsPAR()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d0e/TimeAtSampleStrategyElastic_8cpp_source.html#l00036">Mantid::API::TimeAtSampleStrategyElastic::calculate()</a>, <a class="el" href="../../d0/de9/TimeAtSampleStrategyIndirect_8cpp_source.html#l00065">Mantid::API::TimeAtSampleStrategyIndirect::calculate()</a>, <a class="el" href="../../d8/da3/MDNormBase_8cpp_source.html#l00456">Mantid::MDAlgorithms::MDNormBase::calculateNormInner()</a>, <a class="el" href="../../d9/d44/ModeratorTzeroLinear_8cpp_source.html#l00227">Mantid::Algorithms::ModeratorTzeroLinear::calculateTfLi()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00339">Mantid::Algorithms::CreateDetectorTable::calculateWsIdxData()</a>, <a class="el" href="../../d0/d0c/DetectorEfficiencyCor_8cpp_source.html#l00196">Mantid::Algorithms::DetectorEfficiencyCor::correctForEfficiency()</a>, <a class="el" href="../../d8/d8b/He3TubeEfficiency_8cpp_source.html#l00156">Mantid::Algorithms::He3TubeEfficiency::correctForEfficiency()</a>, <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00285">Mantid::DataHandling::GenerateGroupingPowder::createGroups()</a>, <a class="el" href="../../db/d69/CalculatePlaczek_8cpp_source.html#l00257">Mantid::Algorithms::CalculatePlaczek::exec()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00073">export_SpectrumInfo()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00298">getDetectorValues()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00274">Mantid::Algorithms::CreateDetectorTable::getDiffConst()</a>, <a class="el" href="../../da/d0d/CorrectKiKf_8cpp_source.html#l00290">Mantid::Algorithms::CorrectKiKf::getEfixedFromParameterMap()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00253">Mantid::Algorithms::CreateDetectorTable::getQ()</a>, <a class="el" href="../../d3/dfe/WorkspaceNearestNeighbours_8cpp_source.html#l00217">Mantid::API::WorkspaceNearestNeighbours::getSpectraDetectors()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00212">Mantid::Algorithms::CreateDetectorTable::getSphericalCoordinates()</a>, <a class="el" href="../../de/d3b/WorkspaceBoundingBox_8cpp_source.html#l00103">Mantid::Algorithms::WorkspaceBoundingBox::isValidIndex()</a>, and <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00428">Mantid::DataHandling::GenerateGroupingPowder::saveAsPAR()</a>.</p>
 
 </div>
 </div>
@@ -875,11 +890,11 @@ Friends</h2></td></tr>
 
 <p>Returns L1 (distance from source to sample). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00327">327</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00402">402</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00433">Mantid::Geometry::DetectorInfo::l1()</a>, and <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00109">m_detectorInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00525">Mantid::Geometry::DetectorInfo::l1()</a>, and <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00115">m_detectorInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/d44/RemoveLowResTOF_8cpp_source.html#l00221">Mantid::Algorithms::RemoveLowResTOF::calcTofMin()</a>, <a class="el" href="../../d9/d44/ModeratorTzeroLinear_8cpp_source.html#l00227">Mantid::Algorithms::ModeratorTzeroLinear::calculateTfLi()</a>, <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00372">Mantid::Crystal::FindSXPeaksHelper::PeakFindingStrategy::convertToTOF()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00204">difcUncalibrated()</a>, <a class="el" href="../../db/d69/CalculatePlaczek_8cpp_source.html#l00257">Mantid::Algorithms::CalculatePlaczek::exec()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00038">export_SpectrumInfo()</a>, <a class="el" href="../../d9/d22/SaveGSS_8cpp_source.html#l00317">Mantid::DataHandling::SaveGSS::generateBankHeader()</a>, <a class="el" href="../../d0/d57/RemoveBackground_8cpp_source.html#l00226">Mantid::Algorithms::BackgroundHelper::removeBackground()</a>, <a class="el" href="../../d0/d0d/ConvertAxisByFormula_8cpp_source.html#l00254">Mantid::Algorithms::ConvertAxisByFormula::setGeometryValues()</a>, <a class="el" href="../../d1/dc6/ImageInfoModelMatrixWS_8cpp_source.html#l00097">MantidQt::MantidWidgets::ImageInfoModelMatrixWS::setUnitsInfo()</a>, <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00069">Mantid::Crystal::FindSXPeaksHelper::SXPeak::SXPeak()</a>, and <a class="el" href="../../da/d68/RemoveBins_8cpp_source.html#l00244">Mantid::Algorithms::RemoveBins::transformRangeUnit()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/d44/RemoveLowResTOF_8cpp_source.html#l00221">Mantid::Algorithms::RemoveLowResTOF::calcTofMin()</a>, <a class="el" href="../../d9/d44/ModeratorTzeroLinear_8cpp_source.html#l00227">Mantid::Algorithms::ModeratorTzeroLinear::calculateTfLi()</a>, <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00372">Mantid::Crystal::FindSXPeaksHelper::PeakFindingStrategy::convertToTOF()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00279">difcUncalibrated()</a>, <a class="el" href="../../db/d69/CalculatePlaczek_8cpp_source.html#l00257">Mantid::Algorithms::CalculatePlaczek::exec()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00073">export_SpectrumInfo()</a>, <a class="el" href="../../d9/d22/SaveGSS_8cpp_source.html#l00317">Mantid::DataHandling::SaveGSS::generateBankHeader()</a>, <a class="el" href="../../d0/d57/RemoveBackground_8cpp_source.html#l00226">Mantid::Algorithms::BackgroundHelper::removeBackground()</a>, <a class="el" href="../../d0/d0d/ConvertAxisByFormula_8cpp_source.html#l00254">Mantid::Algorithms::ConvertAxisByFormula::setGeometryValues()</a>, <a class="el" href="../../d1/dc6/ImageInfoModelMatrixWS_8cpp_source.html#l00097">MantidQt::MantidWidgets::ImageInfoModelMatrixWS::setUnitsInfo()</a>, <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00069">Mantid::Crystal::FindSXPeaksHelper::SXPeak::SXPeak()</a>, and <a class="el" href="../../da/d68/RemoveBins_8cpp_source.html#l00244">Mantid::Algorithms::RemoveBins::transformRangeUnit()</a>.</p>
 
 </div>
 </div>
@@ -902,11 +917,75 @@ Friends</h2></td></tr>
 <p>Returns L2 (distance from sample to spectrum). </p>
 <p>For monitors this is defined such that L1+L2 = source-detector distance, i.e., for a monitor in the beamline between source and sample L2 is negative. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00073">73</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00075">75</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00361">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838abec25675775e9e0a0d783a5018b463e3">Mantid::Kernel::l2</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00436">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838abec25675775e9e0a0d783a5018b463e3">Mantid::Kernel::l2</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/db6/CorrectTOFAxis_8cpp_source.html#l00429">Mantid::Algorithms::CorrectTOFAxis::averageL2()</a>, <a class="el" href="../../d2/db6/CorrectTOFAxis_8cpp_source.html#l00389">Mantid::Algorithms::CorrectTOFAxis::averageL2AndEPP()</a>, <a class="el" href="../../d9/d44/RemoveLowResTOF_8cpp_source.html#l00221">Mantid::Algorithms::RemoveLowResTOF::calcTofMin()</a>, <a class="el" href="../../de/d0e/TimeAtSampleStrategyElastic_8cpp_source.html#l00036">Mantid::API::TimeAtSampleStrategyElastic::calculate()</a>, <a class="el" href="../../d0/de9/TimeAtSampleStrategyIndirect_8cpp_source.html#l00065">Mantid::API::TimeAtSampleStrategyIndirect::calculate()</a>, <a class="el" href="../../d9/d44/ModeratorTzeroLinear_8cpp_source.html#l00227">Mantid::Algorithms::ModeratorTzeroLinear::calculateTfLi()</a>, <a class="el" href="../../d2/df1/ConvertToDiffractionMDWorkspace_8cpp_source.html#l00177">Mantid::MDAlgorithms::ConvertToDiffractionMDWorkspace::convertEventList()</a>, <a class="el" href="../../db/d69/CalculatePlaczek_8cpp_source.html#l00257">Mantid::Algorithms::CalculatePlaczek::exec()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00038">export_SpectrumInfo()</a>, <a class="el" href="../../d9/d22/SaveGSS_8cpp_source.html#l00317">Mantid::DataHandling::SaveGSS::generateBankHeader()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00212">Mantid::Algorithms::CreateDetectorTable::getSphericalCoordinates()</a>, <a class="el" href="../../d6/d01/GravitySANSHelper_8cpp_source.html#l00022">Mantid::Algorithms::GravitySANSHelper::GravitySANSHelper()</a>, <a class="el" href="../../d1/dc6/ImageInfoModelMatrixWS_8cpp_source.html#l00054">MantidQt::MantidWidgets::ImageInfoModelMatrixWS::info()</a>, <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00428">Mantid::DataHandling::GenerateGroupingPowder::saveAsPAR()</a>, <a class="el" href="../../d0/d0d/ConvertAxisByFormula_8cpp_source.html#l00254">Mantid::Algorithms::ConvertAxisByFormula::setGeometryValues()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00069">Mantid::Crystal::FindSXPeaksHelper::SXPeak::SXPeak()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/db6/CorrectTOFAxis_8cpp_source.html#l00429">Mantid::Algorithms::CorrectTOFAxis::averageL2()</a>, <a class="el" href="../../d2/db6/CorrectTOFAxis_8cpp_source.html#l00389">Mantid::Algorithms::CorrectTOFAxis::averageL2AndEPP()</a>, <a class="el" href="../../d9/d44/RemoveLowResTOF_8cpp_source.html#l00221">Mantid::Algorithms::RemoveLowResTOF::calcTofMin()</a>, <a class="el" href="../../de/d0e/TimeAtSampleStrategyElastic_8cpp_source.html#l00036">Mantid::API::TimeAtSampleStrategyElastic::calculate()</a>, <a class="el" href="../../d0/de9/TimeAtSampleStrategyIndirect_8cpp_source.html#l00065">Mantid::API::TimeAtSampleStrategyIndirect::calculate()</a>, <a class="el" href="../../d9/d44/ModeratorTzeroLinear_8cpp_source.html#l00227">Mantid::Algorithms::ModeratorTzeroLinear::calculateTfLi()</a>, <a class="el" href="../../d2/df1/ConvertToDiffractionMDWorkspace_8cpp_source.html#l00177">Mantid::MDAlgorithms::ConvertToDiffractionMDWorkspace::convertEventList()</a>, <a class="el" href="../../db/d69/CalculatePlaczek_8cpp_source.html#l00257">Mantid::Algorithms::CalculatePlaczek::exec()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00073">export_SpectrumInfo()</a>, <a class="el" href="../../d9/d22/SaveGSS_8cpp_source.html#l00317">Mantid::DataHandling::SaveGSS::generateBankHeader()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00212">Mantid::Algorithms::CreateDetectorTable::getSphericalCoordinates()</a>, <a class="el" href="../../d6/d01/GravitySANSHelper_8cpp_source.html#l00022">Mantid::Algorithms::GravitySANSHelper::GravitySANSHelper()</a>, <a class="el" href="../../d1/dc6/ImageInfoModelMatrixWS_8cpp_source.html#l00054">MantidQt::MantidWidgets::ImageInfoModelMatrixWS::info()</a>, <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00428">Mantid::DataHandling::GenerateGroupingPowder::saveAsPAR()</a>, <a class="el" href="../../d0/d0d/ConvertAxisByFormula_8cpp_source.html#l00254">Mantid::Algorithms::ConvertAxisByFormula::setGeometryValues()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00069">Mantid::Crystal::FindSXPeaksHelper::SXPeak::SXPeak()</a>.</p>
+
+</div>
+</div>
+<a id="aa5f5391ca402e8178f3c31fad209dcd8" name="aa5f5391ca402e8178f3c31fad209dcd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5f5391ca402e8178f3c31fad209dcd8">&#9670;&#160;</a></span>phi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Mantid::API::SpectrumInfo::phi </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the angle of the spectrum position about the lab-frame z axis, atan2(y, x), in radians. </p>
+<p>This is the Instrument-2.0 replacement for <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html#a000c82feed4a2c7bc4e64a09549d0b53" title="Gives the phi of this detector object in radians.">IDetector::getPhi</a>. For a spectrum with several detectors the angle of the average position is returned, not the average of the angles. It is measured from the lab origin and ignores the reference frame; see <a class="el" href="../../d3/dc1/classMantid_1_1API_1_1SpectrumInfo.html#a70c09357fdf79e43f809031925a230ab" title="Returns the out-of-plane angle in radians (angle w.r.t.">azimuthal()</a> for the angle about the beam measured from the sample. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00170">170</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00436">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00115">m_detectorInfo</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00345">Mantid::Geometry::DetectorInfo::phi()</a>, <a class="el" href="../../d4/d88/Tolerance_8h_source.html#l00012">Mantid::Kernel::Tolerance</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00073">export_SpectrumInfo()</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00191">phiOffset()</a>.</p>
+
+</div>
+</div>
+<a id="a0467ff0b410bf7f951672d7b54a2dd32" name="a0467ff0b410bf7f951672d7b54a2dd32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0467ff0b410bf7f951672d7b54a2dd32">&#9670;&#160;</a></span>phiOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Mantid::API::SpectrumInfo::phiOffset </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns <a class="el" href="../../d3/dc1/classMantid_1_1API_1_1SpectrumInfo.html#aa5f5391ca402e8178f3c31fad209dcd8" title="Returns the angle of the spectrum position about the lab-frame z axis, atan2(y, x),...">phi()</a> reflected about <code>offset</code> (radians): offset - phi for phi &gt;= 0 and -(offset + phi) otherwise. </p>
+<p>This is the Instrument-2.0 replacement for <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html#ac0855e925391553c51ff0d7b200901b3" title="Gives the phi of this detector offset from y=0 by offset.">IDetector::getPhiOffset</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00191">191</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00170">phi()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00073">export_SpectrumInfo()</a>.</p>
 
 </div>
 </div>
@@ -928,11 +1007,11 @@ Friends</h2></td></tr>
 
 <p>Returns the position of the spectrum with given index. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00137">137</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00212">212</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00361">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00436">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/dfe/WorkspaceNearestNeighbours_8cpp_source.html#l00111">Mantid::API::WorkspaceNearestNeighbours::build()</a>, <a class="el" href="../../de/d0e/TimeAtSampleStrategyElastic_8cpp_source.html#l00036">Mantid::API::TimeAtSampleStrategyElastic::calculate()</a>, <a class="el" href="../../d0/de9/TimeAtSampleStrategyIndirect_8cpp_source.html#l00065">Mantid::API::TimeAtSampleStrategyIndirect::calculate()</a>, <a class="el" href="../../d9/d44/ModeratorTzeroLinear_8cpp_source.html#l00227">Mantid::Algorithms::ModeratorTzeroLinear::calculateTfLi()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00339">Mantid::Algorithms::CreateDetectorTable::calculateWsIdxData()</a>, <a class="el" href="../../d2/df1/ConvertToDiffractionMDWorkspace_8cpp_source.html#l00177">Mantid::MDAlgorithms::ConvertToDiffractionMDWorkspace::convertEventList()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00038">export_SpectrumInfo()</a>, <a class="el" href="../../d6/d3b/GetEi2_8cpp_source.html#l00273">Mantid::Algorithms::GetEi2::getDistanceFromSource()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00212">Mantid::Algorithms::CreateDetectorTable::getSphericalCoordinates()</a>, <a class="el" href="../../d6/d01/GravitySANSHelper_8cpp_source.html#l00022">Mantid::Algorithms::GravitySANSHelper::GravitySANSHelper()</a>, <a class="el" href="../../de/d3b/WorkspaceBoundingBox_8cpp_source.html#l00027">Mantid::Algorithms::WorkspaceBoundingBox::position()</a>, <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00069">Mantid::Crystal::FindSXPeaksHelper::SXPeak::SXPeak()</a>, and <a class="el" href="../../dd/d31/Qhelper_8cpp_source.html#l00150">Mantid::Algorithms::Qhelper::waveLengthCutOff()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/dfe/WorkspaceNearestNeighbours_8cpp_source.html#l00111">Mantid::API::WorkspaceNearestNeighbours::build()</a>, <a class="el" href="../../de/d0e/TimeAtSampleStrategyElastic_8cpp_source.html#l00036">Mantid::API::TimeAtSampleStrategyElastic::calculate()</a>, <a class="el" href="../../d0/de9/TimeAtSampleStrategyIndirect_8cpp_source.html#l00065">Mantid::API::TimeAtSampleStrategyIndirect::calculate()</a>, <a class="el" href="../../d9/d44/ModeratorTzeroLinear_8cpp_source.html#l00227">Mantid::Algorithms::ModeratorTzeroLinear::calculateTfLi()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00339">Mantid::Algorithms::CreateDetectorTable::calculateWsIdxData()</a>, <a class="el" href="../../d2/df1/ConvertToDiffractionMDWorkspace_8cpp_source.html#l00177">Mantid::MDAlgorithms::ConvertToDiffractionMDWorkspace::convertEventList()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00073">export_SpectrumInfo()</a>, <a class="el" href="../../d6/d3b/GetEi2_8cpp_source.html#l00273">Mantid::Algorithms::GetEi2::getDistanceFromSource()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00212">Mantid::Algorithms::CreateDetectorTable::getSphericalCoordinates()</a>, <a class="el" href="../../d6/d01/GravitySANSHelper_8cpp_source.html#l00022">Mantid::Algorithms::GravitySANSHelper::GravitySANSHelper()</a>, <a class="el" href="../../de/d3b/WorkspaceBoundingBox_8cpp_source.html#l00027">Mantid::Algorithms::WorkspaceBoundingBox::position()</a>, <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00069">Mantid::Crystal::FindSXPeaksHelper::SXPeak::SXPeak()</a>, and <a class="el" href="../../dd/d31/Qhelper_8cpp_source.html#l00150">Mantid::Algorithms::Qhelper::waveLengthCutOff()</a>.</p>
 
 </div>
 </div>
@@ -953,11 +1032,11 @@ Friends</h2></td></tr>
 
 <p>Returns the sample position. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00324">324</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00399">399</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00109">m_detectorInfo</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00430">Mantid::Geometry::DetectorInfo::samplePosition()</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00115">m_detectorInfo</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00522">Mantid::Geometry::DetectorInfo::samplePosition()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00038">export_SpectrumInfo()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00069">Mantid::Crystal::FindSXPeaksHelper::SXPeak::SXPeak()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00073">export_SpectrumInfo()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00069">Mantid::Crystal::FindSXPeaksHelper::SXPeak::SXPeak()</a>.</p>
 
 </div>
 </div>
@@ -991,11 +1070,11 @@ Friends</h2></td></tr>
 <p>Not thread safe.</p>
 <p>Currently this simply sets the mask flags for the underlying detectors. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00311">311</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00386">386</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00361">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00109">m_detectorInfo</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00374">Mantid::Geometry::DetectorInfo::setMasked()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00436">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00115">m_detectorInfo</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00466">Mantid::Geometry::DetectorInfo::setMasked()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00038">export_SpectrumInfo()</a>, and <a class="el" href="../../d1/dac/BinaryOperation_8cpp_source.html#l00431">Mantid::Algorithms::BinaryOperation::propagateSpectraMask()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00073">export_SpectrumInfo()</a>, and <a class="el" href="../../d1/dac/BinaryOperation_8cpp_source.html#l00431">Mantid::Algorithms::BinaryOperation::propagateSpectraMask()</a>.</p>
 
 </div>
 </div>
@@ -1014,16 +1093,16 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00048">48</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00108">m_experimentInfo</a>, <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00110">m_spectrumInfo</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00038">size()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00943">Mantid::API::ExperimentInfo::updateSpectrumDefinitionIfNecessary()</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00114">m_experimentInfo</a>, <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00116">m_spectrumInfo</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00040">size()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00943">Mantid::API::ExperimentInfo::updateSpectrumDefinitionIfNecessary()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00086">Mantid::API::ExperimentInfo::operator=()</a>.</p>
 
 </div>
 </div>
 <a id="a02dda7cfdfcf8f8eb01c36c5988b0734" name="a02dda7cfdfcf8f8eb01c36c5988b0734"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02dda7cfdfcf8f8eb01c36c5988b0734">&#9670;&#160;</a></span>signedTwoTheta()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a02dda7cfdfcf8f8eb01c36c5988b0734">&#9670;&#160;</a></span>signedTwoTheta() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1042,11 +1121,98 @@ Friends</h2></td></tr>
 <p>to beam direction).</p>
 <p>Throws an exception if the spectrum is a monitor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00099">99</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00101">101</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00361">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00099">signedTwoTheta()</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00436">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00101">signedTwoTheta()</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00038">export_SpectrumInfo()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00223">getDetectorValues()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00212">Mantid::Algorithms::CreateDetectorTable::getSphericalCoordinates()</a>, <a class="el" href="../../d1/dc6/ImageInfoModelMatrixWS_8cpp_source.html#l00054">MantidQt::MantidWidgets::ImageInfoModelMatrixWS::info()</a>, <a class="el" href="../../d0/d0d/ConvertAxisByFormula_8cpp_source.html#l00254">Mantid::Algorithms::ConvertAxisByFormula::setGeometryValues()</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00099">signedTwoTheta()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00298">getDetectorValues()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00212">Mantid::Algorithms::CreateDetectorTable::getSphericalCoordinates()</a>, <a class="el" href="../../d1/dc6/ImageInfoModelMatrixWS_8cpp_source.html#l00054">MantidQt::MantidWidgets::ImageInfoModelMatrixWS::info()</a>, <a class="el" href="../../d0/d0d/ConvertAxisByFormula_8cpp_source.html#l00254">Mantid::Algorithms::ConvertAxisByFormula::setGeometryValues()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00101">signedTwoTheta()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00155">signedTwoTheta()</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00142">signedTwoTheta()</a>.</p>
+
+</div>
+</div>
+<a id="a086eb05f010fa0d5c1a33a8afe9e3633" name="a086eb05f010fa0d5c1a33a8afe9e3633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a086eb05f010fa0d5c1a33a8afe9e3633">&#9670;&#160;</a></span>signedTwoTheta() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Mantid::API::SpectrumInfo::signedTwoTheta </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>observer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>axis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the average signed angle between the vectors from <code>observer</code> to each detector of the spectrum and <code>axis</code>, signed using the instrument's theta-sign axis (<a class="el" href="../../d4/d4d/classMantid_1_1Geometry_1_1ReferenceFrame.html#a538ce730a3152715c06e73da3b6a233f" title="Convert along the axis defining the 2theta sign.">ReferenceFrame::vecThetaSign</a>). </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00155">155</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00436">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00101">signedTwoTheta()</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
+
+</div>
+</div>
+<a id="a21324a80213c46b5264d873e6244ca73" name="a21324a80213c46b5264d873e6244ca73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21324a80213c46b5264d873e6244ca73">&#9670;&#160;</a></span>signedTwoTheta() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Mantid::API::SpectrumInfo::signedTwoTheta </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>observer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>instrumentUp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the average signed angle between the vectors from <code>observer</code> to each detector of the spectrum and <code>axis</code>, signed according to the rotation direction relative to <code>axis</code> and <code>instrumentUp</code>. </p>
+<p>This is the Instrument-2.0 replacement for <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html#a742a678b3916bd5f908f7d05991ad460" title="Gives the signed angle of this detector object with respect to an axis.">IDetector::getSignedTwoTheta</a>. No monitor check is performed. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00142">142</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00436">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00101">signedTwoTheta()</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
 
 </div>
 </div>
@@ -1067,11 +1233,11 @@ Friends</h2></td></tr>
 
 <p>Returns the size of the <a class="el" href="../../d3/dc1/classMantid_1_1API_1_1SpectrumInfo.html" title="API::SpectrumInfo is an intermediate step towards a SpectrumInfo that is part of Instrument-2....">SpectrumInfo</a>, i.e., the number of spectra. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00110">m_spectrumInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00116">m_spectrumInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/da3/MDNormBase_8cpp_source.html#l00456">Mantid::MDAlgorithms::MDNormBase::calculateNormInner()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00377">cend()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00361">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00285">Mantid::DataHandling::GenerateGroupingPowder::createGroups()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00372">end()</a>, <a class="el" href="../../db/d69/CalculatePlaczek_8cpp_source.html#l00257">Mantid::Algorithms::CalculatePlaczek::exec()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00038">export_SpectrumInfo()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00125">geographicalAngles()</a>, <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00428">Mantid::DataHandling::GenerateGroupingPowder::saveAsPAR()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00048">sharedSpectrumDefinitions()</a>, <a class="el" href="../../db/d69/CalculatePlaczek_8cpp_source.html#l00152">Mantid::Algorithms::CalculatePlaczek::validateInputs()</a>, and <a class="el" href="../../d7/d08/CalculatePlaczekSelfScattering_8cpp_source.html#l00067">Mantid::Algorithms::CalculatePlaczekSelfScattering::validateInputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/da3/MDNormBase_8cpp_source.html#l00456">Mantid::MDAlgorithms::MDNormBase::calculateNormInner()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00452">cend()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00436">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00285">Mantid::DataHandling::GenerateGroupingPowder::createGroups()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00447">end()</a>, <a class="el" href="../../db/d69/CalculatePlaczek_8cpp_source.html#l00257">Mantid::Algorithms::CalculatePlaczek::exec()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00073">export_SpectrumInfo()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00200">geographicalAngles()</a>, <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00428">Mantid::DataHandling::GenerateGroupingPowder::saveAsPAR()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00050">sharedSpectrumDefinitions()</a>, <a class="el" href="../../db/d69/CalculatePlaczek_8cpp_source.html#l00152">Mantid::Algorithms::CalculatePlaczek::validateInputs()</a>, and <a class="el" href="../../d7/d08/CalculatePlaczekSelfScattering_8cpp_source.html#l00067">Mantid::Algorithms::CalculatePlaczekSelfScattering::validateInputs()</a>.</p>
 
 </div>
 </div>
@@ -1092,11 +1258,11 @@ Friends</h2></td></tr>
 
 <p>Returns the source position. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00321">321</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00396">396</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00109">m_detectorInfo</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00427">Mantid::Geometry::DetectorInfo::sourcePosition()</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00115">m_detectorInfo</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00519">Mantid::Geometry::DetectorInfo::sourcePosition()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d0e/TimeAtSampleStrategyElastic_8cpp_source.html#l00036">Mantid::API::TimeAtSampleStrategyElastic::calculate()</a>, <a class="el" href="../../d0/de9/TimeAtSampleStrategyIndirect_8cpp_source.html#l00065">Mantid::API::TimeAtSampleStrategyIndirect::calculate()</a>, <a class="el" href="../../d9/d44/ModeratorTzeroLinear_8cpp_source.html#l00227">Mantid::Algorithms::ModeratorTzeroLinear::calculateTfLi()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00038">export_SpectrumInfo()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00069">Mantid::Crystal::FindSXPeaksHelper::SXPeak::SXPeak()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d0e/TimeAtSampleStrategyElastic_8cpp_source.html#l00036">Mantid::API::TimeAtSampleStrategyElastic::calculate()</a>, <a class="el" href="../../d0/de9/TimeAtSampleStrategyIndirect_8cpp_source.html#l00065">Mantid::API::TimeAtSampleStrategyIndirect::calculate()</a>, <a class="el" href="../../d9/d44/ModeratorTzeroLinear_8cpp_source.html#l00227">Mantid::Algorithms::ModeratorTzeroLinear::calculateTfLi()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00073">export_SpectrumInfo()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00069">Mantid::Crystal::FindSXPeaksHelper::SXPeak::SXPeak()</a>.</p>
 
 </div>
 </div>
@@ -1118,16 +1284,16 @@ Friends</h2></td></tr>
 
 <p>Returns a const reference to the SpectrumDefinition of the spectrum. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00043">43</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00108">m_experimentInfo</a>, <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00110">m_spectrumInfo</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00943">Mantid::API::ExperimentInfo::updateSpectrumDefinitionIfNecessary()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00114">m_experimentInfo</a>, <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00116">m_spectrumInfo</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00943">Mantid::API::ExperimentInfo::updateSpectrumDefinitionIfNecessary()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00341">Mantid::Crystal::FindSXPeaksHelper::PeakFindingStrategy::calculatePhi()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00361">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00310">Mantid::DataObjects::MaskWorkspace::combineFromDetectorMasks()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00259">Mantid::DataObjects::MaskWorkspace::combineToDetectorMasks()</a>, <a class="el" href="../../d0/d0c/DetectorEfficiencyCor_8cpp_source.html#l00196">Mantid::Algorithms::DetectorEfficiencyCor::correctForEfficiency()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00155">diffractometerConstants()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00038">export_SpectrumInfo()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00125">geographicalAngles()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00329">getDetector()</a>, <a class="el" href="../../dd/d3d/ScaleX_8cpp_source.html#l00224">Mantid::Algorithms::ScaleX::getScaleFactor()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00241">Mantid::Algorithms::CreateDetectorTable::getTimeIndexes()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00295">hasDetectors()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00302">hasUniqueDetector()</a>, and <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00342">Mantid::DataObjects::MaskWorkspace::isConsistentWithDetectorMasks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00341">Mantid::Crystal::FindSXPeaksHelper::PeakFindingStrategy::calculatePhi()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00436">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00310">Mantid::DataObjects::MaskWorkspace::combineFromDetectorMasks()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00259">Mantid::DataObjects::MaskWorkspace::combineToDetectorMasks()</a>, <a class="el" href="../../d0/d0c/DetectorEfficiencyCor_8cpp_source.html#l00196">Mantid::Algorithms::DetectorEfficiencyCor::correctForEfficiency()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00230">diffractometerConstants()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00073">export_SpectrumInfo()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00200">geographicalAngles()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00404">getDetector()</a>, <a class="el" href="../../dd/d3d/ScaleX_8cpp_source.html#l00224">Mantid::Algorithms::ScaleX::getScaleFactor()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00241">Mantid::Algorithms::CreateDetectorTable::getTimeIndexes()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00370">hasDetectors()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00377">hasUniqueDetector()</a>, and <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00342">Mantid::DataObjects::MaskWorkspace::isConsistentWithDetectorMasks()</a>.</p>
 
 </div>
 </div>
 <a id="a572cbc99f972a6ee74360746a35c45a6" name="a572cbc99f972a6ee74360746a35c45a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a572cbc99f972a6ee74360746a35c45a6">&#9670;&#160;</a></span>twoTheta()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a572cbc99f972a6ee74360746a35c45a6">&#9670;&#160;</a></span>twoTheta() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1146,11 +1312,52 @@ Friends</h2></td></tr>
 <p>to beam direction).</p>
 <p>Throws an exception if the spectrum is a monitor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00088">88</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00361">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838a42a1e2ac7189716fcd6c609460a50e97">Mantid::Kernel::twoTheta</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00436">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838a42a1e2ac7189716fcd6c609460a50e97">Mantid::Kernel::twoTheta</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/df1/ConvertToDiffractionMDWorkspace_8cpp_source.html#l00177">Mantid::MDAlgorithms::ConvertToDiffractionMDWorkspace::convertEventList()</a>, <a class="el" href="../../d0/dd4/Q1D2_8cpp_source.html#l00541">Mantid::Algorithms::Q1D2::convertWavetoQ()</a>, <a class="el" href="../../d3/d54/PythonInterface_2mantid_2api_2src_2Exports_2SpectrumInfo_8cpp_source.html#l00038">export_SpectrumInfo()</a>, <a class="el" href="../../d9/d22/SaveGSS_8cpp_source.html#l00317">Mantid::DataHandling::SaveGSS::generateBankHeader()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00253">Mantid::Algorithms::CreateDetectorTable::getQ()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00212">Mantid::Algorithms::CreateDetectorTable::getSphericalCoordinates()</a>, <a class="el" href="../../d1/d57/SofQCommon_8cpp_source.html#l00162">Mantid::Algorithms::SofQCommon::qBinHintsDirect()</a>, <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00428">Mantid::DataHandling::GenerateGroupingPowder::saveAsPAR()</a>, <a class="el" href="../../d0/d0d/ConvertAxisByFormula_8cpp_source.html#l00254">Mantid::Algorithms::ConvertAxisByFormula::setGeometryValues()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00069">Mantid::Crystal::FindSXPeaksHelper::SXPeak::SXPeak()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/df1/ConvertToDiffractionMDWorkspace_8cpp_source.html#l00177">Mantid::MDAlgorithms::ConvertToDiffractionMDWorkspace::convertEventList()</a>, <a class="el" href="../../d0/dd4/Q1D2_8cpp_source.html#l00541">Mantid::Algorithms::Q1D2::convertWavetoQ()</a>, <a class="el" href="../../d9/d22/SaveGSS_8cpp_source.html#l00317">Mantid::DataHandling::SaveGSS::generateBankHeader()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00253">Mantid::Algorithms::CreateDetectorTable::getQ()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00212">Mantid::Algorithms::CreateDetectorTable::getSphericalCoordinates()</a>, <a class="el" href="../../d1/d57/SofQCommon_8cpp_source.html#l00162">Mantid::Algorithms::SofQCommon::qBinHintsDirect()</a>, <a class="el" href="../../da/d1a/GenerateGroupingPowder_8cpp_source.html#l00428">Mantid::DataHandling::GenerateGroupingPowder::saveAsPAR()</a>, <a class="el" href="../../d0/d0d/ConvertAxisByFormula_8cpp_source.html#l00254">Mantid::Algorithms::ConvertAxisByFormula::setGeometryValues()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00069">Mantid::Crystal::FindSXPeaksHelper::SXPeak::SXPeak()</a>.</p>
+
+</div>
+</div>
+<a id="a1d8baec68229be158b4f71b7a2f6e499" name="a1d8baec68229be158b4f71b7a2f6e499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d8baec68229be158b4f71b7a2f6e499">&#9670;&#160;</a></span>twoTheta() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Mantid::API::SpectrumInfo::twoTheta </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>observer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>axis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the average angle between the vectors from <code>observer</code> to each detector of the spectrum and <code>axis</code>. </p>
+<p>This is the Instrument-2.0 replacement for <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html#a66d049fc17b209419563db15f6d5f49b" title="Gives the angle of this detector object with respect to an axis.">IDetector::getTwoTheta</a>. Unlike <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838a42a1e2ac7189716fcd6c609460a50e97">twoTheta(index)</a>, the observer and axis are supplied by the caller rather than taken from the sample and beam, and no monitor check is performed. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00128">128</a> of file <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html">SpectrumInfo.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00436">checkAndGetSpectrumDefinition()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838a42a1e2ac7189716fcd6c609460a50e97">Mantid::Kernel::twoTheta</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
 
 </div>
 </div>
@@ -1175,7 +1382,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00102">102</a> of file <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html">SpectrumInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00108">108</a> of file <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html">SpectrumInfo.h</a>.</p>
 
 </div>
 </div>
@@ -1200,9 +1407,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00109">109</a> of file <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html">SpectrumInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00115">115</a> of file <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html">SpectrumInfo.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00155">diffractometerConstants()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00125">geographicalAngles()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00329">getDetector()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00327">l1()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00324">samplePosition()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00311">setMasked()</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00321">sourcePosition()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00230">diffractometerConstants()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00200">geographicalAngles()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00404">getDetector()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00402">l1()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00170">phi()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00399">samplePosition()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00386">setMasked()</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00396">sourcePosition()</a>.</p>
 
 </div>
 </div>
@@ -1226,9 +1433,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00108">108</a> of file <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html">SpectrumInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00114">114</a> of file <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html">SpectrumInfo.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00223">getDetectorValues()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00048">sharedSpectrumDefinitions()</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00043">spectrumDefinition()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00298">getDetectorValues()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00050">sharedSpectrumDefinitions()</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00045">spectrumDefinition()</a>.</p>
 
 </div>
 </div>
@@ -1252,9 +1459,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00111">111</a> of file <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html">SpectrumInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00117">117</a> of file <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html">SpectrumInfo.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00329">getDetector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00404">getDetector()</a>.</p>
 
 </div>
 </div>
@@ -1278,9 +1485,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00112">112</a> of file <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html">SpectrumInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00118">118</a> of file <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html">SpectrumInfo.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00329">getDetector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00404">getDetector()</a>.</p>
 
 </div>
 </div>
@@ -1304,9 +1511,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00110">110</a> of file <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html">SpectrumInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html#l00116">116</a> of file <a class="el" href="../../dd/d48/SpectrumInfo_8h_source.html">SpectrumInfo.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00040">detectorCount()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00048">sharedSpectrumDefinitions()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00038">size()</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00043">spectrumDefinition()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00042">detectorCount()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00050">sharedSpectrumDefinitions()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00040">size()</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00045">spectrumDefinition()</a>.</p>
 
 </div>
 </div>

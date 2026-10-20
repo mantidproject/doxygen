@@ -192,6 +192,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af18f5f6fdc513dc6ddfe5b82a8d62380" id="r_af18f5f6fdc513dc6ddfe5b82a8d62380"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html">DetectorInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#af18f5f6fdc513dc6ddfe5b82a8d62380">operator=</a> (const <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html">DetectorInfo</a> &amp;<a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp.html#a4a4185072ce68364465daf0b662bb479">rhs</a>)</td></tr>
 <tr class="memdesc:af18f5f6fdc513dc6ddfe5b82a8d62380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns the contents of the non-wrapping part of <code>rhs</code> to this.  <br /></td></tr>
 <tr class="separator:af18f5f6fdc513dc6ddfe5b82a8d62380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f75fb36bfb1d6ca463d5d803d51a6b0" id="r_a9f75fb36bfb1d6ca463d5d803d51a6b0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#a9f75fb36bfb1d6ca463d5d803d51a6b0">phi</a> (const size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>) const</td></tr>
+<tr class="memdesc:a9f75fb36bfb1d6ca463d5d803d51a6b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the angle of the detector position about the lab-frame z axis, atan2(y, x), in radians.  <br /></td></tr>
+<tr class="separator:a9f75fb36bfb1d6ca463d5d803d51a6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a797599ea4f05de03dcbcfa944bafe757" id="r_a797599ea4f05de03dcbcfa944bafe757"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#a797599ea4f05de03dcbcfa944bafe757">phi</a> (const std::pair&lt; size_t, size_t &gt; &amp;<a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>) const</td></tr>
+<tr class="memdesc:a797599ea4f05de03dcbcfa944bafe757"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the angle of the detector position about the lab-frame z axis, atan2(y, x), in radians.  <br /></td></tr>
+<tr class="separator:a797599ea4f05de03dcbcfa944bafe757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a431eea920f163eb4d4fd0770a524eee3" id="r_a431eea920f163eb4d4fd0770a524eee3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#a431eea920f163eb4d4fd0770a524eee3">phiOffset</a> (const size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, const double offset) const</td></tr>
+<tr class="memdesc:a431eea920f163eb4d4fd0770a524eee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#a9f75fb36bfb1d6ca463d5d803d51a6b0" title="Returns the angle of the detector position about the lab-frame z axis, atan2(y, x),...">phi()</a> reflected about <code>offset</code> (radians): offset - phi for phi &gt;= 0 and -(offset + phi) otherwise.  <br /></td></tr>
+<tr class="separator:a431eea920f163eb4d4fd0770a524eee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6b808ede0fec82ee3ebd52aed22b11c" id="r_ad6b808ede0fec82ee3ebd52aed22b11c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#ad6b808ede0fec82ee3ebd52aed22b11c">phiOffset</a> (const std::pair&lt; size_t, size_t &gt; &amp;<a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, const double offset) const</td></tr>
+<tr class="memdesc:ad6b808ede0fec82ee3ebd52aed22b11c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#a9f75fb36bfb1d6ca463d5d803d51a6b0" title="Returns the angle of the detector position about the lab-frame z axis, atan2(y, x),...">phi()</a> reflected about <code>offset</code> (radians).  <br /></td></tr>
+<tr class="separator:ad6b808ede0fec82ee3ebd52aed22b11c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7940d81ee1a14c6cae93b14f00622970" id="r_a7940d81ee1a14c6cae93b14f00622970"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#a7940d81ee1a14c6cae93b14f00622970">position</a> (const size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>) const</td></tr>
 <tr class="memdesc:a7940d81ee1a14c6cae93b14f00622970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the position of the detector with given index.  <br /></td></tr>
 <tr class="separator:a7940d81ee1a14c6cae93b14f00622970"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -236,9 +248,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a96467a47e60de68874a98dbc044ae115" id="r_a96467a47e60de68874a98dbc044ae115"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#a96467a47e60de68874a98dbc044ae115">signedTwoTheta</a> (const size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>) const</td></tr>
 <tr class="memdesc:a96467a47e60de68874a98dbc044ae115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns signed 2 theta (signed scattering angle w.r.t. to beam direction).  <br /></td></tr>
 <tr class="separator:a96467a47e60de68874a98dbc044ae115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77ea692817dc5aec2a92b33b0611953d" id="r_a77ea692817dc5aec2a92b33b0611953d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#a77ea692817dc5aec2a92b33b0611953d">signedTwoTheta</a> (const size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;observer, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;axis) const</td></tr>
+<tr class="memdesc:a77ea692817dc5aec2a92b33b0611953d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the signed angle between the vector from <code>observer</code> to the detector and <code>axis</code>, signed using the instrument's theta-sign axis (<a class="el" href="../../d4/d4d/classMantid_1_1Geometry_1_1ReferenceFrame.html#a538ce730a3152715c06e73da3b6a233f" title="Convert along the axis defining the 2theta sign.">ReferenceFrame::vecThetaSign</a>).  <br /></td></tr>
+<tr class="separator:a77ea692817dc5aec2a92b33b0611953d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a662ef41a220fce0c9a9b6bec1b04e671" id="r_a662ef41a220fce0c9a9b6bec1b04e671"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#a662ef41a220fce0c9a9b6bec1b04e671">signedTwoTheta</a> (const size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;observer, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;axis, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;instrumentUp) const</td></tr>
+<tr class="memdesc:a662ef41a220fce0c9a9b6bec1b04e671"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the angle between the vector from <code>observer</code> to the detector and <code>axis</code>, signed according to the rotation direction relative to <code>axis</code> and <code>instrumentUp</code>.  <br /></td></tr>
+<tr class="separator:a662ef41a220fce0c9a9b6bec1b04e671"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ae833c6c7400d5fb767ffe1be66ee35" id="r_a2ae833c6c7400d5fb767ffe1be66ee35"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#a2ae833c6c7400d5fb767ffe1be66ee35">signedTwoTheta</a> (const std::pair&lt; size_t, size_t &gt; &amp;<a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>) const</td></tr>
 <tr class="memdesc:a2ae833c6c7400d5fb767ffe1be66ee35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns signed 2 theta (signed scattering angle w.r.t. to beam direction).  <br /></td></tr>
 <tr class="separator:a2ae833c6c7400d5fb767ffe1be66ee35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a200a09f1ef95c6dab18a14119920e80a" id="r_a200a09f1ef95c6dab18a14119920e80a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#a200a09f1ef95c6dab18a14119920e80a">signedTwoTheta</a> (const std::pair&lt; size_t, size_t &gt; &amp;<a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;observer, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;axis) const</td></tr>
+<tr class="memdesc:a200a09f1ef95c6dab18a14119920e80a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the signed angle between the vector from <code>observer</code> to the detector and <code>axis</code>, signed using the instrument's theta-sign axis (<a class="el" href="../../d4/d4d/classMantid_1_1Geometry_1_1ReferenceFrame.html#a538ce730a3152715c06e73da3b6a233f" title="Convert along the axis defining the 2theta sign.">ReferenceFrame::vecThetaSign</a>).  <br /></td></tr>
+<tr class="separator:a200a09f1ef95c6dab18a14119920e80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac291921cd8c2359063b870bf47497947" id="r_ac291921cd8c2359063b870bf47497947"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#ac291921cd8c2359063b870bf47497947">signedTwoTheta</a> (const std::pair&lt; size_t, size_t &gt; &amp;<a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;observer, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;axis, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;instrumentUp) const</td></tr>
+<tr class="memdesc:ac291921cd8c2359063b870bf47497947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the signed angle between the vector from <code>observer</code> to the detector and <code>axis</code>.  <br /></td></tr>
+<tr class="separator:ac291921cd8c2359063b870bf47497947"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac62b323e9a42d15a8055ba0e69e7e8ea" id="r_ac62b323e9a42d15a8055ba0e69e7e8ea"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#ac62b323e9a42d15a8055ba0e69e7e8ea">size</a> () const</td></tr>
 <tr class="memdesc:ac62b323e9a42d15a8055ba0e69e7e8ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html" title="Geometry::DetectorInfo is an intermediate step towards a DetectorInfo that is part of Instrument-2....">DetectorInfo</a>, i.e., the number of detectors in the instrument.  <br /></td></tr>
 <tr class="separator:ac62b323e9a42d15a8055ba0e69e7e8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,9 +272,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0a20680cdd8f8df14a16c47ba395a444" id="r_a0a20680cdd8f8df14a16c47ba395a444"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#a0a20680cdd8f8df14a16c47ba395a444">twoTheta</a> (const size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>) const</td></tr>
 <tr class="memdesc:a0a20680cdd8f8df14a16c47ba395a444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 2 theta (scattering angle w.r.t. to beam direction).  <br /></td></tr>
 <tr class="separator:a0a20680cdd8f8df14a16c47ba395a444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bc58afb365684dabd618e84d96edb03" id="r_a9bc58afb365684dabd618e84d96edb03"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#a9bc58afb365684dabd618e84d96edb03">twoTheta</a> (const size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;observer, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;axis) const</td></tr>
+<tr class="memdesc:a9bc58afb365684dabd618e84d96edb03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the angle between the vector from <code>observer</code> to the detector and <code>axis</code>.  <br /></td></tr>
+<tr class="separator:a9bc58afb365684dabd618e84d96edb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acca988fff223c2d1712996c11d7c101e" id="r_acca988fff223c2d1712996c11d7c101e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#acca988fff223c2d1712996c11d7c101e">twoTheta</a> (const std::pair&lt; size_t, size_t &gt; &amp;<a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>) const</td></tr>
 <tr class="memdesc:acca988fff223c2d1712996c11d7c101e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 2 theta (scattering angle w.r.t. to beam direction).  <br /></td></tr>
 <tr class="separator:acca988fff223c2d1712996c11d7c101e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08c1fc9537b562f6b0bb2ba5bc019875" id="r_a08c1fc9537b562f6b0bb2ba5bc019875"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#a08c1fc9537b562f6b0bb2ba5bc019875">twoTheta</a> (const std::pair&lt; size_t, size_t &gt; &amp;<a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;observer, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;axis) const</td></tr>
+<tr class="memdesc:a08c1fc9537b562f6b0bb2ba5bc019875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the angle between the vector from <code>observer</code> to the detector and <code>axis</code>.  <br /></td></tr>
+<tr class="separator:a08c1fc9537b562f6b0bb2ba5bc019875"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13909a913c40b54d43eae463cb6acf90" id="r_a13909a913c40b54d43eae463cb6acf90"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#a13909a913c40b54d43eae463cb6acf90">~DetectorInfo</a> ()</td></tr>
 <tr class="separator:a13909a913c40b54d43eae463cb6acf90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -338,9 +368,9 @@ Friends</h2></td></tr>
 <p>Construct <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html" title="Geometry::DetectorInfo is an intermediate step towards a DetectorInfo that is part of Instrument-2....">DetectorInfo</a> based on an <a class="el" href="../../da/d03/classMantid_1_1Geometry_1_1Instrument.html" title="Base Instrument Class.">Instrument</a>. </p>
 <p>The <a class="el" href="../../da/d03/classMantid_1_1Geometry_1_1Instrument.html" title="Base Instrument Class.">Instrument</a> reference <code>instrument</code> must be the parameterized instrument obtained from a workspace. <a class="el" href="../../d3/d38/classMantid_1_1Geometry_1_1Detector.html" title="This class represents a detector - i.e.">Detector</a> ID -&gt; index map provided as constructor argument. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00135">m_detectorIDs</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00136">m_detIDToIndex</a>, and <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00134">m_instrument</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00148">m_detectorIDs</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00149">m_detIDToIndex</a>, and <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00147">m_instrument</a>.</p>
 
 </div>
 </div>
@@ -364,7 +394,7 @@ Friends</h2></td></tr>
 <p>Use with EXTREME CARE.</p>
 <p>Public copy should not be used since proper links between <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html" title="Geometry::DetectorInfo is an intermediate step towards a DetectorInfo that is part of Instrument-2....">DetectorInfo</a> and <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html" title="ComponentInfo : Provides a component centric view on to the instrument.">ComponentInfo</a> must be set up. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00048">48</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00073">73</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
 </div>
 </div>
@@ -411,9 +441,9 @@ Friends</h2></td></tr>
 
 <p>Returns the absolute positions of all detectors in a vector ordered by index. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00333">333</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00425">425</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00083">size()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00108">size()</a>.</p>
 
 </div>
 </div>
@@ -434,9 +464,9 @@ Friends</h2></td></tr>
 
 <p>Returns the absolute rotations of all detectors in a vector ordered by index. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00353">353</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00445">445</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00172">rotation</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00083">size()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00172">rotation</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00108">size()</a>.</p>
 
 </div>
 </div>
@@ -457,9 +487,9 @@ Friends</h2></td></tr>
 
 <p>Returns the scale factors of all detectors in a vector ordered by index. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00363">363</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00455">455</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00083">size()</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00027">Mantid::Kernel::toV3D()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00108">size()</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00027">Mantid::Kernel::toV3D()</a>.</p>
 
 </div>
 </div>
@@ -479,11 +509,11 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00209">209</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00234">234</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00089">isMonitor()</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00134">m_instrument</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00430">samplePosition()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00427">sourcePosition()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00114">isMonitor()</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00147">m_instrument</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00522">samplePosition()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00519">sourcePosition()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00099">export_DetectorInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00131">export_DetectorInfo()</a>.</p>
 
 </div>
 </div>
@@ -503,9 +533,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00240">240</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00265">265</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00089">isMonitor()</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00134">m_instrument</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00430">samplePosition()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00427">sourcePosition()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00114">isMonitor()</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00147">m_instrument</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00522">samplePosition()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00519">sourcePosition()</a>.</p>
 
 </div>
 </div>
@@ -524,9 +554,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00495">495</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00587">587</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00083">size()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00108">size()</a>.</p>
 
 </div>
 </div>
@@ -545,9 +575,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00466">466</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00558">558</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00083">size()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00108">size()</a>.</p>
 
 </div>
 </div>
@@ -566,9 +596,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00468">468</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00560">560</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00083">size()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00108">size()</a>.</p>
 
 </div>
 </div>
@@ -591,11 +621,11 @@ Friends</h2></td></tr>
 <p>Not thread safe.</p>
 <p>This method was introduced to help with refactoring and may be removed in the future. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00385">385</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00477">477</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00083">size()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00108">size()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00073">Mantid::DataObjects::MaskWorkspace::clearMask()</a>, and <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00099">export_DetectorInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00073">Mantid::DataObjects::MaskWorkspace::clearMask()</a>, and <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00131">export_DetectorInfo()</a>.</p>
 
 </div>
 </div>
@@ -623,11 +653,11 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00405">405</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00497">497</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00450">detid()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00134">m_instrument</a>.</p>
+<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00542">detid()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00147">m_instrument</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00391">setPosition()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00398">setPosition()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00483">setPosition()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00490">setPosition()</a>.</p>
 
 </div>
 </div>
@@ -649,9 +679,9 @@ Friends</h2></td></tr>
 
 <p>Return a const reference to the detector with given index. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00424">424</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00516">516</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00470">getDetector()</a>, and <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
+<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00562">getDetector()</a>, and <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00494">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::calculateE1()</a>, <a class="el" href="../../d8/d3b/IntegrateEllipsoidsV1_8cpp_source.html#l00687">Mantid::MDAlgorithms::IntegrateEllipsoidsV1::calculateE1()</a>, <a class="el" href="../../d1/db9/IntegrateEllipsoidsV2_8cpp_source.html#l00536">Mantid::MDAlgorithms::IntegrateEllipsoidsV2::calculateE1()</a>, <a class="el" href="../../d8/d64/IntegratePeaksMD2_8cpp_source.html#l01221">Mantid::MDAlgorithms::IntegratePeaksMD2::calculateE1()</a>, <a class="el" href="../../db/d6e/DetectorSearcher_8cpp_source.html#l00223">Mantid::API::DetectorSearcher::checkInteceptWithNeighbours()</a>, <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l01541">Mantid::Algorithms::DiscusMultipleScatteringCorrection::createCollimatorHexahedronShape()</a>, <a class="el" href="../../da/d5e/ConvertSpectrumAxis2_8cpp_source.html#l00319">Mantid::Algorithms::ConvertSpectrumAxis2::getEfixed()</a>, <a class="el" href="../../d4/d59/SolidAngle_8cpp_source.html#l00111">Mantid::Algorithms::SolidAngleHelpers::GenericShape::solidAngle()</a>, and <a class="el" href="../../d5/dc2/LoadDetectorInfo_8cpp_source.html#l00393">Mantid::DataHandling::LoadDetectorInfo::updateParameterMap()</a>.</p>
 
@@ -674,11 +704,11 @@ Friends</h2></td></tr>
 
 <p>Returns a sorted vector of all detector IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00436">436</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00528">528</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00135">m_detectorIDs</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00148">m_detectorIDs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00099">export_DetectorInfo()</a>, <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00111">Mantid::Algorithms::CreateLogTimeCorrection::generateCorrectionTable()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00400">Mantid::Algorithms::CreateDetectorTable::populateTableByDetID()</a>, <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00046">Mantid::Algorithms::SparseWorkspace::SparseWorkspace()</a>, and <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00138">Mantid::Algorithms::CreateLogTimeCorrection::writeCorrectionToFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00131">export_DetectorInfo()</a>, <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00111">Mantid::Algorithms::CreateLogTimeCorrection::generateCorrectionTable()</a>, <a class="el" href="../../d1/d08/CreateDetectorTable_8cpp_source.html#l00400">Mantid::Algorithms::CreateDetectorTable::populateTableByDetID()</a>, <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00046">Mantid::Algorithms::SparseWorkspace::SparseWorkspace()</a>, and <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00138">Mantid::Algorithms::CreateLogTimeCorrection::writeCorrectionToFile()</a>.</p>
 
 </div>
 </div>
@@ -701,11 +731,11 @@ Friends</h2></td></tr>
 <p>Returns the detector ID for the given logical detector index. </p>
 <p>Works without allocating the full ID vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00450">450</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00542">542</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00135">m_detectorIDs</a>, and <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00148">m_detectorIDs</a>, and <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d69/SaveIsawPeaks_8cpp_source.html#l00429">Mantid::Crystal::SaveIsawPeaks::bankMasked()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00405">clearPositionDependentParameters()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00271">diffractometerConstants()</a>, <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00099">export_DetectorInfo()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00470">getDetector()</a>, and <a class="el" href="../../da/d5e/ConvertSpectrumAxis2_8cpp_source.html#l00319">Mantid::Algorithms::ConvertSpectrumAxis2::getEfixed()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d69/SaveIsawPeaks_8cpp_source.html#l00429">Mantid::Crystal::SaveIsawPeaks::bankMasked()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00497">clearPositionDependentParameters()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00363">diffractometerConstants()</a>, <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00131">export_DetectorInfo()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00562">getDetector()</a>, and <a class="el" href="../../da/d5e/ConvertSpectrumAxis2_8cpp_source.html#l00319">Mantid::Algorithms::ConvertSpectrumAxis2::getEfixed()</a>.</p>
 
 </div>
 </div>
@@ -725,11 +755,11 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00298">298</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00390">390</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00433">l1()</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838abec25675775e9e0a0d783a5018b463e3">Mantid::Kernel::l2</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00589">Mantid::Kernel::Units::tofToDSpacingFactor()</a>, and <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838a42a1e2ac7189716fcd6c609460a50e97">Mantid::Kernel::twoTheta</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00525">l1()</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838abec25675775e9e0a0d783a5018b463e3">Mantid::Kernel::l2</a>, <a class="el" href="../../d2/db6/Kernel_2src_2Unit_8cpp_source.html#l00589">Mantid::Kernel::Units::tofToDSpacingFactor()</a>, and <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838a42a1e2ac7189716fcd6c609460a50e97">Mantid::Kernel::twoTheta</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00271">diffractometerConstants()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00363">diffractometerConstants()</a>.</p>
 
 </div>
 </div>
@@ -765,11 +795,11 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00271">271</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00363">363</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00450">detid()</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838a7726a3674fbfab26b520ddac1d28818c">Mantid::Kernel::difa</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838ae70415a8c871333cf8b7b88db030289f">Mantid::Kernel::difc</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00298">difcUncalibrated()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00134">m_instrument</a>, and <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838ac2bc3ab2d52f36e3e9a0c3cefecf5a62">Mantid::Kernel::tzero</a>.</p>
+<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00542">detid()</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838a7726a3674fbfab26b520ddac1d28818c">Mantid::Kernel::difa</a>, <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838ae70415a8c871333cf8b7b88db030289f">Mantid::Kernel::difc</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00390">difcUncalibrated()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00147">m_instrument</a>, and <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838ac2bc3ab2d52f36e3e9a0c3cefecf5a62">Mantid::Kernel::tzero</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00155">Mantid::API::SpectrumInfo::diffractometerConstants()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00230">Mantid::API::SpectrumInfo::diffractometerConstants()</a>.</p>
 
 </div>
 </div>
@@ -788,9 +818,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00498">498</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00590">590</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00083">size()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00108">size()</a>.</p>
 
 </div>
 </div>
@@ -810,11 +840,11 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00302">302</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00394">394</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00134">m_instrument</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00430">samplePosition()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00147">m_instrument</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00522">samplePosition()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00125">Mantid::API::SpectrumInfo::geographicalAngles()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00200">Mantid::API::SpectrumInfo::geographicalAngles()</a>.</p>
 
 </div>
 </div>
@@ -834,9 +864,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00313">313</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00405">405</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00134">m_instrument</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00430">samplePosition()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00147">m_instrument</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00522">samplePosition()</a>.</p>
 
 </div>
 </div>
@@ -864,11 +894,11 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00470">470</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00562">562</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00450">detid()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00134">m_instrument</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00138">m_lastDetector</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00139">m_lastIndex</a>, and <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00226">PARALLEL_THREAD_NUMBER</a>.</p>
+<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00542">detid()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00147">m_instrument</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00151">m_lastDetector</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00152">m_lastIndex</a>, and <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00226">PARALLEL_THREAD_NUMBER</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00424">detector()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00488">getDetectorPtr()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00516">detector()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00580">getDetectorPtr()</a>.</p>
 
 </div>
 </div>
@@ -898,11 +928,11 @@ Friends</h2></td></tr>
 
 <p>Helper used by SpectrumInfo. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00488">488</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00580">580</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00470">getDetector()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00138">m_lastDetector</a>, and <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00226">PARALLEL_THREAD_NUMBER</a>.</p>
+<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00562">getDetector()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00151">m_lastDetector</a>, and <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00226">PARALLEL_THREAD_NUMBER</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00329">Mantid::API::SpectrumInfo::getDetector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00404">Mantid::API::SpectrumInfo::getDetector()</a>.</p>
 
 </div>
 </div>
@@ -924,11 +954,11 @@ Friends</h2></td></tr>
 <p>Return memory used by the detector info, in bytes. </p>
 <dl class="section return"><dt>Returns</dt><dd>bytes used. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00503">503</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00595">595</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00138">m_lastDetector</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00139">m_lastIndex</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00083">size()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00151">m_lastDetector</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00152">m_lastIndex</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00108">size()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00099">export_DetectorInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00131">export_DetectorInfo()</a>.</p>
 
 </div>
 </div>
@@ -949,11 +979,11 @@ Friends</h2></td></tr>
 
 <p>Returns true if there are masked detectors. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00101">101</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00126">126</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00099">export_DetectorInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00131">export_DetectorInfo()</a>.</p>
 
 </div>
 </div>
@@ -976,11 +1006,11 @@ Friends</h2></td></tr>
 <p>Returns the index of the detector with the given detector ID. </p>
 <p>This will throw an out of range exception if the detector does not exist. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00438">438</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00530">530</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00136">m_detIDToIndex</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00149">m_detIDToIndex</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d69/SaveIsawPeaks_8cpp_source.html#l00429">Mantid::Crystal::SaveIsawPeaks::bankMasked()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00953">Mantid::API::ExperimentInfo::cacheDefaultDetectorGrouping()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00310">Mantid::DataObjects::MaskWorkspace::combineFromDetectorMasks()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00259">Mantid::DataObjects::MaskWorkspace::combineToDetectorMasks()</a>, <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l01541">Mantid::Algorithms::DiscusMultipleScatteringCorrection::createCollimatorHexahedronShape()</a>, <a class="el" href="../../d8/d41/ConvertDiffCal_8cpp_source.html#l00205">Mantid::Algorithms::ConvertDiffCal::exec()</a>, <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00099">export_DetectorInfo()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00342">Mantid::DataObjects::MaskWorkspace::isConsistentWithDetectorMasks()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00169">Mantid::DataObjects::MaskWorkspace::isMasked()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01244">Mantid::API::ExperimentInfo::readParameterMap()</a>, <a class="el" href="../../df/dfc/AppendSpectra_8cpp_source.html#l00247">Mantid::Algorithms::AppendSpectra::rewriteSpectraMap()</a>, <a class="el" href="../../db/d6e/DetectorSearcher_8cpp_source.html#l00127">Mantid::API::DetectorSearcher::searchUsingInstrumentRayTracing()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00472">Mantid::API::ExperimentInfo::setDetectorGrouping()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d69/SaveIsawPeaks_8cpp_source.html#l00429">Mantid::Crystal::SaveIsawPeaks::bankMasked()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00953">Mantid::API::ExperimentInfo::cacheDefaultDetectorGrouping()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00310">Mantid::DataObjects::MaskWorkspace::combineFromDetectorMasks()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00259">Mantid::DataObjects::MaskWorkspace::combineToDetectorMasks()</a>, <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l01541">Mantid::Algorithms::DiscusMultipleScatteringCorrection::createCollimatorHexahedronShape()</a>, <a class="el" href="../../d8/d41/ConvertDiffCal_8cpp_source.html#l00205">Mantid::Algorithms::ConvertDiffCal::exec()</a>, <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00131">export_DetectorInfo()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00342">Mantid::DataObjects::MaskWorkspace::isConsistentWithDetectorMasks()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00169">Mantid::DataObjects::MaskWorkspace::isMasked()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01244">Mantid::API::ExperimentInfo::readParameterMap()</a>, <a class="el" href="../../df/dfc/AppendSpectra_8cpp_source.html#l00247">Mantid::Algorithms::AppendSpectra::rewriteSpectraMap()</a>, <a class="el" href="../../db/d6e/DetectorSearcher_8cpp_source.html#l00127">Mantid::API::DetectorSearcher::searchUsingInstrumentRayTracing()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00472">Mantid::API::ExperimentInfo::setDetectorGrouping()</a>.</p>
 
 </div>
 </div>
@@ -1006,11 +1036,11 @@ Friends</h2></td></tr>
 <li>Rotations that imply relative position changes of less than 1 nm = 1e-9 m with a rotation center that is 1000 m away are considered equivalent. Note that in both cases the actual limit may be lower, but it is guarenteed that any LARGER differences are NOT considered equivalent. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00102">102</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00099">export_DetectorInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00131">export_DetectorInfo()</a>.</p>
 
 </div>
 </div>
@@ -1032,11 +1062,11 @@ Friends</h2></td></tr>
 
 <p>Returns true if the detector is masked. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00095">95</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00120">120</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d69/SaveIsawPeaks_8cpp_source.html#l00429">Mantid::Crystal::SaveIsawPeaks::bankMasked()</a>, <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00494">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::calculateE1()</a>, <a class="el" href="../../d8/d3b/IntegrateEllipsoidsV1_8cpp_source.html#l00687">Mantid::MDAlgorithms::IntegrateEllipsoidsV1::calculateE1()</a>, <a class="el" href="../../d1/db9/IntegrateEllipsoidsV2_8cpp_source.html#l00536">Mantid::MDAlgorithms::IntegrateEllipsoidsV2::calculateE1()</a>, <a class="el" href="../../d8/d64/IntegratePeaksMD2_8cpp_source.html#l01221">Mantid::MDAlgorithms::IntegratePeaksMD2::calculateE1()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00310">Mantid::DataObjects::MaskWorkspace::combineFromDetectorMasks()</a>, <a class="el" href="../../db/d6e/DetectorSearcher_8cpp_source.html#l00061">Mantid::API::DetectorSearcher::createDetectorCache()</a>, <a class="el" href="../../d8/d41/ConvertDiffCal_8cpp_source.html#l00205">Mantid::Algorithms::ConvertDiffCal::exec()</a>, <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00099">export_DetectorInfo()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00342">Mantid::DataObjects::MaskWorkspace::isConsistentWithDetectorMasks()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00169">Mantid::DataObjects::MaskWorkspace::isMasked()</a>, and <a class="el" href="../../db/d6e/DetectorSearcher_8cpp_source.html#l00127">Mantid::API::DetectorSearcher::searchUsingInstrumentRayTracing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d69/SaveIsawPeaks_8cpp_source.html#l00429">Mantid::Crystal::SaveIsawPeaks::bankMasked()</a>, <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00494">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::calculateE1()</a>, <a class="el" href="../../d8/d3b/IntegrateEllipsoidsV1_8cpp_source.html#l00687">Mantid::MDAlgorithms::IntegrateEllipsoidsV1::calculateE1()</a>, <a class="el" href="../../d1/db9/IntegrateEllipsoidsV2_8cpp_source.html#l00536">Mantid::MDAlgorithms::IntegrateEllipsoidsV2::calculateE1()</a>, <a class="el" href="../../d8/d64/IntegratePeaksMD2_8cpp_source.html#l01221">Mantid::MDAlgorithms::IntegratePeaksMD2::calculateE1()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00310">Mantid::DataObjects::MaskWorkspace::combineFromDetectorMasks()</a>, <a class="el" href="../../db/d6e/DetectorSearcher_8cpp_source.html#l00061">Mantid::API::DetectorSearcher::createDetectorCache()</a>, <a class="el" href="../../d8/d41/ConvertDiffCal_8cpp_source.html#l00205">Mantid::Algorithms::ConvertDiffCal::exec()</a>, <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00131">export_DetectorInfo()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00342">Mantid::DataObjects::MaskWorkspace::isConsistentWithDetectorMasks()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00169">Mantid::DataObjects::MaskWorkspace::isMasked()</a>, and <a class="el" href="../../db/d6e/DetectorSearcher_8cpp_source.html#l00127">Mantid::API::DetectorSearcher::searchUsingInstrumentRayTracing()</a>.</p>
 
 </div>
 </div>
@@ -1058,9 +1088,9 @@ Friends</h2></td></tr>
 
 <p>Returns true if the detector is masked. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00098">98</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00123">123</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>.</p>
 
 </div>
 </div>
@@ -1082,11 +1112,11 @@ Friends</h2></td></tr>
 
 <p>Returns true if the detector is a monitor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00089">89</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00114">114</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00209">azimuthal()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00240">azimuthal()</a>, <a class="el" href="../../da/d92/ScanningWorkspaceBuilder_8cpp_source.html#l00244">Mantid::DataObjects::ScanningWorkspaceBuilder::buildRelativeRotationsForScans()</a>, <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00494">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::calculateE1()</a>, <a class="el" href="../../d8/d3b/IntegrateEllipsoidsV1_8cpp_source.html#l00687">Mantid::MDAlgorithms::IntegrateEllipsoidsV1::calculateE1()</a>, <a class="el" href="../../d1/db9/IntegrateEllipsoidsV2_8cpp_source.html#l00536">Mantid::MDAlgorithms::IntegrateEllipsoidsV2::calculateE1()</a>, <a class="el" href="../../d8/d64/IntegratePeaksMD2_8cpp_source.html#l01221">Mantid::MDAlgorithms::IntegratePeaksMD2::calculateE1()</a>, <a class="el" href="../../db/d6e/DetectorSearcher_8cpp_source.html#l00061">Mantid::API::DetectorSearcher::createDetectorCache()</a>, <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00099">export_DetectorInfo()</a>, <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00111">Mantid::Algorithms::CreateLogTimeCorrection::generateCorrectionTable()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00108">l2()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00120">l2()</a>, <a class="el" href="../../db/d6e/DetectorSearcher_8cpp_source.html#l00127">Mantid::API::DetectorSearcher::searchUsingInstrumentRayTracing()</a>, <a class="el" href="../../dc/d6f/UpdateInstrumentFromFile_8cpp_source.html#l00411">Mantid::DataHandling::UpdateInstrumentFromFile::setDetectorPosition()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00160">signedTwoTheta()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00185">signedTwoTheta()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00128">twoTheta()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00144">twoTheta()</a>, and <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00138">Mantid::Algorithms::CreateLogTimeCorrection::writeCorrectionToFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00234">azimuthal()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00265">azimuthal()</a>, <a class="el" href="../../da/d92/ScanningWorkspaceBuilder_8cpp_source.html#l00244">Mantid::DataObjects::ScanningWorkspaceBuilder::buildRelativeRotationsForScans()</a>, <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00494">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::calculateE1()</a>, <a class="el" href="../../d8/d3b/IntegrateEllipsoidsV1_8cpp_source.html#l00687">Mantid::MDAlgorithms::IntegrateEllipsoidsV1::calculateE1()</a>, <a class="el" href="../../d1/db9/IntegrateEllipsoidsV2_8cpp_source.html#l00536">Mantid::MDAlgorithms::IntegrateEllipsoidsV2::calculateE1()</a>, <a class="el" href="../../d8/d64/IntegratePeaksMD2_8cpp_source.html#l01221">Mantid::MDAlgorithms::IntegratePeaksMD2::calculateE1()</a>, <a class="el" href="../../db/d6e/DetectorSearcher_8cpp_source.html#l00061">Mantid::API::DetectorSearcher::createDetectorCache()</a>, <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00131">export_DetectorInfo()</a>, <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00111">Mantid::Algorithms::CreateLogTimeCorrection::generateCorrectionTable()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00133">l2()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00145">l2()</a>, <a class="el" href="../../db/d6e/DetectorSearcher_8cpp_source.html#l00127">Mantid::API::DetectorSearcher::searchUsingInstrumentRayTracing()</a>, <a class="el" href="../../dc/d6f/UpdateInstrumentFromFile_8cpp_source.html#l00411">Mantid::DataHandling::UpdateInstrumentFromFile::setDetectorPosition()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00185">signedTwoTheta()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00210">signedTwoTheta()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00153">twoTheta()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00169">twoTheta()</a>, and <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00138">Mantid::Algorithms::CreateLogTimeCorrection::writeCorrectionToFile()</a>.</p>
 
 </div>
 </div>
@@ -1108,9 +1138,9 @@ Friends</h2></td></tr>
 
 <p>Returns true if the detector is a monitor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00092">92</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00117">117</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>.</p>
 
 </div>
 </div>
@@ -1131,11 +1161,11 @@ Friends</h2></td></tr>
 
 <p>Returns true if the beamline has scanning detectors. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00111">111</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00155">Mantid::API::SpectrumInfo::diffractometerConstants()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00230">Mantid::API::SpectrumInfo::diffractometerConstants()</a>.</p>
 
 </div>
 </div>
@@ -1156,11 +1186,11 @@ Friends</h2></td></tr>
 
 <p>Returns L1 (distance from source to sample). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00433">433</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00525">525</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00096">Mantid::Algorithms::CreateLogTimeCorrection::calculateCorrections()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00298">difcUncalibrated()</a>, <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00099">export_DetectorInfo()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00327">Mantid::API::SpectrumInfo::l1()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00108">l2()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00120">l2()</a>, and <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00084">Mantid::Algorithms::CreateLogTimeCorrection::logGeometryInformation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00096">Mantid::Algorithms::CreateLogTimeCorrection::calculateCorrections()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00390">difcUncalibrated()</a>, <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00131">export_DetectorInfo()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00402">Mantid::API::SpectrumInfo::l1()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00133">l2()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00145">l2()</a>, and <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00084">Mantid::Algorithms::CreateLogTimeCorrection::logGeometryInformation()</a>.</p>
 
 </div>
 </div>
@@ -1183,11 +1213,11 @@ Friends</h2></td></tr>
 <p>Returns L2 (distance from sample to spectrum). </p>
 <p>For monitors this is defined such that L1+L2 = source-detector distance, i.e., for a monitor in the beamline between source and sample L2 is negative. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00108">108</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00133">133</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00089">isMonitor()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00433">l1()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00430">samplePosition()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00427">sourcePosition()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00114">isMonitor()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00525">l1()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00522">samplePosition()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00519">sourcePosition()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00096">Mantid::Algorithms::CreateLogTimeCorrection::calculateCorrections()</a>, <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00099">export_DetectorInfo()</a>, <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00111">Mantid::Algorithms::CreateLogTimeCorrection::generateCorrectionTable()</a>, <a class="el" href="../../d4/d59/SolidAngle_8cpp_source.html#l00121">Mantid::Algorithms::SolidAngleHelpers::Rectangle::solidAngle()</a>, <a class="el" href="../../d4/d59/SolidAngle_8cpp_source.html#l00133">Mantid::Algorithms::SolidAngleHelpers::Tube::solidAngle()</a>, and <a class="el" href="../../d4/d59/SolidAngle_8cpp_source.html#l00144">Mantid::Algorithms::SolidAngleHelpers::Wing::solidAngle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00096">Mantid::Algorithms::CreateLogTimeCorrection::calculateCorrections()</a>, <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00131">export_DetectorInfo()</a>, <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00111">Mantid::Algorithms::CreateLogTimeCorrection::generateCorrectionTable()</a>, <a class="el" href="../../d4/d59/SolidAngle_8cpp_source.html#l00121">Mantid::Algorithms::SolidAngleHelpers::Rectangle::solidAngle()</a>, <a class="el" href="../../d4/d59/SolidAngle_8cpp_source.html#l00133">Mantid::Algorithms::SolidAngleHelpers::Tube::solidAngle()</a>, and <a class="el" href="../../d4/d59/SolidAngle_8cpp_source.html#l00144">Mantid::Algorithms::SolidAngleHelpers::Wing::solidAngle()</a>.</p>
 
 </div>
 </div>
@@ -1210,9 +1240,9 @@ Friends</h2></td></tr>
 <p>Returns L2 (distance from sample to spectrum). </p>
 <p>For monitors this is defined such that L1+L2 = source-detector distance, i.e., for a monitor in the beamline between source and sample L2 is negative. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00120">120</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00145">145</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00089">isMonitor()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00433">l1()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00430">samplePosition()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00427">sourcePosition()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00114">isMonitor()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00525">l1()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00522">samplePosition()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00519">sourcePosition()</a>.</p>
 
 </div>
 </div>
@@ -1234,9 +1264,131 @@ Friends</h2></td></tr>
 
 <p>Assigns the contents of the non-wrapping part of <code>rhs</code> to this. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00054">54</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00079">79</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00135">m_detectorIDs</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>, and <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00099">rhs</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00148">m_detectorIDs</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>, and <a class="el" href="../../d0/d18/ComptonScatteringCountRate_8cpp_source.html#l00099">rhs</a>.</p>
+
+</div>
+</div>
+<a id="a9f75fb36bfb1d6ca463d5d803d51a6b0" name="a9f75fb36bfb1d6ca463d5d803d51a6b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f75fb36bfb1d6ca463d5d803d51a6b0">&#9670;&#160;</a></span>phi() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Mantid::Geometry::DetectorInfo::phi </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the angle of the detector position about the lab-frame z axis, atan2(y, x), in radians. </p>
+<p>This is the Instrument-2.0 replacement for <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html#a000c82feed4a2c7bc4e64a09549d0b53" title="Gives the phi of this detector object in radians.">IDetector::getPhi</a>. It is measured from the lab origin and ignores the reference frame; see <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#af00fdbe25d44609399c8e3290c3d4052">azimuthal()</a> for the angle about the beam measured from the sample. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00345">345</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00131">export_DetectorInfo()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00170">Mantid::API::SpectrumInfo::phi()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00354">phiOffset()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00359">phiOffset()</a>.</p>
+
+</div>
+</div>
+<a id="a797599ea4f05de03dcbcfa944bafe757" name="a797599ea4f05de03dcbcfa944bafe757"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a797599ea4f05de03dcbcfa944bafe757">&#9670;&#160;</a></span>phi() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Mantid::Geometry::DetectorInfo::phi </td>
+          <td>(</td>
+          <td class="paramtype">const std::pair&lt; size_t, size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the angle of the detector position about the lab-frame z axis, atan2(y, x), in radians. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00348">348</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>.</p>
+
+</div>
+</div>
+<a id="a431eea920f163eb4d4fd0770a524eee3" name="a431eea920f163eb4d4fd0770a524eee3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a431eea920f163eb4d4fd0770a524eee3">&#9670;&#160;</a></span>phiOffset() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Mantid::Geometry::DetectorInfo::phiOffset </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#a9f75fb36bfb1d6ca463d5d803d51a6b0" title="Returns the angle of the detector position about the lab-frame z axis, atan2(y, x),...">phi()</a> reflected about <code>offset</code> (radians): offset - phi for phi &gt;= 0 and -(offset + phi) otherwise. </p>
+<p>This is the Instrument-2.0 replacement for <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html#ac0855e925391553c51ff0d7b200901b3" title="Gives the phi of this detector offset from y=0 by offset.">IDetector::getPhiOffset</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00354">354</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00345">phi()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00131">export_DetectorInfo()</a>.</p>
+
+</div>
+</div>
+<a id="ad6b808ede0fec82ee3ebd52aed22b11c" name="ad6b808ede0fec82ee3ebd52aed22b11c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6b808ede0fec82ee3ebd52aed22b11c">&#9670;&#160;</a></span>phiOffset() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Mantid::Geometry::DetectorInfo::phiOffset </td>
+          <td>(</td>
+          <td class="paramtype">const std::pair&lt; size_t, size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#a9f75fb36bfb1d6ca463d5d803d51a6b0" title="Returns the angle of the detector position about the lab-frame z axis, atan2(y, x),...">phi()</a> reflected about <code>offset</code> (radians). </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00359">359</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00345">phi()</a>.</p>
 
 </div>
 </div>
@@ -1258,11 +1410,11 @@ Friends</h2></td></tr>
 
 <p>Returns the position of the detector with given index. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00325">325</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00417">417</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00027">Mantid::Kernel::toV3D()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00027">Mantid::Kernel::toV3D()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d92/ScanningWorkspaceBuilder_8cpp_source.html#l00244">Mantid::DataObjects::ScanningWorkspaceBuilder::buildRelativeRotationsForScans()</a>, <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l01541">Mantid::Algorithms::DiscusMultipleScatteringCorrection::createCollimatorHexahedronShape()</a>, <a class="el" href="../../db/d6e/DetectorSearcher_8cpp_source.html#l00061">Mantid::API::DetectorSearcher::createDetectorCache()</a>, <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00099">export_DetectorInfo()</a>, <a class="el" href="../../d4/d59/SolidAngle_8cpp_source.html#l00055">Mantid::Algorithms::SolidAngleHelpers::AlphaAngleCalculator::getAlpha()</a>, <a class="el" href="../../d4/d59/SolidAngle_8cpp_source.html#l00121">Mantid::Algorithms::SolidAngleHelpers::Rectangle::solidAngle()</a>, and <a class="el" href="../../d4/d59/SolidAngle_8cpp_source.html#l00144">Mantid::Algorithms::SolidAngleHelpers::Wing::solidAngle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d92/ScanningWorkspaceBuilder_8cpp_source.html#l00244">Mantid::DataObjects::ScanningWorkspaceBuilder::buildRelativeRotationsForScans()</a>, <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l01541">Mantid::Algorithms::DiscusMultipleScatteringCorrection::createCollimatorHexahedronShape()</a>, <a class="el" href="../../db/d6e/DetectorSearcher_8cpp_source.html#l00061">Mantid::API::DetectorSearcher::createDetectorCache()</a>, <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00131">export_DetectorInfo()</a>, <a class="el" href="../../d4/d59/SolidAngle_8cpp_source.html#l00055">Mantid::Algorithms::SolidAngleHelpers::AlphaAngleCalculator::getAlpha()</a>, <a class="el" href="../../d4/d59/SolidAngle_8cpp_source.html#l00121">Mantid::Algorithms::SolidAngleHelpers::Rectangle::solidAngle()</a>, and <a class="el" href="../../d4/d59/SolidAngle_8cpp_source.html#l00144">Mantid::Algorithms::SolidAngleHelpers::Wing::solidAngle()</a>.</p>
 
 </div>
 </div>
@@ -1284,9 +1436,9 @@ Friends</h2></td></tr>
 
 <p>Returns the position of the detector with given index. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00328">328</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00420">420</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00027">Mantid::Kernel::toV3D()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00027">Mantid::Kernel::toV3D()</a>.</p>
 
 </div>
 </div>
@@ -1308,11 +1460,11 @@ Friends</h2></td></tr>
 
 <p>Returns the rotation of the detector with given index. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00343">343</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00435">435</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00033">Mantid::Kernel::toQuat()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00033">Mantid::Kernel::toQuat()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d92/ScanningWorkspaceBuilder_8cpp_source.html#l00244">Mantid::DataObjects::ScanningWorkspaceBuilder::buildRelativeRotationsForScans()</a>, and <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00099">export_DetectorInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d92/ScanningWorkspaceBuilder_8cpp_source.html#l00244">Mantid::DataObjects::ScanningWorkspaceBuilder::buildRelativeRotationsForScans()</a>, and <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00131">export_DetectorInfo()</a>.</p>
 
 </div>
 </div>
@@ -1334,9 +1486,9 @@ Friends</h2></td></tr>
 
 <p>Returns the rotation of the detector with given index. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00348">348</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00440">440</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00033">Mantid::Kernel::toQuat()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00033">Mantid::Kernel::toQuat()</a>.</p>
 
 </div>
 </div>
@@ -1357,11 +1509,11 @@ Friends</h2></td></tr>
 
 <p>Returns the sample position. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00430">430</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00522">522</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00027">Mantid::Kernel::toV3D()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00027">Mantid::Kernel::toV3D()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00209">azimuthal()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00240">azimuthal()</a>, <a class="el" href="../../db/d6e/DetectorSearcher_8cpp_source.html#l00223">Mantid::API::DetectorSearcher::checkInteceptWithNeighbours()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00302">geographicalAngles()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00313">geographicalAngles()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00108">l2()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00120">l2()</a>, <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00084">Mantid::Algorithms::CreateLogTimeCorrection::logGeometryInformation()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00324">Mantid::API::SpectrumInfo::samplePosition()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00160">signedTwoTheta()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00185">signedTwoTheta()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00128">twoTheta()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00144">twoTheta()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00234">azimuthal()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00265">azimuthal()</a>, <a class="el" href="../../db/d6e/DetectorSearcher_8cpp_source.html#l00223">Mantid::API::DetectorSearcher::checkInteceptWithNeighbours()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00394">geographicalAngles()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00405">geographicalAngles()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00133">l2()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00145">l2()</a>, <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00084">Mantid::Algorithms::CreateLogTimeCorrection::logGeometryInformation()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00399">Mantid::API::SpectrumInfo::samplePosition()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00185">signedTwoTheta()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00210">signedTwoTheta()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00153">twoTheta()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00169">twoTheta()</a>.</p>
 
 </div>
 </div>
@@ -1382,9 +1534,9 @@ Friends</h2></td></tr>
 
 <p>Returns the scan count of the detector with given detector index. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00455">455</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00547">547</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../da/d92/ScanningWorkspaceBuilder_8cpp_source.html#l00244">Mantid::DataObjects::ScanningWorkspaceBuilder::buildRelativeRotationsForScans()</a>, and <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00672">Mantid::Algorithms::MergeRuns::buildScanIntervals()</a>.</p>
 
@@ -1408,9 +1560,9 @@ Friends</h2></td></tr>
 <p>Returns the scan interval of the detector with given index. </p>
 <p>The interval start and end values would typically correspond to nanoseconds since 1990, as in Types::Core::DateAndTime. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00461">461</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00553">553</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/d92/MergeRuns_8cpp_source.html#l00672">Mantid::Algorithms::MergeRuns::buildScanIntervals()</a>.</p>
 
@@ -1463,11 +1615,11 @@ Friends</h2></td></tr>
 
 <p>Set the mask flag of the detector with given index. Not thread safe. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00374">374</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00466">466</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00259">Mantid::DataObjects::MaskWorkspace::combineToDetectorMasks()</a>, <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00099">export_DetectorInfo()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01400">Mantid::API::ExperimentInfo::populateWithParameter()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01244">Mantid::API::ExperimentInfo::readParameterMap()</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00311">Mantid::API::SpectrumInfo::setMasked()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00259">Mantid::DataObjects::MaskWorkspace::combineToDetectorMasks()</a>, <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00131">export_DetectorInfo()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01400">Mantid::API::ExperimentInfo::populateWithParameter()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01244">Mantid::API::ExperimentInfo::readParameterMap()</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00386">Mantid::API::SpectrumInfo::setMasked()</a>.</p>
 
 </div>
 </div>
@@ -1499,9 +1651,9 @@ Friends</h2></td></tr>
 
 <p>Set the mask flag of the detector with given index. Not thread safe. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00377">377</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00469">469</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>.</p>
 
 </div>
 </div>
@@ -1533,9 +1685,9 @@ Friends</h2></td></tr>
 
 <p>Set the absolute position of the detector with given index. Not thread safe. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00391">391</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00483">483</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00405">clearPositionDependentParameters()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00038">Mantid::Kernel::toVector3d()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00497">clearPositionDependentParameters()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00038">Mantid::Kernel::toVector3d()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../da/d92/ScanningWorkspaceBuilder_8cpp_source.html#l00236">Mantid::DataObjects::ScanningWorkspaceBuilder::buildPositions()</a>, <a class="el" href="../../da/d92/ScanningWorkspaceBuilder_8cpp_source.html#l00244">Mantid::DataObjects::ScanningWorkspaceBuilder::buildRelativeRotationsForScans()</a>, <a class="el" href="../../dc/d6f/UpdateInstrumentFromFile_8cpp_source.html#l00411">Mantid::DataHandling::UpdateInstrumentFromFile::setDetectorPosition()</a>, and <a class="el" href="../../d5/dc2/LoadDetectorInfo_8cpp_source.html#l00393">Mantid::DataHandling::LoadDetectorInfo::updateParameterMap()</a>.</p>
 
@@ -1569,9 +1721,9 @@ Friends</h2></td></tr>
 
 <p>Set the absolute position of the detector with given index. Not thread safe. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00398">398</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00490">490</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00405">clearPositionDependentParameters()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00038">Mantid::Kernel::toVector3d()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00497">clearPositionDependentParameters()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00038">Mantid::Kernel::toVector3d()</a>.</p>
 
 </div>
 </div>
@@ -1603,9 +1755,9 @@ Friends</h2></td></tr>
 
 <p>Set the absolute rotation of the detector with given index. Not thread safe. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00414">414</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00506">506</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00172">rotation</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00044">Mantid::Kernel::toQuaterniond()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00172">rotation</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00044">Mantid::Kernel::toQuaterniond()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../da/d92/ScanningWorkspaceBuilder_8cpp_source.html#l00244">Mantid::DataObjects::ScanningWorkspaceBuilder::buildRelativeRotationsForScans()</a>, and <a class="el" href="../../da/d92/ScanningWorkspaceBuilder_8cpp_source.html#l00228">Mantid::DataObjects::ScanningWorkspaceBuilder::buildRotations()</a>.</p>
 
@@ -1639,14 +1791,14 @@ Friends</h2></td></tr>
 
 <p>Set the absolute rotation of the detector with given index. Not thread safe. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00419">419</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00511">511</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00172">rotation</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00044">Mantid::Kernel::toQuaterniond()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>, <a class="el" href="../../d7/df6/PythonInterface_2mantid_2geometry_2src_2Exports_2ComponentInfo_8cpp_source.html#l00172">rotation</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00044">Mantid::Kernel::toQuaterniond()</a>.</p>
 
 </div>
 </div>
 <a id="a96467a47e60de68874a98dbc044ae115" name="a96467a47e60de68874a98dbc044ae115"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96467a47e60de68874a98dbc044ae115">&#9670;&#160;</a></span>signedTwoTheta() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a96467a47e60de68874a98dbc044ae115">&#9670;&#160;</a></span>signedTwoTheta() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1663,16 +1815,103 @@ Friends</h2></td></tr>
 
 <p>Returns signed 2 theta (signed scattering angle w.r.t. to beam direction). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00160">160</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00185">185</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00089">isMonitor()</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00134">m_instrument</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00430">samplePosition()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00427">sourcePosition()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00114">isMonitor()</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00147">m_instrument</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00522">samplePosition()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00519">sourcePosition()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00099">export_DetectorInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00329">signedTwoTheta()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00335">signedTwoTheta()</a>.</p>
+
+</div>
+</div>
+<a id="a77ea692817dc5aec2a92b33b0611953d" name="a77ea692817dc5aec2a92b33b0611953d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77ea692817dc5aec2a92b33b0611953d">&#9670;&#160;</a></span>signedTwoTheta() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Mantid::Geometry::DetectorInfo::signedTwoTheta </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>observer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>axis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the signed angle between the vector from <code>observer</code> to the detector and <code>axis</code>, signed using the instrument's theta-sign axis (<a class="el" href="../../d4/d4d/classMantid_1_1Geometry_1_1ReferenceFrame.html#a538ce730a3152715c06e73da3b6a233f" title="Convert along the axis defining the 2theta sign.">ReferenceFrame::vecThetaSign</a>). </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00329">329</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00147">m_instrument</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00185">signedTwoTheta()</a>.</p>
+
+</div>
+</div>
+<a id="a662ef41a220fce0c9a9b6bec1b04e671" name="a662ef41a220fce0c9a9b6bec1b04e671"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a662ef41a220fce0c9a9b6bec1b04e671">&#9670;&#160;</a></span>signedTwoTheta() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Mantid::Geometry::DetectorInfo::signedTwoTheta </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>observer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>instrumentUp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the angle between the vector from <code>observer</code> to the detector and <code>axis</code>, signed according to the rotation direction relative to <code>axis</code> and <code>instrumentUp</code>. </p>
+<p>This is the Instrument-2.0 replacement for <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html#a742a678b3916bd5f908f7d05991ad460" title="Gives the signed angle of this detector object with respect to an axis.">IDetector::getSignedTwoTheta</a>. No monitor check is performed. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00316">316</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>.</p>
 
 </div>
 </div>
 <a id="a2ae833c6c7400d5fb767ffe1be66ee35" name="a2ae833c6c7400d5fb767ffe1be66ee35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ae833c6c7400d5fb767ffe1be66ee35">&#9670;&#160;</a></span>signedTwoTheta() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ae833c6c7400d5fb767ffe1be66ee35">&#9670;&#160;</a></span>signedTwoTheta() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1689,9 +1928,95 @@ Friends</h2></td></tr>
 
 <p>Returns signed 2 theta (signed scattering angle w.r.t. to beam direction). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00185">185</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00210">210</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00089">isMonitor()</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00134">m_instrument</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00430">samplePosition()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00427">sourcePosition()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00114">isMonitor()</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00147">m_instrument</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00522">samplePosition()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00519">sourcePosition()</a>.</p>
+
+</div>
+</div>
+<a id="a200a09f1ef95c6dab18a14119920e80a" name="a200a09f1ef95c6dab18a14119920e80a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a200a09f1ef95c6dab18a14119920e80a">&#9670;&#160;</a></span>signedTwoTheta() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Mantid::Geometry::DetectorInfo::signedTwoTheta </td>
+          <td>(</td>
+          <td class="paramtype">const std::pair&lt; size_t, size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>observer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>axis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the signed angle between the vector from <code>observer</code> to the detector and <code>axis</code>, signed using the instrument's theta-sign axis (<a class="el" href="../../d4/d4d/classMantid_1_1Geometry_1_1ReferenceFrame.html#a538ce730a3152715c06e73da3b6a233f" title="Convert along the axis defining the 2theta sign.">ReferenceFrame::vecThetaSign</a>). </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00335">335</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00147">m_instrument</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00185">signedTwoTheta()</a>.</p>
+
+</div>
+</div>
+<a id="ac291921cd8c2359063b870bf47497947" name="ac291921cd8c2359063b870bf47497947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac291921cd8c2359063b870bf47497947">&#9670;&#160;</a></span>signedTwoTheta() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Mantid::Geometry::DetectorInfo::signedTwoTheta </td>
+          <td>(</td>
+          <td class="paramtype">const std::pair&lt; size_t, size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>observer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>instrumentUp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the signed angle between the vector from <code>observer</code> to the detector and <code>axis</code>. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00322">322</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>.</p>
 
 </div>
 </div>
@@ -1712,11 +2037,11 @@ Friends</h2></td></tr>
 
 <p>Returns the size of the <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html" title="Geometry::DetectorInfo is an intermediate step towards a DetectorInfo that is part of Instrument-2....">DetectorInfo</a>, i.e., the number of detectors in the instrument. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00108">108</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00333">allPositions()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00353">allRotations()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00363">allScaleFactors()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00495">begin()</a>, <a class="el" href="../../da/d92/ScanningWorkspaceBuilder_8cpp_source.html#l00244">Mantid::DataObjects::ScanningWorkspaceBuilder::buildRelativeRotationsForScans()</a>, <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00096">Mantid::Algorithms::CreateLogTimeCorrection::calculateCorrections()</a>, <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00494">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::calculateE1()</a>, <a class="el" href="../../d8/d3b/IntegrateEllipsoidsV1_8cpp_source.html#l00687">Mantid::MDAlgorithms::IntegrateEllipsoidsV1::calculateE1()</a>, <a class="el" href="../../d1/db9/IntegrateEllipsoidsV2_8cpp_source.html#l00536">Mantid::MDAlgorithms::IntegrateEllipsoidsV2::calculateE1()</a>, <a class="el" href="../../d8/d64/IntegratePeaksMD2_8cpp_source.html#l01221">Mantid::MDAlgorithms::IntegratePeaksMD2::calculateE1()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00466">cbegin()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00468">cend()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00385">clearMaskFlags()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00310">Mantid::DataObjects::MaskWorkspace::combineFromDetectorMasks()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00259">Mantid::DataObjects::MaskWorkspace::combineToDetectorMasks()</a>, <a class="el" href="../../db/d6e/DetectorSearcher_8cpp_source.html#l00061">Mantid::API::DetectorSearcher::createDetectorCache()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00498">end()</a>, <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00099">export_DetectorInfo()</a>, <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00111">Mantid::Algorithms::CreateLogTimeCorrection::generateCorrectionTable()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00503">getMemorySize()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00342">Mantid::DataObjects::MaskWorkspace::isConsistentWithDetectorMasks()</a>, and <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00084">Mantid::Algorithms::CreateLogTimeCorrection::logGeometryInformation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00425">allPositions()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00445">allRotations()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00455">allScaleFactors()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00587">begin()</a>, <a class="el" href="../../da/d92/ScanningWorkspaceBuilder_8cpp_source.html#l00244">Mantid::DataObjects::ScanningWorkspaceBuilder::buildRelativeRotationsForScans()</a>, <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00096">Mantid::Algorithms::CreateLogTimeCorrection::calculateCorrections()</a>, <a class="el" href="../../d7/d00/IntegrateEllipsoidsTwoStep_8cpp_source.html#l00494">Mantid::MDAlgorithms::IntegrateEllipsoidsTwoStep::calculateE1()</a>, <a class="el" href="../../d8/d3b/IntegrateEllipsoidsV1_8cpp_source.html#l00687">Mantid::MDAlgorithms::IntegrateEllipsoidsV1::calculateE1()</a>, <a class="el" href="../../d1/db9/IntegrateEllipsoidsV2_8cpp_source.html#l00536">Mantid::MDAlgorithms::IntegrateEllipsoidsV2::calculateE1()</a>, <a class="el" href="../../d8/d64/IntegratePeaksMD2_8cpp_source.html#l01221">Mantid::MDAlgorithms::IntegratePeaksMD2::calculateE1()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00558">cbegin()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00560">cend()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00477">clearMaskFlags()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00310">Mantid::DataObjects::MaskWorkspace::combineFromDetectorMasks()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00259">Mantid::DataObjects::MaskWorkspace::combineToDetectorMasks()</a>, <a class="el" href="../../db/d6e/DetectorSearcher_8cpp_source.html#l00061">Mantid::API::DetectorSearcher::createDetectorCache()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00590">end()</a>, <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00131">export_DetectorInfo()</a>, <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00111">Mantid::Algorithms::CreateLogTimeCorrection::generateCorrectionTable()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00595">getMemorySize()</a>, <a class="el" href="../../d0/db3/MaskWorkspace_8cpp_source.html#l00342">Mantid::DataObjects::MaskWorkspace::isConsistentWithDetectorMasks()</a>, and <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00084">Mantid::Algorithms::CreateLogTimeCorrection::logGeometryInformation()</a>.</p>
 
 </div>
 </div>
@@ -1737,16 +2062,16 @@ Friends</h2></td></tr>
 
 <p>Returns the source position. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00427">427</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00519">519</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">m_detectorInfo</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00027">Mantid::Kernel::toV3D()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">m_detectorInfo</a>, and <a class="el" href="../../d6/d0e/EigenConversionHelpers_8h_source.html#l00027">Mantid::Kernel::toV3D()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00209">azimuthal()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00240">azimuthal()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00108">l2()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00120">l2()</a>, <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00084">Mantid::Algorithms::CreateLogTimeCorrection::logGeometryInformation()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00160">signedTwoTheta()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00185">signedTwoTheta()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00321">Mantid::API::SpectrumInfo::sourcePosition()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00128">twoTheta()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00144">twoTheta()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00234">azimuthal()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00265">azimuthal()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00133">l2()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00145">l2()</a>, <a class="el" href="../../d8/d7c/CreateLogTimeCorrection_8cpp_source.html#l00084">Mantid::Algorithms::CreateLogTimeCorrection::logGeometryInformation()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00185">signedTwoTheta()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00210">signedTwoTheta()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00396">Mantid::API::SpectrumInfo::sourcePosition()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00153">twoTheta()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00169">twoTheta()</a>.</p>
 
 </div>
 </div>
 <a id="a0a20680cdd8f8df14a16c47ba395a444" name="a0a20680cdd8f8df14a16c47ba395a444"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a20680cdd8f8df14a16c47ba395a444">&#9670;&#160;</a></span>twoTheta() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a20680cdd8f8df14a16c47ba395a444">&#9670;&#160;</a></span>twoTheta() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1763,16 +2088,57 @@ Friends</h2></td></tr>
 
 <p>Returns 2 theta (scattering angle w.r.t. to beam direction). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00128">128</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00153">153</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00089">isMonitor()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00430">samplePosition()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00427">sourcePosition()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00114">isMonitor()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00522">samplePosition()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00519">sourcePosition()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d99/PythonInterface_2mantid_2geometry_2src_2Exports_2DetectorInfo_8cpp_source.html#l00099">export_DetectorInfo()</a>, and <a class="el" href="../../d1/d57/SofQCommon_8cpp_source.html#l00204">Mantid::Algorithms::SofQCommon::qBinHintsIndirect()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d57/SofQCommon_8cpp_source.html#l00204">Mantid::Algorithms::SofQCommon::qBinHintsIndirect()</a>.</p>
+
+</div>
+</div>
+<a id="a9bc58afb365684dabd618e84d96edb03" name="a9bc58afb365684dabd618e84d96edb03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bc58afb365684dabd618e84d96edb03">&#9670;&#160;</a></span>twoTheta() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Mantid::Geometry::DetectorInfo::twoTheta </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>observer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>axis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the angle between the vector from <code>observer</code> to the detector and <code>axis</code>. </p>
+<p>This is the Instrument-2.0 replacement for <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html#a66d049fc17b209419563db15f6d5f49b" title="Gives the angle of this detector object with respect to an axis.">IDetector::getTwoTheta</a>. Unlike <a class="el" href="../../d9/dec/namespaceMantid_1_1Kernel.html#ad86ffd71c00f26eae83f1a2107beb838a42a1e2ac7189716fcd6c609460a50e97">twoTheta(index)</a>, the observer and axis are supplied by the caller rather than taken from the sample and beam, and no monitor check is performed. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00301">301</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>.</p>
 
 </div>
 </div>
 <a id="acca988fff223c2d1712996c11d7c101e" name="acca988fff223c2d1712996c11d7c101e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acca988fff223c2d1712996c11d7c101e">&#9670;&#160;</a></span>twoTheta() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acca988fff223c2d1712996c11d7c101e">&#9670;&#160;</a></span>twoTheta() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1789,9 +2155,49 @@ Friends</h2></td></tr>
 
 <p>Returns 2 theta (scattering angle w.r.t. to beam direction). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00144">144</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00169">169</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00089">isMonitor()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00430">samplePosition()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00427">sourcePosition()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00114">isMonitor()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00522">samplePosition()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00519">sourcePosition()</a>.</p>
+
+</div>
+</div>
+<a id="a08c1fc9537b562f6b0bb2ba5bc019875" name="a08c1fc9537b562f6b0bb2ba5bc019875"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08c1fc9537b562f6b0bb2ba5bc019875">&#9670;&#160;</a></span>twoTheta() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Mantid::Geometry::DetectorInfo::twoTheta </td>
+          <td>(</td>
+          <td class="paramtype">const std::pair&lt; size_t, size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>observer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>axis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the angle between the vector from <code>observer</code> to the detector and <code>axis</code>. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00306">306</a> of file <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html">DetectorInfo.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00154">position</a>.</p>
 
 </div>
 </div>
@@ -1816,7 +2222,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00118">118</a> of file <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html">DetectorInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00131">131</a> of file <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html">DetectorInfo.h</a>.</p>
 
 </div>
 </div>
@@ -1840,7 +2246,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00119">119</a> of file <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html">DetectorInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">132</a> of file <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html">DetectorInfo.h</a>.</p>
 
 </div>
 </div>
@@ -1865,9 +2271,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00135">135</a> of file <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html">DetectorInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00148">148</a> of file <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html">DetectorInfo.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00436">detectorIDs()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00026">DetectorInfo()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00450">detid()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00054">operator=()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00528">detectorIDs()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00051">DetectorInfo()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00542">detid()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00079">operator=()</a>.</p>
 
 </div>
 </div>
@@ -1893,9 +2299,9 @@ Friends</h2></td></tr>
 
 <p>Pointer to the actual <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html" title="Geometry::DetectorInfo is an intermediate step towards a DetectorInfo that is part of Instrument-2....">DetectorInfo</a> object (non-wrapping part). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00132">132</a> of file <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html">DetectorInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00145">145</a> of file <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html">DetectorInfo.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00363">allScaleFactors()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00385">clearMaskFlags()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00450">detid()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00503">getMemorySize()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00101">hasMaskedDetectors()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00077">isEquivalent()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00095">isMasked()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00098">isMasked()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00089">isMonitor()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00092">isMonitor()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00086">isScanning()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00433">l1()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00054">operator=()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00325">position()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00328">position()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00343">rotation()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00348">rotation()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00430">samplePosition()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00455">scanCount()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00461">scanIntervals()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00374">setMasked()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00377">setMasked()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00391">setPosition()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00398">setPosition()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00414">setRotation()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00419">setRotation()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00083">size()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00427">sourcePosition()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00455">allScaleFactors()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00477">clearMaskFlags()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00542">detid()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00595">getMemorySize()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00126">hasMaskedDetectors()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00102">isEquivalent()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00120">isMasked()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00123">isMasked()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00114">isMonitor()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00117">isMonitor()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00111">isScanning()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00525">l1()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00079">operator=()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00417">position()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00420">position()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00435">rotation()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00440">rotation()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00522">samplePosition()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00547">scanCount()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00553">scanIntervals()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00466">setMasked()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00469">setMasked()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00483">setPosition()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00490">setPosition()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00506">setRotation()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00511">setRotation()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00108">size()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00519">sourcePosition()</a>.</p>
 
 </div>
 </div>
@@ -1919,9 +2325,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00136">136</a> of file <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html">DetectorInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00149">149</a> of file <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html">DetectorInfo.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00026">DetectorInfo()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00438">indexOf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00051">DetectorInfo()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00530">indexOf()</a>.</p>
 
 </div>
 </div>
@@ -1945,9 +2351,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00134">134</a> of file <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html">DetectorInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00147">147</a> of file <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html">DetectorInfo.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00209">azimuthal()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00240">azimuthal()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00405">clearPositionDependentParameters()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00026">DetectorInfo()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00271">diffractometerConstants()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00302">geographicalAngles()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00313">geographicalAngles()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00470">getDetector()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00160">signedTwoTheta()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00185">signedTwoTheta()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00234">azimuthal()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00265">azimuthal()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00497">clearPositionDependentParameters()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00051">DetectorInfo()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00363">diffractometerConstants()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00394">geographicalAngles()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00405">geographicalAngles()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00562">getDetector()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00185">signedTwoTheta()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00329">signedTwoTheta()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00210">signedTwoTheta()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00335">signedTwoTheta()</a>.</p>
 
 </div>
 </div>
@@ -1971,9 +2377,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00138">138</a> of file <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html">DetectorInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00151">151</a> of file <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html">DetectorInfo.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00470">getDetector()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00488">getDetectorPtr()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00503">getMemorySize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00562">getDetector()</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00580">getDetectorPtr()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00595">getMemorySize()</a>.</p>
 
 </div>
 </div>
@@ -1997,9 +2403,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00139">139</a> of file <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html">DetectorInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html#l00152">152</a> of file <a class="el" href="../../d7/d30/DetectorInfo_8h_source.html">DetectorInfo.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00470">getDetector()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00503">getMemorySize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00562">getDetector()</a>, and <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00595">getMemorySize()</a>.</p>
 
 </div>
 </div>

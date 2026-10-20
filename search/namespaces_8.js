@@ -111,7 +111,7 @@ var searchData=
   ['mantid_3a_3akernel_108',['Kernel',['../d9/dec/namespaceMantid_1_1Kernel.html',1,'Mantid']]],
   ['mantid_3a_3akernel_3a_3achecksumhelper_109',['ChecksumHelper',['../d9/d74/namespaceMantid_1_1Kernel_1_1ChecksumHelper.html',1,'Mantid::Kernel']]],
   ['mantid_3a_3akernel_3a_3adateandtimehelpers_110',['DateAndTimeHelpers',['../d9/d50/namespaceMantid_1_1Kernel_1_1DateAndTimeHelpers.html',1,'Mantid::Kernel']]],
-  ['mantid_3a_3akernel_3a_3adetail_111',['mantid::kernel::detail',['../d6/d43/namespaceMantid_1_1Kernel_1_1Detail.html',1,'Mantid::Kernel::Detail'],['../da/d22/namespaceMantid_1_1Kernel_1_1detail.html',1,'Mantid::Kernel::detail']]],
+  ['mantid_3a_3akernel_3a_3adetail_111',['mantid::kernel::detail',['../da/d22/namespaceMantid_1_1Kernel_1_1detail.html',1,'Mantid::Kernel::detail'],['../d6/d43/namespaceMantid_1_1Kernel_1_1Detail.html',1,'Mantid::Kernel::Detail']]],
   ['mantid_3a_3akernel_3a_3adynamicpointercasthelper_112',['DynamicPointerCastHelper',['../d0/d4f/namespaceMantid_1_1Kernel_1_1DynamicPointerCastHelper.html',1,'Mantid::Kernel']]],
   ['mantid_3a_3akernel_3a_3aexception_113',['Exception',['../d3/ddc/namespaceMantid_1_1Kernel_1_1Exception.html',1,'Mantid::Kernel']]],
   ['mantid_3a_3akernel_3a_3afft_114',['fft',['../d5/d0c/namespaceMantid_1_1Kernel_1_1fft.html',1,'Mantid::Kernel']]],
