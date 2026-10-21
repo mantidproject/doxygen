@@ -125,7 +125,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a31bac8c725fc1833310c203fa550bd46" id="r_a31bac8c725fc1833310c203fa550bd46"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d44/classMantid_1_1Crystal_1_1FindSXPeaksHelper_1_1PeakFindingStrategy.html#a31bac8c725fc1833310c203fa550bd46">calculatePhi</a> (size_t workspaceIndex) const</td></tr>
-<tr class="memdesc:a31bac8c725fc1833310c203fa550bd46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the average phi value if the workspace contains multiple detectors per spectrum, or returns the value of phi if it is a single detector to spectrum mapping.  <br /></td></tr>
+<tr class="memdesc:a31bac8c725fc1833310c203fa550bd46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates phi for the workspace index.  <br /></td></tr>
 <tr class="separator:a31bac8c725fc1833310c203fa550bd46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab59680b02d6bd92c60b4db967f499547" id="r_ab59680b02d6bd92c60b4db967f499547"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d94/namespaceMantid_1_1Crystal_1_1FindSXPeaksHelper.html#ab55d0fb97c1776883d83bdadc338940e">PeakList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d44/classMantid_1_1Crystal_1_1FindSXPeaksHelper_1_1PeakFindingStrategy.html#ab59680b02d6bd92c60b4db967f499547">convertToSXPeaks</a> (const HistogramData::HistogramX &amp;<a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#af9966bf83559a0e8759072837e5ab80f">x</a>, const HistogramData::HistogramY &amp;<a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a9f73ed0b16ebc46f67c4428af703eb07">y</a>, const std::vector&lt; std::unique_ptr&lt; <a class="el" href="../../d2/de6/classMantid_1_1Crystal_1_1FindSXPeaksHelper_1_1PeakContainer.html">PeakContainer</a> &gt; &gt; &amp;peaks, const int workspaceIndex) const</td></tr>
 <tr class="separator:ab59680b02d6bd92c60b4db967f499547"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,20 +257,20 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Calculates the average phi value if the workspace contains multiple detectors per spectrum, or returns the value of phi if it is a single detector to spectrum mapping. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Calculates phi for the workspace index. </p>
+<p>If the spectrum contains multiple detectors, phi of their average position is used. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">workspaceIndex</td><td>:: The index to return the phi value of </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>:: The averaged or exact value of phi </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>:: The value of phi in the range [0, 2pi) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00341">341</a> of file <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html">FindSXPeaksHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00340">340</a> of file <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html">FindSXPeaksHelper.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00393">Mantid::API::SpectrumInfo::detector()</a>, <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html#a000c82feed4a2c7bc4e64a09549d0b53">Mantid::Geometry::IDetector::getPhi()</a>, <a class="el" href="../../d6/d15/FindSXPeaksHelper_8h_source.html#l00178">m_spectrumInfo</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00045">Mantid::API::SpectrumInfo::spectrumDefinition()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d15/FindSXPeaksHelper_8h_source.html#l00178">m_spectrumInfo</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00170">Mantid::API::SpectrumInfo::phi()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00387">convertToSXPeaks()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00419">Mantid::Crystal::FindSXPeaksHelper::StrongestPeaksStrategy::dofindSXPeaks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00371">convertToSXPeaks()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00403">Mantid::Crystal::FindSXPeaksHelper::StrongestPeaksStrategy::dofindSXPeaks()</a>.</p>
 
 </div>
 </div>
@@ -320,11 +320,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00387">387</a> of file <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html">FindSXPeaksHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00371">371</a> of file <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html">FindSXPeaksHelper.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00341">calculatePhi()</a>, <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00372">convertToTOF()</a>, <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00365">getXValue()</a>, <a class="el" href="../../d6/d15/FindSXPeaksHelper_8h_source.html#l00178">m_spectrumInfo</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00340">calculatePhi()</a>, <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00356">convertToTOF()</a>, <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00349">getXValue()</a>, <a class="el" href="../../d6/d15/FindSXPeaksHelper_8h_source.html#l00178">m_spectrumInfo</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00456">Mantid::Crystal::FindSXPeaksHelper::AllPeaksStrategy::dofindSXPeaks()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00540">Mantid::Crystal::FindSXPeaksHelper::NSigmaPeaksStrategy::dofindSXPeaks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00440">Mantid::Crystal::FindSXPeaksHelper::AllPeaksStrategy::dofindSXPeaks()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00524">Mantid::Crystal::FindSXPeaksHelper::NSigmaPeaksStrategy::dofindSXPeaks()</a>.</p>
 
 </div>
 </div>
@@ -362,11 +362,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00372">372</a> of file <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html">FindSXPeaksHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00356">356</a> of file <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html">FindSXPeaksHelper.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../de/d2e/DeltaEMode_8h_source.html#l00030">Mantid::Kernel::DeltaEMode::Elastic</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00298">Mantid::API::SpectrumInfo::getDetectorValues()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00402">Mantid::API::SpectrumInfo::l1()</a>, <a class="el" href="../../d6/d15/FindSXPeaksHelper_8h_source.html#l00178">m_spectrumInfo</a>, <a class="el" href="../../d6/d15/FindSXPeaksHelper_8h_source.html#l00179">m_units</a>, and <a class="el" href="../../da/d94/namespaceMantid_1_1Crystal_1_1FindSXPeaksHelper.html#aac9539c73a479df53fbf064833cf762ba458617d00302a3d59c3e5691ab28c877">Mantid::Crystal::FindSXPeaksHelper::TOF</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00387">convertToSXPeaks()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00419">Mantid::Crystal::FindSXPeaksHelper::StrongestPeaksStrategy::dofindSXPeaks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00371">convertToSXPeaks()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00403">Mantid::Crystal::FindSXPeaksHelper::StrongestPeaksStrategy::dofindSXPeaks()</a>.</p>
 
 </div>
 </div>
@@ -462,7 +462,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../db/d1c/EmptyValues_8h_source.html#l00024">Mantid::EMPTY_INT()</a>, and <a class="el" href="../../d6/d15/FindSXPeaksHelper_8h_source.html#l00180">m_minNBinsPerPeak</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00456">Mantid::Crystal::FindSXPeaksHelper::AllPeaksStrategy::dofindSXPeaks()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00540">Mantid::Crystal::FindSXPeaksHelper::NSigmaPeaksStrategy::dofindSXPeaks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00440">Mantid::Crystal::FindSXPeaksHelper::AllPeaksStrategy::dofindSXPeaks()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00524">Mantid::Crystal::FindSXPeaksHelper::NSigmaPeaksStrategy::dofindSXPeaks()</a>.</p>
 
 </div>
 </div>
@@ -576,11 +576,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00365">365</a> of file <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html">FindSXPeaksHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00349">349</a> of file <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html">FindSXPeaksHelper.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00387">convertToSXPeaks()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00419">Mantid::Crystal::FindSXPeaksHelper::StrongestPeaksStrategy::dofindSXPeaks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00371">convertToSXPeaks()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00403">Mantid::Crystal::FindSXPeaksHelper::StrongestPeaksStrategy::dofindSXPeaks()</a>.</p>
 
 </div>
 </div>
@@ -629,7 +629,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d15/FindSXPeaksHelper_8h_source.html#l00175">175</a> of file <a class="el" href="../../d6/d15/FindSXPeaksHelper_8h_source.html">FindSXPeaksHelper.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00446">Mantid::Crystal::FindSXPeaksHelper::AllPeaksStrategy::AllPeaksStrategy()</a>, <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00419">Mantid::Crystal::FindSXPeaksHelper::StrongestPeaksStrategy::dofindSXPeaks()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00456">Mantid::Crystal::FindSXPeaksHelper::AllPeaksStrategy::dofindSXPeaks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00430">Mantid::Crystal::FindSXPeaksHelper::AllPeaksStrategy::AllPeaksStrategy()</a>, <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00403">Mantid::Crystal::FindSXPeaksHelper::StrongestPeaksStrategy::dofindSXPeaks()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00440">Mantid::Crystal::FindSXPeaksHelper::AllPeaksStrategy::dofindSXPeaks()</a>.</p>
 
 </div>
 </div>
@@ -733,7 +733,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d15/FindSXPeaksHelper_8h_source.html#l00178">178</a> of file <a class="el" href="../../d6/d15/FindSXPeaksHelper_8h_source.html">FindSXPeaksHelper.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00341">calculatePhi()</a>, <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00387">convertToSXPeaks()</a>, <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00372">convertToTOF()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00419">Mantid::Crystal::FindSXPeaksHelper::StrongestPeaksStrategy::dofindSXPeaks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00340">calculatePhi()</a>, <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00371">convertToSXPeaks()</a>, <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00356">convertToTOF()</a>, and <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00403">Mantid::Crystal::FindSXPeaksHelper::StrongestPeaksStrategy::dofindSXPeaks()</a>.</p>
 
 </div>
 </div>
@@ -759,7 +759,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d15/FindSXPeaksHelper_8h_source.html#l00179">179</a> of file <a class="el" href="../../d6/d15/FindSXPeaksHelper_8h_source.html">FindSXPeaksHelper.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00372">convertToTOF()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d72/FindSXPeaksHelper_8cpp_source.html#l00356">convertToTOF()</a>.</p>
 
 </div>
 </div>
