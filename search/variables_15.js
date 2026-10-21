@@ -56,8 +56,7 @@ var searchData=
   ['user_53',['user',['../d4/dad/classICat4_1_1ns1____study.html#aa7b2de678c2c80a9af473387a2639d5b',1,'ICat4::ns1__study::user'],['../dc/d40/classISISRAW.html#a8c71d58bc8945573558c0108463c3f8b',1,'ISISRAW::user'],['../d3/d88/classICat4_1_1ns1____instrumentScientist.html#a1a4df92ffeef9a01df98c5388c77c8ea',1,'ICat4::ns1__instrumentScientist::user'],['../d8/d67/classICat4_1_1ns1____userGroup.html#afd2d1fa4087a975b671480deea5c0270',1,'ICat4::ns1__userGroup::user'],['../dc/df4/classICat4_1_1ns1____investigationUser.html#a02110d082d3b0ebbf4c7bc0bf2234d5d',1,'ICat4::ns1__investigationUser::user']]],
   ['userfunc_54',['userfunc',['../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#af74d6b6b40422d4d513a0ad14da1e80f',1,'AugmentedLagrangianOptimizer.cpp']]],
   ['usergroups_55',['usergroups',['../dc/de8/classICat4_1_1ns1____grouping.html#a7764b144368f9175c6eb021440d872ee',1,'ICat4::ns1__grouping::userGroups'],['../d5/d26/classICat4_1_1ns1____user.html#af7c7228baa2d0f95585737180ccff095',1,'ICat4::ns1__user::userGroups']]],
-  ['using_5fmapping_5ffile_56',['using_mapping_file',['../dc/da2/classMantid_1_1DataHandling_1_1LoadEventPreNexus2.html#a29ff000cd6cd9657b25a8ce22ffc7c63',1,'Mantid::DataHandling::LoadEventPreNexus2']]],
-  ['ustar_57',['UStar',['../de/d4e/structMantid_1_1DataHandling_1_1ANSTO_1_1Tar_1_1EntryHeader.html#aeabedee6f0702b39a7ec295691ef9175',1,'Mantid::DataHandling::ANSTO::Tar::EntryHeader']]],
-  ['ut_58',['ut',['../dc/d40/classISISRAW.html#a00d62f32e1960c93e1e09f40ca4fd3b4',1,'ISISRAW']]],
-  ['uu_59',['uu',['../de/ddb/classMantid_1_1CurveFitting_1_1Functions_1_1BivariateNormal.html#a3b7418278731308f1f997511c25b812e',1,'Mantid::CurveFitting::Functions::BivariateNormal']]]
+  ['ustar_56',['UStar',['../de/d4e/structMantid_1_1DataHandling_1_1ANSTO_1_1Tar_1_1EntryHeader.html#aeabedee6f0702b39a7ec295691ef9175',1,'Mantid::DataHandling::ANSTO::Tar::EntryHeader']]],
+  ['ut_57',['ut',['../dc/d40/classISISRAW.html#a00d62f32e1960c93e1e09f40ca4fd3b4',1,'ISISRAW']]],
+  ['uu_58',['uu',['../de/ddb/classMantid_1_1CurveFitting_1_1Functions_1_1BivariateNormal.html#a3b7418278731308f1f997511c25b812e',1,'Mantid::CurveFitting::Functions::BivariateNormal']]]
 ];

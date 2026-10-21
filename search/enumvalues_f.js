@@ -22,11 +22,10 @@ var searchData=
   ['positive_19',['Positive',['../d4/d18/classMantid_1_1Geometry_1_1SymmetryElementRotation.html#a3662637a9ba96197419cde704ea420a4aeacc152f1c78c12bda596c2e7ac2413d',1,'Mantid::Geometry::SymmetryElementRotation']]],
   ['power_20',['Power',['../d8/d3d/namespaceGraphOptions.html#a55f922666b7bda72b4764c2d8bcce22da9db1d4fd5bf6adc372dbf340de0cfae2',1,'GraphOptions']]],
   ['precondition_5ffailed_21',['PRECONDITION_FAILED',['../d8/d77/classMantid_1_1Kernel_1_1InternetHelper.html#aad263cc54689786ffec924aec281b740a8e4ccfab0ccae403001d7ac710307c31',1,'Mantid::Kernel::InternetHelper']]],
-  ['prenexus_5ffile_22',['PRENEXUS_FILE',['../d8/d23/namespaceMantid_1_1DataHandling.html#a5b9104fef0d39c0c3e1bed9b58b8c761a6d4aad093b9e42f1e022abe006a304b7',1,'Mantid::DataHandling']]],
-  ['prevent_23',['prevent',['../dd/dfc/namespaceMantid_1_1Nexus_1_1H5Util.html#a10af373d707bcb9b4158b018b63da1d7af2df35e3af62e7f0605a45218e7e8574',1,'Mantid::Nexus::H5Util::Prevent'],['../dd/dd9/namespaceMantid_1_1Nexus_1_1IOHelper.html#a2c4f844c8958da901712a0eb3c147175af2df35e3af62e7f0605a45218e7e8574',1,'Mantid::Nexus::IOHelper::Prevent']]],
-  ['proxy_5fauthentication_5frequired_24',['PROXY_AUTHENTICATION_REQUIRED',['../d8/d77/classMantid_1_1Kernel_1_1InternetHelper.html#aad263cc54689786ffec924aec281b740a0cf3ee42fff927594af686698d09e863',1,'Mantid::Kernel::InternetHelper']]],
-  ['pulsetime_5fsort_25',['PULSETIME_SORT',['../db/d22/namespaceMantid_1_1DataObjects.html#a5ce7b2f35e0fe0f6ffab2b899cc36653a91983b43103819cfc2cdd63256015070',1,'Mantid::DataObjects']]],
-  ['pulsetimetof_5fdelta_5fsort_26',['PULSETIMETOF_DELTA_SORT',['../db/d22/namespaceMantid_1_1DataObjects.html#a5ce7b2f35e0fe0f6ffab2b899cc36653ad2d29902d3a1fdd63ab6aa10e42f1a86',1,'Mantid::DataObjects']]],
-  ['pulsetimetof_5fsort_27',['PULSETIMETOF_SORT',['../db/d22/namespaceMantid_1_1DataObjects.html#a5ce7b2f35e0fe0f6ffab2b899cc36653a944f9a45ba4dc3bf172afe0a04711b0e',1,'Mantid::DataObjects']]],
-  ['python_28',['Python',['../d4/de3/namespaceMantid_1_1PythonInterface_1_1Converters.html#a98ce4d7bc756679d52a23a070a197722aec869d564cd733ec81536f893f0a2085',1,'Mantid::PythonInterface::Converters']]]
+  ['prevent_22',['prevent',['../dd/dfc/namespaceMantid_1_1Nexus_1_1H5Util.html#a10af373d707bcb9b4158b018b63da1d7af2df35e3af62e7f0605a45218e7e8574',1,'Mantid::Nexus::H5Util::Prevent'],['../dd/dd9/namespaceMantid_1_1Nexus_1_1IOHelper.html#a2c4f844c8958da901712a0eb3c147175af2df35e3af62e7f0605a45218e7e8574',1,'Mantid::Nexus::IOHelper::Prevent']]],
+  ['proxy_5fauthentication_5frequired_23',['PROXY_AUTHENTICATION_REQUIRED',['../d8/d77/classMantid_1_1Kernel_1_1InternetHelper.html#aad263cc54689786ffec924aec281b740a0cf3ee42fff927594af686698d09e863',1,'Mantid::Kernel::InternetHelper']]],
+  ['pulsetime_5fsort_24',['PULSETIME_SORT',['../db/d22/namespaceMantid_1_1DataObjects.html#a5ce7b2f35e0fe0f6ffab2b899cc36653a91983b43103819cfc2cdd63256015070',1,'Mantid::DataObjects']]],
+  ['pulsetimetof_5fdelta_5fsort_25',['PULSETIMETOF_DELTA_SORT',['../db/d22/namespaceMantid_1_1DataObjects.html#a5ce7b2f35e0fe0f6ffab2b899cc36653ad2d29902d3a1fdd63ab6aa10e42f1a86',1,'Mantid::DataObjects']]],
+  ['pulsetimetof_5fsort_26',['PULSETIMETOF_SORT',['../db/d22/namespaceMantid_1_1DataObjects.html#a5ce7b2f35e0fe0f6ffab2b899cc36653a944f9a45ba4dc3bf172afe0a04711b0e',1,'Mantid::DataObjects']]],
+  ['python_27',['Python',['../d4/de3/namespaceMantid_1_1PythonInterface_1_1Converters.html#a98ce4d7bc756679d52a23a070a197722aec869d564cd733ec81536f893f0a2085',1,'Mantid::PythonInterface::Converters']]]
 ];
