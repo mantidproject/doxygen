@@ -221,7 +221,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="comment">// Loop over spectra, but finish early if we find everything</span></div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordflow">while</span> (i &lt; specInfo.size() &amp;&amp; idsInWorkspace.size() &lt; monitorIDList.size()) {</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>      <span class="keywordflow">if</span> (specInfo.isMonitor(i))</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        idsInWorkspace.insert(specInfo.detector(i).getID());</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        idsInWorkspace.insert(specInfo.firstDetectorID(i));</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>      ++i;</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    }</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    monitorIDList = std::vector&lt;detid_t&gt;(idsInWorkspace.begin(), idsInWorkspace.end());</div>

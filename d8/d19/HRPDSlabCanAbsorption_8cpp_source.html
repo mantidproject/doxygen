@@ -203,7 +203,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="comment">// Get detector position</span></div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <a class="code hl_class" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">V3D</a> detectorPos = spectrumInfo.position(i);</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> detID = spectrumInfo.detector(i).getID();</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> detID = spectrumInfo.firstDetectorID(i);</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordtype">double</span> angleFactor;</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="comment">// If the low angle or backscattering bank, want angle wrt beamline</span></div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordflow">if</span> (detID &lt; 900000) {</div>
