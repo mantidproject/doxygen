@@ -472,6 +472,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af6cca3137f2010c8abc637c37811eac9" id="r_af6cca3137f2010c8abc637c37811eac9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d0b/classMantid_1_1CurveFitting_1_1Algorithms_1_1ConvertToYSpace.html#af6cca3137f2010c8abc637c37811eac9">calculateY</a> (double &amp;yspace, double &amp;qspace, double &amp;ei, const double mass, const double tsec, const double k1, const double v1, const <a class="el" href="../../df/d39/structMantid_1_1CurveFitting_1_1Algorithms_1_1DetectorParams.html">DetectorParams</a> &amp;detpar)</td></tr>
 <tr class="memdesc:af6cca3137f2010c8abc637c37811eac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert single time value to Y,Q &amp; Ei values.  <br /></td></tr>
 <tr class="separator:af6cca3137f2010c8abc637c37811eac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa658563a721e52ed6aa9acd7ce11f2ee" id="r_aa658563a721e52ed6aa9acd7ce11f2ee"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d0b/classMantid_1_1CurveFitting_1_1Algorithms_1_1ConvertToYSpace.html#aa658563a721e52ed6aa9acd7ce11f2ee">getComponentParameter</a> (const <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html">Geometry::ComponentInfo</a> &amp;componentInfo, const SpectrumDefinition &amp;spectrumDefinition, const std::string &amp;<a class="el" href="../../de/d0b/classMantid_1_1CurveFitting_1_1Algorithms_1_1ConvertToYSpace.html#a404546d9ce9f3e1a6b03ed588211689b">name</a>)</td></tr>
+<tr class="memdesc:aa658563a721e52ed6aa9acd7ce11f2ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a component parameter for the detector(s) of a spectrum.  <br /></td></tr>
+<tr class="separator:aa658563a721e52ed6aa9acd7ce11f2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adac164fcaa0ef1302f9edfaaec5e41ba" id="r_adac164fcaa0ef1302f9edfaaec5e41ba"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d0b/classMantid_1_1CurveFitting_1_1Algorithms_1_1ConvertToYSpace.html#adac164fcaa0ef1302f9edfaaec5e41ba">getComponentParameter</a> (const <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html">Geometry::IComponent</a> &amp;det, const <a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html">Geometry::ParameterMap</a> &amp;pmap, const std::string &amp;<a class="el" href="../../de/d0b/classMantid_1_1CurveFitting_1_1Algorithms_1_1ConvertToYSpace.html#a404546d9ce9f3e1a6b03ed588211689b">name</a>)</td></tr>
 <tr class="memdesc:adac164fcaa0ef1302f9edfaaec5e41ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a component parameter.  <br /></td></tr>
 <tr class="separator:adac164fcaa0ef1302f9edfaaec5e41ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -649,7 +652,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Takes a workspace with X axis in TOF and converts it to Y-space where the transformation is defined by equation (7) in <a href="http://link.aip.org/link/doi/10.1063/1.3561493?ver=pdfcov">http://link.aip.org/link/doi/10.1063/1.3561493?ver=pdfcov</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00044">44</a> of file <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html">ConvertToYSpace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00046">46</a> of file <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html">ConvertToYSpace.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af8d4413734edf39fb59e4ad591271a52" name="af8d4413734edf39fb59e4ad591271a52"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8d4413734edf39fb59e4ad591271a52">&#9670;&#160;</a></span>ConvertToYSpace()</h2>
@@ -668,7 +671,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
 
 </div>
 </div>
@@ -698,11 +701,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Compute &amp; store the parameters that are fixed during the correction. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00281">281</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00311">311</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00083">m_inputWS</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00087">m_l1</a>, and <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00089">m_samplePos</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00088">m_inputWS</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00092">m_l1</a>, and <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00094">m_samplePos</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00253">retrieveInputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00283">retrieveInputs()</a>.</p>
 
 </div>
 </div>
@@ -792,11 +795,11 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section see"><dt>See also</dt><dd>ComptonProfile </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00130">130</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00160">160</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d09/PhysicalConstants_8h_source.html#l00067">Mantid::PhysicalConstants::E_mev_toNeutronWavenumberSq</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00036">Mantid::CurveFitting::Algorithms::DetectorParams::efixed</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00031">Mantid::CurveFitting::Algorithms::DetectorParams::l1</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00032">Mantid::CurveFitting::Algorithms::DetectorParams::l2</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00035">Mantid::CurveFitting::Algorithms::DetectorParams::t0</a>, and <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00034">Mantid::CurveFitting::Algorithms::DetectorParams::theta</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d09/PhysicalConstants_8h_source.html#l00067">Mantid::PhysicalConstants::E_mev_toNeutronWavenumberSq</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00038">Mantid::CurveFitting::Algorithms::DetectorParams::efixed</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00033">Mantid::CurveFitting::Algorithms::DetectorParams::l1</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00034">Mantid::CurveFitting::Algorithms::DetectorParams::l2</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00037">Mantid::CurveFitting::Algorithms::DetectorParams::t0</a>, and <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00036">Mantid::CurveFitting::Algorithms::DetectorParams::theta</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcb/ComptonProfile_8cpp_source.html#l00115">Mantid::CurveFitting::Functions::ComptonProfile::cacheYSpaceValues()</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00214">convert()</a>, and <a class="el" href="../../d6/de7/ComptonPeakProfile_8cpp_source.html#l00091">Mantid::CurveFitting::Functions::ComptonPeakProfile::setWorkspace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcb/ComptonProfile_8cpp_source.html#l00115">Mantid::CurveFitting::Functions::ComptonProfile::cacheYSpaceValues()</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00244">convert()</a>, and <a class="el" href="../../d6/de7/ComptonPeakProfile_8cpp_source.html#l00091">Mantid::CurveFitting::Functions::ComptonPeakProfile::setWorkspace()</a>.</p>
 
 </div>
 </div>
@@ -828,7 +831,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#aac664d897bb69f4ca2246b8dff697309">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00048">48</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
 
 </div>
 </div>
@@ -865,11 +868,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00214">214</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00244">244</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00130">calculateY()</a>, <a class="el" href="../../dd/d09/PhysicalConstants_8h_source.html#l00067">Mantid::PhysicalConstants::E_mev_toNeutronWavenumberSq</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00036">Mantid::CurveFitting::Algorithms::DetectorParams::efixed</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00055">getDetectorParameters()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00083">m_inputWS</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00085">m_mass</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00092">m_outputWS</a>, and <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00093">m_qOutputWS</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00160">calculateY()</a>, <a class="el" href="../../dd/d09/PhysicalConstants_8h_source.html#l00067">Mantid::PhysicalConstants::E_mev_toNeutronWavenumberSq</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00038">Mantid::CurveFitting::Algorithms::DetectorParams::efixed</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00058">getDetectorParameters()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00088">m_inputWS</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00090">m_mass</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00097">m_outputWS</a>, and <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00098">m_qOutputWS</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00169">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00199">exec()</a>.</p>
 
 </div>
 </div>
@@ -899,11 +902,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Create the output workspace. </p>
 <p>Create &amp; cache output workspaces. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00262">262</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00292">292</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01931">Mantid::API::Algorithm::getPropertyValue()</a>, <a class="el" href="../../de/d06/SingletonHolder_8h_source.html#l00091">Mantid::Kernel::SingletonHolder&lt; T &gt;::Instance()</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00083">m_inputWS</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00092">m_outputWS</a>, and <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00093">m_qOutputWS</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01931">Mantid::API::Algorithm::getPropertyValue()</a>, <a class="el" href="../../de/d06/SingletonHolder_8h_source.html#l00091">Mantid::Kernel::SingletonHolder&lt; T &gt;::Instance()</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00088">m_inputWS</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00097">m_outputWS</a>, and <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00098">m_qOutputWS</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00169">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00199">exec()</a>.</p>
 
 </div>
 </div>
@@ -934,14 +937,78 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#aace3ff902f31d5cfa309fff3d6b069aa">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00169">169</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00199">199</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00214">convert()</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00262">createOutputWorkspace()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00423">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00083">m_inputWS</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00092">m_outputWS</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00093">m_qOutputWS</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00117">PARALLEL_CHECK_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00224">PARALLEL_CRITICAL</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00102">PARALLEL_END_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00218">PARALLEL_FOR_IF</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00094">PARALLEL_START_INTERRUPT_REGION</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00246">Mantid::API::Algorithm::progress()</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00253">retrieveInputs()</a>, <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00265">Mantid::Kernel::IPropertyManager::setProperty()</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00022">Mantid::Kernel::threadSafe()</a>, <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00244">convert()</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00292">createOutputWorkspace()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00423">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00088">m_inputWS</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00097">m_outputWS</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00098">m_qOutputWS</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00117">PARALLEL_CHECK_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00224">PARALLEL_CRITICAL</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00102">PARALLEL_END_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00218">PARALLEL_FOR_IF</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00094">PARALLEL_START_INTERRUPT_REGION</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00246">Mantid::API::Algorithm::progress()</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00283">retrieveInputs()</a>, <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00265">Mantid::Kernel::IPropertyManager::setProperty()</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00022">Mantid::Kernel::threadSafe()</a>, <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+
+</div>
+</div>
+<a id="aa658563a721e52ed6aa9acd7ce11f2ee" name="aa658563a721e52ed6aa9acd7ce11f2ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa658563a721e52ed6aa9acd7ce11f2ee">&#9670;&#160;</a></span>getComponentParameter() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Mantid::CurveFitting::Algorithms::ConvertToYSpace::getComponentParameter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html">Geometry::ComponentInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>componentInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const SpectrumDefinition &amp;&#160;</td>
+          <td class="paramname"><em>spectrumDefinition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieve a component parameter for the detector(s) of a spectrum. </p>
+<p>If the spectrum has more than one detector then the parameters are averaged over its detectors.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">componentInfo</td><td>A reference to the ComponentInfo of the workspace </td></tr>
+    <tr><td class="paramname">spectrumDefinition</td><td>The definition of the spectrum giving its detector indices </td></tr>
+    <tr><td class="paramname">name</td><td>The name of the parameter </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The value of the parameter if it exists </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">A</td><td>std::invalid_argument error if the parameter does not exist </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00128">128</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00789">Mantid::Geometry::ComponentInfo::getNumberParameter()</a>, and <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00045">name()</a>.</p>
 
 </div>
 </div>
 <a id="adac164fcaa0ef1302f9edfaaec5e41ba" name="adac164fcaa0ef1302f9edfaaec5e41ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adac164fcaa0ef1302f9edfaaec5e41ba">&#9670;&#160;</a></span>getComponentParameter()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adac164fcaa0ef1302f9edfaaec5e41ba">&#9670;&#160;</a></span>getComponentParameter() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -998,11 +1065,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00090">90</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00093">93</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, and <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00042">name()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, and <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00045">name()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d36/VesuvioCalculateGammaBackground_8cpp_source.html#l00445">Mantid::CurveFitting::Algorithms::VesuvioCalculateGammaBackground::cacheInstrumentGeometry()</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00055">getDetectorParameters()</a>, <a class="el" href="../../df/d26/VesuvioResolution_8cpp_source.html#l00038">Mantid::CurveFitting::Functions::VesuvioResolution::getResolutionParameters()</a>, and <a class="el" href="../../d6/de7/ComptonPeakProfile_8cpp_source.html#l00091">Mantid::CurveFitting::Functions::ComptonPeakProfile::setWorkspace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d36/VesuvioCalculateGammaBackground_8cpp_source.html#l00445">Mantid::CurveFitting::Algorithms::VesuvioCalculateGammaBackground::cacheInstrumentGeometry()</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00058">getDetectorParameters()</a>, <a class="el" href="../../df/d26/VesuvioResolution_8cpp_source.html#l00038">Mantid::CurveFitting::Functions::VesuvioResolution::getResolutionParameters()</a>, and <a class="el" href="../../d6/de7/ComptonPeakProfile_8cpp_source.html#l00091">Mantid::CurveFitting::Functions::ComptonPeakProfile::setWorkspace()</a>.</p>
 
 </div>
 </div>
@@ -1050,11 +1117,11 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../df/d39/structMantid_1_1CurveFitting_1_1Algorithms_1_1DetectorParams.html" title="Simple data structure to store nominal detector values It avoids some functions taking a huge number ...">DetectorParams</a> structure containing the relevant parameters </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00036">Mantid::CurveFitting::Algorithms::DetectorParams::efixed</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00090">getComponentParameter()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00031">Mantid::CurveFitting::Algorithms::DetectorParams::l1</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00032">Mantid::CurveFitting::Algorithms::DetectorParams::l2</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00033">Mantid::CurveFitting::Algorithms::DetectorParams::pos</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00035">Mantid::CurveFitting::Algorithms::DetectorParams::t0</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00034">Mantid::CurveFitting::Algorithms::DetectorParams::theta</a>, and <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00038">Mantid::CurveFitting::Algorithms::DetectorParams::efixed</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00093">getComponentParameter()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00033">Mantid::CurveFitting::Algorithms::DetectorParams::l1</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00034">Mantid::CurveFitting::Algorithms::DetectorParams::l2</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00035">Mantid::CurveFitting::Algorithms::DetectorParams::pos</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00037">Mantid::CurveFitting::Algorithms::DetectorParams::t0</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00036">Mantid::CurveFitting::Algorithms::DetectorParams::theta</a>, and <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcb/ComptonProfile_8cpp_source.html#l00089">Mantid::CurveFitting::Functions::ComptonProfile::buildCaches()</a>, <a class="el" href="../../da/d36/VesuvioCalculateGammaBackground_8cpp_source.html#l00243">Mantid::CurveFitting::Algorithms::VesuvioCalculateGammaBackground::calculateBackgroundFromFoils()</a>, <a class="el" href="../../d8/d18/VesuvioCalculateMS_8cpp_source.html#l00288">Mantid::CurveFitting::Algorithms::VesuvioCalculateMS::calculateMS()</a>, <a class="el" href="../../da/d36/VesuvioCalculateGammaBackground_8cpp_source.html#l00219">Mantid::CurveFitting::Algorithms::VesuvioCalculateGammaBackground::calculateSpectrumFromDetector()</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00214">convert()</a>, <a class="el" href="../../df/d26/VesuvioResolution_8cpp_source.html#l00084">Mantid::CurveFitting::Functions::VesuvioResolution::setMatrixWorkspace()</a>, and <a class="el" href="../../d6/de7/ComptonPeakProfile_8cpp_source.html#l00091">Mantid::CurveFitting::Functions::ComptonPeakProfile::setWorkspace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcb/ComptonProfile_8cpp_source.html#l00089">Mantid::CurveFitting::Functions::ComptonProfile::buildCaches()</a>, <a class="el" href="../../da/d36/VesuvioCalculateGammaBackground_8cpp_source.html#l00243">Mantid::CurveFitting::Algorithms::VesuvioCalculateGammaBackground::calculateBackgroundFromFoils()</a>, <a class="el" href="../../d8/d18/VesuvioCalculateMS_8cpp_source.html#l00286">Mantid::CurveFitting::Algorithms::VesuvioCalculateMS::calculateMS()</a>, <a class="el" href="../../da/d36/VesuvioCalculateGammaBackground_8cpp_source.html#l00219">Mantid::CurveFitting::Algorithms::VesuvioCalculateGammaBackground::calculateSpectrumFromDetector()</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00244">convert()</a>, <a class="el" href="../../df/d26/VesuvioResolution_8cpp_source.html#l00084">Mantid::CurveFitting::Functions::VesuvioResolution::setMatrixWorkspace()</a>, and <a class="el" href="../../d6/de7/ComptonPeakProfile_8cpp_source.html#l00091">Mantid::CurveFitting::Functions::ComptonPeakProfile::setWorkspace()</a>.</p>
 
 </div>
 </div>
@@ -1085,7 +1152,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a6dd0fd7bdcd432ca32c33f4a4c26583c">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00145">145</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00175">175</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01818">Mantid::API::Algorithm::declareProperty()</a>, <a class="el" href="../../d3/d68/Property_8h_source.html#l00054">Mantid::Kernel::Direction::Input</a>, <a class="el" href="../../dd/da9/IWorkspaceProperty_8h_source.html#l00020">Mantid::API::PropertyMode::Optional</a>, and <a class="el" href="../../d3/d68/Property_8h_source.html#l00055">Mantid::Kernel::Direction::Output</a>.</p>
 
@@ -1119,9 +1186,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#af7d20753d77a5d2875edf5a37eaef39f">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00090">getComponentParameter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00128">getComponentParameter()</a>, and <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00093">getComponentParameter()</a>.</p>
 
 </div>
 </div>
@@ -1151,11 +1218,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Check and store appropriate input data. </p>
 <p>Caches input details for the peak information. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00253">253</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00283">283</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00281">cacheInstrumentGeometry()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01981">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00083">m_inputWS</a>, and <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00085">m_mass</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00311">cacheInstrumentGeometry()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01981">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00088">m_inputWS</a>, and <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00090">m_mass</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00169">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00199">exec()</a>.</p>
 
 </div>
 </div>
@@ -1186,7 +1253,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#adfff14154e5762875923c9a4f3679b51">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00051">51</a> of file <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html">ConvertToYSpace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00053">53</a> of file <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html">ConvertToYSpace.h</a>.</p>
 
 </div>
 </div>
@@ -1218,7 +1285,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#ac1fab4b33f78654eccab880db81f14c0">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00048">48</a> of file <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html">ConvertToYSpace.cpp</a>.</p>
 
 </div>
 </div>
@@ -1245,9 +1312,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Input workspace. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00083">83</a> of file <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html">ConvertToYSpace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00088">88</a> of file <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html">ConvertToYSpace.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00281">cacheInstrumentGeometry()</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00214">convert()</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00262">createOutputWorkspace()</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00169">exec()</a>, and <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00253">retrieveInputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00311">cacheInstrumentGeometry()</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00244">convert()</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00292">createOutputWorkspace()</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00199">exec()</a>, and <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00283">retrieveInputs()</a>.</p>
 
 </div>
 </div>
@@ -1273,9 +1340,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Source-sample distance. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00087">87</a> of file <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html">ConvertToYSpace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00092">92</a> of file <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html">ConvertToYSpace.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00281">cacheInstrumentGeometry()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00311">cacheInstrumentGeometry()</a>.</p>
 
 </div>
 </div>
@@ -1301,9 +1368,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The input mass in AMU. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00085">85</a> of file <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html">ConvertToYSpace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00090">90</a> of file <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html">ConvertToYSpace.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00214">convert()</a>, and <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00253">retrieveInputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00244">convert()</a>, and <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00283">retrieveInputs()</a>.</p>
 
 </div>
 </div>
@@ -1329,9 +1396,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Output workspace. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00092">92</a> of file <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html">ConvertToYSpace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00097">97</a> of file <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html">ConvertToYSpace.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00214">convert()</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00262">createOutputWorkspace()</a>, and <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00169">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00244">convert()</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00292">createOutputWorkspace()</a>, and <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00199">exec()</a>.</p>
 
 </div>
 </div>
@@ -1355,9 +1422,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00093">93</a> of file <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html">ConvertToYSpace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00098">98</a> of file <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html">ConvertToYSpace.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00214">convert()</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00262">createOutputWorkspace()</a>, and <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00169">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00244">convert()</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00292">createOutputWorkspace()</a>, and <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00199">exec()</a>.</p>
 
 </div>
 </div>
@@ -1383,9 +1450,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Sample position. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00089">89</a> of file <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html">ConvertToYSpace.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html#l00094">94</a> of file <a class="el" href="../../d4/dd3/ConvertToYSpace_8h_source.html">ConvertToYSpace.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00281">cacheInstrumentGeometry()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00311">cacheInstrumentGeometry()</a>.</p>
 
 </div>
 </div>

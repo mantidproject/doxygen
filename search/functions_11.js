@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['q_0',['q',['../db/da6/structMantid_1_1Algorithms_1_1SofQCommon.html#ad13331106c56f0d776bffc370a04ac39',1,'Mantid::Algorithms::SofQCommon']]],
+  ['q_0',['q',['../db/da6/structMantid_1_1Algorithms_1_1SofQCommon.html#a0eb64d0172b7de84ba90fb81d62df921',1,'Mantid::Algorithms::SofQCommon::q(const double deltaE, const double twoTheta, const double efixed) const'],['../db/da6/structMantid_1_1Algorithms_1_1SofQCommon.html#ad13331106c56f0d776bffc370a04ac39',1,'Mantid::Algorithms::SofQCommon::q(const double deltaE, const double twoTheta, const Geometry::IDetector *det) const']]],
   ['q1d2_1',['Q1D2',['../d3/d98/classMantid_1_1Algorithms_1_1Q1D2.html#a55c9b85c3322fdb336445b9361dff9d6',1,'Mantid::Algorithms::Q1D2']]],
   ['q3d_2',['Q3D',['../d8/de0/namespaceMantid_1_1MDAlgorithms.html#a7f7d0517f9ee7e5ff5c39270c817ea95',1,'Mantid::MDAlgorithms']]],
   ['q_5fdir_3',['q_dir',['../d7/da7/classMantid_1_1Algorithms_1_1DiscusMultipleScatteringCorrection.html#a6c5a014b199db670c1f9624c861e323e',1,'Mantid::Algorithms::DiscusMultipleScatteringCorrection']]],
