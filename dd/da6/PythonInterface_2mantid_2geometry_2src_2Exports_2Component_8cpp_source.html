@@ -122,8 +122,8 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Deprecation wrappers. Absolute/relative placement is available from the</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// index-based ComponentInfo access layer. See the &#39;Instrument Access via</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// SpectrumInfo, DetectorInfo, ComponentInfo&#39; concept page. (The parameter and</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// description accessors are intentionally not deprecated yet; they have no</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// ComponentInfo equivalent and await the parameter-map redesign.)</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// description accessors are not deprecated yet, although ComponentInfo now has</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// an equivalent of each, taking a component index.)</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><a class="code hl_class" href="../../d7/db9/classMantid_1_1Kernel_1_1Quat.html">Mantid::Kernel::Quat</a> getRotationDeprecated(<span class="keyword">const</span> <a class="code hl_class" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html">Component</a> &amp;self) {</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keywordflow">if</span> (PyErr_Warn(PyExc_DeprecationWarning,</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                 <span class="stringliteral">&quot;&#39;Component.getRotation()&#39; is deprecated in Mantid 7.0, &quot;</span></div>
