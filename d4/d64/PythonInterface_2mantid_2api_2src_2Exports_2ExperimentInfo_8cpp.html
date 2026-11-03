@@ -102,8 +102,11 @@ $(function() {
 <code>#include &quot;<a class="el" href="../../dd/dae/IDTypes_8h_source.html">MantidGeometry/IDTypes.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/d05/ComponentInfo_8h_source.html">MantidGeometry/Instrument/ComponentInfo.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d7/d30/DetectorInfo_8h_source.html">MantidGeometry/Instrument/DetectorInfo.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/d76/Goniometer_8h_source.html">MantidGeometry/Instrument/Goniometer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d9/dd1/InstrumentMetadata_8h_source.html">MantidGeometry/Instrument/InstrumentMetadata.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dc/daa/Instrument__fwd_8h_source.html">MantidGeometry/Instrument_fwd.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/df5/IObject_8h_source.html">MantidGeometry/Objects/IObject.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/dfe/ShapeRotation_8h_source.html">MantidGeometry/Objects/ShapeRotation.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../db/d9d/WarningSuppressions_8h_source.html">MantidKernel/WarningSuppressions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dd/d97/PySequenceToVector_8h_source.html">MantidPythonInterface/core/Converters/PySequenceToVector.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/d42/ToPyList_8h_source.html">MantidPythonInterface/core/Converters/ToPyList.h</a>&quot;</code><br />
@@ -145,9 +148,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html#l00099">99</a> of file <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html">ExperimentInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html#l00108">108</a> of file <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html">ExperimentInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00894">Mantid::API::ExperimentInfo::baseComponentInfo()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00871">Mantid::API::ExperimentInfo::componentInfo()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00800">Mantid::API::ExperimentInfo::detectorInfo()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00646">Mantid::API::ExperimentInfo::getEFixed()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00623">Mantid::API::ExperimentInfo::getEMode()</a>, <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html#l00048">getInstrumentDeprecated()</a>, <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00155">Mantid::API::InstrumentFileFinder::getInstrumentFilename()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00928">Mantid::API::ExperimentInfo::getInstrumentName()</a>, <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html#l00041">getResourceFilenames()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00594">Mantid::API::ExperimentInfo::getRunNumber()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00523">Mantid::API::ExperimentInfo::mutableRun()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00505">Mantid::API::ExperimentInfo::mutableSample()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00359">Mantid::API::ExperimentInfo::populateInstrumentParameters()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00513">Mantid::API::ExperimentInfo::run()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00495">Mantid::API::ExperimentInfo::sample()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00726">Mantid::API::ExperimentInfo::setEFixed()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00822">Mantid::API::ExperimentInfo::spectrumInfo()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00894">Mantid::API::ExperimentInfo::baseComponentInfo()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00871">Mantid::API::ExperimentInfo::componentInfo()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00800">Mantid::API::ExperimentInfo::detectorInfo()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00646">Mantid::API::ExperimentInfo::getEFixed()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00623">Mantid::API::ExperimentInfo::getEMode()</a>, <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html#l00051">getInstrumentDeprecated()</a>, <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00155">Mantid::API::InstrumentFileFinder::getInstrumentFilename()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00928">Mantid::API::ExperimentInfo::getInstrumentName()</a>, <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html#l00044">getResourceFilenames()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00594">Mantid::API::ExperimentInfo::getRunNumber()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00523">Mantid::API::ExperimentInfo::mutableRun()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00505">Mantid::API::ExperimentInfo::mutableSample()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00359">Mantid::API::ExperimentInfo::populateInstrumentParameters()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00513">Mantid::API::ExperimentInfo::run()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00495">Mantid::API::ExperimentInfo::sample()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00726">Mantid::API::ExperimentInfo::setEFixed()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00822">Mantid::API::ExperimentInfo::spectrumInfo()</a>.</p>
 
 </div>
 </div>
@@ -168,11 +171,11 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>TODO Uncomment this block for <a class="el" href="../../d8/d8e/namespaceMantid.html" title="Helper class which provides the Collimation Length for SANS instruments.">Mantid</a> 7.1 if (PyErr_Warn(PyExc_DeprecationWarning, "'ExperimentInfo.getInstrument()' is deprecated in Mantid 7.0. " "Use the componentInfo(), detectorInfo() and spectrumInfo() access layers instead. " "See the 'Instrument Access via SpectrumInfo, DetectorInfo, ComponentInfo' concept page, " "located at: https://docs.mantidproject.org/nightly/concepts/InstrumentAccessLayers.html") &lt; 0) throw boost::python::error_already_set();</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html#l00048">48</a> of file <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html">ExperimentInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html">ExperimentInfo.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00231">Mantid::API::ExperimentInfo::getInstrument()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html#l00099">export_ExperimentInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html#l00108">export_ExperimentInfo()</a>.</p>
 
 </div>
 </div>
@@ -202,7 +205,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html#l00060">60</a> of file <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html">ExperimentInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html#l00063">63</a> of file <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html">ExperimentInfo.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00155">Mantid::API::InstrumentFileFinder::getInstrumentFilename()</a>.</p>
 
@@ -248,11 +251,11 @@ Functions</h2></td></tr>
 
 <p>Converter from C++ signature to python signature. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html">ExperimentInfo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html#l00044">44</a> of file <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html">ExperimentInfo.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../dd/d17/API_2src_2InstrumentFileFinder_8cpp_source.html#l00266">Mantid::API::InstrumentFileFinder::getResourceFilenames()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html#l00099">export_ExperimentInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d64/PythonInterface_2mantid_2api_2src_2Exports_2ExperimentInfo_8cpp_source.html#l00108">export_ExperimentInfo()</a>.</p>
 
 </div>
 </div>

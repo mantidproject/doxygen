@@ -115,6 +115,9 @@ Inheritance diagram for Mantid::Geometry::MeshObject:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a172a67cb4ab6a16b67809b5dc851609f" id="r_a172a67cb4ab6a16b67809b5dc851609f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d16/classMantid_1_1Geometry_1_1MeshObject.html#a172a67cb4ab6a16b67809b5dc851609f">bakeGoniometerRotation</a> (const <a class="el" href="../../dc/da6/classMantid_1_1Kernel_1_1Matrix.html">Kernel::Matrix</a>&lt; double &gt; &amp;)</td></tr>
+<tr class="memdesc:a172a67cb4ab6a16b67809b5dc851609f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate the vertices and record it as a goniometer bake - only for a move into the lab frame.  <br /></td></tr>
+<tr class="separator:a172a67cb4ab6a16b67809b5dc851609f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac16cc91ce2b08b7c11e9f66384e4a661" id="r_ac16cc91ce2b08b7c11e9f66384e4a661"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d16/classMantid_1_1Geometry_1_1MeshObject.html#ac16cc91ce2b08b7c11e9f66384e4a661">calcValidType</a> (const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;Pt, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;uVec) const</td></tr>
 <tr class="memdesc:ac16cc91ce2b08b7c11e9f66384e4a661"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate if a point PT is a valid point on the track.  <br /></td></tr>
 <tr class="separator:ac16cc91ce2b08b7c11e9f66384e4a661"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,6 +138,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a090025799f8c07e416e204c4d6e60776" id="r_a090025799f8c07e416e204c4d6e60776"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d16/classMantid_1_1Geometry_1_1MeshObject.html#a090025799f8c07e416e204c4d6e60776">generatePointInObject</a> (<a class="el" href="../../d3/d6d/classMantid_1_1Kernel_1_1PseudoRandomNumberGenerator.html">Kernel::PseudoRandomNumberGenerator</a> &amp;rng, const size_t) const override</td></tr>
 <tr class="memdesc:a090025799f8c07e416e204c4d6e60776"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select a random point within the object.  <br /></td></tr>
 <tr class="separator:a090025799f8c07e416e204c4d6e60776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafe2c41224bfb48422d8fd179777d43c" id="r_aafe2c41224bfb48422d8fd179777d43c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../dc/da6/classMantid_1_1Kernel_1_1Matrix.html">Kernel::Matrix</a>&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d16/classMantid_1_1Geometry_1_1MeshObject.html#aafe2c41224bfb48422d8fd179777d43c">getAppliedRotation</a> () const override</td></tr>
+<tr class="memdesc:aafe2c41224bfb48422d8fd179777d43c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The goniometer rotation baked into this shape, i.e.  <br /></td></tr>
+<tr class="separator:aafe2c41224bfb48422d8fd179777d43c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a8070968291b00450a6284426bfb3a2" id="r_a3a8070968291b00450a6284426bfb3a2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d9/d19/classMantid_1_1Geometry_1_1BoundingBox.html">BoundingBox</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d16/classMantid_1_1Geometry_1_1MeshObject.html#a3a8070968291b00450a6284426bfb3a2">getBoundingBox</a> () const override</td></tr>
 <tr class="memdesc:a3a8070968291b00450a6284426bfb3a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return cached value of axis-aligned bounding box.  <br /></td></tr>
 <tr class="separator:a3a8070968291b00450a6284426bfb3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,7 +208,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac897d819c7e2df6c5f5a44a6fbac7253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator.  <br /></td></tr>
 <tr class="separator:ac897d819c7e2df6c5f5a44a6fbac7253"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4f1a3dfe0fc3365bc36c52ea48b7643" id="r_ab4f1a3dfe0fc3365bc36c52ea48b7643"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d16/classMantid_1_1Geometry_1_1MeshObject.html#ab4f1a3dfe0fc3365bc36c52ea48b7643">rotate</a> (const <a class="el" href="../../dc/da6/classMantid_1_1Kernel_1_1Matrix.html">Kernel::Matrix</a>&lt; double &gt; &amp;)</td></tr>
-<tr class="memdesc:ab4f1a3dfe0fc3365bc36c52ea48b7643"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate the mesh according to the supplied rotation matrix.  <br /></td></tr>
+<tr class="memdesc:ab4f1a3dfe0fc3365bc36c52ea48b7643"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate the vertices within the shape's own frame, leaving <a class="el" href="../../d9/d16/classMantid_1_1Geometry_1_1MeshObject.html#aafe2c41224bfb48422d8fd179777d43c" title="The goniometer rotation baked into this shape, i.e.">getAppliedRotation()</a> unchanged.  <br /></td></tr>
 <tr class="separator:ab4f1a3dfe0fc3365bc36c52ea48b7643"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50ff0631751c285cc51045ec443f7837" id="r_a50ff0631751c285cc51045ec443f7837"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d16/classMantid_1_1Geometry_1_1MeshObject.html#a50ff0631751c285cc51045ec443f7837">saveNexus</a> (Nexus::File *file, const std::string &amp;<a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>) const</td></tr>
 <tr class="memdesc:a50ff0631751c285cc51045ec443f7837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save mesh to an NXoff_geometry group in a NeXus file.  <br /></td></tr>
@@ -210,6 +216,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6494c22d9ca6afc25176c4de680291a5" id="r_a6494c22d9ca6afc25176c4de680291a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d16/classMantid_1_1Geometry_1_1MeshObject.html#a6494c22d9ca6afc25176c4de680291a5">scale</a> (const double scaleFactor)</td></tr>
 <tr class="memdesc:a6494c22d9ca6afc25176c4de680291a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale the mesh according to the supplied scale factor.  <br /></td></tr>
 <tr class="separator:a6494c22d9ca6afc25176c4de680291a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a049cc3ddbd48643d0a15efb2100c8fa9" id="r_a049cc3ddbd48643d0a15efb2100c8fa9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d16/classMantid_1_1Geometry_1_1MeshObject.html#a049cc3ddbd48643d0a15efb2100c8fa9">setAppliedGoniometerRotation</a> (const <a class="el" href="../../dc/da6/classMantid_1_1Kernel_1_1Matrix.html">Kernel::Matrix</a>&lt; double &gt; &amp;)</td></tr>
+<tr class="memdesc:a049cc3ddbd48643d0a15efb2100c8fa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record a bake without touching the vertices, for when they are already rotated - <a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html" title="Header for a base Nexus::Exception.">Nexus</a> load.  <br /></td></tr>
+<tr class="separator:a049cc3ddbd48643d0a15efb2100c8fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af02ec7b620292bb4714138ea3ec747d3" id="r_af02ec7b620292bb4714138ea3ec747d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d16/classMantid_1_1Geometry_1_1MeshObject.html#af02ec7b620292bb4714138ea3ec747d3">setGeometryHandler</a> (const std::shared_ptr&lt; <a class="el" href="../../de/d9b/classMantid_1_1Geometry_1_1GeometryHandler.html">GeometryHandler</a> &gt; &amp;h)</td></tr>
 <tr class="memdesc:af02ec7b620292bb4714138ea3ec747d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html">Geometry</a> Handler.  <br /></td></tr>
 <tr class="separator:af02ec7b620292bb4714138ea3ec747d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,6 +278,9 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a8a10dbf80f9b6b6747d1dcc8d1ed63b9" id="r_a8a10dbf80f9b6b6747d1dcc8d1ed63b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/da6/classMantid_1_1Kernel_1_1Matrix.html">Kernel::Matrix</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d16/classMantid_1_1Geometry_1_1MeshObject.html#a8a10dbf80f9b6b6747d1dcc8d1ed63b9">m_appliedRotation</a> {3, 3, true}</td></tr>
+<tr class="memdesc:a8a10dbf80f9b6b6747d1dcc8d1ed63b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">How far the mesh has been baked out of the frame its vertices were defined in.  <br /></td></tr>
+<tr class="separator:a8a10dbf80f9b6b6747d1dcc8d1ed63b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac45d02f8edf03cc90dc81e4ff36f37b2" id="r_ac45d02f8edf03cc90dc81e4ff36f37b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d19/classMantid_1_1Geometry_1_1BoundingBox.html">BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d16/classMantid_1_1Geometry_1_1MeshObject.html#ac45d02f8edf03cc90dc81e4ff36f37b2">m_boundingBox</a></td></tr>
 <tr class="memdesc:ac45d02f8edf03cc90dc81e4ff36f37b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache for object's bounding box.  <br /></td></tr>
 <tr class="separator:ac45d02f8edf03cc90dc81e4ff36f37b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -443,6 +455,31 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a172a67cb4ab6a16b67809b5dc851609f" name="a172a67cb4ab6a16b67809b5dc851609f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a172a67cb4ab6a16b67809b5dc851609f">&#9670;&#160;</a></span>bakeGoniometerRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mantid::Geometry::MeshObject::bakeGoniometerRotation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dc/da6/classMantid_1_1Kernel_1_1Matrix.html">Kernel::Matrix</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rotationMatrix</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rotate the vertices and record it as a goniometer bake - only for a move into the lab frame. </p>
+<p>The later bake goes on the outside - see <a class="el" href="../../de/da6/classMantid_1_1Geometry_1_1IObject.html#a0b5b3fb2757dc0ceb137de9d51448283" title="The goniometer rotation baked into this shape, i.e.">IObject::getAppliedRotation</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00487">487</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00199">m_appliedRotation</a>, and <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00481">rotate()</a>.</p>
+
+</div>
+</div>
 <a id="ac16cc91ce2b08b7c11e9f66384e4a661" name="ac16cc91ce2b08b7c11e9f66384e4a661"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac16cc91ce2b08b7c11e9f66384e4a661">&#9670;&#160;</a></span>calcValidType()</h2>
 
@@ -629,7 +666,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00445">445</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00169">m_handler</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00179">m_handler</a>.</p>
 
 </div>
 </div>
@@ -747,6 +784,39 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aafe2c41224bfb48422d8fd179777d43c" name="aafe2c41224bfb48422d8fd179777d43c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafe2c41224bfb48422d8fd179777d43c">&#9670;&#160;</a></span>getAppliedRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../dc/da6/classMantid_1_1Kernel_1_1Matrix.html">Kernel::Matrix</a>&lt; double &gt; &amp; Mantid::Geometry::MeshObject::getAppliedRotation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The goniometer rotation baked into this shape, i.e. </p>
+<p>how far it has been turned into the lab frame.</p>
+<p>CopySample bakes the goniometer in but SetGoniometer leaves the shape alone, so this is what stops getLabFrameShape rotating a shape twice. Rotations within the shape's own frame (LoadSampleShape orientation, rotate-all and rotate tags, RotateSampleShape) are excluded, so identity means the shape is in its own frame. Successive bakes compose with the later one outermost. </p>
+
+<p>Reimplemented from <a class="el" href="../../de/da6/classMantid_1_1Geometry_1_1IObject.html#a0b5b3fb2757dc0ceb137de9d51448283">Mantid::Geometry::IObject</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00148">148</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
+
+</div>
+</div>
 <a id="a3a8070968291b00450a6284426bfb3a2" name="a3a8070968291b00450a6284426bfb3a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3a8070968291b00450a6284426bfb3a2">&#9670;&#160;</a></span>getBoundingBox() <span class="overload">[1/2]</span></h2>
 
@@ -778,7 +848,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00344">344</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d60/MeshObjectCommon_8cpp_source.html#l00207">Mantid::Geometry::MeshObjectCommon::getBoundingBox()</a>, <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00163">m_boundingBox</a>, and <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00185">m_vertices</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d60/MeshObjectCommon_8cpp_source.html#l00207">Mantid::Geometry::MeshObjectCommon::getBoundingBox()</a>, <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00173">m_boundingBox</a>, and <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00195">m_vertices</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d68/PythonInterface_2mantid_2geometry_2src_2Exports_2MeshObject_8cpp_source.html#l00050">export_MeshObject()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00378">generatePointInObject()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00353">getPointInObject()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00148">interceptSurface()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00113">isOnSide()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00072">isValid()</a>, and <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00315">volume()</a>.</p>
 
@@ -860,7 +930,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00264">264</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d60/MeshObjectCommon_8cpp_source.html#l00207">Mantid::Geometry::MeshObjectCommon::getBoundingBox()</a>, <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00163">m_boundingBox</a>, and <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00185">m_vertices</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d60/MeshObjectCommon_8cpp_source.html#l00207">Mantid::Geometry::MeshObjectCommon::getBoundingBox()</a>, <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00173">m_boundingBox</a>, and <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00195">m_vertices</a>.</p>
 
 </div>
 </div>
@@ -893,7 +963,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00467">467</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00169">m_handler</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00179">m_handler</a>.</p>
 
 </div>
 </div>
@@ -988,7 +1058,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../de/da6/classMantid_1_1Geometry_1_1IObject.html#ad03b1cc44909124b2ec6ab069192baf1">Mantid::Geometry::IObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00075">75</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00079">79</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
 
 </div>
 </div>
@@ -1048,9 +1118,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../de/da6/classMantid_1_1Geometry_1_1IObject.html#a1167b8fd3210611788dd38275d36b2e7">Mantid::Geometry::IObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00566">566</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00584">584</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00155">height</a>, <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00169">m_handler</a>, and <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3ba2278004a12e3bb9c7a95950447015e7f">Mantid::Geometry::detail::ShapeInfo::NOSHAPE</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00155">height</a>, <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00179">m_handler</a>, and <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3ba2278004a12e3bb9c7a95950447015e7f">Mantid::Geometry::detail::ShapeInfo::NOSHAPE</a>.</p>
 
 </div>
 </div>
@@ -1145,7 +1215,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00222">222</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00184">m_triangles</a>, <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00185">m_vertices</a>, and <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00050">Mantid::Kernel::V3D::size()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00194">m_triangles</a>, <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00195">m_vertices</a>, and <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00050">Mantid::Kernel::V3D::size()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00177">distance()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00199">getIntersections()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00274">solidAngle()</a>, and <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00315">volume()</a>.</p>
 
@@ -1168,11 +1238,11 @@ Private Attributes</h2></td></tr>
 
 <p>get faces </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00540">540</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00558">558</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00184">m_triangles</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00194">m_triangles</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d90/SaveSampleEnvironmentAndShape_8cpp_source.html#l00147">Mantid::DataHandling::SaveSampleEnvironmentAndShape::addMeshToVector()</a>, <a class="el" href="../../d4/d90/SaveSampleEnvironmentAndShape_8cpp_source.html#l00164">Mantid::DataHandling::SaveSampleEnvironmentAndShape::addMeshToVector()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00577">saveNexus()</a>, and <a class="el" href="../../dd/d0e/Mantid3MFFileIO_8cpp_source.html#l00240">Mantid::DataHandling::Mantid3MFFileIO::writeMeshObject()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d90/SaveSampleEnvironmentAndShape_8cpp_source.html#l00147">Mantid::DataHandling::SaveSampleEnvironmentAndShape::addMeshToVector()</a>, <a class="el" href="../../d4/d90/SaveSampleEnvironmentAndShape_8cpp_source.html#l00164">Mantid::DataHandling::SaveSampleEnvironmentAndShape::addMeshToVector()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00595">saveNexus()</a>, and <a class="el" href="../../dd/d0e/Mantid3MFFileIO_8cpp_source.html#l00240">Mantid::DataHandling::Mantid3MFFileIO::writeMeshObject()</a>.</p>
 
 </div>
 </div>
@@ -1193,9 +1263,9 @@ Private Attributes</h2></td></tr>
 
 <p>get vertices in V3D form </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00555">555</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00573">573</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00185">m_vertices</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00195">m_vertices</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d4/d90/SaveSampleEnvironmentAndShape_8cpp_source.html#l00147">Mantid::DataHandling::SaveSampleEnvironmentAndShape::addMeshToVector()</a>, <a class="el" href="../../d4/d90/SaveSampleEnvironmentAndShape_8cpp_source.html#l00164">Mantid::DataHandling::SaveSampleEnvironmentAndShape::addMeshToVector()</a>, and <a class="el" href="../../dd/d0e/Mantid3MFFileIO_8cpp_source.html#l00240">Mantid::DataHandling::Mantid3MFFileIO::writeMeshObject()</a>.</p>
 
@@ -1218,11 +1288,11 @@ Private Attributes</h2></td></tr>
 
 <p>get vertices </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00550">550</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00568">568</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d60/MeshObjectCommon_8cpp_source.html#l00019">Mantid::Geometry::MeshObjectCommon::getVertices()</a>, and <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00185">m_vertices</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d60/MeshObjectCommon_8cpp_source.html#l00019">Mantid::Geometry::MeshObjectCommon::getVertices()</a>, and <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00195">m_vertices</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00577">saveNexus()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00595">saveNexus()</a>.</p>
 
 </div>
 </div>
@@ -1257,7 +1327,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00535">numberOfTriangles()</a>, and <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00545">numberOfVertices()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00553">numberOfTriangles()</a>, and <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00563">numberOfVertices()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d4/d90/SaveSampleEnvironmentAndShape_8cpp_source.html#l00070">Mantid::DataHandling::SaveSampleEnvironmentAndShape::exec()</a>.</p>
 
@@ -1288,7 +1358,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../de/da6/classMantid_1_1Geometry_1_1IObject.html#a9fedada8083ba25ba99a1004859e4333">Mantid::Geometry::IObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00073">73</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00077">77</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/d0e/Mantid3MFFileIO_8cpp_source.html#l00240">Mantid::DataHandling::Mantid3MFFileIO::writeMeshObject()</a>.</p>
 
@@ -1323,7 +1393,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00457">457</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00169">m_handler</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00179">m_handler</a>.</p>
 
 </div>
 </div>
@@ -1352,7 +1422,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/d60/MeshObjectCommon_8cpp_source.html#l00194">Mantid::Geometry::MeshObjectCommon::checkVertexLimit()</a>, <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00169">m_handler</a>, and <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00185">m_vertices</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d60/MeshObjectCommon_8cpp_source.html#l00194">Mantid::Geometry::MeshObjectCommon::checkVertexLimit()</a>, <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00179">m_handler</a>, and <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00195">m_vertices</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00031">MeshObject()</a>, and <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00024">MeshObject()</a>.</p>
 
@@ -1528,9 +1598,9 @@ Private Attributes</h2></td></tr>
 
 <p>Load mesh from an NXoff_geometry group in a NeXus file. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00591">591</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00614">614</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, and <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00049">material()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00049">material()</a>, and <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>.</p>
 
 </div>
 </div>
@@ -1562,9 +1632,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00049">49</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00187">m_material</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00197">m_material</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00591">loadNexus()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00054">setMaterial()</a>, and <a class="el" href="../../dd/d0e/Mantid3MFFileIO_8cpp_source.html#l00240">Mantid::DataHandling::Mantid3MFFileIO::writeMeshObject()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00614">loadNexus()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00054">setMaterial()</a>, and <a class="el" href="../../dd/d0e/Mantid3MFFileIO_8cpp_source.html#l00240">Mantid::DataHandling::Mantid3MFFileIO::writeMeshObject()</a>.</p>
 
 </div>
 </div>
@@ -1585,6 +1655,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Transform the mesh (scale, translate, rotate) according to the supplied transformation matrix. </p>
+<p>Definition-frame only: a general affine may scale, shear or translate, so it cannot be expressed as a goniometer bake at all.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">matrix</td><td>4 x 4 transformation matrix </td></tr>
@@ -1592,9 +1663,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00505">505</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00523">523</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00185">m_vertices</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00375">Mantid::Kernel::Matrix&lt; T &gt;::multiplyPoint()</a>, <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00146">Mantid::Kernel::Matrix&lt; T &gt;::numCols()</a>, and <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00143">Mantid::Kernel::Matrix&lt; T &gt;::numRows()</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00195">m_vertices</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00375">Mantid::Kernel::Matrix&lt; T &gt;::multiplyPoint()</a>, <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00146">Mantid::Kernel::Matrix&lt; T &gt;::numCols()</a>, and <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00143">Mantid::Kernel::Matrix&lt; T &gt;::numRows()</a>.</p>
 
 </div>
 </div>
@@ -1615,11 +1686,11 @@ Private Attributes</h2></td></tr>
 
 <p>Output functions for rendering, may also be used internally. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00535">535</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00553">553</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00184">m_triangles</a>, and <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00050">Mantid::Kernel::V3D::size()</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00194">m_triangles</a>, and <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00050">Mantid::Kernel::V3D::size()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d90/SaveSampleEnvironmentAndShape_8cpp_source.html#l00070">Mantid::DataHandling::SaveSampleEnvironmentAndShape::exec()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00061">hasValidShape()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00577">saveNexus()</a>, and <a class="el" href="../../dd/d0e/Mantid3MFFileIO_8cpp_source.html#l00240">Mantid::DataHandling::Mantid3MFFileIO::writeMeshObject()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d90/SaveSampleEnvironmentAndShape_8cpp_source.html#l00070">Mantid::DataHandling::SaveSampleEnvironmentAndShape::exec()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00061">hasValidShape()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00595">saveNexus()</a>, and <a class="el" href="../../dd/d0e/Mantid3MFFileIO_8cpp_source.html#l00240">Mantid::DataHandling::Mantid3MFFileIO::writeMeshObject()</a>.</p>
 
 </div>
 </div>
@@ -1641,9 +1712,9 @@ Private Attributes</h2></td></tr>
 <p>Read access to mesh object for rendering. </p>
 <p>get number of points </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00545">545</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00563">563</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00185">m_vertices</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00195">m_vertices</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d4/d90/SaveSampleEnvironmentAndShape_8cpp_source.html#l00070">Mantid::DataHandling::SaveSampleEnvironmentAndShape::exec()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00061">hasValidShape()</a>, and <a class="el" href="../../d4/d90/SaveSampleEnvironmentAndShape_8cpp_source.html#l00047">Mantid::DataHandling::SaveSampleEnvironmentAndShape::mergeSampleEnvironmentIntoSingleMesh()</a>.</p>
 
@@ -1693,7 +1764,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Rotate the mesh according to the supplied rotation matrix. </p>
+<p>Rotate the vertices within the shape's own frame, leaving <a class="el" href="../../d9/d16/classMantid_1_1Geometry_1_1MeshObject.html#aafe2c41224bfb48422d8fd179777d43c" title="The goniometer rotation baked into this shape, i.e.">getAppliedRotation()</a> unchanged. </p>
+<p>Rotate the mesh according to the supplied rotation matrix.</p>
+<p>Definition-frame only, so <a class="el" href="../../d9/d16/classMantid_1_1Geometry_1_1MeshObject.html#aafe2c41224bfb48422d8fd179777d43c" title="The goniometer rotation baked into this shape, i.e.">getAppliedRotation()</a> is deliberately left alone. Use bakeGoniometerRotation to move into the lab frame.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rotationMatrix</td><td>Rotation matrix to be applied </td></tr>
@@ -1701,9 +1774,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00477">477</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00481">481</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00185">m_vertices</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00195">m_vertices</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00487">bakeGoniometerRotation()</a>.</p>
 
 </div>
 </div>
@@ -1735,9 +1810,9 @@ Private Attributes</h2></td></tr>
 
 <p>Save mesh to an NXoff_geometry group in a NeXus file. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00577">577</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00595">595</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00540">getTriangles()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00550">getVertices()</a>, <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, and <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00535">numberOfTriangles()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00558">getTriangles()</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00077">Mantid::Kernel::Matrix&lt; T &gt;::getVector()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00568">getVertices()</a>, <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00199">m_appliedRotation</a>, and <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00553">numberOfTriangles()</a>.</p>
 
 </div>
 </div>
@@ -1765,9 +1840,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00495">495</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00509">509</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00185">m_vertices</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00195">m_vertices</a>.</p>
 
 </div>
 </div>
@@ -1813,6 +1888,30 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a049cc3ddbd48643d0a15efb2100c8fa9" name="a049cc3ddbd48643d0a15efb2100c8fa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a049cc3ddbd48643d0a15efb2100c8fa9">&#9670;&#160;</a></span>setAppliedGoniometerRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mantid::Geometry::MeshObject::setAppliedGoniometerRotation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dc/da6/classMantid_1_1Kernel_1_1Matrix.html">Kernel::Matrix</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>bakedRotation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Record a bake without touching the vertices, for when they are already rotated - <a class="el" href="../../db/d55/namespaceMantid_1_1Nexus.html" title="Header for a base Nexus::Exception.">Nexus</a> load. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00492">492</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00199">m_appliedRotation</a>.</p>
+
+</div>
+</div>
 <a id="af02ec7b620292bb4714138ea3ec747d3" name="af02ec7b620292bb4714138ea3ec747d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af02ec7b620292bb4714138ea3ec747d3">&#9670;&#160;</a></span>setGeometryHandler()</h2>
 
@@ -1840,7 +1939,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00435">435</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00169">m_handler</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00179">m_handler</a>.</p>
 
 </div>
 </div>
@@ -1870,7 +1969,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../de/da6/classMantid_1_1Geometry_1_1IObject.html#a7568ce17583cfd421a1ff22d041f6048">Mantid::Geometry::IObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00072">72</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00076">76</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
 
 </div>
 </div>
@@ -1908,7 +2007,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00054">54</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00187">m_material</a>, and <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00049">material()</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00197">m_material</a>, and <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00049">material()</a>.</p>
 
 </div>
 </div>
@@ -1937,7 +2036,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../de/da6/classMantid_1_1Geometry_1_1IObject.html#a994ee856893f1e896b88e7b62dfd05fb">Mantid::Geometry::IObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00557">557</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00575">575</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d2/d16/classMantid_1_1Geometry_1_1detail_1_1ShapeInfo.html#a1ab7c62a646522f9319183fe7aebfc3ba2278004a12e3bb9c7a95950447015e7f">Mantid::Geometry::detail::ShapeInfo::NOSHAPE</a>.</p>
 
@@ -1968,7 +2067,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../de/da6/classMantid_1_1Geometry_1_1IObject.html#a393dd7a99b3f641fd97bdbc8179076b2">Mantid::Geometry::IObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00559">559</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00577">577</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
 </div>
 </div>
@@ -2063,7 +2162,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00302">302</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00187">m_material</a>, <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00184">m_triangles</a>, <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00185">m_vertices</a>, and <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00274">solidAngle()</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00197">m_material</a>, <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00194">m_triangles</a>, <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00195">m_vertices</a>, and <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00274">solidAngle()</a>.</p>
 
 </div>
 </div>
@@ -2091,9 +2190,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00486">486</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00500">500</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00185">m_vertices</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00195">m_vertices</a>.</p>
 
 </div>
 </div>
@@ -2114,7 +2213,7 @@ Private Attributes</h2></td></tr>
 
 <p>Updates the geometry handler if needed. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00528">528</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00546">546</a> of file <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html">MeshObject.cpp</a>.</p>
 
 </div>
 </div>
@@ -2154,6 +2253,34 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8a10dbf80f9b6b6747d1dcc8d1ed63b9" name="a8a10dbf80f9b6b6747d1dcc8d1ed63b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a10dbf80f9b6b6747d1dcc8d1ed63b9">&#9670;&#160;</a></span>m_appliedRotation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/da6/classMantid_1_1Kernel_1_1Matrix.html">Kernel::Matrix</a>&lt;double&gt; Mantid::Geometry::MeshObject::m_appliedRotation {3, 3, true}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How far the mesh has been baked out of the frame its vertices were defined in. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00199">199</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00487">bakeGoniometerRotation()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00595">saveNexus()</a>, and <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00492">setAppliedGoniometerRotation()</a>.</p>
+
+</div>
+</div>
 <a id="ac45d02f8edf03cc90dc81e4ff36f37b2" name="ac45d02f8edf03cc90dc81e4ff36f37b2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac45d02f8edf03cc90dc81e4ff36f37b2">&#9670;&#160;</a></span>m_boundingBox</h2>
 
@@ -2176,7 +2303,7 @@ Private Attributes</h2></td></tr>
 
 <p>Cache for object's bounding box. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00163">163</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00173">173</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00344">getBoundingBox()</a>, and <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00264">getBoundingBox()</a>.</p>
 
@@ -2204,9 +2331,9 @@ Private Attributes</h2></td></tr>
 
 <p><a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html">Geometry</a> Handle for rendering. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00169">169</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00179">179</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00445">draw()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00467">getGeometryHandler()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00566">GetObjectGeom()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00457">initDraw()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00040">initialize()</a>, and <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00435">setGeometryHandler()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00445">draw()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00467">getGeometryHandler()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00584">GetObjectGeom()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00457">initDraw()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00040">initialize()</a>, and <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00435">setGeometryHandler()</a>.</p>
 
 </div>
 </div>
@@ -2232,7 +2359,7 @@ Private Attributes</h2></td></tr>
 
 <p>string to return as ID </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00175">175</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00185">185</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
 
 </div>
 </div>
@@ -2258,7 +2385,7 @@ Private Attributes</h2></td></tr>
 
 <p>material composition </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00187">187</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00197">197</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00049">material()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00054">setMaterial()</a>, and <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00302">solidAngle()</a>.</p>
 
@@ -2284,7 +2411,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00172">172</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00182">182</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
 
 </div>
 </div>
@@ -2310,7 +2437,7 @@ Private Attributes</h2></td></tr>
 
 <p>Tolerence distance. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00166">166</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00176">176</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
 
 </div>
 </div>
@@ -2336,9 +2463,9 @@ Private Attributes</h2></td></tr>
 
 <p>Contents Triangles are specified by indices into a list of vertices. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00184">184</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00194">194</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00222">getTriangle()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00540">getTriangles()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00535">numberOfTriangles()</a>, and <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00302">solidAngle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00222">getTriangle()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00558">getTriangles()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00553">numberOfTriangles()</a>, and <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00302">solidAngle()</a>.</p>
 
 </div>
 </div>
@@ -2362,9 +2489,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00185">185</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00195">195</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00344">getBoundingBox()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00264">getBoundingBox()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00222">getTriangle()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00555">getV3Ds()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00550">getVertices()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00040">initialize()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00505">multiply()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00545">numberOfVertices()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00477">rotate()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00495">scale()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00302">solidAngle()</a>, and <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00486">translate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00344">getBoundingBox()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00264">getBoundingBox()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00222">getTriangle()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00573">getV3Ds()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00568">getVertices()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00040">initialize()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00523">multiply()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00563">numberOfVertices()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00481">rotate()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00509">scale()</a>, <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00302">solidAngle()</a>, and <a class="el" href="../../d1/d29/Geometry_2src_2Objects_2MeshObject_8cpp_source.html#l00500">translate()</a>.</p>
 
 </div>
 </div>
@@ -2390,7 +2517,7 @@ Private Attributes</h2></td></tr>
 
 <p>a pointer to a class for reading from the geometry cache </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00178">178</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00188">188</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
 
 </div>
 </div>
@@ -2416,7 +2543,7 @@ Private Attributes</h2></td></tr>
 
 <p>a pointer to a class for writing to the geometry cache </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00180">180</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dde/MeshObject_8h_source.html#l00190">190</a> of file <a class="el" href="../../df/dde/MeshObject_8h_source.html">MeshObject.h</a>.</p>
 
 </div>
 </div>
