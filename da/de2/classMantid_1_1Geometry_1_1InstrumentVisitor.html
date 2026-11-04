@@ -133,6 +133,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1f8ed9950dbd707559e4a0b8df7d8c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9ae873582f77bfa0d05f3b344b734fd" id="r_ae9ae873582f77bfa0d05f3b344b734fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de2/classMantid_1_1Geometry_1_1InstrumentVisitor.html#ae9ae873582f77bfa0d05f3b344b734fd">isEmpty</a> () const</td></tr>
 <tr class="separator:ae9ae873582f77bfa0d05f3b344b734fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafcbd6d4f0bdd19599e95182366cd733" id="r_aafcbd6d4f0bdd19599e95182366cd733"><td class="memItemLeft" align="right" valign="top">std::pair&lt; std::unique_ptr&lt; <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html">ComponentInfo</a> &gt;, std::unique_ptr&lt; <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html">DetectorInfo</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de2/classMantid_1_1Geometry_1_1InstrumentVisitor.html#aafcbd6d4f0bdd19599e95182366cd733">makeWrappers</a> () const</td></tr>
+<tr class="memdesc:aafcbd6d4f0bdd19599e95182366cd733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make the wrappers from the data collected by <a class="el" href="../../da/de2/classMantid_1_1Geometry_1_1InstrumentVisitor.html#a4fc950d2b68c54aa632f02d1558ffca4">walkInstrument()</a>, which must be called first.  <br /></td></tr>
+<tr class="separator:aafcbd6d4f0bdd19599e95182366cd733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21152b47668fb47e31642848849a122a" id="r_a21152b47668fb47e31642848849a122a"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de2/classMantid_1_1Geometry_1_1InstrumentVisitor.html#a21152b47668fb47e31642848849a122a">registerComponentAssembly</a> (const <a class="el" href="../../d7/d36/classMantid_1_1Geometry_1_1ICompAssembly.html">Mantid::Geometry::ICompAssembly</a> &amp;assembly) override</td></tr>
 <tr class="separator:a21152b47668fb47e31642848849a122a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59028c3920b5bf41a67cd80f613ad2ec" id="r_a59028c3920b5bf41a67cd80f613ad2ec"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de2/classMantid_1_1Geometry_1_1InstrumentVisitor.html#a59028c3920b5bf41a67cd80f613ad2ec">registerDetector</a> (const <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html">Mantid::Geometry::IDetector</a> &amp;detector) override</td></tr>
@@ -183,8 +186,6 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ae54ebce654a289395abebff9f8802128" id="r_ae54ebce654a289395abebff9f8802128"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../d8/d24/classMantid_1_1Geometry_1_1ParameterInfo.html">ParameterInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de2/classMantid_1_1Geometry_1_1InstrumentVisitor.html#ae54ebce654a289395abebff9f8802128">makeParameterInfo</a> () const</td></tr>
 <tr class="memdesc:ae54ebce654a289395abebff9f8802128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rekey the <a class="el" href="../../d3/df3/classMantid_1_1Geometry_1_1ParameterMap.html" title="Parameter map iterator typedef.">ParameterMap</a>'s parameters from legacy component pointers to component indices.  <br /></td></tr>
 <tr class="separator:ae54ebce654a289395abebff9f8802128"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafcbd6d4f0bdd19599e95182366cd733" id="r_aafcbd6d4f0bdd19599e95182366cd733"><td class="memItemLeft" align="right" valign="top">std::pair&lt; std::unique_ptr&lt; <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html">ComponentInfo</a> &gt;, std::unique_ptr&lt; <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html">DetectorInfo</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de2/classMantid_1_1Geometry_1_1InstrumentVisitor.html#aafcbd6d4f0bdd19599e95182366cd733">makeWrappers</a> () const</td></tr>
-<tr class="separator:aafcbd6d4f0bdd19599e95182366cd733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d12a373b57fa856eb5975713ecf2274" id="r_a4d12a373b57fa856eb5975713ecf2274"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de2/classMantid_1_1Geometry_1_1InstrumentVisitor.html#a4d12a373b57fa856eb5975713ecf2274">markAsSourceOrSample</a> (<a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html">Mantid::Geometry::IComponent</a> *componentId, const size_t componentIndex)</td></tr>
 <tr class="separator:a4d12a373b57fa856eb5975713ecf2274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -310,7 +311,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00106">106</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00838">Mantid::Geometry::ParameterMap::get()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00060">m_assemblySortedDetectorIndices</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00078">m_componentIdToIndexMap</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00099">m_instrument</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00054">m_orderedDetectorIds</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00102">m_pmap</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00108">m_sampleId</a>, and <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00105">m_sourceId</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00845">Mantid::Geometry::ParameterMap::get()</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#aac4f23e5befd7444c6d54b2e0d64c9a2">Mantid::Geometry::IComponent::getComponentID()</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00060">m_assemblySortedDetectorIndices</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00078">m_componentIdToIndexMap</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00099">m_instrument</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00054">m_orderedDetectorIds</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00102">m_pmap</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00108">m_sampleId</a>, and <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00105">m_sourceId</a>.</p>
 
 </div>
 </div>
@@ -538,7 +539,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00437">437</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00057">m_componentIds</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00078">m_componentIdToIndexMap</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00102">m_pmap</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00153">Mantid::Geometry::ParameterMap::rekey()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00057">m_componentIds</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00078">m_componentIdToIndexMap</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00102">m_pmap</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00160">Mantid::Geometry::ParameterMap::rekey()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00442">makeWrappers()</a>.</p>
 
@@ -549,9 +550,6 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::pair&lt; std::unique_ptr&lt; <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html">ComponentInfo</a> &gt;, std::unique_ptr&lt; <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html">DetectorInfo</a> &gt; &gt; Mantid::Geometry::InstrumentVisitor::makeWrappers </td>
@@ -560,18 +558,16 @@ Private Attributes</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>Make the wrappers from the data collected by <a class="el" href="../../da/de2/classMantid_1_1Geometry_1_1InstrumentVisitor.html#a4fc950d2b68c54aa632f02d1558ffca4">walkInstrument()</a>, which must be called first. </p>
+<p>The <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html" title="Geometry::DetectorInfo is an intermediate step towards a DetectorInfo that is part of Instrument-2....">DetectorInfo</a> shares ownership of the visited instrument. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00442">442</a> of file <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html">InstrumentVisitor.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00400">componentIds()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00414">componentIdToIndexMap()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00422">componentInfo()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00434">detectorIds()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00418">detectorIdToIndexMap()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00429">detectorInfo()</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00099">m_instrument</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00120">m_shapes</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00437">makeParameterInfo()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00894">Mantid::API::ExperimentInfo::baseComponentInfo()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01472">Mantid::Geometry::Instrument::makeBeamline()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01490">Mantid::Geometry::Instrument::makeBeamlineNew()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00460">makeWrappers()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01459">Mantid::Geometry::Instrument::parseTreeAndCacheBeamline()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00894">Mantid::API::ExperimentInfo::baseComponentInfo()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01259">Mantid::Geometry::ParameterMap::buildInstrumentMetadata()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01472">Mantid::Geometry::Instrument::makeBeamline()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01490">Mantid::Geometry::Instrument::makeBeamlineNew()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00460">makeWrappers()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01459">Mantid::Geometry::Instrument::parseTreeAndCacheBeamline()</a>.</p>
 
 </div>
 </div>
@@ -1100,7 +1096,7 @@ Private Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../d9/d32/ParameterMap_8h_source.html#l00055">Mantid::Geometry::ParameterMap::empty()</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00099">m_instrument</a>, <a class="el" href="../../d0/d64/InstrumentVisitor_8h_source.html#l00102">m_pmap</a>, and <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a0fe37346fb9f98e2311cb4706cd08208">Mantid::Geometry::IComponent::registerContents()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00460">makeWrappers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01259">Mantid::Geometry::ParameterMap::buildInstrumentMetadata()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00460">makeWrappers()</a>.</p>
 
 </div>
 </div>
