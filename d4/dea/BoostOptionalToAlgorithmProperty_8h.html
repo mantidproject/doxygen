@@ -98,9 +98,11 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d7/d36/Algorithm_8h_source.html">MantidAPI/Algorithm.h</a>&quot;</code><br />
 <code>#include &quot;MantidAPI/DllConfig.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d5/d0a/Instrument_8h_source.html">MantidGeometry/Instrument.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d05/ComponentInfo_8h_source.html">MantidGeometry/Instrument/ComponentInfo.h</a>&quot;</code><br />
 <code>#include &lt;boost/lexical_cast.hpp&gt;</code><br />
 <code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
 </div>
 <p><a href="../../d4/dea/BoostOptionalToAlgorithmProperty_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -122,6 +124,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a03769e1f31b08b8041cd432c9d17f416"><td class="memTemplItemLeft" align="right" valign="top">MANTID_API_DLL std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a03769e1f31b08b8041cd432c9d17f416">Mantid::API::checkForMandatoryInstrumentDefault</a> (const <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html">Mantid::API::Algorithm</a> *const alg, const std::string &amp;propName, const <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#ab5ea8cc526f9b217659fa38f568f86ef">Mantid::Geometry::Instrument_const_sptr</a> &amp;instrument, const std::string &amp;idf_name)</td></tr>
 <tr class="memdesc:a03769e1f31b08b8041cd432c9d17f416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specializations for std::string.  <br /></td></tr>
 <tr class="separator:a03769e1f31b08b8041cd432c9d17f416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a136476beff8c3f47ced3b85d34491053" id="r_a136476beff8c3f47ced3b85d34491053"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a136476beff8c3f47ced3b85d34491053"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a136476beff8c3f47ced3b85d34491053">Mantid::API::checkForMandatoryInstrumentDefault</a> (<a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html">Mantid::API::Algorithm</a> const *const alg, std::string const &amp;propName, <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html">Mantid::Geometry::ComponentInfo</a> const &amp;componentInfo, std::string const &amp;idf_name)</td></tr>
+<tr class="memdesc:a136476beff8c3f47ced3b85d34491053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for the default values of a mandatory algorithm property associated with the instrument, read from the root component's parameters.  <br /></td></tr>
+<tr class="separator:a136476beff8c3f47ced3b85d34491053"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaff417ef060536fc4716f94da1b3fdbd" id="r_aaff417ef060536fc4716f94da1b3fdbd"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aaff417ef060536fc4716f94da1b3fdbd"><td class="memTemplItemLeft" align="right" valign="top">std::optional&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#aaff417ef060536fc4716f94da1b3fdbd">Mantid::API::checkForOptionalInstrumentDefault</a> (const <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html">Mantid::API::Algorithm</a> *const alg, const std::string &amp;propName, const <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#ab5ea8cc526f9b217659fa38f568f86ef">Mantid::Geometry::Instrument_const_sptr</a> &amp;instrument, const std::string &amp;idf_name)</td></tr>
 <tr class="memdesc:aaff417ef060536fc4716f94da1b3fdbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for the default values of an optional algorithm property associated with an instrument component.  <br /></td></tr>
@@ -129,6 +135,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a5922417d44ebbe9113ac44fb442a1613" id="r_a5922417d44ebbe9113ac44fb442a1613"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
 <tr class="memitem:a5922417d44ebbe9113ac44fb442a1613"><td class="memTemplItemLeft" align="right" valign="top">MANTID_API_DLL std::optional&lt; std::string &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a5922417d44ebbe9113ac44fb442a1613">Mantid::API::checkForOptionalInstrumentDefault</a> (const <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html">Mantid::API::Algorithm</a> *const alg, const std::string &amp;propName, const <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#ab5ea8cc526f9b217659fa38f568f86ef">Mantid::Geometry::Instrument_const_sptr</a> &amp;instrument, const std::string &amp;idf_name)</td></tr>
 <tr class="separator:a5922417d44ebbe9113ac44fb442a1613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abafe883bcbb626b7418b1fc06efb1f06" id="r_abafe883bcbb626b7418b1fc06efb1f06"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:abafe883bcbb626b7418b1fc06efb1f06"><td class="memTemplItemLeft" align="right" valign="top">std::optional&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#abafe883bcbb626b7418b1fc06efb1f06">Mantid::API::checkForOptionalInstrumentDefault</a> (<a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html">Mantid::API::Algorithm</a> const *const alg, std::string const &amp;propName, <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html">Mantid::Geometry::ComponentInfo</a> const &amp;componentInfo, std::string const &amp;idf_name)</td></tr>
+<tr class="memdesc:abafe883bcbb626b7418b1fc06efb1f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for the default values of an optional algorithm property associated with the instrument, read from the root component's parameters.  <br /></td></tr>
+<tr class="separator:abafe883bcbb626b7418b1fc06efb1f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

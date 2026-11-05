@@ -120,9 +120,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7a68dd57f190b39faa7665edc6905087" id="r_a7a68dd57f190b39faa7665edc6905087"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d24/classMantid_1_1Geometry_1_1ParameterInfo.html#a7a68dd57f190b39faa7665edc6905087">addFittingParameter</a> (size_t const componentIndex, std::shared_ptr&lt; <a class="el" href="../../d9/dc5/classMantid_1_1Geometry_1_1Parameter.html">Parameter</a> &gt; const &amp;parameter, std::string const &amp;fittingFunction)</td></tr>
 <tr class="memdesc:a7a68dd57f190b39faa7665edc6905087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a fitting parameter, deduplicating by (name, function) rather than by name alone so that two functions on one component may each declare a parameter of the same short name.  <br /></td></tr>
 <tr class="separator:a7a68dd57f190b39faa7665edc6905087"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b56273061a9d631c2d32c73488e4295" id="r_a8b56273061a9d631c2d32c73488e4295"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d24/classMantid_1_1Geometry_1_1ParameterInfo.html#a8b56273061a9d631c2d32c73488e4295">addLogfileParameter</a> (size_t const componentIndex, std::string const &amp;cacheKey, std::shared_ptr&lt; const <a class="el" href="../../dc/def/classMantid_1_1Geometry_1_1XMLInstrumentParameter.html">XMLInstrumentParameter</a> &gt; parameter)</td></tr>
-<tr class="memdesc:a8b56273061a9d631c2d32c73488e4295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a logfile parameter, replacing any existing one with the same cache key on the same component.  <br /></td></tr>
-<tr class="separator:a8b56273061a9d631c2d32c73488e4295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d4d878ef43f8070f20d31bec3dbd209" id="r_a8d4d878ef43f8070f20d31bec3dbd209"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d24/classMantid_1_1Geometry_1_1ParameterInfo.html#a8d4d878ef43f8070f20d31bec3dbd209">addLogfileParameter</a> (size_t const componentIndex, std::string const &amp;cacheKey, std::shared_ptr&lt; const <a class="el" href="../../dc/def/classMantid_1_1Geometry_1_1XMLInstrumentParameter.html">XMLInstrumentParameter</a> &gt; const &amp;parameter)</td></tr>
+<tr class="memdesc:a8d4d878ef43f8070f20d31bec3dbd209"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a logfile parameter, replacing any existing one with the same cache key on the same component.  <br /></td></tr>
+<tr class="separator:a8d4d878ef43f8070f20d31bec3dbd209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab5ea484eb368d708f01405ca3854d77" id="r_aab5ea484eb368d708f01405ca3854d77"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d24/classMantid_1_1Geometry_1_1ParameterInfo.html#aab5ea484eb368d708f01405ca3854d77">begin</a> () const</td></tr>
 <tr class="memdesc:aab5ea484eb368d708f01405ca3854d77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iteration over (component index, parameters) pairs, in ascending component-index order.  <br /></td></tr>
 <tr class="separator:aab5ea484eb368d708f01405ca3854d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -310,8 +310,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8b56273061a9d631c2d32c73488e4295" name="a8b56273061a9d631c2d32c73488e4295"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b56273061a9d631c2d32c73488e4295">&#9670;&#160;</a></span>addLogfileParameter()</h2>
+<a id="a8d4d878ef43f8070f20d31bec3dbd209" name="a8d4d878ef43f8070f20d31bec3dbd209"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d4d878ef43f8070f20d31bec3dbd209">&#9670;&#160;</a></span>addLogfileParameter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -331,7 +331,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::shared_ptr&lt; const <a class="el" href="../../dc/def/classMantid_1_1Geometry_1_1XMLInstrumentParameter.html">XMLInstrumentParameter</a> &gt;&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; const <a class="el" href="../../dc/def/classMantid_1_1Geometry_1_1XMLInstrumentParameter.html">XMLInstrumentParameter</a> &gt; const &amp;&#160;</td>
           <td class="paramname"><em>parameter</em>&#160;</td>
         </tr>
         <tr>

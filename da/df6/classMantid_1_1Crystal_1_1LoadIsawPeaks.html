@@ -951,7 +951,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Retrieve cached bank component index (or look up and cache for next time). </p>
 <p>Retrieves component index of given bank from local cache.</p>
-<p>Throws std::invalid_argument (via <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html#a290901f13afa477b17a5bd50465b14c5">ComponentInfo::indexOfAny</a>) if bankname does not exist.</p>
+<p>Throws std::invalid_argument (via <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html#a290901f13afa477b17a5bd50465b14c5" title="The first component with this name in a breadth-first search, as Instrument::getComponentByName() fin...">ComponentInfo::indexOfAny</a>) if bankname does not exist.</p>
 <p>When the bank isn't in the local cache, it is looked up and added to the cache for later use. Lifetime of the cache is bound to the lifetime of this instance of the algorithm (typically, the instance should be destroyed once <a class="el" href="../../da/df6/classMantid_1_1Crystal_1_1LoadIsawPeaks.html#a315690642302d50ed033dceee54e35cb" title="Run the algorithm.">exec()</a> finishes).</p>
 <p>Note that while this is used only for banks here, it would work for caching any component without modification.</p>
 <dl class="params"><dt>Parameters</dt><dd>

@@ -280,7 +280,7 @@ var searchData=
   ['addlogderivative_277',['AddLogDerivative',['../d4/dcd/classMantid_1_1Algorithms_1_1AddLogDerivative.html',1,'Mantid::Algorithms']]],
   ['addlogderivative_2ecpp_278',['AddLogDerivative.cpp',['../dd/d19/AddLogDerivative_8cpp.html',1,'']]],
   ['addlogderivative_2eh_279',['AddLogDerivative.h',['../d4/d8e/AddLogDerivative_8h.html',1,'']]],
-  ['addlogfileparameter_280',['addlogfileparameter',['../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html#a754ca92aac779e7c812f311d54d18c8b',1,'Mantid::Geometry::ComponentInfo::addLogfileParameter()'],['../d8/d24/classMantid_1_1Geometry_1_1ParameterInfo.html#a8b56273061a9d631c2d32c73488e4295',1,'Mantid::Geometry::ParameterInfo::addLogfileParameter()']]],
+  ['addlogfileparameter_280',['addlogfileparameter',['../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html#afa56b3873f9df490164beca712ae25e0',1,'Mantid::Geometry::ComponentInfo::addLogfileParameter()'],['../d8/d24/classMantid_1_1Geometry_1_1ParameterInfo.html#a8d4d878ef43f8070f20d31bec3dbd209',1,'Mantid::Geometry::ParameterInfo::addLogfileParameter()']]],
   ['addloginterpolated_281',['AddLogInterpolated',['../d3/d13/classMantid_1_1Algorithms_1_1AddLogInterpolated.html',1,'Mantid::Algorithms']]],
   ['addloginterpolated_2ecpp_282',['AddLogInterpolated.cpp',['../d9/d4f/AddLogInterpolated_8cpp.html',1,'']]],
   ['addloginterpolated_2eh_283',['AddLogInterpolated.h',['../d8/dec/AddLogInterpolated_8h.html',1,'']]],
