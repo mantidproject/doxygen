@@ -495,8 +495,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a44812a0b022bf5e71659a62cd0c81086 inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba2d29f13c88205f3f7149c06c57f856 inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace" id="r_aba2d29f13c88205f3f7149c06c57f856"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#aba2d29f13c88205f3f7149c06c57f856">getXMax</a> () const</td></tr>
 <tr class="separator:aba2d29f13c88205f3f7149c06c57f856 inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3b09e1748a1afebc11837d25bfaa9e8 inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace" id="r_ad3b09e1748a1afebc11837d25bfaa9e8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#ad3b09e1748a1afebc11837d25bfaa9e8">getXMinMax</a> (double &amp;xmin, double &amp;xmax) const</td></tr>
-<tr class="separator:ad3b09e1748a1afebc11837d25bfaa9e8 inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41be4c5bebfb7a37888d73a986015b0e inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace" id="r_a41be4c5bebfb7a37888d73a986015b0e"><td class="memItemLeft" align="right" valign="top">virtual std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a41be4c5bebfb7a37888d73a986015b0e">getXMinMax</a> () const</td></tr>
+<tr class="memdesc:a41be4c5bebfb7a37888d73a986015b0e inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the X range of all spectra, skipping spectra with a non-finite first or last value.  <br /></td></tr>
+<tr class="separator:a41be4c5bebfb7a37888d73a986015b0e inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7e742b71bfa6f8b6c10b1b0a13e67ee inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace" id="r_ae7e742b71bfa6f8b6c10b1b0a13e67ee"><td class="memItemLeft" align="right" valign="top">std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#ae7e742b71bfa6f8b6c10b1b0a13e67ee">getXMinMax</a> (const std::vector&lt; size_t &gt; &amp;workspaceIndices, const bool includeNonFiniteSpectra=false) const</td></tr>
+<tr class="memdesc:ae7e742b71bfa6f8b6c10b1b0a13e67ee inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the X range of the given spectra.  <br /></td></tr>
+<tr class="separator:ae7e742b71bfa6f8b6c10b1b0a13e67ee inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afce7c4b24fcc9dfec56ff2982ae90aa0 inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace" id="r_afce7c4b24fcc9dfec56ff2982ae90aa0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#afce7c4b24fcc9dfec56ff2982ae90aa0">setX</a> (const std::size_t <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, const <a class="el" href="../../d6/d22/classMantid_1_1Kernel_1_1cow__ptr.html">Kernel::cow_ptr</a>&lt; HistogramData::HistogramX &gt; &amp;<a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#aedd34f47323e974c90c7be1d535d9832ae1c6b00b155620edd51f0b2900aa98f9">X</a>)</td></tr>
 <tr class="memdesc:afce7c4b24fcc9dfec56ff2982ae90aa0 inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated, use <a class="el" href="../../d8/d57/classMantid_1_1API_1_1MatrixWorkspace.html#a1abbf7a1ff87a6b42801b22620cf179c">setSharedX()</a> instead.  <br /></td></tr>
 <tr class="separator:afce7c4b24fcc9dfec56ff2982ae90aa0 inherit pub_methods_classMantid_1_1API_1_1MatrixWorkspace"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2125,7 +2129,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/df5/EventWorkspace_8cpp_source.html#l00486">486</a> of file <a class="el" href="../../d7/df5/EventWorkspace_8cpp_source.html">EventWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/d08/EventWorkspace_8h_source.html#l00172">data</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00517">Mantid::API::Run::getMemorySize()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01359">Mantid::API::MatrixWorkspace::getMemorySizeForXAxes()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00513">Mantid::API::ExperimentInfo::run()</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d08/EventWorkspace_8h_source.html#l00172">data</a>, <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00517">Mantid::API::Run::getMemorySize()</a>, <a class="el" href="../../db/d08/API_2src_2MatrixWorkspace_8cpp_source.html#l01382">Mantid::API::MatrixWorkspace::getMemorySizeForXAxes()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00513">Mantid::API::ExperimentInfo::run()</a>.</p>
 
 </div>
 </div>
@@ -2714,7 +2718,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/df5/EventWorkspace_8cpp_source.html#l00113">113</a> of file <a class="el" href="../../d7/df5/EventWorkspace_8cpp_source.html">EventWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/d08/EventWorkspace_8h_source.html#l00172">data</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00213">Mantid::API::MatrixWorkspace::histogram()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00573">Mantid::API::MatrixWorkspace::m_axes</a>, <a class="el" href="../../df/d08/EventWorkspace_8h_source.html#l00175">mru</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00459">Mantid::API::ExperimentInfo::numberOfDetectorGroups()</a>, and <a class="el" href="../../d1/d7b/ISpectrum_8h_source.html#l00110">Mantid::API::ISpectrum::setHistogram()</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d08/EventWorkspace_8h_source.html#l00172">data</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00214">Mantid::API::MatrixWorkspace::histogram()</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00576">Mantid::API::MatrixWorkspace::m_axes</a>, <a class="el" href="../../df/d08/EventWorkspace_8h_source.html#l00175">mru</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00459">Mantid::API::ExperimentInfo::numberOfDetectorGroups()</a>, and <a class="el" href="../../d1/d7b/ISpectrum_8h_source.html#l00110">Mantid::API::ISpectrum::setHistogram()</a>.</p>
 
 </div>
 </div>
@@ -2772,7 +2776,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/df5/EventWorkspace_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../d7/df5/EventWorkspace_8cpp_source.html">EventWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/d08/EventWorkspace_8h_source.html#l00172">data</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00573">Mantid::API::MatrixWorkspace::m_axes</a>, <a class="el" href="../../df/d08/EventWorkspace_8h_source.html#l00175">mru</a>, and <a class="el" href="../../d1/d7b/ISpectrum_8h_source.html#l00110">Mantid::API::ISpectrum::setHistogram()</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d08/EventWorkspace_8h_source.html#l00172">data</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00576">Mantid::API::MatrixWorkspace::m_axes</a>, <a class="el" href="../../df/d08/EventWorkspace_8h_source.html#l00175">mru</a>, and <a class="el" href="../../d1/d7b/ISpectrum_8h_source.html#l00110">Mantid::API::ISpectrum::setHistogram()</a>.</p>
 
 </div>
 </div>
@@ -3003,7 +3007,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/df5/EventWorkspace_8cpp_source.html#l00626">626</a> of file <a class="el" href="../../d7/df5/EventWorkspace_8cpp_source.html">EventWorkspace.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/df5/EventWorkspace_8cpp_source.html#l00483">clearMRU()</a>, <a class="el" href="../../df/d08/EventWorkspace_8h_source.html#l00172">data</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00555">Mantid::API::MatrixWorkspace::invalidateCommonBinsFlag()</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/df5/EventWorkspace_8cpp_source.html#l00483">clearMRU()</a>, <a class="el" href="../../df/d08/EventWorkspace_8h_source.html#l00172">data</a>, <a class="el" href="../../d4/d0d/MatrixWorkspace_8h_source.html#l00558">Mantid::API::MatrixWorkspace::invalidateCommonBinsFlag()</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/df5/EventWorkspace_8cpp_source.html#l00642">resetAllXToSingleBin()</a>.</p>
 
