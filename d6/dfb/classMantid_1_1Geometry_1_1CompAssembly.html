@@ -159,12 +159,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a70e59ac2a188d66f62ee1fd69f1d2979" id="r_a70e59ac2a188d66f62ee1fd69f1d2979"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; const <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html">IComponent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dfb/classMantid_1_1Geometry_1_1CompAssembly.html#a70e59ac2a188d66f62ee1fd69f1d2979">getComponentByName</a> (const std::string &amp;cname, int nlevels=0) const override</td></tr>
 <tr class="memdesc:a70e59ac2a188d66f62ee1fd69f1d2979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the first component of assembly encountered with the given name.  <br /></td></tr>
 <tr class="separator:a70e59ac2a188d66f62ee1fd69f1d2979"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2fe44eae0eee41364fa5afc632ac993" id="r_aa2fe44eae0eee41364fa5afc632ac993"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dfb/classMantid_1_1Geometry_1_1CompAssembly.html#aa2fe44eae0eee41364fa5afc632ac993">getPos</a> () const override</td></tr>
-<tr class="memdesc:aa2fe44eae0eee41364fa5afc632ac993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the absolute position of the Parametrized <a class="el" href="../../d6/dfb/classMantid_1_1Geometry_1_1CompAssembly.html" title="Class for Assembly of geometric components.">CompAssembly</a> This attempts to read the cached position value from the parameter map, and creates it if it is not available.  <br /></td></tr>
-<tr class="separator:aa2fe44eae0eee41364fa5afc632ac993"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5d1aa71714b66173ae0d842a2d68c1b" id="r_ab5d1aa71714b66173ae0d842a2d68c1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/db9/classMantid_1_1Kernel_1_1Quat.html">Kernel::Quat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dfb/classMantid_1_1Geometry_1_1CompAssembly.html#ab5d1aa71714b66173ae0d842a2d68c1b">getRotation</a> () const override</td></tr>
-<tr class="memdesc:ab5d1aa71714b66173ae0d842a2d68c1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the absolute position of the Parametrized <a class="el" href="../../d6/dfb/classMantid_1_1Geometry_1_1CompAssembly.html" title="Class for Assembly of geometric components.">CompAssembly</a> This attempts to read the cached position value from the parameter map, and creates it if it is not available.  <br /></td></tr>
-<tr class="separator:ab5d1aa71714b66173ae0d842a2d68c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab836b90eed1ddd47542a411c8469761a" id="r_ab836b90eed1ddd47542a411c8469761a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dfb/classMantid_1_1Geometry_1_1CompAssembly.html#ab836b90eed1ddd47542a411c8469761a">nelements</a> () const override</td></tr>
 <tr class="memdesc:ab836b90eed1ddd47542a411c8469761a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of elements in the assembly.  <br /></td></tr>
 <tr class="separator:ab836b90eed1ddd47542a411c8469761a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -665,7 +659,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html">CompAssembly.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00101">m_cachedBoundingBox</a>, and <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00098">m_children</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00097">m_cachedBoundingBox</a>, and <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00094">m_children</a>.</p>
 
 </div>
 </div>
@@ -709,7 +703,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00108">108</a> of file <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html">CompAssembly.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00098">m_children</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00318">Mantid::Geometry::Component::m_map</a>, and <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#ad7a44f9d48715482d794558c0f6961b3">Mantid::Geometry::IComponent::setParent()</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00094">m_children</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00318">Mantid::Geometry::Component::m_map</a>, and <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#ad7a44f9d48715482d794558c0f6961b3">Mantid::Geometry::IComponent::setParent()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/dd7/ComponentCreationHelper_8cpp_source.html#l00496">ComponentCreationHelper::addRectangularBank()</a>, <a class="el" href="../../d0/dd7/ComponentCreationHelper_8cpp_source.html#l00432">ComponentCreationHelper::createCylInstrumentWithDetInGivenPositions()</a>, <a class="el" href="../../d0/dd7/ComponentCreationHelper_8cpp_source.html#l00384">ComponentCreationHelper::createCylInstrumentWithVerticalOffsetsSpecified()</a>, <a class="el" href="../../dd/da8/StructuredDetector_8cpp_source.html#l00320">Mantid::Geometry::StructuredDetector::createDetectors()</a>, <a class="el" href="../../d0/dd7/ComponentCreationHelper_8cpp_source.html#l00340">ComponentCreationHelper::createTestInstrumentCylindrical()</a>, <a class="el" href="../../d2/d38/EditInstrumentGeometry_8cpp_source.html#l00153">Mantid::Algorithms::EditInstrumentGeometry::exec()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00151">Mantid::Geometry::Instrument::Instrument()</a>, and <a class="el" href="../../d0/dd7/ComponentCreationHelper_8cpp_source.html#l00956">ComponentCreationHelper::sansInstrument()</a>.</p>
 
@@ -773,7 +767,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00127">127</a> of file <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html">CompAssembly.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a7842822f90fa0816d7038f37653683c7">Mantid::Geometry::IComponent::clone()</a>, <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00098">m_children</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00318">Mantid::Geometry::Component::m_map</a>, and <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#ad7a44f9d48715482d794558c0f6961b3">Mantid::Geometry::IComponent::setParent()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a7842822f90fa0816d7038f37653683c7">Mantid::Geometry::IComponent::clone()</a>, <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00094">m_children</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00318">Mantid::Geometry::Component::m_map</a>, and <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#ad7a44f9d48715482d794558c0f6961b3">Mantid::Geometry::IComponent::setParent()</a>.</p>
 
 </div>
 </div>
@@ -827,7 +821,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00148">148</a> of file <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html">CompAssembly.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a7842822f90fa0816d7038f37653683c7">Mantid::Geometry::IComponent::clone()</a>, <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00098">m_children</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00318">Mantid::Geometry::Component::m_map</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#af40521d3d59841671180b3debcdbafa4">Mantid::Geometry::IComponent::setName()</a>, and <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#ad7a44f9d48715482d794558c0f6961b3">Mantid::Geometry::IComponent::setParent()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a7842822f90fa0816d7038f37653683c7">Mantid::Geometry::IComponent::clone()</a>, <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00094">m_children</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00318">Mantid::Geometry::Component::m_map</a>, <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp_source.html#l00042">n</a>, <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#af40521d3d59841671180b3debcdbafa4">Mantid::Geometry::IComponent::setName()</a>, and <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#ad7a44f9d48715482d794558c0f6961b3">Mantid::Geometry::IComponent::setParent()</a>.</p>
 
 </div>
 </div>
@@ -907,7 +901,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00362">362</a> of file <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html">CompAssembly.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00525">Mantid::Geometry::ComponentInfo::boundingBox()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01183">Mantid::Geometry::ParameterMap::componentInfo()</a>, <a class="el" href="../../d0/d7e/Geometry_2src_2Objects_2BoundingBox_8cpp_source.html#l00231">Mantid::Geometry::BoundingBox::grow()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00303">Mantid::Geometry::Component::hasComponentInfo()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00301">Mantid::Geometry::Component::index()</a>, <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00101">m_cachedBoundingBox</a>, <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00098">m_children</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00318">Mantid::Geometry::Component::m_map</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00186">nelements()</a>, and <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00230">operator[]()</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00525">Mantid::Geometry::ComponentInfo::boundingBox()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01124">Mantid::Geometry::ParameterMap::componentInfo()</a>, <a class="el" href="../../d0/d7e/Geometry_2src_2Objects_2BoundingBox_8cpp_source.html#l00231">Mantid::Geometry::BoundingBox::grow()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00303">Mantid::Geometry::Component::hasComponentInfo()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00301">Mantid::Geometry::Component::index()</a>, <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00097">m_cachedBoundingBox</a>, <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00094">m_children</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00318">Mantid::Geometry::Component::m_map</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00186">nelements()</a>, and <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00230">operator[]()</a>.</p>
 
 </div>
 </div>
@@ -958,7 +952,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00207">207</a> of file <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html">CompAssembly.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/da6/ParComponentFactory_8cpp_source.html#l00056">Mantid::Geometry::ParComponentFactory::create()</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_base</a>, <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00098">m_children</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00318">Mantid::Geometry::Component::m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/da6/ParComponentFactory_8cpp_source.html#l00056">Mantid::Geometry::ParComponentFactory::create()</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_base</a>, <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00094">m_children</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00318">Mantid::Geometry::Component::m_map</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/da8/StructuredDetector_8cpp_source.html#l00093">Mantid::Geometry::StructuredDetector::getAtXY()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00109">Mantid::Geometry::GridDetector::getAtXYZ()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00239">getChildren()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00230">operator[]()</a>, and <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00407">testIntersectionWithChildren()</a>.</p>
 
@@ -1075,78 +1069,6 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa2fe44eae0eee41364fa5afc632ac993" name="aa2fe44eae0eee41364fa5afc632ac993"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2fe44eae0eee41364fa5afc632ac993">&#9670;&#160;</a></span>getPos()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">V3D</a> Mantid::Geometry::CompAssembly::getPos </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets the absolute position of the Parametrized <a class="el" href="../../d6/dfb/classMantid_1_1Geometry_1_1CompAssembly.html" title="Class for Assembly of geometric components.">CompAssembly</a> This attempts to read the cached position value from the parameter map, and creates it if it is not available. </p>
-<dl class="section return"><dt>Returns</dt><dd>A vector of the absolute position </dd></dl>
-
-<p>Implements <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a1df890cced40267900a821b0836a75e6">Mantid::Geometry::IComponent</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00462">462</a> of file <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html">CompAssembly.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01071">Mantid::Geometry::ParameterMap::getCachedLocation()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00329">Mantid::Geometry::Component::getPos()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00303">Mantid::Geometry::Component::hasComponentInfo()</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_base</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00318">Mantid::Geometry::Component::m_map</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01063">Mantid::Geometry::ParameterMap::setCachedLocation()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00447">Mantid::Geometry::Instrument::getBeamDirection()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00445">Mantid::Geometry::GridDetector::getPosAtXYZ()</a>, and <a class="el" href="../../df/d3d/InstrumentDefinitionParser_8cpp_source.html#l00637">Mantid::Geometry::InstrumentDefinitionParser::setLocation()</a>.</p>
-
-</div>
-</div>
-<a id="ab5d1aa71714b66173ae0d842a2d68c1b" name="ab5d1aa71714b66173ae0d842a2d68c1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5d1aa71714b66173ae0d842a2d68c1b">&#9670;&#160;</a></span>getRotation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d7/db9/classMantid_1_1Kernel_1_1Quat.html">Quat</a> Mantid::Geometry::CompAssembly::getRotation </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets the absolute position of the Parametrized <a class="el" href="../../d6/dfb/classMantid_1_1Geometry_1_1CompAssembly.html" title="Class for Assembly of geometric components.">CompAssembly</a> This attempts to read the cached position value from the parameter map, and creates it if it is not available. </p>
-<dl class="section return"><dt>Returns</dt><dd>A vector of the absolute position </dd></dl>
-
-<p>Implements <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a575cdf2cce053f27ab53673e05a39cdc">Mantid::Geometry::IComponent</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00480">480</a> of file <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html">CompAssembly.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01086">Mantid::Geometry::ParameterMap::getCachedRotation()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00408">Mantid::Geometry::Component::getRotation()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00303">Mantid::Geometry::Component::hasComponentInfo()</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_base</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00318">Mantid::Geometry::Component::m_map</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01078">Mantid::Geometry::ParameterMap::setCachedRotation()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00779">Mantid::Geometry::GridDetector::getBoundingBoxAtXYZ()</a>, and <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00445">Mantid::Geometry::GridDetector::getPosAtXYZ()</a>.</p>
-
-</div>
-</div>
 <a id="ab836b90eed1ddd47542a411c8469761a" name="ab836b90eed1ddd47542a411c8469761a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab836b90eed1ddd47542a411c8469761a">&#9670;&#160;</a></span>nelements()</h2>
 
@@ -1178,9 +1100,9 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00186">186</a> of file <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html">CompAssembly.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_base</a>, <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00098">m_children</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00318">Mantid::Geometry::Component::m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_base</a>, <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00094">m_children</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00318">Mantid::Geometry::Component::m_map</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01307">Mantid::Geometry::Instrument::addInstrumentChildrenToQueue()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00992">Mantid::Geometry::Instrument::appendPlottable()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00930">Mantid::Geometry::Instrument::getBoundingBox()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00362">getBoundingBox()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00239">getChildren()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01335">Mantid::Geometry::Instrument::isEmptyInstrument()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00508">Mantid::Geometry::operator&lt;&lt;()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00936">Mantid::Geometry::operator&lt;&lt;()</a>, <a class="el" href="../../d8/dd5/Geometry_2src_2Instrument_2RectangularDetector_8cpp_source.html#l00292">Mantid::Geometry::operator&lt;&lt;()</a>, <a class="el" href="../../dd/da8/StructuredDetector_8cpp_source.html#l00604">Mantid::Geometry::operator&lt;&lt;()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00429">printChildren()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00443">printTree()</a>, and <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00407">testIntersectionWithChildren()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01307">Mantid::Geometry::Instrument::addInstrumentChildrenToQueue()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00992">Mantid::Geometry::Instrument::appendPlottable()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00930">Mantid::Geometry::Instrument::getBoundingBox()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00362">getBoundingBox()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00239">getChildren()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01335">Mantid::Geometry::Instrument::isEmptyInstrument()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00472">Mantid::Geometry::operator&lt;&lt;()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00936">Mantid::Geometry::operator&lt;&lt;()</a>, <a class="el" href="../../d8/dd5/Geometry_2src_2Instrument_2RectangularDetector_8cpp_source.html#l00292">Mantid::Geometry::operator&lt;&lt;()</a>, <a class="el" href="../../dd/da8/StructuredDetector_8cpp_source.html#l00604">Mantid::Geometry::operator&lt;&lt;()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00429">printChildren()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00443">printTree()</a>, and <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00407">testIntersectionWithChildren()</a>.</p>
 
 </div>
 </div>
@@ -1202,7 +1124,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html">CompAssembly.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00098">m_children</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00094">m_children</a>.</p>
 
 </div>
 </div>
@@ -1324,7 +1246,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00186">nelements()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00508">Mantid::Geometry::operator&lt;&lt;()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00936">Mantid::Geometry::operator&lt;&lt;()</a>, <a class="el" href="../../d8/dd5/Geometry_2src_2Instrument_2RectangularDetector_8cpp_source.html#l00292">Mantid::Geometry::operator&lt;&lt;()</a>, and <a class="el" href="../../dd/da8/StructuredDetector_8cpp_source.html#l00604">Mantid::Geometry::operator&lt;&lt;()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00472">Mantid::Geometry::operator&lt;&lt;()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00936">Mantid::Geometry::operator&lt;&lt;()</a>, <a class="el" href="../../d8/dd5/Geometry_2src_2Instrument_2RectangularDetector_8cpp_source.html#l00292">Mantid::Geometry::operator&lt;&lt;()</a>, and <a class="el" href="../../dd/da8/StructuredDetector_8cpp_source.html#l00604">Mantid::Geometry::operator&lt;&lt;()</a>.</p>
 
 </div>
 </div>
@@ -1398,7 +1320,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../db/d95/classMantid_1_1Geometry_1_1GridDetector.html#acafe9c26fa6f609b7853aca1313f2f0f">Mantid::Geometry::GridDetector</a>, <a class="el" href="../../da/dfd/classMantid_1_1Geometry_1_1RectangularDetector.html#afb1330c41c5f058839bcf38f3823cfd0">Mantid::Geometry::RectangularDetector</a>, and <a class="el" href="../../dc/db7/classMantid_1_1Geometry_1_1StructuredDetector.html#a3f2aad65c1de6d80623dfce347dc5fbc">Mantid::Geometry::StructuredDetector</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00493">493</a> of file <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html">CompAssembly.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00457">457</a> of file <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html">CompAssembly.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d26/classMantid_1_1Geometry_1_1ComponentVisitor.html#a7fd865236b80dfd5e40242dd44243747">Mantid::Geometry::ComponentVisitor::registerComponentAssembly()</a>.</p>
 
@@ -1438,7 +1360,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00166">166</a> of file <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html">CompAssembly.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#afbed8261ade45e5adb24a7519c47c986">Mantid::Geometry::IComponent::getName()</a>, <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00098">m_children</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00318">Mantid::Geometry::Component::m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#afbed8261ade45e5adb24a7519c47c986">Mantid::Geometry::IComponent::getName()</a>, <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00094">m_children</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00318">Mantid::Geometry::Component::m_map</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00859">Mantid::Geometry::Instrument::removeDetector()</a>.</p>
 
@@ -1555,7 +1477,7 @@ Private Member Functions</h2></td></tr>
 
 <p>A cached bounding box. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00101">101</a> of file <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html">CompAssembly.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00097">97</a> of file <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html">CompAssembly.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00930">Mantid::Geometry::Instrument::getBoundingBox()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00362">getBoundingBox()</a>, <a class="el" href="../../dd/da8/StructuredDetector_8cpp_source.html#l00484">Mantid::Geometry::StructuredDetector::getBoundingBox()</a>, and <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00086">~CompAssembly()</a>.</p>
 
@@ -1583,7 +1505,7 @@ Private Member Functions</h2></td></tr>
 
 <p>the group of child components </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00098">98</a> of file <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html">CompAssembly.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html#l00094">94</a> of file <a class="el" href="../../d3/d8b/CompAssembly_8h_source.html">CompAssembly.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00108">add()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00127">addCopy()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00148">addCopy()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00930">Mantid::Geometry::Instrument::getBoundingBox()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00362">getBoundingBox()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00207">getChild()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00186">nelements()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00062">operator=()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00166">remove()</a>, and <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00086">~CompAssembly()</a>.</p>
 
