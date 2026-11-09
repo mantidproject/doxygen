@@ -130,7 +130,7 @@ var searchData=
   ['prop_5foutput_5ffilename_127',['PROP_OUTPUT_FILENAME',['../d5/df4/classMantid_1_1DataHandling_1_1SaveGDA.html#ad7454cf6b549a89565d08409be8faf88',1,'Mantid::DataHandling::SaveGDA']]],
   ['prop_5fparams_5ffilename_128',['PROP_PARAMS_FILENAME',['../d5/df4/classMantid_1_1DataHandling_1_1SaveGDA.html#a561a999884303ba36467745348bee77c',1,'Mantid::DataHandling::SaveGDA']]],
   ['property_129',['property',['../d3/dbd/structMantid_1_1Algorithms_1_1SampleLogsBehaviour_1_1SampleLogBehaviour.html#a19f9ef2555c89e39571090b3c12d44bc',1,'Mantid::Algorithms::SampleLogsBehaviour::SampleLogBehaviour::property'],['../d5/d9c/structMantid_1_1DataHandling_1_1LoadILLDiffraction_1_1ScannedVariables.html#a6064dfb4cbe6f8ae3ddf09aeb31dc8a8',1,'Mantid::DataHandling::LoadILLDiffraction::ScannedVariables::property']]],
-  ['propertywithvalue_3c_20pythonobject_20_3e_130',['PropertyWithValue&lt; PythonObject &gt;',['../d9/dec/namespaceMantid_1_1Kernel.html#a94dbac9acd66589f67574e77711e1bdb',1,'Mantid::Kernel']]],
+  ['propertymanager_130',['PropertyManager',['../d9/dec/namespaceMantid_1_1Kernel.html#aac0e7ba22f5e975734814cdfeb0f770d',1,'Mantid::Kernel']]],
   ['propname1_131',['propName1',['../dc/d95/classMantid_1_1Crystal_1_1OrEnabledWhenProperties.html#a1288aad9bf0ec6c7ba9cf6d67fc3d197',1,'Mantid::Crystal::OrEnabledWhenProperties']]],
   ['propname2_132',['propName2',['../dc/d95/classMantid_1_1Crystal_1_1OrEnabledWhenProperties.html#af7c35accea6c33624bfb85750ed9009c',1,'Mantid::Crystal::OrEnabledWhenProperties']]],
   ['proton_5fcharge_5flog_5fname_133',['PROTON_CHARGE_LOG_NAME',['../db/da3/classMantid_1_1API_1_1LogManager.html#aa138aa0ed31809c111c9cfda2287f623',1,'Mantid::API::LogManager']]],

@@ -114,6 +114,9 @@ Macros</h2></td></tr>
 <tr class="separator:ab57867b2b818b5cd71f3f49e79c56210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74e4c0fa3e34e1b622dc9cfd0fe87200" id="r_a74e4c0fa3e34e1b622dc9cfd0fe87200"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9d/WarningSuppressions_8h.html#a74e4c0fa3e34e1b622dc9cfd0fe87200">MSVC_DIAG_ON</a>(x)</td></tr>
 <tr class="separator:a74e4c0fa3e34e1b622dc9cfd0fe87200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5237ce4c407712c5876dcba3e9326d4a" id="r_a5237ce4c407712c5876dcba3e9326d4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9d/WarningSuppressions_8h.html#a5237ce4c407712c5876dcba3e9326d4a">UNUSED_ARG</a>(...)&#160;&#160;&#160;(void)(__VA_ARGS__)</td></tr>
+<tr class="memdesc:a5237ce4c407712c5876dcba3e9326d4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function arguments are sometimes unused in certain implementations but are required for documentation purposes.  <br /></td></tr>
+<tr class="separator:a5237ce4c407712c5876dcba3e9326d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="af8494a46fa1e39626ca6c16d33fc2569" name="af8494a46fa1e39626ca6c16d33fc2569"></a>
@@ -244,6 +247,29 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../db/d9d/WarningSuppressions_8h_source.html#l00087">87</a> of file <a class="el" href="../../db/d9d/WarningSuppressions_8h_source.html">WarningSuppressions.h</a>.</p>
+
+</div>
+</div>
+<a id="a5237ce4c407712c5876dcba3e9326d4a" name="a5237ce4c407712c5876dcba3e9326d4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5237ce4c407712c5876dcba3e9326d4a">&#9670;&#160;</a></span>UNUSED_ARG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNUSED_ARG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em></td><td>)</td>
+          <td>&#160;&#160;&#160;(void)(__VA_ARGS__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function arguments are sometimes unused in certain implementations but are required for documentation purposes. </p>
+<p>This is a macro to silence compiler warnings about the subject </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d9d/WarningSuppressions_8h_source.html#l00117">117</a> of file <a class="el" href="../../db/d9d/WarningSuppressions_8h_source.html">WarningSuppressions.h</a>.</p>
 
 </div>
 </div>

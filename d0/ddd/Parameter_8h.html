@@ -92,16 +92,20 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Parameter.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;MantidGeometry/DllConfig.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/de9/Quat_8h_source.html">MantidKernel/Quat.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/dcf/V3D_8h_source.html">MantidKernel/V3D.h</a>&quot;</code><br />
 <code>#include &lt;iomanip&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
 <code>#include &lt;stdexcept&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
 <code>#include &lt;typeinfo&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div>
@@ -131,6 +135,21 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a186c1f412b2b03f602afc31f95e1330c" id="r_a186c1f412b2b03f602afc31f95e1330c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a186c1f412b2b03f602afc31f95e1330c">Mantid::Geometry::Parameter_sptr</a> = std::shared_ptr&lt; <a class="el" href="../../d9/dc5/classMantid_1_1Geometry_1_1Parameter.html">Parameter</a> &gt;</td></tr>
 <tr class="memdesc:a186c1f412b2b03f602afc31f95e1330c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for the shared pointer.  <br /></td></tr>
 <tr class="separator:a186c1f412b2b03f602afc31f95e1330c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a9ec2919fc3392e79b85155e450bda5c6" id="r_a9ec2919fc3392e79b85155e450bda5c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a9ec2919fc3392e79b85155e450bda5c6">Mantid::Geometry::MANTID_GEOMETRY_EXTERN_TEMPLATE</a> (<a class="el" href="../../d8/dfe/classMantid_1_1Geometry_1_1ParameterType.html">ParameterType</a>&lt; bool &gt;)</td></tr>
+<tr class="separator:a9ec2919fc3392e79b85155e450bda5c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dbe2ccb71971dc2b183a2d6c05cd09a" id="r_a0dbe2ccb71971dc2b183a2d6c05cd09a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a0dbe2ccb71971dc2b183a2d6c05cd09a">Mantid::Geometry::MANTID_GEOMETRY_EXTERN_TEMPLATE</a> (<a class="el" href="../../d8/dfe/classMantid_1_1Geometry_1_1ParameterType.html">ParameterType</a>&lt; double &gt;)</td></tr>
+<tr class="separator:a0dbe2ccb71971dc2b183a2d6c05cd09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51cbd002470f61d72f1a8656971a60b4" id="r_a51cbd002470f61d72f1a8656971a60b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a51cbd002470f61d72f1a8656971a60b4">Mantid::Geometry::MANTID_GEOMETRY_EXTERN_TEMPLATE</a> (<a class="el" href="../../d8/dfe/classMantid_1_1Geometry_1_1ParameterType.html">ParameterType</a>&lt; int &gt;)</td></tr>
+<tr class="separator:a51cbd002470f61d72f1a8656971a60b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89bb104763aa35c03d365cb8c05d7d6c" id="r_a89bb104763aa35c03d365cb8c05d7d6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a89bb104763aa35c03d365cb8c05d7d6c">Mantid::Geometry::MANTID_GEOMETRY_EXTERN_TEMPLATE</a> (<a class="el" href="../../d8/dfe/classMantid_1_1Geometry_1_1ParameterType.html">ParameterType</a>&lt; <a class="el" href="../../d7/db9/classMantid_1_1Kernel_1_1Quat.html">Kernel::Quat</a> &gt;)</td></tr>
+<tr class="separator:a89bb104763aa35c03d365cb8c05d7d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a268baece027ad436e40d2bd000fcb183" id="r_a268baece027ad436e40d2bd000fcb183"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a268baece027ad436e40d2bd000fcb183">Mantid::Geometry::MANTID_GEOMETRY_EXTERN_TEMPLATE</a> (<a class="el" href="../../d8/dfe/classMantid_1_1Geometry_1_1ParameterType.html">ParameterType</a>&lt; <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &gt;)</td></tr>
+<tr class="separator:a268baece027ad436e40d2bd000fcb183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2f15cd410e62e762f64af2d1804f1b4" id="r_af2f15cd410e62e762f64af2d1804f1b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#af2f15cd410e62e762f64af2d1804f1b4">Mantid::Geometry::MANTID_GEOMETRY_EXTERN_TEMPLATE</a> (<a class="el" href="../../d8/dfe/classMantid_1_1Geometry_1_1ParameterType.html">ParameterType</a>&lt; std::string &gt;)</td></tr>
+<tr class="separator:af2f15cd410e62e762f64af2d1804f1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
