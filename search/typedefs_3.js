@@ -3,7 +3,7 @@ var searchData=
   ['cachemapconstiterator_0',['CacheMapConstIterator',['../db/d94/classMantid_1_1Kernel_1_1Cache.html#adc3d32d7314aaac73fb70e35b3e34ff9',1,'Mantid::Kernel::Cache']]],
   ['cachemapiterator_1',['CacheMapIterator',['../db/d94/classMantid_1_1Kernel_1_1Cache.html#af4fd5615f5bdc06930135619110ffadd',1,'Mantid::Kernel::Cache']]],
   ['cachevalue_5ft_2',['CacheValue_t',['../dc/df3/classMantid_1_1Nexus_1_1NexusDescriptorLazy.html#ac239812b0b68e0b37349869bd56d89dd',1,'Mantid::Nexus::NexusDescriptorLazy']]],
-  ['cachevaluetype_3',['CacheValueType',['../d6/dc4/classMantid_1_1DataObjects_1_1PeakColumn.html#abd1d32ebccab510b8e0fcef6bee36011',1,'Mantid::DataObjects::PeakColumn']]],
+  ['cachevaluetype_3',['CacheValueType',['../d6/dc4/classMantid_1_1DataObjects_1_1PeakColumn.html#a7cf24ff4b8841e5231364d9bc46bf9e2',1,'Mantid::DataObjects::PeakColumn']]],
   ['calmap_4',['calmap',['../db/db9/classMantid_1_1Algorithms_1_1ReadGroupsFromFile.html#a87e2ad756d44f280d940139e53b2f31d',1,'Mantid::Algorithms::ReadGroupsFromFile']]],
   ['caseinsensitivemap_5',['CaseInsensitiveMap',['../d9/dec/namespaceMantid_1_1Kernel.html#a23d3e480807674f55891afb3c6381bb6',1,'Mantid::Kernel']]],
   ['casesensitivestringcomparator_6',['CaseSensitiveStringComparator',['../d9/dec/namespaceMantid_1_1Kernel.html#a800e38bd6eb0024cb6be3dbcc15a4a66',1,'Mantid::Kernel']]],

@@ -16,6 +16,5 @@ var searchData=
   ['export_5fwksp_5fvalidator_5farg_13',['EXPORT_WKSP_VALIDATOR_ARG',['../d6/dfc/WorkspaceValidators_8cpp.html#a920d7391f229f36abd69d838588a0593',1,'WorkspaceValidators.cpp']]],
   ['export_5fwksp_5fvalidator_5fdefault_5farg_14',['EXPORT_WKSP_VALIDATOR_DEFAULT_ARG',['../d6/dfc/WorkspaceValidators_8cpp.html#abf3715788edeec9d5018ecdfa627f2c6',1,'WorkspaceValidators.cpp']]],
   ['export_5fwksp_5fvalidator_5fno_5farg_15',['EXPORT_WKSP_VALIDATOR_NO_ARG',['../d6/dfc/WorkspaceValidators_8cpp.html#a607f5e3cef5588aa56349298fd7d7096',1,'WorkspaceValidators.cpp']]],
-  ['exportparallelminmax_16',['EXPORTPARALLELMINMAX',['../d8/d4a/ParallelMinMax_8cpp.html#a79054a66ea32f2b3627a60239e4ae8ce',1,'ParallelMinMax.cpp']]],
-  ['extern_5fimport_17',['EXTERN_IMPORT',['../db/d39/System_8h.html#a4e587fd2393b420085d662b95fc887fd',1,'System.h']]]
+  ['exportparallelminmax_16',['EXPORTPARALLELMINMAX',['../d8/d4a/ParallelMinMax_8cpp.html#a79054a66ea32f2b3627a60239e4ae8ce',1,'ParallelMinMax.cpp']]]
 ];

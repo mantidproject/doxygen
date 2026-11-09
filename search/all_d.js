@@ -179,7 +179,7 @@ var searchData=
   ['ieee_5fsng_5fbias_176',['IEEE_SNG_BIAS',['../d7/dc0/vms__convert_8cpp.html#a8edcdd67fc7867e0bce92c30c11cf875',1,'vms_convert.cpp']]],
   ['ieee_5fto_5fvax_5ffloat_177',['ieee_to_vax_float',['../d7/dc0/vms__convert_8cpp.html#a191ead3fffed2d7076179499c93ce468',1,'vms_convert.cpp']]],
   ['ieeefp_178',['IEEEFP',['../d7/dc0/vms__convert_8cpp.html#a7948775a9215a5bfbeb5d74a8bd141ad',1,'vms_convert.cpp']]],
-  ['iend_179',['iend',['../da/dff/TableWorkspace_8cpp.html#a1932f82c972bed7d39cf782550123950',1,'iEnd:&#160;TableWorkspace.cpp'],['../d3/d17/EstimatePeakIntensities_8cpp.html#a0651ce9c4e3979ff7f34a47f934df477',1,'iend:&#160;EstimatePeakIntensities.cpp']]],
+  ['iend_179',['iend',['../d3/d17/EstimatePeakIntensities_8cpp.html#a0651ce9c4e3979ff7f34a47f934df477',1,'iend:&#160;EstimatePeakIntensities.cpp'],['../da/dff/TableWorkspace_8cpp.html#a1932f82c972bed7d39cf782550123950',1,'iEnd:&#160;TableWorkspace.cpp']]],
   ['ieventlist_180',['ieventlist',['../df/d4e/classMantid_1_1API_1_1IEventList.html',1,'Mantid::API::IEventList'],['../df/d4e/classMantid_1_1API_1_1IEventList.html#ad8cb3f580f167f3bcd522c66a85e5223',1,'Mantid::API::IEventList::IEventList(specnum_t specNo)'],['../df/d4e/classMantid_1_1API_1_1IEventList.html#a77d496d39996f7a8eea20faa01814e05',1,'Mantid::API::IEventList::IEventList()']]],
   ['ieventlist_2ecpp_181',['ieventlist.cpp',['../d5/de2/PythonInterface_2mantid_2api_2src_2Exports_2IEventList_8cpp.html',1,'(Global Namespace)'],['../d1/d3e/API_2src_2IEventList_8cpp.html',1,'(Global Namespace)']]],
   ['ieventlist_2eh_182',['IEventList.h',['../d4/da0/IEventList_8h.html',1,'']]],

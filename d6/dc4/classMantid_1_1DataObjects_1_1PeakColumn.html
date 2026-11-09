@@ -244,9 +244,9 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:abd1d32ebccab510b8e0fcef6bee36011" id="r_abd1d32ebccab510b8e0fcef6bee36011"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc4/classMantid_1_1DataObjects_1_1PeakColumn.html#abd1d32ebccab510b8e0fcef6bee36011">CacheValueType</a> = boost::variant&lt; double, int, std::string, <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &gt;</td></tr>
-<tr class="memdesc:abd1d32ebccab510b8e0fcef6bee36011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the row cache value.  <br /></td></tr>
-<tr class="separator:abd1d32ebccab510b8e0fcef6bee36011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cf24ff4b8841e5231364d9bc46bf9e2" id="r_a7cf24ff4b8841e5231364d9bc46bf9e2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc4/classMantid_1_1DataObjects_1_1PeakColumn.html#a7cf24ff4b8841e5231364d9bc46bf9e2">CacheValueType</a> = std::variant&lt; double, int, std::string, <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &gt;</td></tr>
+<tr class="memdesc:a7cf24ff4b8841e5231364d9bc46bf9e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the row cache value.  <br /></td></tr>
+<tr class="separator:a7cf24ff4b8841e5231364d9bc46bf9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -259,7 +259,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a922d78b81b355a49899ce6b7ab1f3c21" id="r_a922d78b81b355a49899ce6b7ab1f3c21"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc4/classMantid_1_1DataObjects_1_1PeakColumn.html#a922d78b81b355a49899ce6b7ab1f3c21">m_hklPrec</a></td></tr>
 <tr class="memdesc:a922d78b81b355a49899ce6b7ab1f3c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Precision of hkl in table workspace.  <br /></td></tr>
 <tr class="separator:a922d78b81b355a49899ce6b7ab1f3c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6eaeb35f75c48e4df3c579a431a96c1" id="r_ab6eaeb35f75c48e4df3c579a431a96c1"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="../../d6/dc4/classMantid_1_1DataObjects_1_1PeakColumn.html#abd1d32ebccab510b8e0fcef6bee36011">CacheValueType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc4/classMantid_1_1DataObjects_1_1PeakColumn.html#ab6eaeb35f75c48e4df3c579a431a96c1">m_oldRows</a></td></tr>
+<tr class="memitem:ab6eaeb35f75c48e4df3c579a431a96c1" id="r_ab6eaeb35f75c48e4df3c579a431a96c1"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="../../d6/dc4/classMantid_1_1DataObjects_1_1PeakColumn.html#a7cf24ff4b8841e5231364d9bc46bf9e2">CacheValueType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc4/classMantid_1_1DataObjects_1_1PeakColumn.html#ab6eaeb35f75c48e4df3c579a431a96c1">m_oldRows</a></td></tr>
 <tr class="separator:ab6eaeb35f75c48e4df3c579a431a96c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a768ae362fa9b3fa5201f922646a4b033" id="r_a768ae362fa9b3fa5201f922646a4b033"><td class="memItemLeft" align="right" valign="top">std::vector&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc4/classMantid_1_1DataObjects_1_1PeakColumn.html#a768ae362fa9b3fa5201f922646a4b033">m_peaks</a></td></tr>
 <tr class="memdesc:a768ae362fa9b3fa5201f922646a4b033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the peaks object saved in the <a class="el" href="../../dd/d7f/classMantid_1_1DataObjects_1_1PeaksWorkspace.html" title="The class PeaksWorkspace stores information about a set of SCD peaks.">PeaksWorkspace</a>.  <br /></td></tr>
@@ -293,8 +293,8 @@ class Mantid::DataObjects::PeakColumn&lt; T &gt;</div><p><a class="el" href="../
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d30/PeakColumn_8h_source.html#l00028">28</a> of file <a class="el" href="../../d7/d30/PeakColumn_8h_source.html">PeakColumn.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="abd1d32ebccab510b8e0fcef6bee36011" name="abd1d32ebccab510b8e0fcef6bee36011"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd1d32ebccab510b8e0fcef6bee36011">&#9670;&#160;</a></span>CacheValueType</h2>
+<a id="a7cf24ff4b8841e5231364d9bc46bf9e2" name="a7cf24ff4b8841e5231364d9bc46bf9e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cf24ff4b8841e5231364d9bc46bf9e2">&#9670;&#160;</a></span>CacheValueType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -305,7 +305,7 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d6/dc4/classMantid_1_1DataObjects_1_1PeakColumn.html">Mantid::DataObjects::PeakColumn</a>&lt; T &gt;::CacheValueType =  boost::variant&lt;double, int, std::string, <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a>&gt;</td>
+          <td class="memname">using <a class="el" href="../../d6/dc4/classMantid_1_1DataObjects_1_1PeakColumn.html">Mantid::DataObjects::PeakColumn</a>&lt; T &gt;::CacheValueType =  std::variant&lt;double, int, std::string, <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a>&gt;</td>
         </tr>
       </table>
   </td>
@@ -360,9 +360,7 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00088">88</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../d7/d30/PeakColumn_8h_source.html#l00093">Mantid::DataObjects::PeakColumn&lt; T &gt;::m_hklPrec</a>, <a class="el" href="../../dc/d1f/Column_8h_source.html#l00186">Mantid::API::Column::m_name</a>, <a class="el" href="../../dc/d1f/Column_8h_source.html#l00187">Mantid::API::Column::m_type</a>, and <a class="el" href="../../dc/d1f/Column_8h_source.html#l00043">Mantid::API::Column::name()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
 
 </div>
 </div>
@@ -396,7 +394,7 @@ template&lt;class T &gt; </div>
 
 <p>Implements <a class="el" href="../../df/d9a/classMantid_1_1API_1_1Column.html#a6df119c03222582a818d0cf6f3c5d3e7">Mantid::API::Column</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00334">334</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00332">332</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
 
 </div>
 </div>
@@ -519,7 +517,7 @@ template&lt;class T &gt; </div>
 
 <p>Implements <a class="el" href="../../df/d9a/classMantid_1_1API_1_1Column.html#ae7c571930e42c9f8a066a09125564f8c">Mantid::API::Column</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00344">344</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00342">342</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
 
 </div>
 </div>
@@ -552,7 +550,7 @@ template&lt;class T &gt; </div>
 
 <p>Implements <a class="el" href="../../df/d9a/classMantid_1_1API_1_1Column.html#ae714f24f893378c73de2077c01b1b6a9">Mantid::API::Column</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00121">121</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00119">119</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
 
 </div>
 </div>
@@ -585,7 +583,7 @@ template&lt;class T &gt; </div>
 
 <p>Implements <a class="el" href="../../df/d9a/classMantid_1_1API_1_1Column.html#a88649adcf94e6820e27351a3a504d827">Mantid::API::Column</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00101">101</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00099">99</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
 
 </div>
 </div>
@@ -617,7 +615,7 @@ template&lt;class T &gt; </div>
 
 <p>Reimplemented from <a class="el" href="../../df/d9a/classMantid_1_1API_1_1Column.html#a5c52a00c67e24177946ee254c23bb42b">Mantid::API::Column</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00218">218</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00216">216</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
 
 </div>
 </div>
@@ -664,9 +662,9 @@ template&lt;class T &gt; </div>
 
 <p>Implements <a class="el" href="../../df/d9a/classMantid_1_1API_1_1Column.html#a759318a52d5b42aa550f5882b6cc1b44">Mantid::API::Column</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00252">252</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00250">250</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../db/d39/System_8h_source.html#l00044">UNUSED_ARG</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../db/d9d/WarningSuppressions_8h_source.html#l00117">UNUSED_ARG</a>.</p>
 
 </div>
 </div>
@@ -699,7 +697,7 @@ template&lt;class T &gt; </div>
 
 <p>Implements <a class="el" href="../../df/d9a/classMantid_1_1API_1_1Column.html#a665948c2a2a141c41bf783a91216a58a">Mantid::API::Column</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00224">224</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00222">222</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
 
 </div>
 </div>
@@ -732,7 +730,7 @@ template&lt;class T &gt; </div>
 
 <p>Implements <a class="el" href="../../df/d9a/classMantid_1_1API_1_1Column.html#a983a382e2db39ab490d701a09afc0fb6">Mantid::API::Column</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00226">226</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00224">224</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
 
 </div>
 </div>
@@ -784,7 +782,7 @@ template&lt;class T &gt; </div>
 
 <p>Implements <a class="el" href="../../df/d9a/classMantid_1_1API_1_1Column.html#a9454959af7ee93bf9eb2ce2b9d4acf3c">Mantid::API::Column</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00141">141</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00139">139</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -838,7 +836,7 @@ template&lt;class T &gt; </div>
 
 <p>Reimplemented from <a class="el" href="../../df/d9a/classMantid_1_1API_1_1Column.html#a60f619f6ebed7b0a6c0ffdb1159204f0">Mantid::API::Column</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00201">201</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00199">199</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, and <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -891,7 +889,7 @@ template&lt;class T &gt; </div>
 
 <p>Reimplemented from <a class="el" href="../../df/d9a/classMantid_1_1API_1_1Column.html#a7dcb5ae618e1524631af3835aff74550">Mantid::API::Column</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00180">180</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00178">178</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../de/d6d/Strings_8cpp_source.html#l00697">Mantid::Kernel::Strings::convert()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, and <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -940,9 +938,9 @@ template&lt;class T &gt; </div>
 
 <p>Implements <a class="el" href="../../df/d9a/classMantid_1_1API_1_1Column.html#a339d03bebb3f969e62e7e2fb0b71231b">Mantid::API::Column</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00265">265</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00263">263</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../db/d39/System_8h_source.html#l00044">UNUSED_ARG</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../db/d9d/WarningSuppressions_8h_source.html#l00117">UNUSED_ARG</a>.</p>
 
 </div>
 </div>
@@ -989,9 +987,9 @@ template&lt;class T &gt; </div>
 
 <p>Implements <a class="el" href="../../df/d9a/classMantid_1_1API_1_1Column.html#a6afe6d1cb22a4dc9aaff78a80b7d1029">Mantid::API::Column</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00239">239</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00237">237</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00037">count</a>, and <a class="el" href="../../db/d39/System_8h_source.html#l00044">UNUSED_ARG</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00037">count</a>, and <a class="el" href="../../db/d9d/WarningSuppressions_8h_source.html#l00117">UNUSED_ARG</a>.</p>
 
 </div>
 </div>
@@ -1033,7 +1031,7 @@ template&lt;class T &gt; </div>
 
 <p>Sets the correct value in the referenced peak. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00349">349</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00347">347</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -1102,7 +1100,7 @@ template&lt;class T &gt; </div>
 
 <p>Implements <a class="el" href="../../df/d9a/classMantid_1_1API_1_1Column.html#ab5edaa5c8bbae7000a1d9e4563001683">Mantid::API::Column</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00229">229</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00227">227</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
 
 </div>
 </div>
@@ -1136,7 +1134,7 @@ template&lt;class T &gt; </div>
 
 <p>Implements <a class="el" href="../../df/d9a/classMantid_1_1API_1_1Column.html#a8124ffcc77b1e6fafea3aabdd93b942d">Mantid::API::Column</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00339">339</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00337">337</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
 
 </div>
 </div>
@@ -1178,7 +1176,7 @@ template&lt;class T &gt; </div>
 
 <p>Implements <a class="el" href="../../df/d9a/classMantid_1_1API_1_1Column.html#a03def163909c16e58d1c34e4020d1bf9">Mantid::API::Column</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00287">287</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00285">285</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00627">Mantid::DataObjects::Peak::getValueByColName()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, and <a class="el" href="../../d5/d0b/FitMW_8cpp_source.html#l00051">value</a>.</p>
 
@@ -1222,7 +1220,7 @@ template&lt;class T &gt; </div>
 
 <p>Implements <a class="el" href="../../df/d9a/classMantid_1_1API_1_1Column.html#a4ee47d66d6d47ad5094f412c341a0a02">Mantid::API::Column</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00277">277</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00275">275</a> of file <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html">PeakColumn.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>.</p>
 
@@ -1255,8 +1253,6 @@ template&lt;class T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d30/PeakColumn_8h_source.html#l00093">93</a> of file <a class="el" href="../../d7/d30/PeakColumn_8h_source.html">PeakColumn.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5a/PeakColumn_8cpp_source.html#l00088">Mantid::DataObjects::PeakColumn&lt; T &gt;::PeakColumn()</a>.</p>
-
 </div>
 </div>
 <a id="ab6eaeb35f75c48e4df3c579a431a96c1" name="ab6eaeb35f75c48e4df3c579a431a96c1"></a>
@@ -1271,7 +1267,7 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt;<a class="el" href="../../d6/dc4/classMantid_1_1DataObjects_1_1PeakColumn.html#abd1d32ebccab510b8e0fcef6bee36011">CacheValueType</a>&gt; <a class="el" href="../../d6/dc4/classMantid_1_1DataObjects_1_1PeakColumn.html">Mantid::DataObjects::PeakColumn</a>&lt; T &gt;::m_oldRows</td>
+          <td class="memname">std::list&lt;<a class="el" href="../../d6/dc4/classMantid_1_1DataObjects_1_1PeakColumn.html#a7cf24ff4b8841e5231364d9bc46bf9e2">CacheValueType</a>&gt; <a class="el" href="../../d6/dc4/classMantid_1_1DataObjects_1_1PeakColumn.html">Mantid::DataObjects::PeakColumn</a>&lt; T &gt;::m_oldRows</td>
         </tr>
       </table>
   </td>

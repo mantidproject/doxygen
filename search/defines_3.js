@@ -43,8 +43,5 @@ var searchData=
   ['declare_5fvectorcolumn_40',['DECLARE_VECTORCOLUMN',['../d6/d6d/VectorColumn_8h.html#a3d9a3e3baea74ad990f1d750687e3131',1,'VectorColumn.h']]],
   ['declare_5fworkspace_41',['DECLARE_WORKSPACE',['../db/d7b/WorkspaceFactory_8h.html#a9504e6f0bd111a4254dd6d9d9eea7a3c',1,'WorkspaceFactory.h']]],
   ['define_5fipropertymanager_5fgetvalue_42',['DEFINE_IPROPERTYMANAGER_GETVALUE',['../dd/d94/IPropertyManager_8h.html#a4a018938bae0cba52b1f2fb3b044df3e',1,'IPropertyManager.h']]],
-  ['define_5ftype_5fmapping_43',['DEFINE_TYPE_MAPPING',['../da/df3/NDArrayTypeIndex_8cpp.html#a3acb6e4226875e583f14101780b0b5ce',1,'NDArrayTypeIndex.cpp']]],
-  ['deprecated_44',['DEPRECATED',['../db/d39/System_8h.html#aaf225a2b96038de3a42d61a1fa63654b',1,'System.h']]],
-  ['dllexport_45',['DLLExport',['../db/d39/System_8h.html#a76a25d39b515cd13499e0d9047485247',1,'System.h']]],
-  ['dllimport_46',['DLLImport',['../db/d39/System_8h.html#af126f360d5bf54003b9645966c167af9',1,'System.h']]]
+  ['define_5ftype_5fmapping_43',['DEFINE_TYPE_MAPPING',['../da/df3/NDArrayTypeIndex_8cpp.html#a3acb6e4226875e583f14101780b0b5ce',1,'NDArrayTypeIndex.cpp']]]
 ];
