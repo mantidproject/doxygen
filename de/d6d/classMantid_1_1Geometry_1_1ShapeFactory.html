@@ -152,15 +152,12 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a5d3db0308922a240fab4edbc317c068a" id="r_a5d3db0308922a240fab4edbc317c068a"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a>, <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6d/classMantid_1_1Geometry_1_1ShapeFactory.html#a5d3db0308922a240fab4edbc317c068a">applyShapeRotations</a> (Poco::XML::Element *pElem, <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a98fde6c7b4025f809ebd3b5da1bf6918">centre</a>, <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> axis) const</td></tr>
+<tr class="memdesc:a5d3db0308922a240fab4edbc317c068a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply to a primitive's centre and axis every rotation its surfaces will have had applied to them.  <br /></td></tr>
+<tr class="separator:a5d3db0308922a240fab4edbc317c068a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a381f2ab56fc7690747511381b1396b43" id="r_a381f2ab56fc7690747511381b1396b43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6d/classMantid_1_1Geometry_1_1ShapeFactory.html#a381f2ab56fc7690747511381b1396b43">createGeometryHandler</a> (Poco::XML::Element *, const std::shared_ptr&lt; <a class="el" href="../../de/d0c/classMantid_1_1Geometry_1_1CSGObject.html">CSGObject</a> &gt; &amp;)</td></tr>
 <tr class="memdesc:a381f2ab56fc7690747511381b1396b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a special geometry handler for the known finite primitives  <br /></td></tr>
 <tr class="separator:a381f2ab56fc7690747511381b1396b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0af3479e811dda6433c2641c62fa0af" id="r_ae0af3479e811dda6433c2641c62fa0af"><td class="memItemLeft" align="right" valign="top">Poco::XML::Element *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6d/classMantid_1_1Geometry_1_1ShapeFactory.html#ae0af3479e811dda6433c2641c62fa0af">getOptionalShapeElement</a> (Poco::XML::Element *pElem, const std::string &amp;<a class="el" href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>)</td></tr>
-<tr class="memdesc:ae0af3479e811dda6433c2641c62fa0af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a subelement of an XML element.  <br /></td></tr>
-<tr class="separator:ae0af3479e811dda6433c2641c62fa0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90b64c8dd96ea3f99fbaa40581c59fac" id="r_a90b64c8dd96ea3f99fbaa40581c59fac"><td class="memItemLeft" align="right" valign="top">Poco::XML::Element *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6d/classMantid_1_1Geometry_1_1ShapeFactory.html#a90b64c8dd96ea3f99fbaa40581c59fac">getShapeElement</a> (Poco::XML::Element *pElem, const std::string &amp;<a class="el" href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>)</td></tr>
-<tr class="memdesc:a90b64c8dd96ea3f99fbaa40581c59fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a subelement of an XML element, but also checks that there exist exactly one entry of this subelement.  <br /></td></tr>
-<tr class="separator:a90b64c8dd96ea3f99fbaa40581c59fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09f389cf427be0724cc37aedde361b76" id="r_a09f389cf427be0724cc37aedde361b76"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6d/classMantid_1_1Geometry_1_1ShapeFactory.html#a09f389cf427be0724cc37aedde361b76">parseCone</a> (Poco::XML::Element *pElem, std::map&lt; int, std::shared_ptr&lt; <a class="el" href="../../d7/dd7/classMantid_1_1Geometry_1_1Surface.html">Surface</a> &gt; &gt; &amp;prim, int &amp;l_id)</td></tr>
 <tr class="memdesc:a09f389cf427be0724cc37aedde361b76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse XML 'cone' element.  <br /></td></tr>
 <tr class="separator:a09f389cf427be0724cc37aedde361b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,9 +188,6 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ad706b221bec2f1bc58cb27383a101eab" id="r_ad706b221bec2f1bc58cb27383a101eab"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6d/classMantid_1_1Geometry_1_1ShapeFactory.html#ad706b221bec2f1bc58cb27383a101eab">parseInfinitePlane</a> (Poco::XML::Element *pElem, std::map&lt; int, std::shared_ptr&lt; <a class="el" href="../../d7/dd7/classMantid_1_1Geometry_1_1Surface.html">Surface</a> &gt; &gt; &amp;prim, int &amp;l_id)</td></tr>
 <tr class="memdesc:ad706b221bec2f1bc58cb27383a101eab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse XML 'infinite-plane' element.  <br /></td></tr>
 <tr class="separator:ad706b221bec2f1bc58cb27383a101eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63e695a0ced5c31223ca3fd5b5afc4d6" id="r_a63e695a0ced5c31223ca3fd5b5afc4d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6d/classMantid_1_1Geometry_1_1ShapeFactory.html#a63e695a0ced5c31223ca3fd5b5afc4d6">parsePosition</a> (Poco::XML::Element *pElem)</td></tr>
-<tr class="memdesc:a63e695a0ced5c31223ca3fd5b5afc4d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get position coordinates from XML element.  <br /></td></tr>
-<tr class="separator:a63e695a0ced5c31223ca3fd5b5afc4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65aab84346137cf8699c0843609ea69b" id="r_a65aab84346137cf8699c0843609ea69b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6d/classMantid_1_1Geometry_1_1ShapeFactory.html#a65aab84346137cf8699c0843609ea69b">parseSliceOfCylinderRing</a> (Poco::XML::Element *pElem, std::map&lt; int, std::shared_ptr&lt; <a class="el" href="../../d7/dd7/classMantid_1_1Geometry_1_1Surface.html">Surface</a> &gt; &gt; &amp;prim, int &amp;l_id)</td></tr>
 <tr class="memdesc:a65aab84346137cf8699c0843609ea69b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse XML 'slice-of-cylinder-ring' element.  <br /></td></tr>
 <tr class="separator:a65aab84346137cf8699c0843609ea69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,12 +200,24 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:acc2ba52071d2c553b82720e36991efd5" id="r_acc2ba52071d2c553b82720e36991efd5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6d/classMantid_1_1Geometry_1_1ShapeFactory.html#acc2ba52071d2c553b82720e36991efd5">parseTorus</a> (Poco::XML::Element *pElem, std::map&lt; int, std::shared_ptr&lt; <a class="el" href="../../d7/dd7/classMantid_1_1Geometry_1_1Surface.html">Surface</a> &gt; &gt; &amp;prim, int &amp;l_id)</td></tr>
 <tr class="memdesc:acc2ba52071d2c553b82720e36991efd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse XML 'torus' element.  <br /></td></tr>
 <tr class="separator:acc2ba52071d2c553b82720e36991efd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99c345ad6f282c448e607bf00c4c1d22" id="r_a99c345ad6f282c448e607bf00c4c1d22"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a>, <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6d/classMantid_1_1Geometry_1_1ShapeFactory.html#a99c345ad6f282c448e607bf00c4c1d22">rotatedCylinderBase</a> (Poco::XML::Element *pElem, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;base, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;axis, const double <a class="el" href="../../d6/d64/GetAllEi_8cpp.html#a89f6abd564014faeff7cd20c340a9c7d">height</a>) const</td></tr>
+<tr class="memdesc:a99c345ad6f282c448e607bf00c4c1d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the same rotations to a cylinder's base and axis that parseCylinder applies to its surfaces.  <br /></td></tr>
+<tr class="separator:a99c345ad6f282c448e607bf00c4c1d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d65766a4b8b7a6cc97749cad573d2fe" id="r_a6d65766a4b8b7a6cc97749cad573d2fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6d/classMantid_1_1Geometry_1_1ShapeFactory.html#a6d65766a4b8b7a6cc97749cad573d2fe">rotateWithWholeShape</a> (<a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> vector) const</td></tr>
+<tr class="memdesc:a6d65766a4b8b7a6cc97749cad573d2fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn a point or direction by &lt;rotate-all&gt; then the automatic &lt;goniometer&gt;, both about the origin.  <br /></td></tr>
+<tr class="separator:a6d65766a4b8b7a6cc97749cad573d2fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
 <tr class="memitem:a7f4e0a39e6a874a444071b3ba81017ad" id="r_a7f4e0a39e6a874a444071b3ba81017ad"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6d/classMantid_1_1Geometry_1_1ShapeFactory.html#a7f4e0a39e6a874a444071b3ba81017ad">getDoubleAttribute</a> (Poco::XML::Element *pElem, const std::string &amp;<a class="el" href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>)</td></tr>
 <tr class="memdesc:a7f4e0a39e6a874a444071b3ba81017ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return value of attribute to XML element.  <br /></td></tr>
 <tr class="separator:a7f4e0a39e6a874a444071b3ba81017ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0af3479e811dda6433c2641c62fa0af" id="r_ae0af3479e811dda6433c2641c62fa0af"><td class="memItemLeft" align="right" valign="top">static Poco::XML::Element *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6d/classMantid_1_1Geometry_1_1ShapeFactory.html#ae0af3479e811dda6433c2641c62fa0af">getOptionalShapeElement</a> (Poco::XML::Element *pElem, const std::string &amp;<a class="el" href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>)</td></tr>
+<tr class="memdesc:ae0af3479e811dda6433c2641c62fa0af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a subelement of an XML element.  <br /></td></tr>
+<tr class="separator:ae0af3479e811dda6433c2641c62fa0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b64c8dd96ea3f99fbaa40581c59fac" id="r_a90b64c8dd96ea3f99fbaa40581c59fac"><td class="memItemLeft" align="right" valign="top">static Poco::XML::Element *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6d/classMantid_1_1Geometry_1_1ShapeFactory.html#a90b64c8dd96ea3f99fbaa40581c59fac">getShapeElement</a> (Poco::XML::Element *pElem, const std::string &amp;<a class="el" href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>)</td></tr>
+<tr class="memdesc:a90b64c8dd96ea3f99fbaa40581c59fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a subelement of an XML element, but also checks that there exist exactly one entry of this subelement.  <br /></td></tr>
+<tr class="separator:a90b64c8dd96ea3f99fbaa40581c59fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae147699595ec7f2e9f438ff92ba09322" id="r_ae147699595ec7f2e9f438ff92ba09322"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6d/classMantid_1_1Geometry_1_1ShapeFactory.html#ae147699595ec7f2e9f438ff92ba09322">insertMatrixTag</a> (const std::string &amp;tagName, const <a class="el" href="../../dc/da6/classMantid_1_1Kernel_1_1Matrix.html">Kernel::Matrix</a>&lt; double &gt; &amp;matrix, std::string xml)</td></tr>
 <tr class="memdesc:ae147699595ec7f2e9f438ff92ba09322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace, or insert, a tag holding a 3x3 matrix as a11..a33 attributes.  <br /></td></tr>
 <tr class="separator:ae147699595ec7f2e9f438ff92ba09322"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,6 +230,9 @@ Static Private Member Functions</h2></td></tr>
 <tr class="memitem:ab0c7551def16d75b820c577a5d70ada5" id="r_ab0c7551def16d75b820c577a5d70ada5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dc/da6/classMantid_1_1Kernel_1_1Matrix.html">Kernel::Matrix</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6d/classMantid_1_1Geometry_1_1ShapeFactory.html#ab0c7551def16d75b820c577a5d70ada5">parseMatrixElement</a> (Poco::XML::Element *pElem)</td></tr>
 <tr class="memdesc:ab0c7551def16d75b820c577a5d70ada5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a 3x3 matrix held as a11..a33 attributes on an XML element.  <br /></td></tr>
 <tr class="separator:ab0c7551def16d75b820c577a5d70ada5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63e695a0ced5c31223ca3fd5b5afc4d6" id="r_a63e695a0ced5c31223ca3fd5b5afc4d6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6d/classMantid_1_1Geometry_1_1ShapeFactory.html#a63e695a0ced5c31223ca3fd5b5afc4d6">parsePosition</a> (Poco::XML::Element *pElem)</td></tr>
+<tr class="memdesc:a63e695a0ced5c31223ca3fd5b5afc4d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get position coordinates from XML element.  <br /></td></tr>
+<tr class="separator:a63e695a0ced5c31223ca3fd5b5afc4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a916cd044cfec93ba2b85320010f06bfd" id="r_a916cd044cfec93ba2b85320010f06bfd"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6d/classMantid_1_1Geometry_1_1ShapeFactory.html#a916cd044cfec93ba2b85320010f06bfd">sphereAlgebra</a> (const int surfaceID)</td></tr>
 <tr class="memdesc:a916cd044cfec93ba2b85320010f06bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the algebra string for a <a class="el" href="../../d4/d82/classMantid_1_1Geometry_1_1Sphere.html" title="Holds a Sphere as vector form.">Sphere</a>.  <br /></td></tr>
 <tr class="separator:a916cd044cfec93ba2b85320010f06bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -242,7 +251,7 @@ Private Attributes</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Anders Markvardsen, ISIS, RAL </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>6/8/2008 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00090">90</a> of file <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html">ShapeFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00091">91</a> of file <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html">ShapeFactory.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aac7038d472ba08f3bed374b9e196b4ad" name="aac7038d472ba08f3bed374b9e196b4ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aac7038d472ba08f3bed374b9e196b4ad">&#9670;&#160;</a></span>addAppliedGoniometerTag()</h2>
@@ -272,11 +281,11 @@ Private Attributes</h2></td></tr>
 
 <p>Replace or insert the &lt;applied-goniometer&gt; tag, recording how much of &lt;goniometer&gt; is a bake into the lab frame rather than a rotation of the shape within its own frame. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01712">1712</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01670">1670</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01670">insertMatrixTag()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01628">insertMatrixTag()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01749">rebakeGoniometer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01707">rebakeGoniometer()</a>.</p>
 
 </div>
 </div>
@@ -309,11 +318,11 @@ Private Attributes</h2></td></tr>
 <p>Replace or insert the &lt;goniometer&gt; tag, the TOTAL rotation applied to the shape's surfaces. </p>
 <p>Leaves any &lt;applied-goniometer&gt; tag untouched. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01708">1708</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01666">1666</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01670">insertMatrixTag()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01628">insertMatrixTag()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/dcf/CopySample_8cpp_source.html#l00144">Mantid::Algorithms::CopySample::copyParameters()</a>, <a class="el" href="../../dc/dfc/RotateSampleShape_8cpp_source.html#l00049">Mantid::DataHandling::RotateSampleShape::exec()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01749">rebakeGoniometer()</a>, and <a class="el" href="../../db/d05/SetSample_8cpp_source.html#l00720">Mantid::DataHandling::SetSample::setSampleShape()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/dcf/CopySample_8cpp_source.html#l00144">Mantid::Algorithms::CopySample::copyParameters()</a>, <a class="el" href="../../dc/dfc/RotateSampleShape_8cpp_source.html#l00049">Mantid::DataHandling::RotateSampleShape::exec()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01707">rebakeGoniometer()</a>, and <a class="el" href="../../db/d05/SetSample_8cpp_source.html#l00720">Mantid::DataHandling::SetSample::setSampleShape()</a>.</p>
 
 </div>
 </div>
@@ -344,9 +353,62 @@ Private Attributes</h2></td></tr>
 <p>The baked part of a shape XML string's rotation - what a shape built from this XML reports through getAppliedRotation. </p>
 <p>Suitable as rebakeGoniometer's currentBake. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01738">1738</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01696">1696</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01734">goniometerFromXML()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01718">matrixFromXMLTag()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01692">goniometerFromXML()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01676">matrixFromXMLTag()</a>.</p>
+
+</div>
+</div>
+<a id="a5d3db0308922a240fab4edbc317c068a" name="a5d3db0308922a240fab4edbc317c068a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d3db0308922a240fab4edbc317c068a">&#9670;&#160;</a></span>applyShapeRotations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">V3D</a>, <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">V3D</a> &gt; Mantid::Geometry::ShapeFactory::applyShapeRotations </td>
+          <td>(</td>
+          <td class="paramtype">Poco::XML::Element *&#160;</td>
+          <td class="paramname"><em>pElem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a>&#160;</td>
+          <td class="paramname"><em>centre</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a>&#160;</td>
+          <td class="paramname"><em>axis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Apply to a primitive's centre and axis every rotation its surfaces will have had applied to them. </p>
+<p>The three tags do not act on the same things. A per-primitive &lt;rotate&gt; turns the shape about its own centre, so it moves the axis and leaves the centre alone; &lt;rotate-all&gt; and the automatic &lt;goniometer&gt; reorient the whole shape about the origin, so they move both.</p>
+<p>Shared by createGeometryHandler and the parse functions, which read the same XML separately and so must not disagree about where the shape is.</p>
+<dl class="section return"><dt>Returns</dt><dd>the rotated centre and axis </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01472">1472</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00037">centre</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01571">generateMatrix()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01310">getOptionalShapeElement()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01346">parsePosition()</a>, <a class="el" href="../../d4/d3f/Kernel_2src_2V3D_8cpp_source.html#l00214">Mantid::Kernel::V3D::rotate()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01481">rotateWithWholeShape()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01506">createGeometryHandler()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00814">parseCone()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00443">parseCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00502">parseHollowCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00769">parseInfiniteCone()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00407">parseInfiniteCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00377">parseInfinitePlane()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01499">rotatedCylinderBase()</a>.</p>
 
 </div>
 </div>
@@ -386,9 +448,9 @@ Private Attributes</h2></td></tr>
 
 <p>create a special geometry handler for the known finite primitives </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01551">1551</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01506">1506</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00037">centre</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01399">getOptionalShapeElement()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01376">getShapeElement()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00155">height</a>, <a class="el" href="../../d4/d3f/Kernel_2src_2V3D_8cpp_source.html#l00129">Mantid::Kernel::V3D::normalize()</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00667">parseCuboid()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01034">parseHexahedron()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01435">parsePosition()</a>, <a class="el" href="../../d2/d74/Geometry_2src_2Rendering_2ShapeInfo_8cpp_source.html#l00101">Mantid::Geometry::detail::ShapeInfo::setCone()</a>, <a class="el" href="../../d2/d74/Geometry_2src_2Rendering_2ShapeInfo_8cpp_source.html#l00068">Mantid::Geometry::detail::ShapeInfo::setCuboid()</a>, <a class="el" href="../../d2/d74/Geometry_2src_2Rendering_2ShapeInfo_8cpp_source.html#l00093">Mantid::Geometry::detail::ShapeInfo::setCylinder()</a>, <a class="el" href="../../d2/d74/Geometry_2src_2Rendering_2ShapeInfo_8cpp_source.html#l00076">Mantid::Geometry::detail::ShapeInfo::setHexahedron()</a>, <a class="el" href="../../d2/d74/Geometry_2src_2Rendering_2ShapeInfo_8cpp_source.html#l00109">Mantid::Geometry::detail::ShapeInfo::setHollowCylinder()</a>, and <a class="el" href="../../d2/d74/Geometry_2src_2Rendering_2ShapeInfo_8cpp_source.html#l00085">Mantid::Geometry::detail::ShapeInfo::setSphere()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01472">applyShapeRotations()</a>, <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00037">centre</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01310">getOptionalShapeElement()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01287">getShapeElement()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00155">height</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00578">parseCuboid()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00945">parseHexahedron()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01346">parsePosition()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01499">rotatedCylinderBase()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01481">rotateWithWholeShape()</a>, <a class="el" href="../../d2/d74/Geometry_2src_2Rendering_2ShapeInfo_8cpp_source.html#l00101">Mantid::Geometry::detail::ShapeInfo::setCone()</a>, <a class="el" href="../../d2/d74/Geometry_2src_2Rendering_2ShapeInfo_8cpp_source.html#l00068">Mantid::Geometry::detail::ShapeInfo::setCuboid()</a>, <a class="el" href="../../d2/d74/Geometry_2src_2Rendering_2ShapeInfo_8cpp_source.html#l00093">Mantid::Geometry::detail::ShapeInfo::setCylinder()</a>, <a class="el" href="../../d2/d74/Geometry_2src_2Rendering_2ShapeInfo_8cpp_source.html#l00076">Mantid::Geometry::detail::ShapeInfo::setHexahedron()</a>, <a class="el" href="../../d2/d74/Geometry_2src_2Rendering_2ShapeInfo_8cpp_source.html#l00109">Mantid::Geometry::detail::ShapeInfo::setHollowCylinder()</a>, and <a class="el" href="../../d2/d74/Geometry_2src_2Rendering_2ShapeInfo_8cpp_source.html#l00085">Mantid::Geometry::detail::ShapeInfo::setSphere()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>.</p>
 
@@ -480,9 +542,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the newly created hexahedral shape object </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01516">1516</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01427">1427</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00056">Mantid::Geometry::Hexahedron::lbb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00057">Mantid::Geometry::Hexahedron::lbt</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00054">Mantid::Geometry::Hexahedron::lfb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00055">Mantid::Geometry::Hexahedron::lft</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00958">parseHexahedronFromStruct()</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00060">Mantid::Geometry::Hexahedron::rbb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00061">Mantid::Geometry::Hexahedron::rbt</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00058">Mantid::Geometry::Hexahedron::rfb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00059">Mantid::Geometry::Hexahedron::rft</a>, and <a class="el" href="../../d2/d74/Geometry_2src_2Rendering_2ShapeInfo_8cpp_source.html#l00076">Mantid::Geometry::detail::ShapeInfo::setHexahedron()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00057">Mantid::Geometry::Hexahedron::lbb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00058">Mantid::Geometry::Hexahedron::lbt</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00055">Mantid::Geometry::Hexahedron::lfb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00056">Mantid::Geometry::Hexahedron::lft</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00869">parseHexahedronFromStruct()</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00061">Mantid::Geometry::Hexahedron::rbb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00062">Mantid::Geometry::Hexahedron::rbt</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00059">Mantid::Geometry::Hexahedron::rfb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00060">Mantid::Geometry::Hexahedron::rft</a>, and <a class="el" href="../../d2/d74/Geometry_2src_2Rendering_2ShapeInfo_8cpp_source.html#l00076">Mantid::Geometry::detail::ShapeInfo::setHexahedron()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/da8/StructuredDetector_8cpp_source.html#l00366">Mantid::Geometry::StructuredDetector::addDetector()</a>.</p>
 
@@ -516,7 +578,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">108</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01551">createGeometryHandler()</a>, <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a6e2c3bb366023464404e005e59c22edb">Mantid::Geometry::g_log</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01613">generateMatrix()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01376">getShapeElement()</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00661">Mantid::Kernel::Matrix&lt; T &gt;::identityMatrix()</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00150">m_gonioRotateMatrix</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00151">m_rotateAllMatrix</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00909">parseCone()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00667">parseCuboid()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00492">parseCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01034">parseHexahedron()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00571">parseHollowCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00866">parseInfiniteCone()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00436">parseInfiniteCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00386">parseInfinitePlane()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01658">parseMatrixElement()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01435">parsePosition()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01264">parseSliceOfCylinderRing()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00344">parseSphere()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01132">parseTaperedGuide()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01224">parseTorus()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01506">createGeometryHandler()</a>, <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a6e2c3bb366023464404e005e59c22edb">Mantid::Geometry::g_log</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01571">generateMatrix()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01287">getShapeElement()</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00661">Mantid::Kernel::Matrix&lt; T &gt;::identityMatrix()</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00156">m_gonioRotateMatrix</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00157">m_rotateAllMatrix</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00814">parseCone()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00578">parseCuboid()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00443">parseCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00945">parseHexahedron()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00502">parseHollowCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00769">parseInfiniteCone()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00407">parseInfiniteCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00377">parseInfinitePlane()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01616">parseMatrixElement()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01346">parsePosition()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01175">parseSliceOfCylinderRing()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00345">parseSphere()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01043">parseTaperedGuide()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01135">parseTorus()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d3d/InstrumentDefinitionParser_8cpp_source.html#l00462">Mantid::Geometry::InstrumentDefinitionParser::adjustTypesContainingCombineComponentsElement()</a>, <a class="el" href="../../dd/daa/AnyShapeAbsorption_8cpp_source.html#l00081">Mantid::Algorithms::AnyShapeAbsorption::constructGaugeVolume()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00348">Mantid::Algorithms::PaalmanPingsAbsorptionCorrection::constructGaugeVolume()</a>, <a class="el" href="../../dc/df4/AbsorptionCorrection_8cpp_source.html#l00360">Mantid::Algorithms::AbsorptionCorrection::constructSample()</a>, <a class="el" href="../../d3/dcf/CopySample_8cpp_source.html#l00144">Mantid::Algorithms::CopySample::copyParameters()</a>, <a class="el" href="../../db/d10/CreateSampleWorkspace_8cpp_source.html#l00599">Mantid::Algorithms::CreateSampleWorkspace::createCappedCylinder()</a>, <a class="el" href="../../d0/dd7/ComponentCreationHelper_8cpp_source.html#l00070">ComponentCreationHelper::createCappedCylinder()</a>, <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l01541">Mantid::Algorithms::DiscusMultipleScatteringCorrection::createCollimatorHexahedronShape()</a>, <a class="el" href="../../d0/dd7/ComponentCreationHelper_8cpp_source.html#l00188">ComponentCreationHelper::createCuboid()</a>, <a class="el" href="../../d0/dd7/ComponentCreationHelper_8cpp_source.html#l00172">ComponentCreationHelper::createCuboid()</a>, <a class="el" href="../../d0/dd7/ComponentCreationHelper_8cpp_source.html#l00104">ComponentCreationHelper::createHollowCylinder()</a>, <a class="el" href="../../d0/dd7/ComponentCreationHelper_8cpp_source.html#l00242">ComponentCreationHelper::createHollowShell()</a>, <a class="el" href="../../d5/d07/Geometry_2src_2Instrument_2ObjCompAssembly_8cpp_source.html#l00324">Mantid::Geometry::ObjCompAssembly::createOutline()</a>, <a class="el" href="../../d7/d3b/Geometry_2src_2Instrument_2Container_8cpp_source.html#l00093">Mantid::Geometry::Container::createSampleShape()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00078">createShape()</a>, <a class="el" href="../../df/d3d/InstrumentDefinitionParser_8cpp_source.html#l00502">Mantid::Geometry::InstrumentDefinitionParser::createShapeIfTypeIsNotAnAssembly()</a>, <a class="el" href="../../db/d10/CreateSampleWorkspace_8cpp_source.html#l00619">Mantid::Algorithms::CreateSampleWorkspace::createSphere()</a>, <a class="el" href="../../d0/dd7/ComponentCreationHelper_8cpp_source.html#l00133">ComponentCreationHelper::createSphere()</a>, <a class="el" href="../../d1/d1f/ComponentHelper_8cpp_source.html#l00100">Mantid::Geometry::ComponentHelper::createSphere()</a>, <a class="el" href="../../d5/d97/MonteCarloAbsorption_8cpp_source.html#l00261">Mantid::Algorithms::MonteCarloAbsorption::doSimulation()</a>, <a class="el" href="../../d3/d3c/DefineGaugeVolume_8cpp_source.html#l00034">Mantid::DataHandling::DefineGaugeVolume::exec()</a>, <a class="el" href="../../dc/dee/FindDetectorsInShape_8cpp_source.html#l00039">Mantid::DataHandling::FindDetectorsInShape::exec()</a>, <a class="el" href="../../d0/dc4/LoadQKK_8cpp_source.html#l00066">Mantid::DataHandling::LoadQKK::exec()</a>, <a class="el" href="../../d5/db6/IBeamProfile_8cpp_source.html#l00077">Mantid::Algorithms::IBeamProfile::getIntersectionWithSample()</a>, <a class="el" href="../../dc/d4f/ShapeRotation_8cpp_source.html#l00039">Mantid::Geometry::getLabFrameShape()</a>, <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00239">Mantid::Algorithms::SparseWorkspace::makeCubeShape()</a>, <a class="el" href="../../d7/d0a/WorkspaceCreationHelper_8cpp_source.html#l00249">WorkspaceCreationHelper::maskSpectra()</a>, <a class="el" href="../../d0/de0/SampleEnvironmentSpecParser_8cpp_source.html#l00422">Mantid::DataHandling::SampleEnvironmentSpecParser::parseComponent()</a>, <a class="el" href="../../d3/d35/EstimateScatteringVolumeCentreOfMass_8cpp_source.html#l00134">Mantid::Algorithms::EstimateScatteringVolumeCentreOfMass::rasterizeLabGaugeAndCalculateMeanElementPosition()</a>, <a class="el" href="../../db/d05/SetSample_8cpp_source.html#l00623">Mantid::DataHandling::SetSample::setSampleEnvironmentFromXML()</a>, <a class="el" href="../../d6/d22/CreateSampleShape_8cpp_source.html#l00031">Mantid::DataHandling::CreateSampleShape::setSampleShape()</a>, <a class="el" href="../../d2/d34/API_2src_2Sample_8cpp_source.html#l00160">Mantid::API::Sample::setShape()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00894">Mantid::Geometry::GridDetector::shape()</a>, <a class="el" href="../../dd/da8/StructuredDetector_8cpp_source.html#l00539">Mantid::Geometry::StructuredDetector::shape()</a>, and <a class="el" href="../../db/d05/SetSample_8cpp_source.html#l00282">Mantid::DataHandling::SetSample::validateGeometry()</a>.</p>
 
@@ -608,9 +670,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A new <a class="el" href="../../de/d0c/classMantid_1_1Geometry_1_1CSGObject.html" title="Constructive Solid Geometry object.">CSGObject</a> defining a sphere </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01486">1486</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01397">1397</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00037">centre</a>, <a class="el" href="../../d2/d74/Geometry_2src_2Rendering_2ShapeInfo_8cpp_source.html#l00085">Mantid::Geometry::detail::ShapeInfo::setSphere()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00373">sphereAlgebra()</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00037">centre</a>, <a class="el" href="../../d2/d74/Geometry_2src_2Rendering_2ShapeInfo_8cpp_source.html#l00085">Mantid::Geometry::detail::ShapeInfo::setSphere()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00364">sphereAlgebra()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/dde/SaveHKL_8cpp_source.html#l00094">Mantid::Crystal::SaveHKL::exec()</a>, and <a class="el" href="../../d5/d1a/LoadNXSPE_8cpp_source.html#l00100">Mantid::DataHandling::LoadNXSPE::exec()</a>.</p>
 
@@ -667,11 +729,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a matrix of doubles to use as the rotate matrix </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01613">1613</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01571">1571</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01626">generateXRotation()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01638">generateYRotation()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01650">generateZRotation()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01584">generateXRotation()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01596">generateYRotation()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01608">generateZRotation()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00667">parseCuboid()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00492">parseCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01034">parseHexahedron()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00571">parseHollowCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00436">parseInfiniteCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00386">parseInfinitePlane()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01264">parseSliceOfCylinderRing()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01132">parseTaperedGuide()</a>, and <a class="el" href="../../d2/d91/MeshFileIO_8cpp_source.html#l00020">Mantid::DataHandling::MeshFileIO::rotate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01472">applyShapeRotations()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00578">parseCuboid()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00945">parseHexahedron()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01175">parseSliceOfCylinderRing()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01043">parseTaperedGuide()</a>, and <a class="el" href="../../d2/d91/MeshFileIO_8cpp_source.html#l00020">Mantid::DataHandling::MeshFileIO::rotate()</a>.</p>
 
 </div>
 </div>
@@ -708,9 +770,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a matrix of doubles to use as the x axis rotate matrix </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01626">1626</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01584">1584</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01613">generateMatrix()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01571">generateMatrix()</a>.</p>
 
 </div>
 </div>
@@ -747,9 +809,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a matrix of doubles to use as the y axis rotate matrix </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01638">1638</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01596">1596</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01613">generateMatrix()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01571">generateMatrix()</a>.</p>
 
 </div>
 </div>
@@ -786,9 +848,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a matrix of doubles to use as the z axis rotate matrix </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01650">1650</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01608">1608</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01613">generateMatrix()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01571">generateMatrix()</a>.</p>
 
 </div>
 </div>
@@ -843,11 +905,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01422">1422</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01333">1333</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00909">parseCone()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00667">parseCuboid()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00492">parseCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00571">parseHollowCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00866">parseInfiniteCone()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00436">parseInfiniteCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01658">parseMatrixElement()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01264">parseSliceOfCylinderRing()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00344">parseSphere()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01132">parseTaperedGuide()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01224">parseTorus()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00814">parseCone()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00578">parseCuboid()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00443">parseCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00502">parseHollowCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00769">parseInfiniteCone()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00407">parseInfiniteCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01616">parseMatrixElement()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01175">parseSliceOfCylinderRing()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00345">parseSphere()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01043">parseTaperedGuide()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01135">parseTorus()</a>.</p>
 
 </div>
 </div>
@@ -880,7 +942,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -902,11 +964,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01399">1399</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01310">1310</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01551">createGeometryHandler()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00667">parseCuboid()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00492">parseCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01034">parseHexahedron()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00571">parseHollowCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00436">parseInfiniteCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00386">parseInfinitePlane()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01264">parseSliceOfCylinderRing()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00344">parseSphere()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01132">parseTaperedGuide()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01472">applyShapeRotations()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01506">createGeometryHandler()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00578">parseCuboid()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00945">parseHexahedron()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01175">parseSliceOfCylinderRing()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00345">parseSphere()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01043">parseTaperedGuide()</a>.</p>
 
 </div>
 </div>
@@ -939,7 +1001,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -960,11 +1022,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01376">1376</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01287">1287</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">name</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01551">createGeometryHandler()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00909">parseCone()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00492">parseCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01034">parseHexahedron()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00571">parseHollowCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00866">parseInfiniteCone()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00436">parseInfiniteCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00386">parseInfinitePlane()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01264">parseSliceOfCylinderRing()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00344">parseSphere()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01132">parseTaperedGuide()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01224">parseTorus()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01506">createGeometryHandler()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00814">parseCone()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00443">parseCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00945">parseHexahedron()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00502">parseHollowCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00769">parseInfiniteCone()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00407">parseInfiniteCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00377">parseInfinitePlane()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01175">parseSliceOfCylinderRing()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00345">parseSphere()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01043">parseTaperedGuide()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01135">parseTorus()</a>.</p>
 
 </div>
 </div>
@@ -994,11 +1056,11 @@ Private Attributes</h2></td></tr>
 
 <p>The total rotation held in a shape XML string's &lt;goniometer&gt; tag, identity if there is none. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01734">1734</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01692">1692</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01718">matrixFromXMLTag()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01676">matrixFromXMLTag()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01738">appliedGoniometerFromXML()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01749">rebakeGoniometer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01696">appliedGoniometerFromXML()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01707">rebakeGoniometer()</a>.</p>
 
 </div>
 </div>
@@ -1045,11 +1107,11 @@ Private Attributes</h2></td></tr>
 <p>Replace, or insert, a tag holding a 3x3 matrix as a11..a33 attributes. </p>
 <p>tagName carries no angle brackets. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01670">1670</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01628">1628</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00146">Mantid::Kernel::Matrix&lt; T &gt;::numCols()</a>, <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00143">Mantid::Kernel::Matrix&lt; T &gt;::numRows()</a>, and <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00140">Mantid::Kernel::Matrix&lt; T &gt;::size()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01712">addAppliedGoniometerTag()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01708">addGoniometerTag()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01670">addAppliedGoniometerTag()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01666">addGoniometerTag()</a>.</p>
 
 </div>
 </div>
@@ -1089,11 +1151,11 @@ Private Attributes</h2></td></tr>
 
 <p>The matrix held in the named tag of a shape XML string, read as createShape reads it, or nullopt when there is no such tag or the XML does not parse. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01718">1718</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01676">1676</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01658">parseMatrixElement()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01616">parseMatrixElement()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01738">appliedGoniometerFromXML()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01734">goniometerFromXML()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01696">appliedGoniometerFromXML()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01692">goniometerFromXML()</a>.</p>
 
 </div>
 </div>
@@ -1154,9 +1216,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00909">909</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00814">814</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01422">getDoubleAttribute()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01376">getShapeElement()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00155">height</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01435">parsePosition()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01472">applyShapeRotations()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01333">getDoubleAttribute()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01287">getShapeElement()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00155">height</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01346">parsePosition()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>.</p>
 
@@ -1202,11 +1264,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00667">667</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00578">578</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00037">centre</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01613">generateMatrix()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01422">getDoubleAttribute()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01399">getOptionalShapeElement()</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00042">Mantid::Geometry::CuboidCorners::lbb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00040">Mantid::Geometry::CuboidCorners::lfb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00041">Mantid::Geometry::CuboidCorners::lft</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00150">m_gonioRotateMatrix</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00151">m_rotateAllMatrix</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01435">parsePosition()</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00043">Mantid::Geometry::CuboidCorners::rfb</a>, <a class="el" href="../../d4/d8e/Kernel_2src_2Quat_8cpp_source.html#l00397">Mantid::Kernel::Quat::rotate()</a>, and <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00045">Mantid::Geometry::CuboidCorners::rotatePoints()</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00037">centre</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01571">generateMatrix()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01333">getDoubleAttribute()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01310">getOptionalShapeElement()</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00043">Mantid::Geometry::CuboidCorners::lbb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00041">Mantid::Geometry::CuboidCorners::lfb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00042">Mantid::Geometry::CuboidCorners::lft</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01346">parsePosition()</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00044">Mantid::Geometry::CuboidCorners::rfb</a>, <a class="el" href="../../d4/d8e/Kernel_2src_2Quat_8cpp_source.html#l00397">Mantid::Kernel::Quat::rotate()</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00046">Mantid::Geometry::CuboidCorners::rotatePoints()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01481">rotateWithWholeShape()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01551">createGeometryHandler()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00774">parseCuboid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01506">createGeometryHandler()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00677">parseCuboid()</a>.</p>
 
 </div>
 </div>
@@ -1267,9 +1329,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00774">774</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00677">677</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00667">parseCuboid()</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00578">parseCuboid()</a>.</p>
 
 </div>
 </div>
@@ -1330,9 +1392,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00492">492</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00443">443</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00037">centre</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01613">generateMatrix()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01422">getDoubleAttribute()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01399">getOptionalShapeElement()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01376">getShapeElement()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00155">height</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00150">m_gonioRotateMatrix</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00151">m_rotateAllMatrix</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01435">parsePosition()</a>, and <a class="el" href="../../d4/d3f/Kernel_2src_2V3D_8cpp_source.html#l00214">Mantid::Kernel::V3D::rotate()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01472">applyShapeRotations()</a>, <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00037">centre</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01333">getDoubleAttribute()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01287">getShapeElement()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00155">height</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01346">parsePosition()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>.</p>
 
@@ -1377,11 +1439,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01034">1034</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00945">945</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01613">generateMatrix()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01399">getOptionalShapeElement()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01376">getShapeElement()</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00056">Mantid::Geometry::Hexahedron::lbb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00057">Mantid::Geometry::Hexahedron::lbt</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00054">Mantid::Geometry::Hexahedron::lfb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00055">Mantid::Geometry::Hexahedron::lft</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00150">m_gonioRotateMatrix</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00151">m_rotateAllMatrix</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01435">parsePosition()</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00060">Mantid::Geometry::Hexahedron::rbb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00061">Mantid::Geometry::Hexahedron::rbt</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00058">Mantid::Geometry::Hexahedron::rfb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00059">Mantid::Geometry::Hexahedron::rft</a>, and <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00063">Mantid::Geometry::Hexahedron::rotatePoints()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01571">generateMatrix()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01310">getOptionalShapeElement()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01287">getShapeElement()</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00057">Mantid::Geometry::Hexahedron::lbb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00058">Mantid::Geometry::Hexahedron::lbt</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00055">Mantid::Geometry::Hexahedron::lfb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00056">Mantid::Geometry::Hexahedron::lft</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00156">m_gonioRotateMatrix</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00157">m_rotateAllMatrix</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01346">parsePosition()</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00061">Mantid::Geometry::Hexahedron::rbb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00062">Mantid::Geometry::Hexahedron::rbt</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00059">Mantid::Geometry::Hexahedron::rfb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00060">Mantid::Geometry::Hexahedron::rft</a>, and <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00064">Mantid::Geometry::Hexahedron::rotatePoints()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01551">createGeometryHandler()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01113">parseHexahedron()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01506">createGeometryHandler()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01024">parseHexahedron()</a>.</p>
 
 </div>
 </div>
@@ -1442,9 +1504,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01113">1113</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01024">1024</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01034">parseHexahedron()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00958">parseHexahedronFromStruct()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00945">parseHexahedron()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00869">parseHexahedronFromStruct()</a>.</p>
 
 </div>
 </div>
@@ -1490,11 +1552,11 @@ Private Attributes</h2></td></tr>
 
 <p>The "tapered-guide" shape is actually a special case of hexahedron; once we have the 8 points that make up either shape, the process of parsing them can be exactly the same in both cases. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00958">958</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00869">869</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00056">Mantid::Geometry::Hexahedron::lbb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00057">Mantid::Geometry::Hexahedron::lbt</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00054">Mantid::Geometry::Hexahedron::lfb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00055">Mantid::Geometry::Hexahedron::lft</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00060">Mantid::Geometry::Hexahedron::rbb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00058">Mantid::Geometry::Hexahedron::rfb</a>, and <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00059">Mantid::Geometry::Hexahedron::rft</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00057">Mantid::Geometry::Hexahedron::lbb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00058">Mantid::Geometry::Hexahedron::lbt</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00055">Mantid::Geometry::Hexahedron::lfb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00056">Mantid::Geometry::Hexahedron::lft</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00061">Mantid::Geometry::Hexahedron::rbb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00059">Mantid::Geometry::Hexahedron::rfb</a>, and <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00060">Mantid::Geometry::Hexahedron::rft</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01516">createHexahedralShape()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01113">parseHexahedron()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01132">parseTaperedGuide()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01427">createHexahedralShape()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01024">parseHexahedron()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01043">parseTaperedGuide()</a>.</p>
 
 </div>
 </div>
@@ -1555,9 +1617,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00571">571</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00502">502</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00037">centre</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01613">generateMatrix()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01422">getDoubleAttribute()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01399">getOptionalShapeElement()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01376">getShapeElement()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00155">height</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00150">m_gonioRotateMatrix</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00151">m_rotateAllMatrix</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01435">parsePosition()</a>, and <a class="el" href="../../d4/d3f/Kernel_2src_2V3D_8cpp_source.html#l00214">Mantid::Kernel::V3D::rotate()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01472">applyShapeRotations()</a>, <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00037">centre</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01333">getDoubleAttribute()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01287">getShapeElement()</a>, <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00155">height</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01346">parsePosition()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>.</p>
 
@@ -1620,9 +1682,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00866">866</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00769">769</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01422">getDoubleAttribute()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01376">getShapeElement()</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01435">parsePosition()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01472">applyShapeRotations()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01333">getDoubleAttribute()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01287">getShapeElement()</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01346">parsePosition()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>.</p>
 
@@ -1685,9 +1747,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00436">436</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00407">407</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00037">centre</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01613">generateMatrix()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01422">getDoubleAttribute()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01399">getOptionalShapeElement()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01376">getShapeElement()</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00150">m_gonioRotateMatrix</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00151">m_rotateAllMatrix</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01435">parsePosition()</a>, and <a class="el" href="../../d4/d3f/Kernel_2src_2V3D_8cpp_source.html#l00214">Mantid::Kernel::V3D::rotate()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01472">applyShapeRotations()</a>, <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00037">centre</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01333">getDoubleAttribute()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01287">getShapeElement()</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01346">parsePosition()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>.</p>
 
@@ -1750,9 +1812,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00386">386</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00377">377</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00037">centre</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01613">generateMatrix()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01399">getOptionalShapeElement()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01376">getShapeElement()</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00150">m_gonioRotateMatrix</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00151">m_rotateAllMatrix</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01435">parsePosition()</a>, and <a class="el" href="../../d4/d3f/Kernel_2src_2V3D_8cpp_source.html#l00214">Mantid::Kernel::V3D::rotate()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01472">applyShapeRotations()</a>, <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00037">centre</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01287">getShapeElement()</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01346">parsePosition()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>.</p>
 
@@ -1784,11 +1846,11 @@ Private Attributes</h2></td></tr>
 
 <p>Read a 3x3 matrix held as a11..a33 attributes on an XML element. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01658">1658</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01616">1616</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01422">getDoubleAttribute()</a>, and <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01333">getDoubleAttribute()</a>, and <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01718">matrixFromXMLTag()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01676">matrixFromXMLTag()</a>.</p>
 
 </div>
 </div>
@@ -1811,7 +1873,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1825,11 +1887,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Position coordinates in the form of a V3D object </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01435">1435</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01346">1346</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d4/d3f/Kernel_2src_2V3D_8cpp_source.html#l00056">Mantid::Kernel::V3D::spherical()</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::x</a>, <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::y</a>, and <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00674">Mantid::Geometry::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01551">createGeometryHandler()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00909">parseCone()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00667">parseCuboid()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00492">parseCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01034">parseHexahedron()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00571">parseHollowCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00866">parseInfiniteCone()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00436">parseInfiniteCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00386">parseInfinitePlane()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01264">parseSliceOfCylinderRing()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00344">parseSphere()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01132">parseTaperedGuide()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01224">parseTorus()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01472">applyShapeRotations()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01506">createGeometryHandler()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00814">parseCone()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00578">parseCuboid()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00443">parseCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00945">parseHexahedron()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00502">parseHollowCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00769">parseInfiniteCone()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00407">parseInfiniteCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00377">parseInfinitePlane()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01175">parseSliceOfCylinderRing()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00345">parseSphere()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01043">parseTaperedGuide()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01135">parseTorus()</a>.</p>
 
 </div>
 </div>
@@ -1890,9 +1952,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01264">1264</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01175">1175</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a6e2c3bb366023464404e005e59c22edb">Mantid::Geometry::g_log</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01613">generateMatrix()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01422">getDoubleAttribute()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01399">getOptionalShapeElement()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01376">getShapeElement()</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00150">m_gonioRotateMatrix</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00151">m_rotateAllMatrix</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01435">parsePosition()</a>, <a class="el" href="../../d4/d3f/Kernel_2src_2V3D_8cpp_source.html#l00214">Mantid::Kernel::V3D::rotate()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#a6e2c3bb366023464404e005e59c22edb">Mantid::Geometry::g_log</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01571">generateMatrix()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01333">getDoubleAttribute()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01310">getOptionalShapeElement()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01287">getShapeElement()</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00156">m_gonioRotateMatrix</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00157">m_rotateAllMatrix</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01346">parsePosition()</a>, <a class="el" href="../../d4/d3f/Kernel_2src_2V3D_8cpp_source.html#l00214">Mantid::Kernel::V3D::rotate()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>.</p>
 
@@ -1955,9 +2017,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00344">344</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00345">345</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00037">centre</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01422">getDoubleAttribute()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01399">getOptionalShapeElement()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01376">getShapeElement()</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00150">m_gonioRotateMatrix</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00151">m_rotateAllMatrix</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01435">parsePosition()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00373">sphereAlgebra()</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00037">centre</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01333">getDoubleAttribute()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01310">getOptionalShapeElement()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01287">getShapeElement()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01346">parsePosition()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01481">rotateWithWholeShape()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00364">sphereAlgebra()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>.</p>
 
@@ -2020,9 +2082,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01132">1132</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01043">1043</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00037">centre</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01613">generateMatrix()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01422">getDoubleAttribute()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01399">getOptionalShapeElement()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01376">getShapeElement()</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00056">Mantid::Geometry::Hexahedron::lbb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00057">Mantid::Geometry::Hexahedron::lbt</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00054">Mantid::Geometry::Hexahedron::lfb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00055">Mantid::Geometry::Hexahedron::lft</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00150">m_gonioRotateMatrix</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00151">m_rotateAllMatrix</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00958">parseHexahedronFromStruct()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01435">parsePosition()</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00060">Mantid::Geometry::Hexahedron::rbb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00061">Mantid::Geometry::Hexahedron::rbt</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00058">Mantid::Geometry::Hexahedron::rfb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00059">Mantid::Geometry::Hexahedron::rft</a>, <a class="el" href="../../d4/d8e/Kernel_2src_2Quat_8cpp_source.html#l00397">Mantid::Kernel::Quat::rotate()</a>, and <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00063">Mantid::Geometry::Hexahedron::rotatePoints()</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00037">centre</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01571">generateMatrix()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01333">getDoubleAttribute()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01310">getOptionalShapeElement()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01287">getShapeElement()</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00057">Mantid::Geometry::Hexahedron::lbb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00058">Mantid::Geometry::Hexahedron::lbt</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00055">Mantid::Geometry::Hexahedron::lfb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00056">Mantid::Geometry::Hexahedron::lft</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00156">m_gonioRotateMatrix</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00157">m_rotateAllMatrix</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00869">parseHexahedronFromStruct()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01346">parsePosition()</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00061">Mantid::Geometry::Hexahedron::rbb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00062">Mantid::Geometry::Hexahedron::rbt</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00059">Mantid::Geometry::Hexahedron::rfb</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00060">Mantid::Geometry::Hexahedron::rft</a>, <a class="el" href="../../d4/d8e/Kernel_2src_2Quat_8cpp_source.html#l00397">Mantid::Kernel::Quat::rotate()</a>, and <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00064">Mantid::Geometry::Hexahedron::rotatePoints()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>.</p>
 
@@ -2085,9 +2147,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01224">1224</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01135">1135</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01422">getDoubleAttribute()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01376">getShapeElement()</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01435">parsePosition()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01333">getDoubleAttribute()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01287">getShapeElement()</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01346">parsePosition()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>.</p>
 
@@ -2128,11 +2190,103 @@ Private Attributes</h2></td></tr>
 <p>Rebase the shape so the baked part becomes exactly newBake, preserving the definition-frame rotation. </p>
 <p>currentBake is what the shape reports through getAppliedRotation today. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01749">1749</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01707">1707</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01712">addAppliedGoniometerTag()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01708">addGoniometerTag()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01734">goniometerFromXML()</a>, and <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00766">Mantid::Kernel::Matrix&lt; T &gt;::Tprime()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01670">addAppliedGoniometerTag()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01666">addGoniometerTag()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01692">goniometerFromXML()</a>, and <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00766">Mantid::Kernel::Matrix&lt; T &gt;::Tprime()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d4f/ShapeRotation_8cpp_source.html#l00039">Mantid::Geometry::getLabFrameShape()</a>.</p>
+
+</div>
+</div>
+<a id="a99c345ad6f282c448e607bf00c4c1d22" name="a99c345ad6f282c448e607bf00c4c1d22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99c345ad6f282c448e607bf00c4c1d22">&#9670;&#160;</a></span>rotatedCylinderBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">V3D</a>, <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">V3D</a> &gt; Mantid::Geometry::ShapeFactory::rotatedCylinderBase </td>
+          <td>(</td>
+          <td class="paramtype">Poco::XML::Element *&#160;</td>
+          <td class="paramname"><em>pElem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Apply the same rotations to a cylinder's base and axis that parseCylinder applies to its surfaces. </p>
+<p>A cylinder is defined by its bottom base, but &lt;rotate&gt; turns it about the midpoint of its axis, which is what parseCylinder and parseHollowCylinder build their surfaces around. So the base is recovered from the rotated midpoint; rotating it directly would swing the cylinder about its end.</p>
+<dl class="section return"><dt>Returns</dt><dd>the rotated base and axis </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01499">1499</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01472">applyShapeRotations()</a>, and <a class="el" href="../../d6/d64/GetAllEi_8cpp_source.html#l00155">height</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01506">createGeometryHandler()</a>.</p>
+
+</div>
+</div>
+<a id="a6d65766a4b8b7a6cc97749cad573d2fe" name="a6d65766a4b8b7a6cc97749cad573d2fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d65766a4b8b7a6cc97749cad573d2fe">&#9670;&#160;</a></span>rotateWithWholeShape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">V3D</a> Mantid::Geometry::ShapeFactory::rotateWithWholeShape </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a>&#160;</td>
+          <td class="paramname"><em>vector</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Turn a point or direction by &lt;rotate-all&gt; then the automatic &lt;goniometer&gt;, both about the origin. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01481">1481</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00156">m_gonioRotateMatrix</a>, <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00157">m_rotateAllMatrix</a>, and <a class="el" href="../../d4/d3f/Kernel_2src_2V3D_8cpp_source.html#l00214">Mantid::Kernel::V3D::rotate()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01472">applyShapeRotations()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01506">createGeometryHandler()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00578">parseCuboid()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00345">parseSphere()</a>.</p>
 
 </div>
 </div>
@@ -2169,11 +2323,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A CSG surface algebra string </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00373">373</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00364">364</a> of file <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html">ShapeFactory.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01486">createSphere()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00344">parseSphere()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01397">createSphere()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00345">parseSphere()</a>.</p>
 
 </div>
 </div>
@@ -2198,9 +2352,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00150">150</a> of file <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html">ShapeFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00156">156</a> of file <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html">ShapeFactory.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00667">parseCuboid()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00492">parseCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01034">parseHexahedron()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00571">parseHollowCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00436">parseInfiniteCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00386">parseInfinitePlane()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01264">parseSliceOfCylinderRing()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00344">parseSphere()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01132">parseTaperedGuide()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00945">parseHexahedron()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01175">parseSliceOfCylinderRing()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01043">parseTaperedGuide()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01481">rotateWithWholeShape()</a>.</p>
 
 </div>
 </div>
@@ -2224,9 +2378,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00151">151</a> of file <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html">ShapeFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html#l00157">157</a> of file <a class="el" href="../../d9/d09/ShapeFactory_8h_source.html">ShapeFactory.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00667">parseCuboid()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00492">parseCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01034">parseHexahedron()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00571">parseHollowCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00436">parseInfiniteCylinder()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00386">parseInfinitePlane()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01264">parseSliceOfCylinderRing()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00344">parseSphere()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01132">parseTaperedGuide()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">createShape()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00945">parseHexahedron()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01175">parseSliceOfCylinderRing()</a>, <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01043">parseTaperedGuide()</a>, and <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l01481">rotateWithWholeShape()</a>.</p>
 
 </div>
 </div>
