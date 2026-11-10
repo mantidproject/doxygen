@@ -434,7 +434,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>  <span class="comment">// Beam line axis, to compute scattering angle</span></div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">V3D</a> beamLine = samplePos - sourcePos;</div>
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span> </div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>  <span class="keyword">const</span> <span class="keyword">auto</span> up = inputWS-&gt;getInstrument()-&gt;getReferenceFrame()-&gt;vecPointingUp();</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>  <span class="keyword">const</span> <span class="keyword">auto</span> up = inputWS-&gt;getReferenceFrame()-&gt;vecPointingUp();</div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>  <span class="keywordtype">double</span> monoWavelength = 0;</div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d3/d36/classMantid_1_1Algorithms_1_1Q1DWeighted.html#acf3a27a511ecf2057759516ff6ef8aac">m_isMonochromatic</a>) {</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    <span class="keywordflow">if</span> (inputWS-&gt;run().hasProperty(<span class="stringliteral">&quot;wavelength&quot;</span>)) {</div>

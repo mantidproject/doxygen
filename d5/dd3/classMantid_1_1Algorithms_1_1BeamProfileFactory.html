@@ -100,15 +100,15 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a9cdda249e32cf0a62e246012694db975" id="r_a9cdda249e32cf0a62e246012694db975"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="../../d7/d0a/classMantid_1_1Algorithms_1_1IBeamProfile.html">IBeamProfile</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd3/classMantid_1_1Algorithms_1_1BeamProfileFactory.html#a9cdda249e32cf0a62e246012694db975">createBeamProfile</a> (const <a class="el" href="../../da/d03/classMantid_1_1Geometry_1_1Instrument.html">Geometry::Instrument</a> &amp;instrument, const <a class="el" href="../../db/def/classMantid_1_1API_1_1Sample.html">API::Sample</a> &amp;sample)</td></tr>
-<tr class="separator:a9cdda249e32cf0a62e246012694db975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67298c1eece8f7c730494948495a4b72" id="r_a67298c1eece8f7c730494948495a4b72"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="../../d7/d0a/classMantid_1_1Algorithms_1_1IBeamProfile.html">IBeamProfile</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd3/classMantid_1_1Algorithms_1_1BeamProfileFactory.html#a67298c1eece8f7c730494948495a4b72">createBeamProfile</a> (<a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html">Geometry::ComponentInfo</a> const &amp;componentInfo, <a class="el" href="../../db/def/classMantid_1_1API_1_1Sample.html">API::Sample</a> const &amp;sample)</td></tr>
+<tr class="separator:a67298c1eece8f7c730494948495a4b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="../../d8/d75/BeamProfileFactory_8h_source.html#l00016">16</a> of file <a class="el" href="../../d8/d75/BeamProfileFactory_8h_source.html">BeamProfileFactory.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9cdda249e32cf0a62e246012694db975" name="a9cdda249e32cf0a62e246012694db975"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cdda249e32cf0a62e246012694db975">&#9670;&#160;</a></span>createBeamProfile()</h2>
+<a id="a67298c1eece8f7c730494948495a4b72" name="a67298c1eece8f7c730494948495a4b72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67298c1eece8f7c730494948495a4b72">&#9670;&#160;</a></span>createBeamProfile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -119,13 +119,13 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">std::unique_ptr&lt; <a class="el" href="../../d7/d0a/classMantid_1_1Algorithms_1_1IBeamProfile.html">IBeamProfile</a> &gt; Mantid::Algorithms::BeamProfileFactory::createBeamProfile </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../da/d03/classMantid_1_1Geometry_1_1Instrument.html">Geometry::Instrument</a> &amp;&#160;</td>
-          <td class="paramname"><em>instrument</em>, </td>
+          <td class="paramtype"><a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html">Geometry::ComponentInfo</a> const &amp;&#160;</td>
+          <td class="paramname"><em>componentInfo</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../db/def/classMantid_1_1API_1_1Sample.html">API::Sample</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../db/def/classMantid_1_1API_1_1Sample.html">API::Sample</a> const &amp;&#160;</td>
           <td class="paramname"><em>sample</em>&#160;</td>
         </tr>
         <tr>
@@ -141,11 +141,11 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d8c/BeamProfileFactory_8cpp_source.html#l00020">20</a> of file <a class="el" href="../../d2/d8c/BeamProfileFactory_8cpp_source.html">BeamProfileFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d8c/BeamProfileFactory_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../d2/d8c/BeamProfileFactory_8cpp_source.html">BeamProfileFactory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/dd5/Geometry_2src_2Instrument_2SampleEnvironment_8cpp_source.html#l00054">Mantid::Geometry::SampleEnvironment::boundingBox()</a>, <a class="el" href="../../de/da6/classMantid_1_1Geometry_1_1IObject.html#ad9d69672423a13c17f2d3de4979b1b50">Mantid::Geometry::IObject::getBoundingBox()</a>, <a class="el" href="../../d2/d34/API_2src_2Sample_8cpp_source.html#l00180">Mantid::API::Sample::getEnvironment()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01206">Mantid::Geometry::Instrument::getReferenceFrame()</a>, <a class="el" href="../../d2/d34/API_2src_2Sample_8cpp_source.html#l00146">Mantid::API::Sample::getShape()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00394">Mantid::Geometry::Instrument::getSource()</a>, <a class="el" href="../../d2/d34/API_2src_2Sample_8cpp_source.html#l00173">Mantid::API::Sample::hasEnvironment()</a>, <a class="el" href="../../de/da6/classMantid_1_1Geometry_1_1IObject.html#aff6a5679df340b32ed7946a0386a46dc">Mantid::Geometry::IObject::hasValidShape()</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00091">Mantid::Geometry::BoundingBox::maxPoint()</a>, and <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00089">Mantid::Geometry::BoundingBox::minPoint()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/dd5/Geometry_2src_2Instrument_2SampleEnvironment_8cpp_source.html#l00054">Mantid::Geometry::SampleEnvironment::boundingBox()</a>, <a class="el" href="../../de/da6/classMantid_1_1Geometry_1_1IObject.html#ad9d69672423a13c17f2d3de4979b1b50">Mantid::Geometry::IObject::getBoundingBox()</a>, <a class="el" href="../../d2/d34/API_2src_2Sample_8cpp_source.html#l00180">Mantid::API::Sample::getEnvironment()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00832">Mantid::Geometry::ComponentInfo::getNumberParameter()</a>, <a class="el" href="../../d2/d34/API_2src_2Sample_8cpp_source.html#l00146">Mantid::API::Sample::getShape()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00847">Mantid::Geometry::ComponentInfo::getStringParameter()</a>, <a class="el" href="../../d2/d34/API_2src_2Sample_8cpp_source.html#l00173">Mantid::API::Sample::hasEnvironment()</a>, <a class="el" href="../../de/da6/classMantid_1_1Geometry_1_1IObject.html#aff6a5679df340b32ed7946a0386a46dc">Mantid::Geometry::IObject::hasValidShape()</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00091">Mantid::Geometry::BoundingBox::maxPoint()</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00089">Mantid::Geometry::BoundingBox::minPoint()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00258">Mantid::Geometry::ComponentInfo::referenceFrame()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00246">Mantid::Geometry::ComponentInfo::source()</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00207">Mantid::Geometry::ComponentInfo::sourcePosition()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/d97/MonteCarloAbsorption_8cpp_source.html#l00260">Mantid::Algorithms::MonteCarloAbsorption::doSimulation()</a>, <a class="el" href="../../d0/d6c/AddAbsorptionWeightedPathLengths_8cpp_source.html#l00097">Mantid::Algorithms::AddAbsorptionWeightedPathLengths::exec()</a>, <a class="el" href="../../dd/daa/AnyShapeAbsorption_8cpp_source.html#l00049">Mantid::Algorithms::AnyShapeAbsorption::initialiseCachedDistances()</a>, <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l02184">Mantid::Algorithms::DiscusMultipleScatteringCorrection::prepareSampleBeamGeometry()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00283">Mantid::Algorithms::PaalmanPingsAbsorptionCorrection::rasterize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/d97/MonteCarloAbsorption_8cpp_source.html#l00261">Mantid::Algorithms::MonteCarloAbsorption::doSimulation()</a>, <a class="el" href="../../d0/d6c/AddAbsorptionWeightedPathLengths_8cpp_source.html#l00097">Mantid::Algorithms::AddAbsorptionWeightedPathLengths::exec()</a>, <a class="el" href="../../dd/daa/AnyShapeAbsorption_8cpp_source.html#l00049">Mantid::Algorithms::AnyShapeAbsorption::initialiseCachedDistances()</a>, <a class="el" href="../../d0/df8/DiscusMultipleScatteringCorrection_8cpp_source.html#l02183">Mantid::Algorithms::DiscusMultipleScatteringCorrection::prepareSampleBeamGeometry()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00283">Mantid::Algorithms::PaalmanPingsAbsorptionCorrection::rasterize()</a>.</p>
 
 </div>
 </div>
