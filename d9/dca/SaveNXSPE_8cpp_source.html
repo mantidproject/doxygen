@@ -120,8 +120,8 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="../../dc/de3/MantidVersion_8h.html">MantidKernel/MantidVersion.h</a>&quot;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="../../d1/daf/Unit_8h.html">MantidKernel/Unit.h</a>&quot;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;boost/scoped_array.hpp&gt;</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;limits&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;limits&gt;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d8/d23/namespaceMantid_1_1DataHandling.html">Mantid::DataHandling</a> {</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
@@ -360,7 +360,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>  slabSize[1] = nBins;</div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>  <span class="comment">// Allocate the temporary buffers for the signal and errors</span></div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  <span class="keyword">using </span>Buffer = boost::scoped_array&lt;double&gt;;</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  <span class="keyword">using </span>Buffer = std::unique_ptr&lt;double[]&gt;;</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  <span class="keyword">const</span> <span class="keywordtype">size_t</span> bufferSize(slabSize[0] * slabSize[1]);</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>  Buffer signalBuffer(<span class="keyword">new</span> <span class="keywordtype">double</span>[bufferSize]);</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  Buffer errorBuffer(<span class="keyword">new</span> <span class="keywordtype">double</span>[bufferSize]);</div>

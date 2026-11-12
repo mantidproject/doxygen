@@ -110,7 +110,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="../../d9/d51/EnabledWhenProperty_8h.html">MantidKernel/EnabledWhenProperty.h</a>&quot;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="../../dc/d96/ListValidator_8h.html">MantidKernel/ListValidator.h</a>&quot;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="../../da/d1c/MultiThreaded_8h.html">MantidKernel/MultiThreaded.h</a>&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;boost/function.hpp&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="../../d9/dec/namespaceMantid_1_1Kernel.html">Mantid::Kernel</a>;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="../../d9/da0/namespaceMantid_1_1API.html">Mantid::API</a>;</div>
@@ -190,7 +190,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keyword">const</span> int64_t nPoints = inputWS-&gt;getNPoints();</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keyword">using namespace </span>std::placeholders;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  boost::function&lt;bool(<span class="keywordtype">double</span>)&gt; comparitor = std::bind(std::less&lt;double&gt;(), std::placeholders::_1, referenceValue);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  std::function&lt;bool(<span class="keywordtype">double</span>)&gt; comparitor = std::bind(std::less&lt;double&gt;(), std::placeholders::_1, referenceValue);</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keywordflow">if</span> (condition == <a class="code hl_function" href="../../d8/de0/namespaceMantid_1_1MDAlgorithms.html#ad0a169056cb871877148b7af7b8ab7a2">GreaterThan</a>()) {</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    comparitor = std::bind(std::greater&lt;double&gt;(), std::placeholders::_1, referenceValue);</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  }</div>

@@ -120,7 +120,7 @@ var searchData=
   ['int64_117',['INT64',['../de/d25/classNXnumtype.html#a501e5cdd6c353d0d3cdf98eae7c18cb4',1,'NXnumtype']]],
   ['int8_118',['INT8',['../de/d25/classNXnumtype.html#a4e986e714a9e7f08e59e533396256aac',1,'NXnumtype']]],
   ['integert0_119',['integerT0',['../d1/d5f/structMantid_1_1DataHandling_1_1headerData.html#a71ed037318c280058615fc6c210d055e',1,'Mantid::DataHandling::headerData']]],
-  ['integrationresult_120',['integrationResult',['../d7/d74/classMantid_1_1API_1_1IPeakFunction.html#a69816ab6011d0bdc725c0b0b71729363',1,'Mantid::API::IPeakFunction']]],
+  ['integrationresult_120',['integrationResult',['../d7/d74/classMantid_1_1API_1_1IPeakFunction.html#ad4265b75b9eda4df0f15b175d5d1f2f0',1,'Mantid::API::IPeakFunction']]],
   ['intensity_121',['intensity',['../dd/df8/structMantid_1_1Algorithms_1_1ConvertAxesToRealSpace_1_1SpectraData.html#a3c29195905861129370185bc21297a1b',1,'Mantid::Algorithms::ConvertAxesToRealSpace::SpectraData::intensity'],['../d3/d17/EstimatePeakIntensities_8cpp.html#a2118076db8e8f8a25c2376e1d4acfb67',1,'intensity:&#160;EstimatePeakIntensities.cpp']]],
   ['intercept_122',['intercept',['../db/d0d/structMantid_1_1CurveFitting_1_1Functions_1_1linearJ.html#aae4918ebe1367fe2a2bbc066d2ae36ff',1,'Mantid::CurveFitting::Functions::linearJ']]],
   ['internal_123',['internal',['../d0/d01/classMantid_1_1Kernel_1_1FeatureUsage.html#aae5c9e00dad70fac0d4ff6b9eac2f04f',1,'Mantid::Kernel::FeatureUsage::internal'],['../d8/d23/namespaceMantid_1_1DataHandling.html#acb440da8a64c359499367a6cc29be348',1,'Mantid::DataHandling::INTERNAL']]],

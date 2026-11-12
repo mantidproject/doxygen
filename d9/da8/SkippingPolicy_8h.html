@@ -98,7 +98,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d1/d9b/IMDIterator_8h_source.html">MantidAPI/IMDIterator.h</a>&quot;</code><br />
 <code>#include &quot;MantidDataObjects/DllConfig.h&quot;</code><br />
-<code>#include &lt;boost/scoped_ptr.hpp&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 </div>
 <p><a href="../../d9/da8/SkippingPolicy_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -124,8 +124,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a925cde0f8a3123e5e6f872a817a42e76" id="r_a925cde0f8a3123e5e6f872a817a42e76"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d22/namespaceMantid_1_1DataObjects.html#a925cde0f8a3123e5e6f872a817a42e76">Mantid::DataObjects::SkippingPolicy_scptr</a> = boost::scoped_ptr&lt; <a class="el" href="../../d9/d41/classMantid_1_1DataObjects_1_1SkippingPolicy.html">SkippingPolicy</a> &gt;</td></tr>
-<tr class="separator:a925cde0f8a3123e5e6f872a817a42e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a700aa4c2b2eb4579ee9ea26b7b97f60d" id="r_a700aa4c2b2eb4579ee9ea26b7b97f60d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d22/namespaceMantid_1_1DataObjects.html#a700aa4c2b2eb4579ee9ea26b7b97f60d">Mantid::DataObjects::SkippingPolicy_scptr</a> = std::unique_ptr&lt; <a class="el" href="../../d9/d41/classMantid_1_1DataObjects_1_1SkippingPolicy.html">SkippingPolicy</a> &gt;</td></tr>
+<tr class="separator:a700aa4c2b2eb4579ee9ea26b7b97f60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

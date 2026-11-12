@@ -116,7 +116,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;Poco/DateTimeFormatter.h&gt;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;Poco/DateTimeParser.h&gt;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;Poco/Glob.h&gt;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;boost/scoped_array.hpp&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;locale&gt;</span></div>
@@ -288,7 +288,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>      <span class="keyword">const</span> std::size_t total_length =</div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>          std::accumulate(info.dims.cbegin(), info.dims.cend(), std::size_t(1),</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                          [](std::size_t acc, int64_t <a class="code hl_variable" href="../../dc/d67/namespaceMantid_1_1Geometry.html#af9966bf83559a0e8759072837e5ab80f">x</a>) { return acc * static_cast&lt;std::size_t&gt;(x); });</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>      boost::scoped_array&lt;char&gt; val_array(<span class="keyword">new</span> <span class="keywordtype">char</span>[total_length + 1]);</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>      std::unique_ptr&lt;char[]&gt; val_array(<span class="keyword">new</span> <span class="keywordtype">char</span>[total_length + 1]);</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>      file.getData(val_array.get());</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>      file.closeData();</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>      values = std::string(val_array.get(), total_length);</div>
@@ -937,7 +937,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>      file.openData(<span class="stringliteral">&quot;value&quot;</span>);</div>
 <div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>      <a class="code hl_struct" href="../../d5/dad/structMantid_1_1Nexus_1_1Info.html">Nexus::Info</a> info = file.getInfo();</div>
 <div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>      <span class="keywordflow">if</span> (info.<a class="code hl_variable" href="../../d5/dad/structMantid_1_1Nexus_1_1Info.html#a82ca1b89f40836c6790022ca3fadc82f">type</a> == <a class="code hl_variable" href="../../de/d25/classNXnumtype.html#ae4fdbfa193df9f9cdddf49b152f228cf">NXnumtype::FLOAT32</a>) {</div>
-<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>        boost::scoped_array&lt;float&gt; <a class="code hl_variable" href="../../d5/d0b/FitMW_8cpp.html#aee90379adb0307effb138f4871edbc5c">value</a>(<span class="keyword">new</span> <span class="keywordtype">float</span>[info.<a class="code hl_variable" href="../../d5/dad/structMantid_1_1Nexus_1_1Info.html#a1349e70c54b02e6bce87e92208a055a6">dims</a>[0]]);</div>
+<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>        std::unique_ptr&lt;float[]&gt; <a class="code hl_variable" href="../../d5/d0b/FitMW_8cpp.html#aee90379adb0307effb138f4871edbc5c">value</a>(<span class="keyword">new</span> <span class="keywordtype">float</span>[info.<a class="code hl_variable" href="../../d5/dad/structMantid_1_1Nexus_1_1Info.html#a1349e70c54b02e6bce87e92208a055a6">dims</a>[0]]);</div>
 <div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>        file.getData(<a class="code hl_variable" href="../../d5/d0b/FitMW_8cpp.html#aee90379adb0307effb138f4871edbc5c">value</a>.get());</div>
 <div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>        file.closeData();</div>
 <div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>        logValue = std::make_unique&lt;Kernel::PropertyWithValue&lt;double&gt;&gt;(propName, <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="../../d5/d0b/FitMW_8cpp.html#aee90379adb0307effb138f4871edbc5c">value</a>[0]), <span class="keyword">true</span>);</div>

@@ -3,7 +3,7 @@ var searchData=
   ['objcompassembly_5fconst_5fsptr_0',['ObjCompAssembly_const_sptr',['../dc/d67/namespaceMantid_1_1Geometry.html#a9c927aa25f094d3256c49e191d010320',1,'Mantid::Geometry']]],
   ['objcompassembly_5fsptr_1',['ObjCompAssembly_sptr',['../dc/d67/namespaceMantid_1_1Geometry.html#a2687a9ef753abcd4f3c634a07b2c50f0',1,'Mantid::Geometry']]],
   ['object_2',['Object',['../d0/d2e/namespaceMantidQt_1_1Widgets_1_1Common_1_1Python.html#ac2fac0f217ab35f7a54326f41cd5c2b9',1,'MantidQt::Widgets::Common::Python']]],
-  ['objfunction_3',['ObjFunction',['../da/dcf/classMantid_1_1CurveFitting_1_1AugmentedLagrangianOptimizer.html#aa6c3506b8c5b5607ad733359309c8b3b',1,'Mantid::CurveFitting::AugmentedLagrangianOptimizer']]],
+  ['objfunction_3',['ObjFunction',['../da/dcf/classMantid_1_1CurveFitting_1_1AugmentedLagrangianOptimizer.html#a1495a1a5dcf588337dc9a897d3169806',1,'Mantid::CurveFitting::AugmentedLagrangianOptimizer']]],
   ['observermethod_4',['ObserverMethod',['../d8/d0d/PythonInterface_2mantid_2api_2src_2Exports_2AnalysisDataServiceObserver_8cpp.html#ae73c83ff1128d1e2d1018ea08797bc6a',1,'AnalysisDataServiceObserver.cpp']]],
   ['observermethodsignature_5',['ObserverMethodSignature',['../d8/d0d/PythonInterface_2mantid_2api_2src_2Exports_2AnalysisDataServiceObserver_8cpp.html#a2f97c948de0a941af3ef829ef2d752f2',1,'AnalysisDataServiceObserver.cpp']]],
   ['offsetsworkspace_5fconst_5fsptr_6',['OffsetsWorkspace_const_sptr',['../db/d22/namespaceMantid_1_1DataObjects.html#a122e041a5487a2084cfa11c60020cac8',1,'Mantid::DataObjects']]],

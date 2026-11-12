@@ -343,51 +343,50 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        <span class="comment">// We want to bind to the right templated function, so we have to know</span></div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        <span class="comment">// the type of TofEvent contained in the EventList.</span></div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        boost::function&lt;void()&gt; func;</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        <span class="keywordflow">switch</span> (el.<a class="code hl_function" href="../../db/d9a/classMantid_1_1DataObjects_1_1EventList.html#a539abd19d394b4041424ae33f811f68b">getEventType</a>()) {</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d9/da0/namespaceMantid_1_1API.html#ae9f200e7b2faa4af0f90f099246b084fa35f028d0c643f64a7ea7dcdfe64c0817">TOF</a>:</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>          <span class="keywordflow">if</span> (nd == 3)</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            this-&gt;convertEventList&lt;TofEvent, MDEvent&lt;3&gt;, 3&gt;(outWS3, wi, xPos, yPos, bankPos, expInfoIndex,</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                                                            goniometerIndex, detID);</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>          <span class="keywordflow">else</span> <span class="keywordflow">if</span> (nd == 4)</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>            this-&gt;convertEventList&lt;TofEvent, MDEvent&lt;4&gt;, 4&gt;(outWS4, wi, xPos, yPos, bankPos, expInfoIndex,</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>                                                            goniometerIndex, detID);</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>          <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d9/da0/namespaceMantid_1_1API.html#ae9f200e7b2faa4af0f90f099246b084fa792b720a92dec5db08a6988a6b0e8be6">WEIGHTED</a>:</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>          <span class="keywordflow">if</span> (nd == 3)</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>            this-&gt;convertEventList&lt;WeightedEvent, MDEvent&lt;3&gt;, 3&gt;(outWS3, wi, xPos, yPos, bankPos, expInfoIndex,</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>                                                                 goniometerIndex, detID);</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>          <span class="keywordflow">else</span> <span class="keywordflow">if</span> (nd == 4)</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>            this-&gt;convertEventList&lt;WeightedEvent, MDEvent&lt;4&gt;, 4&gt;(outWS4, wi, xPos, yPos, bankPos, expInfoIndex,</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>                                                                 goniometerIndex, detID);</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>          <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d9/da0/namespaceMantid_1_1API.html#ae9f200e7b2faa4af0f90f099246b084fa458f485f797965b2da495457a876cd55">WEIGHTED_NOTIME</a>:</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>          <span class="keywordflow">if</span> (nd == 3)</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>            this-&gt;convertEventList&lt;WeightedEventNoTime, MDEvent&lt;3&gt;, 3&gt;(outWS3, wi, xPos, yPos, bankPos, expInfoIndex,</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>                                                                       goniometerIndex, detID);</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>          <span class="keywordflow">else</span> <span class="keywordflow">if</span> (nd == 4)</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            this-&gt;convertEventList&lt;WeightedEventNoTime, MDEvent&lt;4&gt;, 4&gt;(outWS4, wi, xPos, yPos, bankPos, expInfoIndex,</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>                                                                       goniometerIndex, detID);</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>          <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>          <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;EventList had an unexpected data type!&quot;</span>);</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        }</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>      }</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>  }</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>  <span class="comment">// ---------------------- Perform all box splitting ---------------</span></div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>  <a class="code hl_class" href="../../d3/d0a/classMantid_1_1Kernel_1_1ThreadScheduler.html">ThreadScheduler</a> *ts = <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d66/classMantid_1_1Kernel_1_1ThreadSchedulerLargestCost.html">ThreadSchedulerLargestCost</a>();</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>  <a class="code hl_class" href="../../da/d34/classMantid_1_1Kernel_1_1ThreadPool.html">ThreadPool</a> <a class="code hl_variable" href="../../d2/d4f/FindFilesThreadPoolManager_8cpp.html#a60687d038ccf27380f66787f8bbddb7b">tp</a>(ts);</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  outWS-&gt;splitAllIfNeeded(ts);</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>  <a class="code hl_variable" href="../../d2/d4f/FindFilesThreadPoolManager_8cpp.html#a60687d038ccf27380f66787f8bbddb7b">tp</a>.joinAll();</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>  outWS-&gt;refreshCache();</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>  <span class="comment">// Save the output workspace</span></div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>  this-&gt;<a class="code hl_function" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html#a3819af9d65d799ec151ab97c15f147e4">setProperty</a>(<span class="stringliteral">&quot;OutputWorkspace&quot;</span>, outWS);</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>}</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        <span class="keywordflow">switch</span> (el.<a class="code hl_function" href="../../db/d9a/classMantid_1_1DataObjects_1_1EventList.html#a539abd19d394b4041424ae33f811f68b">getEventType</a>()) {</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d9/da0/namespaceMantid_1_1API.html#ae9f200e7b2faa4af0f90f099246b084fa35f028d0c643f64a7ea7dcdfe64c0817">TOF</a>:</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>          <span class="keywordflow">if</span> (nd == 3)</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>            this-&gt;convertEventList&lt;TofEvent, MDEvent&lt;3&gt;, 3&gt;(outWS3, wi, xPos, yPos, bankPos, expInfoIndex,</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>                                                            goniometerIndex, detID);</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>          <span class="keywordflow">else</span> <span class="keywordflow">if</span> (nd == 4)</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            this-&gt;convertEventList&lt;TofEvent, MDEvent&lt;4&gt;, 4&gt;(outWS4, wi, xPos, yPos, bankPos, expInfoIndex,</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                                                            goniometerIndex, detID);</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d9/da0/namespaceMantid_1_1API.html#ae9f200e7b2faa4af0f90f099246b084fa792b720a92dec5db08a6988a6b0e8be6">WEIGHTED</a>:</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>          <span class="keywordflow">if</span> (nd == 3)</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>            this-&gt;convertEventList&lt;WeightedEvent, MDEvent&lt;3&gt;, 3&gt;(outWS3, wi, xPos, yPos, bankPos, expInfoIndex,</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>                                                                 goniometerIndex, detID);</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>          <span class="keywordflow">else</span> <span class="keywordflow">if</span> (nd == 4)</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>            this-&gt;convertEventList&lt;WeightedEvent, MDEvent&lt;4&gt;, 4&gt;(outWS4, wi, xPos, yPos, bankPos, expInfoIndex,</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>                                                                 goniometerIndex, detID);</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d9/da0/namespaceMantid_1_1API.html#ae9f200e7b2faa4af0f90f099246b084fa458f485f797965b2da495457a876cd55">WEIGHTED_NOTIME</a>:</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>          <span class="keywordflow">if</span> (nd == 3)</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>            this-&gt;convertEventList&lt;WeightedEventNoTime, MDEvent&lt;3&gt;, 3&gt;(outWS3, wi, xPos, yPos, bankPos, expInfoIndex,</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>                                                                       goniometerIndex, detID);</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>          <span class="keywordflow">else</span> <span class="keywordflow">if</span> (nd == 4)</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            this-&gt;convertEventList&lt;WeightedEventNoTime, MDEvent&lt;4&gt;, 4&gt;(outWS4, wi, xPos, yPos, bankPos, expInfoIndex,</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>                                                                       goniometerIndex, detID);</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>          <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;EventList had an unexpected data type!&quot;</span>);</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        }</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>      }</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>  }</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  <span class="comment">// ---------------------- Perform all box splitting ---------------</span></div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>  <a class="code hl_class" href="../../d3/d0a/classMantid_1_1Kernel_1_1ThreadScheduler.html">ThreadScheduler</a> *ts = <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d66/classMantid_1_1Kernel_1_1ThreadSchedulerLargestCost.html">ThreadSchedulerLargestCost</a>();</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>  <a class="code hl_class" href="../../da/d34/classMantid_1_1Kernel_1_1ThreadPool.html">ThreadPool</a> <a class="code hl_variable" href="../../d2/d4f/FindFilesThreadPoolManager_8cpp.html#a60687d038ccf27380f66787f8bbddb7b">tp</a>(ts);</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>  outWS-&gt;splitAllIfNeeded(ts);</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  <a class="code hl_variable" href="../../d2/d4f/FindFilesThreadPoolManager_8cpp.html#a60687d038ccf27380f66787f8bbddb7b">tp</a>.joinAll();</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>  outWS-&gt;refreshCache();</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  <span class="comment">// Save the output workspace</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>  this-&gt;<a class="code hl_function" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html#a3819af9d65d799ec151ab97c15f147e4">setProperty</a>(<span class="stringliteral">&quot;OutputWorkspace&quot;</span>, outWS);</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>}</div>
 </div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>} <span class="comment">// namespace Mantid::MDAlgorithms</span></div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>} <span class="comment">// namespace Mantid::MDAlgorithms</span></div>
 <div class="ttc" id="aAPI_2src_2Run_8cpp_html_a9b45b3e13bd9167aab02e17e08916231"><div class="ttname"><a href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">Run.cpp:60</a></div></div>
 <div class="ttc" id="aAlgorithm_8h_html_afdb48240ab340a0026eeadc6de8b72e1"><div class="ttname"><a href="../../d7/d36/Algorithm_8h.html#afdb48240ab340a0026eeadc6de8b72e1">DECLARE_ALGORITHM</a></div><div class="ttdeci">#define DECLARE_ALGORITHM(classname)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d36/Algorithm_8h_source.html#l00547">Algorithm.h:547</a></div></div>
 <div class="ttc" id="aArrayLengthValidator_8h_html"><div class="ttname"><a href="../../d8/d41/ArrayLengthValidator_8h.html">ArrayLengthValidator.h</a></div></div>
@@ -397,7 +396,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="ttc" id="aConvertToDetectorFaceMD_8h_html"><div class="ttname"><a href="../../dd/d74/ConvertToDetectorFaceMD_8h.html">ConvertToDetectorFaceMD.h</a></div></div>
 <div class="ttc" id="aDetectorInfo_8h_html"><div class="ttname"><a href="../../d7/d30/DetectorInfo_8h.html">DetectorInfo.h</a></div></div>
 <div class="ttc" id="aEventWorkspace_8h_html"><div class="ttname"><a href="../../df/d08/EventWorkspace_8h.html">EventWorkspace.h</a></div></div>
-<div class="ttc" id="aFindFilesThreadPoolManager_8cpp_html_a60687d038ccf27380f66787f8bbddb7b"><div class="ttname"><a href="../../d2/d4f/FindFilesThreadPoolManager_8cpp.html#a60687d038ccf27380f66787f8bbddb7b">tp</a></div><div class="ttdeci">static std::unique_ptr&lt; QThreadPool &gt; tp</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d4f/FindFilesThreadPoolManager_8cpp_source.html#l00027">FindFilesThreadPoolManager.cpp:27</a></div></div>
+<div class="ttc" id="aFindFilesThreadPoolManager_8cpp_html_a60687d038ccf27380f66787f8bbddb7b"><div class="ttname"><a href="../../d2/d4f/FindFilesThreadPoolManager_8cpp.html#a60687d038ccf27380f66787f8bbddb7b">tp</a></div><div class="ttdeci">static std::unique_ptr&lt; QThreadPool &gt; tp</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d4f/FindFilesThreadPoolManager_8cpp_source.html#l00026">FindFilesThreadPoolManager.cpp:26</a></div></div>
 <div class="ttc" id="aIMDEventWorkspace_8h_html"><div class="ttname"><a href="../../de/d61/IMDEventWorkspace_8h.html">IMDEventWorkspace.h</a></div></div>
 <div class="ttc" id="aMDEventFactory_8h_html"><div class="ttname"><a href="../../dd/dea/MDEventFactory_8h.html">MDEventFactory.h</a></div></div>
 <div class="ttc" id="aMDHistoDimension_8h_html"><div class="ttname"><a href="../../d8/d06/MDHistoDimension_8h.html">MDHistoDimension.h</a></div></div>

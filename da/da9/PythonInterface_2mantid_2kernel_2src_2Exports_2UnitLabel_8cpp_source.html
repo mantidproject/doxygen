@@ -109,60 +109,59 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;boost/python/make_constructor.hpp&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;boost/python/return_value_policy.hpp&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;boost/scoped_array.hpp&gt;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// For Python unicode object</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;unicodeobject.h&gt;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">using </span><a class="code hl_class" href="../../d0/d46/classMantid_1_1Kernel_1_1UnitLabel.html">Mantid::Kernel::UnitLabel</a>;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="../../da/d83/namespaceboost_1_1python.html">boost::python</a>;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span>{</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>std::shared_ptr&lt;UnitLabel&gt; createLabel(<span class="keyword">const</span> <span class="keywordtype">object</span> &amp;ascii, <span class="keyword">const</span> <span class="keywordtype">object</span> &amp;utf8, <span class="keyword">const</span> <span class="keywordtype">object</span> &amp;latex) {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keyword">using </span>Utf8Char = UnitLabel::Utf8String::value_type;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordflow">if</span> (PyUnicode_Check(utf8.ptr())) {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">auto</span> length = PyUnicode_GetLength(utf8.ptr());</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    boost::scoped_array&lt;Utf8Char&gt; buffer(<span class="keyword">new</span> Utf8Char[length]);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    PyUnicode_AsWideChar(utf8.ptr(), buffer.get(), length);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">return</span> std::make_shared&lt;UnitLabel&gt;(extract&lt;std::string&gt;(ascii)(),</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                                       <a class="code hl_typedef" href="../../d0/d46/classMantid_1_1Kernel_1_1UnitLabel.html#aa6f1e28699248352c6afd16e0c24f0a3">UnitLabel::Utf8String</a>(buffer.get(), buffer.get() + length),</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                                       extract&lt;std::string&gt;(latex)());</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;utf8 label is not a unicode string object. &quot;</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                                <span class="stringliteral">&quot;Try prefixing the string with a &#39;u&#39; character.&quot;</span>);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  }</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>PyObject *utf8ToUnicode(<span class="keyword">const</span> <a class="code hl_class" href="../../d0/d46/classMantid_1_1Kernel_1_1UnitLabel.html">UnitLabel</a> &amp;self) {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keyword">const</span> <span class="keyword">auto</span> &amp;label = self.<a class="code hl_function" href="../../d0/d46/classMantid_1_1Kernel_1_1UnitLabel.html#ac38c6b8bdafc18107632497014725dd1">utf8</a>();</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordflow">return</span> PyUnicode_FromWideChar(label.c_str(), label.size());</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>} <span class="comment">// namespace</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../da/da9/PythonInterface_2mantid_2kernel_2src_2Exports_2UnitLabel_8cpp.html#a0af0ebc842cbeebaf114b4b5364e8541">   48</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../da/da9/PythonInterface_2mantid_2kernel_2src_2Exports_2UnitLabel_8cpp.html#a0af0ebc842cbeebaf114b4b5364e8541">export_UnitLabel</a>() {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  class_&lt;UnitLabel&gt;(<span class="stringliteral">&quot;UnitLabel&quot;</span>, no_init)</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      .def(<span class="stringliteral">&quot;__init__&quot;</span>,</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>           make_constructor(createLabel, default_call_policies(), (arg(<span class="stringliteral">&quot;ascii&quot;</span>), arg(<span class="stringliteral">&quot;utf8&quot;</span>), arg(<span class="stringliteral">&quot;latex&quot;</span>))),</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>           <span class="stringliteral">&quot;Construct a label from a unicode object&quot;</span>)</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      .def(init&lt;UnitLabel::AsciiString&gt;((arg(<span class="stringliteral">&quot;ascii&quot;</span>)), <span class="stringliteral">&quot;Construct a label from a plain-text string&quot;</span>))</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      .def(<span class="stringliteral">&quot;ascii&quot;</span>, &amp;<a class="code hl_function" href="../../d0/d46/classMantid_1_1Kernel_1_1UnitLabel.html#a56714990524ae3793c6cccd8078ace4c">UnitLabel::ascii</a>, arg(<span class="stringliteral">&quot;self&quot;</span>), return_value_policy&lt;copy_const_reference&gt;(),</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>           <span class="stringliteral">&quot;Return the label as a plain-text string&quot;</span>)</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      .def(<span class="stringliteral">&quot;utf8&quot;</span>, &amp;utf8ToUnicode, arg(<span class="stringliteral">&quot;self&quot;</span>), <span class="stringliteral">&quot;Return the label as a unicode string&quot;</span>)</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      .def(<span class="stringliteral">&quot;latex&quot;</span>, &amp;<a class="code hl_function" href="../../d0/d46/classMantid_1_1Kernel_1_1UnitLabel.html#ae460bf00b2fa938cf76884ab4ed1c590">UnitLabel::latex</a>, return_value_policy&lt;copy_const_reference&gt;(), arg(<span class="stringliteral">&quot;self&quot;</span>),</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>           <span class="stringliteral">&quot;Return the label as a plain-text string with latex formatting&quot;</span>)</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      <span class="comment">// special functions</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      .def(<span class="stringliteral">&quot;__str__&quot;</span>, &amp;<a class="code hl_function" href="../../d0/d46/classMantid_1_1Kernel_1_1UnitLabel.html#a56714990524ae3793c6cccd8078ace4c">UnitLabel::ascii</a>, return_value_policy&lt;copy_const_reference&gt;(), arg(<span class="stringliteral">&quot;self&quot;</span>))</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      .def(<span class="stringliteral">&quot;__unicode__&quot;</span>, &amp;utf8ToUnicode, arg(<span class="stringliteral">&quot;self&quot;</span>));</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// For Python unicode object</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;unicodeobject.h&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">using </span><a class="code hl_class" href="../../d0/d46/classMantid_1_1Kernel_1_1UnitLabel.html">Mantid::Kernel::UnitLabel</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="../../da/d83/namespaceboost_1_1python.html">boost::python</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>std::shared_ptr&lt;UnitLabel&gt; createLabel(<span class="keyword">const</span> <span class="keywordtype">object</span> &amp;ascii, <span class="keyword">const</span> <span class="keywordtype">object</span> &amp;utf8, <span class="keyword">const</span> <span class="keywordtype">object</span> &amp;latex) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keyword">using </span>Utf8Char = UnitLabel::Utf8String::value_type;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordflow">if</span> (PyUnicode_Check(utf8.ptr())) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">auto</span> length = PyUnicode_GetLength(utf8.ptr());</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    std::unique_ptr&lt;Utf8Char[]&gt; buffer(<span class="keyword">new</span> Utf8Char[length]);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    PyUnicode_AsWideChar(utf8.ptr(), buffer.get(), length);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">return</span> std::make_shared&lt;UnitLabel&gt;(extract&lt;std::string&gt;(ascii)(),</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                                       <a class="code hl_typedef" href="../../d0/d46/classMantid_1_1Kernel_1_1UnitLabel.html#aa6f1e28699248352c6afd16e0c24f0a3">UnitLabel::Utf8String</a>(buffer.get(), buffer.get() + length),</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                                       extract&lt;std::string&gt;(latex)());</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;utf8 label is not a unicode string object. &quot;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                                <span class="stringliteral">&quot;Try prefixing the string with a &#39;u&#39; character.&quot;</span>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>PyObject *utf8ToUnicode(<span class="keyword">const</span> <a class="code hl_class" href="../../d0/d46/classMantid_1_1Kernel_1_1UnitLabel.html">UnitLabel</a> &amp;self) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keyword">const</span> <span class="keyword">auto</span> &amp;label = self.<a class="code hl_function" href="../../d0/d46/classMantid_1_1Kernel_1_1UnitLabel.html#ac38c6b8bdafc18107632497014725dd1">utf8</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordflow">return</span> PyUnicode_FromWideChar(label.c_str(), label.size());</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>} <span class="comment">// namespace</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../da/da9/PythonInterface_2mantid_2kernel_2src_2Exports_2UnitLabel_8cpp.html#a0af0ebc842cbeebaf114b4b5364e8541">   47</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../da/da9/PythonInterface_2mantid_2kernel_2src_2Exports_2UnitLabel_8cpp.html#a0af0ebc842cbeebaf114b4b5364e8541">export_UnitLabel</a>() {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  class_&lt;UnitLabel&gt;(<span class="stringliteral">&quot;UnitLabel&quot;</span>, no_init)</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      .def(<span class="stringliteral">&quot;__init__&quot;</span>,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>           make_constructor(createLabel, default_call_policies(), (arg(<span class="stringliteral">&quot;ascii&quot;</span>), arg(<span class="stringliteral">&quot;utf8&quot;</span>), arg(<span class="stringliteral">&quot;latex&quot;</span>))),</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>           <span class="stringliteral">&quot;Construct a label from a unicode object&quot;</span>)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      .def(init&lt;UnitLabel::AsciiString&gt;((arg(<span class="stringliteral">&quot;ascii&quot;</span>)), <span class="stringliteral">&quot;Construct a label from a plain-text string&quot;</span>))</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      .def(<span class="stringliteral">&quot;ascii&quot;</span>, &amp;<a class="code hl_function" href="../../d0/d46/classMantid_1_1Kernel_1_1UnitLabel.html#a56714990524ae3793c6cccd8078ace4c">UnitLabel::ascii</a>, arg(<span class="stringliteral">&quot;self&quot;</span>), return_value_policy&lt;copy_const_reference&gt;(),</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>           <span class="stringliteral">&quot;Return the label as a plain-text string&quot;</span>)</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      .def(<span class="stringliteral">&quot;utf8&quot;</span>, &amp;utf8ToUnicode, arg(<span class="stringliteral">&quot;self&quot;</span>), <span class="stringliteral">&quot;Return the label as a unicode string&quot;</span>)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      .def(<span class="stringliteral">&quot;latex&quot;</span>, &amp;<a class="code hl_function" href="../../d0/d46/classMantid_1_1Kernel_1_1UnitLabel.html#ae460bf00b2fa938cf76884ab4ed1c590">UnitLabel::latex</a>, return_value_policy&lt;copy_const_reference&gt;(), arg(<span class="stringliteral">&quot;self&quot;</span>),</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>           <span class="stringliteral">&quot;Return the label as a plain-text string with latex formatting&quot;</span>)</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      <span class="comment">// special functions</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      .def(<span class="stringliteral">&quot;__str__&quot;</span>, &amp;<a class="code hl_function" href="../../d0/d46/classMantid_1_1Kernel_1_1UnitLabel.html#a56714990524ae3793c6cccd8078ace4c">UnitLabel::ascii</a>, return_value_policy&lt;copy_const_reference&gt;(), arg(<span class="stringliteral">&quot;self&quot;</span>))</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      .def(<span class="stringliteral">&quot;__unicode__&quot;</span>, &amp;utf8ToUnicode, arg(<span class="stringliteral">&quot;self&quot;</span>));</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
 </div>
-<div class="ttc" id="aPythonInterface_2mantid_2kernel_2src_2Exports_2UnitLabel_8cpp_html_a0af0ebc842cbeebaf114b4b5364e8541"><div class="ttname"><a href="../../da/da9/PythonInterface_2mantid_2kernel_2src_2Exports_2UnitLabel_8cpp.html#a0af0ebc842cbeebaf114b4b5364e8541">export_UnitLabel</a></div><div class="ttdeci">void export_UnitLabel()</div><div class="ttdef"><b>Definition</b> <a href="../../da/da9/PythonInterface_2mantid_2kernel_2src_2Exports_2UnitLabel_8cpp_source.html#l00048">UnitLabel.cpp:48</a></div></div>
+<div class="ttc" id="aPythonInterface_2mantid_2kernel_2src_2Exports_2UnitLabel_8cpp_html_a0af0ebc842cbeebaf114b4b5364e8541"><div class="ttname"><a href="../../da/da9/PythonInterface_2mantid_2kernel_2src_2Exports_2UnitLabel_8cpp.html#a0af0ebc842cbeebaf114b4b5364e8541">export_UnitLabel</a></div><div class="ttdeci">void export_UnitLabel()</div><div class="ttdef"><b>Definition</b> <a href="../../da/da9/PythonInterface_2mantid_2kernel_2src_2Exports_2UnitLabel_8cpp_source.html#l00047">UnitLabel.cpp:47</a></div></div>
 <div class="ttc" id="aUnitLabel_8h_html"><div class="ttname"><a href="../../d5/d3c/UnitLabel_8h.html">UnitLabel.h</a></div></div>
 <div class="ttc" id="aclassMantid_1_1Kernel_1_1UnitLabel_html"><div class="ttname"><a href="../../d0/d46/classMantid_1_1Kernel_1_1UnitLabel.html">Mantid::Kernel::UnitLabel</a></div><div class="ttdoc">A base-class for the a class that is able to return unit labels in different representations.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d3c/UnitLabel_8h_source.html#l00020">UnitLabel.h:20</a></div></div>
 <div class="ttc" id="aclassMantid_1_1Kernel_1_1UnitLabel_html_a56714990524ae3793c6cccd8078ace4c"><div class="ttname"><a href="../../d0/d46/classMantid_1_1Kernel_1_1UnitLabel.html#a56714990524ae3793c6cccd8078ace4c">Mantid::Kernel::UnitLabel::ascii</a></div><div class="ttdeci">const AsciiString &amp; ascii() const</div><div class="ttdoc">Return an ascii label for unit.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dee/Kernel_2src_2UnitLabel_8cpp_source.html#l00105">UnitLabel.cpp:105</a></div></div>

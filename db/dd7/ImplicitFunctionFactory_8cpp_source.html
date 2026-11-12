@@ -112,7 +112,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;Poco/DOM/NodeList.h&gt;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;Poco/File.h&gt;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;Poco/Path.h&gt;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;boost/scoped_ptr.hpp&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d9/da0/namespaceMantid_1_1API.html">Mantid::API</a> {</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
@@ -131,7 +131,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <a class="code hl_class" href="../../d8/dfb/classMantid_1_1API_1_1ImplicitFunctionParser.html">ImplicitFunctionParser</a> *funcParser =</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      Mantid::API::ImplicitFunctionParserFactory::Instance().createImplicitFunctionParserFromXML(processXML);</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  boost::scoped_ptr&lt;ImplicitFunctionBuilder&gt; functionBuilder(funcParser-&gt;<a class="code hl_function" href="../../d8/dfb/classMantid_1_1API_1_1ImplicitFunctionParser.html#ab8bbf7f42e3c590426ec50354c45e60e">createFunctionBuilder</a>(processXML));</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  std::unique_ptr&lt;ImplicitFunctionBuilder&gt; functionBuilder(funcParser-&gt;<a class="code hl_function" href="../../d8/dfb/classMantid_1_1API_1_1ImplicitFunctionParser.html#ab8bbf7f42e3c590426ec50354c45e60e">createFunctionBuilder</a>(processXML));</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keywordflow">return</span> functionBuilder-&gt;create();</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
 </div>
@@ -144,10 +144,10 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  Poco::AutoPtr&lt;Document&gt; pDoc = pParser.parseString(processXML);</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  Element *pInstructionsXML = pDoc-&gt;documentElement();</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  boost::scoped_ptr&lt;ImplicitFunctionParser&gt; funcParser(</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  std::unique_ptr&lt;ImplicitFunctionParser&gt; funcParser(</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      ImplicitFunctionParserFactory::Instance().createImplicitFunctionParserFromXML(processXML));</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  boost::scoped_ptr&lt;ImplicitFunctionBuilder&gt; functionBuilder(funcParser-&gt;createFunctionBuilder(pInstructionsXML));</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  std::unique_ptr&lt;ImplicitFunctionBuilder&gt; functionBuilder(funcParser-&gt;createFunctionBuilder(pInstructionsXML));</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keywordflow">return</span> functionBuilder-&gt;create();</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}</div>
 </div>
