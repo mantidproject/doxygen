@@ -277,10 +277,26 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>  <span class="comment">// Give the output</span></div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>  <a class="code hl_function" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html#a3819af9d65d799ec151ab97c15f147e4">setProperty</a>(<span class="stringliteral">&quot;OutputWorkspace&quot;</span>, <a class="code hl_variable" href="../../d8/d62/classMantid_1_1MDAlgorithms_1_1BinaryOperationMD.html#acd4f3b4dc0b2d5694e594659a8a77397">m_out</a>);</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>}</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>  <span class="comment">// Release workspace references held by this instance</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>  <a class="code hl_variable" href="../../d8/d62/classMantid_1_1MDAlgorithms_1_1BinaryOperationMD.html#a8eff30068b6a110775a6e75e750f3db6">m_lhs</a>.reset();</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>  <a class="code hl_variable" href="../../d8/d62/classMantid_1_1MDAlgorithms_1_1BinaryOperationMD.html#afad9adac03d9863e66c0c036b6be9be8">m_rhs</a>.reset();</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  <a class="code hl_variable" href="../../d8/d62/classMantid_1_1MDAlgorithms_1_1BinaryOperationMD.html#acd4f3b4dc0b2d5694e594659a8a77397">m_out</a>.reset();</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  <a class="code hl_variable" href="../../d8/d62/classMantid_1_1MDAlgorithms_1_1BinaryOperationMD.html#a37101933ade0976346bd51145a3c95d0">m_lhs_event</a>.reset();</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  <a class="code hl_variable" href="../../d8/d62/classMantid_1_1MDAlgorithms_1_1BinaryOperationMD.html#a061a18305a7057e17de6ca79e54453db">m_rhs_event</a>.reset();</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>  <a class="code hl_variable" href="../../d8/d62/classMantid_1_1MDAlgorithms_1_1BinaryOperationMD.html#ae1b95ba7abbd56d249f48439f47f02a8">m_lhs_histo</a>.reset();</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  <a class="code hl_variable" href="../../d8/d62/classMantid_1_1MDAlgorithms_1_1BinaryOperationMD.html#ad208e20b69ca7417b78a5d22e1a0785b">m_rhs_histo</a>.reset();</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  <a class="code hl_variable" href="../../d8/d62/classMantid_1_1MDAlgorithms_1_1BinaryOperationMD.html#ab94f38be09983505435194d072e79bcc">m_lhs_scalar</a>.reset();</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  <a class="code hl_variable" href="../../d8/d62/classMantid_1_1MDAlgorithms_1_1BinaryOperationMD.html#a619e71cbfd40d53c5b7070aecfd5b59a">m_rhs_scalar</a>.reset();</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  <a class="code hl_variable" href="../../d8/d62/classMantid_1_1MDAlgorithms_1_1BinaryOperationMD.html#a63c94b4f227afd8738aed3f792066b7e">m_operand_event</a>.reset();</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  <a class="code hl_variable" href="../../d8/d62/classMantid_1_1MDAlgorithms_1_1BinaryOperationMD.html#afc26941322675fc1c3306be646ca9b32">m_out_event</a>.reset();</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  <a class="code hl_variable" href="../../d8/d62/classMantid_1_1MDAlgorithms_1_1BinaryOperationMD.html#a5908cdaaedd4765842938962837cc9b2">m_operand_histo</a>.reset();</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  <a class="code hl_variable" href="../../d8/d62/classMantid_1_1MDAlgorithms_1_1BinaryOperationMD.html#aa5734c70e59fc3725ab20e9f52fe6299">m_out_histo</a>.reset();</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  <a class="code hl_variable" href="../../d8/d62/classMantid_1_1MDAlgorithms_1_1BinaryOperationMD.html#a0bf37ed3deebae88192f90cfc6d9a8c3">m_operand_scalar</a>.reset();</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>}</div>
 </div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>} <span class="comment">// namespace Mantid::MDAlgorithms</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>} <span class="comment">// namespace Mantid::MDAlgorithms</span></div>
 <div class="ttc" id="aBinaryOperationMD_8h_html"><div class="ttname"><a href="../../df/db5/BinaryOperationMD_8h.html">BinaryOperationMD.h</a></div></div>
 <div class="ttc" id="aIMDDimension_8h_html"><div class="ttname"><a href="../../d9/da4/IMDDimension_8h.html">IMDDimension.h</a></div></div>
 <div class="ttc" id="aIMDEventWorkspace_8h_html"><div class="ttname"><a href="../../de/d61/IMDEventWorkspace_8h.html">IMDEventWorkspace.h</a></div></div>

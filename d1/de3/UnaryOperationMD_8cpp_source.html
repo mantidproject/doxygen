@@ -199,10 +199,16 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="comment">// Give the output</span></div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <a class="code hl_function" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html#a3819af9d65d799ec151ab97c15f147e4">setProperty</a>(<span class="stringliteral">&quot;OutputWorkspace&quot;</span>, <a class="code hl_variable" href="../../d6/d3b/classMantid_1_1MDAlgorithms_1_1UnaryOperationMD.html#a0ff617e6630fe258b925be04ee423250">m_out</a>);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>}</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <span class="comment">// Release workspace references held by this instance</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <a class="code hl_variable" href="../../d6/d3b/classMantid_1_1MDAlgorithms_1_1UnaryOperationMD.html#ae600a8107ab8825c5bb4f0154540caa9">m_in</a>.reset();</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <a class="code hl_variable" href="../../d6/d3b/classMantid_1_1MDAlgorithms_1_1UnaryOperationMD.html#a7acc1321d00fe6aa3c1d4600e4cfe9de">m_in_event</a>.reset();</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <a class="code hl_variable" href="../../d6/d3b/classMantid_1_1MDAlgorithms_1_1UnaryOperationMD.html#ad9fd15769affc2284bc171321f532a86">m_in_histo</a>.reset();</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <a class="code hl_variable" href="../../d6/d3b/classMantid_1_1MDAlgorithms_1_1UnaryOperationMD.html#a0ff617e6630fe258b925be04ee423250">m_out</a>.reset();</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}</div>
 </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>} <span class="comment">// namespace Mantid::MDAlgorithms</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>} <span class="comment">// namespace Mantid::MDAlgorithms</span></div>
 <div class="ttc" id="aIMDEventWorkspace_8h_html"><div class="ttname"><a href="../../de/d61/IMDEventWorkspace_8h.html">IMDEventWorkspace.h</a></div></div>
 <div class="ttc" id="aIMDWorkspace_8h_html"><div class="ttname"><a href="../../d7/d4c/IMDWorkspace_8h.html">IMDWorkspace.h</a></div></div>
 <div class="ttc" id="aMDHistoWorkspace_8h_html"><div class="ttname"><a href="../../de/df1/MDHistoWorkspace_8h.html">MDHistoWorkspace.h</a></div></div>
