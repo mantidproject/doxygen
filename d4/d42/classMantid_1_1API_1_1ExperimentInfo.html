@@ -345,9 +345,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:aff1639cf6c8de3002a8700b17a307795" id="r_aff1639cf6c8de3002a8700b17a307795"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d42/classMantid_1_1API_1_1ExperimentInfo.html#aff1639cf6c8de3002a8700b17a307795">populateWithParameter</a> (<a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html">Geometry::ComponentInfo</a> &amp;compInfo, <a class="el" href="../../d7/d15/classMantid_1_1Geometry_1_1PositionAndRotationAccumulator.html">Geometry::PositionAndRotationAccumulator</a> &amp;posAndRot, const size_t compIndex, const std::string &amp;<a class="el" href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>, const <a class="el" href="../../dc/def/classMantid_1_1Geometry_1_1XMLInstrumentParameter.html">Geometry::XMLInstrumentParameter</a> &amp;paramInfo, const <a class="el" href="../../d6/d91/classMantid_1_1API_1_1Run.html">Run</a> &amp;runData)</td></tr>
 <tr class="memdesc:aff1639cf6c8de3002a8700b17a307795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill with given instrument parameter.  <br /></td></tr>
 <tr class="separator:aff1639cf6c8de3002a8700b17a307795"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27bc6dfb9968764f6c2af14911f90500" id="r_a27bc6dfb9968764f6c2af14911f90500"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d42/classMantid_1_1API_1_1ExperimentInfo.html#a27bc6dfb9968764f6c2af14911f90500">setInstumentFromXML</a> (const std::string &amp;nxFilename, std::string &amp;instrumentName, std::string &amp;instrumentXml)</td></tr>
-<tr class="memdesc:a27bc6dfb9968764f6c2af14911f90500"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the instrument given the name and XML leading from IDF file if XML string is empty.  <br /></td></tr>
-<tr class="separator:a27bc6dfb9968764f6c2af14911f90500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d969c80d9782a90fa65956be91de8c5" id="r_a7d969c80d9782a90fa65956be91de8c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d42/classMantid_1_1API_1_1ExperimentInfo.html#a7d969c80d9782a90fa65956be91de8c5">setInstrumentFromXML</a> (const std::string &amp;nxFilename, std::string &amp;instrumentName, std::string &amp;instrumentXml)</td></tr>
+<tr class="memdesc:a7d969c80d9782a90fa65956be91de8c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the instrument given the name and XML leading from IDF file if XML string is empty.  <br /></td></tr>
+<tr class="separator:a7d969c80d9782a90fa65956be91de8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -1135,7 +1135,7 @@ Private Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01469">populateIfNotLoaded()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00513">run()</a>, and <a class="el" href="../../da/d50/LogManager_8cpp_source.html#l00130">Mantid::API::LogManager::startTime()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01164">setInstumentFromXML()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01164">setInstrumentFromXML()</a>.</p>
 
 </div>
 </div>
@@ -1476,7 +1476,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01118">1118</a> of file <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html">ExperimentInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01141">loadEmbeddedInstrumentInfoNexus()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01164">setInstumentFromXML()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01141">loadEmbeddedInstrumentInfoNexus()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01164">setInstrumentFromXML()</a>.</p>
 
 </div>
 </div>
@@ -1530,7 +1530,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01088">1088</a> of file <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html">ExperimentInfo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01141">loadEmbeddedInstrumentInfoNexus()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01235">loadInstrumentParametersNexus()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01164">setInstumentFromXML()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01141">loadEmbeddedInstrumentInfoNexus()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01235">loadInstrumentParametersNexus()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01164">setInstrumentFromXML()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01070">loadExperimentInfoNexus()</a>, and <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01053">loadExperimentInfoNexus()</a>.</p>
 
@@ -1616,7 +1616,7 @@ Private Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00145">Mantid::Kernel::Logger::debug()</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">Mantid::API::g_log</a>, and <a class="el" href="../../de/d6d/Strings_8cpp_source.html#l00027">Mantid::Kernel::Strings::loadFile()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01164">setInstumentFromXML()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01164">setInstrumentFromXML()</a>.</p>
 
 </div>
 </div>
@@ -2307,12 +2307,12 @@ Private Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00220">adoptBeamline()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00981">invalidateAllSpectrumDefinitions()</a>, <a class="el" href="../../da/dd7/ExperimentInfo_8h_source.html#l00241">m_baseComponentInfo</a>, <a class="el" href="../../da/dd7/ExperimentInfo_8h_source.html#l00242">m_baseComponentInfoMutex</a>, <a class="el" href="../../da/dd7/ExperimentInfo_8h_source.html#l00240">m_baseDetectorInfo</a>, <a class="el" href="../../da/dd7/ExperimentInfo_8h_source.html#l00189">m_parmap</a>, <a class="el" href="../../da/dd7/ExperimentInfo_8h_source.html#l00234">m_spectrumInfoWrapper</a>, and <a class="el" href="../../da/dd7/ExperimentInfo_8h_source.html#l00191">sptr_instrument</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00099">copyExperimentInfoFrom()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01164">setInstumentFromXML()</a>, and <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00047">Mantid::Algorithms::SparseWorkspace::SparseWorkspace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l00099">copyExperimentInfoFrom()</a>, <a class="el" href="../../d5/d96/API_2src_2ExperimentInfo_8cpp_source.html#l01164">setInstrumentFromXML()</a>, and <a class="el" href="../../dc/dc1/SparseWorkspace_8cpp_source.html#l00047">Mantid::Algorithms::SparseWorkspace::SparseWorkspace()</a>.</p>
 
 </div>
 </div>
-<a id="a27bc6dfb9968764f6c2af14911f90500" name="a27bc6dfb9968764f6c2af14911f90500"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27bc6dfb9968764f6c2af14911f90500">&#9670;&#160;</a></span>setInstumentFromXML()</h2>
+<a id="a7d969c80d9782a90fa65956be91de8c5" name="a7d969c80d9782a90fa65956be91de8c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d969c80d9782a90fa65956be91de8c5">&#9670;&#160;</a></span>setInstrumentFromXML()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2321,7 +2321,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Mantid::API::ExperimentInfo::setInstumentFromXML </td>
+          <td class="memname">void Mantid::API::ExperimentInfo::setInstrumentFromXML </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>nxFilename</em>, </td>
