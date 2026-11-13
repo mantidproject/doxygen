@@ -474,9 +474,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a84ce97160fc7ff8bf883431ffdc3eb5e" id="r_a84ce97160fc7ff8bf883431ffdc3eb5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbf/classMantid_1_1Algorithms_1_1SpatialGrouping.html#a84ce97160fc7ff8bf883431ffdc3eb5e">createBox</a> (const <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html">Geometry::IDetector</a> &amp;det, <a class="el" href="../../d9/d19/classMantid_1_1Geometry_1_1BoundingBox.html">Geometry::BoundingBox</a> &amp;bndbox, double searchDist)</td></tr>
-<tr class="memdesc:a84ce97160fc7ff8bf883431ffdc3eb5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">create expanded bounding box for our purposes  <br /></td></tr>
-<tr class="separator:a84ce97160fc7ff8bf883431ffdc3eb5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7e8ed72a64a85cb1a07b93967105548" id="r_aa7e8ed72a64a85cb1a07b93967105548"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbf/classMantid_1_1Algorithms_1_1SpatialGrouping.html#aa7e8ed72a64a85cb1a07b93967105548">createBox</a> (<a class="el" href="../../d9/d19/classMantid_1_1Geometry_1_1BoundingBox.html">Geometry::BoundingBox</a> const &amp;bbox, <a class="el" href="../../d9/d19/classMantid_1_1Geometry_1_1BoundingBox.html">Geometry::BoundingBox</a> &amp;bndbox, double searchDist)</td></tr>
+<tr class="memdesc:aa7e8ed72a64a85cb1a07b93967105548"><td class="mdescLeft">&#160;</td><td class="mdescRight">create expanded bounding box for our purposes  <br /></td></tr>
+<tr class="separator:aa7e8ed72a64a85cb1a07b93967105548"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26b8cb1c0b3998e560e959d66644b648" id="r_a26b8cb1c0b3998e560e959d66644b648"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbf/classMantid_1_1Algorithms_1_1SpatialGrouping.html#a26b8cb1c0b3998e560e959d66644b648">exec</a> () override</td></tr>
 <tr class="memdesc:a26b8cb1c0b3998e560e959d66644b648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execution code.  <br /></td></tr>
 <tr class="separator:a26b8cb1c0b3998e560e959d66644b648"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -673,8 +673,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a84ce97160fc7ff8bf883431ffdc3eb5e" name="a84ce97160fc7ff8bf883431ffdc3eb5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84ce97160fc7ff8bf883431ffdc3eb5e">&#9670;&#160;</a></span>createBox()</h2>
+<a id="aa7e8ed72a64a85cb1a07b93967105548" name="aa7e8ed72a64a85cb1a07b93967105548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7e8ed72a64a85cb1a07b93967105548">&#9670;&#160;</a></span>createBox()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -685,8 +685,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void Mantid::Algorithms::SpatialGrouping::createBox </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html">Geometry::IDetector</a> &amp;&#160;</td>
-          <td class="paramname"><em>det</em>, </td>
+          <td class="paramtype"><a class="el" href="../../d9/d19/classMantid_1_1Geometry_1_1BoundingBox.html">Geometry::BoundingBox</a> const &amp;&#160;</td>
+          <td class="paramname"><em>bbox</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -717,16 +717,16 @@ Additional Inherited Members</h2></td></tr>
 <p>Creates a bounding box representing the area in which to search for neighbours, and a scaling vector representing the dimensions of the detector.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">det</td><td>:: input detector</td></tr>
+    <tr><td class="paramname">bbox</td><td>:: bounding box of the detector(s) of the spectrum</td></tr>
     <tr><td class="paramname">bndbox</td><td>:: reference to BoundingBox object (changed by this function)</td></tr>
     <tr><td class="paramname">searchDist</td><td>:: search distance in pixels, number of pixels to search through for finding group </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00297">297</a> of file <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html">SpatialGrouping.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00298">298</a> of file <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html">SpatialGrouping.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a305ac9866b5292af3b00a87659e951a8">Mantid::Geometry::IComponent::getBoundingBox()</a>, <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00330">growBox()</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00079">Mantid::Geometry::BoundingBox::xMax()</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00077">Mantid::Geometry::BoundingBox::xMin()</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00083">Mantid::Geometry::BoundingBox::yMax()</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00081">Mantid::Geometry::BoundingBox::yMin()</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00087">Mantid::Geometry::BoundingBox::zMax()</a>, and <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00085">Mantid::Geometry::BoundingBox::zMin()</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00323">growBox()</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00079">Mantid::Geometry::BoundingBox::xMax()</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00077">Mantid::Geometry::BoundingBox::xMin()</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00083">Mantid::Geometry::BoundingBox::yMax()</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00081">Mantid::Geometry::BoundingBox::yMin()</a>, <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00087">Mantid::Geometry::BoundingBox::zMax()</a>, and <a class="el" href="../../d4/d41/BoundingBox_8h_source.html#l00085">Mantid::Geometry::BoundingBox::zMin()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00068">exec()</a>.</p>
 
@@ -762,7 +762,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html">SpatialGrouping.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00297">createBox()</a>, <a class="el" href="../../db/d1c/EmptyValues_8h_source.html#l00042">Mantid::EMPTY_DBL()</a>, <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00201">expandNet()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00426">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01996">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01946">Mantid::API::Algorithm::getPropertyValue()</a>, <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../d4/ddb/SpatialGrouping_8h_source.html#l00072">m_groups</a>, <a class="el" href="../../d4/ddb/SpatialGrouping_8h_source.html#l00070">m_included</a>, <a class="el" href="../../d4/ddb/SpatialGrouping_8h_source.html#l00075">m_neighbourInfo</a>, <a class="el" href="../../d4/ddb/SpatialGrouping_8h_source.html#l00068">m_positions</a>, <a class="el" href="../../d2/d14/ProgressBase_8h_source.html#l00051">Mantid::Kernel::ProgressBase::report()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01895">Mantid::API::Algorithm::setPropertyValue()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00298">createBox()</a>, <a class="el" href="../../db/d1c/EmptyValues_8h_source.html#l00042">Mantid::EMPTY_DBL()</a>, <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00202">expandNet()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00426">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01996">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01946">Mantid::API::Algorithm::getPropertyValue()</a>, <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../d4/ddb/SpatialGrouping_8h_source.html#l00072">m_groups</a>, <a class="el" href="../../d4/ddb/SpatialGrouping_8h_source.html#l00070">m_included</a>, <a class="el" href="../../d4/ddb/SpatialGrouping_8h_source.html#l00075">m_neighbourInfo</a>, <a class="el" href="../../d4/ddb/SpatialGrouping_8h_source.html#l00068">m_positions</a>, <a class="el" href="../../d2/d14/ProgressBase_8h_source.html#l00051">Mantid::Kernel::ProgressBase::report()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01895">Mantid::API::Algorithm::setPropertyValue()</a>, and <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00117">Mantid::Kernel::Logger::warning()</a>.</p>
 
 </div>
 </div>
@@ -825,9 +825,9 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if neighbours were found matching the parameters, false otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00201">201</a> of file <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html">SpatialGrouping.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00202">202</a> of file <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html">SpatialGrouping.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d7e/Geometry_2src_2Objects_2BoundingBox_8cpp_source.html#l00028">Mantid::Geometry::BoundingBox::isPointInside()</a>, <a class="el" href="../../d4/ddb/SpatialGrouping_8h_source.html#l00070">m_included</a>, <a class="el" href="../../d4/ddb/SpatialGrouping_8h_source.html#l00075">m_neighbourInfo</a>, <a class="el" href="../../d4/ddb/SpatialGrouping_8h_source.html#l00068">m_positions</a>, and <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00271">sortByDistance()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d7e/Geometry_2src_2Objects_2BoundingBox_8cpp_source.html#l00028">Mantid::Geometry::BoundingBox::isPointInside()</a>, <a class="el" href="../../d4/ddb/SpatialGrouping_8h_source.html#l00070">m_included</a>, <a class="el" href="../../d4/ddb/SpatialGrouping_8h_source.html#l00075">m_neighbourInfo</a>, <a class="el" href="../../d4/ddb/SpatialGrouping_8h_source.html#l00068">m_positions</a>, and <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00272">sortByDistance()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00068">exec()</a>.</p>
 
@@ -884,9 +884,9 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00330">330</a> of file <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html">SpatialGrouping.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00323">323</a> of file <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html">SpatialGrouping.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00297">createBox()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00298">createBox()</a>.</p>
 
 </div>
 </div>
@@ -1030,9 +1030,9 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00271">271</a> of file <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html">SpatialGrouping.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00272">272</a> of file <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html">SpatialGrouping.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00201">expandNet()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00202">expandNet()</a>.</p>
 
 </div>
 </div>
@@ -1151,7 +1151,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/ddb/SpatialGrouping_8h_source.html#l00070">70</a> of file <a class="el" href="../../d4/ddb/SpatialGrouping_8h_source.html">SpatialGrouping.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00068">exec()</a>, and <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00201">expandNet()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00068">exec()</a>, and <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00202">expandNet()</a>.</p>
 
 </div>
 </div>
@@ -1179,7 +1179,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/ddb/SpatialGrouping_8h_source.html#l00075">75</a> of file <a class="el" href="../../d4/ddb/SpatialGrouping_8h_source.html">SpatialGrouping.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00068">exec()</a>, and <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00201">expandNet()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00068">exec()</a>, and <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00202">expandNet()</a>.</p>
 
 </div>
 </div>
@@ -1207,7 +1207,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/ddb/SpatialGrouping_8h_source.html#l00068">68</a> of file <a class="el" href="../../d4/ddb/SpatialGrouping_8h_source.html">SpatialGrouping.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00068">exec()</a>, and <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00201">expandNet()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00068">exec()</a>, and <a class="el" href="../../d3/d74/SpatialGrouping_8cpp_source.html#l00202">expandNet()</a>.</p>
 
 </div>
 </div>
