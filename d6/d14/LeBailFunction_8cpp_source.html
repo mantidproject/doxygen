@@ -627,455 +627,451 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span> </div>
 <div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
 <div class="foldopen" id="foldopen00575" data-start="{" data-end="}">
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ade5f738a8ab1e53a88b4b887d204ca46">  575</a></span><span class="keywordtype">void</span> LeBailFunction::setPeakParameters(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a> &amp;peak, <span class="keyword">const</span> map&lt;string, double&gt; &amp;parammap,</div>
-<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>                                       <span class="keywordtype">double</span> peakheight, <span class="keywordtype">bool</span> setpeakheight) {</div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>  <a class="code hl_define" href="../../db/d9d/WarningSuppressions_8h.html#a5237ce4c407712c5876dcba3e9326d4a">UNUSED_ARG</a>(peak);</div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>  <a class="code hl_define" href="../../db/d9d/WarningSuppressions_8h.html#a5237ce4c407712c5876dcba3e9326d4a">UNUSED_ARG</a>(parammap);</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>  <a class="code hl_define" href="../../db/d9d/WarningSuppressions_8h.html#a5237ce4c407712c5876dcba3e9326d4a">UNUSED_ARG</a>(peakheight);</div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>  <a class="code hl_define" href="../../db/d9d/WarningSuppressions_8h.html#a5237ce4c407712c5876dcba3e9326d4a">UNUSED_ARG</a>(setpeakheight);</div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>  <span class="keywordflow">throw</span> runtime_error(<span class="stringliteral">&quot;Requiring update flag: peak value changed and etc.&quot;</span>);</div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>  <span class="comment">/*</span></div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span><span class="comment">  // FIXME - The best solution for speeding is to have a set of peak</span></div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span><span class="comment">  parameter listed in the order</span></div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span><span class="comment">  //         of peak function&#39;s parameters&#39; indexed.  Then no need to do</span></div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span><span class="comment">  search anymore.</span></div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span><span class="comment"></span> </div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span><span class="comment">  // 1. Prepare, sort parameters by name</span></div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span><span class="comment">  std::map&lt;std::string, double&gt;::iterator pit;</span></div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span><span class="comment">  vector&lt;string&gt; peakparamnames = peak-&gt;getParameterNames();</span></div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span><span class="comment"></span> </div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span><span class="comment">  // 2. Apply parameters values to peak function</span></div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span><span class="comment">  for (pit = parammap.begin(); pit != parammap.end(); ++pit)</span></div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span><span class="comment">  {</span></div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span><span class="comment">  // a) Check whether the parameter is a peak parameter</span></div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span><span class="comment">  std::string parname = pit-&gt;first;</span></div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span><span class="comment">  std::vector&lt;std::string&gt;::iterator ifind =</span></div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span><span class="comment">  std::find(peakparamnames.begin(), peakparamnames.end(), parname);</span></div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span><span class="comment"></span> </div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span><span class="comment">  // b) Set parameter value</span></div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span><span class="comment">  if (ifind == peakparamnames.end())</span></div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span><span class="comment">  {</span></div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span><span class="comment">  // If not a peak profile parameter, skip</span></div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span><span class="comment">  g_log.debug() &lt;&lt; &quot;Parameter &#39;&quot; &lt;&lt; parname &lt;&lt; &quot;&#39; in input parameter</span></div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span><span class="comment">  table workspace &quot;</span></div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span><span class="comment">  &lt;&lt; &quot;is not for peak function &quot; &lt;&lt; peak-&gt;name() &lt;&lt; &quot;.\n&quot;;</span></div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span><span class="comment">  }</span></div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span><span class="comment">  else</span></div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span><span class="comment">  {</span></div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span><span class="comment">  // Set value</span></div>
-<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span><span class="comment">  double value = pit-&gt;second;</span></div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span><span class="comment">  peak-&gt;setParameter(parname, value);</span></div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span><span class="comment">  g_log.debug() &lt;&lt; &quot;LeBailFit Set &quot; &lt;&lt; parname &lt;&lt; &quot;= &quot; &lt;&lt; value &lt;&lt; &quot;\n&quot;;</span></div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span><span class="comment">  }</span></div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span><span class="comment">  } // ENDFOR: parameter iterator</span></div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span><span class="comment"></span> </div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span><span class="comment">  // 3. Peak height</span></div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span><span class="comment">  if (setpeakheight)</span></div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span><span class="comment">  peak-&gt;setHeight(peakheight);</span></div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span><span class="comment"></span> </div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span><span class="comment">  return;*/</span></div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>}</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ade5f738a8ab1e53a88b4b887d204ca46">  575</a></span><span class="keywordtype">void</span> LeBailFunction::setPeakParameters([[maybe_unused]] <span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a> &amp;peak,</div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>                                       [[maybe_unused]] <span class="keyword">const</span> map&lt;string, double&gt; &amp;parammap,</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>                                       [[maybe_unused]] <span class="keywordtype">double</span> peakheight, [[maybe_unused]] <span class="keywordtype">bool</span> setpeakheight) {</div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>  <span class="keywordflow">throw</span> runtime_error(<span class="stringliteral">&quot;Requiring update flag: peak value changed and etc.&quot;</span>);</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>  <span class="comment">/*</span></div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span><span class="comment">  // FIXME - The best solution for speeding is to have a set of peak</span></div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span><span class="comment">  parameter listed in the order</span></div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span><span class="comment">  //         of peak function&#39;s parameters&#39; indexed.  Then no need to do</span></div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span><span class="comment">  search anymore.</span></div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span><span class="comment"></span> </div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span><span class="comment">  // 1. Prepare, sort parameters by name</span></div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span><span class="comment">  std::map&lt;std::string, double&gt;::iterator pit;</span></div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span><span class="comment">  vector&lt;string&gt; peakparamnames = peak-&gt;getParameterNames();</span></div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span><span class="comment"></span> </div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span><span class="comment">  // 2. Apply parameters values to peak function</span></div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span><span class="comment">  for (pit = parammap.begin(); pit != parammap.end(); ++pit)</span></div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span><span class="comment">  {</span></div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span><span class="comment">  // a) Check whether the parameter is a peak parameter</span></div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span><span class="comment">  std::string parname = pit-&gt;first;</span></div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span><span class="comment">  std::vector&lt;std::string&gt;::iterator ifind =</span></div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span><span class="comment">  std::find(peakparamnames.begin(), peakparamnames.end(), parname);</span></div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span><span class="comment"></span> </div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span><span class="comment">  // b) Set parameter value</span></div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span><span class="comment">  if (ifind == peakparamnames.end())</span></div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span><span class="comment">  {</span></div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span><span class="comment">  // If not a peak profile parameter, skip</span></div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span><span class="comment">  g_log.debug() &lt;&lt; &quot;Parameter &#39;&quot; &lt;&lt; parname &lt;&lt; &quot;&#39; in input parameter</span></div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span><span class="comment">  table workspace &quot;</span></div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span><span class="comment">  &lt;&lt; &quot;is not for peak function &quot; &lt;&lt; peak-&gt;name() &lt;&lt; &quot;.\n&quot;;</span></div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span><span class="comment">  }</span></div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span><span class="comment">  else</span></div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span><span class="comment">  {</span></div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span><span class="comment">  // Set value</span></div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span><span class="comment">  double value = pit-&gt;second;</span></div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span><span class="comment">  peak-&gt;setParameter(parname, value);</span></div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span><span class="comment">  g_log.debug() &lt;&lt; &quot;LeBailFit Set &quot; &lt;&lt; parname &lt;&lt; &quot;= &quot; &lt;&lt; value &lt;&lt; &quot;\n&quot;;</span></div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span><span class="comment">  }</span></div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span><span class="comment">  } // ENDFOR: parameter iterator</span></div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span><span class="comment"></span> </div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span><span class="comment">  // 3. Peak height</span></div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span><span class="comment">  if (setpeakheight)</span></div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span><span class="comment">  peak-&gt;setHeight(peakheight);</span></div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span><span class="comment"></span> </div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span><span class="comment">  return;*/</span></div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>}</div>
 </div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span> </div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00635" data-start="{" data-end="}">
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a099b491458bafc8428e1c0e867c6250e">  635</a></span><span class="keywordtype">void</span> LeBailFunction::setProfileParameterValues(map&lt;std::string, double&gt; parammap) {</div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>  <span class="keyword">const</span> <span class="keywordtype">double</span> MINDIFF = 1.0E-10;</div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span> </div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>  map&lt;std::string, double&gt;::iterator inpiter, curiter;</div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span> </div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>  <span class="keywordtype">size_t</span> numpars = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a26b07f6f900096030c422fb169894d16">m_peakParameterNameVec</a>.size();</div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; numpars; ++i) {</div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>    <span class="keywordtype">string</span> &amp;parname = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a26b07f6f900096030c422fb169894d16">m_peakParameterNameVec</a>[i];</div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span> </div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>    <span class="comment">// Find iterator of this parameter in input parammap</span></div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>    inpiter = parammap.find(parname);</div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>    <span class="keywordflow">if</span> (inpiter != parammap.end()) {</div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>      <span class="comment">// Find iterator to parameter value in class&#39; parameter map (parameter is</span></div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>      <span class="comment">// found in input map)</span></div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>      curiter = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#aeff88ecfef92c6d7d2479ec3b5246164">m_functionParameters</a>.find(parname);</div>
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>      <span class="keywordflow">if</span> (curiter == <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#aeff88ecfef92c6d7d2479ec3b5246164">m_functionParameters</a>.end()) {</div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>        stringstream errmsg;</div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>        errmsg &lt;&lt; <span class="stringliteral">&quot;Parameter &quot;</span> &lt;&lt; parname &lt;&lt; <span class="stringliteral">&quot; is in parameter name list, but not in profile &quot;</span></div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>               &lt;&lt; <span class="stringliteral">&quot;parameter map.  It violates the programming logic.&quot;</span>;</div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>        <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a56bbdfffa5a708ee5b613a82f1f0ab1a">error</a>(errmsg.str());</div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>        <span class="keywordflow">throw</span> runtime_error(errmsg.str());</div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>      }</div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span> </div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>      <span class="comment">// Set value if difference is large</span></div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>      <span class="keywordtype">double</span> curvalue = curiter-&gt;second;</div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>      <span class="keywordtype">double</span> newvalue = inpiter-&gt;second;</div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>      <span class="keywordtype">bool</span> localnewvalue = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>      <span class="keywordflow">if</span> (<a class="code hl_define" href="../../dd/d52/Matrix_8cpp.html#ac6bbb05594dd33c967d0dc98e8ac8c93">fabs</a>(curvalue - newvalue) &gt; MINDIFF) {</div>
-<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>        curiter-&gt;second = newvalue;</div>
-<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>        <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a9ab6d1eb1a8fe0bfdd5997c25781e058">m_hasNewPeakValue</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>        localnewvalue = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>      }</div>
-<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span> </div>
-<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>      <span class="comment">// Set new value to each peak</span></div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>      <span class="keywordflow">if</span> (!localnewvalue)</div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span> </div>
-<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>      <span class="comment">// Set new parameter to each peak</span></div>
-<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> ipk = 0; ipk &lt; <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a>; ++ipk) {</div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>        <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a> peak = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#aa0d20d93d14de4856d39aadaef90236b">m_vecPeaks</a>[ipk];</div>
-<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>        peak-&gt;setParameter(i, newvalue);</div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>      }</div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>    } <span class="comment">// If parameter name is a profile parameter</span></div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>    <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>      <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;Parameter &quot;</span> &lt;&lt; parname &lt;&lt; <span class="stringliteral">&quot; is not a profile parameter. Length of string = &quot;</span> &lt;&lt; parname.size()</div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>                    &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>    }</div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>  } <span class="comment">// ENDFOR [All profile parameter]</span></div>
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span> </div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>  <span class="comment">// Set the flag to indicate that client has input parameters</span></div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a9ab6d1eb1a8fe0bfdd5997c25781e058">m_hasNewPeakValue</a> &amp;&amp; !<a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a16bd6369c179c65586e878c18deb4902">m_isInputValue</a>)</div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>    <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a16bd6369c179c65586e878c18deb4902">m_isInputValue</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>}</div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span> </div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00632" data-start="{" data-end="}">
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a099b491458bafc8428e1c0e867c6250e">  632</a></span><span class="keywordtype">void</span> LeBailFunction::setProfileParameterValues(map&lt;std::string, double&gt; parammap) {</div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>  <span class="keyword">const</span> <span class="keywordtype">double</span> MINDIFF = 1.0E-10;</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span> </div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>  map&lt;std::string, double&gt;::iterator inpiter, curiter;</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span> </div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>  <span class="keywordtype">size_t</span> numpars = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a26b07f6f900096030c422fb169894d16">m_peakParameterNameVec</a>.size();</div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; numpars; ++i) {</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>    <span class="keywordtype">string</span> &amp;parname = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a26b07f6f900096030c422fb169894d16">m_peakParameterNameVec</a>[i];</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span> </div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>    <span class="comment">// Find iterator of this parameter in input parammap</span></div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>    inpiter = parammap.find(parname);</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>    <span class="keywordflow">if</span> (inpiter != parammap.end()) {</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>      <span class="comment">// Find iterator to parameter value in class&#39; parameter map (parameter is</span></div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>      <span class="comment">// found in input map)</span></div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>      curiter = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#aeff88ecfef92c6d7d2479ec3b5246164">m_functionParameters</a>.find(parname);</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>      <span class="keywordflow">if</span> (curiter == <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#aeff88ecfef92c6d7d2479ec3b5246164">m_functionParameters</a>.end()) {</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>        stringstream errmsg;</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>        errmsg &lt;&lt; <span class="stringliteral">&quot;Parameter &quot;</span> &lt;&lt; parname &lt;&lt; <span class="stringliteral">&quot; is in parameter name list, but not in profile &quot;</span></div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>               &lt;&lt; <span class="stringliteral">&quot;parameter map.  It violates the programming logic.&quot;</span>;</div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>        <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a56bbdfffa5a708ee5b613a82f1f0ab1a">error</a>(errmsg.str());</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>        <span class="keywordflow">throw</span> runtime_error(errmsg.str());</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>      }</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span> </div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>      <span class="comment">// Set value if difference is large</span></div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>      <span class="keywordtype">double</span> curvalue = curiter-&gt;second;</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>      <span class="keywordtype">double</span> newvalue = inpiter-&gt;second;</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>      <span class="keywordtype">bool</span> localnewvalue = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>      <span class="keywordflow">if</span> (<a class="code hl_define" href="../../dd/d52/Matrix_8cpp.html#ac6bbb05594dd33c967d0dc98e8ac8c93">fabs</a>(curvalue - newvalue) &gt; MINDIFF) {</div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>        curiter-&gt;second = newvalue;</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>        <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a9ab6d1eb1a8fe0bfdd5997c25781e058">m_hasNewPeakValue</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>        localnewvalue = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>      }</div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span> </div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>      <span class="comment">// Set new value to each peak</span></div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>      <span class="keywordflow">if</span> (!localnewvalue)</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span> </div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>      <span class="comment">// Set new parameter to each peak</span></div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> ipk = 0; ipk &lt; <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a>; ++ipk) {</div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>        <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a> peak = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#aa0d20d93d14de4856d39aadaef90236b">m_vecPeaks</a>[ipk];</div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>        peak-&gt;setParameter(i, newvalue);</div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>      }</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>    } <span class="comment">// If parameter name is a profile parameter</span></div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>    <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>      <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;Parameter &quot;</span> &lt;&lt; parname &lt;&lt; <span class="stringliteral">&quot; is not a profile parameter. Length of string = &quot;</span> &lt;&lt; parname.size()</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>                    &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>    }</div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>  } <span class="comment">// ENDFOR [All profile parameter]</span></div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span> </div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>  <span class="comment">// Set the flag to indicate that client has input parameters</span></div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a9ab6d1eb1a8fe0bfdd5997c25781e058">m_hasNewPeakValue</a> &amp;&amp; !<a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a16bd6369c179c65586e878c18deb4902">m_isInputValue</a>)</div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>    <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a16bd6369c179c65586e878c18deb4902">m_isInputValue</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>}</div>
 </div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span> </div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00697" data-start="{" data-end="}">
-<div class="line"><a id="l00697" name="l00697"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a2b747a13d97a5b970e011105fc3849ee">  697</a></span><span class="keywordtype">void</span> LeBailFunction::groupPeaks(vector&lt;vector&lt;pair&lt;double, IPowderDiffPeakFunction_sptr&gt;&gt;&gt; &amp;peakgroupvec,</div>
-<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>                                vector&lt;IPowderDiffPeakFunction_sptr&gt; &amp;outboundpeakvec, <span class="keywordtype">double</span> xmin, <span class="keywordtype">double</span> xmax) {</div>
-<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>  <span class="comment">// Sort peaks</span></div>
-<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a> &gt; 1) {</div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>    sort(<a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a534c614e4c83e858206680886edc3f6b">m_dspPeakVec</a>.begin(), <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a534c614e4c83e858206680886edc3f6b">m_dspPeakVec</a>.end());</div>
-<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a> == 0) {</div>
-<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>    std::stringstream errmsg;</div>
-<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>    errmsg &lt;&lt; <span class="stringliteral">&quot;Group peaks:  No peak is found in the peak vector. &quot;</span>;</div>
-<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a56bbdfffa5a708ee5b613a82f1f0ab1a">error</a>() &lt;&lt; errmsg.str() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>    <span class="keywordflow">throw</span> std::runtime_error(errmsg.str());</div>
-<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>  }</div>
-<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span> </div>
-<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>  <span class="comment">// Set up starting value</span></div>
-<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>  peakgroupvec.clear();</div>
-<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>  outboundpeakvec.clear();</div>
-<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>  vector&lt;pair&lt;double, IPowderDiffPeakFunction_sptr&gt;&gt; peakgroup; <span class="comment">// one group of peaks</span></div>
-<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>  <span class="keywordtype">size_t</span> ipk = 0;</div>
-<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span> </div>
-<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>  <span class="comment">// Group peaks from low-d to high-d</span></div>
-<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>  <span class="keywordtype">bool</span> outbound = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>  <span class="keywordflow">while</span> (outbound &amp;&amp; ipk &lt; <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a>) {</div>
-<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>    <span class="comment">// Group peaks out of lower boundary to a separate vector of peaks</span></div>
-<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>    <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a> peak = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a534c614e4c83e858206680886edc3f6b">m_dspPeakVec</a>[ipk].second;</div>
-<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>    <span class="keywordflow">if</span> (peak-&gt;centre() &lt;= xmin) {</div>
-<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>      <span class="comment">// Add peak</span></div>
-<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>      outboundpeakvec.emplace_back(peak);</div>
-<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>      ipk += 1;</div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>      <span class="comment">// Get out of while loop if peak is in bound</span></div>
-<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>      outbound = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>    }</div>
-<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>  }</div>
-<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span> </div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>  <span class="keywordtype">bool</span> inbound = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>  <span class="keywordflow">while</span> (inbound &amp;&amp; ipk &lt; <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a>) {</div>
-<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>    <span class="comment">// Group peaks in the boundary</span></div>
-<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>    <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a> thispeak = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a534c614e4c83e858206680886edc3f6b">m_dspPeakVec</a>[ipk].second;</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span> </div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00694" data-start="{" data-end="}">
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a2b747a13d97a5b970e011105fc3849ee">  694</a></span><span class="keywordtype">void</span> LeBailFunction::groupPeaks(vector&lt;vector&lt;pair&lt;double, IPowderDiffPeakFunction_sptr&gt;&gt;&gt; &amp;peakgroupvec,</div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>                                vector&lt;IPowderDiffPeakFunction_sptr&gt; &amp;outboundpeakvec, <span class="keywordtype">double</span> xmin, <span class="keywordtype">double</span> xmax) {</div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>  <span class="comment">// Sort peaks</span></div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a> &gt; 1) {</div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>    sort(<a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a534c614e4c83e858206680886edc3f6b">m_dspPeakVec</a>.begin(), <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a534c614e4c83e858206680886edc3f6b">m_dspPeakVec</a>.end());</div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a> == 0) {</div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>    std::stringstream errmsg;</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>    errmsg &lt;&lt; <span class="stringliteral">&quot;Group peaks:  No peak is found in the peak vector. &quot;</span>;</div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a56bbdfffa5a708ee5b613a82f1f0ab1a">error</a>() &lt;&lt; errmsg.str() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>    <span class="keywordflow">throw</span> std::runtime_error(errmsg.str());</div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>  }</div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span> </div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>  <span class="comment">// Set up starting value</span></div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>  peakgroupvec.clear();</div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>  outboundpeakvec.clear();</div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>  vector&lt;pair&lt;double, IPowderDiffPeakFunction_sptr&gt;&gt; peakgroup; <span class="comment">// one group of peaks</span></div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>  <span class="keywordtype">size_t</span> ipk = 0;</div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span> </div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>  <span class="comment">// Group peaks from low-d to high-d</span></div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>  <span class="keywordtype">bool</span> outbound = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>  <span class="keywordflow">while</span> (outbound &amp;&amp; ipk &lt; <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a>) {</div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>    <span class="comment">// Group peaks out of lower boundary to a separate vector of peaks</span></div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>    <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a> peak = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a534c614e4c83e858206680886edc3f6b">m_dspPeakVec</a>[ipk].second;</div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>    <span class="keywordflow">if</span> (peak-&gt;centre() &lt;= xmin) {</div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>      <span class="comment">// Add peak</span></div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>      outboundpeakvec.emplace_back(peak);</div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>      ipk += 1;</div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>      <span class="comment">// Get out of while loop if peak is in bound</span></div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>      outbound = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>    }</div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>  }</div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span> </div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>  <span class="keywordtype">bool</span> inbound = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>  <span class="keywordflow">while</span> (inbound &amp;&amp; ipk &lt; <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a>) {</div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>    <span class="comment">// Group peaks in the boundary</span></div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>    <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a> thispeak = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a534c614e4c83e858206680886edc3f6b">m_dspPeakVec</a>[ipk].second;</div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span> </div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>    <span class="keywordflow">if</span> (thispeak-&gt;centre() &lt; xmax) {</div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>      <span class="comment">// Peak is in the boundary still</span></div>
 <div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span> </div>
-<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>    <span class="keywordflow">if</span> (thispeak-&gt;centre() &lt; xmax) {</div>
-<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>      <span class="comment">// Peak is in the boundary still</span></div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>      <span class="comment">// add peak to CURRENT peak group</span></div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>      peakgroup.emplace_back(<a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a534c614e4c83e858206680886edc3f6b">m_dspPeakVec</a>[ipk]);</div>
 <div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span> </div>
-<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>      <span class="comment">// add peak to CURRENT peak group</span></div>
-<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>      peakgroup.emplace_back(<a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a534c614e4c83e858206680886edc3f6b">m_dspPeakVec</a>[ipk]);</div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>      <span class="keywordflow">if</span> (ipk &lt; <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a> - 1) {</div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>        <span class="comment">// Any peak but not the last (rightmost) peak</span></div>
 <div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span> </div>
-<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>      <span class="keywordflow">if</span> (ipk &lt; <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a> - 1) {</div>
-<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>        <span class="comment">// Any peak but not the last (rightmost) peak</span></div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>        <span class="comment">// test whether next peak will be in a different group</span></div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>        <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a> rightpeak = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a534c614e4c83e858206680886edc3f6b">m_dspPeakVec</a>[ipk + 1].second;</div>
 <div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span> </div>
-<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>        <span class="comment">// test whether next peak will be in a different group</span></div>
-<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>        <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a> rightpeak = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a534c614e4c83e858206680886edc3f6b">m_dspPeakVec</a>[ipk + 1].second;</div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>        <span class="keywordtype">double</span> thispeak_rightbound = thispeak-&gt;centre() + PEAKRANGECONSTANT * thispeak-&gt;fwhm();</div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>        <span class="keywordtype">double</span> rightpeak_leftbound = rightpeak-&gt;centre() - PEAKRANGECONSTANT * rightpeak-&gt;fwhm();</div>
 <div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span> </div>
-<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>        <span class="keywordtype">double</span> thispeak_rightbound = thispeak-&gt;centre() + PEAKRANGECONSTANT * thispeak-&gt;fwhm();</div>
-<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>        <span class="keywordtype">double</span> rightpeak_leftbound = rightpeak-&gt;centre() - PEAKRANGECONSTANT * rightpeak-&gt;fwhm();</div>
-<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span> </div>
-<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>        <span class="keywordflow">if</span> (thispeak_rightbound &lt; rightpeak_leftbound) {</div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>          <span class="comment">// this peak and its right peak are well separated.</span></div>
-<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>          <span class="comment">// finish this group by swapping values</span></div>
-<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>          peakgroupvec.emplace_back(std::move(peakgroup));</div>
-<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>          peakgroup = {};</div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>          <span class="comment">// this peak and its right peak are close enough to be in same group.</span></div>
-<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>          <span class="comment">// do nothing</span></div>
-<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>          ;</div>
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>        }</div>
-<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>        <span class="comment">// Rightmost peak.  Finish the current peak</span></div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>        peakgroupvec.emplace_back(peakgroup);</div>
-<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>      }</div>
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span> </div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>      ++ipk;</div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>    } <span class="comment">// still in bound</span></div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>    <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>      <span class="comment">// Peak is get out of boundary</span></div>
-<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>      inbound = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>      <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#ad1469533f03502f2d0f14cf3456f4ef3">information</a>() &lt;&lt; <span class="stringliteral">&quot;[Fx301] Group peak: peak @ &quot;</span> &lt;&lt; thispeak-&gt;centre() &lt;&lt; <span class="stringliteral">&quot; causes grouping &quot;</span></div>
-<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>                          &lt;&lt; <span class="stringliteral">&quot;peak over at maximum TOF = &quot;</span> &lt;&lt; xmax &lt;&lt; <span class="stringliteral">&quot;.\n&quot;</span>;</div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span> </div>
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>      <span class="keywordflow">if</span> (!peakgroup.empty()) {</div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>        peakgroupvec.emplace_back(peakgroup);</div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>      }</div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>    } <span class="comment">// FIRST out of boundary</span></div>
-<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>  } <span class="comment">// ENDWHILE</span></div>
-<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span> </div>
-<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>  <span class="keywordflow">while</span> (ipk &lt; <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a>) {</div>
-<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>    <span class="comment">// Group peaks out of uppper boundary to a separate vector of peaks</span></div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>    outboundpeakvec.emplace_back(<a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a534c614e4c83e858206680886edc3f6b">m_dspPeakVec</a>[ipk].second);</div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>    ipk += 1;</div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>  }</div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>        <span class="keywordflow">if</span> (thispeak_rightbound &lt; rightpeak_leftbound) {</div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>          <span class="comment">// this peak and its right peak are well separated.</span></div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>          <span class="comment">// finish this group by swapping values</span></div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>          peakgroupvec.emplace_back(std::move(peakgroup));</div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>          peakgroup = {};</div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>          <span class="comment">// this peak and its right peak are close enough to be in same group.</span></div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>          <span class="comment">// do nothing</span></div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>          ;</div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>        }</div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>        <span class="comment">// Rightmost peak.  Finish the current peak</span></div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>        peakgroupvec.emplace_back(peakgroup);</div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>      }</div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span> </div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>      ++ipk;</div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>    } <span class="comment">// still in bound</span></div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>    <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>      <span class="comment">// Peak is get out of boundary</span></div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>      inbound = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>      <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#ad1469533f03502f2d0f14cf3456f4ef3">information</a>() &lt;&lt; <span class="stringliteral">&quot;[Fx301] Group peak: peak @ &quot;</span> &lt;&lt; thispeak-&gt;centre() &lt;&lt; <span class="stringliteral">&quot; causes grouping &quot;</span></div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>                          &lt;&lt; <span class="stringliteral">&quot;peak over at maximum TOF = &quot;</span> &lt;&lt; xmax &lt;&lt; <span class="stringliteral">&quot;.\n&quot;</span>;</div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span> </div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>      <span class="keywordflow">if</span> (!peakgroup.empty()) {</div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>        peakgroupvec.emplace_back(peakgroup);</div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>      }</div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>    } <span class="comment">// FIRST out of boundary</span></div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>  } <span class="comment">// ENDWHILE</span></div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span> </div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>  <span class="keywordflow">while</span> (ipk &lt; <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a>) {</div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>    <span class="comment">// Group peaks out of uppper boundary to a separate vector of peaks</span></div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>    outboundpeakvec.emplace_back(<a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a534c614e4c83e858206680886edc3f6b">m_dspPeakVec</a>[ipk].second);</div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>    ipk += 1;</div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>  }</div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span> </div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>  <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;[Calculate Peak Intensity]:  Number of Peak Groups = &quot;</span> &lt;&lt; peakgroupvec.size() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>}</div>
+</div>
 <div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span> </div>
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>  <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;[Calculate Peak Intensity]:  Number of Peak Groups = &quot;</span> &lt;&lt; peakgroupvec.size() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>}</div>
-</div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span> </div>
-<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00799" data-start="{" data-end="}">
-<div class="line"><a id="l00799" name="l00799"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a7b42163ca7e1f9fb8b6a5ff166cf2839">  799</a></span><span class="keywordtype">void</span> LeBailFunction::addBackgroundFunction(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;backgroundtype, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp;order,</div>
-<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>                                           <span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;vecparnames,</div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>                                           <span class="keyword">const</span> std::vector&lt;double&gt; &amp;vecparvalues, <span class="keywordtype">double</span> startx, <span class="keywordtype">double</span> endx) {</div>
-<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>  <span class="comment">// Check</span></div>
-<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>  <span class="keywordflow">if</span> (backgroundtype != POLYNOMIAL_BACKGROUND &amp;&amp; backgroundtype != CHEBYSHEV_BACKGROUND &amp;&amp;</div>
-<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>      backgroundtype != FULLPROF_POLYNOMIAL_BACKGROUND) {</div>
-<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>    stringstream warnss;</div>
-<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>    warnss &lt;&lt; <span class="stringliteral">&quot;Cliet specified background type &quot;</span> &lt;&lt; backgroundtype &lt;&lt; <span class="stringliteral">&quot; may not be supported properly.&quot;</span>;</div>
-<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a6e1ec105dbc2d5ef5430fe6a3a325f8b">warning</a>(warnss.str());</div>
-<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>  }</div>
-<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>  <span class="keywordflow">if</span> (vecparnames.size() != vecparvalues.size())</div>
-<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>    <span class="keywordflow">throw</span> runtime_error(<span class="stringliteral">&quot;Input parameter names and parameter values are not matched. &quot;</span>);</div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00796" data-start="{" data-end="}">
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a7b42163ca7e1f9fb8b6a5ff166cf2839">  796</a></span><span class="keywordtype">void</span> LeBailFunction::addBackgroundFunction(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;backgroundtype, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp;order,</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>                                           <span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;vecparnames,</div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>                                           <span class="keyword">const</span> std::vector&lt;double&gt; &amp;vecparvalues, <span class="keywordtype">double</span> startx, <span class="keywordtype">double</span> endx) {</div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>  <span class="comment">// Check</span></div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>  <span class="keywordflow">if</span> (backgroundtype != POLYNOMIAL_BACKGROUND &amp;&amp; backgroundtype != CHEBYSHEV_BACKGROUND &amp;&amp;</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>      backgroundtype != FULLPROF_POLYNOMIAL_BACKGROUND) {</div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>    stringstream warnss;</div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>    warnss &lt;&lt; <span class="stringliteral">&quot;Cliet specified background type &quot;</span> &lt;&lt; backgroundtype &lt;&lt; <span class="stringliteral">&quot; may not be supported properly.&quot;</span>;</div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a6e1ec105dbc2d5ef5430fe6a3a325f8b">warning</a>(warnss.str());</div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>  }</div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>  <span class="keywordflow">if</span> (vecparnames.size() != vecparvalues.size())</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>    <span class="keywordflow">throw</span> runtime_error(<span class="stringliteral">&quot;Input parameter names and parameter values are not matched. &quot;</span>);</div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span> </div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>  <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#ad1469533f03502f2d0f14cf3456f4ef3">information</a>() &lt;&lt; <span class="stringliteral">&quot;Add background: type = &quot;</span> &lt;&lt; backgroundtype &lt;&lt; <span class="stringliteral">&quot;, order = &quot;</span> &lt;&lt; order</div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>                      &lt;&lt; <span class="stringliteral">&quot;, number of parameters/attributes = &quot;</span> &lt;&lt; vecparnames.size() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span> </div>
-<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>  <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#ad1469533f03502f2d0f14cf3456f4ef3">information</a>() &lt;&lt; <span class="stringliteral">&quot;Add background: type = &quot;</span> &lt;&lt; backgroundtype &lt;&lt; <span class="stringliteral">&quot;, order = &quot;</span> &lt;&lt; order</div>
-<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>                      &lt;&lt; <span class="stringliteral">&quot;, number of parameters/attributes = &quot;</span> &lt;&lt; vecparnames.size() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span> </div>
-<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>  <span class="comment">// Create background function from factory</span></div>
-<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>  <span class="keyword">auto</span> <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#aa53add3f540d099c26e6dc28fe788f7f">background</a> = FunctionFactory::Instance().createFunction(backgroundtype);</div>
-<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>  <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a891f4ac364ccf9e8e7b9c71fb5e0405d">m_background</a> = std::dynamic_pointer_cast&lt;Functions::BackgroundFunction&gt;(<a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#aa53add3f540d099c26e6dc28fe788f7f">background</a>);</div>
-<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span> </div>
-<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>  <span class="comment">// Set order and initialize</span></div>
-<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>  <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a891f4ac364ccf9e8e7b9c71fb5e0405d">m_background</a>-&gt;setAttributeValue(<span class="stringliteral">&quot;n&quot;</span>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(order));</div>
-<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>  <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a891f4ac364ccf9e8e7b9c71fb5e0405d">m_background</a>-&gt;initialize();</div>
-<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span> </div>
-<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>  <span class="comment">// Set parameters &amp; attribute</span></div>
-<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>  <span class="keywordtype">size_t</span> numpars = vecparnames.size();</div>
-<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; numpars; ++i) {</div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>    <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;parname = vecparnames[i];</div>
-<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>    <span class="keywordflow">if</span> (parname != <span class="stringliteral">&quot;Bkpos&quot;</span>)</div>
-<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>      <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a891f4ac364ccf9e8e7b9c71fb5e0405d">m_background</a>-&gt;setParameter(parname, vecparvalues[i]);</div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (backgroundtype == FULLPROF_POLYNOMIAL_BACKGROUND)</div>
-<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>      <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a891f4ac364ccf9e8e7b9c71fb5e0405d">m_background</a>-&gt;setAttributeValue(<span class="stringliteral">&quot;Bkpos&quot;</span>, vecparvalues[i]);</div>
-<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>      <span class="keywordflow">throw</span> runtime_error(<span class="stringliteral">&quot;Bkpos should not be in the parameter list. &quot;</span>);</div>
-<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>  }</div>
-<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span> </div>
-<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>  <span class="keywordflow">if</span> (backgroundtype == CHEBYSHEV_BACKGROUND) {</div>
-<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>    <span class="keywordflow">if</span> (startx &gt; 0.)</div>
-<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>      <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a891f4ac364ccf9e8e7b9c71fb5e0405d">m_background</a>-&gt;setAttributeValue(<span class="stringliteral">&quot;StartX&quot;</span>, startx);</div>
-<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>    <span class="keywordflow">if</span> (endx &gt; 0.)</div>
-<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>      <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a891f4ac364ccf9e8e7b9c71fb5e0405d">m_background</a>-&gt;setAttributeValue(<span class="stringliteral">&quot;EndX&quot;</span>, endx);</div>
-<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>  }</div>
-<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>}</div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>  <span class="comment">// Create background function from factory</span></div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>  <span class="keyword">auto</span> <a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#aa53add3f540d099c26e6dc28fe788f7f">background</a> = FunctionFactory::Instance().createFunction(backgroundtype);</div>
+<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>  <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a891f4ac364ccf9e8e7b9c71fb5e0405d">m_background</a> = std::dynamic_pointer_cast&lt;Functions::BackgroundFunction&gt;(<a class="code hl_variable" href="../../d3/d17/EstimatePeakIntensities_8cpp.html#aa53add3f540d099c26e6dc28fe788f7f">background</a>);</div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span> </div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>  <span class="comment">// Set order and initialize</span></div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>  <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a891f4ac364ccf9e8e7b9c71fb5e0405d">m_background</a>-&gt;setAttributeValue(<span class="stringliteral">&quot;n&quot;</span>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(order));</div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>  <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a891f4ac364ccf9e8e7b9c71fb5e0405d">m_background</a>-&gt;initialize();</div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span> </div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>  <span class="comment">// Set parameters &amp; attribute</span></div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>  <span class="keywordtype">size_t</span> numpars = vecparnames.size();</div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; numpars; ++i) {</div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>    <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;parname = vecparnames[i];</div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>    <span class="keywordflow">if</span> (parname != <span class="stringliteral">&quot;Bkpos&quot;</span>)</div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>      <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a891f4ac364ccf9e8e7b9c71fb5e0405d">m_background</a>-&gt;setParameter(parname, vecparvalues[i]);</div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (backgroundtype == FULLPROF_POLYNOMIAL_BACKGROUND)</div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>      <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a891f4ac364ccf9e8e7b9c71fb5e0405d">m_background</a>-&gt;setAttributeValue(<span class="stringliteral">&quot;Bkpos&quot;</span>, vecparvalues[i]);</div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>      <span class="keywordflow">throw</span> runtime_error(<span class="stringliteral">&quot;Bkpos should not be in the parameter list. &quot;</span>);</div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>  }</div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span> </div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>  <span class="keywordflow">if</span> (backgroundtype == CHEBYSHEV_BACKGROUND) {</div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>    <span class="keywordflow">if</span> (startx &gt; 0.)</div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>      <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a891f4ac364ccf9e8e7b9c71fb5e0405d">m_background</a>-&gt;setAttributeValue(<span class="stringliteral">&quot;StartX&quot;</span>, startx);</div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>    <span class="keywordflow">if</span> (endx &gt; 0.)</div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>      <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a891f4ac364ccf9e8e7b9c71fb5e0405d">m_background</a>-&gt;setAttributeValue(<span class="stringliteral">&quot;EndX&quot;</span>, endx);</div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>  }</div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>}</div>
 </div>
-<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span> </div>
-<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00849" data-start="{" data-end="}">
-<div class="line"><a id="l00849" name="l00849"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a6c05f1e9739cdd33d4dacf3e19b26b74">  849</a></span><span class="keywordtype">void</span> LeBailFunction::setFitProfileParameter(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;paramname, <span class="keywordtype">double</span> minvalue, <span class="keywordtype">double</span> maxvalue) {</div>
-<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>  <span class="comment">// Make ties in composition function</span></div>
-<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> ipk = 1; ipk &lt; <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a>; ++ipk) {</div>
-<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>    stringstream ss1, ss2;</div>
-<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>    ss1 &lt;&lt; <span class="stringliteral">&quot;f&quot;</span> &lt;&lt; (ipk - 1) &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; paramname;</div>
-<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>    ss2 &lt;&lt; <span class="stringliteral">&quot;f&quot;</span> &lt;&lt; ipk &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; paramname;</div>
-<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>    <span class="keywordtype">string</span> tiepart1 = ss1.str();</div>
-<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>    <span class="keywordtype">string</span> tiepart2 = ss2.str();</div>
-<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>    <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ac91bd811d72bf9a1b35379ee2627e0b8">m_compsiteFunction</a>-&gt;tie(tiepart1, tiepart2);</div>
-<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;LeBailFunction::Fit(Tie) / &quot;</span> &lt;&lt; tiepart1 &lt;&lt; <span class="stringliteral">&quot; / &quot;</span> &lt;&lt; tiepart2 &lt;&lt; <span class="stringliteral">&quot; /\n&quot;</span>;</div>
-<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>  }</div>
-<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span> </div>
-<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>  <span class="comment">// Set contrains of the parameter on any of the tied parameter.</span></div>
-<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>  std::stringstream parss;</div>
-<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>  parss &lt;&lt; <span class="stringliteral">&quot;f0.&quot;</span> &lt;&lt; paramname;</div>
-<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>  <span class="keywordtype">string</span> parnamef0 = parss.str();</div>
-<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span>  <span class="keyword">auto</span> bc = std::make_unique&lt;Constraints::BoundaryConstraint&gt;(<a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ac91bd811d72bf9a1b35379ee2627e0b8">m_compsiteFunction</a>.get(), parnamef0, minvalue, maxvalue);</div>
-<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>  <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ac91bd811d72bf9a1b35379ee2627e0b8">m_compsiteFunction</a>-&gt;addConstraint(std::move(bc));</div>
-<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>}</div>
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span> </div>
+<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00846" data-start="{" data-end="}">
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a6c05f1e9739cdd33d4dacf3e19b26b74">  846</a></span><span class="keywordtype">void</span> LeBailFunction::setFitProfileParameter(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;paramname, <span class="keywordtype">double</span> minvalue, <span class="keywordtype">double</span> maxvalue) {</div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>  <span class="comment">// Make ties in composition function</span></div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> ipk = 1; ipk &lt; <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a>; ++ipk) {</div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>    stringstream ss1, ss2;</div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>    ss1 &lt;&lt; <span class="stringliteral">&quot;f&quot;</span> &lt;&lt; (ipk - 1) &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; paramname;</div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>    ss2 &lt;&lt; <span class="stringliteral">&quot;f&quot;</span> &lt;&lt; ipk &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; paramname;</div>
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>    <span class="keywordtype">string</span> tiepart1 = ss1.str();</div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>    <span class="keywordtype">string</span> tiepart2 = ss2.str();</div>
+<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>    <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ac91bd811d72bf9a1b35379ee2627e0b8">m_compsiteFunction</a>-&gt;tie(tiepart1, tiepart2);</div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;LeBailFunction::Fit(Tie) / &quot;</span> &lt;&lt; tiepart1 &lt;&lt; <span class="stringliteral">&quot; / &quot;</span> &lt;&lt; tiepart2 &lt;&lt; <span class="stringliteral">&quot; /\n&quot;</span>;</div>
+<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>  }</div>
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span> </div>
+<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>  <span class="comment">// Set contrains of the parameter on any of the tied parameter.</span></div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>  std::stringstream parss;</div>
+<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>  parss &lt;&lt; <span class="stringliteral">&quot;f0.&quot;</span> &lt;&lt; paramname;</div>
+<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>  <span class="keywordtype">string</span> parnamef0 = parss.str();</div>
+<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>  <span class="keyword">auto</span> bc = std::make_unique&lt;Constraints::BoundaryConstraint&gt;(<a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ac91bd811d72bf9a1b35379ee2627e0b8">m_compsiteFunction</a>.get(), parnamef0, minvalue, maxvalue);</div>
+<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>  <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ac91bd811d72bf9a1b35379ee2627e0b8">m_compsiteFunction</a>-&gt;addConstraint(std::move(bc));</div>
+<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>}</div>
 </div>
-<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span> </div>
-<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00874" data-start="{" data-end="}">
-<div class="line"><a id="l00874" name="l00874"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a67dd8befbdbb274277ae9f365743b81f">  874</a></span><span class="keywordtype">void</span> LeBailFunction::fixPeakParameter(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;paramname, <span class="keywordtype">double</span> paramvalue) {</div>
-<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> ipk = 0; ipk &lt; <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a>; ++ipk) {</div>
-<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>    stringstream ss1, ss2;</div>
-<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>    ss1 &lt;&lt; <span class="stringliteral">&quot;f&quot;</span> &lt;&lt; ipk &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; paramname;</div>
-<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>    ss2 &lt;&lt; paramvalue;</div>
-<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>    <span class="keywordtype">string</span> tiepart1 = ss1.str();</div>
-<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>    <span class="keywordtype">string</span> tievalue = ss2.str();</div>
-<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>    <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ac91bd811d72bf9a1b35379ee2627e0b8">m_compsiteFunction</a>-&gt;tie(tiepart1, tievalue);</div>
-<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span> </div>
-<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;Set up tie | &quot;</span> &lt;&lt; tiepart1 &lt;&lt; <span class="stringliteral">&quot; &lt;---&gt; &quot;</span> &lt;&lt; tievalue &lt;&lt; <span class="stringliteral">&quot; | \n&quot;</span>;</div>
-<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span> </div>
-<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span>    <span class="comment">// FIXME &amp; TODO: Make a map between peak parameter name and index. And use</span></div>
-<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>    <span class="comment">// fix() to replace tie</span></div>
-<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>    <span class="comment">/*--  Code prepared to replace the existing block</span></div>
-<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span><span class="comment">    ThermalNeutronBk2BkExpConvPVoigt_sptr thispeak = m_dspPeaks[ipk].second;</span></div>
-<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span><span class="comment">    size_t iparam = findIndex(thispeak, funcparam.name);</span></div>
-<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span><span class="comment">    thispeak-&gt;fix(iparam);</span></div>
-<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span><span class="comment">    --*/</span></div>
+<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span> </div>
+<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00871" data-start="{" data-end="}">
+<div class="line"><a id="l00871" name="l00871"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a67dd8befbdbb274277ae9f365743b81f">  871</a></span><span class="keywordtype">void</span> LeBailFunction::fixPeakParameter(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;paramname, <span class="keywordtype">double</span> paramvalue) {</div>
+<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> ipk = 0; ipk &lt; <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a>; ++ipk) {</div>
+<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>    stringstream ss1, ss2;</div>
+<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>    ss1 &lt;&lt; <span class="stringliteral">&quot;f&quot;</span> &lt;&lt; ipk &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; paramname;</div>
+<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>    ss2 &lt;&lt; paramvalue;</div>
+<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>    <span class="keywordtype">string</span> tiepart1 = ss1.str();</div>
+<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>    <span class="keywordtype">string</span> tievalue = ss2.str();</div>
+<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>    <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ac91bd811d72bf9a1b35379ee2627e0b8">m_compsiteFunction</a>-&gt;tie(tiepart1, tievalue);</div>
+<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span> </div>
+<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>() &lt;&lt; <span class="stringliteral">&quot;Set up tie | &quot;</span> &lt;&lt; tiepart1 &lt;&lt; <span class="stringliteral">&quot; &lt;---&gt; &quot;</span> &lt;&lt; tievalue &lt;&lt; <span class="stringliteral">&quot; | \n&quot;</span>;</div>
+<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span> </div>
+<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>    <span class="comment">// FIXME &amp; TODO: Make a map between peak parameter name and index. And use</span></div>
+<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>    <span class="comment">// fix() to replace tie</span></div>
+<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>    <span class="comment">/*--  Code prepared to replace the existing block</span></div>
+<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span><span class="comment">    ThermalNeutronBk2BkExpConvPVoigt_sptr thispeak = m_dspPeaks[ipk].second;</span></div>
+<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span><span class="comment">    size_t iparam = findIndex(thispeak, funcparam.name);</span></div>
+<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span><span class="comment">    thispeak-&gt;fix(iparam);</span></div>
+<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span><span class="comment">    --*/</span></div>
+<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span> </div>
+<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>  } <span class="comment">// For each peak</span></div>
+<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>}</div>
+</div>
 <div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span> </div>
-<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>  } <span class="comment">// For each peak</span></div>
-<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>}</div>
+<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00896" data-start="{" data-end="}">
+<div class="line"><a id="l00896" name="l00896"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#abf2cc54360ddc5417c42d9628a7db127">  896</a></span><span class="keywordtype">void</span> LeBailFunction::fixBackgroundParameters() {</div>
+<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>  <span class="keywordtype">size_t</span> numbkgdparams = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a891f4ac364ccf9e8e7b9c71fb5e0405d">m_background</a>-&gt;nParams();</div>
+<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span> </div>
+<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> iparam = 0; iparam &lt; numbkgdparams; ++iparam)</div>
+<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>    <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a891f4ac364ccf9e8e7b9c71fb5e0405d">m_background</a>-&gt;fix(iparam);</div>
+<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>}</div>
 </div>
-<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span> </div>
-<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00899" data-start="{" data-end="}">
-<div class="line"><a id="l00899" name="l00899"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#abf2cc54360ddc5417c42d9628a7db127">  899</a></span><span class="keywordtype">void</span> LeBailFunction::fixBackgroundParameters() {</div>
-<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>  <span class="keywordtype">size_t</span> numbkgdparams = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a891f4ac364ccf9e8e7b9c71fb5e0405d">m_background</a>-&gt;nParams();</div>
-<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span> </div>
-<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> iparam = 0; iparam &lt; numbkgdparams; ++iparam)</div>
-<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>    <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a891f4ac364ccf9e8e7b9c71fb5e0405d">m_background</a>-&gt;fix(iparam);</div>
-<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>}</div>
+<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span> </div>
+<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00906" data-start="{" data-end="}">
+<div class="line"><a id="l00906" name="l00906"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a6b0fe8807bc0cc5e2d796c3cb67cbe58">  906</a></span><span class="keywordtype">void</span> LeBailFunction::setFixPeakHeights() {</div>
+<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> ipk = 0; ipk &lt; <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a>; ++ipk) {</div>
+<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>    <span class="comment">// a. Get peak height</span></div>
+<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>    <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a> thispeak = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a534c614e4c83e858206680886edc3f6b">m_dspPeakVec</a>[ipk].second;</div>
+<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>    thispeak-&gt;fix(0);</div>
+<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>  } <span class="comment">// For each peak</span></div>
+<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>}</div>
 </div>
-<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span> </div>
-<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00909" data-start="{" data-end="}">
-<div class="line"><a id="l00909" name="l00909"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a6b0fe8807bc0cc5e2d796c3cb67cbe58">  909</a></span><span class="keywordtype">void</span> LeBailFunction::setFixPeakHeights() {</div>
-<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> ipk = 0; ipk &lt; <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a>; ++ipk) {</div>
-<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>    <span class="comment">// a. Get peak height</span></div>
-<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>    <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a> thispeak = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a534c614e4c83e858206680886edc3f6b">m_dspPeakVec</a>[ipk].second;</div>
-<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>    thispeak-&gt;fix(0);</div>
-<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>  } <span class="comment">// For each peak</span></div>
-<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>}</div>
+<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span> </div>
+<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00918" data-start="{" data-end="}">
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ab3744a856071756debf61b552bc83673">  918</a></span><span class="keywordtype">void</span> LeBailFunction::setPeakHeights([[maybe_unused]] <span class="keyword">const</span> std::vector&lt;double&gt; &amp;inheights) {</div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>  <span class="keywordflow">throw</span> runtime_error(<span class="stringliteral">&quot;It is not implemented properly.&quot;</span>);</div>
+<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>  <span class="comment">/*</span></div>
+<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span><span class="comment">  if (inheights.size() != heights.size())</span></div>
+<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span><span class="comment">  {</span></div>
+<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span><span class="comment">  g_log.error() &lt;&lt; &quot;Input number of peaks (height) is not same as peaks. &quot;</span></div>
+<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span><span class="comment">  &lt;&lt; &#39;\n&#39;;</span></div>
+<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span><span class="comment">  throw std::logic_error(&quot;Input number of peaks (height) is not same as</span></div>
+<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span><span class="comment">  peaks. &quot;);</span></div>
+<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span><span class="comment">  }</span></div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span><span class="comment"></span> </div>
+<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span><span class="comment">  for (size_t ih = 0; ih &lt; inheights.size(); ++ih)</span></div>
+<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span><span class="comment">  heights[ih] = inheights[ih];</span></div>
+<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span><span class="comment"></span> </div>
+<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span><span class="comment">  return;*/</span></div>
+<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>}</div>
 </div>
-<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span> </div>
-<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00921" data-start="{" data-end="}">
-<div class="line"><a id="l00921" name="l00921"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ab3744a856071756debf61b552bc83673">  921</a></span><span class="keywordtype">void</span> LeBailFunction::setPeakHeights(<span class="keyword">const</span> std::vector&lt;double&gt; &amp;inheights) {</div>
-<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>  <a class="code hl_define" href="../../db/d9d/WarningSuppressions_8h.html#a5237ce4c407712c5876dcba3e9326d4a">UNUSED_ARG</a>(inheights);</div>
-<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>  <span class="keywordflow">throw</span> runtime_error(<span class="stringliteral">&quot;It is not implemented properly.&quot;</span>);</div>
-<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>  <span class="comment">/*</span></div>
-<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span><span class="comment">  if (inheights.size() != heights.size())</span></div>
-<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span><span class="comment">  {</span></div>
-<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span><span class="comment">  g_log.error() &lt;&lt; &quot;Input number of peaks (height) is not same as peaks. &quot;</span></div>
-<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span><span class="comment">  &lt;&lt; &#39;\n&#39;;</span></div>
-<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span><span class="comment">  throw std::logic_error(&quot;Input number of peaks (height) is not same as</span></div>
-<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span><span class="comment">  peaks. &quot;);</span></div>
-<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span><span class="comment">  }</span></div>
-<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span><span class="comment"></span> </div>
-<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span><span class="comment">  for (size_t ih = 0; ih &lt; inheights.size(); ++ih)</span></div>
-<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span><span class="comment">  heights[ih] = inheights[ih];</span></div>
-<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span><span class="comment"></span> </div>
-<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span><span class="comment">  return;*/</span></div>
-<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>}</div>
+<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span> </div>
+<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00938" data-start="{" data-end="}">
+<div class="line"><a id="l00938" name="l00938"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a2e6e5601994bf93e6ead2cb9db337329">  938</a></span><a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a> LeBailFunction::getPeak(<span class="keywordtype">size_t</span> peakindex) {</div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>  <span class="keywordflow">if</span> (peakindex &gt;= <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a>) {</div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>    stringstream errmsg;</div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>    errmsg &lt;&lt; <span class="stringliteral">&quot;Try to access peak &quot;</span> &lt;&lt; peakindex &lt;&lt; <span class="stringliteral">&quot; out of range [0, &quot;</span> &lt;&lt; <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a> &lt;&lt; <span class="stringliteral">&quot;).&quot;</span>;</div>
+<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a56bbdfffa5a708ee5b613a82f1f0ab1a">error</a>(errmsg.str());</div>
+<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>    <span class="keywordflow">throw</span> runtime_error(errmsg.str());</div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>  }</div>
+<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span> </div>
+<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>  <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a> rpeak = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#aa0d20d93d14de4856d39aadaef90236b">m_vecPeaks</a>[peakindex];</div>
+<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span> </div>
+<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>  <span class="keywordflow">return</span> rpeak;</div>
+<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>}</div>
 </div>
-<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span> </div>
-<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00942" data-start="{" data-end="}">
-<div class="line"><a id="l00942" name="l00942"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a2e6e5601994bf93e6ead2cb9db337329">  942</a></span><a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a> LeBailFunction::getPeak(<span class="keywordtype">size_t</span> peakindex) {</div>
-<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>  <span class="keywordflow">if</span> (peakindex &gt;= <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a>) {</div>
-<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>    stringstream errmsg;</div>
-<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>    errmsg &lt;&lt; <span class="stringliteral">&quot;Try to access peak &quot;</span> &lt;&lt; peakindex &lt;&lt; <span class="stringliteral">&quot; out of range [0, &quot;</span> &lt;&lt; <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a> &lt;&lt; <span class="stringliteral">&quot;).&quot;</span>;</div>
-<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a56bbdfffa5a708ee5b613a82f1f0ab1a">error</a>(errmsg.str());</div>
-<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>    <span class="keywordflow">throw</span> runtime_error(errmsg.str());</div>
-<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>  }</div>
-<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span> </div>
-<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>  <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a> rpeak = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#aa0d20d93d14de4856d39aadaef90236b">m_vecPeaks</a>[peakindex];</div>
-<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span> </div>
-<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>  <span class="keywordflow">return</span> rpeak;</div>
-<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>}</div>
-</div>
-<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span> </div>
-<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00958" data-start="{" data-end="}">
-<div class="line"><a id="l00958" name="l00958"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a2c4b461ded0d1bbae0a8a359130f6f0f">  958</a></span><span class="keywordtype">double</span> LeBailFunction::getPeakParameter(std::vector&lt;int&gt; hkl, <span class="keyword">const</span> std::string &amp;parname)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>  <span class="comment">// Search peak in map</span></div>
-<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>  map&lt;vector&lt;int&gt;, <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a>&gt;::const_iterator fiter;</div>
-<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>  fiter = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ae1f1b45b23ea86fa155080002e5a869f">m_mapHKLPeak</a>.find(hkl);</div>
-<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>  <span class="keywordflow">if</span> (fiter == <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ae1f1b45b23ea86fa155080002e5a869f">m_mapHKLPeak</a>.end()) {</div>
-<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>    stringstream errss;</div>
-<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span>    errss &lt;&lt; <span class="stringliteral">&quot;Peak with Miller index (&quot;</span> &lt;&lt; hkl[0] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; hkl[1] &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; hkl[2]</div>
-<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span>          &lt;&lt; <span class="stringliteral">&quot;) does not exist in Le Bail function.&quot;</span>;</div>
-<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a56bbdfffa5a708ee5b613a82f1f0ab1a">error</a>(errss.str());</div>
-<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>    <span class="keywordflow">throw</span> runtime_error(errss.str());</div>
-<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>  }</div>
+<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span> </div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00954" data-start="{" data-end="}">
+<div class="line"><a id="l00954" name="l00954"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a2c4b461ded0d1bbae0a8a359130f6f0f">  954</a></span><span class="keywordtype">double</span> LeBailFunction::getPeakParameter(std::vector&lt;int&gt; hkl, <span class="keyword">const</span> std::string &amp;parname)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>  <span class="comment">// Search peak in map</span></div>
+<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>  map&lt;vector&lt;int&gt;, <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a>&gt;::const_iterator fiter;</div>
+<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>  fiter = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ae1f1b45b23ea86fa155080002e5a869f">m_mapHKLPeak</a>.find(hkl);</div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>  <span class="keywordflow">if</span> (fiter == <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ae1f1b45b23ea86fa155080002e5a869f">m_mapHKLPeak</a>.end()) {</div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>    stringstream errss;</div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>    errss &lt;&lt; <span class="stringliteral">&quot;Peak with Miller index (&quot;</span> &lt;&lt; hkl[0] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; hkl[1] &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; hkl[2]</div>
+<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>          &lt;&lt; <span class="stringliteral">&quot;) does not exist in Le Bail function.&quot;</span>;</div>
+<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a56bbdfffa5a708ee5b613a82f1f0ab1a">error</a>(errss.str());</div>
+<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>    <span class="keywordflow">throw</span> runtime_error(errss.str());</div>
+<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span>  }</div>
+<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span> </div>
+<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span>  <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a> peak = fiter-&gt;second;</div>
+<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span> </div>
+<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>  <span class="keywordtype">double</span> parvalue = <a class="code hl_function" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ab3cf9e2c413774d80aeb75c7e75a12aa">getPeakParameterValue</a>(peak, parname);</div>
 <div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span> </div>
-<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>  <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a> peak = fiter-&gt;second;</div>
-<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span> </div>
-<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>  <span class="keywordtype">double</span> parvalue = <a class="code hl_function" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ab3cf9e2c413774d80aeb75c7e75a12aa">getPeakParameterValue</a>(peak, parname);</div>
-<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span> </div>
-<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span>  <span class="keywordflow">return</span> parvalue;</div>
-<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>}</div>
+<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>  <span class="keywordflow">return</span> parvalue;</div>
+<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span>}</div>
 </div>
-<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span> </div>
-<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00980" data-start="{" data-end="}">
-<div class="line"><a id="l00980" name="l00980"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#adfc891cb7bf5e3218722a15ac4828964">  980</a></span><span class="keywordtype">double</span> LeBailFunction::getPeakParameter(<span class="keywordtype">size_t</span> <a class="code hl_variable" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, <span class="keyword">const</span> std::string &amp;parname)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a> &gt;= <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a>) {</div>
-<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>    stringstream errss;</div>
-<div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>    errss &lt;&lt; <span class="stringliteral">&quot;getPeakParameter() tries to reach a peak with index &quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a> &lt;&lt; <span class="stringliteral">&quot;, which is out of range &quot;</span> &lt;&lt; <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a></div>
-<div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>          &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#aa0d20d93d14de4856d39aadaef90236b">m_vecPeaks</a>.size() &lt;&lt; <span class="stringliteral">&quot;.&quot;</span>;</div>
-<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a56bbdfffa5a708ee5b613a82f1f0ab1a">error</a>(errss.str());</div>
-<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span>    <span class="keywordflow">throw</span> std::runtime_error(errss.str());</div>
-<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span>  }</div>
-<div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span> </div>
-<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>  <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a> peak = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#aa0d20d93d14de4856d39aadaef90236b">m_vecPeaks</a>[<a class="code hl_variable" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>];</div>
-<div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span>  <span class="keywordtype">double</span> <a class="code hl_variable" href="../../d5/d0b/FitMW_8cpp.html#aee90379adb0307effb138f4871edbc5c">value</a> = <a class="code hl_function" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ab3cf9e2c413774d80aeb75c7e75a12aa">getPeakParameterValue</a>(peak, parname);</div>
-<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span> </div>
-<div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d5/d0b/FitMW_8cpp.html#aee90379adb0307effb138f4871edbc5c">value</a>;</div>
-<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>}</div>
+<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span> </div>
+<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00976" data-start="{" data-end="}">
+<div class="line"><a id="l00976" name="l00976"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#adfc891cb7bf5e3218722a15ac4828964">  976</a></span><span class="keywordtype">double</span> LeBailFunction::getPeakParameter(<span class="keywordtype">size_t</span> <a class="code hl_variable" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>, <span class="keyword">const</span> std::string &amp;parname)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a> &gt;= <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a>) {</div>
+<div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span>    stringstream errss;</div>
+<div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>    errss &lt;&lt; <span class="stringliteral">&quot;getPeakParameter() tries to reach a peak with index &quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a> &lt;&lt; <span class="stringliteral">&quot;, which is out of range &quot;</span> &lt;&lt; <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">m_numPeaks</a></div>
+<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span>          &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#aa0d20d93d14de4856d39aadaef90236b">m_vecPeaks</a>.size() &lt;&lt; <span class="stringliteral">&quot;.&quot;</span>;</div>
+<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a56bbdfffa5a708ee5b613a82f1f0ab1a">error</a>(errss.str());</div>
+<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>    <span class="keywordflow">throw</span> std::runtime_error(errss.str());</div>
+<div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>  }</div>
+<div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span> </div>
+<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>  <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a> peak = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#aa0d20d93d14de4856d39aadaef90236b">m_vecPeaks</a>[<a class="code hl_variable" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp.html#a88e786823474a4114810b8da86f8916e">index</a>];</div>
+<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span>  <span class="keywordtype">double</span> <a class="code hl_variable" href="../../d5/d0b/FitMW_8cpp.html#aee90379adb0307effb138f4871edbc5c">value</a> = <a class="code hl_function" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ab3cf9e2c413774d80aeb75c7e75a12aa">getPeakParameterValue</a>(peak, parname);</div>
+<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span> </div>
+<div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d5/d0b/FitMW_8cpp.html#aee90379adb0307effb138f4871edbc5c">value</a>;</div>
+<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>}</div>
 </div>
-<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span> </div>
-<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen01000" data-start="{" data-end="}">
-<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ab3cf9e2c413774d80aeb75c7e75a12aa"> 1000</a></span><span class="keywordtype">double</span> LeBailFunction::getPeakParameterValue(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">API::IPowderDiffPeakFunction_sptr</a> &amp;peak,</div>
-<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span>                                             <span class="keyword">const</span> std::string &amp;parname)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span>  <span class="comment">// Locate the category of the parameter name</span></div>
-<div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span>  <span class="keyword">auto</span> vsiter = lower_bound(<a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ad82d5c82024d5358599c8c71a4010267">m_orderedProfileParameterNames</a>.cbegin(), <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ad82d5c82024d5358599c8c71a4010267">m_orderedProfileParameterNames</a>.cend(), parname);</div>
-<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span> </div>
-<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>  <span class="keywordtype">bool</span> found = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>  <span class="keywordflow">if</span> (vsiter == <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ad82d5c82024d5358599c8c71a4010267">m_orderedProfileParameterNames</a>.end()) {</div>
-<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>    <span class="comment">// End of vector</span></div>
-<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>    found = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span>    <span class="comment">// Middle of vector. But no match</span></div>
-<div class="line"><a id="l01011" name="l01011"></a><span class="lineno"> 1011</span>    <span class="keywordtype">string</span> matchparname = *vsiter;</div>
-<div class="line"><a id="l01012" name="l01012"></a><span class="lineno"> 1012</span>    <span class="keywordflow">if</span> (parname != matchparname)</div>
-<div class="line"><a id="l01013" name="l01013"></a><span class="lineno"> 1013</span>      found = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l01014" name="l01014"></a><span class="lineno"> 1014</span>  }</div>
-<div class="line"><a id="l01015" name="l01015"></a><span class="lineno"> 1015</span> </div>
-<div class="line"><a id="l01016" name="l01016"></a><span class="lineno"> 1016</span>  <span class="comment">// Get parameter</span></div>
-<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>  <span class="keywordtype">double</span> parvalue;</div>
-<div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span>  <span class="keywordflow">if</span> (found) {</div>
-<div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>    <span class="comment">// It is a native peak parameter</span></div>
-<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span>    parvalue = peak-&gt;getParameter(parname);</div>
-<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span>  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span>    <span class="comment">// It is a calculated peak parameter</span></div>
-<div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span>    parvalue = peak-&gt;getPeakParameter(parname);</div>
-<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span>  }</div>
-<div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span> </div>
-<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span>  <span class="keywordflow">return</span> parvalue;</div>
-<div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span>}</div>
+<div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span> </div>
+<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00996" data-start="{" data-end="}">
+<div class="line"><a id="l00996" name="l00996"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ab3cf9e2c413774d80aeb75c7e75a12aa">  996</a></span><span class="keywordtype">double</span> LeBailFunction::getPeakParameterValue(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">API::IPowderDiffPeakFunction_sptr</a> &amp;peak,</div>
+<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>                                             <span class="keyword">const</span> std::string &amp;parname)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span>  <span class="comment">// Locate the category of the parameter name</span></div>
+<div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span>  <span class="keyword">auto</span> vsiter = lower_bound(<a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ad82d5c82024d5358599c8c71a4010267">m_orderedProfileParameterNames</a>.cbegin(), <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ad82d5c82024d5358599c8c71a4010267">m_orderedProfileParameterNames</a>.cend(), parname);</div>
+<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span> </div>
+<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span>  <span class="keywordtype">bool</span> found = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span>  <span class="keywordflow">if</span> (vsiter == <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ad82d5c82024d5358599c8c71a4010267">m_orderedProfileParameterNames</a>.end()) {</div>
+<div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span>    <span class="comment">// End of vector</span></div>
+<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>    found = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>    <span class="comment">// Middle of vector. But no match</span></div>
+<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>    <span class="keywordtype">string</span> matchparname = *vsiter;</div>
+<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>    <span class="keywordflow">if</span> (parname != matchparname)</div>
+<div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>      found = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span>  }</div>
+<div class="line"><a id="l01011" name="l01011"></a><span class="lineno"> 1011</span> </div>
+<div class="line"><a id="l01012" name="l01012"></a><span class="lineno"> 1012</span>  <span class="comment">// Get parameter</span></div>
+<div class="line"><a id="l01013" name="l01013"></a><span class="lineno"> 1013</span>  <span class="keywordtype">double</span> parvalue;</div>
+<div class="line"><a id="l01014" name="l01014"></a><span class="lineno"> 1014</span>  <span class="keywordflow">if</span> (found) {</div>
+<div class="line"><a id="l01015" name="l01015"></a><span class="lineno"> 1015</span>    <span class="comment">// It is a native peak parameter</span></div>
+<div class="line"><a id="l01016" name="l01016"></a><span class="lineno"> 1016</span>    parvalue = peak-&gt;getParameter(parname);</div>
+<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span>    <span class="comment">// It is a calculated peak parameter</span></div>
+<div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>    parvalue = peak-&gt;getPeakParameter(parname);</div>
+<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span>  }</div>
+<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span> </div>
+<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span>  <span class="keywordflow">return</span> parvalue;</div>
+<div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span>}</div>
 </div>
-<div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span> </div>
-<div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen01032" data-start="{" data-end="}">
-<div class="line"><a id="l01032" name="l01032"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#af79fa7d641826433b2d553ab3e3b3274"> 1032</a></span><span class="keywordtype">double</span> LeBailFunction::getPeakMaximumValue(std::vector&lt;int&gt; hkl, <span class="keyword">const</span> std::vector&lt;double&gt; &amp;xvalues, <span class="keywordtype">size_t</span> &amp;ix) {</div>
-<div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span>  <span class="comment">// Search peak in map</span></div>
-<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>  map&lt;vector&lt;int&gt;, <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a>&gt;::const_iterator fiter;</div>
-<div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span>  fiter = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ae1f1b45b23ea86fa155080002e5a869f">m_mapHKLPeak</a>.find(hkl);</div>
-<div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span>  <span class="keywordflow">if</span> (fiter == <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ae1f1b45b23ea86fa155080002e5a869f">m_mapHKLPeak</a>.end()) {</div>
-<div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>    stringstream errss;</div>
-<div class="line"><a id="l01038" name="l01038"></a><span class="lineno"> 1038</span>    errss &lt;&lt; <span class="stringliteral">&quot;Peak with Miller index (&quot;</span> &lt;&lt; hkl[0] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; hkl[1] &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; hkl[2]</div>
-<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span>          &lt;&lt; <span class="stringliteral">&quot;) does not exist in Le Bail function.&quot;</span>;</div>
-<div class="line"><a id="l01040" name="l01040"></a><span class="lineno"> 1040</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a56bbdfffa5a708ee5b613a82f1f0ab1a">error</a>(errss.str());</div>
-<div class="line"><a id="l01041" name="l01041"></a><span class="lineno"> 1041</span>    <span class="keywordflow">throw</span> runtime_error(errss.str());</div>
-<div class="line"><a id="l01042" name="l01042"></a><span class="lineno"> 1042</span>  }</div>
+<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span> </div>
+<div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen01028" data-start="{" data-end="}">
+<div class="line"><a id="l01028" name="l01028"></a><span class="lineno"><a class="line" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#af79fa7d641826433b2d553ab3e3b3274"> 1028</a></span><span class="keywordtype">double</span> LeBailFunction::getPeakMaximumValue(std::vector&lt;int&gt; hkl, <span class="keyword">const</span> std::vector&lt;double&gt; &amp;xvalues, <span class="keywordtype">size_t</span> &amp;ix) {</div>
+<div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span>  <span class="comment">// Search peak in map</span></div>
+<div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span>  map&lt;vector&lt;int&gt;, <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a>&gt;::const_iterator fiter;</div>
+<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span>  fiter = <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ae1f1b45b23ea86fa155080002e5a869f">m_mapHKLPeak</a>.find(hkl);</div>
+<div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span>  <span class="keywordflow">if</span> (fiter == <a class="code hl_variable" href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ae1f1b45b23ea86fa155080002e5a869f">m_mapHKLPeak</a>.end()) {</div>
+<div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span>    stringstream errss;</div>
+<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>    errss &lt;&lt; <span class="stringliteral">&quot;Peak with Miller index (&quot;</span> &lt;&lt; hkl[0] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; hkl[1] &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; hkl[2]</div>
+<div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span>          &lt;&lt; <span class="stringliteral">&quot;) does not exist in Le Bail function.&quot;</span>;</div>
+<div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span>    <a class="code hl_variable" href="../../d9/da0/namespaceMantid_1_1API.html#a6f6a3554a6e8ce252c08527a12021fba">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a56bbdfffa5a708ee5b613a82f1f0ab1a">error</a>(errss.str());</div>
+<div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>    <span class="keywordflow">throw</span> runtime_error(errss.str());</div>
+<div class="line"><a id="l01038" name="l01038"></a><span class="lineno"> 1038</span>  }</div>
+<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span> </div>
+<div class="line"><a id="l01040" name="l01040"></a><span class="lineno"> 1040</span>  <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a> peak = fiter-&gt;second;</div>
+<div class="line"><a id="l01041" name="l01041"></a><span class="lineno"> 1041</span> </div>
+<div class="line"><a id="l01042" name="l01042"></a><span class="lineno"> 1042</span>  <span class="keywordtype">double</span> maxvalue = peak-&gt;getMaximumValue(xvalues, ix);</div>
 <div class="line"><a id="l01043" name="l01043"></a><span class="lineno"> 1043</span> </div>
-<div class="line"><a id="l01044" name="l01044"></a><span class="lineno"> 1044</span>  <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a4e5c7f45919b55f6daea5a4d68361201">IPowderDiffPeakFunction_sptr</a> peak = fiter-&gt;second;</div>
-<div class="line"><a id="l01045" name="l01045"></a><span class="lineno"> 1045</span> </div>
-<div class="line"><a id="l01046" name="l01046"></a><span class="lineno"> 1046</span>  <span class="keywordtype">double</span> maxvalue = peak-&gt;getMaximumValue(xvalues, ix);</div>
-<div class="line"><a id="l01047" name="l01047"></a><span class="lineno"> 1047</span> </div>
-<div class="line"><a id="l01048" name="l01048"></a><span class="lineno"> 1048</span>  <span class="keywordflow">return</span> maxvalue;</div>
-<div class="line"><a id="l01049" name="l01049"></a><span class="lineno"> 1049</span>}</div>
+<div class="line"><a id="l01044" name="l01044"></a><span class="lineno"> 1044</span>  <span class="keywordflow">return</span> maxvalue;</div>
+<div class="line"><a id="l01045" name="l01045"></a><span class="lineno"> 1045</span>}</div>
 </div>
-<div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span> </div>
-<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>} <span class="comment">// namespace Mantid::CurveFitting::Algorithms</span></div>
+<div class="line"><a id="l01046" name="l01046"></a><span class="lineno"> 1046</span> </div>
+<div class="line"><a id="l01047" name="l01047"></a><span class="lineno"> 1047</span>} <span class="comment">// namespace Mantid::CurveFitting::Algorithms</span></div>
 <div class="ttc" id="aAlgorithm_8h_html"><div class="ttname"><a href="../../d7/d36/Algorithm_8h.html">Algorithm.h</a></div></div>
 <div class="ttc" id="aBoundaryConstraint_8h_html"><div class="ttname"><a href="../../dc/d8c/BoundaryConstraint_8h.html">BoundaryConstraint.h</a></div></div>
 <div class="ttc" id="aEstimatePeakIntensities_8cpp_html_a2118076db8e8f8a25c2376e1d4acfb67"><div class="ttname"><a href="../../d3/d17/EstimatePeakIntensities_8cpp.html#a2118076db8e8f8a25c2376e1d4acfb67">intensity</a></div><div class="ttdeci">double intensity</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d17/EstimatePeakIntensities_8cpp_source.html#l00034">EstimatePeakIntensities.cpp:34</a></div></div>
@@ -1087,14 +1083,13 @@ $(document).ready(function() { init_codefold(1); });
 <div class="ttc" id="aLeBailFunction_8h_html"><div class="ttname"><a href="../../df/dc0/LeBailFunction_8h.html">LeBailFunction.h</a></div></div>
 <div class="ttc" id="aMatrix_8cpp_html_ac6bbb05594dd33c967d0dc98e8ac8c93"><div class="ttname"><a href="../../dd/d52/Matrix_8cpp.html#ac6bbb05594dd33c967d0dc98e8ac8c93">fabs</a></div><div class="ttdeci">#define fabs(x)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d52/Matrix_8cpp_source.html#l00022">Matrix.cpp:22</a></div></div>
 <div class="ttc" id="aNeutronBk2BkExpConvPVoigt_8cpp_html_ae0b254dc51aaecb392650eeb2b54f4fb"><div class="ttname"><a href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp.html#ae0b254dc51aaecb392650eeb2b54f4fb">NEG_DBL_MAX</a></div><div class="ttdeci">const double NEG_DBL_MAX</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d38/NeutronBk2BkExpConvPVoigt_8cpp_source.html#l00019">NeutronBk2BkExpConvPVoigt.cpp:19</a></div></div>
-<div class="ttc" id="aWarningSuppressions_8h_html_a5237ce4c407712c5876dcba3e9326d4a"><div class="ttname"><a href="../../db/d9d/WarningSuppressions_8h.html#a5237ce4c407712c5876dcba3e9326d4a">UNUSED_ARG</a></div><div class="ttdeci">#define UNUSED_ARG(...)</div><div class="ttdoc">Function arguments are sometimes unused in certain implementations but are required for documentation...</div><div class="ttdef"><b>Definition</b> <a href="../../db/d9d/WarningSuppressions_8h_source.html#l00117">WarningSuppressions.h:117</a></div></div>
 <div class="ttc" id="aclassMantid_1_1API_1_1CompositeFunction_html"><div class="ttname"><a href="../../dd/d27/classMantid_1_1API_1_1CompositeFunction.html">Mantid::API::CompositeFunction</a></div><div class="ttdoc">A composite function is a function containing other functions.</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/CompositeFunction_8h_source.html#l00044">CompositeFunction.h:44</a></div></div>
 <div class="ttc" id="aclassMantid_1_1API_1_1FunctionDomain1DVector_html"><div class="ttname"><a href="../../dc/ddc/classMantid_1_1API_1_1FunctionDomain1DVector.html">Mantid::API::FunctionDomain1DVector</a></div><div class="ttdoc">Implements FunctionDomain1D with its own storage in form of a std::vector.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d28/FunctionDomain1D_8h_source.html#l00073">FunctionDomain1D.h:73</a></div></div>
 <div class="ttc" id="aclassMantid_1_1API_1_1FunctionValues_html"><div class="ttname"><a href="../../d9/d9c/classMantid_1_1API_1_1FunctionValues.html">Mantid::API::FunctionValues</a></div><div class="ttdoc">A class to store values calculated by a function.</div><div class="ttdef"><b>Definition</b> <a href="../../da/dd6/FunctionValues_8h_source.html#l00025">FunctionValues.h:25</a></div></div>
 <div class="ttc" id="aclassMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction_html_a16bd6369c179c65586e878c18deb4902"><div class="ttname"><a href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a16bd6369c179c65586e878c18deb4902">Mantid::CurveFitting::Algorithms::LeBailFunction::m_isInputValue</a></div><div class="ttdeci">bool m_isInputValue</div><div class="ttdoc">Has first value set up.</div><div class="ttdef"><b>Definition</b> <a href="../../df/dc0/LeBailFunction_8h_source.html#l00165">LeBailFunction.h:165</a></div></div>
 <div class="ttc" id="aclassMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction_html_a26b07f6f900096030c422fb169894d16"><div class="ttname"><a href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a26b07f6f900096030c422fb169894d16">Mantid::CurveFitting::Algorithms::LeBailFunction::m_peakParameterNameVec</a></div><div class="ttdeci">std::vector&lt; std::string &gt; m_peakParameterNameVec</div><div class="ttdoc">Name of peak parameter names (be same as the order in IPowderDiffPeakFunction)</div><div class="ttdef"><b>Definition</b> <a href="../../df/dc0/LeBailFunction_8h_source.html#l00142">LeBailFunction.h:142</a></div></div>
 <div class="ttc" id="aclassMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction_html_a26baf143d8c366dcff87b0ad5eb6f5cc"><div class="ttname"><a href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a26baf143d8c366dcff87b0ad5eb6f5cc">Mantid::CurveFitting::Algorithms::LeBailFunction::calculatePeakParameterValues</a></div><div class="ttdeci">void calculatePeakParameterValues() const</div><div class="ttdoc">Calculate all peaks' parameter value.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d14/LeBailFunction_8cpp_source.html#l00213">LeBailFunction.cpp:213</a></div></div>
-<div class="ttc" id="aclassMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction_html_a2b747a13d97a5b970e011105fc3849ee"><div class="ttname"><a href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a2b747a13d97a5b970e011105fc3849ee">Mantid::CurveFitting::Algorithms::LeBailFunction::groupPeaks</a></div><div class="ttdeci">void groupPeaks(std::vector&lt; std::vector&lt; std::pair&lt; double, API::IPowderDiffPeakFunction_sptr &gt; &gt; &gt; &amp;peakgroupvec, std::vector&lt; API::IPowderDiffPeakFunction_sptr &gt; &amp;outboundpeakvec, double xmin, double xmax)</div><div class="ttdoc">Group close peaks together.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d14/LeBailFunction_8cpp_source.html#l00697">LeBailFunction.cpp:697</a></div></div>
+<div class="ttc" id="aclassMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction_html_a2b747a13d97a5b970e011105fc3849ee"><div class="ttname"><a href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a2b747a13d97a5b970e011105fc3849ee">Mantid::CurveFitting::Algorithms::LeBailFunction::groupPeaks</a></div><div class="ttdeci">void groupPeaks(std::vector&lt; std::vector&lt; std::pair&lt; double, API::IPowderDiffPeakFunction_sptr &gt; &gt; &gt; &amp;peakgroupvec, std::vector&lt; API::IPowderDiffPeakFunction_sptr &gt; &amp;outboundpeakvec, double xmin, double xmax)</div><div class="ttdoc">Group close peaks together.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d14/LeBailFunction_8cpp_source.html#l00694">LeBailFunction.cpp:694</a></div></div>
 <div class="ttc" id="aclassMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction_html_a50af0613dffcc2c032e4c3930fed1cb7"><div class="ttname"><a href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a50af0613dffcc2c032e4c3930fed1cb7">Mantid::CurveFitting::Algorithms::LeBailFunction::m_numPeaks</a></div><div class="ttdeci">size_t m_numPeaks</div><div class="ttdoc">Number of peaks.</div><div class="ttdef"><b>Definition</b> <a href="../../df/dc0/LeBailFunction_8h_source.html#l00138">LeBailFunction.h:138</a></div></div>
 <div class="ttc" id="aclassMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction_html_a534c614e4c83e858206680886edc3f6b"><div class="ttname"><a href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a534c614e4c83e858206680886edc3f6b">Mantid::CurveFitting::Algorithms::LeBailFunction::m_dspPeakVec</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; double, API::IPowderDiffPeakFunction_sptr &gt; &gt; m_dspPeakVec</div><div class="ttdoc">Vector of pair &lt;peak position in d-space, Peak&gt; sortable.</div><div class="ttdef"><b>Definition</b> <a href="../../df/dc0/LeBailFunction_8h_source.html#l00149">LeBailFunction.h:149</a></div></div>
 <div class="ttc" id="aclassMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction_html_a6b7ea44a8b53410c9c6e97d9cc3144e5"><div class="ttname"><a href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a6b7ea44a8b53410c9c6e97d9cc3144e5">Mantid::CurveFitting::Algorithms::LeBailFunction::m_maxTOFPeakCentre</a></div><div class="ttdeci">double m_maxTOFPeakCentre</div><div class="ttdef"><b>Definition</b> <a href="../../df/dc0/LeBailFunction_8h_source.html#l00170">LeBailFunction.h:170</a></div></div>
@@ -1104,7 +1099,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="ttc" id="aclassMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction_html_a9ab6d1eb1a8fe0bfdd5997c25781e058"><div class="ttname"><a href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a9ab6d1eb1a8fe0bfdd5997c25781e058">Mantid::CurveFitting::Algorithms::LeBailFunction::m_hasNewPeakValue</a></div><div class="ttdeci">bool m_hasNewPeakValue</div><div class="ttdoc">Has new peak values.</div><div class="ttdef"><b>Definition</b> <a href="../../df/dc0/LeBailFunction_8h_source.html#l00162">LeBailFunction.h:162</a></div></div>
 <div class="ttc" id="aclassMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction_html_a9ffb59ef59d8557e963cc6368d6dd44f"><div class="ttname"><a href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#a9ffb59ef59d8557e963cc6368d6dd44f">Mantid::CurveFitting::Algorithms::LeBailFunction::generatePeak</a></div><div class="ttdeci">API::IPowderDiffPeakFunction_sptr generatePeak(int h, int k, int l)</div><div class="ttdoc">Generate a peak with parameter set by.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d14/LeBailFunction_8cpp_source.html#l00295">LeBailFunction.cpp:295</a></div></div>
 <div class="ttc" id="aclassMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction_html_aa0d20d93d14de4856d39aadaef90236b"><div class="ttname"><a href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#aa0d20d93d14de4856d39aadaef90236b">Mantid::CurveFitting::Algorithms::LeBailFunction::m_vecPeaks</a></div><div class="ttdeci">std::vector&lt; API::IPowderDiffPeakFunction_sptr &gt; m_vecPeaks</div><div class="ttdoc">Vector of all peaks.</div><div class="ttdef"><b>Definition</b> <a href="../../df/dc0/LeBailFunction_8h_source.html#l00147">LeBailFunction.h:147</a></div></div>
-<div class="ttc" id="aclassMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction_html_ab3cf9e2c413774d80aeb75c7e75a12aa"><div class="ttname"><a href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ab3cf9e2c413774d80aeb75c7e75a12aa">Mantid::CurveFitting::Algorithms::LeBailFunction::getPeakParameterValue</a></div><div class="ttdeci">double getPeakParameterValue(const API::IPowderDiffPeakFunction_sptr &amp;peak, const std::string &amp;parname) const</div><div class="ttdoc">Retrieve peak's parameter. may be native or calculated.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d14/LeBailFunction_8cpp_source.html#l01000">LeBailFunction.cpp:1000</a></div></div>
+<div class="ttc" id="aclassMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction_html_ab3cf9e2c413774d80aeb75c7e75a12aa"><div class="ttname"><a href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ab3cf9e2c413774d80aeb75c7e75a12aa">Mantid::CurveFitting::Algorithms::LeBailFunction::getPeakParameterValue</a></div><div class="ttdeci">double getPeakParameterValue(const API::IPowderDiffPeakFunction_sptr &amp;peak, const std::string &amp;parname) const</div><div class="ttdoc">Retrieve peak's parameter. may be native or calculated.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d14/LeBailFunction_8cpp_source.html#l00996">LeBailFunction.cpp:996</a></div></div>
 <div class="ttc" id="aclassMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction_html_ac91bd811d72bf9a1b35379ee2627e0b8"><div class="ttname"><a href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ac91bd811d72bf9a1b35379ee2627e0b8">Mantid::CurveFitting::Algorithms::LeBailFunction::m_compsiteFunction</a></div><div class="ttdeci">API::CompositeFunction_sptr m_compsiteFunction</div><div class="ttdoc">Composite functions for all peaks and background.</div><div class="ttdef"><b>Definition</b> <a href="../../df/dc0/LeBailFunction_8h_source.html#l00154">LeBailFunction.h:154</a></div></div>
 <div class="ttc" id="aclassMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction_html_ad82d5c82024d5358599c8c71a4010267"><div class="ttname"><a href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ad82d5c82024d5358599c8c71a4010267">Mantid::CurveFitting::Algorithms::LeBailFunction::m_orderedProfileParameterNames</a></div><div class="ttdeci">std::vector&lt; std::string &gt; m_orderedProfileParameterNames</div><div class="ttdoc">Ordered profile parameter names for search.</div><div class="ttdef"><b>Definition</b> <a href="../../df/dc0/LeBailFunction_8h_source.html#l00144">LeBailFunction.h:144</a></div></div>
 <div class="ttc" id="aclassMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction_html_ae1f1b45b23ea86fa155080002e5a869f"><div class="ttname"><a href="../../db/ddd/classMantid_1_1CurveFitting_1_1Algorithms_1_1LeBailFunction.html#ae1f1b45b23ea86fa155080002e5a869f">Mantid::CurveFitting::Algorithms::LeBailFunction::m_mapHKLPeak</a></div><div class="ttdeci">std::map&lt; std::vector&lt; int &gt;, API::IPowderDiffPeakFunction_sptr &gt; m_mapHKLPeak</div><div class="ttdoc">Vector of all peak's Miller indexes.</div><div class="ttdef"><b>Definition</b> <a href="../../df/dc0/LeBailFunction_8h_source.html#l00151">LeBailFunction.h:151</a></div></div>

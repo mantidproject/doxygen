@@ -251,124 +251,123 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  <span class="keywordflow">return</span> newDIFC;</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>}</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="keywordtype">double</span> updateAbsoluteDIFC(<span class="keyword">const</span> <span class="keywordtype">double</span> offset, <span class="keyword">const</span> <span class="keywordtype">double</span> oldDIFC, <span class="keyword">const</span> <span class="keywordtype">double</span> unused) {</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  <a class="code hl_define" href="../../db/d9d/WarningSuppressions_8h.html#a5237ce4c407712c5876dcba3e9326d4a">UNUSED_ARG</a>(unused);</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>  <span class="keywordflow">if</span> (offset &lt;= -1.) { <span class="comment">// non-physical</span></div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    std::stringstream msg;</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    msg &lt;&lt; <span class="stringliteral">&quot;Encountered offset of &quot;</span> &lt;&lt; offset &lt;&lt; <span class="stringliteral">&quot; which converts data to negative d-spacing from old DIFC &quot;</span> &lt;&lt; oldDIFC</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <span class="keywordflow">throw</span> std::logic_error(msg.str());</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  }</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>  <span class="keywordflow">return</span> oldDIFC / (1.0 + offset);</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>}</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="keywordtype">double</span> updateSignedDIFC(<span class="keyword">const</span> <span class="keywordtype">double</span> offset, <span class="keyword">const</span> <span class="keywordtype">double</span> oldDIFC, <span class="keyword">const</span> <span class="keywordtype">double</span> binWidth) {</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  <span class="keywordflow">return</span> oldDIFC * pow(1.0 + <a class="code hl_define" href="../../dd/d52/Matrix_8cpp.html#ac6bbb05594dd33c967d0dc98e8ac8c93">fabs</a>(binWidth), -1.0 * offset);</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>}</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>} <span class="comment">// end anonymous namespace</span></div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00205" data-start="{" data-end="}">
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="../../dc/d78/classMantid_1_1Algorithms_1_1ConvertDiffCal.html#aeb51bab59857e781c6c4fc1b67c4f6e7">  205</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../dc/d78/classMantid_1_1Algorithms_1_1ConvertDiffCal.html#aeb51bab59857e781c6c4fc1b67c4f6e7">ConvertDiffCal::exec</a>() {</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>  <a class="code hl_typedef" href="../../db/d22/namespaceMantid_1_1DataObjects.html#a122e041a5487a2084cfa11c60020cac8">OffsetsWorkspace_const_sptr</a> offsetsWS = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a5356ea547c4381e4144caa2b37599ead">getProperty</a>(<a class="code hl_function" href="../../dd/def/namespaceMantid_1_1PropertyNames.html#a99dd5b1245adfb405d02423a8aac6d9a">PropertyNames::OFFSTS_WKSP</a>);</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  <span class="comment">/* If a previous calibration is provided, initialize the output calibration table</span></div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">   * with it */</span></div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>  <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a5987516e17d0e653dc576baabfcbdb83">ITableWorkspace_sptr</a> configWksp;</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>  <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a5987516e17d0e653dc576baabfcbdb83">ITableWorkspace_sptr</a> previous_calibration = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a5356ea547c4381e4144caa2b37599ead">getProperty</a>(<a class="code hl_function" href="../../dd/def/namespaceMantid_1_1PropertyNames.html#aba561f359cd57b6538cbf2c2f7f81dad">PropertyNames::CALIB_WKSP</a>);</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  OFFSETMODE offsetMode = std::string(<a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a5356ea547c4381e4144caa2b37599ead">getProperty</a>(<a class="code hl_function" href="../../dd/def/namespaceMantid_1_1PropertyNames.html#a2ce441bb29e60f0bdf0745bb59af754a">PropertyNames::OFFSET_MODE</a>));</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  <span class="keyword">const</span> <span class="keywordtype">double</span> binWidth = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a5356ea547c4381e4144caa2b37599ead">getProperty</a>(<a class="code hl_function" href="../../dd/def/namespaceMantid_1_1PropertyNames.html#a22b70e0a70848f4f969e01801b7c4701">PropertyNames::BINWIDTH</a>);</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  <span class="keywordflow">if</span> (previous_calibration) {</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    configWksp = previous_calibration-&gt;clone();</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="comment">// initial setup of new style config</span></div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    configWksp = std::make_shared&lt;TableWorkspace&gt;();</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; DIFC_TABLE_COLUMN_NAMES.size(); i++)</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>      configWksp-&gt;addColumn(DIFC_TABLE_COLUMN_TYPES[i], DIFC_TABLE_COLUMN_NAMES[i]);</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  }</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  <span class="comment">/* obtain detector ids from the previous calibration workspace */</span></div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  std::unordered_map&lt;int, int&gt; id_to_row;</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  <span class="keywordflow">if</span> (previous_calibration) {</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    std::vector&lt;int&gt; previous_calibration_ids = previous_calibration-&gt;getColumn(0)-&gt;numeric_fill&lt;<span class="keywordtype">int</span>&gt;();</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="keywordtype">int</span> row = 0;</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keywordtype">id</span> : previous_calibration_ids) {</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>      id_to_row[id] = row++;</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    }</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  }</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  <span class="comment">// create values in the table</span></div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>  <span class="keyword">const</span> <span class="keywordtype">size_t</span> numberOfSpectra = offsetsWS-&gt;getNumberHistograms();</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  <a class="code hl_class" href="../../de/dd6/classMantid_1_1API_1_1Progress.html">Progress</a> <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a7ac471ebfae5ff09e8423fba191f09fd">progress</a>(<span class="keyword">this</span>, 0.0, 1.0, numberOfSpectra);</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d3/dc1/classMantid_1_1API_1_1SpectrumInfo.html">Mantid::API::SpectrumInfo</a> &amp;spectrumInfo = offsetsWS-&gt;spectrumInfo();</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>  <a class="code hl_class" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html">Mantid::Geometry::DetectorInfo</a> <span class="keyword">const</span> &amp;d_info = offsetsWS-&gt;detectorInfo();</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>  <span class="comment">// set the function to use for updating the DIFC value</span></div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  <span class="comment">// setting here avoids branching inside the for loop</span></div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>  std::function&lt;double(<span class="keyword">const</span> <span class="keywordtype">double</span>, <span class="keyword">const</span> <span class="keywordtype">double</span>, <span class="keyword">const</span> <span class="keywordtype">double</span>)&gt; newDIFC;</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>  <span class="keywordflow">if</span> (offsetMode == OffsetMode::SIGNED_OFFSET) {</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    newDIFC = updateSignedDIFC;</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    newDIFC = updateAbsoluteDIFC;</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>  }</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; numberOfSpectra; ++i) {</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    <span class="comment">/* obtain detector id for this spectra */</span></div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <a class="code hl_typedef" href="../../d8/d8e/namespaceMantid.html#a48bf366d08fb1b20ebb535f1b1b5c99e">detid_t</a> detector_id = getDetID(offsetsWS, i);</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    <span class="keywordtype">size_t</span> internal_index = d_info.<a class="code hl_function" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#ac5c8c7e454f08a5e81b6133b37102fe4">indexOf</a>(detector_id);</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <span class="comment">/* obtain the mask */</span></div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    <span class="keywordflow">if</span> (!d_info.<a class="code hl_function" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#a5501a4cbe4aeee2cf9a2b07b6588bc6e">isMasked</a>(internal_index)) {</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>      <span class="comment">/* find the detector id&#39;s offset value in the offset workspace */</span></div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>      <span class="keywordtype">double</span> new_offset_value = offsetsWS-&gt;getValue(detector_id, 0.0);</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>      <span class="comment">/* search for it in the table */</span></div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>      <span class="keyword">auto</span> iter = id_to_row.find(detector_id);</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>      <span class="comment">/* if it is found, update the correct row in the output table */</span></div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>      <span class="keywordflow">if</span> (iter != id_to_row.end()) {</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        <span class="comment">/* Get the row and update the difc value in the first column */</span></div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        <span class="keywordtype">int</span> row_to_update = iter-&gt;second;</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        <span class="keywordtype">double</span> &amp;difc_value_to_update = configWksp-&gt;cell&lt;<span class="keywordtype">double</span>&gt;(row_to_update, 1);</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        difc_value_to_update = newDIFC(new_offset_value, difc_value_to_update, binWidth);</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>      }</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>      <span class="comment">/* value was not found in PreviousCalibration - calculate from experiment&#39;s geometry */</span></div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>      <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        <a class="code hl_class" href="../../db/dcc/classMantid_1_1API_1_1TableRow.html">API::TableRow</a> newrow = configWksp-&gt;appendRow();</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        newrow &lt;&lt; static_cast&lt;int&gt;(detector_id);</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        newrow &lt;&lt; calculateDIFC(offsetsWS, i, spectrumInfo, binWidth, offsetMode);</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        newrow &lt;&lt; 0.; <span class="comment">// difa</span></div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        newrow &lt;&lt; 0.; <span class="comment">// tzero</span></div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>      }</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    }</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a7ac471ebfae5ff09e8423fba191f09fd">progress</a>.report();</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>  }</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>  <span class="comment">// sort the results</span></div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  <span class="keyword">auto</span> sortTable = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a601ae146d6e558587e743cfad107e6bd">createChildAlgorithm</a>(<span class="stringliteral">&quot;SortTableWorkspace&quot;</span>);</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>  sortTable-&gt;setProperty(<span class="stringliteral">&quot;InputWorkspace&quot;</span>, configWksp);</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>  sortTable-&gt;setProperty(<span class="stringliteral">&quot;OutputWorkspace&quot;</span>, configWksp);</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>  sortTable-&gt;setPropertyValue(<span class="stringliteral">&quot;Columns&quot;</span>, <span class="stringliteral">&quot;detid&quot;</span>);</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>  sortTable-&gt;executeAsChildAlg();</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  <span class="comment">// copy over the results</span></div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>  configWksp = sortTable-&gt;getProperty(<span class="stringliteral">&quot;OutputWorkspace&quot;</span>);</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>  <a class="code hl_function" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html#a3819af9d65d799ec151ab97c15f147e4">setProperty</a>(<a class="code hl_function" href="../../dd/def/namespaceMantid_1_1PropertyNames.html#ae49569dcc53faa9597dc9530510e938f">PropertyNames::OUTPUT_WKSP</a>, configWksp);</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>}</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="keywordtype">double</span> updateAbsoluteDIFC(<span class="keyword">const</span> <span class="keywordtype">double</span> offset, <span class="keyword">const</span> <span class="keywordtype">double</span> oldDIFC, [[maybe_unused]] <span class="keyword">const</span> <span class="keywordtype">double</span> unused) {</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  <span class="keywordflow">if</span> (offset &lt;= -1.) { <span class="comment">// non-physical</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    std::stringstream msg;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    msg &lt;&lt; <span class="stringliteral">&quot;Encountered offset of &quot;</span> &lt;&lt; offset &lt;&lt; <span class="stringliteral">&quot; which converts data to negative d-spacing from old DIFC &quot;</span> &lt;&lt; oldDIFC</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <span class="keywordflow">throw</span> std::logic_error(msg.str());</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>  }</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  <span class="keywordflow">return</span> oldDIFC / (1.0 + offset);</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>}</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="keywordtype">double</span> updateSignedDIFC(<span class="keyword">const</span> <span class="keywordtype">double</span> offset, <span class="keyword">const</span> <span class="keywordtype">double</span> oldDIFC, <span class="keyword">const</span> <span class="keywordtype">double</span> binWidth) {</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  <span class="keywordflow">return</span> oldDIFC * pow(1.0 + <a class="code hl_define" href="../../dd/d52/Matrix_8cpp.html#ac6bbb05594dd33c967d0dc98e8ac8c93">fabs</a>(binWidth), -1.0 * offset);</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>}</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>} <span class="comment">// end anonymous namespace</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">//----------------------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00204" data-start="{" data-end="}">
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="../../dc/d78/classMantid_1_1Algorithms_1_1ConvertDiffCal.html#aeb51bab59857e781c6c4fc1b67c4f6e7">  204</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../dc/d78/classMantid_1_1Algorithms_1_1ConvertDiffCal.html#aeb51bab59857e781c6c4fc1b67c4f6e7">ConvertDiffCal::exec</a>() {</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  <a class="code hl_typedef" href="../../db/d22/namespaceMantid_1_1DataObjects.html#a122e041a5487a2084cfa11c60020cac8">OffsetsWorkspace_const_sptr</a> offsetsWS = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a5356ea547c4381e4144caa2b37599ead">getProperty</a>(<a class="code hl_function" href="../../dd/def/namespaceMantid_1_1PropertyNames.html#a99dd5b1245adfb405d02423a8aac6d9a">PropertyNames::OFFSTS_WKSP</a>);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  <span class="comment">/* If a previous calibration is provided, initialize the output calibration table</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">   * with it */</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>  <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a5987516e17d0e653dc576baabfcbdb83">ITableWorkspace_sptr</a> configWksp;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a5987516e17d0e653dc576baabfcbdb83">ITableWorkspace_sptr</a> previous_calibration = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a5356ea547c4381e4144caa2b37599ead">getProperty</a>(<a class="code hl_function" href="../../dd/def/namespaceMantid_1_1PropertyNames.html#aba561f359cd57b6538cbf2c2f7f81dad">PropertyNames::CALIB_WKSP</a>);</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>  OFFSETMODE offsetMode = std::string(<a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a5356ea547c4381e4144caa2b37599ead">getProperty</a>(<a class="code hl_function" href="../../dd/def/namespaceMantid_1_1PropertyNames.html#a2ce441bb29e60f0bdf0745bb59af754a">PropertyNames::OFFSET_MODE</a>));</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  <span class="keyword">const</span> <span class="keywordtype">double</span> binWidth = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a5356ea547c4381e4144caa2b37599ead">getProperty</a>(<a class="code hl_function" href="../../dd/def/namespaceMantid_1_1PropertyNames.html#a22b70e0a70848f4f969e01801b7c4701">PropertyNames::BINWIDTH</a>);</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>  <span class="keywordflow">if</span> (previous_calibration) {</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    configWksp = previous_calibration-&gt;clone();</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    <span class="comment">// initial setup of new style config</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    configWksp = std::make_shared&lt;TableWorkspace&gt;();</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; DIFC_TABLE_COLUMN_NAMES.size(); i++)</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>      configWksp-&gt;addColumn(DIFC_TABLE_COLUMN_TYPES[i], DIFC_TABLE_COLUMN_NAMES[i]);</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  }</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  <span class="comment">/* obtain detector ids from the previous calibration workspace */</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  std::unordered_map&lt;int, int&gt; id_to_row;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  <span class="keywordflow">if</span> (previous_calibration) {</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    std::vector&lt;int&gt; previous_calibration_ids = previous_calibration-&gt;getColumn(0)-&gt;numeric_fill&lt;<span class="keywordtype">int</span>&gt;();</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <span class="keywordtype">int</span> row = 0;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keywordtype">id</span> : previous_calibration_ids) {</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>      id_to_row[id] = row++;</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    }</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  }</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  <span class="comment">// create values in the table</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  <span class="keyword">const</span> <span class="keywordtype">size_t</span> numberOfSpectra = offsetsWS-&gt;getNumberHistograms();</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>  <a class="code hl_class" href="../../de/dd6/classMantid_1_1API_1_1Progress.html">Progress</a> <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a7ac471ebfae5ff09e8423fba191f09fd">progress</a>(<span class="keyword">this</span>, 0.0, 1.0, numberOfSpectra);</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d3/dc1/classMantid_1_1API_1_1SpectrumInfo.html">Mantid::API::SpectrumInfo</a> &amp;spectrumInfo = offsetsWS-&gt;spectrumInfo();</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>  <a class="code hl_class" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html">Mantid::Geometry::DetectorInfo</a> <span class="keyword">const</span> &amp;d_info = offsetsWS-&gt;detectorInfo();</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>  <span class="comment">// set the function to use for updating the DIFC value</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>  <span class="comment">// setting here avoids branching inside the for loop</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  std::function&lt;double(<span class="keyword">const</span> <span class="keywordtype">double</span>, <span class="keyword">const</span> <span class="keywordtype">double</span>, <span class="keyword">const</span> <span class="keywordtype">double</span>)&gt; newDIFC;</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>  <span class="keywordflow">if</span> (offsetMode == OffsetMode::SIGNED_OFFSET) {</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    newDIFC = updateSignedDIFC;</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    newDIFC = updateAbsoluteDIFC;</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>  }</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; numberOfSpectra; ++i) {</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    <span class="comment">/* obtain detector id for this spectra */</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    <a class="code hl_typedef" href="../../d8/d8e/namespaceMantid.html#a48bf366d08fb1b20ebb535f1b1b5c99e">detid_t</a> detector_id = getDetID(offsetsWS, i);</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keywordtype">size_t</span> internal_index = d_info.<a class="code hl_function" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#ac5c8c7e454f08a5e81b6133b37102fe4">indexOf</a>(detector_id);</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    <span class="comment">/* obtain the mask */</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <span class="keywordflow">if</span> (!d_info.<a class="code hl_function" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html#a5501a4cbe4aeee2cf9a2b07b6588bc6e">isMasked</a>(internal_index)) {</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>      <span class="comment">/* find the detector id&#39;s offset value in the offset workspace */</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>      <span class="keywordtype">double</span> new_offset_value = offsetsWS-&gt;getValue(detector_id, 0.0);</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>      <span class="comment">/* search for it in the table */</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>      <span class="keyword">auto</span> iter = id_to_row.find(detector_id);</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>      <span class="comment">/* if it is found, update the correct row in the output table */</span></div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>      <span class="keywordflow">if</span> (iter != id_to_row.end()) {</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        <span class="comment">/* Get the row and update the difc value in the first column */</span></div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        <span class="keywordtype">int</span> row_to_update = iter-&gt;second;</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        <span class="keywordtype">double</span> &amp;difc_value_to_update = configWksp-&gt;cell&lt;<span class="keywordtype">double</span>&gt;(row_to_update, 1);</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        difc_value_to_update = newDIFC(new_offset_value, difc_value_to_update, binWidth);</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>      }</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>      <span class="comment">/* value was not found in PreviousCalibration - calculate from experiment&#39;s geometry */</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>      <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        <a class="code hl_class" href="../../db/dcc/classMantid_1_1API_1_1TableRow.html">API::TableRow</a> newrow = configWksp-&gt;appendRow();</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        newrow &lt;&lt; static_cast&lt;int&gt;(detector_id);</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        newrow &lt;&lt; calculateDIFC(offsetsWS, i, spectrumInfo, binWidth, offsetMode);</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        newrow &lt;&lt; 0.; <span class="comment">// difa</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        newrow &lt;&lt; 0.; <span class="comment">// tzero</span></div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>      }</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    }</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a7ac471ebfae5ff09e8423fba191f09fd">progress</a>.report();</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  }</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>  <span class="comment">// sort the results</span></div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>  <span class="keyword">auto</span> sortTable = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a601ae146d6e558587e743cfad107e6bd">createChildAlgorithm</a>(<span class="stringliteral">&quot;SortTableWorkspace&quot;</span>);</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  sortTable-&gt;setProperty(<span class="stringliteral">&quot;InputWorkspace&quot;</span>, configWksp);</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>  sortTable-&gt;setProperty(<span class="stringliteral">&quot;OutputWorkspace&quot;</span>, configWksp);</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>  sortTable-&gt;setPropertyValue(<span class="stringliteral">&quot;Columns&quot;</span>, <span class="stringliteral">&quot;detid&quot;</span>);</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>  sortTable-&gt;executeAsChildAlg();</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>  <span class="comment">// copy over the results</span></div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  configWksp = sortTable-&gt;getProperty(<span class="stringliteral">&quot;OutputWorkspace&quot;</span>);</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>  <a class="code hl_function" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html#a3819af9d65d799ec151ab97c15f147e4">setProperty</a>(<a class="code hl_function" href="../../dd/def/namespaceMantid_1_1PropertyNames.html#ae49569dcc53faa9597dc9530510e938f">PropertyNames::OUTPUT_WKSP</a>, configWksp);</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>}</div>
 </div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>} <span class="comment">// namespace Algorithms</span></div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>} <span class="comment">// namespace Mantid</span></div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>} <span class="comment">// namespace Algorithms</span></div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>} <span class="comment">// namespace Mantid</span></div>
 <div class="ttc" id="aAPI_2src_2Run_8cpp_html_a9b45b3e13bd9167aab02e17e08916231"><div class="ttname"><a href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d7c/API_2src_2Run_8cpp_source.html#l00060">Run.cpp:60</a></div></div>
 <div class="ttc" id="aAlgorithm_8h_html_afdb48240ab340a0026eeadc6de8b72e1"><div class="ttname"><a href="../../d7/d36/Algorithm_8h.html#afdb48240ab340a0026eeadc6de8b72e1">DECLARE_ALGORITHM</a></div><div class="ttdeci">#define DECLARE_ALGORITHM(classname)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d36/Algorithm_8h_source.html#l00547">Algorithm.h:547</a></div></div>
 <div class="ttc" id="aConvertDiffCal_8h_html"><div class="ttname"><a href="../../d2/d53/ConvertDiffCal_8h.html">ConvertDiffCal.h</a></div></div>
@@ -384,7 +383,6 @@ $(document).ready(function() { init_codefold(1); });
 <div class="ttc" id="aSpectrumInfo_8h_html"><div class="ttname"><a href="../../dd/d48/SpectrumInfo_8h.html">SpectrumInfo.h</a></div></div>
 <div class="ttc" id="aTableRow_8h_html"><div class="ttname"><a href="../../db/d2e/TableRow_8h.html">TableRow.h</a></div></div>
 <div class="ttc" id="aTableWorkspace_8h_html"><div class="ttname"><a href="../../d8/d85/TableWorkspace_8h.html">TableWorkspace.h</a></div></div>
-<div class="ttc" id="aWarningSuppressions_8h_html_a5237ce4c407712c5876dcba3e9326d4a"><div class="ttname"><a href="../../db/d9d/WarningSuppressions_8h.html#a5237ce4c407712c5876dcba3e9326d4a">UNUSED_ARG</a></div><div class="ttdeci">#define UNUSED_ARG(...)</div><div class="ttdoc">Function arguments are sometimes unused in certain implementations but are required for documentation...</div><div class="ttdef"><b>Definition</b> <a href="../../db/d9d/WarningSuppressions_8h_source.html#l00117">WarningSuppressions.h:117</a></div></div>
 <div class="ttc" id="aclassMantid_1_1API_1_1Algorithm_html_a0e4d44cd6beedd532b852996c3f193f2"><div class="ttname"><a href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a0e4d44cd6beedd532b852996c3f193f2">Mantid::API::Algorithm::declareProperty</a></div><div class="ttdeci">void declareProperty(std::unique_ptr&lt; Kernel::Property &gt; p, const std::string &amp;doc=&quot;&quot;) override</div><div class="ttdoc">Add a property to the list of managed properties.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01833">Algorithm.cpp:1833</a></div></div>
 <div class="ttc" id="aclassMantid_1_1API_1_1Algorithm_html_a5356ea547c4381e4144caa2b37599ead"><div class="ttname"><a href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a5356ea547c4381e4144caa2b37599ead">Mantid::API::Algorithm::getProperty</a></div><div class="ttdeci">TypedValue getProperty(const std::string &amp;name) const override</div><div class="ttdoc">Get the value of a property.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01996">Algorithm.cpp:1996</a></div></div>
 <div class="ttc" id="aclassMantid_1_1API_1_1Algorithm_html_a601ae146d6e558587e743cfad107e6bd"><div class="ttname"><a href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a601ae146d6e558587e743cfad107e6bd">Mantid::API::Algorithm::createChildAlgorithm</a></div><div class="ttdeci">virtual std::shared_ptr&lt; Algorithm &gt; createChildAlgorithm(const std::string &amp;name, const double startProgress=-1., const double endProgress=-1., const bool enableLogging=true, const int &amp;version=-1)</div><div class="ttdoc">Create a Child Algorithm.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00860">Algorithm.cpp:860</a></div></div>
@@ -403,7 +401,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="ttc" id="aclassMantid_1_1Algorithms_1_1ConvertDiffCal_html_a47810d432b632e6a0f589e1e2e9f2c74"><div class="ttname"><a href="../../dc/d78/classMantid_1_1Algorithms_1_1ConvertDiffCal.html#a47810d432b632e6a0f589e1e2e9f2c74">Mantid::Algorithms::ConvertDiffCal::version</a></div><div class="ttdeci">int version() const override</div><div class="ttdoc">Algorithm's version for identification.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d41/ConvertDiffCal_8cpp_source.html#l00062">ConvertDiffCal.cpp:62</a></div></div>
 <div class="ttc" id="aclassMantid_1_1Algorithms_1_1ConvertDiffCal_html_a744c09df8534f11f125eda87b84b1a17"><div class="ttname"><a href="../../dc/d78/classMantid_1_1Algorithms_1_1ConvertDiffCal.html#a744c09df8534f11f125eda87b84b1a17">Mantid::Algorithms::ConvertDiffCal::validateInputs</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; validateInputs() override</div><div class="ttdoc">Method checking errors on ALL the inputs, before execution.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d41/ConvertDiffCal_8cpp_source.html#l00096">ConvertDiffCal.cpp:96</a></div></div>
 <div class="ttc" id="aclassMantid_1_1Algorithms_1_1ConvertDiffCal_html_ae52ee3152bca548b2f5bfc57da532ecf"><div class="ttname"><a href="../../dc/d78/classMantid_1_1Algorithms_1_1ConvertDiffCal.html#ae52ee3152bca548b2f5bfc57da532ecf">Mantid::Algorithms::ConvertDiffCal::summary</a></div><div class="ttdeci">const std::string summary() const override</div><div class="ttdoc">Algorithm's summary for use in the GUI and help.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d41/ConvertDiffCal_8cpp_source.html#l00068">ConvertDiffCal.cpp:68</a></div></div>
-<div class="ttc" id="aclassMantid_1_1Algorithms_1_1ConvertDiffCal_html_aeb51bab59857e781c6c4fc1b67c4f6e7"><div class="ttname"><a href="../../dc/d78/classMantid_1_1Algorithms_1_1ConvertDiffCal.html#aeb51bab59857e781c6c4fc1b67c4f6e7">Mantid::Algorithms::ConvertDiffCal::exec</a></div><div class="ttdeci">void exec() override</div><div class="ttdoc">Execute the algorithm.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d41/ConvertDiffCal_8cpp_source.html#l00205">ConvertDiffCal.cpp:205</a></div></div>
+<div class="ttc" id="aclassMantid_1_1Algorithms_1_1ConvertDiffCal_html_aeb51bab59857e781c6c4fc1b67c4f6e7"><div class="ttname"><a href="../../dc/d78/classMantid_1_1Algorithms_1_1ConvertDiffCal.html#aeb51bab59857e781c6c4fc1b67c4f6e7">Mantid::Algorithms::ConvertDiffCal::exec</a></div><div class="ttdeci">void exec() override</div><div class="ttdoc">Execute the algorithm.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d41/ConvertDiffCal_8cpp_source.html#l00204">ConvertDiffCal.cpp:204</a></div></div>
 <div class="ttc" id="aclassMantid_1_1Algorithms_1_1ConvertDiffCal_html_afe178ebe2a6571cf757b61937d7e2d23"><div class="ttname"><a href="../../dc/d78/classMantid_1_1Algorithms_1_1ConvertDiffCal.html#afe178ebe2a6571cf757b61937d7e2d23">Mantid::Algorithms::ConvertDiffCal::init</a></div><div class="ttdeci">void init() override</div><div class="ttdoc">Initialize the algorithm's properties.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d41/ConvertDiffCal_8cpp_source.html#l00073">ConvertDiffCal.cpp:73</a></div></div>
 <div class="ttc" id="aclassMantid_1_1DataObjects_1_1OffsetsWorkspace_html"><div class="ttname"><a href="../../de/d30/classMantid_1_1DataObjects_1_1OffsetsWorkspace.html">Mantid::DataObjects::OffsetsWorkspace</a></div><div class="ttdoc">An OffsetsWorkspace is a specialized Workspace2D where the Y value at each pixel is the offset to be ...</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d9c/OffsetsWorkspace_8h_source.html#l00025">OffsetsWorkspace.h:25</a></div></div>
 <div class="ttc" id="aclassMantid_1_1DataObjects_1_1TableWorkspace_html"><div class="ttname"><a href="../../d8/dd0/classMantid_1_1DataObjects_1_1TableWorkspace.html">Mantid::DataObjects::TableWorkspace</a></div><div class="ttdoc">TableWorkspace is an implementation of Workspace in which the data are organised in columns of same s...</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d85/TableWorkspace_8h_source.html#l00067">TableWorkspace.h:67</a></div></div>
