@@ -140,10 +140,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad2f7515670b4be27f6ebdaf0eacc55c1" id="r_ad2f7515670b4be27f6ebdaf0eacc55c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dac/classMantid_1_1API_1_1AnalysisDataServiceImpl.html#ad2f7515670b4be27f6ebdaf0eacc55c1">addOrReplace</a> (const std::string &amp;<a class="el" href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>, const std::shared_ptr&lt; <a class="el" href="../../d3/de9/classMantid_1_1API_1_1Workspace.html">API::Workspace</a> &gt; &amp;<a class="el" href="../../dc/dd8/IndexPeaks_8cpp.html#af6254baf8945f24221a11ff9da209153">workspace</a>) override</td></tr>
 <tr class="memdesc:ad2f7515670b4be27f6ebdaf0eacc55c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridden addOrReplace member to attach the name to the workspace when a workspace object is added to the service.  <br /></td></tr>
 <tr class="separator:ad2f7515670b4be27f6ebdaf0eacc55c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a509cf73a07473cf6409b362e03d8ab44" id="r_a509cf73a07473cf6409b362e03d8ab44"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dac/classMantid_1_1API_1_1AnalysisDataServiceImpl.html#a509cf73a07473cf6409b362e03d8ab44">rename</a> (const std::string &amp;oldName, const std::string &amp;newName)</td></tr>
+<tr class="memitem:a509cf73a07473cf6409b362e03d8ab44" id="r_a509cf73a07473cf6409b362e03d8ab44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dac/classMantid_1_1API_1_1AnalysisDataServiceImpl.html#a509cf73a07473cf6409b362e03d8ab44">rename</a> (const std::string &amp;oldName, const std::string &amp;newName)</td></tr>
 <tr class="memdesc:a509cf73a07473cf6409b362e03d8ab44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridden rename member to attach the new name to the workspace when a workspace object is renamed.  <br /></td></tr>
 <tr class="separator:a509cf73a07473cf6409b362e03d8ab44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae81735362b45f38ccb57f0b150791c17" id="r_ae81735362b45f38ccb57f0b150791c17"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a67efae9d0a0899c159be4b1705bc3d76">Workspace_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dac/classMantid_1_1API_1_1AnalysisDataServiceImpl.html#ae81735362b45f38ccb57f0b150791c17">remove</a> (const std::string &amp;<a class="el" href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>)</td></tr>
+<tr class="memitem:ae81735362b45f38ccb57f0b150791c17" id="r_ae81735362b45f38ccb57f0b150791c17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a67efae9d0a0899c159be4b1705bc3d76">Workspace_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dac/classMantid_1_1API_1_1AnalysisDataServiceImpl.html#ae81735362b45f38ccb57f0b150791c17">remove</a> (const std::string &amp;<a class="el" href="../../d7/d7c/API_2src_2Run_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>)</td></tr>
 <tr class="memdesc:ae81735362b45f38ccb57f0b150791c17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridden remove member to delete its name held by the workspace itself.  <br /></td></tr>
 <tr class="separator:ae81735362b45f38ccb57f0b150791c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26866eebbac56deeb250d639c8e24185" id="r_a26866eebbac56deeb250d639c8e24185"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dac/classMantid_1_1API_1_1AnalysisDataServiceImpl.html#a26866eebbac56deeb250d639c8e24185">uniqueName</a> (const int <a class="el" href="../../d9/df2/AugmentedLagrangianOptimizer_8cpp.html#a3d05cf6aa68b03e254d70afbe869e305">n</a>=5, const std::string &amp;prefix=&quot;&quot;, const std::string &amp;suffix=&quot;&quot;)</td></tr>
@@ -662,9 +662,6 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#a67efae9d0a0899c159be4b1705bc3d76">Workspace_sptr</a> Mantid::API::AnalysisDataServiceImpl::remove </td>
@@ -674,11 +671,6 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Overridden remove member to delete its name held by the workspace itself. </p>
@@ -746,9 +738,6 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Mantid::API::AnalysisDataServiceImpl::rename </td>
@@ -768,11 +757,6 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Overridden rename member to attach the new name to the workspace when a workspace object is renamed. </p>
