@@ -383,82 +383,84 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  MeshLoader.<a class="code hl_function" href="../../da/dc4/classMantid_1_1DataHandling_1_1Mantid3MFFileIO.html#a721ee1630a09997090f337f8b6bf4b80">readMeshObjects</a>(environmentMeshes, sampleMesh);</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>  <span class="keywordflow">if</span> (sampleMesh) {</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    sampleMesh-&gt;rotate(inputWS-&gt;run().getGoniometer().getR());</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    sample.setShape(sampleMesh);</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>  }</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span> environmentMesh : environmentMeshes) {</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="keywordflow">if</span> (!environment) {</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>      <span class="keywordflow">if</span> (add) {</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>        environment = std::make_unique&lt;SampleEnvironment&gt;(sample.getEnvironment());</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        environment-&gt;add(environmentMesh);</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        <span class="keyword">auto</span> can = std::make_shared&lt;Container&gt;(environmentMesh);</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>        environment = std::make_unique&lt;SampleEnvironment&gt;(<a class="code hl_function" href="../../db/d48/classMantid_1_1DataHandling_1_1LoadSampleEnvironment.html#ab80bea208267b6273bdd8a1e38918f72">name</a>, can);</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>      }</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>      environment-&gt;add(environmentMesh);</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    }</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span> </div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    debugString += <span class="stringliteral">&quot;Environment has: &quot;</span> + <a class="code hl_function" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string</a>(environment-&gt;nelements()) + <span class="stringliteral">&quot; elements.&quot;</span>;</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>  }</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>  <span class="comment">// Put Environment into sample.</span></div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  sample.setEnvironment(std::move(environment));</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;3MF format not supported on this platform&quot;</span>);</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>}</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    <span class="comment">// Baking the goniometer in moves the sample into the lab frame, so it is recorded - unlike the</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    <span class="comment">// definition-frame rotation applied to the environment meshes below.</span></div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    sampleMesh-&gt;bakeGoniometerRotation(inputWS-&gt;run().getGoniometer().getR());</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    sample.setShape(sampleMesh);</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  }</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span> environmentMesh : environmentMeshes) {</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    <span class="keywordflow">if</span> (!environment) {</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>      <span class="keywordflow">if</span> (add) {</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>        environment = std::make_unique&lt;SampleEnvironment&gt;(sample.getEnvironment());</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        environment-&gt;add(environmentMesh);</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>        <span class="keyword">auto</span> can = std::make_shared&lt;Container&gt;(environmentMesh);</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>        environment = std::make_unique&lt;SampleEnvironment&gt;(<a class="code hl_function" href="../../db/d48/classMantid_1_1DataHandling_1_1LoadSampleEnvironment.html#ab80bea208267b6273bdd8a1e38918f72">name</a>, can);</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>      }</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>      environment-&gt;add(environmentMesh);</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    }</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    debugString += <span class="stringliteral">&quot;Environment has: &quot;</span> + <a class="code hl_function" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string</a>(environment-&gt;nelements()) + <span class="stringliteral">&quot; elements.&quot;</span>;</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>  }</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>  <span class="comment">// Put Environment into sample.</span></div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  sample.setEnvironment(std::move(environment));</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>  <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;3MF format not supported on this platform&quot;</span>);</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>}</div>
 </div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
-<div class="foldopen" id="foldopen00326" data-start="{" data-end="}">
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno"><a class="line" href="../../db/d48/classMantid_1_1DataHandling_1_1LoadSampleEnvironment.html#a3cffd3ab0fa4bc334dffbb126a8edf22">  326</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../db/d48/classMantid_1_1DataHandling_1_1LoadSampleEnvironment.html#a3cffd3ab0fa4bc334dffbb126a8edf22">LoadSampleEnvironment::exec</a>() {</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a97ac0dc7f26bb26c417c74e8b29d1181">MatrixWorkspace_const_sptr</a> inputWS = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a5356ea547c4381e4144caa2b37599ead">getProperty</a>(<span class="stringliteral">&quot;InputWorkspace&quot;</span>);</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>  <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">MatrixWorkspace_sptr</a> outputWS = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a5356ea547c4381e4144caa2b37599ead">getProperty</a>(<span class="stringliteral">&quot;OutputWorkspace&quot;</span>);</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>  <span class="keywordflow">if</span> (inputWS != outputWS) {</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    outputWS = inputWS-&gt;clone();</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  }</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  <span class="keyword">const</span> std::string filename = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a5356ea547c4381e4144caa2b37599ead">getProperty</a>(<span class="stringliteral">&quot;Filename&quot;</span>);</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  <span class="keyword">const</span> std::ifstream file(filename.c_str());</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>  <span class="keywordflow">if</span> (!file) {</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    <a class="code hl_variable" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a706ab5e821c27b1f2e221f89d766b809">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a56bbdfffa5a708ee5b613a82f1f0ab1a">error</a>(<span class="stringliteral">&quot;Unable to open file: &quot;</span> + filename);</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>    <span class="keywordflow">throw</span> <a class="code hl_class" href="../../d0/d1c/classMantid_1_1Kernel_1_1Exception_1_1FileError.html">Exception::FileError</a>(<span class="stringliteral">&quot;Unable to open file: &quot;</span>, filename);</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>  }</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>  <span class="keyword">const</span> <span class="keywordtype">bool</span> add = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a5356ea547c4381e4144caa2b37599ead">getProperty</a>(<span class="stringliteral">&quot;Add&quot;</span>);</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>  std::string debugString;</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  <a class="code hl_class" href="../../db/def/classMantid_1_1API_1_1Sample.html">Sample</a> &amp;sample = outputWS-&gt;mutableSample();</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span> </div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  std::string fileExt = std::filesystem::path(filename).extension().string().substr(1); <span class="comment">// remove the &#39;.&#39;</span></div>
+<div class="foldopen" id="foldopen00328" data-start="{" data-end="}">
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno"><a class="line" href="../../db/d48/classMantid_1_1DataHandling_1_1LoadSampleEnvironment.html#a3cffd3ab0fa4bc334dffbb126a8edf22">  328</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../db/d48/classMantid_1_1DataHandling_1_1LoadSampleEnvironment.html#a3cffd3ab0fa4bc334dffbb126a8edf22">LoadSampleEnvironment::exec</a>() {</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>  <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#a97ac0dc7f26bb26c417c74e8b29d1181">MatrixWorkspace_const_sptr</a> inputWS = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a5356ea547c4381e4144caa2b37599ead">getProperty</a>(<span class="stringliteral">&quot;InputWorkspace&quot;</span>);</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>  <a class="code hl_typedef" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">MatrixWorkspace_sptr</a> outputWS = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a5356ea547c4381e4144caa2b37599ead">getProperty</a>(<span class="stringliteral">&quot;OutputWorkspace&quot;</span>);</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  <span class="keywordflow">if</span> (inputWS != outputWS) {</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    outputWS = inputWS-&gt;clone();</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  }</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>  <span class="keyword">const</span> std::string filename = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a5356ea547c4381e4144caa2b37599ead">getProperty</a>(<span class="stringliteral">&quot;Filename&quot;</span>);</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>  <span class="keyword">const</span> std::ifstream file(filename.c_str());</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>  <span class="keywordflow">if</span> (!file) {</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>    <a class="code hl_variable" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a706ab5e821c27b1f2e221f89d766b809">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a56bbdfffa5a708ee5b613a82f1f0ab1a">error</a>(<span class="stringliteral">&quot;Unable to open file: &quot;</span> + filename);</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    <span class="keywordflow">throw</span> <a class="code hl_class" href="../../d0/d1c/classMantid_1_1Kernel_1_1Exception_1_1FileError.html">Exception::FileError</a>(<span class="stringliteral">&quot;Unable to open file: &quot;</span>, filename);</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>  }</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span> </div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  <span class="keyword">const</span> <span class="keywordtype">bool</span> add = <a class="code hl_function" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a5356ea547c4381e4144caa2b37599ead">getProperty</a>(<span class="stringliteral">&quot;Add&quot;</span>);</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>  std::string debugString;</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  <a class="code hl_class" href="../../db/def/classMantid_1_1API_1_1Sample.html">Sample</a> &amp;sample = outputWS-&gt;mutableSample();</div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>  std::transform(fileExt.begin(), fileExt.end(), fileExt.begin(), toupper);</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>  std::string fileExt = std::filesystem::path(filename).extension().string().substr(1); <span class="comment">// remove the &#39;.&#39;</span></div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>  <span class="keywordflow">if</span> (fileExt == <span class="stringliteral">&quot;STL&quot;</span>) {</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    <a class="code hl_function" href="../../db/d48/classMantid_1_1DataHandling_1_1LoadSampleEnvironment.html#adb1e30d66548acf5482c2aefedc52f24">loadEnvironmentFromSTL</a>(filename, sample, add, debugString);</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (fileExt == <span class="stringliteral">&quot;3MF&quot;</span>) {</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    <a class="code hl_function" href="../../db/d48/classMantid_1_1DataHandling_1_1LoadSampleEnvironment.html#a5406c3e67d7f7bf45bcdde3acf3495a4">loadEnvironmentFrom3MF</a>(inputWS, filename, sample, add, debugString);</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    <span class="keywordflow">throw</span> <span class="stringliteral">&quot;Invalid file extension&quot;</span>;</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>  }</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>  <span class="comment">// get the material name and number density for debug</span></div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>  <span class="keyword">const</span> <span class="keyword">auto</span> outMaterial = outputWS-&gt;sample().getEnvironment().getContainer().material();</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>  debugString += <span class="stringliteral">&quot;\n&quot;</span></div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>                 <span class="stringliteral">&quot;Environment Material: &quot;</span> +</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>                 outMaterial.name();</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>  debugString += <span class="stringliteral">&quot;\n&quot;</span></div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>                 <span class="stringliteral">&quot;Environment Material Number Density: &quot;</span> +</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>                 <a class="code hl_function" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string</a>(outMaterial.numberDensity());</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>  <span class="comment">// Set output workspace</span></div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>  <a class="code hl_function" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html#a3819af9d65d799ec151ab97c15f147e4">setProperty</a>(<span class="stringliteral">&quot;OutputWorkspace&quot;</span>, outputWS);</div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>  <a class="code hl_variable" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a706ab5e821c27b1f2e221f89d766b809">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>(debugString);</div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>}</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>  std::transform(fileExt.begin(), fileExt.end(), fileExt.begin(), toupper);</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>  <span class="keywordflow">if</span> (fileExt == <span class="stringliteral">&quot;STL&quot;</span>) {</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    <a class="code hl_function" href="../../db/d48/classMantid_1_1DataHandling_1_1LoadSampleEnvironment.html#adb1e30d66548acf5482c2aefedc52f24">loadEnvironmentFromSTL</a>(filename, sample, add, debugString);</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (fileExt == <span class="stringliteral">&quot;3MF&quot;</span>) {</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    <a class="code hl_function" href="../../db/d48/classMantid_1_1DataHandling_1_1LoadSampleEnvironment.html#a5406c3e67d7f7bf45bcdde3acf3495a4">loadEnvironmentFrom3MF</a>(inputWS, filename, sample, add, debugString);</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    <span class="keywordflow">throw</span> <span class="stringliteral">&quot;Invalid file extension&quot;</span>;</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>  }</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>  <span class="comment">// get the material name and number density for debug</span></div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>  <span class="keyword">const</span> <span class="keyword">auto</span> outMaterial = outputWS-&gt;sample().getEnvironment().getContainer().material();</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>  debugString += <span class="stringliteral">&quot;\n&quot;</span></div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>                 <span class="stringliteral">&quot;Environment Material: &quot;</span> +</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>                 outMaterial.name();</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>  debugString += <span class="stringliteral">&quot;\n&quot;</span></div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>                 <span class="stringliteral">&quot;Environment Material Number Density: &quot;</span> +</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>                 <a class="code hl_function" href="../../d8/dcc/namespacestd.html#ad612d1c5d02b14bd78aa4a6372e22512">std::to_string</a>(outMaterial.numberDensity());</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>  <span class="comment">// Set output workspace</span></div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>  <a class="code hl_function" href="../../d9/dc0/classMantid_1_1Kernel_1_1IPropertyManager.html#a3819af9d65d799ec151ab97c15f147e4">setProperty</a>(<span class="stringliteral">&quot;OutputWorkspace&quot;</span>, outputWS);</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>  <a class="code hl_variable" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a706ab5e821c27b1f2e221f89d766b809">g_log</a>.<a class="code hl_function" href="../../d2/d78/classMantid_1_1Kernel_1_1Logger.html#a20b305765f9c40ef2d3004c0d09feb4a">debug</a>(debugString);</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>}</div>
 </div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span> </div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>} <span class="comment">// namespace Mantid::DataHandling</span></div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span> </div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>} <span class="comment">// namespace Mantid::DataHandling</span></div>
 <div class="ttc" id="aAlgorithm_8h_html_afdb48240ab340a0026eeadc6de8b72e1"><div class="ttname"><a href="../../d7/d36/Algorithm_8h.html#afdb48240ab340a0026eeadc6de8b72e1">DECLARE_ALGORITHM</a></div><div class="ttdeci">#define DECLARE_ALGORITHM(classname)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d36/Algorithm_8h_source.html#l00547">Algorithm.h:547</a></div></div>
 <div class="ttc" id="aArrayProperty_8h_html"><div class="ttname"><a href="../../df/da4/ArrayProperty_8h.html">ArrayProperty.h</a></div></div>
 <div class="ttc" id="aBoundedValidator_8h_html"><div class="ttname"><a href="../../dd/d4d/BoundedValidator_8h.html">BoundedValidator.h</a></div></div>
@@ -491,7 +493,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="ttc" id="aclassMantid_1_1API_1_1WorkspaceProperty_html"><div class="ttname"><a href="../../df/d44/classMantid_1_1API_1_1WorkspaceProperty.html">Mantid::API::WorkspaceProperty</a></div><div class="ttdoc">A property class for workspaces.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/db9/WorkspaceProperty_8h_source.html#l00058">WorkspaceProperty.h:58</a></div></div>
 <div class="ttc" id="aclassMantid_1_1DataHandling_1_1LoadAsciiStl_html_a8d8acccbbf730c6d8f681a7557fa008c"><div class="ttname"><a href="../../d3/d41/classMantid_1_1DataHandling_1_1LoadAsciiStl.html#a8d8acccbbf730c6d8f681a7557fa008c">Mantid::DataHandling::LoadAsciiStl::isAsciiSTL</a></div><div class="ttdeci">static bool isAsciiSTL(const std::string &amp;filename)</div><div class="ttdef"><b>Definition</b> <a href="../../de/dca/LoadAsciiStl_8cpp_source.html#l00013">LoadAsciiStl.cpp:13</a></div></div>
 <div class="ttc" id="aclassMantid_1_1DataHandling_1_1LoadBinaryStl_html_aced9badc903ace3cb139319d87ec0dcf"><div class="ttname"><a href="../../db/dcc/classMantid_1_1DataHandling_1_1LoadBinaryStl.html#aced9badc903ace3cb139319d87ec0dcf">Mantid::DataHandling::LoadBinaryStl::isBinarySTL</a></div><div class="ttdeci">static bool isBinarySTL(const std::string &amp;filename)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d5b/LoadBinaryStl_8cpp_source.html#l00025">LoadBinaryStl.cpp:25</a></div></div>
-<div class="ttc" id="aclassMantid_1_1DataHandling_1_1LoadSampleEnvironment_html_a3cffd3ab0fa4bc334dffbb126a8edf22"><div class="ttname"><a href="../../db/d48/classMantid_1_1DataHandling_1_1LoadSampleEnvironment.html#a3cffd3ab0fa4bc334dffbb126a8edf22">Mantid::DataHandling::LoadSampleEnvironment::exec</a></div><div class="ttdeci">void exec() override</div><div class="ttdoc">Virtual method - must be overridden by concrete algorithm.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/db9/LoadSampleEnvironment_8cpp_source.html#l00326">LoadSampleEnvironment.cpp:326</a></div></div>
+<div class="ttc" id="aclassMantid_1_1DataHandling_1_1LoadSampleEnvironment_html_a3cffd3ab0fa4bc334dffbb126a8edf22"><div class="ttname"><a href="../../db/d48/classMantid_1_1DataHandling_1_1LoadSampleEnvironment.html#a3cffd3ab0fa4bc334dffbb126a8edf22">Mantid::DataHandling::LoadSampleEnvironment::exec</a></div><div class="ttdeci">void exec() override</div><div class="ttdoc">Virtual method - must be overridden by concrete algorithm.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/db9/LoadSampleEnvironment_8cpp_source.html#l00328">LoadSampleEnvironment.cpp:328</a></div></div>
 <div class="ttc" id="aclassMantid_1_1DataHandling_1_1LoadSampleEnvironment_html_a5406c3e67d7f7bf45bcdde3acf3495a4"><div class="ttname"><a href="../../db/d48/classMantid_1_1DataHandling_1_1LoadSampleEnvironment.html#a5406c3e67d7f7bf45bcdde3acf3495a4">Mantid::DataHandling::LoadSampleEnvironment::loadEnvironmentFrom3MF</a></div><div class="ttdeci">void loadEnvironmentFrom3MF(const API::MatrixWorkspace_const_sptr &amp;inputWS, const std::string &amp;filename, API::Sample &amp;sample, const bool add, std::string &amp;debugString)</div><div class="ttdoc">Load a sample environment definition from a .3mf file.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/db9/LoadSampleEnvironment_8cpp_source.html#l00283">LoadSampleEnvironment.cpp:283</a></div></div>
 <div class="ttc" id="aclassMantid_1_1DataHandling_1_1LoadSampleEnvironment_html_a6ecbbd72c3129757f4651ae9d61664e8"><div class="ttname"><a href="../../db/d48/classMantid_1_1DataHandling_1_1LoadSampleEnvironment.html#a6ecbbd72c3129757f4651ae9d61664e8">Mantid::DataHandling::LoadSampleEnvironment::init</a></div><div class="ttdeci">void init() override</div><div class="ttdoc">Virtual method - must be overridden by concrete algorithm.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/db9/LoadSampleEnvironment_8cpp_source.html#l00047">LoadSampleEnvironment.cpp:47</a></div></div>
 <div class="ttc" id="aclassMantid_1_1DataHandling_1_1LoadSampleEnvironment_html_ab80bea208267b6273bdd8a1e38918f72"><div class="ttname"><a href="../../db/d48/classMantid_1_1DataHandling_1_1LoadSampleEnvironment.html#ab80bea208267b6273bdd8a1e38918f72">Mantid::DataHandling::LoadSampleEnvironment::name</a></div><div class="ttdeci">const std::string name() const override</div><div class="ttdoc">Algorithm's name for identification overriding a virtual method.</div><div class="ttdef"><b>Definition</b> <a href="../../da/df5/LoadSampleEnvironment_8h_source.html#l00030">LoadSampleEnvironment.h:30</a></div></div>

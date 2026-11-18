@@ -483,9 +483,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a625b6872048e7438cc235483a12c2ff9" id="r_a625b6872048e7438cc235483a12c2ff9"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; const <a class="el" href="../../de/da6/classMantid_1_1Geometry_1_1IObject.html">Geometry::IObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d28/classMantid_1_1Algorithms_1_1PaalmanPingsAbsorptionCorrection.html#a625b6872048e7438cc235483a12c2ff9">constructGaugeVolume</a> ()</td></tr>
 <tr class="memdesc:a625b6872048e7438cc235483a12c2ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the gague volume for the correction.  <br /></td></tr>
 <tr class="separator:a625b6872048e7438cc235483a12c2ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ec8af0e2b1ad23e1e9fbce0b488c11b" id="r_a0ec8af0e2b1ad23e1e9fbce0b488c11b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d28/classMantid_1_1Algorithms_1_1PaalmanPingsAbsorptionCorrection.html#a0ec8af0e2b1ad23e1e9fbce0b488c11b">constructSample</a> (<a class="el" href="../../db/def/classMantid_1_1API_1_1Sample.html">API::Sample</a> &amp;sample)</td></tr>
-<tr class="memdesc:a0ec8af0e2b1ad23e1e9fbce0b488c11b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the sample object using the <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html">Geometry</a> classes, or use the existing one.  <br /></td></tr>
-<tr class="separator:a0ec8af0e2b1ad23e1e9fbce0b488c11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3016dc16f88694bdd1c97f578366f119" id="r_a3016dc16f88694bdd1c97f578366f119"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d28/classMantid_1_1Algorithms_1_1PaalmanPingsAbsorptionCorrection.html#a3016dc16f88694bdd1c97f578366f119">constructSample</a> (const <a class="el" href="../../db/def/classMantid_1_1API_1_1Sample.html">API::Sample</a> &amp;sample)</td></tr>
+<tr class="memdesc:a3016dc16f88694bdd1c97f578366f119"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the sample object using the <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html">Geometry</a> classes, or use the existing one.  <br /></td></tr>
+<tr class="separator:a3016dc16f88694bdd1c97f578366f119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a899525ed1a9f1c710e62159de222c37c" id="r_a899525ed1a9f1c710e62159de222c37c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d28/classMantid_1_1Algorithms_1_1PaalmanPingsAbsorptionCorrection.html#a899525ed1a9f1c710e62159de222c37c">defineProperties</a> ()</td></tr>
 <tr class="separator:a899525ed1a9f1c710e62159de222c37c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2742ee3596bc09ad8eb014e102b00f8" id="r_aa2742ee3596bc09ad8eb014e102b00f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d28/classMantid_1_1Algorithms_1_1PaalmanPingsAbsorptionCorrection.html#aa2742ee3596bc09ad8eb014e102b00f8">doIntegration</a> (double &amp;integral, double &amp;crossIntegral, const double linearCoefAbs, const double linearCoefTotScatt, const std::vector&lt; double &gt; &amp;elementVolumes, const std::vector&lt; double &gt; &amp;L1s, const std::vector&lt; double &gt; &amp;L2s, const double linearCoefAbs2, const double linearCoefTotScatt2, const std::vector&lt; double &gt; &amp;L1s2, const std::vector&lt; double &gt; &amp;L2s2, const size_t startIndex, const size_t endIndex) const</td></tr>
@@ -551,6 +551,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a05a9b50585e3eddb0d21c28a50960a3c" id="r_a05a9b50585e3eddb0d21c28a50960a3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/da0/namespaceMantid_1_1API.html#af3d93880dabd4c45bfdebcaadd27b2fa">API::MatrixWorkspace_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d28/classMantid_1_1Algorithms_1_1PaalmanPingsAbsorptionCorrection.html#a05a9b50585e3eddb0d21c28a50960a3c">m_inputWS</a></td></tr>
 <tr class="memdesc:a05a9b50585e3eddb0d21c28a50960a3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to the input workspace.  <br /></td></tr>
 <tr class="separator:a05a9b50585e3eddb0d21c28a50960a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a996d579667741e75e321d68c8468d931" id="r_a996d579667741e75e321d68c8468d931"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#ae2b0bf777fb422d17f76df83eacdd829">Geometry::IObject_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d28/classMantid_1_1Algorithms_1_1PaalmanPingsAbsorptionCorrection.html#a996d579667741e75e321d68c8468d931">m_labFrameSampleShape</a></td></tr>
+<tr class="memdesc:a996d579667741e75e321d68c8468d931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Owns the lab-frame shape m_sampleObject points at.  <br /></td></tr>
+<tr class="separator:a996d579667741e75e321d68c8468d931"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a612e2e74ecd3a253a687a64938572fbd" id="r_a612e2e74ecd3a253a687a64938572fbd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df0/classMantid_1_1Kernel_1_1Material.html">Kernel::Material</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d28/classMantid_1_1Algorithms_1_1PaalmanPingsAbsorptionCorrection.html#a612e2e74ecd3a253a687a64938572fbd">m_material</a></td></tr>
 <tr class="separator:a612e2e74ecd3a253a687a64938572fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a650f1e2ca713f7e42991a05aa828c3d4" id="r_a650f1e2ca713f7e42991a05aa828c3d4"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d28/classMantid_1_1Algorithms_1_1PaalmanPingsAbsorptionCorrection.html#a650f1e2ca713f7e42991a05aa828c3d4">m_num_lambda</a></td></tr>
@@ -733,7 +736,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>(Empty) Constructor </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00053">53</a> of file <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html">PaalmanPingsAbsorptionCorrection.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00054">54</a> of file <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html">PaalmanPingsAbsorptionCorrection.cpp</a>.</p>
 
 </div>
 </div>
@@ -798,11 +801,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Calculate the distances traversed by the neutrons within the sample. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00403">403</a> of file <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html">PaalmanPingsAbsorptionCorrection.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00407">407</a> of file <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html">PaalmanPingsAbsorptionCorrection.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/de0/Track_8cpp_source.html#l00055">Mantid::Geometry::Track::clearIntersectionResults()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../de/da6/classMantid_1_1Geometry_1_1IObject.html#a19bba6fd442acd02fa755326384d03d5">Mantid::Geometry::IObject::interceptSurface()</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00095">m_containerElementPositions</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00082">m_containerObject</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00096">m_numContainerVolumeElements</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00089">m_numSampleVolumeElements</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00088">m_sampleElementPositions</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00081">m_sampleObject</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00270">Mantid::Kernel::V3D::norm()</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00185">Mantid::API::SpectrumInfo::phi()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00227">Mantid::API::SpectrumInfo::position()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00044">Mantid::API::SpectrumInfo::spectrumDefinition()</a>, <a class="el" href="../../d4/d3f/Kernel_2src_2V3D_8cpp_source.html#l00050">Mantid::Kernel::V3D::spherical()</a>, <a class="el" href="../../db/de0/Track_8cpp_source.html#l00254">Mantid::Geometry::Track::totalDistInsideObject()</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00103">Mantid::API::SpectrumInfo::twoTheta()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/de0/Track_8cpp_source.html#l00055">Mantid::Geometry::Track::clearIntersectionResults()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../de/da6/classMantid_1_1Geometry_1_1IObject.html#a19bba6fd442acd02fa755326384d03d5">Mantid::Geometry::IObject::interceptSurface()</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00096">m_containerElementPositions</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00083">m_containerObject</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00097">m_numContainerVolumeElements</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00090">m_numSampleVolumeElements</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00089">m_sampleElementPositions</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00082">m_sampleObject</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00270">Mantid::Kernel::V3D::norm()</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00353">Mantid::Kernel::normalize()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00185">Mantid::API::SpectrumInfo::phi()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00227">Mantid::API::SpectrumInfo::position()</a>, <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00044">Mantid::API::SpectrumInfo::spectrumDefinition()</a>, <a class="el" href="../../d4/d3f/Kernel_2src_2V3D_8cpp_source.html#l00050">Mantid::Kernel::V3D::spherical()</a>, <a class="el" href="../../db/de0/Track_8cpp_source.html#l00254">Mantid::Geometry::Track::totalDistInsideObject()</a>, and <a class="el" href="../../d4/d02/API_2src_2SpectrumInfo_8cpp_source.html#l00103">Mantid::API::SpectrumInfo::twoTheta()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">exec()</a>.</p>
 
 </div>
 </div>
@@ -862,16 +865,16 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Create the gague volume for the correction. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00348">348</a> of file <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html">PaalmanPingsAbsorptionCorrection.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00349">349</a> of file <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html">PaalmanPingsAbsorptionCorrection.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d0/d88/ShapeFactory_8cpp_source.html#l00108">Mantid::Geometry::ShapeFactory::createShape()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00426">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, and <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00080">m_inputWS</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00283">rasterize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00284">rasterize()</a>.</p>
 
 </div>
 </div>
-<a id="a0ec8af0e2b1ad23e1e9fbce0b488c11b" name="a0ec8af0e2b1ad23e1e9fbce0b488c11b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ec8af0e2b1ad23e1e9fbce0b488c11b">&#9670;&#160;</a></span>constructSample()</h2>
+<a id="a3016dc16f88694bdd1c97f578366f119" name="a3016dc16f88694bdd1c97f578366f119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3016dc16f88694bdd1c97f578366f119">&#9670;&#160;</a></span>constructSample()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -882,7 +885,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void Mantid::Algorithms::PaalmanPingsAbsorptionCorrection::constructSample </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../db/def/classMantid_1_1API_1_1Sample.html">API::Sample</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../db/def/classMantid_1_1API_1_1Sample.html">API::Sample</a> &amp;&#160;</td>
           <td class="paramname"><em>sample</em></td><td>)</td>
           <td></td>
         </tr>
@@ -896,11 +899,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Create the sample object using the <a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html">Geometry</a> classes, or use the existing one. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00384">384</a> of file <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html">PaalmanPingsAbsorptionCorrection.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00385">385</a> of file <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html">PaalmanPingsAbsorptionCorrection.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00426">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d8/dc3/SampleEnvironment_8h_source.html#l00035">Mantid::Geometry::SampleEnvironment::getContainer()</a>, <a class="el" href="../../d2/d34/API_2src_2Sample_8cpp_source.html#l00180">Mantid::API::Sample::getEnvironment()</a>, <a class="el" href="../../d2/d34/API_2src_2Sample_8cpp_source.html#l00146">Mantid::API::Sample::getShape()</a>, <a class="el" href="../../de/da6/classMantid_1_1Geometry_1_1IObject.html#aff6a5679df340b32ed7946a0386a46dc">Mantid::Geometry::IObject::hasValidShape()</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00082">m_containerObject</a>, and <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00081">m_sampleObject</a>.</p>
+<p class="reference">References <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00108">Mantid::Kernel::Logger::error()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00426">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d8/dc3/SampleEnvironment_8h_source.html#l00035">Mantid::Geometry::SampleEnvironment::getContainer()</a>, <a class="el" href="../../d2/d34/API_2src_2Sample_8cpp_source.html#l00180">Mantid::API::Sample::getEnvironment()</a>, <a class="el" href="../../d2/d34/API_2src_2Sample_8cpp_source.html#l00146">Mantid::API::Sample::getShape()</a>, <a class="el" href="../../de/da6/classMantid_1_1Geometry_1_1IObject.html#aff6a5679df340b32ed7946a0386a46dc">Mantid::Geometry::IObject::hasValidShape()</a>, <a class="el" href="../../d1/d4d/LabFrameSample_8cpp_source.html#l00020">Mantid::API::labFrameSampleShape()</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00083">m_containerObject</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00080">m_inputWS</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00081">m_labFrameSampleShape</a>, and <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00082">m_sampleObject</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">exec()</a>.</p>
 
 </div>
 </div>
@@ -1031,11 +1034,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Carries out the numerical integration over the sample for elastic instruments. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00457">457</a> of file <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html">PaalmanPingsAbsorptionCorrection.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00461">461</a> of file <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html">PaalmanPingsAbsorptionCorrection.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00457">doIntegration()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00461">doIntegration()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00457">doIntegration()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00461">doIntegration()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">exec()</a>.</p>
 
 </div>
 </div>
@@ -1066,9 +1069,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#aace3ff902f31d5cfa309fff3d6b069aa">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">106</a> of file <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html">PaalmanPingsAbsorptionCorrection.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">107</a> of file <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html">PaalmanPingsAbsorptionCorrection.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00403">calculateDistances()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00384">constructSample()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00860">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00457">doIntegration()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00426">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01996">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00308">initialiseCachedDistances()</a>, <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#ac249209621ac485c203ccc62376a84be">Mantid::API::Algorithm::isEmpty()</a>, <a class="el" href="../../d3/da9/Kernel_2src_2Material_8cpp_source.html#l00310">Mantid::Kernel::Material::linearAbsorpCoef()</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00100">m_ampleLinearCoefTotScatt</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00083">m_beamDirection</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00093">m_container_sampleL1s</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00094">m_containerElementVolumes</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00091">m_containerL1s</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00102">m_containerLinearCoefTotScatt</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00099">m_containerMaterial</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00097">m_containerVolume</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00080">m_inputWS</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00098">m_material</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00104">m_num_lambda</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00096">m_numContainerVolumeElements</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00089">m_numSampleVolumeElements</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00086">m_sample_containerL1s</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00087">m_sampleElementVolumes</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00084">m_sampleL1s</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00090">m_sampleVolume</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00106">m_xStep</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00118">PARALLEL_CHECK_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00103">PARALLEL_END_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00219">PARALLEL_FOR_IF</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00095">PARALLEL_START_INTERRUPT_REGION</a>, <a class="el" href="../../d2/d14/ProgressBase_8h_source.html#l00051">Mantid::Kernel::ProgressBase::report()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00360">retrieveBaseProperties()</a>, <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00265">Mantid::Kernel::IPropertyManager::setProperty()</a>, and <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00023">Mantid::Kernel::threadSafe()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00407">calculateDistances()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00385">constructSample()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l00860">Mantid::API::Algorithm::createChildAlgorithm()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00461">doIntegration()</a>, <a class="el" href="../../d7/d36/Algorithm_8h_source.html#l00426">Mantid::API::Algorithm::g_log</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01996">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d7/d7c/NexusFile__fwd_8h.html#a96881bd3b3db6a94dd9ab50f30cb561eadb0f6f37ebeb6ea09489124345af2a45">group</a>, <a class="el" href="../../df/df2/Kernel_2src_2Logger_8cpp_source.html#l00136">Mantid::Kernel::Logger::information()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00309">initialiseCachedDistances()</a>, <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#ac249209621ac485c203ccc62376a84be">Mantid::API::Algorithm::isEmpty()</a>, <a class="el" href="../../d3/da9/Kernel_2src_2Material_8cpp_source.html#l00310">Mantid::Kernel::Material::linearAbsorpCoef()</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00101">m_ampleLinearCoefTotScatt</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00084">m_beamDirection</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00094">m_container_sampleL1s</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00095">m_containerElementVolumes</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00092">m_containerL1s</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00103">m_containerLinearCoefTotScatt</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00100">m_containerMaterial</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00098">m_containerVolume</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00080">m_inputWS</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00099">m_material</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00105">m_num_lambda</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00097">m_numContainerVolumeElements</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00090">m_numSampleVolumeElements</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00087">m_sample_containerL1s</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00088">m_sampleElementVolumes</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00085">m_sampleL1s</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00091">m_sampleVolume</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00107">m_xStep</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00118">PARALLEL_CHECK_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00103">PARALLEL_END_INTERRUPT_REGION</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00219">PARALLEL_FOR_IF</a>, <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00095">PARALLEL_START_INTERRUPT_REGION</a>, <a class="el" href="../../d2/d14/ProgressBase_8h_source.html#l00051">Mantid::Kernel::ProgressBase::report()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00361">retrieveBaseProperties()</a>, <a class="el" href="../../dd/d94/IPropertyManager_8h_source.html#l00265">Mantid::Kernel::IPropertyManager::setProperty()</a>, and <a class="el" href="../../da/d1c/MultiThreaded_8h_source.html#l00023">Mantid::Kernel::threadSafe()</a>.</p>
 
 </div>
 </div>
@@ -1099,7 +1102,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d3/d69/classMantid_1_1API_1_1Algorithm.html#a6dd0fd7bdcd432ca32c33f4a4c26583c">Mantid::API::Algorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html">PaalmanPingsAbsorptionCorrection.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html">PaalmanPingsAbsorptionCorrection.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01833">Mantid::API::Algorithm::declareProperty()</a>, <a class="el" href="../../db/d1c/EmptyValues_8h_source.html#l00042">Mantid::EMPTY_DBL()</a>, <a class="el" href="../../db/d1c/EmptyValues_8h_source.html#l00024">Mantid::EMPTY_INT()</a>, <a class="el" href="../../d3/d68/Property_8h_source.html#l00054">Mantid::Kernel::Direction::Input</a>, and <a class="el" href="../../d3/d68/Property_8h_source.html#l00055">Mantid::Kernel::Direction::Output</a>.</p>
 
@@ -1130,11 +1133,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Calculate the distances for L1 (for both self-absorption and absorption by other object) and element size for each element in the sample and container. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00308">308</a> of file <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html">PaalmanPingsAbsorptionCorrection.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00309">309</a> of file <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html">PaalmanPingsAbsorptionCorrection.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/da6/classMantid_1_1Geometry_1_1IObject.html#a19bba6fd442acd02fa755326384d03d5">Mantid::Geometry::IObject::interceptSurface()</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00083">m_beamDirection</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00093">m_container_sampleL1s</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00095">m_containerElementPositions</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00094">m_containerElementVolumes</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00091">m_containerL1s</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00082">m_containerObject</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00097">m_containerVolume</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00096">m_numContainerVolumeElements</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00089">m_numSampleVolumeElements</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00086">m_sample_containerL1s</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00088">m_sampleElementPositions</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00087">m_sampleElementVolumes</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00084">m_sampleL1s</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00081">m_sampleObject</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00090">m_sampleVolume</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00283">rasterize()</a>, and <a class="el" href="../../db/de0/Track_8cpp_source.html#l00254">Mantid::Geometry::Track::totalDistInsideObject()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/da6/classMantid_1_1Geometry_1_1IObject.html#a19bba6fd442acd02fa755326384d03d5">Mantid::Geometry::IObject::interceptSurface()</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00084">m_beamDirection</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00094">m_container_sampleL1s</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00096">m_containerElementPositions</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00095">m_containerElementVolumes</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00092">m_containerL1s</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00083">m_containerObject</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00098">m_containerVolume</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00097">m_numContainerVolumeElements</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00090">m_numSampleVolumeElements</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00087">m_sample_containerL1s</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00089">m_sampleElementPositions</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00088">m_sampleElementVolumes</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00085">m_sampleL1s</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00082">m_sampleObject</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00091">m_sampleVolume</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00284">rasterize()</a>, and <a class="el" href="../../db/de0/Track_8cpp_source.html#l00254">Mantid::Geometry::Track::totalDistInsideObject()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">exec()</a>.</p>
 
 </div>
 </div>
@@ -1193,11 +1196,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00283">283</a> of file <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html">PaalmanPingsAbsorptionCorrection.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00284">284</a> of file <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html">PaalmanPingsAbsorptionCorrection.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/de1/Rasterize_8cpp_source.html#l00162">Mantid::Geometry::Rasterize::calculate()</a>, <a class="el" href="../../de/da6/classMantid_1_1Geometry_1_1IObject.html#afaf9a3009db15943e930ccaa51813781">Mantid::Geometry::IObject::clone()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00348">constructGaugeVolume()</a>, <a class="el" href="../../d2/d8c/BeamProfileFactory_8cpp_source.html#l00019">Mantid::Algorithms::BeamProfileFactory::createBeamProfile()</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00083">m_beamDirection</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00110">m_cubeSideSample</a>, and <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00080">m_inputWS</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d6c/AddAbsorptionWeightedPathLengths_8cpp_source.html#l00049">beamProfile</a>, <a class="el" href="../../d4/de1/Rasterize_8cpp_source.html#l00162">Mantid::Geometry::Rasterize::calculate()</a>, <a class="el" href="../../de/da6/classMantid_1_1Geometry_1_1IObject.html#afaf9a3009db15943e930ccaa51813781">Mantid::Geometry::IObject::clone()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00349">constructGaugeVolume()</a>, <a class="el" href="../../d2/d8c/BeamProfileFactory_8cpp_source.html#l00019">Mantid::Algorithms::BeamProfileFactory::createBeamProfile()</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00084">m_beamDirection</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00111">m_cubeSideSample</a>, and <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00080">m_inputWS</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00308">initialiseCachedDistances()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00309">initialiseCachedDistances()</a>.</p>
 
 </div>
 </div>
@@ -1226,11 +1229,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Fetch the properties and set the appropriate member variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00360">360</a> of file <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html">PaalmanPingsAbsorptionCorrection.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00361">361</a> of file <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html">PaalmanPingsAbsorptionCorrection.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01996">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l02004">Mantid::API::Algorithm::isDefault()</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00100">m_ampleLinearCoefTotScatt</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00102">m_containerLinearCoefTotScatt</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00099">m_containerMaterial</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00111">m_cubeSideContainer</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00110">m_cubeSideSample</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00080">m_inputWS</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00098">m_material</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00104">m_num_lambda</a>, <a class="el" href="../../d3/da9/Kernel_2src_2Material_8cpp_source.html#l00196">Mantid::Kernel::Material::numberDensityEffective()</a>, and <a class="el" href="../../d3/da9/Kernel_2src_2Material_8cpp_source.html#l00253">Mantid::Kernel::Material::totalScatterXSection()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01996">Mantid::API::Algorithm::getProperty()</a>, <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l02004">Mantid::API::Algorithm::isDefault()</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00101">m_ampleLinearCoefTotScatt</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00103">m_containerLinearCoefTotScatt</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00100">m_containerMaterial</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00112">m_cubeSideContainer</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00111">m_cubeSideSample</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00080">m_inputWS</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00099">m_material</a>, <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00105">m_num_lambda</a>, <a class="el" href="../../d3/da9/Kernel_2src_2Material_8cpp_source.html#l00196">Mantid::Kernel::Material::numberDensityEffective()</a>, and <a class="el" href="../../d3/da9/Kernel_2src_2Material_8cpp_source.html#l00253">Mantid::Kernel::Material::totalScatterXSection()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">exec()</a>.</p>
 
 </div>
 </div>
@@ -1349,7 +1352,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/d2d/classMantid_1_1API_1_1IAlgorithm.html#ade9fd99ad205148bccc8a46e3c3c8b18">Mantid::API::IAlgorithm</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00088">88</a> of file <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html">PaalmanPingsAbsorptionCorrection.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00089">89</a> of file <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html">PaalmanPingsAbsorptionCorrection.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d6/dc1/API_2src_2Algorithm_8cpp_source.html#l01996">Mantid::API::Algorithm::getProperty()</a>.</p>
 
@@ -1409,9 +1412,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The total scattering cross-section in 1/m for the sample. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00100">100</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00101">101</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00360">retrieveBaseProperties()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00361">retrieveBaseProperties()</a>.</p>
 
 </div>
 </div>
@@ -1437,9 +1440,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The direction of the beam. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00083">83</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00084">84</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">exec()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00308">initialiseCachedDistances()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00283">rasterize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">exec()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00309">initialiseCachedDistances()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00284">rasterize()</a>.</p>
 
 </div>
 </div>
@@ -1465,9 +1468,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Cached L1 distances through sample hitting container. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00092">92</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00093">93</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00308">initialiseCachedDistances()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00309">initialiseCachedDistances()</a>.</p>
 
 </div>
 </div>
@@ -1493,9 +1496,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Cached container element positions. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00095">95</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00096">96</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00403">calculateDistances()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00308">initialiseCachedDistances()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00407">calculateDistances()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00309">initialiseCachedDistances()</a>.</p>
 
 </div>
 </div>
@@ -1521,9 +1524,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Cached container element volumes. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00094">94</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00095">95</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00308">initialiseCachedDistances()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00309">initialiseCachedDistances()</a>.</p>
 
 </div>
 </div>
@@ -1549,9 +1552,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Cached container L1 distances. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00091">91</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00092">92</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00308">initialiseCachedDistances()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00309">initialiseCachedDistances()</a>.</p>
 
 </div>
 </div>
@@ -1577,9 +1580,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The total scattering cross-section in 1/m for the container. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00102">102</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00103">103</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00360">retrieveBaseProperties()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00361">retrieveBaseProperties()</a>.</p>
 
 </div>
 </div>
@@ -1603,9 +1606,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00099">99</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00100">100</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00360">retrieveBaseProperties()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00361">retrieveBaseProperties()</a>.</p>
 
 </div>
 </div>
@@ -1631,9 +1634,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Local cache of container object. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00082">82</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00083">83</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00403">calculateDistances()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00384">constructSample()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00308">initialiseCachedDistances()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00407">calculateDistances()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00385">constructSample()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00309">initialiseCachedDistances()</a>.</p>
 
 </div>
 </div>
@@ -1659,9 +1662,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The total volume of the container. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00097">97</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00098">98</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00308">initialiseCachedDistances()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00309">initialiseCachedDistances()</a>.</p>
 
 </div>
 </div>
@@ -1687,9 +1690,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The length of the side of an element cube in m. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00111">111</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00112">112</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00360">retrieveBaseProperties()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00361">retrieveBaseProperties()</a>.</p>
 
 </div>
 </div>
@@ -1715,9 +1718,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The length of the side of an element cube in m. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00110">110</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00111">111</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00283">rasterize()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00360">retrieveBaseProperties()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00284">rasterize()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00361">retrieveBaseProperties()</a>.</p>
 
 </div>
 </div>
@@ -1745,7 +1748,35 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00080">80</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00348">constructGaugeVolume()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">exec()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00283">rasterize()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00360">retrieveBaseProperties()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00349">constructGaugeVolume()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00385">constructSample()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">exec()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00284">rasterize()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00361">retrieveBaseProperties()</a>.</p>
+
+</div>
+</div>
+<a id="a996d579667741e75e321d68c8468d931" name="a996d579667741e75e321d68c8468d931"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a996d579667741e75e321d68c8468d931">&#9670;&#160;</a></span>m_labFrameSampleShape</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#ae2b0bf777fb422d17f76df83eacdd829">Geometry::IObject_sptr</a> Mantid::Algorithms::PaalmanPingsAbsorptionCorrection::m_labFrameSampleShape</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Owns the lab-frame shape m_sampleObject points at. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00081">81</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00385">constructSample()</a>.</p>
 
 </div>
 </div>
@@ -1769,9 +1800,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00098">98</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00099">99</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00360">retrieveBaseProperties()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00361">retrieveBaseProperties()</a>.</p>
 
 </div>
 </div>
@@ -1797,9 +1828,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The number of points in wavelength, the rest is. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00104">104</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00105">105</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00360">retrieveBaseProperties()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00361">retrieveBaseProperties()</a>.</p>
 
 </div>
 </div>
@@ -1825,9 +1856,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The number of container volume elements. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00096">96</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00097">97</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00403">calculateDistances()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00308">initialiseCachedDistances()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00407">calculateDistances()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00309">initialiseCachedDistances()</a>.</p>
 
 </div>
 </div>
@@ -1853,9 +1884,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The number of sample volume elements. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00089">89</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00090">90</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00403">calculateDistances()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00308">initialiseCachedDistances()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00407">calculateDistances()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00309">initialiseCachedDistances()</a>.</p>
 
 </div>
 </div>
@@ -1881,9 +1912,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Cached L1 distances through container hitting sample. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00085">85</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00086">86</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00308">initialiseCachedDistances()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00309">initialiseCachedDistances()</a>.</p>
 
 </div>
 </div>
@@ -1909,9 +1940,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Cached sample element positions. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00088">88</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00089">89</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00403">calculateDistances()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00308">initialiseCachedDistances()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00407">calculateDistances()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00309">initialiseCachedDistances()</a>.</p>
 
 </div>
 </div>
@@ -1937,9 +1968,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Cached sample element volumes. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00087">87</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00088">88</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00308">initialiseCachedDistances()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00309">initialiseCachedDistances()</a>.</p>
 
 </div>
 </div>
@@ -1965,9 +1996,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Cached sample L1 distances. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00084">84</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00085">85</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00308">initialiseCachedDistances()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00309">initialiseCachedDistances()</a>.</p>
 
 </div>
 </div>
@@ -1993,9 +2024,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Local cache of sample object. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00081">81</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00082">82</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00403">calculateDistances()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00384">constructSample()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00308">initialiseCachedDistances()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00407">calculateDistances()</a>, <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00385">constructSample()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00309">initialiseCachedDistances()</a>.</p>
 
 </div>
 </div>
@@ -2021,9 +2052,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The total volume of the sample. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00090">90</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00091">91</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00308">initialiseCachedDistances()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">exec()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00309">initialiseCachedDistances()</a>.</p>
 
 </div>
 </div>
@@ -2050,9 +2081,9 @@ Additional Inherited Members</h2></td></tr>
 <p>interpolated linearly </p>
 <p>The step in bin number between adjacent points </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00106">106</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html#l00107">107</a> of file <a class="el" href="../../d2/dd0/PaalmanPingsAbsorptionCorrection_8h_source.html">PaalmanPingsAbsorptionCorrection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00106">exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00107">exec()</a>.</p>
 
 </div>
 </div>

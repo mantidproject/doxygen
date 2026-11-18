@@ -107,10 +107,13 @@ $(function() {
 <code>#include &quot;<a class="el" href="../../d5/d0a/Instrument_8h_source.html">MantidGeometry/Instrument.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dc/d49/ReferenceFrame_8h_source.html">MantidGeometry/Instrument/ReferenceFrame.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d8/dc3/SampleEnvironment_8h_source.html">MantidGeometry/Instrument/SampleEnvironment.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/dde/CSGObject_8h_source.html">MantidGeometry/Objects/CSGObject.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/dfe/ShapeRotation_8h_source.html">MantidGeometry/Objects/ShapeRotation.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dd/d4d/BoundedValidator_8h_source.html">MantidKernel/BoundedValidator.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d9/d51/EnabledWhenProperty_8h_source.html">MantidKernel/EnabledWhenProperty.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../df/d12/Material_8h_source.html">MantidKernel/Material.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d1/db4/MersenneTwister_8h_source.html">MantidKernel/MersenneTwister.h</a>&quot;</code><br />
+<code>#include &lt;map&gt;</code><br />
 </div>
 <p><a href="../../d0/d6c/AddAbsorptionWeightedPathLengths_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -122,6 +125,43 @@ Namespaces</h2></td></tr>
 <tr class="memitem:d1/d12/namespaceMantid_1_1Algorithms" id="r_d1/d12/namespaceMantid_1_1Algorithms"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d12/namespaceMantid_1_1Algorithms.html">Mantid::Algorithms</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a3b1176694544522422def77011f52fe8" name="a3b1176694544522422def77011f52fe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b1176694544522422def77011f52fe8">&#9670;&#160;</a></span>beamProfile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;IBeamProfile&gt; beamProfile</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d6c/AddAbsorptionWeightedPathLengths_8cpp_source.html#l00049">49</a> of file <a class="el" href="../../d0/d6c/AddAbsorptionWeightedPathLengths_8cpp_source.html">AddAbsorptionWeightedPathLengths.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/d97/MonteCarloAbsorption_8cpp_source.html#l00214">Mantid::Algorithms::MonteCarloAbsorption::createStrategy()</a>, <a class="el" href="../../d5/d97/MonteCarloAbsorption_8cpp_source.html#l00262">Mantid::Algorithms::MonteCarloAbsorption::doSimulation()</a>, <a class="el" href="../../d0/d6c/AddAbsorptionWeightedPathLengths_8cpp_source.html#l00107">Mantid::Algorithms::AddAbsorptionWeightedPathLengths::exec()</a>, <a class="el" href="../../dd/daa/AnyShapeAbsorption_8cpp_source.html#l00049">Mantid::Algorithms::AnyShapeAbsorption::initialiseCachedDistances()</a>, and <a class="el" href="../../d0/dcd/PaalmanPingsAbsorptionCorrection_8cpp_source.html#l00284">Mantid::Algorithms::PaalmanPingsAbsorptionCorrection::rasterize()</a>.</p>
+
+</div>
+</div>
+<a id="ae8509f411209ff4c89ecbff78ad913b6" name="ae8509f411209ff4c89ecbff78ad913b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8509f411209ff4c89ecbff78ad913b6">&#9670;&#160;</a></span>strategy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;MCAbsorptionStrategy&gt; strategy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d6c/AddAbsorptionWeightedPathLengths_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../d0/d6c/AddAbsorptionWeightedPathLengths_8cpp_source.html">AddAbsorptionWeightedPathLengths.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/db9/ConnectedComponentLabeling_8cpp_source.html#l00256">Mantid::Crystal::ConnectedComponentLabeling::calculateDisjointTree()</a>, <a class="el" href="../../db/d7e/RebinByTimeAtSample_8cpp_source.html#l00054">Mantid::Algorithms::RebinByTimeAtSample::doHistogramming()</a>, <a class="el" href="../../d5/d97/MonteCarloAbsorption_8cpp_source.html#l00262">Mantid::Algorithms::MonteCarloAbsorption::doSimulation()</a>, <a class="el" href="../../d0/d6c/AddAbsorptionWeightedPathLengths_8cpp_source.html#l00107">Mantid::Algorithms::AddAbsorptionWeightedPathLengths::exec()</a>, <a class="el" href="../../d7/d59/CreateChunkingFromInstrument_8cpp_source.html#l00353">Mantid::DataHandling::CreateChunkingFromInstrument::exec()</a>, <a class="el" href="../../d3/d01/DetermineChunking_8cpp_source.html#l00083">Mantid::DataHandling::DetermineChunking::exec()</a>, <a class="el" href="../../dc/d3a/FindPeaksMD_8cpp_source.html#l00783">Mantid::MDAlgorithms::FindPeaksMD::exec()</a>, <a class="el" href="../../d2/db9/ConnectedComponentLabeling_8cpp_source.html#l00370">Mantid::Crystal::ConnectedComponentLabeling::execute()</a>, <a class="el" href="../../d2/db9/ConnectedComponentLabeling_8cpp_source.html#l00386">Mantid::Crystal::ConnectedComponentLabeling::executeAndFetchClusters()</a>, <a class="el" href="../../dc/d3a/FindPeaksMD_8cpp_source.html#l00116">Mantid::MDAlgorithms::FindPeaksMD::init()</a>, <a class="el" href="../../d7/d56/LoadNGEM_8cpp_source.html#l00342">Mantid::DataHandling::LoadNGEM::loadSingleFile()</a>, <a class="el" href="../../d7/d56/LoadNGEM_8cpp_source.html#l00563">Mantid::DataHandling::LoadNGEM::readDataAsEvents()</a>, <a class="el" href="../../d7/d56/LoadNGEM_8cpp_source.html#l00598">Mantid::DataHandling::LoadNGEM::readDataAsHistograms()</a>, <a class="el" href="../../d6/d8a/MockJobTreeView_8h_source.html#l00065">MantidQt::MantidWidgets::Batch::MockJobTreeView::setHintsForColumn()</a>, <a class="el" href="../../d1/d77/FilterEvents_8cpp_source.html#l00780">Mantid::Algorithms::FilterEvents::setupDetectorTOFCalibration()</a>, and <a class="el" href="../../dc/d3a/FindPeaksMD_8cpp_source.html#l00857">Mantid::MDAlgorithms::FindPeaksMD::validateInputs()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
