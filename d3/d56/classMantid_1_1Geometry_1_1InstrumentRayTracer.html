@@ -111,7 +111,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a17e830bcbd905840ca70e552d831bead" id="r_a17e830bcbd905840ca70e552d831bead"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../de/d2f/classMantid_1_1Geometry_1_1DetectorInfo.html">DetectorInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d56/classMantid_1_1Geometry_1_1InstrumentRayTracer.html#a17e830bcbd905840ca70e552d831bead">detectorInfo</a> () const</td></tr>
 <tr class="separator:a17e830bcbd905840ca70e552d831bead"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9feb03977a9e45d46f1fa56fc13d2b2" id="r_ae9feb03977a9e45d46f1fa56fc13d2b2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d56/classMantid_1_1Geometry_1_1InstrumentRayTracer.html#ae9feb03977a9e45d46f1fa56fc13d2b2">getDetectorResult</a> () const</td></tr>
-<tr class="memdesc:ae9feb03977a9e45d46f1fa56fc13d2b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the index of the first non-monitor detector intersected since the previous call to trace, or <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html#ad8a9b0605c0533a0f171bad09af83b0f" title="Returned by indexOfOrInvalid() for a component ID that is not part of this instrument.">ComponentInfo::invalidIndex</a> if none.  <br /></td></tr>
+<tr class="memdesc:ae9feb03977a9e45d46f1fa56fc13d2b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the index of the first non-monitor detector intersected since the previous call to trace, or <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html#ad8a9b0605c0533a0f171bad09af83b0f" title="The index of no component, e.g. one that is not part of this instrument.">ComponentInfo::invalidIndex</a> if none.  <br /></td></tr>
 <tr class="separator:ae9feb03977a9e45d46f1fa56fc13d2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1341610932d1a79b75193eb270b05e03" id="r_a1341610932d1a79b75193eb270b05e03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d67/namespaceMantid_1_1Geometry.html#ad2f854ee9f5d44a147638c76db6814ad">Links</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d56/classMantid_1_1Geometry_1_1InstrumentRayTracer.html#a1341610932d1a79b75193eb270b05e03">getResults</a> () const</td></tr>
 <tr class="memdesc:a1341610932d1a79b75193eb270b05e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the results of the intersection tests that have been updated since the previous call to trace.  <br /></td></tr>
@@ -201,7 +201,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00037">37</a> of file <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html">InstrumentRayTracer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00211">Mantid::Geometry::ComponentInfo::hasSource()</a>, and <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00067">m_componentInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00187">Mantid::Geometry::ComponentInfo::hasSource()</a>, and <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00067">m_componentInfo</a>.</p>
 
 </div>
 </div>
@@ -250,7 +250,7 @@ Private Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00069">m_detectorInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00676">Mantid::DataObjects::Peak::findDetector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00675">Mantid::DataObjects::Peak::findDetector()</a>.</p>
 
 </div>
 </div>
@@ -289,7 +289,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00122">122</a> of file <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html">InstrumentRayTracer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/d7e/Geometry_2src_2Objects_2BoundingBox_8cpp_source.html#l00044">Mantid::Geometry::BoundingBox::doesLineIntersect()</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00074">m_boxCache</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00067">m_componentInfo</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00076">m_mutex</a>, <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00207">testIntersectionWithGrid()</a>, and <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00167">testIntersectionWithShape()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d7e/Geometry_2src_2Objects_2BoundingBox_8cpp_source.html#l00044">Mantid::Geometry::BoundingBox::doesLineIntersect()</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00074">m_boxCache</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00067">m_componentInfo</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00076">m_mutex</a>, <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00205">testIntersectionWithGrid()</a>, and <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00167">testIntersectionWithShape()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00054">trace()</a>, and <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00069">traceFromSample()</a>.</p>
 
@@ -310,15 +310,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the index of the first non-monitor detector intersected since the previous call to trace, or <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html#ad8a9b0605c0533a0f171bad09af83b0f" title="Returned by indexOfOrInvalid() for a component ID that is not part of this instrument.">ComponentInfo::invalidIndex</a> if none. </p>
+<p>Get the index of the first non-monitor detector intersected since the previous call to trace, or <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html#ad8a9b0605c0533a0f171bad09af83b0f" title="The index of no component, e.g. one that is not part of this instrument.">ComponentInfo::invalidIndex</a> if none. </p>
 <p>Gets the results of the trace, then returns the index of the first detector (that is NOT a monitor) found in the results.</p>
-<dl class="section return"><dt>Returns</dt><dd>the index of the detector in <a class="el" href="../../d3/d56/classMantid_1_1Geometry_1_1InstrumentRayTracer.html#a17e830bcbd905840ca70e552d831bead">detectorInfo()</a>, or <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html#ad8a9b0605c0533a0f171bad09af83b0f" title="Returned by indexOfOrInvalid() for a component ID that is not part of this instrument.">ComponentInfo::invalidIndex</a> if not found </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the index of the detector in <a class="el" href="../../d3/d56/classMantid_1_1Geometry_1_1InstrumentRayTracer.html#a17e830bcbd905840ca70e552d831bead">detectorInfo()</a>, or <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html#ad8a9b0605c0533a0f171bad09af83b0f" title="The index of no component, e.g. one that is not part of this instrument.">ComponentInfo::invalidIndex</a> if not found </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00092">92</a> of file <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html">InstrumentRayTracer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00080">getResults()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../de/dfe/Geometry_2src_2Instrument_2DetectorInfo_8cpp_source.html#l00521">Mantid::Geometry::DetectorInfo::indexOf()</a>, <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00053">Mantid::Geometry::ComponentInfo::invalidIndex</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00067">m_componentInfo</a>, and <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00069">m_detectorInfo</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00080">getResults()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../da/d05/ComponentInfo_8h_source.html#l00053">Mantid::Geometry::ComponentInfo::invalidIndex</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00067">m_componentInfo</a>, and <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00069">m_detectorInfo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/dce/RayTracerTester_8cpp_source.html#l00044">Mantid::Algorithms::RayTracerTester::exec()</a>, and <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00676">Mantid::DataObjects::Peak::findDetector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/dce/RayTracerTester_8cpp_source.html#l00044">Mantid::Algorithms::RayTracerTester::exec()</a>, and <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00675">Mantid::DataObjects::Peak::findDetector()</a>.</p>
 
 </div>
 </div>
@@ -343,7 +343,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00080">80</a> of file <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html">InstrumentRayTracer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/de0/Track_8h_source.html#l00206">Mantid::Geometry::Track::cbegin()</a>, <a class="el" href="../../d3/de0/Track_8h_source.html#l00209">Mantid::Geometry::Track::cend()</a>, <a class="el" href="../../db/de0/Track_8cpp_source.html#l00055">Mantid::Geometry::Track::clearIntersectionResults()</a>, and <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00072">m_resultsTrack</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/de0/Track_8h_source.html#l00211">Mantid::Geometry::Track::cbegin()</a>, <a class="el" href="../../d3/de0/Track_8h_source.html#l00214">Mantid::Geometry::Track::cend()</a>, <a class="el" href="../../db/de0/Track_8cpp_source.html#l00055">Mantid::Geometry::Track::clearIntersectionResults()</a>, and <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00072">m_resultsTrack</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00092">getDetectorResult()</a>.</p>
 
@@ -396,9 +396,9 @@ Private Attributes</h2></td></tr>
 <p>Vertical (y-axis) basis vector of the detector</p>
 <p>Horizontal (x-axis) basis vector of the detector</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00207">207</a> of file <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html">InstrumentRayTracer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00205">205</a> of file <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html">InstrumentRayTracer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/de0/Track_8cpp_source.html#l00152">Mantid::Geometry::Track::addLink()</a>, <a class="el" href="../../d3/de0/Track_8h_source.html#l00193">Mantid::Geometry::Track::direction()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00924">Mantid::Kernel::Matrix&lt; T &gt;::Invert()</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00067">m_componentInfo</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00308">Mantid::Geometry::ComponentInfo::pixelGridComponent()</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00675">Mantid::Kernel::Matrix&lt; T &gt;::setColumn()</a>, and <a class="el" href="../../d3/de0/Track_8h_source.html#l00191">Mantid::Geometry::Track::startPoint()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/de0/Track_8cpp_source.html#l00153">Mantid::Geometry::Track::addLink()</a>, <a class="el" href="../../d3/de0/Track_8h_source.html#l00198">Mantid::Geometry::Track::direction()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00924">Mantid::Kernel::Matrix&lt; T &gt;::Invert()</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00067">m_componentInfo</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00289">Mantid::Geometry::ComponentInfo::pixelGridComponent()</a>, <a class="el" href="../../dd/d52/Matrix_8cpp_source.html#l00675">Mantid::Kernel::Matrix&lt; T &gt;::setColumn()</a>, and <a class="el" href="../../d3/de0/Track_8h_source.html#l00196">Mantid::Geometry::Track::startPoint()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00122">fireRay()</a>.</p>
 
@@ -450,7 +450,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00167">167</a> of file <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html">InstrumentRayTracer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/de0/Track_8cpp_source.html#l00152">Mantid::Geometry::Track::addLink()</a>, <a class="el" href="../../d3/de0/Track_8h_source.html#l00193">Mantid::Geometry::Track::direction()</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00294">Mantid::Kernel::V3D::distance()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/d8e/Kernel_2src_2Quat_8cpp_source.html#l00376">Mantid::Kernel::Quat::inverse()</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00067">m_componentInfo</a>, <a class="el" href="../../d4/d8e/Kernel_2src_2Quat_8cpp_source.html#l00397">Mantid::Kernel::Quat::rotate()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00269">Mantid::Geometry::ComponentInfo::shape()</a>, and <a class="el" href="../../d3/de0/Track_8h_source.html#l00191">Mantid::Geometry::Track::startPoint()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/de0/Track_8cpp_source.html#l00153">Mantid::Geometry::Track::addLink()</a>, <a class="el" href="../../d3/de0/Track_8h_source.html#l00198">Mantid::Geometry::Track::direction()</a>, <a class="el" href="../../dd/dcf/V3D_8h_source.html#l00294">Mantid::Kernel::V3D::distance()</a>, <a class="el" href="../../d1/d0a/Kernel_2src_2DeltaEMode_8cpp_source.html#l00019">index</a>, <a class="el" href="../../d4/d8e/Kernel_2src_2Quat_8cpp_source.html#l00376">Mantid::Kernel::Quat::inverse()</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00067">m_componentInfo</a>, <a class="el" href="../../d4/d8e/Kernel_2src_2Quat_8cpp_source.html#l00397">Mantid::Kernel::Quat::rotate()</a>, <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00250">Mantid::Geometry::ComponentInfo::shape()</a>, and <a class="el" href="../../d3/de0/Track_8h_source.html#l00196">Mantid::Geometry::Track::startPoint()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00122">fireRay()</a>.</p>
 
@@ -483,7 +483,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00054">54</a> of file <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html">InstrumentRayTracer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00122">fireRay()</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00067">m_componentInfo</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00072">m_resultsTrack</a>, <a class="el" href="../../db/de0/Track_8cpp_source.html#l00045">Mantid::Geometry::Track::reset()</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00207">Mantid::Geometry::ComponentInfo::sourcePosition()</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00122">fireRay()</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00067">m_componentInfo</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00072">m_resultsTrack</a>, <a class="el" href="../../db/de0/Track_8cpp_source.html#l00045">Mantid::Geometry::Track::reset()</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00183">Mantid::Geometry::ComponentInfo::sourcePosition()</a>.</p>
 
 </div>
 </div>
@@ -513,9 +513,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00069">69</a> of file <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html">InstrumentRayTracer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00122">fireRay()</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00067">m_componentInfo</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00072">m_resultsTrack</a>, <a class="el" href="../../db/de0/Track_8cpp_source.html#l00045">Mantid::Geometry::Track::reset()</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00209">Mantid::Geometry::ComponentInfo::samplePosition()</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00122">fireRay()</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00067">m_componentInfo</a>, <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00072">m_resultsTrack</a>, <a class="el" href="../../db/de0/Track_8cpp_source.html#l00045">Mantid::Geometry::Track::reset()</a>, and <a class="el" href="../../df/d62/Geometry_2src_2Instrument_2ComponentInfo_8cpp_source.html#l00185">Mantid::Geometry::ComponentInfo::samplePosition()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/dce/RayTracerTester_8cpp_source.html#l00044">Mantid::Algorithms::RayTracerTester::exec()</a>, and <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00676">Mantid::DataObjects::Peak::findDetector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/dce/RayTracerTester_8cpp_source.html#l00044">Mantid::Algorithms::RayTracerTester::exec()</a>, and <a class="el" href="../../de/d8d/Peak_8cpp_source.html#l00675">Mantid::DataObjects::Peak::findDetector()</a>.</p>
 
 </div>
 </div>
@@ -572,7 +572,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html#l00067">67</a> of file <a class="el" href="../../d4/d6e/InstrumentRayTracer_8h_source.html">InstrumentRayTracer.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00106">componentInfo()</a>, <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00122">fireRay()</a>, <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00092">getDetectorResult()</a>, <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00037">InstrumentRayTracer()</a>, <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00207">testIntersectionWithGrid()</a>, <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00167">testIntersectionWithShape()</a>, <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00054">trace()</a>, and <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00069">traceFromSample()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00106">componentInfo()</a>, <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00122">fireRay()</a>, <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00092">getDetectorResult()</a>, <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00037">InstrumentRayTracer()</a>, <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00205">testIntersectionWithGrid()</a>, <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00167">testIntersectionWithShape()</a>, <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00054">trace()</a>, and <a class="el" href="../../d3/d34/InstrumentRayTracer_8cpp_source.html#l00069">traceFromSample()</a>.</p>
 
 </div>
 </div>

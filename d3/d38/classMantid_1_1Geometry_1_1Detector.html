@@ -155,9 +155,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6113c61ab80660739adf06f8ae29f8ed" id="r_a6113c61ab80660739adf06f8ae29f8ed"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d38/classMantid_1_1Geometry_1_1Detector.html#a6113c61ab80660739adf06f8ae29f8ed">getTwoTheta</a> (const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;observer, const <a class="el" href="../../d5/d9d/classMantid_1_1Kernel_1_1V3D.html">Kernel::V3D</a> &amp;axis) const override</td></tr>
 <tr class="memdesc:a6113c61ab80660739adf06f8ae29f8ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the twotheta angle between the detector and an observer.  <br /></td></tr>
 <tr class="separator:a6113c61ab80660739adf06f8ae29f8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33c0a5cc0b3d8211a269842c913a31b3" id="r_a33c0a5cc0b3d8211a269842c913a31b3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d38/classMantid_1_1Geometry_1_1Detector.html#a33c0a5cc0b3d8211a269842c913a31b3">index</a> () const override</td></tr>
-<tr class="memdesc:a33c0a5cc0b3d8211a269842c913a31b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for legacy access mode. Returns the index of the detector.  <br /></td></tr>
-<tr class="separator:a33c0a5cc0b3d8211a269842c913a31b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae48f542f46f236fa3bd286d235f3f4c2" id="r_ae48f542f46f236fa3bd286d235f3f4c2"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d38/classMantid_1_1Geometry_1_1Detector.html#ae48f542f46f236fa3bd286d235f3f4c2">nDets</a> () const override</td></tr>
 <tr class="memdesc:ae48f542f46f236fa3bd286d235f3f4c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="../../d3/d38/classMantid_1_1Geometry_1_1Detector.html" title="This class represents a detector - i.e.">Detector</a> object represents a single physical detector.  <br /></td></tr>
 <tr class="separator:ae48f542f46f236fa3bd286d235f3f4c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -415,9 +412,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8b4c91280d3ff78f4389e8f33c0e5638 inherit pub_methods_classMantid_1_1Geometry_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f3631232123c03542c1285d12f9ead9 inherit pub_methods_classMantid_1_1Geometry_1_1Component" id="r_a5f3631232123c03542c1285d12f9ead9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html#a5f3631232123c03542c1285d12f9ead9">hasComponentInfo</a> () const</td></tr>
 <tr class="separator:a5f3631232123c03542c1285d12f9ead9 inherit pub_methods_classMantid_1_1Geometry_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2da50df52cf36280c0ae94467dc3bbd3 inherit pub_methods_classMantid_1_1Geometry_1_1Component" id="r_a2da50df52cf36280c0ae94467dc3bbd3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html#a2da50df52cf36280c0ae94467dc3bbd3">index</a> () const</td></tr>
-<tr class="memdesc:a2da50df52cf36280c0ae94467dc3bbd3 inherit pub_methods_classMantid_1_1Geometry_1_1Component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for legacy access mode. Returns the index of the component.  <br /></td></tr>
-<tr class="separator:a2da50df52cf36280c0ae94467dc3bbd3 inherit pub_methods_classMantid_1_1Geometry_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e21a1384800e20a3ef31c3c3f2b553 inherit pub_methods_classMantid_1_1Geometry_1_1Component" id="r_a79e21a1384800e20a3ef31c3c3f2b553"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html#a79e21a1384800e20a3ef31c3c3f2b553">index</a> () const override</td></tr>
+<tr class="memdesc:a79e21a1384800e20a3ef31c3c3f2b553 inherit pub_methods_classMantid_1_1Geometry_1_1Component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of the component, or <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html#ad8a9b0605c0533a0f171bad09af83b0f" title="The index of no component, e.g. one that is not part of this instrument.">ComponentInfo::invalidIndex</a> if the instrument has not been cached.  <br /></td></tr>
+<tr class="separator:a79e21a1384800e20a3ef31c3c3f2b553 inherit pub_methods_classMantid_1_1Geometry_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -775,7 +772,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html">Detector.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00673">Mantid::Geometry::d</a>, <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html#l00051">getID()</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00314">Mantid::Geometry::Component::m_base</a>, <a class="el" href="../../dc/de5/Detector_8h_source.html#l00064">m_id</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d82/Geometry_2src_2Crystal_2SpaceGroupFactory_8cpp_source.html#l00673">Mantid::Geometry::d</a>, <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html#l00051">getID()</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00315">Mantid::Geometry::Component::m_base</a>, <a class="el" href="../../dc/de5/Detector_8h_source.html#l00063">m_id</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00317">Mantid::Geometry::Component::m_map</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d1/d15/InstrumentCreationHelper_8cpp_source.html#l00021">InstrumentCreationHelper::addFullInstrumentToWorkspace()</a>, <a class="el" href="../../df/d3d/InstrumentDefinitionParser_8cpp_source.html#l01241">Mantid::Geometry::InstrumentDefinitionParser::createDetectorOrMonitor()</a>, and <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html#l00051">getID()</a>.</p>
 
@@ -1027,44 +1024,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html#l00135">135</a> of file <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html">Detector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html#l00132">132</a> of file <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html">Detector.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#afa6446ded6d7b60217aed4f1f74e1e70">Mantid::Geometry::IComponent::getBareParent()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01100">Mantid::Geometry::ParameterMap::hasDetectorInfo()</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00314">Mantid::Geometry::Component::m_base</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#afa6446ded6d7b60217aed4f1f74e1e70">Mantid::Geometry::IComponent::getBareParent()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01069">Mantid::Geometry::ParameterMap::hasDetectorInfo()</a>, <a class="el" href="../../d0/da1/Component_8h_source.html#l00315">Mantid::Geometry::Component::m_base</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00317">Mantid::Geometry::Component::m_map</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d4/da0/GridDetectorPixel_8cpp_source.html#l00050">Mantid::Geometry::GridDetectorPixel::getRelativePos()</a>.</p>
-
-</div>
-</div>
-<a id="a33c0a5cc0b3d8211a269842c913a31b3" name="a33c0a5cc0b3d8211a269842c913a31b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33c0a5cc0b3d8211a269842c913a31b3">&#9670;&#160;</a></span>index()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t Mantid::Geometry::Detector::index </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Helper for legacy access mode. Returns the index of the detector. </p>
-
-<p>Implements <a class="el" href="../../d5/dde/classMantid_1_1Geometry_1_1IDetector.html#a1aeee0a5d95ef30aa59e46df70e89f18">Mantid::Geometry::IDetector</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html#l00129">129</a> of file <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html">Detector.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l01154">Mantid::Geometry::ParameterMap::detectorIndex()</a>, <a class="el" href="../../dc/de5/Detector_8h_source.html#l00064">m_id</a>, and <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
 
 </div>
 </div>
@@ -1128,7 +1092,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html#l00126">126</a> of file <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html">Detector.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/da1/Component_8h_source.html#l00316">Mantid::Geometry::Component::m_map</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/da1/Component_8h_source.html#l00317">Mantid::Geometry::Component::m_map</a>.</p>
 
 </div>
 </div>
@@ -1158,7 +1122,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a0fe37346fb9f98e2311cb4706cd08208">Mantid::Geometry::IComponent</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html#l00131">131</a> of file <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html">Detector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html#l00128">128</a> of file <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html">Detector.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d7/d26/classMantid_1_1Geometry_1_1ComponentVisitor.html#a6ebce60dc0e93cf35324abcd252364bd">Mantid::Geometry::ComponentVisitor::registerDetector()</a>.</p>
 
@@ -1220,9 +1184,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The detector id. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/de5/Detector_8h_source.html#l00064">64</a> of file <a class="el" href="../../dc/de5/Detector_8h_source.html">Detector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/de5/Detector_8h_source.html#l00063">63</a> of file <a class="el" href="../../dc/de5/Detector_8h_source.html">Detector.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html#l00051">getID()</a>, and <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html#l00129">index()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html#l00051">getID()</a>.</p>
 
 </div>
 </div>

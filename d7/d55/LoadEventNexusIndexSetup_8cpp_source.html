@@ -212,7 +212,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keyword">const</span> <span class="keyword">auto</span> &amp;bank = instrument-&gt;getComponentByName(bankName);</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    std::vector&lt;size_t&gt; dets;</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordflow">if</span> (bank) {</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>      <span class="keyword">const</span> <span class="keyword">auto</span> bankIndex = componentInfo.indexOf(bank-&gt;getComponentID());</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>      <span class="keyword">const</span> <span class="keyword">auto</span> bankIndex = bank-&gt;index();</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>      dets = componentInfo.detectorsInSubtree(bankIndex);</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> detIndex : dets) {</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        spectrumDefinitions.emplace_back(detIndex);</div>

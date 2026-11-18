@@ -170,6 +170,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a48f1451daf9f607e13e04978da5af9d8" id="r_a48f1451daf9f607e13e04978da5af9d8"><td class="memItemLeft" align="right" valign="top">virtual std::optional&lt; <a class="el" href="../../de/d9c/classMantid_1_1Kernel_1_1V2D.html">Kernel::V2D</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a48f1451daf9f607e13e04978da5af9d8">getSideBySideViewPos</a> () const =0</td></tr>
 <tr class="memdesc:a48f1451daf9f607e13e04978da5af9d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the position of the <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html" title="base class for Geometric IComponent">IComponent</a> for display on the side by side instrument view.  <br /></td></tr>
 <tr class="separator:a48f1451daf9f607e13e04978da5af9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d85d392c059ac38de533d462046ed60" id="r_a3d85d392c059ac38de533d462046ed60"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#a3d85d392c059ac38de533d462046ed60">index</a> () const =0</td></tr>
+<tr class="memdesc:a3d85d392c059ac38de533d462046ed60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of the component, or <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html#ad8a9b0605c0533a0f171bad09af83b0f" title="The index of no component, e.g. one that is not part of this instrument.">ComponentInfo::invalidIndex</a> if none.  <br /></td></tr>
+<tr class="separator:a3d85d392c059ac38de533d462046ed60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae88fa6103615f9614677969fd5016538" id="r_ae88fa6103615f9614677969fd5016538"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html#ae88fa6103615f9614677969fd5016538">rotate</a> (const <a class="el" href="../../d7/db9/classMantid_1_1Kernel_1_1Quat.html">Kernel::Quat</a> &amp;)=0</td></tr>
 <tr class="memdesc:ae88fa6103615f9614677969fd5016538"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate the <a class="el" href="../../d5/d96/classMantid_1_1Geometry_1_1IComponent.html" title="base class for Geometric IComponent">IComponent</a>. This is relative to parent.  <br /></td></tr>
 <tr class="separator:ae88fa6103615f9614677969fd5016538"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -371,7 +374,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html#a1550eba259534dbedbc407ce68a33e80">Mantid::Geometry::Component</a>, and <a class="el" href="../../db/d2e/classMantid_1_1Geometry_1_1DetectorGroup.html#af66ecee877697637c41c9b98fff9f995">Mantid::Geometry::DetectorGroup</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00303">Mantid::Geometry::Component::hasComponentInfo()</a>, <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html#l00135">Mantid::Geometry::Detector::hasDetectorInfo()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00131">Mantid::Geometry::Component::isParentNamed()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00839">Mantid::Geometry::Instrument::removeDetector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00303">Mantid::Geometry::Component::hasComponentInfo()</a>, <a class="el" href="../../d5/d7c/Geometry_2src_2Instrument_2Detector_8cpp_source.html#l00132">Mantid::Geometry::Detector::hasDetectorInfo()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00131">Mantid::Geometry::Component::isParentNamed()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00844">Mantid::Geometry::Instrument::removeDetector()</a>.</p>
 
 </div>
 </div>
@@ -401,8 +404,6 @@ Public Member Functions</h2></td></tr>
 <p>Returns const pointer to base component if this component is parametrized. </p>
 
 <p>Implemented in <a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html#aab663391b7e3a60f837fbed7c5085ae4">Mantid::Geometry::Component</a>, and <a class="el" href="../../db/d2e/classMantid_1_1Geometry_1_1DetectorGroup.html#ac3557d4a1cf5ed667eb28de0a728243e">Mantid::Geometry::DetectorGroup</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01330">Mantid::Geometry::Instrument::legacyParameters()</a>.</p>
 
 </div>
 </div>
@@ -503,7 +504,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html#af2f5345175409be0e85de281820602ff">Mantid::Geometry::Component</a>, and <a class="el" href="../../db/d2e/classMantid_1_1Geometry_1_1DetectorGroup.html#a9fabf8706356a703e701e8bb04da4989">Mantid::Geometry::DetectorGroup</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00165">Mantid::Geometry::InstrumentVisitor::commonRegistration()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00910">Mantid::Geometry::Instrument::getBoundingBox()</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00090">Mantid::CurveFitting::Algorithms::ConvertToYSpace::getComponentParameter()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00897">Mantid::Geometry::ParameterMap::getRecursive()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00108">Mantid::Geometry::ParameterMap::indexOf()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00107">Mantid::Geometry::InstrumentVisitor::InstrumentVisitor()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00353">Mantid::Geometry::InstrumentVisitor::registerDetector()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01264">Mantid::Geometry::Instrument::validateComponentProperties()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00163">Mantid::Geometry::InstrumentVisitor::commonRegistration()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00917">Mantid::Geometry::Instrument::getBoundingBox()</a>, <a class="el" href="../../d8/da6/ConvertToYSpace_8cpp_source.html#l00090">Mantid::CurveFitting::Algorithms::ConvertToYSpace::getComponentParameter()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00866">Mantid::Geometry::ParameterMap::getRecursive()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00108">Mantid::Geometry::InstrumentVisitor::InstrumentVisitor()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00358">Mantid::Geometry::InstrumentVisitor::registerDetector()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01271">Mantid::Geometry::Instrument::validateComponentProperties()</a>.</p>
 
 </div>
 </div>
@@ -566,7 +567,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html#aa1f6936395bceefd39f7378351f7d015">Mantid::Geometry::Component</a>, and <a class="el" href="../../db/d2e/classMantid_1_1Geometry_1_1DetectorGroup.html#a0c658878c94a6014ec50ceb526258e8e">Mantid::Geometry::DetectorGroup</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00119">Mantid::Geometry::ParameterMap::indexForWrite()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00122">Mantid::Geometry::ParameterMap::indexForWrite()</a>.</p>
 
 </div>
 </div>
@@ -637,7 +638,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html#ab67218d6644f2a87099314d7a20ae877">Mantid::Geometry::Component</a>, and <a class="el" href="../../db/d2e/classMantid_1_1Geometry_1_1DetectorGroup.html#a36310f14e88545486a70706398f2507f">Mantid::Geometry::DetectorGroup</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00165">Mantid::Geometry::InstrumentVisitor::commonRegistration()</a>, <a class="el" href="../../dd/da8/StructuredDetector_8cpp_source.html#l00320">Mantid::Geometry::StructuredDetector::createDetectors()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00652">Mantid::Geometry::GridDetector::getComponentByName()</a>, <a class="el" href="../../dd/da8/StructuredDetector_8cpp_source.html#l00427">Mantid::Geometry::StructuredDetector::getComponentByName()</a>, <a class="el" href="../../d1/d57/SofQCommon_8cpp_source.html#l00073">Mantid::Algorithms::SofQCommon::getEFixed()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00603">Mantid::Geometry::GridDetector::initialize()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00105">Mantid::Geometry::Instrument::Instrument()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00131">Mantid::Geometry::Component::isParentNamed()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00682">Mantid::Geometry::Instrument::markAsSamplePos()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00715">Mantid::Geometry::Instrument::markAsSource()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00353">Mantid::Geometry::InstrumentVisitor::registerDetector()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00166">Mantid::Geometry::CompAssembly::remove()</a>, and <a class="el" href="../../df/d3d/InstrumentDefinitionParser_8cpp_source.html#l02076">Mantid::Geometry::InstrumentDefinitionParser::setLogfile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00163">Mantid::Geometry::InstrumentVisitor::commonRegistration()</a>, <a class="el" href="../../dd/da8/StructuredDetector_8cpp_source.html#l00320">Mantid::Geometry::StructuredDetector::createDetectors()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00652">Mantid::Geometry::GridDetector::getComponentByName()</a>, <a class="el" href="../../dd/da8/StructuredDetector_8cpp_source.html#l00427">Mantid::Geometry::StructuredDetector::getComponentByName()</a>, <a class="el" href="../../d1/d57/SofQCommon_8cpp_source.html#l00073">Mantid::Algorithms::SofQCommon::getEFixed()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00603">Mantid::Geometry::GridDetector::initialize()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00105">Mantid::Geometry::Instrument::Instrument()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00131">Mantid::Geometry::Component::isParentNamed()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00682">Mantid::Geometry::Instrument::markAsSamplePos()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l00716">Mantid::Geometry::Instrument::markAsSource()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00358">Mantid::Geometry::InstrumentVisitor::registerDetector()</a>, <a class="el" href="../../d0/dea/Geometry_2src_2Instrument_2CompAssembly_8cpp_source.html#l00166">Mantid::Geometry::CompAssembly::remove()</a>, and <a class="el" href="../../df/d3d/InstrumentDefinitionParser_8cpp_source.html#l02076">Mantid::Geometry::InstrumentDefinitionParser::setLogfile()</a>.</p>
 
 </div>
 </div>
@@ -858,7 +859,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html#a840385416ba8de248f9cea26ac3f13a6">Mantid::Geometry::Component</a>, and <a class="el" href="../../db/d2e/classMantid_1_1Geometry_1_1DetectorGroup.html#aec4237eb2f2fdbe85d96298e2381179e">Mantid::Geometry::DetectorGroup</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00897">Mantid::Geometry::ParameterMap::getRecursive()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00926">Mantid::Geometry::ParameterMap::getRecursiveFittingParameter()</a>, and <a class="el" href="../../df/d3d/InstrumentDefinitionParser_8cpp_source.html#l00757">Mantid::Geometry::InstrumentDefinitionParser::getRelativeTranslation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00866">Mantid::Geometry::ParameterMap::getRecursive()</a>, <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00895">Mantid::Geometry::ParameterMap::getRecursiveFittingParameter()</a>, and <a class="el" href="../../df/d3d/InstrumentDefinitionParser_8cpp_source.html#l00757">Mantid::Geometry::InstrumentDefinitionParser::getRelativeTranslation()</a>.</p>
 
 </div>
 </div>
@@ -889,7 +890,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html#a7ff58d66b92165dd35e59d77210eee5a">Mantid::Geometry::Component</a>, and <a class="el" href="../../db/d2e/classMantid_1_1Geometry_1_1DetectorGroup.html#acfa502bd0021508efee9ee0e7ecd2b0d">Mantid::Geometry::DetectorGroup</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00538">Mantid::Geometry::ParameterMap::addPositionCoordinate()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00165">Mantid::Geometry::InstrumentVisitor::commonRegistration()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00431">Mantid::Geometry::Component::getDistance()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00329">Mantid::Geometry::Component::getPos()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00445">Mantid::Geometry::GridDetector::getPosAtXYZ()</a>, <a class="el" href="../../df/d3d/InstrumentDefinitionParser_8cpp_source.html#l01936">Mantid::Geometry::InstrumentDefinitionParser::makeXYplaneFaceComponent()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00353">Mantid::Geometry::InstrumentVisitor::registerDetector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00507">Mantid::Geometry::ParameterMap::addPositionCoordinate()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00163">Mantid::Geometry::InstrumentVisitor::commonRegistration()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00431">Mantid::Geometry::Component::getDistance()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00329">Mantid::Geometry::Component::getPos()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00445">Mantid::Geometry::GridDetector::getPosAtXYZ()</a>, <a class="el" href="../../df/d3d/InstrumentDefinitionParser_8cpp_source.html#l01936">Mantid::Geometry::InstrumentDefinitionParser::makeXYplaneFaceComponent()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00358">Mantid::Geometry::InstrumentVisitor::registerDetector()</a>.</p>
 
 </div>
 </div>
@@ -960,7 +961,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html#a5b2101d8262d9efb2bb2aa80685cb3c6">Mantid::Geometry::Component</a>, <a class="el" href="../../db/d2e/classMantid_1_1Geometry_1_1DetectorGroup.html#acc2374376e7ef94d66e1d1c1b8c00c55">Mantid::Geometry::DetectorGroup</a>, and <a class="el" href="../../d9/dbd/classMantid_1_1Geometry_1_1GridDetectorPixel.html#ab7f52f90daf75299d04b5075e4520397">Mantid::Geometry::GridDetectorPixel</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/d07/Geometry_2src_2Instrument_2ObjCompAssembly_8cpp_source.html#l00324">Mantid::Geometry::ObjCompAssembly::createOutline()</a>, <a class="el" href="../../d4/da0/GridDetectorPixel_8cpp_source.html#l00050">Mantid::Geometry::GridDetectorPixel::getRelativePos()</a>, and <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01330">Mantid::Geometry::Instrument::legacyParameters()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/d07/Geometry_2src_2Instrument_2ObjCompAssembly_8cpp_source.html#l00324">Mantid::Geometry::ObjCompAssembly::createOutline()</a>, and <a class="el" href="../../d4/da0/GridDetectorPixel_8cpp_source.html#l00050">Mantid::Geometry::GridDetectorPixel::getRelativePos()</a>.</p>
 
 </div>
 </div>
@@ -991,8 +992,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html#a45ae82f2572be811a95841b4608fd122">Mantid::Geometry::Component</a>, and <a class="el" href="../../db/d2e/classMantid_1_1Geometry_1_1DetectorGroup.html#a6ae777b0e2bff91f3f90a70c8934499a">Mantid::Geometry::DetectorGroup</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01330">Mantid::Geometry::Instrument::legacyParameters()</a>.</p>
-
 </div>
 </div>
 <a id="a575cdf2cce053f27ab53673e05a39cdc" name="a575cdf2cce053f27ab53673e05a39cdc"></a>
@@ -1022,7 +1021,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html#ac413ddd7f078c434d7f7a97704f94aa8">Mantid::Geometry::Component</a>, and <a class="el" href="../../db/d2e/classMantid_1_1Geometry_1_1DetectorGroup.html#a4b380a482f1ff83fee8526b3feea1055">Mantid::Geometry::DetectorGroup</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00165">Mantid::Geometry::InstrumentVisitor::commonRegistration()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00779">Mantid::Geometry::GridDetector::getBoundingBoxAtXYZ()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00329">Mantid::Geometry::Component::getPos()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00445">Mantid::Geometry::GridDetector::getPosAtXYZ()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00400">Mantid::Geometry::Component::getRotation()</a>, <a class="el" href="../../df/d3d/InstrumentDefinitionParser_8cpp_source.html#l01936">Mantid::Geometry::InstrumentDefinitionParser::makeXYplaneFaceComponent()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00353">Mantid::Geometry::InstrumentVisitor::registerDetector()</a>, and <a class="el" href="../../df/d3d/InstrumentDefinitionParser_8cpp_source.html#l00638">Mantid::Geometry::InstrumentDefinitionParser::setLocation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00163">Mantid::Geometry::InstrumentVisitor::commonRegistration()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00779">Mantid::Geometry::GridDetector::getBoundingBoxAtXYZ()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00329">Mantid::Geometry::Component::getPos()</a>, <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00445">Mantid::Geometry::GridDetector::getPosAtXYZ()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00400">Mantid::Geometry::Component::getRotation()</a>, <a class="el" href="../../df/d3d/InstrumentDefinitionParser_8cpp_source.html#l01936">Mantid::Geometry::InstrumentDefinitionParser::makeXYplaneFaceComponent()</a>, <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00358">Mantid::Geometry::InstrumentVisitor::registerDetector()</a>, and <a class="el" href="../../df/d3d/InstrumentDefinitionParser_8cpp_source.html#l00638">Mantid::Geometry::InstrumentDefinitionParser::setLocation()</a>.</p>
 
 </div>
 </div>
@@ -1094,9 +1093,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html#a7cf7c5d1992cfe06f06451c60c7366a3">Mantid::Geometry::Component</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d56/IComponent_8h_source.html#l00124">124</a> of file <a class="el" href="../../df/d56/IComponent_8h_source.html">IComponent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d56/IComponent_8h_source.html#l00126">126</a> of file <a class="el" href="../../df/d56/IComponent_8h_source.html">IComponent.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00165">Mantid::Geometry::InstrumentVisitor::commonRegistration()</a>, <a class="el" href="../../dc/d53/Geometry_2src_2Instrument_8cpp_source.html#l01330">Mantid::Geometry::Instrument::legacyParameters()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00353">Mantid::Geometry::InstrumentVisitor::registerDetector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00163">Mantid::Geometry::InstrumentVisitor::commonRegistration()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00358">Mantid::Geometry::InstrumentVisitor::registerDetector()</a>.</p>
 
 </div>
 </div>
@@ -1127,7 +1126,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html#a882499992d32ad09074bb25b4aae30ac">Mantid::Geometry::Component</a>, and <a class="el" href="../../db/d2e/classMantid_1_1Geometry_1_1DetectorGroup.html#a97e17029555877dfd7d4588e1a54d68f">Mantid::Geometry::DetectorGroup</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00165">Mantid::Geometry::InstrumentVisitor::commonRegistration()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00367">Mantid::Geometry::Component::getSideBySideViewPos()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00353">Mantid::Geometry::InstrumentVisitor::registerDetector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00163">Mantid::Geometry::InstrumentVisitor::commonRegistration()</a>, <a class="el" href="../../dd/dfd/Geometry_2src_2Instrument_2Component_8cpp_source.html#l00367">Mantid::Geometry::Component::getSideBySideViewPos()</a>, and <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00358">Mantid::Geometry::InstrumentVisitor::registerDetector()</a>.</p>
 
 </div>
 </div>
@@ -1208,6 +1207,37 @@ Public Member Functions</h2></td></tr>
 <p>Returns a boolean indicating if the component has the named parameter. </p>
 
 <p>Implemented in <a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html#ade673521a04add80b55dc9de5b692fdc">Mantid::Geometry::Component</a>, and <a class="el" href="../../db/d2e/classMantid_1_1Geometry_1_1DetectorGroup.html#a1a89b0647bf0456a373d240ccb9ff9b9">Mantid::Geometry::DetectorGroup</a>.</p>
+
+</div>
+</div>
+<a id="a3d85d392c059ac38de533d462046ed60" name="a3d85d392c059ac38de533d462046ed60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d85d392c059ac38de533d462046ed60">&#9670;&#160;</a></span>index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual size_t Mantid::Geometry::IComponent::index </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the index of the component, or <a class="el" href="../../d8/d76/classMantid_1_1Geometry_1_1ComponentInfo.html#ad8a9b0605c0533a0f171bad09af83b0f" title="The index of no component, e.g. one that is not part of this instrument.">ComponentInfo::invalidIndex</a> if none. </p>
+
+<p>Implemented in <a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html#a79e21a1384800e20a3ef31c3c3f2b553">Mantid::Geometry::Component</a>, and <a class="el" href="../../db/d2e/classMantid_1_1Geometry_1_1DetectorGroup.html#ae755d940adf22d5c8d9b68882bd25ae6">Mantid::Geometry::DetectorGroup</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d10/Geometry_2src_2Instrument_2GridDetector_8cpp_source.html#l00838">Mantid::Geometry::GridDetector::getBoundingBox()</a>, <a class="el" href="../../dd/da8/StructuredDetector_8cpp_source.html#l00484">Mantid::Geometry::StructuredDetector::getBoundingBox()</a>, and <a class="el" href="../../d6/d16/ParameterMap_8cpp_source.html#l00117">Mantid::Geometry::ParameterMap::indexOf()</a>.</p>
 
 </div>
 </div>
@@ -1298,7 +1328,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="../../d6/dfb/classMantid_1_1Geometry_1_1CompAssembly.html#ac832eae8139502a50035351935777e8e">Mantid::Geometry::CompAssembly</a>, <a class="el" href="../../d7/dca/classMantid_1_1Geometry_1_1Component.html#a7c802e5abdba2cbe9cc7968a3277d6b0">Mantid::Geometry::Component</a>, <a class="el" href="../../d3/d38/classMantid_1_1Geometry_1_1Detector.html#a78d8925da976ba64031a00df7a518db7">Mantid::Geometry::Detector</a>, <a class="el" href="../../db/d95/classMantid_1_1Geometry_1_1GridDetector.html#acafe9c26fa6f609b7853aca1313f2f0f">Mantid::Geometry::GridDetector</a>, <a class="el" href="../../d2/d8d/classMantid_1_1Geometry_1_1ObjComponent.html#a966d25e32b400c3b54045016528bb52d">Mantid::Geometry::ObjComponent</a>, <a class="el" href="../../da/dfd/classMantid_1_1Geometry_1_1RectangularDetector.html#afb1330c41c5f058839bcf38f3823cfd0">Mantid::Geometry::RectangularDetector</a>, <a class="el" href="../../dc/db7/classMantid_1_1Geometry_1_1StructuredDetector.html#a3f2aad65c1de6d80623dfce347dc5fbc">Mantid::Geometry::StructuredDetector</a>, <a class="el" href="../../db/d2e/classMantid_1_1Geometry_1_1DetectorGroup.html#a26bab00224a60bd82abba79543b83485">Mantid::Geometry::DetectorGroup</a>, and <a class="el" href="../../dd/dc0/classMantid_1_1Geometry_1_1ObjCompAssembly.html#a16b1cf4a121cdb9d16fd206cba65622f">Mantid::Geometry::ObjCompAssembly</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00156">Mantid::Geometry::InstrumentVisitor::walkInstrument()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d2a/InstrumentVisitor_8cpp_source.html#l00154">Mantid::Geometry::InstrumentVisitor::walkInstrument()</a>.</p>
 
 </div>
 </div>
