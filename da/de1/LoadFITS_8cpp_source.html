@@ -274,7 +274,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>  <span class="comment">// NAXISi (where i = 1..NAXIS, e.g. NAXIS2 for two axis).</span></div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>  <span class="keywordflow">try</span> {</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    std::string tmpBitPix = header.headerKeys[<a class="code hl_variable" href="../../de/dbb/classMantid_1_1DataHandling_1_1LoadFITS.html#a0b756aefae818c06f8af0ebb44f78f2b">m_headerBitDepthKey</a>];</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordflow">if</span> (boost::contains(tmpBitPix, <span class="stringliteral">&quot;-&quot;</span>)) {</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordflow">if</span> (tmpBitPix.contains(<span class="stringliteral">&quot;-&quot;</span>)) {</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>      boost::erase_all(tmpBitPix, <span class="stringliteral">&quot;-&quot;</span>);</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>      header.isFloat = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    } <span class="keywordflow">else</span> {</div>
@@ -934,7 +934,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span>  <span class="comment">// Images taken with Starlight camera contain this header entry:</span></div>
 <div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span>  <span class="comment">// INSTRUME=&#39;Starlight Xpress CCD&#39;</span></div>
 <div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span>  <span class="keyword">auto</span> it = hdr.<a class="code hl_variable" href="../../d0/d6d/structMantid_1_1DataHandling_1_1FITSInfo.html#a5efda1565d1df5e0ef5d3cb40f40722a">headerKeys</a>.find(<span class="stringliteral">&quot;INSTRUME&quot;</span>);</div>
-<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>  <span class="keywordflow">if</span> (hdr.<a class="code hl_variable" href="../../d0/d6d/structMantid_1_1DataHandling_1_1FITSInfo.html#a5efda1565d1df5e0ef5d3cb40f40722a">headerKeys</a>.end() != it &amp;&amp; boost::contains(it-&gt;second, <span class="stringliteral">&quot;Starlight&quot;</span>)) {</div>
+<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>  <span class="keywordflow">if</span> (hdr.<a class="code hl_variable" href="../../d0/d6d/structMantid_1_1DataHandling_1_1FITSInfo.html#a5efda1565d1df5e0ef5d3cb40f40722a">headerKeys</a>.end() != it &amp;&amp; it-&gt;second.contains(<span class="stringliteral">&quot;Starlight&quot;</span>)) {</div>
 <div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span>    <span class="comment">// For now, do nothing, just tell</span></div>
 <div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>    <span class="comment">// Cameras used for HiFi and EMU are in principle only used</span></div>
 <div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>    <span class="comment">// occasionally for calibration</span></div>

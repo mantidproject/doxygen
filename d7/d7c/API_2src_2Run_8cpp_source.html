@@ -450,7 +450,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>    <span class="keyword">const</span> std::string &amp;unit = log-&gt;<a class="code hl_function" href="../../d1/d32/classMantid_1_1Kernel_1_1Property.html#a0a836f4d0fb007fef77a38d1ad6bd973">units</a>();</div>
 <div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>    <span class="comment">// Do we need to take account of a unit</span></div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    <span class="keywordflow">if</span> (unit.find(<span class="stringliteral">&quot;picoCoulomb&quot;</span>) != std::string::npos) {</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    <span class="keywordflow">if</span> (unit.contains(<span class="stringliteral">&quot;picoCoulomb&quot;</span>)) {</div>
 <div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>      <span class="keyword">const</span> <span class="keywordtype">double</span> currentConversion = 1.e-6 / 3600.;</div>
 <div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>      total *= currentConversion;</div>
 <div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!unit.empty() &amp;&amp; unit != <span class="stringliteral">&quot;uAh&quot;</span>) {</div>

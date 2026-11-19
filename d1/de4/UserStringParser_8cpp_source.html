@@ -117,7 +117,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  std::vector&lt;std::vector&lt;unsigned int&gt;&gt; numbers;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="comment">// first separate commas</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  std::vector&lt;std::string&gt; commaseparatedstrings;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordflow">if</span> (userString.find(<span class="charliteral">&#39;,&#39;</span>) != std::string::npos) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordflow">if</span> (userString.contains(<span class="charliteral">&#39;,&#39;</span>)) {</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    commaseparatedstrings = <a class="code hl_function" href="../../d7/d5d/classMantid_1_1Kernel_1_1UserStringParser.html#a7d2e303c0d261f8d4a3f9515aa3def39">separateComma</a>(userString);</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  }</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordflow">if</span> (!commaseparatedstrings.empty()) {</div>

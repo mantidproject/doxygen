@@ -348,7 +348,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  <span class="comment">// If the directory contains an instance of a comma, then the string is</span></div>
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>  <span class="comment">// a comma separated list of single *full* file names to load.</span></div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>  <span class="keywordflow">if</span> (std::string::npos != <a class="code hl_variable" href="../../d9/db1/classMantid_1_1Kernel_1_1MultiFileNameParsing_1_1Parser.html#ae673b23301798da247eae193c1525941">m_dirString</a>.find(<span class="charliteral">&#39;,&#39;</span>))</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d9/db1/classMantid_1_1Kernel_1_1MultiFileNameParsing_1_1Parser.html#ae673b23301798da247eae193c1525941">m_dirString</a>.contains(<span class="charliteral">&#39;,&#39;</span>))</div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Unable to parse.&quot;</span>);</div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>  <span class="comment">// Slice off the directory and extension.</span></div>

@@ -176,7 +176,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  std::map&lt;int, double&gt;::iterator its;</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keyword">const</span> <span class="keyword">auto</span> &amp;detectorInfo = <a class="code hl_variable" href="../../d1/d4b/classMantid_1_1DataHandling_1_1SetScalingPSD.html#abbbc8b451906d5039420109e39f466b1">m_workspace</a>-&gt;detectorInfo();</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keywordflow">if</span> (scalingFile.find(<span class="stringliteral">&quot;.sca&quot;</span>) != std::string::npos || scalingFile.find(<span class="stringliteral">&quot;.SCA&quot;</span>) != std::string::npos) {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keywordflow">if</span> (scalingFile.contains(<span class="stringliteral">&quot;.sca&quot;</span>) || scalingFile.contains(<span class="stringliteral">&quot;.SCA&quot;</span>)) {</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="comment">// read a .sca text format file</span></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="comment">// format consists of a short header followed by one line per detector</span></div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
@@ -256,7 +256,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>      }</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    }</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (scalingFile.find(<span class="stringliteral">&quot;.raw&quot;</span>) != std::string::npos || scalingFile.find(<span class="stringliteral">&quot;.RAW&quot;</span>) != std::string::npos) {</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (scalingFile.contains(<span class="stringliteral">&quot;.raw&quot;</span>) || scalingFile.contains(<span class="stringliteral">&quot;.RAW&quot;</span>)) {</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    std::vector&lt;int&gt; detID;</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    std::vector&lt;Kernel::V3D&gt; truepos;</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <a class="code hl_function" href="../../d1/d4b/classMantid_1_1DataHandling_1_1SetScalingPSD.html#a36fa02fd87402c78318544b1f1ecd970">getDetPositionsFromRaw</a>(scalingFile, detID, truepos);</div>

@@ -971,7 +971,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span> </div>
 <div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span>  Tokenizer elements;</div>
 <div class="line"><a id="l01101" name="l01101"></a><span class="lineno"> 1101</span> </div>
-<div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span>  <span class="keywordflow">if</span> (elemSep.find(<span class="charliteral">&#39; &#39;</span>) != std::string::npos) {</div>
+<div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span>  <span class="keywordflow">if</span> (elemSep.contains(<span class="charliteral">&#39; &#39;</span>)) {</div>
 <div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span>    <span class="comment">// If element separator contains space character it&#39;s a special case,</span></div>
 <div class="line"><a id="l01104" name="l01104"></a><span class="lineno"> 1104</span>    <span class="comment">// because in that case</span></div>
 <div class="line"><a id="l01105" name="l01105"></a><span class="lineno"> 1105</span>    <span class="comment">// it is allowed to have element separator inside a range, e.g. &quot;4 - 5&quot;, but</span></div>

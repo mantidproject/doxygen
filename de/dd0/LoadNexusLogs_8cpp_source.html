@@ -619,7 +619,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>      std::string units;</div>
 <div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>      file.getAttr(<span class="stringliteral">&quot;units&quot;</span>, units);</div>
 <div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>      <span class="keywordtype">double</span> charge = values.front();</div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>      <span class="keywordflow">if</span> (units.find(<span class="stringliteral">&quot;picoCoulomb&quot;</span>) != std::string::npos) {</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>      <span class="keywordflow">if</span> (units.contains(<span class="stringliteral">&quot;picoCoulomb&quot;</span>)) {</div>
 <div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>        charge *= 1.e-06 / 3600.;</div>
 <div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>      }</div>
 <div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>      <a class="code hl_variable" href="../../dc/dd8/IndexPeaks_8cpp.html#af6254baf8945f24221a11ff9da209153">workspace</a>-&gt;mutableRun().setProtonCharge(charge);</div>

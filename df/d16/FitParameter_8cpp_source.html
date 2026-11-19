@@ -177,7 +177,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="comment">// check if more than one string to replace in m_eq</span></div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">while</span> (equationStr.find(toReplace) != std::string::npos) {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">while</span> (equationStr.contains(toReplace)) {</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      found = equationStr.find(toReplace);</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      equationStr.replace(found, len, extractedValueStr);</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>

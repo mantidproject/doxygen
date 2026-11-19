@@ -242,7 +242,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    file.clear();</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    file.seekg(0);</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keywordflow">while</span> (std::getline(file, newLine)) {</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>      <span class="keywordflow">if</span> (newLine.find(<span class="stringliteral">&quot;Distribution=true&quot;</span>) != std::string::npos) {</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>      <span class="keywordflow">if</span> (newLine.contains(<span class="stringliteral">&quot;Distribution=true&quot;</span>)) {</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        isDistribution = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>      }</div>

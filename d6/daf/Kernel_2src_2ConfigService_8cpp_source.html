@@ -374,7 +374,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    <span class="comment">// out.</span></div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    <span class="keywordflow">if</span> (line.empty() || (<a class="code hl_function" href="../../de/d72/namespaceMantid_1_1Kernel_1_1Strings.html#a41256bdda8bf308190e6b7262c26a774">Kernel::Strings::strip</a>(line)[0] == <span class="charliteral">&#39;#&#39;</span>)) {</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>      <span class="comment">// do nothing</span></div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (line.find(<span class="stringliteral">&quot;FilterChannel&quot;</span>) != std::string::npos) {</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (line.contains(<span class="stringliteral">&quot;FilterChannel&quot;</span>)) {</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>      is_ok = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    }</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
@@ -1132,7 +1132,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l01183" name="l01183"></a><span class="lineno"> 1183</span>    <span class="comment">// go through the file</span></div>
 <div class="line"><a id="l01184" name="l01184"></a><span class="lineno"> 1184</span>    std::string line;</div>
 <div class="line"><a id="l01185" name="l01185"></a><span class="lineno"> 1185</span>    <span class="keywordflow">while</span> (std::getline(handle, line)) {</div>
-<div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span>      <span class="keywordflow">if</span> (line.find(PRETTY_NAME) != std::string::npos) {</div>
+<div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span>      <span class="keywordflow">if</span> (line.contains(PRETTY_NAME)) {</div>
 <div class="line"><a id="l01187" name="l01187"></a><span class="lineno"> 1187</span>        <span class="keywordflow">if</span> (line.length() &gt; PRETTY_NAME.length() + 1) {</div>
 <div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span>          <span class="keywordtype">size_t</span> length = line.length() - PRETTY_NAME.length() - 2;</div>
 <div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span>          description = line.substr(PRETTY_NAME.length() + 1, length);</div>
@@ -1876,7 +1876,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l02022" name="l02022"></a><span class="lineno"> 2022</span><span class="comment">// For this reason, and since windows is case insensitive anyway</span></div>
 <div class="line"><a id="l02023" name="l02023"></a><span class="lineno"> 2023</span><span class="comment">// a special case is made for windows</span></div>
 <div class="line"><a id="l02024" name="l02024"></a><span class="lineno"> 2024</span><span class="preprocessor">#ifdef _WIN32</span></div>
-<div class="line"><a id="l02025" name="l02025"></a><span class="lineno"> 2025</span>    <span class="keywordflow">if</span> (fName.find(<span class="stringliteral">&quot;*&quot;</span>) != std::string::npos) {</div>
+<div class="line"><a id="l02025" name="l02025"></a><span class="lineno"> 2025</span>    <span class="keywordflow">if</span> (fName.contains(<span class="stringliteral">&quot;*&quot;</span>)) {</div>
 <div class="line"><a id="l02026" name="l02026"></a><span class="lineno"> 2026</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l02027" name="l02027"></a><span class="lineno"> 2027</span>      std::filesystem::path path = std::filesystem::path(searchPath) / fName;</div>
 <div class="line"><a id="l02028" name="l02028"></a><span class="lineno"> 2028</span>      std::set&lt;std::string&gt; files;</div>

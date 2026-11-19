@@ -183,7 +183,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keywordflow">if</span> (!groupfile.empty()) {</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    std::string filename(groupfile);</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    std::transform(filename.begin(), filename.end(), filename.begin(), tolower);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">if</span> (filename.find(<span class="stringliteral">&quot;.xml&quot;</span>) != std::string::npos) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">if</span> (filename.contains(<span class="stringliteral">&quot;.xml&quot;</span>)) {</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>      <a class="code hl_function" href="../../db/db9/classMantid_1_1Algorithms_1_1ReadGroupsFromFile.html#ac4ade4b8ac87c8f772b154e1f22e6b39">readXMLGroupingFile</a>(groupfile);</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      <a class="code hl_function" href="../../db/db9/classMantid_1_1Algorithms_1_1ReadGroupsFromFile.html#ad0503c2be6b925828a3c302b8a457a51">readGroupingFile</a>(groupfile);</div>

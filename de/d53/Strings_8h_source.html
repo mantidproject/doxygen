@@ -407,11 +407,11 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;token : tokens) {</div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>      <span class="comment">// Look for the various operators in the string. If one is found then</span></div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>      <span class="comment">// do the necessary translation into groupings.</span></div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>      <span class="keywordflow">if</span> (token.find(<span class="charliteral">&#39;+&#39;</span>) != std::string::npos) {</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>      <span class="keywordflow">if</span> (token.contains(<span class="charliteral">&#39;+&#39;</span>)) {</div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>        translateAdd(token);</div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (token.find(<span class="charliteral">&#39;-&#39;</span>) != std::string::npos) {</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (token.contains(<span class="charliteral">&#39;-&#39;</span>)) {</div>
 <div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>        translateSumRange(token);</div>
-<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (token.find(<span class="charliteral">&#39;:&#39;</span>) != std::string::npos) {</div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (token.contains(<span class="charliteral">&#39;:&#39;</span>)) {</div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>        translateRange(token);</div>
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!token.empty()) {</div>
 <div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>        <span class="comment">// contains a single number, just add it as a new group</span></div>

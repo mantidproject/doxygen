@@ -477,7 +477,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;item : datamap) {</div>
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>        <span class="keywordflow">if</span> (contain.empty()) {</div>
 <div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>          foundNames.emplace_back(item.first);</div>
-<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (item.first.find(contain) != std::string::npos) {</div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (item.first.contains(contain)) {</div>
 <div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>          foundNames.emplace_back(item.first);</div>
 <div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>        }</div>
 <div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>      }</div>
@@ -490,7 +490,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>          <span class="comment">// This item is not hidden add it</span></div>
 <div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>          <span class="keywordflow">if</span> (contain.empty()) {</div>
 <div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>            foundNames.emplace_back(item.first);</div>
-<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>          } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (item.first.find(contain) != std::string::npos) {</div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>          } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (item.first.contains(contain)) {</div>
 <div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>            foundNames.emplace_back(item.first);</div>
 <div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>          }</div>
 <div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>        }</div>

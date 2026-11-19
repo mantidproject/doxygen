@@ -173,7 +173,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="stringliteral">&quot;&lt;UnstructuredGrid&gt;\n&quot;</span>;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keyword">const</span> std::string workspaceID = inputWorkspace-&gt;id();</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordflow">if</span> (workspaceID.find(<span class="stringliteral">&quot;Workspace2D&quot;</span>) != std::string::npos) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordflow">if</span> (workspaceID.contains(<span class="stringliteral">&quot;Workspace2D&quot;</span>)) {</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="../../db/d22/namespaceMantid_1_1DataObjects.html#a2e1da9579b0472a0eec68fa3d83468e5">Workspace2D_sptr</a> localWorkspace = std::dynamic_pointer_cast&lt;Workspace2D&gt;(inputWorkspace);</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="comment">// Write out whole range</span></div>

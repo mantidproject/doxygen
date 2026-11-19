@@ -805,7 +805,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>    <span class="keywordflow">if</span> (comp &amp;&amp; comp-&gt;hasParameter(<span class="stringliteral">&quot;resolution&quot;</span>)) {</div>
 <div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>      <span class="keyword">auto</span> params = comp-&gt;getNumberParameter(<span class="stringliteral">&quot;resolution&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;param : fun-&gt;getParameterNames()) {</div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>        <span class="keywordflow">if</span> (param.find(<span class="stringliteral">&quot;FWHM&quot;</span>) != std::string::npos) {</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>        <span class="keywordflow">if</span> (param.contains(<span class="stringliteral">&quot;FWHM&quot;</span>)) {</div>
 <div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>          fun-&gt;setParameter(param, params[0]);</div>
 <div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>        }</div>
 <div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>      }</div>

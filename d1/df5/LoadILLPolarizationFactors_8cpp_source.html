@@ -170,7 +170,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="keywordtype">void</span> cleanse_whitespace(std::string &amp;l) { l.erase(std::remove_if(l.begin(), l.end(), isspace), l.end()); }</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keywordtype">bool</span> contains_limits(<span class="keyword">const</span> std::string &amp;l) { <span class="keywordflow">return</span> l.find(<span class="stringliteral">&quot;_limits&quot;</span>) != std::string::npos; }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keywordtype">bool</span> contains_limits(<span class="keyword">const</span> std::string &amp;l) { <span class="keywordflow">return</span> l.contains(<span class="stringliteral">&quot;_limits&quot;</span>); }</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>std::vector&lt;double&gt; extract_values(<span class="keyword">const</span> std::string &amp;l) {</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keyword">const</span> <span class="keyword">auto</span> valBegin = l.find(<span class="charliteral">&#39;[&#39;</span>);</div>

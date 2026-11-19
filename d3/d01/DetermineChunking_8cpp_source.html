@@ -375,7 +375,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno"><a class="line" href="../../d4/d65/classMantid_1_1DataHandling_1_1DetermineChunking.html#afb341d7a9cecaebb0f83f3e880992aa8">  283</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../d4/d65/classMantid_1_1DataHandling_1_1DetermineChunking.html#afb341d7a9cecaebb0f83f3e880992aa8">DetermineChunking::filenameHasExtension</a>(<span class="keyword">const</span> std::string &amp;filename,</div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>                                             <span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;fileExtensions) {</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>  <span class="keywordflow">return</span> std::any_of(fileExtensions.cbegin(), fileExtensions.cend(),</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>                     [&amp;filename](<span class="keyword">const</span> <span class="keyword">auto</span> &amp;extension) { return filename.find(extension) != std::string::npos; });</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>                     [&amp;filename](<span class="keyword">const</span> <span class="keyword">auto</span> &amp;extension) { return filename.contains(extension); });</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>}</div>
 </div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>

@@ -341,10 +341,10 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>  <span class="comment">// Determine format</span></div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  <span class="keywordtype">bool</span> instringformat = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>  <span class="keywordflow">if</span> (!defaultstart &amp;&amp; s_inpt0.find(<span class="charliteral">&#39;:&#39;</span>) == std::string::npos) {</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>  <span class="keywordflow">if</span> (!defaultstart &amp;&amp; !s_inpt0.contains(<span class="charliteral">&#39;:&#39;</span>)) {</div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="comment">// StartTime is not empty and does not contain &quot;:&quot;: not ISO</span></div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    instringformat = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!defaultstop &amp;&amp; s_inptf.find(<span class="charliteral">&#39;:&#39;</span>) == std::string::npos) {</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!defaultstop &amp;&amp; !s_inptf.contains(<span class="charliteral">&#39;:&#39;</span>)) {</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    <span class="comment">// StopTime is not empty and does not contain &quot;:&quot;: not ISO format</span></div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    instringformat = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>  }</div>

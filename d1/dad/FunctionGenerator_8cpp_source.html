@@ -416,7 +416,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>  <span class="keywordflow">if</span> (aName.empty()) {</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Parameter or attribute name cannot be empty string.&quot;</span>);</div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>  }</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  <span class="keywordflow">return</span> (aName.front() != <span class="charliteral">&#39;f&#39;</span> || aName.find(<span class="charliteral">&#39;.&#39;</span>) == std::string::npos);</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  <span class="keywordflow">return</span> (aName.front() != <span class="charliteral">&#39;f&#39;</span> || !aName.contains(<span class="charliteral">&#39;.&#39;</span>));</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>}</div>
 </div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>

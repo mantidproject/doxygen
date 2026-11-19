@@ -360,7 +360,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    <span class="comment">// Some old files had a: //Data/DetectorWing with dimensions:</span></div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    <span class="comment">// 16 x 256 = 4096. This must be ignored as it is not in the IDF</span></div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    <span class="comment">// The real wing detector is larger than that</span></div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    <span class="keywordflow">if</span> (detectorXpath.find(<span class="stringliteral">&quot;DetectorWing&quot;</span>) != std::string::npos &amp;&amp; dims.first * dims.second &lt;= 4096)</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    <span class="keywordflow">if</span> (detectorXpath.contains(<span class="stringliteral">&quot;DetectorWing&quot;</span>) &amp;&amp; dims.first * dims.second &lt;= 4096)</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>      <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    totalDataSize += dims.first * dims.second;</div>

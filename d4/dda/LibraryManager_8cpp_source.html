@@ -178,7 +178,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="foldopen" id="foldopen00115" data-start="{" data-end="}">
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="../../dc/dbc/classMantid_1_1Kernel_1_1LibraryManagerImpl.html#a04c0620f9f2524f34d8c2fe3144b5bdf">  115</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../dc/dbc/classMantid_1_1Kernel_1_1LibraryManagerImpl.html#a04c0620f9f2524f34d8c2fe3144b5bdf">LibraryManagerImpl::isExcluded</a>(<span class="keyword">const</span> std::string &amp;filename, <span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;excludes)<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <span class="keywordflow">return</span> std::any_of(excludes.cbegin(), excludes.cend(),</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                     [&amp;filename](<span class="keyword">const</span> <span class="keyword">auto</span> exclude) { return filename.find(exclude) != std::string::npos; });</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                     [&amp;filename](<span class="keyword">const</span> <span class="keyword">auto</span> exclude) { return filename.contains(exclude); });</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}</div>
 </div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>

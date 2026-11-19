@@ -355,7 +355,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span><span class="comment">  N6Mantid6Kernel16EnumeratedStringINS_12_GLOBAL__N_111BinningModeEXadL_ZNS2_L16binningModeNamesEEEXadL_ZNS0_12_GLOBAL__N_114compareStringsEEEEE</span></div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span><span class="comment">  we assume it is a EnumeratedStringProperty and return a &quot;string&quot; for it */</span></div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  <span class="keywordtype">string</span> type_name = type.name();</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>  <span class="keywordflow">if</span> (type_name.find(<span class="stringliteral">&quot;Mantid&quot;</span>) != std::string::npos &amp;&amp; type_name.find(<span class="stringliteral">&quot;EnumeratedString&quot;</span>) != std::string::npos) {</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>  <span class="keywordflow">if</span> (type_name.contains(<span class="stringliteral">&quot;Mantid&quot;</span>) &amp;&amp; type_name.contains(<span class="stringliteral">&quot;EnumeratedString&quot;</span>)) {</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>    <span class="keywordflow">return</span> <span class="stringliteral">&quot;string&quot;</span>;</div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>  }</div>
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>  <span class="keywordflow">return</span> type.name();</div>

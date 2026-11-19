@@ -161,13 +161,13 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <a class="code hl_variable" href="../../d1/d1a/classMantidTestHelpers_1_1BoxControllerDummyIO.html#a7462ef9d928f1ba2522d34edef8b277d">m_ReadOnly</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  ;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="keywordflow">if</span> (mode.find(<span class="charliteral">&#39;w&#39;</span>) != std::string::npos || mode.find(<span class="charliteral">&#39;W&#39;</span>) != std::string::npos) {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="keywordflow">if</span> (mode.contains(<span class="charliteral">&#39;w&#39;</span>) || mode.contains(<span class="charliteral">&#39;W&#39;</span>)) {</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <a class="code hl_variable" href="../../d1/d1a/classMantidTestHelpers_1_1BoxControllerDummyIO.html#a7462ef9d928f1ba2522d34edef8b277d">m_ReadOnly</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  }</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="comment">// open file if it exists or crate it if not in the mode requested</span></div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="comment">// bool fileExists(true);</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keywordflow">if</span> (fileName.find(<span class="stringliteral">&quot;exist&quot;</span>) != std::string::npos) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keywordflow">if</span> (fileName.contains(<span class="stringliteral">&quot;exist&quot;</span>)) {</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordtype">size_t</span> nEvents = 1000;</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <a class="code hl_variable" href="../../d1/d1a/classMantidTestHelpers_1_1BoxControllerDummyIO.html#a3928e81c96e5b4d8250ec5af28f077e8">fileContents</a>.assign(nEvents * <a class="code hl_variable" href="../../d1/d1a/classMantidTestHelpers_1_1BoxControllerDummyIO.html#a37f18c657f19d0d92f0c5dd727c758f0">m_EventSize</a>, 0);</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    this-&gt;<a class="code hl_function" href="../../d0/d27/classMantid_1_1Kernel_1_1DiskBuffer.html#a8771d87c213144557692965005220de9">setFileLength</a>(nEvents);</div>

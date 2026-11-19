@@ -171,7 +171,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">if</span> (infile.eof())</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>      <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    std::stringstream ss(<a class="code hl_variable" href="../../d8/d23/namespaceMantid_1_1DataHandling.html#a17949775abe05faee6d0a342f9f45dfc">STRING</a>);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d8/d23/namespaceMantid_1_1DataHandling.html#a17949775abe05faee6d0a342f9f45dfc">STRING</a>.find(<span class="stringliteral">&quot;Bank&quot;</span>) == std::string::npos) {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="../../d8/d23/namespaceMantid_1_1DataHandling.html#a17949775abe05faee6d0a342f9f45dfc">STRING</a>.contains(<span class="stringliteral">&quot;Bank&quot;</span>)) {</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      <span class="keywordtype">double</span> time0, spectra0;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      ss &gt;&gt; time0 &gt;&gt; spectra0;</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>      time[a].emplace_back(time0);</div>

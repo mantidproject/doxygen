@@ -398,7 +398,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>      <span class="comment">// check if XML file and if yes assume it is a XML grouping file</span></div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>      std::string filenameCopy(filename);</div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>      std::transform(filenameCopy.begin(), filenameCopy.end(), filenameCopy.begin(), tolower);</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>      <span class="keywordflow">if</span> ((filenameCopy.find(<span class="stringliteral">&quot;.xml&quot;</span>)) != std::string::npos) {</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>      <span class="keywordflow">if</span> (filenameCopy.contains(<span class="stringliteral">&quot;.xml&quot;</span>)) {</div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        <a class="code hl_function" href="../../de/d86/classMantid_1_1DataHandling_1_1GroupDetectors2.html#a5c3ea99ff5733cf1cb351b17cdcbe165">processXMLFile</a>(filename, <a class="code hl_variable" href="../../dc/dd8/IndexPeaks_8cpp.html#af6254baf8945f24221a11ff9da209153">workspace</a>, unUsedSpec);</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>      } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        <span class="comment">// the format of this input file format is described in</span></div>

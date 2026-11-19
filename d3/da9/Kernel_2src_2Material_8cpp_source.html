@@ -664,7 +664,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>      uint16_t aNumber = 0;</div>
 <div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span> </div>
 <div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>      <span class="comment">// split out the isotope bit</span></div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>      <span class="keywordflow">if</span> (atom.find(<span class="charliteral">&#39;(&#39;</span>) != std::string::npos) {</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>      <span class="keywordflow">if</span> (atom.contains(<span class="charliteral">&#39;(&#39;</span>)) {</div>
 <div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>        <span class="comment">// error check</span></div>
 <div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>        <span class="keywordtype">size_t</span> end = atom.find(<span class="charliteral">&#39;)&#39;</span>);</div>
 <div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>        <span class="keywordflow">if</span> (end == std::string::npos) {</div>

@@ -184,7 +184,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  std::vector&lt;std::string&gt; eventEntries;</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  std::map&lt;std::string, std::vector&lt;std::string&gt;&gt; histogramEntries;</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keywordflow">for</span> (std::string <span class="keyword">const</span> &amp;entry : entries) {</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">if</span> (entry.find(<span class="stringliteral">&quot;/entry1/data&quot;</span>) == std::string::npos) {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">if</span> (!entry.contains(<span class="stringliteral">&quot;/entry1/data&quot;</span>)) {</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
@@ -203,7 +203,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    std::string nameAttrValue;</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <a class="code hl_function" href="../../dd/dfc/namespaceMantid_1_1Nexus_1_1H5Util.html#a0dd960abacf3afad09fbf819173096c2">H5Util::readStringAttribute</a>(dataset, attributeName, nameAttrValue);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordflow">if</span> (nameAttrValue.find(<span class="stringliteral">&quot;Neutron_ID&quot;</span>) != std::string::npos) {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordflow">if</span> (nameAttrValue.contains(<span class="stringliteral">&quot;Neutron_ID&quot;</span>)) {</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>      eventEntries.emplace_back(groupAddress);</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (histogramEntries.find(groupAddress) == histogramEntries.cend()) {</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>      histogramEntries[groupAddress] = {datasetName};</div>
