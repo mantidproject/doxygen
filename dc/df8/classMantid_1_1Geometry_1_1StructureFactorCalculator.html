@@ -133,9 +133,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a9c3e8717a9fd9092e6fc86d326cb2cdb" id="r_a9c3e8717a9fd9092e6fc86d326cb2cdb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df8/classMantid_1_1Geometry_1_1StructureFactorCalculator.html#a9c3e8717a9fd9092e6fc86d326cb2cdb">crystalStructureSetHook</a> (const <a class="el" href="../../db/db4/classMantid_1_1Geometry_1_1CrystalStructure.html">CrystalStructure</a> &amp;crystalStructure)</td></tr>
-<tr class="memdesc:a9c3e8717a9fd9092e6fc86d326cb2cdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called from <a class="el" href="../../dc/df8/classMantid_1_1Geometry_1_1StructureFactorCalculator.html#a55ab15f49792bd98a66c8861afa163ea" title="Sets the crystal structure for which to calculate structure factors.">StructureFactorCalculator::setCrystalStructure()</a> and can be overriden to perform additional actions.  <br /></td></tr>
-<tr class="separator:a9c3e8717a9fd9092e6fc86d326cb2cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a518f4325bb9e1cbcd8395d423a09ff55" id="r_a518f4325bb9e1cbcd8395d423a09ff55"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df8/classMantid_1_1Geometry_1_1StructureFactorCalculator.html#a518f4325bb9e1cbcd8395d423a09ff55">crystalStructureSetHook</a> (const <a class="el" href="../../db/db4/classMantid_1_1Geometry_1_1CrystalStructure.html">CrystalStructure</a> &amp;crystalStructure)=0</td></tr>
+<tr class="memdesc:a518f4325bb9e1cbcd8395d423a09ff55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called from <a class="el" href="../../dc/df8/classMantid_1_1Geometry_1_1StructureFactorCalculator.html#a55ab15f49792bd98a66c8861afa163ea" title="Sets the crystal structure for which to calculate structure factors.">StructureFactorCalculator::setCrystalStructure()</a> so that implementations can perform additional actions that involve the crystal structure.  <br /></td></tr>
+<tr class="separator:a518f4325bb9e1cbcd8395d423a09ff55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../dc/df8/classMantid_1_1Geometry_1_1StructureFactorCalculator.html" title="StructureFactorCalculator.">StructureFactorCalculator</a>. </p>
@@ -170,8 +170,8 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9c3e8717a9fd9092e6fc86d326cb2cdb" name="a9c3e8717a9fd9092e6fc86d326cb2cdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c3e8717a9fd9092e6fc86d326cb2cdb">&#9670;&#160;</a></span>crystalStructureSetHook()</h2>
+<a id="a518f4325bb9e1cbcd8395d423a09ff55" name="a518f4325bb9e1cbcd8395d423a09ff55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a518f4325bb9e1cbcd8395d423a09ff55">&#9670;&#160;</a></span>crystalStructureSetHook()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -180,7 +180,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Mantid::Geometry::StructureFactorCalculator::crystalStructureSetHook </td>
+          <td class="memname">virtual void Mantid::Geometry::StructureFactorCalculator::crystalStructureSetHook </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../db/db4/classMantid_1_1Geometry_1_1CrystalStructure.html">CrystalStructure</a> &amp;&#160;</td>
           <td class="paramname"><em>crystalStructure</em></td><td>)</td>
@@ -189,16 +189,14 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>This function is called from <a class="el" href="../../dc/df8/classMantid_1_1Geometry_1_1StructureFactorCalculator.html#a55ab15f49792bd98a66c8861afa163ea" title="Sets the crystal structure for which to calculate structure factors.">StructureFactorCalculator::setCrystalStructure()</a> and can be overriden to perform additional actions. </p>
+<p>Called from <a class="el" href="../../dc/df8/classMantid_1_1Geometry_1_1StructureFactorCalculator.html#a55ab15f49792bd98a66c8861afa163ea" title="Sets the crystal structure for which to calculate structure factors.">StructureFactorCalculator::setCrystalStructure()</a> so that implementations can perform additional actions that involve the crystal structure. </p>
 
-<p>Reimplemented in <a class="el" href="../../df/dbe/classMantid_1_1Geometry_1_1StructureFactorCalculatorSummation.html#a92f9f8cda5cd85755f9587418e184d69">Mantid::Geometry::StructureFactorCalculatorSummation</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="../../d3/dfd/StructureFactorCalculator_8cpp_source.html#l00074">74</a> of file <a class="el" href="../../d3/dfd/StructureFactorCalculator_8cpp_source.html">StructureFactorCalculator.cpp</a>.</p>
+<p>Implemented in <a class="el" href="../../df/dbe/classMantid_1_1Geometry_1_1StructureFactorCalculatorSummation.html#a92f9f8cda5cd85755f9587418e184d69">Mantid::Geometry::StructureFactorCalculatorSummation</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/dfd/StructureFactorCalculator_8cpp_source.html#l00022">setCrystalStructure()</a>.</p>
 
@@ -367,7 +365,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the crystal structure for which to calculate structure factors. </p>
-<p>Additionally <a class="el" href="../../dc/df8/classMantid_1_1Geometry_1_1StructureFactorCalculator.html#a9c3e8717a9fd9092e6fc86d326cb2cdb" title="This function is called from StructureFactorCalculator::setCrystalStructure() and can be overriden to...">StructureFactorCalculator::crystalStructureSetHook()</a> is called with the <a class="el" href="../../db/db4/classMantid_1_1Geometry_1_1CrystalStructure.html" title="Three components are required to describe a crystal structure:">CrystalStructure</a>. This function may be re-implemented by concrete structure factor calculators to perform other necessary actions that involve the crystal structure (for example extracting and storing members of it).</p>
+<p>Additionally <a class="el" href="../../dc/df8/classMantid_1_1Geometry_1_1StructureFactorCalculator.html#a518f4325bb9e1cbcd8395d423a09ff55" title="Called from StructureFactorCalculator::setCrystalStructure() so that implementations can perform addi...">StructureFactorCalculator::crystalStructureSetHook()</a> is called with the <a class="el" href="../../db/db4/classMantid_1_1Geometry_1_1CrystalStructure.html" title="Three components are required to describe a crystal structure:">CrystalStructure</a>. This function must be implemented by concrete structure factor calculators to perform other necessary actions that involve the crystal structure (for example extracting and storing members of it).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">crystalStructure</td><td>:: <a class="el" href="../../df/d97/namespaceMantid_1_1Crystal.html">Crystal</a> structure for calculations. </td></tr>
@@ -377,7 +375,7 @@ Protected Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/dfd/StructureFactorCalculator_8cpp_source.html#l00022">22</a> of file <a class="el" href="../../d3/dfd/StructureFactorCalculator_8cpp_source.html">StructureFactorCalculator.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/dfd/StructureFactorCalculator_8cpp_source.html#l00074">crystalStructureSetHook()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/df8/classMantid_1_1Geometry_1_1StructureFactorCalculator.html#a518f4325bb9e1cbcd8395d423a09ff55">crystalStructureSetHook()</a>.</p>
 
 </div>
 </div>
