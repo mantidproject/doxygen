@@ -16,7 +16,8 @@ var searchData=
   ['reflectometrytransform_5fsptr_13',['ReflectometryTransform_sptr',['../db/d22/namespaceMantid_1_1DataObjects.html#aa30fd4913d52186d67bb21d56406036b',1,'Mantid::DataObjects']]],
   ['result_5ftype_14',['result_type',['../de/dc9/classMantid_1_1Kernel_1_1uniform__int__distribution.html#a3da4b488505ba6dfb7d96a9b1a53e1cb',1,'Mantid::Kernel::uniform_int_distribution::result_type'],['../d3/d6d/classMantid_1_1Kernel_1_1PseudoRandomNumberGenerator.html#a6880f5854a67d35784482a0382d896ae',1,'Mantid::Kernel::PseudoRandomNumberGenerator::result_type'],['../da/dd9/classMantid_1_1Kernel_1_1normal__distribution.html#aa6bad6ff6af14cedd2ed6aad86e0561a',1,'Mantid::Kernel::normal_distribution::result_type']]],
   ['return_5fclone_5fnumpy_15',['return_clone_numpy',['../d5/de2/PythonInterface_2mantid_2api_2src_2Exports_2IEventList_8cpp.html#a495b4f704e04100935d87fecd8203a83',1,'IEventList.cpp']]],
-  ['rowpath_16',['RowPath',['../db/d2d/namespaceMantidQt_1_1MantidWidgets_1_1Batch.html#a22656d89b3d8c084ee9e57811f986c0b',1,'MantidQt::MantidWidgets::Batch']]],
-  ['rundata_17',['RunData',['../db/db4/classMantid_1_1API_1_1IJournal.html#ac7fea9751b42179459d5d4bf4ce30c90',1,'Mantid::API::IJournal']]],
-  ['runningalgorithms_18',['RunningAlgorithms',['../d4/daf/classMantidQt_1_1MantidWidgets_1_1AlgorithmProgressDialogPresenter.html#a9add6df74ef1e9399ad73cb8185c315c',1,'MantidQt::MantidWidgets::AlgorithmProgressDialogPresenter']]]
+  ['rotations_16',['Rotations',['../d2/d58/classMantid_1_1Geometry_1_1BeamlineBuilder_1_1Layout.html#ab56d688e3caaeeff7d707d139a7ec218',1,'Mantid::Geometry::BeamlineBuilder::Layout']]],
+  ['rowpath_17',['RowPath',['../db/d2d/namespaceMantidQt_1_1MantidWidgets_1_1Batch.html#a22656d89b3d8c084ee9e57811f986c0b',1,'MantidQt::MantidWidgets::Batch']]],
+  ['rundata_18',['RunData',['../db/db4/classMantid_1_1API_1_1IJournal.html#ac7fea9751b42179459d5d4bf4ce30c90',1,'Mantid::API::IJournal']]],
+  ['runningalgorithms_19',['RunningAlgorithms',['../d4/daf/classMantidQt_1_1MantidWidgets_1_1AlgorithmProgressDialogPresenter.html#a9add6df74ef1e9399ad73cb8185c315c',1,'MantidQt::MantidWidgets::AlgorithmProgressDialogPresenter']]]
 ];
