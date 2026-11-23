@@ -9,7 +9,5 @@ var searchData=
   ['tartypeflag_5fnormalfile_6',['TarTypeFlag_NormalFile',['../d7/d23/LoadANSTOHelper_8h.html#a95e10d217ff0b6fc9bea13c6a6cd9fbe',1,'LoadANSTOHelper.h']]],
   ['tartypeflag_5fsymboliclink_7',['TarTypeFlag_SymbolicLink',['../d7/d23/LoadANSTOHelper_8h.html#a029ecc5821736095dbe57db7469767c4',1,'LoadANSTOHelper.h']]],
   ['tmde_8',['TMDE',['../df/d81/MDTypes_8h.html#a69a76fd3922f5d3f82b4f3aa282f4e5d',1,'MDTypes.h']]],
-  ['tmde_5fclass_9',['TMDE_CLASS',['../df/d81/MDTypes_8h.html#a51694c7be54e5a2dc8ebd889f3544b34',1,'MDTypes.h']]],
-  ['to_5fcstring_10',['TO_CSTRING',['../db/db6/VersionCompat_8h.html#a478efca5176986271b144cbc4bacc7e7',1,'VersionCompat.h']]],
-  ['to_5flong_11',['to_long',['../db/db6/VersionCompat_8h.html#a05597e00373197483d7e897433dd9d99',1,'TO_LONG:&#160;VersionCompat.h'],['../d5/da7/PythonInterface_2mantid_2api_2src_2Exports_2ITableWorkspace_8cpp.html#a05597e00373197483d7e897433dd9d99',1,'TO_LONG:&#160;ITableWorkspace.cpp']]]
+  ['tmde_5fclass_9',['TMDE_CLASS',['../df/d81/MDTypes_8h.html#a51694c7be54e5a2dc8ebd889f3544b34',1,'MDTypes.h']]]
 ];

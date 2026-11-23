@@ -14,13 +14,10 @@ var searchData=
   ['instantiate_5fmatrix_5fwrap_11',['INSTANTIATE_MATRIX_WRAP',['../d6/de0/MatrixToNDArray_8cpp.html#a9deddfb20a1d3b540d29c3069e327a94',1,'MatrixToNDArray.cpp']]],
   ['instantiate_5ftovector_12',['INSTANTIATE_TOVECTOR',['../d2/d8d/NDArrayToVector_8cpp.html#a593cf931813a35cf2097faacbfb9ff0e',1,'NDArrayToVector.cpp']]],
   ['instantiate_5fwrapnumpy_13',['INSTANTIATE_WRAPNUMPY',['../d9/dc4/WrapWithNDArray_8cpp.html#a49c6213fd2ac1f64c0e8c0b2b3e0e3c8',1,'WrapWithNDArray.cpp']]],
-  ['int_5fcheck_14',['INT_CHECK',['../db/db6/VersionCompat_8h.html#a74df68a7657a6b603142338c7639ca05',1,'VersionCompat.h']]],
-  ['is_5farray_5finteger_15',['IS_ARRAY_INTEGER',['../d5/da7/PythonInterface_2mantid_2api_2src_2Exports_2ITableWorkspace_8cpp.html#aff4babb7ea0af63b057b106bc246d0fa',1,'ITableWorkspace.cpp']]],
-  ['is_5fpy2k_16',['IS_PY2K',['../db/db6/VersionCompat_8h.html#ac68e47b28773077c45ffc48a99828a17',1,'VersionCompat.h']]],
-  ['itintens_17',['ITINTENS',['../d2/d13/BivariateNormal_8cpp.html#a7289d21dcc7cc1548c09313833b69004',1,'BivariateNormal.cpp']]],
-  ['ivxx_18',['IVXX',['../d2/d13/BivariateNormal_8cpp.html#aa1df7e8e5f99b6cac58f688a93df25d7',1,'BivariateNormal.cpp']]],
-  ['ivxy_19',['IVXY',['../d2/d13/BivariateNormal_8cpp.html#af5691ae84bbe72290dd62b14eebe39b4',1,'BivariateNormal.cpp']]],
-  ['ivyy_20',['IVYY',['../d2/d13/BivariateNormal_8cpp.html#a0041cfc666821836b5a20b042790ef62',1,'BivariateNormal.cpp']]],
-  ['ixmean_21',['IXMEAN',['../d2/d13/BivariateNormal_8cpp.html#a7eb4a2e53d5ec30ef132e4bc5b5c21c3',1,'BivariateNormal.cpp']]],
-  ['iymean_22',['IYMEAN',['../d2/d13/BivariateNormal_8cpp.html#a610cfbb90efb92b1a04f07e8e9d9bc6b',1,'BivariateNormal.cpp']]]
+  ['itintens_14',['ITINTENS',['../d2/d13/BivariateNormal_8cpp.html#a7289d21dcc7cc1548c09313833b69004',1,'BivariateNormal.cpp']]],
+  ['ivxx_15',['IVXX',['../d2/d13/BivariateNormal_8cpp.html#aa1df7e8e5f99b6cac58f688a93df25d7',1,'BivariateNormal.cpp']]],
+  ['ivxy_16',['IVXY',['../d2/d13/BivariateNormal_8cpp.html#af5691ae84bbe72290dd62b14eebe39b4',1,'BivariateNormal.cpp']]],
+  ['ivyy_17',['IVYY',['../d2/d13/BivariateNormal_8cpp.html#a0041cfc666821836b5a20b042790ef62',1,'BivariateNormal.cpp']]],
+  ['ixmean_18',['IXMEAN',['../d2/d13/BivariateNormal_8cpp.html#a7eb4a2e53d5ec30ef132e4bc5b5c21c3',1,'BivariateNormal.cpp']]],
+  ['iymean_19',['IYMEAN',['../d2/d13/BivariateNormal_8cpp.html#a610cfbb90efb92b1a04f07e8e9d9bc6b',1,'BivariateNormal.cpp']]]
 ];
