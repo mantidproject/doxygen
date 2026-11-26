@@ -409,7 +409,7 @@ var searchData=
   ['buttoncancel_406',['buttonCancel',['../d7/d52/classFindReplaceDialog.html#af07dcdf326ede66e10febf670297d51b',1,'FindReplaceDialog']]],
   ['buttonnext_407',['buttonNext',['../d7/d52/classFindReplaceDialog.html#ade41771153214c36e5b6a019c034ebad',1,'FindReplaceDialog']]],
   ['buttonopt_408',['buttonOpt',['../d6/d61/classMantidQt_1_1API_1_1FileFinderWidget.html#a8f7e901614057718e64dc301cf6fb681',1,'MantidQt::API::FileFinderWidget']]],
-  ['buttonopts_409',['buttonopts',['../d6/d61/classMantidQt_1_1API_1_1FileFinderWidget.html#a637a264e29f54b5e544cabd47bf5baa0',1,'MantidQt::API::FileFinderWidget::ButtonOpts'],['../d1/d86/classMantidQt_1_1MantidWidgets_1_1DataSelector.html#a7225a7b5fdefdcbb5909675be8f1f00e',1,'MantidQt::MantidWidgets::DataSelector::buttonOpts'],['../df/d7a/namespaceMantidQt_1_1MantidWidgets.html#aeb47d133255d05128054fc7738162bbf',1,'MantidQt::MantidWidgets::ButtonOpts']]],
+  ['buttonopts_409',['buttonopts',['../d6/d61/classMantidQt_1_1API_1_1FileFinderWidget.html#a637a264e29f54b5e544cabd47bf5baa0',1,'MantidQt::API::FileFinderWidget::ButtonOpts'],['../d1/d86/classMantidQt_1_1MantidWidgets_1_1DataSelector.html#ae48e9abb9bc7eedac2c9cf5f67ed65e0',1,'MantidQt::MantidWidgets::DataSelector::buttonOpts'],['../df/d7a/namespaceMantidQt_1_1MantidWidgets.html#aeb47d133255d05128054fc7738162bbf',1,'MantidQt::MantidWidgets::ButtonOpts']]],
   ['buttonprefix_410',['ButtonPrefix',['../dd/daf/namespaceButtonPrefix.html',1,'']]],
   ['buttonreplace_411',['buttonReplace',['../d7/d52/classFindReplaceDialog.html#a7beba8a5ef957766f885b0ab3639d208',1,'FindReplaceDialog']]],
   ['buttonreplaceall_412',['buttonReplaceAll',['../d7/d52/classFindReplaceDialog.html#a98428aabc2a63819b083851ce25ee4af',1,'FindReplaceDialog']]],

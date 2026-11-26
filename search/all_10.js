@@ -219,7 +219,7 @@ var searchData=
   ['listvalidator_2ecpp_216',['ListValidator.cpp',['../d6/da8/ListValidator_8cpp.html',1,'']]],
   ['listvalidator_2eh_217',['ListValidator.h',['../dc/d96/ListValidator_8h.html',1,'']]],
   ['listwidget_218',['listWidget',['../d7/d00/classMantidQt_1_1API_1_1ManageUserDirectories.html#a682e8622c9853ecbf220c925ab0db2ed',1,'MantidQt::API::ManageUserDirectories']]],
-  ['livebutton_219',['livebutton',['../d1/d86/classMantidQt_1_1MantidWidgets_1_1DataSelector.html#a17ac22a619ed5135b3a2c9e2f8354d55',1,'MantidQt::MantidWidgets::DataSelector::liveButton'],['../d6/d61/classMantidQt_1_1API_1_1FileFinderWidget.html#a3e20bcf37659d54efa7d10c121049791',1,'MantidQt::API::FileFinderWidget::liveButton']]],
+  ['livebutton_219',['livebutton',['../d1/d86/classMantidQt_1_1MantidWidgets_1_1DataSelector.html#a429d4923490082ab4eb66b96645574e8',1,'MantidQt::MantidWidgets::DataSelector::liveButton'],['../d6/d61/classMantidQt_1_1API_1_1FileFinderWidget.html#a3e20bcf37659d54efa7d10c121049791',1,'MantidQt::API::FileFinderWidget::liveButton']]],
   ['livebuttonischecked_220',['liveButtonIsChecked',['../d6/d61/classMantidQt_1_1API_1_1FileFinderWidget.html#a1e354256a1d6ee0d57324abe9481b108',1,'MantidQt::API::FileFinderWidget']]],
   ['livebuttonopts_221',['livebuttonopts',['../df/d7a/namespaceMantidQt_1_1MantidWidgets.html#a44edf01fa83f2d0fbe5b887f40122a68',1,'MantidQt::MantidWidgets::LiveButtonOpts'],['../d6/d61/classMantidQt_1_1API_1_1FileFinderWidget.html#ab9e57b775a36547c6070b17121703fb6',1,'MantidQt::API::FileFinderWidget::LiveButtonOpts']]],
   ['livebuttonpressed_222',['liveButtonPressed',['../d6/d61/classMantidQt_1_1API_1_1FileFinderWidget.html#aafb6c8ed6176464b0d2a4bff33076eb1',1,'MantidQt::API::FileFinderWidget']]],
